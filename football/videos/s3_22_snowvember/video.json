@@ -1,0 +1,590 @@
+{
+ "id": "s3_22_snowvember",
+ "title": "The home game in another state",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "HOME GAME:",
+   "DETROIT"
+  ],
+  "grass": "#eef2f0"
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "te": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#1f3f8f",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b",
+    "cap": "#c8102e",
+    "beard": true
+   },
+   "at": "center"
+  },
+  "te2": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#c8102e",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "cap": "#1f3f8f"
+   },
+   "at": "right"
+  },
+  "bill": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f3f8f",
+    "pants": "#f4f4f4",
+    "number": "84",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "jet": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1e5b3a",
+    "pants": "#f4f4f4",
+    "number": "52",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68e62"
+   },
+   "at": "right"
+  },
+  "gm": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2e3440",
+    "pants": "#2e3440",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#f0c8a0",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "phone"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2014, the Buffalo Bills won a home game in Detroit.",
+   "key": [
+    "DETROIT."
+   ],
+   "place": {
+    "te": false,
+    "te2": false,
+    "jet": false,
+    "gm": false,
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "bill": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bill"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "bill": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A lake effect storm had dropped more than five feet of snow on the Buffalo area.",
+   "cap": "A lake-effect storm had dropped more than 5 feet of snow on the Buffalo area.",
+   "key": [
+    "5",
+    "FEET"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "SNOW:",
+     "5+ FEET"
+    ]
+   },
+   "board": [
+    "SNOW:",
+    "5+ FEET"
+   ],
+   "place": {
+    "te": [
+     -2.0,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "te",
+    "offset": [
+     2,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "te": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The team estimated two hundred twenty thousand tons of snow at its stadium.",
+   "cap": "The team estimated 220,000 tons of snow at its stadium.",
+   "key": [
+    "220,000",
+    "TONS"
+   ],
+   "board": [
+    "STADIUM SNOW",
+    "220,000 TONS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Players were snowed in. Practices were canceled.",
+   "key": [
+    "SNOWED",
+    "IN."
+   ],
+   "place": {
+    "te": [
+     -1.3,
+     0.6
+    ],
+    "te2": [
+     1.3,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "te",
+    "with": "te2"
+   },
+   "act": {
+    "te": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "te2"
+    },
+    "te2": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "te"
+    }
+   },
+   "board": [
+    "PRACTICE:",
+    "CANCELED"
+   ]
+  },
+  {
+   "text": "Tight end Scott Chandler needed a snowmobile just to get out of his neighborhood.",
+   "key": [
+    "SNOWMOBILE"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "ROADS:",
+     "CLOSED"
+    ],
+    "grass": "#eef2f0"
+   },
+   "board": [
+    "ROADS:",
+    "CLOSED"
+   ],
+   "place": {
+    "te": [
+     0,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He shared it with fellow tight end Lee Smith.",
+   "key": [
+    "SHARED"
+   ],
+   "place": {
+    "te": [
+     -1.0,
+     0.5
+    ],
+    "te2": [
+     1.0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "te",
+    "with": "te2"
+   },
+   "act": {
+    "te": {
+     "mood": "happy",
+     "action": "point",
+     "look": "te2"
+    },
+    "te2": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the league moved the game against the Jets. To Detroit. On a Monday night.",
+   "key": [
+    "DETROIT.",
+    "MONDAY"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NEW SITE:",
+     "DETROIT"
+    ]
+   },
+   "board": [
+    "NEW SITE:",
+    "DETROIT"
+   ],
+   "place": {
+    "gm": [
+     2.4,
+     -1.5
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "gm"
+   },
+   "act": {
+    "gm": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The team flew out on a charter. Tickets for fans were free.",
+   "key": [
+    "FREE."
+   ],
+   "board": [
+    "TICKETS:",
+    "FREE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "gm"
+   },
+   "act": {
+    "gm": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fifty six thousand and forty four people showed up.",
+   "cap": "56,044 people showed up.",
+   "key": [
+    "56,044"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CROWD",
+     "56,044"
+    ]
+   },
+   "board": [
+    "CROWD",
+    "56,044"
+   ],
+   "place": {
+    "bill": [
+     4.6,
+     0.5
+    ],
+    "capy": [
+     6.6,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "bill",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "bill": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "clap",
+     "look": "bill"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Buffalo won, thirty eight to three.",
+   "cap": "Buffalo won, 38 to 3.",
+   "key": [
+    "38"
+   ],
+   "board": [
+    "BILLS 38",
+    "JETS 3"
+   ],
+   "place": {
+    "capy": false,
+    "bill": [
+     4.6,
+     0.5
+    ],
+    "jet": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "bill",
+    "offset": [
+     1.2,
+     1.5,
+     2
+    ]
+   },
+   "act": {
+    "bill": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "jet": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "bill"
+    }
+   }
+  },
+  {
+   "text": "And it wasn't even the Bills' first win in that stadium that season.",
+   "key": [
+    "FIRST",
+    "WIN"
+   ],
+   "place": {
+    "jet": false,
+    "bill": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "bill"
+   },
+   "act": {
+    "bill": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In October, they had beaten the Lions there, seventeen to fourteen.",
+   "cap": "In October, they had beaten the Lions there, 17 to 14.",
+   "key": [
+    "17",
+    "14."
+   ],
+   "board": [
+    "OCTOBER:",
+    "BILLS 17 LIONS 14"
+   ],
+   "place": {
+    "bill": [
+     4.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "bill",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "bill": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two games in Detroit that season. Two wins.",
+   "cap": "2 games in Detroit that season. 2 wins.",
+   "key": [
+    "2",
+    "WINS."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "bill"
+   },
+   "act": {
+    "bill": {
+     "mood": "smug",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "Quick question. Would you ride a snowmobile to get to work? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "COMMUTE:",
+     "SNOWMOBILE?"
+    ]
+   },
+   "board": [
+    "COMMUTE:",
+    "SNOWMOBILE?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "te": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "te"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com (AP): Scott Chandler helps Bills rout Jets",
+   "url": "https://www.nfl.com/news/scott-chandler-helps-bills-rout-jets-0ap3000000434094"
+  },
+  {
+   "title": "TSN (AP): Bills make themselves at home in Detroit, rout Jets in relocated game",
+   "url": "https://www.tsn.ca/bills-make-themselves-at-home-in-detroit-rout-jets-in-relocated-game-1.143642"
+  },
+  {
+   "title": "NPR: Buffalo blizzard brings odd NFL game, free and far from home",
+   "url": "https://www.npr.org/sections/thetwo-way/2014/11/21/365812251/buffalo-blizzard-brings-odd-nfl-game-free-and-far-from-home"
+  },
+  {
+   "title": "BuffaloBills.com: Bills escape snowy Buffalo to prepare to face Jets",
+   "url": "https://www.buffalobills.com/news/bills-escape-snowy-buffalo-to-prepare-to-face-jets-14407546"
+  },
+  {
+   "title": "HeraldNet (AP): Bills' home game against Jets relocated to Detroit due to weather",
+   "url": "https://www.heraldnet.com/sports/bills-home-game-against-jets-relocated-to-detroit-due-to-weather"
+  },
+  {
+   "title": "Fox Weather: When was the last time an NFL game was moved due to snow?",
+   "url": "https://www.foxweather.com/lifestyle/when-was-the-last-time-an-nfl-game-was-moved-due-to-snow"
+  }
+ ]
+}

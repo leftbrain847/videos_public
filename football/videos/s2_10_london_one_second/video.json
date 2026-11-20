@@ -1,0 +1,483 @@
+{
+ "id": "s2_10_london_one_second",
+ "title": "The kickoff that left one second",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "PHI 17",
+   "JAX 16"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "little": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#101820",
+    "pants": "#f4f4f4",
+    "number": "39",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
+  },
+  "lawrence": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#101820",
+    "pants": "#f4f4f4",
+    "number": "16",
+    "hair": "long",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "returner": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#101820",
+    "pants": "#f4f4f4",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "left",
+   "hold": "football"
+  },
+  "elliott": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#f4f4f4",
+    "number": "4",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "right",
+   "face": -20
+  }
+ },
+ "lines": [
+  {
+   "text": "In London, the Eagles took the lead with eight seconds left. They still lost.",
+   "cap": "In London, the Eagles took the lead with 8 seconds left. They still lost.",
+   "key": [
+    "8",
+    "LOST."
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "elliott": [
+     0,
+     0
+    ],
+    "little": [
+     2.2,
+     0.3
+    ],
+    "lawrence": false,
+    "returner": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "elliott"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "elliott": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    },
+    "little": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "elliott"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Week six. Jacksonville against Philadelphia, at a soccer stadium in north London.",
+   "cap": "Week 6. Jacksonville against Philadelphia, at a soccer stadium in north London.",
+   "key": [
+    "LONDON."
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "LONDON",
+     "WEEK 6"
+    ]
+   },
+   "place": {
+    "lawrence": "left",
+    "elliott": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "lawrence"
+   },
+   "act": {
+    "lawrence": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "elliott": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "With three twenty left, Trevor Lawrence threw a touchdown to Parker Washington.",
+   "cap": "With 3:20 left, Trevor Lawrence threw a touchdown to Parker Washington.",
+   "key": [
+    "TOUCHDOWN"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "JAX 16",
+     "PHI 14"
+    ]
+   },
+   "place": {
+    "lawrence": "center",
+    "elliott": "right"
+   },
+   "shot": {
+    "type": "low",
+    "on": "lawrence"
+   },
+   "act": {
+    "lawrence": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "elliott": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "lawrence"
+    }
+   }
+  },
+  {
+   "text": "Then the extra point went wide left. Sixteen to fourteen.",
+   "cap": "Then the extra point went wide left. 16 to 14.",
+   "key": [
+    "WIDE"
+   ],
+   "place": {
+    "lawrence": false,
+    "little": "center"
+   },
+   "shot": {
+    "type": "close",
+    "on": "little"
+   },
+   "act": {
+    "little": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Philadelphia drove down the field. Jake Elliott, from forty eight yards. Good.",
+   "cap": "Philadelphia drove down the field. Jake Elliott, from 48 yards. Good.",
+   "key": [
+    "48"
+   ],
+   "place": {
+    "little": false,
+    "elliott": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "elliott"
+   },
+   "act": {
+    "elliott": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Eagles seventeen, Jaguars sixteen. Eight seconds left.",
+   "cap": "Eagles 17, Jaguars 16. 8 seconds left.",
+   "key": [
+    "8"
+   ],
+   "board": [
+    "PHI 17",
+    "JAX 16"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "elliott"
+   },
+   "act": {
+    "elliott": {
+     "mood": "smug",
+     "action": "clap",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "All Philadelphia had to do was kick off, and make one tackle.",
+   "key": [
+    "KICK"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "0:08",
+     "KICKOFF"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Ameer Abdullah caught it, and ran fifty three yards.",
+   "cap": "Ameer Abdullah caught it, and ran 53 yards.",
+   "key": [
+    "53"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PHI 17",
+     "JAX 16"
+    ]
+   },
+   "place": {
+    "returner": "center",
+    "elliott": "right"
+   },
+   "shot": {
+    "type": "low",
+    "on": "returner"
+   },
+   "act": {
+    "returner": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "elliott": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "returner"
+    }
+   }
+  },
+  {
+   "text": "He went down at the Eagles' thirty nine. One second left.",
+   "cap": "He went down at the Eagles' 39. 1 second left.",
+   "key": [
+    "1"
+   ],
+   "board": [
+    "0:01",
+    "BALL ON PHI 39"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "returner"
+   },
+   "act": {
+    "returner": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "elliott": {
+     "mood": "worried",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Cam Little, from fifty seven yards.",
+   "cap": "Cam Little, from 57 yards.",
+   "key": [
+    "57"
+   ],
+   "place": {
+    "returner": false,
+    "little": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "little"
+   },
+   "act": {
+    "little": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Good. Jaguars win, nineteen to seventeen.",
+   "cap": "Good. Jaguars win, 19 to 17.",
+   "key": [
+    "19"
+   ],
+   "board": [
+    "JAX 19",
+    "PHI 17"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "little"
+   },
+   "act": {
+    "little": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "elliott": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "little"
+    }
+   }
+  },
+  {
+   "text": "The same kicker who had missed that extra point, three minutes earlier.",
+   "key": [
+    "SAME"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "PAT: MISSED",
+     "57 YDS: GOOD"
+    ]
+   },
+   "place": {
+    "little": [
+     1.2,
+     0.2
+    ],
+    "capy": [
+     -1.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "little"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "little"
+    },
+    "little": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Up by one with eight seconds left. Kick it deep, or kick it short?",
+   "cap": "Up by one with 8 seconds left. Kick it deep, or kick it short?",
+   "key": [
+    "DEEP,",
+    "SHORT?"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "JAX 19",
+     "PHI 17"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "elliott": [
+     0.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "elliott"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "elliott": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP via TSN: Little's 57-yard FG gives Jaguars win over Eagles in wild finish in London",
+   "url": "https://www.tsn.ca/nfl/article/littles-57-yard-fg-gives-jaguars-win-over-eagles-in-wild-finish-in-london/"
+  },
+  {
+   "title": "Newsweek: Jaguars win thriller against Eagles in London with wild last-second score",
+   "url": "https://www.newsweek.com/sports/nfl/jaguars-win-thriller-against-eagles-london-wild-last-second-score-12553210"
+  }
+ ]
+}

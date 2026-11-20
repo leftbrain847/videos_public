@@ -1,0 +1,492 @@
+{
+ "id": "s1_11_force_out",
+ "title": "The force-out rule",
+ "set": "locker",
+ "setOpts": {
+  "boardText": [
+   "FORCE-OUT",
+   "= CATCH?"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#9b2335",
+    "pants": "#f4f4f4",
+    "number": "83",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "right",
+   "hold": "football"
+  },
+  "db": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4b2a7b",
+    "pants": "#f4f4f4",
+    "number": "29",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "back"
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#9b2335",
+    "pants": "#f4f4f4",
+    "number": "12",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "left"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "left",
+   "hold": "flag"
+  },
+  "own": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b33",
+    "pants": "#2b2b33",
+    "hair": "short",
+    "hairColor": "#cfcfcf",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "Until 2008, an NFL receiver could land out of bounds and still get credit for a catch.",
+   "key": [
+    "OUT",
+    "CATCH."
+   ],
+   "place": {
+    "capy": "left",
+    "wr": "right",
+    "db": false,
+    "qb": false,
+    "ref": false,
+    "own": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "If a defender pushed him out in the air, an official decided whether he would have landed in bounds.",
+   "key": [
+    "WOULD",
+    "HAVE"
+   ],
+   "place": {
+    "ref": [
+     0,
+     -0.4
+    ],
+    "capy": [
+     -2.4,
+     0.6
+    ],
+    "wr": [
+     2.2,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "It was called the force-out. Here's how it ended a season.",
+   "key": [
+    "FORCE-OUT."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "December 2003. Minnesota leads Arizona, seventeen to twelve. Last play.",
+   "cap": "December 2003. Minnesota leads Arizona, 17 to 12. Last play.",
+   "key": [
+    "17",
+    "LAST"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "VIKINGS 17",
+     "CARDINALS 12"
+    ]
+   },
+   "place": {
+    "qb": "center",
+    "db": [
+     1.4,
+     -1.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "db": {
+     "mood": "smug",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Fourth and twenty five. A Vikings win means the playoffs.",
+   "cap": "4th and 25. A Vikings win means the playoffs.",
+   "key": [
+    "25."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "Josh McCown throws to Nate Poole in the end zone.",
+   "key": [
+    "END",
+    "ZONE."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "throw"
+    }
+   }
+  },
+  {
+   "text": "One foot comes down. Then he's pushed out.",
+   "key": [
+    "PUSHED"
+   ],
+   "place": {
+    "qb": false,
+    "wr": [
+     -0.6,
+     0
+    ],
+    "db": [
+     0.8,
+     -0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "wr",
+    "with": "db"
+   },
+   "act": {
+    "wr": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "db"
+    },
+    "db": {
+     "mood": "angry",
+     "action": "point",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "The officials rule a force-out. Touchdown.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "place": {
+    "ref": [
+     -2.2,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "cheer"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Replay upholds it. Arizona wins, eighteen to seventeen.",
+   "cap": "Replay upholds it. Arizona wins, 18 to 17.",
+   "key": [
+    "18"
+   ],
+   "place": {
+    "ref": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "db": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Minnesota is out of the playoffs.",
+   "key": [
+    "OUT"
+   ],
+   "place": {
+    "wr": false,
+    "db": "center"
+   },
+   "shot": {
+    "type": "close",
+    "on": "db"
+   },
+   "act": {
+    "db": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In 2008, the owners killed the force-out.",
+   "key": [
+    "2008,"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "FORCE-OUT",
+     "REMOVED"
+    ]
+   },
+   "place": {
+    "own": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "own"
+  },
+  {
+   "text": "Now both feet have to come down in bounds. Pushed or not.",
+   "key": [
+    "BOTH",
+    "FEET"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Unless a defender holds the receiver and carries him out.",
+   "key": [
+    "CARRIES"
+   ],
+   "place": {
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "own"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "own": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Should a push out of bounds still count as a catch? Yes or no, below.",
+   "key": [
+    "YES",
+    "NO,"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "FORCE-OUT?",
+     "YES / NO"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "wr": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "UPI: NFL kills receiver 'force-out' rule (April 2008)",
+   "url": "https://www.upi.com/Sports_News/2008/04/02/NFL-kills-receiver-force-out-rule/UPI-47601207170267/"
+  },
+  {
+   "title": "Star Tribune: Elimination of force-out rule came too late for Vikings",
+   "url": "https://www.startribune.com/elimination-of-force-out-rule-came-too-late-for-vikings/17313044"
+  },
+  {
+   "title": "Houston Texans: Texans will be playing by new rules",
+   "url": "https://www.houstontexans.com/news/texans-will-be-playing-by-new-rules-2665708"
+  },
+  {
+   "title": "Buccaneers.com: Rules of the game",
+   "url": "https://buccaneers.com/news/rules-of-the-game-2174556"
+  },
+  {
+   "title": "Deseret News (AP): Last-second play boots Vikings from playoffs",
+   "url": "https://www.deseret.com/2003/12/29/19803762/last-second-play-boots-vikings-from-playoffs/"
+  },
+  {
+   "title": "Arizona Cardinals: Nate Poole, Josh McCown and the miracle in the desert",
+   "url": "https://www.azcardinals.com/news/nate-poole-josh-mccown-vikings-cardinals-miracle-in-the-desert-larry-fitzgerald"
+  }
+ ]
+}

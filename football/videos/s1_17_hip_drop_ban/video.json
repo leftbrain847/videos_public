@@ -1,0 +1,539 @@
+{
+ "id": "s1_17_hip_drop_ban",
+ "title": "The banned tackle with one flag",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "HIP-DROP",
+   "BANNED"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "tackler": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0085ca",
+    "pants": "#c0c0c0",
+    "skin": "#a8714c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "54"
+   },
+   "at": [
+    0.6,
+    0
+   ]
+  },
+  "runner": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#97233f",
+    "pants": "#f4f4f4",
+    "skin": "#5a3825",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "number": "6"
+   },
+   "at": [
+    2.4,
+    0.2
+   ],
+   "hold": "football"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "shirt": "#ffffff",
+    "pants": "#1b1b1b",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#888888",
+    "cap": "#ffffff"
+   },
+   "at": [
+    -2.4,
+    -1
+   ],
+   "hold": "flag"
+  },
+  "exec": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b2e",
+    "pants": "#2b2b2e",
+    "skin": "#c98d63",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "glasses": true
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2024, the NFL banned a tackle. Officials took sixteen weeks to flag it once.",
+   "key": [
+    "ONCE."
+   ],
+   "cap": "In 2024, the NFL banned a tackle. Officials took 16 weeks to flag it once.",
+   "place": {
+    "tackler": false,
+    "runner": false,
+    "exec": false,
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "ref": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It's called the hip-drop tackle.",
+   "key": [
+    "HIP-DROP"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here's the move. The tackler grabs the runner with both arms.",
+   "key": [
+    "BOTH",
+    "ARMS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "HIP-DROP",
+     "TACKLE"
+    ]
+   },
+   "board": [
+    "HIP-DROP",
+    "TACKLE"
+   ],
+   "place": {
+    "tackler": [
+     -0.6,
+     0.4
+    ],
+    "runner": [
+     0.9,
+     0.4
+    ],
+    "capy": [
+     -2.8,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "tackler",
+    "with": "runner"
+   },
+   "act": {
+    "tackler": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "runner"
+    },
+    "runner": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "tackler"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "tackler"
+    }
+   }
+  },
+  {
+   "text": "Then he swivels, drops his hips, and lands on the runner's legs.",
+   "key": [
+    "LEGS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "tackler"
+   },
+   "act": {
+    "tackler": {
+     "mood": "angry",
+     "action": "slump",
+     "look": "runner"
+    },
+    "runner": {
+     "mood": "shocked",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "In March 2024, the owners banned it. Unanimously.",
+   "key": [
+    "UNANIMOUSLY."
+   ],
+   "board": [
+    "BANNED:",
+    "UNANIMOUS"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The penalty: fifteen yards.",
+   "key": [
+    "15"
+   ],
+   "cap": "The penalty: 15 yards.",
+   "board": [
+    "PENALTY",
+    "15 YARDS"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "tackler": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then the season starts. Week one. No flag.",
+   "key": [
+    "NO",
+    "FLAG."
+   ],
+   "cap": "Then the season starts. Week 1. No flag.",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "WEEK 1",
+     "FLAGS: 0"
+    ]
+   },
+   "board": [
+    "WEEK 1",
+    "FLAGS: 0"
+   ],
+   "place": {
+    "ref": [
+     0,
+     0.6
+    ],
+    "tackler": [
+     -2.2,
+     -1.2
+    ],
+    "runner": [
+     2.0,
+     -1.4
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "tackler": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "runner": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Week five. Week ten. Still no flag.",
+   "key": [
+    "STILL"
+   ],
+   "cap": "Week 5. Week 10. Still no flag.",
+   "board": [
+    "WEEK 10",
+    "FLAGS: 0"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Week sixteen. Panthers linebacker Jacoby Windmon finally gets one.",
+   "key": [
+    "16."
+   ],
+   "cap": "Week 16. Panthers linebacker Jacoby Windmon finally gets one.",
+   "board": [
+    "WEEK 16",
+    "FLAGS: 1"
+   ],
+   "place": {
+    "tackler": [
+     1.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ref",
+    "with": "tackler"
+   },
+   "act": {
+    "ref": {
+     "mood": "angry",
+     "action": "point",
+     "look": "tackler"
+    },
+    "tackler": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "Fifteen yards. The Cardinals score a touchdown on that drive.",
+   "key": [
+    "TOUCHDOWN"
+   ],
+   "cap": "15 yards. The Cardinals score a touchdown on that drive.",
+   "place": {
+    "runner": [
+     3.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "runner"
+   },
+   "act": {
+    "runner": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the league office reviews the play. And doesn't fine him.",
+   "key": [
+    "DOESN'T",
+    "FINE"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "FINE:",
+     "NONE"
+    ]
+   },
+   "board": [
+    "FINE:",
+    "NONE"
+   ],
+   "place": {
+    "exec": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "exec"
+  },
+  {
+   "text": "The office disagreed with the call.",
+   "key": [
+    "DISAGREED"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "exec"
+  },
+  {
+   "text": "Same week, two 49ers get fined for hip-drops. Neither was flagged.",
+   "key": [
+    "NEITHER"
+   ],
+   "cap": "Same week, two 49ers get fined for hip-drops. Neither was flagged.",
+   "board": [
+    "FINED: 2",
+    "FLAGGED: 0"
+   ],
+   "place": {
+    "capy": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "exec"
+    }
+   }
+  },
+  {
+   "text": "One rule. One flag. And the league disagreed with it.",
+   "key": [
+    "ONE",
+    "FLAG."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "exec"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "exec": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Who should decide, the ref on the field or the league office? Ref or office?",
+   "key": [
+    "REF",
+    "OFFICE?"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "ClickOnDetroit (AP): NFL owners unanimously approve a rule that bans the hip-drop tackle",
+   "url": "https://www.clickondetroit.com/sports/2024/03/25/nfl-owners-unanimously-approve-a-rule-that-bans-the-hip-drop-tackle/"
+  },
+  {
+   "title": "Sharp Football Analysis: What is a Hip-Drop Tackle & How Will the New Penalty Affect the 2024 NFL Season?",
+   "url": "https://www.sharpfootballanalysis.com/analysis/hip-drop-tackle-penalty-2024"
+  },
+  {
+   "title": "NBC Sports/PFT: Panthers flagged for hip-drop tackle, James Conner cuts Panthers lead to 20-10",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/panthers-flagged-for-hip-drop-tackle-james-conner-cuts-panthers-lead-to-20-10"
+  },
+  {
+   "title": "NBC Sports/PFT: NFL fines two players for hip-drop tackles, but no fine for the only one that was flagged",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-fines-two-players-for-hip-drop-tackles-but-no-fine-for-the-only-one-that-was-flagged"
+  },
+  {
+   "title": "SI: Former Steelers LB Makes Bad NFL History (first hip-drop flag)",
+   "url": "https://www.si.com/nfl/steelers/news/former-pittsburgh-steelers-jacoby-windmon-bad-nfl-history-hip-drop-tackle"
+  },
+  {
+   "title": "Football Zebras: What is a hip-drop tackle and how is the ban going to be enforced?",
+   "url": "https://www.footballzebras.com/?p=42013"
+  }
+ ]
+}

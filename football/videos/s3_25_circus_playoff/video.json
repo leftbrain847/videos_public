@@ -1,0 +1,643 @@
+{
+ "id": "s3_25_circus_playoff",
+ "title": "The title game on circus dirt",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "1932",
+   "PLAYOFF"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "bear": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b2a5c",
+    "pants": "#c9a74a",
+    "number": "3",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f0c8a0",
+    "longSleeve": true
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "spartan": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#5b2a86",
+    "pants": "#c9a74a",
+    "number": "22",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b",
+    "longSleeve": true
+   },
+   "at": "right"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "shirt": "#f4f4f4",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#5a5a5a",
+    "skin": "#e0ac85",
+    "cap": "#f4f4f4"
+   },
+   "at": "center"
+  },
+  "fan": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#6b4a2b",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#c68e62",
+    "cap": "#3c3c3c"
+   },
+   "at": "center"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2e3440",
+    "pants": "#2e3440",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f0c8a0",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "The NFL's first playoff game was played indoors. On circus dirt.",
+   "key": [
+    "CIRCUS",
+    "DIRT."
+   ],
+   "place": {
+    "spartan": false,
+    "ref": false,
+    "fan": false,
+    "boss": false,
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "bear": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bear"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "bear": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "December 1932. Chicago and Portsmouth had tied for first place. One extra game would decide it.",
+   "key": [
+    "TIED",
+    "EXTRA"
+   ],
+   "board": [
+    "TIED FOR",
+    "1ST PLACE"
+   ],
+   "place": {
+    "capy": false,
+    "bear": [
+     4.6,
+     0.5
+    ],
+    "spartan": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "bear",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "bear": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "spartan"
+    },
+    "spartan": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "bear"
+    }
+   }
+  },
+  {
+   "text": "Then a blizzard hit, so the game moved into a hockey arena.",
+   "key": [
+    "BLIZZARD",
+    "HOCKEY"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "BLIZZARD",
+     "GAME MOVED"
+    ]
+   },
+   "board": [
+    "BLIZZARD",
+    "GAME MOVED"
+   ],
+   "place": {
+    "fan": [
+     -2.0,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "fan",
+    "offset": [
+     2,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A circus had just been there. The floor was dirt, plus elephant manure.",
+   "key": [
+    "ELEPHANT",
+    "MANURE."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "ARENA",
+     "FLOOR: DIRT"
+    ],
+    "grass": "#9a7448"
+   },
+   "board": [
+    "ARENA",
+    "FLOOR: DIRT"
+   ],
+   "place": {
+    "bear": [
+     -1.2,
+     0
+    ],
+    "spartan": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "bear",
+    "with": "spartan"
+   },
+   "act": {
+    "bear": {
+     "mood": "confused",
+     "action": "facepalm",
+     "look": "spartan"
+    },
+    "spartan": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "bear"
+    }
+   }
+  },
+  {
+   "text": "The field was only eighty yards long.",
+   "cap": "The field was only 80 yards long.",
+   "key": [
+    "80",
+    "YARDS"
+   ],
+   "board": [
+    "FIELD",
+    "80 YARDS"
+   ],
+   "place": {
+    "bear": [
+     4.6,
+     0.5
+    ],
+    "spartan": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "bear",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "bear": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "spartan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Narrower, too. Walls ran right along the sidelines.",
+   "key": [
+    "WALLS"
+   ],
+   "place": {
+    "bear": false,
+    "spartan": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "spartan"
+   },
+   "act": {
+    "spartan": {
+     "mood": "worried",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "So they made up rules. Field goals? Banned.",
+   "key": [
+    "BANNED."
+   ],
+   "place": {
+    "ref": [
+     0,
+     0.5
+    ],
+    "spartan": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "ref"
+  },
+  {
+   "text": "The goalposts moved up to the goal line.",
+   "key": [
+    "GOAL",
+    "LINE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "ref"
+  },
+  {
+   "text": "And plays ending within ten yards of a sideline got moved toward the middle.",
+   "cap": "And plays ending within 10 yards of a sideline got moved toward the middle.",
+   "key": [
+    "10",
+    "MIDDLE."
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.6
+    ],
+    "ref": [
+     0.8,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "ref"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Three quarters went by. No score.",
+   "cap": "3 quarters went by. No score.",
+   "key": [
+    "NO",
+    "SCORE."
+   ],
+   "board": [
+    "BEARS 0",
+    "SPARTANS 0"
+   ],
+   "place": {
+    "capy": false,
+    "ref": false,
+    "bear": [
+     4.6,
+     0.5
+    ],
+    "spartan": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "bear",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "bear": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "spartan": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then Bronko Nagurski threw a short touchdown to Red Grange.",
+   "key": [
+    "TOUCHDOWN"
+   ],
+   "place": {
+    "bear": [
+     0,
+     0
+    ],
+    "spartan": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "bear"
+   },
+   "act": {
+    "bear": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Portsmouth protested he wasn't five yards behind the line, as required. It counted anyway.",
+   "cap": "Portsmouth protested he wasn't 5 yards behind the line, as required. It counted anyway.",
+   "key": [
+    "5",
+    "COUNTED"
+   ],
+   "place": {
+    "bear": [
+     -1.2,
+     0
+    ],
+    "spartan": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "spartan",
+    "with": "bear"
+   },
+   "act": {
+    "spartan": {
+     "mood": "angry",
+     "action": "point",
+     "look": "bear"
+    },
+    "bear": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "spartan"
+    }
+   }
+  },
+  {
+   "text": "Add a safety, and Chicago won, nine to nothing.",
+   "cap": "Add a safety, and Chicago won, 9 to 0.",
+   "key": [
+    "9"
+   ],
+   "board": [
+    "BEARS 9",
+    "SPARTANS 0"
+   ],
+   "place": {
+    "bear": [
+     4.6,
+     0.5
+    ],
+    "spartan": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "bear",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "bear": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "spartan": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "bear"
+    }
+   }
+  },
+  {
+   "text": "The next year, hash marks became permanent, and goalposts moved to the goal line.",
+   "key": [
+    "HASH",
+    "MARKS"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NEW RULES",
+     "HASH MARKS"
+    ]
+   },
+   "board": [
+    "NEW RULES",
+    "HASH MARKS"
+   ],
+   "place": {
+    "boss": [
+     2.4,
+     -1.5
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you watch a title game on circus dirt? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "CIRCUS",
+     "DIRT?"
+    ]
+   },
+   "board": [
+    "CIRCUS",
+    "DIRT?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "bear": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bear"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "bear": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Pro Football Hall of Fame: The first playoff game",
+   "url": "https://profootballhof.com/football-history/the-first-playoff-game"
+  },
+  {
+   "title": "History.com: The bizarre history of the NFL's first title game",
+   "url": "https://www.history.com/articles/the-bizarre-history-of-the-nfls-first-title-game"
+  },
+  {
+   "title": "ChicagoBears.com: Bears played NFL's first indoor game",
+   "url": "https://www.chicagobears.com/news/bears-played-nfl-s-first-indoor-game-12689196"
+  },
+  {
+   "title": "Wikipedia: 1932 NFL Playoff Game",
+   "url": "https://en.wikipedia.org/wiki/1932_NFL_Playoff_Game"
+  }
+ ]
+}

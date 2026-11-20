@@ -1,0 +1,501 @@
+{
+ "id": "s1_12_fail_mary",
+ "title": "The Fail Mary",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "PACKERS 12",
+   "SEAHAWKS 7"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#16284a",
+    "pants": "#16284a",
+    "number": "81",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4128"
+   },
+   "at": "left"
+  },
+  "sf": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f4d2e",
+    "pants": "#e8c25a",
+    "number": "43",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5e3a24"
+   },
+   "at": "right",
+   "hold": "football"
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#16284a",
+    "pants": "#16284a",
+    "number": "3",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center"
+  },
+  "ref1": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "left"
+  },
+  "ref2": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#c98d64",
+    "cap": "#f4f4f4"
+   },
+   "at": "right"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b33",
+    "pants": "#2b2b33",
+    "hair": "short",
+    "hairColor": "#cfcfcf",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2012, two referees made two different calls on the same last play. One of them counted.",
+   "key": [
+    "TWO",
+    "DIFFERENT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "ref1": [
+     0.9,
+     0
+    ],
+    "wr": false,
+    "sf": false,
+    "qb": false,
+    "ref2": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref1": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "They were replacement officials. The regular ones were locked out.",
+   "key": [
+    "REPLACEMENT"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ref1"
+   },
+   "act": {
+    "ref1": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "ref1"
+    }
+   }
+  },
+  {
+   "text": "Monday night. Green Bay leads Seattle, twelve to seven. Last play.",
+   "cap": "Monday night. Green Bay leads Seattle, 12 to 7. Last play.",
+   "key": [
+    "12",
+    "7."
+   ],
+   "place": {
+    "capy": false,
+    "ref1": false,
+    "qb": "center",
+    "sf": [
+     1.6,
+     -1.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "sf": {
+     "mood": "smug",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Fourth and ten. Russell Wilson throws a Hail Mary.",
+   "cap": "4th and 10. Russell Wilson throws a Hail Mary.",
+   "key": [
+    "HAIL",
+    "MARY."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "throw"
+    }
+   }
+  },
+  {
+   "text": "Golden Tate shoves a defender to the ground. No flag.",
+   "key": [
+    "SHOVES"
+   ],
+   "place": {
+    "qb": false,
+    "wr": [
+     -0.6,
+     0
+    ],
+    "sf": [
+     0.9,
+     -0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "wr",
+    "with": "sf"
+   },
+   "act": {
+    "wr": {
+     "mood": "angry",
+     "action": "point",
+     "look": "sf"
+    },
+    "sf": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "In the end zone, Green Bay's M.D. Jennings grabs the ball. Tate grabs it too.",
+   "key": [
+    "TOO."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "sf"
+   },
+   "act": {
+    "sf": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "sf"
+    }
+   }
+  },
+  {
+   "text": "One official signals touchdown. The other signals touchback.",
+   "key": [
+    "TOUCHDOWN.",
+    "TOUCHBACK."
+   ],
+   "place": {
+    "wr": false,
+    "sf": false,
+    "ref1": [
+     -1.0,
+     0
+    ],
+    "ref2": [
+     1.0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ref1",
+    "with": "ref2"
+   },
+   "act": {
+    "ref1": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "ref2": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "ref1"
+    }
+   }
+  },
+  {
+   "text": "The rule: if two opponents catch it at the same time, it goes to the passing team.",
+   "key": [
+    "SAME",
+    "TIME,"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "SIMULTANEOUS",
+     "= OFFENSE"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "ref1": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref1"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref1": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Simultaneous catch, they said. Touchdown, Seattle.",
+   "key": [
+    "SIMULTANEOUS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "ref1"
+   },
+   "act": {
+    "ref1": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Replay found no clear evidence to overturn it. Seattle wins, fourteen to twelve.",
+   "cap": "Replay found no clear evidence to overturn it. Seattle wins, 14 to 12.",
+   "key": [
+    "14"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PACKERS 12",
+     "SEAHAWKS 14"
+    ]
+   },
+   "place": {
+    "wr": [
+     -1.0,
+     0
+    ],
+    "sf": [
+     1.0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "sf": {
+     "mood": "angry",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "The next day, the league said the shove should have been flagged. The result stood.",
+   "key": [
+    "STOOD."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "RESULT:",
+     "FINAL"
+    ]
+   },
+   "place": {
+    "boss": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "boss"
+  },
+  {
+   "text": "Within days, the lockout was over. The regular referees were back.",
+   "key": [
+    "BACK."
+   ],
+   "place": {
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "So, was it a catch, or an interception? One word, below.",
+   "key": [
+    "CATCH,",
+    "INTERCEPTION?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "CATCH OR",
+     "INTERCEPTION?"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "sf": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sf"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sf": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Fail Mary",
+   "url": "https://en.wikipedia.org/wiki/Fail_Mary"
+  },
+  {
+   "title": "KUNC (NPR): Bring back the real NFL refs? Debacle at end of game adds to outrage (with NFL statement)",
+   "url": "https://www.kunc.org/npr-news/2012-09-25/bring-back-the-real-nfl-refs-debacle-at-end-of-game-adds-to-outrage"
+  },
+  {
+   "title": "ESPN: The Fail Mary",
+   "url": "https://www.espn.com/nfl/feature/moment/_/page/failmary/fail-mary"
+  },
+  {
+   "title": "TSN (Canadian Press): NFL's last foray into replacement refs featured blown calls, rule mix-ups and the Fail Mary",
+   "url": "https://www.tsn.ca/nfl/article/nfls-last-foray-into-replacement-refs-featured-blown-calls-rule-mixups-and-the-fail-mary/"
+  }
+ ]
+}

@@ -1,0 +1,585 @@
+{
+ "id": "s3_24_super_bowl_blackout",
+ "title": "The Super Bowl blackout",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "DELAY",
+   "34 MIN"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "raven": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#2b1a6b",
+    "pants": "#1b1b1b",
+    "number": "12",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "niner": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#aa0000",
+    "pants": "#c9a74a",
+    "number": "7",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#c68e62"
+   },
+   "at": "right"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5b5f66",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#3b2416",
+    "skin": "#e0ac85"
+   },
+   "at": "center"
+  },
+  "tech": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#f6d21f",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "cap": "#1f3f8f",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2013, the Super Bowl stopped for thirty four minutes, because the lights went out.",
+   "cap": "In 2013, the Super Bowl stopped for 34 minutes, because the lights went out.",
+   "key": [
+    "34",
+    "LIGHTS"
+   ],
+   "place": {
+    "niner": false,
+    "fan": false,
+    "tech": false,
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "raven": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "raven"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "raven": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Baltimore against San Francisco, in New Orleans.",
+   "key": [
+    "NEW",
+    "ORLEANS."
+   ],
+   "place": {
+    "capy": false,
+    "raven": [
+     -1.2,
+     0
+    ],
+    "niner": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "raven",
+    "with": "niner"
+   },
+   "act": {
+    "raven": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "niner"
+    },
+    "niner": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "raven"
+    }
+   }
+  },
+  {
+   "text": "Baltimore opened the second half with a one hundred eight yard kickoff return touchdown.",
+   "cap": "Baltimore opened the second half with a 108 yard kickoff return touchdown.",
+   "key": [
+    "108"
+   ],
+   "place": {
+    "niner": false,
+    "raven": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "raven"
+   },
+   "act": {
+    "raven": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A Super Bowl record, by Jacoby Jones. Twenty eight to six.",
+   "cap": "A Super Bowl record, by Jacoby Jones. 28 to 6.",
+   "key": [
+    "RECORD,",
+    "28"
+   ],
+   "board": [
+    "RAVENS 28",
+    "49ERS 6"
+   ],
+   "place": {
+    "raven": [
+     4.6,
+     0.5
+    ],
+    "niner": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "raven",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "raven": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "niner": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "raven"
+    }
+   }
+  },
+  {
+   "text": "Then, early in the third quarter, about half the stadium went dark.",
+   "key": [
+    "HALF",
+    "DARK."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "POWER",
+     "OUT"
+    ]
+   },
+   "board": [
+    "POWER",
+    "OUT"
+   ],
+   "place": {
+    "fan": [
+     -2.0,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "fan",
+    "offset": [
+     2,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then everyone waited. For thirty four minutes.",
+   "cap": "Then everyone waited. For 34 minutes.",
+   "key": [
+    "34",
+    "MINUTES."
+   ],
+   "board": [
+    "DELAY",
+    "34 MIN"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "When play resumed, San Francisco scored seventeen straight points.",
+   "cap": "When play resumed, San Francisco scored 17 straight points.",
+   "key": [
+    "17",
+    "STRAIGHT"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAVENS 28",
+     "49ERS 23"
+    ]
+   },
+   "board": [
+    "RAVENS 28",
+    "49ERS 23"
+   ],
+   "place": {
+    "niner": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "niner"
+   },
+   "act": {
+    "niner": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty eight to twenty three.",
+   "cap": "28 to 23.",
+   "key": [
+    "23."
+   ],
+   "place": {
+    "niner": [
+     4.6,
+     0.5
+    ],
+    "raven": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "niner",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "niner": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    },
+    "raven": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "niner"
+    }
+   }
+  },
+  {
+   "text": "Later, Colin Kaepernick ran in a fifteen yard touchdown. Thirty one to twenty nine.",
+   "cap": "Later, Colin Kaepernick ran in a 15 yard touchdown. 31 to 29.",
+   "key": [
+    "31",
+    "29."
+   ],
+   "board": [
+    "RAVENS 31",
+    "49ERS 29"
+   ],
+   "place": {
+    "niner": [
+     -1.2,
+     0
+    ],
+    "raven": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "niner",
+    "with": "raven"
+   },
+   "act": {
+    "niner": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "raven"
+    },
+    "raven": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "niner"
+    }
+   }
+  },
+  {
+   "text": "The two point try to tie it failed.",
+   "cap": "The 2-point try to tie it failed.",
+   "key": [
+    "FAILED."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "niner"
+   },
+   "act": {
+    "niner": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Baltimore won, thirty four to thirty one.",
+   "cap": "Baltimore won, 34 to 31.",
+   "key": [
+    "34"
+   ],
+   "board": [
+    "RAVENS 34",
+    "49ERS 31"
+   ],
+   "place": {
+    "raven": [
+     4.6,
+     0.5
+    ],
+    "niner": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "raven",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "raven": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "niner": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "raven"
+    }
+   }
+  },
+  {
+   "text": "And the cause of the blackout? A relay device, installed to protect the Superdome's power.",
+   "key": [
+    "RELAY",
+    "PROTECT"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CAUSE:",
+     "RELAY DEVICE"
+    ]
+   },
+   "board": [
+    "CAUSE:",
+    "RELAY DEVICE"
+   ],
+   "place": {
+    "tech": [
+     1.4,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "tech",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "tech": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It cut the power instead.",
+   "key": [
+    "INSTEAD."
+   ],
+   "place": {
+    "capy": [
+     -0.8,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "tech",
+    "with": "capy"
+   },
+   "act": {
+    "tech": {
+     "mood": "worried",
+     "action": "facepalm"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "So, did the blackout change who won? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "LIGHTS",
+     "OUT"
+    ]
+   },
+   "board": [
+    "LIGHTS",
+    "OUT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "niner": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "niner"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "niner": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com: Baltimore Ravens survive San Francisco 49ers rally to win Super Bowl",
+   "url": "https://nfl.com/news/baltimore-ravens-survive-san-francisco-49ers-rally-to-win-super-0ap1000000135382"
+  },
+  {
+   "title": "Global News (AP): Lights out, Ravens edge 49ers 34-31 to win Super Bowl",
+   "url": "https://globalnews.ca/news/387950/lights-out-ravens-edge-49ers-34-31-win-super-bowl-game-delayed-by-power-problem-in-2nd-half"
+  },
+  {
+   "title": "Yahoo Sports: After outage changes momentum, Ravens recover to win Super Bowl",
+   "url": "https://sports.yahoo.com/news/outage-changes-momentum-ravens-recover-050006293--nfl.html"
+  },
+  {
+   "title": "ESPN: Utility says bad device caused Super Bowl blackout",
+   "url": "https://www.espn.com/nfl/playoffs/2012/story/_/id/8929106/super-bowl-xlvii-utility-says-bad-device-caused-super-bowl-blackout"
+  },
+  {
+   "title": "NFL.com: Super Bowl blackout caused by faulty relay device, report finds",
+   "url": "https://nfl.com/news/super-bowl-blackout-caused-by-faulty-relay-device-report-finds-0ap1000000152743"
+  }
+ ]
+}

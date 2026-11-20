@@ -1,0 +1,441 @@
+{
+ "id": "s3_11_basement_draft",
+ "title": "The draft from the basement",
+ "set": "living",
+ "setOpts": {
+  "boardText": [
+   "2020 DRAFT",
+   "ROUND 1"
+  ],
+  "couch": "#8a6b4a"
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": [
+    -1.3,
+    4.4
+   ],
+   "face": 15
+  },
+  "comm": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2f3a",
+    "pants": "#2b2f3a",
+    "hair": "short",
+    "hairColor": "#a8a8a8",
+    "skin": "#f2c39b"
+   },
+   "at": [
+    1.2,
+    4.2
+   ],
+   "face": -15,
+   "hold": "envelope"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#97233f",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b98f"
+   },
+   "at": "desk",
+   "hold": "phone"
+  },
+  "gm": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#14306b",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "right",
+   "hold": "phone"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, the NFL draft was run from a basement.",
+   "key": [
+    "BASEMENT."
+   ],
+   "place": {
+    "coach": false,
+    "gm": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "comm"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "comm": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The pandemic shut everything down. So the draft went fully virtual.",
+   "key": [
+    "VIRTUAL."
+   ],
+   "board": [
+    "DRAFT:",
+    "VIRTUAL"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "comm"
+   },
+   "act": {
+    "comm": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "comm"
+    }
+   }
+  },
+  {
+   "text": "Commissioner Roger Goodell read the picks from the basement of his New York home.",
+   "key": [
+    "BASEMENT"
+   ],
+   "place": {
+    "capy": false,
+    "comm": [
+     0,
+     4.2
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "comm"
+   },
+   "act": {
+    "comm": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "comm"
+  },
+  {
+   "text": "Coaches and general managers drafted from home too.",
+   "key": [
+    "HOME"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "ON THE CLOCK"
+    ]
+   },
+   "place": {
+    "coach": "desk",
+    "gm": [
+     2.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "gm": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "coach"
+    }
+   },
+   "board": [
+    "ON THE CLOCK"
+   ]
+  },
+  {
+   "text": "Arizona's coach, Kliff Kingsbury, drafted from his house in Paradise Valley.",
+   "key": [
+    "PARADISE"
+   ],
+   "board": [
+    "ARIZONA",
+    "PARADISE VALLEY"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "coach"
+  },
+  {
+   "text": "Bill Belichick was on camera too. So was his dog, Nike.",
+   "key": [
+    "DOG,",
+    "NIKE."
+   ],
+   "board": [
+    "NEW ENGLAND",
+    "+ NIKE THE DOG"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "gm"
+   },
+   "act": {
+    "gm": {
+     "mood": "neutral",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nike made zero picks. As far as we know.",
+   "cap": "Nike made 0 picks. As far as we know.",
+   "key": [
+    "0"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "confused",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A few teams had Wi-Fi trouble.",
+   "key": [
+    "WI-FI"
+   ],
+   "board": [
+    "CONNECTION",
+    "LOST"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "gm"
+   },
+   "act": {
+    "gm": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "But not one team missed a pick.",
+   "key": [
+    "MISSED"
+   ],
+   "board": [
+    "PICKS MISSED",
+    "0"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "gm"
+   },
+   "act": {
+    "gm": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "And people watched. Round one drew fifteen point six million viewers. A record.",
+   "cap": "And people watched. Round one drew 15.6 million viewers. A record.",
+   "key": [
+    "15.6"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "ROUND 1",
+     "15.6M VIEWERS"
+    ],
+    "couch": "#8a6b4a"
+   },
+   "place": {
+    "comm": [
+     0,
+     4.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "comm"
+   },
+   "act": {
+    "comm": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "board": [
+    "ROUND 1",
+    "15.6M VIEWERS"
+   ]
+  },
+  {
+   "text": "Over three days, it averaged eight point four million.",
+   "cap": "Over 3 days, it averaged 8.4 million.",
+   "key": [
+    "8.4"
+   ],
+   "board": [
+    "3-DAY AVERAGE",
+    "8.4M"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "comm"
+   },
+   "act": {
+    "comm": {
+     "mood": "happy",
+     "action": "point"
+    }
+   }
+  },
+  {
+   "text": "The old record was six point two.",
+   "cap": "The old record was 6.2.",
+   "key": [
+    "6.2."
+   ],
+   "board": [
+    "OLD RECORD",
+    "6.2M"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "comm"
+   },
+   "act": {
+    "comm": {
+     "mood": "smug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The most watched draft in history came out of a basement.",
+   "key": [
+    "BASEMENT."
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.4
+    ],
+    "comm": [
+     1.2,
+     4.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "comm": {
+     "mood": "happy",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you rather draft from a big stage or from your couch? Stage or couch?",
+   "key": [
+    "COUCH?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "comm"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "comm": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com: The untold stories of the NFL's 2020 virtual draft",
+   "url": "https://www.nfl.com/news/the-untold-stories-of-the-nfl-s-2020-virtual-draft"
+  },
+  {
+   "title": "AP via CBS News: Record 8.4 million viewers watch NFL draft across 3 days",
+   "url": "https://www.cbsnews.com/news/nfl-draft-record-viewers-8-4-million"
+  },
+  {
+   "title": "Washington Times: NFL's virtual draft surprisingly more lemonade than lemon",
+   "url": "https://m.washingtontimes.com/news/2020/apr/26/nfls-virtual-draft-surprisingly-more-lemonade-lemo/"
+  }
+ ]
+}

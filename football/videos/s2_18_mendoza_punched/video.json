@@ -1,0 +1,473 @@
+{
+ "id": "s2_18_mendoza_punched",
+ "title": "The No. 1 pick's first start",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "RAIDERS",
+   "SEAHAWKS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "rookie": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#c9ced3",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "number": "8"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "vet": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#1b1b1b",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#b07a4a",
+    "skin": "#f2c39b"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "rush1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#002244",
+    "pants": "#a5acaf",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "number": "21"
+   },
+   "at": [
+    -2.2,
+    -1.4
+   ]
+  },
+  "rush2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#002244",
+    "pants": "#a5acaf",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c",
+    "number": "58"
+   },
+   "at": [
+    2.2,
+    -1.6
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "The number one pick got his first NFL start. He scored on his very first drive.",
+   "cap": "The #1 pick got his first NFL start. He scored on his very first drive.",
+   "key": [
+    "DRIVE."
+   ],
+   "place": {
+    "vet": false,
+    "rush1": false,
+    "rush2": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rookie"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "rookie": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Fernando Mendoza, the top pick in the draft, had been waiting behind veteran Kirk Cousins.",
+   "key": [
+    "WAITING"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "QB1:",
+     "COUSINS"
+    ]
+   },
+   "place": {
+    "rookie": "left",
+    "vet": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "rookie",
+    "with": "vet"
+   },
+   "act": {
+    "rookie": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "vet"
+    },
+    "vet": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the Raiders traded Cousins to Minnesota. The job was his.",
+   "key": [
+    "TRADED"
+   ],
+   "place": {
+    "vet": false,
+    "rookie": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rookie"
+   },
+   "act": {
+    "rookie": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Opening drive against Seattle. Eleven plays.",
+   "cap": "Opening drive against Seattle. 11 plays.",
+   "key": [
+    "11"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAIDERS 0",
+     "SEAHAWKS 0"
+    ]
+   },
+   "place": {
+    "rookie": "center",
+    "rush1": [
+     -2.0,
+     -2.0
+    ],
+    "rush2": [
+     2.0,
+     -2.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "rookie"
+   },
+   "act": {
+    "rookie": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "rush1": {
+     "mood": "angry",
+     "action": "cross"
+    },
+    "rush2": {
+     "mood": "angry"
+    }
+   }
+  },
+  {
+   "text": "He scrambles ten yards. Touchdown.",
+   "cap": "He scrambles 10 yards. Touchdown.",
+   "key": [
+    "10"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "rookie"
+   },
+   "act": {
+    "rookie": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "His first NFL touchdown, and the Raiders lead seven to nothing.",
+   "cap": "His first NFL touchdown, and the Raiders lead 7 to 0.",
+   "key": [
+    "7"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rookie"
+   },
+   "act": {
+    "rookie": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then Seattle's defense started to figure him out.",
+   "key": [
+    "FIGURE"
+   ],
+   "place": {
+    "capy": [
+     -3.8,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rush1"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "rush1"
+    },
+    "rush1": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "rookie"
+    },
+    "rookie": {
+     "mood": "worried"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Sack. Then another. Then another.",
+   "key": [
+    "ANOTHER."
+   ],
+   "place": {
+    "capy": false,
+    "rush2": [
+     0.9,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rush2"
+   },
+   "act": {
+    "rush2": {
+     "mood": "angry",
+     "action": "point",
+     "look": "rookie"
+    },
+    "rookie": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "rush1": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Six sacks in all.",
+   "cap": "6 sacks in all.",
+   "key": [
+    "6"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "rookie"
+   },
+   "act": {
+    "rookie": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "rush1": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "rush2": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "He finished seventeen of twenty nine, for one hundred forty three yards.",
+   "cap": "He finished 17 of 29, for 143 yards.",
+   "key": [
+    "143"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "RAIDERS 13",
+     "SEAHAWKS 21"
+    ]
+   },
+   "place": {
+    "rookie": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rookie"
+   },
+   "act": {
+    "rookie": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Seattle came back. The Raiders lost, twenty one to thirteen.",
+   "cap": "Seattle came back. The Raiders lost, 21 to 13.",
+   "key": [
+    "21"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "rookie"
+   },
+   "act": {
+    "rookie": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "His take? Most of those sacks were on him, not on his line.",
+   "key": [
+    "HIM,"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "POSTGAME"
+    ]
+   },
+   "place": {
+    "rookie": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rookie"
+   },
+   "act": {
+    "rookie": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "rookie"
+  },
+  {
+   "text": "He also said it's good to get punched in the face.",
+   "key": [
+    "PUNCHED"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rookie"
+   },
+   "act": {
+    "rookie": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "rookie"
+  },
+  {
+   "text": "Is a rough first start good for a rookie? Yes or no?",
+   "key": [
+    "ROUGH"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "START 1:",
+     "DONE"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "rookie": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rookie"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "rookie": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP (Fox 5 Vegas): Fernando Mendoza shows promise, growing pains as Raiders lose to Seahawks in his first start",
+   "url": "https://www.fox5vegas.com/2026/11/16/live-fernando-mendoza-shows-promise-growing-pains-raiders-lose-seahawks-his-first-start/"
+  },
+  {
+   "title": "NBC Bay Area: Raiders' Fernando Mendoza debut vs. Seahawks",
+   "url": "https://www.nbcbayarea.com/news/sports/nfl/raiders-fernando-mendoza-debut-seahawks/"
+  },
+  {
+   "title": "ESPN (ABC7): Raiders' Fernando Mendoza vows to learn from first NFL start, a loss to Seahawks",
+   "url": "https://abc7news.com/post/raiders-fernando-mendoza-vows-learn-first-nfl-start-loss-seahawks/20043253/"
+  }
+ ]
+}

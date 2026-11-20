@@ -1,0 +1,24 @@
+:root { --bg: #14130f; --card: #1f1d18; --ink: #f4efe6; --muted: #b9b1a3; --accent: #f28c28; --gap: 10px; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.4 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; }
+header { position: sticky; top: 0; z-index: 2; background: var(--bg); padding: 12px 12px 8px; padding-top: max(12px, env(safe-area-inset-top)); }
+h1 { margin: 0; font-size: 20px; }
+#count { margin: 2px 0 8px; color: var(--muted); font-size: 13px; }
+#tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+#tabs button { flex: none; border: 1px solid #3a362e; background: var(--card); color: var(--ink); border-radius: 999px; padding: 7px 12px; font: inherit; font-size: 13px; }
+#tabs button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #1b1307; font-weight: 700; }
+main { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--gap); padding: 4px 12px 40px; }
+.card { background: var(--card); border: 0; padding: 0; border-radius: 12px; overflow: hidden; color: inherit; text-align: left; font: inherit; }
+.card img { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; background: #2a2720; }
+.card span { display: block; padding: 7px 8px 9px; font-size: 13px; font-weight: 600; }
+.card small { display: block; color: var(--muted); font-weight: 400; margin-top: 2px; }
+dialog { width: 100%; max-width: 480px; max-height: 100dvh; margin: auto; padding: 0; border: 0; background: var(--bg); color: var(--ink); }
+dialog::backdrop { background: rgba(0, 0, 0, .85); }
+dialog video { display: block; width: 100%; max-height: 72dvh; background: #000; }
+.meta { padding: 10px 12px 16px; }
+.meta h2 { margin: 0 0 4px; font-size: 17px; }
+.meta p { margin: 0 0 8px; color: var(--muted); }
+.meta a { color: var(--accent); word-break: break-word; }
+.meta ul { padding-left: 18px; margin: 6px 0; font-size: 13px; }
+.row { display: flex; gap: 8px; margin-top: 10px; }
+.row button { flex: 1; padding: 10px; border-radius: 10px; border: 1px solid #3a362e; background: var(--card); color: var(--ink); font: inherit; }

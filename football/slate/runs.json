@@ -1,0 +1,58 @@
+[
+ {
+  "run": "s1a",
+  "set": "s1",
+  "theme": "Wait, that's the rule? \u2014 catching, passing, fumbles and replay review (tuck rule, catch rule, Holy Roller, pass interference replay, ineligible-receiver trick)",
+  "count": 13,
+  "first": 1
+ },
+ {
+  "run": "s1b",
+  "set": "s1",
+  "theme": "Wait, that's the rule? \u2014 kicking, special teams, scoring, clock and tiebreaker rules (fair catch kick, one-point safety, 2024 kickoff overhaul, hip-drop ban, tush push vote, playoff seeding math)",
+  "count": 12,
+  "first": 14
+ },
+ {
+  "run": "s2a",
+  "set": "s2",
+  "theme": "This season \u2014 the 2026 NFL season, September and October: wildest moments, rulings and records",
+  "count": 13,
+  "first": 1
+ },
+ {
+  "run": "s2b",
+  "set": "s2",
+  "theme": "This season \u2014 the 2026 NFL season, November to today: wildest moments, rulings and records",
+  "count": 12,
+  "first": 14
+ },
+ {
+  "run": "s3a",
+  "set": "s3",
+  "theme": "The strange years \u2014 the 2020 COVID season only (empty stadiums and cardboard fans, Tuesday games, postponements, roster chaos). s3_01 Kendall Hinton already exists",
+  "count": 12,
+  "first": 2
+ },
+ {
+  "run": "s3b",
+  "set": "s3",
+  "theme": "The strange years \u2014 every other strange season or game: 1982 and 1987 strikes and replacement players, Fog Bowl, Ice Bowl, Snow Bowl, the Saints' 2005 season without a home, games moved or played in absurd conditions",
+  "count": 12,
+  "first": 14
+ },
+ {
+  "run": "s4a",
+  "set": "s4",
+  "theme": "Endings nobody forgets \u2014 lateral miracles and wild final plays (Music City Miracle, River City Relay, Minneapolis Miracle, Miracle at the New Meadowlands, Immaculate Reception, Double Doink, Helmet Catch, Philly Special)",
+  "count": 13,
+  "first": 1
+ },
+ {
+  "run": "s4b",
+  "set": "s4",
+  "theme": "Endings nobody forgets \u2014 clock, overtime and standings chaos (13 seconds Bills\u2013Chiefs, the Raiders\u2013Chargers week 18 tie scenario, ties, last-second playoff berths)",
+  "count": 12,
+  "first": 14
+ }
+]

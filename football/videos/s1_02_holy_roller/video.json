@@ -1,0 +1,518 @@
+{
+ "id": "s1_02_holy_roller",
+ "title": "The Holy Roller",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "RAIDERS 14",
+   "CHARGERS 20"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#222222",
+    "pants": "#c9ccd1",
+    "number": "12",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "rb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#222222",
+    "pants": "#c9ccd1",
+    "number": "40",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "left"
+  },
+  "te": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#222222",
+    "pants": "#c9ccd1",
+    "number": "87",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b"
+   },
+   "at": "right"
+  },
+  "def": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#7fb7e6",
+    "pants": "#f4f4f4",
+    "number": "55",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "back"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "right"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b33",
+    "pants": "#2b2b33",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 1978, the Raiders won a game by fumbling forward. On purpose.",
+   "key": [
+    "FORWARD.",
+    "PURPOSE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "qb": [
+     0.9,
+     0
+    ],
+    "rb": false,
+    "te": false,
+    "def": false,
+    "ref": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Ten seconds left. Down twenty to fourteen, at the San Diego fourteen.",
+   "cap": "10 seconds left. Down 20 to 14, at the San Diego 14.",
+   "key": [
+    "10",
+    "SECONDS"
+   ],
+   "place": {
+    "capy": false,
+    "qb": "center",
+    "def": [
+     1.4,
+     -2.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "def": {
+     "mood": "angry",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Ken Stabler dropped back. Nobody open. A defender about to sack him.",
+   "key": [
+    "SACK"
+   ],
+   "place": {
+    "def": [
+     1.1,
+     -0.7
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "def"
+   },
+   "act": {
+    "qb": {
+     "mood": "shocked",
+     "look": "def"
+    },
+    "def": {
+     "mood": "angry",
+     "action": "point",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "So he pushed the ball forward, toward the end zone.",
+   "key": [
+    "FORWARD,"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Pete Banaszak couldn't grab it. He swatted it further.",
+   "key": [
+    "SWATTED"
+   ],
+   "place": {
+    "qb": false,
+    "def": false,
+    "rb": "center"
+   },
+   "shot": {
+    "type": "low",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "Then Dave Casper kicked it into the end zone, and fell on it.",
+   "key": [
+    "KICKED"
+   ],
+   "place": {
+    "te": [
+     1.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "rb",
+    "with": "te"
+   },
+   "act": {
+    "rb": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "te"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "rb"
+    }
+   }
+  },
+  {
+   "text": "Touchdown. Time had run out.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "place": {
+    "ref": [
+     -1.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "cheer"
+    },
+    "rb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "The extra point made it twenty one to twenty. Raiders win.",
+   "cap": "The extra point made it 21 to 20. Raiders win.",
+   "key": [
+    "21",
+    "20."
+   ],
+   "place": {
+    "ref": false,
+    "rb": [
+     -1.0,
+     0
+    ],
+    "te": [
+     1.0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "In San Diego, they still call it the Immaculate Deception.",
+   "key": [
+    "DECEPTION."
+   ],
+   "place": {
+    "rb": false,
+    "te": false,
+    "def": "center"
+   },
+   "shot": {
+    "type": "close",
+    "on": "def"
+   },
+   "act": {
+    "def": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "And Stabler later admitted it. He fumbled on purpose.",
+   "key": [
+    "ADMITTED"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "FUMBLE",
+     "ON PURPOSE"
+    ]
+   },
+   "place": {
+    "qb": "center",
+    "capy": [
+     -2.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "capy"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "qb"
+    }
+   },
+   "speaker": "qb"
+  },
+  {
+   "text": "So that off-season, the league wrote a new rule.",
+   "key": [
+    "NEW",
+    "RULE."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NEW RULE",
+     "1979"
+    ]
+   },
+   "place": {
+    "boss": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "boss"
+  },
+  {
+   "text": "After the two minute warning, only the player who fumbled can advance it.",
+   "cap": "After the 2-minute warning, only the player who fumbled can advance it.",
+   "key": [
+    "ONLY"
+   ],
+   "place": {
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "On fourth down, too. Any time in the game.",
+   "cap": "On 4th down, too. Any time in the game.",
+   "key": [
+    "4TH"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Genius play, or cheating? One word, below.",
+   "key": [
+    "GENIUS",
+    "CHEATING?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "GENIUS",
+     "OR CHEATING?"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "qb": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Pro Football Hall of Fame: The \"Holy Roller\"",
+   "url": "https://profootballhof.com/news/the-holy-roller"
+  },
+  {
+   "title": "ESPN (AP): 'Holy Roller' game still resonates in NFL 4 decades later",
+   "url": "https://www.espn.com/nfl/story/_/id/28319374"
+  },
+  {
+   "title": "Football Zebras: 35 years ago, Holy Roller play revises rule book",
+   "url": "https://www.footballzebras.com/2013/09/35-years-ago-holy-roller-play-revises-rule-book/"
+  },
+  {
+   "title": "Wikipedia: Holy Roller (American football)",
+   "url": "https://en.wikipedia.org/wiki/Holy_Roller_(American_football)"
+  }
+ ]
+}

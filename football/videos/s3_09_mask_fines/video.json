@@ -1,0 +1,520 @@
+{
+ "id": "s3_09_mask_fines",
+ "title": "The hundred-thousand-dollar mask",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "FINE:",
+   "$100,000"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": [
+    -1.2,
+    0.6
+   ],
+   "face": 15
+  },
+  "coachA": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#2f4fa8",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#d9d9d9",
+    "skin": "#f2c39b",
+    "headset": true
+   },
+   "at": [
+    1.2,
+    0.4
+   ],
+   "face": -15,
+   "hold": "clipboard"
+  },
+  "coachB": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#e2551c",
+    "pants": "#3c3c3c",
+    "hair": "bald",
+    "skin": "#e0b48c",
+    "headset": true,
+    "glasses": true
+   },
+   "at": "left"
+  },
+  "coachC": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#b3121a",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "cap": "#1b1b1b",
+    "headset": true
+   },
+   "at": "right"
+  },
+  "official": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b2a5c",
+    "pants": "#1b2a5c",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "envelope"
+  },
+  "raider": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1b1b1b",
+    "pants": "#c9ced6",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "headset": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, five NFL head coaches were fined a hundred thousand dollars each. Over masks.",
+   "cap": "In 2020, five NFL head coaches were fined $100,000 each. Over masks.",
+   "key": [
+    "$100,000"
+   ],
+   "place": {
+    "coachB": false,
+    "coachC": false,
+    "official": false,
+    "raider": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coachA"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coachA": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The rule: on the sideline, everyone except the players wears a mask. At all times.",
+   "key": [
+    "ALL",
+    "TIMES."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SIDELINE RULE:",
+     "MASKS ON"
+    ]
+   },
+   "place": {
+    "official": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "official",
+   "board": [
+    "SIDELINE RULE:",
+    "MASKS ON"
+   ]
+  },
+  {
+   "text": "The league even sent a memo warning of accountability.",
+   "key": [
+    "MEMO"
+   ],
+   "board": [
+    "MEMO:",
+    "ACCOUNTABILITY"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Week two. Three head coaches didn't keep theirs on.",
+   "key": [
+    "THREE"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "WEEK 2"
+    ]
+   },
+   "place": {
+    "coachA": [
+     0,
+     -0.4
+    ],
+    "coachB": [
+     -2.0,
+     0.2
+    ],
+    "coachC": [
+     2.0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "coachA"
+   },
+   "act": {
+    "coachA": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "coachB": {
+     "mood": "angry",
+     "action": "cross"
+    },
+    "coachC": {
+     "mood": "neutral",
+     "action": "point"
+    }
+   },
+   "board": [
+    "WEEK 2"
+   ]
+  },
+  {
+   "text": "Pete Carroll. Vic Fangio. Kyle Shanahan.",
+   "key": [
+    "FANGIO."
+   ],
+   "board": [
+    "CARROLL",
+    "FANGIO  SHANAHAN"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "coachB",
+    "with": "coachA"
+   },
+   "act": {
+    "coachB": {
+     "mood": "confused",
+     "look": "coachA"
+    },
+    "coachA": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "coachB"
+    }
+   }
+  },
+  {
+   "text": "A hundred thousand dollars each. Plus two hundred fifty thousand for each team.",
+   "cap": "$100,000 each. Plus $250,000 for each team.",
+   "key": [
+    "$250,000"
+   ],
+   "board": [
+    "COACH $100,000",
+    "TEAM $250,000"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "coachC"
+   },
+   "act": {
+    "coachC": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The next night, in Las Vegas, two more.",
+   "key": [
+    "TWO",
+    "MORE."
+   ],
+   "place": {
+    "coachA": false,
+    "coachB": false,
+    "coachC": false,
+    "raider": "center"
+   },
+   "board": [
+    "MONDAY NIGHT",
+    "LAS VEGAS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "raider"
+   },
+   "act": {
+    "raider": {
+     "mood": "smug",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "Jon Gruden and Sean Payton. Same fines.",
+   "key": [
+    "SAME"
+   ],
+   "board": [
+    "GRUDEN",
+    "PAYTON"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "raider"
+   },
+   "act": {
+    "raider": {
+     "mood": "shocked",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Five coaches in two days. One point seven five million dollars.",
+   "cap": "5 coaches in 2 days. $1.75 million.",
+   "key": [
+    "$1.75"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "TOTAL",
+     "$1.75M"
+    ]
+   },
+   "place": {
+    "official": "center",
+    "capy": [
+     2.0,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "official",
+    "with": "capy"
+   },
+   "act": {
+    "official": {
+     "mood": "smug",
+     "action": "talk"
+    },
+    "capy": {
+     "mood": "smug",
+     "look": "official"
+    }
+   },
+   "speaker": "official",
+   "board": [
+    "TOTAL",
+    "$1.75M"
+   ]
+  },
+  {
+   "text": "By November, the Raiders were fined again. Five hundred thousand dollars.",
+   "cap": "By November, the Raiders were fined again. $500,000.",
+   "key": [
+    "$500,000."
+   ],
+   "board": [
+    "RAIDERS",
+    "$500,000"
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Gruden, another hundred fifty thousand.",
+   "cap": "Gruden, another $150,000.",
+   "key": [
+    "$150,000."
+   ],
+   "board": [
+    "GRUDEN",
+    "$150,000"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "angry",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "And they lost a sixth round draft pick. The first team to lose a pick over COVID rules.",
+   "cap": "And they lost a 6th round draft pick. The first team to lose a pick over COVID rules.",
+   "key": [
+    "PICK."
+   ],
+   "board": [
+    "2021 DRAFT",
+    "6TH ROUND: GONE"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "neutral",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "The most expensive piece of cloth in football.",
+   "key": [
+    "CLOTH"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "FINE:",
+     "$100,000"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.2,
+     0.6
+    ],
+    "coachA": [
+     1.2,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coachA": {
+     "mood": "sad",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "board": [
+    "FINE:",
+    "$100,000"
+   ]
+  },
+  {
+   "text": "Would a hundred thousand dollar fine make you wear the mask? Yes or no?",
+   "cap": "Would a $100,000 fine make you wear the mask? Yes or no?",
+   "key": [
+    "$100,000"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coachA"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "coachA": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "CBS Sports: NFL hits Pete Carroll, Vic Fangio and Kyle Shanahan with big fines for not wearing masks",
+   "url": "https://www.cbssports.com/nfl/news/nfl-hits-pete-carroll-vic-fangio-and-kyle-shanahan-with-big-fines-for-not-wearing-masks-on-sunday-per-report"
+  },
+  {
+   "title": "NPR: NFL hits 3 coaches and teams with large fines for not wearing face masks",
+   "url": "https://www.kunc.org/npr-news/2020-09-22/nfl-hits-3-coaches-and-teams-with-large-fines-for-not-wearing-face-masks"
+  },
+  {
+   "title": "CNBC: NFL fines two more coaches, teams for coronavirus mask violations",
+   "url": "https://www.cnbc.com/2020/09/22/nfl-fines-two-more-coaches-teams-for-coronavirus-mask-violations-source-says.html"
+  },
+  {
+   "title": "AP: Gruden, Payton fined for not wearing masks",
+   "url": "https://www.wsls.com/sports/2020/09/22/ap-source-gruden-payton-fined-for-not-wearing-masks/"
+  },
+  {
+   "title": "NFL.com: Raiders, Jon Gruden fined, lose draft pick for COVID-19 violations",
+   "url": "https://www.nfl.com/news/raiders-jon-gruden-fined-lose-draft-pick-for-covid-19-violations"
+  },
+  {
+   "title": "ESPN: NFL fines Raiders, Jon Gruden, takes draft pick for repeated COVID-19 violations",
+   "url": "https://africa.espn.com/nfl/story/_/id/30264687/nfl-fines-raiders-jon-gruden-takes-draft-pick-repeated-covid-19-violations"
+  }
+ ]
+}

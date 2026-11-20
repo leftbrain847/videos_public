@@ -1,0 +1,470 @@
+{
+ "id": "s3_03_tuesday_titans",
+ "title": "The Tuesday night game",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "TUESDAY",
+   "NIGHT FOOTBALL"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4b92db",
+    "pants": "#f4f4f4",
+    "number": "17",
+    "hair": "short",
+    "hairColor": "#5a3b22",
+    "skin": "#f2c39b"
+   },
+   "at": "right",
+   "face": -15,
+   "hold": "football"
+  },
+  "doc": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#ffffff",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#2a1a10",
+    "skin": "#c68a5e",
+    "glasses": true
+   },
+   "at": "right",
+   "hold": "clipboard"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2f3a",
+    "pants": "#2b2f3a",
+    "hair": "bald",
+    "skin": "#e0b48c"
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, an NFL team won forty two to sixteen, on a Tuesday night.",
+   "cap": "In 2020, an NFL team won 42 to 16, on a Tuesday night.",
+   "key": [
+    "TUESDAY"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     0.6
+    ],
+    "qb": [
+     1.2,
+     0.4
+    ],
+    "doc": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It started in Nashville, in late September. Twenty four people in the Titans' building tested positive.",
+   "cap": "It started in Nashville, in late September. 24 people in the Titans' building tested positive.",
+   "key": [
+    "24",
+    "POSITIVE."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "POSITIVE",
+     "TESTS: 24"
+    ]
+   },
+   "place": {
+    "doc": "right",
+    "qb": "left"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "look": "doc"
+    }
+   },
+   "board": [
+    "POSITIVE",
+    "TESTS: 24"
+   ]
+  },
+  {
+   "text": "So the team building was closed.",
+   "key": [
+    "CLOSED."
+   ],
+   "board": [
+    "FACILITY",
+    "CLOSED"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "shocked",
+     "look": "camera"
+    },
+    "doc": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Their game against Pittsburgh moved from October fourth to October twenty fifth.",
+   "cap": "Their game against Pittsburgh moved from October 4 to October 25.",
+   "key": [
+    "25."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "PITTSBURGH",
+     "OCT 4 → OCT 25"
+    ]
+   },
+   "place": {
+    "boss": "desk",
+    "capy": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "boss"
+    }
+   },
+   "board": [
+    "PITTSBURGH",
+    "OCT 4 → OCT 25"
+   ]
+  },
+  {
+   "text": "Then their Sunday game against Buffalo had to move too.",
+   "key": [
+    "SUNDAY"
+   ],
+   "board": [
+    "BUFFALO",
+    "SUNDAY?"
+   ],
+   "shot": {
+    "type": "ots",
+    "on": "boss",
+    "from": "capy"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "To Tuesday. Six p.m. Central, on CBS.",
+   "cap": "To Tuesday. 6 p.m. Central, on CBS.",
+   "key": [
+    "TUESDAY."
+   ],
+   "board": [
+    "BUFFALO",
+    "TUESDAY 6 PM"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "shocked",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The last Tuesday game had been in 2010, because of a snowstorm.",
+   "key": [
+    "SNOWSTORM."
+   ],
+   "board": [
+    "LAST TUESDAY GAME",
+    "2010"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "confused",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It was only the second Tuesday game in seventy years.",
+   "cap": "It was only the second Tuesday game in 70 years.",
+   "key": [
+    "SECOND",
+    "70"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "boss",
+    "offset": [
+     0,
+     1,
+     2
+    ]
+   },
+   "act": {
+    "boss": {
+     "mood": "shocked",
+     "action": "hold"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the Titans walked out and Ryan Tannehill scored four touchdowns.",
+   "cap": "Then the Titans walked out and Ryan Tannehill scored 4 touchdowns.",
+   "key": [
+    "4"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "TITANS 42",
+     "BILLS 16"
+    ]
+   },
+   "place": {
+    "qb": "center"
+   },
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "throw"
+    }
+   },
+   "board": [
+    "TITANS 42",
+    "BILLS 16"
+   ]
+  },
+  {
+   "text": "Tennessee won, forty two to sixteen.",
+   "cap": "Tennessee won, 42 to 16.",
+   "key": [
+    "42"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Twelve days later, the league fined the Titans three hundred fifty thousand dollars for protocol violations.",
+   "cap": "12 days later, the league fined the Titans $350,000 for protocol violations.",
+   "key": [
+    "$350,000"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "FINE",
+     "$350,000"
+    ]
+   },
+   "place": {
+    "boss": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "angry",
+     "action": "talk"
+    }
+   },
+   "speaker": "boss",
+   "board": [
+    "FINE",
+    "$350,000"
+   ]
+  },
+  {
+   "text": "They won on a Tuesday, and still paid for the whole week.",
+   "key": [
+    "PAID"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "TITANS 42",
+     "BILLS 16"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.0,
+     0.8
+    ],
+    "qb": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "shrug"
+    }
+   },
+   "speaker": "capy",
+   "board": [
+    "TITANS 42",
+    "BILLS 16"
+   ]
+  },
+  {
+   "text": "Would you watch a whole football game on a Tuesday night? Yes or no?",
+   "key": [
+    "TUESDAY"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Titans.com: Titans-Bills Rescheduled for Tuesday at Nissan Stadium",
+   "url": "https://www.tennesseetitans.com/news/titans-bills-rescheduled-for-tuesday-at-nissan-stadium"
+  },
+  {
+   "title": "Titans.com: Titans-Bills game notes",
+   "url": "https://www.tennesseetitans.com/news/titans-bills-game-notes-x9913"
+  },
+  {
+   "title": "AP: Tannehill scores 4 TDs as depleted Titans beat Bills 42-16",
+   "url": "https://www.clickorlando.com/sports/2020/10/14/tannehill-scores-4-tds-as-depleted-titans-beat-bills-42-16/"
+  },
+  {
+   "title": "SI: Source: Titans Fined $350,000 for COVID-19 Violations",
+   "url": "https://www.si.com/nfl/2020/10/25/titans-fined-covid-violations-350000"
+  },
+  {
+   "title": "AP: NFL fines Titans $350,000 for COVID-19 outbreak",
+   "url": "https://www.click2houston.com/sports/2020/10/25/ap-source-nfl-fines-titans-350000-for-covid-19-outbreak/"
+  },
+  {
+   "title": "CBS Sports: Bills-Titans postponement means NFL will be getting just its second Tuesday game in 70 years",
+   "url": "https://www.cbssports.com/nfl/news/bills-titans-postponement-means-nfl-will-be-getting-just-its-second-tuesday-game-in-70-years"
+  }
+ ]
+}

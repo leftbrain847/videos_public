@@ -1,0 +1,504 @@
+{
+ "id": "s3_04_game_day_flight",
+ "title": "Flying in on game day",
+ "set": "tunnel",
+ "setOpts": {
+  "boardText": [
+   "GAME DAY"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "hoyer": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#14306b",
+    "pants": "#c9ced6",
+    "number": "2",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "right",
+   "face": -15,
+   "hold": "football"
+  },
+  "stidham": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#14306b",
+    "pants": "#c9ced6",
+    "number": "4",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f4cfa8"
+   },
+   "at": "left"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#14306b",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#f2c39b",
+    "headset": true
+   },
+   "at": "right",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, the Patriots flew to a road game on the morning of the game.",
+   "key": [
+    "MORNING"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     0.6
+    ],
+    "hoyer": [
+     1.2,
+     0.3
+    ],
+    "stidham": false,
+    "coach": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hoyer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "hoyer": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "On Saturday, their starting quarterback, Cam Newton, tested positive.",
+   "key": [
+    "POSITIVE."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "QB1:",
+     "OUT"
+    ]
+   },
+   "place": {
+    "coach": "right",
+    "hoyer": "left"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "hoyer": {
+     "mood": "worried",
+     "look": "coach"
+    }
+   },
+   "board": [
+    "QB1:",
+    "OUT"
+   ]
+  },
+  {
+   "text": "The game in Kansas City was pushed from Sunday to Monday night.",
+   "key": [
+    "MONDAY"
+   ],
+   "board": [
+    "SUNDAY →",
+    "MONDAY"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "coach",
+    "with": "hoyer"
+   },
+   "act": {
+    "coach": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "hoyer"
+    },
+    "hoyer": {
+     "mood": "confused",
+     "look": "coach"
+    }
+   },
+   "speaker": "coach"
+  },
+  {
+   "text": "Monday morning, the team flew out. On two separate planes.",
+   "key": [
+    "TWO",
+    "PLANES."
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "PLANES: 2"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.4,
+     0.6
+    ],
+    "hoyer": [
+     0.4,
+     -1.0
+    ],
+    "stidham": [
+     1.8,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "hoyer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "hoyer": {
+     "mood": "worried"
+    },
+    "stidham": {
+     "mood": "worried",
+     "look": "hoyer"
+    }
+   },
+   "board": [
+    "PLANES: 2"
+   ]
+  },
+  {
+   "text": "Kickoff was seven p.m. Eastern, at Arrowhead.",
+   "cap": "Kickoff was 7 p.m. Eastern, at Arrowhead.",
+   "key": [
+    "7"
+   ],
+   "board": [
+    "KICKOFF",
+    "7 PM ET"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "hoyer": {
+     "mood": "worried"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Brian Hoyer started at quarterback.",
+   "key": [
+    "HOYER"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PATRIOTS 0",
+     "CHIEFS 0"
+    ]
+   },
+   "place": {
+    "hoyer": "center",
+    "coach": "sideline"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "hoyer"
+   },
+   "act": {
+    "hoyer": {
+     "mood": "neutral",
+     "action": "throw"
+    }
+   },
+   "board": [
+    "PATRIOTS 0",
+    "CHIEFS 0"
+   ]
+  },
+  {
+   "text": "Fifteen of twenty four. One hundred thirty yards. One interception.",
+   "cap": "15 of 24. 130 yards. 1 interception.",
+   "key": [
+    "130"
+   ],
+   "board": [
+    "HOYER",
+    "15/24  130 YDS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "hoyer"
+   },
+   "act": {
+    "hoyer": {
+     "mood": "worried",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then he fumbled on a sack, and was benched for Jarrett Stidham.",
+   "key": [
+    "BENCHED"
+   ],
+   "place": {
+    "stidham": [
+     1.6,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "hoyer",
+    "with": "stidham"
+   },
+   "act": {
+    "hoyer": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "stidham": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "hoyer"
+    }
+   }
+  },
+  {
+   "text": "Stidham threw a touchdown pass to N'Keal Harry.",
+   "key": [
+    "TOUCHDOWN"
+   ],
+   "place": {
+    "hoyer": false,
+    "stidham": "center"
+   },
+   "shot": {
+    "type": "low",
+    "on": "stidham"
+   },
+   "act": {
+    "stidham": {
+     "mood": "happy",
+     "action": "throw"
+    }
+   }
+  },
+  {
+   "text": "He also threw two interceptions. One went back for a touchdown.",
+   "cap": "He also threw 2 interceptions. One went back for a touchdown.",
+   "key": [
+    "2"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "stidham"
+   },
+   "act": {
+    "stidham": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Patrick Mahomes threw for two hundred thirty six yards and two touchdowns.",
+   "cap": "Patrick Mahomes threw for 236 yards and 2 touchdowns.",
+   "key": [
+    "236"
+   ],
+   "board": [
+    "MAHOMES",
+    "236 YDS  2 TD"
+   ],
+   "place": {
+    "coach": [
+     0,
+     0
+    ],
+    "stidham": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "Kansas City won, twenty six to ten. Its thirteenth straight win.",
+   "cap": "Kansas City won, 26 to 10. Its 13th straight win.",
+   "key": [
+    "26",
+    "13TH"
+   ],
+   "board": [
+    "PATRIOTS 10",
+    "CHIEFS 26"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "coach",
+    "offset": [
+     2,
+     2,
+     3
+    ]
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "One positive test. Two planes. One very long Monday.",
+   "key": [
+    "LONG"
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "MONDAY"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.0,
+     0.8
+    ],
+    "hoyer": [
+     1.2,
+     0.2
+    ],
+    "stidham": [
+     2.4,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "hoyer": {
+     "mood": "sad"
+    },
+    "stidham": {
+     "mood": "sad"
+    }
+   },
+   "speaker": "capy",
+   "board": [
+    "MONDAY"
+   ]
+  },
+  {
+   "text": "Could you play a road game on the day you fly in? Yes or no?",
+   "key": [
+    "DAY"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hoyer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "hoyer": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP: Chiefs lean on D to beat Pats 26-10 in COVID-19-delayed game",
+   "url": "https://www.news4jax.com/sports/2020/10/06/chiefs-lean-on-d-to-beat-pats-26-10-in-covid-19-delayed-game/"
+  },
+  {
+   "title": "NBC Boston: Patriots-Chiefs recap",
+   "url": "https://www.nbcboston.com/news/sports/nfl/new-england-patriots/patriots-chiefs-recap-october-5-2020/2207226/?amp=1"
+  },
+  {
+   "title": "NESN: Patriots Not Making Excuses After Unique Day Ends In Loss Vs. Chiefs",
+   "url": "https://nesn.com/2020/10/patriots-not-making-excuses-after-unique-day-ends-in-loss-vs-chiefs"
+  },
+  {
+   "title": "NFL.com: Patriots set to depart for Kansas City Monday morning",
+   "url": "https://www.nfl.com/news/patriots-set-to-depart-for-kansas-city-monday-morning-no-covid-positives"
+  },
+  {
+   "title": "CBS Sports: Patriots will travel to Kansas City using two planes",
+   "url": "https://www.cbssports.com/nfl/news/patriots-will-travel-to-kansas-city-using-two-planes-following-cam-newtons-positive-covid-19-test-per-report"
+  },
+  {
+   "title": "Boston.com: Patriots-Chiefs analysis",
+   "url": "https://www.boston.com/sports/new-england-patriots/2020/10/05/patriots-chiefs-analysis-jarrett-stidham/"
+  },
+  {
+   "title": "Chiefs.com: Chiefs defeat Patriots 26-10 on Monday night",
+   "url": "https://www.chiefs.com/news/chiefs-defeat-patriots-26-10-on-monday-night"
+  }
+ ]
+}

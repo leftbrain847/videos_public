@@ -1,0 +1,574 @@
+{
+ "id": "s4_22_fourteen_seconds_dallas",
+ "title": "Fourteen seconds, no timeouts",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "0:14",
+   "NO TIMEOUTS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#eef2f6",
+    "pants": "#8fa0ad",
+    "number": "6",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714f",
+    "beard": false,
+    "numberColor": "#123a7a"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "center": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#eef2f6",
+    "pants": "#8fa0ad",
+    "number": "61",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "numberColor": "#123a7a"
+   },
+   "at": "right"
+  },
+  "ump": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#7b4e33",
+    "cap": "#f4f4f4"
+   },
+   "at": "back"
+  },
+  "niner": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a51c1c",
+    "pants": "#b3995d",
+    "number": "54",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "referee": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "bald",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "In a 2022 playoff game, Dallas needed one spike to get a final shot. The clock beat them.",
+   "key": [
+    "SPIKE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "qb": [
+     0,
+     0
+    ],
+    "niner": [
+     2.2,
+     0.2
+    ],
+    "center": false,
+    "ump": false,
+    "referee": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "niner": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Wild card round. Forty niners twenty three, Cowboys seventeen.",
+   "cap": "Wild card round. 49ers 23, Cowboys 17.",
+   "key": [
+    "23,"
+   ],
+   "board": [
+    "49ERS 23",
+    "COWBOYS 17"
+   ],
+   "place": {
+    "capy": false,
+    "qb": [
+     -1.3,
+     0
+    ],
+    "niner": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     1.3,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "niner"
+    },
+    "niner": {
+     "mood": "smug",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Fourteen seconds left. No timeouts. Ball at the San Francisco forty one.",
+   "cap": "14 seconds left. No timeouts. Ball at the San Francisco 41.",
+   "key": [
+    "14"
+   ],
+   "board": [
+    "0:14",
+    "NO TIMEOUTS"
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "niner": [
+     2.0,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Dak Prescott ran a quarterback draw. Seventeen yards.",
+   "cap": "Dak Prescott ran a quarterback draw. 17 yards.",
+   "key": [
+    "17"
+   ],
+   "board": [
+    "QB DRAW",
+    "+17 YARDS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    },
+    "niner": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "He slid down and handed the ball to his center.",
+   "key": [
+    "CENTER."
+   ],
+   "place": {
+    "center": [
+     1.3,
+     0
+    ],
+    "qb": [
+     -1.0,
+     0
+    ],
+    "niner": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "center"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "center"
+    },
+    "center": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Here's the catch. On that play, an official has to set the ball first.",
+   "key": [
+    "OFFICIAL"
+   ],
+   "board": [
+    "UMPIRE",
+    "SPOTS BALL"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.6
+    ],
+    "qb": [
+     -1.8,
+     -0.4
+    ],
+    "center": [
+     1.8,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The umpire ran in from deep to spot it.",
+   "key": [
+    "UMPIRE"
+   ],
+   "place": {
+    "capy": false,
+    "ump": [
+     0,
+     0
+    ],
+    "qb": [
+     -1.6,
+     -0.4
+    ],
+    "center": [
+     1.6,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "ump"
+   },
+   "act": {
+    "ump": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He collided with Prescott while setting the ball.",
+   "key": [
+    "COLLIDED"
+   ],
+   "place": {
+    "ump": [
+     -0.5,
+     0
+    ],
+    "qb": [
+     0.6,
+     0.1
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "ump",
+    "offset": [
+     0.5,
+     0,
+     0.8
+    ]
+   },
+   "act": {
+    "ump": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "ump"
+    }
+   }
+  },
+  {
+   "text": "Snap. Spike.",
+   "key": [
+    "SPIKE."
+   ],
+   "board": [
+    "0:00",
+    "SPIKE"
+   ],
+   "place": {
+    "ump": [
+     -2.2,
+     -0.6
+    ],
+    "qb": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Too late. The clock had already hit zero.",
+   "key": [
+    "ZERO."
+   ],
+   "board": [
+    "0:00",
+    "FINAL"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "shocked",
+     "action": "facepalm"
+    },
+    "center": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Game over. San Francisco won, twenty three to seventeen.",
+   "cap": "Game over. San Francisco won, 23 to 17.",
+   "key": [
+    "23"
+   ],
+   "board": [
+    "49ERS 23",
+    "COWBOYS 17"
+   ],
+   "place": {
+    "niner": [
+     0,
+     0
+    ],
+    "qb": [
+     -2.0,
+     -0.6
+    ],
+    "center": false,
+    "ump": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "niner"
+   },
+   "act": {
+    "niner": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "The referee said the umpire was simply spotting the ball properly.",
+   "key": [
+    "PROPERLY."
+   ],
+   "set": "press",
+   "board": [
+    "POOL",
+    "REPORT"
+   ],
+   "place": {
+    "referee": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "referee"
+   },
+   "act": {
+    "referee": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "referee"
+  },
+  {
+   "text": "Prescott called the ending tough to accept.",
+   "key": [
+    "TOUGH"
+   ],
+   "set": "locker",
+   "board": [
+    "SEASON",
+    "OVER"
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "qb"
+  },
+  {
+   "text": "Should the clock have stopped while the umpire set the ball? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "STOP THE",
+    "CLOCK?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.2
+    ],
+    "qb": [
+     1.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com: Cowboys QB Dak Prescott says final sequence in loss to 49ers 'tough to accept'",
+   "url": "https://www.nfl.com/news/cowboys-qb-dak-prescott-final-sequence-in-loss-to-49ers-tough-to-accept"
+  },
+  {
+   "title": "SI: Cowboys' last play and referee Alex Kemp's explanation",
+   "url": "https://www.si.com/nfl/cowboys/news/dallas-san-francisco-49ers-dak-prescott-quarterback-last-play-referee-alex-kemp"
+  },
+  {
+   "title": "Fox Sports: Cowboys-49ers, breaking down the final play of a wild finish",
+   "url": "https://foxsports.com/stories/nfl/cowboys-49ers-breaking-down-what-happened-on-final-play-of-wild-game"
+  },
+  {
+   "title": "ProFootballTalk: Referee says umpire spotted ball properly on final play in Dallas",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/referee-brian-kemp-umpire-spotted-ball-properly-on-final-play-in-dallas"
+  },
+  {
+   "title": "Pro Football Reference: Wild Card, San Francisco 49ers at Dallas Cowboys, January 16, 2022",
+   "url": "https://pro-football-reference.com/boxscores/202201160dal.htm"
+  }
+ ]
+}

@@ -1,0 +1,464 @@
+{
+ "id": "s3_13_all_256_games",
+ "title": "Every single game",
+ "set": "office",
+ "setOpts": {
+  "boardText": [
+   "TESTS",
+   "~1,000,000"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": [
+    -2.2,
+    0.6
+   ],
+   "face": 15
+  },
+  "doc": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#5fb3a9",
+    "pants": "#5fb3a9",
+    "hair": "long",
+    "hairColor": "#2a1a10",
+    "skin": "#c68a5e",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "clipboard"
+  },
+  "exec": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2f3a",
+    "pants": "#2b2f3a",
+    "hair": "short",
+    "hairColor": "#a8a8a8",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "envelope"
+  },
+  "player": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#2f4fa8",
+    "pants": "#f4f4f4",
+    "number": "20",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b"
+   },
+   "at": "center",
+   "hold": "football"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, the NFL ran almost a million COVID tests. And still played every single game on the schedule.",
+   "key": [
+    "EVERY"
+   ],
+   "place": {
+    "exec": false,
+    "player": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "doc"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "doc": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Two hundred fifty six games were on the schedule.",
+   "cap": "256 games were on the schedule.",
+   "key": [
+    "256"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "SCHEDULE",
+     "256 GAMES"
+    ]
+   },
+   "place": {
+    "player": "center"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "player"
+   },
+   "act": {
+    "player": {
+     "mood": "happy",
+     "action": "hold"
+    }
+   },
+   "board": [
+    "SCHEDULE",
+    "256 GAMES"
+   ]
+  },
+  {
+   "text": "Then the chaos began. The Titans' outbreak alone hit twenty four people.",
+   "cap": "Then the chaos began. The Titans' outbreak alone hit 24 people.",
+   "key": [
+    "24"
+   ],
+   "board": [
+    "TITANS",
+    "24 POSITIVE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "player"
+   },
+   "act": {
+    "player": {
+     "mood": "shocked",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Games moved to Tuesday. And to Wednesday.",
+   "key": [
+    "WEDNESDAY."
+   ],
+   "board": [
+    "TUESDAY?",
+    "WEDNESDAY?"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "player"
+   },
+   "act": {
+    "player": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "One team played a whole game with no quarterback.",
+   "key": [
+    "NO"
+   ],
+   "board": [
+    "QB:",
+    "???"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "player"
+   },
+   "act": {
+    "player": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Another left its own county and moved to Arizona.",
+   "key": [
+    "ARIZONA."
+   ],
+   "board": [
+    "NEW HOME:",
+    "ARIZONA"
+   ],
+   "place": {
+    "capy": [
+     -2.0,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "player",
+    "with": "capy"
+   },
+   "act": {
+    "player": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "By the end, seven hundred twenty six people had tested positive.",
+   "cap": "By the end, 726 people had tested positive.",
+   "key": [
+    "726"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "POSITIVE",
+     "726"
+    ]
+   },
+   "place": {
+    "doc": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "POSITIVE",
+    "726"
+   ]
+  },
+  {
+   "text": "Two hundred sixty two players. Four hundred sixty four staff.",
+   "cap": "262 players. 464 staff.",
+   "key": [
+    "262",
+    "464"
+   ],
+   "board": [
+    "PLAYERS 262",
+    "STAFF 464"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "neutral",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Total tests: nine hundred fifty nine thousand, eight hundred sixty.",
+   "cap": "Total tests: 959,860.",
+   "key": [
+    "959,860."
+   ],
+   "board": [
+    "TESTS",
+    "959,860"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "shocked",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "The league found no evidence that the virus spread on the field.",
+   "key": [
+    "FIELD."
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "ON-FIELD SPREAD",
+     "NONE FOUND"
+    ]
+   },
+   "place": {
+    "exec": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "neutral",
+     "action": "talk"
+    }
+   },
+   "speaker": "exec",
+   "board": [
+    "ON-FIELD SPREAD",
+    "NONE FOUND"
+   ]
+  },
+  {
+   "text": "Games cancelled: zero.",
+   "cap": "Games cancelled: 0.",
+   "key": [
+    "0."
+   ],
+   "board": [
+    "CANCELLED",
+    "0"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "smug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "All two hundred fifty six were played.",
+   "cap": "All 256 were played.",
+   "key": [
+    "256"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PLAYED",
+     "256 / 256"
+    ]
+   },
+   "place": {
+    "player": [
+     1.2,
+     0.4
+    ],
+    "capy": [
+     -1.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "player"
+   },
+   "act": {
+    "player": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "player"
+    }
+   },
+   "board": [
+    "PLAYED",
+    "256 / 256"
+   ]
+  },
+  {
+   "text": "Chaos every week. And still, every single game.",
+   "key": [
+    "EVERY",
+    "GAME."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "player": {
+     "mood": "happy",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Should the league have finished that season? Yes or no?",
+   "key": [
+    "FINISHED"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "player"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "player": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "ESPN (via BioReference): How the NFL navigated COVID-19 this season: 959,860 tests, $100 million and zero cancellations",
+   "url": "https://www.bioreference.com/?p=6410"
+  },
+  {
+   "title": "SI: NFL COVID-19 testing in 2020",
+   "url": "https://www.si.com/nfl/2021/02/09/nfl-covid-19-testing-2020"
+  },
+  {
+   "title": "ProFootballTalk: 262 players, 464 other personnel tested positive for COVID-19 this season",
+   "url": "https://nbcsports.com/nfl/profootballtalk/rumor-mill/news/262-players-464-other-personnel-tested-positive-for-covid-19-this-season"
+  },
+  {
+   "title": "Fierce Healthcare: Here's how NFL tackled spread of COVID-19 among players, staff",
+   "url": "https://www.fiercehealthcare.com/practices/here-s-how-nfl-tackled-spread-covid-19-among-players-staff"
+  },
+  {
+   "title": "Reuters via Yahoo: League nears Super Bowl finish line",
+   "url": "https://ca.finance.yahoo.com/news/league-nears-super-bowl-finish-220922105.html"
+  },
+  {
+   "title": "CBS Sports: Bills-Titans postponement means NFL will be getting just its second Tuesday game in 70 years",
+   "url": "https://www.cbssports.com/nfl/news/bills-titans-postponement-means-nfl-will-be-getting-just-its-second-tuesday-game-in-70-years"
+  },
+  {
+   "title": "ESPN: 49ers to play Week 13, 14 home games in Arizona",
+   "url": "https://www.espn.com/nfl/story/_/id/30422539/san-francisco-49ers-play-week-13-14-home-games-arizona"
+  },
+  {
+   "title": "SI: Titans fined $350,000 for COVID-19 violations (24 positives)",
+   "url": "https://www.si.com/nfl/2020/10/25/titans-fined-covid-violations-350000"
+  }
+ ]
+}

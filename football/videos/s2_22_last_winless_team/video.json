@@ -1,0 +1,457 @@
+{
+ "id": "s2_22_last_winless_team",
+ "title": "The last team without a win",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "CHARGERS",
+   "RAVENS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0080c6",
+    "pants": "#ffc20e",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "number": "10"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "rb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#241773",
+    "pants": "#1b1b1b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "number": "22"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "db": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0080c6",
+    "pants": "#ffc20e",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "number": "29"
+   },
+   "at": [
+    -2.0,
+    -1.6
+   ]
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#241773",
+    "pants": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c",
+    "number": "4"
+   },
+   "at": [
+    2.2,
+    -2.0
+   ]
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#0080c6",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "headset": true
+   },
+   "at": "right"
+  }
+ },
+ "lines": [
+  {
+   "text": "The last winless team in the NFL finally won. On Monday Night Football.",
+   "key": [
+    "WINLESS"
+   ],
+   "place": {
+    "rb": false,
+    "db": false,
+    "wr": false,
+    "coach": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The Chargers came in oh and eight. Eleven straight losses, back to last season.",
+   "cap": "The Chargers came in 0 and 8. 11 straight losses, back to last season.",
+   "key": [
+    "11"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "RECORD:",
+     "0-8"
+    ]
+   },
+   "place": {
+    "coach": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "The Ravens had lost four straight. Combined, fifteen losses in a row.",
+   "cap": "The Ravens had lost 4 straight. Combined, 15 losses in a row.",
+   "key": [
+    "15"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In Baltimore, Justin Herbert scrambles twenty two yards for a touchdown on the first drive.",
+   "cap": "In Baltimore, Justin Herbert scrambles 22 yards for a touchdown on the first drive.",
+   "key": [
+    "22"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CHARGERS",
+     "RAVENS"
+    ]
+   },
+   "place": {
+    "qb": "left",
+    "rb": "right",
+    "db": [
+     0.2,
+     -2.2
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Then the Chargers do something stranger. They stop Derrick Henry.",
+   "key": [
+    "HENRY."
+   ],
+   "place": {
+    "db": [
+     0.6,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "db",
+    "with": "rb"
+   },
+   "act": {
+    "db": {
+     "mood": "angry",
+     "action": "point",
+     "look": "rb"
+    },
+    "rb": {
+     "mood": "worried",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "Ten carries. Ten yards.",
+   "cap": "10 carries. 10 yards.",
+   "key": [
+    "10"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "The whole Ravens team runs for sixteen yards.",
+   "cap": "The whole Ravens team runs for 16 yards.",
+   "key": [
+    "16"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "db": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "Henry still scores twice. Baltimore gets within three, twenty three to twenty.",
+   "cap": "Henry still scores twice. Baltimore gets within three, 23 to 20.",
+   "key": [
+    "THREE,"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two minutes left. Zay Flowers makes a catch, and Tarheeb Still punches the ball loose.",
+   "key": [
+    "LOOSE."
+   ],
+   "place": {
+    "wr": [
+     1.8,
+     0.2
+    ],
+    "rb": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "db",
+    "with": "wr"
+   },
+   "act": {
+    "db": {
+     "mood": "angry",
+     "action": "point",
+     "look": "wr"
+    },
+    "wr": {
+     "mood": "shocked",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "Chargers recover. Baltimore gets one last heave, and it falls short.",
+   "key": [
+    "SHORT."
+   ],
+   "place": {
+    "qb": "center"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "db": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "wr": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "The Ravens? Their fifth loss in a row.",
+   "key": [
+    "FIFTH"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "One and eight has never looked so happy.",
+   "cap": "1 and 8 has never looked so happy.",
+   "key": [
+    "HAPPY."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "RECORD:",
+     "1-8"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "coach": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Is the first win always the hardest? Yes or no?",
+   "key": [
+    "FIRST"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "WINS:",
+     "1"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "qb": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP (ABC30): Chargers bully the Ravens at the line of scrimmage and earn their first win of the season, 23-20",
+   "url": "https://abc30.com/post/chargers-bully-ravens-line-scrimmage-earn-first-win-season-23-20/20046837/"
+  },
+  {
+   "title": "Field Level Media (News Tribune): Chargers hold Ravens to 16 rushing yards, earn first win of season",
+   "url": "https://www.newstribune.com/news/2026/nov/17/chargers-hold-ravens-to-16-rushing-yards-earn-first-win-of-season/"
+  },
+  {
+   "title": "HNGN: Chargers beat Ravens 23-20, first win after 331 days",
+   "url": "https://www.hngn.com/articles/273854/20261117/chargers-beat-ravens-23-20-first-win-after-331-days.htm"
+  },
+  {
+   "title": "theScore (AP): Chargers hold off Ravens on MNF to finally secure 1st win",
+   "url": "https://www.thescore.com/nfl/news/3657656"
+  },
+  {
+   "title": "ClutchPoints: Chargers pull off extremely rare NFL feat last seen in 2013",
+   "url": "https://clutchpoints.com/nfl/los-angeles-chargers/chargers-news-la-pulls-off-extremely-rare-nfl-feat-last-seen-2013"
+  }
+ ]
+}

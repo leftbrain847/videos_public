@@ -1,0 +1,476 @@
+{
+ "id": "s2_15_donald_sack_drought",
+ "title": "The sack that took 1,050 days",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "RAMS",
+   "CARDINALS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "donald": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f3f8f",
+    "pants": "#f6d21f",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "number": "99",
+    "beard": true
+   },
+   "at": "center"
+  },
+  "beck": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#9b1b30",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "number": "7"
+   },
+   "at": "right",
+   "face": -25,
+   "hold": "football"
+  },
+  "young": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f3f8f",
+    "pants": "#f6d21f",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "number": "0"
+   },
+   "at": [
+    -2.4,
+    -1.6
+   ]
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1f3f8f",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b",
+    "headset": true
+   },
+   "at": "right"
+  }
+ },
+ "lines": [
+  {
+   "text": "This month, Aaron Donald got a sack. His first in one thousand fifty days.",
+   "cap": "This month, Aaron Donald got a sack. His first in 1,050 days.",
+   "key": [
+    "1,050"
+   ],
+   "place": {
+    "beck": false,
+    "young": false,
+    "coach": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "donald"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "donald": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "His last one came on New Year's Eve, twenty twenty three.",
+   "cap": "His last one came on New Year's Eve, 2023.",
+   "key": [
+    "EVE,"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "DEC 31",
+     "2023"
+    ]
+   },
+   "place": {
+    "donald": [
+     0,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "donald"
+   },
+   "act": {
+    "donald": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That spring, he retired. Football was over. Or so it seemed.",
+   "key": [
+    "RETIRED."
+   ],
+   "place": {
+    "donald": [
+     0,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "donald"
+   },
+   "act": {
+    "donald": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two seasons later, in late August, he came back to the Rams.",
+   "key": [
+    "BACK"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "RETURN:",
+     "99"
+    ]
+   },
+   "place": {
+    "donald": "center",
+    "coach": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "donald",
+    "with": "coach"
+   },
+   "act": {
+    "donald": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "coach"
+    },
+    "coach": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "donald"
+    }
+   }
+  },
+  {
+   "text": "Then came week after week of games. And no sacks.",
+   "key": [
+    "NO",
+    "SACKS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "donald"
+   },
+   "act": {
+    "donald": {
+     "mood": "worried",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Then, in Arizona, he lines up across from rookie quarterback Carson Beck.",
+   "key": [
+    "ROOKIE"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAMS",
+     "CARDINALS"
+    ]
+   },
+   "place": {
+    "donald": "left",
+    "beck": "right"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "donald"
+   },
+   "act": {
+    "beck": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "donald"
+    },
+    "donald": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Donald gets home. Sack number one, finally.",
+   "key": [
+    "FINALLY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "donald",
+    "with": "beck"
+   },
+   "act": {
+    "donald": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "beck": {
+     "mood": "shocked",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Later he splits another with Byron Young. One and a half on the day.",
+   "cap": "Later he splits another with Byron Young. 1.5 on the day.",
+   "key": [
+    "1.5"
+   ],
+   "place": {
+    "young": [
+     -1.0,
+     0.6
+    ],
+    "beck": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "young"
+   },
+   "act": {
+    "young": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "donald"
+    },
+    "donald": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "No Ram aged thirty five or older had ever had more than one sack in a game.",
+   "cap": "No Ram aged 35 or older had ever had more than 1 sack in a game.",
+   "key": [
+    "35"
+   ],
+   "place": {
+    "capy": [
+     -0.4,
+     1.2
+    ],
+    "young": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "donald"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "donald"
+    },
+    "donald": {
+     "mood": "smug",
+     "action": "cross"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "His career total: one hundred twelve and a half. Thirty first all time.",
+   "cap": "His career total: 112.5. 31st all time.",
+   "key": [
+    "112.5"
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "donald"
+   },
+   "act": {
+    "donald": {
+     "mood": "happy",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "The Rams win, thirty four to six. Their fourth straight.",
+   "cap": "The Rams win, 34 to 6. Their 4th straight.",
+   "key": [
+    "34"
+   ],
+   "place": {
+    "young": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "donald"
+   },
+   "act": {
+    "donald": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "young": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "His verdict: the sack felt good. The win felt even better.",
+   "key": [
+    "BETTER."
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "RAMS 34",
+     "CARDS 6"
+    ]
+   },
+   "place": {
+    "donald": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "donald"
+   },
+   "act": {
+    "donald": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "donald"
+  },
+  {
+   "text": "His coach called him one of one.",
+   "cap": "His coach called him 1 of 1.",
+   "key": [
+    "1"
+   ],
+   "place": {
+    "donald": false,
+    "coach": "center"
+   },
+   "shot": {
+    "type": "close",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "coach"
+  },
+  {
+   "text": "Would you come out of retirement for one sack? Yes or no?",
+   "key": [
+    "RETIREMENT"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "SACKS:",
+     "1"
+    ]
+   },
+   "place": {
+    "capy": [
+     -0.9,
+     -1.2
+    ],
+    "donald": [
+     0.9,
+     -1.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "donald"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "donald": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "TSN/ESPN: Donald savours first sack in 1,050 days, but Rams' win 'felt even better'",
+   "url": "https://www.tsn.ca/nfl/article/donald-savours-first-sack-in-1050-days-but-rams-win-felt-even-better-n1-50497324/"
+  },
+  {
+   "title": "Yahoo Sports: Aaron Donald ends sack drought in Rams' rout of Cardinals",
+   "url": "https://sports.yahoo.com/articles/aaron-donald-ends-sack-drought-231216114.html"
+  },
+  {
+   "title": "Yahoo Sports: Rams star Aaron Donald records first sack since coming out of retirement",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/rams-star-aaron-donald-records-first-sack-since-coming-out-of-retirement-in-game-vs-cardinals-220938892.html"
+  }
+ ]
+}

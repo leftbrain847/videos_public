@@ -1,0 +1,483 @@
+{
+ "id": "s2_23_cousins_two_teams",
+ "title": "Two teams, two Sundays",
+ "set": "locker",
+ "setOpts": {
+  "boardText": [
+   "QB:",
+   "COUSINS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4f2683",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#b07a4a",
+    "skin": "#f2c39b",
+    "number": "8"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4f2683",
+    "pants": "#f4f4f4",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "number": "14"
+   },
+   "at": [
+    2.2,
+    -1.6
+   ]
+  },
+  "gb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#203731",
+    "pants": "#ffb612",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f",
+    "number": "10"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b2e",
+    "pants": "#2b2b2e",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "phone"
+  },
+  "rush": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4f2683",
+    "pants": "#f4f4f4",
+    "hair": "bald",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "number": "97",
+    "beard": true
+   },
+   "at": [
+    -2.0,
+    -1.8
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "Kirk Cousins started for one team, then started for a different team the very next week.",
+   "key": [
+    "NEXT"
+   ],
+   "place": {
+    "wr": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "No quarterback had done that since at least nineteen fifty.",
+   "cap": "No quarterback had done that since at least 1950.",
+   "key": [
+    "1950."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Rewind to twenty twenty three. As a Viking, Cousins tears his Achilles at Lambeau Field.",
+   "cap": "Rewind to 2023. As a Viking, Cousins tears his Achilles at Lambeau Field.",
+   "key": [
+    "LAMBEAU"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "2023"
+    ]
+   },
+   "place": {
+    "qb": "center"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "After that season, he leaves. Two years in Atlanta. Then Las Vegas.",
+   "key": [
+    "VEGAS."
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "ATLANTA",
+     "LAS VEGAS"
+    ]
+   },
+   "place": {
+    "qb": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "This month, at the trade deadline, the Raiders send him back to Minnesota.",
+   "key": [
+    "BACK"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "TRADE:",
+     "COUSINS"
+    ]
+   },
+   "place": {
+    "boss": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Five days later, his first game back is at Lambeau. Against Green Bay.",
+   "cap": "5 days later, his first game back is at Lambeau. Against Green Bay.",
+   "key": [
+    "5"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "VIKINGS",
+     "PACKERS"
+    ]
+   },
+   "place": {
+    "qb": "left",
+    "gb": "right",
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "gb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "gb"
+    },
+    "gb": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Same stadium. Very different ending.",
+   "key": [
+    "ENDING."
+   ],
+   "place": {
+    "capy": [
+     -0.4,
+     1.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Cousins throws thirty eight yards to Myles Price. Touchdown.",
+   "cap": "Cousins throws 38 yards to Myles Price. Touchdown.",
+   "key": [
+    "38"
+   ],
+   "place": {
+    "capy": false,
+    "wr": [
+     1.2,
+     0.2
+    ],
+    "gb": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "His defense sacks Jordan Love eight times.",
+   "cap": "His defense sacks Jordan Love 8 times.",
+   "key": [
+    "8"
+   ],
+   "place": {
+    "rush": [
+     -0.8,
+     0.4
+    ],
+    "gb": [
+     1.2,
+     0.2
+    ],
+    "wr": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "rush",
+    "with": "gb"
+   },
+   "act": {
+    "rush": {
+     "mood": "angry",
+     "action": "point",
+     "look": "gb"
+    },
+    "gb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Cousins finishes twenty one of thirty one, with two touchdowns.",
+   "cap": "Cousins finishes 21 of 31, with 2 touchdowns.",
+   "key": [
+    "21"
+   ],
+   "place": {
+    "qb": "center",
+    "gb": false,
+    "rush": [
+     -2.0,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "Vikings win at Lambeau, thirty to ten.",
+   "cap": "Vikings win at Lambeau, 30 to 10.",
+   "key": [
+    "30"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "rush": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "His words: it's gratifying to come back here with the purple on.",
+   "key": [
+    "PURPLE"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "VIKINGS 30",
+     "PACKERS 10"
+    ]
+   },
+   "place": {
+    "qb": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "qb"
+  },
+  {
+   "text": "Should Minnesota have kept him all along? Yes or no?",
+   "key": [
+    "KEPT"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "QB:",
+     "BACK"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "qb": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Vikings.com: Kirk Cousins, quarterback and offense in Packers win, Week 10 2026",
+   "url": "https://www.vikings.com/news/kirk-cousins-quarterback-offense-packers-win-week-10-2026"
+  },
+  {
+   "title": "TSN (ESPN): Cousins emotional after win in Vikings return, reflects on tough 3 years",
+   "url": "https://www.tsn.ca/nfl/article/cousins-emotional-after-win-in-vikings-return-reflects-on-tough-3-years-n1-50495965/"
+  },
+  {
+   "title": "AP (Chicago Sun-Times): Vikings beat Packers 30-10 in Kirk Cousins' return; Jordan Love is sacked 8 times",
+   "url": "https://chicago.suntimes.com/nfl/2026/11/15/vikings-beat-packers-30-10-in-kirk-cousins-return-jordan-love-is-sacked-8-times"
+  },
+  {
+   "title": "Dakota News Now: Kirk Cousins back to his winning ways with the Vikings",
+   "url": "https://www.dakotanewsnow.com/2026/11/16/kirk-cousins-back-his-winning-ways-with-vikings-beat-green-bay-road/"
+  }
+ ]
+}

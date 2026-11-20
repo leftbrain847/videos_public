@@ -1,0 +1,462 @@
+{
+ "id": "s2_02_one_point_short",
+ "title": "One point from a record",
+ "set": "office",
+ "setOpts": {
+  "boardText": [
+   "WEEK 1 RECORD",
+   "791"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "center"
+  },
+  "mahomes": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#c8102e",
+    "pants": "#f4f4f4",
+    "number": "15",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c98d63"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "walker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#c8102e",
+    "pants": "#f4f4f4",
+    "number": "9",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": "left"
+  },
+  "nix": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#fb4f14",
+    "pants": "#1b2a5c",
+    "number": "10",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "right",
+   "face": -20
+  }
+ },
+ "lines": [
+  {
+   "text": "This season's opening week missed an NFL record by one point.",
+   "key": [
+    "ONE",
+    "POINT."
+   ],
+   "place": {
+    "capy": [
+     0,
+     0.4
+    ],
+    "mahomes": false,
+    "walker": false,
+    "nix": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The Super Bowl era record for week one: seven hundred ninety one, from twenty twelve.",
+   "cap": "The Super Bowl era record for Week 1: 791, from 2012.",
+   "key": [
+    "791,"
+   ],
+   "board": [
+    "2012",
+    "791 POINTS"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "After fifteen games, this year had seven hundred fifty.",
+   "cap": "After 15 games, this year had 750.",
+   "key": [
+    "750."
+   ],
+   "board": [
+    "2026 SO FAR",
+    "750"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "One game left. Monday night. Denver at Kansas City.",
+   "key": [
+    "MONDAY"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "DEN 0",
+     "KC 0"
+    ]
+   },
+   "place": {
+    "mahomes": "center",
+    "nix": "right",
+    "walker": "left"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "mahomes"
+   },
+   "act": {
+    "mahomes": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "nix"
+    },
+    "nix": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "mahomes"
+    },
+    "walker": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "mahomes"
+    }
+   }
+  },
+  {
+   "text": "To break the record, the two teams needed forty two points. Combined.",
+   "cap": "To break the record, the two teams needed 42 points. Combined.",
+   "key": [
+    "42"
+   ],
+   "place": {
+    "capy": [
+     -3.0,
+     1.2
+    ],
+    "walker": false
+   },
+   "board": [
+    "NEEDED",
+    "42"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "mahomes"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "mahomes"
+    },
+    "mahomes": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Patrick Mahomes, back from a knee injury, ran in a touchdown on the first drive.",
+   "key": [
+    "FIRST",
+    "DRIVE."
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "mahomes"
+   },
+   "act": {
+    "mahomes": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "nix": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Kenneth Walker ran for one hundred seventy three yards in his first game as a Chief.",
+   "cap": "Kenneth Walker ran for 173 yards in his first game as a Chief.",
+   "key": [
+    "173"
+   ],
+   "place": {
+    "walker": [
+     -1.6,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "walker"
+   },
+   "act": {
+    "walker": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Early in the fourth quarter, it was thirty one to ten. Forty one points.",
+   "cap": "Early in the fourth quarter, it was 31 to 10. 41 points.",
+   "key": [
+    "41"
+   ],
+   "board": [
+    "KC 31",
+    "DEN 10"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "mahomes"
+   },
+   "act": {
+    "mahomes": {
+     "mood": "smug",
+     "action": "point",
+     "look": "nix"
+    },
+    "nix": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "walker": false
+   }
+  },
+  {
+   "text": "One more field goal would do it. Even a safety would do it.",
+   "key": [
+    "SAFETY"
+   ],
+   "place": {
+    "capy": [
+     -1.0,
+     1.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then nobody scored again. For the rest of the night.",
+   "key": [
+    "NOBODY"
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "nix",
+    "with": "mahomes"
+   },
+   "act": {
+    "nix": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "mahomes"
+    },
+    "mahomes": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "nix"
+    }
+   }
+  },
+  {
+   "text": "Final: thirty one to ten. Seven hundred ninety one. A tie.",
+   "cap": "Final: 31 to 10. 791. A tie.",
+   "key": [
+    "TIE."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "WEEK 1",
+     "791 = 791"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.4,
+     0.6
+    ],
+    "mahomes": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "mahomes": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The record isn't broken. It just has a roommate now.",
+   "key": [
+    "ROOMMATE"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "2012 = 2026"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "One point short. Should a tie count as a record? Yes or no?",
+   "key": [
+    "TIE",
+    "RECORD?"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "KC 31",
+     "DEN 10"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "nix": [
+     0.8,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "nix"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "nix": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com: NFL ties Week 1 scoring record for Super Bowl era",
+   "url": "https://www.nfl.com/news/nfl-ties-week-1-scoring-record-for-super-bowl-era"
+  },
+  {
+   "title": "ProFootballTalk: With 42 points in Broncos-Chiefs, the Week 1 scoring record will be broken",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/with-42-points-in-broncos-chiefs-the-week-1-scoring-record-will-be-broken"
+  },
+  {
+   "title": "NBC: Chiefs crush Broncos 31-10 as Mahomes returns",
+   "url": "https://www.nbcsandiego.com/news/sports/nfl/chiefs-broncos-score-week-1-mahomes/"
+  },
+  {
+   "title": "FOX Sports: Patrick Mahomes gets win in return, 3 takeaways as Chiefs beat Broncos",
+   "url": "https://www.foxsports.com/stories/nfl/patrick-mahomes-gets-win-return-3-takeaways-chiefs-beat-broncos"
+  }
+ ]
+}

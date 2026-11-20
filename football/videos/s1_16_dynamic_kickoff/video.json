@@ -1,0 +1,550 @@
+{
+ "id": "s1_16_dynamic_kickoff",
+ "title": "The kickoff where nobody moves",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "KICKOFF",
+   "2024"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "kicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#c8102e",
+    "pants": "#f4f4f4",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "number": "3"
+   },
+   "at": [
+    -3.8,
+    2.4
+   ]
+  },
+  "c1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#c8102e",
+    "pants": "#f4f4f4",
+    "skin": "#7b4e33",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "21"
+   },
+   "at": [
+    -2.4,
+    -1
+   ]
+  },
+  "c2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#c8102e",
+    "pants": "#f4f4f4",
+    "skin": "#e8b48f",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "number": "44"
+   },
+   "at": [
+    0,
+    -1
+   ]
+  },
+  "c3": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#c8102e",
+    "pants": "#f4f4f4",
+    "skin": "#a8714c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "88"
+   },
+   "at": [
+    2.4,
+    -1
+   ]
+  },
+  "ret": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#008e97",
+    "pants": "#f4f4f4",
+    "skin": "#5a3825",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "number": "14"
+   },
+   "at": [
+    0.8,
+    -5
+   ],
+   "hold": "football"
+  },
+  "exec": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b2e",
+    "pants": "#2b2b2e",
+    "skin": "#f2c39b",
+    "hair": "bald",
+    "hairColor": "#888888",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2024, the NFL told kickoff players to stand still until the ball lands.",
+   "key": [
+    "STAND",
+    "STILL"
+   ],
+   "place": {
+    "kicker": false,
+    "ret": false,
+    "exec": false,
+    "capy": [
+     -4.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "c1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "c1": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "c2": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "c3": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Because almost nobody was returning kicks anymore.",
+   "key": [
+    "NOBODY"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "RETURNS",
+     "21.8%"
+    ]
+   },
+   "board": [
+    "RETURNS",
+    "21.8%"
+   ],
+   "place": {
+    "exec": "desk",
+    "capy": "left"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "worried",
+     "action": "facepalm"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exec"
+    }
+   }
+  },
+  {
+   "text": "In 2023, only twenty one point eight percent of kickoffs were returned. A record low.",
+   "key": [
+    "21.8%"
+   ],
+   "cap": "In 2023, only 21.8% of kickoffs were returned. A record low.",
+   "shot": {
+    "type": "close",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "exec"
+  },
+  {
+   "text": "The kickoff was turning into a play where nothing happens.",
+   "key": [
+    "NOTHING"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "exec"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "exec": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "So the owners borrowed a kickoff from the X F L.",
+   "key": [
+    "XFL."
+   ],
+   "cap": "So the owners borrowed a kickoff from the XFL.",
+   "board": [
+    "NEW KICKOFF",
+    "FROM THE XFL"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "exec"
+    }
+   }
+  },
+  {
+   "text": "Now the kicker stands alone at the thirty five.",
+   "key": [
+    "ALONE"
+   ],
+   "cap": "Now the kicker stands alone at the 35.",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "KICKER: 35",
+     "COVER: 40"
+    ]
+   },
+   "board": [
+    "KICKER: 35",
+    "COVER: 40"
+   ],
+   "place": {
+    "kicker": [
+     -3.8,
+     2.4
+    ],
+    "c1": [
+     -2.4,
+     -1.2
+    ],
+    "c2": [
+     0,
+     -1.2
+    ],
+    "c3": [
+     2.4,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His ten teammates line up at the other team's forty, just yards from the blockers.",
+   "key": [
+    "40"
+   ],
+   "cap": "His 10 teammates line up at the other team's 40, just yards from the blockers.",
+   "shot": {
+    "type": "high",
+    "on": "c2"
+   },
+   "act": {
+    "c1": {
+     "mood": "angry",
+     "action": "cross"
+    },
+    "c2": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "c3": {
+     "mood": "angry",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "And nobody moves until the ball lands or a returner touches it.",
+   "key": [
+    "NOBODY",
+    "MOVES"
+   ],
+   "place": {
+    "capy": [
+     -4.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "c1",
+    "with": "c2"
+   },
+   "act": {
+    "c1": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "c2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "c1"
+    }
+   }
+  },
+  {
+   "text": "Kick it into the end zone in the air, and the other team starts at the thirty.",
+   "key": [
+    "30."
+   ],
+   "cap": "Kick it into the end zone in the air, and the other team starts at the 30.",
+   "place": {
+    "ret": [
+     0.6,
+     -1.0
+    ],
+    "c1": false,
+    "c2": false,
+    "c3": false,
+    "kicker": false,
+    "capy": [
+     -2.4,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "ret"
+   },
+   "act": {
+    "ret": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "ret"
+    }
+   }
+  },
+  {
+   "text": "In 2024, returns jumped to almost thirty three percent.",
+   "key": [
+    "33%"
+   ],
+   "cap": "In 2024, returns jumped to almost 33%.",
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "2024 RETURNS",
+     "32.8%"
+    ]
+   },
+   "board": [
+    "2024 RETURNS",
+    "32.8%"
+   ],
+   "place": {
+    "exec": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "exec"
+  },
+  {
+   "text": "In 2025, the owners made it permanent, and moved that touchback out to the thirty five.",
+   "key": [
+    "PERMANENT"
+   ],
+   "cap": "In 2025, the owners made it permanent, and moved that touchback out to the 35.",
+   "board": [
+    "TOUCHBACK",
+    "35"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "exec"
+  },
+  {
+   "text": "Their goal: returns on sixty to seventy percent of kickoffs.",
+   "key": [
+    "70%"
+   ],
+   "cap": "Their goal: returns on 60 to 70% of kickoffs.",
+   "board": [
+    "GOAL:",
+    "60-70%"
+   ],
+   "place": {
+    "capy": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "exec"
+    }
+   }
+  },
+  {
+   "text": "Same game. Same field. A brand new play nobody may move on.",
+   "key": [
+    "BRAND",
+    "NEW"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "exec"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "exec": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Should the kickoff go back to the old way? Yes or no?",
+   "key": [
+    "YES",
+    "NO"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com: NFL owners pass new hybrid kickoff rule at Annual League Meeting",
+   "url": "https://www.nfl.com/news/nfl-owners-pass-new-kickoff-rule-at-annual-league-meeting"
+  },
+  {
+   "title": "KSHB (AP): NFL owners approve a radical overhaul to kickoff rules, adopting setup used in XFL",
+   "url": "https://www.kshb.com/sports/nfl-owners-approve-a-radical-overhaul-to-kickoff-rules-ap-source-says-adopting-setup-used-in-xfl"
+  },
+  {
+   "title": "NFL.com: NFL owners vote to make dynamic kickoff permanent, adjust ball spot on touchbacks to 35-yard line",
+   "url": "https://www.nfl.com/_amp/nfl-owners-vote-to-make-dynamic-kickoff-permanent-adjust-ball-spot-on-touchbacks-to-35-yard-line"
+  },
+  {
+   "title": "NFL.com: Looking at tweak to kickoff, other rules changes for 2025 season",
+   "url": "https://www.nfl.com/news/looking-at-tweak-to-kickoff-other-rules-changes-for-2025-season"
+  },
+  {
+   "title": "Washington Times (AP): 2025 NFL season kicks off with permanent kickoff changes",
+   "url": "https://m.washingtontimes.com/news/2025/sep/2/2025-nfl-season-kicks-permanent-kickoff-changes/"
+  }
+ ]
+}

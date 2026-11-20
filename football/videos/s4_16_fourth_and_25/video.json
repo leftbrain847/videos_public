@@ -1,0 +1,577 @@
+{
+ "id": "s4_16_fourth_and_25",
+ "title": "Fourth-and-25 sends Green Bay to the playoffs",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "4TH",
+   "& 25"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "viking": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4f2683",
+    "pants": "#f2c230",
+    "number": "55",
+    "hair": "short",
+    "hairColor": "#d9b16a"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a3233f",
+    "pants": "#f4f4f4",
+    "number": "12",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a3233f",
+    "pants": "#f4f4f4",
+    "number": "81",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "back"
+  },
+  "packer": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#24493a",
+    "pants": "#f2b81c",
+    "number": "30",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "left"
+  },
+  "pfan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#24493a",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   },
+   "at": "right",
+   "hold": "phone"
+  }
+ },
+ "lines": [
+  {
+   "text": "The Packers won their division in 2003 because of a fourth-and-twenty-five in Arizona.",
+   "cap": "The Packers won their division in 2003 because of a 4th-and-25 in Arizona.",
+   "key": [
+    "4TH-AND-25"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "qb": [
+     0,
+     0
+    ],
+    "viking": [
+     2.2,
+     0.2
+    ],
+    "wr": false,
+    "packer": false,
+    "pfan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "viking": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Last week of the season. The Vikings, who started six and oh, just had to win in Arizona.",
+   "cap": "Last week of the season. The Vikings, who started 6-0, just had to win in Arizona.",
+   "key": [
+    "6-0,"
+   ],
+   "board": [
+    "WEEK 17",
+    "VIKINGS WIN = IN"
+   ],
+   "place": {
+    "capy": false,
+    "viking": [
+     -1.0,
+     0
+    ],
+    "qb": [
+     1.4,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "viking",
+    "with": "qb"
+   },
+   "act": {
+    "viking": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "neutral",
+     "look": "viking"
+    }
+   }
+  },
+  {
+   "text": "Win, and Minnesota took the division. Green Bay was out.",
+   "key": [
+    "OUT."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "viking"
+   },
+   "act": {
+    "viking": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Green Bay was beating Denver at home. Its fans listened to Arizona on the radio.",
+   "key": [
+    "RADIO."
+   ],
+   "set": "tunnel",
+   "board": [
+    "PACKERS 31",
+    "BRONCOS 3"
+   ],
+   "place": {
+    "pfan": [
+     -0.9,
+     0.6
+    ],
+    "packer": [
+     1.1,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "pfan",
+    "with": "packer"
+   },
+   "act": {
+    "pfan": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "packer": {
+     "mood": "worried",
+     "look": "pfan"
+    }
+   }
+  },
+  {
+   "text": "In Arizona, the Vikings led seventeen to six with about two minutes left.",
+   "cap": "In Arizona, the Vikings led 17 to 6 with about 2 minutes left.",
+   "key": [
+    "17"
+   ],
+   "set": "field",
+   "board": [
+    "VIKINGS 17",
+    "CARDINALS 6"
+   ],
+   "place": {
+    "viking": [
+     -1.4,
+     0
+    ],
+    "qb": [
+     1.4,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "viking",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "viking": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Arizona scored. Seventeen to twelve.",
+   "cap": "Arizona scored. 17 to 12.",
+   "key": [
+    "12."
+   ],
+   "board": [
+    "VIKINGS 17",
+    "CARDINALS 12"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    },
+    "viking": {
+     "mood": "worried",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Then two straight sacks. Fourth down. Twenty five yards to go.",
+   "cap": "Then 2 straight sacks. Fourth down. 25 yards to go.",
+   "key": [
+    "25"
+   ],
+   "board": [
+    "4TH",
+    "& 25"
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "viking": [
+     1.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "viking": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Last play of the season. One snap.",
+   "key": [
+    "ONE"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     1.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Josh McCown threw it to the end zone. Nate Poole caught it with one foot down.",
+   "key": [
+    "ONE",
+    "FOOT"
+   ],
+   "board": [
+    "0:00",
+    "CATCH?"
+   ],
+   "place": {
+    "capy": false,
+    "qb": false,
+    "wr": [
+     0,
+     0
+    ],
+    "viking": [
+     1.4,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "shocked",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "viking": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "He was ruled forced out. Replay upheld it. Touchdown.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "place": {
+    "qb": [
+     -1.8,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "wr",
+    "with": "qb"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "wr"
+    },
+    "viking": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Cardinals eighteen, Vikings seventeen. No time left.",
+   "cap": "Cardinals 18, Vikings 17. No time left.",
+   "key": [
+    "18,"
+   ],
+   "board": [
+    "CARDINALS 18",
+    "VIKINGS 17"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "viking"
+   },
+   "act": {
+    "viking": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "At Lambeau, the crowd erupted. Green Bay won the division.",
+   "key": [
+    "ERUPTED."
+   ],
+   "set": "tunnel",
+   "board": [
+    "ARIZONA 18",
+    "MINNESOTA 17"
+   ],
+   "place": {
+    "pfan": [
+     -1.1,
+     0.6
+    ],
+    "packer": [
+     1.1,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "pfan",
+    "offset": [
+     1.1,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "pfan": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "packer": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "The Vikings started six and oh and missed the playoffs.",
+   "cap": "The Vikings started 6-0 and missed the playoffs.",
+   "key": [
+    "MISSED"
+   ],
+   "board": [
+    "VIKINGS",
+    "9-7 OUT"
+   ],
+   "place": {
+    "capy": [
+     -1.0,
+     1.4
+    ],
+    "pfan": false,
+    "packer": [
+     1.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "packer": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Has another team's game ever saved yours? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "SAVED BY",
+    "ANOTHER GAME?"
+   ],
+   "place": {
+    "pfan": [
+     1.4,
+     0.8
+    ],
+    "packer": [
+     2.8,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pfan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "pfan": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Deseret News (AP): Cardinals 18, Vikings 17 — last-second play boots Vikings from playoffs",
+   "url": "https://www.deseret.com/2003/12/29/19803762/last-second-play-boots-vikings-from-playoffs/"
+  },
+  {
+   "title": "Southeast Missourian (AP): Arizona comeback puts Green Bay in playoffs",
+   "url": "https://www.semissourian.com/sports/arizona-comeback-puts-green-bay-in-playoffs-127536"
+  },
+  {
+   "title": "Star Tribune: Randball on Josh McCown and the 2003 Cardinals-Vikings game",
+   "url": "https://www.startribune.com/randball-josh-mccown-2003-arizona-cardinals-vikings-new-quarterbacks-coach/600346840"
+  },
+  {
+   "title": "Arizona Cardinals: Nate Poole, Josh McCown and the Miracle in the Desert",
+   "url": "https://www.azcardinals.com/news/nate-poole-josh-mccown-vikings-cardinals-miracle-in-the-desert-larry-fitzgerald"
+  }
+ ]
+}

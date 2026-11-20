@@ -1,0 +1,553 @@
+{
+ "id": "s2_16_flag_after_the_snap",
+ "title": "The challenge flag that beat the snap",
+ "set": "tunnel",
+ "setOpts": {
+  "boardText": [
+   "BRONCOS",
+   "PANTHERS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0085ca",
+    "pants": "#c9ced3",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c",
+    "number": "9"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "te": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0085ca",
+    "pants": "#c9ced3",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "number": "82"
+   },
+   "at": [
+    0.6,
+    -2.2
+   ]
+  },
+  "key": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f28c28",
+    "pants": "#0b2240",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "number": "34"
+   },
+   "at": [
+    -1.2,
+    -2.6
+   ]
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#f28c28",
+    "pants": "#2b2b2e",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "headset": true,
+    "cap": "#0b2240"
+   },
+   "at": "sideline",
+   "hold": "flag"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "shirt": "#f6f6f6",
+    "pants": "#ffffff",
+    "hair": "bald",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   },
+   "at": [
+    2.6,
+    -3.0
+   ]
+  },
+  "rusher": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f28c28",
+    "pants": "#0b2240",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "number": "15"
+   },
+   "at": [
+    -2.6,
+    -1.4
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "In Carolina this month, a challenge flag beat the snap. And it flipped the game.",
+   "key": [
+    "FLAG"
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "BRONCOS",
+     "PANTHERS"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "coach": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Panthers up fourteen to thirteen. First and goal at the one.",
+   "cap": "Panthers up 14 to 13. First and goal at the 1.",
+   "key": [
+    "1."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PANTHERS 14",
+     "BRONCOS 13"
+    ]
+   },
+   "place": {
+    "qb": "right",
+    "te": [
+     0.4,
+     -1.4
+    ],
+    "key": [
+     -1.0,
+     -1.8
+    ],
+    "ref": [
+     2.8,
+     -3.2
+    ],
+    "rusher": [
+     -2.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "hold"
+    },
+    "te": {
+     "mood": "happy"
+    },
+    "key": {
+     "mood": "worried"
+    }
+   }
+  },
+  {
+   "text": "Bryce Young throws to the corner. The ball bounces off his tight end.",
+   "key": [
+    "BOUNCES"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "te"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "throw",
+     "look": "te"
+    },
+    "te": {
+     "mood": "shocked",
+     "action": "shrug"
+    },
+    "key": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "te"
+    }
+   }
+  },
+  {
+   "text": "Safety Devon Key catches it, just above the turf.",
+   "key": [
+    "TURF."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "key"
+   },
+   "act": {
+    "key": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "key"
+    }
+   }
+  },
+  {
+   "text": "The call on the field: incomplete. Carolina snaps the next play.",
+   "key": [
+    "INCOMPLETE."
+   ],
+   "place": {
+    "ref": [
+     -0.2,
+     0.6
+    ],
+    "qb": [
+     2.6,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "camera"
+    },
+    "key": {
+     "mood": "angry",
+     "action": "shrug",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "But Sean Payton's red flag was already flying.",
+   "key": [
+    "RED"
+   ],
+   "place": {
+    "coach": "sideline"
+   },
+   "shot": {
+    "type": "close",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Replay showed the flag was out before that snap. So the old play still counted.",
+   "key": [
+    "BEFORE"
+   ],
+   "place": {
+    "capy": [
+     -2.0,
+     1.2
+    ],
+    "rusher": [
+     -3.4,
+     -1.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "ref"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Incomplete becomes interception. Denver ball.",
+   "key": [
+    "INTERCEPTION."
+   ],
+   "place": {
+    "ref": [
+     2.8,
+     -3.2
+    ],
+    "key": [
+     -0.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "key"
+   },
+   "act": {
+    "key": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "A Panthers player admitted no one thought that was possible.",
+   "key": [
+    "POSSIBLE."
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "REVIEW:",
+     "INT"
+    ]
+   },
+   "place": {
+    "te": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "te"
+  },
+  {
+   "text": "Denver marches eighty yards for a touchdown. Nineteen to fourteen.",
+   "cap": "Denver marches 80 yards for a touchdown. 19 to 14.",
+   "key": [
+    "80"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BRONCOS 19",
+     "PANTHERS 14"
+    ]
+   },
+   "place": {
+    "key": "center",
+    "rusher": "left",
+    "qb": "right"
+   },
+   "shot": {
+    "type": "high",
+    "on": "key"
+   },
+   "act": {
+    "key": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "rusher": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Then Nik Bonitto strips the quarterback late. Final: twenty six to twenty one.",
+   "cap": "Then Nik Bonitto strips the quarterback late. Final: 26 to 21.",
+   "key": [
+    "26"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "rusher",
+    "with": "qb"
+   },
+   "act": {
+    "rusher": {
+     "mood": "angry",
+     "action": "point",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "shocked",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "That's sixteen straight one-score wins for Denver.",
+   "cap": "That's 16 straight one-score wins for Denver.",
+   "key": [
+    "16"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "rusher"
+   },
+   "act": {
+    "rusher": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "key": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "An NFL record.",
+   "key": [
+    "RECORD."
+   ],
+   "place": {
+    "coach": [
+     0,
+     1.2
+    ],
+    "qb": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "smug",
+     "action": "clap"
+    },
+    "key": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "rusher": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Should a flag thrown before the snap still count? Yes or no?",
+   "key": [
+    "BEFORE",
+    "SNAP"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "FLAG:",
+     "IN TIME?"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "coach": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP: Bo Nix throws for 2 TDs, Broncos win key challenge to beat Panthers 26-21 for fifth straight victory",
+   "url": "https://www.live5news.com/2026/11/09/bo-nix-throws-2-tds-broncos-win-key-challenge-beat-panthers-26-21-fifth-straight-victory/"
+  },
+  {
+   "title": "ESPN: Sean Payton's replay challenge results in key interception in Broncos' victory",
+   "url": "https://abc11.com/post/sean-paytons-replay-challenge-results-key-interception-broncos-victory/20025083/"
+  },
+  {
+   "title": "ClutchPoints: Referee explains controversial review of crazy INT during Broncos-Panthers game",
+   "url": "https://clutchpoints.com/nfl/denver-broncos/broncos-news-referee-explains-controversial-review-crazy-int-panthers-game"
+  },
+  {
+   "title": "ClutchPoints: Nik Bonitto on Denver's historic one-score game winning record",
+   "url": "https://clutchpoints.com/nfl/denver-broncos/broncos-news-nik-bonitto-calls-game-secure-denver-historic-1-score-game-winning-record"
+  },
+  {
+   "title": "Pro Football Network: Controversy erupts as Broncos' late challenge leads to wildest interception of the season",
+   "url": "https://www.profootballnetwork.com/controversy-erupts-panthers-broncos-interception/"
+  }
+ ]
+}

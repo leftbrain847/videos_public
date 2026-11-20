@@ -1,0 +1,510 @@
+{
+ "id": "s1_18_tush_push_vote",
+ "title": "The play that survived 22 votes",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "4TH & 1"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#f4f4f4",
+    "skin": "#7b4e33",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "number": "1"
+   },
+   "at": [
+    0,
+    0.6
+   ],
+   "hold": "football"
+  },
+  "p1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#f4f4f4",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "number": "62"
+   },
+   "at": [
+    -0.9,
+    -0.8
+   ]
+  },
+  "p2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#f4f4f4",
+    "skin": "#a8714c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "26"
+   },
+   "at": [
+    0.9,
+    -0.8
+   ]
+  },
+  "owner": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#203731",
+    "pants": "#203731",
+    "skin": "#e8b48f",
+    "hair": "short",
+    "hairColor": "#d9d9d9",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "Twenty two NFL teams voted to ban one play. It's still legal.",
+   "key": [
+    "22",
+    "LEGAL."
+   ],
+   "cap": "22 NFL teams voted to ban one play. It's still legal.",
+   "place": {
+    "owner": false,
+    "capy": [
+     -2.2,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    },
+    "p1": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "p2": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The play: the tush push.",
+   "key": [
+    "TUSH",
+    "PUSH."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "p1": {
+     "mood": "angry",
+     "action": "point",
+     "look": "qb"
+    },
+    "p2": {
+     "mood": "angry",
+     "action": "point",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Short yardage. The quarterback sneaks forward, and his teammates shove him from behind.",
+   "key": [
+    "SHOVE"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "shocked",
+     "action": "hold"
+    },
+    "p1": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "qb"
+    },
+    "p2": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "It's the Philadelphia Eagles' signature play.",
+   "key": [
+    "EAGLES'"
+   ],
+   "place": {
+    "qb": [
+     2.6,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "p1",
+    "with": "p2"
+   },
+   "act": {
+    "p1": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "p2": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In 2025, the Green Bay Packers proposed banning any push or pull on the runner.",
+   "key": [
+    "PACKERS"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "PROPOSAL:",
+     "BAN THE PUSH"
+    ]
+   },
+   "board": [
+    "PROPOSAL:",
+    "BAN THE PUSH"
+   ],
+   "place": {
+    "owner": "desk",
+    "capy": "left"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "owner"
+   },
+   "act": {
+    "owner": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "owner"
+    }
+   },
+   "speaker": "owner"
+  },
+  {
+   "text": "At the spring meeting, the owners split down the middle. Tabled.",
+   "key": [
+    "TABLED."
+   ],
+   "board": [
+    "STATUS:",
+    "TABLED"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "owner"
+   },
+   "act": {
+    "owner": {
+     "mood": "confused",
+     "action": "shrug"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "May 2025. The vote. Twenty two teams for the ban. Ten against.",
+   "key": [
+    "22",
+    "10."
+   ],
+   "cap": "May 2025. The vote. 22 teams for the ban. 10 against.",
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "FOR 22",
+     "AGAINST 10"
+    ]
+   },
+   "board": [
+    "FOR 22",
+    "AGAINST 10"
+   ],
+   "place": {
+    "owner": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "owner"
+   },
+   "act": {
+    "owner": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Sounds like an easy win. It isn't.",
+   "key": [
+    "ISN'T."
+   ],
+   "place": {
+    "capy": "left"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "owner"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "owner": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Because, as the league's rules chief puts it, it takes twenty four votes to pass anything.",
+   "key": [
+    "24"
+   ],
+   "cap": "Because, as the league's rules chief puts it, it takes 24 votes to pass anything.",
+   "board": [
+    "NEEDED",
+    "24"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The ban falls two votes short.",
+   "key": [
+    "2",
+    "SHORT."
+   ],
+   "cap": "The ban falls 2 votes short.",
+   "shot": {
+    "type": "close",
+    "on": "owner"
+   },
+   "act": {
+    "owner": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "So the push lives on.",
+   "key": [
+    "LIVES"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "TUSH PUSH:",
+     "LEGAL"
+    ]
+   },
+   "board": [
+    "TUSH PUSH:",
+    "LEGAL"
+   ],
+   "place": {
+    "qb": [
+     0,
+     0.6
+    ],
+    "p1": [
+     -0.9,
+     -0.8
+    ],
+    "p2": [
+     0.9,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "p1": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "qb"
+    },
+    "p2": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "And for 2026? Nobody even tried. Not one team proposed a ban this time.",
+   "key": [
+    "NOBODY"
+   ],
+   "cap": "And for 2026? Nobody even tried. Not one team proposed a ban this time.",
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty two teams wanted it gone. It stayed anyway.",
+   "key": [
+    "STAYED"
+   ],
+   "cap": "22 teams wanted it gone. It stayed anyway.",
+   "place": {
+    "capy": [
+     -2.2,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Should the tush push be legal? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "CBS Sports: 'Tush Push' vote: Play survives potential ban in NFL after Packers' proposal comes up short",
+   "url": "https://www.cbssports.com/nfl/news/tush-push-vote-play-survives-potential-ban-in-nfl-after-packers-proposal-comes-up-short"
+  },
+  {
+   "title": "6abc (ESPN): Proposal to ban tush push in NFL fails by two votes, sources say",
+   "url": "https://6abc.com/post/proposal-ban-tush-push-nfl-fails-votes-sources-say/16494800/"
+  },
+  {
+   "title": "SI: Packers' Proposal to Ban Eagles' Tush Push Fails Again",
+   "url": "https://www.si.com/nfl/packers/packers-proposal-to-ban-eagles-tush-push-fails-again"
+  },
+  {
+   "title": "Vikings.com: 8 Takeaways from NFL Owners Meeting: Push Play Survives",
+   "url": "https://www.vikings.com/news/nfl-owners-meeting-tush-push-playoff-seeding"
+  },
+  {
+   "title": "ABC13 (AP): NFL receives no tush push ban proposal this year after effort last year to ban it failed",
+   "url": "https://abc13.com/post/nfl-receives-no-tush-push-ban-proposal-year-effort-last-failed/18649378/"
+  },
+  {
+   "title": "Fox News: 2026 NFL Rule Changes: Tush Push to Stay",
+   "url": "https://www.foxnews.com/sports/2026-nfl-rule-changes-tush-push-stay-5-proposals-voted"
+  }
+ ]
+}

@@ -1,0 +1,502 @@
+{
+ "id": "s1_05_jesse_james",
+ "title": "The touchdown that wasn't",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "PATRIOTS 27",
+   "STEELERS 24"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "te": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#e8c25a",
+    "number": "81",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "lb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#14254a",
+    "pants": "#c9ccd1",
+    "number": "54",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "right"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "left",
+   "hold": "flag"
+  },
+  "own": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b33",
+    "pants": "#2b2b33",
+    "hair": "short",
+    "hairColor": "#cfcfcf",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2017, Jesse James caught the go-ahead touchdown against New England. Then replay erased it.",
+   "key": [
+    "TOUCHDOWN",
+    "ERASED"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "te": [
+     0.9,
+     0
+    ],
+    "lb": false,
+    "ref": false,
+    "own": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "te"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Pittsburgh trailed twenty seven to twenty four. Twenty eight seconds left.",
+   "cap": "Pittsburgh trailed 27 to 24. 28 seconds left.",
+   "key": [
+    "27",
+    "28"
+   ],
+   "place": {
+    "capy": false,
+    "te": "center",
+    "lb": [
+     1.5,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "te",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "te": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "lb": {
+     "mood": "angry",
+     "look": "te"
+    }
+   }
+  },
+  {
+   "text": "James catches a pass just short of the goal line.",
+   "key": [
+    "SHORT"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He goes down, and stretches the ball across.",
+   "key": [
+    "STRETCHES"
+   ],
+   "place": {
+    "lb": [
+     1.0,
+     -0.5
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "te",
+    "with": "lb"
+   },
+   "act": {
+    "te": {
+     "mood": "happy",
+     "action": "point"
+    },
+    "lb": {
+     "mood": "shocked",
+     "look": "te"
+    }
+   }
+  },
+  {
+   "text": "Touchdown on the field. Pittsburgh leads.",
+   "key": [
+    "LEADS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "lb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Then replay sees the ball move as it hits the ground.",
+   "key": [
+    "MOVE"
+   ],
+   "place": {
+    "ref": [
+     -1.6,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "The league said a receiver going to the ground has to survive the ground.",
+   "key": [
+    "SURVIVE"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "SURVIVE",
+     "THE GROUND"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "ref": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "This one didn't. Incomplete.",
+   "key": [
+    "INCOMPLETE."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PATRIOTS 27",
+     "STEELERS 24"
+    ]
+   },
+   "place": {
+    "te": "center",
+    "ref": [
+     -1.8,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ref",
+    "with": "te"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "te"
+    },
+    "te": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "Two plays later, Pittsburgh threw an interception in the end zone.",
+   "key": [
+    "INTERCEPTION"
+   ],
+   "place": {
+    "ref": false,
+    "te": false,
+    "lb": "center"
+   },
+   "shot": {
+    "type": "close",
+    "on": "lb"
+   },
+   "act": {
+    "lb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Game over. Patriots win, twenty seven to twenty four.",
+   "cap": "Game over. Patriots win, 27 to 24.",
+   "key": [
+    "27"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "lb": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "te": [
+     -0.8,
+     0
+    ],
+    "lb": [
+     0.8,
+     0
+    ]
+   }
+  },
+  {
+   "text": "The winner was in line for home field in the playoffs.",
+   "key": [
+    "HOME",
+    "FIELD"
+   ],
+   "place": {
+    "lb": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Three months later, the owners rewrote the catch rule.",
+   "cap": "3 months later, the owners rewrote the catch rule.",
+   "key": [
+    "REWROTE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NEW",
+     "CATCH RULE"
+    ]
+   },
+   "place": {
+    "own": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "own"
+  },
+  {
+   "text": "Jesse James's play was one of the reasons why.",
+   "key": [
+    "REASONS."
+   ],
+   "place": {
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "own"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "own": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you have counted it? Yes or no, below.",
+   "key": [
+    "YES",
+    "NO,"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "TOUCHDOWN?",
+     "YES / NO"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "te": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "te"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com: NFL: Steelers' Jesse James lost control of the football",
+   "url": "https://nfl.com/_amp/nfl-steelers-jesse-james-lost-control-of-the-football-0ap3000000894836"
+  },
+  {
+   "title": "NESN: Jesse James catch overturned in controversial Patriots-Steelers ending",
+   "url": "https://nesn.com/2017/12/jesse-james-catch-overturned-in-controversial-patriots-steelers-ending"
+  },
+  {
+   "title": "TribLIVE: Steelers' overturned touchdown adds to confusion over NFL's catch rule",
+   "url": "https://archive.triblive.com/sports/steelers/steelers-overturned-touchdown-adds-to-confusion-over-nfls-catch-rule"
+  },
+  {
+   "title": "CBS Sports: NFL VP of officiating tries to explain why Steelers TD got overturned",
+   "url": "https://www.cbssports.com/nfl/news/nfl-vp-of-officiating-tries-to-explain-why-steelers-td-got-overturned-vs-patriots"
+  },
+  {
+   "title": "NFL.com: NFL teams unanimously approve simplified catch rule",
+   "url": "https://www.nfl.com/news/nfl-teams-unanimously-approve-simplified-catch-rule-0ap3000000923342"
+  },
+  {
+   "title": "SI: NFL owners vote unanimously on changes to catch rule",
+   "url": "https://www.si.com/nfl/2018/03/27/owners-vote-unanimously-change-catch-rule"
+  }
+ ]
+}

@@ -1,0 +1,481 @@
+{
+ "id": "s4_04_new_meadowlands",
+ "title": "Miracle at the New Meadowlands",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "GIANTS 31",
+   "EAGLES 10"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "jackson": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#e6e6e6",
+    "number": "10",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "vick": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#e6e6e6",
+    "number": "7",
+    "hair": "bald",
+    "skin": "#5a3825"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "punter": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b2265",
+    "pants": "#d0d0d0",
+    "number": "2",
+    "hair": "short",
+    "hairColor": "#d9b16a"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#0b2265",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#e0e0e0",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": [
+    0,
+    0
+   ],
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2010, the Giants led the Eagles by twenty one points with eight minutes left. They lost.",
+   "key": [
+    "21",
+    "LOST."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "cap": "In 2010, the Giants led the Eagles by 21 points with 8 minutes left. They lost.",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "jackson": false,
+    "vick": false,
+    "punter": false,
+    "coach": [
+     0.4,
+     0
+    ]
+   },
+   "speaker": "capy",
+   "board": [
+    "GIANTS 31",
+    "EAGLES 10"
+   ]
+  },
+  {
+   "text": "New York led thirty one to ten. Comfortably.",
+   "key": [
+    "31"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "punter"
+   },
+   "act": {
+    "punter": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "vick": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "New York led 31 to 10. Comfortably.",
+   "place": {
+    "capy": false,
+    "coach": false,
+    "punter": "right",
+    "vick": "left"
+   }
+  },
+  {
+   "text": "Then a sixty five yard touchdown catch. Then a Michael Vick touchdown run.",
+   "key": [
+    "65",
+    "VICK"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "vick"
+   },
+   "act": {
+    "vick": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    }
+   },
+   "cap": "Then a 65 yard touchdown catch. Then a Michael Vick touchdown run.",
+   "board": [
+    "GIANTS 31",
+    "EAGLES 24"
+   ]
+  },
+  {
+   "text": "Then an onside kick. Philadelphia got it back.",
+   "key": [
+    "ONSIDE"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "jackson"
+   },
+   "act": {
+    "jackson": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "vick": {
+     "mood": "happy",
+     "action": "point",
+     "look": "jackson"
+    }
+   },
+   "place": {
+    "jackson": [
+     1.4,
+     0.4
+    ],
+    "punter": false
+   }
+  },
+  {
+   "text": "Another touchdown. Thirty one to thirty one, with a minute left.",
+   "key": [
+    "31",
+    "31,"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "vick",
+    "with": "jackson"
+   },
+   "act": {
+    "vick": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "jackson": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   },
+   "cap": "Another touchdown. 31 to 31, with a minute left.",
+   "board": [
+    "GIANTS 31",
+    "EAGLES 31"
+   ]
+  },
+  {
+   "text": "The Giants' sideline was getting ready for overtime.",
+   "key": [
+    "OVERTIME."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "set": "locker",
+   "place": {
+    "coach": "center"
+   },
+   "board": [
+    "PLAN:",
+    "OVERTIME"
+   ]
+  },
+  {
+   "text": "Last play of regulation. The Giants had to punt. The punter was told: kick it out of bounds.",
+   "key": [
+    "OUT"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "coach",
+    "with": "punter"
+   },
+   "act": {
+    "coach": {
+     "mood": "angry",
+     "action": "point",
+     "look": "punter"
+    },
+    "punter": {
+     "mood": "worried",
+     "look": "coach"
+    }
+   },
+   "place": {
+    "coach": "left",
+    "punter": "right"
+   },
+   "speaker": "coach",
+   "board": [
+    "PUNT IT",
+    "OUT OF BOUNDS"
+   ]
+  },
+  {
+   "text": "The rookie punter, Matt Dodge, got a high snap.",
+   "key": [
+    "HIGH"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "punter"
+   },
+   "act": {
+    "punter": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "set": "field",
+   "place": {
+    "punter": "center",
+    "jackson": [
+     2.4,
+     -3.0
+    ]
+   },
+   "board": [
+    "GIANTS 31",
+    "EAGLES 31"
+   ]
+  },
+  {
+   "text": "He kicked a line drive. Down the middle. To DeSean Jackson.",
+   "key": [
+    "MIDDLE.",
+    "JACKSON."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "punter",
+    "with": "jackson"
+   },
+   "act": {
+    "punter": {
+     "mood": "worried",
+     "action": "facepalm"
+    },
+    "jackson": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "punter"
+    }
+   }
+  },
+  {
+   "text": "Jackson ran it back sixty five yards. Touchdown. No time left.",
+   "key": [
+    "65"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "jackson"
+   },
+   "act": {
+    "jackson": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "cap": "Jackson ran it back 65 yards. Touchdown. No time left.",
+   "place": {
+    "punter": false,
+    "jackson": "center"
+   },
+   "board": [
+    "EAGLES 38",
+    "GIANTS 31"
+   ]
+  },
+  {
+   "text": "Eagles thirty eight, Giants thirty one. Twenty eight points in under eight minutes.",
+   "key": [
+    "28"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "jackson"
+   },
+   "act": {
+    "jackson": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "vick": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "punter": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "Eagles 38, Giants 31. 28 points in under 8 minutes.",
+   "place": {
+    "vick": "left",
+    "punter": [
+     2.8,
+     -1.4
+    ]
+   }
+  },
+  {
+   "text": "The Giants' coach, Tom Coughlin, did not take it calmly.",
+   "key": [
+    "CALMLY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "angry",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "set": "press",
+   "place": {
+    "coach": "center"
+   },
+   "speaker": "coach",
+   "board": [
+    "POSTGAME"
+   ]
+  },
+  {
+   "text": "Eagles fans named it the Miracle at the New Meadowlands.",
+   "key": [
+    "MIRACLE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "coach": "right",
+    "capy": "left"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Twenty one points up, eight minutes left. Is any lead safe? Yes or no.",
+   "key": [
+    "SAFE?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "capy"
+    }
+   },
+   "cap": "21 points up, 8 minutes left. Is any lead safe? Yes or no.",
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Miracle at the New Meadowlands",
+   "url": "https://en.wikipedia.org/wiki/Miracle_at_the_New_Meadowlands"
+  },
+  {
+   "title": "NBC Sports Philadelphia: Recalling the DeSean walk-off punt return game 10 years later",
+   "url": "https://www.nbcsportsphiladelphia.com/philadelphia/eagles/desean-jackson-punt-return-eagles-giants-anniversary"
+  },
+  {
+   "title": "Reuters via Fox News: Another Eagles miracle beats Giants at last second",
+   "url": "https://www.foxnews.com/sports/another-eagles-miracle-beats-giants-at-last-second"
+  }
+ ]
+}

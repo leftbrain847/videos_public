@@ -1,0 +1,497 @@
+{
+ "id": "s2_01_bears_59",
+ "title": "96 points in one opener",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "BEARS 59",
+   "PANTHERS 37"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "williams": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#13254d",
+    "pants": "#f4f4f4",
+    "number": "18",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "young": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1aa7e1",
+    "pants": "#c9cdd2",
+    "number": "9",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "swift": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#13254d",
+    "pants": "#f4f4f4",
+    "number": "4",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c",
+    "beard": true
+   },
+   "at": [
+    -1.4,
+    -1.2
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "In week one, two NFL teams scored ninety six points in one game.",
+   "cap": "In Week 1, two NFL teams scored 96 points in one game.",
+   "key": [
+    "96"
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "williams": [
+     0,
+     0
+    ],
+    "young": [
+     2.2,
+     0.3
+    ],
+    "swift": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "williams"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "williams": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "young"
+    },
+    "young": {
+     "mood": "worried",
+     "look": "williams"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Chicago, fifty nine. Carolina, thirty seven.",
+   "cap": "Chicago, 59. Carolina, 37.",
+   "key": [
+    "59",
+    "37."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "williams"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "williams"
+    },
+    "williams": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "young": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "The old record for a season opener was eighty eight, set in twenty eighteen.",
+   "cap": "The old record for a season opener was 88, set in 2018.",
+   "key": [
+    "88,"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "OPENER RECORD",
+     "88 (2018)"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "And Chicago turned the ball over on its very first drive.",
+   "key": [
+    "FIRST"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BEARS 0",
+     "PANTHERS 0"
+    ]
+   },
+   "place": {
+    "williams": "center",
+    "young": "right"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "williams"
+   },
+   "act": {
+    "williams": {
+     "mood": "worried",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "young": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "williams"
+    }
+   }
+  },
+  {
+   "text": "Then the Bears scored seven touchdowns on their next twelve drives.",
+   "cap": "Then the Bears scored 7 touchdowns on their next 12 drives.",
+   "key": [
+    "7",
+    "TOUCHDOWNS"
+   ],
+   "place": {
+    "swift": [
+     -2.0,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "williams"
+   },
+   "act": {
+    "williams": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "swift": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "williams"
+    },
+    "young": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "williams"
+    }
+   }
+  },
+  {
+   "text": "Halftime score: thirty one to twenty four. Defense was optional.",
+   "cap": "Halftime score: 31 to 24. Defense was optional.",
+   "key": [
+    "OPTIONAL."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "HALFTIME",
+     "31 - 24"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.2,
+     0.6
+    ],
+    "williams": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "williams"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "williams": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Caleb Williams threw two touchdowns and ran for two more.",
+   "cap": "Caleb Williams threw 2 touchdowns and ran for 2 more.",
+   "key": [
+    "RAN"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BEARS 31",
+     "PANTHERS 24"
+    ]
+   },
+   "place": {
+    "williams": "center",
+    "young": "right",
+    "swift": [
+     -2.8,
+     -1.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "williams"
+   },
+   "act": {
+    "williams": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    },
+    "young": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "williams"
+    },
+    "swift": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "williams"
+    }
+   }
+  },
+  {
+   "text": "D'Andre Swift ran for three. A teammate broke one for sixty one yards.",
+   "cap": "D'Andre Swift ran for 3. A teammate broke one for 61 yards.",
+   "key": [
+    "3.",
+    "61"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "swift"
+   },
+   "act": {
+    "swift": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Chicago gained five hundred fifty two yards.",
+   "cap": "Chicago gained 552 yards.",
+   "key": [
+    "552"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "williams"
+   },
+   "act": {
+    "williams": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Carolina's quarterback threw for three hundred sixty one yards, and lost by twenty two.",
+   "cap": "Carolina's quarterback threw for 361 yards, and lost by 22.",
+   "key": [
+    "361",
+    "22."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "young"
+   },
+   "act": {
+    "young": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fifty nine is the most points Carolina has ever allowed in a game.",
+   "cap": "59 is the most points Carolina has ever allowed in a game.",
+   "key": [
+    "59",
+    "EVER"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "POSTGAME"
+    ]
+   },
+   "place": {
+    "young": "center",
+    "capy": [
+     -2.2,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "young",
+    "with": "capy"
+   },
+   "act": {
+    "young": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "young"
+    }
+   }
+  },
+  {
+   "text": "Chicago's old record for an opener? Forty five, from nineteen forty eight.",
+   "cap": "Chicago's old record for an opener? 45, from 1948.",
+   "key": [
+    "45,",
+    "1948."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "BEARS OPENER",
+     "OLD: 45 (1948)"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Ninety six points. Would you rather watch that, or a shutout? Tell me below.",
+   "cap": "96 points. Would you rather watch that, or a shutout? Tell me below.",
+   "key": [
+    "96",
+    "SHUTOUT?"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BEARS 59",
+     "PANTHERS 37"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "williams": [
+     0.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "williams"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "williams": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP via WBTV: Williams and Bears trounce Panthers 59-37 in highest-scoring season opener in NFL history",
+   "url": "https://www.wbtv.com/2026/09/14/caleb-williams-bears-trounce-panthers-59-37-highest-scoring-season-opener-nfl-history/"
+  },
+  {
+   "title": "Chicago Sun-Times: Bears' defense good enough to win opener, but nowhere near good enough",
+   "url": "https://chicago.suntimes.com/bears/2026/09/13/bears-panthers-final-score-59-37-defense-struggles-opener"
+  },
+  {
+   "title": "WBTV: Panthers lose 5th straight season opener after historically awful game",
+   "url": "https://www.wbtv.com/2026/09/14/panthers-lose-5th-straight-season-opener-after-historically-awful-game/"
+  }
+ ]
+}

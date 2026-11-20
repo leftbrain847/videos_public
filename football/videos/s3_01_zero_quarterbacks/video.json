@@ -1,0 +1,477 @@
+{
+ "id": "s3_01_zero_quarterbacks",
+ "title": "The NFL team with zero quarterbacks",
+ "set": "locker",
+ "setOpts": {
+  "boardText": [
+   "QB:",
+   "???"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "hinton": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f28c28",
+    "pants": "#f4f4f4",
+    "number": "2",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1f3f8f",
+    "pants": "#4a4a4a",
+    "skin": "#f2c39b",
+    "cap": "#f28c28",
+    "hair": "bald"
+   },
+   "at": "right",
+   "face": -25,
+   "hold": "clipboard"
+  },
+  "qb1": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#1f3f8f",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": [
+    -3.6,
+    -2.6
+   ]
+  },
+  "qb2": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#1f3f8f",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#d9b16a"
+   },
+   "at": [
+    -2.2,
+    -3.0
+   ]
+  },
+  "qb3": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#1f3f8f",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "beard": true
+   },
+   "at": [
+    -4.9,
+    -3.0
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, an NFL team played a real game with zero quarterbacks.",
+   "key": [
+    "ZERO"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hinton"
+   },
+   "act": {
+    "hinton": {
+     "mood": "worried"
+    },
+    "coach": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "hinton"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "qb1": false,
+    "qb2": false,
+    "qb3": false,
+    "capy": [
+     -2.6,
+     0.8
+    ]
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "On Thursday, Denver's third-string quarterback tested positive for COVID.",
+   "key": [
+    "POSITIVE"
+   ],
+   "place": {
+    "hinton": false,
+    "coach": false,
+    "qb1": [
+     -1.4,
+     0
+    ],
+    "qb2": [
+     0,
+     -0.4
+    ],
+    "qb3": [
+     1.4,
+     0
+    ],
+    "capy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb1",
+    "with": "qb3"
+   },
+   "act": {
+    "qb2": {
+     "mood": "shocked",
+     "action": "shrug"
+    },
+    "qb1": {
+     "mood": "worried",
+     "look": "qb2"
+    },
+    "qb3": {
+     "mood": "worried",
+     "look": "qb2"
+    }
+   }
+  },
+  {
+   "text": "The other three had been in meetings with him. Without masks.",
+   "key": [
+    "MASKS"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "qb2"
+   },
+   "act": {
+    "qb1": {
+     "mood": "sad",
+     "action": "facepalm"
+    },
+    "qb3": {
+     "mood": "sad"
+    },
+    "qb2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the league ruled all four out. The day before the game.",
+   "key": [
+    "ALL",
+    "FOUR"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "ALL QBs:",
+     "OUT"
+    ]
+   },
+   "place": {
+    "qb1": false,
+    "qb2": false,
+    "qb3": false,
+    "coach": "desk",
+    "hinton": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "shocked",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "Denver asked to postpone. The answer was no.",
+   "key": [
+    "NO"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "angry",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Their new quarterback? Kendall Hinton. A practice squad wide receiver.",
+   "key": [
+    "WIDE",
+    "RECEIVER"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "QB:",
+     "HINTON?"
+    ]
+   },
+   "place": {
+    "hinton": "center",
+    "coach": "right",
+    "capy": [
+     -2.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "hinton"
+   },
+   "act": {
+    "hinton": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "hinton"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "hinton"
+    }
+   }
+  },
+  {
+   "text": "He'd played quarterback in college at Wake Forest, but not in two years.",
+   "key": [
+    "TWO",
+    "YEARS"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "hinton",
+    "with": "coach"
+   },
+   "act": {
+    "hinton": {
+     "mood": "worried",
+     "look": "coach"
+    },
+    "coach": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "hinton"
+    }
+   },
+   "speaker": "coach"
+  },
+  {
+   "text": "And he found out with less than twenty four hours to kickoff.",
+   "key": [
+    "24",
+    "HOURS"
+   ],
+   "cap": "And he found out with less than 24 hours to kickoff.",
+   "shot": {
+    "type": "close",
+    "on": "hinton"
+   },
+   "act": {
+    "hinton": {
+     "mood": "shocked",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Final line: one of nine. Thirteen yards. Two interceptions.",
+   "cap": "Final line: 1 of 9. 13 yards. 2 interceptions.",
+   "key": [
+    "1",
+    "13"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BRONCOS 3",
+     "SAINTS 31"
+    ]
+   },
+   "place": {
+    "hinton": "center",
+    "coach": "sideline"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "hinton"
+   },
+   "act": {
+    "hinton": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Denver lost, thirty one to three.",
+   "cap": "Denver lost, 31 to 3.",
+   "key": [
+    "31"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "hinton",
+    "offset": [
+     3,
+     2,
+     4
+    ]
+   },
+   "act": {
+    "hinton": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "No team had completed just one pass in a game since the 2005 49ers.",
+   "key": [
+    "ONE",
+    "PASS"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "hinton"
+   },
+   "act": {
+    "hinton": {
+     "mood": "sad",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "His coach didn't blame him. He blamed the quarterbacks who broke the protocols.",
+   "key": [
+    "PROTOCOLS."
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "POSTGAME"
+    ]
+   },
+   "place": {
+    "coach": "center",
+    "hinton": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "angry",
+     "action": "talk"
+    }
+   },
+   "speaker": "coach"
+  },
+  {
+   "text": "Could you play quarterback on one night's notice? Tell me below.",
+   "key": [
+    "ONE",
+    "NIGHT'S"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "QB:",
+     "YOU?"
+    ]
+   },
+   "place": {
+    "hinton": "center",
+    "coach": false,
+    "capy": [
+     -1.6,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hinton"
+   },
+   "act": {
+    "hinton": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "SI: Broncos coach Vic Fangio 'disappointed' in quarterbacks for breaking COVID-19 protocols",
+   "url": "https://www.si.com/nfl/2020/11/30/broncos-coach-vic-fangio-disappointed-quarterbacks-covid-19"
+  },
+  {
+   "title": "The Ringer: The Broncos' emergency QB game somehow went even worse than expected",
+   "url": "https://theringer.com/2020/11/29/nfl/denver-broncos-quarterbacks-covid-kendall-hinton-saints"
+  },
+  {
+   "title": "Bleacher Report: Kendall Hinton, Broncos lose to Saints without any eligible QBs",
+   "url": "https://bleacherreport.com/articles/2920197-kendall-hinton-broncos-lose-to-saints-without-any-eligible-qbs-available"
+  },
+  {
+   "title": "CBS Sports: Saints at Broncos live (first team with one completion since the 2005 49ers)",
+   "url": "https://www.cbssports.com/nfl/news/saints-at-broncos-score-taysom-hill-rushes-for-two-touchdowns-denver-completes-one-pass-in-blowout/live"
+  },
+  {
+   "title": "Denver Gazette: 3 takeaways from Broncos' 31-3 loss",
+   "url": "https://www.denvergazette.com/2020/11/29/3-takeaways-from-broncos-31-3-loss-to-saints-offense-struggles-without-qb-defense-runs-out-of-gas-why-not-postpone-03f14a53-299b-5010-a90c-d5c3db59074a/"
+  }
+ ]
+}

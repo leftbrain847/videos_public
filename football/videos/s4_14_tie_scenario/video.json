@@ -1,0 +1,609 @@
+{
+ "id": "s4_14_tie_scenario",
+ "title": "The tie that would have sent both teams",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "TIE =",
+   "BOTH IN"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "raider": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#c9c9c9",
+    "number": "20",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "charger": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#6cb4ee",
+    "pants": "#f4f4f4",
+    "number": "10",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "rcoach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1b1b1b",
+    "pants": "#4a4a4a",
+    "skin": "#f2c39b",
+    "cap": "#c9c9c9",
+    "hair": "short",
+    "hairColor": "#9a9a9a"
+   },
+   "at": "sideline",
+   "hold": "clipboard"
+  },
+  "ccoach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#0b2a5b",
+    "pants": "#4a4a4a",
+    "skin": "#e8b48f",
+    "cap": "#6cb4ee",
+    "headset": true,
+    "hair": "short",
+    "hairColor": "#3b2416"
+   },
+   "at": "sideline",
+   "hold": "clipboard"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f6c21b",
+    "pants": "#1b1b1b",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#c68d64"
+   },
+   "at": "couchL"
+  }
+ },
+ "lines": [
+  {
+   "text": "In January 2022, two NFL teams could both reach the playoffs with a tie.",
+   "cap": "In January 2022, two NFL teams could both reach the playoffs with a tie.",
+   "key": [
+    "TIE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "raider": [
+     0,
+     0
+    ],
+    "charger": [
+     2.2,
+     0.2
+    ],
+    "rcoach": false,
+    "ccoach": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "raider"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "raider": {
+     "mood": "confused",
+     "look": "charger"
+    },
+    "charger": {
+     "mood": "confused",
+     "look": "raider"
+    }
+   }
+  },
+  {
+   "text": "Raiders and Chargers. Last game of the season. Sunday night in Las Vegas.",
+   "key": [
+    "LAST"
+   ],
+   "board": [
+    "RAIDERS 0",
+    "CHARGERS 0"
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "raider"
+   },
+   "act": {
+    "raider": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "charger"
+    },
+    "charger": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "raider"
+    }
+   }
+  },
+  {
+   "text": "If either team won, Pittsburgh got the last spot. A tie, and Pittsburgh was out.",
+   "key": [
+    "PITTSBURGH",
+    "OUT."
+   ],
+   "set": "living",
+   "board": [
+    "TIE =",
+    "STEELERS OUT"
+   ],
+   "place": {
+    "fan": [
+     -1.2,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan",
+    "offset": [
+     1.0,
+     0.6,
+     1.5
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "worried",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Down fifteen in the fourth quarter, the Chargers converted three fourth downs.",
+   "cap": "Down 15 in the fourth quarter, the Chargers converted 3 fourth downs.",
+   "key": [
+    "15",
+    "3"
+   ],
+   "set": "field",
+   "board": [
+    "DOWN 15",
+    "4TH QTR"
+   ],
+   "place": {
+    "charger": [
+     0,
+     0
+    ],
+    "ccoach": [
+     -2.6,
+     0.6
+    ],
+    "raider": [
+     2.4,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "charger"
+   },
+   "act": {
+    "charger": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    },
+    "ccoach": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "charger"
+    },
+    "raider": {
+     "mood": "worried",
+     "look": "charger"
+    }
+   }
+  },
+  {
+   "text": "Their touchdown pass came with no time left. Overtime.",
+   "key": [
+    "OVERTIME."
+   ],
+   "board": [
+    "0:00",
+    "OVERTIME"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "charger"
+   },
+   "act": {
+    "charger": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "ccoach": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "Raiders field goal. Chargers field goal. Thirty two all, and the clock kept running.",
+   "cap": "Raiders field goal. Chargers field goal. 32 all, and the clock kept running.",
+   "key": [
+    "32"
+   ],
+   "board": [
+    "RAIDERS 32",
+    "CHARGERS 32"
+   ],
+   "place": {
+    "raider": [
+     -1.3,
+     0
+    ],
+    "charger": [
+     1.3,
+     0
+    ],
+    "ccoach": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "raider",
+    "with": "charger"
+   },
+   "act": {
+    "raider": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "charger"
+    },
+    "charger": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "raider"
+    }
+   }
+  },
+  {
+   "text": "Now do the math. If nobody scores, both teams are in.",
+   "key": [
+    "BOTH"
+   ],
+   "board": [
+    "32 - 32 =",
+    "BOTH IN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "raider": {
+     "mood": "confused",
+     "action": "shrug"
+    },
+    "charger": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The Raiders' interim coach later said they discussed playing for the tie.",
+   "key": [
+    "TIE."
+   ],
+   "place": {
+    "capy": false,
+    "raider": false,
+    "charger": false,
+    "rcoach": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rcoach"
+   },
+   "act": {
+    "rcoach": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "rcoach"
+  },
+  {
+   "text": "Then, with thirty eight seconds left, the Chargers called timeout.",
+   "cap": "Then, with 38 seconds left, the Chargers called timeout.",
+   "key": [
+    "38",
+    "TIMEOUT."
+   ],
+   "board": [
+    "0:38",
+    "TIMEOUT"
+   ],
+   "place": {
+    "rcoach": false,
+    "ccoach": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "ccoach"
+   },
+   "act": {
+    "ccoach": {
+     "mood": "angry",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Their coach said he wanted his run defense on the field.",
+   "key": [
+    "RUN"
+   ],
+   "place": {
+    "capy": [
+     -2.0,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ccoach",
+    "with": "capy"
+   },
+   "act": {
+    "ccoach": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "ccoach"
+    }
+   },
+   "speaker": "ccoach"
+  },
+  {
+   "text": "Next play: Josh Jacobs ran ten yards.",
+   "cap": "Next play: Josh Jacobs ran 10 yards.",
+   "key": [
+    "10"
+   ],
+   "board": [
+    "RUN",
+    "+10 YDS"
+   ],
+   "place": {
+    "capy": false,
+    "ccoach": false,
+    "raider": [
+     0,
+     0
+    ],
+    "charger": [
+     1.8,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "raider"
+   },
+   "act": {
+    "raider": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "charger": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "raider"
+    }
+   }
+  },
+  {
+   "text": "That set up a forty seven yard field goal. Good, as time expired.",
+   "cap": "That set up a 47-yard field goal. Good, as time expired.",
+   "key": [
+    "47-YARD",
+    "GOOD,"
+   ],
+   "board": [
+    "47 YDS",
+    "GOOD"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "raider",
+    "offset": [
+     0.8,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "raider": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "charger": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Raiders thirty five, Chargers thirty two.",
+   "cap": "Raiders 35, Chargers 32.",
+   "key": [
+    "35,"
+   ],
+   "board": [
+    "RAIDERS 35",
+    "CHARGERS 32"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "raider"
+   },
+   "act": {
+    "raider": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "charger": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Raiders in. Steelers in. The Chargers, one tie away, were out.",
+   "key": [
+    "OUT."
+   ],
+   "set": "living",
+   "board": [
+    "STEELERS",
+    "IN"
+   ],
+   "place": {
+    "fan": [
+     -1.2,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "fan",
+    "offset": [
+     1.0,
+     0.3,
+     1.0
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have played for the tie? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "PLAY FOR",
+    "THE TIE?"
+   ],
+   "place": {
+    "fan": [
+     1.2,
+     4.4
+    ],
+    "capy": [
+     -1.0,
+     4.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "The Ringer: The Raiders and Chargers didn't tie, and the Steelers are in",
+   "url": "https://www.theringer.com/2022/01/10/nfl/raiders-chargers-playoffs-no-tie"
+  },
+  {
+   "title": "Bleacher Report: Rich Bisaccia says Raiders considered playing for tie before late Jacobs run",
+   "url": "https://bleacherreport.com/articles/10023344-rich-bisaccia-raiders-considered-playing-for-tie-vs-chargers-before-late-jacobs-run"
+  },
+  {
+   "title": "NBC Los Angeles: Chargers' season ends on Raiders field goal as time expires in overtime",
+   "url": "https://www.nbclosangeles.com/news/sports/chargers-season-ends-on-raiders-field-goal-as-time-expires-in-overtime/2794198/"
+  },
+  {
+   "title": "Yahoo Sports: No, the Chargers' timeout didn't cost them a tie and a playoff berth",
+   "url": "https://sg.news.yahoo.com/chargers-raiders-timeout-tie-brandon-staley-064703674.html"
+  }
+ ]
+}

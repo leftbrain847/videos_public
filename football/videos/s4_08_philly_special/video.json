@@ -1,0 +1,538 @@
+{
+ "id": "s4_08_philly_special",
+ "title": "The Philly Special",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "EAGLES 15",
+   "PATRIOTS 12"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "foles": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#e6e6e6",
+    "number": "9",
+    "hair": "short",
+    "hairColor": "#c8a165",
+    "beard": true
+   },
+   "at": "center"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#004c54",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#8a7a6a",
+    "cap": "#004c54"
+   },
+   "at": [
+    0,
+    0
+   ],
+   "hold": "clipboard"
+  },
+  "clement": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#e6e6e6",
+    "number": "30",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": [
+    0,
+    0
+   ],
+   "hold": "football"
+  },
+  "burton": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#e6e6e6",
+    "number": "88",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c99470"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "brady": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#002244",
+    "number": "12",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": [
+    0,
+    0
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "In the 2018 Super Bowl, a quarterback caught a touchdown pass. On purpose.",
+   "key": [
+    "CAUGHT"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "foles"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "foles": {
+     "mood": "smug",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "foles": [
+     0.4,
+     0
+    ],
+    "coach": false,
+    "clement": false,
+    "burton": false,
+    "brady": false
+   },
+   "speaker": "capy",
+   "board": [
+    "EAGLES 15",
+    "PATRIOTS 12"
+   ]
+  },
+  {
+   "text": "Eagles versus Patriots. Philadelphia led by three, in the final minute of the first half.",
+   "key": [
+    "3,"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "foles"
+   },
+   "act": {
+    "foles": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "brady": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "foles"
+    }
+   },
+   "cap": "Eagles versus Patriots. Philadelphia led by 3, in the final minute of the first half.",
+   "place": {
+    "capy": false,
+    "foles": "center",
+    "brady": [
+     2.6,
+     -1.8
+    ]
+   }
+  },
+  {
+   "text": "Fourth and goal, from the one yard line. The safe call was a field goal.",
+   "key": [
+    "SAFE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "foles"
+   },
+   "act": {
+    "foles": {
+     "mood": "worried",
+     "look": "camera"
+    }
+   },
+   "cap": "4th and goal, from the 1 yard line. The safe call was a field goal."
+  },
+  {
+   "text": "During a timeout, backup quarterback Nick Foles walked over to his coach, Doug Pederson.",
+   "key": [
+    "BACKUP"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "foles",
+    "with": "coach"
+   },
+   "act": {
+    "foles": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "coach"
+    },
+    "coach": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "foles"
+    }
+   },
+   "set": "locker",
+   "place": {
+    "foles": "left",
+    "coach": "right"
+   },
+   "board": [
+    "4TH & GOAL",
+    "AT THE 1"
+   ]
+  },
+  {
+   "text": "He asked one question. Philly Philly?",
+   "key": [
+    "PHILLY?"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "foles"
+   },
+   "act": {
+    "foles": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "coach"
+    }
+   },
+   "speaker": "foles"
+  },
+  {
+   "text": "The coach said yes.",
+   "key": [
+    "YES."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "happy",
+     "action": "point",
+     "look": "foles"
+    }
+   },
+   "speaker": "coach"
+  },
+  {
+   "text": "The ball was snapped straight to running back Corey Clement.",
+   "key": [
+    "CLEMENT."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "clement"
+   },
+   "act": {
+    "clement": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "set": "field",
+   "place": {
+    "clement": "center",
+    "burton": [
+     2.4,
+     0.4
+    ],
+    "foles": [
+     -3.0,
+     -3.0
+    ]
+   },
+   "board": [
+    "EAGLES 15",
+    "PATRIOTS 12"
+   ]
+  },
+  {
+   "text": "Clement pitched it to tight end Trey Burton, who played quarterback in high school.",
+   "key": [
+    "BURTON,"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "clement",
+    "with": "burton"
+   },
+   "act": {
+    "clement": {
+     "mood": "neutral",
+     "action": "throw",
+     "look": "burton"
+    },
+    "burton": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "clement"
+    }
+   }
+  },
+  {
+   "text": "Meanwhile, Foles slipped out into the end zone.",
+   "key": [
+    "END",
+    "ZONE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "foles"
+   },
+   "act": {
+    "foles": {
+     "mood": "smug",
+     "action": "wave",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "clement": false,
+    "burton": false,
+    "foles": "center"
+   }
+  },
+  {
+   "text": "Burton threw. Foles caught it. Touchdown.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "foles"
+   },
+   "act": {
+    "foles": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "burton": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "brady": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   },
+   "place": {
+    "burton": [
+     2.2,
+     -1.2
+    ],
+    "brady": [
+     -2.4,
+     -1.8
+    ]
+   },
+   "board": [
+    "EAGLES 22",
+    "PATRIOTS 12"
+   ]
+  },
+  {
+   "text": "The best part? The Patriots had tried a similar trick earlier. Tom Brady dropped it.",
+   "key": [
+    "DROPPED"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "brady"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "brady"
+    },
+    "brady": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     1.0
+    ],
+    "brady": [
+     0.6,
+     0.2
+    ],
+    "foles": false,
+    "burton": false
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Foles became the first player to throw and catch a touchdown in the same Super Bowl.",
+   "key": [
+    "FIRST"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "foles"
+   },
+   "act": {
+    "foles": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "brady": false,
+    "foles": "center"
+   }
+  },
+  {
+   "text": "The Eagles won forty one to thirty three. Their first Super Bowl title.",
+   "key": [
+    "41",
+    "FIRST"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "foles"
+   },
+   "act": {
+    "foles": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "coach": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "clement": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "cap": "The Eagles won 41 to 33. Their first Super Bowl title.",
+   "set": "locker",
+   "place": {
+    "foles": "center",
+    "coach": "right",
+    "clement": "left"
+   },
+   "board": [
+    "EAGLES 41",
+    "PATRIOTS 33"
+   ]
+  },
+  {
+   "text": "The play has a name now. The Philly Special.",
+   "key": [
+    "SPECIAL."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "set": "press",
+   "place": {
+    "capy": "center"
+   },
+   "speaker": "capy",
+   "board": [
+    "PHILLY",
+    "SPECIAL"
+   ]
+  },
+  {
+   "text": "Fourth and goal in the Super Bowl. Trick play or field goal? One word.",
+   "key": [
+    "TRICK"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "foles"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "foles": {
+     "mood": "smug",
+     "action": "point",
+     "look": "capy"
+    }
+   },
+   "cap": "4th and goal in the Super Bowl. Trick play or field goal? One word.",
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "foles": [
+     1.0,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Philly Special",
+   "url": "https://en.wikipedia.org/wiki/Philly_Special"
+  },
+  {
+   "title": "ESPN: Inside the Philly Special, the gutsiest play call in Super Bowl history",
+   "url": "https://www.espn.com/nfl/story/_/id/22326781/inside-philly-special-gutsiest-play-calling-super-bowl-history-doug-pederson-philadelphia-eagles"
+  },
+  {
+   "title": "The Ringer: Philly Special defined Super Bowl LII",
+   "url": "https://www.theringer.com/nfl-playoffs/2018/2/9/16992994/philly-special-eagles-patriots-trick-play-super-bowl"
+  },
+  {
+   "title": "CBS Sports: Nick Foles suggested Philly Special trick play to Doug Pederson",
+   "url": "https://www.cbssports.com/nfl/news/super-bowl-2018-nick-foles-suggested-philly-special-trick-play-to-doug-pederson/"
+  }
+ ]
+}

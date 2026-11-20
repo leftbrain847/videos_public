@@ -1,0 +1,467 @@
+{
+ "id": "s2_12_broncos_168",
+ "title": "Outgained by 185 and won",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "YARDS",
+   "SEA 353  DEN 168"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "darnold": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#002244",
+    "pants": "#a5acaf",
+    "number": "14",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "nix": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#fb4f14",
+    "pants": "#f4f4f4",
+    "number": "10",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "mcmillian": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#fb4f14",
+    "pants": "#f4f4f4",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "left"
+  },
+  "lutz": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#fb4f14",
+    "pants": "#f4f4f4",
+    "number": "3",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "beard": true
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "Seattle outgained Denver by one hundred eighty five yards. And lost.",
+   "cap": "Seattle outgained Denver by 185 yards. And lost.",
+   "key": [
+    "185",
+    "LOST."
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "darnold": [
+     0,
+     0
+    ],
+    "nix": [
+     2.2,
+     0.3
+    ],
+    "mcmillian": false,
+    "lutz": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "darnold"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "darnold": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "capy"
+    },
+    "nix": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "darnold"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Thursday night in Denver. Seattle gained three hundred fifty three yards. Denver, one hundred sixty eight.",
+   "cap": "Thursday night in Denver. Seattle gained 353 yards. Denver, 168.",
+   "key": [
+    "353",
+    "168."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SEA 353 YDS",
+     "DEN 168 YDS"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Bo Nix threw for one hundred seven yards. For the whole game.",
+   "cap": "Bo Nix threw for 107 yards. For the whole game.",
+   "key": [
+    "107"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "NIX",
+     "107 PASS YDS"
+    ]
+   },
+   "place": {
+    "nix": "center",
+    "darnold": "left"
+   },
+   "shot": {
+    "type": "close",
+    "on": "nix"
+   },
+   "act": {
+    "nix": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "But Denver led fourteen to three at halftime.",
+   "cap": "But Denver led 14 to 3 at halftime.",
+   "key": [
+    "14"
+   ],
+   "board": [
+    "DEN 14",
+    "SEA 3"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "nix"
+   },
+   "act": {
+    "nix": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "darnold": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "nix"
+    }
+   }
+  },
+  {
+   "text": "Its defense hit Sam Darnold seventeen times, and sacked him five.",
+   "cap": "Its defense hit Sam Darnold 17 times, and sacked him 5.",
+   "key": [
+    "17",
+    "5."
+   ],
+   "place": {
+    "mcmillian": [
+     -1.0,
+     0.6
+    ],
+    "darnold": [
+     0.8,
+     0.2
+    ],
+    "nix": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "darnold",
+    "with": "mcmillian"
+   },
+   "act": {
+    "darnold": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "mcmillian"
+    },
+    "mcmillian": {
+     "mood": "angry",
+     "action": "point",
+     "look": "darnold"
+    }
+   }
+  },
+  {
+   "text": "Seattle came back anyway, from eleven points down in the fourth quarter. A touchdown, then a two point conversion.",
+   "key": [
+    "11"
+   ],
+   "board": [
+    "DEN 14",
+    "SEA 11"
+   ],
+   "place": {
+    "mcmillian": false,
+    "darnold": "center"
+   },
+   "shot": {
+    "type": "low",
+    "on": "darnold"
+   },
+   "act": {
+    "darnold": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "cap": "Seattle came back anyway, from 11 points down in the fourth quarter. A touchdown, then a two point conversion."
+  },
+  {
+   "text": "Then a field goal with three seconds left. Fourteen all.",
+   "cap": "Then a field goal with 3 seconds left. 14 all.",
+   "key": [
+    "3",
+    "SECONDS"
+   ],
+   "board": [
+    "DEN 14",
+    "SEA 14"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "darnold"
+   },
+   "act": {
+    "darnold": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Overtime. Darnold throws for Rashid Shaheed.",
+   "key": [
+    "OVERTIME."
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "OVERTIME"
+    ]
+   },
+   "place": {
+    "darnold": "center"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "darnold"
+   },
+   "act": {
+    "darnold": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ja'Quan McMillian intercepts. Darnold's second pick of the night.",
+   "key": [
+    "SECOND"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "OT",
+     "DEN BALL"
+    ]
+   },
+   "place": {
+    "mcmillian": "center",
+    "darnold": "right"
+   },
+   "shot": {
+    "type": "low",
+    "on": "mcmillian"
+   },
+   "act": {
+    "mcmillian": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "darnold": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "mcmillian"
+    }
+   }
+  },
+  {
+   "text": "Kicker Wil Lutz, from fifty three yards. Good.",
+   "cap": "Kicker Wil Lutz, from 53 yards. Good.",
+   "key": [
+    "53"
+   ],
+   "place": {
+    "mcmillian": false,
+    "lutz": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "lutz"
+   },
+   "act": {
+    "lutz": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "darnold": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Broncos win, seventeen to fourteen.",
+   "cap": "Broncos win, 17 to 14.",
+   "key": [
+    "17"
+   ],
+   "board": [
+    "DEN 17",
+    "SEA 14"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "lutz"
+   },
+   "act": {
+    "lutz": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "One hundred sixty eight yards. Plenty, apparently, when the other side keeps throwing it to you.",
+   "cap": "168 yards. Plenty, apparently, when the other side keeps throwing it to you.",
+   "key": [
+    "168",
+    "PLENTY,"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "168 YARDS",
+     "1 WIN"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.2,
+     0.6
+    ],
+    "nix": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "nix"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "nix": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you rather have the yards, or the win? Yards or win?",
+   "key": [
+    "YARDS",
+    "WIN?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP via KSAT: Broncos beat the Seahawks 17-14 in OT on Ja'Quan McMillian's pick, Wil Lutz's 53-yarder",
+   "url": "https://www.ksat.com/sports/2026/10/16/broncos-beat-the-seahawks-17-14-in-ot-on-jaquan-mcmillians-pick-wil-lutzs-53-yarder/"
+  },
+  {
+   "title": "ProFootballTalk: Thursday Night Football, Broncos beat Seahawks 17-14 in overtime",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-broncos-beat-seahawks-17-14-in-overtime"
+  }
+ ]
+}

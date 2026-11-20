@@ -1,0 +1,497 @@
+{
+ "id": "s4_05_immaculate_reception",
+ "title": "The Immaculate Reception",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "RAIDERS 7",
+   "STEELERS 6"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#101820",
+    "pants": "#ffb612",
+    "number": "12",
+    "hair": "short",
+    "hairColor": "#d9b16a"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "fuqua": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#101820",
+    "pants": "#ffb612",
+    "number": "33",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "harris": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#101820",
+    "pants": "#ffb612",
+    "number": "32",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#a0704f"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "tatum": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#a5acaf",
+    "number": "32",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "shirt": "#ffffff",
+    "pants": "#ffffff",
+    "hair": "bald",
+    "skin": "#f2c39b",
+    "cap": "#ffffff"
+   },
+   "at": [
+    0,
+    0
+   ],
+   "hold": "flag"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 1972, a playoff game was won by a pass that bounced off a collision.",
+   "key": [
+    "COLLISION."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "harris"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "harris": {
+     "mood": "neutral",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "qb": false,
+    "fuqua": false,
+    "harris": [
+     0.4,
+     0
+    ],
+    "tatum": false,
+    "ref": false
+   },
+   "speaker": "capy",
+   "board": [
+    "RAIDERS 7",
+    "STEELERS 6"
+   ]
+  },
+  {
+   "text": "In the playoffs, Pittsburgh trailed Oakland seven to six. Twenty two seconds left.",
+   "key": [
+    "22"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "tatum": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "qb"
+    }
+   },
+   "cap": "In the playoffs, Pittsburgh trailed Oakland 7 to 6. 22 seconds left.",
+   "place": {
+    "capy": false,
+    "harris": false,
+    "qb": "center",
+    "tatum": [
+     2.6,
+     -1.6
+    ]
+   }
+  },
+  {
+   "text": "Fourth and ten, from their own forty.",
+   "key": [
+    "4TH"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "look": "camera"
+    }
+   },
+   "cap": "4th and 10, from their own 40."
+  },
+  {
+   "text": "And the Steelers had never won a playoff game. Ever.",
+   "key": [
+    "NEVER"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "set": "locker",
+   "place": {
+    "capy": "center"
+   },
+   "speaker": "capy",
+   "board": [
+    "PLAYOFF WINS:",
+    "0"
+   ]
+  },
+  {
+   "text": "Terry Bradshaw got flushed to his right and threw over the middle.",
+   "key": [
+    "MIDDLE."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "throw",
+     "look": "camera"
+    }
+   },
+   "set": "field",
+   "place": {
+    "qb": "center",
+    "fuqua": [
+     3.0,
+     -2.6
+    ]
+   },
+   "board": [
+    "RAIDERS 7",
+    "STEELERS 6"
+   ]
+  },
+  {
+   "text": "Toward Frenchy Fuqua. Just as the ball arrived, Jack Tatum hit him.",
+   "key": [
+    "TATUM"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "fuqua",
+    "with": "tatum"
+   },
+   "act": {
+    "fuqua": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "tatum"
+    },
+    "tatum": {
+     "mood": "angry",
+     "action": "point",
+     "look": "fuqua"
+    }
+   },
+   "place": {
+    "qb": false,
+    "fuqua": [
+     -1.0,
+     0
+    ],
+    "tatum": [
+     1.0,
+     0
+    ]
+   }
+  },
+  {
+   "text": "The ball shot backward.",
+   "key": [
+    "BACKWARD."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "fuqua"
+   },
+   "act": {
+    "fuqua": {
+     "mood": "shocked",
+     "action": "shrug"
+    },
+    "tatum": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "Trailing the play was a rookie, Franco Harris.",
+   "key": [
+    "ROOKIE,"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "harris"
+   },
+   "act": {
+    "harris": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "fuqua": false,
+    "tatum": false,
+    "harris": "center"
+   }
+  },
+  {
+   "text": "He scooped it inches off the turf and ran.",
+   "key": [
+    "INCHES"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "harris"
+   },
+   "act": {
+    "harris": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Sixty yards. Touchdown.",
+   "key": [
+    "60"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "harris"
+   },
+   "act": {
+    "harris": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "tatum": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "60 yards. Touchdown.",
+   "place": {
+    "tatum": [
+     -2.8,
+     -1.8
+    ]
+   }
+  },
+  {
+   "text": "Then came a long wait. Who touched the ball last? The officials reviewed it.",
+   "key": [
+    "WAIT."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "set": "office",
+   "place": {
+    "capy": "left",
+    "ref": "right"
+   },
+   "speaker": "capy",
+   "board": [
+    "TATUM?",
+    "FUQUA?"
+   ]
+  },
+  {
+   "text": "The touchdown stood. Steelers thirteen, Raiders seven.",
+   "key": [
+    "13"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "cap": "The touchdown stood. Steelers 13, Raiders 7.",
+   "board": [
+    "STEELERS 13",
+    "RAIDERS 7"
+   ]
+  },
+  {
+   "text": "It was the first playoff win in Steelers history. They named it the Immaculate Reception.",
+   "key": [
+    "FIRST",
+    "IMMACULATE"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "harris"
+   },
+   "act": {
+    "harris": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "fuqua": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "set": "locker",
+   "place": {
+    "harris": "center",
+    "qb": "left",
+    "fuqua": "right"
+   },
+   "board": [
+    "PLAYOFF WINS:",
+    "1"
+   ]
+  },
+  {
+   "text": "So who touched it last, Tatum or Fuqua? One word. Tell me below.",
+   "key": [
+    "TATUM",
+    "FUQUA?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "harris"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "harris": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "harris": [
+     0.6,
+     0.2
+    ],
+    "qb": false,
+    "fuqua": false
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Pro Football Hall of Fame: The Immaculate Reception, catch of a lifetime",
+   "url": "https://profootballhof.com/football-history/the-immaculate-reception-catch-of-a-lifetime"
+  },
+  {
+   "title": "HISTORY: Franco Harris makes the Immaculate Reception",
+   "url": "https://www.history.com/this-day-in-history/december-23/best-nfl-plays-immaculate-reception-franco-harris-steelers"
+  },
+  {
+   "title": "Steelers.com: An immaculate memory",
+   "url": "https://www.steelers.com/news/an-immaculate-memory-x3926"
+  }
+ ]
+}

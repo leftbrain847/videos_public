@@ -1,0 +1,595 @@
+{
+ "id": "s4_15_thirteen_seconds",
+ "title": "13 seconds",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "BILLS 36",
+   "CHIEFS 33"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "bill": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f3f9f",
+    "pants": "#f4f4f4",
+    "number": "13",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "chief": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#d62828",
+    "pants": "#f4f4f4",
+    "number": "15",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "te": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#d62828",
+    "pants": "#f4f4f4",
+    "number": "80",
+    "hair": "short",
+    "hairColor": "#8a5a2b",
+    "beard": true
+   },
+   "at": "back"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#1f3f9f",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "at": "couchL"
+  },
+  "exec": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b2e",
+    "pants": "#2b2b2e",
+    "hair": "bald",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "envelope"
+  }
+ },
+ "lines": [
+  {
+   "text": "In a 2022 playoff game, the Bills led with thirteen seconds left. They lost.",
+   "cap": "In a 2022 playoff game, the Bills led with 13 seconds left. They lost.",
+   "key": [
+    "13",
+    "LOST."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "bill": [
+     0,
+     0
+    ],
+    "chief": [
+     2.2,
+     0.2
+    ],
+    "te": false,
+    "fan": false,
+    "exec": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bill"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "bill": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "chief": {
+     "mood": "worried",
+     "look": "bill"
+    }
+   }
+  },
+  {
+   "text": "Divisional round, in Kansas City. Josh Allen against Patrick Mahomes.",
+   "key": [
+    "ALLEN"
+   ],
+   "place": {
+    "capy": false,
+    "bill": [
+     -1.3,
+     0
+    ],
+    "chief": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "bill",
+    "offset": [
+     1.3,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "bill": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "chief"
+    },
+    "chief": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "bill"
+    }
+   }
+  },
+  {
+   "text": "The last two minutes were already chaos. Bills lead. Chiefs lead.",
+   "key": [
+    "CHAOS."
+   ],
+   "set": "living",
+   "board": [
+    "LEAD",
+    "CHANGE"
+   ],
+   "place": {
+    "fan": [
+     -1.2,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan",
+    "offset": [
+     1.0,
+     0.6,
+     1.5
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "With thirteen seconds left, Gabriel Davis caught his fourth touchdown. Bills, thirty six to thirty three.",
+   "cap": "With 13 seconds left, Gabriel Davis caught his 4th touchdown. Bills, 36 to 33.",
+   "key": [
+    "4TH",
+    "36"
+   ],
+   "set": "field",
+   "board": [
+    "BILLS 36",
+    "CHIEFS 33"
+   ],
+   "place": {
+    "bill": [
+     0,
+     0
+    ],
+    "chief": [
+     2.4,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "bill"
+   },
+   "act": {
+    "bill": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "chief": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Mahomes hit Tyreek Hill for nineteen yards.",
+   "cap": "Mahomes hit Tyreek Hill for 19 yards.",
+   "key": [
+    "19"
+   ],
+   "board": [
+    "0:13",
+    "+19 YDS"
+   ],
+   "place": {
+    "chief": [
+     0,
+     0
+    ],
+    "bill": [
+     2.2,
+     -1.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "chief"
+   },
+   "act": {
+    "chief": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    },
+    "bill": {
+     "mood": "worried",
+     "look": "chief"
+    }
+   }
+  },
+  {
+   "text": "Then Travis Kelce for twenty five.",
+   "cap": "Then Travis Kelce for 25.",
+   "key": [
+    "25."
+   ],
+   "board": [
+    "+25 YDS",
+    "IN RANGE"
+   ],
+   "place": {
+    "te": [
+     1.2,
+     0.2
+    ],
+    "chief": [
+     -1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "chief",
+    "with": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "chief"
+    },
+    "chief": {
+     "mood": "happy",
+     "action": "point",
+     "look": "te"
+    }
+   }
+  },
+  {
+   "text": "Harrison Butker kicked a forty nine yard field goal. Tie game. Zero seconds.",
+   "cap": "Harrison Butker kicked a 49-yard field goal. Tie game. 0 seconds.",
+   "key": [
+    "49-YARD",
+    "0"
+   ],
+   "board": [
+    "BILLS 36",
+    "CHIEFS 36"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "chief",
+    "offset": [
+     1.2,
+     1,
+     2
+    ]
+   },
+   "act": {
+    "chief": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "bill": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Twenty five points were scored in the final two minutes.",
+   "cap": "25 points were scored in the final 2 minutes.",
+   "key": [
+    "25"
+   ],
+   "board": [
+    "25 POINTS",
+    "IN 2 MIN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.6
+    ],
+    "te": false,
+    "chief": [
+     -1.8,
+     -0.4
+    ],
+    "bill": [
+     1.8,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then came the coin toss. Kansas City won it.",
+   "key": [
+    "COIN"
+   ],
+   "board": [
+    "OVERTIME",
+    "COIN TOSS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     0.6
+    ],
+    "bill": [
+     -2,
+     0
+    ],
+    "chief": [
+     2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "chief"
+    },
+    "chief": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "bill": {
+     "mood": "worried",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Mahomes drove the field. Kelce caught the winning touchdown. Forty two to thirty six.",
+   "cap": "Mahomes drove the field. Kelce caught the winning touchdown. 42 to 36.",
+   "key": [
+    "42"
+   ],
+   "board": [
+    "CHIEFS 42",
+    "BILLS 36"
+   ],
+   "place": {
+    "capy": false,
+    "te": [
+     0,
+     0
+    ],
+    "chief": [
+     -2,
+     -0.6
+    ],
+    "bill": [
+     2.2,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "chief": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "bill": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Josh Allen never touched the ball in overtime.",
+   "key": [
+    "NEVER"
+   ],
+   "place": {
+    "bill": [
+     0,
+     0
+    ],
+    "te": false,
+    "chief": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "bill"
+   },
+   "act": {
+    "bill": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two months later, the owners changed the playoff rule. Now both teams get the ball.",
+   "key": [
+    "BOTH"
+   ],
+   "set": "office",
+   "board": [
+    "PLAYOFF OT:",
+    "BOTH TEAMS"
+   ],
+   "place": {
+    "exec": "desk",
+    "capy": [
+     -2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "exec"
+    }
+   }
+  },
+  {
+   "text": "Should one touchdown end an overtime? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "ONE TD",
+    "WINS?"
+   ],
+   "place": {
+    "capy": [
+     0.8,
+     0.8
+    ],
+    "exec": [
+     2.8,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "exec"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "exec": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "ESPN: The 13 seconds that decided Bills-Chiefs",
+   "url": "https://www.espn.com/nfl/story/_/id/33138797"
+  },
+  {
+   "title": "Chiefs.com: Chiefs win an all-time classic 42-36 to advance to AFC Championship",
+   "url": "https://www.chiefs.com/news/chiefs-win-an-all-time-classic-42-36-to-advance-to-afc-championship-game"
+  },
+  {
+   "title": "SI: Chiefs advance on walk-off touchdown by Travis Kelce",
+   "url": "https://www.si.com/nfl/2022/01/24/chiefs-beat-bills-walkoff-touchdown-travis-kelce-patrick-mahomes"
+  },
+  {
+   "title": "FOX LA (AP): Chiefs defeat Bills 42-36 in OT",
+   "url": "https://www.foxla.com/sports/chiefs-defeat-bills-42-36-in-ot-head-to-afc-championship"
+  },
+  {
+   "title": "WSLS (AP): NFL owners approve rule change for OT in playoffs",
+   "url": "https://www.wsls.com/sports/2022/03/29/nfl-owners-approve-rule-change-for-ot-in-playoffs/"
+  },
+  {
+   "title": "SI: 49ers players admitted they didn't know Super Bowl overtime rules (rule changed after Chiefs-Bills)",
+   "url": "https://www.si.com/nfl/2024/02/12/49ers-players-chiefs-didnt-know-super-bowl-overtime-rules"
+  }
+ ]
+}

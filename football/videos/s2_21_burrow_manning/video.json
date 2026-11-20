@@ -1,0 +1,425 @@
+{
+ "id": "s2_21_burrow_manning",
+ "title": "Burrow catches Peyton",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "BENGALS",
+   "STEELERS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#fb4f14",
+    "pants": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#b07a4a",
+    "skin": "#f2c39b",
+    "number": "9"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#fb4f14",
+    "pants": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "number": "1"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "oldqb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#2f4fa8",
+    "pants": "#f4f4f4",
+    "hair": "bald",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "number": "18"
+   },
+   "at": "left"
+  },
+  "stl": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#ffb612",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "number": "8",
+    "beard": true
+   },
+   "at": [
+    2.2,
+    -2.0
+   ],
+   "hold": "football"
+  }
+ },
+ "lines": [
+  {
+   "text": "Joe Burrow just tied a Peyton Manning record. Five straight games with four or more touchdowns.",
+   "cap": "Joe Burrow just tied a Peyton Manning record. 5 straight games with 4 or more touchdowns.",
+   "key": [
+    "5"
+   ],
+   "place": {
+    "wr": false,
+    "oldqb": false,
+    "stl": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Manning set that mark back in two thousand four, with the Colts.",
+   "cap": "Manning set that mark back in 2004, with the Colts.",
+   "key": [
+    "2004,"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "RECORD:",
+     "5 GAMES"
+    ]
+   },
+   "place": {
+    "oldqb": "left",
+    "qb": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "oldqb",
+    "with": "qb"
+   },
+   "act": {
+    "oldqb": {
+     "mood": "smug",
+     "action": "point",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "oldqb"
+    }
+   }
+  },
+  {
+   "text": "Sunday night, under the lights, the Bengals host their rivals, the Steelers.",
+   "key": [
+    "STEELERS."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BENGALS",
+     "STEELERS"
+    ]
+   },
+   "place": {
+    "qb": "center",
+    "stl": "right",
+    "wr": "left"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "stl": {
+     "mood": "angry",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "By halftime, Burrow has three hundred two yards and three touchdowns.",
+   "cap": "By halftime, Burrow has 302 yards and 3 touchdowns.",
+   "key": [
+    "302"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "wr"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Cincinnati leads, twenty four to three.",
+   "cap": "Cincinnati leads, 24 to 3.",
+   "key": [
+    "24"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "stl": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Here's the strange part. Cincinnati completed twenty one passes before Pittsburgh completed one.",
+   "cap": "Here's the strange part. Cincinnati completed 21 passes before Pittsburgh completed 1.",
+   "key": [
+    "21"
+   ],
+   "place": {
+    "capy": [
+     0.6,
+     1.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "stl"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "stl"
+    },
+    "stl": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "That tied a record going back to nineteen seventy eight.",
+   "cap": "That tied a record going back to 1978.",
+   "key": [
+    "1978."
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "stl"
+   },
+   "act": {
+    "stl": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Ja'Marr Chase: eleven catches, two hundred thirty one yards.",
+   "cap": "Ja'Marr Chase: 11 catches, 231 yards.",
+   "key": [
+    "231"
+   ],
+   "place": {
+    "wr": [
+     -1.0,
+     0.6
+    ],
+    "qb": [
+     1.8,
+     -1.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "And somehow, not one of those catches was a touchdown.",
+   "key": [
+    "NOT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Burrow finishes thirty five of forty four, over four hundred yards, four touchdowns.",
+   "cap": "Burrow finishes 35 of 44, over 400 yards, 4 touchdowns.",
+   "key": [
+    "400"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "BENGALS 38",
+     "STEELERS 18"
+    ]
+   },
+   "place": {
+    "qb": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Bengals win, thirty eight to eighteen. Their fifth straight win.",
+   "cap": "Bengals win, 38 to 18. Their 5th straight win.",
+   "key": [
+    "38"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "STREAK:",
+     "5"
+    ]
+   },
+   "place": {
+    "qb": "center",
+    "wr": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Will Burrow make it six in a row and own the record alone? Yes or no?",
+   "cap": "Will Burrow make it 6 in a row and own the record alone? Yes or no?",
+   "key": [
+    "6"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "wr": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "WKRC Local 12: Joe Burrow ties NFL record with historic start against Steelers",
+   "url": "https://local12.com/sports/bengals/joe-burrow-ties-nfl-record-with-historic-start-against-steelers-peyton-manning-aaron-rodgers-bengals-quarterback"
+  },
+  {
+   "title": "WKRC Local 12 (AP): Burrow throws for 406 yards, 4 TDs as Bengals beat Steelers 38-18",
+   "url": "https://local12.com/sports/bengals/burrow-throws-406-yards-4-td-bengals-beat-steelers-38-18-sunday-night-football-chase-200-yards"
+  },
+  {
+   "title": "TSN (ESPN): Surging Burrow helps Bengals' winning streak reach five games",
+   "url": "https://www.tsn.ca/nfl/article/surging-burrow-helps-bengals-winning-streak-reach-five-games/"
+  },
+  {
+   "title": "NFL.com: 2026 NFL season, Week 10: What we learned from Sunday's games",
+   "url": "https://www.nfl.com/news/2026-nfl-season-week-10-what-we-learned-from-sunday-s-games"
+  }
+ ]
+}

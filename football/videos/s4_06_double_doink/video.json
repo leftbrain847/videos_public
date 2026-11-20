@@ -1,0 +1,487 @@
+{
+ "id": "s4_06_double_doink",
+ "title": "The Double Doink",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "EAGLES 16",
+   "BEARS 15"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "kicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b162a",
+    "pants": "#f4f4f4",
+    "number": "1",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": "center"
+  },
+  "hester": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#e6e6e6",
+    "number": "90",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#004c54",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#8a7a6a",
+    "cap": "#004c54"
+   },
+   "at": [
+    0,
+    0
+   ],
+   "hold": "clipboard"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "shirt": "#ffffff",
+    "pants": "#ffffff",
+    "hair": "bald",
+    "skin": "#f2c39b",
+    "cap": "#ffffff"
+   },
+   "at": [
+    0,
+    0
+   ],
+   "hold": "flag"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2019, a playoff field goal hit two parts of the goalpost, and still missed.",
+   "key": [
+    "TWO"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kicker": {
+     "mood": "worried",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "kicker": [
+     0.4,
+     0
+    ],
+    "hester": false,
+    "coach": false,
+    "ref": false
+   },
+   "speaker": "capy",
+   "board": [
+    "EAGLES 16",
+    "BEARS 15"
+   ]
+  },
+  {
+   "text": "Bears versus Eagles. Wild card round. Philadelphia led sixteen to fifteen.",
+   "key": [
+    "16"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "hester": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "kicker"
+    }
+   },
+   "cap": "Bears versus Eagles. Wild card round. Philadelphia led 16 to 15.",
+   "place": {
+    "capy": false,
+    "kicker": "center",
+    "hester": [
+     2.6,
+     -1.8
+    ]
+   }
+  },
+  {
+   "text": "Ten seconds left. Chicago's kicker, Cody Parkey, lined up from forty three yards.",
+   "key": [
+    "43"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "cap": "10 seconds left. Chicago's kicker, Cody Parkey, lined up from 43 yards."
+  },
+  {
+   "text": "Just before the snap, the Eagles called timeout to ice him.",
+   "key": [
+    "ICE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "coach": "sideline",
+    "kicker": false,
+    "hester": false
+   }
+  },
+  {
+   "text": "The play ran anyway. Parkey's practice kick went straight through.",
+   "key": [
+    "THROUGH."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "kicker",
+    "with": "ref"
+   },
+   "act": {
+    "kicker": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "kicker"
+    }
+   },
+   "place": {
+    "coach": false,
+    "kicker": "center",
+    "ref": "right"
+   }
+  },
+  {
+   "text": "That one did not count.",
+   "key": [
+    "NOT"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "kicker": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     1.0
+    ],
+    "ref": false,
+    "kicker": [
+     0.4,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Second try. The ball hit the left upright.",
+   "key": [
+    "UPRIGHT."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "shocked",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "kicker": "center"
+   }
+  },
+  {
+   "text": "Then the crossbar.",
+   "key": [
+    "CROSSBAR."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Then it dropped back onto the field. No good.",
+   "key": [
+    "NO",
+    "GOOD."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "hester": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "hester": [
+     2.4,
+     -1.0
+    ]
+   }
+  },
+  {
+   "text": "Eagles sixteen, Bears fifteen. Chicago's season was over.",
+   "key": [
+    "OVER."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "hester": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "cap": "Eagles 16, Bears 15. Chicago's season was over."
+  },
+  {
+   "text": "Fans named it the Double Doink.",
+   "key": [
+    "DOINK."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "set": "press",
+   "place": {
+    "capy": "center"
+   },
+   "speaker": "capy",
+   "board": [
+    "DOUBLE",
+    "DOINK"
+   ]
+  },
+  {
+   "text": "Then a twist. The NFL reviewed the film and ruled the kick blocked.",
+   "key": [
+    "BLOCKED."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "set": "office",
+   "place": {
+    "ref": "desk"
+   },
+   "board": [
+    "RULING:",
+    "BLOCKED"
+   ]
+  },
+  {
+   "text": "An Eagles lineman, Treyvon Hester, had tipped it with a fingertip.",
+   "key": [
+    "FINGERTIP."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "hester",
+    "with": "ref"
+   },
+   "act": {
+    "hester": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "neutral",
+     "look": "hester"
+    }
+   },
+   "place": {
+    "hester": "left",
+    "ref": "right"
+   }
+  },
+  {
+   "text": "It was still the sixth time that season one of Parkey's kicks hit an upright.",
+   "key": [
+    "6TH"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "cap": "It was still the 6th time that season one of Parkey's kicks hit an upright.",
+   "set": "field",
+   "place": {
+    "kicker": "center"
+   },
+   "board": [
+    "UPRIGHTS",
+    "HIT: 6"
+   ]
+  },
+  {
+   "text": "So who gets the credit, the fingertip or the goalpost? One word.",
+   "key": [
+    "FINGERTIP",
+    "GOALPOST?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kicker": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "kicker": [
+     0.6,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Double Doink",
+   "url": "https://en.wikipedia.org/wiki/Double_Doink"
+  },
+  {
+   "title": "SI: Cody Parkey's missed field goal officially ruled a blocked attempt",
+   "url": "https://www.si.com/nfl/2019/01/07/cody-parkey-missed-field-goal-block-nfl-official-rule-bears-eagles-wild-card"
+  },
+  {
+   "title": "SI: Cody Parkey's potential game-winning field goal double doinks off crossbar",
+   "url": "https://www.si.com/nfl/2019/01/06/cody-parkey-misses-field-goal-double-doinks-nfc-wild-card-game"
+  },
+  {
+   "title": "ChicagoBears.com: Game recap, Bears come up short in wild-card loss",
+   "url": "https://www.chicagobears.com/news/game-recap-bears-come-up-short-in-wildcard-loss"
+  }
+ ]
+}

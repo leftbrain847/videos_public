@@ -1,0 +1,549 @@
+[
+{
+"t": 1.824,
+"type": "catch",
+"play": 1,
+"yards": 14.498540409848811
+},
+{
+"t": 2.72,
+"type": "lateral",
+"play": 1,
+"rank": 3
+},
+{
+"t": 4.176,
+"type": "catch",
+"play": 1,
+"yards": 14.498540409848811
+},
+{
+"t": 14.416,
+"type": "down",
+"play": 1,
+"outcome": "touchdown",
+"yards": 100.16571639793167,
+"yac": 85.66717598808286,
+"lateralRanks": 3,
+"laterals": 1,
+"points": 6,
+"td": true
+},
+{
+"t": 14.416,
+"type": "big",
+"label": "touchdown",
+"play": 1
+},
+{
+"t": 14.416,
+"type": "big",
+"label": "lateral chain",
+"play": 1
+},
+{
+"t": 16.432,
+"type": "snap",
+"play": 2
+},
+{
+"t": 19.328,
+"type": "catch",
+"play": 2,
+"yards": 21.828323354833028
+},
+{
+"t": 20.88,
+"type": "lateral",
+"play": 2,
+"rank": 1
+},
+{
+"t": 21.936,
+"type": "catch",
+"play": 2,
+"yards": 21.828323354833028
+},
+{
+"t": 29.984,
+"type": "down",
+"play": 2,
+"outcome": "touchdown",
+"yards": 100.20755726324899,
+"yac": 78.37923390841596,
+"lateralRanks": 1,
+"laterals": 1,
+"points": 6,
+"td": true
+},
+{
+"t": 29.984,
+"type": "big",
+"label": "touchdown",
+"play": 2
+},
+{
+"t": 31.984,
+"type": "snap",
+"play": 3
+},
+{
+"t": 34.464,
+"type": "down",
+"play": 3,
+"outcome": "interception",
+"yards": 0,
+"yac": 0,
+"lateralRanks": 0,
+"laterals": 0,
+"points": 0,
+"td": false
+},
+{
+"t": 38.816,
+"type": "snap",
+"play": 4
+},
+{
+"t": 41.168,
+"type": "catch",
+"play": 4,
+"yards": 17.753860854969357
+},
+{
+"t": 42.768,
+"type": "lateral",
+"play": 4,
+"rank": 3
+},
+{
+"t": 44.176,
+"type": "down",
+"play": 4,
+"outcome": "interception",
+"yards": 0,
+"yac": 0,
+"lateralRanks": 0,
+"laterals": 1,
+"points": 0,
+"td": false
+},
+{
+"t": 48.528,
+"type": "snap",
+"play": 5
+},
+{
+"t": 51.424,
+"type": "catch",
+"play": 5,
+"yards": 22.183739936561153
+},
+{
+"t": 59.568,
+"type": "down",
+"play": 5,
+"outcome": "touchdown",
+"yards": 100.36470736931994,
+"yac": 78.18096743275879,
+"lateralRanks": 0,
+"laterals": 0,
+"points": 6,
+"td": true
+},
+{
+"t": 59.568,
+"type": "big",
+"label": "touchdown",
+"play": 5
+},
+{
+"t": 61.584,
+"type": "snap",
+"play": 6
+},
+{
+"t": 65.072,
+"type": "catch",
+"play": 6,
+"yards": 28.725130801242756
+},
+{
+"t": 65.328,
+"type": "lateral",
+"play": 6,
+"rank": 2
+},
+{
+"t": 67.056,
+"type": "down",
+"play": 6,
+"outcome": "interception",
+"yards": 0,
+"yac": 0,
+"lateralRanks": 0,
+"laterals": 1,
+"points": 0,
+"td": false
+},
+{
+"t": 71.408,
+"type": "snap",
+"play": 7
+},
+{
+"t": 74.24,
+"type": "catch",
+"play": 7,
+"yards": 6.710002264722725
+},
+{
+"t": 74.384,
+"type": "down",
+"play": 7,
+"outcome": "catch",
+"yards": 6.804616584689384,
+"yac": 0.09461431996665937,
+"lateralRanks": 0,
+"laterals": 0,
+"points": 0,
+"td": false
+},
+{
+"t": 76.352,
+"type": "snap",
+"play": 8
+},
+{
+"t": 78.4,
+"type": "catch",
+"play": 8,
+"yards": 8.80580334254834
+},
+{
+"t": 80.0,
+"type": "lateral",
+"play": 8,
+"rank": 3
+},
+{
+"t": 81.136,
+"type": "catch",
+"play": 8,
+"yards": 8.80580334254834
+},
+{
+"t": 88.944,
+"type": "down",
+"play": 8,
+"outcome": "touchdown",
+"yards": 93.25085465442783,
+"yac": 84.44505131187948,
+"lateralRanks": 3,
+"laterals": 1,
+"points": 6,
+"td": true
+},
+{
+"t": 88.944,
+"type": "big",
+"label": "touchdown",
+"play": 8
+},
+{
+"t": 88.944,
+"type": "big",
+"label": "lateral chain",
+"play": 8
+},
+{
+"t": 90.944,
+"type": "snap",
+"play": 9
+},
+{
+"t": 93.328,
+"type": "catch",
+"play": 9,
+"yards": 7.9759735154883735
+},
+{
+"t": 93.488,
+"type": "down",
+"play": 9,
+"outcome": "catch",
+"yards": 8.48885076254809,
+"yac": 0.5128772470597163,
+"lateralRanks": 0,
+"laterals": 0,
+"points": 0,
+"td": false
+},
+{
+"t": 95.504,
+"type": "snap",
+"play": 10
+},
+{
+"t": 98.896,
+"type": "catch",
+"play": 10,
+"yards": 28.32240882314528
+},
+{
+"t": 100.608,
+"type": "lateral",
+"play": 10,
+"rank": 2
+},
+{
+"t": 102.24,
+"type": "down",
+"play": 10,
+"outcome": "interception",
+"yards": 0,
+"yac": 0,
+"lateralRanks": 0,
+"laterals": 1,
+"points": 0,
+"td": false
+},
+{
+"t": 106.592,
+"type": "snap",
+"play": 11
+},
+{
+"t": 109.344,
+"type": "catch",
+"play": 11,
+"yards": 22.7342453192717
+},
+{
+"t": 117.696,
+"type": "down",
+"play": 11,
+"outcome": "touchdown",
+"yards": 100.10091238373273,
+"yac": 77.36666706446104,
+"lateralRanks": 0,
+"laterals": 0,
+"points": 6,
+"td": true
+},
+{
+"t": 117.696,
+"type": "big",
+"label": "touchdown",
+"play": 11
+},
+{
+"t": 119.696,
+"type": "snap",
+"play": 12
+},
+{
+"t": 121.808,
+"type": "catch",
+"play": 12,
+"yards": 9.887697343487623
+},
+{
+"t": 125.248,
+"type": "lateral",
+"play": 12,
+"rank": 2
+},
+{
+"t": 125.84,
+"type": "catch",
+"play": 12,
+"yards": 9.887697343487623
+},
+{
+"t": 126.688,
+"type": "down",
+"play": 12,
+"outcome": "catch",
+"yards": 34.454107074413,
+"yac": 24.56640973092538,
+"lateralRanks": 2,
+"laterals": 1,
+"points": 0,
+"td": false
+},
+{
+"t": 128.592,
+"type": "snap",
+"play": 13
+},
+{
+"t": 131.296,
+"type": "catch",
+"play": 13,
+"yards": 6.446982668145651
+},
+{
+"t": 131.44,
+"type": "lateral",
+"play": 13,
+"rank": 1
+},
+{
+"t": 134.784,
+"type": "down",
+"play": 13,
+"outcome": "catch",
+"yards": -2.3509391526077863,
+"yac": -8.797921820753437,
+"lateralRanks": 0,
+"laterals": 1,
+"points": 0,
+"td": false
+},
+{
+"t": 136.784,
+"type": "snap",
+"play": 14
+},
+{
+"t": 139.328,
+"type": "catch",
+"play": 14,
+"yards": 9.848402608024031
+},
+{
+"t": 139.488,
+"type": "down",
+"play": 14,
+"outcome": "catch",
+"yards": 8.813113810850837,
+"yac": -1.0352887971731946,
+"lateralRanks": 0,
+"laterals": 0,
+"points": 0,
+"td": false
+},
+{
+"t": 141.504,
+"type": "snap",
+"play": 15
+},
+{
+"t": 144.656,
+"type": "catch",
+"play": 15,
+"yards": 23.0296404334986
+},
+{
+"t": 145.6,
+"type": "lateral",
+"play": 15,
+"rank": 1
+},
+{
+"t": 146.256,
+"type": "catch",
+"play": 15,
+"yards": 23.0296404334986
+},
+{
+"t": 147.696,
+"type": "lateral",
+"play": 15,
+"rank": 2
+},
+{
+"t": 148.544,
+"type": "catch",
+"play": 15,
+"yards": 23.0296404334986
+},
+{
+"t": 149.952,
+"type": "down",
+"play": 15,
+"outcome": "catch",
+"yards": 34.993342914355,
+"yac": 11.963702480856398,
+"lateralRanks": 3,
+"laterals": 2,
+"points": 0,
+"td": false
+},
+{
+"t": 149.952,
+"type": "big",
+"label": "lateral chain",
+"play": 15
+},
+{
+"t": 154.304,
+"type": "snap",
+"play": 16
+},
+{
+"t": 156.304,
+"type": "catch",
+"play": 16,
+"yards": 5.998708770660729
+},
+{
+"t": 168.496,
+"type": "down",
+"play": 16,
+"outcome": "touchdown",
+"yards": 100.04460163975672,
+"yac": 94.045892869096,
+"lateralRanks": 0,
+"laterals": 0,
+"points": 6,
+"td": true
+},
+{
+"t": 168.496,
+"type": "big",
+"label": "touchdown",
+"play": 16
+},
+{
+"t": 170.512,
+"type": "snap",
+"play": 17
+},
+{
+"t": 173.056,
+"type": "catch",
+"play": 17,
+"yards": 9.806292298898306
+},
+{
+"t": 173.216,
+"type": "lateral",
+"play": 17,
+"rank": 1
+},
+{
+"t": 173.904,
+"type": "catch",
+"play": 17,
+"yards": 9.806292298898306
+},
+{
+"t": 176.848,
+"type": "down",
+"play": 17,
+"outcome": "catch",
+"yards": 28.22529517906497,
+"yac": 18.419002880166666,
+"lateralRanks": 1,
+"laterals": 1,
+"points": 0,
+"td": false
+},
+{
+"t": 178.848,
+"type": "snap",
+"play": 18
+}
+]

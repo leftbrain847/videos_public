@@ -1,0 +1,514 @@
+{
+ "id": "s4_13_hail_murray",
+ "title": "Hail Murray",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "BILLS 23",
+   "CARDINALS 9"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "murray": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#97233f",
+    "pants": "#f4f4f4",
+    "number": "1",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#a0704f"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "hopkins": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#97233f",
+    "pants": "#f4f4f4",
+    "number": "10",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "allen": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#00338d",
+    "number": "17",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "d1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#00338d",
+    "number": "21",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "d2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#00338d",
+    "number": "27",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c99470"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "d3": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#00338d",
+    "number": "23",
+    "hair": "short",
+    "hairColor": "#d9b16a"
+   },
+   "at": [
+    0,
+    0
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, a game ended on a forty three yard heave, caught over three defenders.",
+   "key": [
+    "43",
+    "3"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hopkins"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "hopkins": {
+     "mood": "smug",
+     "look": "capy"
+    }
+   },
+   "cap": "In 2020, a game ended on a 43 yard heave, caught over 3 defenders.",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "murray": false,
+    "hopkins": [
+     0.4,
+     0
+    ],
+    "allen": false,
+    "d1": false,
+    "d2": false,
+    "d3": false
+   },
+   "speaker": "capy",
+   "board": [
+    "BILLS 23",
+    "CARDINALS 9"
+   ]
+  },
+  {
+   "text": "Bills versus Cardinals. Buffalo led twenty three to nine.",
+   "key": [
+    "23"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "allen"
+   },
+   "act": {
+    "allen": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "cap": "Bills versus Cardinals. Buffalo led 23 to 9.",
+   "place": {
+    "capy": false,
+    "murray": false,
+    "hopkins": false,
+    "allen": "center",
+    "d1": false,
+    "d2": false,
+    "d3": false
+   }
+  },
+  {
+   "text": "Arizona came back, and went ahead twenty six to twenty three.",
+   "key": [
+    "26"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "murray"
+   },
+   "act": {
+    "murray": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "hopkins": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   },
+   "cap": "Arizona came back, and went ahead 26 to 23.",
+   "place": {
+    "allen": false,
+    "murray": "center",
+    "hopkins": "right"
+   },
+   "board": [
+    "CARDINALS 26",
+    "BILLS 23"
+   ]
+  },
+  {
+   "text": "Then Josh Allen threw a twenty one yard touchdown to Stefon Diggs.",
+   "key": [
+    "DIGGS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "allen"
+   },
+   "act": {
+    "allen": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    }
+   },
+   "cap": "Then Josh Allen threw a 21 yard touchdown to Stefon Diggs.",
+   "place": {
+    "murray": false,
+    "hopkins": false,
+    "allen": "center"
+   }
+  },
+  {
+   "text": "Bills thirty, Cardinals twenty six. Thirty four seconds left.",
+   "key": [
+    "34"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "allen"
+   },
+   "act": {
+    "allen": {
+     "mood": "smug",
+     "look": "camera"
+    }
+   },
+   "cap": "Bills 30, Cardinals 26. 34 seconds left.",
+   "board": [
+    "BILLS 30",
+    "CARDINALS 26"
+   ]
+  },
+  {
+   "text": "Arizona needed a touchdown. A field goal would not do it.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "murray"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "murray": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "set": "locker",
+   "place": {
+    "capy": "left",
+    "murray": "right"
+   },
+   "speaker": "capy",
+   "board": [
+    "NEED:",
+    "TOUCHDOWN"
+   ]
+  },
+  {
+   "text": "On the last play, Kyler Murray dropped back and rolled to his left.",
+   "key": [
+    "LEFT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "murray"
+   },
+   "act": {
+    "murray": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "set": "field",
+   "place": {
+    "murray": "center",
+    "d1": [
+     2.6,
+     -1.0
+    ]
+   },
+   "board": [
+    "BILLS 30",
+    "CARDINALS 26"
+   ]
+  },
+  {
+   "text": "The seconds ticked off. He kept rolling.",
+   "key": [
+    "ROLLING."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "murray"
+   },
+   "act": {
+    "murray": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "d1": {
+     "mood": "angry",
+     "action": "point",
+     "look": "murray"
+    }
+   }
+  },
+  {
+   "text": "Then he launched it deep, down the field.",
+   "key": [
+    "DEEP."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "murray"
+   },
+   "act": {
+    "murray": {
+     "mood": "smug",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "DeAndre Hopkins went up, over three Bills defenders.",
+   "key": [
+    "THREE"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "hopkins"
+   },
+   "act": {
+    "hopkins": {
+     "mood": "shocked",
+     "action": "cheer"
+    },
+    "d1": {
+     "mood": "shocked",
+     "action": "shrug"
+    },
+    "d2": {
+     "mood": "shocked",
+     "action": "cheer"
+    },
+    "d3": {
+     "mood": "shocked",
+     "action": "shrug"
+    }
+   },
+   "place": {
+    "murray": false,
+    "hopkins": [
+     0,
+     0.6
+    ],
+    "d1": [
+     -1.4,
+     -0.4
+    ],
+    "d2": [
+     0.2,
+     -1.4
+    ],
+    "d3": [
+     1.5,
+     -0.4
+    ]
+   }
+  },
+  {
+   "text": "And caught it. Touchdown.",
+   "key": [
+    "CAUGHT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "hopkins"
+   },
+   "act": {
+    "hopkins": {
+     "mood": "happy",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Cardinals thirty two, Bills thirty. Seconds left on the clock.",
+   "key": [
+    "32"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "hopkins"
+   },
+   "act": {
+    "hopkins": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "d2": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "Cardinals 32, Bills 30. Seconds left on the clock.",
+   "board": [
+    "CARDINALS 32",
+    "BILLS 30"
+   ]
+  },
+  {
+   "text": "Within a day, the play had its own name. Hail Murray.",
+   "key": [
+    "MURRAY."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "set": "press",
+   "place": {
+    "capy": "center"
+   },
+   "speaker": "capy",
+   "board": [
+    "HAIL",
+    "MURRAY"
+   ]
+  },
+  {
+   "text": "Three defenders, one receiver. Would you have thrown it? Yes or no. Tell me below.",
+   "key": [
+    "THROWN"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hopkins"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "hopkins": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "cap": "3 defenders, 1 receiver. Would you have thrown it? Yes or no. Tell me below.",
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "hopkins": [
+     1.0,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Hail Murray",
+   "url": "https://en.wikipedia.org/wiki/Hail_Murray"
+  },
+  {
+   "title": "AP via KSL: Hail Murray, Cardinals stun Bills 32-30 in final seconds",
+   "url": "https://www.ksl.com/article/sports/nfl/hail-murray-cardinals-stun-bills-32-30-in-final-seconds/50049430"
+  },
+  {
+   "title": "AP via News4JAX: Hail Murray, Cardinals stun Bills 32-30 in final seconds",
+   "url": "https://www.news4jax.com/sports/2020/11/16/hail-murray-cardinals-stun-bills-32-30-in-final-seconds/"
+  }
+ ]
+}

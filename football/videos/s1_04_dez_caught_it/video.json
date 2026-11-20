@@ -1,0 +1,486 @@
+{
+ "id": "s1_04_dez_caught_it",
+ "title": "Dez caught it",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "4TH & 2",
+   "4TH QTR"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#16305e",
+    "pants": "#9aa6b8",
+    "number": "88",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4128"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#16305e",
+    "pants": "#9aa6b8",
+    "number": "9",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "at": "left"
+  },
+  "cb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f4d2e",
+    "pants": "#e8c25a",
+    "number": "37",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "right"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "left",
+   "hold": "flag"
+  },
+  "own": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#26324d",
+    "pants": "#26324d",
+    "hair": "short",
+    "hairColor": "#d0d0d0",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In a 2015 playoff game, Dez Bryant made a catch it took the NFL three years to admit.",
+   "cap": "In a 2015 playoff game, Dez Bryant made a catch it took the NFL 3 years to admit.",
+   "key": [
+    "CATCH",
+    "3"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "wr": [
+     0.9,
+     0
+    ],
+    "qb": false,
+    "cb": false,
+    "ref": false,
+    "own": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Dallas at Green Bay. Fourth quarter. Fourth down and two.",
+   "cap": "Dallas at Green Bay. 4th quarter. 4th down and 2.",
+   "key": [
+    "4TH",
+    "DOWN"
+   ],
+   "place": {
+    "capy": false,
+    "wr": false,
+    "qb": "center"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Tony Romo throws deep to Bryant.",
+   "key": [
+    "DEEP"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "throw"
+    }
+   }
+  },
+  {
+   "text": "He catches it with a cornerback right on him. Thirty one yards.",
+   "cap": "He catches it with a cornerback right on him. 31 yards.",
+   "key": [
+    "31",
+    "YARDS."
+   ],
+   "place": {
+    "qb": false,
+    "wr": [
+     -0.6,
+     0
+    ],
+    "cb": [
+     0.9,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "wr",
+    "with": "cb"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "cb": {
+     "mood": "shocked",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "Falling, he reaches the ball toward the goal line.",
+   "key": [
+    "REACHES"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It hits the ground and pops loose. He grabs it right back.",
+   "key": [
+    "POPS",
+    "LOOSE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Catch on the field. Then replay. Overturned. Incomplete.",
+   "key": [
+    "OVERTURNED."
+   ],
+   "place": {
+    "ref": [
+     -2.0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ref",
+    "with": "wr"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "wr"
+    },
+    "wr": {
+     "mood": "angry",
+     "action": "shrug",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "Going to the ground, he had to control it through the whole process. The ground knocked it loose.",
+   "key": [
+    "GROUND"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "GOING TO",
+     "THE GROUND"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "ref": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Green Bay ran out the clock. Twenty six to twenty one.",
+   "cap": "Green Bay ran out the clock. 26 to 21.",
+   "key": [
+    "26"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PACKERS 26",
+     "COWBOYS 21"
+    ]
+   },
+   "place": {
+    "wr": "center"
+   },
+   "shot": {
+    "type": "high",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "In 2018, the rules committee looked at it again.",
+   "key": [
+    "AGAIN."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CATCH RULE",
+     "2018"
+    ]
+   },
+   "place": {
+    "own": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Giants owner John Mara said they all agreed plays like that should be completions.",
+   "key": [
+    "COMPLETIONS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "own"
+  },
+  {
+   "text": "The owners voted thirty two to zero for a new catch rule.",
+   "cap": "The owners voted 32 to 0 for a new catch rule.",
+   "key": [
+    "32",
+    "0"
+   ],
+   "place": {
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "own",
+    "with": "capy"
+   },
+   "act": {
+    "own": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "own"
+    }
+   }
+  },
+  {
+   "text": "Under it, Dez's play is a catch. Three years late.",
+   "cap": "Under it, Dez's play is a catch. 3 years late.",
+   "key": [
+    "CATCH.",
+    "LATE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "own": {
+     "mood": "worried",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "So, did Dez catch it? Yes or no, below.",
+   "key": [
+    "YES",
+    "NO,"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "DEZ CAUGHT IT?",
+     "YES / NO"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "wr": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Fox News / FOX Sports: Dez caught it: looking back at infamous Cowboys-Packers game",
+   "url": "https://www.foxnews.com/sports/dez-caught-it-looking-back-infamous-cowboys-packers-game"
+  },
+  {
+   "title": "Dallas Morning News: NFL competition committee to change rule that overturned Dez Bryant catch",
+   "url": "https://sportsday.dallasnews.com/dallas-cowboys/cowboys/2018/02/27/nfl-competition-committee-change-rule-overturned-dez-bryant-catch"
+  },
+  {
+   "title": "FOX 4: Dez caught it, NFL committee says three years later",
+   "url": "https://www.fox4news.com/sports/dez-caught-it-nfl-committee-says-three-years-later"
+  },
+  {
+   "title": "NFL.com: NFL teams unanimously approve simplified catch rule",
+   "url": "https://www.nfl.com/news/nfl-teams-unanimously-approve-simplified-catch-rule-0ap3000000923342"
+  },
+  {
+   "title": "SI: NFL owners vote unanimously on changes to catch rule",
+   "url": "https://www.si.com/nfl/2018/03/27/owners-vote-unanimously-change-catch-rule"
+  },
+  {
+   "title": "ESPN: NFL owners approve new catch rule, 32-0 vote",
+   "url": "https://africa.espn.com/nfl/story/_/id/22931857/nfl-owners-approve-new-catch-rule-32-0-vote"
+  }
+ ]
+}

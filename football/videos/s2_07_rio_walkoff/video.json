@@ -1,0 +1,506 @@
+{
+ "id": "s2_07_rio_walkoff",
+ "title": "One second in Rio",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "7 SECOND",
+   "DRIVE"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "lamar": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#241773",
+    "pants": "#f4f4f4",
+    "number": "8",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "flowers": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#241773",
+    "pants": "#f4f4f4",
+    "number": "4",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c"
+   },
+   "at": "left"
+  },
+  "loop": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#241773",
+    "pants": "#f4f4f4",
+    "number": "33",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "dak": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#869397",
+    "number": "4",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c98d63",
+    "beard": true
+   },
+   "at": "right",
+   "face": -20
+  }
+ },
+ "lines": [
+  {
+   "text": "The Ravens won a game in Brazil with a seven second drive.",
+   "cap": "The Ravens won a game in Brazil with a 7 second drive.",
+   "key": [
+    "7",
+    "SECOND"
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "lamar": [
+     0,
+     0
+    ],
+    "dak": [
+     2.2,
+     0.3
+    ],
+    "flowers": false,
+    "loop": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "lamar"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "lamar": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    },
+    "dak": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "lamar"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It was the NFL's first game in Rio de Janeiro, at the famous Maracan\u00e3.",
+   "cap": "It was the NFL's first game in Rio de Janeiro, at the famous Maracan\u00e3.",
+   "key": [
+    "RIO"
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "RIO DE JANEIRO",
+     "MARACANA"
+    ]
+   },
+   "place": {
+    "lamar": "center",
+    "dak": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "lamar"
+   },
+   "act": {
+    "lamar": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "dak": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two big soccer clubs play on that grass every week, so the turf was a worry.",
+   "key": [
+    "TURF"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "TURF",
+     "CHECK"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The grass held up. The game did not.",
+   "key": [
+    "NOT."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BAL 24",
+     "DAL 21"
+    ]
+   },
+   "place": {
+    "lamar": "center",
+    "dak": "right"
+   },
+   "shot": {
+    "type": "high",
+    "on": "lamar"
+   },
+   "act": {
+    "lamar": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "dak"
+    },
+    "dak": {
+     "mood": "angry",
+     "action": "point",
+     "look": "lamar"
+    }
+   }
+  },
+  {
+   "text": "Dallas took the lead with ten minutes left. Baltimore took it back with ninety seconds left.",
+   "cap": "Dallas took the lead with 10 minutes left. Baltimore took it back with 90 seconds left.",
+   "key": [
+    "10",
+    "90"
+   ],
+   "board": [
+    "BAL 31",
+    "DAL 28"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "lamar",
+    "with": "dak"
+   },
+   "act": {
+    "lamar": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "dak": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "lamar"
+    }
+   }
+  },
+  {
+   "text": "Then a Dallas field goal tied it at thirty one.",
+   "cap": "Then a Dallas field goal tied it at 31.",
+   "key": [
+    "31."
+   ],
+   "board": [
+    "BAL 31",
+    "DAL 31"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "dak"
+   },
+   "act": {
+    "dak": {
+     "mood": "smug",
+     "action": "clap",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Seven seconds left. Ravens at their own thirty five.",
+   "cap": "7 seconds left. Ravens at their own 35.",
+   "key": [
+    "7",
+    "35."
+   ],
+   "board": [
+    "0:07",
+    "BAL OWN 35"
+   ],
+   "place": {
+    "flowers": "left"
+   },
+   "shot": {
+    "type": "low",
+    "on": "lamar"
+   },
+   "act": {
+    "lamar": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    },
+    "flowers": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "lamar"
+    }
+   }
+  },
+  {
+   "text": "Lamar Jackson hits Zay Flowers for twenty seven yards.",
+   "cap": "Lamar Jackson hits Zay Flowers for 27 yards.",
+   "key": [
+    "27"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "flowers"
+   },
+   "act": {
+    "lamar": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "flowers"
+    },
+    "flowers": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "lamar"
+    }
+   }
+  },
+  {
+   "text": "Flowers goes down. The clock keeps running.",
+   "key": [
+    "RUNNING."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "flowers"
+   },
+   "act": {
+    "flowers": {
+     "mood": "worried",
+     "action": "slump"
+    },
+    "dak": {
+     "mood": "happy",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Jackson calls timeout. One second left.",
+   "cap": "Jackson calls timeout. 1 second left.",
+   "key": [
+    "TIMEOUT.",
+    "1"
+   ],
+   "board": [
+    "0:01",
+    "TIMEOUT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "lamar"
+   },
+   "act": {
+    "lamar": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Kicker Tyler Loop, from fifty six yards.",
+   "cap": "Kicker Tyler Loop, from 56 yards.",
+   "key": [
+    "56"
+   ],
+   "place": {
+    "flowers": false,
+    "lamar": "left",
+    "loop": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "loop"
+   },
+   "act": {
+    "loop": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "lamar": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "loop"
+    }
+   }
+  },
+  {
+   "text": "Good. Ravens win, thirty four to thirty one.",
+   "cap": "Good. Ravens win, 34 to 31.",
+   "key": [
+    "34"
+   ],
+   "board": [
+    "BAL 34",
+    "DAL 31"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "loop"
+   },
+   "act": {
+    "loop": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "lamar": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "loop"
+    },
+    "dak": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "One second. Apparently, that's plenty.",
+   "cap": "1 second. Apparently, that's plenty.",
+   "key": [
+    "PLENTY."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "1 SECOND",
+     "PLENTY"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you kick from fifty six, or throw it deep? Kick or throw?",
+   "cap": "Would you kick from 56, or throw it deep? Kick or throw?",
+   "key": [
+    "KICK",
+    "THROW?"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BAL 34",
+     "DAL 31"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "loop": [
+     0.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "loop"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "loop": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP via ClickOrlando: Jackson's pass, alert timeout call lead to Loop's 56-yard field goal as Ravens beat Cowboys 34-31",
+   "url": "https://www.clickorlando.com/sports/2026/09/28/jacksons-pass-alert-timeout-call-lead-to-loops-56-yard-field-goal-as-ravens-beat-cowboys-34-31/"
+  },
+  {
+   "title": "NBC Sports: Ravens beat Cowboys on walk-off field goal in Brazil",
+   "url": "https://www.nbcsportsbayarea.com/nfl/ravens-cowboys-walk-off-field-goal-brazil/1966784/"
+  },
+  {
+   "title": "AP via NBC Sports Philadelphia: Maracan\u00e3 field holds up for Ravens-Cowboys",
+   "url": "https://www.nbcsportsphiladelphia.com/news/sports/nfl/maracana-stadium-field-ravens-cowboys/"
+  }
+ ]
+}
