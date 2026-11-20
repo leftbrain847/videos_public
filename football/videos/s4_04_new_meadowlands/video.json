@@ -6,7 +6,10 @@
   "boardText": [
    "GIANTS 31",
    "EAGLES 10"
-  ]
+  ],
+  "endZone": 24,
+  "zoneA": "#004c54",
+  "zoneB": "#0b2265"
  },
  "cast": {
   "capy": {
@@ -24,7 +27,6 @@
     "hairColor": "#1b1b1b",
     "skin": "#6b4430"
    },
-   "at": "center",
    "hold": "football"
   },
   "vick": {
@@ -35,11 +37,7 @@
     "number": "7",
     "hair": "bald",
     "skin": "#5a3825"
-   },
-   "at": [
-    0,
-    0
-   ]
+   }
   },
   "punter": {
    "look": {
@@ -49,11 +47,7 @@
     "number": "2",
     "hair": "short",
     "hairColor": "#d9b16a"
-   },
-   "at": [
-    0,
-    0
-   ]
+   }
   },
   "coach": {
    "look": {
@@ -65,24 +59,54 @@
     "skin": "#f2c39b",
     "glasses": true
    },
-   "at": [
-    0,
-    0
-   ],
    "hold": "clipboard"
+  },
+  "snapper": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b2265",
+    "pants": "#d0d0d0",
+    "number": "59",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "g1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b2265",
+    "pants": "#d0d0d0",
+    "number": "24",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#5a3825"
+   }
+  },
+  "g2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b2265",
+    "pants": "#d0d0d0",
+    "number": "41",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#a8714c"
+   }
   }
  },
  "lines": [
   {
-   "text": "In 2010, the Giants led the Eagles by twenty one points with eight minutes left. They lost.",
+   "text": "You're the Eagles. Down twenty one. Eight minutes left.",
+   "cap": "You're the Eagles. Down 21. 8 minutes left.",
    "key": [
-    "21",
-    "LOST."
+    "21."
    ],
+   "speaker": "capy",
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "coach"
+    "with": "jackson"
    },
    "act": {
     "capy": {
@@ -90,36 +114,38 @@
      "action": "talk",
      "look": "camera"
     },
-    "coach": {
-     "mood": "happy",
-     "action": "hold",
+    "jackson": {
+     "mood": "worried",
+     "action": "idle",
      "look": "capy"
     }
    },
-   "cap": "In 2010, the Giants led the Eagles by 21 points with 8 minutes left. They lost.",
    "place": {
     "capy": [
-     -2.4,
+     -2.2,
      0.8
     ],
-    "jackson": false,
-    "vick": false,
-    "punter": false,
-    "coach": [
+    "jackson": [
      0.4,
      0
-    ]
+    ],
+    "vick": false,
+    "punter": false,
+    "coach": false,
+    "snapper": false,
+    "g1": false,
+    "g2": false
    },
-   "speaker": "capy",
    "board": [
     "GIANTS 31",
     "EAGLES 10"
    ]
   },
   {
-   "text": "New York led thirty one to ten. Comfortably.",
+   "text": "Giants thirty one, Eagles ten. Comfortably.",
+   "cap": "Giants 31, Eagles 10. Comfortably.",
    "key": [
-    "31"
+    "COMFORTABLY."
    ],
    "shot": {
     "type": "wide",
@@ -135,16 +161,26 @@
      "action": "slump"
     }
    },
-   "cap": "New York led 31 to 10. Comfortably.",
    "place": {
     "capy": false,
+    "jackson": false,
+    "vick": [
+     -2.2,
+     0.2
+    ],
+    "punter": [
+     2.2,
+     0.2
+    ],
     "coach": false,
-    "punter": "right",
-    "vick": "left"
+    "snapper": false,
+    "g1": false,
+    "g2": false
    }
   },
   {
    "text": "Then a sixty five yard touchdown catch. Then a Michael Vick touchdown run.",
+   "cap": "Then a 65 yard touchdown catch. Then a Michael Vick touchdown run.",
    "key": [
     "65",
     "VICK"
@@ -156,20 +192,32 @@
    "act": {
     "vick": {
      "mood": "happy",
-     "action": "throw",
+     "action": "cheer",
      "look": "camera"
     }
    },
-   "cap": "Then a 65 yard touchdown catch. Then a Michael Vick touchdown run.",
+   "place": {
+    "capy": false,
+    "jackson": false,
+    "vick": [
+     0,
+     0
+    ],
+    "punter": false,
+    "coach": false,
+    "snapper": false,
+    "g1": false,
+    "g2": false
+   },
    "board": [
     "GIANTS 31",
     "EAGLES 24"
    ]
   },
   {
-   "text": "Then an onside kick. Philadelphia got it back.",
+   "text": "Then an onside kick. You get it back.",
    "key": [
-    "ONSIDE"
+    "BACK."
    ],
    "shot": {
     "type": "low",
@@ -188,59 +236,100 @@
     }
    },
    "place": {
+    "capy": false,
     "jackson": [
-     1.4,
+     1.2,
      0.4
     ],
-    "punter": false
+    "vick": [
+     -1.6,
+     -0.6
+    ],
+    "punter": false,
+    "coach": false,
+    "snapper": false,
+    "g1": false,
+    "g2": false
    }
   },
   {
-   "text": "Another touchdown. Thirty one to thirty one, with a minute left.",
+   "text": "Another touchdown. Thirty one all. One minute left.",
+   "cap": "Another touchdown. 31 all. One minute left.",
    "key": [
-    "31",
-    "31,"
+    "MINUTE"
    ],
+   "speaker": "capy",
    "shot": {
     "type": "two",
-    "on": "vick",
-    "with": "jackson"
+    "on": "capy",
+    "with": "vick"
    },
    "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "vick"
+    },
     "vick": {
      "mood": "happy",
-     "action": "cheer"
-    },
-    "jackson": {
-     "mood": "happy",
-     "action": "clap"
+     "action": "cheer",
+     "look": "capy"
     }
    },
-   "cap": "Another touchdown. 31 to 31, with a minute left.",
+   "place": {
+    "capy": [
+     -2.0,
+     0.8
+    ],
+    "jackson": false,
+    "vick": [
+     0.6,
+     0
+    ],
+    "punter": false,
+    "coach": false,
+    "snapper": false,
+    "g1": false,
+    "g2": false
+   },
    "board": [
     "GIANTS 31",
     "EAGLES 31"
    ]
   },
   {
-   "text": "The Giants' sideline was getting ready for overtime.",
+   "text": "The Giants' sideline is getting ready for overtime.",
    "key": [
     "OVERTIME."
    ],
+   "speaker": "capy",
    "shot": {
-    "type": "medium",
-    "on": "coach"
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
    },
    "act": {
-    "coach": {
-     "mood": "worried",
-     "action": "hold",
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
      "look": "camera"
+    },
+    "coach": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
     }
    },
    "set": "locker",
    "place": {
-    "coach": "center"
+    "capy": [
+     -1.8,
+     0.6
+    ],
+    "coach": [
+     0.8,
+     0
+    ]
    },
    "board": [
     "PLAN:",
@@ -248,14 +337,18 @@
    ]
   },
   {
-   "text": "Last play of regulation. The Giants had to punt. The punter was told: kick it out of bounds.",
+   "text": "Last play of regulation. The Giants punt. The order: kick it out of bounds.",
    "key": [
-    "OUT"
+    "BOUNDS."
    ],
    "shot": {
-    "type": "two",
+    "type": "medium",
     "on": "coach",
-    "with": "punter"
+    "offset": [
+     1.2,
+     0,
+     1
+    ]
    },
    "act": {
     "coach": {
@@ -265,12 +358,20 @@
     },
     "punter": {
      "mood": "worried",
+     "action": "idle",
      "look": "coach"
     }
    },
    "place": {
-    "coach": "left",
-    "punter": "right"
+    "capy": false,
+    "coach": [
+     -1.2,
+     0
+    ],
+    "punter": [
+     1.4,
+     0.2
+    ]
    },
    "board": [
     "PUNT IT",
@@ -278,118 +379,1857 @@
    ]
   },
   {
-   "text": "The rookie punter, Matt Dodge, got a high snap.",
+   "text": "Rookie punter Matt Dodge gets a high snap.",
    "key": [
     "HIGH"
    ],
    "shot": {
-    "type": "low",
-    "on": "punter"
+    "type": "follow",
+    "on": "ball",
+    "fallback": "punter",
+    "lead": 0,
+    "z": 0
    },
-   "act": {
-    "punter": {
-     "mood": "shocked",
-     "action": "hold",
-     "look": "camera"
-    }
-   },
+   "act": {},
    "set": "field",
-   "place": {
-    "punter": "center",
-    "jackson": [
-     2.4,
-     -3.0
-    ]
+   "setOpts": {
+    "boardText": [
+     "GIANTS 31",
+     "EAGLES 31"
+    ],
+    "endZone": 24,
+    "zoneA": "#004c54",
+    "zoneB": "#0b2265"
    },
    "board": [
     "GIANTS 31",
     "EAGLES 31"
-   ]
+   ],
+   "play": {
+    "cast": {
+     "snapper": {
+      "path": [
+       [
+        0.0,
+        3,
+        0
+       ],
+       [
+        0.05,
+        3.0,
+        0.0
+       ],
+       [
+        0.1,
+        3.0,
+        0.0
+       ],
+       [
+        0.15,
+        3.0,
+        0.0
+       ],
+       [
+        0.2,
+        3.0,
+        0.0
+       ],
+       [
+        0.25,
+        3.0,
+        0.0
+       ],
+       [
+        0.3,
+        3.0,
+        0.0
+       ],
+       [
+        0.35,
+        3.0,
+        0.0
+       ],
+       [
+        0.4,
+        3.0,
+        0.0
+       ],
+       [
+        0.45,
+        3.0,
+        0.0
+       ],
+       [
+        0.5,
+        3.0,
+        0.0
+       ],
+       [
+        0.55,
+        3.0,
+        0.0
+       ],
+       [
+        0.6,
+        3.0,
+        0.0
+       ],
+       [
+        0.65,
+        3.0,
+        0.0
+       ],
+       [
+        0.7,
+        3.0,
+        0.0
+       ],
+       [
+        0.75,
+        3.0,
+        0.0
+       ],
+       [
+        0.8,
+        3.0,
+        0.0
+       ],
+       [
+        0.85,
+        3.0,
+        0.0
+       ],
+       [
+        0.9,
+        3.0,
+        0.0
+       ],
+       [
+        0.95,
+        3.0,
+        0.0
+       ],
+       [
+        1.0,
+        3.0,
+        0.0
+       ]
+      ],
+      "face": -90
+     },
+     "punter": {
+      "path": [
+       [
+        0.0,
+        10,
+        0
+       ],
+       [
+        0.05,
+        10.0,
+        0.0
+       ],
+       [
+        0.1,
+        10.0,
+        0.0
+       ],
+       [
+        0.15,
+        10.0,
+        0.0
+       ],
+       [
+        0.2,
+        10.0,
+        0.0
+       ],
+       [
+        0.25,
+        10.0,
+        0.0
+       ],
+       [
+        0.3,
+        10.0,
+        0.0
+       ],
+       [
+        0.35,
+        10.0,
+        0.0
+       ],
+       [
+        0.4,
+        10.0,
+        0.0
+       ],
+       [
+        0.45,
+        10.0,
+        0.0
+       ],
+       [
+        0.5,
+        10.0,
+        0.0
+       ],
+       [
+        0.55,
+        10.0,
+        0.0
+       ],
+       [
+        0.6,
+        10.0,
+        0.0
+       ],
+       [
+        0.65,
+        10.0,
+        0.0
+       ],
+       [
+        0.7,
+        10.0,
+        0.0
+       ],
+       [
+        0.75,
+        10.0,
+        0.0
+       ],
+       [
+        0.8,
+        10.0,
+        0.0
+       ],
+       [
+        0.85,
+        10.0,
+        0.0
+       ],
+       [
+        0.9,
+        10.0,
+        0.0
+       ],
+       [
+        0.95,
+        10.0,
+        0.0
+       ],
+       [
+        1.0,
+        10.0,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.6,
+        "catch"
+       ]
+      ],
+      "face": -90,
+      "mood": "worried"
+     },
+     "g1": {
+      "path": [
+       [
+        0.0,
+        3,
+        4
+       ],
+       [
+        0.05,
+        3.0,
+        4.0
+       ],
+       [
+        0.1,
+        3.0,
+        4.0
+       ],
+       [
+        0.15,
+        3.0,
+        4.0
+       ],
+       [
+        0.2,
+        3.0,
+        4.0
+       ],
+       [
+        0.25,
+        3.0,
+        4.0
+       ],
+       [
+        0.3,
+        3.0,
+        4.0
+       ],
+       [
+        0.35,
+        3.0,
+        4.0
+       ],
+       [
+        0.4,
+        3.0,
+        4.0
+       ],
+       [
+        0.45,
+        3.0,
+        4.0
+       ],
+       [
+        0.5,
+        3.0,
+        4.0
+       ],
+       [
+        0.55,
+        3.0,
+        4.0
+       ],
+       [
+        0.6,
+        3.0,
+        4.0
+       ],
+       [
+        0.65,
+        3.0,
+        4.0
+       ],
+       [
+        0.7,
+        3.0,
+        4.0
+       ],
+       [
+        0.75,
+        3.0,
+        4.0
+       ],
+       [
+        0.8,
+        3.0,
+        4.0
+       ],
+       [
+        0.85,
+        3.0,
+        4.0
+       ],
+       [
+        0.9,
+        3.0,
+        4.0
+       ],
+       [
+        0.95,
+        3.0,
+        4.0
+       ],
+       [
+        1.0,
+        3.0,
+        4.0
+       ]
+      ],
+      "face": -90
+     },
+     "g2": {
+      "path": [
+       [
+        0.0,
+        3,
+        -4
+       ],
+       [
+        0.05,
+        3.0,
+        -4.0
+       ],
+       [
+        0.1,
+        3.0,
+        -4.0
+       ],
+       [
+        0.15,
+        3.0,
+        -4.0
+       ],
+       [
+        0.2,
+        3.0,
+        -4.0
+       ],
+       [
+        0.25,
+        3.0,
+        -4.0
+       ],
+       [
+        0.3,
+        3.0,
+        -4.0
+       ],
+       [
+        0.35,
+        3.0,
+        -4.0
+       ],
+       [
+        0.4,
+        3.0,
+        -4.0
+       ],
+       [
+        0.45,
+        3.0,
+        -4.0
+       ],
+       [
+        0.5,
+        3.0,
+        -4.0
+       ],
+       [
+        0.55,
+        3.0,
+        -4.0
+       ],
+       [
+        0.6,
+        3.0,
+        -4.0
+       ],
+       [
+        0.65,
+        3.0,
+        -4.0
+       ],
+       [
+        0.7,
+        3.0,
+        -4.0
+       ],
+       [
+        0.75,
+        3.0,
+        -4.0
+       ],
+       [
+        0.8,
+        3.0,
+        -4.0
+       ],
+       [
+        0.85,
+        3.0,
+        -4.0
+       ],
+       [
+        0.9,
+        3.0,
+        -4.0
+       ],
+       [
+        0.95,
+        3.0,
+        -4.0
+       ],
+       [
+        1.0,
+        3.0,
+        -4.0
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      0.3,
+      3.6,
+      0.6,
+      0.0
+     ],
+     [
+      0.35,
+      4.6,
+      1.57,
+      0.0
+     ],
+     [
+      0.4,
+      5.6,
+      2.32,
+      0.0
+     ],
+     [
+      0.45,
+      6.6,
+      2.85,
+      0.0
+     ],
+     [
+      0.5,
+      7.6,
+      3.16,
+      0.0
+     ],
+     [
+      0.55,
+      8.6,
+      3.24,
+      0.0
+     ],
+     [
+      0.6,
+      9.6,
+      3.1,
+      0.0
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "snapper"
+     ],
+     [
+      0.6,
+      "punter"
+     ]
+    ]
+   }
   },
   {
-   "text": "He kicked a line drive. Down the middle. To DeSean Jackson.",
+   "text": "He kicks a line drive. Down the middle. To DeSean Jackson.",
    "key": [
     "MIDDLE.",
     "JACKSON."
    ],
    "shot": {
-    "type": "two",
-    "on": "punter",
-    "with": "jackson"
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "punter",
+    "lead": 0,
+    "z": 0
    },
-   "act": {
-    "punter": {
-     "mood": "worried",
-     "action": "facepalm"
+   "act": {},
+   "play": {
+    "cast": {
+     "punter": {
+      "path": [
+       [
+        0.0,
+        10,
+        0
+       ],
+       [
+        0.05,
+        10.0,
+        0.0
+       ],
+       [
+        0.1,
+        10.0,
+        0.0
+       ],
+       [
+        0.15,
+        10.0,
+        0.0
+       ],
+       [
+        0.2,
+        10.0,
+        0.0
+       ],
+       [
+        0.25,
+        10.0,
+        0.0
+       ],
+       [
+        0.3,
+        10.0,
+        0.0
+       ],
+       [
+        0.35,
+        10.0,
+        0.0
+       ],
+       [
+        0.4,
+        10.0,
+        0.0
+       ],
+       [
+        0.45,
+        10.0,
+        0.0
+       ],
+       [
+        0.5,
+        10.0,
+        0.0
+       ],
+       [
+        0.55,
+        10.0,
+        0.0
+       ],
+       [
+        0.6,
+        10.0,
+        0.0
+       ],
+       [
+        0.65,
+        10.0,
+        0.0
+       ],
+       [
+        0.7,
+        10.0,
+        0.0
+       ],
+       [
+        0.75,
+        10.0,
+        0.0
+       ],
+       [
+        0.8,
+        10.0,
+        0.0
+       ],
+       [
+        0.85,
+        10.0,
+        0.0
+       ],
+       [
+        0.9,
+        10.0,
+        0.0
+       ],
+       [
+        0.95,
+        10.0,
+        0.0
+       ],
+       [
+        1.0,
+        10.0,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "kick"
+       ]
+      ],
+      "face": -90,
+      "mood": "worried"
+     },
+     "g1": {
+      "path": [
+       [
+        0.0,
+        3,
+        4
+       ],
+       [
+        0.05,
+        2.25,
+        4.0
+       ],
+       [
+        0.1,
+        1.5,
+        4.0
+       ],
+       [
+        0.15,
+        0.75,
+        4.0
+       ],
+       [
+        0.2,
+        0.0,
+        4.0
+       ],
+       [
+        0.25,
+        -0.75,
+        4.0
+       ],
+       [
+        0.3,
+        -1.5,
+        4.0
+       ],
+       [
+        0.35,
+        -2.25,
+        4.0
+       ],
+       [
+        0.4,
+        -3.0,
+        4.0
+       ],
+       [
+        0.45,
+        -3.75,
+        4.0
+       ],
+       [
+        0.5,
+        -4.5,
+        4.0
+       ],
+       [
+        0.55,
+        -5.25,
+        4.0
+       ],
+       [
+        0.6,
+        -6.0,
+        4.0
+       ],
+       [
+        0.65,
+        -6.75,
+        4.0
+       ],
+       [
+        0.7,
+        -7.5,
+        4.0
+       ],
+       [
+        0.75,
+        -8.25,
+        4.0
+       ],
+       [
+        0.8,
+        -9.0,
+        4.0
+       ],
+       [
+        0.85,
+        -9.75,
+        4.0
+       ],
+       [
+        0.9,
+        -10.5,
+        4.0
+       ],
+       [
+        0.95,
+        -11.25,
+        4.0
+       ],
+       [
+        1.0,
+        -12.0,
+        4.0
+       ]
+      ]
+     },
+     "g2": {
+      "path": [
+       [
+        0.0,
+        3,
+        -4
+       ],
+       [
+        0.05,
+        2.25,
+        -4.05
+       ],
+       [
+        0.1,
+        1.5,
+        -4.1
+       ],
+       [
+        0.15,
+        0.75,
+        -4.15
+       ],
+       [
+        0.2,
+        0.0,
+        -4.2
+       ],
+       [
+        0.25,
+        -0.75,
+        -4.25
+       ],
+       [
+        0.3,
+        -1.5,
+        -4.3
+       ],
+       [
+        0.35,
+        -2.25,
+        -4.35
+       ],
+       [
+        0.4,
+        -3.0,
+        -4.4
+       ],
+       [
+        0.45,
+        -3.75,
+        -4.45
+       ],
+       [
+        0.5,
+        -4.5,
+        -4.5
+       ],
+       [
+        0.55,
+        -5.25,
+        -4.55
+       ],
+       [
+        0.6,
+        -6.0,
+        -4.6
+       ],
+       [
+        0.65,
+        -6.75,
+        -4.65
+       ],
+       [
+        0.7,
+        -7.5,
+        -4.7
+       ],
+       [
+        0.75,
+        -8.25,
+        -4.75
+       ],
+       [
+        0.8,
+        -9.0,
+        -4.8
+       ],
+       [
+        0.85,
+        -9.75,
+        -4.85
+       ],
+       [
+        0.9,
+        -10.5,
+        -4.9
+       ],
+       [
+        0.95,
+        -11.25,
+        -4.95
+       ],
+       [
+        1.0,
+        -12.0,
+        -5.0
+       ]
+      ]
+     },
+     "jackson": {
+      "path": [
+       [
+        0.0,
+        -21,
+        -1
+       ],
+       [
+        0.05,
+        -20.94,
+        -0.94
+       ],
+       [
+        0.1,
+        -20.88,
+        -0.88
+       ],
+       [
+        0.15,
+        -20.82,
+        -0.82
+       ],
+       [
+        0.2,
+        -20.76,
+        -0.76
+       ],
+       [
+        0.25,
+        -20.71,
+        -0.71
+       ],
+       [
+        0.3,
+        -20.65,
+        -0.65
+       ],
+       [
+        0.35,
+        -20.59,
+        -0.59
+       ],
+       [
+        0.4,
+        -20.53,
+        -0.53
+       ],
+       [
+        0.45,
+        -20.47,
+        -0.47
+       ],
+       [
+        0.5,
+        -20.41,
+        -0.41
+       ],
+       [
+        0.55,
+        -20.35,
+        -0.35
+       ],
+       [
+        0.6,
+        -20.29,
+        -0.29
+       ],
+       [
+        0.65,
+        -20.24,
+        -0.24
+       ],
+       [
+        0.7,
+        -20.18,
+        -0.18
+       ],
+       [
+        0.75,
+        -20.12,
+        -0.12
+       ],
+       [
+        0.8,
+        -20.06,
+        -0.06
+       ],
+       [
+        0.85,
+        -20.0,
+        0.0
+       ],
+       [
+        0.9,
+        -19.67,
+        0.0
+       ],
+       [
+        0.95,
+        -19.33,
+        0.0
+       ],
+       [
+        1.0,
+        -19.0,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.85,
+        "catch"
+       ]
+      ],
+      "face": 90
+     }
     },
-    "jackson": {
-     "mood": "smug",
-     "action": "hold",
-     "look": "punter"
-    }
-   }
-  },
-  {
-   "text": "Jackson ran it back sixty five yards. Touchdown. No time left.",
-   "key": [
-    "65"
-   ],
-   "shot": {
-    "type": "high",
-    "on": "jackson"
-   },
-   "act": {
-    "jackson": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   },
-   "cap": "Jackson ran it back 65 yards. Touchdown. No time left.",
-   "place": {
-    "punter": false,
-    "jackson": "center"
-   },
-   "board": [
-    "EAGLES 38",
-    "GIANTS 31"
-   ]
-  },
-  {
-   "text": "Eagles thirty eight, Giants thirty one. Twenty eight points in under eight minutes.",
-   "key": [
-    "28"
-   ],
-   "shot": {
-    "type": "wide",
-    "on": "jackson"
-   },
-   "act": {
-    "jackson": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "vick": {
-     "mood": "happy",
-     "action": "clap"
-    },
-    "punter": {
-     "mood": "sad",
-     "action": "slump"
-    }
-   },
-   "cap": "Eagles 38, Giants 31. 28 points in under 8 minutes.",
-   "place": {
-    "vick": "left",
-    "punter": [
-     2.8,
-     -1.4
+    "ball": [
+     [
+      0.047,
+      9.4,
+      0.8,
+      0.0
+     ],
+     [
+      0.147,
+      5.78,
+      2.24,
+      0.0
+     ],
+     [
+      0.248,
+      2.15,
+      3.3,
+      0.0
+     ],
+     [
+      0.348,
+      -1.47,
+      3.99,
+      0.0
+     ],
+     [
+      0.448,
+      -5.1,
+      4.3,
+      0.0
+     ],
+     [
+      0.549,
+      -8.72,
+      4.24,
+      0.0
+     ],
+     [
+      0.649,
+      -12.35,
+      3.8,
+      0.0
+     ],
+     [
+      0.75,
+      -15.97,
+      2.99,
+      0.0
+     ],
+     [
+      0.85,
+      -19.6,
+      1.8,
+      0.0
+     ]
+    ],
+    "carry": [
+     [
+      0.85,
+      "jackson"
+     ]
     ]
    }
   },
   {
-   "text": "The Giants' coach, Tom Coughlin, did not take it calmly.",
+   "text": "Jackson runs it back sixty five yards.",
+   "cap": "Jackson runs it back 65 yards.",
    "key": [
-    "CALMLY."
+    "65"
+   ],
+   "shot": {
+    "type": "follow",
+    "on": "jackson",
+    "lead": 2
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "jackson": {
+      "path": [
+       [
+        0.0,
+        -19,
+        0
+       ],
+       [
+        0.05,
+        -17.65,
+        -0.15
+       ],
+       [
+        0.1,
+        -16.3,
+        -0.3
+       ],
+       [
+        0.15,
+        -14.95,
+        -0.45
+       ],
+       [
+        0.2,
+        -13.6,
+        -0.6
+       ],
+       [
+        0.25,
+        -12.25,
+        -0.75
+       ],
+       [
+        0.3,
+        -10.9,
+        -0.9
+       ],
+       [
+        0.35,
+        -9.55,
+        -1.05
+       ],
+       [
+        0.4,
+        -8.2,
+        -1.2
+       ],
+       [
+        0.45,
+        -6.85,
+        -1.35
+       ],
+       [
+        0.5,
+        -5.5,
+        -1.5
+       ],
+       [
+        0.55,
+        -4.15,
+        -1.65
+       ],
+       [
+        0.6,
+        -2.8,
+        -1.8
+       ],
+       [
+        0.65,
+        -1.45,
+        -1.95
+       ],
+       [
+        0.7,
+        -0.1,
+        -2.1
+       ],
+       [
+        0.75,
+        1.25,
+        -2.25
+       ],
+       [
+        0.8,
+        2.6,
+        -2.4
+       ],
+       [
+        0.85,
+        3.95,
+        -2.55
+       ],
+       [
+        0.9,
+        5.3,
+        -2.7
+       ],
+       [
+        0.95,
+        6.65,
+        -2.85
+       ],
+       [
+        1.0,
+        8.0,
+        -3.0
+       ]
+      ]
+     },
+     "g1": {
+      "path": [
+       [
+        0.0,
+        -12,
+        4
+       ],
+       [
+        0.05,
+        -12.15,
+        3.95
+       ],
+       [
+        0.1,
+        -12.3,
+        3.9
+       ],
+       [
+        0.15,
+        -12.45,
+        3.85
+       ],
+       [
+        0.2,
+        -12.6,
+        3.8
+       ],
+       [
+        0.25,
+        -12.75,
+        3.75
+       ],
+       [
+        0.3,
+        -12.9,
+        3.7
+       ],
+       [
+        0.35,
+        -13.05,
+        3.65
+       ],
+       [
+        0.4,
+        -13.2,
+        3.6
+       ],
+       [
+        0.45,
+        -13.35,
+        3.55
+       ],
+       [
+        0.5,
+        -13.5,
+        3.5
+       ],
+       [
+        0.55,
+        -13.65,
+        3.45
+       ],
+       [
+        0.6,
+        -13.8,
+        3.4
+       ],
+       [
+        0.65,
+        -13.95,
+        3.35
+       ],
+       [
+        0.7,
+        -14.1,
+        3.3
+       ],
+       [
+        0.75,
+        -14.25,
+        3.25
+       ],
+       [
+        0.8,
+        -14.4,
+        3.2
+       ],
+       [
+        0.85,
+        -14.55,
+        3.15
+       ],
+       [
+        0.9,
+        -14.7,
+        3.1
+       ],
+       [
+        0.95,
+        -14.85,
+        3.05
+       ],
+       [
+        1.0,
+        -15.0,
+        3.0
+       ]
+      ],
+      "mood": "shocked"
+     },
+     "g2": {
+      "path": [
+       [
+        0.0,
+        -12,
+        -5
+       ],
+       [
+        0.05,
+        -11.95,
+        -5.12
+       ],
+       [
+        0.1,
+        -11.9,
+        -5.25
+       ],
+       [
+        0.15,
+        -11.85,
+        -5.38
+       ],
+       [
+        0.2,
+        -11.8,
+        -5.5
+       ],
+       [
+        0.25,
+        -11.75,
+        -5.62
+       ],
+       [
+        0.3,
+        -11.7,
+        -5.75
+       ],
+       [
+        0.35,
+        -11.65,
+        -5.88
+       ],
+       [
+        0.4,
+        -11.6,
+        -6.0
+       ],
+       [
+        0.45,
+        -11.55,
+        -6.12
+       ],
+       [
+        0.5,
+        -11.5,
+        -6.25
+       ],
+       [
+        0.55,
+        -11.45,
+        -6.38
+       ],
+       [
+        0.6,
+        -11.4,
+        -6.5
+       ],
+       [
+        0.65,
+        -11.35,
+        -6.62
+       ],
+       [
+        0.7,
+        -11.3,
+        -6.75
+       ],
+       [
+        0.75,
+        -11.25,
+        -6.88
+       ],
+       [
+        0.8,
+        -11.2,
+        -7.0
+       ],
+       [
+        0.85,
+        -11.15,
+        -7.12
+       ],
+       [
+        0.9,
+        -11.1,
+        -7.25
+       ],
+       [
+        0.95,
+        -11.05,
+        -7.38
+       ],
+       [
+        1.0,
+        -11.0,
+        -7.5
+       ]
+      ],
+      "mood": "shocked"
+     },
+     "punter": {
+      "path": [
+       [
+        0.0,
+        10,
+        0
+       ],
+       [
+        0.05,
+        9.85,
+        0.1
+       ],
+       [
+        0.1,
+        9.7,
+        0.2
+       ],
+       [
+        0.15,
+        9.55,
+        0.3
+       ],
+       [
+        0.2,
+        9.4,
+        0.4
+       ],
+       [
+        0.25,
+        9.25,
+        0.5
+       ],
+       [
+        0.3,
+        9.1,
+        0.6
+       ],
+       [
+        0.35,
+        8.95,
+        0.7
+       ],
+       [
+        0.4,
+        8.8,
+        0.8
+       ],
+       [
+        0.45,
+        8.65,
+        0.9
+       ],
+       [
+        0.5,
+        8.5,
+        1.0
+       ],
+       [
+        0.55,
+        8.35,
+        1.1
+       ],
+       [
+        0.6,
+        8.2,
+        1.2
+       ],
+       [
+        0.65,
+        8.05,
+        1.3
+       ],
+       [
+        0.7,
+        7.9,
+        1.4
+       ],
+       [
+        0.75,
+        7.75,
+        1.5
+       ],
+       [
+        0.8,
+        7.6,
+        1.6
+       ],
+       [
+        0.85,
+        7.45,
+        1.7
+       ],
+       [
+        0.9,
+        7.3,
+        1.8
+       ],
+       [
+        0.95,
+        7.15,
+        1.9
+       ],
+       [
+        1.0,
+        7.0,
+        2.0
+       ]
+      ],
+      "mood": "worried"
+     }
+    },
+    "carry": [
+     [
+      0,
+      "jackson"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Touchdown. No time left.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "sfx": [
+    [
+     0.6,
+     "roar"
+    ]
+   ],
+   "board": [
+    "EAGLES 38",
+    "GIANTS 31"
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "jackson",
+    "lead": -1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "jackson": {
+      "path": [
+       [
+        0.0,
+        8,
+        -3
+       ],
+       [
+        0.05,
+        9.2,
+        -3.0
+       ],
+       [
+        0.1,
+        10.4,
+        -3.0
+       ],
+       [
+        0.15,
+        11.6,
+        -3.0
+       ],
+       [
+        0.2,
+        12.8,
+        -3.0
+       ],
+       [
+        0.25,
+        14.0,
+        -3.0
+       ],
+       [
+        0.3,
+        15.2,
+        -3.0
+       ],
+       [
+        0.35,
+        16.4,
+        -3.0
+       ],
+       [
+        0.4,
+        17.6,
+        -3.0
+       ],
+       [
+        0.45,
+        18.8,
+        -3.0
+       ],
+       [
+        0.5,
+        20.0,
+        -3.0
+       ],
+       [
+        0.55,
+        21.2,
+        -3.0
+       ],
+       [
+        0.6,
+        22.4,
+        -3.0
+       ],
+       [
+        0.65,
+        23.6,
+        -3.0
+       ],
+       [
+        0.7,
+        24.8,
+        -3.0
+       ],
+       [
+        0.75,
+        26.0,
+        -3.0
+       ],
+       [
+        0.8,
+        26.1,
+        -3.0
+       ],
+       [
+        0.85,
+        26.2,
+        -3.0
+       ],
+       [
+        0.9,
+        26.3,
+        -3.0
+       ],
+       [
+        0.95,
+        26.4,
+        -3.0
+       ],
+       [
+        1.0,
+        26.5,
+        -3.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.78,
+        "celebrate"
+       ]
+      ],
+      "face": 20
+     },
+     "punter": {
+      "path": [
+       [
+        0.0,
+        7,
+        2
+       ],
+       [
+        0.05,
+        7.38,
+        2.0
+       ],
+       [
+        0.1,
+        7.75,
+        2.0
+       ],
+       [
+        0.15,
+        8.12,
+        2.0
+       ],
+       [
+        0.2,
+        8.5,
+        2.0
+       ],
+       [
+        0.25,
+        8.88,
+        2.0
+       ],
+       [
+        0.3,
+        9.25,
+        2.0
+       ],
+       [
+        0.35,
+        9.62,
+        2.0
+       ],
+       [
+        0.4,
+        10.0,
+        2.0
+       ],
+       [
+        0.45,
+        10.38,
+        2.0
+       ],
+       [
+        0.5,
+        10.75,
+        2.0
+       ],
+       [
+        0.55,
+        11.12,
+        2.0
+       ],
+       [
+        0.6,
+        11.5,
+        2.0
+       ],
+       [
+        0.65,
+        11.88,
+        2.0
+       ],
+       [
+        0.7,
+        12.25,
+        2.0
+       ],
+       [
+        0.75,
+        12.62,
+        2.0
+       ],
+       [
+        0.8,
+        13.0,
+        2.0
+       ],
+       [
+        0.85,
+        13.0,
+        2.0
+       ],
+       [
+        0.9,
+        13.0,
+        2.0
+       ],
+       [
+        0.95,
+        13.0,
+        2.0
+       ],
+       [
+        1.0,
+        13.0,
+        2.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.82,
+        "slump"
+       ]
+      ],
+      "mood": "sad"
+     }
+    },
+    "carry": [
+     [
+      0,
+      "jackson"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Eagles thirty eight, Giants thirty one. Twenty eight points in under eight minutes.",
+   "cap": "Eagles 38, Giants 31. 28 points in under 8 minutes.",
+   "key": [
+    "28"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "jackson"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "clap",
+     "look": "camera"
+    },
+    "jackson": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     0.8
+    ],
+    "jackson": [
+     0.6,
+     0
+    ],
+    "vick": false,
+    "punter": false,
+    "coach": false,
+    "snapper": false,
+    "g1": false,
+    "g2": false
+   }
+  },
+  {
+   "text": "Giants coach Tom Coughlin's reaction? Not calm.",
+   "key": [
+    "CALM."
    ],
    "shot": {
     "type": "close",
@@ -411,10 +2251,11 @@
    ]
   },
   {
-   "text": "Eagles fans named it the Miracle at the New Meadowlands.",
+   "text": "Eagles fans have a name for it. The Miracle at the New Meadowlands.",
    "key": [
     "MIRACLE"
    ],
+   "speaker": "capy",
    "shot": {
     "type": "medium",
     "on": "capy"
@@ -433,14 +2274,15 @@
    "place": {
     "coach": "right",
     "capy": "left"
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Twenty one points up, eight minutes left. Is any lead safe? Yes or no.",
+   "text": "Twenty one up, eight minutes left. Is any lead safe? Yes or no.",
+   "cap": "21 up, 8 minutes left. Is any lead safe? Yes or no.",
    "key": [
     "SAFE?"
    ],
+   "speaker": "capy",
    "shot": {
     "type": "two",
     "on": "capy",
@@ -458,8 +2300,16 @@
      "look": "capy"
     }
    },
-   "cap": "21 points up, 8 minutes left. Is any lead safe? Yes or no.",
-   "speaker": "capy"
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "coach": [
+     1.0,
+     0.2
+    ]
+   }
   }
  ],
  "sources": [
@@ -474,6 +2324,98 @@
   {
    "title": "Reuters via Fox News: Another Eagles miracle beats Giants at last second",
    "url": "https://www.foxnews.com/sports/another-eagles-miracle-beats-giants-at-last-second"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The game was in 2010",
+   "terms": [
+    "2010"
+   ]
+  },
+  {
+   "claim": "The Giants led 31-10 with about eight minutes left",
+   "terms": [
+    "31-10|31 10|31–10|21 points"
+   ]
+  },
+  {
+   "claim": "A 65-yard touchdown catch, then a Michael Vick touchdown run",
+   "terms": [
+    "65",
+    "Vick"
+   ]
+  },
+  {
+   "claim": "The Eagles recovered an onside kick",
+   "terms": [
+    "onside"
+   ]
+  },
+  {
+   "claim": "Another touchdown tied it 31-31 with about a minute left",
+   "terms": [
+    "31-31|31 31|31–31|tied"
+   ]
+  },
+  {
+   "claim": "The Giants were preparing for overtime",
+   "terms": [
+    "overtime"
+   ]
+  },
+  {
+   "claim": "On the last play of regulation the Giants punted and the punter was told to kick it out of bounds",
+   "terms": [
+    "punt",
+    "out of bounds|sideline"
+   ]
+  },
+  {
+   "claim": "Rookie punter Matt Dodge got a high snap",
+   "terms": [
+    "Dodge",
+    "snap"
+   ]
+  },
+  {
+   "claim": "Dodge kicked a line drive down the middle to DeSean Jackson",
+   "terms": [
+    "Jackson",
+    "line drive|middle"
+   ]
+  },
+  {
+   "claim": "Jackson returned it 65 yards for a touchdown with no time left",
+   "terms": [
+    "Jackson",
+    "65"
+   ]
+  },
+  {
+   "claim": "Final score Eagles 38, Giants 31",
+   "terms": [
+    "38-31|38 31|38–31"
+   ]
+  },
+  {
+   "claim": "Eagles scored 28 points in under eight minutes",
+   "terms": [
+    "28 points|28 unanswered"
+   ]
+  },
+  {
+   "claim": "Giants coach Tom Coughlin reacted angrily",
+   "terms": [
+    "Coughlin"
+   ]
+  },
+  {
+   "claim": "It is known as the Miracle at the New Meadowlands",
+   "terms": [
+    "Miracle at the New Meadowlands|New Meadowlands"
+   ]
   }
  ]
 }

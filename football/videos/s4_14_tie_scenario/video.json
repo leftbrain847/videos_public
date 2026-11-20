@@ -76,16 +76,42 @@
     "skin": "#c68d64"
    },
    "at": "couchL"
+  },
+  "rk": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#c9c9c9",
+    "number": "2",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "c2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#6cb4ee",
+    "pants": "#f4f4f4",
+    "number": "97",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   }
   }
  },
  "lines": [
   {
-   "text": "In January 2022, two NFL teams could both reach the playoffs with a tie.",
-   "cap": "In January 2022, two NFL teams could both reach the playoffs with a tie.",
+   "text": "You're tied in overtime. Do nothing. Both teams make the playoffs.",
    "key": [
-    "TIE."
+    "NOTHING."
    ],
    "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "raider"
+   },
    "place": {
     "capy": [
      -2.6,
@@ -101,12 +127,9 @@
     ],
     "rcoach": false,
     "ccoach": false,
-    "fan": false
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "raider"
+    "fan": false,
+    "rk": false,
+    "c2": false
    },
    "act": {
     "capy": {
@@ -125,13 +148,14 @@
    }
   },
   {
-   "text": "Raiders and Chargers. Last game of the season. Sunday night in Las Vegas.",
+   "text": "January twenty twenty two. Raiders and Chargers. Last game of the season. Sunday night in Las Vegas.",
+   "cap": "January 2022. Raiders and Chargers. Last game of the season. Sunday night in Las Vegas.",
    "key": [
     "LAST"
    ],
    "board": [
-    "RAIDERS 0",
-    "CHARGERS 0"
+    "RAIDERS",
+    "CHARGERS"
    ],
    "place": {
     "capy": false
@@ -154,9 +178,8 @@
    }
   },
   {
-   "text": "If either team won, Pittsburgh got the last spot. A tie, and Pittsburgh was out.",
+   "text": "If either team wins, Pittsburgh is in. A tie? Pittsburgh is out.",
    "key": [
-    "PITTSBURGH",
     "OUT."
    ],
    "set": "living",
@@ -188,13 +211,22 @@
    }
   },
   {
-   "text": "Down fifteen in the fourth quarter, the Chargers converted three fourth downs.",
-   "cap": "Down 15 in the fourth quarter, the Chargers converted 3 fourth downs.",
+   "text": "Fourth quarter. The Chargers trail by fifteen. They convert three fourth downs.",
+   "cap": "Fourth quarter. The Chargers trail by 15. They convert 3 fourth downs.",
    "key": [
     "15",
     "3"
    ],
    "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAIDERS 32",
+     "CHARGERS 32"
+    ],
+    "endZone": 30,
+    "zoneA": "#6cb4ee",
+    "zoneB": "#1b1b1b"
+   },
    "board": [
     "DOWN 15",
     "4TH QTR"
@@ -220,7 +252,7 @@
    "act": {
     "charger": {
      "mood": "angry",
-     "action": "throw",
+     "action": "point",
      "look": "camera"
     },
     "ccoach": {
@@ -235,7 +267,7 @@
    }
   },
   {
-   "text": "Their touchdown pass came with no time left. Overtime.",
+   "text": "Their touchdown comes with no time left. Overtime.",
    "key": [
     "OVERTIME."
    ],
@@ -260,8 +292,8 @@
    }
   },
   {
-   "text": "Raiders field goal. Chargers field goal. Thirty two all, and the clock kept running.",
-   "cap": "Raiders field goal. Chargers field goal. 32 all, and the clock kept running.",
+   "text": "Raiders field goal. Chargers field goal. Thirty two all. The clock keeps running.",
+   "cap": "Raiders field goal. Chargers field goal. 32 all. The clock keeps running.",
    "key": [
     "32"
    ],
@@ -299,10 +331,11 @@
    }
   },
   {
-   "text": "Now do the math. If nobody scores, both teams are in.",
+   "text": "Now do the math. Nobody scores? Both teams are in.",
    "key": [
     "BOTH"
    ],
+   "speaker": "capy",
    "board": [
     "32 - 32 =",
     "BOTH IN"
@@ -331,11 +364,10 @@
      "mood": "confused",
      "action": "shrug"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "The Raiders' interim coach later said they discussed playing for the tie.",
+   "text": "Later, the Raiders' coach says they discussed it. Playing for the tie.",
    "key": [
     "TIE."
    ],
@@ -361,8 +393,8 @@
    }
   },
   {
-   "text": "Then, with thirty eight seconds left, the Chargers called timeout.",
-   "cap": "Then, with 38 seconds left, the Chargers called timeout.",
+   "text": "Thirty eight seconds left. The Chargers call timeout.",
+   "cap": "38 seconds left. The Chargers call timeout.",
    "key": [
     "38",
     "TIMEOUT."
@@ -391,10 +423,11 @@
    }
   },
   {
-   "text": "Their coach said he wanted his run defense on the field.",
+   "text": "His reason? He wanted his run defense on the field.",
    "key": [
     "RUN"
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -2.0,
@@ -403,8 +436,8 @@
    },
    "shot": {
     "type": "two",
-    "on": "ccoach",
-    "with": "capy"
+    "on": "capy",
+    "with": "ccoach"
    },
    "act": {
     "ccoach": {
@@ -413,79 +446,1368 @@
      "look": "capy"
     },
     "capy": {
-     "mood": "neutral",
-     "look": "ccoach"
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Next play: Josh Jacobs ran ten yards.",
-   "cap": "Next play: Josh Jacobs ran 10 yards.",
+   "text": "Next play, Josh Jacobs runs ten yards.",
+   "cap": "Next play, Josh Jacobs runs 10 yards.",
    "key": [
     "10"
    ],
-   "board": [
-    "RUN",
-    "+10 YDS"
-   ],
-   "place": {
-    "capy": false,
-    "ccoach": false,
-    "raider": [
-     0,
-     0
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAIDERS 32",
+     "CHARGERS 32"
     ],
-    "charger": [
-     1.8,
-     -1.2
-    ]
+    "endZone": 30,
+    "zoneA": "#6cb4ee",
+    "zoneB": "#1b1b1b"
    },
    "shot": {
-    "type": "close",
-    "on": "raider"
+    "type": "follow",
+    "on": "raider",
+    "lead": 0
    },
-   "act": {
-    "raider": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "camera"
+   "act": {},
+   "play": {
+    "cast": {
+     "raider": {
+      "path": [
+       [
+        0.0,
+        -8,
+        0
+       ],
+       [
+        0.05,
+        -7.44,
+        0.03
+       ],
+       [
+        0.1,
+        -6.89,
+        0.06
+       ],
+       [
+        0.15,
+        -6.33,
+        0.08
+       ],
+       [
+        0.2,
+        -5.78,
+        0.11
+       ],
+       [
+        0.25,
+        -5.22,
+        0.14
+       ],
+       [
+        0.3,
+        -4.67,
+        0.17
+       ],
+       [
+        0.35,
+        -4.11,
+        0.19
+       ],
+       [
+        0.4,
+        -3.56,
+        0.22
+       ],
+       [
+        0.45,
+        -3.0,
+        0.25
+       ],
+       [
+        0.5,
+        -2.44,
+        0.28
+       ],
+       [
+        0.55,
+        -1.89,
+        0.31
+       ],
+       [
+        0.6,
+        -1.33,
+        0.33
+       ],
+       [
+        0.65,
+        -0.78,
+        0.36
+       ],
+       [
+        0.7,
+        -0.22,
+        0.39
+       ],
+       [
+        0.75,
+        0.33,
+        0.42
+       ],
+       [
+        0.8,
+        0.89,
+        0.44
+       ],
+       [
+        0.85,
+        1.44,
+        0.47
+       ],
+       [
+        0.9,
+        2.0,
+        0.5
+       ],
+       [
+        0.95,
+        2.0,
+        0.5
+       ],
+       [
+        1.0,
+        2,
+        0.5
+       ]
+      ],
+      "face": 90
+     },
+     "charger": {
+      "path": [
+       [
+        0.0,
+        6,
+        -3
+       ],
+       [
+        0.05,
+        5.85,
+        -2.95
+       ],
+       [
+        0.1,
+        5.7,
+        -2.9
+       ],
+       [
+        0.15,
+        5.55,
+        -2.85
+       ],
+       [
+        0.2,
+        5.4,
+        -2.8
+       ],
+       [
+        0.25,
+        5.25,
+        -2.75
+       ],
+       [
+        0.3,
+        5.1,
+        -2.7
+       ],
+       [
+        0.35,
+        4.95,
+        -2.65
+       ],
+       [
+        0.4,
+        4.8,
+        -2.6
+       ],
+       [
+        0.45,
+        4.65,
+        -2.55
+       ],
+       [
+        0.5,
+        4.5,
+        -2.5
+       ],
+       [
+        0.55,
+        4.35,
+        -2.45
+       ],
+       [
+        0.6,
+        4.2,
+        -2.4
+       ],
+       [
+        0.65,
+        4.05,
+        -2.35
+       ],
+       [
+        0.7,
+        3.9,
+        -2.3
+       ],
+       [
+        0.75,
+        3.75,
+        -2.25
+       ],
+       [
+        0.8,
+        3.6,
+        -2.2
+       ],
+       [
+        0.85,
+        3.45,
+        -2.15
+       ],
+       [
+        0.9,
+        3.3,
+        -2.1
+       ],
+       [
+        0.95,
+        3.15,
+        -2.05
+       ],
+       [
+        1.0,
+        3,
+        -2
+       ]
+      ]
+     },
+     "c2": {
+      "path": [
+       [
+        0.0,
+        7,
+        3
+       ],
+       [
+        0.05,
+        6.85,
+        3.0
+       ],
+       [
+        0.1,
+        6.7,
+        3.0
+       ],
+       [
+        0.15,
+        6.55,
+        3.0
+       ],
+       [
+        0.2,
+        6.4,
+        3.0
+       ],
+       [
+        0.25,
+        6.25,
+        3.0
+       ],
+       [
+        0.3,
+        6.1,
+        3.0
+       ],
+       [
+        0.35,
+        5.95,
+        3.0
+       ],
+       [
+        0.4,
+        5.8,
+        3.0
+       ],
+       [
+        0.45,
+        5.65,
+        3.0
+       ],
+       [
+        0.5,
+        5.5,
+        3.0
+       ],
+       [
+        0.55,
+        5.35,
+        3.0
+       ],
+       [
+        0.6,
+        5.2,
+        3.0
+       ],
+       [
+        0.65,
+        5.05,
+        3.0
+       ],
+       [
+        0.7,
+        4.9,
+        3.0
+       ],
+       [
+        0.75,
+        4.75,
+        3.0
+       ],
+       [
+        0.8,
+        4.6,
+        3.0
+       ],
+       [
+        0.85,
+        4.45,
+        3.0
+       ],
+       [
+        0.9,
+        4.3,
+        3.0
+       ],
+       [
+        0.95,
+        4.15,
+        3.0
+       ],
+       [
+        1.0,
+        4,
+        3
+       ]
+      ]
+     }
     },
-    "charger": {
-     "mood": "shocked",
-     "action": "shrug",
-     "look": "raider"
+    "carry": [
+     [
+      0,
+      "raider"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "That sets up a field goal. Forty seven yards.",
+   "cap": "That sets up a field goal. 47 yards.",
+   "key": [
+    "47"
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "rk",
+    "lead": 3
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "rk": {
+      "path": [
+       [
+        0.0,
+        -1,
+        -5.6
+       ],
+       [
+        0.05,
+        -0.78,
+        -5.54
+       ],
+       [
+        0.1,
+        -0.56,
+        -5.48
+       ],
+       [
+        0.15,
+        -0.34,
+        -5.42
+       ],
+       [
+        0.2,
+        -0.12,
+        -5.36
+       ],
+       [
+        0.25,
+        0.1,
+        -5.3
+       ],
+       [
+        0.3,
+        0.32,
+        -5.24
+       ],
+       [
+        0.35,
+        0.54,
+        -5.18
+       ],
+       [
+        0.4,
+        0.76,
+        -5.12
+       ],
+       [
+        0.45,
+        0.98,
+        -5.06
+       ],
+       [
+        0.5,
+        1.2,
+        -5.0
+       ],
+       [
+        0.55,
+        1.2,
+        -5.0
+       ],
+       [
+        0.6,
+        1.2,
+        -5.0
+       ],
+       [
+        0.65,
+        1.2,
+        -5.0
+       ],
+       [
+        0.7,
+        1.2,
+        -5.0
+       ],
+       [
+        0.75,
+        1.2,
+        -5.0
+       ],
+       [
+        0.8,
+        1.2,
+        -5.0
+       ],
+       [
+        0.85,
+        1.2,
+        -5.0
+       ],
+       [
+        0.9,
+        1.2,
+        -5.0
+       ],
+       [
+        0.95,
+        1.2,
+        -5.0
+       ],
+       [
+        1.0,
+        1.2,
+        -5.0
+       ]
+      ],
+      "face": 70
+     },
+     "raider": {
+      "path": [
+       [
+        0.0,
+        3,
+        -2.3
+       ],
+       [
+        0.05,
+        3.0,
+        -2.3
+       ],
+       [
+        0.1,
+        3.0,
+        -2.3
+       ],
+       [
+        0.15,
+        3.0,
+        -2.3
+       ],
+       [
+        0.2,
+        3.0,
+        -2.3
+       ],
+       [
+        0.25,
+        3.0,
+        -2.3
+       ],
+       [
+        0.3,
+        3.0,
+        -2.3
+       ],
+       [
+        0.35,
+        3.0,
+        -2.3
+       ],
+       [
+        0.4,
+        3.0,
+        -2.3
+       ],
+       [
+        0.45,
+        3.0,
+        -2.3
+       ],
+       [
+        0.5,
+        3.0,
+        -2.3
+       ],
+       [
+        0.55,
+        3.0,
+        -2.3
+       ],
+       [
+        0.6,
+        3.0,
+        -2.3
+       ],
+       [
+        0.65,
+        3.0,
+        -2.3
+       ],
+       [
+        0.7,
+        3.0,
+        -2.3
+       ],
+       [
+        0.75,
+        3.0,
+        -2.3
+       ],
+       [
+        0.8,
+        3.0,
+        -2.3
+       ],
+       [
+        0.85,
+        3.0,
+        -2.3
+       ],
+       [
+        0.9,
+        3.0,
+        -2.3
+       ],
+       [
+        0.95,
+        3.0,
+        -2.3
+       ],
+       [
+        1.0,
+        3,
+        -2.3
+       ]
+      ],
+      "face": -90
+     },
+     "charger": {
+      "path": [
+       [
+        0.0,
+        8,
+        -4
+       ],
+       [
+        0.05,
+        7.95,
+        -4.0
+       ],
+       [
+        0.1,
+        7.9,
+        -4.0
+       ],
+       [
+        0.15,
+        7.85,
+        -4.0
+       ],
+       [
+        0.2,
+        7.8,
+        -4.0
+       ],
+       [
+        0.25,
+        7.75,
+        -4.0
+       ],
+       [
+        0.3,
+        7.7,
+        -4.0
+       ],
+       [
+        0.35,
+        7.65,
+        -4.0
+       ],
+       [
+        0.4,
+        7.6,
+        -4.0
+       ],
+       [
+        0.45,
+        7.55,
+        -4.0
+       ],
+       [
+        0.5,
+        7.5,
+        -4.0
+       ],
+       [
+        0.55,
+        7.45,
+        -4.0
+       ],
+       [
+        0.6,
+        7.4,
+        -4.0
+       ],
+       [
+        0.65,
+        7.35,
+        -4.0
+       ],
+       [
+        0.7,
+        7.3,
+        -4.0
+       ],
+       [
+        0.75,
+        7.25,
+        -4.0
+       ],
+       [
+        0.8,
+        7.2,
+        -4.0
+       ],
+       [
+        0.85,
+        7.15,
+        -4.0
+       ],
+       [
+        0.9,
+        7.1,
+        -4.0
+       ],
+       [
+        0.95,
+        7.05,
+        -4.0
+       ],
+       [
+        1.0,
+        7,
+        -4
+       ]
+      ],
+      "face": -90
+     },
+     "c2": {
+      "path": [
+       [
+        0.0,
+        8,
+        -1
+       ],
+       [
+        0.05,
+        7.95,
+        -1.01
+       ],
+       [
+        0.1,
+        7.9,
+        -1.02
+       ],
+       [
+        0.15,
+        7.85,
+        -1.03
+       ],
+       [
+        0.2,
+        7.8,
+        -1.04
+       ],
+       [
+        0.25,
+        7.75,
+        -1.05
+       ],
+       [
+        0.3,
+        7.7,
+        -1.06
+       ],
+       [
+        0.35,
+        7.65,
+        -1.07
+       ],
+       [
+        0.4,
+        7.6,
+        -1.08
+       ],
+       [
+        0.45,
+        7.55,
+        -1.09
+       ],
+       [
+        0.5,
+        7.5,
+        -1.1
+       ],
+       [
+        0.55,
+        7.45,
+        -1.11
+       ],
+       [
+        0.6,
+        7.4,
+        -1.12
+       ],
+       [
+        0.65,
+        7.35,
+        -1.13
+       ],
+       [
+        0.7,
+        7.3,
+        -1.14
+       ],
+       [
+        0.75,
+        7.25,
+        -1.15
+       ],
+       [
+        0.8,
+        7.2,
+        -1.16
+       ],
+       [
+        0.85,
+        7.15,
+        -1.17
+       ],
+       [
+        0.9,
+        7.1,
+        -1.18
+       ],
+       [
+        0.95,
+        7.05,
+        -1.19
+       ],
+       [
+        1.0,
+        7,
+        -1.2
+       ]
+      ],
+      "face": -90
+     }
     }
    }
   },
   {
-   "text": "That set up a forty seven yard field goal. Good, as time expired.",
-   "cap": "That set up a 47-yard field goal. Good, as time expired.",
+   "text": "Good. As time expires.",
    "key": [
-    "47-YARD",
-    "GOOD,"
-   ],
-   "board": [
-    "47 YDS",
-    "GOOD"
+    "GOOD."
    ],
    "shot": {
-    "type": "medium",
-    "on": "raider",
-    "offset": [
-     0.8,
-     0,
-     0
-    ]
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "rk",
+    "lead": 0,
+    "z": -4
    },
-   "act": {
-    "raider": {
-     "mood": "happy",
-     "action": "cheer"
+   "act": {},
+   "sfx": [
+    [
+     0.85,
+     "roar"
+    ]
+   ],
+   "play": {
+    "cast": {
+     "rk": {
+      "path": [
+       [
+        0.0,
+        1.2,
+        -5.0
+       ],
+       [
+        0.05,
+        1.6,
+        -4.87
+       ],
+       [
+        0.1,
+        2.0,
+        -4.73
+       ],
+       [
+        0.15,
+        2.4,
+        -4.6
+       ],
+       [
+        0.2,
+        2.44,
+        -4.59
+       ],
+       [
+        0.25,
+        2.47,
+        -4.58
+       ],
+       [
+        0.3,
+        2.51,
+        -4.56
+       ],
+       [
+        0.35,
+        2.54,
+        -4.55
+       ],
+       [
+        0.4,
+        2.58,
+        -4.54
+       ],
+       [
+        0.45,
+        2.61,
+        -4.53
+       ],
+       [
+        0.5,
+        2.65,
+        -4.52
+       ],
+       [
+        0.55,
+        2.68,
+        -4.51
+       ],
+       [
+        0.6,
+        2.72,
+        -4.49
+       ],
+       [
+        0.65,
+        2.75,
+        -4.48
+       ],
+       [
+        0.7,
+        2.79,
+        -4.47
+       ],
+       [
+        0.75,
+        2.82,
+        -4.46
+       ],
+       [
+        0.8,
+        2.86,
+        -4.45
+       ],
+       [
+        0.85,
+        2.89,
+        -4.44
+       ],
+       [
+        0.9,
+        2.93,
+        -4.42
+       ],
+       [
+        0.95,
+        2.96,
+        -4.41
+       ],
+       [
+        1.0,
+        3.0,
+        -4.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.089,
+        "kick"
+       ]
+      ],
+      "face": 80
+     },
+     "raider": {
+      "path": [
+       [
+        0.0,
+        3,
+        -2.3
+       ],
+       [
+        0.05,
+        3.0,
+        -2.3
+       ],
+       [
+        0.1,
+        3.0,
+        -2.3
+       ],
+       [
+        0.15,
+        3.0,
+        -2.3
+       ],
+       [
+        0.2,
+        3.0,
+        -2.3
+       ],
+       [
+        0.25,
+        3.0,
+        -2.3
+       ],
+       [
+        0.3,
+        3.0,
+        -2.3
+       ],
+       [
+        0.35,
+        3.0,
+        -2.3
+       ],
+       [
+        0.4,
+        3.0,
+        -2.3
+       ],
+       [
+        0.45,
+        3.0,
+        -2.3
+       ],
+       [
+        0.5,
+        3.0,
+        -2.3
+       ],
+       [
+        0.55,
+        3.0,
+        -2.3
+       ],
+       [
+        0.6,
+        3.0,
+        -2.3
+       ],
+       [
+        0.65,
+        3.0,
+        -2.3
+       ],
+       [
+        0.7,
+        3.0,
+        -2.3
+       ],
+       [
+        0.75,
+        3.0,
+        -2.3
+       ],
+       [
+        0.8,
+        3.0,
+        -2.3
+       ],
+       [
+        0.85,
+        3.0,
+        -2.3
+       ],
+       [
+        0.9,
+        3.0,
+        -2.3
+       ],
+       [
+        0.95,
+        3.0,
+        -2.3
+       ],
+       [
+        1.0,
+        3,
+        -2.3
+       ]
+      ],
+      "face": -90
+     },
+     "charger": {
+      "path": [
+       [
+        0.0,
+        7,
+        -4
+       ],
+       [
+        0.05,
+        6.92,
+        -4.03
+       ],
+       [
+        0.1,
+        6.85,
+        -4.05
+       ],
+       [
+        0.15,
+        6.78,
+        -4.08
+       ],
+       [
+        0.2,
+        6.7,
+        -4.1
+       ],
+       [
+        0.25,
+        6.62,
+        -4.12
+       ],
+       [
+        0.3,
+        6.55,
+        -4.15
+       ],
+       [
+        0.35,
+        6.47,
+        -4.17
+       ],
+       [
+        0.4,
+        6.4,
+        -4.2
+       ],
+       [
+        0.45,
+        6.33,
+        -4.22
+       ],
+       [
+        0.5,
+        6.25,
+        -4.25
+       ],
+       [
+        0.55,
+        6.17,
+        -4.28
+       ],
+       [
+        0.6,
+        6.1,
+        -4.3
+       ],
+       [
+        0.65,
+        6.03,
+        -4.33
+       ],
+       [
+        0.7,
+        5.95,
+        -4.35
+       ],
+       [
+        0.75,
+        5.88,
+        -4.38
+       ],
+       [
+        0.8,
+        5.8,
+        -4.4
+       ],
+       [
+        0.85,
+        5.72,
+        -4.42
+       ],
+       [
+        0.9,
+        5.65,
+        -4.45
+       ],
+       [
+        0.95,
+        5.58,
+        -4.47
+       ],
+       [
+        1.0,
+        5.5,
+        -4.5
+       ]
+      ]
+     },
+     "c2": {
+      "path": [
+       [
+        0.0,
+        7,
+        -1.2
+       ],
+       [
+        0.05,
+        6.95,
+        -1.19
+       ],
+       [
+        0.1,
+        6.9,
+        -1.18
+       ],
+       [
+        0.15,
+        6.85,
+        -1.17
+       ],
+       [
+        0.2,
+        6.8,
+        -1.16
+       ],
+       [
+        0.25,
+        6.75,
+        -1.15
+       ],
+       [
+        0.3,
+        6.7,
+        -1.14
+       ],
+       [
+        0.35,
+        6.65,
+        -1.13
+       ],
+       [
+        0.4,
+        6.6,
+        -1.12
+       ],
+       [
+        0.45,
+        6.55,
+        -1.11
+       ],
+       [
+        0.5,
+        6.5,
+        -1.1
+       ],
+       [
+        0.55,
+        6.45,
+        -1.09
+       ],
+       [
+        0.6,
+        6.4,
+        -1.08
+       ],
+       [
+        0.65,
+        6.35,
+        -1.07
+       ],
+       [
+        0.7,
+        6.3,
+        -1.06
+       ],
+       [
+        0.75,
+        6.25,
+        -1.05
+       ],
+       [
+        0.8,
+        6.2,
+        -1.04
+       ],
+       [
+        0.85,
+        6.15,
+        -1.03
+       ],
+       [
+        0.9,
+        6.1,
+        -1.02
+       ],
+       [
+        0.95,
+        6.05,
+        -1.01
+       ],
+       [
+        1.0,
+        6,
+        -1
+       ]
+      ]
+     }
     },
-    "charger": {
-     "mood": "sad",
-     "action": "slump"
-    }
+    "ball": [
+     [
+      0.2,
+      3.0,
+      0.3,
+      -4.0
+     ],
+     [
+      0.28,
+      7.75,
+      3.13,
+      -4.0
+     ],
+     [
+      0.36,
+      12.5,
+      5.48,
+      -4.0
+     ],
+     [
+      0.44,
+      17.25,
+      7.35,
+      -4.0
+     ],
+     [
+      0.52,
+      22.0,
+      8.74,
+      -4.0
+     ],
+     [
+      0.6,
+      26.75,
+      9.65,
+      -4.0
+     ],
+     [
+      0.68,
+      31.5,
+      10.08,
+      -4.0
+     ],
+     [
+      0.76,
+      36.25,
+      10.03,
+      -4.0
+     ],
+     [
+      0.84,
+      41.0,
+      9.5,
+      -4.0
+     ],
+     [
+      0.92,
+      45.75,
+      8.49,
+      -4.0
+     ],
+     [
+      1.0,
+      50.5,
+      7.0,
+      -4.0
+     ]
+    ]
    }
   },
   {
@@ -494,18 +1816,50 @@
    "key": [
     "35,"
    ],
+   "speaker": "capy",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAIDERS 32",
+     "CHARGERS 32"
+    ],
+    "endZone": 30,
+    "zoneA": "#6cb4ee",
+    "zoneB": "#1b1b1b"
+   },
    "board": [
     "RAIDERS 35",
     "CHARGERS 32"
    ],
    "shot": {
-    "type": "high",
-    "on": "raider"
+    "type": "two",
+    "on": "capy",
+    "with": "raider"
+   },
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "raider": [
+     0.8,
+     0.2
+    ],
+    "charger": [
+     3.0,
+     -1.2
+    ]
    },
    "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
     "raider": {
      "mood": "happy",
-     "action": "cheer"
+     "action": "cheer",
+     "look": "capy"
     },
     "charger": {
      "mood": "sad",
@@ -514,7 +1868,7 @@
    }
   },
   {
-   "text": "Raiders in. Steelers in. The Chargers, one tie away, were out.",
+   "text": "Raiders in. Steelers in. The Chargers, one tie away? Out.",
    "key": [
     "OUT."
    ],
@@ -552,6 +1906,7 @@
     "YES",
     "NO?"
    ],
+   "speaker": "capy",
    "board": [
     "PLAY FOR",
     "THE TIE?"
@@ -582,8 +1937,7 @@
      "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -602,6 +1956,96 @@
   {
    "title": "Yahoo Sports: No, the Chargers' timeout didn't cost them a tie and a playoff berth",
    "url": "https://sg.news.yahoo.com/chargers-raiders-timeout-tie-brandon-staley-064703674.html"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In January 2022 the Raiders and Chargers could both make the playoffs with a tie",
+   "terms": [
+    "tie",
+    "playoffs"
+   ]
+  },
+  {
+   "claim": "It was the last game of the season, Sunday night in Las Vegas",
+   "terms": [
+    "Sunday night|Las Vegas"
+   ]
+  },
+  {
+   "claim": "If either team won, Pittsburgh got the last spot; a tie eliminated the Steelers",
+   "terms": [
+    "Steelers",
+    "tie"
+   ]
+  },
+  {
+   "claim": "Down 15 in the fourth quarter, the Chargers converted three fourth downs",
+   "terms": [
+    "fourth down",
+    "15"
+   ]
+  },
+  {
+   "claim": "The Chargers' tying touchdown came with no time left, forcing overtime",
+   "terms": [
+    "overtime",
+    "touchdown"
+   ]
+  },
+  {
+   "claim": "Each team kicked an overtime field goal; 32-32",
+   "terms": [
+    "32"
+   ]
+  },
+  {
+   "claim": "Raiders interim coach (Rich Bisaccia) said they discussed playing for the tie",
+   "terms": [
+    "Bisaccia",
+    "tie"
+   ]
+  },
+  {
+   "claim": "The Chargers called timeout with 38 seconds left",
+   "terms": [
+    "timeout",
+    "38"
+   ]
+  },
+  {
+   "claim": "The Chargers coach said he wanted his run defense on the field",
+   "terms": [
+    "run defense|run personnel"
+   ]
+  },
+  {
+   "claim": "Josh Jacobs then ran for 10 yards",
+   "terms": [
+    "Jacobs",
+    "10"
+   ]
+  },
+  {
+   "claim": "That set up a 47-yard field goal, good as time expired",
+   "terms": [
+    "47",
+    "time expire"
+   ]
+  },
+  {
+   "claim": "Final score Raiders 35, Chargers 32",
+   "terms": [
+    "35-32|35 32"
+   ]
+  },
+  {
+   "claim": "Raiders and Steelers made the playoffs, Chargers were eliminated",
+   "terms": [
+    "Steelers",
+    "Chargers"
+   ]
   }
  ]
 }

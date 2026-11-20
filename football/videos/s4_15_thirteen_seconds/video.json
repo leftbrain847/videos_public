@@ -24,8 +24,7 @@
     "hairColor": "#1b1b1b",
     "skin": "#7b4e33"
    },
-   "at": "center",
-   "hold": "football"
+   "at": "center"
   },
   "chief": {
    "look": {
@@ -75,38 +74,85 @@
    },
    "at": "desk",
    "hold": "envelope"
+  },
+  "hill": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#d62828",
+    "pants": "#f4f4f4",
+    "number": "10",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   }
+  },
+  "butk": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#d62828",
+    "pants": "#f4f4f4",
+    "number": "7",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "bd1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#1f3f9f",
+    "number": "24",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   }
+  },
+  "bd2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#1f3f9f",
+    "number": "23",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
   }
  },
  "lines": [
   {
-   "text": "In a 2022 playoff game, the Bills led with thirteen seconds left. They lost.",
-   "cap": "In a 2022 playoff game, the Bills led with 13 seconds left. They lost.",
+   "text": "You have thirteen seconds. You're down three. Plenty.",
+   "cap": "You have 13 seconds. You're down 3. Plenty.",
    "key": [
-    "13",
-    "LOST."
+    "PLENTY."
    ],
    "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "chief"
+   },
    "place": {
     "capy": [
      -2.6,
      0.8
     ],
     "bill": [
-     0,
-     0
-    ],
-    "chief": [
      2.2,
      0.2
     ],
+    "chief": [
+     0,
+     0
+    ],
     "te": false,
     "fan": false,
-    "exec": false
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "bill"
+    "exec": false,
+    "hill": false,
+    "butk": false,
+    "bd1": false,
+    "bd2": false
    },
    "act": {
     "capy": {
@@ -120,12 +166,17 @@
     },
     "chief": {
      "mood": "worried",
-     "look": "bill"
+     "look": "capy"
     }
-   }
+   },
+   "board": [
+    "BILLS 36",
+    "CHIEFS 33"
+   ]
   },
   {
-   "text": "Divisional round, in Kansas City. Josh Allen against Patrick Mahomes.",
+   "text": "Twenty twenty two. Divisional round, in Kansas City. Josh Allen against Patrick Mahomes.",
+   "cap": "2022. Divisional round, in Kansas City. Josh Allen against Patrick Mahomes.",
    "key": [
     "ALLEN"
    ],
@@ -152,7 +203,7 @@
    "act": {
     "bill": {
      "mood": "angry",
-     "action": "hold",
+     "action": "idle",
      "look": "chief"
     },
     "chief": {
@@ -163,7 +214,7 @@
    }
   },
   {
-   "text": "The last two minutes were already chaos. Bills lead. Chiefs lead.",
+   "text": "The last two minutes are already chaos. Bills lead. Chiefs lead.",
    "key": [
     "CHAOS."
    ],
@@ -196,13 +247,22 @@
    }
   },
   {
-   "text": "With thirteen seconds left, Gabriel Davis caught his fourth touchdown. Bills, thirty six to thirty three.",
-   "cap": "With 13 seconds left, Gabriel Davis caught his 4th touchdown. Bills, 36 to 33.",
+   "text": "Gabriel Davis catches his fourth touchdown. Bills thirty six, Chiefs thirty three.",
+   "cap": "Gabriel Davis catches his 4th touchdown. Bills 36, Chiefs 33.",
    "key": [
     "4TH",
-    "36"
+    "36,"
    ],
    "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BILLS 36",
+     "CHIEFS 33"
+    ],
+    "endZone": 30,
+    "zoneA": "#1f3f9f",
+    "zoneB": "#d62828"
+   },
    "board": [
     "BILLS 36",
     "CHIEFS 33"
@@ -234,120 +294,1450 @@
    }
   },
   {
-   "text": "Mahomes hit Tyreek Hill for nineteen yards.",
-   "cap": "Mahomes hit Tyreek Hill for 19 yards.",
+   "text": "Thirteen seconds left. What could go wrong?",
+   "cap": "13 seconds left. What could go wrong?",
    "key": [
-    "19"
+    "WRONG?"
    ],
-   "board": [
-    "0:13",
-    "+19 YDS"
-   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bill"
+   },
    "place": {
-    "chief": [
-     0,
-     0
+    "capy": [
+     -1.8,
+     1.0
     ],
     "bill": [
-     2.2,
-     -1.4
-    ]
-   },
-   "shot": {
-    "type": "medium",
-    "on": "chief"
+     0.8,
+     0.2
+    ],
+    "chief": false
    },
    "act": {
-    "chief": {
-     "mood": "angry",
-     "action": "throw",
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
      "look": "camera"
     },
     "bill": {
-     "mood": "worried",
-     "look": "chief"
-    }
-   }
-  },
-  {
-   "text": "Then Travis Kelce for twenty five.",
-   "cap": "Then Travis Kelce for 25.",
-   "key": [
-    "25."
-   ],
-   "board": [
-    "+25 YDS",
-    "IN RANGE"
-   ],
-   "place": {
-    "te": [
-     1.2,
-     0.2
-    ],
-    "chief": [
-     -1.2,
-     0
-    ]
-   },
-   "shot": {
-    "type": "two",
-    "on": "chief",
-    "with": "te"
-   },
-   "act": {
-    "te": {
      "mood": "happy",
      "action": "cheer",
-     "look": "chief"
-    },
-    "chief": {
-     "mood": "happy",
-     "action": "point",
-     "look": "te"
+     "look": "capy"
     }
    }
   },
   {
-   "text": "Harrison Butker kicked a forty nine yard field goal. Tie game. Zero seconds.",
-   "cap": "Harrison Butker kicked a 49-yard field goal. Tie game. 0 seconds.",
+   "text": "Mahomes hits Tyreek Hill. Nineteen yards.",
+   "cap": "Mahomes hits Tyreek Hill. 19 yards.",
    "key": [
-    "49-YARD",
-    "0"
-   ],
-   "board": [
-    "BILLS 36",
-    "CHIEFS 36"
+    "19"
    ],
    "shot": {
-    "type": "wide",
-    "on": "chief",
-    "offset": [
-     1.2,
-     1,
-     2
-    ]
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "hill",
+    "lead": 0,
+    "z": -1
    },
-   "act": {
-    "chief": {
-     "mood": "happy",
-     "action": "cheer"
+   "act": {},
+   "play": {
+    "cast": {
+     "chief": {
+      "path": [
+       [
+        0.0,
+        0,
+        0
+       ],
+       [
+        0.05,
+        -0.25,
+        0.0
+       ],
+       [
+        0.1,
+        -0.5,
+        0.0
+       ],
+       [
+        0.15,
+        -0.75,
+        0.0
+       ],
+       [
+        0.2,
+        -1.0,
+        0.0
+       ],
+       [
+        0.25,
+        -1.0,
+        0.0
+       ],
+       [
+        0.3,
+        -1.0,
+        0.0
+       ],
+       [
+        0.35,
+        -1.0,
+        0.0
+       ],
+       [
+        0.4,
+        -1.0,
+        0.0
+       ],
+       [
+        0.45,
+        -1.0,
+        0.0
+       ],
+       [
+        0.5,
+        -1.0,
+        0.0
+       ],
+       [
+        0.55,
+        -1.0,
+        0.0
+       ],
+       [
+        0.6,
+        -1.0,
+        0.0
+       ],
+       [
+        0.65,
+        -1.0,
+        0.0
+       ],
+       [
+        0.7,
+        -1.0,
+        0.0
+       ],
+       [
+        0.75,
+        -1.0,
+        0.0
+       ],
+       [
+        0.8,
+        -1.0,
+        0.0
+       ],
+       [
+        0.85,
+        -1.0,
+        0.0
+       ],
+       [
+        0.9,
+        -1.0,
+        0.0
+       ],
+       [
+        0.95,
+        -1.0,
+        0.0
+       ],
+       [
+        1.0,
+        -1,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.192,
+        "throw"
+       ]
+      ],
+      "face": 80
+     },
+     "hill": {
+      "path": [
+       [
+        0.0,
+        4,
+        -3
+       ],
+       [
+        0.05,
+        4.83,
+        -3.0
+       ],
+       [
+        0.1,
+        5.67,
+        -3.0
+       ],
+       [
+        0.15,
+        6.5,
+        -3.0
+       ],
+       [
+        0.2,
+        7.33,
+        -3.0
+       ],
+       [
+        0.25,
+        8.17,
+        -3.0
+       ],
+       [
+        0.3,
+        9.0,
+        -3.0
+       ],
+       [
+        0.35,
+        9.83,
+        -3.0
+       ],
+       [
+        0.4,
+        10.67,
+        -3.0
+       ],
+       [
+        0.45,
+        11.5,
+        -3.0
+       ],
+       [
+        0.5,
+        12.33,
+        -3.0
+       ],
+       [
+        0.55,
+        13.17,
+        -3.0
+       ],
+       [
+        0.6,
+        14.0,
+        -3.0
+       ],
+       [
+        0.65,
+        14.62,
+        -3.0
+       ],
+       [
+        0.7,
+        15.25,
+        -3.0
+       ],
+       [
+        0.75,
+        15.88,
+        -3.0
+       ],
+       [
+        0.8,
+        16.5,
+        -3.0
+       ],
+       [
+        0.85,
+        17.12,
+        -3.0
+       ],
+       [
+        0.9,
+        17.75,
+        -3.0
+       ],
+       [
+        0.95,
+        18.38,
+        -3.0
+       ],
+       [
+        1.0,
+        19,
+        -3
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.6,
+        "catch"
+       ],
+       [
+        0.64,
+        "run"
+       ]
+      ]
+     },
+     "bd1": {
+      "path": [
+       [
+        0.0,
+        18,
+        -7
+       ],
+       [
+        0.05,
+        18.07,
+        -6.91
+       ],
+       [
+        0.1,
+        18.15,
+        -6.82
+       ],
+       [
+        0.15,
+        18.23,
+        -6.73
+       ],
+       [
+        0.2,
+        18.3,
+        -6.64
+       ],
+       [
+        0.25,
+        18.38,
+        -6.55
+       ],
+       [
+        0.3,
+        18.45,
+        -6.46
+       ],
+       [
+        0.35,
+        18.52,
+        -6.37
+       ],
+       [
+        0.4,
+        18.6,
+        -6.28
+       ],
+       [
+        0.45,
+        18.68,
+        -6.19
+       ],
+       [
+        0.5,
+        18.75,
+        -6.1
+       ],
+       [
+        0.55,
+        18.82,
+        -6.01
+       ],
+       [
+        0.6,
+        18.9,
+        -5.92
+       ],
+       [
+        0.65,
+        18.98,
+        -5.83
+       ],
+       [
+        0.7,
+        19.05,
+        -5.74
+       ],
+       [
+        0.75,
+        19.12,
+        -5.65
+       ],
+       [
+        0.8,
+        19.2,
+        -5.56
+       ],
+       [
+        0.85,
+        19.27,
+        -5.47
+       ],
+       [
+        0.9,
+        19.35,
+        -5.38
+       ],
+       [
+        0.95,
+        19.43,
+        -5.29
+       ],
+       [
+        1.0,
+        19.5,
+        -5.2
+       ]
+      ]
+     }
     },
-    "te": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "bill": {
-     "mood": "shocked",
-     "action": "facepalm"
-    }
+    "ball": [
+     [
+      0.25,
+      -0.8,
+      2.0,
+      0.1
+     ],
+     [
+      0.308,
+      1.63,
+      3.34,
+      -0.38
+     ],
+     [
+      0.367,
+      4.07,
+      4.12,
+      -0.87
+     ],
+     [
+      0.425,
+      6.5,
+      4.35,
+      -1.35
+     ],
+     [
+      0.483,
+      8.93,
+      4.02,
+      -1.83
+     ],
+     [
+      0.542,
+      11.37,
+      3.14,
+      -2.32
+     ],
+     [
+      0.6,
+      13.8,
+      1.7,
+      -2.8
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "chief"
+     ],
+     [
+      0.6,
+      "hill"
+     ]
+    ]
    }
   },
   {
-   "text": "Twenty five points were scored in the final two minutes.",
-   "cap": "25 points were scored in the final 2 minutes.",
+   "text": "Then Travis Kelce. Twenty five more.",
+   "cap": "Then Travis Kelce. 25 more.",
    "key": [
     "25"
    ],
+   "shot": {
+    "type": "follow",
+    "on": "ball",
+    "fallback": "te",
+    "lead": 0,
+    "z": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "chief": {
+      "path": [
+       [
+        0.0,
+        0,
+        0
+       ],
+       [
+        0.05,
+        -0.25,
+        0.0
+       ],
+       [
+        0.1,
+        -0.5,
+        0.0
+       ],
+       [
+        0.15,
+        -0.75,
+        0.0
+       ],
+       [
+        0.2,
+        -1.0,
+        0.0
+       ],
+       [
+        0.25,
+        -1.0,
+        0.0
+       ],
+       [
+        0.3,
+        -1.0,
+        0.0
+       ],
+       [
+        0.35,
+        -1.0,
+        0.0
+       ],
+       [
+        0.4,
+        -1.0,
+        0.0
+       ],
+       [
+        0.45,
+        -1.0,
+        0.0
+       ],
+       [
+        0.5,
+        -1.0,
+        0.0
+       ],
+       [
+        0.55,
+        -1.0,
+        0.0
+       ],
+       [
+        0.6,
+        -1.0,
+        0.0
+       ],
+       [
+        0.65,
+        -1.0,
+        0.0
+       ],
+       [
+        0.7,
+        -1.0,
+        0.0
+       ],
+       [
+        0.75,
+        -1.0,
+        0.0
+       ],
+       [
+        0.8,
+        -1.0,
+        0.0
+       ],
+       [
+        0.85,
+        -1.0,
+        0.0
+       ],
+       [
+        0.9,
+        -1.0,
+        0.0
+       ],
+       [
+        0.95,
+        -1.0,
+        0.0
+       ],
+       [
+        1.0,
+        -1,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.184,
+        "throw"
+       ]
+      ],
+      "face": 80
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        8,
+        2
+       ],
+       [
+        0.05,
+        8.91,
+        1.95
+       ],
+       [
+        0.1,
+        9.82,
+        1.91
+       ],
+       [
+        0.15,
+        10.73,
+        1.86
+       ],
+       [
+        0.2,
+        11.64,
+        1.82
+       ],
+       [
+        0.25,
+        12.55,
+        1.77
+       ],
+       [
+        0.3,
+        13.45,
+        1.73
+       ],
+       [
+        0.35,
+        14.36,
+        1.68
+       ],
+       [
+        0.4,
+        15.27,
+        1.64
+       ],
+       [
+        0.45,
+        16.18,
+        1.59
+       ],
+       [
+        0.5,
+        17.09,
+        1.55
+       ],
+       [
+        0.55,
+        18.0,
+        1.5
+       ],
+       [
+        0.6,
+        18.78,
+        1.5
+       ],
+       [
+        0.65,
+        19.56,
+        1.5
+       ],
+       [
+        0.7,
+        20.33,
+        1.5
+       ],
+       [
+        0.75,
+        21.11,
+        1.5
+       ],
+       [
+        0.8,
+        21.89,
+        1.5
+       ],
+       [
+        0.85,
+        22.67,
+        1.5
+       ],
+       [
+        0.9,
+        23.44,
+        1.5
+       ],
+       [
+        0.95,
+        24.22,
+        1.5
+       ],
+       [
+        1.0,
+        25,
+        1.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.55,
+        "catch"
+       ],
+       [
+        0.6,
+        "run"
+       ]
+      ]
+     },
+     "bd2": {
+      "path": [
+       [
+        0.0,
+        21,
+        5
+       ],
+       [
+        0.05,
+        21.15,
+        4.96
+       ],
+       [
+        0.1,
+        21.3,
+        4.92
+       ],
+       [
+        0.15,
+        21.45,
+        4.88
+       ],
+       [
+        0.2,
+        21.6,
+        4.84
+       ],
+       [
+        0.25,
+        21.75,
+        4.8
+       ],
+       [
+        0.3,
+        21.9,
+        4.76
+       ],
+       [
+        0.35,
+        22.05,
+        4.72
+       ],
+       [
+        0.4,
+        22.2,
+        4.68
+       ],
+       [
+        0.45,
+        22.35,
+        4.64
+       ],
+       [
+        0.5,
+        22.5,
+        4.6
+       ],
+       [
+        0.55,
+        22.65,
+        4.56
+       ],
+       [
+        0.6,
+        22.8,
+        4.52
+       ],
+       [
+        0.65,
+        22.95,
+        4.48
+       ],
+       [
+        0.7,
+        23.1,
+        4.44
+       ],
+       [
+        0.75,
+        23.25,
+        4.4
+       ],
+       [
+        0.8,
+        23.4,
+        4.36
+       ],
+       [
+        0.85,
+        23.55,
+        4.32
+       ],
+       [
+        0.9,
+        23.7,
+        4.28
+       ],
+       [
+        0.95,
+        23.85,
+        4.24
+       ],
+       [
+        1.0,
+        24,
+        4.2
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.25,
+      -0.8,
+      2.0,
+      0.1
+     ],
+     [
+      0.3,
+      2.3,
+      3.34,
+      0.35
+     ],
+     [
+      0.35,
+      5.4,
+      4.12,
+      0.6
+     ],
+     [
+      0.4,
+      8.5,
+      4.35,
+      0.85
+     ],
+     [
+      0.45,
+      11.6,
+      4.02,
+      1.1
+     ],
+     [
+      0.5,
+      14.7,
+      3.14,
+      1.35
+     ],
+     [
+      0.55,
+      17.8,
+      1.7,
+      1.6
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "chief"
+     ],
+     [
+      0.55,
+      "te"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Harrison Butker kicks it from forty nine. Tie game. Zero seconds.",
+   "cap": "Harrison Butker kicks it from 49. Tie game. 0 seconds.",
+   "key": [
+    "49.",
+    "0"
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "butk",
+    "lead": 0,
+    "z": -4
+   },
+   "act": {},
+   "sfx": [
+    [
+     0.75,
+     "roar"
+    ]
+   ],
+   "play": {
+    "cast": {
+     "butk": {
+      "path": [
+       [
+        0.0,
+        -0.6,
+        -5.2
+       ],
+       [
+        0.05,
+        -0.27,
+        -5.0
+       ],
+       [
+        0.1,
+        0.07,
+        -4.8
+       ],
+       [
+        0.15,
+        0.4,
+        -4.6
+       ],
+       [
+        0.2,
+        0.44,
+        -4.59
+       ],
+       [
+        0.25,
+        0.47,
+        -4.58
+       ],
+       [
+        0.3,
+        0.51,
+        -4.56
+       ],
+       [
+        0.35,
+        0.54,
+        -4.55
+       ],
+       [
+        0.4,
+        0.58,
+        -4.54
+       ],
+       [
+        0.45,
+        0.61,
+        -4.53
+       ],
+       [
+        0.5,
+        0.65,
+        -4.52
+       ],
+       [
+        0.55,
+        0.68,
+        -4.51
+       ],
+       [
+        0.6,
+        0.72,
+        -4.49
+       ],
+       [
+        0.65,
+        0.75,
+        -4.48
+       ],
+       [
+        0.7,
+        0.79,
+        -4.47
+       ],
+       [
+        0.75,
+        0.82,
+        -4.46
+       ],
+       [
+        0.8,
+        0.86,
+        -4.45
+       ],
+       [
+        0.85,
+        0.89,
+        -4.44
+       ],
+       [
+        0.9,
+        0.93,
+        -4.42
+       ],
+       [
+        0.95,
+        0.96,
+        -4.41
+       ],
+       [
+        1.0,
+        1.0,
+        -4.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.158,
+        "kick"
+       ]
+      ],
+      "face": 80
+     },
+     "chief": {
+      "path": [
+       [
+        0.0,
+        1,
+        -2.3
+       ],
+       [
+        0.05,
+        1.0,
+        -2.3
+       ],
+       [
+        0.1,
+        1.0,
+        -2.3
+       ],
+       [
+        0.15,
+        1.0,
+        -2.3
+       ],
+       [
+        0.2,
+        1.0,
+        -2.3
+       ],
+       [
+        0.25,
+        1.0,
+        -2.3
+       ],
+       [
+        0.3,
+        1.0,
+        -2.3
+       ],
+       [
+        0.35,
+        1.0,
+        -2.3
+       ],
+       [
+        0.4,
+        1.0,
+        -2.3
+       ],
+       [
+        0.45,
+        1.0,
+        -2.3
+       ],
+       [
+        0.5,
+        1.0,
+        -2.3
+       ],
+       [
+        0.55,
+        1.0,
+        -2.3
+       ],
+       [
+        0.6,
+        1.0,
+        -2.3
+       ],
+       [
+        0.65,
+        1.0,
+        -2.3
+       ],
+       [
+        0.7,
+        1.0,
+        -2.3
+       ],
+       [
+        0.75,
+        1.0,
+        -2.3
+       ],
+       [
+        0.8,
+        1.0,
+        -2.3
+       ],
+       [
+        0.85,
+        1.0,
+        -2.3
+       ],
+       [
+        0.9,
+        1.0,
+        -2.3
+       ],
+       [
+        0.95,
+        1.0,
+        -2.3
+       ],
+       [
+        1.0,
+        1,
+        -2.3
+       ]
+      ],
+      "face": -90
+     },
+     "bd1": {
+      "path": [
+       [
+        0.0,
+        6,
+        -4
+       ],
+       [
+        0.05,
+        5.92,
+        -4.03
+       ],
+       [
+        0.1,
+        5.85,
+        -4.05
+       ],
+       [
+        0.15,
+        5.78,
+        -4.08
+       ],
+       [
+        0.2,
+        5.7,
+        -4.1
+       ],
+       [
+        0.25,
+        5.62,
+        -4.12
+       ],
+       [
+        0.3,
+        5.55,
+        -4.15
+       ],
+       [
+        0.35,
+        5.47,
+        -4.17
+       ],
+       [
+        0.4,
+        5.4,
+        -4.2
+       ],
+       [
+        0.45,
+        5.33,
+        -4.22
+       ],
+       [
+        0.5,
+        5.25,
+        -4.25
+       ],
+       [
+        0.55,
+        5.17,
+        -4.28
+       ],
+       [
+        0.6,
+        5.1,
+        -4.3
+       ],
+       [
+        0.65,
+        5.03,
+        -4.33
+       ],
+       [
+        0.7,
+        4.95,
+        -4.35
+       ],
+       [
+        0.75,
+        4.88,
+        -4.38
+       ],
+       [
+        0.8,
+        4.8,
+        -4.4
+       ],
+       [
+        0.85,
+        4.72,
+        -4.42
+       ],
+       [
+        0.9,
+        4.65,
+        -4.45
+       ],
+       [
+        0.95,
+        4.58,
+        -4.47
+       ],
+       [
+        1.0,
+        4.5,
+        -4.5
+       ]
+      ]
+     },
+     "bd2": {
+      "path": [
+       [
+        0.0,
+        6,
+        -1
+       ],
+       [
+        0.05,
+        5.95,
+        -0.99
+       ],
+       [
+        0.1,
+        5.9,
+        -0.98
+       ],
+       [
+        0.15,
+        5.85,
+        -0.97
+       ],
+       [
+        0.2,
+        5.8,
+        -0.96
+       ],
+       [
+        0.25,
+        5.75,
+        -0.95
+       ],
+       [
+        0.3,
+        5.7,
+        -0.94
+       ],
+       [
+        0.35,
+        5.65,
+        -0.93
+       ],
+       [
+        0.4,
+        5.6,
+        -0.92
+       ],
+       [
+        0.45,
+        5.55,
+        -0.91
+       ],
+       [
+        0.5,
+        5.5,
+        -0.9
+       ],
+       [
+        0.55,
+        5.45,
+        -0.89
+       ],
+       [
+        0.6,
+        5.4,
+        -0.88
+       ],
+       [
+        0.65,
+        5.35,
+        -0.87
+       ],
+       [
+        0.7,
+        5.3,
+        -0.86
+       ],
+       [
+        0.75,
+        5.25,
+        -0.85
+       ],
+       [
+        0.8,
+        5.2,
+        -0.84
+       ],
+       [
+        0.85,
+        5.15,
+        -0.83
+       ],
+       [
+        0.9,
+        5.1,
+        -0.82
+       ],
+       [
+        0.95,
+        5.05,
+        -0.81
+       ],
+       [
+        1.0,
+        5,
+        -0.8
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.2,
+      1.0,
+      0.3,
+      -4.0
+     ],
+     [
+      0.26,
+      5.95,
+      3.13,
+      -4.0
+     ],
+     [
+      0.32,
+      10.9,
+      5.48,
+      -4.0
+     ],
+     [
+      0.38,
+      15.85,
+      7.35,
+      -4.0
+     ],
+     [
+      0.44,
+      20.8,
+      8.74,
+      -4.0
+     ],
+     [
+      0.5,
+      25.75,
+      9.65,
+      -4.0
+     ],
+     [
+      0.56,
+      30.7,
+      10.08,
+      -4.0
+     ],
+     [
+      0.62,
+      35.65,
+      10.03,
+      -4.0
+     ],
+     [
+      0.68,
+      40.6,
+      9.5,
+      -4.0
+     ],
+     [
+      0.74,
+      45.55,
+      8.49,
+      -4.0
+     ],
+     [
+      0.8,
+      50.5,
+      7.0,
+      -4.0
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Twenty five points in the final two minutes.",
+   "cap": "25 points in the final 2 minutes.",
+   "key": [
+    "25"
+   ],
+   "speaker": "capy",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BILLS 36",
+     "CHIEFS 33"
+    ],
+    "endZone": 30,
+    "zoneA": "#1f3f9f",
+    "zoneB": "#d62828"
+   },
    "board": [
     "25 POINTS",
     "IN 2 MIN"
@@ -357,7 +1747,6 @@
      0,
      1.6
     ],
-    "te": false,
     "chief": [
      -1.8,
      -0.4
@@ -376,15 +1765,23 @@
      "mood": "neutral",
      "action": "talk",
      "look": "camera"
+    },
+    "chief": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "bill": {
+     "mood": "shocked",
+     "action": "facepalm"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Then came the coin toss. Kansas City won it.",
+   "text": "Then the coin toss. Kansas City wins it.",
    "key": [
     "COIN"
    ],
+   "speaker": "capy",
    "board": [
     "OVERTIME",
     "COIN TOSS"
@@ -419,67 +1816,576 @@
     },
     "bill": {
      "mood": "worried",
+     "action": "idle",
      "look": "capy"
     }
    }
   },
   {
-   "text": "Mahomes drove the field. Kelce caught the winning touchdown. Forty two to thirty six.",
-   "cap": "Mahomes drove the field. Kelce caught the winning touchdown. 42 to 36.",
+   "text": "Mahomes drives the field. Kelce catches the winner. Forty two to thirty six.",
+   "cap": "Mahomes drives the field. Kelce catches the winner. 42 to 36.",
    "key": [
     "42"
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "te",
+    "lead": 0,
+    "z": 0
+   },
+   "act": {},
+   "sfx": [
+    [
+     0.6,
+     "roar"
+    ]
    ],
    "board": [
     "CHIEFS 42",
     "BILLS 36"
    ],
-   "place": {
-    "capy": false,
-    "te": [
-     0,
-     0
+   "play": {
+    "cast": {
+     "chief": {
+      "path": [
+       [
+        0.0,
+        18,
+        0
+       ],
+       [
+        0.05,
+        17.7,
+        0.0
+       ],
+       [
+        0.1,
+        17.4,
+        0.0
+       ],
+       [
+        0.15,
+        17.1,
+        0.0
+       ],
+       [
+        0.2,
+        16.8,
+        0.0
+       ],
+       [
+        0.25,
+        16.5,
+        0.0
+       ],
+       [
+        0.3,
+        16.5,
+        0.0
+       ],
+       [
+        0.35,
+        16.5,
+        0.0
+       ],
+       [
+        0.4,
+        16.5,
+        0.0
+       ],
+       [
+        0.45,
+        16.5,
+        0.0
+       ],
+       [
+        0.5,
+        16.5,
+        0.0
+       ],
+       [
+        0.55,
+        16.5,
+        0.0
+       ],
+       [
+        0.6,
+        16.5,
+        0.0
+       ],
+       [
+        0.65,
+        16.5,
+        0.0
+       ],
+       [
+        0.7,
+        16.5,
+        0.0
+       ],
+       [
+        0.75,
+        16.5,
+        0.0
+       ],
+       [
+        0.8,
+        16.5,
+        0.0
+       ],
+       [
+        0.85,
+        16.5,
+        0.0
+       ],
+       [
+        0.9,
+        16.5,
+        0.0
+       ],
+       [
+        0.95,
+        16.5,
+        0.0
+       ],
+       [
+        1.0,
+        16.5,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.263,
+        "throw"
+       ]
+      ],
+      "face": 80
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        24,
+        -2
+       ],
+       [
+        0.05,
+        24.8,
+        -1.9
+       ],
+       [
+        0.1,
+        25.6,
+        -1.8
+       ],
+       [
+        0.15,
+        26.4,
+        -1.7
+       ],
+       [
+        0.2,
+        27.2,
+        -1.6
+       ],
+       [
+        0.25,
+        28.0,
+        -1.5
+       ],
+       [
+        0.3,
+        28.8,
+        -1.4
+       ],
+       [
+        0.35,
+        29.6,
+        -1.3
+       ],
+       [
+        0.4,
+        30.4,
+        -1.2
+       ],
+       [
+        0.45,
+        31.2,
+        -1.1
+       ],
+       [
+        0.5,
+        32.0,
+        -1.0
+       ],
+       [
+        0.55,
+        32.1,
+        -1.0
+       ],
+       [
+        0.6,
+        32.2,
+        -1.0
+       ],
+       [
+        0.65,
+        32.3,
+        -1.0
+       ],
+       [
+        0.7,
+        32.4,
+        -1.0
+       ],
+       [
+        0.75,
+        32.5,
+        -1.0
+       ],
+       [
+        0.8,
+        32.6,
+        -1.0
+       ],
+       [
+        0.85,
+        32.7,
+        -1.0
+       ],
+       [
+        0.9,
+        32.8,
+        -1.0
+       ],
+       [
+        0.95,
+        32.9,
+        -1.0
+       ],
+       [
+        1.0,
+        33,
+        -1
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.5,
+        "catch"
+       ],
+       [
+        0.6,
+        "celebrate"
+       ]
+      ]
+     },
+     "bd2": {
+      "path": [
+       [
+        0.0,
+        27,
+        -5
+       ],
+       [
+        0.05,
+        27.23,
+        -4.93
+       ],
+       [
+        0.1,
+        27.45,
+        -4.86
+       ],
+       [
+        0.15,
+        27.68,
+        -4.79
+       ],
+       [
+        0.2,
+        27.9,
+        -4.72
+       ],
+       [
+        0.25,
+        28.12,
+        -4.65
+       ],
+       [
+        0.3,
+        28.35,
+        -4.58
+       ],
+       [
+        0.35,
+        28.57,
+        -4.51
+       ],
+       [
+        0.4,
+        28.8,
+        -4.44
+       ],
+       [
+        0.45,
+        29.02,
+        -4.37
+       ],
+       [
+        0.5,
+        29.25,
+        -4.3
+       ],
+       [
+        0.55,
+        29.48,
+        -4.23
+       ],
+       [
+        0.6,
+        29.7,
+        -4.16
+       ],
+       [
+        0.65,
+        29.93,
+        -4.09
+       ],
+       [
+        0.7,
+        30.15,
+        -4.02
+       ],
+       [
+        0.75,
+        30.38,
+        -3.95
+       ],
+       [
+        0.8,
+        30.6,
+        -3.88
+       ],
+       [
+        0.85,
+        30.82,
+        -3.81
+       ],
+       [
+        0.9,
+        31.05,
+        -3.74
+       ],
+       [
+        0.95,
+        31.27,
+        -3.67
+       ],
+       [
+        1.0,
+        31.5,
+        -3.6
+       ]
+      ]
+     },
+     "bill": {
+      "path": [
+       [
+        0.0,
+        6,
+        5
+       ],
+       [
+        0.05,
+        6.0,
+        5.0
+       ],
+       [
+        0.1,
+        6.0,
+        5.0
+       ],
+       [
+        0.15,
+        6.0,
+        5.0
+       ],
+       [
+        0.2,
+        6.0,
+        5.0
+       ],
+       [
+        0.25,
+        6.0,
+        5.0
+       ],
+       [
+        0.3,
+        6.0,
+        5.0
+       ],
+       [
+        0.35,
+        6.0,
+        5.0
+       ],
+       [
+        0.4,
+        6.0,
+        5.0
+       ],
+       [
+        0.45,
+        6.0,
+        5.0
+       ],
+       [
+        0.5,
+        6.0,
+        5.0
+       ],
+       [
+        0.55,
+        6.0,
+        5.0
+       ],
+       [
+        0.6,
+        6.0,
+        5.0
+       ],
+       [
+        0.65,
+        6.0,
+        5.0
+       ],
+       [
+        0.7,
+        6.0,
+        5.0
+       ],
+       [
+        0.75,
+        6.0,
+        5.0
+       ],
+       [
+        0.8,
+        6.0,
+        5.0
+       ],
+       [
+        0.85,
+        6.0,
+        5.0
+       ],
+       [
+        0.9,
+        6.0,
+        5.0
+       ],
+       [
+        0.95,
+        6.0,
+        5.0
+       ],
+       [
+        1.0,
+        6,
+        5
+       ]
+      ],
+      "mood": "sad"
+     }
+    },
+    "ball": [
+     [
+      0.3,
+      16.7,
+      2.0,
+      0.1
+     ],
+     [
+      0.333,
+      19.22,
+      2.78,
+      -0.07
+     ],
+     [
+      0.367,
+      21.73,
+      3.23,
+      -0.23
+     ],
+     [
+      0.4,
+      24.25,
+      3.35,
+      -0.4
+     ],
+     [
+      0.433,
+      26.77,
+      3.13,
+      -0.57
+     ],
+     [
+      0.467,
+      29.28,
+      2.58,
+      -0.73
+     ],
+     [
+      0.5,
+      31.8,
+      1.7,
+      -0.9
+     ]
     ],
-    "chief": [
-     -2,
-     -0.6
-    ],
-    "bill": [
-     2.2,
-     -0.4
+    "carry": [
+     [
+      0,
+      "chief"
+     ],
+     [
+      0.5,
+      "te"
+     ]
     ]
-   },
-   "shot": {
-    "type": "low",
-    "on": "te"
-   },
-   "act": {
-    "te": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    },
-    "chief": {
-     "mood": "happy",
-     "action": "clap"
-    },
-    "bill": {
-     "mood": "sad",
-     "action": "slump"
-    }
    }
   },
   {
-   "text": "Josh Allen never touched the ball in overtime.",
+   "text": "Josh Allen never touches the ball in overtime.",
    "key": [
     "NEVER"
    ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BILLS 36",
+     "CHIEFS 33"
+    ],
+    "endZone": 30,
+    "zoneA": "#1f3f9f",
+    "zoneB": "#d62828"
+   },
    "place": {
     "bill": [
      0,
      0
-    ],
-    "te": false,
-    "chief": false
+    ]
    },
    "shot": {
     "type": "close",
@@ -494,7 +2400,7 @@
    }
   },
   {
-   "text": "Two months later, the owners changed the playoff rule. Now both teams get the ball.",
+   "text": "Two months later, the owners change the rule. Now both teams get the ball.",
    "key": [
     "BOTH"
    ],
@@ -504,15 +2410,19 @@
     "BOTH TEAMS"
    ],
    "place": {
-    "exec": "desk",
+    "exec": [
+     0.6,
+     -0.6
+    ],
     "capy": [
-     -2,
+     -1.8,
      0.6
     ]
    },
    "shot": {
-    "type": "medium",
-    "on": "exec"
+    "type": "two",
+    "on": "exec",
+    "with": "capy"
    },
    "act": {
     "exec": {
@@ -522,16 +2432,18 @@
     },
     "capy": {
      "mood": "neutral",
+     "action": "idle",
      "look": "exec"
     }
    }
   },
   {
-   "text": "Should one touchdown end an overtime? Yes or no?",
+   "text": "Should one touchdown end an overtime? Yes or no? Bills fans, you may abstain.",
    "key": [
     "YES",
     "NO?"
    ],
+   "speaker": "capy",
    "board": [
     "ONE TD",
     "WINS?"
@@ -562,8 +2474,7 @@
      "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -590,6 +2501,91 @@
   {
    "title": "SI: 49ers players admitted they didn't know Super Bowl overtime rules (rule changed after Chiefs-Bills)",
    "url": "https://www.si.com/nfl/2024/02/12/49ers-players-chiefs-didnt-know-super-bowl-overtime-rules"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In a 2022 playoff game the Bills led with 13 seconds left and lost",
+   "terms": [
+    "13 seconds"
+   ]
+  },
+  {
+   "claim": "Divisional round in Kansas City, Josh Allen vs Patrick Mahomes",
+   "terms": [
+    "divisional",
+    "Allen",
+    "Mahomes"
+   ]
+  },
+  {
+   "claim": "The lead changed repeatedly in the last two minutes",
+   "terms": [
+    "lead"
+   ]
+  },
+  {
+   "claim": "Gabriel Davis caught his fourth touchdown to put the Bills up 36-33",
+   "terms": [
+    "Davis",
+    "fourth|4th",
+    "36-33|36 33"
+   ]
+  },
+  {
+   "claim": "Mahomes hit Tyreek Hill for 19 yards",
+   "terms": [
+    "Hill",
+    "19"
+   ]
+  },
+  {
+   "claim": "Then Travis Kelce for 25 yards",
+   "terms": [
+    "Kelce",
+    "25"
+   ]
+  },
+  {
+   "claim": "Harrison Butker kicked a 49-yard field goal to tie it as time ran out",
+   "terms": [
+    "Butker",
+    "49"
+   ]
+  },
+  {
+   "claim": "25 points were scored in the final two minutes",
+   "terms": [
+    "25 points"
+   ]
+  },
+  {
+   "claim": "Kansas City won the overtime coin toss",
+   "terms": [
+    "coin toss"
+   ]
+  },
+  {
+   "claim": "Kelce caught the winning touchdown, 42-36",
+   "terms": [
+    "Kelce",
+    "42-36|42 36"
+   ]
+  },
+  {
+   "claim": "Josh Allen never touched the ball in overtime",
+   "terms": [
+    "Allen",
+    "never|didn't get|did not get"
+   ]
+  },
+  {
+   "claim": "Two months later owners changed playoff overtime so both teams get the ball",
+   "terms": [
+    "owners",
+    "both teams"
+   ]
   }
  ]
 }
