@@ -1,0 +1,109 @@
+name: render
+# Renders football shorts on demand. No secrets; read-only token; every action pinned to a commit SHA.
+# Outputs are run artifacts: the 1080x1920 master, the web copy (720x1280, CRF 28), the poster, stills, review sheet.
+on:
+  workflow_dispatch:
+    inputs:
+      videos:
+        description: 'Video ids, space separated (max 20), e.g. s4_01_music_city_miracle'
+        required: true
+        type: string
+      listen:
+        description: 'Listen-back: transcribe the narration and flag misheard words'
+        type: boolean
+        default: true
+      sources:
+        description: 'Open each video''s fact sources and print them (rubric G1)'
+        type: boolean
+        default: true
+permissions:
+  contents: read
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      ids: ${{ steps.plan.outputs.ids }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with: { persist-credentials: false }
+      - id: plan
+        env:
+          VIDEOS: ${{ inputs.videos }}
+        run: python3 tools/render_plan.py >> "$GITHUB_OUTPUT"
+
+  sources:
+    if: inputs.sources
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with: { persist-credentials: false }
+      - name: Open every listed source and print its text
+        env:
+          IDS: ${{ needs.plan.outputs.ids }}
+        run: python3 tools/fetch_sources.py $IDS
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with: { name: sources, path: football/out/sources/, retention-days: 30 }
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    env:
+      VID: ${{ matrix.id }}
+      IDX: ${{ matrix.index }}
+      KOKORO_MODELS: /home/runner/kokoro
+      CHROME: /usr/bin/google-chrome
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with: { persist-credentials: false }
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with: { python-version: '3.13' }
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with: { node-version: '22' }
+      - name: Tools and pinned dependencies
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -q -r football/engine/requirements.txt
+          cd football/engine && npm ci --no-audit --no-fund
+      - name: Kokoro models from the GitHub release, checksum-verified
+        run: |
+          mkdir -p "$KOKORO_MODELS"
+          for f in kokoro-v1.0.onnx voices-v1.0.bin; do
+            curl -fsSL -o "$KOKORO_MODELS/$f" "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"
+          done
+          (cd "$KOKORO_MODELS" && sha256sum -c "$GITHUB_WORKSPACE/football/engine/models.sha256")
+      - name: Render
+        env:
+          PWMOD: ${{ github.workspace }}/football/engine/node_modules/playwright-core
+        run: cd football && bash engine/make.sh "videos/$VID" "$IDX" && bash engine/review.sh "out/${VID%%_*}/$VID.mp4"
+      - name: Web copy and poster
+        run: |
+          cd football && S="${VID%%_*}"; mkdir -p "out/web/media/$S" "out/web/posters/$S"
+          ffmpeg -v error -y -i "out/$S/$VID.mp4" -vf scale=720:1280 -c:v libx264 -crf 28 -preset slow -c:a aac -b:a 96k -movflags +faststart "out/web/media/$S/$VID.mp4"
+          ffmpeg -v error -y -ss 1.5 -i "out/$S/$VID.mp4" -frames:v 1 -vf scale=360:640 -q:v 3 "out/web/posters/$S/$VID.jpg"
+      - name: Listen-back (open speech-to-text model from Hugging Face)
+        if: inputs.listen
+        continue-on-error: true
+        run: |
+          pip install -q faster-whisper==1.2.1
+          cd football && python3 engine/listen.py "videos/$VID"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: render-${{ matrix.id }}
+          retention-days: 30
+          path: |
+            football/out/
+            football/videos/${{ matrix.id }}/build/still_*.jpg
+            football/videos/${{ matrix.id }}/build/timing.json
+            football/videos/${{ matrix.id }}/build/listen.json

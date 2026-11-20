@@ -173,6 +173,25 @@ def test_capy_must_be_featured():
         assert not any("Capy" in e for e in check.voice_errors(d)[1])
 
 
+def test_listen_back_diff():
+    import listen
+    assert listen.diff("You're in nineteen seventy eight.", "You're in 1978.") == []      # digits spoken back
+    assert listen.diff("Larry Csonka runs.", "Larry Sonka runs.") == [("csonka", "sonka")]
+    assert listen.diff("Bills sixteen, Titans fifteen.", "Bills 16, Titans 15") == []
+
+
+def test_render_plan_rejects_bad_ids():
+    sys.path.insert(0, str(ROOT.parent.parent / "tools"))
+    import render_plan
+    m = render_plan.plan("s4_01_music_city_miracle")
+    assert m[0]["id"] == "s4_01_music_city_miracle" and isinstance(m[0]["index"], int)
+    for bad in ("../etc", "s1_01_x;rm", " ".join(["s4_01_music_city_miracle"] * 21)):
+        try:
+            render_plan.plan(bad); assert False, bad
+        except SystemExit:
+            pass
+
+
 def run():
     fails = []
     for name, fn in sorted(globals().items()):
