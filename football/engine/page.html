@@ -20,10 +20,12 @@ const CFG = {
   env: { intensity: 0.22, hemiScale: 0.55, keyScale: 1.25 },   // soft studio reflections (RoomEnvironment), less flat fill
   ao: true,             // ambient occlusion: contact shadows where things meet (the reference's soft, grounded look)     // 3D renders at 80% and is scaled up; captions are drawn at full resolution (speed: about 1.6x)
   draft: { renderScale: 0.6, ao: false },   // ?draft=1: quick iteration renders
-  caption: { size: 74, lineHeight: 84, bottom: 92, maxWidth: 940, skew: -0.12, stroke: 15, key: '#e01b24', words: 4 },
+  caption: { size: 74, lineHeight: 84, bottom: 92, maxWidth: 940, skew: -0.12, stroke: 15, keyStroke: 8, key: '#e01b24', words: 4 },
   push: 0.1,            // camera moves this fraction closer over a shot
   drift: 0.35,          // sideways drift over a shot (world units)
+  walkBelow: 3,         // in a play, under this many units a second is a walk, not a run
   gazeTurn: 0.6,        // how far heads turn toward who they look at (radians cap)
+  board: { ndc: [-0.56, 0.62], y: [8.8, 11] },   // field scoreboard: upper-left at each line's start, above the back row of fans
 };
 window.CFG = CFG;
 const r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
@@ -106,11 +108,31 @@ function cameraFor(shot, set, u) {
     case 'follow': case 'follow_high': {   // broadcast camera tracking a player or the ball along the field (x)
       const tg = shot.on === 'ball' ? (BALL?.visible ? BALL.position : (cast[shot.fallback]?.p.position || at)) : at;
       const hi = shot.type === 'follow_high';
-      pos = [tg.x - (shot.lead ?? 1.5), hi ? 13 : 5.2, tg.z + (hi ? 15 : 16)]; look = [tg.x + (shot.lead ?? 1.5), hi ? 0.5 : 1.9, tg.z]; break; }
+      const tz2 = shot.z ?? tg.z;   // shot.z holds the depth fixed (keeps a thrower and a catcher both in frame)
+      pos = [tg.x - (shot.lead ?? 1.5), hi ? 13 : 5.2, tz2 + (hi ? 15 : 16)]; look = [tg.x + (shot.lead ?? 1.5), hi ? 0.5 : 1.9, tz2]; break; }
     default: pos = [tx + dr, 3.4, tz + 11 * k]; look = [tx, 2.2, tz - 1];
   }
   if (shot.offset) { pos[0] += shot.offset[0]; pos[1] += shot.offset[1]; pos[2] += shot.offset[2]; }
+  if (shot.pan) { pos[0] += shot.pan[0]; look[0] += shot.pan[0]; pos[1] += shot.pan[1] || 0; look[1] += shot.pan[1] || 0; }   // slide the whole framing (e.g. to fit a board)
   cam.position.set(...pos); cam.lookAt(...look);
+}
+
+// Every set's board (scoreboard, locker whiteboard, office TV) slides along its wall to where this line's camera sees
+// it: upper left on the field (above the crowd), upper right indoors. It stays put while the line plays, and sits the
+// line out rather than show cropped.
+function placeBoard(screen, shot, set, i) {
+  const fr = screen.userData.frame;
+  if (screen.userData.home === undefined) screen.userData.home = [fr.position.x, fr.position.y];
+  const field = !!set.follows, ndc = field ? CFG.board.ndc : [-CFG.board.ndc[0], CFG.board.ndc[1]];
+  cameraFor(shot, set, 0); cam.updateMatrixWorld();
+  const d = new THREE.Vector3(ndc[0], ndc[1], 0.5).unproject(cam).sub(cam.position).normalize();
+  const k = (fr.position.z - cam.position.z) / d.z;
+  let [x, y] = screen.userData.home;
+  if (k > 0) { x = cam.position.x + d.x * k; if (field) y = Math.min(CFG.board.y[1], Math.max(CFG.board.y[0], cam.position.y + d.y * k)); }
+  fr.position.x = screen.position.x = x; fr.position.y = screen.position.y = y; screen.userData.line = i;
+  fr.updateMatrixWorld(); fr.geometry.computeBoundingBox();
+  const bb = fr.geometry.boundingBox, inFrame = [bb.min, bb.max].every((c) => { const p = c.clone().applyMatrix4(fr.matrixWorld).project(cam); return Math.abs(p.x) < 0.98 && Math.abs(p.y) < 0.98 && p.z < 1; });
+  fr.visible = screen.visible = inFrame;
 }
 
 function drawCaption(words, keys) {
@@ -128,13 +150,14 @@ function drawCaption(words, keys) {
     for (const w of ln) {
       const ww = ctx.measureText(w).width;
       ctx.save(); ctx.translate(x, y); ctx.textAlign = 'left';
+      ctx.transform(1, 0, C.skew, 1, 0, 0);   // the key box leans with the italic word, so it sits on it
       if (keys.has(w.toUpperCase().replace(/[^A-Z0-9%$]/g, ''))) {
-        ctx.fillStyle = C.key; const pad = 14;
-        ctx.beginPath(); ctx.roundRect(-pad + 2, -C.size * 0.82, ww + pad * 2, C.size * 1.0, 10); ctx.fill();
+        ctx.fillStyle = C.key; const pad = 18, top = C.size * 0.98, bot = C.size * 0.24;
+        ctx.beginPath(); ctx.roundRect(-pad, -top, ww + pad * 2, top + bot, 10); ctx.fill();
         ctx.lineWidth = 6; ctx.strokeStyle = '#000'; ctx.stroke();
       }
-      ctx.transform(1, 0, C.skew, 1, 0, 0);
-      ctx.lineWidth = C.stroke; ctx.strokeStyle = '#000';
+      const isKey = keys.has(w.toUpperCase().replace(/[^A-Z0-9%$]/g, ''));
+      ctx.lineWidth = isKey ? C.keyStroke : C.stroke; ctx.strokeStyle = '#000';
       ctx.shadowColor = 'rgba(0,0,0,.55)'; ctx.shadowOffsetY = 6; ctx.shadowBlur = 8;
       ctx.strokeText(w, 0, 0); ctx.shadowColor = 'transparent';
       ctx.fillStyle = '#fff'; ctx.fillText(w, 0, 0);
@@ -146,7 +169,7 @@ function drawCaption(words, keys) {
 
 // ---- plays: a line can act out the real play on the field ----
 // line.play = { cast: { id: { path: [[u, x, z], ...], actions: [[u, 'run'], [0.8, 'celebrate']], face: deg } },
-//               ball: [[u, x, y, z], ...]   (in flight)   carry: [[u, id], ...]   (held by someone from u on) }
+//               ball: [[u, x, y, z], ...]   (in flight; or a list of such flights)   carry: [[u, id], ...]   (held by someone from u on) }
 // Paths are Catmull-Rom through the points; a carrier faces where they're going.
 function along(pts, u) {
   if (!pts || !pts.length) return null;
@@ -188,6 +211,8 @@ window.frame = (t) => {
       c.p.rotation.y = pp.face !== undefined && !moving ? (pp.face * Math.PI) / 180 : moving ? Math.atan2(x2 - x, z2 - z) : c.p.rotation.y;
       action = pick(pp.actions, u, moving ? 'run' : 'idle');
       if (action === 'run' && !moving) action = 'idle';
+      const speed = Math.hypot(x2 - x, z2 - z) / (0.02 * Math.max(0.1, L.end - L.start));   // units per second
+      if (action === 'run' && speed < CFG.walkBelow) action = 'walk';   // a slow mover walks; a run reads as fast
     } else {
       [x, z] = spot(sc.set, Array.isArray(pl) || typeof pl === 'string' ? pl : pl.spot);
       c.p.rotation.y = ((pl.face ?? c.cfg.face ?? 0) * Math.PI) / 180;
@@ -205,8 +230,11 @@ window.frame = (t) => {
     head.userData.pitch = a.nod ? Math.sin(t * 5) * 0.12 : 0;
   }
   if (play) {
-    const bp = along(play.ball, u);
-    const inAir = play.ball && u >= play.ball[0][0] && u <= play.ball[play.ball.length - 1][0];
+    // ball: one flight [[u, x, y, z], ...] or several [[[u, x, y, z], ...], ...] (a kick, then a short toss)
+    const flights = !play.ball ? [] : Array.isArray(play.ball[0][0]) ? play.ball : [play.ball];
+    const fl = flights.find((f) => u >= f[0][0] && u <= f[f.length - 1][0]);
+    const bp = fl ? along(fl, u) : null;
+    const inAir = !!fl;
     if (inAir && bp) { BALL.visible = true; BALL.position.set(bp[0], bp[1], bp[2]); BALL.rotation.set(t * 6, 0, Math.PI / 2); }
     else if (carrier && cast[carrier]) { const cp = cast[carrier].p; BALL.visible = true;
       BALL.position.set(cp.position.x + Math.sin(cp.rotation.y + 0.6) * 0.45, 1.75 + cp.position.y, cp.position.z + Math.cos(cp.rotation.y + 0.6) * 0.45); BALL.rotation.set(0.4, cp.rotation.y, 0); }
@@ -215,6 +243,7 @@ window.frame = (t) => {
     sc.set.screen.material.map = textTexture(st.board, { bg: sc.name === 'field' || sc.name === 'living' ? '#101418' : '#ffffff', fg: sc.name === 'field' || sc.name === 'living' ? '#ffffff' : '#1b2a5c', accent: '#d62828' });
     sc.set.screen.material.needsUpdate = true; sc.set.screen.userData.text = JSON.stringify(st.board);
   }
+  if (sc.set.screen?.userData.frame && sc.set.screen.userData.line !== i) placeBoard(sc.set.screen, st.shot, sc.set, i);
   cameraFor(st.shot, sc.set, u);
   if (CFG.ao) composerFor(sc.scene).render(); else r.render(sc.scene, cam);
   ctx.imageSmoothingQuality = 'high'; ctx.drawImage(r.domElement, 0, 0, CFG.width, CFG.height);
