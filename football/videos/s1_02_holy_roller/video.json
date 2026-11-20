@@ -90,11 +90,11 @@
  },
  "lines": [
   {
-   "text": "In 1978, the Raiders won a game by fumbling forward. On purpose.",
+   "text": "You're losing. So you fumble forward. On purpose.",
    "key": [
-    "FORWARD.",
     "PURPOSE."
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -1.4,
@@ -126,15 +126,17 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Ten seconds left. Down twenty to fourteen, at the San Diego fourteen.",
-   "cap": "10 seconds left. Down 20 to 14, at the San Diego 14.",
+   "text": "Nineteen seventy eight. Raiders down twenty to fourteen.",
+   "cap": "1978. Raiders down 20 to 14.",
    "key": [
-    "10",
-    "SECONDS"
+    "20"
+   ],
+   "board": [
+    "RAIDERS 14",
+    "CHARGERS 20"
    ],
    "place": {
     "capy": false,
@@ -165,13 +167,216 @@
    }
   },
   {
-   "text": "Ken Stabler dropped back. Nobody open. A defender about to sack him.",
+   "text": "Ten seconds left. You're at the San Diego fourteen.",
+   "cap": "10 seconds left. You're at the San Diego 14.",
+   "key": [
+    "10"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.6,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "You're Ken Stabler. You drop back. Nobody is open.",
+   "key": [
+    "OPEN."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAIDERS 14",
+     "CHARGERS 20"
+    ],
+    "endZone": 8,
+    "zoneA": "#222222",
+    "zoneB": "#7fb7e6"
+   },
+   "shot": {
+    "type": "follow",
+    "on": "qb",
+    "lead": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        0.0,
+        0.0
+       ],
+       [
+        0.1,
+        -0.8,
+        0.0
+       ],
+       [
+        0.2,
+        -1.6,
+        0.0
+       ],
+       [
+        0.3,
+        -2.4,
+        0.0
+       ],
+       [
+        0.4,
+        -3.2,
+        0.0
+       ],
+       [
+        0.5,
+        -4.0,
+        0.0
+       ],
+       [
+        1,
+        -4.0,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.5,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "def": {
+      "path": [
+       [
+        0.0,
+        4.0,
+        -5.0
+       ],
+       [
+        0.1667,
+        2.9,
+        -4.433
+       ],
+       [
+        0.3333,
+        1.8,
+        -3.867
+       ],
+       [
+        0.5,
+        0.7,
+        -3.3
+       ],
+       [
+        0.6667,
+        -0.4,
+        -2.733
+       ],
+       [
+        0.8333,
+        -1.5,
+        -2.167
+       ],
+       [
+        1.0,
+        -2.6,
+        -1.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ]
+     },
+     "rb": {
+      "path": [
+       [
+        0,
+        1.6,
+        3.0
+       ],
+       [
+        1,
+        1.6,
+        3.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     },
+     "te": {
+      "path": [
+       [
+        0,
+        5.6,
+        3.2
+       ],
+       [
+        1,
+        5.6,
+        3.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "carry": [
+     [
+      0,
+      "qb"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "A defender is about to sack you.",
    "key": [
     "SACK"
    ],
    "place": {
+    "qb": [
+     0,
+     0
+    ],
     "def": [
-     1.1,
+     1.4,
      -0.7
     ]
    },
@@ -183,6 +388,7 @@
    "act": {
     "qb": {
      "mood": "shocked",
+     "action": "hold",
      "look": "def"
     },
     "def": {
@@ -193,143 +399,660 @@
    }
   },
   {
-   "text": "So he pushed the ball forward, toward the end zone.",
+   "text": "So you push the ball forward.",
    "key": [
-    "FORWARD,"
+    "FORWARD."
    ],
    "shot": {
-    "type": "medium",
-    "on": "qb"
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "qb",
+    "lead": 0,
+    "z": 1
    },
-   "act": {
-    "qb": {
-     "mood": "smug",
-     "action": "throw",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Pete Banaszak couldn't grab it. He swatted it further.",
-   "key": [
-    "SWATTED"
-   ],
-   "place": {
-    "qb": false,
-    "def": false,
-    "rb": "center"
-   },
-   "shot": {
-    "type": "low",
-    "on": "rb"
-   },
-   "act": {
-    "rb": {
-     "mood": "confused",
-     "action": "shrug"
-    }
-   }
-  },
-  {
-   "text": "Then Dave Casper kicked it into the end zone, and fell on it.",
-   "key": [
-    "KICKED"
-   ],
-   "place": {
-    "te": [
-     1.6,
-     0.2
-    ]
-   },
-   "shot": {
-    "type": "two",
-    "on": "rb",
-    "with": "te"
-   },
-   "act": {
-    "rb": {
-     "mood": "shocked",
-     "action": "point",
-     "look": "te"
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        -4.0,
+        0.0
+       ],
+       [
+        1,
+        -4.0,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ],
+       [
+        0.2627,
+        "throw"
+       ]
+      ],
+      "face": 80
+     },
+     "def": {
+      "path": [
+       [
+        0,
+        -2.6,
+        -1.6
+       ],
+       [
+        1,
+        -2.6,
+        -1.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 160
+     },
+     "rb": {
+      "path": [
+       [
+        0,
+        1.6,
+        3.0
+       ],
+       [
+        1,
+        1.6,
+        3.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -120
+     },
+     "te": {
+      "path": [
+       [
+        0,
+        5.6,
+        3.2
+       ],
+       [
+        1,
+        5.6,
+        3.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     }
     },
-    "te": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "rb"
-    }
+    "ball": [
+     [
+      0.35,
+      -3.7,
+      1.8,
+      0.3
+     ],
+     [
+      0.6,
+      -1.6,
+      1.2,
+      0.8
+     ],
+     [
+      0.85,
+      0.6,
+      0.3,
+      1.2
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.85,
+      null
+     ]
+    ]
    }
   },
   {
-   "text": "Touchdown. Time had run out.",
+   "text": "Pete Banaszak can't grab it. He swats it further.",
+   "key": [
+    "SWATS"
+   ],
+   "shot": {
+    "type": "follow",
+    "on": "ball",
+    "fallback": "rb",
+    "lead": 0,
+    "z": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "rb": {
+      "path": [
+       [
+        0.0,
+        1.6,
+        3.0
+       ],
+       [
+        0.1167,
+        1.4,
+        2.867
+       ],
+       [
+        0.2333,
+        1.2,
+        2.733
+       ],
+       [
+        0.35,
+        1.0,
+        2.6
+       ],
+       [
+        1,
+        1.0,
+        2.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.35,
+        "idle"
+       ]
+      ],
+      "face": -150
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        5.6,
+        3.2
+       ],
+       [
+        0.3333,
+        5.467,
+        3.133
+       ],
+       [
+        0.6667,
+        5.333,
+        3.067
+       ],
+       [
+        1.0,
+        5.2,
+        3.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     },
+     "qb": {
+      "path": [
+       [
+        0,
+        -4.0,
+        0.0
+       ],
+       [
+        1,
+        -4.0,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 80
+     }
+    },
+    "ball": [
+     [
+      [
+       0,
+       0.6,
+       0.3,
+       1.2
+      ],
+      [
+       0.35,
+       0.9,
+       0.3,
+       1.3
+      ]
+     ],
+     [
+      [
+       0.35,
+       0.9,
+       0.3,
+       1.3
+      ],
+      [
+       0.6,
+       3.0,
+       0.6,
+       1.4
+      ],
+      [
+       0.9,
+       5.0,
+       0.3,
+       1.5
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Dave Casper kicks it into the end zone.",
+   "key": [
+    "KICKS"
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "te",
+    "lead": 0,
+    "z": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "te": {
+      "path": [
+       [
+        0.0,
+        5.2,
+        3.0
+       ],
+       [
+        0.0777,
+        4.933,
+        2.633
+       ],
+       [
+        0.1553,
+        4.667,
+        2.267
+       ],
+       [
+        0.233,
+        4.4,
+        1.9
+       ],
+       [
+        0.3608,
+        5.433,
+        2.017
+       ],
+       [
+        0.4887,
+        6.467,
+        2.133
+       ],
+       [
+        0.6165,
+        7.5,
+        2.25
+       ],
+       [
+        0.7443,
+        8.533,
+        2.367
+       ],
+       [
+        0.8722,
+        9.567,
+        2.483
+       ],
+       [
+        1.0,
+        10.6,
+        2.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.233,
+        "kick"
+       ],
+       [
+        0.4,
+        "run"
+       ]
+      ],
+      "face": 80
+     },
+     "rb": {
+      "path": [
+       [
+        0,
+        1.0,
+        2.6
+       ],
+       [
+        1,
+        1.0,
+        2.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 60
+     },
+     "def": {
+      "path": [
+       [
+        0.0,
+        -1.0,
+        -1.5
+       ],
+       [
+        0.25,
+        0.0,
+        -1.375
+       ],
+       [
+        0.5,
+        1.0,
+        -1.25
+       ],
+       [
+        0.75,
+        2.0,
+        -1.125
+       ],
+       [
+        1.0,
+        3.0,
+        -1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      [
+       0,
+       5.0,
+       0.3,
+       1.5
+      ],
+      [
+       0.3,
+       5.0,
+       0.3,
+       1.5
+      ]
+     ],
+     [
+      [
+       0.3,
+       5.0,
+       0.3,
+       1.5
+      ],
+      [
+       0.6,
+       8.0,
+       1.0,
+       1.3
+      ],
+      [
+       0.95,
+       11.6,
+       0.3,
+       1.0
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "text": "He falls on it. Touchdown.",
    "key": [
     "TOUCHDOWN."
    ],
-   "place": {
-    "ref": [
-     -1.6,
-     0.2
+   "shot": {
+    "type": "follow",
+    "on": "te",
+    "lead": -1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "te": {
+      "path": [
+       [
+        0.0,
+        10.6,
+        2.6
+       ],
+       [
+        0.1,
+        11.1,
+        2.4
+       ],
+       [
+        0.2,
+        11.6,
+        2.2
+       ],
+       [
+        1,
+        11.6,
+        2.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.2,
+        "catch"
+       ],
+       [
+        0.45,
+        "celebrate"
+       ]
+      ],
+      "face": 20
+     },
+     "def": {
+      "path": [
+       [
+        0.0,
+        3.0,
+        -1.0
+       ],
+       [
+        0.25,
+        4.0,
+        -0.875
+       ],
+       [
+        0.5,
+        5.0,
+        -0.75
+       ],
+       [
+        0.75,
+        6.0,
+        -0.625
+       ],
+       [
+        1.0,
+        7.0,
+        -0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.7,
+        "idle"
+       ]
+      ],
+      "mood": "sad"
+     }
+    },
+    "ball": [
+     [
+      0,
+      11.6,
+      0.3,
+      1.0
+     ],
+     [
+      0.2,
+      11.6,
+      0.5,
+      1.4
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ],
+     [
+      0.2,
+      "te"
+     ]
     ]
    },
-   "shot": {
-    "type": "medium",
-    "on": "ref"
-   },
-   "act": {
-    "ref": {
-     "mood": "neutral",
-     "action": "cheer"
-    },
-    "rb": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "te": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   }
+   "sfx": [
+    [
+     0.3,
+     "roar"
+    ]
+   ]
   },
   {
-   "text": "The extra point made it twenty one to twenty. Raiders win.",
-   "cap": "The extra point made it 21 to 20. Raiders win.",
+   "text": "Time had run out. Twenty one to twenty. Raiders win.",
+   "cap": "Time had run out. 21 to 20. Raiders win.",
    "key": [
-    "21",
-    "20."
+    "21"
+   ],
+   "speaker": "capy",
+   "board": [
+    "RAIDERS 21",
+    "CHARGERS 20"
    ],
    "place": {
-    "ref": false,
-    "rb": [
-     -1.0,
-     0
+    "capy": [
+     -2.0,
+     1.0
     ],
     "te": [
-     1.0,
+     0.6,
      0
-    ]
+    ],
+    "rb": [
+     2.6,
+     -0.4
+    ],
+    "qb": false,
+    "def": false
    },
    "shot": {
-    "type": "high",
-    "on": "rb"
+    "type": "two",
+    "on": "capy",
+    "with": "te"
    },
    "act": {
-    "rb": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "te": {
      "mood": "happy",
      "action": "cheer"
     },
-    "te": {
+    "rb": {
      "mood": "happy",
      "action": "clap"
     }
    }
   },
   {
-   "text": "In San Diego, they still call it the Immaculate Deception.",
+   "text": "In San Diego, it's the Immaculate Deception.",
    "key": [
     "DECEPTION."
    ],
    "place": {
-    "rb": false,
+    "capy": false,
     "te": false,
+    "rb": false,
     "def": "center"
    },
    "shot": {
@@ -345,9 +1068,9 @@
    }
   },
   {
-   "text": "And Stabler later admitted it. He fumbled on purpose.",
+   "text": "Later, you admit it. Yes. On purpose.",
    "key": [
-    "ADMITTED"
+    "ADMIT"
    ],
    "set": "locker",
    "setOpts": {
@@ -357,34 +1080,23 @@
     ]
    },
    "place": {
-    "qb": "center",
-    "capy": [
-     -2.4,
-     0.6
-    ]
+    "qb": "center"
    },
    "shot": {
-    "type": "two",
-    "on": "qb",
-    "with": "capy"
+    "type": "medium",
+    "on": "qb"
    },
    "act": {
     "qb": {
      "mood": "smug",
      "action": "shrug",
      "look": "camera"
-    },
-    "capy": {
-     "mood": "neutral",
-     "action": "idle",
-     "look": "qb"
     }
    }
   },
   {
-   "text": "So that off-season, the league wrote a new rule.",
+   "text": "That offseason, the league writes a new rule.",
    "key": [
-    "NEW",
     "RULE."
    ],
    "set": "office",
@@ -399,7 +1111,12 @@
    },
    "shot": {
     "type": "medium",
-    "on": "boss"
+    "on": "boss",
+    "offset": [
+     0.4,
+     0.2,
+     0.4
+    ]
    },
    "act": {
     "boss": {
@@ -410,11 +1127,12 @@
    }
   },
   {
-   "text": "After the two minute warning, only the player who fumbled can advance it.",
-   "cap": "After the 2-minute warning, only the player who fumbled can advance it.",
+   "text": "After the two minute warning, here's the rule.",
+   "cap": "After the 2-minute warning, here's the rule.",
    "key": [
-    "ONLY"
+    "2-MINUTE"
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      2.2,
@@ -437,14 +1155,12 @@
      "action": "point",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "On fourth down, too. Any time in the game.",
-   "cap": "On 4th down, too. Any time in the game.",
+   "text": "Only the player who fumbled can advance it.",
    "key": [
-    "4TH"
+    "ONLY"
    ],
    "shot": {
     "type": "low",
@@ -459,11 +1175,31 @@
    }
   },
   {
-   "text": "Genius play, or cheating? One word, below.",
+   "text": "Same on fourth down. Any time in the game.",
+   "cap": "Same on 4th down. Any time in the game.",
+   "key": [
+    "4TH"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Genius play, or cheating? One word. Chargers fans, we know.",
    "key": [
     "GENIUS",
     "CHEATING?"
    ],
+   "speaker": "capy",
    "set": "locker",
    "setOpts": {
     "boardText": [
@@ -491,8 +1227,7 @@
      "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -511,6 +1246,97 @@
   {
    "title": "Wikipedia: Holy Roller (American football)",
    "url": "https://en.wikipedia.org/wiki/Holy_Roller_(American_football)"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1978 the Raiders won by fumbling forward on purpose",
+   "terms": [
+    "1978",
+    "fumble"
+   ]
+  },
+  {
+   "claim": "Raiders were down 20-14 at the San Diego 14 with 10 seconds left",
+   "terms": [
+    "20-14",
+    "10 seconds|ten seconds"
+   ]
+  },
+  {
+   "claim": "Ken Stabler dropped back and was about to be sacked",
+   "terms": [
+    "Stabler",
+    "sack"
+   ]
+  },
+  {
+   "claim": "Stabler pushed the ball forward",
+   "terms": [
+    "Stabler",
+    "forward"
+   ]
+  },
+  {
+   "claim": "Pete Banaszak couldn't grab it and batted it forward",
+   "terms": [
+    "Banaszak",
+    "bat|swat|forward"
+   ]
+  },
+  {
+   "claim": "Dave Casper kicked it into the end zone and fell on it",
+   "terms": [
+    "Casper",
+    "end zone"
+   ]
+  },
+  {
+   "claim": "Touchdown with time run out",
+   "terms": [
+    "touchdown",
+    "time|clock|expired"
+   ]
+  },
+  {
+   "claim": "The extra point made it 21-20 Raiders",
+   "terms": [
+    "21-20"
+   ]
+  },
+  {
+   "claim": "In San Diego it is called the Immaculate Deception",
+   "terms": [
+    "Immaculate Deception"
+   ]
+  },
+  {
+   "claim": "Stabler later admitted he fumbled on purpose",
+   "terms": [
+    "Stabler",
+    "purpose|intentional|admit"
+   ]
+  },
+  {
+   "claim": "That off-season the league wrote a new rule",
+   "terms": [
+    "rule",
+    "1979|offseason|off-season"
+   ]
+  },
+  {
+   "claim": "After the two-minute warning only the fumbling player can advance a fumble",
+   "terms": [
+    "two-minute|2-minute",
+    "fumble"
+   ]
+  },
+  {
+   "claim": "The same applies on fourth down at any time",
+   "terms": [
+    "fourth down"
+   ]
   }
  ]
 }
