@@ -64,15 +64,36 @@
     "skin": "#7b4e33"
    },
    "at": "back"
+  },
+  "fwr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a71930",
+    "pants": "#1b1b1b",
+    "number": "11",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   }
+  },
+  "pdb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#14284b",
+    "pants": "#c0c5c9",
+    "number": "24",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   }
   }
  },
  "lines": [
   {
-   "text": "In the 2017 Super Bowl, Atlanta led twenty eight to three. Then they never scored again.",
-   "cap": "In the 2017 Super Bowl, Atlanta led 28 to 3. Then they never scored again.",
+   "text": "You lead the Super Bowl by twenty five. You lose.",
+   "cap": "You lead the Super Bowl by 25. You lose.",
    "key": [
-    "28",
-    "NEVER"
+    "LOSE."
    ],
    "speaker": "capy",
    "place": {
@@ -84,12 +105,14 @@
      0,
      0
     ],
+    "falc": false,
     "pqb": [
      2.2,
      0.2
     ],
-    "falc": false,
-    "prb": false
+    "prb": false,
+    "fwr": false,
+    "pdb": false
    },
    "shot": {
     "type": "two",
@@ -113,10 +136,10 @@
    }
   },
   {
-   "text": "Falcons against Patriots, Super Bowl fifty one. Third quarter.",
-   "cap": "Falcons against Patriots, Super Bowl LI. Third quarter.",
+   "text": "Super Bowl fifty one. Falcons against Patriots.",
+   "cap": "Super Bowl LI. Falcons against Patriots.",
    "key": [
-    "THIRD"
+    "PATRIOTS."
    ],
    "board": [
     "SUPER BOWL LI",
@@ -156,8 +179,220 @@
    }
   },
   {
-   "text": "Matt Ryan's touchdown pass made it twenty eight to three.",
-   "cap": "Matt Ryan's touchdown pass made it 28 to 3.",
+   "text": "Third quarter. Matt Ryan throws a touchdown pass.",
+   "key": [
+    "TOUCHDOWN"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "FALCONS 21",
+     "PATRIOTS 3"
+    ],
+    "endZone": 10,
+    "zoneA": "#14284b",
+    "zoneB": "#a71930"
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "fqb",
+    "lead": 0,
+    "z": -2
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "fqb": {
+      "path": [
+       [
+        0.0,
+        -4.0,
+        1.0
+       ],
+       [
+        0.1,
+        -4.667,
+        1.067
+       ],
+       [
+        0.2,
+        -5.333,
+        1.133
+       ],
+       [
+        0.3,
+        -6.0,
+        1.2
+       ],
+       [
+        1,
+        -6,
+        1.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.2975,
+        "throw"
+       ]
+      ],
+      "face": 70
+     },
+     "fwr": {
+      "path": [
+       [
+        0.0,
+        -1.0,
+        -6.0
+       ],
+       [
+        0.1,
+        0.6,
+        -5.8
+       ],
+       [
+        0.2,
+        2.2,
+        -5.6
+       ],
+       [
+        0.3,
+        3.8,
+        -5.4
+       ],
+       [
+        0.4,
+        5.4,
+        -5.2
+       ],
+       [
+        0.5,
+        7.0,
+        -5.0
+       ],
+       [
+        0.6,
+        8.6,
+        -4.8
+       ],
+       [
+        0.7,
+        10.2,
+        -4.6
+       ],
+       [
+        0.8,
+        11.8,
+        -4.4
+       ],
+       [
+        0.9,
+        13.4,
+        -4.2
+       ],
+       [
+        1.0,
+        15.0,
+        -4.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.85,
+        "catch"
+       ]
+      ]
+     },
+     "pdb": {
+      "path": [
+       [
+        0.0,
+        6.0,
+        -1.5
+       ],
+       [
+        0.1667,
+        6.917,
+        -1.583
+       ],
+       [
+        0.3333,
+        7.833,
+        -1.667
+       ],
+       [
+        0.5,
+        8.75,
+        -1.75
+       ],
+       [
+        0.6667,
+        9.667,
+        -1.833
+       ],
+       [
+        0.8333,
+        10.583,
+        -1.917
+       ],
+       [
+        1.0,
+        11.5,
+        -2.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.35,
+      -5.7,
+      2.0,
+      1.0
+     ],
+     [
+      0.6,
+      3.5,
+      5.5,
+      -2.5
+     ],
+     [
+      0.85,
+      12.6,
+      1.8,
+      -4.3
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "fqb"
+     ],
+     [
+      0.85,
+      "fwr"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Twenty eight to three, Atlanta. Twenty five points.",
+   "cap": "28 to 3, Atlanta. 25 points.",
    "key": [
     "28"
    ],
@@ -170,7 +405,6 @@
      0,
      0
     ],
-    "pqb": false,
     "falc": [
      1.6,
      -0.6
@@ -183,21 +417,21 @@
    "act": {
     "fqb": {
      "mood": "happy",
-     "action": "throw",
+     "action": "cheer",
      "look": "camera"
     },
     "falc": {
      "mood": "happy",
-     "action": "cheer"
+     "action": "clap"
     }
    }
   },
   {
-   "text": "Twenty five points. Less than a half to go.",
-   "cap": "25 points. Less than a half to go.",
+   "text": "Less than a half to go. Relax, right?",
    "key": [
-    "25"
+    "RELAX,"
    ],
+   "speaker": "capy",
    "board": [
     "LEAD",
     "25"
@@ -234,13 +468,12 @@
      "mood": "happy",
      "action": "clap"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Then New England started scoring. And kept scoring. And kept scoring.",
+   "text": "Then New England starts scoring. And keeps scoring.",
    "key": [
-    "KEPT"
+    "KEEPS"
    ],
    "board": [
     "PATRIOTS",
@@ -262,7 +495,7 @@
    "act": {
     "pqb": {
      "mood": "angry",
-     "action": "throw",
+     "action": "point",
      "look": "camera"
     }
    }
@@ -315,6 +548,7 @@
     "SUPER BOWL",
     "OVERTIME"
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -1.2,
@@ -341,11 +575,10 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "New England won the coin toss.",
+   "text": "New England wins the coin toss. Of course.",
    "key": [
     "COIN"
    ],
@@ -373,10 +606,11 @@
    }
   },
   {
-   "text": "Back then, a touchdown on the first drive ended the game.",
+   "text": "Back then, a first drive touchdown ended it.",
    "key": [
-    "TOUCHDOWN"
+    "ENDED"
    ],
+   "speaker": "capy",
    "board": [
     "FIRST DRIVE TD",
     "= GAME OVER"
@@ -401,15 +635,23 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Tom Brady drove the Patriots down the field.",
+   "text": "Tom Brady drives them down the field. Again.",
    "key": [
     "BRADY"
    ],
    "set": "field",
+   "setOpts": {
+    "boardText": [
+     "FALCONS 28",
+     "PATRIOTS 28"
+    ],
+    "endZone": 10,
+    "zoneA": "#a71930",
+    "zoneB": "#14284b"
+   },
    "board": [
     "OVERTIME",
     "PATRIOTS BALL"
@@ -431,7 +673,7 @@
    "act": {
     "pqb": {
      "mood": "angry",
-     "action": "throw",
+     "action": "hold",
      "look": "camera"
     },
     "falc": {
@@ -441,41 +683,157 @@
    }
   },
   {
-   "text": "James White ran it in from two yards. His third touchdown.",
-   "cap": "James White ran it in from 2 yards. His 3rd touchdown.",
+   "text": "James White runs it in from two yards.",
+   "cap": "James White runs it in from 2 yards.",
    "key": [
-    "3RD"
+    "2"
    ],
-   "place": {
-    "prb": [
-     0,
-     0
-    ],
-    "pqb": false,
-    "falc": [
-     1.6,
-     -0.6
-    ]
-   },
    "shot": {
-    "type": "medium",
+    "type": "follow",
     "on": "prb"
    },
-   "act": {
-    "prb": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
+   "act": {},
+   "play": {
+    "cast": {
+     "prb": {
+      "path": [
+       [
+        0.0,
+        3.0,
+        1.0
+       ],
+       [
+        0.1,
+        4.375,
+        0.875
+       ],
+       [
+        0.2,
+        5.75,
+        0.75
+       ],
+       [
+        0.3,
+        7.125,
+        0.625
+       ],
+       [
+        0.4,
+        8.5,
+        0.5
+       ],
+       [
+        0.5,
+        9.875,
+        0.375
+       ],
+       [
+        0.6,
+        11.25,
+        0.25
+       ],
+       [
+        0.7,
+        12.625,
+        0.125
+       ],
+       [
+        0.8,
+        14.0,
+        0.0
+       ],
+       [
+        0.9,
+        14.5,
+        0.0
+       ],
+       [
+        1.0,
+        15.0,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.85,
+        "celebrate"
+       ]
+      ],
+      "face": 20
+     },
+     "falc": {
+      "path": [
+       [
+        0.0,
+        11.0,
+        -3.5
+       ],
+       [
+        0.25,
+        11.375,
+        -3.25
+       ],
+       [
+        0.5,
+        11.75,
+        -3.0
+       ],
+       [
+        0.75,
+        12.125,
+        -2.75
+       ],
+       [
+        1.0,
+        12.5,
+        -2.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     },
+     "pqb": {
+      "path": [
+       [
+        0,
+        0,
+        2
+       ],
+       [
+        1,
+        0,
+        2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     }
     },
-    "falc": {
-     "mood": "shocked",
-     "action": "facepalm"
-    }
+    "carry": [
+     [
+      0,
+      "prb"
+     ]
+    ]
    }
   },
   {
-   "text": "Patriots thirty four, Falcons twenty eight.",
-   "cap": "Patriots 34, Falcons 28.",
+   "text": "His third touchdown. Patriots thirty four, Falcons twenty eight.",
+   "cap": "His 3rd touchdown. Patriots 34, Falcons 28.",
    "key": [
     "34,"
    ],
@@ -484,9 +842,17 @@
     "FALCONS 28"
    ],
    "place": {
+    "prb": [
+     0,
+     0
+    ],
     "pqb": [
-     -1.4,
+     -1.6,
      0.2
+    ],
+    "falc": [
+     2.0,
+     -0.6
     ]
    },
    "shot": {
@@ -509,8 +875,8 @@
    }
   },
   {
-   "text": "Thirty one points in a row.",
-   "cap": "31 points in a row.",
+   "text": "Thirty one points in a row. Without a reply.",
+   "cap": "31 points in a row. Without a reply.",
    "key": [
     "31"
    ],
@@ -518,12 +884,25 @@
     "31",
     "IN A ROW"
    ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.4,
+     1.2
+    ],
+    "falc": false
+   },
    "shot": {
     "type": "two",
-    "on": "prb",
-    "with": "pqb"
+    "on": "capy",
+    "with": "prb"
    },
    "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
     "prb": {
      "mood": "happy",
      "action": "clap"
@@ -535,7 +914,7 @@
    }
   },
   {
-   "text": "Atlanta's offense never touched the ball in overtime.",
+   "text": "Your offense never touched the ball in overtime. Not once.",
    "key": [
     "NEVER"
    ],
@@ -563,12 +942,13 @@
    }
   },
   {
-   "text": "When your team is up twenty five, do you relax? Yes or no?",
-   "cap": "When your team is up 25, do you relax? Yes or no?",
+   "text": "Up twenty five, do you relax? Yes or no? Falcons fans, don't answer.",
+   "cap": "Up 25, do you relax? Yes or no? Falcons fans, don't answer.",
    "key": [
     "YES",
     "NO?"
    ],
+   "speaker": "capy",
    "board": [
     "UP 25:",
     "RELAX?"
@@ -599,8 +979,7 @@
      "action": "slump",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -627,6 +1006,104 @@
   {
    "title": "WSLS (AP): NFL owners approve rule change for OT in playoffs (before 2022, an opening-drive TD ended playoff OT)",
    "url": "https://www.wsls.com/sports/2022/03/29/nfl-owners-approve-rule-change-for-ot-in-playoffs/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Atlanta led the Super Bowl by 25 and lost",
+   "terms": [
+    "25",
+    "Falcons|Atlanta"
+   ]
+  },
+  {
+   "claim": "Super Bowl LI, Falcons against Patriots",
+   "terms": [
+    "Super Bowl LI|Super Bowl 51"
+   ]
+  },
+  {
+   "claim": "Matt Ryan's touchdown pass in the third quarter made it 28-3",
+   "terms": [
+    "Ryan",
+    "28-3"
+   ]
+  },
+  {
+   "claim": "Less than a half to go",
+   "terms": [
+    "third quarter|second half"
+   ]
+  },
+  {
+   "claim": "New England scored 25 straight points to tie 28-28",
+   "terms": [
+    "25",
+    "28-28|tie|tied"
+   ]
+  },
+  {
+   "claim": "First overtime in Super Bowl history",
+   "terms": [
+    "first",
+    "overtime"
+   ]
+  },
+  {
+   "claim": "New England won the overtime coin toss",
+   "terms": [
+    "coin toss",
+    "won"
+   ]
+  },
+  {
+   "claim": "Back then, a touchdown on the first overtime drive ended the game",
+   "terms": [
+    "touchdown",
+    "overtime",
+    "first possession|opening possession|first drive"
+   ]
+  },
+  {
+   "claim": "Tom Brady drove the Patriots down the field in overtime",
+   "terms": [
+    "Brady",
+    "drive|drove"
+   ]
+  },
+  {
+   "claim": "James White ran it in from 2 yards",
+   "terms": [
+    "White",
+    "2-yard|two-yard|2 yard"
+   ]
+  },
+  {
+   "claim": "It was White's third touchdown",
+   "terms": [
+    "White",
+    "third"
+   ]
+  },
+  {
+   "claim": "Patriots won 34-28",
+   "terms": [
+    "34-28"
+   ]
+  },
+  {
+   "claim": "31 points in a row",
+   "terms": [
+    "31"
+   ]
+  },
+  {
+   "claim": "Atlanta's offense never touched the ball in overtime",
+   "terms": [
+    "never",
+    "ball|possession"
+   ]
   }
  ]
 }

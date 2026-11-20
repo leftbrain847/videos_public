@@ -73,13 +73,24 @@
     "skin": "#f2c39b"
    },
    "at": "center"
+  },
+  "n1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a51c1c",
+    "pants": "#b3995d",
+    "number": "97",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
   }
  },
  "lines": [
   {
-   "text": "In a 2022 playoff game, Dallas needed one spike to get a final shot. The clock beat them.",
+   "text": "You need one spike. Then the umpire shows up.",
    "key": [
-    "SPIKE"
+    "UMPIRE"
    ],
    "speaker": "capy",
    "place": {
@@ -91,13 +102,14 @@
      0,
      0
     ],
-    "niner": [
+    "center": false,
+    "ump": [
      2.2,
      0.2
     ],
-    "center": false,
-    "ump": false,
-    "referee": false
+    "niner": false,
+    "referee": false,
+    "n1": false
    },
    "shot": {
     "type": "two",
@@ -112,27 +124,29 @@
     },
     "qb": {
      "mood": "worried",
-     "action": "hold"
+     "action": "hold",
+     "look": "ump"
     },
-    "niner": {
-     "mood": "smug",
-     "action": "cross",
+    "ump": {
+     "mood": "neutral",
+     "action": "idle",
      "look": "qb"
     }
    }
   },
   {
-   "text": "Wild card round. Forty niners twenty three, Cowboys seventeen.",
-   "cap": "Wild card round. 49ers 23, Cowboys 17.",
+   "text": "A twenty twenty two playoff game. Wild card round.",
+   "cap": "A 2022 playoff game. Wild card round.",
    "key": [
-    "23,"
+    "2022"
    ],
    "board": [
-    "49ERS 23",
-    "COWBOYS 17"
+    "WILD CARD",
+    "ROUND"
    ],
    "place": {
     "capy": false,
+    "ump": false,
     "qb": [
      -1.3,
      0
@@ -159,13 +173,43 @@
     },
     "niner": {
      "mood": "smug",
+     "action": "cross",
      "look": "qb"
     }
    }
   },
   {
-   "text": "Fourteen seconds left. No timeouts. Ball at the San Francisco forty one.",
-   "cap": "14 seconds left. No timeouts. Ball at the San Francisco 41.",
+   "text": "Forty niners twenty three, Cowboys seventeen. Dallas fans, deep breaths.",
+   "cap": "49ers 23, Cowboys 17. Dallas fans, deep breaths.",
+   "key": [
+    "23,"
+   ],
+   "board": [
+    "49ERS 23",
+    "COWBOYS 17"
+   ],
+   "place": {
+    "qb": false,
+    "niner": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "niner"
+   },
+   "act": {
+    "niner": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fourteen seconds left. No timeouts.",
+   "cap": "14 seconds left. No timeouts.",
    "key": [
     "14"
    ],
@@ -173,7 +217,44 @@
     "0:14",
     "NO TIMEOUTS"
    ],
+   "speaker": "capy",
    "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "qb": [
+     1.2,
+     0
+    ],
+    "niner": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ball at the San Francisco forty one. Plenty of time. In theory.",
+   "cap": "Ball at the San Francisco 41. Plenty of time. In theory.",
+   "key": [
+    "41."
+   ],
+   "place": {
+    "capy": false,
     "qb": [
      0,
      0
@@ -192,75 +273,403 @@
      "mood": "worried",
      "action": "hold",
      "look": "camera"
+    },
+    "niner": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "qb"
     }
    }
   },
   {
-   "text": "Dak Prescott ran a quarterback draw. Seventeen yards.",
-   "cap": "Dak Prescott ran a quarterback draw. 17 yards.",
+   "text": "You're Dak Prescott. You run a quarterback draw.",
+   "key": [
+    "DRAW."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "49ERS 23",
+     "COWBOYS 17"
+    ],
+    "endZone": 60,
+    "zoneA": "#123a7a",
+    "zoneB": "#a51c1c"
+   },
+   "shot": {
+    "type": "follow",
+    "on": "qb"
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        0.0,
+        0.0
+       ],
+       [
+        0.1,
+        1.4,
+        -0.1
+       ],
+       [
+        0.2,
+        2.8,
+        -0.2
+       ],
+       [
+        0.3,
+        4.2,
+        -0.3
+       ],
+       [
+        0.4,
+        5.6,
+        -0.4
+       ],
+       [
+        0.5,
+        7.0,
+        -0.5
+       ],
+       [
+        0.6,
+        8.4,
+        -0.6
+       ],
+       [
+        0.7,
+        9.8,
+        -0.7
+       ],
+       [
+        0.8,
+        11.2,
+        -0.8
+       ],
+       [
+        0.9,
+        12.6,
+        -0.9
+       ],
+       [
+        1.0,
+        14.0,
+        -1.0
+       ]
+      ]
+     },
+     "n1": {
+      "path": [
+       [
+        0.0,
+        8.0,
+        -6.0
+       ],
+       [
+        0.1667,
+        8.75,
+        -5.667
+       ],
+       [
+        0.3333,
+        9.5,
+        -5.333
+       ],
+       [
+        0.5,
+        10.25,
+        -5.0
+       ],
+       [
+        0.6667,
+        11.0,
+        -4.667
+       ],
+       [
+        0.8333,
+        11.75,
+        -4.333
+       ],
+       [
+        1.0,
+        12.5,
+        -4.0
+       ]
+      ],
+      "face": -90
+     },
+     "niner": {
+      "path": [
+       [
+        0.0,
+        10.0,
+        4.0
+       ],
+       [
+        0.1667,
+        10.917,
+        3.633
+       ],
+       [
+        0.3333,
+        11.833,
+        3.267
+       ],
+       [
+        0.5,
+        12.75,
+        2.9
+       ],
+       [
+        0.6667,
+        13.667,
+        2.533
+       ],
+       [
+        0.8333,
+        14.583,
+        2.167
+       ],
+       [
+        1.0,
+        15.5,
+        1.8
+       ]
+      ],
+      "face": -90
+     },
+     "center": {
+      "path": [
+       [
+        0.0,
+        1.5,
+        2.5
+       ],
+       [
+        0.125,
+        2.438,
+        2.375
+       ],
+       [
+        0.25,
+        3.375,
+        2.25
+       ],
+       [
+        0.375,
+        4.312,
+        2.125
+       ],
+       [
+        0.5,
+        5.25,
+        2.0
+       ],
+       [
+        0.625,
+        6.188,
+        1.875
+       ],
+       [
+        0.75,
+        7.125,
+        1.75
+       ],
+       [
+        0.875,
+        8.062,
+        1.625
+       ],
+       [
+        1.0,
+        9.0,
+        1.5
+       ]
+      ]
+     }
+    },
+    "carry": [
+     [
+      0,
+      "qb"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Seventeen yards. You slide. You hand it to your center.",
+   "cap": "17 yards. You slide. You hand it to your center.",
    "key": [
     "17"
    ],
-   "board": [
-    "QB DRAW",
-    "+17 YARDS"
-   ],
    "shot": {
-    "type": "low",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "angry",
-     "action": "hold",
-     "look": "camera"
-    },
-    "niner": {
-     "mood": "shocked",
-     "action": "shrug",
-     "look": "qb"
-    }
-   }
-  },
-  {
-   "text": "He slid down and handed the ball to his center.",
-   "key": [
-    "CENTER."
-   ],
-   "place": {
-    "center": [
-     1.3,
-     0
-    ],
-    "qb": [
-     -1.0,
-     0
-    ],
-    "niner": false
-   },
-   "shot": {
-    "type": "two",
+    "type": "follow_high",
     "on": "qb",
-    "with": "center"
+    "lead": 0
    },
-   "act": {
-    "qb": {
-     "mood": "neutral",
-     "action": "point",
-     "look": "center"
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        14,
+        -1
+       ],
+       [
+        1,
+        14,
+        -1
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.5004,
+        "throw"
+       ]
+      ],
+      "face": -100
+     },
+     "center": {
+      "path": [
+       [
+        0.0,
+        9.0,
+        1.5
+       ],
+       [
+        0.1,
+        9.68,
+        1.4
+       ],
+       [
+        0.2,
+        10.36,
+        1.3
+       ],
+       [
+        0.3,
+        11.04,
+        1.2
+       ],
+       [
+        0.4,
+        11.72,
+        1.1
+       ],
+       [
+        0.5,
+        12.4,
+        1.0
+       ],
+       [
+        1,
+        12.4,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.72,
+        "catch"
+       ]
+      ],
+      "face": 80
+     },
+     "n1": {
+      "path": [
+       [
+        0,
+        12.5,
+        -4
+       ],
+       [
+        1,
+        12.5,
+        -4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     },
+     "niner": {
+      "path": [
+       [
+        0,
+        16.0,
+        1.8
+       ],
+       [
+        1,
+        16.0,
+        1.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -120
+     }
     },
-    "center": {
-     "mood": "neutral",
-     "action": "hold",
-     "look": "qb"
-    }
+    "ball": [
+     [
+      0.55,
+      13.7,
+      1.8,
+      -0.7
+     ],
+     [
+      0.63,
+      13.0,
+      2.2,
+      0.2
+     ],
+     [
+      0.72,
+      12.6,
+      1.8,
+      0.9
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.72,
+      "center"
+     ]
+    ]
    }
   },
   {
-   "text": "Here's the catch. On that play, an official has to set the ball first.",
+   "text": "Here's the catch. An official must spot it first.",
    "key": [
     "OFFICIAL"
    ],
+   "speaker": "capy",
    "board": [
     "UMPIRE",
     "SPOTS BALL"
@@ -277,7 +686,8 @@
     "center": [
      1.8,
      -0.4
-    ]
+    ],
+    "niner": false
    },
    "shot": {
     "type": "medium",
@@ -288,54 +698,161 @@
      "mood": "neutral",
      "action": "point",
      "look": "camera"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "The umpire ran in from deep to spot it.",
-   "key": [
-    "UMPIRE"
-   ],
-   "place": {
-    "capy": false,
-    "ump": [
-     0,
-     0
-    ],
-    "qb": [
-     -1.6,
-     -0.4
-    ],
-    "center": [
-     1.6,
-     -0.4
-    ]
-   },
-   "shot": {
-    "type": "low",
-    "on": "ump"
-   },
-   "act": {
-    "ump": {
+    },
+    "qb": {
      "mood": "worried",
-     "action": "hold",
-     "look": "camera"
+     "action": "idle"
+    },
+    "center": {
+     "mood": "neutral",
+     "action": "hold"
     }
    }
   },
   {
-   "text": "He collided with Prescott while setting the ball.",
+   "text": "The umpire runs in from deep.",
    "key": [
-    "COLLIDED"
+    "DEEP."
+   ],
+   "shot": {
+    "type": "follow",
+    "on": "ump",
+    "lead": -1.5
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "ump": {
+      "path": [
+       [
+        0.0,
+        24.0,
+        -7.0
+       ],
+       [
+        0.0944,
+        23.067,
+        -6.244
+       ],
+       [
+        0.1889,
+        22.133,
+        -5.489
+       ],
+       [
+        0.2833,
+        21.2,
+        -4.733
+       ],
+       [
+        0.3778,
+        20.267,
+        -3.978
+       ],
+       [
+        0.4722,
+        19.333,
+        -3.222
+       ],
+       [
+        0.5667,
+        18.4,
+        -2.467
+       ],
+       [
+        0.6611,
+        17.467,
+        -1.711
+       ],
+       [
+        0.7556,
+        16.533,
+        -0.956
+       ],
+       [
+        0.85,
+        15.6,
+        -0.2
+       ],
+       [
+        1,
+        15.6,
+        -0.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -120
+     },
+     "qb": {
+      "path": [
+       [
+        0,
+        14,
+        -1
+       ],
+       [
+        1,
+        14,
+        -1
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 60
+     },
+     "center": {
+      "path": [
+       [
+        0,
+        12.4,
+        1.0
+       ],
+       [
+        1,
+        12.4,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 80
+     }
+    },
+    "carry": [
+     [
+      0,
+      "center"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "He collides with you while spotting it. The clock keeps ticking.",
+   "key": [
+    "COLLIDES"
    ],
    "place": {
+    "capy": false,
+    "center": false,
     "ump": [
      -0.5,
      0
     ],
     "qb": [
-     0.6,
+     1.0,
      0.1
     ]
    },
@@ -366,34 +883,155 @@
    "key": [
     "SPIKE."
    ],
-   "board": [
-    "0:00",
-    "SPIKE"
-   ],
-   "place": {
-    "ump": [
-     -2.2,
-     -0.6
-    ],
-    "qb": [
-     0,
-     0
-    ]
-   },
    "shot": {
     "type": "medium",
     "on": "qb"
    },
-   "act": {
-    "qb": {
-     "mood": "angry",
-     "action": "throw",
-     "look": "camera"
-    }
+   "act": {},
+   "play": {
+    "cast": {
+     "center": {
+      "path": [
+       [
+        0,
+        15.6,
+        -1.0
+       ],
+       [
+        1,
+        15.6,
+        -1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "qb": {
+      "path": [
+       [
+        0,
+        14,
+        -1
+       ],
+       [
+        1,
+        14,
+        -1
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.3,
+        "catch"
+       ],
+       [
+        0.442,
+        "throw"
+       ]
+      ],
+      "face": 90
+     },
+     "ump": {
+      "path": [
+       [
+        0,
+        17.5,
+        2.2
+       ],
+       [
+        1,
+        17.5,
+        2.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -120
+     }
+    },
+    "ball": [
+     [
+      [
+       0.08,
+       15.3,
+       0.5,
+       -1.0
+      ],
+      [
+       0.2,
+       14.7,
+       1.0,
+       -1.0
+      ],
+      [
+       0.3,
+       14.3,
+       1.8,
+       -0.8
+      ]
+     ],
+     [
+      [
+       0.55,
+       14.4,
+       2.0,
+       -0.7
+      ],
+      [
+       0.62,
+       14.8,
+       1.0,
+       -0.6
+      ],
+      [
+       0.7,
+       15.0,
+       0.2,
+       -0.6
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "center"
+     ],
+     [
+      0.3,
+      "qb"
+     ],
+     [
+      0.7,
+      null
+     ]
+    ]
+   },
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "49ERS 23",
+     "COWBOYS 17"
+    ],
+    "endZone": 60,
+    "zoneA": "#123a7a",
+    "zoneB": "#a51c1c"
    }
   },
   {
-   "text": "Too late. The clock had already hit zero.",
+   "text": "Too late. The clock already hit zero.",
    "key": [
     "ZERO."
    ],
@@ -401,24 +1039,38 @@
     "0:00",
     "FINAL"
    ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.6,
+     1.2
+    ],
+    "qb": [
+     1.0,
+     0
+    ],
+    "ump": false
+   },
    "shot": {
-    "type": "high",
-    "on": "qb"
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
    },
    "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
     "qb": {
      "mood": "shocked",
      "action": "facepalm"
-    },
-    "center": {
-     "mood": "sad",
-     "action": "slump"
     }
    }
   },
   {
-   "text": "Game over. San Francisco won, twenty three to seventeen.",
-   "cap": "Game over. San Francisco won, 23 to 17.",
+   "text": "Game over. San Francisco wins, twenty three to seventeen.",
+   "cap": "Game over. San Francisco wins, 23 to 17.",
    "key": [
     "23"
    ],
@@ -427,6 +1079,7 @@
     "COWBOYS 17"
    ],
    "place": {
+    "capy": false,
     "niner": [
      0,
      0
@@ -434,9 +1087,7 @@
     "qb": [
      -2.0,
      -0.6
-    ],
-    "center": false,
-    "ump": false
+    ]
    },
    "shot": {
     "type": "low",
@@ -455,7 +1106,7 @@
    }
   },
   {
-   "text": "The referee said the umpire was simply spotting the ball properly.",
+   "text": "The referee said the umpire spotted it properly.",
    "key": [
     "PROPERLY."
    ],
@@ -480,7 +1131,41 @@
    }
   },
   {
-   "text": "Prescott called the ending tough to accept.",
+   "text": "Properly. Into the quarterback. Very proper.",
+   "key": [
+    "PROPER."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "referee": [
+     1.4,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "referee"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "referee": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "You call the ending tough to accept. Fair.",
    "key": [
     "TOUGH"
    ],
@@ -508,11 +1193,12 @@
    }
   },
   {
-   "text": "Should the clock have stopped while the umpire set the ball? Yes or no?",
+   "text": "Should the clock stop for the umpire? Yes or no?",
    "key": [
     "YES",
     "NO?"
    ],
+   "speaker": "capy",
    "board": [
     "STOP THE",
     "CLOCK?"
@@ -528,9 +1214,13 @@
     ]
    },
    "shot": {
-    "type": "two",
+    "type": "medium",
     "on": "capy",
-    "with": "qb"
+    "offset": [
+     1.2,
+     0.4,
+     1.2
+    ]
    },
    "act": {
     "capy": {
@@ -543,8 +1233,7 @@
      "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -567,6 +1256,99 @@
   {
    "title": "Pro Football Reference: Wild Card, San Francisco 49ers at Dallas Cowboys, January 16, 2022",
    "url": "https://pro-football-reference.com/boxscores/202201160dal.htm"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "It was a 2022 wild card playoff game",
+   "terms": [
+    "wild card|wild-card",
+    "2022|playoff"
+   ]
+  },
+  {
+   "claim": "49ers led Cowboys 23-17",
+   "terms": [
+    "23-17"
+   ]
+  },
+  {
+   "claim": "14 seconds left with no timeouts",
+   "terms": [
+    "14 seconds",
+    "timeout"
+   ]
+  },
+  {
+   "claim": "Ball at the San Francisco 41",
+   "terms": [
+    "41"
+   ]
+  },
+  {
+   "claim": "Dak Prescott ran a quarterback draw for 17 yards",
+   "terms": [
+    "Prescott",
+    "draw|run|scramble",
+    "17"
+   ]
+  },
+  {
+   "claim": "Prescott slid and handed the ball to his center",
+   "terms": [
+    "center",
+    "ball"
+   ]
+  },
+  {
+   "claim": "On that play an official has to spot the ball before the snap",
+   "terms": [
+    "spot",
+    "ball",
+    "official|umpire"
+   ]
+  },
+  {
+   "claim": "The umpire ran in from deep to spot the ball",
+   "terms": [
+    "umpire",
+    "spot"
+   ]
+  },
+  {
+   "claim": "The umpire collided with Prescott while spotting the ball",
+   "terms": [
+    "umpire",
+    "Prescott",
+    "collid|bump|ran into"
+   ]
+  },
+  {
+   "claim": "The clock hit zero before the spike",
+   "terms": [
+    "spike",
+    "clock|time|zero"
+   ]
+  },
+  {
+   "claim": "San Francisco won 23-17",
+   "terms": [
+    "23-17"
+   ]
+  },
+  {
+   "claim": "The referee said the umpire spotted the ball properly",
+   "terms": [
+    "umpire",
+    "properly"
+   ]
+  },
+  {
+   "claim": "Prescott called the ending tough to accept",
+   "terms": [
+    "tough to accept"
+   ]
   }
  ]
 }

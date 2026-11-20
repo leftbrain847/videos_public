@@ -78,12 +78,12 @@
  },
  "lines": [
   {
-   "text": "In a 2015 playoff game, Dez Bryant made a catch it took the NFL three years to admit.",
-   "cap": "In a 2015 playoff game, Dez Bryant made a catch it took the NFL 3 years to admit.",
+   "text": "You make a catch. The league admits it three years later.",
+   "cap": "You make a catch. The league admits it 3 years later.",
    "key": [
-    "CATCH",
     "3"
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -1.4,
@@ -114,15 +114,13 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Dallas at Green Bay. Fourth quarter. Fourth down and two.",
-   "cap": "Dallas at Green Bay. 4th quarter. 4th down and 2.",
+   "text": "A twenty fifteen playoff game. Dallas at Green Bay.",
+   "cap": "A 2015 playoff game. Dallas at Green Bay.",
    "key": [
-    "4TH",
-    "DOWN"
+    "2015"
    ],
    "place": {
     "capy": false,
@@ -146,30 +144,275 @@
    }
   },
   {
-   "text": "Tony Romo throws deep to Bryant.",
+   "text": "Fourth quarter. Fourth down and two.",
+   "cap": "4th quarter. 4th down and 2.",
    "key": [
-    "DEEP"
+    "4TH",
+    "DOWN"
    ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.6,
+     1.0
+    ]
+   },
    "shot": {
-    "type": "medium",
-    "on": "qb"
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
    },
    "act": {
-    "qb": {
+    "capy": {
      "mood": "neutral",
-     "action": "throw"
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
     }
    }
   },
   {
-   "text": "He catches it with a cornerback right on him. Thirty one yards.",
-   "cap": "He catches it with a cornerback right on him. 31 yards.",
+   "text": "Tony Romo throws deep. To you, Dez Bryant.",
    "key": [
-    "31",
-    "YARDS."
+    "DEEP."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "4TH & 2",
+     "4TH QTR"
+    ],
+    "endZone": 10,
+    "zoneA": "#16305e",
+    "zoneB": "#1f4d2e"
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "qb",
+    "lead": 0,
+    "z": -3
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        -10.0,
+        0.5
+       ],
+       [
+        0.0833,
+        -10.667,
+        0.567
+       ],
+       [
+        0.1667,
+        -11.333,
+        0.633
+       ],
+       [
+        0.25,
+        -12.0,
+        0.7
+       ],
+       [
+        1,
+        -12,
+        0.7
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.2455,
+        "throw"
+       ]
+      ],
+      "face": 70
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        -3.0,
+        -3.0
+       ],
+       [
+        0.1,
+        -1.76,
+        -3.32
+       ],
+       [
+        0.2,
+        -0.52,
+        -3.64
+       ],
+       [
+        0.3,
+        0.72,
+        -3.96
+       ],
+       [
+        0.4,
+        1.96,
+        -4.28
+       ],
+       [
+        0.5,
+        3.2,
+        -4.6
+       ],
+       [
+        0.6,
+        4.44,
+        -4.92
+       ],
+       [
+        0.7,
+        5.68,
+        -5.24
+       ],
+       [
+        0.8,
+        6.92,
+        -5.56
+       ],
+       [
+        0.9,
+        8.16,
+        -5.88
+       ],
+       [
+        1.0,
+        9.4,
+        -6.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.85,
+        "catch"
+       ]
+      ]
+     },
+     "cb": {
+      "path": [
+       [
+        0.0,
+        -3.0,
+        -5.0
+       ],
+       [
+        0.1,
+        -1.76,
+        -5.3
+       ],
+       [
+        0.2,
+        -0.52,
+        -5.6
+       ],
+       [
+        0.3,
+        0.72,
+        -5.9
+       ],
+       [
+        0.4,
+        1.96,
+        -6.2
+       ],
+       [
+        0.5,
+        3.2,
+        -6.5
+       ],
+       [
+        0.6,
+        4.44,
+        -6.8
+       ],
+       [
+        0.7,
+        5.68,
+        -7.1
+       ],
+       [
+        0.8,
+        6.92,
+        -7.4
+       ],
+       [
+        0.9,
+        8.16,
+        -7.7
+       ],
+       [
+        1.0,
+        9.4,
+        -8.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.3,
+      -11.7,
+      2.0,
+      0.6
+     ],
+     [
+      0.6,
+      -2.0,
+      6.5,
+      -3.0
+     ],
+     [
+      0.85,
+      7.54,
+      1.8,
+      -5.72
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.85,
+      "wr"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "A cornerback is right on you. Thirty one yards.",
+   "cap": "A cornerback is right on you. 31 yards.",
+   "key": [
+    "31"
    ],
    "place": {
-    "qb": false,
     "wr": [
      -0.6,
      0
@@ -187,7 +430,7 @@
    "act": {
     "wr": {
      "mood": "happy",
-     "action": "cheer"
+     "action": "hold"
     },
     "cb": {
      "mood": "shocked",
@@ -196,10 +439,16 @@
    }
   },
   {
-   "text": "Falling, he reaches the ball toward the goal line.",
+   "text": "You fall. You reach for the goal line.",
    "key": [
-    "REACHES"
+    "REACH"
    ],
+   "place": {
+    "cb": [
+     1.8,
+     -0.8
+    ]
+   },
    "shot": {
     "type": "low",
     "on": "wr"
@@ -213,25 +462,120 @@
    }
   },
   {
-   "text": "It hits the ground and pops loose. He grabs it right back.",
+   "text": "The ball hits the ground. It pops loose. You grab it back.",
    "key": [
-    "POPS",
-    "LOOSE."
+    "POPS"
    ],
    "shot": {
-    "type": "close",
+    "type": "medium",
     "on": "wr"
    },
-   "act": {
-    "wr": {
-     "mood": "shocked",
-     "action": "hold",
-     "look": "camera"
-    }
+   "act": {},
+   "play": {
+    "cast": {
+     "wr": {
+      "path": [
+       [
+        0,
+        8.6,
+        -6.0
+       ],
+       [
+        1,
+        8.6,
+        -6.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.75,
+        "catch"
+       ]
+      ],
+      "face": 60
+     },
+     "cb": {
+      "path": [
+       [
+        0,
+        7.2,
+        -8.0
+       ],
+       [
+        1,
+        7.2,
+        -8.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 40
+     }
+    },
+    "ball": [
+     [
+      [
+       0.15,
+       9.0,
+       1.4,
+       -5.6
+      ],
+      [
+       0.3,
+       9.4,
+       0.6,
+       -5.3
+      ],
+      [
+       0.4,
+       9.6,
+       0.2,
+       -5.2
+      ]
+     ],
+     [
+      [
+       0.4,
+       9.6,
+       0.2,
+       -5.2
+      ],
+      [
+       0.58,
+       9.6,
+       1.1,
+       -5.3
+      ],
+      [
+       0.75,
+       9.1,
+       1.6,
+       -5.6
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "wr"
+     ],
+     [
+      0.75,
+      "wr"
+     ]
+    ]
    }
   },
   {
-   "text": "Catch on the field. Then replay. Overturned. Incomplete.",
+   "text": "Catch on the field. Then replay. Overturned.",
    "key": [
     "OVERTURNED."
    ],
@@ -239,7 +583,12 @@
     "ref": [
      -2.0,
      0.4
-    ]
+    ],
+    "wr": [
+     0.6,
+     0
+    ],
+    "cb": false
    },
    "shot": {
     "type": "two",
@@ -260,10 +609,11 @@
    }
   },
   {
-   "text": "Going to the ground, he had to control it through the whole process. The ground knocked it loose.",
+   "text": "Going to the ground, you must control it.",
    "key": [
-    "GROUND"
+    "GROUND,"
    ],
+   "speaker": "capy",
    "set": "locker",
    "setOpts": {
     "boardText": [
@@ -291,12 +641,29 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Green Bay ran out the clock. Twenty six to twenty one.",
-   "cap": "Green Bay ran out the clock. 26 to 21.",
+   "text": "Through the whole process. The ground knocked it loose. Incomplete.",
+   "key": [
+    "INCOMPLETE."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Green Bay runs out the clock. Twenty six to twenty one.",
+   "cap": "Green Bay runs out the clock. 26 to 21.",
    "key": [
     "26"
    ],
@@ -322,7 +689,8 @@
    }
   },
   {
-   "text": "In 2018, the rules committee looked at it again.",
+   "text": "In twenty eighteen, the rules committee looks again.",
+   "cap": "In 2018, the rules committee looks again.",
    "key": [
     "AGAIN."
    ],
@@ -349,7 +717,7 @@
    }
   },
   {
-   "text": "Giants owner John Mara said they all agreed plays like that should be completions.",
+   "text": "Giants owner John Mara says they all agree. Plays like that are completions.",
    "key": [
     "COMPLETIONS."
    ],
@@ -366,12 +734,13 @@
    }
   },
   {
-   "text": "The owners voted thirty two to zero for a new catch rule.",
-   "cap": "The owners voted 32 to 0 for a new catch rule.",
+   "text": "The owners vote thirty two to zero. New catch rule.",
+   "cap": "The owners vote 32 to 0. New catch rule.",
    "key": [
     "32",
-    "0"
+    "0."
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      2.2,
@@ -380,8 +749,8 @@
    },
    "shot": {
     "type": "two",
-    "on": "own",
-    "with": "capy"
+    "on": "capy",
+    "with": "own"
    },
    "act": {
     "own": {
@@ -391,17 +760,18 @@
     },
     "capy": {
      "mood": "neutral",
-     "look": "own"
+     "action": "idle",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Under it, Dez's play is a catch. Three years late.",
-   "cap": "Under it, Dez's play is a catch. 3 years late.",
+   "text": "Under it, your play is a catch. Three years late.",
+   "cap": "Under it, your play is a catch. 3 years late.",
    "key": [
-    "CATCH.",
     "LATE."
    ],
+   "speaker": "capy",
    "shot": {
     "type": "medium",
     "on": "capy"
@@ -416,15 +786,15 @@
      "mood": "worried",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "So, did Dez catch it? Yes or no, below.",
+   "text": "Did Dez catch it? Yes or no? Packers fans, take your time.",
    "key": [
     "YES",
-    "NO,"
+    "NO?"
    ],
+   "speaker": "capy",
    "set": "locker",
    "setOpts": {
     "boardText": [
@@ -452,8 +822,7 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -480,6 +849,98 @@
   {
    "title": "ESPN: NFL owners approve new catch rule, 32-0 vote",
    "url": "https://africa.espn.com/nfl/story/_/id/22931857/nfl-owners-approve-new-catch-rule-32-0-vote"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In a 2015 playoff game Dez Bryant's catch was overturned; three years later the league said it was a catch",
+   "terms": [
+    "Bryant",
+    "catch",
+    "2015|playoff"
+   ]
+  },
+  {
+   "claim": "Dallas at Green Bay, fourth quarter, fourth-and-2",
+   "terms": [
+    "fourth-and-2|fourth and 2|4th-and-2"
+   ]
+  },
+  {
+   "claim": "Tony Romo threw deep to Bryant",
+   "terms": [
+    "Romo",
+    "Bryant"
+   ]
+  },
+  {
+   "claim": "Bryant caught it with a cornerback on him, 31 yards",
+   "terms": [
+    "31",
+    "yard"
+   ]
+  },
+  {
+   "claim": "Falling, he reached the ball toward the goal line",
+   "terms": [
+    "goal line",
+    "reach|lunge|stretch"
+   ]
+  },
+  {
+   "claim": "The ball hit the ground and popped loose, and he regained it",
+   "terms": [
+    "ground",
+    "ball"
+   ]
+  },
+  {
+   "claim": "Ruled a catch on the field, overturned on replay to incomplete",
+   "terms": [
+    "overturn",
+    "replay|review|incomplete"
+   ]
+  },
+  {
+   "claim": "Going to the ground he had to control the ball through the process",
+   "terms": [
+    "ground",
+    "process|control"
+   ]
+  },
+  {
+   "claim": "Green Bay ran out the clock and won 26-21",
+   "terms": [
+    "26-21"
+   ]
+  },
+  {
+   "claim": "In 2018 the competition committee revisited the catch rule",
+   "terms": [
+    "competition committee",
+    "2018|catch rule"
+   ]
+  },
+  {
+   "claim": "Giants owner John Mara said they all agreed plays like that should be completions",
+   "terms": [
+    "Mara",
+    "catch|completion"
+   ]
+  },
+  {
+   "claim": "Owners voted 32-0 for a new catch rule",
+   "terms": [
+    "32-0"
+   ]
+  },
+  {
+   "claim": "Under the new rule Dez's play is a catch",
+   "terms": [
+    "Bryant|Dez",
+    "catch"
+   ]
   }
  ]
 }

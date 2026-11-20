@@ -62,15 +62,26 @@
     "glasses": true
    },
    "at": "desk"
+  },
+  "lqb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f6fb5",
+    "pants": "#c9ccd1",
+    "number": "5",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
   }
  },
  "lines": [
   {
-   "text": "In 2010, Calvin Johnson caught the winning touchdown. The NFL said no.",
+   "text": "You catch the winning touchdown. The rulebook disagrees.",
    "key": [
-    "TOUCHDOWN.",
-    "NO."
+    "DISAGREES."
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -1.4,
@@ -82,7 +93,8 @@
     ],
     "db": false,
     "ref": false,
-    "boss": false
+    "boss": false,
+    "lqb": false
    },
    "shot": {
     "type": "two",
@@ -100,15 +112,13 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Detroit trailed Chicago nineteen to fourteen, with under thirty seconds left.",
-   "cap": "Detroit trailed Chicago 19 to 14, with under 30 seconds left.",
+   "text": "Twenty ten. You're Calvin Johnson. Detroit Lions.",
+   "cap": "2010. You're Calvin Johnson. Detroit Lions.",
    "key": [
-    "19",
-    "30"
+    "JOHNSON."
    ],
    "place": {
     "capy": false,
@@ -129,7 +139,7 @@
    },
    "act": {
     "wr": {
-     "mood": "worried",
+     "mood": "neutral",
      "action": "idle"
     },
     "db": {
@@ -139,10 +149,288 @@
    }
   },
   {
-   "text": "The pass goes to Johnson in the end zone. He catches it.",
+   "text": "Detroit trails Chicago, nineteen to fourteen. Under thirty seconds left.",
+   "cap": "Detroit trails Chicago, 19 to 14. Under 30 seconds left.",
    "key": [
-    "CATCHES"
+    "19",
+    "30"
    ],
+   "board": [
+    "LIONS 14",
+    "BEARS 19"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.6,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "The pass comes. You're in the end zone.",
+   "key": [
+    "END",
+    "ZONE."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "LIONS 14",
+     "BEARS 19"
+    ],
+    "endZone": 8,
+    "zoneA": "#1f6fb5",
+    "zoneB": "#14254a"
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "lqb",
+    "lead": 0,
+    "z": -3
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "lqb": {
+      "path": [
+       [
+        0.0,
+        -6.0,
+        0.5
+       ],
+       [
+        0.0833,
+        -6.667,
+        0.567
+       ],
+       [
+        0.1667,
+        -7.333,
+        0.633
+       ],
+       [
+        0.25,
+        -8.0,
+        0.7
+       ],
+       [
+        1,
+        -8,
+        0.7
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.2298,
+        "throw"
+       ]
+      ],
+      "face": 70
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        2.0,
+        -3.0
+       ],
+       [
+        0.1,
+        3.15,
+        -3.35
+       ],
+       [
+        0.2,
+        4.3,
+        -3.7
+       ],
+       [
+        0.3,
+        5.45,
+        -4.05
+       ],
+       [
+        0.4,
+        6.6,
+        -4.4
+       ],
+       [
+        0.5,
+        7.75,
+        -4.75
+       ],
+       [
+        0.6,
+        8.9,
+        -5.1
+       ],
+       [
+        0.7,
+        10.05,
+        -5.45
+       ],
+       [
+        0.8,
+        11.2,
+        -5.8
+       ],
+       [
+        0.9,
+        12.35,
+        -6.15
+       ],
+       [
+        1.0,
+        13.5,
+        -6.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.85,
+        "catch"
+       ]
+      ]
+     },
+     "db": {
+      "path": [
+       [
+        0.0,
+        4.0,
+        -6.0
+       ],
+       [
+        0.1,
+        4.75,
+        -6.25
+       ],
+       [
+        0.2,
+        5.5,
+        -6.5
+       ],
+       [
+        0.3,
+        6.25,
+        -6.75
+       ],
+       [
+        0.4,
+        7.0,
+        -7.0
+       ],
+       [
+        0.5,
+        7.75,
+        -7.25
+       ],
+       [
+        0.6,
+        8.5,
+        -7.5
+       ],
+       [
+        0.7,
+        9.25,
+        -7.75
+       ],
+       [
+        0.8,
+        10.0,
+        -8.0
+       ],
+       [
+        0.9,
+        10.75,
+        -8.25
+       ],
+       [
+        1.0,
+        11.5,
+        -8.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.3,
+      -7.7,
+      2.0,
+      0.6
+     ],
+     [
+      0.6,
+      3.0,
+      6.0,
+      -3.0
+     ],
+     [
+      0.85,
+      11.78,
+      1.8,
+      -5.97
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "lqb"
+     ],
+     [
+      0.85,
+      "wr"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "You catch it. Two feet down. Then your backside.",
+   "key": [
+    "FEET"
+   ],
+   "place": {
+    "wr": [
+     0,
+     0
+    ],
+    "db": [
+     1.8,
+     -0.8
+    ]
+   },
    "shot": {
     "type": "low",
     "on": "wr"
@@ -160,10 +448,9 @@
    }
   },
   {
-   "text": "Two feet down. Then his backside. Touchdown, right?",
+   "text": "Touchdown, right? You roll. Your hand goes down.",
    "key": [
-    "TWO",
-    "FEET"
+    "RIGHT?"
    ],
    "shot": {
     "type": "two",
@@ -182,7 +469,7 @@
    }
   },
   {
-   "text": "He rolls, puts his hand down, and the ball comes loose on the ground.",
+   "text": "The ball comes loose on the ground.",
    "key": [
     "LOOSE"
    ],
@@ -190,16 +477,106 @@
     "type": "medium",
     "on": "wr"
    },
-   "act": {
-    "wr": {
-     "mood": "smug",
-     "action": "point",
-     "look": "camera"
-    }
+   "act": {},
+   "play": {
+    "cast": {
+     "wr": {
+      "path": [
+       [
+        0,
+        13.5,
+        -6.5
+       ],
+       [
+        1,
+        13.5,
+        -6.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.4,
+        "shrug"
+       ]
+      ],
+      "face": 20
+     },
+     "db": {
+      "path": [
+       [
+        0,
+        11.4,
+        -8.4
+       ],
+       [
+        1,
+        11.4,
+        -8.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 60
+     }
+    },
+    "ball": [
+     [
+      [
+       0.3,
+       13.9,
+       1.6,
+       -6.1
+      ],
+      [
+       0.45,
+       14.5,
+       0.8,
+       -5.6
+      ],
+      [
+       0.6,
+       15.0,
+       0.25,
+       -5.3
+      ]
+     ],
+     [
+      [
+       0.6,
+       15.0,
+       0.25,
+       -5.3
+      ],
+      [
+       1.0,
+       15.3,
+       0.25,
+       -5.2
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "wr"
+     ],
+     [
+      0.6,
+      null
+     ]
+    ]
    }
   },
   {
-   "text": "The call on the field: incomplete.",
+   "text": "The call on the field? Incomplete.",
    "key": [
     "INCOMPLETE."
    ],
@@ -207,7 +584,12 @@
     "ref": [
      -1.6,
      0.4
-    ]
+    ],
+    "wr": [
+     0.6,
+     0
+    ],
+    "db": false
    },
    "shot": {
     "type": "two",
@@ -228,7 +610,7 @@
    }
   },
   {
-   "text": "Replay looks at it. Still incomplete.",
+   "text": "Replay takes a long look. Still incomplete.",
    "key": [
     "STILL"
    ],
@@ -245,10 +627,11 @@
    }
   },
   {
-   "text": "The rule: a receiver going to the ground has to hold on through the whole process of the catch.",
+   "text": "Going to the ground? You must hold it.",
    "key": [
-    "PROCESS"
+    "HOLD"
    ],
+   "speaker": "capy",
    "set": "locker",
    "setOpts": {
     "boardText": [
@@ -276,11 +659,28 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "The referee said the process wasn't over until he finished rolling.",
+   "text": "Through the whole process of the catch.",
+   "key": [
+    "PROCESS"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The referee explains. You hadn't finished rolling.",
    "key": [
     "ROLLING."
    ],
@@ -301,10 +701,10 @@
    }
   },
   {
-   "text": "Detroit lost, nineteen to fourteen.",
-   "cap": "Detroit lost, 19 to 14.",
+   "text": "Detroit loses, nineteen to fourteen.",
+   "cap": "Detroit loses, 19 to 14.",
    "key": [
-    "LOST,"
+    "LOSES,"
    ],
    "set": "field",
    "setOpts": {
@@ -328,9 +728,9 @@
    }
   },
   {
-   "text": "Years later, the same rule erased a playoff catch by Dez Bryant.",
+   "text": "Years later, it strikes again. Dez Bryant's playoff catch? Erased.",
    "key": [
-    "PLAYOFF"
+    "ERASED."
    ],
    "shot": {
     "type": "low",
@@ -344,10 +744,11 @@
    }
   },
   {
-   "text": "Finally, in 2018, the owners voted unanimously to drop the going to the ground part.",
+   "text": "In twenty eighteen, the owners vote. Unanimously.",
+   "cap": "In 2018, the owners vote. Unanimously.",
    "key": [
     "2018,",
-    "UNANIMOUSLY"
+    "UNANIMOUSLY."
    ],
    "set": "office",
    "setOpts": {
@@ -380,12 +781,13 @@
    }
   },
   {
-   "text": "Eight years too late for Calvin.",
-   "cap": "8 years too late for Calvin.",
+   "text": "The going to the ground part? Gone. Eight years too late.",
+   "cap": "The going to the ground part? Gone. 8 years too late.",
    "key": [
     "8",
     "YEARS"
    ],
+   "speaker": "capy",
    "shot": {
     "type": "two",
     "on": "capy",
@@ -402,15 +804,15 @@
      "action": "cross",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "So, catch or no catch? One word, below.",
+   "text": "Catch or no catch? One word. Lions fans, we know.",
    "key": [
     "CATCH",
     "NO"
    ],
+   "speaker": "capy",
    "set": "locker",
    "setOpts": {
     "boardText": [
@@ -438,8 +840,7 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -470,6 +871,80 @@
   {
    "title": "ESPN: NFL owners approve new catch rule, 32-0 vote",
    "url": "https://africa.espn.com/nfl/story/_/id/22931857/nfl-owners-approve-new-catch-rule-32-0-vote"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 2010 Calvin Johnson's apparent winning touchdown was ruled incomplete",
+   "terms": [
+    "Johnson",
+    "touchdown",
+    "incomplete"
+   ]
+  },
+  {
+   "claim": "Detroit trailed Chicago 19-14 with under 30 seconds left",
+   "terms": [
+    "19-14",
+    "seconds"
+   ]
+  },
+  {
+   "claim": "Johnson caught the pass in the end zone with two feet down, then his backside",
+   "terms": [
+    "Johnson",
+    "feet|foot"
+   ]
+  },
+  {
+   "claim": "He rolled, put his hand down and the ball came loose on the ground",
+   "terms": [
+    "ball",
+    "ground",
+    "loose|hand"
+   ]
+  },
+  {
+   "claim": "Ruled incomplete on the field; replay upheld it",
+   "terms": [
+    "incomplete",
+    "replay|review"
+   ]
+  },
+  {
+   "claim": "Rule: a receiver going to the ground must hold the ball through the process of the catch",
+   "terms": [
+    "process",
+    "ground"
+   ]
+  },
+  {
+   "claim": "The referee said the process wasn't over until he finished rolling",
+   "terms": [
+    "process",
+    "roll"
+   ]
+  },
+  {
+   "claim": "Detroit lost 19-14",
+   "terms": [
+    "19-14"
+   ]
+  },
+  {
+   "claim": "Years later the same rule erased Dez Bryant's playoff catch",
+   "terms": [
+    "Bryant",
+    "playoff|catch"
+   ]
+  },
+  {
+   "claim": "In 2018 owners unanimously voted to drop the going-to-the-ground part",
+   "terms": [
+    "unanimous|32-0",
+    "2018|catch rule"
+   ]
   }
  ]
 }
