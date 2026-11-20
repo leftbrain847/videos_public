@@ -8,7 +8,7 @@ from pathlib import Path
 
 REEL = {
     "seconds": 60.0,
-    "crop": [1080, 1600, 0, 160],      # w, h, x, y of the 1080x1920 capture to keep (drops the HUD; deep plays stay in frame)
+    "crop": [1080, 1200, 0, 420],      # w, h, x, y of the 1080x1920 capture to keep: the band where plays happen, disks as large as possible
     "pad_color": "0x1b1a17",           # the field's own dark tone fills the sides
     "pre_snap_s": 0.5,                 # start this long before the snap
     "post_down_s": 1.1,                # hold this long after the ball is down (see the result)
@@ -35,6 +35,8 @@ def plays(pool):
                 continue
             td, yds, lat = bool(d.get("td")), float(d.get("yards") or 0), int(d.get("laterals") or 0)
             if not td and yds < REEL["min_yards"]:
+                continue
+            if lat and not td and yds < REEL["lateral_min_yards"]:   # no pointless laterals (J)
                 continue
             score = (REEL["td_bonus"] if td else 0) + yds + (lat * REEL["lateral_bonus"] if yds >= REEL["lateral_min_yards"] else 0)
             start = max(0, snaps[d["play"]] - REEL["pre_snap_s"])

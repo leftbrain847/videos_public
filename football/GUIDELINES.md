@@ -58,8 +58,10 @@ Every move must mean something. Idle is still: breathing, blinks, a small head d
 ## Sound (J, 2026-11-20 UAT)
 
 - **Music:** the Comprehensible Input piano piece (`engine/audio/piano.mp3`, Salamander Grand Piano V3 by Alexander Holm, CC BY 3.0: credit it in every post's description), ducked under Capy's voice.
-- **Effects:** cued automatically from plays (kick, catch, ball flight, touchdown roar and whistle) plus a crowd bed on field scenes; a line can add its own with `"sfx": [[u, "whistle"]]`. The current effects are synthesized stand-ins (`engine/sfx.py`); replacing a file in `engine/audio/sfx/` with a recorded CC0 effect of the same name upgrades every video.
+- **Effects:** recorded, professionally made CC0 sounds only (`engine/audio/sfx/`, from wyzowl/sfx-kit; see `engine/audio/SOURCES.md`). Cued automatically from plays (kick, catch, ball flight, touchdown crowd) and scene changes; a line can add the one reveal hit with `"sfx": [[u, "hit"]]`. Never synthesized: no sound beats a cheap one.
 - Final loudness: −14 LUFS (`engine/compose.py`).
+
+**Every video must pass `RUBRIC.md`** (gates plus a score of 85+), reviewed by a fresh agent.
 
 ## Animation rules
 

@@ -282,8 +282,7 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "coach"
+   }
   },
   {
    "text": "The 49ers kicked a field goal. Twenty two to nineteen.",
@@ -469,8 +468,7 @@
      "action": "shrug",
      "look": "camera"
     }
-   },
-   "speaker": "dl"
+   }
   },
   {
    "text": "Fullback Kyle Juszczyk said he didn't realize the rules were different.",
@@ -502,8 +500,7 @@
      "mood": "sad",
      "action": "slump"
     }
-   },
-   "speaker": "fb"
+   }
   },
   {
    "text": "Chiefs players said they had talked it through beforehand.",
@@ -533,8 +530,7 @@
      "mood": "happy",
      "action": "clap"
     }
-   },
-   "speaker": "qb"
+   }
   },
   {
    "text": "Do you know your league's overtime rules? Yes or no?",

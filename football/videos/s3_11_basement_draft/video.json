@@ -136,8 +136,7 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "comm"
+   }
   },
   {
    "text": "Coaches and general managers drafted from home too.",
@@ -195,8 +194,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "coach"
+   }
   },
   {
    "text": "Bill Belichick was on camera too. So was his dog, Nike.",

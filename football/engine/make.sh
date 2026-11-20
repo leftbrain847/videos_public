@@ -12,7 +12,6 @@ STILLS=$(python3 -c "import json;t=json.load(open('$VD/build/timing.json'));prin
 node engine/render.mjs "$VD" --stills "$STILLS"
 node engine/render.mjs "$VD"
 python3 engine/highlights.py "$VD" --index "$IDX"
-[ -s engine/audio/sfx/whistle.wav ] || python3 engine/sfx.py
 python3 engine/mix.py "$VD"
 mkdir -p "out/$SET"
 python3 engine/compose.py "$VD" --out "out/$SET/$ID.mp4"

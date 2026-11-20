@@ -415,8 +415,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "The office disagreed with the call.",
@@ -433,8 +432,7 @@
      "action": "shrug",
      "look": "camera"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "Same week, two 49ers get fined for hip-drops. Neither was flagged.",

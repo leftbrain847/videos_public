@@ -4,14 +4,21 @@
 @font-face { font-family: 'Inter'; src: url('fonts/Inter-Black.otf'); font-weight: 900; }
 html, body { margin: 0; background: #000; }
 </style></head><body>
-<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
 <script type="module">
 import * as THREE from 'three';
 import { STYLE, person, capy, setMood, pose, PROPS, SETS, lights, textTexture, football } from './kit.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const CFG = {
   width: 1080, height: 960, fov: 34,
-  renderScale: 0.8,     // 3D renders at 80% and is scaled up; captions are drawn at full resolution (speed: about 1.6x)
+  renderScale: 0.8,
+  env: { intensity: 0.22, hemiScale: 0.55, keyScale: 1.25 },   // soft studio reflections (RoomEnvironment), less flat fill
+  ao: true,             // ambient occlusion: contact shadows where things meet (the reference's soft, grounded look)     // 3D renders at 80% and is scaled up; captions are drawn at full resolution (speed: about 1.6x)
   caption: { size: 74, lineHeight: 84, bottom: 92, maxWidth: 940, skew: -0.12, stroke: 15, key: '#e01b24', words: 4 },
   push: 0.1,            // camera moves this fraction closer over a shot
   drift: 0.35,          // sideways drift over a shot (world units)
@@ -25,6 +32,10 @@ r.outputColorSpace = THREE.SRGBColorSpace; r.toneMapping = THREE.ACESFilmicToneM
 const out = document.createElement('canvas'); out.width = CFG.width; out.height = CFG.height; document.body.append(out);
 const ctx = out.getContext('2d');
 const cam = new THREE.PerspectiveCamera(CFG.fov, CFG.width / CFG.height, 0.1, 300);
+const PMREM = new THREE.PMREMGenerator(r);
+const RW = Math.round(CFG.width * CFG.renderScale), RH = Math.round(CFG.height * CFG.renderScale);
+const composers = new Map();
+function composerFor(scene) { if (!composers.has(scene)) { const c = new EffectComposer(r); c.addPass(new RenderPass(scene, cam)); const ao = new GTAOPass(scene, cam, RW, RH); ao.blendIntensity = 1.0; c.addPass(ao); c.addPass(new OutputPass()); composers.set(scene, c); } return composers.get(scene); }
 
 let S, scenes = {}, cast = {}, timing;
 
@@ -34,7 +45,9 @@ function buildSet(name, opts) {
   const scene = new THREE.Scene();
   const set = SETS[name](opts || {});
   scene.background = new THREE.Color(set.sky || '#f4ecdf');
-  scene.add(set.group); lights(scene);
+  scene.add(set.group); const Ls = lights(scene);
+  scene.environment = PMREM.fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = CFG.env.intensity;
+  Ls.hemi.intensity *= CFG.env.hemiScale; Ls.key.intensity *= CFG.env.keyScale;
   scenes[key] = { scene, set, name };
   return scenes[key];
 }
@@ -76,14 +89,14 @@ function cameraFor(shot, set, u) {
   const tx = at.x, tz = at.z, k = 1 - CFG.push * u, dr = (u - 0.5) * CFG.drift * (shot.driftDir ?? 1);
   let pos, look;
   switch (shot.type) {
-    case 'close': pos = [tx + 0.35 + dr * 0.3, 3.35, tz + 3.0 * k]; look = [tx, 3.05, tz]; break;
+    case 'close': pos = [tx + 0.45 + dr * 0.3, 3.3, tz + 4.4 * k]; look = [tx, 2.85, tz]; break;   // head and shoulders, never just a face
     case 'medium': pos = [tx + 0.7 + dr, 3.0, tz + 5.6 * k]; look = [tx, 2.45, tz]; break;
     case 'low': pos = [tx + 1.0 + dr, 1.7, tz + 5.6 * k]; look = [tx, 2.8, tz]; break;
     case 'high': pos = [tx + dr, 8.5, tz + 8 * k]; look = [tx, 1.2, tz]; break;
     case 'two': {
       const o = cast[shot.with]?.p.position || at; const mx = (tx + o.x) / 2, mz = (tz + o.z) / 2;
-      const sep = Math.hypot(tx - o.x, tz - o.z); const d = (4.4 + sep * 1.1) * k;
-      pos = [mx + dr, 3.0, mz + d]; look = [mx, 2.4, mz]; break; }
+      const sep = Math.hypot(tx - o.x, tz - o.z); const d = (5.2 + sep * 1.15) * k;
+      pos = [mx + dr, 3.1, mz + d]; look = [mx, 2.55, mz]; break; }
     case 'ots': {
       const f = cast[shot.from]?.p.position || at; const dx = tx - f.x, dz = tz - f.z, n = Math.hypot(dx, dz) || 1;
       pos = [f.x - (dx / n) * 1.6 + (dz / n) * 0.9, 3.3, f.z - (dz / n) * 1.6 - (dx / n) * 0.9 + 0.4];
@@ -160,7 +173,7 @@ window.frame = (t) => {
   for (const [id, c] of Object.entries(cast)) {
     const pp = play?.cast?.[id];
     const pl = pp ? { spot: along(pp.path, 0) } : (st.place[id] ?? c.cfg.at);
-    const visible = !!pp || (pl !== null && pl !== undefined && st.place[id] !== false);
+    const visible = play ? !!pp : (pl !== null && pl !== undefined && st.place[id] !== false);   // a play shows only its own cast
     if (c.p.parent !== sc.scene) sc.scene.add(c.p);
     c.p.visible = visible;
     if (!visible) continue;
@@ -201,7 +214,7 @@ window.frame = (t) => {
     sc.set.screen.material.needsUpdate = true; sc.set.screen.userData.text = JSON.stringify(st.board);
   }
   cameraFor(st.shot, sc.set, u);
-  r.render(sc.scene, cam);
+  if (CFG.ao) composerFor(sc.scene).render(); else r.render(sc.scene, cam);
   ctx.imageSmoothingQuality = 'high'; ctx.drawImage(r.domElement, 0, 0, CFG.width, CFG.height);
   // caption chunk for t
   const ch = L.chunks.find((c) => t >= c.start && t < c.end) || (t >= L.start ? L.chunks[L.chunks.length - 1] : null);

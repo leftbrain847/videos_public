@@ -454,8 +454,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "Several fouls on one play to run out the clock now cost fifteen yards, and the clock goes back.",
@@ -478,8 +477,7 @@
      "action": "point",
      "look": "camera"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "Was it smart, or was it cheating? One word.",

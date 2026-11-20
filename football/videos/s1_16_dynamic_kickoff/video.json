@@ -197,8 +197,7 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "The kickoff was turning into a play where nothing happens.",
@@ -425,8 +424,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "In 2025, the owners made it permanent, and moved that touchback out to the thirty five.",
@@ -448,8 +446,7 @@
      "action": "point",
      "look": "camera"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "Their goal: returns on sixty to seventy percent of kickoffs.",

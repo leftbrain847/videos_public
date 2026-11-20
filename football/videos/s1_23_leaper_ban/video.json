@@ -334,8 +334,7 @@
      "action": "idle",
      "look": "exec"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "Ban the leap on field goals and extra points.",
@@ -352,8 +351,7 @@
      "action": "point",
      "look": "camera"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "It passed.",

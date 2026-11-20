@@ -379,8 +379,7 @@
      "action": "idle",
      "look": "qb"
     }
-   },
-   "speaker": "qb"
+   }
   },
   {
    "text": "So that off-season, the league wrote a new rule.",
@@ -408,8 +407,7 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "boss"
+   }
   },
   {
    "text": "After the two minute warning, only the player who fumbled can advance it.",

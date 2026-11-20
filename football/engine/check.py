@@ -15,7 +15,7 @@ RULES = {
     "sets": {"locker", "field", "press", "office", "living", "tunnel"},
     "shots": {"wide", "medium", "close", "low", "high", "two", "ots", "follow", "follow_high"},
     "moods": {"neutral", "angry", "worried", "shocked", "happy", "sad", "smug", "confused"},
-    "actions": {"idle", "talk", "point", "cheer", "facepalm", "shrug", "throw", "hold", "cross", "slump", "clap", "wave", "run", "catch", "kick", "celebrate"},
+    "actions": {"idle", "talk", "point", "cheer", "facepalm", "shrug", "throw", "hold", "cross", "slump", "clap", "wave", "run", "walk", "catch", "kick", "celebrate"},
     "narrator": "capy",
 }
 
@@ -62,8 +62,8 @@ def check(vd):
         for cid in (l.get("place") or {}):
             if cid not in cast:
                 errs.append(f"{tag}: place for unknown cast '{cid}'")
-        if l.get("speaker") and l["speaker"] not in cast:
-            errs.append(f"{tag}: speaker '{l['speaker']}' not in cast")
+        if l.get("speaker") and l["speaker"] != RULES["narrator"]:
+            errs.append(f"{tag}: speaker must be capy (every line is her voice; others don't lip-sync)")
         keys = l.get("key", [])
         if not (RULES["keys_per_line"][0] <= len(keys) <= RULES["keys_per_line"][1]):
             errs.append(f"{tag}: {len(keys)} key words (want 1-2)")

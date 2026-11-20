@@ -194,8 +194,7 @@
      "action": "talk",
      "look": "ref"
     }
-   },
-   "speaker": "bus"
+   }
   },
   {
    "text": "The referee flips it. The coin lands tails.",
@@ -242,8 +241,7 @@
      "action": "idle",
      "look": "bus"
     }
-   },
-   "speaker": "bus"
+   }
   },
   {
    "text": "The referee says he heard heads, then tails, and went with the first word.",
@@ -261,8 +259,7 @@
      "action": "shrug",
      "look": "camera"
     }
-   },
-   "speaker": "ref"
+   }
   },
   {
    "text": "So Detroit gets the ball.",
@@ -365,8 +362,7 @@
      "action": "cross",
      "look": "bus"
     }
-   },
-   "speaker": "bus"
+   }
   },
   {
    "text": "So the NFL changed the toss. Now the captain calls it before the coin goes up.",
@@ -403,8 +399,7 @@
      "action": "idle",
      "look": "exec"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "One word. One coin. One whole overtime, gone.",

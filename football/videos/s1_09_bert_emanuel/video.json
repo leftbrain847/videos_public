@@ -252,8 +252,7 @@
      "mood": "shocked",
      "action": "shrug"
     }
-   },
-   "speaker": "ref"
+   }
   },
   {
    "text": "Back then, if the ball touched the ground, it wasn't a catch. Even if you held it.",
@@ -365,8 +364,7 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "boss"
+   }
   },
   {
    "text": "Now the ball could touch the ground, as long as the receiver kept control.",

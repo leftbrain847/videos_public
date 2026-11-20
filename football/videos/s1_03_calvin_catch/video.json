@@ -298,8 +298,7 @@
      "mood": "confused",
      "look": "ref"
     }
-   },
-   "speaker": "ref"
+   }
   },
   {
    "text": "Detroit lost, nineteen to fourteen.",
@@ -378,8 +377,7 @@
      "mood": "neutral",
      "look": "boss"
     }
-   },
-   "speaker": "boss"
+   }
   },
   {
    "text": "Eight years too late for Calvin.",

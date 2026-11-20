@@ -477,8 +477,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "referee"
+   }
   },
   {
    "text": "Prescott called the ending tough to accept.",
@@ -506,8 +505,7 @@
      "action": "idle",
      "look": "camera"
     }
-   },
-   "speaker": "qb"
+   }
   },
   {
    "text": "Should the clock have stopped while the umpire set the ball? Yes or no?",
