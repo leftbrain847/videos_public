@@ -1,0 +1,2 @@
+# Listen-back only (its own job). Lock: pip-compile --generate-hashes listen-requirements.in -o listen-requirements.txt
+faster-whisper==1.2.1

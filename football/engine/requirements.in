@@ -1,0 +1,7 @@
+# Top-level engine deps. Lock: pip-compile --generate-hashes requirements.in -o requirements.txt
+kokoro-onnx==0.6.1
+onnxruntime==1.29.0
+espeakng-loader==0.2.4
+soundfile==0.14.0
+numpy==2.5.3
+opencv-python-headless==5.1.0.95

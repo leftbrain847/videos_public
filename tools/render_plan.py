@@ -18,7 +18,7 @@ def plan(raw, videos=Path(__file__).resolve().parent.parent / "football" / "vide
     if len(ids) > MAX:
         sys.exit(f"{len(ids)} videos requested; max {MAX} per run")
     every = sorted(p.name for p in videos.iterdir() if (p / "video.json").exists())
-    bad = [i for i in ids if not ID.match(i) or i not in every]
+    bad = [i for i in ids if not ID.fullmatch(i) or i not in every]
     if bad:
         sys.exit(f"unknown video ids: {bad}")
     return [{"id": i, "index": every.index(i)} for i in dict.fromkeys(ids)]

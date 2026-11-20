@@ -192,6 +192,22 @@ def test_render_plan_rejects_bad_ids():
             pass
 
 
+def test_fact_check_matching_and_snippets():
+    sys.path.insert(0, str(ROOT.parent.parent / "tools"))
+    import fact_check as f
+    w = "The Titans won 22 16 when Kevin Dyson ran 75 yards down the sideline for a touchdown with three seconds left".split()
+    assert f.find(w, ["Dyson", "75|seventy-five", "yard"])            # all terms close together
+    assert f.find(w, ["Neal"]) is None                                 # missing term: no support
+    assert f.find(w, ["Titans", "three seconds"], window=5) is None    # too far apart
+    assert len(f.snippet(w, f.find(w, ["Dyson", "75"])).split()) <= 15  # never more than 15 words of a source
+
+
+def test_gallery_reads_release_links():
+    sys.path.insert(0, str(ROOT.parent.parent / "tools"))
+    import build_site
+    assert build_site.TAG.fullmatch("football-batch-1") and not build_site.TAG.fullmatch("v1; rm -rf /")
+
+
 def run():
     fails = []
     for name, fn in sorted(globals().items()):

@@ -2023,5 +2023,103 @@
    "title": "AP via KSL: NFL at 100, AP Was There: Music City Miracle",
    "url": "https://www.ksl.com/article/46648865/nfl-at-100-ap-was-there-music-city-miracle"
   }
+ ],
+ "claims": [
+  {
+   "claim": "Wild card playoff game, January 8, 2000",
+   "terms": [
+    "wild card",
+    "2000"
+   ]
+  },
+  {
+   "claim": "Buffalo's field goal put the Bills up 16-15",
+   "terms": [
+    "field goal",
+    "16 15"
+   ]
+  },
+  {
+   "claim": "16 seconds left after the field goal",
+   "terms": [
+    "16 seconds"
+   ]
+  },
+  {
+   "claim": "Usual kick returner Derrick Mason was hurt (concussion)",
+   "terms": [
+    "Mason",
+    "concussion|injur"
+   ]
+  },
+  {
+   "claim": "Kevin Dyson, a wide receiver, took the return",
+   "terms": [
+    "Dyson",
+    "receiver"
+   ]
+  },
+  {
+   "claim": "The play was called Home Run Throwback",
+   "terms": [
+    "Home Run Throwback"
+   ]
+  },
+  {
+   "claim": "Lorenzo Neal fielded the short kick and handed it to Frank Wycheck",
+   "terms": [
+    "Neal",
+    "Wycheck",
+    "hand"
+   ]
+  },
+  {
+   "claim": "Wycheck threw it across the field to Dyson",
+   "terms": [
+    "Wycheck",
+    "Dyson",
+    "lateral|across|pass"
+   ]
+  },
+  {
+   "claim": "Dyson ran 75 yards for the touchdown",
+   "terms": [
+    "Dyson",
+    "75",
+    "yard"
+   ]
+  },
+  {
+   "claim": "Three seconds were left after the touchdown",
+   "terms": [
+    "three seconds|3 seconds"
+   ]
+  },
+  {
+   "claim": "Referee Phil Luckett reviewed the replay",
+   "terms": [
+    "Luckett",
+    "replay|review"
+   ]
+  },
+  {
+   "claim": "The call stood: a legal lateral, touchdown",
+   "terms": [
+    "lateral|backward",
+    "stood|upheld|stand"
+   ]
+  },
+  {
+   "claim": "Final score Titans 22, Bills 16",
+   "terms": [
+    "22 16"
+   ]
+  },
+  {
+   "claim": "It is known as the Music City Miracle",
+   "terms": [
+    "Music City Miracle"
+   ]
+  }
  ]
 }
