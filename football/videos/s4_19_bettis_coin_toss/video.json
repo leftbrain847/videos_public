@@ -73,13 +73,57 @@
    },
    "at": "desk",
    "hold": "envelope"
+  },
+  "holder": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b78c0",
+    "pants": "#c9c9c9",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "number": "11",
+    "skin": "#e8b48f"
+   }
+  },
+  "snap": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b78c0",
+    "pants": "#c9c9c9",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "number": "48",
+    "skin": "#c98d63"
+   }
+  },
+  "s1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#f2b81c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "92",
+    "skin": "#5a3825"
+   }
+  },
+  "s2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#f2b81c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "56",
+    "skin": "#e8b48f"
+   }
   }
  },
  "lines": [
   {
-   "text": "On Thanksgiving 1998, an NFL team lost an overtime game before it ever touched the ball. Because of a coin toss.",
+   "text": "You lose in overtime. You never touch the ball.",
    "key": [
-    "COIN"
+    "NEVER"
    ],
    "speaker": "capy",
    "place": {
@@ -97,7 +141,11 @@
     ],
     "ref": false,
     "fan": false,
-    "exec": false
+    "exec": false,
+    "holder": false,
+    "snap": false,
+    "s1": false,
+    "s2": false
    },
    "shot": {
     "type": "two",
@@ -111,8 +159,8 @@
      "look": "camera"
     },
     "rb": {
-     "mood": "angry",
-     "action": "cross"
+     "mood": "sad",
+     "action": "slump"
     },
     "lion": {
      "mood": "happy",
@@ -121,10 +169,14 @@
    }
   },
   {
-   "text": "Steelers at Lions. Sixteen all. Overtime.",
-   "cap": "Steelers at Lions. 16 all. Overtime.",
+   "text": "Thanksgiving, nineteen ninety eight. Steelers at Lions.",
+   "cap": "Thanksgiving, 1998. Steelers at Lions.",
    "key": [
-    "16"
+    "1998."
+   ],
+   "board": [
+    "THANKSGIVING",
+    "1998"
    ],
    "place": {
     "capy": false,
@@ -149,18 +201,47 @@
    "act": {
     "rb": {
      "mood": "neutral",
+     "action": "idle",
      "look": "lion"
     },
     "lion": {
      "mood": "neutral",
+     "action": "idle",
      "look": "rb"
     }
    }
   },
   {
-   "text": "Jerome Bettis, the Steelers' star running back, walked out to call the toss.",
+   "text": "Sixteen all. Overtime. Time for the coin toss.",
+   "cap": "16 all. Overtime. Time for the coin toss.",
    "key": [
-    "BETTIS,"
+    "16"
+   ],
+   "board": [
+    "STEELERS 16",
+    "LIONS 16"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "lion",
+    "with": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "worried",
+     "look": "lion"
+    },
+    "lion": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "rb"
+    }
+   }
+  },
+  {
+   "text": "You're Jerome Bettis. You walk out to call it.",
+   "key": [
+    "BETTIS."
    ],
    "board": [
     "OVERTIME",
@@ -172,11 +253,11 @@
      0.4
     ],
     "ref": [
-     0,
+     0.4,
      -0.6
     ],
     "lion": [
-     1.4,
+     2.2,
      0.4
     ]
    },
@@ -198,7 +279,37 @@
    }
   },
   {
-   "text": "The coin went up. Bettis says he called tails.",
+   "text": "One word. Two options. Easy job.",
+   "key": [
+    "EASY"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -3.4,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "rb": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "The coin goes up. You say you called tails.",
    "key": [
     "TAILS."
    ],
@@ -206,6 +317,9 @@
     "CALL:",
     "TAILS"
    ],
+   "place": {
+    "capy": false
+   },
    "shot": {
     "type": "close",
     "on": "rb"
@@ -219,7 +333,7 @@
    }
   },
   {
-   "text": "Referee Phil Luckett heard heads.",
+   "text": "Referee Phil Luckett hears heads.",
    "key": [
     "HEADS."
    ],
@@ -240,41 +354,56 @@
    }
   },
   {
-   "text": "It landed tails. And the ball went to Detroit.",
+   "text": "It lands tails. Detroit gets the ball anyway.",
    "key": [
-    "TAILS.",
-    "DETROIT."
+    "ANYWAY."
    ],
    "board": [
     "COIN:",
     "TAILS"
    ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.6,
+     1.2
+    ],
+    "ref": [
+     0.6,
+     0.2
+    ],
+    "rb": false,
+    "lion": [
+     3.2,
+     -0.6
+    ]
+   },
    "shot": {
     "type": "two",
-    "on": "rb",
-    "with": "lion"
+    "on": "capy",
+    "with": "ref"
    },
    "act": {
-    "rb": {
-     "mood": "shocked",
+    "capy": {
+     "mood": "confused",
      "action": "shrug",
-     "look": "ref"
-    },
-    "lion": {
-     "mood": "happy",
-     "action": "cheer"
+     "look": "camera"
     },
     "ref": {
      "mood": "neutral",
      "action": "point",
      "look": "lion"
+    },
+    "lion": {
+     "mood": "happy",
+     "action": "cheer"
     }
    }
   },
   {
-   "text": "Audio later suggested he may have started to say heads, then switched.",
+   "text": "The audio hints you started saying heads. Then switched. Maybe.",
    "key": [
-    "SWITCHED."
+    "MAYBE."
    ],
    "set": "living",
    "board": [
@@ -305,11 +434,21 @@
    }
   },
   {
-   "text": "In sudden death overtime, first score wins. That mattered.",
+   "text": "Sudden death overtime. First score wins. No pressure.",
    "key": [
     "FIRST"
    ],
+   "speaker": "capy",
    "set": "field",
+   "setOpts": {
+    "boardText": [
+     "STEELERS 16",
+     "LIONS 16"
+    ],
+    "endZone": 10,
+    "zoneA": "#1b1b1b",
+    "zoneB": "#1b78c0"
+   },
    "board": [
     "SUDDEN",
     "DEATH"
@@ -339,17 +478,18 @@
      "look": "camera"
     },
     "lion": {
-     "mood": "happy"
+     "mood": "happy",
+     "action": "idle"
     },
     "rb": {
-     "mood": "worried"
+     "mood": "worried",
+     "action": "idle"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Detroit drove forty one yards.",
-   "cap": "Detroit drove 41 yards.",
+   "text": "Detroit drives forty one yards.",
+   "cap": "Detroit drives 41 yards.",
    "key": [
     "41"
    ],
@@ -359,39 +499,10 @@
    ],
    "place": {
     "capy": false,
+    "rb": false,
     "lion": [
      0,
      0
-    ],
-    "rb": false
-   },
-   "shot": {
-    "type": "low",
-    "on": "lion"
-   },
-   "act": {
-    "lion": {
-     "mood": "happy",
-     "action": "throw",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Jason Hanson kicked a forty two yard field goal. Lions nineteen, Steelers sixteen.",
-   "cap": "Jason Hanson kicked a 42-yard field goal. Lions 19, Steelers 16.",
-   "key": [
-    "42-YARD",
-    "19,"
-   ],
-   "board": [
-    "LIONS 19",
-    "STEELERS 16"
-   ],
-   "place": {
-    "rb": [
-     1.8,
-     -0.6
     ]
    },
    "shot": {
@@ -401,7 +512,289 @@
    "act": {
     "lion": {
      "mood": "happy",
-     "action": "cheer"
+     "action": "clap",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Jason Hanson kicks it. Forty two yards. Good.",
+   "cap": "Jason Hanson kicks it. 42 yards. Good.",
+   "key": [
+    "42"
+   ],
+   "shot": {
+    "type": "follow",
+    "on": "ball",
+    "fallback": "lion",
+    "lead": 0
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "snap": {
+      "path": [
+       [
+        0,
+        12,
+        -1
+       ],
+       [
+        1,
+        12,
+        -1
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     },
+     "holder": {
+      "path": [
+       [
+        0,
+        5.6,
+        -2.8
+       ],
+       [
+        1,
+        5.6,
+        -2.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.3,
+        "catch"
+       ]
+      ],
+      "face": 70
+     },
+     "lion": {
+      "path": [
+       [
+        0.0,
+        2.4,
+        -0.3
+       ],
+       [
+        0.0593,
+        2.9,
+        -0.425
+       ],
+       [
+        0.1187,
+        3.4,
+        -0.55
+       ],
+       [
+        0.178,
+        3.9,
+        -0.675
+       ],
+       [
+        0.2373,
+        4.4,
+        -0.8
+       ],
+       [
+        1,
+        4.4,
+        -0.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.2373,
+        "kick"
+       ]
+      ],
+      "face": 80
+     },
+     "s1": {
+      "path": [
+       [
+        0.0,
+        14.2,
+        -2.4
+       ],
+       [
+        0.25,
+        13.95,
+        -2.35
+       ],
+       [
+        0.5,
+        13.7,
+        -2.3
+       ],
+       [
+        0.75,
+        13.45,
+        -2.25
+       ],
+       [
+        1.0,
+        13.2,
+        -2.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     },
+     "s2": {
+      "path": [
+       [
+        0.0,
+        14.2,
+        0.6
+       ],
+       [
+        0.25,
+        13.95,
+        0.55
+       ],
+       [
+        0.5,
+        13.7,
+        0.5
+       ],
+       [
+        0.75,
+        13.45,
+        0.45
+       ],
+       [
+        1.0,
+        13.2,
+        0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      [
+       0.08,
+       12,
+       0.5,
+       -1.0
+      ],
+      [
+       0.2,
+       8.8,
+       0.6,
+       -1.1
+      ],
+      [
+       0.3,
+       5.4,
+       0.25,
+       -1.2
+      ]
+     ],
+     [
+      [
+       0.3,
+       5.4,
+       0.25,
+       -1.2
+      ],
+      [
+       0.55,
+       17,
+       7.5,
+       -2.5
+      ],
+      [
+       0.8,
+       27,
+       7.8,
+       -3.6
+      ],
+      [
+       1.0,
+       33,
+       6.8,
+       -4.0
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "snap"
+     ],
+     [
+      1.0,
+      null
+     ]
+    ]
+   },
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "STEELERS 16",
+     "LIONS 16"
+    ],
+    "endZone": 10,
+    "zoneA": "#1b1b1b",
+    "zoneB": "#1b78c0"
+   }
+  },
+  {
+   "text": "Lions nineteen, Steelers sixteen.",
+   "cap": "Lions 19, Steelers 16.",
+   "key": [
+    "19,"
+   ],
+   "board": [
+    "LIONS 19",
+    "STEELERS 16"
+   ],
+   "place": {
+    "lion": [
+     -1.0,
+     0
+    ],
+    "rb": [
+     1.8,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "lion"
+   },
+   "act": {
+    "lion": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
     },
     "rb": {
      "mood": "sad",
@@ -410,9 +803,9 @@
    }
   },
   {
-   "text": "Pittsburgh never touched the ball in overtime.",
+   "text": "Your offense never touched the ball. Not once.",
    "key": [
-    "NEVER"
+    "ONCE."
    ],
    "place": {
     "rb": [
@@ -434,9 +827,42 @@
    }
   },
   {
-   "text": "Soon after, the NFL changed how the coin toss works.",
+   "text": "Somewhere, a coin is very proud of itself.",
    "key": [
-    "CHANGED"
+    "PROUD"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "rb": [
+     1.4,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "rb": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Soon after, the league changes the coin toss.",
+   "key": [
+    "CHANGES"
    ],
    "set": "office",
    "board": [
@@ -467,7 +893,7 @@
    }
   },
   {
-   "text": "Now the visiting captain calls heads or tails before the coin is tossed.",
+   "text": "The visiting captain now calls before the toss.",
    "key": [
     "BEFORE"
    ],
@@ -494,16 +920,17 @@
     },
     "capy": {
      "mood": "neutral",
+     "action": "idle",
      "look": "exec"
     }
    }
   },
   {
-   "text": "So, heads or tails? Tell me below.",
+   "text": "Heads or tails? Answer below. Nobody can mishear typing.",
    "key": [
-    "HEADS",
-    "TAILS?"
+    "TYPING."
    ],
+   "speaker": "capy",
    "board": [
     "HEADS",
     "OR TAILS?"
@@ -538,8 +965,7 @@
      "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -554,6 +980,106 @@
   {
    "title": "TribLive: Every Thanksgiving, Charlie Batch recalls infamous Steelers-Lions coin flip game",
    "url": "https://triblive.com/sports/every-thanksgiving-charlie-batch-recalls-infamous-steelers-lions-coin-flip-game"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The game was on Thanksgiving 1998",
+   "terms": [
+    "Thanksgiving",
+    "1998"
+   ]
+  },
+  {
+   "claim": "Steelers at Lions, tied 16-16, went to overtime",
+   "terms": [
+    "16",
+    "overtime"
+   ]
+  },
+  {
+   "claim": "Jerome Bettis called the overtime coin toss",
+   "terms": [
+    "Bettis",
+    "coin|toss|flip"
+   ]
+  },
+  {
+   "claim": "Bettis says he called tails",
+   "terms": [
+    "Bettis",
+    "tails"
+   ]
+  },
+  {
+   "claim": "Referee Phil Luckett heard heads",
+   "terms": [
+    "Luckett",
+    "heads"
+   ]
+  },
+  {
+   "claim": "The coin landed tails and Detroit got the ball",
+   "terms": [
+    "tails",
+    "Detroit|Lions"
+   ]
+  },
+  {
+   "claim": "Audio suggested Bettis may have started to say heads, then switched",
+   "terms": [
+    "heads",
+    "audio|tape|replay|microphone"
+   ]
+  },
+  {
+   "claim": "Overtime was sudden death: first score wins",
+   "terms": [
+    "sudden death|first score"
+   ]
+  },
+  {
+   "claim": "Detroit drove 41 yards",
+   "terms": [
+    "41|forty-one",
+    "yard"
+   ]
+  },
+  {
+   "claim": "Jason Hanson kicked a 42-yard field goal",
+   "terms": [
+    "Hanson",
+    "42|forty-two",
+    "field goal"
+   ]
+  },
+  {
+   "claim": "Lions won 19-16",
+   "terms": [
+    "19-16|19"
+   ]
+  },
+  {
+   "claim": "Pittsburgh never touched the ball in overtime",
+   "terms": [
+    "never",
+    "ball|possession"
+   ]
+  },
+  {
+   "claim": "Soon after, the NFL changed the coin toss procedure",
+   "terms": [
+    "coin toss|coin flip",
+    "change|rule"
+   ]
+  },
+  {
+   "claim": "The visiting captain now calls heads or tails before the toss",
+   "terms": [
+    "call",
+    "before"
+   ]
   }
  ]
 }
