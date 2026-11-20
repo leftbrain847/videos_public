@@ -86,3 +86,14 @@ football/
 ```
 
 Make one: `engine/setup.sh` once, then `engine/make.sh videos/<id> <index>` from `football/`.
+
+## Writing for the voice (Kokoro af_heart)
+
+Kokoro picks its own emphasis and pauses; the script is the only lever. Measured on 90 of our sentences (2026-11-20): 9+ words got a mid-sentence pause 57% of the time, 8 or fewer only 9%.
+
+- **8 words max per sentence.** Split, don't compress.
+- **One action per sentence.** "You turn. You throw it across the field." not "You turn and throw it across the field."
+- **Punch word last**, in its own short sentence: "Kick return practice? Barely."
+- **Colons only for a deliberate beat** ("Final score: …"); Kokoro always pauses there.
+- **Names espeak gets wrong go in `engine/pronunciation.json`** (check with `espeak-ng -v en-us -q -x --ipa "<word>"`).
+- `engine/check.py` prints these as `~ voice:` warnings; they become failures (`RULES.voice.strict`) once the 100 are rewritten.
