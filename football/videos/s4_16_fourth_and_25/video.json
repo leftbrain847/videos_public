@@ -1400,7 +1400,7 @@
  ],
  "sources": [
   {
-   "title": "Deseret News (AP): Cardinals 18, Vikings 17 \u2014 last-second play boots Vikings from playoffs",
+   "title": "Deseret News (AP): Cardinals 18, Vikings 17 — last-second play boots Vikings from playoffs",
    "url": "https://www.deseret.com/2003/12/29/19803762/last-second-play-boots-vikings-from-playoffs/"
   },
   {
@@ -1499,6 +1499,13 @@
    "terms": [
     "6-0",
     "playoffs"
+   ]
+  },
+  {
+   "claim": "The Vikings finished 9-7 and missed the playoffs",
+   "terms": [
+    "Vikings",
+    "9 7|nine seven"
    ]
   }
  ]
