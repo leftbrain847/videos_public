@@ -151,6 +151,17 @@ def test_v2_script_with_a_year_fails_check():
         assert check.voice_errors(d)[1] == []
 
 
+def test_play_geometry_rules():
+    import check
+    S = {"lines": [{"play": {"cast": {"a": {"path": [[0, 0, 0], [1, 30, 0]]}, "b": {"path": [[0, 1, 0], [1, 1, 8]]}}}}]}
+    errs = check.play_errors(S, {"lines": [{"start": 0, "end": 2}]})
+    assert any("b at z" in e for e in errs), errs              # walked toward the camera
+    assert any("a runs" in e for e in errs), errs              # 30 units in 2 s
+    assert any("closer than" in e for e in errs), errs         # start 1 unit apart
+    ok = {"lines": [{"play": {"cast": {"a": {"path": [[0, 0, 0], [1, 10, 0]]}, "b": {"path": [[0, 0, -3], [1, 10, -3]]}}}}]}
+    assert check.play_errors(ok, {"lines": [{"start": 0, "end": 2}]}) == []
+
+
 def run():
     fails = []
     for name, fn in sorted(globals().items()):

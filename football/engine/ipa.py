@@ -16,7 +16,7 @@ T = Tokenizer()
 
 
 def show(text):
-    return " ".join(("*" + ph) if is_ph else T.phonemize(chunk, "en-us") for is_ph, chunk in voice.split_overrides(text))
+    return " ".join(("*" + chunk) if is_ph else T.phonemize(chunk, "en-us") for is_ph, chunk in voice.split_overrides(text))
 
 
 def main():

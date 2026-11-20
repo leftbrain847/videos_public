@@ -93,6 +93,53 @@ def check(vd):
     return words, errs
 
 
+PLAY = {"z": (-10.0, 6.0), "min_gap": 1.5, "max_speed": 12.0, "samples": 60}
+
+
+def along(pts, u):
+    """Same Catmull-Rom path as page.html along()."""
+    if u <= pts[0][0]:
+        return pts[0][1:]
+    if u >= pts[-1][0]:
+        return pts[-1][1:]
+    i = 0
+    while i < len(pts) - 2 and u > pts[i + 1][0]:
+        i += 1
+    p0, p1, p2, p3 = pts[max(0, i - 1)], pts[i], pts[i + 1], pts[min(len(pts) - 1, i + 2)]
+    f = (u - p1[0]) / max(1e-6, p2[0] - p1[0])
+    cr = lambda a, b, c, d: 0.5 * (2 * b + (-a + c) * f + (2 * a - 5 * b + 4 * c - d) * f * f + (-a + 3 * b - 3 * c + d) * f ** 3)
+    return [cr(p0[k], p1[k], p2[k], p3[k]) for k in range(1, len(p1))]
+
+
+def play_errors(S, timing=None):
+    """Field geometry of every `play`: z inside the action band, 1.5+ units between people, runs at 12 u/s or less
+    (speed needs build/timing.json for line lengths)."""
+    out, P = [], PLAY
+    for i, l in enumerate(S.get("lines", []), 1):
+        cast = {k: v["path"] for k, v in ((l.get("play") or {}).get("cast") or {}).items() if v.get("path")}
+        if not cast:
+            continue
+        dur = (timing["lines"][i - 1]["end"] - timing["lines"][i - 1]["start"]) if timing else None
+        flagged = set()
+        for n in range(P["samples"] + 1):
+            u = n / P["samples"]; pos = {k: along(p, u) for k, p in cast.items()}
+            for k, (x, z) in pos.items():
+                if not P["z"][0] <= z <= P["z"][1] and ("z", k) not in flagged:
+                    flagged.add(("z", k)); out.append(f"line {i}: {k} at z {z:.1f} at u {u:.2f} (keep z in {P['z']})")
+                if dur and n:
+                    x0, z0 = along(cast[k], u - 1 / P["samples"])
+                    v = ((x - x0) ** 2 + (z - z0) ** 2) ** 0.5 / (dur / P["samples"])
+                    if v > P["max_speed"] + 0.05 and ("v", k) not in flagged:
+                        flagged.add(("v", k)); out.append(f"line {i}: {k} runs {v:.1f} u/s at u {u:.2f} (max {P['max_speed']})")
+            ks = sorted(pos)
+            for a in range(len(ks)):
+                for b in range(a + 1, len(ks)):
+                    (xa, za), (xb, zb) = pos[ks[a]], pos[ks[b]]
+                    if ((xa - xb) ** 2 + (za - zb) ** 2) ** 0.5 < P["min_gap"] and ("gap", ks[a], ks[b]) not in flagged:
+                        flagged.add(("gap", ks[a], ks[b])); out.append(f"line {i}: {ks[a]} and {ks[b]} closer than {P['min_gap']} at u {u:.2f}")
+    return out
+
+
 def strict(S):
     return RULES["voice"]["strict"] or S.get("voice") == RULES["voice"]["mark"]
 
@@ -106,6 +153,7 @@ def voice_errors(vd):
         sp = json.loads(tj.read_text()).get("speed", 1.0)
         if sp > voice.RULES["max_speed"]:
             out.append(f"last narration needed speed {sp} (max {voice.RULES['max_speed']}). Cut words")
+    out += play_errors(S, json.loads(tj.read_text()) if tj.exists() else None)
     unsure = sorted({n for l in S.get("lines", []) for n in voice.unsure_names(l["text"])})
     return S, out, unsure
 

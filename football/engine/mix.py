@@ -72,8 +72,11 @@ def main():
                 if act == "kick": cues.append([u + 0.12, "kick"])
                 if act == "catch": cues.append([u, "catch"])
                 if act == "celebrate": cues.append([u - 0.05, "roar"])
-        if play.get("ball"):
-            cues.append([play["ball"][0][0], "whoosh"])
+        if play.get("ball"):   # a whoosh for each real flight (a short toss under 4 units stays quiet)
+            flights = play["ball"] if isinstance(play["ball"][0][0], list) else [play["ball"]]
+            for f in flights:
+                if sum((a - b) ** 2 for a, b in zip(f[0][1:], f[-1][1:])) ** 0.5 >= 4:
+                    cues.append([f[0][0], "whoosh"])
         seen = set()
         for u, name in cues:
             key = name if name in ("roar", "hit") else (round(u, 2), name)   # one crowd roar / reveal hit per line

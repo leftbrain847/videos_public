@@ -439,6 +439,7 @@ function board(g, pos, size, lines, opts) {
   frame.position.set(...pos); g.add(frame);
   const screen = new THREE.Mesh(new THREE.PlaneGeometry(...size), new THREE.MeshBasicMaterial({ map: textTexture(lines, opts) }));
   screen.position.set(pos[0], pos[1], pos[2] + 0.07); g.add(screen);
+  screen.userData.frame = frame;
   return screen;
 }
 
@@ -493,7 +494,7 @@ export const SETS = {
     const cross = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.1, 5.6, 12), gm); cross.rotation.x = Math.PI / 2; cross.position.y = 3; goal.add(cross);
     for (const sz of [-1, 1]) { const u = new THREE.Mesh(new THREE.CylinderGeometry(0.08, 0.08, 6, 12), gm); u.position.set(0, 6, sz * 2.8); goal.add(u); }
     for (const sx of [-1, 1]) { const gg = goal.clone(); gg.position.set(sx * (endZone + 20), 0, -4); g.add(gg); }
-    const screen = board(g, [-7, 7.4, -20], [7, 3], boardText, { bg: '#101418', fg: '#ffffff', accent: '#f6d21f', font: '900 150px Inter, Arial' });
+    const screen = board(g, [-7, 8.8, -22.5], [7, 3], boardText, { bg: '#101418', fg: '#ffffff', accent: '#f6d21f', font: '900 150px Inter, Arial' });
     return { group: g, spots: { center: [0, 0], left: [-2.4, 0.4], right: [2.4, 0.4], back: [0, -4], sideline: [-6, 2] }, screen, sky: '#bfe3ff', follows: true };
   },
   press({ backdrop = '#1f3f8f', boardText = ['POSTGAME'] } = {}) {
