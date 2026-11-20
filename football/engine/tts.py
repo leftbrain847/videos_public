@@ -64,7 +64,29 @@ def phonemes(k, text):
     return re.sub(r"\s+([,.!?;:])", r"\1", " ".join(o.strip() for o in out))
 
 
+ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
+TENS = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
+
+
+def two(n):
+    return ONES[n] if n < 20 else TENS[n // 10] + ("" if n % 10 == 0 else " " + ONES[n % 10])
+
+
+def year(m):
+    """Years the way a broadcaster says them: 1978 -> nineteen seventy eight, 2005 -> two thousand five, 2016 -> twenty sixteen."""
+    y = int(m.group(0)); hi, lo = divmod(y, 100)
+    if 2000 <= y <= 2009:
+        return "two thousand" + ("" if lo == 0 else " " + ONES[lo])
+    return two(hi) + (" hundred" if lo == 0 else " oh " + ONES[lo] if lo < 10 else " " + two(lo))
+
+
+def spoken(text):
+    # 4-digit years 1900-2099 (espeak says "nineteen hundred seventy eight"); not part of a longer number like 1,050
+    return re.sub(r"(?<![\d,])(19\d\d|20\d\d)(?!\d|,\d|ers)", year, text)
+
+
 def synth(k, text, speed):
+    text = spoken(text)
     if PRON_RE and PRON_RE.search(text):
         x, sr = k.create(phonemes(k, text), voice=VOICE["voice"], speed=speed, lang=VOICE["lang"], is_phonemes=True)
     else:
