@@ -17,6 +17,9 @@ RULES = {
     "moods": {"neutral", "angry", "worried", "shocked", "happy", "sad", "smug", "confused"},
     "actions": {"idle", "talk", "point", "cheer", "facepalm", "shrug", "throw", "hold", "cross", "slump", "clap", "wave", "run", "walk", "catch", "kick", "celebrate"},
     "narrator": "capy",
+    # Kokoro delivery (measured 2026-11-20 on 90 sentences): sentences of 9+ words got a mid-sentence pause 57% of the
+    # time vs 9% at 8 or fewer; "and" joining two actions almost always breaks. Warnings now, failures once scripts are rewritten.
+    "voice": {"max_sentence_words": 8, "and_min_words": 6, "strict": False},
 }
 
 
@@ -87,6 +90,19 @@ def check(vd):
     return words, errs
 
 
+def voice_warnings(vd):
+    """Sentences Kokoro tends to break up: too long, or two actions joined by 'and'."""
+    V, out = RULES["voice"], []
+    for i, l in enumerate(json.loads((Path(vd) / "video.json").read_text()).get("lines", []), 1):
+        for s in re.split(r"(?<=[.?!])\s+", l["text"].strip()):
+            n = len(s.split())
+            if n > V["max_sentence_words"]:
+                out.append(f"line {i}: {n} words in one sentence (max {V['max_sentence_words']}): \"{s}\"")
+            elif n >= V["and_min_words"] and re.search(r"\band\b", s, re.I):
+                out.append(f"line {i}: 'and' joins two actions; split it: \"{s}\"")
+    return out
+
+
 def main():
     bad = 0
     for vd in sys.argv[1:]:
@@ -94,7 +110,10 @@ def main():
         print(("OK  " if not errs else "FAIL") + f" {vd} ({words} words)")
         for e in errs:
             print("   -", e)
-        bad += bool(errs)
+        warns = voice_warnings(vd)
+        for w in warns:
+            print("   ~ voice:", w)
+        bad += bool(errs) or (RULES["voice"]["strict"] and bool(warns))
     sys.exit(1 if bad else 0)
 
 
