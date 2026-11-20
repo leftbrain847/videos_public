@@ -9,6 +9,8 @@ import json, subprocess, sys
 from pathlib import Path
 
 import numpy as np
+
+MOTION_CONTACT_S = 0.2   # kit.js MOTION.contact: a kick makes contact this long after it starts
 import soundfile as sf
 
 ROOT = Path(__file__).parent
@@ -69,7 +71,7 @@ def main():
         play = line.get("play") or {}
         for who in (play.get("cast") or {}).values():
             for u, act in who.get("actions", []):
-                if act == "kick": cues.append([u + 0.12, "kick"])
+                if act == "kick": cues.append([u + MOTION_CONTACT_S / dur, "kick"])   # the foot meets the ball
                 if act == "catch": cues.append([u, "catch"])
                 if act == "celebrate": cues.append([u - 0.05, "roar"])
         if play.get("ball"):   # a whoosh for each real flight (a short toss under 4 units stays quiet)
