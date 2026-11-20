@@ -8,12 +8,15 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 
+sys.path.insert(0, str(Path(__file__).parent))
+import voice  # noqa: E402  speech rules + pronunciation lookup (no dependencies)
+
 VOICE = {
     "engine": "kokoro",
     "voice": "af_heart",       # locked by J (2026-11-20): the Mastery Field Guide voice
     "lang": "en-us",
     "speed": 1.0,              # starting speed; raised in steps up to max_speed if the script runs long
-    "max_speed": 1.12,
+    "max_speed": voice.RULES["max_speed"],   # 1.06: faster sounds rushed. If the script doesn't fit, cut words
     "speed_step": 0.03,
 }
 TIMING = {
@@ -47,25 +50,13 @@ def chunks(text, start, end, n):
     return out
 
 
-PRON = {w: ph for w, ph in json.loads((Path(__file__).parent / "pronunciation.json").read_text()).items() if not w.startswith("_")}
-PRON_RE = re.compile(r"\b(" + "|".join(sorted(map(re.escape, PRON), key=len, reverse=True)) + r")\b", re.I) if PRON else None
-
-
 def phonemes(k, text):
-    """Text -> Kokoro phonemes, with pronunciation.json words swapped in (case-insensitive, whole words)."""
-    out, i = [], 0
-    for m in PRON_RE.finditer(text):
-        if text[i:m.start()].strip():
-            out.append(k.tokenizer.phonemize(text[i:m.start()], VOICE["lang"]))
-        key = next(w for w in PRON if w.lower() == m.group(0).lower())
-        out.append(PRON[key]); i = m.end()
-    if text[i:].strip():
-        out.append(k.tokenizer.phonemize(text[i:], VOICE["lang"]))
-    return re.sub(r"\s+([,.!?;:])", r"\1", " ".join(o.strip() for o in out))
+    """Text -> Kokoro phonemes, with pronunciation.json overrides spliced in (case-sensitive, whole words, possessives)."""
+    return voice.phonemize(text, lambda chunk: k.tokenizer.phonemize(chunk, VOICE["lang"]))
 
 
 def synth(k, text, speed):
-    if PRON_RE and PRON_RE.search(text):
+    if any(is_ph for is_ph, _ in voice.split_overrides(text)):
         x, sr = k.create(phonemes(k, text), voice=VOICE["voice"], speed=speed, lang=VOICE["lang"], is_phonemes=True)
     else:
         x, sr = k.create(text, voice=VOICE["voice"], speed=speed, lang=VOICE["lang"])
@@ -84,6 +75,10 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("video_dir"); ap.add_argument("--models", required=True)
     a = ap.parse_args()
     vd = Path(a.video_dir); S = json.loads((vd / "video.json").read_text())
+    if S.get("voice") == "v2":   # a v2 script is spoken exactly as written: refuse it if it breaks a speech rule
+        errs = [m for _, m in voice.lint_script(S) if "won't fit" not in m]
+        if errs:
+            sys.exit("speech rules failed (run check.py):\n  " + "\n  ".join(errs))
     from kokoro_onnx import Kokoro
     k = Kokoro(str(Path(a.models) / "kokoro-v1.0.onnx"), str(Path(a.models) / "voices-v1.0.bin"))
     T = TIMING["target_s"]; speed = VOICE["speed"]
