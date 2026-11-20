@@ -17,14 +17,14 @@ on:
         description: 'Listen-back: transcribe the narration and flag misheard words'
         type: boolean
         default: true
-      facts:
-        description: 'Fact check: each claim against its sources (pass/fail and a 15-word snippet, no page text)'
+      replace:
+        description: 'Replace files already in the release (off: an existing file is never overwritten)'
         type: boolean
-        default: true
+        default: false
 permissions:
   contents: read
 concurrency:
-  group: render-${{ github.ref }}
+  group: render-${{ inputs.release || github.run_id }}
   cancel-in-progress: false
 defaults:
   run:
@@ -42,10 +42,13 @@ jobs:
       - id: plan
         env:
           VIDEOS: ${{ inputs.videos }}
-        run: python3 tools/render_plan.py >> "$GITHUB_OUTPUT"
+          TAG: ${{ inputs.release }}
+        run: |
+          [[ -z "$TAG" || "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ ]] || { printf 'bad release tag\n'; exit 1; }
+          python3 tools/render_plan.py >> "$GITHUB_OUTPUT"
 
+  # Always runs: a release needs every claim checked against two sources.
   facts:
-    if: inputs.facts
     needs: plan
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -122,10 +125,10 @@ jobs:
             football/videos/${{ matrix.id }}/build/narration.wav
             football/videos/${{ matrix.id }}/build/timing.json
 
-  # Its own job so the speech-to-text install (and the Hugging Face model) can never touch the files that get released.
+  # Its own job, and only after the release job, so the speech-to-text install and model can't touch the released files.
   listen:
-    if: inputs.listen
-    needs: [plan, render]
+    if: ${{ !cancelled() && inputs.listen && needs.render.result != 'skipped' }}
+    needs: [plan, render, release]
     runs-on: ubuntu-latest
     timeout-minutes: 30
     strategy:
@@ -152,8 +155,8 @@ jobs:
         with: { name: 'listen-${{ matrix.id }}', path: football/out/listen/, retention-days: 30 }
 
   release:
-    if: ${{ !cancelled() && inputs.release != '' }}
-    needs: render
+    if: ${{ !cancelled() && inputs.release != '' && needs.facts.result == 'success' && needs.render.result != 'skipped' }}
+    needs: [render, facts]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
@@ -165,9 +168,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ inputs.release }}
+          REPLACE: ${{ inputs.replace }}
         run: |
-          [[ "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ ]] || { echo "bad release tag: $TAG"; exit 1; }
+          [[ "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ ]] || { printf 'bad release tag\n'; exit 1; }
+          compgen -G 'files/*' >/dev/null || { printf 'no rendered files to release\n'; exit 1; }
           gh release view "$TAG" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || \
-            gh release create "$TAG" -R "$GITHUB_REPOSITORY" --title "$TAG" --notes "Football shorts: 1080x1920 masters (*.master.mp4), 720x1280 web copies, posters and contact sheets."
-          gh release upload "$TAG" files/* -R "$GITHUB_REPOSITORY" --clobber
+            gh release create "$TAG" -R "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "$TAG" --notes "Football shorts: 1080x1920 masters (*.master.mp4), 720x1280 web copies, posters and contact sheets."
+          if [[ "$REPLACE" == "true" ]]; then gh release upload "$TAG" files/* -R "$GITHUB_REPOSITORY" --clobber
+          else gh release upload "$TAG" files/* -R "$GITHUB_REPOSITORY"; fi
           echo "Uploaded to https://github.com/$GITHUB_REPOSITORY/releases/tag/$TAG" >> "$GITHUB_STEP_SUMMARY"
