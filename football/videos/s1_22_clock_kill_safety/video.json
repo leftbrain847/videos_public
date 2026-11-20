@@ -121,11 +121,10 @@
  },
  "lines": [
   {
-   "text": "In 2016, the Ravens won a game by having ten players hold at the same time.",
+   "text": "You're Sam Koch. You're about to win a game by letting your team hold everybody.",
    "key": [
     "HOLD"
    ],
-   "cap": "In 2016, the Ravens won a game by having 10 players hold at the same time.",
    "place": {
     "exec": false,
     "capy": [
@@ -153,12 +152,11 @@
    "speaker": "capy"
   },
   {
-   "text": "Ravens lead the Bengals, nineteen to twelve. Eleven seconds left. They have to punt.",
+   "text": "Ravens lead the Bengals, nineteen to twelve. Eleven seconds left. You have to punt.",
    "key": [
-    "11",
-    "SECONDS"
+    "PUNT."
    ],
-   "cap": "Ravens lead the Bengals, 19 to 12. 11 seconds left. They have to punt.",
+   "cap": "Ravens lead the Bengals, 19 to 12. 11 seconds left. You have to punt.",
    "board": [
     "RAVENS 19",
     "BENGALS 12"
@@ -194,9 +192,9 @@
    }
   },
   {
-   "text": "So punter Sam Koch takes the snap, and doesn't punt.",
+   "text": "You take the snap. And you don't punt.",
    "key": [
-    "DOESN'T"
+    "DON'T"
    ],
    "shot": {
     "type": "medium",
@@ -211,7 +209,7 @@
    }
   },
   {
-   "text": "He runs backward. His teammates grab the rushers.",
+   "text": "You run backward. Your teammates grab every rusher they can reach.",
    "key": [
     "GRAB"
    ],
@@ -262,9 +260,9 @@
    }
   },
   {
-   "text": "Flags fly. The clock keeps running.",
+   "text": "Flags fly. Nobody cares. The clock keeps running.",
    "key": [
-    "CLOCK"
+    "CARES."
    ],
    "shot": {
     "type": "medium",
@@ -279,11 +277,11 @@
    }
   },
   {
-   "text": "At zero, Koch steps out of the end zone. Safety. Two points for Cincinnati.",
+   "text": "At zero, you step out of the end zone. Safety. Two points for Cincinnati. Enjoy.",
    "key": [
     "SAFETY."
    ],
-   "cap": "At 0:00, Koch steps out of the end zone. Safety. 2 points for Cincinnati.",
+   "cap": "At zero, you step out of the end zone. Safety. 2 points for Cincinnati. Enjoy.",
    "board": [
     "RAVENS 19",
     "BENGALS 14"
@@ -303,7 +301,7 @@
   {
    "text": "Here's the loophole. A game can't end on a defensive penalty. It can end on an offensive one.",
    "key": [
-    "OFFENSIVE"
+    "LOOPHOLE."
    ],
    "set": "office",
    "setOpts": {
@@ -334,11 +332,11 @@
    "speaker": "capy"
   },
   {
-   "text": "So the holding flags didn't matter. Ravens win, nineteen to fourteen.",
+   "text": "So all those holding flags? Worthless. Ravens win, nineteen to fourteen.",
    "key": [
-    "19"
+    "WORTHLESS."
    ],
-   "cap": "So the holding flags didn't matter. Ravens win, 19 to 14.",
+   "cap": "So all those holding flags? Worthless. Ravens win, 19 to 14.",
    "shot": {
     "type": "close",
     "on": "capy"
@@ -353,10 +351,9 @@
    "speaker": "capy"
   },
   {
-   "text": "They had done a version of this before. In the Super Bowl.",
+   "text": "And this wasn't your first time. You did it in the Super Bowl.",
    "key": [
-    "SUPER",
-    "BOWL."
+    "SUPER"
    ],
    "set": "field",
    "setOpts": {
@@ -405,11 +402,11 @@
    }
   },
   {
-   "text": "February 2013. Twelve seconds at the snap. Koch ran until four were left. No holding called.",
+   "text": "February 2013. Twelve seconds at the snap. You ran until four were left.",
    "key": [
     "4"
    ],
-   "cap": "February 2013. 12 seconds at the snap. Koch ran until 4 were left. No holding called.",
+   "cap": "February 2013. 12 seconds at the snap. You ran until 4 were left.",
    "shot": {
     "type": "two",
     "on": "punter",
@@ -428,7 +425,7 @@
    }
   },
   {
-   "text": "In 2017, the NFL closed the loophole.",
+   "text": "In 2017, the league finally closed the loophole.",
    "key": [
     "CLOSED"
    ],
@@ -457,12 +454,11 @@
    }
   },
   {
-   "text": "Several fouls on one play to run out the clock now cost fifteen yards, and the clock goes back.",
+   "text": "Several fouls to run out the clock now cost fifteen yards, and the clock goes back.",
    "key": [
-    "15",
-    "YARDS,"
+    "15"
    ],
-   "cap": "Several fouls on one play to run out the clock now cost 15 yards, and the clock goes back.",
+   "cap": "Several fouls to run out the clock now cost 15 yards, and the clock goes back.",
    "board": [
     "15 YARDS",
     "+ CLOCK RESET"
@@ -480,9 +476,8 @@
    }
   },
   {
-   "text": "Was it smart, or was it cheating? One word.",
+   "text": "Genius, or cheating? One word. Bengals fans, you can sit this one out.",
    "key": [
-    "SMART,",
     "CHEATING?"
    ],
    "place": {

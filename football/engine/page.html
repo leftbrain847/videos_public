@@ -19,6 +19,7 @@ const CFG = {
   renderScale: 0.8,
   env: { intensity: 0.22, hemiScale: 0.55, keyScale: 1.25 },   // soft studio reflections (RoomEnvironment), less flat fill
   ao: true,             // ambient occlusion: contact shadows where things meet (the reference's soft, grounded look)     // 3D renders at 80% and is scaled up; captions are drawn at full resolution (speed: about 1.6x)
+  draft: { renderScale: 0.6, ao: false },   // ?draft=1: quick iteration renders
   caption: { size: 74, lineHeight: 84, bottom: 92, maxWidth: 940, skew: -0.12, stroke: 15, key: '#e01b24', words: 4 },
   push: 0.1,            // camera moves this fraction closer over a shot
   drift: 0.35,          // sideways drift over a shot (world units)
@@ -26,6 +27,7 @@ const CFG = {
 };
 window.CFG = CFG;
 const r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+if (new URLSearchParams(location.search).get('draft')) Object.assign(CFG, CFG.draft);
 r.setSize(Math.round(CFG.width * CFG.renderScale), Math.round(CFG.height * CFG.renderScale)); r.setPixelRatio(1);
 r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap;
 r.outputColorSpace = THREE.SRGBColorSpace; r.toneMapping = THREE.ACESFilmicToneMapping; r.toneMappingExposure = STYLE.exposure;

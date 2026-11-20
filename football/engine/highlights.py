@@ -4,6 +4,9 @@ python3 highlights.py <video_dir> [--pool ../gameplay] [--index N]
 Writes <video_dir>/build/bottom.mp4 (1080x960, silent). Deterministic per --index, so every video gets a different reel.
 """
 import argparse, json, random, subprocess, tempfile
+
+import cv2
+import numpy as np
 from pathlib import Path
 
 REEL = {
@@ -18,6 +21,15 @@ REEL = {
     "lateral_min_yards": 20,           # ...this many or more (no pointless laterals)
     "top_k": 40,                       # draw each reel from the best K plays
     "fps": 24,
+    # tracking camera: follow the disks and zoom in, so they read on a phone
+    "track": {
+        "on": True,
+        "min_h": 640, "max_h": 1300,   # crop window height in capture px (width = h * 9/8); 640 = 1.5x zoom
+        "margin": 1.5, "pad_px": 220,  # window height >= disks' spread * margin + pad
+        "smooth": 0.12,                # per-frame easing of center and size (lower = calmer camera)
+        "bright": 110, "min_area": 30, # disk detection: brightness threshold, smallest blob
+        "field": [110, 200, 970, 1820],# x0, y0, x1, y1: search area (skips the HUD and sidelines)
+    },
 }
 
 
@@ -48,6 +60,37 @@ def plays(pool):
     return sorted(out, key=lambda p: -p["score"])
 
 
+def tracked(p, out):
+    """One play through a smoothed camera that keeps every disk in frame, as close as it can."""
+    T = REEL["track"]; cap = cv2.VideoCapture(p["clip"]); fps = cap.get(cv2.CAP_PROP_FPS) or 30
+    cap.set(cv2.CAP_PROP_POS_MSEC, p["start"] * 1000)
+    x0, y0, x1, y1 = T["field"]; cx = cy = hh = None
+    ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", "1080x960", "-r", str(fps), "-i", "-",
+                           "-vf", f"fps={REEL['fps']}", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", str(out)], stdin=subprocess.PIPE)
+    for _ in range(int((p["end"] - p["start"]) * fps)):
+        ok, fr = cap.read()
+        if not ok:
+            break
+        g = cv2.cvtColor(fr[y0:y1, x0:x1], cv2.COLOR_BGR2GRAY)
+        n, _, st, _ = cv2.connectedComponentsWithStats((g > T["bright"]).astype(np.uint8))
+        b = [s for s in st[1:] if s[4] >= T["min_area"]]
+        if b:
+            bx0 = min(s[0] for s in b) + x0; bx1 = max(s[0] + s[2] for s in b) + x0
+            by0 = min(s[1] for s in b) + y0; by1 = max(s[1] + s[3] for s in b) + y0
+            tcx, tcy = (bx0 + bx1) / 2, (by0 + by1) / 2
+            th = max((by1 - by0) * T["margin"] + T["pad_px"], (bx1 - bx0) * T["margin"] * 8 / 9 + T["pad_px"])
+            th = min(max(th, T["min_h"]), T["max_h"])
+            if cx is None:
+                cx, cy, hh = tcx, tcy, th
+            k = T["smooth"]; cx += (tcx - cx) * k; cy += (tcy - cy) * k; hh += (th - hh) * k
+        if cx is None:
+            cx, cy, hh = 540, 960, T["max_h"]
+        h = int(hh); w = min(int(h * 9 / 8), 1080); h = int(w * 8 / 9)
+        X = int(min(max(cx - w / 2, 0), 1080 - w)); Y = int(min(max(cy - h / 2, 0), 1920 - h))
+        ff.stdin.write(cv2.resize(fr[Y:Y + h, X:X + w], (1080, 960), interpolation=cv2.INTER_AREA).tobytes())
+    ff.stdin.close(); ff.wait(); cap.release()
+
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("video_dir"); ap.add_argument("--pool", default=str(Path(__file__).parent.parent / "gameplay")); ap.add_argument("--index", type=int, default=0)
     a = ap.parse_args()
@@ -70,8 +113,11 @@ def main():
         parts = []
         for i, p in enumerate(reel):
             f = Path(td) / f"p{i:02d}.mp4"
-            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(p["start"]), "-to", str(p["end"]), "-i", p["clip"],
-                            "-vf", f"crop={w}:{h}:{x}:{y},scale=-2:960,pad=1080:960:(ow-iw)/2:0:color={REEL['pad_color']},fps={REEL['fps']}", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", str(f)], check=True)
+            if REEL["track"]["on"]:
+                tracked(p, f)
+            else:
+                subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(p["start"]), "-to", str(p["end"]), "-i", p["clip"],
+                                "-vf", f"crop={w}:{h}:{x}:{y},scale=-2:960,pad=1080:960:(ow-iw)/2:0:color={REEL['pad_color']},fps={REEL['fps']}", "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", str(f)], check=True)
             parts.append(f)
         lst = Path(td) / "list.txt"; lst.write_text("".join(f"file '{f}'\n" for f in parts))
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-t", str(REEL["seconds"]),

@@ -47,8 +47,28 @@ def chunks(text, start, end, n):
     return out
 
 
+PRON = {w: ph for w, ph in json.loads((Path(__file__).parent / "pronunciation.json").read_text()).items() if not w.startswith("_")}
+PRON_RE = re.compile(r"\b(" + "|".join(sorted(map(re.escape, PRON), key=len, reverse=True)) + r")\b", re.I) if PRON else None
+
+
+def phonemes(k, text):
+    """Text -> Kokoro phonemes, with pronunciation.json words swapped in (case-insensitive, whole words)."""
+    out, i = [], 0
+    for m in PRON_RE.finditer(text):
+        if text[i:m.start()].strip():
+            out.append(k.tokenizer.phonemize(text[i:m.start()], VOICE["lang"]))
+        key = next(w for w in PRON if w.lower() == m.group(0).lower())
+        out.append(PRON[key]); i = m.end()
+    if text[i:].strip():
+        out.append(k.tokenizer.phonemize(text[i:], VOICE["lang"]))
+    return re.sub(r"\s+([,.!?;:])", r"\1", " ".join(o.strip() for o in out))
+
+
 def synth(k, text, speed):
-    x, sr = k.create(text, voice=VOICE["voice"], speed=speed, lang=VOICE["lang"])
+    if PRON_RE and PRON_RE.search(text):
+        x, sr = k.create(phonemes(k, text), voice=VOICE["voice"], speed=speed, lang=VOICE["lang"], is_phonemes=True)
+    else:
+        x, sr = k.create(text, voice=VOICE["voice"], speed=speed, lang=VOICE["lang"])
     x = np.asarray(x, dtype=np.float32)
     # trim near-silence at both ends, then fade to avoid Kokoro's onset click
     nz = np.where(np.abs(x) > 0.01)[0]
