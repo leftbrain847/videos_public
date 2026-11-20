@@ -372,8 +372,7 @@
      "mood": "sad",
      "action": "facepalm"
     }
-   },
-   "speaker": "coach"
+   }
   },
   {
    "text": "That March, the league closed the loophole. Now the play still gets reviewed. The coach just loses a timeout or gets penalized.",
@@ -410,8 +409,7 @@
      "mood": "neutral",
      "look": "boss"
     }
-   },
-   "speaker": "boss"
+   }
   },
   {
    "text": "It got a nickname: the Jim Schwartz rule.",

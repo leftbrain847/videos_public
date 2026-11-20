@@ -175,8 +175,7 @@
      "action": "idle",
      "look": "exec"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "That's a thirty three yard kick.",
@@ -194,8 +193,7 @@
      "action": "point",
      "look": "camera"
     }
-   },
-   "speaker": "exec"
+   }
   },
   {
    "text": "Kickers had been making over ninety nine percent. That season, about ninety four.",

@@ -396,8 +396,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "rookie"
+   }
   },
   {
    "text": "He also said it's good to get punched in the face.",
@@ -414,8 +413,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "rookie"
+   }
   },
   {
    "text": "Is a rough first start good for a rookie? Yes or no?",

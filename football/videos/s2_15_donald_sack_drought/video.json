@@ -391,8 +391,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "donald"
+   }
   },
   {
    "text": "His coach called him one of one.",
@@ -414,8 +413,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "coach"
+   }
   },
   {
    "text": "Would you come out of retirement for one sack? Yes or no?",

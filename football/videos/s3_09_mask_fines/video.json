@@ -145,7 +145,6 @@
      "look": "camera"
     }
    },
-   "speaker": "official",
    "board": [
     "SIDELINE RULE:",
     "MASKS ON"
@@ -349,7 +348,6 @@
      "look": "official"
     }
    },
-   "speaker": "official",
    "board": [
     "TOTAL",
     "$1.75M"

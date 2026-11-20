@@ -375,8 +375,7 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "own"
+   }
   },
   {
    "text": "Now both feet have to come down in bounds. Pushed or not.",

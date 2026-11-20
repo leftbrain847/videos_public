@@ -336,8 +336,7 @@
      "action": "cross",
      "look": "camera"
     }
-   },
-   "speaker": "ref"
+   }
   },
   {
    "text": "The goalposts moved up to the goal line.",
@@ -355,8 +354,7 @@
      "action": "point",
      "look": "camera"
     }
-   },
-   "speaker": "ref"
+   }
   },
   {
    "text": "And plays ending within ten yards of a sideline got moved toward the middle.",

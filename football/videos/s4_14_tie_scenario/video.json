@@ -358,8 +358,7 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "rcoach"
+   }
   },
   {
    "text": "Then, with thirty eight seconds left, the Chargers called timeout.",
@@ -417,8 +416,7 @@
      "mood": "neutral",
      "look": "ccoach"
     }
-   },
-   "speaker": "ccoach"
+   }
   },
   {
    "text": "Next play: Josh Jacobs ran ten yards.",

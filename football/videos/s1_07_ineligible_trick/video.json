@@ -353,8 +353,7 @@
      "action": "hold",
      "look": "coach"
     }
-   },
-   "speaker": "coach"
+   }
   },
   {
    "text": "Tom Brady's reply: maybe they should study the rule book.",
@@ -436,8 +435,7 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "own"
+   }
   },
   {
    "text": "A player who reports as ineligible can't line up outside the tackles anymore.",

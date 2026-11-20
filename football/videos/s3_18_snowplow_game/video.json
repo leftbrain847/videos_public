@@ -50,7 +50,7 @@
    "set": "press", "setOpts": {"boardText": ["POSTGAME"]}, "board": ["POSTGAME"],
    "place": {"rival": "center"},
    "shot": {"type": "medium", "on": "rival"},
-   "act": {"rival": {"mood": "angry", "action": "point", "look": "camera"}}, "speaker": "rival"},
+   "act": {"rival": {"mood": "angry", "action": "point", "look": "camera"}}},
   {"text": "The three points stood anyway.", "cap": "The 3 points stood anyway.", "key": ["STOOD"],
    "place": {"capy": [-1.8, 0.6]},
    "shot": {"type": "two", "on": "capy", "with": "rival"},

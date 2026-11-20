@@ -223,8 +223,7 @@
      "action": "talk",
      "look": "coach"
     }
-   },
-   "speaker": "foles"
+   }
   },
   {
    "text": "The coach said yes.",
@@ -241,8 +240,7 @@
      "action": "point",
      "look": "foles"
     }
-   },
-   "speaker": "coach"
+   }
   },
   {
    "text": "The ball was snapped straight to running back Corey Clement.",

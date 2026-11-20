@@ -272,7 +272,6 @@
     "coach": "left",
     "punter": "right"
    },
-   "speaker": "coach",
    "board": [
     "PUNT IT",
     "OUT OF BOUNDS"
@@ -407,7 +406,6 @@
    "place": {
     "coach": "center"
    },
-   "speaker": "coach",
    "board": [
     "POSTGAME"
    ]

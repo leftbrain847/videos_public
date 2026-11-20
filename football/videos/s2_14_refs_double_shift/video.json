@@ -159,8 +159,7 @@
      "mood": "worried",
      "action": "talk"
     }
-   },
-   "speaker": "boss"
+   }
   },
   {
    "text": "Everyone got a game within driving distance of home. Four men got two.",
@@ -464,8 +463,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "boss"
+   }
   },
   {
    "text": "Could you referee two NFL games in one day? Yes or no?",
