@@ -2,6 +2,7 @@
  "id": "s4_01_music_city_miracle",
  "title": "The Music City Miracle",
  "voice": "v2",
+ "locked": true,
  "set": "field",
  "setOpts": {
   "boardText": [

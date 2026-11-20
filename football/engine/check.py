@@ -23,6 +23,9 @@ RULES = {
     # Speech rules live in voice.py. A script marked "voice": "v2" must pass all of them (strict); older scripts get a
     # one-line count until they're rewritten. strict=True here would hold every script to them.
     "voice": {"strict": False, "mark": "v2"},
+    # J, 2026-11-20 UAT: feature Capy more. In v2 scripts she is the subject of at least this many shots (shot on/with
+    # capy), including the first and last lines. A J-approved video is marked "locked" and keeps its approved cut.
+    "capy_min_shots": 5,
 }
 
 
@@ -154,6 +157,10 @@ def voice_errors(vd):
         if sp > voice.RULES["max_speed"]:
             out.append(f"last narration needed speed {sp} (max {voice.RULES['max_speed']}). Cut words")
     out += play_errors(S, json.loads(tj.read_text()) if tj.exists() else None)
+    if not S.get("locked"):
+        n = sum(1 for l in S.get("lines", []) if "capy" in ((l.get("shot") or {}).get("on"), (l.get("shot") or {}).get("with")))
+        if n < RULES["capy_min_shots"]:
+            out.append(f"Capy is the subject of {n} shots (want {RULES['capy_min_shots']}+: she opens, guides and closes)")
     unsure = sorted({n for l in S.get("lines", []) for n in voice.unsure_names(l["text"])})
     return S, out, unsure
 

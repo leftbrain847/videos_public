@@ -142,7 +142,7 @@ def test_strict_is_per_script():
 def test_v2_script_with_a_year_fails_check():
     import check, tempfile
     with tempfile.TemporaryDirectory() as d:
-        S = {"voice": "v2", "lines": [{"text": "You're in 1978. Kevin Dyson waits."}]}
+        S = {"voice": "v2", "locked": True, "lines": [{"text": "You're in 1978. Kevin Dyson waits."}]}
         (Path(d) / "video.json").write_text(json.dumps(S))
         _, errs, _ = check.voice_errors(d)
         assert any("nineteen seventy eight" in e for e in errs), errs
@@ -160,6 +160,17 @@ def test_play_geometry_rules():
     assert any("closer than" in e for e in errs), errs         # start 1 unit apart
     ok = {"lines": [{"play": {"cast": {"a": {"path": [[0, 0, 0], [1, 10, 0]]}, "b": {"path": [[0, 0, -3], [1, 10, -3]]}}}}]}
     assert check.play_errors(ok, {"lines": [{"start": 0, "end": 2}]}) == []
+
+
+def test_capy_must_be_featured():
+    import check, tempfile
+    with tempfile.TemporaryDirectory() as d:
+        S = {"voice": "v2", "lines": [{"text": "Short line.", "shot": {"type": "two", "on": "capy"}}] * 4}
+        (Path(d) / "video.json").write_text(json.dumps(S))
+        assert any("Capy is the subject of 4" in e for e in check.voice_errors(d)[1])
+        S["lines"] = S["lines"] * 2
+        (Path(d) / "video.json").write_text(json.dumps(S))
+        assert not any("Capy" in e for e in check.voice_errors(d)[1])
 
 
 def run():

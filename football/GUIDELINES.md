@@ -69,7 +69,7 @@ Every move must mean something. Idle is still: breathing, blinks, a small head d
 - **Shots:** at least 5 distinct shots, never the same shot type 3 times in a row. Types: `wide`, `medium`, `close`, `low`, `high`, `two`, `ots`, and for plays `follow` / `follow_high` (on a cast id or `ball`).
 - **Acting:** every line sets a mood that matches what's said (`shocked` for the reveal, `sad` for the loss) and an action where it helps (`point`, `facepalm`, `cheer`, `shrug`...). Whoever speaks gets `speaker` (their mouth moves).
 - **Boards:** use `board` text for numbers worth seeing (scores, stat lines, "QB: ???").
-- **Capy:** `"capy": {"kind": "capy"}` in the cast; speaker on the first and last lines; on screen for at least one guide moment in the middle.
+- **Capy:** `"capy": {"kind": "capy"}` in the cast; speaker on the first and last lines. **Feature her (J, 2026-11-20 UAT):** she is the subject of at least 5 shots (`shot.on` or `shot.with` = `capy`), framing the setup, the turn and the payoff, not just the open and close. `check.py` enforces it for v2 scripts; a J-approved video is marked `"locked": true` and keeps its approved cut.
 - **Review before rendering:** look at the stills `make.sh` writes (one per line). Fix anything clipped, hidden, off-frame, or a character in the wrong set before the full render.
 
 ## Files
