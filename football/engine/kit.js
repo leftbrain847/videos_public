@@ -365,23 +365,24 @@ export function pose(p, action, t, talking, u = 0.5) {
     case 'run': gait(MOTION.run); break;
     case 'talk': J.rx = -0.35; J.re = -0.9 - Math.max(0, Math.sin(t * 3.2 + s)) * MOTION.talkBeat; J.rz = -0.15; break;
     case 'point': J.rx = -1.45 * k; J.re = -0.1; J.rz = -0.1; break;
-    case 'cheer': case 'celebrate': J.lz = 2.7 * k; J.rz = -2.7 * k; J.le = J.re = -0.35 * k;
+    case 'cheer': case 'celebrate': J.lz = -2.45 * k; J.rz = 2.45 * k; J.lx = J.rx = -0.2 * k; J.le = J.re = -0.15 * k;   // a V, hands clear of the head
       if (action === 'celebrate') { J.bob = Math.abs(Math.sin(t * 7)) * 0.3 * k; J.kl = J.kr = 0.25 * Math.abs(Math.sin(t * 7)) * k; } break;
     case 'facepalm': J.rx = -1.1 * k; J.re = -2.3 * k; J.rz = 0.3 * k; break;
-    case 'shrug': J.lz = 0.45 * k; J.rz = -0.45 * k; J.le = J.re = -1.5 * k; J.lx = J.rx = -0.2 * k; break;
+    case 'shrug': J.lz = -0.45 * k; J.rz = 0.45 * k; J.le = J.re = -1.5 * k; J.lx = J.rx = -0.2 * k; break;
     case 'throw': { const back = ease(u / MOTION.oneShot[0]) * (1 - k);
       J.rx = -2.6 * back - 1.1 * k; J.re = -1.7 * back - 0.15 * k; J.rz = -0.25; J.lx = -0.8 * back; J.le = -0.6;
       J.hl = -0.45 * k; J.kl = 0.2 * k; J.hr = 0.25 * k; J.twist = 0.35 * back - 0.25 * k; J.lean = 0.15 * k; break; }
     case 'kick': { const sw = Math.sin(Math.PI * k);
-      J.hr = 0.5 * (1 - k) - 1.4 * sw; J.kr = 1.4 * (1 - k) * 0.6 + 0.1; J.hl = 0.1 * k; J.lz = 0.6; J.rz = -0.6; J.lean = -0.1 * sw; break; }
+      J.hr = 0.5 * (1 - k) - 1.4 * sw; J.kr = 1.4 * (1 - k) * 0.6 + 0.1; J.hl = 0.1 * k; J.lz = -0.6; J.rz = 0.6; J.lean = -0.1 * sw; break; }
     case 'catch': J.lx = J.rx = -1.35 * k; J.le = J.re = -0.6 * k; J.lz = -0.15 * k; J.rz = 0.15 * k; break;
     case 'hold': J.rx = -0.45; J.re = -1.5; J.rz = 0.25; break;
     case 'cross': J.lx = J.rx = -0.55; J.le = J.re = -2.0; J.lz = -0.35; J.rz = 0.35; break;
     case 'slump': J.lean = 0.12; J.le = J.re = -0.05; break;
     case 'clap': { const c = Math.abs(Math.sin(t * 8)); J.lx = J.rx = -0.75; J.le = J.re = -1.2; J.lz = -0.2 - c * 0.25; J.rz = 0.2 + c * 0.25; break; }
-    case 'wave': J.rz = -2.2; J.re = -0.7 + Math.sin(t * 7) * 0.35; break;
+    case 'wave': J.rz = 2.2; J.rx = -0.3; J.re = -0.5 + Math.sin(t * 7) * 0.3; break;
     default: break;   // idle: still
   }
+  // z: negative swings the left arm out to the side, positive the right (armL sits at -x)
   P.armL.rotation.set(J.lx, 0, J.lz); P.armR.rotation.set(J.rx, 0, J.rz);
   if (P.elbowL) { P.elbowL.rotation.x = J.le; P.elbowR.rotation.x = J.re; }
   if (P.legL) { P.legL.rotation.x = J.hl; P.legR.rotation.x = J.hr; }

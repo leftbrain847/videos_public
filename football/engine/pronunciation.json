@@ -1,0 +1,10 @@
+{
+ "_note": "Words espeak gets wrong, as Kokoro phonemes (IPA, espeak style). Checked by ear-proxy: espeak-ng -v en-us -q -x --ipa. Add every name a script uses that espeak mispronounces.",
+ "COVID": "kˈoʊvɪd",
+ "Bengals": "bˈɛŋɡəlz",
+ "49ers": "fˈɔːɹɾinˌaɪnɚz",
+ "Niners": "nˈaɪnɚz",
+ "Wycheck": "wˈaɪtʃɛk",
+ "Koch": "kˈʊk",
+ "Orleans": "ˈɔːɹlənz"
+}

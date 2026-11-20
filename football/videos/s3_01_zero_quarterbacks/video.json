@@ -83,9 +83,9 @@
  },
  "lines": [
   {
-   "text": "In 2020, an NFL team played a real game with zero quarterbacks.",
+   "text": "You're Kendall Hinton. A practice squad receiver. Tomorrow you start at quarterback.",
    "key": [
-    "ZERO"
+    "QUARTERBACK."
    ],
    "shot": {
     "type": "two",
@@ -119,9 +119,9 @@
    "speaker": "capy"
   },
   {
-   "text": "On Thursday, Denver's third-string quarterback tested positive for COVID.",
+   "text": "Thursday. Denver's third string quarterback tests positive for COVID.",
    "key": [
-    "POSITIVE"
+    "COVID."
    ],
    "place": {
     "hinton": false,
@@ -161,9 +161,9 @@
    }
   },
   {
-   "text": "The other three had been in meetings with him. Without masks.",
+   "text": "The other three sat in meetings with him. Without masks. Bold.",
    "key": [
-    "MASKS"
+    "BOLD."
    ],
    "shot": {
     "type": "medium",
@@ -185,9 +185,8 @@
    }
   },
   {
-   "text": "So the league ruled all four out. The day before the game.",
+   "text": "So the league rules all four out. The day before the game.",
    "key": [
-    "ALL",
     "FOUR"
    ],
    "set": "office",
@@ -216,9 +215,9 @@
    }
   },
   {
-   "text": "Denver asked to postpone. The answer was no.",
+   "text": "Denver asks to postpone. The league says no. Have fun.",
    "key": [
-    "NO"
+    "NO."
    ],
    "shot": {
     "type": "close",
@@ -232,10 +231,9 @@
    }
   },
   {
-   "text": "Their new quarterback? Kendall Hinton. A practice squad wide receiver.",
+   "text": "So they call you. The practice squad receiver.",
    "key": [
-    "WIDE",
-    "RECEIVER"
+    "YOU."
    ],
    "set": "locker",
    "setOpts": {
@@ -275,10 +273,9 @@
    }
   },
   {
-   "text": "He'd played quarterback in college at Wake Forest, but not in two years.",
+   "text": "You played quarterback in college, at Wake Forest. Two years ago.",
    "key": [
-    "TWO",
-    "YEARS"
+    "COLLEGE,"
    ],
    "shot": {
     "type": "two",
@@ -298,12 +295,11 @@
    }
   },
   {
-   "text": "And he found out with less than twenty four hours to kickoff.",
+   "text": "And you find out with less than twenty four hours to kickoff.",
    "key": [
-    "24",
-    "HOURS"
+    "24"
    ],
-   "cap": "And he found out with less than 24 hours to kickoff.",
+   "cap": "And you find out with less than 24 hours to kickoff.",
    "shot": {
     "type": "close",
     "on": "hinton"
@@ -316,11 +312,10 @@
    }
   },
   {
-   "text": "Final line: one of nine. Thirteen yards. Two interceptions.",
-   "cap": "Final line: 1 of 9. 13 yards. 2 interceptions.",
+   "text": "Your final line: one for nine. Thirteen yards. Two interceptions.",
+   "cap": "Your final line: 1 for 9. 13 yards. 2 interceptions.",
    "key": [
-    "1",
-    "13"
+    "INTERCEPTIONS."
    ],
    "set": "field",
    "setOpts": {
@@ -345,10 +340,10 @@
    }
   },
   {
-   "text": "Denver lost, thirty one to three.",
-   "cap": "Denver lost, 31 to 3.",
+   "text": "Denver loses, thirty one to three. Honestly? Could have been worse.",
+   "cap": "Denver loses, 31 to 3. Honestly? Could have been worse.",
    "key": [
-    "31"
+    "WORSE."
    ],
    "shot": {
     "type": "wide",
@@ -369,8 +364,7 @@
   {
    "text": "No team had completed just one pass in a game since the 2005 49ers.",
    "key": [
-    "ONE",
-    "PASS"
+    "1"
    ],
    "shot": {
     "type": "high",
@@ -381,12 +375,13 @@
      "mood": "sad",
      "action": "idle"
     }
-   }
+   },
+   "cap": "No team had completed just 1 pass in a game since the 2005 49ers."
   },
   {
-   "text": "His coach didn't blame him. He blamed the quarterbacks who broke the protocols.",
+   "text": "Your coach doesn't blame you. He blames the quarterbacks who skipped the masks.",
    "key": [
-    "PROTOCOLS."
+    "BLAMES"
    ],
    "set": "press",
    "setOpts": {
@@ -410,10 +405,9 @@
    }
   },
   {
-   "text": "Could you play quarterback on one night's notice? Tell me below.",
+   "text": "Could you play quarterback on one night's notice? Be honest.",
    "key": [
-    "ONE",
-    "NIGHT'S"
+    "HONEST."
    ],
    "set": "locker",
    "setOpts": {

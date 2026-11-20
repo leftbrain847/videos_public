@@ -1,4 +1,4 @@
-// Render the story half: node render.mjs <video_dir> [--fps 30] [--stills t1,t2,...]
+// Render the story half: node render.mjs <video_dir> [--fps 30] [--stills t1,t2,...] [--draft]
 // Plays the page on a virtual clock (frame by frame), pipes JPEG frames to ffmpeg -> build/top.mp4.
 import { createRequire } from 'module';
 import http from 'http'; import fs from 'fs'; import path from 'path'; import { spawn } from 'child_process';
@@ -9,7 +9,7 @@ const CHROME = process.env.CHROME || '/opt/pw-browsers/chromium';
 
 const args = process.argv.slice(2); const vd = path.resolve(args[0]);
 const opt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : d; };
-const fps = Number(opt('--fps', 24)); const stills = opt('--stills', null);
+const fps = Number(opt('--fps', 24)); const draft = args.includes('--draft'); const stills = opt('--stills', null);
 const root = path.dirname(new URL(import.meta.url).pathname);
 const types = { '.js': 'text/javascript', '.html': 'text/html', '.otf': 'font/otf', '.json': 'application/json' };
 const srv = http.createServer((q, s) => {
@@ -23,7 +23,7 @@ const timing = JSON.parse(fs.readFileSync(path.join(vd, 'build/timing.json'), 'u
 const b = await chromium.launch({ executablePath: CHROME, args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
 const p = await b.newPage({ viewport: { width: 1080, height: 960 } });
 p.on('pageerror', (e) => { console.error('page error:', e.message); process.exitCode = 1; });
-await p.goto(`http://localhost:${port}/page.html`); await p.waitForFunction(() => window.ready, null, { timeout: 60000 });
+await p.goto(`http://localhost:${port}/page.html${draft ? '?draft=1' : ''}`); await p.waitForFunction(() => window.ready, null, { timeout: 60000 });
 await p.evaluate(([s, t]) => window.load(s, t), [script, timing]);
 const dec = (u) => Buffer.from(u.slice(u.indexOf(',') + 1), 'base64');
 if (stills) {
