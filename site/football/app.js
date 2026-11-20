@@ -5,7 +5,9 @@
   const $ = (id) => document.getElementById(id);
   const el = (tag, props = {}, kids = []) => { const e = document.createElement(tag); Object.assign(e, props); kids.forEach((k) => e.append(k)); return e; };
   const data = await (await fetch('videos.json', { cache: 'no-cache' })).json();
-  const V = data.videos;
+  // a video plays from this site or from this repo's GitHub Releases, nowhere else (the CSP allows the same hosts)
+  const okVideo = (u) => /^media\/s\d\/s\d_\d+_[a-z0-9_]+\.mp4$/.test(u) || /^https:\/\/github\.com\/leftbrain847\/videos_public\/releases\/download\/football-batch-[0-9a-z-]+\/s\d_\d+_[a-z0-9_]+\.mp4$/.test(u);
+  const V = data.videos.filter((v) => okVideo(v.video));
   let set = 'all'; try { set = localStorage.getItem(CFG.storeKey) || 'all'; } catch (e) { /* storage may be unavailable */ }
   let list = [], cur = -1;
 

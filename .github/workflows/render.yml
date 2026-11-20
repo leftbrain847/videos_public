@@ -1,0 +1,179 @@
+name: render
+# Renders football shorts on demand. No secrets; every action pinned to a commit SHA; the token is read-only except in
+# the release job, which only uploads files to a GitHub Release. Masters and web copies go to the release, never to git.
+on:
+  workflow_dispatch:
+    inputs:
+      videos:
+        description: 'Video ids, space separated (max 20), e.g. s4_01_music_city_miracle'
+        required: true
+        type: string
+      release:
+        description: 'Release tag to upload to, e.g. football-batch-1 (empty: render and review only)'
+        required: false
+        type: string
+        default: ''
+      listen:
+        description: 'Listen-back: transcribe the narration and flag misheard words'
+        type: boolean
+        default: true
+      replace:
+        description: 'Replace files already in the release (off: an existing file is never overwritten)'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: render-${{ inputs.release || github.run_id }}
+  cancel-in-progress: false
+defaults:
+  run:
+    shell: bash   # adds -o pipefail
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      ids: ${{ steps.plan.outputs.ids }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with: { persist-credentials: false }
+      - id: plan
+        env:
+          VIDEOS: ${{ inputs.videos }}
+          TAG: ${{ inputs.release }}
+        run: |
+          [[ -z "$TAG" || "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ ]] || { printf 'bad release tag\n'; exit 1; }
+          python3 tools/render_plan.py >> "$GITHUB_OUTPUT"
+
+  # Always runs: a release needs every claim checked against two sources.
+  facts:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with: { persist-credentials: false }
+      - name: Check every claim against two sources
+        env:
+          IDS: ${{ needs.plan.outputs.ids }}
+        run: python3 tools/fact_check.py $IDS
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with: { name: facts, path: football/out/facts/, retention-days: 30 }
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    env:
+      VID: ${{ matrix.id }}
+      IDX: ${{ matrix.index }}
+      KOKORO_MODELS: /home/runner/kokoro
+      CHROME: /usr/bin/google-chrome
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with: { persist-credentials: false }
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with: { python-version: '3.13' }
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with: { node-version: '22' }
+      - name: Tools and pinned dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg
+          pip install -q --require-hashes -r football/engine/requirements.txt
+          cd football/engine && npm ci --no-audit --no-fund
+      - name: Kokoro models from the GitHub release, checksum-verified
+        run: |
+          mkdir -p "$KOKORO_MODELS"
+          for f in kokoro-v1.0.onnx voices-v1.0.bin; do
+            curl -fsSL -o "$KOKORO_MODELS/$f" "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"
+          done
+          (cd "$KOKORO_MODELS" && sha256sum -c "$GITHUB_WORKSPACE/football/engine/models.sha256")
+      - name: Render
+        env:
+          PWMOD: ${{ github.workspace }}/football/engine/node_modules/playwright-core
+        run: cd football && bash engine/make.sh "videos/$VID" "$IDX"
+      - name: Review pack, web copy and poster
+        run: |
+          cd football && S="${VID%%_*}"; D="out/release"; R="out/review"; mkdir -p "$D" "$R"
+          bash engine/review.sh "out/$S/$VID.mp4" | tee "$R/$VID.loudness.txt"
+          cp "out/$S/$VID.review.jpg" "$R/$VID.review.jpg"; cp "out/$S/$VID.review.jpg" "$D/$VID.review.jpg"
+          cp "out/$S/$VID.mp4" "$D/$VID.master.mp4"
+          ffmpeg -v error -y -i "out/$S/$VID.mp4" -vf scale=720:1280 -c:v libx264 -crf 28 -preset slow -c:a aac -b:a 96k -movflags +faststart "$D/$VID.mp4"
+          ffmpeg -v error -y -ss 1.5 -i "out/$S/$VID.mp4" -frames:v 1 -vf scale=360:640 -q:v 3 "$D/$VID.jpg"
+      - name: Review artifact (contact sheet, loudness)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with: { name: 'review-${{ matrix.id }}', path: football/out/review/, retention-days: 30 }
+      - name: Hand the files to the release job (kept 1 day)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with: { name: 'media-${{ matrix.id }}', path: football/out/release/, retention-days: 1 }
+      - name: Hand the narration to the listen-back job (kept 1 day)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: 'voice-${{ matrix.id }}'
+          retention-days: 1
+          path: |
+            football/videos/${{ matrix.id }}/build/narration.wav
+            football/videos/${{ matrix.id }}/build/timing.json
+
+  # Its own job, and only after the release job, so the speech-to-text install and model can't touch the released files.
+  listen:
+    if: ${{ !cancelled() && inputs.listen && needs.render.result != 'skipped' }}
+    needs: [plan, render, release]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    env:
+      VID: ${{ matrix.id }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with: { persist-credentials: false }
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with: { python-version: '3.13' }
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with: { name: 'voice-${{ matrix.id }}', path: 'football/videos/${{ matrix.id }}/build' }
+      - name: Transcribe each line and diff it against the script
+        run: |
+          pip install -q --require-hashes -r football/engine/listen-requirements.txt
+          mkdir -p football/out/listen
+          cd football && python3 engine/listen.py "videos/$VID" | tee "out/listen/$VID.listen.txt"
+          cp "videos/$VID/build/listen.json" "out/listen/$VID.listen.json"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with: { name: 'listen-${{ matrix.id }}', path: football/out/listen/, retention-days: 30 }
+
+  release:
+    if: ${{ !cancelled() && inputs.release != '' && needs.facts.result == 'success' && needs.render.result != 'skipped' }}
+    needs: [render, facts]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write   # this job only: create the release and upload its files
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with: { pattern: 'media-*', path: files, merge-multiple: true }
+      - name: Upload to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.release }}
+          REPLACE: ${{ inputs.replace }}
+        run: |
+          [[ "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ ]] || { printf 'bad release tag\n'; exit 1; }
+          compgen -G 'files/*' >/dev/null || { printf 'no rendered files to release\n'; exit 1; }
+          gh release view "$TAG" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || \
+            gh release create "$TAG" -R "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "$TAG" --notes "Football shorts: 1080x1920 masters (*.master.mp4), 720x1280 web copies, posters and contact sheets."
+          if [[ "$REPLACE" == "true" ]]; then gh release upload "$TAG" files/* -R "$GITHUB_REPOSITORY" --clobber
+          else gh release upload "$TAG" files/* -R "$GITHUB_REPOSITORY"; fi
+          echo "Uploaded to https://github.com/$GITHUB_REPOSITORY/releases/tag/$TAG" >> "$GITHUB_STEP_SUMMARY"

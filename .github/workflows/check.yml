@@ -30,7 +30,8 @@ jobs:
           python3 - <<'PY'
           import json, pathlib
           d = json.load(open('site/football/videos.json'))
-          missing = [p for v in d['videos'] for p in (v['video'], v['poster']) if not pathlib.Path('site/football', p).exists()]
+          rel = 'https://github.com/leftbrain847/videos_public/releases/download/football-batch-'
+          missing = [p for v in d['videos'] for p in (v['video'], v['poster']) if not p.startswith(rel) and not pathlib.Path('site/football', p).exists()]
           assert not missing, missing[:5]
           print(len(d['videos']), 'videos, all files present')
           PY

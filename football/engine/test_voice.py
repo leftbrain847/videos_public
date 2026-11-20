@@ -173,6 +173,41 @@ def test_capy_must_be_featured():
         assert not any("Capy" in e for e in check.voice_errors(d)[1])
 
 
+def test_listen_back_diff():
+    import listen
+    assert listen.diff("You're in nineteen seventy eight.", "You're in 1978.") == []      # digits spoken back
+    assert listen.diff("Larry Csonka runs.", "Larry Sonka runs.") == [("csonka", "sonka")]
+    assert listen.diff("Bills sixteen, Titans fifteen.", "Bills 16, Titans 15") == []
+
+
+def test_render_plan_rejects_bad_ids():
+    sys.path.insert(0, str(ROOT.parent.parent / "tools"))
+    import render_plan
+    m = render_plan.plan("s4_01_music_city_miracle")
+    assert m[0]["id"] == "s4_01_music_city_miracle" and isinstance(m[0]["index"], int)
+    for bad in ("../etc", "s1_01_x;rm", " ".join(["s4_01_music_city_miracle"] * 21)):
+        try:
+            render_plan.plan(bad); assert False, bad
+        except SystemExit:
+            pass
+
+
+def test_fact_check_matching_and_snippets():
+    sys.path.insert(0, str(ROOT.parent.parent / "tools"))
+    import fact_check as f
+    w = "The Titans won 22 16 when Kevin Dyson ran 75 yards down the sideline for a touchdown with three seconds left".split()
+    assert f.find(w, ["Dyson", "75|seventy-five", "yard"])            # all terms close together
+    assert f.find(w, ["Neal"]) is None                                 # missing term: no support
+    assert f.find(w, ["Titans", "three seconds"], window=5) is None    # too far apart
+    assert len(f.snippet(w, f.find(w, ["Dyson", "75"])).split()) <= 15  # never more than 15 words of a source
+
+
+def test_gallery_reads_release_links():
+    sys.path.insert(0, str(ROOT.parent.parent / "tools"))
+    import build_site
+    assert build_site.TAG.fullmatch("football-batch-1") and not build_site.TAG.fullmatch("v1; rm -rf /")
+
+
 def run():
     fails = []
     for name, fn in sorted(globals().items()):

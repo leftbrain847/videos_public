@@ -1,4 +1,5 @@
-"""Build site/<channel>/videos.json for a channel gallery from its scripts and the web copies in site/<channel>/media.
+"""Build site/<channel>/videos.json for a channel gallery from its scripts, posters, and web copies (GitHub Releases
+listed in site/<channel>/releases.json, or older files in site/<channel>/media).
 
 python3 tools/build_site.py [channel]      (default: football; run from the repo root; the Pages workflow runs it too)
 """
@@ -6,6 +7,8 @@ import json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+REPO = "leftbrain847/videos_public"
+TAG = re.compile(r"football-batch-[0-9a-z-]{1,30}")
 SETS = {
     "s1": "Wait, that's the rule?",
     "s2": "This season",
@@ -17,6 +20,12 @@ SETS = {
 def main():
     ch = sys.argv[1] if len(sys.argv) > 1 else "football"
     site = ROOT / "site" / ch
+    # web copies live in GitHub Releases (one per batch); site/<channel>/releases.json maps video id -> release tag
+    rel_file = site / "releases.json"
+    releases = json.loads(rel_file.read_text()) if rel_file.exists() else {}
+    bad = {k: t for k, t in releases.items() if not TAG.fullmatch(t)}
+    if bad:
+        raise SystemExit(f"bad release tags in {rel_file}: {bad}")
     items = []
     for vj in sorted((ROOT / ch / "videos").glob("*/video.json")):
         v = json.loads(vj.read_text())
@@ -25,13 +34,19 @@ def main():
             raise SystemExit(f"bad video id {vid!r} in {vj}")
         s = vid.split("_")[0]
         media = site / "media" / s / f"{vid}.mp4"
-        if not media.exists():
+        if vid in releases:
+            video = f"https://github.com/{REPO}/releases/download/{releases[vid]}/{vid}.mp4"
+        elif media.exists():
+            video = f"media/{s}/{vid}.mp4"
+        else:
+            continue
+        if not (site / "posters" / s / f"{vid}.jpg").exists():
             continue
         hook = v["lines"][0].get("cap", v["lines"][0]["text"]) if v.get("lines") else ""
         items.append({
             "id": vid, "set": s, "n": int(re.match(r"s\d_(\d+)", vid).group(1)),
             "title": v.get("title", vid), "hook": hook,
-            "video": f"media/{s}/{vid}.mp4", "poster": f"posters/{s}/{vid}.jpg",
+            "video": video, "poster": f"posters/{s}/{vid}.jpg",
             "sources": [{"title": x.get("title", ""), "url": x["url"]} for x in v.get("sources", []) if x.get("url", "").startswith("https://")],
         })
     items.sort(key=lambda x: (x["set"], x["n"]))
