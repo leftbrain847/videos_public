@@ -34,7 +34,7 @@ No story in two sets. Leave out stories whose center is a serious injury or a de
 - **Escalate:** each beat raises the stakes or the absurdity; the biggest number or twist comes in the last third.
 - **End with a question people can answer in one word or a number** ("Could you play quarterback on one night's notice?"). Capy says it. It's the comment bait.
 - **Length:** 10–18 lines, 135–172 spoken words (about 2.6 words a second fits 60 s).
-- **Numbers:** write them as words in `text` (that's what the voice reads) and as digits in `cap` (that's what viewers read).
+- **Numbers:** write them as words in `text` (that's what the voice reads) and as digits in `cap` (that's what viewers read). See "Writing for the voice".
 - **Key words:** 1–2 per line, highlighted in red. Pick the word that carries the line (the number, the twist).
 
 ## Accuracy (non-negotiable)
@@ -87,13 +87,13 @@ football/
 
 Make one: `engine/setup.sh` once, then `engine/make.sh videos/<id> <index>` from `football/`.
 
-## Writing for the voice (Kokoro af_heart)
+## Writing for the voice (Kokoro af_heart) **(J, 2026-11-20)**
 
-Kokoro picks its own emphasis and pauses; the script is the only lever. Measured on 90 of our sentences (2026-11-20): 9+ words got a mid-sentence pause 57% of the time, 8 or fewer only 9%.
+Kokoro reads `text` exactly as written and picks its own emphasis and pauses, so the script is the only lever. These rules make whole classes of misreads impossible instead of patching them one by one. `engine/voice.py` holds them; `engine/check.py` fails any script marked `"voice": "v2"` that breaks one (older scripts get a count until they're rewritten). Every rewritten script gets `"voice": "v2"`.
 
-- **8 words max per sentence.** Split, don't compress.
-- **One action per sentence.** "You turn. You throw it across the field." not "You turn and throw it across the field."
-- **Punch word last**, in its own short sentence: "Kick return practice? Barely."
-- **Colons only for a deliberate beat** ("Final score: …"); Kokoro always pauses there.
-- **Names espeak gets wrong go in `engine/pronunciation.json`** (check with `espeak-ng -v en-us -q -x --ipa "<word>"`).
-- `engine/check.py` prints these as `~ voice:` warnings; they become failures (`RULES.voice.strict`) once the 100 are rewritten.
+1. **`text` is exactly what is spoken.** No digits, symbols or abbreviations: "nineteen seventy eight", "thirty one to three", "fourth and twenty five", "number one pick", "the forty niners", "Saint Louis". Letters only when they're said as letters, spaced: "N F L". Accents are spelled plainly ("Maracana") with the name in the dictionary. Digits live only in `cap`, the on-screen caption. The checker fails on any `0-9 % $ & / # @ +`, any all-caps word, abbreviations (`vs`, `St`, `Jr`...) and non-ASCII letters, and suggests the spoken form ("1978" → "nineteen seventy eight").
+2. **8 words max per sentence, one action each, punch word last.** Measured on 90 of our sentences: 9+ words got a mid-sentence pause 57% of the time, 8 or fewer 9%. "And" joining two actions almost always breaks the line, so any "and" in a sentence of 4+ words fails (except inside a number, "fourth and twenty five"): write "You turn. You throw it across the field." Put the punch word last, in its own short sentence: "Kick return practice? Barely." Colons only for a deliberate beat, one per line at most; Kokoro always pauses there.
+3. **Every name is in `engine/pronunciation.json`.** Any capitalized word in `text` (mid-sentence, or starting a sentence when it isn't an ordinary word from `engine/words.txt`) must be listed: with Kokoro phonemes when espeak reads it wrong, or `"ok"` after you've checked its IPA with `python3 engine/ipa.py <word>` (Kokoro's own espeak-ng; same as `espeak-ng -v en-us -q -x --ipa`). All 32 teams, their cities and every person in the 100 scripts are pre-filled. Names whose real pronunciation isn't confirmed are in `_unsure`: the checker lists them so you listen for them.
+4. **Fit: narration fits 60 s at Kokoro speed 1.06 or less.** `tts.py` stops above that and the fix is cutting words, never speeding up. `check.py` estimates the length from letter count so CI catches long scripts before a render.
+
+Before rendering, run `python3 engine/ipa.py videos/<id>` and read every line's phonemes for misread numbers, names or run-together letters. Each pronunciation or cadence problem J reports becomes a checker rule or a dictionary entry, never a one-off fix.

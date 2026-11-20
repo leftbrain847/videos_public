@@ -5,6 +5,9 @@ python3 check.py <video_dir> [...]      exit 1 if any video fails
 import json, re, sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+import voice  # noqa: E402  speech rules (GUIDELINES.md, "Writing for the voice")
+
 RULES = {
     "lines": (10, 18),
     "words": (135, 172),            # spoken words; ~2.6 words/s fits 60 s with breathing room
@@ -17,9 +20,9 @@ RULES = {
     "moods": {"neutral", "angry", "worried", "shocked", "happy", "sad", "smug", "confused"},
     "actions": {"idle", "talk", "point", "cheer", "facepalm", "shrug", "throw", "hold", "cross", "slump", "clap", "wave", "run", "walk", "catch", "kick", "celebrate"},
     "narrator": "capy",
-    # Kokoro delivery (measured 2026-11-20 on 90 sentences): sentences of 9+ words got a mid-sentence pause 57% of the
-    # time vs 9% at 8 or fewer; "and" joining two actions almost always breaks. Warnings now, failures once scripts are rewritten.
-    "voice": {"max_sentence_words": 8, "and_min_words": 6, "strict": False},
+    # Speech rules live in voice.py. A script marked "voice": "v2" must pass all of them (strict); older scripts get a
+    # one-line count until they're rewritten. strict=True here would hold every script to them.
+    "voice": {"strict": False, "mark": "v2"},
 }
 
 
@@ -90,30 +93,40 @@ def check(vd):
     return words, errs
 
 
-def voice_warnings(vd):
-    """Sentences Kokoro tends to break up: too long, or two actions joined by 'and'."""
-    V, out = RULES["voice"], []
-    for i, l in enumerate(json.loads((Path(vd) / "video.json").read_text()).get("lines", []), 1):
-        for s in re.split(r"(?<=[.?!])\s+", l["text"].strip()):
-            n = len(s.split())
-            if n > V["max_sentence_words"]:
-                out.append(f"line {i}: {n} words in one sentence (max {V['max_sentence_words']}): \"{s}\"")
-            elif n >= V["and_min_words"] and re.search(r"\band\b", s, re.I):
-                out.append(f"line {i}: 'and' joins two actions; split it: \"{s}\"")
-    return out
+def strict(S):
+    return RULES["voice"]["strict"] or S.get("voice") == RULES["voice"]["mark"]
+
+
+def voice_errors(vd):
+    """Speech-rule problems: failures for a v2 script, a count for the rest."""
+    S = json.loads((Path(vd) / "video.json").read_text())
+    out = [(f"line {i}: " if i else "") + m for i, m in voice.lint_script(S)]
+    tj = Path(vd) / "build" / "timing.json"
+    if tj.exists():
+        sp = json.loads(tj.read_text()).get("speed", 1.0)
+        if sp > voice.RULES["max_speed"]:
+            out.append(f"last narration needed speed {sp} (max {voice.RULES['max_speed']}). Cut words")
+    unsure = sorted({n for l in S.get("lines", []) for n in voice.unsure_names(l["text"])})
+    return S, out, unsure
 
 
 def main():
+    import test_voice
+    test_voice.run()   # the checker checks itself first: a broken rule must never pass scripts silently
     bad = 0
     for vd in sys.argv[1:]:
         words, errs = check(vd)
-        print(("OK  " if not errs else "FAIL") + f" {vd} ({words} words)")
+        S, verrs, unsure = voice_errors(vd)
+        if strict(S):
+            errs += ["voice: " + e for e in verrs]
+        print(("OK  " if not errs else "FAIL") + f" {vd} ({words} words{', voice v2' if strict(S) else ''})")
         for e in errs:
             print("   -", e)
-        warns = voice_warnings(vd)
-        for w in warns:
-            print("   ~ voice:", w)
-        bad += bool(errs) or (RULES["voice"]["strict"] and bool(warns))
+        if not strict(S) and verrs:
+            print(f"   ~ voice: {len(verrs)} speech-rule issues (fail once the script is marked \"voice\": \"v2\")")
+        if strict(S) and unsure:
+            print("   ? listen for:", ", ".join(unsure), "(pronunciation not confirmed; see pronunciation.json _unsure)")
+        bad += bool(errs)
     sys.exit(1 if bad else 0)
 
 
