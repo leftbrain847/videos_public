@@ -99,32 +99,44 @@
     0,
     0
    ]
+  },
+  "d4": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#00338d",
+    "number": "24",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   }
+  },
+  "rush": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#00338d",
+    "number": "91",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
   }
  },
  "lines": [
   {
-   "text": "In 2020, a game ended on a forty three yard heave, caught over three defenders.",
+   "text": "You need a touchdown. You throw it forty three yards. Into three defenders.",
+   "cap": "You need a touchdown. You throw it 43 yards. Into 3 defenders.",
    "key": [
     "43",
     "3"
    ],
+   "speaker": "capy",
    "shot": {
     "type": "two",
     "on": "capy",
     "with": "hopkins"
    },
-   "act": {
-    "capy": {
-     "mood": "smug",
-     "action": "talk",
-     "look": "camera"
-    },
-    "hopkins": {
-     "mood": "smug",
-     "look": "capy"
-    }
-   },
-   "cap": "In 2020, a game ended on a 43 yard heave, caught over 3 defenders.",
    "place": {
     "capy": [
      -2.4,
@@ -138,16 +150,29 @@
     "allen": false,
     "d1": false,
     "d2": false,
-    "d3": false
+    "d3": false,
+    "d4": false,
+    "rush": false
    },
-   "speaker": "capy",
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "hopkins": {
+     "mood": "smug",
+     "look": "capy"
+    }
+   },
    "board": [
     "BILLS 23",
     "CARDINALS 9"
    ]
   },
   {
-   "text": "Bills versus Cardinals. Buffalo led twenty three to nine.",
+   "text": "Twenty twenty. Bills versus Cardinals. Buffalo leads twenty three to nine.",
+   "cap": "2020. Bills versus Cardinals. Buffalo leads 23 to 9.",
    "key": [
     "23"
    ],
@@ -155,33 +180,38 @@
     "type": "medium",
     "on": "allen"
    },
+   "place": {
+    "capy": false,
+    "hopkins": false,
+    "allen": "center"
+   },
    "act": {
     "allen": {
      "mood": "smug",
      "action": "cross",
      "look": "camera"
     }
-   },
-   "cap": "Bills versus Cardinals. Buffalo led 23 to 9.",
-   "place": {
-    "capy": false,
-    "murray": false,
-    "hopkins": false,
-    "allen": "center",
-    "d1": false,
-    "d2": false,
-    "d3": false
    }
   },
   {
-   "text": "Arizona came back, and went ahead twenty six to twenty three.",
+   "text": "Arizona comes back. Cardinals twenty six, Bills twenty three.",
+   "cap": "Arizona comes back. Cardinals 26, Bills 23.",
    "key": [
-    "26"
+    "26,"
    ],
    "shot": {
     "type": "wide",
     "on": "murray"
    },
+   "place": {
+    "allen": false,
+    "murray": "center",
+    "hopkins": "right"
+   },
+   "board": [
+    "CARDINALS 26",
+    "BILLS 23"
+   ],
    "act": {
     "murray": {
      "mood": "happy",
@@ -191,20 +221,11 @@
      "mood": "happy",
      "action": "clap"
     }
-   },
-   "cap": "Arizona came back, and went ahead 26 to 23.",
-   "place": {
-    "allen": false,
-    "murray": "center",
-    "hopkins": "right"
-   },
-   "board": [
-    "CARDINALS 26",
-    "BILLS 23"
-   ]
+   }
   },
   {
-   "text": "Then Josh Allen threw a twenty one yard touchdown to Stefon Diggs.",
+   "text": "Josh Allen finds Stefon Diggs. Twenty one yards. Touchdown.",
+   "cap": "Josh Allen finds Stefon Diggs. 21 yards. Touchdown.",
    "key": [
     "DIGGS."
    ],
@@ -212,278 +233,1643 @@
     "type": "low",
     "on": "allen"
    },
-   "act": {
-    "allen": {
-     "mood": "happy",
-     "action": "throw",
-     "look": "camera"
-    }
-   },
-   "cap": "Then Josh Allen threw a 21 yard touchdown to Stefon Diggs.",
    "place": {
     "murray": false,
     "hopkins": false,
     "allen": "center"
-   }
-  },
-  {
-   "text": "Bills thirty, Cardinals twenty six. Thirty four seconds left.",
-   "key": [
-    "34"
-   ],
-   "shot": {
-    "type": "close",
-    "on": "allen"
    },
    "act": {
     "allen": {
-     "mood": "smug",
+     "mood": "happy",
+     "action": "cheer",
      "look": "camera"
     }
+   }
+  },
+  {
+   "text": "Bills thirty, Cardinals twenty six. Thirty four seconds left. Relax, Buffalo.",
+   "cap": "Bills 30, Cardinals 26. 34 seconds left. Relax, Buffalo.",
+   "key": [
+    "34"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "allen"
    },
-   "cap": "Bills 30, Cardinals 26. 34 seconds left.",
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "allen": [
+     0.8,
+     0.2
+    ]
+   },
    "board": [
     "BILLS 30",
     "CARDINALS 26"
-   ]
+   ],
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "allen": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
   },
   {
-   "text": "Arizona needed a touchdown. A field goal would not do it.",
+   "text": "A field goal won't do it. You need a touchdown. Nothing else.",
    "key": [
     "TOUCHDOWN."
    ],
+   "speaker": "capy",
+   "set": "locker",
    "shot": {
     "type": "two",
     "on": "capy",
     "with": "murray"
    },
+   "place": {
+    "capy": "left",
+    "murray": "right"
+   },
+   "board": [
+    "NEED:",
+    "TOUCHDOWN"
+   ],
    "act": {
     "capy": {
      "mood": "neutral",
-     "action": "shrug",
-     "look": "camera"
+     "action": "point",
+     "look": "murray"
     },
     "murray": {
      "mood": "worried",
      "action": "hold",
      "look": "capy"
     }
-   },
-   "set": "locker",
-   "place": {
-    "capy": "left",
-    "murray": "right"
-   },
-   "speaker": "capy",
-   "board": [
-    "NEED:",
-    "TOUCHDOWN"
-   ]
+   }
   },
   {
-   "text": "On the last play, Kyler Murray dropped back and rolled to his left.",
+   "text": "Last play. Kyler Murray drops back. He rolls left.",
    "key": [
     "LEFT."
    ],
-   "shot": {
-    "type": "medium",
-    "on": "murray"
-   },
-   "act": {
-    "murray": {
-     "mood": "worried",
-     "action": "hold",
-     "look": "camera"
-    }
-   },
    "set": "field",
-   "place": {
-    "murray": "center",
-    "d1": [
-     2.6,
-     -1.0
-    ]
+   "setOpts": {
+    "boardText": [
+     "BILLS 30",
+     "CARDINALS 26"
+    ],
+    "endZone": 30,
+    "zoneA": "#00338d",
+    "zoneB": "#97233f"
    },
-   "board": [
-    "BILLS 30",
-    "CARDINALS 26"
-   ]
+   "shot": {
+    "type": "follow_high",
+    "on": "murray",
+    "lead": 0
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "murray": {
+      "path": [
+       [
+        0.0,
+        -10,
+        0
+       ],
+       [
+        0.05,
+        -10.5,
+        0.0
+       ],
+       [
+        0.1,
+        -11.0,
+        0.0
+       ],
+       [
+        0.15,
+        -11.5,
+        0.0
+       ],
+       [
+        0.2,
+        -12.0,
+        0.0
+       ],
+       [
+        0.25,
+        -12.5,
+        0.0
+       ],
+       [
+        0.3,
+        -13.0,
+        0.0
+       ],
+       [
+        0.35,
+        -13.5,
+        0.0
+       ],
+       [
+        0.4,
+        -14.0,
+        0.0
+       ],
+       [
+        0.45,
+        -14.08,
+        -0.33
+       ],
+       [
+        0.5,
+        -14.17,
+        -0.67
+       ],
+       [
+        0.55,
+        -14.25,
+        -1.0
+       ],
+       [
+        0.6,
+        -14.33,
+        -1.33
+       ],
+       [
+        0.65,
+        -14.42,
+        -1.67
+       ],
+       [
+        0.7,
+        -14.5,
+        -2.0
+       ],
+       [
+        0.75,
+        -14.58,
+        -2.33
+       ],
+       [
+        0.8,
+        -14.67,
+        -2.67
+       ],
+       [
+        0.85,
+        -14.75,
+        -3.0
+       ],
+       [
+        0.9,
+        -14.83,
+        -3.33
+       ],
+       [
+        0.95,
+        -14.92,
+        -3.67
+       ],
+       [
+        1.0,
+        -15,
+        -4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "rush": {
+      "path": [
+       [
+        0.0,
+        -6,
+        1.5
+       ],
+       [
+        0.05,
+        -6.25,
+        1.4
+       ],
+       [
+        0.1,
+        -6.5,
+        1.3
+       ],
+       [
+        0.15,
+        -6.75,
+        1.2
+       ],
+       [
+        0.2,
+        -7.0,
+        1.1
+       ],
+       [
+        0.25,
+        -7.25,
+        1.0
+       ],
+       [
+        0.3,
+        -7.5,
+        0.9
+       ],
+       [
+        0.35,
+        -7.75,
+        0.8
+       ],
+       [
+        0.4,
+        -8.0,
+        0.7
+       ],
+       [
+        0.45,
+        -8.25,
+        0.6
+       ],
+       [
+        0.5,
+        -8.5,
+        0.5
+       ],
+       [
+        0.55,
+        -8.75,
+        0.4
+       ],
+       [
+        0.6,
+        -9.0,
+        0.3
+       ],
+       [
+        0.65,
+        -9.25,
+        0.2
+       ],
+       [
+        0.7,
+        -9.5,
+        0.1
+       ],
+       [
+        0.75,
+        -9.75,
+        0.0
+       ],
+       [
+        0.8,
+        -10.0,
+        -0.1
+       ],
+       [
+        0.85,
+        -10.25,
+        -0.2
+       ],
+       [
+        0.9,
+        -10.5,
+        -0.3
+       ],
+       [
+        0.95,
+        -10.75,
+        -0.4
+       ],
+       [
+        1.0,
+        -11,
+        -0.5
+       ]
+      ]
+     },
+     "hopkins": {
+      "path": [
+       [
+        0.0,
+        -6,
+        5
+       ],
+       [
+        0.05,
+        -5.4,
+        5.0
+       ],
+       [
+        0.1,
+        -4.8,
+        5.0
+       ],
+       [
+        0.15,
+        -4.2,
+        5.0
+       ],
+       [
+        0.2,
+        -3.6,
+        5.0
+       ],
+       [
+        0.25,
+        -3.0,
+        5.0
+       ],
+       [
+        0.3,
+        -2.4,
+        5.0
+       ],
+       [
+        0.35,
+        -1.8,
+        5.0
+       ],
+       [
+        0.4,
+        -1.2,
+        5.0
+       ],
+       [
+        0.45,
+        -0.6,
+        5.0
+       ],
+       [
+        0.5,
+        0.0,
+        5.0
+       ],
+       [
+        0.55,
+        0.6,
+        5.0
+       ],
+       [
+        0.6,
+        1.2,
+        5.0
+       ],
+       [
+        0.65,
+        1.8,
+        5.0
+       ],
+       [
+        0.7,
+        2.4,
+        5.0
+       ],
+       [
+        0.75,
+        3.0,
+        5.0
+       ],
+       [
+        0.8,
+        3.6,
+        5.0
+       ],
+       [
+        0.85,
+        4.2,
+        5.0
+       ],
+       [
+        0.9,
+        4.8,
+        5.0
+       ],
+       [
+        0.95,
+        5.4,
+        5.0
+       ],
+       [
+        1.0,
+        6,
+        5
+       ]
+      ]
+     }
+    },
+    "carry": [
+     [
+      0,
+      "murray"
+     ]
+    ]
+   }
   },
   {
-   "text": "The seconds ticked off. He kept rolling.",
+   "text": "The seconds tick off. He keeps rolling. And rolling.",
    "key": [
     "ROLLING."
    ],
    "shot": {
-    "type": "high",
-    "on": "murray"
+    "type": "follow",
+    "on": "murray",
+    "lead": 1
    },
-   "act": {
-    "murray": {
-     "mood": "worried",
-     "action": "hold"
+   "act": {},
+   "play": {
+    "cast": {
+     "murray": {
+      "path": [
+       [
+        0.0,
+        -15,
+        -4
+       ],
+       [
+        0.05,
+        -14.9,
+        -4.17
+       ],
+       [
+        0.1,
+        -14.8,
+        -4.35
+       ],
+       [
+        0.15,
+        -14.7,
+        -4.53
+       ],
+       [
+        0.2,
+        -14.6,
+        -4.7
+       ],
+       [
+        0.25,
+        -14.5,
+        -4.88
+       ],
+       [
+        0.3,
+        -14.4,
+        -5.05
+       ],
+       [
+        0.35,
+        -14.3,
+        -5.22
+       ],
+       [
+        0.4,
+        -14.2,
+        -5.4
+       ],
+       [
+        0.45,
+        -14.1,
+        -5.58
+       ],
+       [
+        0.5,
+        -14.0,
+        -5.75
+       ],
+       [
+        0.55,
+        -13.9,
+        -5.93
+       ],
+       [
+        0.6,
+        -13.8,
+        -6.1
+       ],
+       [
+        0.65,
+        -13.7,
+        -6.28
+       ],
+       [
+        0.7,
+        -13.6,
+        -6.45
+       ],
+       [
+        0.75,
+        -13.5,
+        -6.62
+       ],
+       [
+        0.8,
+        -13.4,
+        -6.8
+       ],
+       [
+        0.85,
+        -13.3,
+        -6.97
+       ],
+       [
+        0.9,
+        -13.2,
+        -7.15
+       ],
+       [
+        0.95,
+        -13.1,
+        -7.32
+       ],
+       [
+        1.0,
+        -13,
+        -7.5
+       ]
+      ]
+     },
+     "rush": {
+      "path": [
+       [
+        0.0,
+        -11,
+        -0.5
+       ],
+       [
+        0.05,
+        -11.0,
+        -0.72
+       ],
+       [
+        0.1,
+        -11.0,
+        -0.95
+       ],
+       [
+        0.15,
+        -11.0,
+        -1.17
+       ],
+       [
+        0.2,
+        -11.0,
+        -1.4
+       ],
+       [
+        0.25,
+        -11.0,
+        -1.62
+       ],
+       [
+        0.3,
+        -11.0,
+        -1.85
+       ],
+       [
+        0.35,
+        -11.0,
+        -2.08
+       ],
+       [
+        0.4,
+        -11.0,
+        -2.3
+       ],
+       [
+        0.45,
+        -11.0,
+        -2.52
+       ],
+       [
+        0.5,
+        -11.0,
+        -2.75
+       ],
+       [
+        0.55,
+        -11.0,
+        -2.98
+       ],
+       [
+        0.6,
+        -11.0,
+        -3.2
+       ],
+       [
+        0.65,
+        -11.0,
+        -3.43
+       ],
+       [
+        0.7,
+        -11.0,
+        -3.65
+       ],
+       [
+        0.75,
+        -11.0,
+        -3.88
+       ],
+       [
+        0.8,
+        -11.0,
+        -4.1
+       ],
+       [
+        0.85,
+        -11.0,
+        -4.32
+       ],
+       [
+        0.9,
+        -11.0,
+        -4.55
+       ],
+       [
+        0.95,
+        -11.0,
+        -4.77
+       ],
+       [
+        1.0,
+        -11,
+        -5
+       ]
+      ],
+      "mood": "angry"
+     }
     },
-    "d1": {
-     "mood": "angry",
-     "action": "point",
-     "look": "murray"
-    }
-   }
-  },
-  {
-   "text": "Then he launched it deep, down the field.",
-   "key": [
-    "DEEP."
-   ],
-   "shot": {
-    "type": "low",
-    "on": "murray"
-   },
-   "act": {
-    "murray": {
-     "mood": "smug",
-     "action": "throw",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "DeAndre Hopkins went up, over three Bills defenders.",
-   "key": [
-    "THREE"
-   ],
-   "shot": {
-    "type": "wide",
-    "on": "hopkins"
-   },
-   "act": {
-    "hopkins": {
-     "mood": "shocked",
-     "action": "cheer"
-    },
-    "d1": {
-     "mood": "shocked",
-     "action": "shrug"
-    },
-    "d2": {
-     "mood": "shocked",
-     "action": "cheer"
-    },
-    "d3": {
-     "mood": "shocked",
-     "action": "shrug"
-    }
-   },
-   "place": {
-    "murray": false,
-    "hopkins": [
-     0,
-     0.6
-    ],
-    "d1": [
-     -1.4,
-     -0.4
-    ],
-    "d2": [
-     0.2,
-     -1.4
-    ],
-    "d3": [
-     1.5,
-     -0.4
+    "carry": [
+     [
+      0,
+      "murray"
+     ]
     ]
    }
   },
   {
-   "text": "And caught it. Touchdown.",
+   "text": "Then he launches it. Deep.",
    "key": [
-    "CAUGHT"
+    "DEEP."
    ],
    "shot": {
-    "type": "close",
-    "on": "hopkins"
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "murray",
+    "lead": 0,
+    "z": -4
    },
-   "act": {
-    "hopkins": {
-     "mood": "happy",
-     "look": "camera"
-    }
+   "act": {},
+   "play": {
+    "cast": {
+     "murray": {
+      "path": [
+       [
+        0.0,
+        -13,
+        -7.5
+       ],
+       [
+        0.05,
+        -12.93,
+        -7.5
+       ],
+       [
+        0.1,
+        -12.87,
+        -7.5
+       ],
+       [
+        0.15,
+        -12.8,
+        -7.5
+       ],
+       [
+        0.2,
+        -12.73,
+        -7.5
+       ],
+       [
+        0.25,
+        -12.67,
+        -7.5
+       ],
+       [
+        0.3,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.35,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.4,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.45,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.5,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.55,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.6,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.65,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.7,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.75,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.8,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.85,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.9,
+        -12.6,
+        -7.5
+       ],
+       [
+        0.95,
+        -12.6,
+        -7.5
+       ],
+       [
+        1.0,
+        -12.6,
+        -7.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.214,
+        "throw"
+       ]
+      ],
+      "face": 80
+     },
+     "rush": {
+      "path": [
+       [
+        0.0,
+        -11,
+        -5
+       ],
+       [
+        0.05,
+        -11.0,
+        -5.05
+       ],
+       [
+        0.1,
+        -11.0,
+        -5.1
+       ],
+       [
+        0.15,
+        -11.0,
+        -5.15
+       ],
+       [
+        0.2,
+        -11.0,
+        -5.2
+       ],
+       [
+        0.25,
+        -11.0,
+        -5.25
+       ],
+       [
+        0.3,
+        -11.0,
+        -5.3
+       ],
+       [
+        0.35,
+        -11.0,
+        -5.35
+       ],
+       [
+        0.4,
+        -11.0,
+        -5.4
+       ],
+       [
+        0.45,
+        -11.0,
+        -5.45
+       ],
+       [
+        0.5,
+        -11.0,
+        -5.5
+       ],
+       [
+        0.55,
+        -11.0,
+        -5.55
+       ],
+       [
+        0.6,
+        -11.0,
+        -5.6
+       ],
+       [
+        0.65,
+        -11.0,
+        -5.65
+       ],
+       [
+        0.7,
+        -11.0,
+        -5.7
+       ],
+       [
+        0.75,
+        -11.0,
+        -5.75
+       ],
+       [
+        0.8,
+        -11.0,
+        -5.8
+       ],
+       [
+        0.85,
+        -11.0,
+        -5.85
+       ],
+       [
+        0.9,
+        -11.0,
+        -5.9
+       ],
+       [
+        0.95,
+        -11.0,
+        -5.95
+       ],
+       [
+        1.0,
+        -11,
+        -6
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.3,
+      -12.4,
+      2.2,
+      -7.3
+     ],
+     [
+      0.417,
+      -8.0,
+      4.94,
+      -6.58
+     ],
+     [
+      0.533,
+      -3.6,
+      7.24,
+      -5.87
+     ],
+     [
+      0.65,
+      0.8,
+      9.1,
+      -5.15
+     ],
+     [
+      0.767,
+      5.2,
+      10.51,
+      -4.43
+     ],
+     [
+      0.883,
+      9.6,
+      11.48,
+      -3.72
+     ],
+     [
+      1.0,
+      14.0,
+      12.0,
+      -3.0
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "murray"
+     ]
+    ]
    }
   },
   {
-   "text": "Cardinals thirty two, Bills thirty. Seconds left on the clock.",
+   "text": "DeAndre Hopkins goes up. Over three Bills defenders.",
    "key": [
-    "32"
+    "THREE"
    ],
    "shot": {
-    "type": "medium",
-    "on": "hopkins"
+    "type": "follow",
+    "on": "ball",
+    "fallback": "hopkins",
+    "lead": 0,
+    "z": 0
    },
-   "act": {
-    "hopkins": {
-     "mood": "happy",
-     "action": "cheer"
+   "act": {},
+   "play": {
+    "cast": {
+     "hopkins": {
+      "path": [
+       [
+        0.0,
+        31,
+        0.5
+       ],
+       [
+        0.05,
+        31.17,
+        0.46
+       ],
+       [
+        0.1,
+        31.33,
+        0.42
+       ],
+       [
+        0.15,
+        31.5,
+        0.38
+       ],
+       [
+        0.2,
+        31.67,
+        0.33
+       ],
+       [
+        0.25,
+        31.83,
+        0.29
+       ],
+       [
+        0.3,
+        32.0,
+        0.25
+       ],
+       [
+        0.35,
+        32.17,
+        0.21
+       ],
+       [
+        0.4,
+        32.33,
+        0.17
+       ],
+       [
+        0.45,
+        32.5,
+        0.12
+       ],
+       [
+        0.5,
+        32.67,
+        0.08
+       ],
+       [
+        0.55,
+        32.83,
+        0.04
+       ],
+       [
+        0.6,
+        33.0,
+        0.0
+       ],
+       [
+        0.65,
+        33.0,
+        0.0
+       ],
+       [
+        0.7,
+        33.0,
+        0.0
+       ],
+       [
+        0.75,
+        33.0,
+        0.0
+       ],
+       [
+        0.8,
+        33.0,
+        0.0
+       ],
+       [
+        0.85,
+        33.0,
+        0.0
+       ],
+       [
+        0.9,
+        33.0,
+        0.0
+       ],
+       [
+        0.95,
+        33.0,
+        0.0
+       ],
+       [
+        1.0,
+        33,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.75,
+        "catch"
+       ]
+      ],
+      "face": -90
+     },
+     "d2": {
+      "path": [
+       [
+        0.0,
+        30,
+        -2
+       ],
+       [
+        0.05,
+        30.21,
+        -1.97
+       ],
+       [
+        0.1,
+        30.43,
+        -1.94
+       ],
+       [
+        0.15,
+        30.64,
+        -1.91
+       ],
+       [
+        0.2,
+        30.86,
+        -1.89
+       ],
+       [
+        0.25,
+        31.07,
+        -1.86
+       ],
+       [
+        0.3,
+        31.29,
+        -1.83
+       ],
+       [
+        0.35,
+        31.5,
+        -1.8
+       ],
+       [
+        0.4,
+        31.71,
+        -1.77
+       ],
+       [
+        0.45,
+        31.93,
+        -1.74
+       ],
+       [
+        0.5,
+        32.14,
+        -1.71
+       ],
+       [
+        0.55,
+        32.36,
+        -1.69
+       ],
+       [
+        0.6,
+        32.57,
+        -1.66
+       ],
+       [
+        0.65,
+        32.79,
+        -1.63
+       ],
+       [
+        0.7,
+        33.0,
+        -1.6
+       ],
+       [
+        0.75,
+        33.0,
+        -1.6
+       ],
+       [
+        0.8,
+        33.0,
+        -1.6
+       ],
+       [
+        0.85,
+        33.0,
+        -1.6
+       ],
+       [
+        0.9,
+        33.0,
+        -1.6
+       ],
+       [
+        0.95,
+        33.0,
+        -1.6
+       ],
+       [
+        1.0,
+        33,
+        -1.6
+       ]
+      ]
+     },
+     "d3": {
+      "path": [
+       [
+        0.0,
+        28,
+        0.8
+       ],
+       [
+        0.05,
+        28.24,
+        0.78
+       ],
+       [
+        0.1,
+        28.47,
+        0.76
+       ],
+       [
+        0.15,
+        28.71,
+        0.74
+       ],
+       [
+        0.2,
+        28.94,
+        0.71
+       ],
+       [
+        0.25,
+        29.18,
+        0.69
+       ],
+       [
+        0.3,
+        29.41,
+        0.67
+       ],
+       [
+        0.35,
+        29.65,
+        0.65
+       ],
+       [
+        0.4,
+        29.89,
+        0.63
+       ],
+       [
+        0.45,
+        30.12,
+        0.61
+       ],
+       [
+        0.5,
+        30.36,
+        0.59
+       ],
+       [
+        0.55,
+        30.59,
+        0.56
+       ],
+       [
+        0.6,
+        30.83,
+        0.54
+       ],
+       [
+        0.65,
+        31.06,
+        0.52
+       ],
+       [
+        0.7,
+        31.3,
+        0.5
+       ],
+       [
+        0.75,
+        31.3,
+        0.5
+       ],
+       [
+        0.8,
+        31.3,
+        0.5
+       ],
+       [
+        0.85,
+        31.3,
+        0.5
+       ],
+       [
+        0.9,
+        31.3,
+        0.5
+       ],
+       [
+        0.95,
+        31.3,
+        0.5
+       ],
+       [
+        1.0,
+        31.3,
+        0.5
+       ]
+      ]
+     },
+     "d4": {
+      "path": [
+       [
+        0.0,
+        32,
+        4
+       ],
+       [
+        0.05,
+        32.19,
+        3.81
+       ],
+       [
+        0.1,
+        32.37,
+        3.63
+       ],
+       [
+        0.15,
+        32.56,
+        3.44
+       ],
+       [
+        0.2,
+        32.74,
+        3.26
+       ],
+       [
+        0.25,
+        32.93,
+        3.07
+       ],
+       [
+        0.3,
+        33.11,
+        2.89
+       ],
+       [
+        0.35,
+        33.3,
+        2.7
+       ],
+       [
+        0.4,
+        33.49,
+        2.51
+       ],
+       [
+        0.45,
+        33.67,
+        2.33
+       ],
+       [
+        0.5,
+        33.86,
+        2.14
+       ],
+       [
+        0.55,
+        34.04,
+        1.96
+       ],
+       [
+        0.6,
+        34.23,
+        1.77
+       ],
+       [
+        0.65,
+        34.41,
+        1.59
+       ],
+       [
+        0.7,
+        34.6,
+        1.4
+       ],
+       [
+        0.75,
+        34.6,
+        1.4
+       ],
+       [
+        0.8,
+        34.6,
+        1.4
+       ],
+       [
+        0.85,
+        34.6,
+        1.4
+       ],
+       [
+        0.9,
+        34.6,
+        1.4
+       ],
+       [
+        0.95,
+        34.6,
+        1.4
+       ],
+       [
+        1.0,
+        34.6,
+        1.4
+       ]
+      ]
+     }
     },
-    "d2": {
-     "mood": "sad",
-     "action": "slump"
-    }
-   },
-   "cap": "Cardinals 32, Bills 30. Seconds left on the clock.",
-   "board": [
-    "CARDINALS 32",
-    "BILLS 30"
-   ]
+    "ball": [
+     [
+      0.0,
+      14.0,
+      12.0,
+      -3.0
+     ],
+     [
+      0.094,
+      16.35,
+      11.02,
+      -2.61
+     ],
+     [
+      0.188,
+      18.7,
+      9.97,
+      -2.23
+     ],
+     [
+      0.281,
+      21.05,
+      8.87,
+      -1.84
+     ],
+     [
+      0.375,
+      23.4,
+      7.7,
+      -1.45
+     ],
+     [
+      0.469,
+      25.75,
+      6.47,
+      -1.06
+     ],
+     [
+      0.562,
+      28.1,
+      5.18,
+      -0.67
+     ],
+     [
+      0.656,
+      30.45,
+      3.82,
+      -0.29
+     ],
+     [
+      0.75,
+      32.8,
+      2.4,
+      0.1
+     ]
+    ],
+    "carry": [
+     [
+      0.75,
+      "hopkins"
+     ]
+    ]
+   }
   },
   {
-   "text": "Within a day, the play had its own name. Hail Murray.",
+   "text": "He comes down with it. Touchdown.",
    "key": [
-    "MURRAY."
+    "TOUCHDOWN."
    ],
-   "shot": {
-    "type": "low",
-    "on": "capy"
-   },
-   "act": {
-    "capy": {
-     "mood": "smug",
-     "action": "talk",
-     "look": "camera"
-    }
-   },
-   "set": "press",
-   "place": {
-    "capy": "center"
-   },
    "speaker": "capy",
-   "board": [
-    "HAIL",
-    "MURRAY"
-   ]
-  },
-  {
-   "text": "Three defenders, one receiver. Would you have thrown it? Yes or no. Tell me below.",
-   "key": [
-    "THROWN"
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BILLS 30",
+     "CARDINALS 26"
+    ],
+    "endZone": 30,
+    "zoneA": "#00338d",
+    "zoneB": "#97233f"
+   },
+   "sfx": [
+    [
+     0.6,
+     "roar"
+    ]
    ],
    "shot": {
     "type": "two",
     "on": "capy",
     "with": "hopkins"
    },
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "hopkins": [
+     0.8,
+     0.2
+    ],
+    "d2": [
+     3.0,
+     -1.2
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    },
+    "hopkins": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    },
+    "d2": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Cardinals thirty two, Bills thirty. Buffalo is stunned.",
+   "cap": "Cardinals 32, Bills 30. Buffalo is stunned.",
+   "key": [
+    "32,"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "hopkins"
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "CARDINALS 32",
+    "BILLS 30"
+   ],
+   "act": {
+    "hopkins": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Within a day, it had a name. Hail Murray.",
+   "key": [
+    "MURRAY."
+   ],
+   "speaker": "capy",
+   "set": "press",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "HAIL",
+    "MURRAY"
+   ],
    "act": {
     "capy": {
      "mood": "smug",
      "action": "talk",
      "look": "camera"
-    },
-    "hopkins": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "capy"
     }
+   }
+  },
+  {
+   "text": "Three defenders, one receiver. Would you throw it? Yes or no. Bills fans, you can skip this one.",
+   "cap": "3 defenders, 1 receiver. Would you throw it? Yes or no. Bills fans, you can skip this one.",
+   "key": [
+    "THROW"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hopkins"
    },
-   "cap": "3 defenders, 1 receiver. Would you have thrown it? Yes or no. Tell me below.",
    "place": {
     "capy": [
      -1.6,
@@ -494,7 +1880,18 @@
      0.2
     ]
    },
-   "speaker": "capy"
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "hopkins": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
   }
  ],
  "sources": [
@@ -509,6 +1906,86 @@
   {
    "title": "AP via News4JAX: Hail Murray, Cardinals stun Bills 32-30 in final seconds",
    "url": "https://www.news4jax.com/sports/2020/11/16/hail-murray-cardinals-stun-bills-32-30-in-final-seconds/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 2020 the game ended on a 43-yard pass caught over three defenders",
+   "terms": [
+    "43",
+    "three defenders|3 defenders"
+   ]
+  },
+  {
+   "claim": "Buffalo led 23-9",
+   "terms": [
+    "23-9|23 9"
+   ]
+  },
+  {
+   "claim": "Arizona came back to lead 26-23",
+   "terms": [
+    "26-23|26 23"
+   ]
+  },
+  {
+   "claim": "Josh Allen threw a 21-yard touchdown to Stefon Diggs",
+   "terms": [
+    "Diggs",
+    "21"
+   ]
+  },
+  {
+   "claim": "Bills led 30-26 with 34 seconds left",
+   "terms": [
+    "34 seconds"
+   ]
+  },
+  {
+   "claim": "Arizona needed a touchdown",
+   "terms": [
+    "touchdown"
+   ]
+  },
+  {
+   "claim": "Kyler Murray rolled to his left on the last play",
+   "terms": [
+    "Murray",
+    "left"
+   ]
+  },
+  {
+   "claim": "Murray threw deep (Hail Mary)",
+   "terms": [
+    "Murray",
+    "Hail"
+   ]
+  },
+  {
+   "claim": "DeAndre Hopkins caught it over three Bills defenders",
+   "terms": [
+    "Hopkins",
+    "three|3"
+   ]
+  },
+  {
+   "claim": "Final score Cardinals 32, Bills 30",
+   "terms": [
+    "32-30|32 30"
+   ]
+  },
+  {
+   "claim": "The Cardinals stunned the Bills",
+   "terms": [
+    "stun"
+   ]
+  },
+  {
+   "claim": "The play was named Hail Murray",
+   "terms": [
+    "Hail Murray"
+   ]
   }
  ]
 }

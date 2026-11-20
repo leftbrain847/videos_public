@@ -6,7 +6,10 @@
   "boardText": [
    "EAGLES 16",
    "BEARS 15"
-  ]
+  ],
+  "endZone": 10,
+  "zoneA": "#0b162a",
+  "zoneB": "#004c54"
  },
  "cast": {
   "capy": {
@@ -22,8 +25,7 @@
     "number": "1",
     "hair": "short",
     "hairColor": "#6b4423"
-   },
-   "at": "center"
+   }
   },
   "hester": {
    "look": {
@@ -34,11 +36,7 @@
     "hair": "buzz",
     "hairColor": "#1b1b1b",
     "skin": "#5a3825"
-   },
-   "at": [
-    0,
-    0
-   ]
+   }
   },
   "coach": {
    "look": {
@@ -49,10 +47,6 @@
     "hairColor": "#8a7a6a",
     "cap": "#004c54"
    },
-   "at": [
-    0,
-    0
-   ],
    "hold": "clipboard"
   },
   "ref": {
@@ -64,19 +58,39 @@
     "skin": "#f2c39b",
     "cap": "#ffffff"
    },
-   "at": [
-    0,
-    0
-   ],
    "hold": "flag"
+  },
+  "holder": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b162a",
+    "pants": "#f4f4f4",
+    "number": "8",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "e1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#e6e6e6",
+    "number": "91",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   }
   }
  },
  "lines": [
   {
-   "text": "In 2019, a playoff field goal hit two parts of the goalpost, and still missed.",
+   "text": "You're down one. Ten seconds left. You're the kicker.",
+   "cap": "You're down 1. 10 seconds left. You're the kicker.",
    "key": [
-    "TWO"
+    "KICKER."
    ],
+   "speaker": "capy",
    "shot": {
     "type": "two",
     "on": "capy",
@@ -90,12 +104,13 @@
     },
     "kicker": {
      "mood": "worried",
+     "action": "idle",
      "look": "capy"
     }
    },
    "place": {
     "capy": [
-     -2.4,
+     -2.2,
      0.8
     ],
     "kicker": [
@@ -104,18 +119,20 @@
     ],
     "hester": false,
     "coach": false,
-    "ref": false
+    "ref": false,
+    "holder": false,
+    "e1": false
    },
-   "speaker": "capy",
    "board": [
     "EAGLES 16",
     "BEARS 15"
    ]
   },
   {
-   "text": "Bears versus Eagles. Wild card round. Philadelphia led sixteen to fifteen.",
+   "text": "Bears versus Eagles. Wild card round. Eagles sixteen, Bears fifteen.",
+   "cap": "Bears versus Eagles. Wild card round. Eagles 16, Bears 15.",
    "key": [
-    "16"
+    "15."
    ],
    "shot": {
     "type": "wide",
@@ -124,7 +141,8 @@
    "act": {
     "kicker": {
      "mood": "neutral",
-     "action": "idle"
+     "action": "idle",
+     "look": "camera"
     },
     "hester": {
      "mood": "smug",
@@ -132,18 +150,25 @@
      "look": "kicker"
     }
    },
-   "cap": "Bears versus Eagles. Wild card round. Philadelphia led 16 to 15.",
    "place": {
     "capy": false,
-    "kicker": "center",
+    "kicker": [
+     0,
+     0
+    ],
     "hester": [
-     2.6,
-     -1.8
-    ]
+     2.8,
+     -1.6
+    ],
+    "coach": false,
+    "ref": false,
+    "holder": false,
+    "e1": false
    }
   },
   {
-   "text": "Ten seconds left. Chicago's kicker, Cody Parkey, lined up from forty three yards.",
+   "text": "You're Cody Parkey. Forty three yards out.",
+   "cap": "You're Cody Parkey. 43 yards out.",
    "key": [
     "43"
    ],
@@ -158,10 +183,21 @@
      "look": "camera"
     }
    },
-   "cap": "10 seconds left. Chicago's kicker, Cody Parkey, lined up from 43 yards."
+   "place": {
+    "capy": false,
+    "kicker": [
+     0,
+     0
+    ],
+    "hester": false,
+    "coach": false,
+    "ref": false,
+    "holder": false,
+    "e1": false
+   }
   },
   {
-   "text": "Just before the snap, the Eagles called timeout to ice him.",
+   "text": "Just before the snap, Philadelphia calls timeout. To ice you.",
    "key": [
     "ICE"
    ],
@@ -177,43 +213,548 @@
     }
    },
    "place": {
-    "coach": "sideline",
+    "capy": false,
     "kicker": false,
-    "hester": false
+    "hester": false,
+    "coach": [
+     0,
+     0
+    ],
+    "ref": false,
+    "holder": false,
+    "e1": false
    }
   },
   {
-   "text": "The play ran anyway. Parkey's practice kick went straight through.",
+   "text": "The play runs anyway. Your practice kick? Straight through.",
    "key": [
     "THROUGH."
    ],
    "shot": {
-    "type": "two",
-    "on": "kicker",
-    "with": "ref"
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "kicker",
+    "lead": 0,
+    "z": -4
    },
-   "act": {
-    "kicker": {
-     "mood": "happy",
-     "action": "cheer"
+   "act": {},
+   "play": {
+    "cast": {
+     "kicker": {
+      "path": [
+       [
+        0.0,
+        -8.2,
+        -5.2
+       ],
+       [
+        0.05,
+        -7.67,
+        -4.93
+       ],
+       [
+        0.1,
+        -7.13,
+        -4.67
+       ],
+       [
+        0.15,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.2,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.25,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.3,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.35,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.4,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.45,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.5,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.55,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.6,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.65,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.7,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.75,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.8,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.85,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.9,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.95,
+        -6.6,
+        -4.4
+       ],
+       [
+        1.0,
+        -6.6,
+        -4.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.248,
+        "kick"
+       ]
+      ],
+      "face": 70
+     },
+     "holder": {
+      "path": [
+       [
+        0.0,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.05,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.1,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.15,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.2,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.25,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.3,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.35,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.4,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.45,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.5,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.55,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.6,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.65,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.7,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.75,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.8,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.85,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.9,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.95,
+        -4.8,
+        -2.6
+       ],
+       [
+        1.0,
+        -4.8,
+        -2.6
+       ]
+      ],
+      "face": -90
+     },
+     "e1": {
+      "path": [
+       [
+        0.0,
+        -1,
+        -6.2
+       ],
+       [
+        0.05,
+        -1.08,
+        -6.18
+       ],
+       [
+        0.1,
+        -1.16,
+        -6.16
+       ],
+       [
+        0.15,
+        -1.24,
+        -6.14
+       ],
+       [
+        0.2,
+        -1.32,
+        -6.12
+       ],
+       [
+        0.25,
+        -1.4,
+        -6.1
+       ],
+       [
+        0.3,
+        -1.48,
+        -6.08
+       ],
+       [
+        0.35,
+        -1.56,
+        -6.06
+       ],
+       [
+        0.4,
+        -1.64,
+        -6.04
+       ],
+       [
+        0.45,
+        -1.72,
+        -6.02
+       ],
+       [
+        0.5,
+        -1.8,
+        -6.0
+       ],
+       [
+        0.55,
+        -1.88,
+        -5.98
+       ],
+       [
+        0.6,
+        -1.96,
+        -5.96
+       ],
+       [
+        0.65,
+        -2.04,
+        -5.94
+       ],
+       [
+        0.7,
+        -2.12,
+        -5.92
+       ],
+       [
+        0.75,
+        -2.2,
+        -5.9
+       ],
+       [
+        0.8,
+        -2.28,
+        -5.88
+       ],
+       [
+        0.85,
+        -2.36,
+        -5.86
+       ],
+       [
+        0.9,
+        -2.44,
+        -5.84
+       ],
+       [
+        0.95,
+        -2.52,
+        -5.82
+       ],
+       [
+        1.0,
+        -2.6,
+        -5.8
+       ]
+      ],
+      "face": -90
+     },
+     "hester": {
+      "path": [
+       [
+        0.0,
+        -1,
+        -1.6
+       ],
+       [
+        0.05,
+        -1.08,
+        -1.62
+       ],
+       [
+        0.1,
+        -1.16,
+        -1.64
+       ],
+       [
+        0.15,
+        -1.24,
+        -1.66
+       ],
+       [
+        0.2,
+        -1.32,
+        -1.68
+       ],
+       [
+        0.25,
+        -1.4,
+        -1.7
+       ],
+       [
+        0.3,
+        -1.48,
+        -1.72
+       ],
+       [
+        0.35,
+        -1.56,
+        -1.74
+       ],
+       [
+        0.4,
+        -1.64,
+        -1.76
+       ],
+       [
+        0.45,
+        -1.72,
+        -1.78
+       ],
+       [
+        0.5,
+        -1.8,
+        -1.8
+       ],
+       [
+        0.55,
+        -1.88,
+        -1.82
+       ],
+       [
+        0.6,
+        -1.96,
+        -1.84
+       ],
+       [
+        0.65,
+        -2.04,
+        -1.86
+       ],
+       [
+        0.7,
+        -2.12,
+        -1.88
+       ],
+       [
+        0.75,
+        -2.2,
+        -1.9
+       ],
+       [
+        0.8,
+        -2.28,
+        -1.92
+       ],
+       [
+        0.85,
+        -2.36,
+        -1.94
+       ],
+       [
+        0.9,
+        -2.44,
+        -1.96
+       ],
+       [
+        0.95,
+        -2.52,
+        -1.98
+       ],
+       [
+        1.0,
+        -2.6,
+        -2.0
+       ]
+      ],
+      "face": -90
+     }
     },
-    "ref": {
-     "mood": "neutral",
-     "action": "wave",
-     "look": "kicker"
-    }
-   },
-   "place": {
-    "coach": false,
-    "kicker": "center",
-    "ref": "right"
+    "ball": [
+     [
+      0.3,
+      -5.0,
+      0.3,
+      -4.0
+     ],
+     [
+      0.369,
+      -0.5,
+      2.79,
+      -4.0
+     ],
+     [
+      0.438,
+      4.0,
+      4.85,
+      -4.0
+     ],
+     [
+      0.506,
+      8.5,
+      6.47,
+      -4.0
+     ],
+     [
+      0.575,
+      13.0,
+      7.65,
+      -4.0
+     ],
+     [
+      0.644,
+      17.5,
+      8.39,
+      -4.0
+     ],
+     [
+      0.713,
+      22.0,
+      8.7,
+      -4.0
+     ],
+     [
+      0.781,
+      26.5,
+      8.57,
+      -4.0
+     ],
+     [
+      0.85,
+      31.0,
+      8.0,
+      -4.0
+     ]
+    ]
    }
   },
   {
-   "text": "That one did not count.",
+   "text": "That one does not count. Cute.",
    "key": [
-    "NOT"
+    "CUTE."
    ],
+   "speaker": "capy",
    "shot": {
     "type": "two",
     "on": "capy",
@@ -234,34 +775,541 @@
    "place": {
     "capy": [
      -2.0,
-     1.0
+     0.8
     ],
-    "ref": false,
     "kicker": [
-     0.4,
-     0.2
-    ]
-   },
-   "speaker": "capy"
+     0.6,
+     0
+    ],
+    "hester": false,
+    "coach": false,
+    "ref": false,
+    "holder": false,
+    "e1": false
+   }
   },
   {
-   "text": "Second try. The ball hit the left upright.",
+   "text": "Second try. For real this time. The ball hits the left upright.",
    "key": [
     "UPRIGHT."
    ],
    "shot": {
-    "type": "close",
-    "on": "kicker"
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "kicker",
+    "lead": 0,
+    "z": -4
    },
-   "act": {
-    "kicker": {
-     "mood": "shocked",
-     "look": "camera"
-    }
-   },
-   "place": {
-    "capy": false,
-    "kicker": "center"
+   "act": {},
+   "play": {
+    "cast": {
+     "kicker": {
+      "path": [
+       [
+        0.0,
+        -8.2,
+        -5.2
+       ],
+       [
+        0.05,
+        -7.67,
+        -4.93
+       ],
+       [
+        0.1,
+        -7.13,
+        -4.67
+       ],
+       [
+        0.15,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.2,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.25,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.3,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.35,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.4,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.45,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.5,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.55,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.6,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.65,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.7,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.75,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.8,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.85,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.9,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.95,
+        -6.6,
+        -4.4
+       ],
+       [
+        1.0,
+        -6.6,
+        -4.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.207,
+        "kick"
+       ]
+      ],
+      "face": 70
+     },
+     "holder": {
+      "path": [
+       [
+        0.0,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.05,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.1,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.15,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.2,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.25,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.3,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.35,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.4,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.45,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.5,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.55,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.6,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.65,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.7,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.75,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.8,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.85,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.9,
+        -4.8,
+        -2.6
+       ],
+       [
+        0.95,
+        -4.8,
+        -2.6
+       ],
+       [
+        1.0,
+        -4.8,
+        -2.6
+       ]
+      ],
+      "face": -90
+     },
+     "e1": {
+      "path": [
+       [
+        0.0,
+        -1,
+        -6.2
+       ],
+       [
+        0.05,
+        -1.08,
+        -6.18
+       ],
+       [
+        0.1,
+        -1.16,
+        -6.16
+       ],
+       [
+        0.15,
+        -1.24,
+        -6.14
+       ],
+       [
+        0.2,
+        -1.32,
+        -6.12
+       ],
+       [
+        0.25,
+        -1.4,
+        -6.1
+       ],
+       [
+        0.3,
+        -1.48,
+        -6.08
+       ],
+       [
+        0.35,
+        -1.56,
+        -6.06
+       ],
+       [
+        0.4,
+        -1.64,
+        -6.04
+       ],
+       [
+        0.45,
+        -1.72,
+        -6.02
+       ],
+       [
+        0.5,
+        -1.8,
+        -6.0
+       ],
+       [
+        0.55,
+        -1.88,
+        -5.98
+       ],
+       [
+        0.6,
+        -1.96,
+        -5.96
+       ],
+       [
+        0.65,
+        -2.04,
+        -5.94
+       ],
+       [
+        0.7,
+        -2.12,
+        -5.92
+       ],
+       [
+        0.75,
+        -2.2,
+        -5.9
+       ],
+       [
+        0.8,
+        -2.28,
+        -5.88
+       ],
+       [
+        0.85,
+        -2.36,
+        -5.86
+       ],
+       [
+        0.9,
+        -2.44,
+        -5.84
+       ],
+       [
+        0.95,
+        -2.52,
+        -5.82
+       ],
+       [
+        1.0,
+        -2.6,
+        -5.8
+       ]
+      ],
+      "face": -90
+     },
+     "hester": {
+      "path": [
+       [
+        0.0,
+        -1,
+        -1.6
+       ],
+       [
+        0.05,
+        -1.08,
+        -1.62
+       ],
+       [
+        0.1,
+        -1.16,
+        -1.64
+       ],
+       [
+        0.15,
+        -1.24,
+        -1.66
+       ],
+       [
+        0.2,
+        -1.32,
+        -1.68
+       ],
+       [
+        0.25,
+        -1.4,
+        -1.7
+       ],
+       [
+        0.3,
+        -1.48,
+        -1.72
+       ],
+       [
+        0.35,
+        -1.56,
+        -1.74
+       ],
+       [
+        0.4,
+        -1.64,
+        -1.76
+       ],
+       [
+        0.45,
+        -1.72,
+        -1.78
+       ],
+       [
+        0.5,
+        -1.8,
+        -1.8
+       ],
+       [
+        0.55,
+        -1.88,
+        -1.82
+       ],
+       [
+        0.6,
+        -1.96,
+        -1.84
+       ],
+       [
+        0.65,
+        -2.04,
+        -1.86
+       ],
+       [
+        0.7,
+        -2.12,
+        -1.88
+       ],
+       [
+        0.75,
+        -2.2,
+        -1.9
+       ],
+       [
+        0.8,
+        -2.28,
+        -1.92
+       ],
+       [
+        0.85,
+        -2.36,
+        -1.94
+       ],
+       [
+        0.9,
+        -2.44,
+        -1.96
+       ],
+       [
+        0.95,
+        -2.52,
+        -1.98
+       ],
+       [
+        1.0,
+        -2.6,
+        -2.0
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      0.25,
+      -5.0,
+      0.3,
+      -4.0
+     ],
+     [
+      0.338,
+      -0.62,
+      2.49,
+      -4.33
+     ],
+     [
+      0.425,
+      3.75,
+      4.25,
+      -4.65
+     ],
+     [
+      0.512,
+      8.12,
+      5.57,
+      -4.97
+     ],
+     [
+      0.6,
+      12.5,
+      6.45,
+      -5.3
+     ],
+     [
+      0.688,
+      16.88,
+      6.89,
+      -5.62
+     ],
+     [
+      0.775,
+      21.25,
+      6.9,
+      -5.95
+     ],
+     [
+      0.862,
+      25.62,
+      6.47,
+      -6.27
+     ],
+     [
+      0.95,
+      30.0,
+      5.6,
+      -6.6
+     ]
+    ]
    }
   },
   {
@@ -270,69 +1318,390 @@
     "CROSSBAR."
    ],
    "shot": {
-    "type": "medium",
-    "on": "kicker"
+    "type": "follow",
+    "on": "ball",
+    "lead": 0,
+    "z": -4
    },
-   "act": {
-    "kicker": {
-     "mood": "shocked",
-     "action": "facepalm"
-    }
-   }
-  },
-  {
-   "text": "Then it dropped back onto the field. No good.",
-   "key": [
-    "NO",
-    "GOOD."
-   ],
-   "shot": {
-    "type": "high",
-    "on": "kicker"
-   },
-   "act": {
-    "kicker": {
-     "mood": "sad",
-     "action": "slump"
+   "act": {},
+   "play": {
+    "cast": {
+     "kicker": {
+      "path": [
+       [
+        0.0,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.05,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.1,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.15,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.2,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.25,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.3,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.35,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.4,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.45,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.5,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.55,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.6,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.65,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.7,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.75,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.8,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.85,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.9,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.95,
+        -6.6,
+        -4.4
+       ],
+       [
+        1.0,
+        -6.6,
+        -4.4
+       ]
+      ],
+      "face": 70,
+      "mood": "shocked"
+     }
     },
-    "hester": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   },
-   "place": {
-    "hester": [
-     2.4,
-     -1.0
+    "ball": [
+     [
+      0.0,
+      30.0,
+      5.6,
+      -6.6
+     ],
+     [
+      0.117,
+      29.98,
+      5.52,
+      -6.37
+     ],
+     [
+      0.233,
+      29.97,
+      5.32,
+      -6.13
+     ],
+     [
+      0.35,
+      29.95,
+      4.97,
+      -5.9
+     ],
+     [
+      0.467,
+      29.93,
+      4.5,
+      -5.67
+     ],
+     [
+      0.583,
+      29.92,
+      3.89,
+      -5.43
+     ],
+     [
+      0.7,
+      29.9,
+      3.15,
+      -5.2
+     ]
     ]
    }
   },
   {
-   "text": "Eagles sixteen, Bears fifteen. Chicago's season was over.",
+   "text": "Then it drops back onto the field. No good.",
+   "key": [
+    "GOOD."
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "lead": 0,
+    "z": -4
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "kicker": {
+      "path": [
+       [
+        0.0,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.05,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.1,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.15,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.2,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.25,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.3,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.35,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.4,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.45,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.5,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.55,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.6,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.65,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.7,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.75,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.8,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.85,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.9,
+        -6.6,
+        -4.4
+       ],
+       [
+        0.95,
+        -6.6,
+        -4.4
+       ],
+       [
+        1.0,
+        -6.6,
+        -4.4
+       ]
+      ],
+      "face": 70,
+      "mood": "sad"
+     }
+    },
+    "ball": [
+     [
+      0.0,
+      29.9,
+      3.15,
+      -5.2
+     ],
+     [
+      0.075,
+      29.58,
+      2.87,
+      -5.17
+     ],
+     [
+      0.15,
+      29.27,
+      2.5,
+      -5.13
+     ],
+     [
+      0.225,
+      28.95,
+      2.04,
+      -5.1
+     ],
+     [
+      0.3,
+      28.63,
+      1.49,
+      -5.07
+     ],
+     [
+      0.375,
+      28.32,
+      0.85,
+      -5.03
+     ],
+     [
+      0.45,
+      28.0,
+      0.12,
+      -5.0
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Eagles sixteen, Bears fifteen. Chicago's season? Over.",
+   "cap": "Eagles 16, Bears 15. Chicago's season? Over.",
    "key": [
     "OVER."
    ],
+   "speaker": "capy",
    "shot": {
-    "type": "wide",
-    "on": "kicker"
+    "type": "two",
+    "on": "capy",
+    "with": "hester"
    },
    "act": {
-    "kicker": {
-     "mood": "sad",
-     "action": "slump"
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
     },
     "hester": {
      "mood": "happy",
-     "action": "cheer"
+     "action": "cheer",
+     "look": "capy"
     }
    },
-   "cap": "Eagles 16, Bears 15. Chicago's season was over."
+   "place": {
+    "capy": [
+     -2.0,
+     0.8
+    ],
+    "kicker": false,
+    "hester": [
+     0.6,
+     0
+    ],
+    "coach": false,
+    "ref": false,
+    "holder": false,
+    "e1": false
+   }
   },
   {
-   "text": "Fans named it the Double Doink.",
+   "text": "Fans named it the Double Doink. Bears fans call it worse.",
    "key": [
-    "DOINK."
+    "WORSE."
    ],
+   "speaker": "capy",
    "shot": {
     "type": "low",
     "on": "capy"
@@ -348,16 +1717,15 @@
    "place": {
     "capy": "center"
    },
-   "speaker": "capy",
    "board": [
     "DOUBLE",
     "DOINK"
    ]
   },
   {
-   "text": "Then a twist. The NFL reviewed the film and ruled the kick blocked.",
+   "text": "Then a twist. The N F L reviewed the film.",
    "key": [
-    "BLOCKED."
+    "TWIST."
    ],
    "shot": {
     "type": "medium",
@@ -366,7 +1734,7 @@
    "act": {
     "ref": {
      "mood": "neutral",
-     "action": "point",
+     "action": "idle",
      "look": "camera"
     }
    },
@@ -376,11 +1744,49 @@
    },
    "board": [
     "RULING:",
+    "???"
+   ]
+  },
+  {
+   "text": "Their ruling? The kick was blocked.",
+   "key": [
+    "BLOCKED."
+   ],
+   "speaker": "capy",
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "smug",
+     "action": "point",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "ref": "right"
+   },
+   "board": [
+    "RULING:",
     "BLOCKED"
    ]
   },
   {
-   "text": "An Eagles lineman, Treyvon Hester, had tipped it with a fingertip.",
+   "text": "Eagles lineman Treyvon Hester tipped it. With a fingertip.",
    "key": [
     "FINGERTIP."
    ],
@@ -397,18 +1803,21 @@
     },
     "ref": {
      "mood": "neutral",
+     "action": "idle",
      "look": "hester"
     }
    },
    "place": {
+    "capy": false,
     "hester": "left",
     "ref": "right"
    }
   },
   {
-   "text": "It was still the sixth time that season one of Parkey's kicks hit an upright.",
+   "text": "That season, uprights you hit? Six. Including this one.",
+   "cap": "That season, uprights you hit? 6. Including this one.",
    "key": [
-    "6TH"
+    "6."
    ],
    "shot": {
     "type": "close",
@@ -420,8 +1829,16 @@
      "action": "facepalm"
     }
    },
-   "cap": "It was still the 6th time that season one of Parkey's kicks hit an upright.",
    "set": "field",
+   "setOpts": {
+    "boardText": [
+     "EAGLES 16",
+     "BEARS 15"
+    ],
+    "endZone": 10,
+    "zoneA": "#0b162a",
+    "zoneB": "#004c54"
+   },
    "place": {
     "kicker": "center"
    },
@@ -431,11 +1848,12 @@
    ]
   },
   {
-   "text": "So who gets the credit, the fingertip or the goalpost? One word.",
+   "text": "So who gets the credit? Fingertip or goalpost? One word.",
    "key": [
     "FINGERTIP",
     "GOALPOST?"
    ],
+   "speaker": "capy",
    "shot": {
     "type": "two",
     "on": "capy",
@@ -462,8 +1880,7 @@
      0.6,
      0.2
     ]
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -482,6 +1899,83 @@
   {
    "title": "ChicagoBears.com: Game recap, Bears come up short in wild-card loss",
    "url": "https://www.chicagobears.com/news/game-recap-bears-come-up-short-in-wildcard-loss"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Bears trailed Eagles 16-15 in the wild card round",
+   "terms": [
+    "16-15|16–15|16 15",
+    "wild card|wild-card"
+   ]
+  },
+  {
+   "claim": "Ten seconds were left",
+   "terms": [
+    "10 seconds|0:10"
+   ]
+  },
+  {
+   "claim": "Cody Parkey lined up a 43-yard field goal",
+   "terms": [
+    "Parkey",
+    "43"
+   ]
+  },
+  {
+   "claim": "The Eagles called timeout just before the snap to ice the kicker",
+   "terms": [
+    "timeout",
+    "ice|icing"
+   ]
+  },
+  {
+   "claim": "The play ran anyway and the practice kick went through but did not count",
+   "terms": [
+    "timeout",
+    "good|through|count"
+   ]
+  },
+  {
+   "claim": "On the second try the ball hit the left upright, then the crossbar, and dropped back onto the field",
+   "terms": [
+    "upright",
+    "crossbar"
+   ]
+  },
+  {
+   "claim": "Final score Eagles 16, Bears 15; Chicago's season was over",
+   "terms": [
+    "16-15|16–15|16 15"
+   ]
+  },
+  {
+   "claim": "Fans named it the Double Doink",
+   "terms": [
+    "double doink"
+   ]
+  },
+  {
+   "claim": "The NFL reviewed the film and ruled the kick blocked",
+   "terms": [
+    "NFL|league",
+    "blocked"
+   ]
+  },
+  {
+   "claim": "Eagles lineman Treyvon Hester tipped it with a fingertip",
+   "terms": [
+    "Hester",
+    "tip|finger"
+   ]
+  },
+  {
+   "claim": "It was the sixth time that season one of Parkey's kicks hit an upright",
+   "terms": [
+    "sixth|6th|six",
+    "upright"
+   ]
   }
  ]
 }

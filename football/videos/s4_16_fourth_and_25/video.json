@@ -1,13 +1,8 @@
 {
  "id": "s4_16_fourth_and_25",
  "title": "Fourth-and-25 sends Green Bay to the playoffs",
- "set": "field",
- "setOpts": {
-  "boardText": [
-   "4TH",
-   "& 25"
-  ]
- },
+ "set": "tunnel",
+ "setOpts": {},
  "cast": {
   "capy": {
    "kind": "capy",
@@ -74,37 +69,46 @@
    },
    "at": "right",
    "hold": "phone"
+  },
+  "v2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4f2683",
+    "pants": "#f2c230",
+    "number": "24",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   }
   }
  },
  "lines": [
   {
-   "text": "The Packers won their division in 2003 because of a fourth-and-twenty-five in Arizona.",
-   "cap": "The Packers won their division in 2003 because of a 4th-and-25 in Arizona.",
+   "text": "You're a Packers fan. Your season? A fourth and twenty five. In Arizona.",
+   "cap": "You're a Packers fan. Your season? A 4th and 25. In Arizona.",
    "key": [
-    "4TH-AND-25"
+    "ARIZONA."
    ],
    "speaker": "capy",
-   "place": {
-    "capy": [
-     -2.4,
-     0.8
-    ],
-    "qb": [
-     0,
-     0
-    ],
-    "viking": [
-     2.2,
-     0.2
-    ],
-    "wr": false,
-    "packer": false,
-    "pfan": false
-   },
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "qb"
+    "with": "pfan"
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     0.8
+    ],
+    "viking": false,
+    "qb": false,
+    "wr": false,
+    "packer": false,
+    "pfan": [
+     0.6,
+     0.2
+    ],
+    "v2": false
    },
    "act": {
     "capy": {
@@ -112,29 +116,34 @@
      "action": "talk",
      "look": "camera"
     },
-    "qb": {
+    "pfan": {
      "mood": "worried",
-     "action": "hold"
-    },
-    "viking": {
-     "mood": "smug",
-     "action": "cross",
-     "look": "qb"
+     "action": "hold",
+     "look": "capy"
     }
    }
   },
   {
-   "text": "Last week of the season. The Vikings, who started six and oh, just had to win in Arizona.",
-   "cap": "Last week of the season. The Vikings, who started 6-0, just had to win in Arizona.",
+   "text": "Two thousand three. Last week of the season. The Vikings just have to win in Arizona.",
+   "cap": "2003. Last week of the season. The Vikings just have to win in Arizona.",
    "key": [
-    "6-0,"
+    "WIN"
    ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "VIKINGS 17",
+     "CARDINALS 12"
+    ],
+    "endZone": 25,
+    "zoneA": "#4f2683",
+    "zoneB": "#a3233f"
+   },
    "board": [
     "WEEK 17",
     "VIKINGS WIN = IN"
    ],
    "place": {
-    "capy": false,
     "viking": [
      -1.0,
      0
@@ -157,12 +166,13 @@
     },
     "qb": {
      "mood": "neutral",
+     "action": "hold",
      "look": "viking"
     }
    }
   },
   {
-   "text": "Win, and Minnesota took the division. Green Bay was out.",
+   "text": "Vikings win? They take the division. Green Bay is out.",
    "key": [
     "OUT."
    ],
@@ -179,7 +189,7 @@
    }
   },
   {
-   "text": "Green Bay was beating Denver at home. Its fans listened to Arizona on the radio.",
+   "text": "Green Bay is beating Denver at home. The fans listen to Arizona on the radio.",
    "key": [
     "RADIO."
    ],
@@ -211,17 +221,27 @@
     },
     "packer": {
      "mood": "worried",
+     "action": "idle",
      "look": "pfan"
     }
    }
   },
   {
-   "text": "In Arizona, the Vikings led seventeen to six with about two minutes left.",
-   "cap": "In Arizona, the Vikings led 17 to 6 with about 2 minutes left.",
+   "text": "In Arizona, the Vikings lead seventeen to six. About two minutes left.",
+   "cap": "In Arizona, the Vikings lead 17 to 6. About 2 minutes left.",
    "key": [
     "17"
    ],
    "set": "field",
+   "setOpts": {
+    "boardText": [
+     "VIKINGS 17",
+     "CARDINALS 12"
+    ],
+    "endZone": 25,
+    "zoneA": "#4f2683",
+    "zoneB": "#a3233f"
+   },
    "board": [
     "VIKINGS 17",
     "CARDINALS 6"
@@ -257,8 +277,8 @@
    }
   },
   {
-   "text": "Arizona scored. Seventeen to twelve.",
-   "cap": "Arizona scored. 17 to 12.",
+   "text": "Arizona scores. Seventeen to twelve.",
+   "cap": "Arizona scores. 17 to 12.",
    "key": [
     "12."
    ],
@@ -272,12 +292,13 @@
    },
    "act": {
     "qb": {
-     "mood": "angry",
-     "action": "throw",
+     "mood": "happy",
+     "action": "cheer",
      "look": "camera"
     },
     "viking": {
      "mood": "worried",
+     "action": "idle",
      "look": "qb"
     }
    }
@@ -298,7 +319,7 @@
      0
     ],
     "viking": [
-     1.2,
+     1.6,
      0.6
     ]
    },
@@ -318,14 +339,23 @@
    }
   },
   {
-   "text": "Last play of the season. One snap.",
+   "text": "Last play of the season. One snap. Relax, Minnesota.",
    "key": [
-    "ONE"
+    "RELAX,"
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -2.2,
      1.4
+    ],
+    "qb": [
+     0.4,
+     0
+    ],
+    "viking": [
+     2.2,
+     -0.4
     ]
    },
    "shot": {
@@ -341,78 +371,885 @@
     "qb": {
      "mood": "worried",
      "action": "hold"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "Josh McCown threw it to the end zone. Nate Poole caught it with one foot down.",
-   "key": [
-    "ONE",
-    "FOOT"
-   ],
-   "board": [
-    "0:00",
-    "CATCH?"
-   ],
-   "place": {
-    "capy": false,
-    "qb": false,
-    "wr": [
-     0,
-     0
-    ],
-    "viking": [
-     1.4,
-     -0.4
-    ]
-   },
-   "shot": {
-    "type": "low",
-    "on": "wr"
-   },
-   "act": {
-    "wr": {
-     "mood": "shocked",
-     "action": "cheer",
-     "look": "camera"
     },
     "viking": {
-     "mood": "shocked",
-     "action": "shrug",
-     "look": "wr"
+     "mood": "smug",
+     "action": "cross"
     }
    }
   },
   {
-   "text": "He was ruled forced out. Replay upheld it. Touchdown.",
+   "text": "Josh McCown throws it to the end zone.",
+   "key": [
+    "END",
+    "ZONE."
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "qb",
+    "lead": 0,
+    "z": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        4,
+        0
+       ],
+       [
+        0.05,
+        3.43,
+        0.0
+       ],
+       [
+        0.1,
+        2.86,
+        0.0
+       ],
+       [
+        0.15,
+        2.29,
+        0.0
+       ],
+       [
+        0.2,
+        1.71,
+        0.0
+       ],
+       [
+        0.25,
+        1.14,
+        0.0
+       ],
+       [
+        0.3,
+        0.57,
+        0.0
+       ],
+       [
+        0.35,
+        0.0,
+        0.0
+       ],
+       [
+        0.4,
+        0.0,
+        0.0
+       ],
+       [
+        0.45,
+        0.0,
+        0.0
+       ],
+       [
+        0.5,
+        0.0,
+        0.0
+       ],
+       [
+        0.55,
+        0.0,
+        0.0
+       ],
+       [
+        0.6,
+        0.0,
+        0.0
+       ],
+       [
+        0.65,
+        0.0,
+        0.0
+       ],
+       [
+        0.7,
+        0.0,
+        0.0
+       ],
+       [
+        0.75,
+        0.0,
+        0.0
+       ],
+       [
+        0.8,
+        0.0,
+        0.0
+       ],
+       [
+        0.85,
+        0.0,
+        0.0
+       ],
+       [
+        0.9,
+        0.0,
+        0.0
+       ],
+       [
+        0.95,
+        0.0,
+        0.0
+       ],
+       [
+        1.0,
+        0,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.374,
+        "throw"
+       ]
+      ],
+      "face": 80
+     },
+     "viking": {
+      "path": [
+       [
+        0.0,
+        8,
+        -2
+       ],
+       [
+        0.05,
+        7.72,
+        -1.96
+       ],
+       [
+        0.1,
+        7.45,
+        -1.92
+       ],
+       [
+        0.15,
+        7.17,
+        -1.88
+       ],
+       [
+        0.2,
+        6.9,
+        -1.84
+       ],
+       [
+        0.25,
+        6.62,
+        -1.8
+       ],
+       [
+        0.3,
+        6.35,
+        -1.76
+       ],
+       [
+        0.35,
+        6.08,
+        -1.72
+       ],
+       [
+        0.4,
+        5.8,
+        -1.68
+       ],
+       [
+        0.45,
+        5.53,
+        -1.64
+       ],
+       [
+        0.5,
+        5.25,
+        -1.6
+       ],
+       [
+        0.55,
+        4.97,
+        -1.56
+       ],
+       [
+        0.6,
+        4.7,
+        -1.52
+       ],
+       [
+        0.65,
+        4.42,
+        -1.48
+       ],
+       [
+        0.7,
+        4.15,
+        -1.44
+       ],
+       [
+        0.75,
+        3.88,
+        -1.4
+       ],
+       [
+        0.8,
+        3.6,
+        -1.36
+       ],
+       [
+        0.85,
+        3.33,
+        -1.32
+       ],
+       [
+        0.9,
+        3.05,
+        -1.28
+       ],
+       [
+        0.95,
+        2.78,
+        -1.24
+       ],
+       [
+        1.0,
+        2.5,
+        -1.2
+       ]
+      ]
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        12,
+        4
+       ],
+       [
+        0.05,
+        12.75,
+        4.03
+       ],
+       [
+        0.1,
+        13.5,
+        4.05
+       ],
+       [
+        0.15,
+        14.25,
+        4.08
+       ],
+       [
+        0.2,
+        15.0,
+        4.1
+       ],
+       [
+        0.25,
+        15.75,
+        4.12
+       ],
+       [
+        0.3,
+        16.5,
+        4.15
+       ],
+       [
+        0.35,
+        17.25,
+        4.17
+       ],
+       [
+        0.4,
+        18.0,
+        4.2
+       ],
+       [
+        0.45,
+        18.75,
+        4.22
+       ],
+       [
+        0.5,
+        19.5,
+        4.25
+       ],
+       [
+        0.55,
+        20.25,
+        4.28
+       ],
+       [
+        0.6,
+        21.0,
+        4.3
+       ],
+       [
+        0.65,
+        21.75,
+        4.33
+       ],
+       [
+        0.7,
+        22.5,
+        4.35
+       ],
+       [
+        0.75,
+        23.25,
+        4.38
+       ],
+       [
+        0.8,
+        24.0,
+        4.4
+       ],
+       [
+        0.85,
+        24.75,
+        4.42
+       ],
+       [
+        0.9,
+        25.5,
+        4.45
+       ],
+       [
+        0.95,
+        26.25,
+        4.47
+       ],
+       [
+        1.0,
+        27,
+        4.5
+       ]
+      ]
+     },
+     "v2": {
+      "path": [
+       [
+        0.0,
+        15,
+        1.5
+       ],
+       [
+        0.05,
+        15.55,
+        1.53
+       ],
+       [
+        0.1,
+        16.1,
+        1.57
+       ],
+       [
+        0.15,
+        16.65,
+        1.6
+       ],
+       [
+        0.2,
+        17.2,
+        1.64
+       ],
+       [
+        0.25,
+        17.75,
+        1.68
+       ],
+       [
+        0.3,
+        18.3,
+        1.71
+       ],
+       [
+        0.35,
+        18.85,
+        1.75
+       ],
+       [
+        0.4,
+        19.4,
+        1.78
+       ],
+       [
+        0.45,
+        19.95,
+        1.82
+       ],
+       [
+        0.5,
+        20.5,
+        1.85
+       ],
+       [
+        0.55,
+        21.05,
+        1.89
+       ],
+       [
+        0.6,
+        21.6,
+        1.92
+       ],
+       [
+        0.65,
+        22.15,
+        1.96
+       ],
+       [
+        0.7,
+        22.7,
+        1.99
+       ],
+       [
+        0.75,
+        23.25,
+        2.03
+       ],
+       [
+        0.8,
+        23.8,
+        2.06
+       ],
+       [
+        0.85,
+        24.35,
+        2.1
+       ],
+       [
+        0.9,
+        24.9,
+        2.13
+       ],
+       [
+        0.95,
+        25.45,
+        2.17
+       ],
+       [
+        1.0,
+        26,
+        2.2
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.45,
+      0.2,
+      2.2,
+      0.1
+     ],
+     [
+      0.542,
+      4.17,
+      5.0,
+      0.68
+     ],
+     [
+      0.633,
+      8.13,
+      7.13,
+      1.27
+     ],
+     [
+      0.725,
+      12.1,
+      8.6,
+      1.85
+     ],
+     [
+      0.817,
+      16.07,
+      9.4,
+      2.43
+     ],
+     [
+      0.908,
+      20.03,
+      9.53,
+      3.02
+     ],
+     [
+      1.0,
+      24.0,
+      9.0,
+      3.6
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Nate Poole catches it. One foot down.",
+   "key": [
+    "FOOT"
+   ],
+   "shot": {
+    "type": "follow",
+    "on": "ball",
+    "fallback": "wr",
+    "lead": 0,
+    "z": 3
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "wr": {
+      "path": [
+       [
+        0.0,
+        27,
+        4.5
+       ],
+       [
+        0.05,
+        27.25,
+        4.5
+       ],
+       [
+        0.1,
+        27.5,
+        4.5
+       ],
+       [
+        0.15,
+        27.75,
+        4.5
+       ],
+       [
+        0.2,
+        28.0,
+        4.5
+       ],
+       [
+        0.25,
+        28.25,
+        4.5
+       ],
+       [
+        0.3,
+        28.5,
+        4.5
+       ],
+       [
+        0.35,
+        28.75,
+        4.5
+       ],
+       [
+        0.4,
+        29.0,
+        4.5
+       ],
+       [
+        0.45,
+        29.08,
+        4.59
+       ],
+       [
+        0.5,
+        29.17,
+        4.68
+       ],
+       [
+        0.55,
+        29.25,
+        4.78
+       ],
+       [
+        0.6,
+        29.33,
+        4.87
+       ],
+       [
+        0.65,
+        29.42,
+        4.96
+       ],
+       [
+        0.7,
+        29.5,
+        5.05
+       ],
+       [
+        0.75,
+        29.58,
+        5.14
+       ],
+       [
+        0.8,
+        29.67,
+        5.23
+       ],
+       [
+        0.85,
+        29.75,
+        5.32
+       ],
+       [
+        0.9,
+        29.83,
+        5.42
+       ],
+       [
+        0.95,
+        29.92,
+        5.51
+       ],
+       [
+        1.0,
+        30,
+        5.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.4,
+        "catch"
+       ]
+      ],
+      "face": -90
+     },
+     "v2": {
+      "path": [
+       [
+        0.0,
+        26,
+        2.2
+       ],
+       [
+        0.05,
+        26.31,
+        2.25
+       ],
+       [
+        0.1,
+        26.62,
+        2.3
+       ],
+       [
+        0.15,
+        26.94,
+        2.35
+       ],
+       [
+        0.2,
+        27.25,
+        2.4
+       ],
+       [
+        0.25,
+        27.56,
+        2.45
+       ],
+       [
+        0.3,
+        27.88,
+        2.5
+       ],
+       [
+        0.35,
+        28.19,
+        2.55
+       ],
+       [
+        0.4,
+        28.5,
+        2.6
+       ],
+       [
+        0.45,
+        28.64,
+        2.68
+       ],
+       [
+        0.5,
+        28.78,
+        2.77
+       ],
+       [
+        0.55,
+        28.93,
+        2.85
+       ],
+       [
+        0.6,
+        29.07,
+        2.93
+       ],
+       [
+        0.65,
+        29.21,
+        3.02
+       ],
+       [
+        0.7,
+        29.35,
+        3.1
+       ],
+       [
+        0.75,
+        29.49,
+        3.18
+       ],
+       [
+        0.8,
+        29.63,
+        3.27
+       ],
+       [
+        0.85,
+        29.77,
+        3.35
+       ],
+       [
+        0.9,
+        29.92,
+        3.43
+       ],
+       [
+        0.95,
+        30.06,
+        3.52
+       ],
+       [
+        1.0,
+        30.2,
+        3.6
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.0,
+      24.0,
+      9.0,
+      3.6
+     ],
+     [
+      0.067,
+      24.8,
+      7.97,
+      3.73
+     ],
+     [
+      0.133,
+      25.6,
+      6.87,
+      3.87
+     ],
+     [
+      0.2,
+      26.4,
+      5.7,
+      4.0
+     ],
+     [
+      0.267,
+      27.2,
+      4.47,
+      4.13
+     ],
+     [
+      0.333,
+      28.0,
+      3.17,
+      4.27
+     ],
+     [
+      0.4,
+      28.8,
+      1.8,
+      4.4
+     ]
+    ],
+    "carry": [
+     [
+      0.4,
+      "wr"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "He's ruled forced out. Replay upholds it. Touchdown.",
    "key": [
     "TOUCHDOWN."
    ],
-   "place": {
-    "qb": [
-     -1.8,
-     0.2
-    ]
+   "speaker": "capy",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "VIKINGS 17",
+     "CARDINALS 12"
+    ],
+    "endZone": 25,
+    "zoneA": "#4f2683",
+    "zoneB": "#a3233f"
    },
+   "sfx": [
+    [
+     0.7,
+     "hit"
+    ]
+   ],
    "shot": {
     "type": "two",
-    "on": "wr",
-    "with": "qb"
+    "on": "capy",
+    "with": "wr"
    },
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "wr": [
+     0.8,
+     0.2
+    ],
+    "v2": [
+     3.0,
+     -1.2
+    ]
+   },
+   "board": [
+    "CARDINALS 18",
+    "VIKINGS 17"
+   ],
    "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
     "wr": {
      "mood": "happy",
-     "action": "cheer"
-    },
-    "qb": {
-     "mood": "happy",
      "action": "cheer",
-     "look": "wr"
+     "look": "capy"
     },
-    "viking": {
-     "mood": "sad",
-     "action": "facepalm"
+    "v2": {
+     "mood": "shocked",
+     "action": "shrug"
     }
    }
   },
@@ -422,10 +1259,15 @@
    "key": [
     "18,"
    ],
-   "board": [
-    "CARDINALS 18",
-    "VIKINGS 17"
-   ],
+   "place": {
+    "capy": false,
+    "wr": false,
+    "v2": false,
+    "viking": [
+     0,
+     0
+    ]
+   },
    "shot": {
     "type": "close",
     "on": "viking"
@@ -439,9 +1281,9 @@
    }
   },
   {
-   "text": "At Lambeau, the crowd erupted. Green Bay won the division.",
+   "text": "At Lambeau, the crowd erupts. Green Bay wins the division.",
    "key": [
-    "ERUPTED."
+    "ERUPTS."
    ],
    "set": "tunnel",
    "board": [
@@ -479,11 +1321,12 @@
    }
   },
   {
-   "text": "The Vikings started six and oh and missed the playoffs.",
-   "cap": "The Vikings started 6-0 and missed the playoffs.",
+   "text": "The Vikings won their first six games. They miss the playoffs.",
+   "cap": "The Vikings won their first 6 games. They miss the playoffs.",
    "key": [
-    "MISSED"
+    "MISS"
    ],
+   "speaker": "capy",
    "board": [
     "VIKINGS",
     "9-7 OUT"
@@ -513,8 +1356,7 @@
      "mood": "happy",
      "action": "clap"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
    "text": "Has another team's game ever saved yours? Yes or no?",
@@ -522,6 +1364,7 @@
     "YES",
     "NO?"
    ],
+   "speaker": "capy",
    "board": [
     "SAVED BY",
     "ANOTHER GAME?"
@@ -552,8 +1395,7 @@
      "action": "wave",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -572,6 +1414,99 @@
   {
    "title": "Arizona Cardinals: Nate Poole, Josh McCown and the Miracle in the Desert",
    "url": "https://www.azcardinals.com/news/nate-poole-josh-mccown-vikings-cardinals-miracle-in-the-desert-larry-fitzgerald"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Packers won the 2003 division because of a 4th-and-25 play in Arizona",
+   "terms": [
+    "fourth-and-25|4th-and-25|fourth and 25"
+   ]
+  },
+  {
+   "claim": "Last week of the season; the Vikings only had to win in Arizona",
+   "terms": [
+    "Vikings",
+    "win"
+   ]
+  },
+  {
+   "claim": "A Vikings win gave Minnesota the division and eliminated Green Bay",
+   "terms": [
+    "division",
+    "Green Bay|Packers"
+   ]
+  },
+  {
+   "claim": "Green Bay was beating Denver at home; fans listened to the Arizona game on the radio",
+   "terms": [
+    "Denver|Broncos",
+    "radio"
+   ]
+  },
+  {
+   "claim": "The Vikings led 17-6 with about two minutes left",
+   "terms": [
+    "17-6|17 6"
+   ]
+  },
+  {
+   "claim": "Arizona scored to make it 17-12",
+   "terms": [
+    "17-12|17 12"
+   ]
+  },
+  {
+   "claim": "Two straight sacks made it fourth-and-25",
+   "terms": [
+    "sack"
+   ]
+  },
+  {
+   "claim": "Josh McCown threw to the end zone",
+   "terms": [
+    "McCown"
+   ]
+  },
+  {
+   "claim": "Nate Poole caught it with one foot down",
+   "terms": [
+    "Poole"
+   ]
+  },
+  {
+   "claim": "Poole was ruled forced out and replay upheld the touchdown",
+   "terms": [
+    "forced out|pushed out",
+    "replay|review"
+   ]
+  },
+  {
+   "claim": "Final score Cardinals 18, Vikings 17, no time left",
+   "terms": [
+    "18-17|18 17"
+   ]
+  },
+  {
+   "claim": "The crowd at Lambeau erupted; Green Bay won the division",
+   "terms": [
+    "Lambeau"
+   ]
+  },
+  {
+   "claim": "The Vikings started 6-0 and missed the playoffs",
+   "terms": [
+    "6-0",
+    "playoffs"
+   ]
+  },
+  {
+   "claim": "The Vikings finished 9-7 and missed the playoffs",
+   "terms": [
+    "Vikings",
+    "9 7|nine seven"
+   ]
   }
  ]
 }
