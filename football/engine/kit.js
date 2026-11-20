@@ -326,15 +326,17 @@ export function setMood(p, mood) {
 
 // action: idle | talk | point | cheer | facepalm | shrug | throw | hold | cross | slump | clap | wave | run | catch | kick | celebrate
 // Motion rules (J, 2026-11-20 UAT): every move must mean something. Idle is still (breathing, blinks, small head drift);
-// talk is a small hand beat; one-shot moves (throw, kick, catch, point) play once across the line, driven by u (0..1), then hold.
+// talk is a small hand beat; one-shot moves play once on their own clock (g = seconds since the move starts), then hold.
+// A kick or throw starts at its action time and makes contact / releases at MOTION.contact s; a catch is marked at the
+// moment the ball arrives, so the hands rise over MOTION.reach s before it and close on the ball.
 export const MOTION = {
-  talkBeat: 0.25, oneShot: [0.15, 0.45],
+  talkBeat: 0.25, gesture: 0.4, contact: 0.2, reach: 0.3,
   // gait: rate (rad/s), thigh swing, knee flex, arm swing, elbow base bend, pelvis bob, forward lean, chest twist
   walk: { rate: 7.5, thigh: 0.45, knee: 0.7, arm: 0.42, elbow: -0.3, bob: 0.05, lean: 0.06, twist: 0.1 },
   run: { rate: 13, thigh: 0.95, knee: 1.55, arm: 0.95, elbow: -1.55, bob: 0.13, lean: 0.32, twist: 0.16 },
 };
 const ease = (x) => x <= 0 ? 0 : x >= 1 ? 1 : x * x * (3 - 2 * x);
-export function pose(p, action, t, talking, u = 0.5) {
+export function pose(p, action, t, talking, g = 1) {
   const P = p.userData.parts, s = p.userData.seed;
   const breathe = Math.sin(t * 2.1 + s) * 0.012;
   P.torso.scale.y = 1 + breathe;
@@ -348,7 +350,7 @@ export function pose(p, action, t, talking, u = 0.5) {
     mouths.o.visible = open; if (cur && cur !== mouths.o) cur.visible = !open;
     if (!open && !Object.values(mouths).some((m) => m.visible)) mouths.flat.visible = true;
   }
-  const k = ease((u - MOTION.oneShot[0]) / (MOTION.oneShot[1] - MOTION.oneShot[0]));
+  const k = action === 'catch' ? ease((g + MOTION.reach) / MOTION.reach) : ease(g / MOTION.gesture);
   // joint targets (radians). Shoulder x < 0 swings the arm forward; elbow x < 0 bends the forearm up;
   // hip x < 0 swings the leg forward; knee x > 0 bends the shin back. Left z > 0 / right z < 0 lifts the arm out.
   const J = { lx: 0, rx: 0, lz: 0.08, rz: -0.08, le: -0.12, re: -0.12, hl: 0, hr: 0, kl: 0.03, kr: 0.03, fl: 0, fr: 0, lean: 0, twist: 0, bob: 0 };
@@ -369,7 +371,7 @@ export function pose(p, action, t, talking, u = 0.5) {
       if (action === 'celebrate') { J.bob = Math.abs(Math.sin(t * 7)) * 0.3 * k; J.kl = J.kr = 0.25 * Math.abs(Math.sin(t * 7)) * k; } break;
     case 'facepalm': J.rx = -1.1 * k; J.re = -2.3 * k; J.rz = 0.3 * k; break;
     case 'shrug': J.lz = -0.45 * k; J.rz = 0.45 * k; J.le = J.re = -1.5 * k; J.lx = J.rx = -0.2 * k; break;
-    case 'throw': { const back = ease(u / MOTION.oneShot[0]) * (1 - k);
+    case 'throw': { const back = ease(g / (MOTION.contact * 0.6)) * (1 - k);   // wind up, then release at k = 0.5 (g = contact)
       J.rx = -2.6 * back - 1.1 * k; J.re = -1.7 * back - 0.15 * k; J.rz = -0.25; J.lx = -0.8 * back; J.le = -0.6;
       J.hl = -0.45 * k; J.kl = 0.2 * k; J.hr = 0.25 * k; J.twist = 0.35 * back - 0.25 * k; J.lean = 0.15 * k; break; }
     case 'kick': { const sw = Math.sin(Math.PI * k);

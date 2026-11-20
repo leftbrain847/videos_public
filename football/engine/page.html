@@ -23,6 +23,7 @@ const CFG = {
   caption: { size: 74, lineHeight: 84, bottom: 92, maxWidth: 940, skew: -0.12, stroke: 15, keyStroke: 8, key: '#e01b24', words: 4 },
   push: 0.1,            // camera moves this fraction closer over a shot
   drift: 0.35,          // sideways drift over a shot (world units)
+  gestureDelay: 0.3,    // outside plays, a line's one-shot gesture starts this many seconds in
   walkBelow: 3,         // in a play, under this many units a second is a walk, not a run
   gazeTurn: 0.6,        // how far heads turn toward who they look at (radians cap)
   board: { ndc: [-0.56, 0.62], y: [8.8, 11] },   // field scoreboard: upper-left at each line's start, above the back row of fans
@@ -182,6 +183,8 @@ function along(pts, u) {
   return p1.slice(1).map((_, k) => cr(p0[k + 1], p1[k + 1], p2[k + 1], p3[k + 1]));
 }
 const pick = (list, u, def) => { let v = def; for (const [k, x] of list || []) if (u >= k) v = x; return v; };
+// [action, u it started at]; a catch counts from the ball's arrival, so its hands can rise just before it
+const pickAt = (list, u, def) => { let v = [def, 0]; for (const [k, x] of list || []) if (u >= k || (x === 'catch' && u >= k - 0.15)) v = [x, k]; return v; };
 let BALL = null;
 let followAt = null;
 
@@ -202,14 +205,15 @@ window.frame = (t) => {
     if (c.p.parent !== sc.scene) sc.scene.add(c.p);
     c.p.visible = visible;
     if (!visible) continue;
-    let x, z, action;
+    let x, z, action, gest = 1;
     const a = st.act[id] || {};
     if (pp) {
       [x, z] = along(pp.path, u);
       const [x2, z2] = along(pp.path, Math.min(1, u + 0.02));
       const moving = Math.hypot(x2 - x, z2 - z) > 0.02;
       c.p.rotation.y = pp.face !== undefined && !moving ? (pp.face * Math.PI) / 180 : moving ? Math.atan2(x2 - x, z2 - z) : c.p.rotation.y;
-      action = pick(pp.actions, u, moving ? 'run' : 'idle');
+      let at; [action, at] = pickAt(pp.actions, u, moving ? 'run' : 'idle');
+      gest = (u - at) * Math.max(0.1, L.end - L.start);
       if (action === 'run' && !moving) action = 'idle';
       const speed = Math.hypot(x2 - x, z2 - z) / (0.02 * Math.max(0.1, L.end - L.start));   // units per second
       if (action === 'run' && speed < CFG.walkBelow) action = 'walk';   // a slow mover walks; a run reads as fast
@@ -223,7 +227,7 @@ window.frame = (t) => {
     const held = c.p.userData.parts.held; if (held) held.visible = !play;   // in a play, the one real ball does the work
     setMood(c.p, (pp?.mood) || a.mood || c.cfg.look?.mood || 'neutral');
     const talking = line.speaker === id;
-    pose(c.p, action, t, talking, u);
+    pose(c.p, action, t, talking, pp ? gest : u * Math.max(0.1, L.end - L.start) - CFG.gestureDelay);
     const head = c.p.userData.parts.head; const lookAt = pp ? null : (a.look === 'camera' || !a.look ? null : cast[a.look]?.p.position);
     let yaw = 0; if (lookAt) { yaw = Math.atan2(lookAt.x - x, lookAt.z - z) - c.p.rotation.y; yaw = Math.max(-CFG.gazeTurn, Math.min(CFG.gazeTurn, Math.atan2(Math.sin(yaw), Math.cos(yaw)))); }
     head.rotation.y = yaw + (pp ? 0 : Math.sin(t * 0.7 + c.p.userData.seed) * 0.05);

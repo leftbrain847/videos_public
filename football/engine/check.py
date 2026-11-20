@@ -96,7 +96,8 @@ def check(vd):
     return words, errs
 
 
-PLAY = {"z": (-10.0, 6.0), "min_gap": 1.5, "max_speed": 12.0, "samples": 60}
+PLAY = {"z": (-10.0, 6.0), "min_gap": 1.5, "max_speed": 12.0, "samples": 60,
+        "contact_s": 0.2, "sync_tol_s": 0.1}   # kit.js MOTION.contact; gestures within 0.1 s (about 2 frames) of the ball
 
 
 def along(pts, u):
@@ -124,6 +125,17 @@ def play_errors(S, timing=None):
             continue
         dur = (timing["lines"][i - 1]["end"] - timing["lines"][i - 1]["start"]) if timing else None
         flagged = set()
+        if dur:   # gestures in sync with the ball: a kick/throw releases a flight, a catch ends one
+            ball = (l.get("play") or {}).get("ball") or []
+            flights = ball if ball and isinstance(ball[0][0], list) else ([ball] if ball else [])
+            starts, ends = [f[0][0] * dur for f in flights], [f[-1][0] * dur for f in flights]
+            for k, v in ((l.get("play") or {}).get("cast") or {}).items():
+                for u, act in v.get("actions", []):
+                    at = u * dur
+                    if act in ("kick", "throw") and not any(abs(at + P["contact_s"] - s0) <= P["sync_tol_s"] for s0 in starts):
+                        out.append(f"line {i}: {k}'s {act} at u {u} releases at {at + P['contact_s']:.2f} s; no ball flight starts then (flights start at {[round(x, 2) for x in starts]} s)")
+                    if act == "catch" and not any(abs(at - e) <= P["sync_tol_s"] for e in ends):
+                        out.append(f"line {i}: {k}'s catch at {at:.2f} s isn't when a ball arrives ({[round(x, 2) for x in ends]} s)")
         for n in range(P["samples"] + 1):
             u = n / P["samples"]; pos = {k: along(p, u) for k, p in cast.items()}
             for k, (x, z) in pos.items():
