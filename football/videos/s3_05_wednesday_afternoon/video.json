@@ -1,0 +1,545 @@
+{
+ "id": "s3_05_wednesday_afternoon",
+ "title": "Thanksgiving, on a Wednesday",
+ "set": "living",
+ "setOpts": {
+  "boardText": [
+   "THANKSGIVING",
+   "NIGHT GAME"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": [
+    -1.2,
+    4.4
+   ],
+   "face": 15
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#4b2e83",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#c68a5e"
+   },
+   "at": [
+    1.2,
+    4.2
+   ],
+   "face": -15
+  },
+  "exec": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2f3a",
+    "pants": "#2b2f3a",
+    "hair": "short",
+    "hairColor": "#c9c9c9",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "phone"
+  },
+  "rg3": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4b2e83",
+    "pants": "#f4f4f4",
+    "number": "3",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "mcsorley": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4b2e83",
+    "pants": "#f4f4f4",
+    "number": "7",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f4cfa8"
+   },
+   "at": "right"
+  },
+  "steeler": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#f2c400",
+    "number": "90",
+    "hair": "long",
+    "hairColor": "#3b2416",
+    "skin": "#c68a5e"
+   },
+   "at": "left"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, a Thanksgiving night game was played on a Wednesday afternoon.",
+   "key": [
+    "WEDNESDAY"
+   ],
+   "place": {
+    "exec": false,
+    "rg3": false,
+    "mcsorley": false,
+    "steeler": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Ravens at Steelers. Set for Thanksgiving night, November twenty sixth.",
+   "cap": "Ravens at Steelers. Set for Thanksgiving night, November 26.",
+   "key": [
+    "26."
+   ],
+   "board": [
+    "RAVENS @ STEELERS",
+    "THU NOV 26"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "fan"
+    }
+   }
+  },
+  {
+   "text": "Then about twenty Ravens players landed on the COVID list.",
+   "cap": "Then about 20 Ravens players landed on the COVID list.",
+   "key": [
+    "20"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "teamA": "#4b2e83",
+    "teamB": "#1b1b1b",
+    "boardText": [
+     "COVID LIST",
+     "~20 PLAYERS"
+    ]
+   },
+   "place": {
+    "rg3": "center",
+    "mcsorley": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "rg3"
+   },
+   "act": {
+    "rg3": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "mcsorley": {
+     "mood": "worried",
+     "look": "rg3"
+    }
+   },
+   "board": [
+    "COVID LIST",
+    "~20 PLAYERS"
+   ]
+  },
+  {
+   "text": "Including their starting quarterback, Lamar Jackson.",
+   "key": [
+    "LAMAR"
+   ],
+   "board": [
+    "QB1:",
+    "OUT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rg3"
+   },
+   "act": {
+    "rg3": {
+     "mood": "shocked",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "First, the game moved to Sunday.",
+   "key": [
+    "SUNDAY."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "THU →",
+     "SUN"
+    ]
+   },
+   "place": {
+    "exec": "desk",
+    "capy": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "exec"
+    }
+   },
+   "board": [
+    "THU →",
+    "SUN"
+   ]
+  },
+  {
+   "text": "Then it moved to Tuesday.",
+   "key": [
+    "TUESDAY."
+   ],
+   "board": [
+    "SUN →",
+    "TUE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then to Wednesday. Three postponements for just one game.",
+   "key": [
+    "THREE"
+   ],
+   "board": [
+    "TUE →",
+    "WED"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "exec",
+    "with": "capy"
+   },
+   "act": {
+    "exec": {
+     "mood": "angry",
+     "action": "facepalm"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Kickoff: three forty in the afternoon.",
+   "cap": "Kickoff: 3:40 in the afternoon.",
+   "key": [
+    "3:40"
+   ],
+   "board": [
+    "WED DEC 2",
+    "3:40 PM ET"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "exec",
+    "offset": [
+     0,
+     1,
+     1
+    ]
+   },
+   "act": {
+    "exec": {
+     "mood": "shocked",
+     "action": "point"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "exec"
+    }
+   }
+  },
+  {
+   "text": "Why so early? NBC was showing a Christmas tree lighting that night.",
+   "key": [
+    "TREE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "exec": {
+     "mood": "sad"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It was the first Wednesday game in eight years.",
+   "cap": "It was the first Wednesday game in 8 years.",
+   "key": [
+    "8"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAVENS 0",
+     "STEELERS 0"
+    ]
+   },
+   "place": {
+    "rg3": "center",
+    "steeler": [
+     -2.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "rg3"
+   },
+   "act": {
+    "rg3": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "steeler": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "rg3"
+    }
+   },
+   "board": [
+    "RAVENS 0",
+    "STEELERS 0"
+   ]
+  },
+  {
+   "text": "Robert Griffin the third started instead, and ran for sixty eight yards.",
+   "cap": "Robert Griffin III started instead, and ran for 68 yards.",
+   "key": [
+    "68"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "rg3"
+   },
+   "act": {
+    "rg3": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Late, backup Trace McSorley threw a seventy yard touchdown.",
+   "cap": "Late, backup Trace McSorley threw a 70-yard touchdown.",
+   "key": [
+    "70-YARD"
+   ],
+   "place": {
+    "rg3": false,
+    "mcsorley": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "mcsorley"
+   },
+   "act": {
+    "mcsorley": {
+     "mood": "happy",
+     "action": "throw"
+    }
+   }
+  },
+  {
+   "text": "Pittsburgh still won, nineteen to fourteen, to go eleven and oh.",
+   "cap": "Pittsburgh still won, 19 to 14, to go 11-0.",
+   "key": [
+    "19",
+    "11-0."
+   ],
+   "board": [
+    "RAVENS 14",
+    "STEELERS 19"
+   ],
+   "place": {
+    "steeler": [
+     -1.4,
+     0.4
+    ],
+    "mcsorley": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "steeler",
+    "with": "mcsorley"
+   },
+   "act": {
+    "steeler": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "mcsorley": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Thanksgiving dinner, served six days late.",
+   "key": [
+    "SIX",
+    "LATE."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "WEDNESDAY",
+     "3:40 PM"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.2,
+     4.4
+    ],
+    "fan": [
+     1.2,
+     4.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "confused",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "board": [
+    "WEDNESDAY",
+    "3:40 PM"
+   ]
+  },
+  {
+   "text": "Would you skip work to watch a Wednesday afternoon game? Yes or no?",
+   "key": [
+    "WORK"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "ESPN: Ravens-Steelers game postponed again, to Wednesday at 3:40 p.m. ET",
+   "url": "https://africa.espn.com/nfl/story/_/id/30423599/baltimore-ravens-pittsburgh-steelers-game-postponed-again-wednesday-source-says"
+  },
+  {
+   "title": "CBS Sports: Why Ravens-Steelers kept getting moved",
+   "url": "https://www.cbssports.com/nfl/news/why-ravens-steelers-kept-getting-moved-how-each-team-is-impacted-how-to-watch-or-stream-and-more"
+  },
+  {
+   "title": "AP: Steelers overcome rust, short-handed Ravens to move to 11-0",
+   "url": "https://www.clickondetroit.com/sports/2020/12/02/steelers-overcome-rust-short-handed-ravens-to-move-to-11-0/"
+  },
+  {
+   "title": "Sky Sports: Baltimore Ravens 14-19 Pittsburgh Steelers",
+   "url": "https://www.skysports.com/nfl/news/12040/12149627/baltimore-ravens-14-19-pittsburgh-steelers-robert-griffin-iii-struggles-as-ravens-lose-sloppy-divisional-clash-to-steelers"
+  },
+  {
+   "title": "CBS Sports: Ravens-Steelers game could help make NFL history by being played on a Wednesday",
+   "url": "https://www.cbssports.com/nfl/news/ravens-steelers-game-could-help-make-nfl-history-by-being-played-on-a-wednesday"
+  }
+ ]
+}

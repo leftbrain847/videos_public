@@ -1,0 +1,522 @@
+{
+ "id": "s4_07_helmet_catch",
+ "title": "The Helmet Catch",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "PATRIOTS 14",
+   "GIANTS 10"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "eli": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b2265",
+    "pants": "#d0d0d0",
+    "number": "10",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "tyree": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b2265",
+    "pants": "#d0d0d0",
+    "number": "85",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "harrison": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#002244",
+    "number": "37",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "rusher": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#002244",
+    "number": "93",
+    "hair": "bald",
+    "skin": "#7b4e33"
+   },
+   "at": [
+    0,
+    0
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2008, a Super Bowl was turned around by a catch made against a helmet.",
+   "key": [
+    "HELMET."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tyree"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "tyree": {
+     "mood": "neutral",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "eli": false,
+    "tyree": [
+     0.4,
+     0
+    ],
+    "harrison": false,
+    "rusher": false
+   },
+   "speaker": "capy",
+   "board": [
+    "PATRIOTS 14",
+    "GIANTS 10"
+   ]
+  },
+  {
+   "text": "The Patriots were eighteen and oh. One win from a perfect season.",
+   "key": [
+    "18-0."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "harrison"
+   },
+   "act": {
+    "harrison": {
+     "mood": "smug",
+     "action": "cross"
+    },
+    "rusher": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   },
+   "cap": "The Patriots were 18-0. One win from a perfect season.",
+   "set": "locker",
+   "place": {
+    "harrison": "center",
+    "rusher": "right"
+   },
+   "board": [
+    "PATRIOTS",
+    "18-0"
+   ]
+  },
+  {
+   "text": "They led the Giants fourteen to ten. About a minute left.",
+   "key": [
+    "14"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "harrison"
+   },
+   "act": {
+    "harrison": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "cap": "They led the Giants 14 to 10. About a minute left."
+  },
+  {
+   "text": "Third and five, from the Giants' own forty four.",
+   "key": [
+    "3RD"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "eli"
+   },
+   "act": {
+    "eli": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "rusher": {
+     "mood": "angry",
+     "action": "point",
+     "look": "eli"
+    }
+   },
+   "cap": "3rd and 5, from the Giants' own 44.",
+   "set": "field",
+   "place": {
+    "eli": "center",
+    "rusher": [
+     2.4,
+     -1.0
+    ]
+   },
+   "board": [
+    "PATRIOTS 14",
+    "GIANTS 10"
+   ]
+  },
+  {
+   "text": "Eli Manning dropped back. Patriots grabbed him. One had his jersey.",
+   "key": [
+    "JERSEY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "eli",
+    "with": "rusher"
+   },
+   "act": {
+    "eli": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "rusher"
+    },
+    "rusher": {
+     "mood": "angry",
+     "action": "point",
+     "look": "eli"
+    }
+   },
+   "place": {
+    "eli": [
+     -0.8,
+     0
+    ],
+    "rusher": [
+     0.8,
+     0
+    ]
+   }
+  },
+  {
+   "text": "Somehow, he got loose.",
+   "key": [
+    "LOOSE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "eli"
+   },
+   "act": {
+    "eli": {
+     "mood": "shocked",
+     "look": "camera"
+    },
+    "rusher": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "He threw it deep, toward David Tyree.",
+   "key": [
+    "TYREE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "eli"
+   },
+   "act": {
+    "eli": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "rusher": false,
+    "eli": "center"
+   }
+  },
+  {
+   "text": "Tyree went up with Rodney Harrison, who tried to knock it loose.",
+   "key": [
+    "HARRISON,"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "tyree",
+    "with": "harrison"
+   },
+   "act": {
+    "tyree": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "harrison"
+    },
+    "harrison": {
+     "mood": "angry",
+     "action": "point",
+     "look": "tyree"
+    }
+   },
+   "place": {
+    "eli": false,
+    "tyree": [
+     -0.8,
+     0
+    ],
+    "harrison": [
+     0.8,
+     0
+    ]
+   }
+  },
+  {
+   "text": "Tyree pinned the ball against his own helmet. And held on.",
+   "key": [
+    "PINNED"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "tyree"
+   },
+   "act": {
+    "tyree": {
+     "mood": "shocked",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "harrison": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Thirty two yards. First down.",
+   "key": [
+    "32"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "tyree"
+   },
+   "act": {
+    "tyree": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "harrison": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "32 yards. First down."
+  },
+  {
+   "text": "Four plays later, Plaxico Burress caught the go ahead touchdown.",
+   "key": [
+    "BURRESS"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eli"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "eli": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.2,
+     1.0
+    ],
+    "eli": [
+     0.4,
+     0.2
+    ],
+    "tyree": false,
+    "harrison": false
+   },
+   "speaker": "capy",
+   "board": [
+    "GIANTS 17",
+    "PATRIOTS 14"
+   ]
+  },
+  {
+   "text": "Final score: Giants seventeen, Patriots fourteen.",
+   "key": [
+    "17"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "eli"
+   },
+   "act": {
+    "eli": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "tyree": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "harrison": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "Final score: Giants 17, Patriots 14.",
+   "place": {
+    "capy": false,
+    "eli": "center",
+    "tyree": "left",
+    "harrison": [
+     2.8,
+     -1.4
+    ]
+   }
+  },
+  {
+   "text": "No perfect season. New England finished eighteen and one.",
+   "key": [
+    "18-1."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "harrison"
+   },
+   "act": {
+    "harrison": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "cap": "No perfect season. New England finished 18-1.",
+   "set": "locker",
+   "place": {
+    "harrison": "center"
+   },
+   "board": [
+    "PATRIOTS",
+    "18-1"
+   ]
+  },
+  {
+   "text": "Everyone remembers the name. The Helmet Catch.",
+   "key": [
+    "HELMET"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "set": "press",
+   "place": {
+    "capy": "center"
+   },
+   "speaker": "capy",
+   "board": [
+    "THE HELMET",
+    "CATCH"
+   ]
+  },
+  {
+   "text": "Could you catch a football with your head? Yes or no. Tell me below.",
+   "key": [
+    "HEAD?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tyree"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "tyree": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "tyree": [
+     1.0,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com 100 Greatest Plays: David Tyree Helmet Catch in Super Bowl XLII",
+   "url": "https://www.nfl.com/100/originals/100-greatest/plays-3"
+  },
+  {
+   "title": "Giants.com: David Tyree's Helmet Catch",
+   "url": "https://giants.com/news/david-tyree-helmet-catch-super-bowl-tom-brady-patriots-greatest-plays"
+  },
+  {
+   "title": "FOX Sports: The Helmet Catch, looking back 17 years later",
+   "url": "https://foxsports.com/stories/nfl/the-helmet-catch-looking-back-17-years-later-david-tyrees-super-bowl-play"
+  }
+ ]
+}

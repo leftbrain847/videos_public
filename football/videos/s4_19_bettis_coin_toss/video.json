@@ -1,0 +1,560 @@
+{
+ "id": "s4_19_bettis_coin_toss",
+ "title": "Heads or tails?",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "STEELERS 16",
+   "LIONS 16"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "rb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#f2b81c",
+    "number": "30",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24",
+    "beard": false
+   },
+   "at": "center"
+  },
+  "lion": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b78c0",
+    "pants": "#c9c9c9",
+    "number": "4",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "bald",
+    "skin": "#f2c39b",
+    "cap": "#f4f4f4"
+   },
+   "at": "back"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#1b1b1b",
+    "pants": "#f2b81c",
+    "hair": "short",
+    "hairColor": "#a0522d",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "center"
+  },
+  "exec": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b2e",
+    "pants": "#2b2b2e",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "envelope"
+  }
+ },
+ "lines": [
+  {
+   "text": "On Thanksgiving 1998, an NFL team lost an overtime game before it ever touched the ball. Because of a coin toss.",
+   "key": [
+    "COIN"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "rb": [
+     0,
+     0
+    ],
+    "lion": [
+     2.2,
+     0.2
+    ],
+    "ref": false,
+    "fan": false,
+    "exec": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "rb": {
+     "mood": "angry",
+     "action": "cross"
+    },
+    "lion": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Steelers at Lions. Sixteen all. Overtime.",
+   "cap": "Steelers at Lions. 16 all. Overtime.",
+   "key": [
+    "16"
+   ],
+   "place": {
+    "capy": false,
+    "rb": [
+     -1.3,
+     0
+    ],
+    "lion": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "rb",
+    "offset": [
+     1.3,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "rb": {
+     "mood": "neutral",
+     "look": "lion"
+    },
+    "lion": {
+     "mood": "neutral",
+     "look": "rb"
+    }
+   }
+  },
+  {
+   "text": "Jerome Bettis, the Steelers' star running back, walked out to call the toss.",
+   "key": [
+    "BETTIS,"
+   ],
+   "board": [
+    "OVERTIME",
+    "COIN TOSS"
+   ],
+   "place": {
+    "rb": [
+     -1.4,
+     0.4
+    ],
+    "ref": [
+     0,
+     -0.6
+    ],
+    "lion": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "ref"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "rb"
+    }
+   }
+  },
+  {
+   "text": "The coin went up. Bettis says he called tails.",
+   "key": [
+    "TAILS."
+   ],
+   "board": [
+    "CALL:",
+    "TAILS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "Referee Phil Luckett heard heads.",
+   "key": [
+    "HEADS."
+   ],
+   "board": [
+    "HEARD:",
+    "HEADS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "confused",
+     "action": "point",
+     "look": "rb"
+    }
+   }
+  },
+  {
+   "text": "It landed tails. And the ball went to Detroit.",
+   "key": [
+    "TAILS.",
+    "DETROIT."
+   ],
+   "board": [
+    "COIN:",
+    "TAILS"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "rb",
+    "with": "lion"
+   },
+   "act": {
+    "rb": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "ref"
+    },
+    "lion": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "lion"
+    }
+   }
+  },
+  {
+   "text": "Audio later suggested he may have started to say heads, then switched.",
+   "key": [
+    "SWITCHED."
+   ],
+   "set": "living",
+   "board": [
+    "REPLAY",
+    "HEADS? TAILS?"
+   ],
+   "place": {
+    "fan": [
+     -1.2,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan",
+    "offset": [
+     1.0,
+     0.6,
+     1.5
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In sudden death overtime, first score wins. That mattered.",
+   "key": [
+    "FIRST"
+   ],
+   "set": "field",
+   "board": [
+    "SUDDEN",
+    "DEATH"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "lion": [
+     -1.8,
+     -0.4
+    ],
+    "rb": [
+     1.8,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "lion": {
+     "mood": "happy"
+    },
+    "rb": {
+     "mood": "worried"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Detroit drove forty one yards.",
+   "cap": "Detroit drove 41 yards.",
+   "key": [
+    "41"
+   ],
+   "board": [
+    "DETROIT",
+    "+41 YARDS"
+   ],
+   "place": {
+    "capy": false,
+    "lion": [
+     0,
+     0
+    ],
+    "rb": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "lion"
+   },
+   "act": {
+    "lion": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Jason Hanson kicked a forty two yard field goal. Lions nineteen, Steelers sixteen.",
+   "cap": "Jason Hanson kicked a 42-yard field goal. Lions 19, Steelers 16.",
+   "key": [
+    "42-YARD",
+    "19,"
+   ],
+   "board": [
+    "LIONS 19",
+    "STEELERS 16"
+   ],
+   "place": {
+    "rb": [
+     1.8,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "lion"
+   },
+   "act": {
+    "lion": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "rb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Pittsburgh never touched the ball in overtime.",
+   "key": [
+    "NEVER"
+   ],
+   "place": {
+    "rb": [
+     0,
+     0
+    ],
+    "lion": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Soon after, the NFL changed how the coin toss works.",
+   "key": [
+    "CHANGED"
+   ],
+   "set": "office",
+   "board": [
+    "NEW RULE:",
+    "CALL FIRST"
+   ],
+   "place": {
+    "exec": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exec",
+    "offset": [
+     1.6,
+     0.5,
+     1.5
+    ]
+   },
+   "act": {
+    "exec": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Now the visiting captain calls heads or tails before the coin is tossed.",
+   "key": [
+    "BEFORE"
+   ],
+   "place": {
+    "exec": [
+     2.8,
+     -0.4
+    ],
+    "capy": [
+     0.6,
+     0.9
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "exec"
+    }
+   },
+   "speaker": "exec"
+  },
+  {
+   "text": "So, heads or tails? Tell me below.",
+   "key": [
+    "HEADS",
+    "TAILS?"
+   ],
+   "board": [
+    "HEADS",
+    "OR TAILS?"
+   ],
+   "place": {
+    "capy": [
+     0.4,
+     1.0
+    ],
+    "exec": [
+     2.8,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     1.2,
+     0.4,
+     1.2
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "exec": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com: Remembering coin toss, Randy Moss and wild Thanksgiving 1998",
+   "url": "https://www.nfl.com/news/remembering-coin-toss-randy-moss-and-wild-thanksgiving-1998"
+  },
+  {
+   "title": "Fox Sports: Craziest moments in NFL history, the Thanksgiving coin flip incident",
+   "url": "https://www.foxsports.com/stories/other/craziest-moments-in-nfl-history-the-thanksgiving-coin-flip-incident"
+  },
+  {
+   "title": "TribLive: Every Thanksgiving, Charlie Batch recalls infamous Steelers-Lions coin flip game",
+   "url": "https://triblive.com/sports/every-thanksgiving-charlie-batch-recalls-infamous-steelers-lions-coin-flip-game"
+  }
+ ]
+}

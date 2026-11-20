@@ -1,0 +1,481 @@
+{
+ "id": "s2_17_two_punters_pass",
+ "title": "Both punters threw a pass",
+ "set": "locker",
+ "setOpts": {
+  "boardText": [
+   "FAKE?"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "fox": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0076b6",
+    "pants": "#c9ced3",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "number": "3",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "martin": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0076b6",
+    "pants": "#c9ced3",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "number": "18"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "pinion": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#008e97",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#e8b48f",
+    "number": "5"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "allen": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#008e97",
+    "pants": "#f4f4f4",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "number": "25"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "host": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3a3e",
+    "pants": "#3a3a3e",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "This month, both punters in the same NFL game completed a pass.",
+   "key": [
+    "BOTH"
+   ],
+   "place": {
+    "pinion": false,
+    "allen": false,
+    "host": false,
+    "martin": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fox"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fox": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Lions at Dolphins. Second quarter. Fourth and seven.",
+   "cap": "Lions at Dolphins. 2nd quarter. 4th and 7.",
+   "key": [
+    "7."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "LIONS",
+     "DOLPHINS"
+    ]
+   },
+   "place": {
+    "fox": "center",
+    "martin": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "fox"
+   },
+   "act": {
+    "fox": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "martin": {
+     "mood": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Detroit's punter, Jack Fox, takes the snap. And throws.",
+   "key": [
+    "THROWS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "fox"
+   },
+   "act": {
+    "fox": {
+     "mood": "smug",
+     "action": "throw",
+     "look": "martin"
+    }
+   }
+  },
+  {
+   "text": "Tay Martin catches it. First down.",
+   "key": [
+    "FIRST"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "martin"
+   },
+   "act": {
+    "martin": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "fox": {
+     "mood": "happy",
+     "action": "point",
+     "look": "martin"
+    }
+   }
+  },
+  {
+   "text": "Fox was a quarterback in high school. Eighteen touchdown passes as a senior.",
+   "cap": "Fox was a quarterback in high school. 18 touchdown passes as a senior.",
+   "key": [
+    "18"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fox"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fox"
+    },
+    "fox": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "His career passing line now: five of six.",
+   "cap": "His career passing line now: 5 of 6.",
+   "key": [
+    "5"
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "fox"
+   },
+   "act": {
+    "fox": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fourth quarter. Miami faces fourth and three near midfield.",
+   "cap": "4th quarter. Miami faces 4th and 3 near midfield.",
+   "key": [
+    "3"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "LIONS",
+     "DOLPHINS"
+    ]
+   },
+   "place": {
+    "pinion": "center",
+    "allen": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "pinion"
+   },
+   "act": {
+    "pinion": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "allen": {
+     "mood": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Dolphins punter Bradley Pinion takes the snap. And he throws too.",
+   "key": [
+    "TOO."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "pinion"
+   },
+   "act": {
+    "pinion": {
+     "mood": "smug",
+     "action": "throw",
+     "look": "allen"
+    }
+   }
+  },
+  {
+   "text": "Running back Kaytron Allen is wide open. Forty six yards.",
+   "cap": "Running back Kaytron Allen is wide open. 46 yards.",
+   "key": [
+    "46"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "allen"
+   },
+   "act": {
+    "allen": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "pinion": {
+     "mood": "happy",
+     "action": "point",
+     "look": "allen"
+    }
+   }
+  },
+  {
+   "text": "That one turns into points: a Miami field goal.",
+   "key": [
+    "POINTS:"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "pinion",
+    "with": "allen"
+   },
+   "act": {
+    "pinion": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "allen": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Detroit's fake? That drive ended in a punt. A real one.",
+   "key": [
+    "REAL"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "FAKE 1:",
+     "PUNT"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "fox": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fox"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "fox": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Still, Detroit won the game, nineteen to nine.",
+   "cap": "Still, Detroit won the game, 19 to 9.",
+   "key": [
+    "19"
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fox"
+   },
+   "act": {
+    "fox": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "RedZone host Scott Hanson called it the first game in league history where both punters completed a pass.",
+   "key": [
+    "HISTORY."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "2 PUNTERS",
+     "2 PASSES"
+    ]
+   },
+   "place": {
+    "host": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "host"
+   },
+   "act": {
+    "host": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "host"
+  },
+  {
+   "text": "Should punters throw more often? Yes or no?",
+   "key": [
+    "PUNTERS"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PUNTERS:",
+     "2 FOR 2"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "pinion": "center",
+    "fox": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pinion"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "pinion": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    },
+    "fox": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "SB Nation (Yahoo): Lions and Dolphins are trading successful fake punts in Week 9",
+   "url": "https://sports.yahoo.com/articles/lions-dolphins-trading-successful-fake-203128678.html"
+  },
+  {
+   "title": "A to Z Sports: The Dolphins' Week 9 loss to the Lions produced one of the most unlikely firsts in NFL history",
+   "url": "https://atozsports.com/?p=511730"
+  },
+  {
+   "title": "Detroit News (Yahoo): Watch: Lions execute fake punt against Dolphins to move chains",
+   "url": "https://sports.yahoo.com/articles/watch-lions-execute-fake-punt-190005131.html"
+  },
+  {
+   "title": "CBS Sports: Lions at Dolphins gametracker recap, Nov 8, 2026",
+   "url": "https://cbssports.com/nfl/gametracker/recap/NFL_20261108_DET@MIA/"
+  },
+  {
+   "title": "Wikipedia: Jack Fox (American football)",
+   "url": "https://en.wikipedia.org/wiki/Jack_Fox_(American_football)"
+  }
+ ]
+}

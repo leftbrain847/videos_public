@@ -1,0 +1,487 @@
+{
+ "id": "s2_19_four_picks_win",
+ "title": "Four interceptions and a win",
+ "set": "locker",
+ "setOpts": {
+  "boardText": [
+   "PICKS:",
+   "4"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b162a",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "number": "18"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "lb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#d50a0a",
+    "pants": "#c9ced3",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "number": "34"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "cb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b162a",
+    "pants": "#f4f4f4",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "number": "1"
+   },
+   "at": [
+    -2.2,
+    -1.4
+   ]
+  },
+  "te": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b162a",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b",
+    "number": "84"
+   },
+   "at": [
+    2.0,
+    -2.0
+   ]
+  },
+  "kicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b162a",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "number": "8"
+   },
+   "at": [
+    -1.6,
+    -2.4
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "Caleb Williams threw four interceptions in one game. His team won anyway.",
+   "cap": "Caleb Williams threw 4 interceptions in one game. His team won anyway.",
+   "key": [
+    "4"
+   ],
+   "place": {
+    "lb": false,
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Sunday night in Chicago. Bears against the Buccaneers.",
+   "key": [
+    "SUNDAY"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BEARS",
+     "BUCS"
+    ]
+   },
+   "place": {
+    "qb": "center",
+    "lb": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "lb": {
+     "mood": "angry",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "Interception one comes at the goal line. He said he got greedy.",
+   "key": [
+    "GREEDY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "lb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "facepalm"
+    },
+    "lb": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Two more before halftime.",
+   "cap": "2 more before halftime.",
+   "key": [
+    "2"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Number four gets tipped, and a linebacker catches it.",
+   "key": [
+    "TIPPED,"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "lb"
+   },
+   "act": {
+    "lb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Add a fumble. That's five Bears turnovers.",
+   "cap": "Add a fumble. That's 5 Bears turnovers.",
+   "key": [
+    "5"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "lb": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "But Chicago's defense picked off Baker Mayfield too.",
+   "key": [
+    "TOO."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.9
+    ],
+    "cb": [
+     -0.6,
+     0.2
+    ],
+    "lb": false,
+    "qb": [
+     2.2,
+     -1.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "cb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "cb"
+    },
+    "cb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Jaylon Johnson returned one sixty seven yards for a touchdown.",
+   "cap": "Jaylon Johnson returned one 67 yards for a touchdown.",
+   "key": [
+    "67"
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "cb"
+   },
+   "act": {
+    "cb": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Late in the fourth, Tampa ties it at twenty four.",
+   "cap": "Late in the 4th, Tampa ties it at 24.",
+   "key": [
+    "24."
+   ],
+   "place": {
+    "lb": "right",
+    "cb": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "lb"
+   },
+   "act": {
+    "lb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried"
+    }
+   }
+  },
+  {
+   "text": "Williams throws again. Colston Loveland, thirty eight yards.",
+   "cap": "Williams throws again. Colston Loveland, 38 yards.",
+   "key": [
+    "38"
+   ],
+   "place": {
+    "te": [
+     2.0,
+     -0.6
+    ],
+    "lb": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "te"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "te"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Cairo Santos kicks from thirty eight as time expires. Bears win, twenty seven to twenty four.",
+   "cap": "Cairo Santos kicks from 38 as time expires. Bears win, 27 to 24.",
+   "key": [
+    "27"
+   ],
+   "place": {
+    "kicker": [
+     0,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "Williams after the game: I could throw a hundred picks in one game.",
+   "cap": "Williams after the game: \"I could throw 100 picks in one game.\"",
+   "key": [
+    "100"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "BEARS 27",
+     "BUCS 24"
+    ]
+   },
+   "place": {
+    "qb": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "qb"
+  },
+  {
+   "text": "And he'll keep grippin' it and rippin' it.",
+   "key": [
+    "RIPPIN'"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "qb"
+  },
+  {
+   "text": "Is a win with four picks still a good game? Yes or no?",
+   "key": [
+    "PICKS"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "PICKS: 4",
+     "WINS: 1"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "qb": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "ESPN (ABC7 Chicago): Caleb Williams unfazed by 4 interceptions as Bears pull out win vs. Bucs",
+   "url": "https://abc7chicago.com/post/caleb-williams-unfazed-4-interceptions-bears-pull-win-bucs/20025828/"
+  },
+  {
+   "title": "AP (Spectrum News 13): Williams connects with Loveland to set up Santos' winning field goal as Bears edge Buccaneers 27-24",
+   "url": "https://mynews13.com/fl/orlando/sports/2026/11/09/williams-connects-with-loveland-to-set-up-santos--winning-field-goal-as-bears-edge-buccaneers-27-24"
+  },
+  {
+   "title": "ClutchPoints: Todd Bowles wondering how Tampa Bay lost to Bears despite 5 turnovers",
+   "url": "https://clutchpoints.com/nfl/tampa-bay-buccaneers/buccaneers-news-todd-bowles-wondering-tampa-bay-lost-bears-5-turnovers"
+  },
+  {
+   "title": "NFL.com: 2026 NFL season, Week 9: What we learned from Sunday's games",
+   "url": "https://www.nfl.com/news/2026-nfl-season-week-9-what-we-learned-from-sunday-s-games"
+  }
+ ]
+}

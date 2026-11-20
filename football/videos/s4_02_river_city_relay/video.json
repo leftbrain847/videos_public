@@ -1,0 +1,572 @@
+{
+ "id": "s4_02_river_city_relay",
+ "title": "The River City Relay",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "JAGUARS 20",
+   "SAINTS 13"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#d3bc8d",
+    "number": "2",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "stall": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#d3bc8d",
+    "number": "18",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "right"
+  },
+  "lewis": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#d3bc8d",
+    "number": "84",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "mca": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#d3bc8d",
+    "number": "26",
+    "hair": "bald",
+    "skin": "#6b4430"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "pathon": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#d3bc8d",
+    "number": "86",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "kicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#d3bc8d",
+    "number": "3",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "jag": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#006778",
+    "pants": "#ffffff",
+    "number": "21",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": [
+    0,
+    0
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2003, the Saints scored one of the wildest touchdowns in NFL history. Then they lost.",
+   "key": [
+    "LOST."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "qb": [
+     0.4,
+     0
+    ],
+    "stall": false,
+    "lewis": false,
+    "mca": false,
+    "pathon": false,
+    "kicker": false,
+    "jag": false
+   },
+   "speaker": "capy",
+   "board": [
+    "JAGUARS 20",
+    "SAINTS 13"
+   ]
+  },
+  {
+   "text": "Jacksonville led twenty to thirteen. Seconds left. New Orleans had the ball at its own twenty five.",
+   "key": [
+    "20",
+    "25."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "jag": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "qb"
+    }
+   },
+   "cap": "Jacksonville led 20 to 13. Seconds left. New Orleans had the ball at its own 25.",
+   "place": {
+    "capy": false,
+    "qb": "center",
+    "jag": [
+     2.6,
+     -1.8
+    ],
+    "stall": [
+     -2.6,
+     -1.2
+    ]
+   }
+  },
+  {
+   "text": "No timeouts. Seventy five yards to go. One play to save the season.",
+   "key": [
+    "ONE",
+    "PLAY"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "look": "camera"
+    }
+   },
+   "cap": "No timeouts. 75 yards to go. One play to save the season."
+  },
+  {
+   "text": "Aaron Brooks threw it to Donte Stallworth, near midfield.",
+   "key": [
+    "MIDFIELD."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "stall"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "throw",
+     "look": "stall"
+    },
+    "stall": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Stallworth turned and pitched it back to Michael Lewis.",
+   "key": [
+    "BACK"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "stall"
+   },
+   "act": {
+    "stall": {
+     "mood": "worried",
+     "action": "throw",
+     "look": "lewis"
+    },
+    "lewis": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "stall"
+    }
+   },
+   "place": {
+    "qb": false,
+    "jag": false,
+    "stall": "center",
+    "lewis": [
+     2.2,
+     0.6
+    ]
+   }
+  },
+  {
+   "text": "Lewis ran to the twenty five and pitched it to Deuce McAllister.",
+   "key": [
+    "MCALLISTER."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "lewis",
+    "with": "mca"
+   },
+   "act": {
+    "lewis": {
+     "mood": "worried",
+     "action": "throw",
+     "look": "mca"
+    },
+    "mca": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "lewis"
+    }
+   },
+   "cap": "Lewis ran to the 25 and pitched it to Deuce McAllister.",
+   "place": {
+    "stall": false,
+    "lewis": [
+     -1.2,
+     0
+    ],
+    "mca": [
+     1.6,
+     0.4
+    ]
+   }
+  },
+  {
+   "text": "McAllister flipped it to Jerome Pathon.",
+   "key": [
+    "PATHON."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "pathon"
+   },
+   "act": {
+    "mca": {
+     "mood": "worried",
+     "action": "throw",
+     "look": "pathon"
+    },
+    "pathon": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "lewis": false,
+    "mca": [
+     -1.6,
+     0
+    ],
+    "pathon": [
+     0.8,
+     0.4
+    ]
+   }
+  },
+  {
+   "text": "Pathon ran it in. One pass. Three laterals. Touchdown.",
+   "key": [
+    "THREE"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "pathon"
+   },
+   "act": {
+    "pathon": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "mca": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "jag": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   },
+   "place": {
+    "jag": [
+     2.6,
+     -1.4
+    ]
+   },
+   "board": [
+    "SAINTS 19",
+    "JAGUARS 20"
+   ]
+  },
+  {
+   "text": "Now it was twenty to nineteen. One extra point from overtime.",
+   "key": [
+    "OVERTIME."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "kicker"
+    },
+    "kicker": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "cap": "Now it was 20 to 19. One extra point from overtime.",
+   "place": {
+    "capy": [
+     -2.2,
+     1.0
+    ],
+    "qb": false,
+    "stall": false,
+    "lewis": false,
+    "mca": false,
+    "pathon": false,
+    "kicker": [
+     0.4,
+     0.2
+    ],
+    "jag": false
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Kicker John Carney lined it up. The easiest kick in football.",
+   "key": [
+    "EASIEST"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He missed it.",
+   "key": [
+    "MISSED"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Final score: Jaguars twenty, Saints nineteen.",
+   "key": [
+    "19."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "jag": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "pathon": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "Final score: Jaguars 20, Saints 19.",
+   "set": "locker",
+   "place": {
+    "kicker": "center",
+    "pathon": [
+     -2.0,
+     0.3
+    ],
+    "jag": [
+     2.6,
+     -1.0
+    ]
+   },
+   "board": [
+    "JAGUARS 20",
+    "SAINTS 19"
+   ]
+  },
+  {
+   "text": "The Saints had needed that win to keep their season alive. It was over.",
+   "key": [
+    "OVER."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "pathon"
+   },
+   "act": {
+    "pathon": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "NFL.com later called it the most anticlimactic extra point try in league history.",
+   "key": [
+    "ANTICLIMACTIC"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "set": "press",
+   "place": {
+    "capy": "center"
+   },
+   "speaker": "capy",
+   "board": [
+    "THE RIVER",
+    "CITY RELAY"
+   ]
+  },
+  {
+   "text": "Three laterals, then a missed kick. Would you have gone for two? Yes or no.",
+   "key": [
+    "TWO?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kicker": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -1.4,
+     0.6
+    ],
+    "kicker": [
+     1.2,
+     0
+    ]
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: River City Relay",
+   "url": "https://en.wikipedia.org/wiki/River_City_Relay"
+  },
+  {
+   "title": "NFL.com 100 Greatest Plays: River City Relay",
+   "url": "https://nfl.com/100/originals/100-greatest/plays-55"
+  }
+ ]
+}

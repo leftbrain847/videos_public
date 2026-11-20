@@ -1,0 +1,487 @@
+{
+ "id": "s2_25_browns_comeback",
+ "title": "Down 17-0, again fine",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "BROWNS",
+   "TEXANS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#ff3c00",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "number": "4",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "te": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#ff3c00",
+    "pants": "#f4f4f4",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "number": "88"
+   },
+   "at": [
+    2.0,
+    -1.8
+   ]
+  },
+  "rb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#ff3c00",
+    "pants": "#f4f4f4",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "number": "10"
+   },
+   "at": [
+    -2.0,
+    -1.8
+   ],
+   "hold": "football"
+  },
+  "hou": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#03202f",
+    "pants": "#a71930",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c",
+    "number": "7"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#311d00",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b",
+    "headset": true,
+    "cap": "#ff3c00"
+   },
+   "at": "right",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "The Browns fell behind seventeen to nothing. Then they won anyway. Again.",
+   "cap": "The Browns fell behind 17 to 0. Then they won anyway. Again.",
+   "key": [
+    "AGAIN."
+   ],
+   "place": {
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "One week earlier, they had lost in overtime on a failed two point try.",
+   "cap": "One week earlier, they had lost in overtime on a failed 2 point try.",
+   "key": [
+    "OVERTIME"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "LAST WEEK:",
+     "L 22-23"
+    ]
+   },
+   "place": {
+    "coach": "center",
+    "qb": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Now they face Houston, Deshaun Watson's old team.",
+   "key": [
+    "HOUSTON,"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BROWNS",
+     "TEXANS"
+    ]
+   },
+   "place": {
+    "qb": "left",
+    "hou": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "hou"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "hou"
+    },
+    "hou": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Early on, the Texans lead seventeen to nothing. It looks over.",
+   "cap": "Early on, the Texans lead 17 to 0. It looks over.",
+   "key": [
+    "17"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "hou"
+   },
+   "act": {
+    "hou": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried"
+    }
+   }
+  },
+  {
+   "text": "Then Cleveland starts chipping away, one drive at a time.",
+   "key": [
+    "CHIPPING"
+   ],
+   "place": {
+    "qb": "center",
+    "rb": [
+     -2.2,
+     -1.2
+    ],
+    "te": [
+     2.2,
+     -1.4
+    ],
+    "hou": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    },
+    "rb": {
+     "mood": "neutral",
+     "action": "clap"
+    },
+    "te": {
+     "mood": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Watson throws for three hundred twelve yards.",
+   "cap": "Watson throws for 312 yards.",
+   "key": [
+    "312"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "te"
+    }
+   }
+  },
+  {
+   "text": "Late in the fourth quarter, Cleveland still trails.",
+   "cap": "Late in the 4th quarter, Cleveland still trails.",
+   "key": [
+    "TRAILS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Watson finds tight end Harold Fannin for thirty yards.",
+   "cap": "Watson finds tight end Harold Fannin for 30 yards.",
+   "key": [
+    "30"
+   ],
+   "place": {
+    "te": [
+     1.8,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "te"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "te"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "In the final minute, the Browns score the go-ahead touchdown.",
+   "key": [
+    "FINAL"
+   ],
+   "place": {
+    "rb": [
+     -0.8,
+     0.6
+    ],
+    "te": [
+     2.4,
+     -1.6
+    ],
+    "qb": [
+     1.0,
+     -2.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Browns win, twenty seven to twenty four.",
+   "cap": "Browns win, 27 to 24.",
+   "key": [
+    "27"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "rb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "That's Watson's sixth game-winning drive this season. Tied with Bo Nix for the most in the league.",
+   "cap": "That's Watson's 6th game-winning drive this season. Tied with Bo Nix for the most in the league.",
+   "key": [
+    "6TH"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "GW DRIVES:",
+     "6"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.2,
+     0.9
+    ],
+    "qb": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "And the Browns have six wins. Every single one came on a game-winning drive.",
+   "cap": "And the Browns have 6 wins. Every single one came on a game-winning drive.",
+   "key": [
+    "EVERY"
+   ],
+   "place": {
+    "capy": false,
+    "qb": false,
+    "coach": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Is this team clutch, or just lucky? Clutch or lucky?",
+   "key": [
+    "CLUTCH"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "BROWNS 27",
+     "TEXANS 24"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "coach": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com: 2026 NFL season, Week 10: What we learned from Sunday's games",
+   "url": "https://www.nfl.com/news/2026-nfl-season-week-10-what-we-learned-from-sunday-s-games"
+  },
+  {
+   "title": "ESPN: Big questions from NFL Week 10",
+   "url": "https://www.espn.com/nfl/story/_/id/50443510/week-10-sunday-games-takeaways-questions-2026"
+  },
+  {
+   "title": "Bleacher Report: 2026 NFL Week 11 biggest takeaways for every team",
+   "url": "https://bleacherreport.com/articles/25535540-2026-nfl-week-11-biggest-takeaways-every-team"
+  },
+  {
+   "title": "AP (News 5 Cleveland): Saints hold on for a 23-22 OT win over the Browns by stopping a 2-point conversion",
+   "url": "https://www.news5cleveland.com/news/local-news/saints-hold-on-for-a-23-22-ot-win-over-the-browns-by-stopping-a-2-point-conversion"
+  }
+ ]
+}

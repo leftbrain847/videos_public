@@ -1,0 +1,501 @@
+{
+ "id": "s4_12_the_fumble_1978",
+ "title": "The Fumble (1978)",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "GIANTS 17",
+   "EAGLES 12"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b2265",
+    "pants": "#f4f4f4",
+    "number": "9",
+    "hair": "short",
+    "hairColor": "#3b2416"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "csonka": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b2265",
+    "pants": "#f4f4f4",
+    "number": "39",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "beard": false
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "edwards": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1e6b3a",
+    "pants": "#f4f4f4",
+    "number": "46",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "oc": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#0b2265",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#8a7a6a",
+    "glasses": true,
+    "headset": true
+   },
+   "at": [
+    0,
+    0
+   ],
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 1978, the Giants lost a game they had already won.",
+   "key": [
+    "ALREADY"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "qb": [
+     0.4,
+     0
+    ],
+    "csonka": false,
+    "edwards": false,
+    "oc": false
+   },
+   "speaker": "capy",
+   "board": [
+    "GIANTS 17",
+    "EAGLES 12"
+   ]
+  },
+  {
+   "text": "Giants seventeen, Eagles twelve. Thirty one seconds left.",
+   "key": [
+    "31"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "hold"
+    },
+    "csonka": {
+     "mood": "happy"
+    },
+    "edwards": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "Giants 17, Eagles 12. 31 seconds left.",
+   "place": {
+    "capy": false,
+    "qb": "center",
+    "csonka": "left",
+    "edwards": [
+     2.6,
+     -1.8
+    ]
+   }
+  },
+  {
+   "text": "Philadelphia had no timeouts left. New York had the ball.",
+   "key": [
+    "NO"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "edwards"
+   },
+   "act": {
+    "edwards": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "All the Giants had to do was run out the clock.",
+   "key": [
+    "CLOCK."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "edwards": false,
+    "csonka": false,
+    "capy": [
+     -2.0,
+     1.0
+    ],
+    "qb": [
+     0.6,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "But the play came down from the press box. A handoff to fullback Larry Csonka.",
+   "key": [
+    "HANDOFF"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "oc"
+   },
+   "act": {
+    "oc": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "set": "office",
+   "place": {
+    "oc": "desk"
+   },
+   "speaker": "oc",
+   "board": [
+    "CALL:",
+    "HANDOFF"
+   ]
+  },
+  {
+   "text": "Quarterback Joe Pisarcik turned to hand it off.",
+   "key": [
+    "PISARCIK"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "csonka"
+    },
+    "csonka": {
+     "mood": "neutral",
+     "look": "qb"
+    }
+   },
+   "set": "field",
+   "place": {
+    "qb": [
+     -0.8,
+     0
+    ],
+    "csonka": [
+     1.0,
+     0.2
+    ]
+   },
+   "board": [
+    "GIANTS 17",
+    "EAGLES 12"
+   ]
+  },
+  {
+   "text": "The ball hit Csonka's hip and bounced loose.",
+   "key": [
+    "LOOSE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "csonka"
+   },
+   "act": {
+    "qb": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "csonka"
+    },
+    "csonka": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Eagles cornerback Herm Edwards scooped it up.",
+   "key": [
+    "EDWARDS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "edwards"
+   },
+   "act": {
+    "edwards": {
+     "mood": "shocked",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "edwards": [
+     2.6,
+     1.0
+    ]
+   }
+  },
+  {
+   "text": "Twenty six yards. Touchdown.",
+   "key": [
+    "26"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "edwards"
+   },
+   "act": {
+    "edwards": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "csonka": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "26 yards. Touchdown.",
+   "board": [
+    "EAGLES 19",
+    "GIANTS 17"
+   ]
+  },
+  {
+   "text": "Final score: Eagles nineteen, Giants seventeen.",
+   "key": [
+    "19"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "edwards"
+   },
+   "act": {
+    "edwards": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "cap": "Final score: Eagles 19, Giants 17.",
+   "place": {
+    "edwards": "center",
+    "qb": "left",
+    "csonka": "right"
+   }
+  },
+  {
+   "text": "Then came the fallout.",
+   "key": [
+    "FALLOUT."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "oc"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "oc": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "set": "press",
+   "place": {
+    "capy": "left",
+    "oc": "right"
+   },
+   "speaker": "capy",
+   "board": [
+    "POSTGAME"
+   ]
+  },
+  {
+   "text": "The offensive coordinator, Bob Gibson, was fired the next day. He never worked in football again.",
+   "key": [
+    "FIRED",
+    "NEVER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "oc"
+   },
+   "act": {
+    "oc": {
+     "mood": "sad",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fans burned tickets. A plane flew a banner over the stadium.",
+   "key": [
+    "BURNED"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "set": "locker",
+   "place": {
+    "qb": "center"
+   },
+   "board": [
+    "TICKETS:",
+    "BURNED"
+   ]
+  },
+  {
+   "text": "And teams learned a lesson. Today, they just kneel.",
+   "key": [
+    "KNEEL."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "qb": "right",
+    "capy": "left"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Up five, thirty one seconds left. Hand it off, or kneel? One word.",
+   "key": [
+    "KNEEL?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "cap": "Up 5, 31 seconds left. Hand it off, or kneel? One word.",
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Miracle at the Meadowlands",
+   "url": "https://en.wikipedia.org/wiki/Miracle_at_the_Meadowlands"
+  },
+  {
+   "title": "Sports Illustrated Vault: The Fumble",
+   "url": "https://vault.si.com/vault/2001/07/02/the-fumble-it-was-one-of-the-great-blunders-in-nfl-history-all-the-giants-had-to-do-was-run-out-the-clock-instead-they-unleashed-a-disaster-that-altered-the-course-of-several-careers"
+  },
+  {
+   "title": "Pro Football Hall of Fame: Miracle at the Meadowlands",
+   "url": "https://www.profootballhof.com/news/2005/01/news-miracle-at-the-meadowlands1"
+  }
+ ]
+}

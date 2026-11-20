@@ -1,0 +1,574 @@
+{
+ "id": "s3_17_ice_bowl",
+ "title": "The game where the whistles froze",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "TEMP",
+   "-13\u00b0F"
+  ],
+  "grass": "#c9d6c2"
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#5a5a5a",
+    "skin": "#f2c39b",
+    "cap": "#f4f4f4",
+    "shirt": "#f4f4f4"
+   },
+   "at": "center"
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1e4d2b",
+    "pants": "#e8c25a",
+    "number": "15",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f0c8a0",
+    "longSleeve": true
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "dal": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#c9ced6",
+    "number": "74",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "longSleeve": true
+   },
+   "at": "right"
+  },
+  "keeper": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#b5522b",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e0ac85",
+    "cap": "#1f3f8f",
+    "beard": true
+   },
+   "at": "center"
+  },
+  "band": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#8f1f2b",
+    "pants": "#1b1b1b",
+    "hair": "bun",
+    "hairColor": "#2a1a10",
+    "skin": "#c68e62",
+    "cap": "#8f1f2b"
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 1967, a title game got so cold that the officials' whistles froze.",
+   "key": [
+    "WHISTLES",
+    "FROZE."
+   ],
+   "place": {
+    "qb": false,
+    "dal": false,
+    "keeper": false,
+    "band": false,
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "ref": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Dallas at Green Bay, for the NFL Championship, on New Year's Eve.",
+   "key": [
+    "CHAMPIONSHIP,"
+   ],
+   "place": {
+    "capy": false,
+    "ref": false,
+    "qb": [
+     -1.4,
+     0
+    ],
+    "dal": [
+     1.4,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "dal"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "dal"
+    },
+    "dal": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Temperature at kickoff: minus thirteen degrees.",
+   "cap": "Temperature at kickoff: minus 13 degrees.",
+   "key": [
+    "MINUS",
+    "13"
+   ],
+   "place": {
+    "qb": [
+     4.6,
+     0.5
+    ],
+    "dal": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "qb",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    },
+    "dal": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "With the wind, it felt like about minus forty six.",
+   "cap": "With the wind, it felt like about minus 46.",
+   "key": [
+    "46."
+   ],
+   "board": [
+    "WIND CHILL",
+    "-46\u00b0"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "dal"
+   },
+   "act": {
+    "dal": {
+     "mood": "shocked",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Green Bay's field had underground heating coils. They failed.",
+   "key": [
+    "FAILED."
+   ],
+   "board": [
+    "HEAT",
+    "OFF"
+   ],
+   "place": {
+    "qb": false,
+    "dal": false,
+    "keeper": [
+     0,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "keeper"
+   },
+   "act": {
+    "keeper": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the playing surface froze into ice.",
+   "key": [
+    "ICE."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "keeper"
+   },
+   "act": {
+    "keeper": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "With no working whistles, the officials just shouted their calls.",
+   "key": [
+    "SHOUTED"
+   ],
+   "place": {
+    "keeper": false,
+    "ref": [
+     0,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "ref"
+  },
+  {
+   "text": "The halftime band show was canceled. Instruments froze.",
+   "key": [
+    "CANCELED.",
+    "FROZE."
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "HALFTIME:",
+     "CANCELED"
+    ]
+   },
+   "place": {
+    "band": "center",
+    "capy": [
+     -2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "band",
+    "with": "capy"
+   },
+   "act": {
+    "band": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "band"
+    }
+   },
+   "board": [
+    "HALFTIME:",
+    "CANCELED"
+   ]
+  },
+  {
+   "text": "Late in the game, Green Bay trailed seventeen to fourteen.",
+   "cap": "Late in the game, Green Bay trailed 17 to 14.",
+   "key": [
+    "17",
+    "14."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "DALLAS 17",
+     "GREEN BAY 14"
+    ],
+    "grass": "#c9d6c2"
+   },
+   "board": [
+    "DALLAS 17",
+    "GREEN BAY 14"
+   ],
+   "place": {
+    "qb": [
+     4.6,
+     0.5
+    ],
+    "dal": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "qb",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "dal": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Ball at the one yard line. Sixteen seconds left. No timeouts.",
+   "cap": "Ball at the 1-yard line. 16 seconds left. No timeouts.",
+   "key": [
+    "16",
+    "SECONDS"
+   ],
+   "place": {
+    "qb": [
+     -1.2,
+     0
+    ],
+    "dal": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "dal"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "dal"
+    },
+    "dal": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Quarterback Bart Starr kept the ball himself. A sneak.",
+   "key": [
+    "SNEAK."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Behind blocks from Jerry Kramer and Ken Bowman, he got in.",
+   "key": [
+    "GOT",
+    "IN."
+   ],
+   "place": {
+    "dal": false,
+    "qb": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Green Bay won, twenty one to seventeen.",
+   "cap": "Green Bay won, 21 to 17.",
+   "key": [
+    "21"
+   ],
+   "board": [
+    "GREEN BAY 21",
+    "DALLAS 17"
+   ],
+   "place": {
+    "qb": [
+     4.6,
+     0.5
+    ],
+    "dal": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "qb",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "dal": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "They call it the Ice Bowl. Would you have stayed for the whole game? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "ICE BOWL",
+     "-13\u00b0F"
+    ]
+   },
+   "board": [
+    "ICE BOWL",
+    "-13\u00b0F"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "ref": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Pro Football Hall of Fame: The Ice Bowl",
+   "url": "https://profootballhof.com/football-history/the-ice-bowl"
+  },
+  {
+   "title": "NFL.com 100 Greatest Plays: Bart Starr's QB sneak in the Ice Bowl",
+   "url": "https://www.nfl.com/100/originals/100-greatest/plays-8"
+  },
+  {
+   "title": "WPR: Packers' famed Ice Bowl celebrates 50th anniversary",
+   "url": "https://www.wpr.org/history/packers-famed-ice-bowl-celebrates-50th-anniversary"
+  },
+  {
+   "title": "Deseret News: A cold, cold day on the field (1996)",
+   "url": "https://www.deseret.com/1996/1/14/19219144/a-cold-cold-day-on-the-field/"
+  },
+  {
+   "title": "Referee.com: Ice Bowl",
+   "url": "https://www.referee.com/ice-bowl/"
+  },
+  {
+   "title": "Sports Collectors Digest: Ice Bowl revisited 50 years later",
+   "url": "https://sportscollectorsdigest.com/memorabilia/ice-bowl-revisited-50-years-later"
+  }
+ ]
+}

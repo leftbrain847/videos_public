@@ -1,0 +1,490 @@
+{
+ "id": "s2_20_overtime_two_point",
+ "title": "Win or lose, in overtime",
+ "set": "office",
+ "setOpts": {
+  "boardText": [
+   "OT"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#ff3c00",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "number": "12"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#311d00",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b",
+    "headset": true,
+    "cap": "#ff3c00"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "clipboard"
+  },
+  "te": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#ff3c00",
+    "pants": "#f4f4f4",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "number": "88"
+   },
+   "at": [
+    2.0,
+    -2.0
+   ]
+  },
+  "saint": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#d3bc8d",
+    "pants": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "number": "6"
+   },
+   "at": [
+    -2.0,
+    -2.0
+   ],
+   "hold": "football"
+  },
+  "dl": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#d3bc8d",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "number": "91"
+   },
+   "at": [
+    1.6,
+    -1.0
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "Down one in overtime, the Browns skipped the tying kick and went for two.",
+   "key": [
+    "TWO."
+   ],
+   "place": {
+    "qb": false,
+    "te": false,
+    "saint": false,
+    "dl": false,
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "coach": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "In New Orleans, Shedeur Sanders was making a spot start.",
+   "key": [
+    "SPOT"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "QB:",
+     "SANDERS"
+    ]
+   },
+   "place": {
+    "qb": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It was a quiet, low scoring game, right up until the fourth quarter.",
+   "cap": "It was a quiet, low scoring game, right up until the 4th quarter.",
+   "key": [
+    "QUIET"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BROWNS",
+     "SAINTS"
+    ]
+   },
+   "place": {
+    "qb": "left",
+    "saint": "right",
+    "dl": [
+     0.4,
+     -2.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "saint": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "dl": {
+     "mood": "neutral",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "Then Sanders hits K.C. Concepcion for sixty four yards. Touchdown.",
+   "cap": "Then Sanders hits K.C. Concepcion for 64 yards. Touchdown.",
+   "key": [
+    "64"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    },
+    "saint": {
+     "mood": "shocked"
+    }
+   }
+  },
+  {
+   "text": "The Saints answer with a touchdown. A fifty one yard field goal ties it.",
+   "cap": "The Saints answer with a touchdown. A 51 yard field goal ties it.",
+   "key": [
+    "51"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "saint"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "saint"
+    },
+    "saint": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Overtime. The Saints score first: Tyler Shough to Juwan Johnson.",
+   "key": [
+    "FIRST:"
+   ],
+   "place": {
+    "saint": [
+     -0.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "saint"
+   },
+   "act": {
+    "saint": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Cleveland needs a touchdown. Sanders finds Harold Fannin. Thirty nine yards.",
+   "cap": "Cleveland needs a touchdown. Sanders finds Harold Fannin. 39 yards.",
+   "key": [
+    "39"
+   ],
+   "place": {
+    "te": [
+     2.2,
+     -0.4
+    ],
+    "saint": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "te"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "te"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Twenty three to twenty two. A kick ties it. Two points win it.",
+   "cap": "23 to 22. A kick ties it. 2 points win it.",
+   "key": [
+    "TIES",
+    "WIN"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "SAINTS 23",
+     "BROWNS 22"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.9
+    ],
+    "qb": "center",
+    "coach": "sideline"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Coach Todd Monken says no to the kick.",
+   "key": [
+    "NO"
+   ],
+   "place": {
+    "coach": [
+     2.6,
+     0.6
+    ],
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "angry",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Sanders drops back. The pass falls incomplete.",
+   "key": [
+    "INCOMPLETE."
+   ],
+   "place": {
+    "dl": [
+     1.2,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "throw"
+    },
+    "dl": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Saints win, twenty three to twenty two.",
+   "cap": "Saints win, 23 to 22.",
+   "key": [
+    "23"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "dl": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "It was New Orleans' first home win of the season.",
+   "key": [
+    "HOME"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "SAINTS 23",
+     "BROWNS 22"
+    ]
+   },
+   "place": {
+    "saint": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "saint"
+   },
+   "act": {
+    "saint": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Kick for the tie, or go for two? Kick or two?",
+   "key": [
+    "KICK"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "KICK",
+     "OR 2?"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "coach": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP (News 5 Cleveland): Saints hold on for a 23-22 OT win over the Browns by stopping a 2-point conversion",
+   "url": "https://www.news5cleveland.com/news/local-news/saints-hold-on-for-a-23-22-ot-win-over-the-browns-by-stopping-a-2-point-conversion"
+  },
+  {
+   "title": "WVUE (WLOX): Shough's late heroics lead Saints past Browns in OT, 23-22, for first home win",
+   "url": "https://www.wlox.com/2026/11/08/shoughs-late-heroics-lead-saints-past-browns-ot-23-22-first-home-win/"
+  },
+  {
+   "title": "ClutchPoints: Todd Monken drops mic on mentality for going for 2 to win in OT",
+   "url": "https://clutchpoints.com/nfl/cleveland-browns/browns-news-todd-monken-drops-mic-mentality-going-2-win-ot"
+  },
+  {
+   "title": "Spectrum News: Browns pleased with Sanders' spot start in a 1-point loss to the Saints",
+   "url": "https://spectrumnews1.com/oh/columbus/news/2026/11/09/browns-pleased-with-sanders--spot-start-in-a-1-point-loss-to-the-saints"
+  }
+ ]
+}

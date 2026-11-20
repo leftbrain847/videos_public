@@ -1,0 +1,528 @@
+{
+ "id": "s4_10_the_play_band",
+ "title": "The Play: the band is on the field",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "STANFORD 20",
+   "CAL 19"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "moen": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#003262",
+    "pants": "#fdb515",
+    "number": "26",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "rodgers": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#003262",
+    "pants": "#fdb515",
+    "number": "5",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "ford": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#003262",
+    "pants": "#fdb515",
+    "number": "1",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "elway": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#8c1515",
+    "pants": "#f4f4f4",
+    "number": "7",
+    "hair": "short",
+    "hairColor": "#d9b16a"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "band": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#8c1515",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#3b2416"
+   },
+   "at": [
+    0,
+    0
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "Forty four years ago today, a college football game ended with a touchdown run through the band.",
+   "key": [
+    "44",
+    "BAND."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "band"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "band": {
+     "mood": "worried",
+     "look": "capy"
+    }
+   },
+   "cap": "44 years ago today, a college football game ended with a touchdown run through the band.",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "moen": false,
+    "rodgers": false,
+    "ford": false,
+    "elway": false,
+    "band": [
+     0.4,
+     0
+    ]
+   },
+   "speaker": "capy",
+   "board": [
+    "STANFORD 20",
+    "CAL 19"
+   ]
+  },
+  {
+   "text": "California versus Stanford. The Big Game. November twentieth, 1982.",
+   "key": [
+    "BIG",
+    "GAME."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "moen"
+   },
+   "act": {
+    "moen": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "elway": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "moen"
+    }
+   },
+   "cap": "California versus Stanford. The Big Game. November 20, 1982.",
+   "place": {
+    "capy": false,
+    "band": false,
+    "moen": "left",
+    "elway": "right"
+   }
+  },
+  {
+   "text": "Stanford's quarterback was John Elway.",
+   "key": [
+    "ELWAY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "elway"
+   },
+   "act": {
+    "elway": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Stanford kicked a field goal to lead twenty to nineteen. Four seconds left.",
+   "key": [
+    "20",
+    "4"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "elway"
+   },
+   "act": {
+    "elway": {
+     "mood": "happy",
+     "look": "camera"
+    }
+   },
+   "cap": "Stanford kicked a field goal to lead 20 to 19. 4 seconds left."
+  },
+  {
+   "text": "All that was left was the kickoff. Stanford squibbed it.",
+   "key": [
+    "SQUIBBED"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "moen"
+   },
+   "act": {
+    "moen": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "elway": false,
+    "moen": "center"
+   }
+  },
+  {
+   "text": "Cal's Kevin Moen grabbed it, and the pitching began.",
+   "key": [
+    "PITCHING"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "moen",
+    "with": "rodgers"
+   },
+   "act": {
+    "moen": {
+     "mood": "worried",
+     "action": "throw",
+     "look": "rodgers"
+    },
+    "rodgers": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "moen"
+    }
+   },
+   "place": {
+    "moen": [
+     -1.0,
+     0
+    ],
+    "rodgers": [
+     1.2,
+     0.2
+    ]
+   }
+  },
+  {
+   "text": "Rodgers. Garner. Rodgers again. Mariet Ford. Lateral after lateral.",
+   "key": [
+    "LATERAL"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ford"
+   },
+   "act": {
+    "ford": {
+     "mood": "worried",
+     "action": "throw",
+     "look": "camera"
+    },
+    "rodgers": {
+     "mood": "happy",
+     "action": "point",
+     "look": "ford"
+    }
+   },
+   "place": {
+    "moen": false,
+    "rodgers": [
+     -2.0,
+     -0.4
+    ],
+    "ford": "center"
+   }
+  },
+  {
+   "text": "Meanwhile, the Stanford band ran onto the field. The play was still going.",
+   "key": [
+    "STILL"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "band"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "band"
+    },
+    "band": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   },
+   "set": "tunnel",
+   "place": {
+    "capy": "left",
+    "band": "right"
+   },
+   "speaker": "capy",
+   "board": [
+    "STANFORD",
+    "BAND"
+   ]
+  },
+  {
+   "text": "Five laterals in all. The last one went back to Moen.",
+   "key": [
+    "FIVE"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "moen"
+   },
+   "act": {
+    "moen": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "band": {
+     "mood": "shocked",
+     "action": "shrug"
+    }
+   },
+   "set": "field",
+   "place": {
+    "moen": "center",
+    "band": [
+     2.6,
+     -1.6
+    ]
+   },
+   "board": [
+    "STANFORD 20",
+    "CAL 19"
+   ]
+  },
+  {
+   "text": "Moen ran into the end zone, through the band.",
+   "key": [
+    "THROUGH"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "moen"
+   },
+   "act": {
+    "moen": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "band": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "And straight into a trombone player, Gary Tyrrell.",
+   "key": [
+    "TROMBONE"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "moen",
+    "with": "band"
+   },
+   "act": {
+    "moen": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "band"
+    },
+    "band": {
+     "mood": "shocked",
+     "action": "slump",
+     "look": "moen"
+    }
+   },
+   "place": {
+    "moen": [
+     -0.8,
+     0
+    ],
+    "band": [
+     0.9,
+     0.2
+    ]
+   }
+  },
+  {
+   "text": "Touchdown, Cal. Final score: twenty five to twenty.",
+   "key": [
+    "25"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "moen"
+   },
+   "act": {
+    "moen": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "rodgers": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "ford": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "band": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "Touchdown, Cal. Final score: 25 to 20.",
+   "place": {
+    "moen": "center",
+    "rodgers": "left",
+    "ford": "right",
+    "band": [
+     0,
+     -3.0
+    ]
+   },
+   "board": [
+    "CAL 25",
+    "STANFORD 20"
+   ]
+  },
+  {
+   "text": "The trombone came out of it crumpled.",
+   "key": [
+    "CRUMPLED."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "band"
+   },
+   "act": {
+    "band": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "set": "press",
+   "place": {
+    "band": "center"
+   },
+   "board": [
+    "THE PLAY",
+    "NOV 20, 1982"
+   ]
+  },
+  {
+   "text": "It is still called, simply, The Play.",
+   "key": [
+    "THE",
+    "PLAY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "band": "right",
+    "capy": "left"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Forty four years later: touchdown, or should it not have counted? One word.",
+   "key": [
+    "TOUCHDOWN,"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "band"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "band": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "cap": "44 years later: touchdown, or should it not have counted? One word.",
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Stanford Daily: Revisiting the most improbable moment in college football history",
+   "url": "https://stanforddaily.com/2025/11/19/the-most-improbable-play-in-history/"
+  },
+  {
+   "title": "SI Cal Sports Report: Top 50 Cal sports moments, No. 1: The Play, 1982",
+   "url": "https://www.si.com/college/cal/best-of/top-50-cal-sports-moments-no-1-the-play-1982-01j26y20e90p"
+  },
+  {
+   "title": "California Magazine: Recounting The Play, play by play, 40 years on",
+   "url": "https://alumni.berkeley.edu/california-magazine/online/recounting-the-play-play-by-play-40-years-on"
+  }
+ ]
+}

@@ -1,0 +1,495 @@
+{
+ "id": "s4_11_kick_six",
+ "title": "The Kick Six",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "ALABAMA 28",
+   "AUBURN 28"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "davis": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0c2340",
+    "pants": "#f4f4f4",
+    "number": "11",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "kicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#9e1b32",
+    "pants": "#f4f4f4",
+    "number": "99",
+    "hair": "short",
+    "hairColor": "#3b2416"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#9e1b32",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#cfcfcf",
+    "skin": "#f2c39b"
+   },
+   "at": [
+    0,
+    0
+   ],
+   "hold": "clipboard"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "shirt": "#ffffff",
+    "pants": "#ffffff",
+    "hair": "bald",
+    "skin": "#c99470",
+    "cap": "#ffffff"
+   },
+   "at": [
+    0,
+    0
+   ],
+   "hold": "flag"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2013, a missed field goal was run back one hundred nine yards to win the game.",
+   "key": [
+    "109"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "davis"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "davis": {
+     "mood": "smug",
+     "look": "capy"
+    }
+   },
+   "cap": "In 2013, a missed field goal was run back 109 yards to win the game.",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "davis": [
+     0.4,
+     0
+    ],
+    "kicker": false,
+    "coach": false,
+    "ref": false
+   },
+   "speaker": "capy",
+   "board": [
+    "ALABAMA 28",
+    "AUBURN 28"
+   ]
+  },
+  {
+   "text": "The Iron Bowl. Top ranked Alabama at Auburn.",
+   "key": [
+    "IRON"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "davis"
+   },
+   "act": {
+    "davis": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "kicker": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "davis"
+    }
+   },
+   "place": {
+    "capy": false,
+    "davis": "left",
+    "kicker": "right"
+   }
+  },
+  {
+   "text": "Tied, twenty eight to twenty eight. Alabama's runner went out of bounds. The clock showed zero.",
+   "key": [
+    "ZERO."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "cap": "Tied, 28 to 28. Alabama's runner went out of bounds. The clock showed zero.",
+   "place": {
+    "davis": false,
+    "kicker": false,
+    "coach": "center"
+   }
+  },
+  {
+   "text": "Alabama challenged. After a review, the referee put one second back on the clock.",
+   "key": [
+    "ONE",
+    "SECOND"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "ref",
+    "with": "coach"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "ref"
+    }
+   },
+   "set": "office",
+   "place": {
+    "ref": "left",
+    "coach": "right"
+   },
+   "speaker": "ref",
+   "board": [
+    "CLOCK:",
+    "0:01"
+   ]
+  },
+  {
+   "text": "With that one second, Alabama tried a fifty seven yard field goal.",
+   "key": [
+    "57"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "cap": "With that 1 second, Alabama tried a 57 yard field goal.",
+   "set": "field",
+   "place": {
+    "kicker": "center",
+    "davis": [
+     2.6,
+     -3.0
+    ]
+   },
+   "board": [
+    "0:01",
+    "TIED 28"
+   ]
+  },
+  {
+   "text": "Make it, and Alabama was headed to the SEC Championship Game.",
+   "key": [
+    "SEC"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "worried",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Not quite long enough. And off to the right.",
+   "key": [
+    "RIGHT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Here is the thing about a missed field goal. Somebody can catch it.",
+   "key": [
+    "CATCH"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "davis"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "davis"
+    },
+    "davis": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "kicker": false,
+    "capy": [
+     -2.0,
+     1.0
+    ],
+    "davis": [
+     0.6,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Auburn's Chris Davis caught it deep in his own end zone.",
+   "key": [
+    "DAVIS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "davis"
+   },
+   "act": {
+    "davis": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "davis": "center"
+   }
+  },
+  {
+   "text": "And he ran. Down the left side, behind his blockers.",
+   "key": [
+    "LEFT"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "davis"
+   },
+   "act": {
+    "davis": {
+     "mood": "happy",
+     "action": "hold"
+    },
+    "kicker": {
+     "mood": "shocked",
+     "action": "shrug"
+    }
+   },
+   "place": {
+    "kicker": [
+     -2.6,
+     -2.0
+    ]
+   }
+  },
+  {
+   "text": "One hundred nine yards. Touchdown. No time left.",
+   "key": [
+    "109"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "davis"
+   },
+   "act": {
+    "davis": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "cap": "109 yards. Touchdown. No time left.",
+   "board": [
+    "AUBURN 34",
+    "ALABAMA 28"
+   ]
+  },
+  {
+   "text": "Final score: Auburn thirty four, Alabama twenty eight.",
+   "key": [
+    "34"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "davis"
+   },
+   "act": {
+    "davis": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "kicker": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "cap": "Final score: Auburn 34, Alabama 28.",
+   "place": {
+    "davis": "center",
+    "kicker": [
+     2.4,
+     -0.6
+    ],
+    "coach": [
+     -2.6,
+     -1.2
+    ]
+   }
+  },
+  {
+   "text": "Auburn went to the SEC Championship instead.",
+   "key": [
+    "INSTEAD."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "davis"
+   },
+   "act": {
+    "davis": {
+     "mood": "smug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fans named it the Kick Six.",
+   "key": [
+    "SIX."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "set": "press",
+   "place": {
+    "capy": "center"
+   },
+   "speaker": "capy",
+   "board": [
+    "KICK",
+    "SIX"
+   ]
+  },
+  {
+   "text": "One second left, fifty seven yards out. Kick it, or throw a Hail Mary? One word.",
+   "key": [
+    "KICK",
+    "HAIL"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "davis"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "davis": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "cap": "1 second left, 57 yards out. Kick it, or throw a Hail Mary? One word.",
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "davis": [
+     1.0,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Chris Davis (cornerback)",
+   "url": "https://en.wikipedia.org/wiki/Chris_Davis_(cornerback)"
+  },
+  {
+   "title": "SI: Kick Six two years later, Auburn's Chris Davis Jr. looks back",
+   "url": "https://www.si.com/college/2015/11/24/kick-six-two-years-later-auburns-chris-davis-jr-looks-back-his-unforgettable-touchdown"
+  },
+  {
+   "title": "Awful Announcing: The oral history of the Kick Six",
+   "url": "https://awfulannouncing.com/2016/oral-history-kick-six.html"
+  }
+ ]
+}

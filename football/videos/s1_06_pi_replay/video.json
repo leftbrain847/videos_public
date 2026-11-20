@@ -1,0 +1,495 @@
+{
+ "id": "s1_06_pi_replay",
+ "title": "The one-year replay rule",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "RAMS 20",
+   "SAINTS 20"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#c8a96a",
+    "number": "11",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center"
+  },
+  "cb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f3f8f",
+    "pants": "#f4f4f4",
+    "number": "23",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5e3a24"
+   },
+   "at": "right"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "left",
+   "hold": "flag"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#2b2b33",
+    "pants": "#4a4a4a",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "headset": true
+   },
+   "at": "sideline",
+   "hold": "clipboard"
+  },
+  "own": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b33",
+    "pants": "#2b2b33",
+    "hair": "bald",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2019, one missed call changed NFL replay. The fix lasted one season.",
+   "key": [
+    "ONE",
+    "SEASON."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "ref": [
+     0.9,
+     0
+    ],
+    "wr": false,
+    "cb": false,
+    "coach": false,
+    "own": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "NFC Championship. Rams at Saints. Tied twenty to twenty, under two minutes left.",
+   "cap": "NFC Championship. Rams at Saints. Tied 20 to 20, under 2 minutes left.",
+   "key": [
+    "TIED",
+    "20"
+   ],
+   "place": {
+    "capy": false,
+    "ref": false,
+    "wr": [
+     -0.8,
+     0
+    ],
+    "cb": [
+     1.2,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "wr",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "wr": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "cb": {
+     "mood": "angry",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "Third down. A Rams cornerback hits the receiver before the ball gets there.",
+   "key": [
+    "BEFORE"
+   ],
+   "place": {
+    "cb": [
+     0.6,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "wr",
+    "with": "cb"
+   },
+   "act": {
+    "wr": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "cb"
+    },
+    "cb": {
+     "mood": "angry",
+     "action": "point",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "No flag. Nothing.",
+   "key": [
+    "NO",
+    "FLAG."
+   ],
+   "place": {
+    "ref": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "New Orleans kicks a field goal. The Rams tie it, then win in overtime.",
+   "key": [
+    "OVERTIME."
+   ],
+   "place": {
+    "ref": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "cb"
+   },
+   "act": {
+    "cb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Los Angeles goes to the Super Bowl. New Orleans goes home.",
+   "key": [
+    "SUPER",
+    "BOWL."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Two months later, the owners voted thirty one to one.",
+   "cap": "2 months later, the owners voted 31 to 1.",
+   "key": [
+    "31"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "VOTE",
+     "31 - 1"
+    ]
+   },
+   "place": {
+    "own": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "own"
+  },
+  {
+   "text": "Pass interference could now be reviewed. Even when no flag was thrown.",
+   "key": [
+    "REVIEWED.",
+    "NO"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Only for one year, as a trial.",
+   "key": [
+    "TRIAL."
+   ],
+   "place": {
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "own"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "own": {
+     "mood": "neutral",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "That season, coaches challenged eighty one pass interference plays.",
+   "cap": "That season, coaches challenged 81 pass interference plays.",
+   "key": [
+    "81"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CHALLENGES",
+     "81"
+    ]
+   },
+   "place": {
+    "coach": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "angry",
+     "action": "throw"
+    }
+   }
+  },
+  {
+   "text": "Thirteen got overturned. Thirteen, out of eighty one.",
+   "cap": "13 got overturned. 13, out of 81.",
+   "key": [
+    "13"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "A competition committee member called the results not great.",
+   "key": [
+    "NOT",
+    "GREAT."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "13 OF 81",
+     "NOT GREAT"
+    ]
+   },
+   "place": {
+    "own": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "So for 2020, the league quietly dropped it.",
+   "key": [
+    "DROPPED"
+   ],
+   "place": {
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "own"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "own": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Should replay judge pass interference? Yes or no, below.",
+   "key": [
+    "YES",
+    "NO,"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "REVIEW PI?",
+     "YES / NO"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "ref": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "SI: Why the NFL scrapped pass interference replay review for 2020",
+   "url": "https://www.si.com/nfl/2020/09/13/pass-interference-replay-review-scrapped-nfl-explainer"
+  },
+  {
+   "title": "NFL.com: Owners make pass interference, non-calls reviewable",
+   "url": "https://www.nfl.com/news/owners-make-pass-interference-non-calls-reviewable-0ap3000001024371"
+  },
+  {
+   "title": "Yahoo Sports: NFL will review all pass interference calls, non-calls in wake of NFC championship",
+   "url": "https://sports.yahoo.com/nfl-will-review-all-pass-interference-calls-noncalls-in-wake-of-nfc-championship-game-000351212.html"
+  },
+  {
+   "title": "CBS Sports: Pass interference replay review will not be returning in 2020",
+   "url": "https://www.cbssports.com/nfl/news/pass-interference-replay-review-will-not-be-returning-in-2020-and-competition-committee-chair-explains-why"
+  },
+  {
+   "title": "ESPN: What went wrong with NFL officiating in 2019 (13 of 81 challenges overturned)",
+   "url": "https://africa.espn.com/nfl/story/_/id/28447306/what-went-wrong-nfl-officiating-2019-comes-next"
+  },
+  {
+   "title": "Bleacher Report: Packers' Mark Murphy: pass interference replay results were 'not great' in 2019",
+   "url": "https://bleacherreport.com/articles/2877873-packers-mark-murphy-pass-interference-replay-results-were-not-great-in-2019"
+  },
+  {
+   "title": "theScore: Competition committee admits new PI rule was 'not great' in 2019",
+   "url": "https://thescore.com/nfl/news/1952891/competition-committee-admits-new-pi-rule-was-not-great-in-2019"
+  }
+ ]
+}

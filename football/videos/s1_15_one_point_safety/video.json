@@ -1,0 +1,528 @@
+{
+ "id": "s1_15_one_point_safety",
+ "title": "The one-point safety",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "SAFETY",
+   "= 2 PTS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "kicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f7a3a",
+    "pants": "#f2d21f",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "number": "38"
+   },
+   "at": "center"
+  },
+  "ks1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#5b2c8f",
+    "pants": "#f4f4f4",
+    "skin": "#7b4e33",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "2"
+   },
+   "at": "right",
+   "hold": "football"
+  },
+  "ks2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#5b2c8f",
+    "pants": "#f4f4f4",
+    "skin": "#e8b48f",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "number": "34"
+   },
+   "at": [
+    3.6,
+    -1
+   ]
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "shirt": "#ffffff",
+    "pants": "#1b1b1b",
+    "skin": "#a8714c",
+    "hair": "bald",
+    "hairColor": "#1b1b1b",
+    "cap": "#ffffff"
+   },
+   "at": [
+    -3.2,
+    -1.2
+   ]
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#c0392b",
+    "pants": "#3c3c3c",
+    "skin": "#c98d63",
+    "hair": "bun",
+    "hairColor": "#2a1a10"
+   },
+   "at": [
+    1.2,
+    0.3
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "A safety is worth two points. Except when it's worth one.",
+   "key": [
+    "ONE"
+   ],
+   "place": {
+    "kicker": false,
+    "ks1": false,
+    "ks2": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "ref": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It is one of the rarest scores in football. The NFL has never seen one.",
+   "key": [
+    "NEVER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Here's how. A team scores a touchdown and lines up for the extra point.",
+   "key": [
+    "EXTRA",
+    "POINT"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SAFETY",
+     "= 1 PT?"
+    ]
+   },
+   "board": [
+    "SAFETY",
+    "= 1 PT?"
+   ],
+   "place": {
+    "capy": "left",
+    "kicker": "right"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "kicker"
+    },
+    "kicker": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The defense blocks it, grabs the ball, and runs the wrong way.",
+   "key": [
+    "WRONG",
+    "WAY"
+   ],
+   "place": {
+    "ks1": [
+     0,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ks1",
+    "with": "kicker"
+   },
+   "act": {
+    "ks1": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "kicker": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "ks1"
+    }
+   }
+  },
+  {
+   "text": "If he's tackled in his own end zone, that's a safety. Worth one point.",
+   "key": [
+    "1",
+    "POINT."
+   ],
+   "cap": "If he's tackled in his own end zone, that's a safety. Worth 1 point.",
+   "board": [
+    "= 1 PT"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "kicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "January 2013. The Fiesta Bowl. Oregon leads Kansas State, thirty one to ten.",
+   "key": [
+    "31"
+   ],
+   "cap": "January 2013. The Fiesta Bowl. Oregon leads Kansas State, 31 to 10.",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "OREGON 31",
+     "K-STATE 10"
+    ]
+   },
+   "board": [
+    "OREGON 31",
+    "K-STATE 10"
+   ],
+   "place": {
+    "kicker": [
+     0,
+     1.4
+    ],
+    "ks1": [
+     -1.2,
+     -1.6
+    ],
+    "ks2": [
+     1.4,
+     -1.8
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "happy",
+     "action": "idle"
+    },
+    "ks1": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "ks2": {
+     "mood": "angry",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "Oregon's extra point gets blocked.",
+   "key": [
+    "BLOCKED"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "shocked",
+     "action": "facepalm"
+    },
+    "ks1": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Kansas State picks it up and carries it back toward its own end zone.",
+   "key": [
+    "BACK"
+   ],
+   "place": {
+    "ks1": [
+     -1.6,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ks1"
+   },
+   "act": {
+    "ks1": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A lateral. Then a tackle. Inside the end zone.",
+   "key": [
+    "END",
+    "ZONE."
+   ],
+   "place": {
+    "ks2": [
+     -0.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ks2",
+    "with": "ks1"
+   },
+   "act": {
+    "ks2": {
+     "mood": "shocked",
+     "action": "throw",
+     "look": "ks1"
+    },
+    "ks1": {
+     "mood": "worried",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "The referee signals safety. Oregon gets exactly one point.",
+   "key": [
+    "1",
+    "POINT."
+   ],
+   "cap": "The referee signals safety. Oregon gets exactly 1 point.",
+   "place": {
+    "ref": [
+     2.6,
+     0.6
+    ],
+    "capy": [
+     4.2,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ref",
+    "with": "capy"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "Thirty one to ten becomes thirty two to ten.",
+   "key": [
+    "32"
+   ],
+   "cap": "31 to 10 becomes 32 to 10.",
+   "board": [
+    "OREGON 32",
+    "K-STATE 10"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It had happened once before, in two thousand four. Texas against Texas A and M.",
+   "key": [
+    "2004"
+   ],
+   "cap": "It had happened once before, in 2004. Texas against Texas A&M.",
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "2004",
+     "TEXAS vs TEXAS A&M"
+    ]
+   },
+   "board": [
+    "2004",
+    "TEXAS vs TEXAS A&M"
+   ],
+   "place": {
+    "fan": [
+     1.2,
+     4.6
+    ],
+    "capy": [
+     -1.2,
+     4.8
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "fan"
+    }
+   }
+  },
+  {
+   "text": "Different play, same one point. And the same TV announcer called both games.",
+   "key": [
+    "SAME"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "fan",
+    "with": "capy"
+   },
+   "act": {
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have known a safety can be worth one? Yes or no?",
+   "key": [
+    "YES",
+    "NO"
+   ],
+   "cap": "Would you have known a safety can be worth 1? Yes or no?",
+   "place": {
+    "capy": [
+     -0.6,
+     5.0
+    ],
+    "fan": [
+     1.6,
+     4.5
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NBC Sports/PFT: A one-point conversion safety has happened in college, not NFL",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/a-one-point-conversion-safety-has-happened-in-college-not-nfl"
+  },
+  {
+   "title": "Texas Monthly: That Time There Was a One-Point Safety in a UT-A&M Game",
+   "url": "https://www.texasmonthly.com/arts-entertainment/video-that-time-there-was-a-one-point-safety-in-a-ut-am-game/"
+  }
+ ]
+}

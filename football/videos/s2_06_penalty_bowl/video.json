@@ -1,0 +1,535 @@
+{
+ "id": "s2_06_penalty_bowl",
+ "title": "27 flags and a win",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "FLAGS",
+   "27"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#6b6b6b",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4",
+    "shirt": "#f6f6f6"
+   },
+   "at": "center",
+   "hold": "flag"
+  },
+  "packer": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#203731",
+    "pants": "#ffb612",
+    "number": "10",
+    "hair": "long",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "jet": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#125740",
+    "number": "7",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   },
+   "at": "left"
+  },
+  "moore": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#203731",
+    "pants": "#ffb612",
+    "number": "8",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "left"
+  },
+  "kicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#203731",
+    "pants": "#ffb612",
+    "number": "4",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "Week two. The Packers and the Jets were flagged twenty seven times. In one game.",
+   "cap": "Week 2. The Packers and the Jets were flagged 27 times. In one game.",
+   "key": [
+    "27"
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "ref": [
+     0,
+     0
+    ],
+    "packer": [
+     2.2,
+     0.3
+    ],
+    "jet": false,
+    "moore": false,
+    "kicker": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "packer"
+    },
+    "packer": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "ref"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Green Bay: fourteen penalties, one hundred thirty three yards.",
+   "cap": "Green Bay: 14 penalties, 133 yards.",
+   "key": [
+    "14",
+    "133"
+   ],
+   "board": [
+    "GREEN BAY",
+    "14 FLAGS / 133 YDS"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "packer"
+   },
+   "act": {
+    "packer": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "New York: thirteen more, for one hundred fifty six.",
+   "cap": "New York: 13 more, for 156.",
+   "key": [
+    "13",
+    "156."
+   ],
+   "board": [
+    "NEW YORK",
+    "13 FLAGS / 156 YDS"
+   ],
+   "place": {
+    "jet": [
+     -1.4,
+     0.4
+    ],
+    "capy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "jet",
+    "with": "ref"
+   },
+   "act": {
+    "jet": {
+     "mood": "angry",
+     "action": "shrug",
+     "look": "ref"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "jet"
+    }
+   }
+  },
+  {
+   "text": "Two hundred eighty nine yards, walked off by the officials.",
+   "cap": "289 yards, walked off by the officials.",
+   "key": [
+    "289"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "PENALTY YARDS",
+     "289"
+    ]
+   },
+   "place": {
+    "ref": "center"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "With eleven minutes left, Green Bay trailed seventeen to seven.",
+   "cap": "With 11 minutes left, Green Bay trailed 17 to 7.",
+   "key": [
+    "17",
+    "7."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "NYJ 17",
+     "GB 7"
+    ]
+   },
+   "place": {
+    "packer": "center",
+    "jet": "left"
+   },
+   "shot": {
+    "type": "low",
+    "on": "packer"
+   },
+   "act": {
+    "packer": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "jet": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "packer"
+    }
+   }
+  },
+  {
+   "text": "Then, a short touchdown pass to Christian Watson.",
+   "key": [
+    "TOUCHDOWN"
+   ],
+   "board": [
+    "NYJ 17",
+    "GB 14"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "packer"
+   },
+   "act": {
+    "packer": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    },
+    "jet": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Then, a sixty three yard punt return.",
+   "cap": "Then, a 63 yard punt return.",
+   "key": [
+    "63"
+   ],
+   "place": {
+    "jet": false,
+    "moore": "left"
+   },
+   "shot": {
+    "type": "low",
+    "on": "moore"
+   },
+   "act": {
+    "moore": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then, a field goal to tie it, with two fifty nine left.",
+   "cap": "Then, a field goal to tie it, with 2:59 left.",
+   "key": [
+    "TIE"
+   ],
+   "board": [
+    "NYJ 17",
+    "GB 17"
+   ],
+   "place": {
+    "moore": false,
+    "kicker": "center",
+    "packer": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "packer": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "kicker"
+    }
+   }
+  },
+  {
+   "text": "Overtime. The Jets got the ball first, and their quarterback was sacked on the first two plays.",
+   "key": [
+    "SACKED"
+   ],
+   "board": [
+    "OVERTIME"
+   ],
+   "place": {
+    "kicker": false,
+    "jet": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "jet"
+   },
+   "act": {
+    "jet": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Three and out.",
+   "key": [
+    "OUT."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "jet"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A rookie kicker hit from twenty six yards. Green Bay wins, twenty to seventeen.",
+   "cap": "A rookie kicker hit from 26 yards. Green Bay wins, 20 to 17.",
+   "key": [
+    "26",
+    "20"
+   ],
+   "board": [
+    "GB 20",
+    "NYJ 17"
+   ],
+   "place": {
+    "capy": false,
+    "jet": false,
+    "kicker": "center",
+    "packer": "right"
+   },
+   "shot": {
+    "type": "low",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "packer": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "kicker"
+    }
+   }
+  },
+  {
+   "text": "Green Bay's total after two games: twenty six penalties.",
+   "cap": "Green Bay's total after two games: 26 penalties.",
+   "key": [
+    "26"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "2 GAMES",
+     "26 FLAGS"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.4,
+     0.6
+    ],
+    "ref": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Somewhere, a referee's arm is still tired.",
+   "key": [
+    "TIRED."
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "POSTGAME"
+    ]
+   },
+   "place": {
+    "ref": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Could you win with fourteen penalties? Yes or no?",
+   "cap": "Could you win with 14 penalties? Yes or no?",
+   "key": [
+    "14"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "GB 20",
+     "NYJ 17"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "packer": [
+     0.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "packer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "packer": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Packers.com: Game recap, 5 takeaways from Packers' overtime victory over Jets",
+   "url": "https://www.packers.com/news/game-recap-5-takeaways-from-packers-overtime-victory-over-jets-week-2-2026"
+  },
+  {
+   "title": "AP via AJC: Packers piling up the penalties in first two weeks of the season",
+   "url": "https://www.ajc.com/news/2026/09/packers-piling-up-the-penalties-in-first-two-weeks-of-the-season/"
+  }
+ ]
+}

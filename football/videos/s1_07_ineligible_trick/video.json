@@ -1,0 +1,548 @@
+{
+ "id": "s1_07_ineligible_trick",
+ "title": "The ineligible receiver trick",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "RAVENS +14",
+   "PLAYOFFS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "rb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f3f8f",
+    "pants": "#c9ccd1",
+    "number": "34",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "left"
+  },
+  "te": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f3f8f",
+    "pants": "#c9ccd1",
+    "number": "47",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#c98d64"
+   },
+   "at": "right",
+   "hold": "football"
+  },
+  "lb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#3b2a6b",
+    "pants": "#1b1b1b",
+    "number": "52",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#5e3a24"
+   },
+   "at": "back"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "center",
+   "hold": "flag"
+  },
+  "coach": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#3b2a6b",
+    "pants": "#2b2b33",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "headset": true
+   },
+   "at": "sideline"
+  },
+  "own": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b33",
+    "pants": "#2b2b33",
+    "hair": "short",
+    "hairColor": "#cfcfcf",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2015, the Patriots ran a trick so confusing that the NFL banned it two months later.",
+   "cap": "In 2015, the Patriots ran a trick so confusing that the NFL banned it 2 months later.",
+   "key": [
+    "CONFUSING",
+    "BANNED"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "te": [
+     0.9,
+     0
+    ],
+    "rb": false,
+    "lb": false,
+    "ref": false,
+    "coach": false,
+    "own": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "te"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Playoffs. New England is down fourteen to Baltimore.",
+   "cap": "Playoffs. New England is down 14 to Baltimore.",
+   "key": [
+    "14"
+   ],
+   "place": {
+    "capy": false,
+    "te": [
+     1.2,
+     0
+    ],
+    "rb": [
+     -1.2,
+     0
+    ],
+    "lb": [
+     0,
+     -3
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "rb",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "rb": {
+     "mood": "worried"
+    },
+    "te": {
+     "mood": "worried"
+    },
+    "lb": {
+     "mood": "smug",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "So they line up with only four offensive linemen.",
+   "key": [
+    "FOUR"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "LINEMEN:",
+     "4"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "rb": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "rb": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A running back tells the referee he's ineligible. He can't catch a pass.",
+   "key": [
+    "INELIGIBLE."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "#34",
+     "INELIGIBLE"
+    ]
+   },
+   "place": {
+    "rb": [
+     -1.0,
+     0
+    ],
+    "ref": [
+     1.0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "rb",
+    "with": "ref"
+   },
+   "act": {
+    "rb": {
+     "mood": "smug",
+     "action": "point",
+     "look": "ref"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "rb"
+    }
+   }
+  },
+  {
+   "text": "Meanwhile, a player standing where a lineman would be is eligible.",
+   "key": [
+    "ELIGIBLE."
+   ],
+   "place": {
+    "ref": false,
+    "rb": false,
+    "te": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Baltimore's defense can't tell who it's supposed to cover.",
+   "key": [
+    "COVER."
+   ],
+   "place": {
+    "lb": [
+     1.8,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "te",
+    "with": "lb"
+   },
+   "act": {
+    "te": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "lb": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "te"
+    }
+   }
+  },
+  {
+   "text": "They run it three times.",
+   "cap": "They run it 3 times.",
+   "key": [
+    "3"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "happy",
+     "action": "throw"
+    },
+    "lb": {
+     "mood": "angry",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Baltimore's coach goes onto the field to argue. Fifteen yard penalty.",
+   "cap": "Baltimore's coach goes onto the field to argue. 15-yard penalty.",
+   "key": [
+    "15-YARD"
+   ],
+   "place": {
+    "te": false,
+    "lb": false,
+    "coach": [
+     -1.0,
+     0
+    ],
+    "ref": [
+     1.0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "coach",
+    "with": "ref"
+   },
+   "act": {
+    "coach": {
+     "mood": "angry",
+     "action": "point",
+     "look": "ref"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "coach"
+    }
+   },
+   "speaker": "coach"
+  },
+  {
+   "text": "Tom Brady's reply: maybe they should study the rule book.",
+   "key": [
+    "RULE",
+    "BOOK."
+   ],
+   "place": {
+    "coach": false,
+    "ref": false,
+    "te": "center"
+   },
+   "shot": {
+    "type": "low",
+    "on": "te"
+   },
+   "act": {
+    "te": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "New England wins, thirty five to thirty one.",
+   "cap": "New England wins, 35 to 31.",
+   "key": [
+    "35"
+   ],
+   "place": {
+    "rb": [
+     -1.2,
+     0
+    ],
+    "te": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "rb",
+    "with": "te"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "That March, the owners passed a rule against it.",
+   "key": [
+    "RULE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NEW RULE",
+     "MARCH 2015"
+    ]
+   },
+   "place": {
+    "own": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "own"
+  },
+  {
+   "text": "A player who reports as ineligible can't line up outside the tackles anymore.",
+   "key": [
+    "OUTSIDE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It was completely legal. That was the problem.",
+   "key": [
+    "LEGAL."
+   ],
+   "place": {
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "own"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "own": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Genius, or cheap? One word, below.",
+   "key": [
+    "GENIUS,",
+    "CHEAP?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "GENIUS",
+     "OR CHEAP?"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "te": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "te"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Boston Globe: When things got tough, Patriots got creative",
+   "url": "https://www.bostonglobe.com/sports/2015/01/11/when-things-got-tough-patriots-got-creative/gAZFJwUvDOrCtS6CAIAowM/story.html"
+  },
+  {
+   "title": "ABC30 (ESPN): NFL says Pats' substitutions legal",
+   "url": "https://abc30.com/post/nfl-says-pats-substitutions-legal/470636/"
+  },
+  {
+   "title": "CBS Baltimore (AP): Surprised Ravens confused by Patriots' trick plays",
+   "url": "https://www.cbsnews.com/baltimore/news/surprised-ravens-confused-by-patriots-tricks-trick-plays"
+  },
+  {
+   "title": "theScore: NFL passes ineligible receiver rule; Ravens still haven't forgotten playoff game",
+   "url": "https://www.thescore.com/nfl/news/730373"
+  },
+  {
+   "title": "The42 (Business Insider): The NFL banned the formation the Patriots fooled the Ravens with",
+   "url": "https://the42.ie/new-england-patriots-play-banned-2013791-Mar2015"
+  }
+ ]
+}

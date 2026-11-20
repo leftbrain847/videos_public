@@ -1,0 +1,36 @@
+name: check
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with: { persist-credentials: false }
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with: { python-version: '3.12' }
+      - name: Every script passes the guidelines check
+        run: python3 football/engine/check.py football/videos/*/
+      - name: Engine and site files parse
+        run: |
+          node --check football/engine/kit.js
+          node --check site/football/app.js
+          python3 -m py_compile football/engine/*.py tools/*.py
+      - name: Gallery data builds and every listed file exists
+        run: |
+          python3 tools/build_site.py football
+          python3 - <<'PY'
+          import json, pathlib
+          d = json.load(open('site/football/videos.json'))
+          missing = [p for v in d['videos'] for p in (v['video'], v['poster']) if not pathlib.Path('site/football', p).exists()]
+          assert not missing, missing[:5]
+          print(len(d['videos']), 'videos, all files present')
+          PY

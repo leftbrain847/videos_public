@@ -1,0 +1,475 @@
+{
+ "id": "s4_03_minneapolis_miracle",
+ "title": "The Minneapolis Miracle",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "SAINTS 24",
+   "VIKINGS 23"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "keenum": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4f2683",
+    "pants": "#ffc62f",
+    "number": "7",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "diggs": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4f2683",
+    "pants": "#ffc62f",
+    "number": "14",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": "right"
+  },
+  "safety": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#d3bc8d",
+    "number": "43",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#4f2683",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "skin": "#f2c39b",
+    "cap": "#4f2683"
+   },
+   "at": [
+    0,
+    0
+   ],
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2018, a playoff game ended on a sixty one yard touchdown with no time left on the clock.",
+   "key": [
+    "61",
+    "NO"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "diggs"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "diggs": {
+     "mood": "neutral",
+     "look": "capy"
+    }
+   },
+   "cap": "In 2018, a playoff game ended on a 61 yard touchdown with no time left on the clock.",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "keenum": false,
+    "diggs": [
+     0.4,
+     0
+    ],
+    "safety": false,
+    "coach": false
+   },
+   "speaker": "capy",
+   "board": [
+    "SAINTS 24",
+    "VIKINGS 23"
+   ]
+  },
+  {
+   "text": "The Saints had just kicked a late field goal. Saints twenty four, Vikings twenty three.",
+   "key": [
+    "24"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "safety"
+   },
+   "act": {
+    "safety": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "cap": "The Saints had just kicked a late field goal. Saints 24, Vikings 23.",
+   "place": {
+    "capy": false,
+    "keenum": false,
+    "diggs": false,
+    "safety": "center",
+    "coach": false
+   }
+  },
+  {
+   "text": "Minnesota had the ball at its own thirty nine. Ten seconds left.",
+   "key": [
+    "39.",
+    "10"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "keenum"
+   },
+   "act": {
+    "keenum": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "diggs": {
+     "mood": "neutral",
+     "look": "keenum"
+    },
+    "coach": {
+     "mood": "worried",
+     "action": "cross"
+    }
+   },
+   "cap": "Minnesota had the ball at its own 39. 10 seconds left.",
+   "place": {
+    "safety": false,
+    "keenum": "center",
+    "diggs": [
+     2.4,
+     -1.0
+    ],
+    "coach": "sideline"
+   }
+  },
+  {
+   "text": "Case Keenum dropped back and threw to Stefon Diggs.",
+   "key": [
+    "DIGGS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "keenum",
+    "with": "diggs"
+   },
+   "act": {
+    "keenum": {
+     "mood": "neutral",
+     "action": "throw",
+     "look": "diggs"
+    },
+    "diggs": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "keenum"
+    }
+   }
+  },
+  {
+   "text": "Diggs went up and caught it near the Saints' thirty five.",
+   "key": [
+    "35."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "diggs"
+   },
+   "act": {
+    "diggs": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "cap": "Diggs went up and caught it near the Saints' 35.",
+   "place": {
+    "keenum": false,
+    "coach": false,
+    "diggs": "center",
+    "safety": [
+     2.0,
+     0.6
+    ]
+   }
+  },
+  {
+   "text": "A Saints safety, Marcus Williams, came in to make the tackle.",
+   "key": [
+    "TACKLE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "safety",
+    "with": "diggs"
+   },
+   "act": {
+    "safety": {
+     "mood": "angry",
+     "action": "point",
+     "look": "diggs"
+    },
+    "diggs": {
+     "mood": "worried",
+     "look": "safety"
+    }
+   }
+  },
+  {
+   "text": "He ducked, and missed Diggs completely.",
+   "key": [
+    "MISSED"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "safety"
+   },
+   "act": {
+    "safety": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Diggs stumbled, nearly stepped out, and stayed up.",
+   "key": [
+    "STAYED",
+    "UP."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "diggs"
+   },
+   "act": {
+    "diggs": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then he ran untouched into the end zone. Touchdown. Zero seconds left.",
+   "key": [
+    "UNTOUCHED",
+    "ZERO"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "diggs"
+   },
+   "act": {
+    "diggs": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "safety": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "board": [
+    "VIKINGS 29",
+    "SAINTS 24"
+   ]
+  },
+  {
+   "text": "Notice the timing. Ten seconds was barely enough for one play, and they only needed one.",
+   "key": [
+    "1."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "diggs"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "diggs": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   },
+   "cap": "Notice the timing. 10 seconds was barely enough for 1 play, and they only needed 1.",
+   "place": {
+    "capy": [
+     -2.2,
+     1.0
+    ],
+    "safety": false,
+    "diggs": [
+     0.4,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Final score: Vikings twenty nine, Saints twenty four.",
+   "key": [
+    "29"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "keenum": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   },
+   "cap": "Final score: Vikings 29, Saints 24.",
+   "set": "locker",
+   "place": {
+    "coach": "center",
+    "keenum": "left",
+    "diggs": "right"
+   },
+   "board": [
+    "VIKINGS 29",
+    "SAINTS 24"
+   ]
+  },
+  {
+   "text": "Fans named it the Minneapolis Miracle.",
+   "key": [
+    "MIRACLE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "diggs"
+   },
+   "act": {
+    "diggs": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The NFL later ranked it the ninth greatest play in league history.",
+   "key": [
+    "9TH"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "cap": "The NFL later ranked it the 9th greatest play in league history.",
+   "set": "press",
+   "place": {
+    "capy": "center"
+   },
+   "speaker": "capy",
+   "board": [
+    "GREATEST",
+    "PLAYS: #9"
+   ]
+  },
+  {
+   "text": "Ten seconds, your own thirty nine. Do you throw deep, or play for the field goal? One word.",
+   "key": [
+    "DEEP"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "keenum"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "keenum": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "cap": "10 seconds, your own 39. Do you throw deep, or play for the field goal? One word.",
+   "set": "field",
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "keenum": [
+     0.6,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "board": [
+    "10 SEC",
+    "OWN 39"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com 100 Greatest Plays: Minneapolis Miracle",
+   "url": "https://www.nfl.com/100/originals/100-greatest/plays-9"
+  },
+  {
+   "title": "Vikings.com: Minneapolis Miracle voted 9th best play in NFL history",
+   "url": "https://www.vikings.com/news/vikings-minneapolis-miracle-voted-as-9th-best-play-in-nfl-history"
+  },
+  {
+   "title": "NFL.com: Minnesota Miracle made all sorts of NFL history",
+   "url": "https://nfl.com/news/minnesota-miracle-made-all-sorts-of-nfl-history-0ap3000000907045"
+  },
+  {
+   "title": "CBS Sports: Vikings exorcise playoff demons with Diggs' miraculous TD catch",
+   "url": "https://www.cbssports.com/nfl/news/nfl-playoffs-2018-vikings-exorcise-playoff-demons-with-diggs-miraculous-td-catch"
+  }
+ ]
+}

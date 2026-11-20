@@ -1,0 +1,456 @@
+{
+ "id": "s2_08_jets_drought",
+ "title": "20 games without a pick",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "JETS INTs",
+   "0 IN 20 GAMES"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "fitz": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#125740",
+    "pants": "#f4f4f4",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "beard": true
+   },
+   "at": "center"
+  },
+  "lineman": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#125740",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "bagent": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#13254d",
+    "pants": "#f4f4f4",
+    "number": "17",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#125740",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "skin": "#7b4e33",
+    "cap": "#f4f4f4",
+    "headset": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "The Jets went twenty straight games without intercepting a single pass.",
+   "cap": "The Jets went 20 straight games without intercepting a single pass.",
+   "key": [
+    "20"
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "fitz": [
+     0,
+     0
+    ],
+    "lineman": false,
+    "bagent": false,
+    "coach": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fitz"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fitz": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Their last one came in the final game of twenty twenty four. Two picks against Miami.",
+   "cap": "Their last one came in the final game of 2024. Two picks against Miami.",
+   "key": [
+    "2024."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "LAST INT",
+     "2024 FINALE"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then came the entire twenty twenty five season. Zero.",
+   "cap": "Then came the entire 2025 season. Zero.",
+   "key": [
+    "ZERO."
+   ],
+   "board": [
+    "2025 INTs",
+    "0"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "No team had ever done that, since the league began tracking interceptions in nineteen thirty three.",
+   "cap": "No team had ever done that, since the league began tracking interceptions in 1933.",
+   "key": [
+    "1933."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "FIRST EVER",
+     "SINCE 1933"
+    ]
+   },
+   "place": {
+    "coach": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "This season started. Three more games. Still zero.",
+   "cap": "This season started. 3 more games. Still zero.",
+   "key": [
+    "STILL"
+   ],
+   "board": [
+    "2026",
+    "0 IN 3 GAMES"
+   ],
+   "place": {
+    "coach": "right",
+    "fitz": "left"
+   },
+   "shot": {
+    "type": "two",
+    "on": "coach",
+    "with": "fitz"
+   },
+   "act": {
+    "coach": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "fitz"
+    },
+    "fitz": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "coach"
+    }
+   }
+  },
+  {
+   "text": "Six hundred forty three pass attempts. Eighty three quarters.",
+   "cap": "643 pass attempts. 83 quarters.",
+   "key": [
+    "643",
+    "83"
+   ],
+   "board": [
+    "643 PASSES",
+    "83 QUARTERS"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "fitz"
+   },
+   "act": {
+    "fitz": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "coach": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Week four, at Chicago. A Jets defender finally caught one.",
+   "cap": "Week 4, at Chicago. A Jets defender finally caught one.",
+   "key": [
+    "FINALLY"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "WEEK 4",
+     "AT CHICAGO"
+    ]
+   },
+   "place": {
+    "lineman": "center",
+    "bagent": "right"
+   },
+   "shot": {
+    "type": "low",
+    "on": "lineman"
+   },
+   "act": {
+    "lineman": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "bagent": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "lineman"
+    }
+   }
+  },
+  {
+   "text": "Flag on the play. Wiped out.",
+   "key": [
+    "FLAG"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "lineman": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Second quarter. Safety Minkah Fitzpatrick reads the route and steps in front of the tight end.",
+   "key": [
+    "FITZPATRICK"
+   ],
+   "place": {
+    "capy": false,
+    "lineman": false,
+    "fitz": [
+     -0.6,
+     0.4
+    ],
+    "bagent": [
+     2.0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "fitz",
+    "with": "bagent"
+   },
+   "act": {
+    "fitz": {
+     "mood": "angry",
+     "action": "point",
+     "look": "bagent"
+    },
+    "bagent": {
+     "mood": "neutral",
+     "action": "throw",
+     "look": "fitz"
+    }
+   }
+  },
+  {
+   "text": "Interception. No flag.",
+   "key": [
+    "NO",
+    "FLAG."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "fitz"
+   },
+   "act": {
+    "fitz": {
+     "mood": "shocked",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "bagent": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "He ran it back twenty seven yards.",
+   "cap": "He ran it back 27 yards.",
+   "key": [
+    "27"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "fitz"
+   },
+   "act": {
+    "fitz": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The streak was over. The Jets still lost, twenty three to twelve.",
+   "cap": "The streak was over. The Jets still lost, 23 to 12.",
+   "key": [
+    "LOST,"
+   ],
+   "board": [
+    "CHI 23",
+    "NYJ 12"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "fitz"
+   },
+   "act": {
+    "fitz": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "bagent": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Twenty games for one pick. Was it worth the wait? Yes or no?",
+   "cap": "20 games for one pick. Was it worth the wait? Yes or no?",
+   "key": [
+    "20",
+    "WAIT?"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "fitz": [
+     0.6,
+     0.2
+    ],
+    "bagent": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fitz"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fitz": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP via TSN: Fitzpatrick stops Jets' NFL-record interception drought at 20 consecutive games",
+   "url": "https://www.tsn.ca/nfl/article/fitzpatrick-stops-jets-nfl-record-interception-drought-at-20-consecutive-games/"
+  },
+  {
+   "title": "NBC New York: Jets interception ends NFL-record drought",
+   "url": "https://www.nbcnewyork.com/news/local/jets-interception-ends-nfl-record-drought/"
+  }
+ ]
+}

@@ -1,0 +1,586 @@
+{
+ "id": "s1_14_fair_catch_kick",
+ "title": "The kick nobody can rush",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "FAIR CATCH",
+   "KICK"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "kicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4fa3e0",
+    "pants": "#f4f4f4",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "number": "11"
+   },
+   "at": "center"
+  },
+  "returner": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4fa3e0",
+    "pants": "#f4f4f4",
+    "skin": "#7b4e33",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "9"
+   },
+   "at": "right",
+   "hold": "football"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1f2f5c",
+    "pants": "#4a4a4a",
+    "skin": "#e8b48f",
+    "hair": "short",
+    "hairColor": "#d9d9d9",
+    "cap": "#4fa3e0"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "clipboard"
+  },
+  "def1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f28c28",
+    "pants": "#1f2f5c",
+    "skin": "#a8714c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "24"
+   },
+   "at": [
+    -1.6,
+    -3.2
+   ]
+  },
+  "def2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f28c28",
+    "pants": "#1f2f5c",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "number": "52"
+   },
+   "at": [
+    1.6,
+    -3.2
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2024, an NFL kicker scored on a kick nobody was allowed to rush.",
+   "key": [
+    "NOBODY"
+   ],
+   "place": {
+    "returner": false,
+    "coach": false,
+    "def1": false,
+    "def2": false,
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "kicker": [
+     0.4,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kicker": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It's called the fair catch kick. Almost nobody uses it.",
+   "key": [
+    "FAIR",
+    "CATCH"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "FAIR CATCH",
+     "KICK"
+    ]
+   },
+   "board": [
+    "FAIR CATCH",
+    "KICK"
+   ],
+   "place": {
+    "capy": "center",
+    "coach": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "neutral",
+     "action": "hold"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Here's the rule. Your returner calls a fair catch on a punt.",
+   "key": [
+    "PUNT"
+   ],
+   "place": {
+    "returner": [
+     1.6,
+     0.4
+    ],
+    "capy": [
+     -1.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "returner",
+    "with": "capy"
+   },
+   "act": {
+    "returner": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "returner"
+    }
+   }
+  },
+  {
+   "text": "Now your team may try a free kick for three points, from that exact spot.",
+   "key": [
+    "FREE",
+    "KICK"
+   ],
+   "cap": "Now your team may try a free kick for 3 points, from that exact spot.",
+   "board": [
+    "FREE KICK",
+    "= 3 PTS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "With a holder. And the defense has to stay ten yards away. No rush.",
+   "key": [
+    "NO",
+    "RUSH"
+   ],
+   "cap": "With a holder. And the defense has to stay 10 yards away. No rush.",
+   "board": [
+    "NO RUSH"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "returner"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "returner": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "December 2024. Chargers against Broncos. Last play of the first half.",
+   "key": [
+    "LAST",
+    "PLAY"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BRONCOS 21",
+     "CHARGERS 10"
+    ]
+   },
+   "board": [
+    "BRONCOS 21",
+    "CHARGERS 10"
+   ],
+   "place": {
+    "kicker": [
+     0,
+     1.2
+    ],
+    "returner": [
+     1.8,
+     1.4
+    ],
+    "def1": [
+     -1.6,
+     -3.2
+    ],
+    "def2": [
+     1.6,
+     -3.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "returner": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "def1": {
+     "mood": "neutral",
+     "action": "cross"
+    },
+    "def2": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Derius Davis calls a fair catch. Denver interferes. Fifteen more yards.",
+   "key": [
+    "15"
+   ],
+   "cap": "Derius Davis calls a fair catch. Denver interferes. 15 more yards.",
+   "shot": {
+    "type": "medium",
+    "on": "returner"
+   },
+   "act": {
+    "returner": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "def2": {
+     "mood": "worried",
+     "action": "facepalm"
+    }
+   },
+   "speaker": "returner"
+  },
+  {
+   "text": "Coach Jim Harbaugh knows this rule. He tried it once before, in 2013.",
+   "key": [
+    "2013"
+   ],
+   "place": {
+    "coach": "sideline",
+    "capy": [
+     -4.4,
+     2.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "coach",
+    "with": "capy"
+   },
+   "act": {
+    "coach": {
+     "mood": "smug",
+     "action": "point",
+     "look": "kicker"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Cameron Dicker lines up from fifty seven yards.",
+   "key": [
+    "57"
+   ],
+   "cap": "Cameron Dicker lines up from 57 yards.",
+   "shot": {
+    "type": "low",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The Broncos just stand there and watch.",
+   "key": [
+    "WATCH"
+   ],
+   "place": {
+    "def1": [
+     3.6,
+     0.2
+    ],
+    "def2": [
+     5.0,
+     -0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "def1",
+    "with": "def2"
+   },
+   "act": {
+    "def1": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "kicker"
+    },
+    "def2": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "kicker"
+    }
+   }
+  },
+  {
+   "text": "It's good.",
+   "key": [
+    "GOOD"
+   ],
+   "board": [
+    "BRONCOS 21",
+    "CHARGERS 13"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The first fair catch kick made in forty eight years. The last was in nineteen seventy six.",
+   "key": [
+    "48",
+    "YEARS"
+   ],
+   "cap": "The first fair catch kick made in 48 years. The last was in 1976.",
+   "shot": {
+    "type": "wide",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "returner": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "kicker"
+    },
+    "coach": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "kicker"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "kicker"
+    }
+   }
+  },
+  {
+   "text": "And at fifty seven yards, the longest ever.",
+   "key": [
+    "LONGEST"
+   ],
+   "cap": "And at 57 yards, the longest ever.",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The Chargers won the game, thirty four to twenty seven.",
+   "key": [
+    "34"
+   ],
+   "cap": "The Chargers won the game, 34 to 27.",
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "FINAL",
+     "34 - 27"
+    ]
+   },
+   "board": [
+    "FINAL",
+    "34 - 27"
+   ],
+   "place": {
+    "kicker": "center",
+    "returner": "right",
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "returner": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "kicker"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "kicker"
+    }
+   }
+  },
+  {
+   "text": "Would you try a fifty seven yard kick with no rush? Yes or no?",
+   "key": [
+    "YES",
+    "NO"
+   ],
+   "cap": "Would you try a 57-yard kick with no rush? Yes or no?",
+   "place": {
+    "capy": [
+     -1.6,
+     1.2
+    ],
+    "kicker": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kicker": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Chargers.com: A Fair Catch Kick?! Cameron Dicker Makes History Against Broncos",
+   "url": "https://www.chargers.com/news/fair-catch-kick-cameron-dicker"
+  },
+  {
+   "title": "ABC News: 'Ain't ever seen that': Rare fair catch kick propels Chargers",
+   "url": "https://abcnews.com/Sports/aint-rare-fair-catch-kick-propels-chargers/story?id=116984234"
+  },
+  {
+   "title": "CBS News LA (AP): Chargers' Dicker makes NFL's first fair-catch kick in 48 years",
+   "url": "https://www.cbsnews.com/amp/losangeles/news/taking-advantage-of-an-obscure-rule-chargers-dicker-makes-nfls-first-fair-catch-kick-in-48-years-3"
+  },
+  {
+   "title": "SI: Cameron Dicker Makes NFL History With 57-Yard Fair-Catch Free Kick",
+   "url": "https://www.si.com/college/texas/football/texas-ex-cameron-dicker-makes-nfl-history-with-57-yard-fair-catch-free-kick-01jfh4avbwx8"
+  }
+ ]
+}

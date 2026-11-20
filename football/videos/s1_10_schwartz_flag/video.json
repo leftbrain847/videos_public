@@ -1,0 +1,501 @@
+{
+ "id": "s1_10_schwartz_flag",
+ "title": "The challenge that saved a touchdown",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "THANKSGIVING",
+   "3RD QTR"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1f6fb5",
+    "pants": "#4a4a4a",
+    "skin": "#f2c39b",
+    "hair": "bald",
+    "headset": true
+   },
+   "at": "sideline"
+  },
+  "rb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#14254a",
+    "pants": "#f4f4f4",
+    "number": "27",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4128"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "def": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f6fb5",
+    "pants": "#c9ccd1",
+    "number": "56",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "right"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "left",
+   "hold": "flag"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b33",
+    "pants": "#2b2b33",
+    "hair": "short",
+    "hairColor": "#cfcfcf",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "On Thanksgiving 2012, a coach threw his challenge flag, and it saved the other team's touchdown.",
+   "key": [
+    "FLAG,",
+    "SAVED"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "coach": [
+     0.9,
+     0
+    ],
+    "rb": false,
+    "def": false,
+    "ref": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Houston at Detroit. Third quarter. Detroit is up ten.",
+   "cap": "Houston at Detroit. 3rd quarter. Detroit is up 10.",
+   "key": [
+    "10."
+   ],
+   "place": {
+    "capy": false,
+    "coach": false,
+    "rb": "center",
+    "def": [
+     1.4,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "rb",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "rb": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "def": {
+     "mood": "smug",
+     "look": "rb"
+    }
+   }
+  },
+  {
+   "text": "Justin Forsett runs. His knee and elbow touch the turf.",
+   "key": [
+    "KNEE"
+   ],
+   "place": {
+    "def": [
+     1.4,
+     -0.1
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "rb",
+    "with": "def"
+   },
+   "act": {
+    "rb": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "def": {
+     "mood": "happy",
+     "action": "point",
+     "look": "rb"
+    }
+   }
+  },
+  {
+   "text": "No whistle. He keeps going. Eighty one yards. Touchdown.",
+   "cap": "No whistle. He keeps going. 81 yards. Touchdown.",
+   "key": [
+    "81",
+    "TOUCHDOWN."
+   ],
+   "place": {
+    "def": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Every scoring play gets reviewed automatically. And replays showed he was down.",
+   "key": [
+    "AUTOMATICALLY."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "SCORING PLAY",
+     "= AUTO REVIEW"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "ref": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "But Detroit's coach, Jim Schwartz, throws his challenge flag anyway.",
+   "key": [
+    "CHALLENGE",
+    "FLAG"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "THANKSGIVING",
+     "3RD QTR"
+    ]
+   },
+   "place": {
+    "coach": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "angry",
+     "action": "throw"
+    }
+   }
+  },
+  {
+   "text": "The rule then: challenge a play that's reviewed automatically, and there's no review at all.",
+   "key": [
+    "NO",
+    "REVIEW"
+   ],
+   "place": {
+    "ref": [
+     -2.0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ref",
+    "with": "coach"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "coach"
+    },
+    "coach": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "Plus fifteen yards, for unsportsmanlike conduct.",
+   "cap": "Plus 15 yards, for unsportsmanlike conduct.",
+   "key": [
+    "15"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the touchdown stands.",
+   "key": [
+    "STANDS."
+   ],
+   "place": {
+    "ref": false,
+    "coach": false,
+    "rb": "center"
+   },
+   "shot": {
+    "type": "high",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Houston comes back and wins in overtime, thirty four to thirty one.",
+   "cap": "Houston comes back and wins in overtime, 34 to 31.",
+   "key": [
+    "OVERTIME,"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Schwartz said he got so mad that he overreacted.",
+   "key": [
+    "OVERREACTED."
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "POSTGAME"
+    ]
+   },
+   "place": {
+    "coach": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "speaker": "coach"
+  },
+  {
+   "text": "That March, the league closed the loophole. Now the play still gets reviewed. The coach just loses a timeout or gets penalized.",
+   "key": [
+    "STILL",
+    "REVIEWED."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NEW RULE",
+     "2013"
+    ]
+   },
+   "place": {
+    "boss": "desk",
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "boss",
+    "with": "capy"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "boss"
+    }
+   },
+   "speaker": "boss"
+  },
+  {
+   "text": "It got a nickname: the Jim Schwartz rule.",
+   "key": [
+    "SCHWARTZ"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "happy",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you rather lose the game, or get a rule named after you? One word, below.",
+   "key": [
+    "LOSE",
+    "RULE"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "LOSE",
+     "OR RULE?"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "coach": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "CBS Chicago (AP): Texans top Lions 34-31 in OT after coach's mistake",
+   "url": "https://www.cbsnews.com/chicago/news/texans-top-lions-34-31-in-ot-after-coachs-mistake/"
+  },
+  {
+   "title": "SI (AP): NFL to examine replay rule from Lions-Texans game",
+   "url": "https://www.si.com/nfl/2012/11/23/jim-schwartz-rule-change-ap"
+  },
+  {
+   "title": "Football Zebras: Revoked replay review result of repeated rulebook revisions",
+   "url": "https://www.footballzebras.com/2012/11/revoked-replay-review-result-of-repeated-rulebook-revisions/"
+  },
+  {
+   "title": "CBS Detroit (AP): NFL passes helmet rule, ends tuck rule (challenge loophole eliminated)",
+   "url": "https://www.cbsnews.com/detroit/news/nfl-passes-helmet-rule-ends-tuck-rule"
+  },
+  {
+   "title": "Bleacher Report: Everything you need to know about the NFL's new rule changes (the 'Jim Schwartz Rule')",
+   "url": "https://bleacherreport.com/articles/1584180-everything-you-need-to-know-about-the-nfls-new-rule-changes"
+  },
+  {
+   "title": "ProFootballTalk: NFL passes Jim Schwartz rule",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-passes-jim-schwartz-rule"
+  }
+ ]
+}

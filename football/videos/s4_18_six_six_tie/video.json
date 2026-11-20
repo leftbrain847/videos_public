@@ -1,0 +1,584 @@
+{
+ "id": "s4_18_six_six_tie",
+ "title": "Six to six",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "SEAHAWKS 6",
+   "CARDINALS 6"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "ckick": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a3233f",
+    "pants": "#f4f4f4",
+    "number": "7",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "skick": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0f2a4a",
+    "pants": "#a5acaf",
+    "number": "4",
+    "hair": "short",
+    "hairColor": "#d9b16a"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "crb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a3233f",
+    "pants": "#f4f4f4",
+    "number": "31",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "back",
+   "hold": "football"
+  },
+  "analyst": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a4a6b",
+    "pants": "#3a4a6b",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2016, two NFL kickers missed short overtime field goals on the same night. Final score: six to six.",
+   "cap": "In 2016, two NFL kickers missed short overtime field goals on the same night. Final score: 6 to 6.",
+   "key": [
+    "6"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "ckick": [
+     0,
+     0
+    ],
+    "skick": [
+     2.2,
+     0.2
+    ],
+    "crb": false,
+    "analyst": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ckick"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ckick": {
+     "mood": "sad",
+     "action": "facepalm"
+    },
+    "skick": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Sunday night football. Seahawks at Cardinals.",
+   "key": [
+    "SUNDAY"
+   ],
+   "board": [
+    "SUNDAY NIGHT",
+    "SEA @ ARI"
+   ],
+   "place": {
+    "capy": false,
+    "ckick": [
+     -1.3,
+     0
+    ],
+    "skick": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "ckick",
+    "offset": [
+     1.3,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "ckick": {
+     "mood": "happy",
+     "action": "wave"
+    },
+    "skick": {
+     "mood": "happy",
+     "action": "wave"
+    }
+   }
+  },
+  {
+   "text": "Regulation ended six to six. Not one touchdown.",
+   "cap": "Regulation ended 6 to 6. Not one touchdown.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "board": [
+    "TOUCHDOWNS",
+    "0"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "ckick",
+    "with": "skick"
+   },
+   "act": {
+    "ckick": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "skick"
+    },
+    "skick": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "ckick"
+    }
+   }
+  },
+  {
+   "text": "Arizona had the ball for forty six minutes. Four hundred forty three yards.",
+   "cap": "Arizona had the ball for 46 minutes. 443 yards.",
+   "key": [
+    "46",
+    "443"
+   ],
+   "board": [
+    "ARIZONA",
+    "443 YARDS"
+   ],
+   "place": {
+    "crb": [
+     0,
+     0
+    ],
+    "ckick": false,
+    "skick": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "crb"
+   },
+   "act": {
+    "crb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Earlier, Seattle blocked a field goal and a punt.",
+   "key": [
+    "BLOCKED"
+   ],
+   "place": {
+    "skick": [
+     1.4,
+     0.4
+    ],
+    "crb": [
+     -1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "skick"
+   },
+   "act": {
+    "skick": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "crb": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "skick"
+    }
+   }
+  },
+  {
+   "text": "Then overtime. Arizona's kicker lined up from twenty four yards.",
+   "cap": "Then overtime. Arizona's kicker lined up from 24 yards.",
+   "key": [
+    "24"
+   ],
+   "board": [
+    "OVERTIME",
+    "24 YARDS"
+   ],
+   "place": {
+    "ckick": [
+     0,
+     0
+    ],
+    "crb": false,
+    "skick": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "ckick"
+   },
+   "act": {
+    "ckick": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It hit the left upright. No good.",
+   "key": [
+    "UPRIGHT."
+   ],
+   "board": [
+    "DOINK",
+    "NO GOOD"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "ckick",
+    "offset": [
+     -2,
+     1,
+     0
+    ]
+   },
+   "act": {
+    "ckick": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "So Seattle got a chance. From inside thirty yards.",
+   "cap": "So Seattle got a chance. From inside 30 yards.",
+   "key": [
+    "30"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "skick": [
+     1.2,
+     0
+    ],
+    "ckick": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "skick"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "skick"
+    },
+    "skick": {
+     "mood": "worried",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "With seconds to go, the kick sailed wide left.",
+   "key": [
+    "WIDE",
+    "LEFT."
+   ],
+   "board": [
+    "WIDE LEFT",
+    "NO GOOD"
+   ],
+   "place": {
+    "capy": false,
+    "skick": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "skick"
+   },
+   "act": {
+    "skick": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Fifteen minutes of overtime. Zero points.",
+   "cap": "15 minutes of overtime. 0 points.",
+   "key": [
+    "0"
+   ],
+   "board": [
+    "SEAHAWKS 6",
+    "CARDINALS 6"
+   ],
+   "place": {
+    "ckick": [
+     -1.3,
+     0
+    ],
+    "skick": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "ckick",
+    "offset": [
+     1.3,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "ckick": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "skick": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "It was the lowest-scoring overtime tie in NFL history.",
+   "key": [
+    "LOWEST-SCORING"
+   ],
+   "set": "office",
+   "board": [
+    "LOWEST OT TIE",
+    "EVER: 6-6"
+   ],
+   "place": {
+    "analyst": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "analyst",
+    "offset": [
+     1.6,
+     0.5,
+     1.5
+    ]
+   },
+   "act": {
+    "analyst": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The first tie in Seahawks history. And the first tie with no touchdowns since 1972.",
+   "key": [
+    "1972."
+   ],
+   "board": [
+    "NO-TD TIE",
+    "SINCE 1972"
+   ],
+   "place": {
+    "analyst": [
+     2.8,
+     -0.4
+    ],
+    "capy": [
+     0.8,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "analyst",
+    "with": "capy"
+   },
+   "act": {
+    "analyst": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "smug",
+     "look": "analyst"
+    }
+   },
+   "speaker": "analyst"
+  },
+  {
+   "text": "Two kickers. Two chip shots. Two misses.",
+   "key": [
+    "TWO",
+    "MISSES."
+   ],
+   "set": "field",
+   "board": [
+    "2 KICKS",
+    "2 MISSES"
+   ],
+   "place": {
+    "ckick": [
+     -1.3,
+     0
+    ],
+    "skick": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ckick",
+    "offset": [
+     0.6,
+     0,
+     1.5
+    ]
+   },
+   "act": {
+    "ckick": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "skick"
+    },
+    "skick": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "ckick"
+    }
+   }
+  },
+  {
+   "text": "Could you make a twenty four yard field goal? Yes or no?",
+   "cap": "Could you make a 24-yard field goal? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "24 YARDS:",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "ckick": [
+     -1.8,
+     -0.2
+    ],
+    "skick": [
+     1.8,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "skick"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ckick": {
+     "mood": "confused",
+     "look": "capy"
+    },
+    "skick": {
+     "mood": "confused",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "SI: Seahawks and Cardinals tie after missed field goals on Sunday Night Football",
+   "url": "https://www.si.com/nfl/2016/10/24/seahawks-cardinals-tie-missed-field-goal-sunday-night-football"
+  },
+  {
+   "title": "Deseret News (AP): Kickers miss short field goals, Seahawks, Cards tie 6-6",
+   "url": "https://www.deseret.com/2016/10/24/20493862/kickers-miss-short-field-goals-seahawks-cards-tie-6-6/"
+  },
+  {
+   "title": "Seahawks.com: By the numbers, lowest-scoring overtime tie in NFL history",
+   "url": "https://seahawks.com/news/by-the-numbers-seahawks-cardinals-record-lowest-scoring-overtime-tie-in-n-171541"
+  },
+  {
+   "title": "CBS Sports: Seahawks, Cardinals overtime draw, six takeaways",
+   "url": "https://www.cbssports.com/nfl/news/seahawks-cardinals-set-football-back-100-years-with-overtime-draw-six-takeaways/"
+  },
+  {
+   "title": "Arizona Cardinals: Cardinals dominate, yet tie Seahawks",
+   "url": "https://www.azcardinals.com/news/cardinals-dominate-yet-tie-seahawks-17947434"
+  }
+ ]
+}

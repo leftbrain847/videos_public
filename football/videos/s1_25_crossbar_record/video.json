@@ -1,0 +1,509 @@
+{
+ "id": "s1_25_crossbar_record",
+ "title": "The record that hit the crossbar",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "LONGEST FG"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "tuck": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#241773",
+    "pants": "#f4f4f4",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "number": "9"
+   },
+   "at": [
+    0.6,
+    0
+   ]
+  },
+  "lion": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0076b6",
+    "pants": "#b0b7bc",
+    "skin": "#a8714c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "55"
+   },
+   "at": [
+    2.6,
+    -1.4
+   ]
+  },
+  "cam": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#006778",
+    "pants": "#f4f4f4",
+    "skin": "#7b4e33",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "number": "39"
+   },
+   "at": "center"
+  },
+  "butk": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#e31837",
+    "pants": "#f4f4f4",
+    "skin": "#e8b48f",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "number": "7"
+   },
+   "at": "right"
+  }
+ },
+ "lines": [
+  {
+   "text": "The longest field goal in NFL history used to be a kick that hit the crossbar.",
+   "key": [
+    "CROSSBAR."
+   ],
+   "place": {
+    "lion": false,
+    "cam": false,
+    "butk": false,
+    "capy": [
+     -1.6,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tuck"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "tuck": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "September 2021. Ravens at Lions. Detroit leads by one. Three seconds left.",
+   "key": [
+    "3",
+    "SECONDS"
+   ],
+   "cap": "September 2021. Ravens at Lions. Detroit leads by 1. 3 seconds left.",
+   "board": [
+    "LIONS 17",
+    "RAVENS 16"
+   ],
+   "place": {
+    "capy": false,
+    "lion": [
+     2.6,
+     -1.4
+    ],
+    "tuck": [
+     0,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "tuck"
+   },
+   "act": {
+    "tuck": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "lion": {
+     "mood": "smug",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "Justin Tucker lines up from sixty six yards.",
+   "key": [
+    "66"
+   ],
+   "cap": "Justin Tucker lines up from 66 yards.",
+   "shot": {
+    "type": "medium",
+    "on": "tuck"
+   },
+   "act": {
+    "tuck": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The record at the time? Sixty four.",
+   "key": [
+    "64."
+   ],
+   "cap": "The record at the time? 64.",
+   "shot": {
+    "type": "close",
+    "on": "tuck"
+   },
+   "act": {
+    "tuck": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The kick is long enough. Barely.",
+   "key": [
+    "BARELY."
+   ],
+   "place": {
+    "lion": [
+     2.0,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "lion",
+    "with": "tuck"
+   },
+   "act": {
+    "lion": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "tuck"
+    },
+    "tuck": {
+     "mood": "neutral",
+     "action": "throw"
+    }
+   }
+  },
+  {
+   "text": "It hits the crossbar, bounces up, and drops over.",
+   "key": [
+    "BOUNCES"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "tuck"
+   },
+   "act": {
+    "tuck": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    },
+    "lion": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Hit the bar and still go over? It counts.",
+   "key": [
+    "COUNTS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "OFF THE BAR",
+     "+ OVER = GOOD"
+    ]
+   },
+   "board": [
+    "OFF THE BAR",
+    "+ OVER = GOOD"
+   ],
+   "place": {
+    "capy": "left",
+    "tuck": "right"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "tuck": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Ravens win, nineteen to seventeen. A new NFL record.",
+   "key": [
+    "RECORD."
+   ],
+   "cap": "Ravens win, 19 to 17. A new NFL record.",
+   "board": [
+    "RECORD:",
+    "66 YARDS"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "tuck"
+   },
+   "act": {
+    "tuck": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "clap",
+     "look": "tuck"
+    }
+   }
+  },
+  {
+   "text": "It lasted four years.",
+   "key": [
+    "4"
+   ],
+   "cap": "It lasted 4 years.",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "November 2025. Jacksonville's Cam Little kicks a sixty eight yarder.",
+   "key": [
+    "68-YARDER."
+   ],
+   "cap": "November 2025. Jacksonville's Cam Little kicks a 68-yarder.",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RECORD:",
+     "68 YARDS"
+    ]
+   },
+   "board": [
+    "RECORD:",
+    "68 YARDS"
+   ],
+   "place": {
+    "cam": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "cam"
+   },
+   "act": {
+    "cam": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "This one clears the bar with room to spare.",
+   "key": [
+    "ROOM"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "cam"
+   },
+   "act": {
+    "cam": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Then, in August 2026, Harrison Butker hits one from sixty nine.",
+   "key": [
+    "69."
+   ],
+   "cap": "Then, in August 2026, Harrison Butker hits one from 69.",
+   "place": {
+    "butk": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "butk",
+    "with": "cam"
+   },
+   "act": {
+    "butk": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "cam": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "butk"
+    }
+   }
+  },
+  {
+   "text": "In the preseason. Which doesn't count.",
+   "key": [
+    "PRESEASON."
+   ],
+   "board": [
+    "PRESEASON:",
+    "DOESN'T COUNT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "butk"
+   },
+   "act": {
+    "butk": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So Little's sixty eight stays on top. No crossbar required.",
+   "key": [
+    "68"
+   ],
+   "cap": "So Little's 68 stays on top. No crossbar required.",
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "RECORD:",
+     "68"
+    ]
+   },
+   "board": [
+    "RECORD:",
+    "68"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "cam": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "cam"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "cam": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Should preseason kicks count for records? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "CBS Sports: Ravens' Justin Tucker stuns Lions with NFL record-setting 66-yard field goal on final play of game",
+   "url": "https://www.cbssports.com/nfl/news/ravens-justin-tucker-stuns-lions-with-nfl-record-setting-66-yard-field-goal-on-final-play-of-game"
+  },
+  {
+   "title": "NPR: Justin Tucker kicks a 66-yard field goal, setting an NFL record",
+   "url": "https://www.npr.org/2021/09/27/1040869823/justin-tucker-66-yard-field-goal-new-nfl-record-ravens-lions"
+  },
+  {
+   "title": "ClickOnDetroit (AP): Jaguars' Cam Little kicks a 68-yard field goal to break Justin Tucker's NFL record",
+   "url": "https://www.clickondetroit.com/sports/2025/11/02/jaguars-cam-little-kicks-a-68-yard-field-goal-to-break-justin-tuckers-nfl-record/"
+  },
+  {
+   "title": "SI: Jaguars kicker Cam Little nails longest field goal in NFL history",
+   "url": "https://www.si.com/nfl/jaguars-kicker-cam-little-nails-longest-field-goal-in-nfl-history"
+  },
+  {
+   "title": "NFL.com: Jaguars' Cam Little doesn't believe his 68-yard record will be broken",
+   "url": "https://www.nfl.com/news/jaguars-cam-little-doesn-t-believe-his-68-yard-record-will-be-broken"
+  },
+  {
+   "title": "CBS Sports: Chiefs' Harrison Butker drills historic 69-yard field goal, but it won't count in the NFL record book",
+   "url": "https://www.cbssports.com/nfl/news/chiefs-harrison-butker-drills-historical-69-yard-field-goal-but-it-wont-count-in-the-nfl-record-book/"
+  },
+  {
+   "title": "Wikipedia: List of longest NFL field goals",
+   "url": "https://en.wikipedia.org/wiki/List_of_longest_NFL_field_goals"
+  }
+ ]
+}

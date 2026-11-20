@@ -1,0 +1,477 @@
+{
+ "id": "s1_03_calvin_catch",
+ "title": "The Calvin Johnson rule",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "LIONS 14",
+   "BEARS 19"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f6fb5",
+    "pants": "#c9ccd1",
+    "number": "81",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5e3a24"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "db": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#14254a",
+    "pants": "#f4f4f4",
+    "number": "31",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "right"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "left",
+   "hold": "flag"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b33",
+    "pants": "#2b2b33",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2010, Calvin Johnson caught the winning touchdown. The NFL said no.",
+   "key": [
+    "TOUCHDOWN.",
+    "NO."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "wr": [
+     0.9,
+     0
+    ],
+    "db": false,
+    "ref": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Detroit trailed Chicago nineteen to fourteen, with under thirty seconds left.",
+   "cap": "Detroit trailed Chicago 19 to 14, with under 30 seconds left.",
+   "key": [
+    "19",
+    "30"
+   ],
+   "place": {
+    "capy": false,
+    "wr": "center",
+    "db": [
+     1.5,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "wr",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "wr": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "db": {
+     "mood": "angry",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "The pass goes to Johnson in the end zone. He catches it.",
+   "key": [
+    "CATCHES"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "db": {
+     "mood": "shocked",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "Two feet down. Then his backside. Touchdown, right?",
+   "key": [
+    "TWO",
+    "FEET"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "wr",
+    "with": "db"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "db": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "He rolls, puts his hand down, and the ball comes loose on the ground.",
+   "key": [
+    "LOOSE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The call on the field: incomplete.",
+   "key": [
+    "INCOMPLETE."
+   ],
+   "place": {
+    "ref": [
+     -1.6,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ref",
+    "with": "wr"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "wr"
+    },
+    "wr": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "Replay looks at it. Still incomplete.",
+   "key": [
+    "STILL"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The rule: a receiver going to the ground has to hold on through the whole process of the catch.",
+   "key": [
+    "PROCESS"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "THE PROCESS",
+     "OF THE CATCH"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "ref": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The referee said the process wasn't over until he finished rolling.",
+   "key": [
+    "ROLLING."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "confused",
+     "look": "ref"
+    }
+   },
+   "speaker": "ref"
+  },
+  {
+   "text": "Detroit lost, nineteen to fourteen.",
+   "cap": "Detroit lost, 19 to 14.",
+   "key": [
+    "LOST,"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "LIONS 14",
+     "BEARS 19"
+    ]
+   },
+   "place": {
+    "wr": "center"
+   },
+   "shot": {
+    "type": "high",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Years later, the same rule erased a playoff catch by Dez Bryant.",
+   "key": [
+    "PLAYOFF"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Finally, in 2018, the owners voted unanimously to drop the going to the ground part.",
+   "key": [
+    "2018,",
+    "UNANIMOUSLY"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "GOING TO",
+     "THE GROUND: X"
+    ]
+   },
+   "place": {
+    "boss": "desk",
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "boss"
+    }
+   },
+   "speaker": "boss"
+  },
+  {
+   "text": "Eight years too late for Calvin.",
+   "cap": "8 years too late for Calvin.",
+   "key": [
+    "8",
+    "YEARS"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "So, catch or no catch? One word, below.",
+   "key": [
+    "CATCH",
+    "NO"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "CATCH",
+     "OR NO CATCH?"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "wr": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "SI: Newsome: NFL unlikely to tweak reception rule during season",
+   "url": "https://www.si.com/nfl/2010/09/14/johnson-rule"
+  },
+  {
+   "title": "Star Tribune: Process schmocess: rule does in Lions",
+   "url": "https://www.startribune.com/process-schmocess-rule-does-in-lions/102747024/"
+  },
+  {
+   "title": "Bleacher Report: Calvin Johnson robbed of touchdown",
+   "url": "https://bleacherreport.com/articles/460520-calvin-johnson-robbed-of-touchdown-regardless-of-ruling-on-the-field-it-was-a-td"
+  },
+  {
+   "title": "NFL.com: Calvin Johnson praises catch rule, wants stats updated",
+   "url": "https://www.nfl.com/news/calvin-johnson-praises-catch-rule-wants-stats-updated-0ap3000000936363"
+  },
+  {
+   "title": "Dallas Morning News: NFL competition committee to change rule that overturned Dez Bryant catch",
+   "url": "https://sportsday.dallasnews.com/dallas-cowboys/cowboys/2018/02/27/nfl-competition-committee-change-rule-overturned-dez-bryant-catch"
+  },
+  {
+   "title": "NFL.com: NFL teams unanimously approve simplified catch rule",
+   "url": "https://www.nfl.com/news/nfl-teams-unanimously-approve-simplified-catch-rule-0ap3000000923342"
+  },
+  {
+   "title": "ESPN: NFL owners approve new catch rule, 32-0 vote",
+   "url": "https://africa.espn.com/nfl/story/_/id/22931857/nfl-owners-approve-new-catch-rule-32-0-vote"
+  }
+ ]
+}

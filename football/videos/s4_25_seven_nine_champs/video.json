@@ -1,0 +1,607 @@
+{
+ "id": "s4_25_seven_nine_champs",
+ "title": "The 7-9 division champions",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "NFC WEST",
+   "CHAMPS 7-9"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "hqb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0f2a4a",
+    "pants": "#a5acaf",
+    "number": "6",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "hrb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0f2a4a",
+    "pants": "#a5acaf",
+    "number": "22",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "back",
+   "hold": "football"
+  },
+  "ram": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1c2f5e",
+    "pants": "#c9a85f",
+    "number": "40",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "saint": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#d3bc8d",
+    "number": "29",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "right"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5aa832",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "sci": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true,
+    "beard": true
+   },
+   "at": "desk",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2010, the Seahawks won their division with a losing record. Seven and nine.",
+   "cap": "In 2010, the Seahawks won their division with a losing record. 7-9.",
+   "key": [
+    "7-9."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "hqb": [
+     0,
+     0
+    ],
+    "ram": [
+     2.2,
+     0.2
+    ],
+    "hrb": false,
+    "saint": false,
+    "fan": false,
+    "sci": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hqb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "hqb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "ram": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "hqb"
+    }
+   }
+  },
+  {
+   "text": "No division winner had ever done that.",
+   "key": [
+    "EVER"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.6
+    ],
+    "hqb": [
+     -1.8,
+     -0.4
+    ],
+    "ram": [
+     1.8,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Last week of the season, Sunday night: Seattle against the Rams. Winner takes the division.",
+   "key": [
+    "WINNER"
+   ],
+   "board": [
+    "WEEK 17",
+    "WINNER = IN"
+   ],
+   "place": {
+    "capy": false,
+    "hqb": [
+     -1.3,
+     0
+    ],
+    "ram": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "hqb",
+    "offset": [
+     1.3,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "hqb": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "ram"
+    },
+    "ram": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "hqb"
+    }
+   }
+  },
+  {
+   "text": "Seattle went with its backup quarterback, Charlie Whitehurst.",
+   "key": [
+    "BACKUP"
+   ],
+   "place": {
+    "hqb": [
+     0,
+     0
+    ],
+    "ram": [
+     2.0,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "hqb"
+   },
+   "act": {
+    "hqb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Seahawks sixteen, Rams six. Division champions at seven and nine.",
+   "cap": "Seahawks 16, Rams 6. Division champions at 7-9.",
+   "key": [
+    "16,",
+    "7-9."
+   ],
+   "board": [
+    "SEAHAWKS 16",
+    "RAMS 6"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "hqb"
+   },
+   "act": {
+    "hqb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "ram": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "So a losing team hosted a playoff game.",
+   "key": [
+    "HOSTED"
+   ],
+   "set": "living",
+   "board": [
+    "PLAYOFFS",
+    "IN SEATTLE"
+   ],
+   "place": {
+    "fan": [
+     -1.2,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan",
+    "offset": [
+     1.0,
+     0.6,
+     1.5
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Their opponent: the Saints, the defending Super Bowl champions, at eleven and five.",
+   "cap": "Their opponent: the Saints, the defending Super Bowl champions, at 11-5.",
+   "key": [
+    "CHAMPIONS,"
+   ],
+   "set": "field",
+   "board": [
+    "SAINTS 11-5",
+    "SEAHAWKS 7-9"
+   ],
+   "place": {
+    "saint": [
+     0,
+     0
+    ],
+    "hqb": [
+     -2.0,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "saint"
+   },
+   "act": {
+    "saint": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "hqb": {
+     "mood": "worried",
+     "look": "saint"
+    }
+   }
+  },
+  {
+   "text": "On paper, this should have been easy for New Orleans.",
+   "key": [
+    "EASY"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.2
+    ],
+    "saint": [
+     1.2,
+     0
+    ],
+    "hqb": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "saint"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "saint"
+    },
+    "saint": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It wasn't easy.",
+   "key": [
+    "WASN'T"
+   ],
+   "place": {
+    "capy": false,
+    "saint": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "saint"
+   },
+   "act": {
+    "saint": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Late in the game, Marshawn Lynch broke loose for a sixty seven yard touchdown.",
+   "cap": "Late in the game, Marshawn Lynch broke loose for a 67-yard touchdown.",
+   "key": [
+    "67-YARD"
+   ],
+   "board": [
+    "LYNCH",
+    "67 YARDS"
+   ],
+   "place": {
+    "hrb": [
+     0,
+     0
+    ],
+    "saint": [
+     1.6,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "hrb"
+   },
+   "act": {
+    "hrb": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    },
+    "saint": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "hrb"
+    }
+   }
+  },
+  {
+   "text": "Seahawks forty one, Saints thirty six.",
+   "cap": "Seahawks 41, Saints 36.",
+   "key": [
+    "41,"
+   ],
+   "board": [
+    "SEAHAWKS 41",
+    "SAINTS 36"
+   ],
+   "place": {
+    "hqb": [
+     -1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "hrb"
+   },
+   "act": {
+    "hrb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "hqb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "saint": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "The crowd shook so hard that a seismometer near the stadium recorded it.",
+   "key": [
+    "SEISMOMETER"
+   ],
+   "set": "office",
+   "board": [
+    "SEISMOMETER",
+    "~ ~ ~"
+   ],
+   "place": {
+    "sci": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sci",
+    "offset": [
+     1.6,
+     0.5,
+     1.5
+    ]
+   },
+   "act": {
+    "sci": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Locals called it the Beast Quake.",
+   "key": [
+    "QUAKE."
+   ],
+   "board": [
+    "BEAST",
+    "QUAKE"
+   ],
+   "place": {
+    "sci": [
+     2.8,
+     -0.4
+    ],
+    "capy": [
+     0.6,
+     0.9
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "point",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "smug",
+     "look": "sci"
+    }
+   }
+  },
+  {
+   "text": "Should a seven and nine team get a home playoff game? Yes or no?",
+   "cap": "Should a 7-9 team get a home playoff game? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "7-9 AT HOME:",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0.4,
+     1.0
+    ],
+    "sci": [
+     2.8,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     1.2,
+     0.4,
+     1.2
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Vindicator (AP): Seahawks (7-9) take NFC West",
+   "url": "https://vindyarchives.com/news/2011/jan/03/seahawks-7-9-take-nfc-west"
+  },
+  {
+   "title": "Fox News (AP): Seattle Seahawks shut down St. Louis Rams to reach playoffs",
+   "url": "https://www.foxnews.com/sports/seattle-seahawks-shut-down-st-louis-rams-to-reach-playoffs"
+  },
+  {
+   "title": "Seahawks.com: Reliving the Beast Quake game, 10 years later",
+   "url": "https://www.seahawks.com/news/reliving-the-beast-quake-game-10-years-later"
+  },
+  {
+   "title": "ABC News: 'Beast Quake' aftershocks still felt",
+   "url": "https://abcnews.com/Sports/beast-quake-aftershocks-felt/story?id=21069913"
+  },
+  {
+   "title": "PNSN: Beast Quake (Taylor's Version)",
+   "url": "https://pnsn.org/blog/beast-quake-taylor-s-version-from-the-vault"
+  }
+ ]
+}

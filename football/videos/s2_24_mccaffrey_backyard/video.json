@@ -1,0 +1,468 @@
+{
+ "id": "s2_24_mccaffrey_backyard",
+ "title": "86 points in Arlington",
+ "set": "locker",
+ "setOpts": {
+  "boardText": [
+   "49ERS 46",
+   "COWBOYS 40"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "rb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#aa0000",
+    "pants": "#b3995d",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "number": "23"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#aa0000",
+    "pants": "#b3995d",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "number": "19"
+   },
+   "at": [
+    2.0,
+    -1.8
+   ]
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#aa0000",
+    "pants": "#b3995d",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "number": "13"
+   },
+   "at": [
+    -2.0,
+    -1.8
+   ],
+   "hold": "football"
+  },
+  "dal": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#003594",
+    "pants": "#c9ced3",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c",
+    "number": "4"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "dwr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#003594",
+    "pants": "#c9ced3",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "number": "1"
+   },
+   "at": [
+    3.2,
+    -1.8
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "The Forty Niners gained five hundred eighty four yards in Dallas. The most the Cowboys have ever allowed at home.",
+   "cap": "The 49ers gained 584 yards in Dallas. The most the Cowboys have ever allowed at home.",
+   "key": [
+    "584"
+   ],
+   "place": {
+    "wr": false,
+    "qb": false,
+    "dal": false,
+    "dwr": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "rb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Final score: forty six to forty.",
+   "cap": "Final score: 46 to 40.",
+   "key": [
+    "46"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "49ERS 46",
+     "COWBOYS 40"
+    ]
+   },
+   "place": {
+    "rb": "left",
+    "dal": "right",
+    "qb": [
+     -0.4,
+     -2.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "dal": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Christian McCaffrey catches a pass and goes seventy four yards for a touchdown.",
+   "cap": "Christian McCaffrey catches a pass and goes 74 yards for a touchdown.",
+   "key": [
+    "74"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Later, another catch. Sixty six yards. Another touchdown.",
+   "cap": "Later, another catch. 66 yards. Another touchdown.",
+   "key": [
+    "66"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "No running back had ever caught two touchdowns of sixty five yards or more in one game.",
+   "cap": "No running back had ever caught 2 touchdowns of 65 yards or more in one game.",
+   "key": [
+    "EVER"
+   ],
+   "place": {
+    "capy": [
+     -0.4,
+     1.4
+    ],
+    "dal": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "rb"
+    },
+    "rb": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "His day: two hundred twenty three yards from scrimmage, and three touchdowns.",
+   "cap": "His day: 223 yards from scrimmage, and 3 touchdowns.",
+   "key": [
+    "223"
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The last Forty Niner to do that? Jerry Rice, in nineteen ninety five.",
+   "cap": "The last 49er to do that? Jerry Rice, in 1995.",
+   "key": [
+    "1995."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "LAST TIME:",
+     "1995"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then Deebo Samuel takes a reverse seventy yards to the end zone.",
+   "cap": "Then Deebo Samuel takes a reverse 70 yards to the end zone.",
+   "key": [
+    "70"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "49ERS",
+     "COWBOYS"
+    ]
+   },
+   "place": {
+    "wr": "center",
+    "dal": [
+     2.4,
+     -1.6
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "dal": {
+     "mood": "shocked",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "Brock Purdy goes twenty two of twenty eight, for three hundred eighty nine yards.",
+   "cap": "Brock Purdy goes 22 of 28, for 389 yards.",
+   "key": [
+    "389"
+   ],
+   "place": {
+    "qb": [
+     -0.6,
+     0.4
+    ],
+    "wr": [
+     2.4,
+     -2.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Dallas kept firing back. Dak Prescott threw five touchdown passes.",
+   "cap": "Dallas kept firing back. Dak Prescott threw 5 touchdown passes.",
+   "key": [
+    "5"
+   ],
+   "place": {
+    "qb": false,
+    "wr": false,
+    "dal": "left",
+    "dwr": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "dal",
+    "with": "dwr"
+   },
+   "act": {
+    "dal": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "dwr"
+    },
+    "dwr": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "George Pickens caught three of them.",
+   "cap": "George Pickens caught 3 of them.",
+   "key": [
+    "3"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "dwr"
+   },
+   "act": {
+    "dwr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It still wasn't enough.",
+   "key": [
+    "ENOUGH."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "dal"
+   },
+   "act": {
+    "dal": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "dwr": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Shootout or defensive battle? Which one do you want to watch? Shootout or defense?",
+   "key": [
+    "SHOOTOUT"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "49ERS 46",
+     "COWBOYS 40"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "rb": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "rb": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "49ers.com: Offense racks up 584 yards, McCaffrey breaks receiving records; stats and facts from SF vs. DAL",
+   "url": "https://www.49ers.com/news/offense-racks-up-584-yards-mccaffrey-breaks-receiving-records-stats-and-facts-from-sfvsdal"
+  },
+  {
+   "title": "AP (Action News Jax): McCaffrey's TDs of 74 and 66 yards and Samuel's 70-yard score help 49ers beat Cowboys 46-40",
+   "url": "https://www.actionnewsjax.com/sports/mccaffreys-tds-74-66/RTLPTF6SVQ2HHC3TS76VRVURYI/"
+  },
+  {
+   "title": "NBC Sports Bay Area: Christian McCaffrey makes history vs. Cowboys",
+   "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/christian-mccaffrey-history-dallas-cowboys/1980741/"
+  },
+  {
+   "title": "Field Level Media: 49ers win in shootout as Cowboys set dubious defensive mark",
+   "url": "https://fieldlevelmedia.com/nfl/49ers-win-in-shootout-as-cowboys-set-dubious-defensive-mark/"
+  }
+ ]
+}

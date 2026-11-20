@@ -1,0 +1,535 @@
+{
+ "id": "s1_22_clock_kill_safety",
+ "title": "Hold everyone, win the game",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "RAVENS 19",
+   "BENGALS 12"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "punter": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#241773",
+    "pants": "#f4f4f4",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "number": "4"
+   },
+   "at": [
+    0,
+    1.2
+   ],
+   "hold": "football"
+  },
+  "b1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#241773",
+    "pants": "#f4f4f4",
+    "skin": "#7b4e33",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "75"
+   },
+   "at": [
+    -1.6,
+    -0.6
+   ]
+  },
+  "b2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#241773",
+    "pants": "#f4f4f4",
+    "skin": "#e8b48f",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "number": "68"
+   },
+   "at": [
+    1.6,
+    -0.6
+   ]
+  },
+  "r1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#fb4f14",
+    "pants": "#1b1b1b",
+    "skin": "#a8714c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "94"
+   },
+   "at": [
+    -3.0,
+    -1.8
+   ]
+  },
+  "r2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#fb4f14",
+    "pants": "#1b1b1b",
+    "skin": "#5a3825",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "number": "97"
+   },
+   "at": [
+    3.0,
+    -1.8
+   ]
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "shirt": "#ffffff",
+    "pants": "#1b1b1b",
+    "skin": "#c98d63",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "cap": "#ffffff"
+   },
+   "at": [
+    3.4,
+    0.4
+   ],
+   "hold": "flag"
+  },
+  "exec": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b2e",
+    "pants": "#2b2b2e",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#888888",
+    "glasses": true
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2016, the Ravens won a game by having ten players hold at the same time.",
+   "key": [
+    "HOLD"
+   ],
+   "cap": "In 2016, the Ravens won a game by having 10 players hold at the same time.",
+   "place": {
+    "exec": false,
+    "capy": [
+     -2.6,
+     1.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "punter"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "punter": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Ravens lead the Bengals, nineteen to twelve. Eleven seconds left. They have to punt.",
+   "key": [
+    "11",
+    "SECONDS"
+   ],
+   "cap": "Ravens lead the Bengals, 19 to 12. 11 seconds left. They have to punt.",
+   "board": [
+    "RAVENS 19",
+    "BENGALS 12"
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "punter"
+   },
+   "act": {
+    "punter": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "b1": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "b2": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "r1": {
+     "mood": "angry",
+     "action": "idle"
+    },
+    "r2": {
+     "mood": "angry",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "So punter Sam Koch takes the snap, and doesn't punt.",
+   "key": [
+    "DOESN'T"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "punter"
+   },
+   "act": {
+    "punter": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He runs backward. His teammates grab the rushers.",
+   "key": [
+    "GRAB"
+   ],
+   "place": {
+    "b1": [
+     -1.8,
+     -0.8
+    ],
+    "r1": [
+     -2.9,
+     -1.4
+    ],
+    "b2": [
+     1.8,
+     -0.8
+    ],
+    "r2": [
+     2.9,
+     -1.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "b1",
+    "with": "r1"
+   },
+   "act": {
+    "b1": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "r1"
+    },
+    "r1": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "b1"
+    },
+    "b2": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "r2"
+    },
+    "r2": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "b2"
+    }
+   }
+  },
+  {
+   "text": "Flags fly. The clock keeps running.",
+   "key": [
+    "CLOCK"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "b1"
+    }
+   }
+  },
+  {
+   "text": "At zero, Koch steps out of the end zone. Safety. Two points for Cincinnati.",
+   "key": [
+    "SAFETY."
+   ],
+   "cap": "At 0:00, Koch steps out of the end zone. Safety. 2 points for Cincinnati.",
+   "board": [
+    "RAVENS 19",
+    "BENGALS 14"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "punter"
+   },
+   "act": {
+    "punter": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here's the loophole. A game can't end on a defensive penalty. It can end on an offensive one.",
+   "key": [
+    "OFFENSIVE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "GAME ENDS ON",
+     "OFFENSE FOUL"
+    ]
+   },
+   "board": [
+    "GAME ENDS ON",
+    "OFFENSE FOUL"
+   ],
+   "place": {
+    "capy": "left",
+    "exec": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "So the holding flags didn't matter. Ravens win, nineteen to fourteen.",
+   "key": [
+    "19"
+   ],
+   "cap": "So the holding flags didn't matter. Ravens win, 19 to 14.",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "They had done a version of this before. In the Super Bowl.",
+   "key": [
+    "SUPER",
+    "BOWL."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "SUPER BOWL",
+     "XLVII"
+    ]
+   },
+   "board": [
+    "SUPER BOWL",
+    "XLVII"
+   ],
+   "place": {
+    "punter": [
+     0,
+     1.0
+    ],
+    "capy": [
+     -2.6,
+     1.6
+    ],
+    "ref": [
+     2.6,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "punter"
+   },
+   "act": {
+    "punter": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "punter"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "February 2013. Twelve seconds at the snap. Koch ran until four were left. No holding called.",
+   "key": [
+    "4"
+   ],
+   "cap": "February 2013. 12 seconds at the snap. Koch ran until 4 were left. No holding called.",
+   "shot": {
+    "type": "two",
+    "on": "punter",
+    "with": "ref"
+   },
+   "act": {
+    "punter": {
+     "mood": "smug",
+     "action": "hold"
+    },
+    "ref": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "punter"
+    }
+   }
+  },
+  {
+   "text": "In 2017, the NFL closed the loophole.",
+   "key": [
+    "CLOSED"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "RULE 12-3-3"
+    ]
+   },
+   "board": [
+    "RULE 12-3-3"
+   ],
+   "place": {
+    "exec": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "exec"
+  },
+  {
+   "text": "Several fouls on one play to run out the clock now cost fifteen yards, and the clock goes back.",
+   "key": [
+    "15",
+    "YARDS,"
+   ],
+   "cap": "Several fouls on one play to run out the clock now cost 15 yards, and the clock goes back.",
+   "board": [
+    "15 YARDS",
+    "+ CLOCK RESET"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "exec"
+  },
+  {
+   "text": "Was it smart, or was it cheating? One word.",
+   "key": [
+    "SMART,",
+    "CHEATING?"
+   ],
+   "place": {
+    "capy": "left"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "exec"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "exec": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "CBS Sports: Ravens exploit rules loophole, get multiple penalties, give up safety on final play, win",
+   "url": "https://www.cbssports.com/nfl/news/ravens-exploit-rules-loophole-get-multiple-penalties-give-up-safety-on-final-play-win"
+  },
+  {
+   "title": "BaltimoreRavens.com: Intentional safety was even better than Super Bowl trick in execution",
+   "url": "https://baltimoreravens.com/news/intentional-safety-was-even-better-than-super-bowl-trick-in-execution-18160834"
+  },
+  {
+   "title": "Football Zebras: Rule change plugs hole to drain clock",
+   "url": "https://www.footballzebras.com/2017/09/rule-change-plugs-hole-drain-clock/"
+  },
+  {
+   "title": "Rams.com: NFL approved 2017 playing rules proposals",
+   "url": "https://www.therams.com/news/nfl-approved-2017-playing-rules-proposals-18691035"
+  },
+  {
+   "title": "NBC Sports/PFT: Holding on intentional safety exposes loophole in rules",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/holding-on-intentional-safety-exposes-loophole-in-rules"
+  }
+ ]
+}

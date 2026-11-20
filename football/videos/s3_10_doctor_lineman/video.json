@@ -1,0 +1,466 @@
+{
+ "id": "s3_10_doctor_lineman",
+ "title": "The Super Bowl champ who went to work",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "CHIEFS 31",
+   "49ERS 20"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": [
+    -1.2,
+    0.6
+   ],
+   "face": 15
+  },
+  "ldt": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#c8102e",
+    "pants": "#f4f4f4",
+    "number": "76",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": [
+    1.2,
+    0.4
+   ],
+   "face": -15
+  },
+  "orderly": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#8fc1e3",
+    "pants": "#8fc1e3",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "resident": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#c9a0dc",
+    "pants": "#6b6b6b",
+    "hair": "bun",
+    "hairColor": "#e6e6e6",
+    "skin": "#f0c8a0",
+    "glasses": true
+   },
+   "at": "right"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, a Super Bowl champion skipped the season to work in a care home.",
+   "key": [
+    "CARE",
+    "HOME."
+   ],
+   "place": {
+    "orderly": false,
+    "resident": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ldt"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ldt": {
+     "mood": "happy",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Laurent Duvernay-Tardif. A starting guard for Kansas City.",
+   "key": [
+    "GUARD"
+   ],
+   "place": {
+    "capy": false,
+    "ldt": "center"
+   },
+   "shot": {
+    "type": "low",
+    "on": "ldt"
+   },
+   "act": {
+    "ldt": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In February, he started the Super Bowl. Chiefs thirty one, Niners twenty.",
+   "cap": "In February, he started the Super Bowl. Chiefs 31, Niners 20.",
+   "key": [
+    "31,"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "ldt",
+    "offset": [
+     1,
+     2,
+     3
+    ]
+   },
+   "act": {
+    "ldt": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "He was also a doctor. He had finished medical school at McGill.",
+   "key": [
+    "DOCTOR."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "McGILL",
+     "M.D."
+    ]
+   },
+   "place": {
+    "orderly": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "orderly"
+   },
+   "act": {
+    "orderly": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "McGILL",
+    "M.D."
+   ]
+  },
+  {
+   "text": "Then the pandemic hit.",
+   "key": [
+    "PANDEMIC"
+   ],
+   "board": [
+    "2020"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "orderly"
+   },
+   "act": {
+    "orderly": {
+     "mood": "worried",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In July, he became the first NFL player to opt out of the season.",
+   "key": [
+    "FIRST"
+   ],
+   "board": [
+    "2020 SEASON:",
+    "OPT OUT"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "orderly",
+    "with": "capy"
+   },
+   "act": {
+    "orderly": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "shocked",
+     "look": "orderly"
+    }
+   }
+  },
+  {
+   "text": "Instead, he went to work at a long-term care home in Quebec.",
+   "key": [
+    "QUEBEC."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "CARE HOME",
+     "QUEBEC"
+    ],
+    "couch": "#9bb7a0"
+   },
+   "place": {
+    "orderly": [
+     -1.1,
+     4.2
+    ],
+    "resident": [
+     1.1,
+     4.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "orderly",
+    "with": "resident"
+   },
+   "act": {
+    "orderly": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "resident"
+    },
+    "resident": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "orderly"
+    }
+   },
+   "board": [
+    "CARE HOME",
+    "QUEBEC"
+   ]
+  },
+  {
+   "text": "Not as a doctor. As an orderly.",
+   "key": [
+    "ORDERLY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "orderly"
+   },
+   "act": {
+    "orderly": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "While his teammates played, he stayed at the care home.",
+   "key": [
+    "STAYED"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "resident"
+   },
+   "act": {
+    "orderly": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "resident"
+    },
+    "resident": {
+     "mood": "happy",
+     "look": "orderly"
+    }
+   },
+   "speaker": "orderly"
+  },
+  {
+   "text": "In December, Sports Illustrated named him one of five Sportspersons of the Year.",
+   "cap": "In December, Sports Illustrated named him one of 5 Sportspersons of the Year.",
+   "key": [
+    "5"
+   ],
+   "set": "press",
+   "setOpts": {
+    "backdrop": "#c8102e",
+    "boardText": [
+     "SPORTSPERSON",
+     "OF THE YEAR"
+    ]
+   },
+   "place": {
+    "orderly": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "orderly"
+   },
+   "act": {
+    "orderly": {
+     "mood": "happy",
+     "action": "wave"
+    }
+   },
+   "board": [
+    "SPORTSPERSON",
+    "OF THE YEAR"
+   ]
+  },
+  {
+   "text": "Alongside Patrick Mahomes, LeBron James, Naomi Osaka and Breanna Stewart.",
+   "key": [
+    "MAHOMES,"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "orderly"
+   },
+   "act": {
+    "orderly": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Kansas City made it back to the Super Bowl that season. Without him.",
+   "key": [
+    "WITHOUT"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "SUPER BOWL",
+     "LV"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.2,
+     0.6
+    ],
+    "ldt": [
+     1.2,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ldt"
+   },
+   "act": {
+    "ldt": {
+     "mood": "neutral",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "ldt"
+    }
+   },
+   "board": [
+    "SUPER BOWL",
+    "LV"
+   ]
+  },
+  {
+   "text": "Most champions take a victory lap. He took a job.",
+   "key": [
+    "JOB."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ldt": {
+     "mood": "happy",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you give up a season to help where you were needed? Yes or no?",
+   "key": [
+    "SEASON"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ldt"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "ldt": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com: Chiefs OL Laurent Duvernay-Tardif co-winner of Canada's Lou Marsh Award",
+   "url": "https://www.nfl.com/news/chiefs-ol-laurent-duvernay-tardif-co-winner-canada-lou-marsh-award"
+  },
+  {
+   "title": "ESPN: Super Bowl champion, pandemic orderly: Laurent Duvernay-Tardif is bigger than his sport",
+   "url": "https://africa.espn.com/espys/story/_/page/MuhammadAliSportsHumanitarianAward-2021/super-bowl-champion-pandemic-orderly-laurent-duvernay-tardif-bigger-your-sport"
+  },
+  {
+   "title": "CBC: Canadian NFLer Duvernay-Tardif among 5 activist athletes to win SI award",
+   "url": "https://amp.cbc.ca/lite/story/1.5830571"
+  },
+  {
+   "title": "CBS Sports: Chiefs trade former Super Bowl starter Laurent Duvernay-Tardif to Jets",
+   "url": "https://www.cbssports.com/nfl/news/chiefs-trade-former-super-bowl-starter-laurent-duvernay-tardif-to-jets-for-tight-end-daniel-brown"
+  },
+  {
+   "title": "ESPN: Former Chiefs OL Laurent Duvernay-Tardif retires from NFL",
+   "url": "https://africa.espn.com/nfl/story/_/id/38453223/former-chiefs-ol-laurent-duvernay-tardif-retires-nfl"
+  },
+  {
+   "title": "theScore: Bucs become 1st team to win Super Bowl at home (Chiefs in Super Bowl LV)",
+   "url": "https://thescore.com/nfl/news/2107013"
+  },
+  {
+   "title": "NFL.com: Tom Brady extends record with fifth Super Bowl MVP in win over Chiefs",
+   "url": "https://www.nfl.com/_amp/buccaneers-qb-tom-brady-extends-record-with-fifth-super-bowl-mvp-in-win-over-chi"
+  }
+ ]
+}

@@ -1,0 +1,496 @@
+{
+ "id": "s3_12_home_super_bowl",
+ "title": "The Super Bowl at home",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "SUPER BOWL",
+   "LV"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": [
+    -1.2,
+    0.6
+   ],
+   "face": 15
+  },
+  "bucs": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a71930",
+    "pants": "#c9c4b4",
+    "number": "10",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": [
+    1.2,
+    0.4
+   ],
+   "face": -15,
+   "hold": "football"
+  },
+  "nurse": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#5fb3a9",
+    "pants": "#5fb3a9",
+    "hair": "bun",
+    "hairColor": "#2a1a10",
+    "skin": "#8d5a3b"
+   },
+   "at": "left"
+  },
+  "doctor": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#5fb3a9",
+    "pants": "#5fb3a9",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f4cfa8",
+    "glasses": true
+   },
+   "at": "right"
+  },
+  "chief": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#e31837",
+    "pants": "#f4f4f4",
+    "number": "5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68a5e"
+   },
+   "at": "right"
+  },
+  "tight": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a71930",
+    "pants": "#c9c4b4",
+    "number": "80",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "at": "left"
+  }
+ },
+ "lines": [
+  {
+   "text": "At the end of the 2020 season, the Super Bowl had more cardboard fans than real ones.",
+   "key": [
+    "CARDBOARD"
+   ],
+   "place": {
+    "nurse": false,
+    "doctor": false,
+    "chief": false,
+    "tight": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bucs"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "bucs": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Super Bowl fifty five, in Tampa. The stadium holds about sixty six thousand.",
+   "cap": "Super Bowl LV, in Tampa. The stadium holds about 66,000.",
+   "key": [
+    "66,000."
+   ],
+   "board": [
+    "CAPACITY",
+    "65,890"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     0,
+     2,
+     4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "bucs": {
+     "mood": "neutral"
+    }
+   }
+  },
+  {
+   "text": "Only twenty five thousand fans were let in.",
+   "cap": "Only 25,000 fans were let in.",
+   "key": [
+    "25,000"
+   ],
+   "board": [
+    "FANS",
+    "25,000"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Seven thousand five hundred of them were vaccinated health care workers, invited by the league.",
+   "cap": "7,500 of them were vaccinated health care workers, invited by the league.",
+   "key": [
+    "7,500"
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "WELCOME"
+    ]
+   },
+   "place": {
+    "nurse": [
+     -1.0,
+     0
+    ],
+    "doctor": [
+     1.0,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "nurse",
+    "with": "doctor"
+   },
+   "act": {
+    "nurse": {
+     "mood": "happy",
+     "action": "wave"
+    },
+    "doctor": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "board": [
+    "WELCOME"
+   ]
+  },
+  {
+   "text": "The other seats? About thirty thousand cardboard cutouts.",
+   "cap": "The other seats? About 30,000 cardboard cutouts.",
+   "key": [
+    "30,000"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CUTOUTS",
+     "~30,000"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "CUTOUTS",
+    "~30,000"
+   ]
+  },
+  {
+   "text": "And for the first time, a team played the Super Bowl in its own stadium. Tampa Bay.",
+   "key": [
+    "FIRST"
+   ],
+   "board": [
+    "HOME TEAM",
+    "TAMPA BAY"
+   ],
+   "place": {
+    "capy": false,
+    "bucs": "center"
+   },
+   "shot": {
+    "type": "low",
+    "on": "bucs"
+   },
+   "act": {
+    "bucs": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Their opponent: Kansas City, the defending champs.",
+   "key": [
+    "CHAMPS."
+   ],
+   "place": {
+    "bucs": [
+     -1.4,
+     0.2
+    ],
+    "chief": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "chief",
+    "with": "bucs"
+   },
+   "act": {
+    "chief": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "bucs"
+    },
+    "bucs": {
+     "mood": "neutral",
+     "look": "chief"
+    }
+   }
+  },
+  {
+   "text": "Tom Brady threw three touchdowns. Two to Rob Gronkowski.",
+   "cap": "Tom Brady threw 3 touchdowns. 2 to Rob Gronkowski.",
+   "key": [
+    "3"
+   ],
+   "place": {
+    "chief": false,
+    "tight": [
+     1.6,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "bucs"
+   },
+   "act": {
+    "bucs": {
+     "mood": "happy",
+     "action": "throw"
+    },
+    "tight": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Kansas City never reached the end zone. Three field goals.",
+   "cap": "Kansas City never reached the end zone. 3 field goals.",
+   "key": [
+    "NEVER"
+   ],
+   "place": {
+    "bucs": false,
+    "tight": false,
+    "chief": "center"
+   },
+   "shot": {
+    "type": "close",
+    "on": "chief"
+   },
+   "act": {
+    "chief": {
+     "mood": "sad",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Final: thirty one to nine, Tampa Bay.",
+   "cap": "Final: 31 to 9, Tampa Bay.",
+   "key": [
+    "31"
+   ],
+   "board": [
+    "BUCCANEERS 31",
+    "CHIEFS 9"
+   ],
+   "place": {
+    "chief": false,
+    "bucs": "center",
+    "tight": [
+     2.0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "bucs",
+    "offset": [
+     1,
+     1,
+     2
+    ]
+   },
+   "act": {
+    "bucs": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "tight": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "Brady's seventh Super Bowl title, and his fifth Super Bowl MVP.",
+   "cap": "Brady's 7th Super Bowl title, and his 5th Super Bowl MVP.",
+   "key": [
+    "7TH"
+   ],
+   "board": [
+    "TITLES: 7",
+    "MVPs: 5"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "bucs"
+   },
+   "act": {
+    "bucs": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The first champion ever crowned at home. Mostly in front of cardboard.",
+   "key": [
+    "HOME."
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     0.6
+    ],
+    "bucs": [
+     1.2,
+     0.4
+    ],
+    "tight": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "bucs": {
+     "mood": "happy",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you rather watch the Super Bowl from your couch, or as a cutout in the stands? Couch or cutout?",
+   "key": [
+    "CUTOUT?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bucs"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "bucs": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "CBS Sports: Here's how many fans will be inside Raymond James Stadium for Super Bowl LV",
+   "url": "https://www.cbssports.com/nfl/news/super-bowl-2021-heres-how-many-fans-will-be-inside-raymond-james-stadium-for-super-bowl-lv"
+  },
+  {
+   "title": "theScore: Bucs become 1st team to win Super Bowl at home",
+   "url": "https://thescore.com/nfl/news/2107013"
+  },
+  {
+   "title": "UPI: Super Bowl LV: Pandemic brings changes to big game",
+   "url": "https://www.upi.com/Entertainment_News/2021/02/07/Super-Bowl-LV-Pandemic-brings-changes-to-big-game/8461612533110/"
+  },
+  {
+   "title": "NFL.com: Tom Brady extends record with fifth Super Bowl MVP",
+   "url": "https://www.nfl.com/_amp/buccaneers-qb-tom-brady-extends-record-with-fifth-super-bowl-mvp-in-win-over-chi"
+  },
+  {
+   "title": "Buccaneers.com: Super Bowl 55 recap, Tampa Bay wins 31-9",
+   "url": "https://www.buccaneers.com/news/bucs-kansas-city-chiefs-game-recap-super-bowl-55-tampa-bay-wins-31-9"
+  },
+  {
+   "title": "Chiefs.com: Chiefs fall to Buccaneers 31-9 in Super Bowl LV",
+   "url": "https://www.chiefs.com/news/chiefs-fall-to-buccaneers-31-9-in-super-bowl-lv"
+  },
+  {
+   "title": "CBS Sports: Tom Brady wins seventh ring as Buccaneers dominate Chiefs",
+   "url": "https://www.cbssports.com/nfl/news/2021-super-bowl-score-tom-brady-wins-seventh-ring-as-buccaneers-dominate-chiefs-and-patrick-mahomes/live/"
+  }
+ ]
+}

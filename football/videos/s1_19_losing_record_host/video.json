@@ -1,0 +1,487 @@
+{
+ "id": "s1_19_losing_record_host",
+ "title": "The 7-9 team that hosted the champs",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "PLAYOFFS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "sea": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#002244",
+    "pants": "#a5acaf",
+    "skin": "#7b4e33",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "number": "24"
+   },
+   "at": [
+    0.6,
+    0
+   ],
+   "hold": "football"
+  },
+  "saint": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#d3bc8d",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "number": "9"
+   },
+   "at": [
+    2.4,
+    -0.6
+   ]
+  },
+  "panther": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0085ca",
+    "pants": "#c0c0c0",
+    "skin": "#a8714c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "1"
+   },
+   "at": "right"
+  },
+  "exec": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#0076b6",
+    "pants": "#2b2b2e",
+    "skin": "#e8b48f",
+    "hair": "short",
+    "hairColor": "#888888",
+    "glasses": true
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "In the NFL playoffs, a team with a losing record can host a team that won eleven games.",
+   "key": [
+    "LOSING"
+   ],
+   "cap": "In the NFL playoffs, a team with a losing record can host a team that won 11 games.",
+   "place": {
+    "saint": false,
+    "panther": false,
+    "exec": false,
+    "capy": [
+     -1.6,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sea"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sea": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The rule: win your division, and you get a home playoff game. Your record doesn't matter.",
+   "key": [
+    "DIVISION,"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "2010. The Seattle Seahawks win their division at seven and nine.",
+   "key": [
+    "7-9."
+   ],
+   "cap": "2010. The Seattle Seahawks win their division at 7-9.",
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SEAHAWKS",
+     "7-9"
+    ]
+   },
+   "board": [
+    "SEAHAWKS",
+    "7-9"
+   ],
+   "place": {
+    "sea": "left",
+    "saint": "right"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sea"
+   },
+   "act": {
+    "sea": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "saint": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "sea"
+    }
+   }
+  },
+  {
+   "text": "Their first playoff opponent: the defending champion Saints. Eleven and five.",
+   "key": [
+    "11-5."
+   ],
+   "cap": "Their first playoff opponent: the defending champion Saints. 11-5.",
+   "board": [
+    "SAINTS 11-5",
+    "AT SEAHAWKS 7-9"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "saint"
+   },
+   "act": {
+    "saint": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Eleven wins, and New Orleans still has to fly to Seattle.",
+   "key": [
+    "SEATTLE."
+   ],
+   "cap": "11 wins, and New Orleans still has to fly to Seattle.",
+   "shot": {
+    "type": "two",
+    "on": "saint",
+    "with": "sea"
+   },
+   "act": {
+    "saint": {
+     "mood": "angry",
+     "action": "facepalm"
+    },
+    "sea": {
+     "mood": "smug",
+     "action": "point",
+     "look": "saint"
+    }
+   }
+  },
+  {
+   "text": "Seattle wins, forty one to thirty six.",
+   "key": [
+    "41"
+   ],
+   "cap": "Seattle wins, 41 to 36.",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "SEAHAWKS 41",
+     "SAINTS 36"
+    ]
+   },
+   "board": [
+    "SEAHAWKS 41",
+    "SAINTS 36"
+   ],
+   "place": {
+    "sea": [
+     0,
+     0.4
+    ],
+    "saint": [
+     2.6,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "sea"
+   },
+   "act": {
+    "sea": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "saint": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Marshawn Lynch seals it with a sixty seven yard touchdown run.",
+   "key": [
+    "67-YARD"
+   ],
+   "cap": "Marshawn Lynch seals it with a 67-yard touchdown run.",
+   "shot": {
+    "type": "low",
+    "on": "sea"
+   },
+   "act": {
+    "sea": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The first playoff team with a losing record outside a strike year.",
+   "key": [
+    "LOSING"
+   ],
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sea"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "sea"
+    },
+    "sea": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "In 2014, Carolina did it again at seven, eight and one, hosting the eleven and five Cardinals.",
+   "key": [
+    "7-8-1,"
+   ],
+   "cap": "In 2014, Carolina did it again at 7-8-1, hosting the 11-5 Cardinals.",
+   "board": [
+    "CARDINALS 11-5",
+    "AT PANTHERS 7-8-1"
+   ],
+   "place": {
+    "panther": [
+     2.0,
+     0.6
+    ],
+    "sea": false,
+    "saint": false,
+    "capy": [
+     -0.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "panther"
+   },
+   "act": {
+    "panther": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "panther"
+    }
+   }
+  },
+  {
+   "text": "And last season, the eight and nine Panthers hosted the twelve and five Rams.",
+   "key": [
+    "8-9"
+   ],
+   "cap": "And last season, the 8-9 Panthers hosted the 12-5 Rams.",
+   "board": [
+    "RAMS 12-5",
+    "AT PANTHERS 8-9"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "panther"
+   },
+   "act": {
+    "panther": {
+     "mood": "smug",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "In 2025, Detroit proposed seeding playoff teams by record instead.",
+   "key": [
+    "RECORD"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "SEED BY",
+     "RECORD?"
+    ]
+   },
+   "board": [
+    "SEED BY",
+    "RECORD?"
+   ],
+   "place": {
+    "exec": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "exec"
+  },
+  {
+   "text": "It never even got a vote. The Lions pulled it.",
+   "key": [
+    "PULLED"
+   ],
+   "board": [
+    "PROPOSAL:",
+    "WITHDRAWN"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "So the rule stands. Win your division, get a home game.",
+   "key": [
+    "HOME"
+   ],
+   "place": {
+    "capy": "left"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "exec"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "exec": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Should a better record beat a division title? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Seahawks.com: Reliving The Beast Quake Game 10 Years Later",
+   "url": "https://seahawks.com/news/reliving-the-beast-quake-game-10-years-later"
+  },
+  {
+   "title": "Pro Football Hall of Fame: A Wild Weekend",
+   "url": "https://profootballhof.com/blogs/2011/01/blogs-choudhrys-chronicles-a-wild-weekend"
+  },
+  {
+   "title": "Panthers.com: Panthers aren't the first sub-.500 team in the playoffs, and history isn't against them",
+   "url": "https://www.panthers.com/news/panthers-aren-t-the-first-sub-500-team-in-the-playoffs-and-history-isn-t-against-them"
+  },
+  {
+   "title": "Pro Football Hall of Fame: Panthers Attempt to Make Postseason History",
+   "url": "https://profootballhof.com/news/2015/01/news-panthers-attempt-to-make-postseason-history"
+  },
+  {
+   "title": "SI: Panthers bring statistical oddity into playoff clash with Rams",
+   "url": "https://www.si.com/nfl/panthers/onsi/panthers-bring-statistical-oddity-into-playoff-clash-with-rams-01ke657b1faa"
+  },
+  {
+   "title": "Vikings.com: 8 Takeaways from NFL Owners Meeting: Push Play Survives; No Changes for Playoff Seeding",
+   "url": "https://www.vikings.com/news/nfl-owners-meeting-tush-push-playoff-seeding"
+  },
+  {
+   "title": "SI: Packers' Proposal to Ban Eagles' Tush Push Fails Again (Lions seeding proposal off the table)",
+   "url": "https://www.si.com/nfl/packers/packers-proposal-to-ban-eagles-tush-push-fails-again"
+  }
+ ]
+}

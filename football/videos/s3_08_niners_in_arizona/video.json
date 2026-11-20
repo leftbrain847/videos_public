@@ -1,0 +1,530 @@
+{
+ "id": "s3_08_niners_in_arizona",
+ "title": "The away team at home",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "HOME?",
+   "AWAY?"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": [
+    -1.2,
+    0.6
+   ],
+   "face": 15
+  },
+  "niner": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#b3121a",
+    "pants": "#c9a95b",
+    "number": "85",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": [
+    1.2,
+    0.4
+   ],
+   "face": -15,
+   "hold": "football"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#b3121a",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "cap": "#1b1b1b",
+    "headset": true
+   },
+   "at": "right",
+   "hold": "clipboard"
+  },
+  "official": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2f3e5c",
+    "pants": "#2f3e5c",
+    "hair": "bun",
+    "hairColor": "#2a1a10",
+    "skin": "#c68a5e",
+    "glasses": true
+   },
+   "at": "center"
+  },
+  "cardinal": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#7a1f3d",
+    "pants": "#f4f4f4",
+    "number": "3",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b"
+   },
+   "at": "left"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, the 49ers' only win in their new home stadium came as the away team.",
+   "key": [
+    "AWAY"
+   ],
+   "place": {
+    "coach": false,
+    "official": false,
+    "cardinal": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "niner"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "niner": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Late November, their home county banned contact sports.",
+   "key": [
+    "BANNED"
+   ],
+   "set": "press",
+   "setOpts": {
+    "backdrop": "#2f3e5c",
+    "boardText": [
+     "CONTACT SPORTS:",
+     "BANNED"
+    ]
+   },
+   "place": {
+    "official": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "neutral",
+     "action": "talk"
+    }
+   },
+   "speaker": "official",
+   "board": [
+    "CONTACT SPORTS:",
+    "BANNED"
+   ]
+  },
+  {
+   "text": "So the 49ers couldn't play at home.",
+   "key": [
+    "HOME."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They moved to Arizona. Into the Cardinals' stadium.",
+   "key": [
+    "ARIZONA."
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "GLENDALE, AZ"
+    ]
+   },
+   "place": {
+    "niner": [
+     -0.8,
+     0
+    ],
+    "coach": [
+     1.0,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "niner"
+   },
+   "act": {
+    "niner": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "coach": {
+     "mood": "neutral",
+     "look": "niner"
+    }
+   },
+   "board": [
+    "GLENDALE, AZ"
+   ]
+  },
+  {
+   "text": "They lived in a hotel about half a mile away.",
+   "key": [
+    "HOTEL"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "HOTEL",
+     "ROOM 1"
+    ],
+    "couch": "#8a8f99"
+   },
+   "place": {
+    "niner": [
+     0,
+     4.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "niner"
+   },
+   "act": {
+    "niner": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "board": [
+    "HOTEL",
+    "ROOM 1"
+   ]
+  },
+  {
+   "text": "Home game one: Buffalo, on Monday night. Lost, thirty four to twenty four.",
+   "cap": "Home game one: Buffalo, on Monday night. Lost, 34 to 24.",
+   "key": [
+    "34"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "49ERS 24",
+     "BILLS 34"
+    ]
+   },
+   "place": {
+    "niner": "center",
+    "coach": "sideline"
+   },
+   "shot": {
+    "type": "low",
+    "on": "niner"
+   },
+   "act": {
+    "niner": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "board": [
+    "49ERS 24",
+    "BILLS 34"
+   ]
+  },
+  {
+   "text": "Home game two: Washington. Lost, twenty three to fifteen.",
+   "cap": "Home game two: Washington. Lost, 23 to 15.",
+   "key": [
+    "23"
+   ],
+   "board": [
+    "49ERS 15",
+    "WASHINGTON 23"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "niner"
+   },
+   "act": {
+    "niner": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Then they played the Cardinals. Same stadium. But this time, as the visitors.",
+   "key": [
+    "VISITORS."
+   ],
+   "board": [
+    "HOME: CARDINALS",
+    "AWAY: 49ERS"
+   ],
+   "place": {
+    "cardinal": [
+     -1.4,
+     0.2
+    ],
+    "niner": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "cardinal",
+    "with": "niner"
+   },
+   "act": {
+    "cardinal": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "niner"
+    },
+    "niner": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "cardinal"
+    }
+   }
+  },
+  {
+   "text": "That one, they won. Twenty to twelve.",
+   "cap": "That one, they won. 20 to 12.",
+   "key": [
+    "WON."
+   ],
+   "board": [
+    "49ERS 20",
+    "CARDINALS 12"
+   ],
+   "place": {
+    "cardinal": false,
+    "niner": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "niner"
+   },
+   "act": {
+    "niner": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Home game three: Seattle. Lost, twenty six to twenty three.",
+   "cap": "Home game three: Seattle. Lost, 26 to 23.",
+   "key": [
+    "26"
+   ],
+   "board": [
+    "49ERS 23",
+    "SEAHAWKS 26"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "niner"
+   },
+   "act": {
+    "niner": {
+     "mood": "sad",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They lived like that for about a month.",
+   "key": [
+    "MONTH."
+   ],
+   "place": {
+    "coach": [
+     1.6,
+     0.4
+    ],
+    "niner": [
+     -0.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "coach",
+    "with": "niner"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "cross",
+     "look": "niner"
+    },
+    "niner": {
+     "mood": "sad",
+     "look": "coach"
+    }
+   }
+  },
+  {
+   "text": "In their Arizona home, they went oh and three as the hosts. One and oh as the guests.",
+   "cap": "In their Arizona home, they went 0-3 as the hosts. 1-0 as the guests.",
+   "key": [
+    "0-3",
+    "1-0"
+   ],
+   "board": [
+    "HOSTS 0-3",
+    "GUESTS 1-0"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     0.8
+    ],
+    "niner": [
+     1.2,
+     0.4
+    ],
+    "coach": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     1,
+     1,
+     2
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "niner": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Some teams just travel better than they host.",
+   "key": [
+    "TRAVEL"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "niner": {
+     "mood": "neutral",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would your team rather play at home, or as the guest? Home or away?",
+   "key": [
+    "HOME",
+    "AWAY?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "niner"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "niner": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "ESPN: 49ers to play Week 13, 14 home games in Arizona",
+   "url": "https://www.espn.com/nfl/story/_/id/30422539/san-francisco-49ers-play-week-13-14-home-games-arizona"
+  },
+  {
+   "title": "ESPN: Kyle Shanahan says Arizona best scenario for us",
+   "url": "https://africa.espn.com/nfl/story/_/id/30429615/san-francisco-49ers-kyle-shanahan-says-arizona-best-scenario-us"
+  },
+  {
+   "title": "San Francisco Chronicle: December in the desert: 49ers will stay, practice in Arizona",
+   "url": "https://preview-prod.w.sfchronicle.com/sports/49ers/article/December-in-the-desert-49ers-will-stay-practice-15766571.php"
+  },
+  {
+   "title": "Reuters via Yahoo: 49ers to end season in Arizona after home ban extended",
+   "url": "https://sports.yahoo.com/49ers-end-season-arizona-home-201302773.html"
+  },
+  {
+   "title": "KTVU: 49ers finally head home after season-ending loss to Seahawks",
+   "url": "https://www.ktvu.com/sports/49ers-finally-head-home-after-season-ending-loss-to-seahawks"
+  },
+  {
+   "title": "CBS Sports: Seahawks at 49ers recap, Jan. 3, 2021",
+   "url": "https://www.cbssports.com/nfl/gametracker/recap/NFL_20210103_SEA@SF"
+  },
+  {
+   "title": "AP: Allen throws for 4 TDs, Bills beat 49ers 34-24 in Arizona",
+   "url": "https://www.news4jax.com/sports/2020/12/08/allen-throws-for-4-tds-bills-beat-49ers-34-24-in-arizona/"
+  },
+  {
+   "title": "AP: Washington leads NFC East after gritty 23-15 win over 49ers",
+   "url": "https://www.news4jax.com/sports/2020/12/14/washington-leads-nfc-east-after-gritty-23-15-win-over-49ers/"
+  },
+  {
+   "title": "ESPN: 49ers at Cardinals recap, Dec. 26, 2020",
+   "url": "https://africa.espn.com/nfl/recap/_/gameId/401220337"
+  },
+  {
+   "title": "CBS San Francisco: Beathard 3 touchdowns, 49ers stun Cardinals",
+   "url": "https://www.cbsnews.com/sanfrancisco/news/beathard-3-touchdowns-49ers-stun-cardinals"
+  }
+ ]
+}

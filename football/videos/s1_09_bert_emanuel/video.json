@@ -1,0 +1,477 @@
+{
+ "id": "s1_09_bert_emanuel",
+ "title": "The Bert Emanuel rule",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "BUCS 6",
+   "RAMS 11"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#b5252b",
+    "pants": "#4a4a4a",
+    "number": "87",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4128"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#b5252b",
+    "pants": "#4a4a4a",
+    "number": "10",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "left"
+  },
+  "def": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f3f8f",
+    "pants": "#c8a96a",
+    "number": "98",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b"
+   },
+   "at": "right"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "left",
+   "hold": "flag"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b33",
+    "pants": "#2b2b33",
+    "hair": "bald",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2000, a catch in the NFC title game was erased because the tip of the ball touched the grass.",
+   "key": [
+    "TIP"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "wr": [
+     0.9,
+     0
+    ],
+    "qb": false,
+    "def": false,
+    "ref": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Tampa Bay at St. Louis. Fourth quarter. The Rams lead eleven to six.",
+   "cap": "Tampa Bay at St. Louis. 4th quarter. The Rams lead 11 to 6.",
+   "key": [
+    "11",
+    "6."
+   ],
+   "place": {
+    "capy": false,
+    "wr": false,
+    "qb": "center",
+    "def": [
+     1.4,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "def": {
+     "mood": "smug",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Shaun King throws to Bert Emanuel.",
+   "key": [
+    "EMANUEL."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "throw"
+    }
+   }
+  },
+  {
+   "text": "He dives, pins the ball to his chest, and lands.",
+   "key": [
+    "DIVES,"
+   ],
+   "place": {
+    "qb": false,
+    "def": false,
+    "wr": "center"
+   },
+   "shot": {
+    "type": "low",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The tip of the ball touches the turf. It doesn't move.",
+   "key": [
+    "TOUCHES"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Replay takes a look anyway.",
+   "key": [
+    "REPLAY"
+   ],
+   "place": {
+    "ref": [
+     -1.6,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ref",
+    "with": "wr"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "wr"
+    },
+    "wr": {
+     "mood": "worried",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "The referee's ruling: he used the ground. Incomplete.",
+   "key": [
+    "INCOMPLETE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "shocked",
+     "action": "shrug"
+    }
+   },
+   "speaker": "ref"
+  },
+  {
+   "text": "Back then, if the ball touched the ground, it wasn't a catch. Even if you held it.",
+   "key": [
+    "GROUND,",
+    "HELD"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "BALL + GROUND",
+     "= NO CATCH"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "ref": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Two more incompletions. The drive dies.",
+   "key": [
+    "DIES."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BUCS 6",
+     "RAMS 11"
+    ]
+   },
+   "place": {
+    "wr": "center"
+   },
+   "shot": {
+    "type": "high",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "The Rams win, eleven to six. A week later, they win the Super Bowl.",
+   "cap": "The Rams win, 11 to 6. A week later, they win the Super Bowl.",
+   "key": [
+    "SUPER",
+    "BOWL."
+   ],
+   "place": {
+    "wr": false,
+    "def": "center"
+   },
+   "shot": {
+    "type": "low",
+    "on": "def"
+   },
+   "act": {
+    "def": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That off-season, the league changed the wording.",
+   "key": [
+    "CHANGED"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CATCH RULE",
+     "REWORDED"
+    ]
+   },
+   "place": {
+    "boss": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "boss"
+  },
+  {
+   "text": "Now the ball could touch the ground, as long as the receiver kept control.",
+   "key": [
+    "CONTROL."
+   ],
+   "place": {
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "boss",
+    "with": "capy"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "point",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "It became known as the Bert Emanuel rule. A little late for Bert.",
+   "key": [
+    "BERT",
+    "LATE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "worried",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Should the ground ever be able to erase a catch? Yes or no, below.",
+   "key": [
+    "YES",
+    "NO,"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "CATCH?",
+     "YES / NO"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "wr": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Sports Illustrated Vault: Catching hell",
+   "url": "https://vault.si.com/vault/2016/01/18/catching-hell"
+  },
+  {
+   "title": "Fox Sports: One & Done: The Bert Emanuel non-catch helped the Rams trip the Bucs",
+   "url": "https://www.foxnews.com/sports/one-done-the-burt-emanuel-non-catch-helped-the-rams-trip-the-bucs.print"
+  },
+  {
+   "title": "ABC Action News: Former Bucs WR Bert Emanuel talks about 'the catch' in 1999 NFC Championship",
+   "url": "https://www.tampabay28.com/sports/football/tampa-bay-bucs/former-bucs-wr-bert-emanuel-talks-about-the-catch-in-1999-nfc-championship-game-vs-rams"
+  },
+  {
+   "title": "Buccaneers.com: Back in an instant (March 2000)",
+   "url": "https://www.buccaneers.com/news/back-in-an-instant-2180933"
+  }
+ ]
+}

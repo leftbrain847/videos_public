@@ -1,0 +1,495 @@
+{
+ "id": "s3_14_strike_1982",
+ "title": "The season that lost seven games",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "1982",
+   "GAMES: ?"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "p1": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#7a1f2b",
+    "pants": "#f4f4f4",
+    "number": "54",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#c68e62"
+   },
+   "at": "center"
+  },
+  "p2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f6f86",
+    "pants": "#f4f4f4",
+    "number": "88",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430",
+    "beard": true
+   },
+   "at": "right",
+   "face": -20
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2e3440",
+    "pants": "#2e3440",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f0c8a0",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 1982, the NFL season simply stopped. For fifty seven days.",
+   "cap": "In 1982, the NFL season simply stopped. For 57 days.",
+   "key": [
+    "57",
+    "DAYS."
+   ],
+   "place": {
+    "boss": false,
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "p1": [
+     0.6,
+     0
+    ],
+    "p2": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "p1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "p1": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The players went on strike after week two.",
+   "key": [
+    "STRIKE"
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "ON STRIKE"
+    ]
+   },
+   "place": {
+    "p1": [
+     -1.2,
+     0
+    ],
+    "p2": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "p1",
+    "with": "p2"
+   },
+   "act": {
+    "p1": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    },
+    "p2": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Seven games per team, gone. Just like that.",
+   "cap": "7 games per team, gone. Just like that.",
+   "key": [
+    "7",
+    "GONE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "p2"
+   },
+   "act": {
+    "p2": {
+     "mood": "sad",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "When the deal finally came in November, the season had shrunk from sixteen games to nine.",
+   "cap": "When the deal finally came in November, the season had shrunk from 16 games to 9.",
+   "key": [
+    "16",
+    "9."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SEASON:",
+     "9 GAMES"
+    ]
+   },
+   "place": {
+    "boss": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss",
+    "offset": [
+     0,
+     0.6,
+     1.2
+    ]
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the league threw out the usual playoff format.",
+   "key": [
+    "THREW",
+    "OUT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "Divisions? Ignored.",
+   "key": [
+    "IGNORED."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Sixteen teams got in. Eight per conference, seeded one through eight by record.",
+   "cap": "16 teams got in. 8 per conference, seeded 1 through 8 by record.",
+   "key": [
+    "16",
+    "TEAMS"
+   ],
+   "board": [
+    "PLAYOFFS:",
+    "16 TEAMS"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "boss": [
+     2.4,
+     -1.5
+    ]
+   }
+  },
+  {
+   "text": "They called it the Super Bowl Tournament.",
+   "key": [
+    "TOURNAMENT."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "boss": "desk"
+   }
+  },
+  {
+   "text": "Which is how two teams with losing records made the playoffs.",
+   "key": [
+    "LOSING"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BROWNS 4-5",
+     "LIONS 4-5"
+    ]
+   },
+   "place": {
+    "p1": [
+     -1.2,
+     0
+    ],
+    "p2": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "p1",
+    "with": "p2"
+   },
+   "act": {
+    "p1": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "p2"
+    },
+    "p2": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "p1"
+    }
+   },
+   "board": [
+    "BROWNS 4-5",
+    "LIONS 4-5"
+   ]
+  },
+  {
+   "text": "The Browns went four and five. In.",
+   "cap": "The Browns went 4 and 5. In.",
+   "key": [
+    "4",
+    "IN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "p1"
+   },
+   "act": {
+    "p1": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The Lions went four and five. Also in.",
+   "cap": "The Lions went 4 and 5. Also in.",
+   "key": [
+    "ALSO",
+    "IN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "p2"
+   },
+   "act": {
+    "p2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Both needed three team tiebreakers just to qualify.",
+   "cap": "Both needed 3-team tiebreakers just to qualify.",
+   "key": [
+    "TIEBREAKERS"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "p1"
+   },
+   "act": {
+    "p1": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "p2"
+    },
+    "p2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "p1"
+    }
+   }
+  },
+  {
+   "text": "The champion? Washington, beating Miami twenty seven to seventeen in the Super Bowl that January.",
+   "cap": "The champion? Washington, beating Miami 27 to 17 in the Super Bowl that January.",
+   "key": [
+    "27",
+    "17"
+   ],
+   "board": [
+    "SUPER BOWL",
+    "27-17"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "p2",
+    "offset": [
+     -1.3,
+     0,
+     3
+    ]
+   },
+   "act": {
+    "p1": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "p2": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "p1": [
+     6.6,
+     0.5
+    ],
+    "p2": [
+     4.6,
+     0.5
+    ]
+   }
+  },
+  {
+   "text": "Nine games and a sixteen team bracket. Would you take that season? Yes or no?",
+   "cap": "9 games and a 16-team bracket. Would you take that season? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "9 GAMES",
+     "16 TEAMS"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "p1": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "p1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "p1": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "board": [
+    "9 GAMES",
+    "16 TEAMS"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "Pro Football Hall of Fame: 1982",
+   "url": "https://www.profootballhof.com/football-history/football-history/1980-1999/1982"
+  },
+  {
+   "title": "Bucpower: Strike 82",
+   "url": "https://www.bucpower.com/feature-strike82.htm"
+  },
+  {
+   "title": "Wikipedia: 1982 NFL season",
+   "url": "https://en.wikipedia.org/wiki/1982_NFL_season"
+  },
+  {
+   "title": "Sportskeeda: NFL teams that made the playoffs with a losing record",
+   "url": "https://www.sportskeeda.com/nfl/5-nfl-teams-made-playoffs-losing-record"
+  }
+ ]
+}

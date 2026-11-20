@@ -1,0 +1,474 @@
+{
+ "id": "s2_05_video_board",
+ "title": "The goalposts on the big screen",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "VISITING",
+   "KICKER"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "kicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#4f2683",
+    "pants": "#f4f4f4",
+    "number": "3",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "homekicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#002244",
+    "pants": "#c0c5ca",
+    "number": "6",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
+  },
+  "analyst": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#3d6b4f",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "couchL",
+   "hold": "phone"
+  },
+  "official": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b3a",
+    "pants": "#2b2b3a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#c98d63",
+    "glasses": true
+   },
+   "at": "desk",
+   "hold": "envelope"
+  }
+ },
+ "lines": [
+  {
+   "text": "For years, kickers visiting New England looked up and saw a second set of goalposts.",
+   "key": [
+    "SECOND"
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "kicker": [
+     0,
+     0
+    ],
+    "homekicker": false,
+    "analyst": false,
+    "official": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kicker": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "When the other team lined up a kick, the video board switched to a reversed view of it.",
+   "key": [
+    "REVERSED"
+   ],
+   "board": [
+    "VIDEO BOARD:",
+    "REVERSED VIEW"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Posts on the screen that didn't line up with the real ones.",
+   "key": [
+    "REAL"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "And when New England kicked? The board didn't do it.",
+   "key": [
+    "DIDN'T"
+   ],
+   "board": [
+    "HOME KICKS:",
+    "NORMAL VIEW"
+   ],
+   "place": {
+    "kicker": false,
+    "homekicker": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "homekicker"
+   },
+   "act": {
+    "homekicker": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then a former NFL analytics staffer went through more than ten years of TV broadcasts.",
+   "cap": "Then a former NFL analytics staffer went through more than 10 years of TV broadcasts.",
+   "key": [
+    "10",
+    "YEARS"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "10+ YEARS",
+     "OF TAPE"
+    ]
+   },
+   "place": {
+    "analyst": "couchL"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "analyst"
+   },
+   "act": {
+    "analyst": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In September, he posted what he found.",
+   "key": [
+    "POSTED"
+   ],
+   "board": [
+    "POSTED:",
+    "SEPTEMBER"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "analyst"
+   },
+   "act": {
+    "analyst": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It went viral.",
+   "key": [
+    "VIRAL."
+   ],
+   "place": {
+    "capy": {
+     "spot": [
+      0.9,
+      3.6
+     ],
+     "face": -15
+    }
+   },
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     -1,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "analyst": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Was it against the rules? No. Boards could already show a still image or this kind of view.",
+   "key": [
+    "NO."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "OLD RULE:",
+     "STILL OR ALL-22"
+    ]
+   },
+   "place": {
+    "official": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the league changed the rule.",
+   "key": [
+    "CHANGED"
+   ],
+   "board": [
+    "NEW RULE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Now the board must show the same view for both teams' kicks.",
+   "key": [
+    "SAME",
+    "BOTH"
+   ],
+   "board": [
+    "SAME VIEW",
+    "BOTH TEAMS"
+   ],
+   "place": {
+    "capy": "left"
+   },
+   "shot": {
+    "type": "two",
+    "on": "official",
+    "with": "capy"
+   },
+   "act": {
+    "official": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "official"
+    }
+   }
+  },
+  {
+   "text": "Same angle, or the same still picture, the whole game.",
+   "key": [
+    "WHOLE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Break it, and the club faces league discipline.",
+   "key": [
+    "DISCIPLINE."
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "LEAGUE MEMO"
+    ]
+   },
+   "place": {
+    "official": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "angry",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "official"
+  },
+  {
+   "text": "New England can still use that view. Their own kicker just has to look at it too.",
+   "key": [
+    "TOO."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BOTH TEAMS:",
+     "SAME VIEW"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "homekicker": [
+     0.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "homekicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "homekicker"
+    },
+    "homekicker": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Smart home field advantage, or cheating? What do you say?",
+   "key": [
+    "SMART",
+    "CHEATING?"
+   ],
+   "place": {
+    "homekicker": false,
+    "kicker": [
+     0.8,
+     0.2
+    ],
+    "capy": [
+     -1.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kicker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kicker": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "ProFootballTalk: NFL will no longer allow Patriots to use video board to confuse opposing kickers",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-will-no-longer-allow-patriots-to-use-video-board-to-confuse-opposing-kickers"
+  },
+  {
+   "title": "Awful Announcing: NFL changes stadium video board rules for field goal attempts",
+   "url": "https://awfulannouncing.com/nfl/changes-stadium-video-board-rules-field-goal-attempts.html"
+  },
+  {
+   "title": "Boston.com: NFL makes rule change to prevent Patriots' strategic home-field advantage",
+   "url": "https://www.boston.com/sports/new-england-patriots/2026/09/19/nfl-makes-rule-change-to-prevent-patriots-strategic-home-field-advantage/"
+  },
+  {
+   "title": "Larry Brown Sports: Patriots' shady tactic leads to NFL rule change",
+   "url": "https://larrybrownsports.com/football/patriots-shady-tactic-leads-to-nfl-rule-change/770831"
+  }
+ ]
+}

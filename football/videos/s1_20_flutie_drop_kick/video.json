@@ -1,0 +1,528 @@
+{
+ "id": "s1_20_flutie_drop_kick",
+ "title": "The first drop kick in 64 years",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "DROP KICK"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#002244",
+    "pants": "#b0b7bc",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "number": "2"
+   },
+   "at": [
+    0.6,
+    0
+   ],
+   "hold": "football"
+  },
+  "snap": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#002244",
+    "pants": "#b0b7bc",
+    "skin": "#a8714c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "number": "66"
+   },
+   "at": [
+    0,
+    -1.6
+   ]
+  },
+  "fin": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#008e97",
+    "pants": "#f4f4f4",
+    "skin": "#7b4e33",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "number": "91"
+   },
+   "at": [
+    2.4,
+    -2.4
+   ]
+  },
+  "fin2": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#008e97",
+    "pants": "#f4f4f4",
+    "skin": "#e8b48f",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "number": "55"
+   },
+   "at": [
+    -2.4,
+    -2.4
+   ]
+  },
+  "old": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b162a",
+    "pants": "#f4f4f4",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "number": "80"
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2006, a forty three year old quarterback made a kick the NFL hadn't seen count in sixty four years.",
+   "key": [
+    "64"
+   ],
+   "cap": "In 2006, a 43-year-old quarterback made a kick the NFL hadn't seen count in 64 years.",
+   "place": {
+    "snap": false,
+    "fin": false,
+    "fin2": false,
+    "old": false,
+    "capy": [
+     -1.6,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It's called a drop kick. And it's still legal.",
+   "key": [
+    "STILL",
+    "LEGAL."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You drop the ball, let it hit the ground, and kick it.",
+   "key": [
+    "GROUND,"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "DROP KICK",
+     "DROP. BOUNCE. KICK."
+    ]
+   },
+   "board": [
+    "DROP KICK",
+    "DROP. BOUNCE. KICK."
+   ],
+   "place": {
+    "capy": "left",
+    "qb": "right"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "No holder. No tee. Just you and a bouncing football.",
+   "key": [
+    "NO",
+    "HOLDER."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "capy"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Before 2006, the last one to count came in nineteen forty one.",
+   "key": [
+    "1941."
+   ],
+   "cap": "Before 2006, the last one to count came in 1941.",
+   "board": [
+    "LAST ONE:",
+    "1941"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Ray McLean of the Chicago Bears. In the championship game.",
+   "key": [
+    "CHAMPIONSHIP"
+   ],
+   "board": [
+    "1941",
+    "BEARS 37 GIANTS 9"
+   ],
+   "place": {
+    "old": "center",
+    "qb": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "old"
+   },
+   "act": {
+    "old": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "old"
+    }
+   }
+  },
+  {
+   "text": "Then, New Year's Day, two thousand six. Patriots against Dolphins.",
+   "key": [
+    "2006."
+   ],
+   "cap": "Then, New Year's Day, 2006. Patriots against Dolphins.",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PATRIOTS",
+     "DOLPHINS"
+    ]
+   },
+   "board": [
+    "PATRIOTS",
+    "DOLPHINS"
+   ],
+   "place": {
+    "qb": [
+     0,
+     1.0
+    ],
+    "snap": [
+     1.5,
+     0.2
+    ],
+    "fin": [
+     2.2,
+     -2.6
+    ],
+    "fin2": [
+     -2.2,
+     -2.6
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "snap": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "fin": {
+     "mood": "angry",
+     "action": "cross"
+    },
+    "fin2": {
+     "mood": "angry",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "The backup quarterback, Doug Flutie, is forty three years old.",
+   "key": [
+    "43"
+   ],
+   "cap": "The backup quarterback, Doug Flutie, is 43 years old.",
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fourth quarter. The Patriots line up for an extra point.",
+   "key": [
+    "EXTRA",
+    "POINT."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "snap",
+    "with": "qb"
+   },
+   "act": {
+    "snap": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "snap"
+    }
+   }
+  },
+  {
+   "text": "Flutie stands back alone. No holder.",
+   "key": [
+    "ALONE."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He drops it. It bounces. He kicks it.",
+   "key": [
+    "KICKS"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "throw"
+    },
+    "fin": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "qb"
+    },
+    "fin2": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Good.",
+   "key": [
+    "GOOD."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The first drop kick to count in sixty four years.",
+   "key": [
+    "64"
+   ],
+   "cap": "The first drop kick to count in 64 years.",
+   "place": {
+    "capy": [
+     -1.8,
+     1.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The Patriots still lost, twenty eight to twenty six.",
+   "key": [
+    "LOST,"
+   ],
+   "cap": "The Patriots still lost, 28 to 26.",
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "FINAL",
+     "DOLPHINS 28 PATS 26"
+    ]
+   },
+   "board": [
+    "FINAL",
+    "DOLPHINS 28 PATS 26"
+   ],
+   "place": {
+    "qb": "center",
+    "capy": "left"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Should kickers bring back the drop kick? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Patriots.com: Flutie converts NFL's first drop kick in 64 years",
+   "url": "https://www.patriots.com/news/flutie-converts-nfl-s-first-drop-kick-in-64-years-93631"
+  },
+  {
+   "title": "ESPN: Flutie converts first drop kick since 1941 championship",
+   "url": "https://www.espn.co.uk/nfl/news/story?id=2277308"
+  },
+  {
+   "title": "Wikipedia: Drop kick",
+   "url": "https://en.wikipedia.org/wiki/Drop_kick"
+  }
+ ]
+}

@@ -1,0 +1,520 @@
+{
+ "id": "s2_13_paris",
+ "title": "The first NFL game in France",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "SAINTS RUSHING",
+   "17 FOR 18"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "runner": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#d3bc8d",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "rodgers": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#101820",
+    "pants": "#ffb612",
+    "number": "8",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "beard": true
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "shough": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#d3bc8d",
+    "number": "6",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "wilson": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#101820",
+    "pants": "#ffb612",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "left"
+  },
+  "tightend": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#101820",
+    "pants": "#ffb612",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": "left"
+  }
+ },
+ "lines": [
+  {
+   "text": "In the NFL's first game in France, the Saints ran the ball seventeen times, for eighteen yards.",
+   "cap": "In the NFL's first game in France, the Saints ran the ball 17 times, for 18 yards.",
+   "key": [
+    "17",
+    "18"
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "runner": [
+     0,
+     0
+    ],
+    "rodgers": [
+     2.2,
+     0.3
+    ],
+    "shough": false,
+    "wilson": false,
+    "tightend": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "runner"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "runner": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "capy"
+    },
+    "rodgers": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "runner"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Pittsburgh against New Orleans, at the Stade de France, just outside Paris.",
+   "key": [
+    "PARIS."
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "STADE DE FRANCE",
+     "PARIS"
+    ]
+   },
+   "place": {
+    "rodgers": "right",
+    "shough": "left"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "shough"
+   },
+   "act": {
+    "rodgers": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "shough": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Aaron Rodgers, age forty two, threw the first touchdown.",
+   "cap": "Aaron Rodgers, age 42, threw the first touchdown.",
+   "key": [
+    "42,",
+    "FIRST"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PIT 3",
+     "NO 3"
+    ]
+   },
+   "place": {
+    "rodgers": "center",
+    "tightend": "left"
+   },
+   "shot": {
+    "type": "low",
+    "on": "rodgers"
+   },
+   "act": {
+    "rodgers": {
+     "mood": "smug",
+     "action": "point",
+     "look": "tightend"
+    },
+    "tightend": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "rodgers"
+    }
+   }
+  },
+  {
+   "text": "Four yards, to tight end Darnell Washington.",
+   "cap": "4 yards, to tight end Darnell Washington.",
+   "key": [
+    "4"
+   ],
+   "board": [
+    "PIT 10",
+    "NO 3"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "tightend",
+    "with": "rodgers"
+   },
+   "act": {
+    "tightend": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "rodgers": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "tightend"
+    }
+   }
+  },
+  {
+   "text": "New Orleans answered on fourth and goal, after a replay overturned a fumble at the one.",
+   "key": [
+    "REPLAY"
+   ],
+   "board": [
+    "PIT 10",
+    "NO 10"
+   ],
+   "place": {
+    "rodgers": false,
+    "tightend": false,
+    "shough": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "shough"
+   },
+   "act": {
+    "shough": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ten all. Then Pittsburgh kicked a field goal as the half ended.",
+   "cap": "10 all. Then Pittsburgh kicked a field goal as the half ended.",
+   "key": [
+    "HALF"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "HALFTIME",
+     "PIT 13  NO 10"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.2,
+     0.6
+    ],
+    "rodgers": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rodgers"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "rodgers": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Second half. The Saints drove all the way to the Pittsburgh ten.",
+   "cap": "Second half. The Saints drove all the way to the Pittsburgh 10.",
+   "key": [
+    "10."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PIT 13",
+     "NO 10"
+    ]
+   },
+   "place": {
+    "shough": "center",
+    "wilson": "right"
+   },
+   "shot": {
+    "type": "high",
+    "on": "shough"
+   },
+   "act": {
+    "shough": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "wilson"
+    },
+    "wilson": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "shough"
+    }
+   }
+  },
+  {
+   "text": "Payton Wilson intercepted it.",
+   "key": [
+    "INTERCEPTED"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "wilson"
+   },
+   "act": {
+    "wilson": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "shough": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Another Pittsburgh field goal. Sixteen to ten.",
+   "cap": "Another Pittsburgh field goal. 16 to 10.",
+   "key": [
+    "16"
+   ],
+   "board": [
+    "PIT 16",
+    "NO 10"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "shough"
+   },
+   "act": {
+    "shough": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "wilson": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "Late in the game, New Orleans tried a fifty two yard field goal. Wide right.",
+   "cap": "Late in the game, New Orleans tried a 52 yard field goal. Wide right.",
+   "key": [
+    "WIDE"
+   ],
+   "place": {
+    "wilson": false,
+    "runner": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "shough",
+    "with": "runner"
+   },
+   "act": {
+    "shough": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "runner": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "shough"
+    }
+   }
+  },
+  {
+   "text": "Final: Steelers sixteen, Saints ten.",
+   "cap": "Final: Steelers 16, Saints 10.",
+   "key": [
+    "16,"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "FINAL",
+     "PIT 16  NO 10"
+    ]
+   },
+   "place": {
+    "rodgers": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rodgers"
+   },
+   "act": {
+    "rodgers": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "rodgers"
+  },
+  {
+   "text": "Eighteen rushing yards. Like a bad croissant, the run game never rose.",
+   "cap": "18 rushing yards. Like a bad croissant, the run game never rose.",
+   "key": [
+    "CROISSANT,"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "SAINTS RUSHING",
+     "18 YARDS"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "runner": [
+     0.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "runner"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "runner": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you fly to Paris for a sixteen to ten game? Oui or non?",
+   "cap": "Would you fly to Paris for a 16 to 10 game? Oui or non?",
+   "key": [
+    "OUI",
+    "NON?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "runner": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "place": {
+    "runner": false,
+    "capy": [
+     -0.8,
+     1.0
+    ]
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "FOX 10: Sacr\u00e9 bleu! Saints run over by Steelers in France, 16-10",
+   "url": "https://www.fox10tv.com/2026/10/25/sacr-bleu-saints-run-over-by-steelers-france-16-10/"
+  },
+  {
+   "title": "AP via News4Jax: Rodgers throws TD pass in Paris as Steelers beat Saints 16-10 in NFL's regular-season France debut",
+   "url": "https://www.news4jax.com/sports/2026/10/25/rodgers-throws-td-pass-in-paris-as-steelers-beat-saints-16-10-in-nfls-regular-season-france-debut/"
+  },
+  {
+   "title": "AP via News4Jax: Good mood among fans attending the first NFL game in Paris",
+   "url": "https://www.news4jax.com/sports/2026/10/25/good-mood-among-fans-attending-the-first-nfl-game-in-paris-a-day-after-protests-and-clashes/"
+  }
+ ]
+}

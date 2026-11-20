@@ -1,0 +1,479 @@
+{
+ "id": "s1_08_illegal_bat",
+ "title": "The bat nobody flagged",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "LIONS 10",
+   "SEAHAWKS 13"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f6fb5",
+    "pants": "#c9ccd1",
+    "number": "81",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5e3a24"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "ss": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#16284a",
+    "pants": "#16284a",
+    "number": "31",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "beard": true
+   },
+   "at": "right"
+  },
+  "lb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#16284a",
+    "pants": "#16284a",
+    "number": "50",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4128"
+   },
+   "at": "back"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c98d64",
+    "cap": "#f4f4f4"
+   },
+   "at": "left",
+   "hold": "flag"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b33",
+    "pants": "#2b2b33",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2015, a Seahawk swatted a loose ball out of the end zone. It was illegal. Seattle won anyway.",
+   "key": [
+    "ILLEGAL.",
+    "ANYWAY."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.8
+    ],
+    "lb": [
+     0.9,
+     0
+    ],
+    "wr": false,
+    "ss": false,
+    "ref": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "lb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "lb": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Monday night. Detroit trails Seattle thirteen to ten, under two minutes left.",
+   "cap": "Monday night. Detroit trails Seattle 13 to 10, under 2 minutes left.",
+   "key": [
+    "13",
+    "10,"
+   ],
+   "place": {
+    "capy": false,
+    "lb": false,
+    "wr": "center",
+    "ss": [
+     1.3,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "wr",
+    "offset": [
+     3,
+     2.5,
+     4
+    ]
+   },
+   "act": {
+    "wr": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "ss": {
+     "mood": "angry",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "Calvin Johnson reaches for the goal line. Yes, him again.",
+   "key": [
+    "AGAIN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Kam Chancellor punches the ball out at the one.",
+   "cap": "Kam Chancellor punches the ball out at the 1.",
+   "key": [
+    "PUNCHES"
+   ],
+   "place": {
+    "ss": [
+     0.9,
+     -0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "wr",
+    "with": "ss"
+   },
+   "act": {
+    "wr": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "ss"
+    },
+    "ss": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "wr"
+    }
+   }
+  },
+  {
+   "text": "It rolls into the end zone.",
+   "key": [
+    "ROLLS"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "K.J. Wright doesn't fall on it. He bats it out the back.",
+   "key": [
+    "BATS"
+   ],
+   "place": {
+    "wr": false,
+    "ss": false,
+    "lb": "center"
+   },
+   "shot": {
+    "type": "low",
+    "on": "lb"
+   },
+   "act": {
+    "lb": {
+     "mood": "smug",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Touchback. Seattle's ball.",
+   "key": [
+    "TOUCHBACK."
+   ],
+   "place": {
+    "ref": [
+     -1.6,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ref",
+    "with": "lb"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "camera"
+    },
+    "lb": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "But batting a loose ball in the end zone is a foul.",
+   "key": [
+    "FOUL."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "ILLEGAL",
+     "BAT"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "ref": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The right call: Detroit's ball at the one. First down.",
+   "cap": "The right call: Detroit's ball at the 1. First down.",
+   "key": [
+    "FIRST",
+    "DOWN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The official saw it. He didn't think it was deliberate.",
+   "key": [
+    "DELIBERATE."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "LIONS 10",
+     "SEAHAWKS 13"
+    ]
+   },
+   "place": {
+    "ref": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "And that call can't be reviewed.",
+   "key": [
+    "CAN'T"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The next day, the league's head of officiating said it: that's a foul.",
+   "key": [
+    "FOUL."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "ILLEGAL BAT",
+     "MISSED"
+    ]
+   },
+   "place": {
+    "boss": "desk"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "speaker": "boss"
+  },
+  {
+   "text": "Wright said he just wanted to knock it out. He knows the rule now.",
+   "key": [
+    "KNOWS"
+   ],
+   "place": {
+    "lb": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "lb",
+    "with": "boss"
+   },
+   "act": {
+    "lb": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "worried",
+     "look": "lb"
+    }
+   }
+  },
+  {
+   "text": "Seattle won, thirteen to ten. Should Detroit have gotten a do-over? Yes or no, below.",
+   "cap": "Seattle won, 13 to 10. Should Detroit have gotten a do-over? Yes or no, below.",
+   "key": [
+    "YES",
+    "NO,"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "DO-OVER?",
+     "YES / NO"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "wr": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "SI: Lions' chance at first win batted away by refs in loss to Seahawks",
+   "url": "https://www.si.com/nfl/2015/10/05/lions-seahawks-illegal-batting-calvin-johnson-kj-wright-dean-blandino"
+  },
+  {
+   "title": "NFL.com: Blandino: K.J. Wright committed foul for an illegal bat",
+   "url": "https://www.nfl.com/news/blandino-k-j-wright-committed-foul-for-an-illegal-bat-0ap3000000551015"
+  },
+  {
+   "title": "ABC7 (ESPN): Officials fumbled key batting call at end of Lions-Seahawks, NFL admits",
+   "url": "https://abc7news.com/post/officials-fumbled-key-batting-call-at-end-of-lions-seahawks-nfl-admits/1018910/"
+  },
+  {
+   "title": "HeraldNet: Seahawks 13, Lions 10: Chancellor saves the day, controversy ensues",
+   "url": "https://www.heraldnet.com/2015/10/05/seahawks-13-lions-10-chancellor-saves-the-day-controversy-ensues/"
+  }
+ ]
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: 'Inter'; src: url('fonts/Inter-Black.otf'); font-weight: 900; }
+html, body { margin: 0; background: #000; }
+</style></head><body>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { STYLE, person, capy, setMood, pose, PROPS, SETS, lights, textTexture, football } from './kit.js';
+
+const CFG = {
+  width: 1080, height: 960, fov: 34,
+  renderScale: 0.8,     // 3D renders at 80% and is scaled up; captions are drawn at full resolution (speed: about 1.6x)
+  caption: { size: 74, lineHeight: 84, bottom: 92, maxWidth: 940, skew: -0.12, stroke: 15, key: '#e01b24', words: 4 },
+  push: 0.1,            // camera moves this fraction closer over a shot
+  drift: 0.35,          // sideways drift over a shot (world units)
+  gazeTurn: 0.6,        // how far heads turn toward who they look at (radians cap)
+};
+window.CFG = CFG;
+const r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+r.setSize(Math.round(CFG.width * CFG.renderScale), Math.round(CFG.height * CFG.renderScale)); r.setPixelRatio(1);
+r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap;
+r.outputColorSpace = THREE.SRGBColorSpace; r.toneMapping = THREE.ACESFilmicToneMapping; r.toneMappingExposure = STYLE.exposure;
+const out = document.createElement('canvas'); out.width = CFG.width; out.height = CFG.height; document.body.append(out);
+const ctx = out.getContext('2d');
+const cam = new THREE.PerspectiveCamera(CFG.fov, CFG.width / CFG.height, 0.1, 300);
+
+let S, scenes = {}, cast = {}, timing;
+
+function buildSet(name, opts) {
+  const key = name + JSON.stringify(opts || {});
+  if (scenes[key]) return scenes[key];
+  const scene = new THREE.Scene();
+  const set = SETS[name](opts || {});
+  scene.background = new THREE.Color(set.sky || '#f4ecdf');
+  scene.add(set.group); lights(scene);
+  scenes[key] = { scene, set, name };
+  return scenes[key];
+}
+const spot = (set, at) => Array.isArray(at) ? at : (set.spots[at] || [0, 0]);
+
+window.load = async (script, tim) => {
+  S = script; timing = tim;
+  await document.fonts.load('900 80px Inter');
+  let seed = 3;
+  for (const [id, c] of Object.entries(S.cast || {})) {
+    const p = c.kind === 'capy' ? capy(c.look || {}) : person(c.look || {}, seed += 17);
+    if (c.hold && PROPS[c.hold]) { const pr = PROPS[c.hold](); pr.position.set(0, -0.1, 0.18); p.userData.parts.held.add(pr); }
+    cast[id] = { p, cfg: c };
+  }
+  return true;
+};
+
+// which line is active at time t
+function lineAt(t) {
+  const L = timing.lines;
+  for (let i = 0; i < L.length; i++) if (t < L[i].end || i === L.length - 1) return i;
+  return L.length - 1;
+}
+function shotFor(i) {  // a line inherits the previous line's set, cast placement and shot unless it overrides them
+  let st = { set: S.set, setOpts: S.setOpts || {}, shot: { type: 'wide', on: Object.keys(cast)[0] }, place: {}, act: {}, board: null };
+  for (let k = 0; k <= i; k++) {
+    const l = S.lines[k];
+    if (l.set) { st.set = l.set; st.setOpts = l.setOpts || {}; st.board = null; st.place = Object.fromEntries(Object.keys(cast).map((id) => [id, false])); }
+    if (l.shot) st.shot = l.shot;
+    if (l.place) st.place = { ...st.place, ...l.place };
+    if (l.act) for (const [id, a] of Object.entries(l.act)) st.act[id] = { ...(st.act[id] || {}), ...a };
+    if (l.board) st.board = l.board;
+  }
+  return st;
+}
+
+function cameraFor(shot, set, u) {
+  const tgt = cast[shot.on]; const at = tgt ? tgt.p.position : new THREE.Vector3();
+  const tx = at.x, tz = at.z, k = 1 - CFG.push * u, dr = (u - 0.5) * CFG.drift * (shot.driftDir ?? 1);
+  let pos, look;
+  switch (shot.type) {
+    case 'close': pos = [tx + 0.35 + dr * 0.3, 3.35, tz + 3.0 * k]; look = [tx, 3.05, tz]; break;
+    case 'medium': pos = [tx + 0.7 + dr, 3.0, tz + 5.6 * k]; look = [tx, 2.45, tz]; break;
+    case 'low': pos = [tx + 1.0 + dr, 1.7, tz + 5.6 * k]; look = [tx, 2.8, tz]; break;
+    case 'high': pos = [tx + dr, 8.5, tz + 8 * k]; look = [tx, 1.2, tz]; break;
+    case 'two': {
+      const o = cast[shot.with]?.p.position || at; const mx = (tx + o.x) / 2, mz = (tz + o.z) / 2;
+      const sep = Math.hypot(tx - o.x, tz - o.z); const d = (4.4 + sep * 1.1) * k;
+      pos = [mx + dr, 3.0, mz + d]; look = [mx, 2.4, mz]; break; }
+    case 'ots': {
+      const f = cast[shot.from]?.p.position || at; const dx = tx - f.x, dz = tz - f.z, n = Math.hypot(dx, dz) || 1;
+      pos = [f.x - (dx / n) * 1.6 + (dz / n) * 0.9, 3.3, f.z - (dz / n) * 1.6 - (dx / n) * 0.9 + 0.4];
+      look = [tx, 2.9, tz]; break; }
+    case 'follow': case 'follow_high': {   // broadcast camera tracking a player or the ball along the field (x)
+      const tg = shot.on === 'ball' ? (BALL?.visible ? BALL.position : (cast[shot.fallback]?.p.position || at)) : at;
+      const hi = shot.type === 'follow_high';
+      pos = [tg.x - (shot.lead ?? 1.5), hi ? 13 : 5.2, tg.z + (hi ? 15 : 16)]; look = [tg.x + (shot.lead ?? 1.5), hi ? 0.5 : 1.9, tg.z]; break; }
+    default: pos = [tx + dr, 3.4, tz + 11 * k]; look = [tx, 2.2, tz - 1];
+  }
+  if (shot.offset) { pos[0] += shot.offset[0]; pos[1] += shot.offset[1]; pos[2] += shot.offset[2]; }
+  cam.position.set(...pos); cam.lookAt(...look);
+}
+
+function drawCaption(words, keys) {
+  const C = CFG.caption; ctx.save();
+  ctx.font = `900 ${C.size}px Inter`; ctx.textBaseline = 'alphabetic'; ctx.lineJoin = 'round';
+  // wrap into lines
+  const lines = []; let cur = [];
+  for (const w of words) { const test = [...cur, w].join(' '); if (ctx.measureText(test).width > C.maxWidth && cur.length) { lines.push(cur); cur = [w]; } else cur.push(w); }
+  if (cur.length) lines.push(cur);
+  const space = ctx.measureText(' ').width;
+  lines.forEach((ln, li) => {
+    const y = CFG.height - C.bottom - (lines.length - 1 - li) * C.lineHeight;
+    const total = ln.reduce((a, w) => a + ctx.measureText(w).width, 0) + space * (ln.length - 1);
+    let x = (CFG.width - total) / 2;
+    for (const w of ln) {
+      const ww = ctx.measureText(w).width;
+      ctx.save(); ctx.translate(x, y); ctx.textAlign = 'left';
+      if (keys.has(w.toUpperCase().replace(/[^A-Z0-9%$]/g, ''))) {
+        ctx.fillStyle = C.key; const pad = 14;
+        ctx.beginPath(); ctx.roundRect(-pad + 2, -C.size * 0.82, ww + pad * 2, C.size * 1.0, 10); ctx.fill();
+        ctx.lineWidth = 6; ctx.strokeStyle = '#000'; ctx.stroke();
+      }
+      ctx.transform(1, 0, C.skew, 1, 0, 0);
+      ctx.lineWidth = C.stroke; ctx.strokeStyle = '#000';
+      ctx.shadowColor = 'rgba(0,0,0,.55)'; ctx.shadowOffsetY = 6; ctx.shadowBlur = 8;
+      ctx.strokeText(w, 0, 0); ctx.shadowColor = 'transparent';
+      ctx.fillStyle = '#fff'; ctx.fillText(w, 0, 0);
+      ctx.restore(); x += ww + space;
+    }
+  });
+  ctx.restore();
+}
+
+// ---- plays: a line can act out the real play on the field ----
+// line.play = { cast: { id: { path: [[u, x, z], ...], actions: [[u, 'run'], [0.8, 'celebrate']], face: deg } },
+//               ball: [[u, x, y, z], ...]   (in flight)   carry: [[u, id], ...]   (held by someone from u on) }
+// Paths are Catmull-Rom through the points; a carrier faces where they're going.
+function along(pts, u) {
+  if (!pts || !pts.length) return null;
+  if (u <= pts[0][0]) return pts[0].slice(1);
+  if (u >= pts[pts.length - 1][0]) return pts[pts.length - 1].slice(1);
+  let i = 0; while (i < pts.length - 2 && u > pts[i + 1][0]) i++;
+  const p0 = pts[Math.max(0, i - 1)], p1 = pts[i], p2 = pts[i + 1], p3 = pts[Math.min(pts.length - 1, i + 2)];
+  const f = (u - p1[0]) / Math.max(1e-6, p2[0] - p1[0]);
+  const cr = (a, b, c, d) => 0.5 * ((2 * b) + (-a + c) * f + (2 * a - 5 * b + 4 * c - d) * f * f + (-a + 3 * b - 3 * c + d) * f * f * f);
+  return p1.slice(1).map((_, k) => cr(p0[k + 1], p1[k + 1], p2[k + 1], p3[k + 1]));
+}
+const pick = (list, u, def) => { let v = def; for (const [k, x] of list || []) if (u >= k) v = x; return v; };
+let BALL = null;
+let followAt = null;
+
+window.frame = (t) => {
+  const i = lineAt(t), L = timing.lines[i], line = S.lines[i];
+  const st = shotFor(i);
+  const sc = buildSet(st.set, st.setOpts);
+  const u = Math.min(1, Math.max(0, (t - L.start) / Math.max(0.1, L.end - L.start)));
+  const play = line.play || null;
+  if (!BALL) BALL = football();
+  if (BALL.parent !== sc.scene) sc.scene.add(BALL);
+  BALL.visible = false;
+  const carrier = play ? pick(play.carry, u, null) : null;
+  for (const [id, c] of Object.entries(cast)) {
+    const pp = play?.cast?.[id];
+    const pl = pp ? { spot: along(pp.path, 0) } : (st.place[id] ?? c.cfg.at);
+    const visible = !!pp || (pl !== null && pl !== undefined && st.place[id] !== false);
+    if (c.p.parent !== sc.scene) sc.scene.add(c.p);
+    c.p.visible = visible;
+    if (!visible) continue;
+    let x, z, action;
+    const a = st.act[id] || {};
+    if (pp) {
+      [x, z] = along(pp.path, u);
+      const [x2, z2] = along(pp.path, Math.min(1, u + 0.02));
+      const moving = Math.hypot(x2 - x, z2 - z) > 0.02;
+      c.p.rotation.y = pp.face !== undefined && !moving ? (pp.face * Math.PI) / 180 : moving ? Math.atan2(x2 - x, z2 - z) : c.p.rotation.y;
+      action = pick(pp.actions, u, moving ? 'run' : 'idle');
+      if (action === 'run' && !moving) action = 'idle';
+    } else {
+      [x, z] = spot(sc.set, Array.isArray(pl) || typeof pl === 'string' ? pl : pl.spot);
+      c.p.rotation.y = ((pl.face ?? c.cfg.face ?? 0) * Math.PI) / 180;
+      action = a.action || (line.speaker === id ? 'talk' : 'idle');
+    }
+    c.p.position.set(x, 0, z);
+    c.p.userData.carrying = carrier === id;
+    const held = c.p.userData.parts.held; if (held) held.visible = !play;   // in a play, the one real ball does the work
+    setMood(c.p, (pp?.mood) || a.mood || c.cfg.look?.mood || 'neutral');
+    const talking = line.speaker === id;
+    pose(c.p, action, t, talking, u);
+    const head = c.p.userData.parts.head; const lookAt = pp ? null : (a.look === 'camera' || !a.look ? null : cast[a.look]?.p.position);
+    let yaw = 0; if (lookAt) { yaw = Math.atan2(lookAt.x - x, lookAt.z - z) - c.p.rotation.y; yaw = Math.max(-CFG.gazeTurn, Math.min(CFG.gazeTurn, Math.atan2(Math.sin(yaw), Math.cos(yaw)))); }
+    head.rotation.y = yaw + (pp ? 0 : Math.sin(t * 0.7 + c.p.userData.seed) * 0.05);
+    head.userData.pitch = a.nod ? Math.sin(t * 5) * 0.12 : 0;
+  }
+  if (play) {
+    const bp = along(play.ball, u);
+    const inAir = play.ball && u >= play.ball[0][0] && u <= play.ball[play.ball.length - 1][0];
+    if (inAir && bp) { BALL.visible = true; BALL.position.set(bp[0], bp[1], bp[2]); BALL.rotation.set(t * 6, 0, Math.PI / 2); }
+    else if (carrier && cast[carrier]) { const cp = cast[carrier].p; BALL.visible = true;
+      BALL.position.set(cp.position.x + Math.sin(cp.rotation.y + 0.6) * 0.45, 1.75 + cp.position.y, cp.position.z + Math.cos(cp.rotation.y + 0.6) * 0.45); BALL.rotation.set(0.4, cp.rotation.y, 0); }
+  }
+  if (st.board && sc.set.screen && sc.set.screen.userData.text !== JSON.stringify(st.board)) {
+    sc.set.screen.material.map = textTexture(st.board, { bg: sc.name === 'field' || sc.name === 'living' ? '#101418' : '#ffffff', fg: sc.name === 'field' || sc.name === 'living' ? '#ffffff' : '#1b2a5c', accent: '#d62828' });
+    sc.set.screen.material.needsUpdate = true; sc.set.screen.userData.text = JSON.stringify(st.board);
+  }
+  cameraFor(st.shot, sc.set, u);
+  r.render(sc.scene, cam);
+  ctx.imageSmoothingQuality = 'high'; ctx.drawImage(r.domElement, 0, 0, CFG.width, CFG.height);
+  // caption chunk for t
+  const ch = L.chunks.find((c) => t >= c.start && t < c.end) || (t >= L.start ? L.chunks[L.chunks.length - 1] : null);
+  if (ch) drawCaption(ch.words, new Set((line.key || []).map((k) => k.toUpperCase().replace(/[^A-Z0-9%$]/g, ''))));
+  return out.toDataURL('image/jpeg', 0.9);
+};
+window.ready = true;
+</script></body></html>

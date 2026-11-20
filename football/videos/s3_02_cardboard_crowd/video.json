@@ -1,0 +1,496 @@
+{
+ "id": "s3_02_cardboard_crowd",
+ "title": "The crowd that wasn't there",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "FANS:",
+   "0"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 15
+  },
+  "engineer": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#3c5a8a",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#c68a5e",
+    "headset": true,
+    "glasses": true
+   },
+   "at": "right",
+   "face": -15,
+   "hold": "phone"
+  },
+  "exec": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2f3a",
+    "pants": "#2b2f3a",
+    "hair": "short",
+    "hairColor": "#8a8a8a",
+    "skin": "#f2c39b"
+   },
+   "at": "desk",
+   "hold": "clipboard"
+  },
+  "fan": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f28c28",
+    "pants": "#1b1b1b",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#f0c8a0"
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, the loudest crowd in the NFL lived on a laptop.",
+   "key": [
+    "LAPTOP"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     0.6
+    ],
+    "engineer": [
+     1.2,
+     0.4
+    ],
+    "exec": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "engineer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "engineer": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Only five of thirty two teams let fans in for their first home game.",
+   "cap": "Only 5 of 32 teams let fans in for their first home game.",
+   "key": [
+    "5",
+    "32"
+   ],
+   "board": [
+    "TEAMS WITH FANS",
+    "5 / 32"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     0,
+     1.5,
+     3
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "engineer": {
+     "mood": "worried",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "So NFL Films made a crowd out of recordings.",
+   "key": [
+    "RECORDINGS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CROWD.WAV"
+    ]
+   },
+   "place": {
+    "exec": "desk",
+    "engineer": [
+     1.8,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "engineer": {
+     "mood": "neutral",
+     "look": "exec"
+    }
+   },
+   "board": [
+    "CROWD.WAV"
+   ]
+  },
+  {
+   "text": "Every team got its own system, run from a laptop by a local engineer.",
+   "key": [
+    "ENGINEER."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "engineer"
+   },
+   "act": {
+    "engineer": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "exec": {
+     "mood": "neutral",
+     "look": "engineer"
+    }
+   }
+  },
+  {
+   "text": "The rule: fake crowd noise could not go above seventy decibels.",
+   "cap": "The rule: fake crowd noise could not go above 70 decibels.",
+   "key": [
+    "70"
+   ],
+   "board": [
+    "MAX",
+    "70 dB"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "exec",
+    "with": "engineer"
+   },
+   "act": {
+    "exec": {
+     "mood": "angry",
+     "action": "point",
+     "look": "engineer"
+    },
+    "engineer": {
+     "mood": "worried",
+     "look": "exec"
+    }
+   },
+   "speaker": "exec"
+  },
+  {
+   "text": "The level was locked in with the league ninety minutes before kickoff.",
+   "cap": "The level was locked in with the league 90 minutes before kickoff.",
+   "key": [
+    "LOCKED",
+    "90"
+   ],
+   "board": [
+    "LOCKED",
+    "T-90 MIN"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "engineer"
+   },
+   "act": {
+    "engineer": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Same volume all game. No cranking it up on third down.",
+   "key": [
+    "THIRD",
+    "DOWN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "engineer"
+   },
+   "act": {
+    "engineer": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "exec": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "engineer"
+    }
+   }
+  },
+  {
+   "text": "The seats still looked empty. So teams sold cardboard.",
+   "key": [
+    "CARDBOARD."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "YOUR FACE",
+     "IN THE STANDS"
+    ]
+   },
+   "place": {
+    "fan": [
+     -1.2,
+     4.3
+    ],
+    "capy": [
+     1.2,
+     4.5
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "fan",
+    "with": "capy"
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "point",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "fan"
+    }
+   },
+   "speaker": "capy",
+   "board": [
+    "YOUR FACE",
+    "IN THE STANDS"
+   ]
+  },
+  {
+   "text": "In Cincinnati, a cutout of your face cost fifty dollars for season ticket holders.",
+   "cap": "In Cincinnati, a cutout of your face cost $50 for season ticket holders.",
+   "key": [
+    "$50"
+   ],
+   "place": {
+    "fan": [
+     0,
+     4.3
+    ],
+    "capy": false
+   },
+   "board": [
+    "CUTOUT",
+    "$50"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Seventy five for everyone else.",
+   "cap": "$75 for everyone else.",
+   "key": [
+    "$75"
+   ],
+   "board": [
+    "EVERYONE ELSE",
+    "$75"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "shocked",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The Bengals raised thirty four thousand dollars for six charities.",
+   "cap": "The Bengals raised $34,000 for 6 charities.",
+   "key": [
+    "$34,000"
+   ],
+   "board": [
+    "RAISED",
+    "$34,000"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "By week three, stadiums with almost nobody inside could go up to eighty decibels.",
+   "cap": "By week 3, stadiums with almost nobody inside could go up to 80 decibels.",
+   "key": [
+    "80"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "NEW MAX",
+     "80 dB"
+    ]
+   },
+   "place": {
+    "engineer": "center",
+    "capy": "left"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "engineer"
+   },
+   "act": {
+    "engineer": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "capy": {
+     "mood": "neutral",
+     "look": "engineer"
+    }
+   },
+   "board": [
+    "NEW MAX",
+    "80 dB"
+   ]
+  },
+  {
+   "text": "Cardboard fans. Recorded cheers. Real football.",
+   "key": [
+    "REAL"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     1,
+     2,
+     4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "engineer": {
+     "mood": "happy",
+     "action": "wave"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you pay fifty dollars to sit in the stands as cardboard? Yes or no?",
+   "cap": "Would you pay $50 to sit in the stands as cardboard? Yes or no?",
+   "key": [
+    "$50"
+   ],
+   "place": {
+    "capy": [
+     -1.0,
+     1.0
+    ],
+    "engineer": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "engineer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "engineer": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Yahoo Sports: NFL warns teams it will know if they ratchet up the volume of their artificial crowd noise",
+   "url": "https://sports.yahoo.com/nfl-warns-teams-artificial-crowd-noise-monitor-fans-70-decibels-045829166.html"
+  },
+  {
+   "title": "CBS Sports: NFL revises stadium sound rules, allows teams to crank up the volume on fake crowd noise",
+   "url": "https://www.cbssports.com/nfl/news/nfl-revises-stadium-sound-rules-allows-teams-to-crank-up-the-volume-on-fake-crowd-noise"
+  },
+  {
+   "title": "NBC Washington: The Invisible Crowd: Inside the NFL's Fake Crowd Noise System",
+   "url": "https://www.nbcwashington.com/news/sports/the-invisible-crowd-inside-the-nfls-fake-crowd-noise-system/2447545/"
+  },
+  {
+   "title": "ESPN: 15 NFL coronavirus protocols you need to know",
+   "url": "https://africa.espn.com/nfl/story/_/id/29823418/15-nfl-coronavirus-protocols-need-know-no-more-mascots-jersey-swaps-cheerleaders"
+  },
+  {
+   "title": "ProFootballTalk: Bengals fans can buy cardboard cutouts for Week One",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bengals-fans-can-buy-cardboard-cutouts-for-week-one"
+  },
+  {
+   "title": "WAFB: Bengals raise $34,000 by filling stadium with cardboard cutouts",
+   "url": "https://www.wafb.com/2020/09/11/bengals-raise-by-filling-stadium-with-cardboard-cutouts/"
+  }
+ ]
+}

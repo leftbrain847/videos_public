@@ -1,0 +1,514 @@
+{
+ "id": "s3_07_coach_at_home",
+ "title": "The coach who watched from home",
+ "set": "living",
+ "setOpts": {
+  "boardText": [
+   "WILD CARD",
+   "BROWNS @ STEELERS"
+  ],
+  "couch": "#7a4a2a"
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": [
+    -1.3,
+    4.4
+   ],
+   "face": 15
+  },
+  "coach": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#e2551c",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": [
+    1.2,
+    4.2
+   ],
+   "face": -15
+  },
+  "priefer": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#3b2416",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#c9c9c9",
+    "skin": "#f2c39b",
+    "headset": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "guard": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#e2551c",
+    "pants": "#3b2416",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "left"
+  },
+  "corner": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#e2551c",
+    "pants": "#3b2416",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "right"
+  },
+  "pitqb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#f2c400",
+    "number": "7",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "center"
+  },
+  "brown": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#3b2416",
+    "pants": "#f4f4f4",
+    "number": "42",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714a"
+   },
+   "at": "right"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2020, the Browns won a playoff game while their head coach watched from home.",
+   "key": [
+    "HOME."
+   ],
+   "place": {
+    "priefer": false,
+    "guard": false,
+    "corner": false,
+    "pitqb": false,
+    "brown": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "That week, head coach Kevin Stefanski tested positive.",
+   "key": [
+    "POSITIVE."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "teamA": "#e2551c",
+    "teamB": "#3b2416",
+    "boardText": [
+     "HEAD COACH:",
+     "OUT"
+    ]
+   },
+   "place": {
+    "guard": [
+     -1.4,
+     0
+    ],
+    "corner": [
+     1.4,
+     0
+    ],
+    "priefer": [
+     0,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "priefer"
+   },
+   "act": {
+    "guard": {
+     "mood": "shocked",
+     "look": "priefer"
+    },
+    "corner": {
+     "mood": "shocked",
+     "look": "priefer"
+    },
+    "priefer": {
+     "mood": "worried",
+     "action": "hold"
+    }
+   },
+   "board": [
+    "HEAD COACH:",
+    "OUT"
+   ]
+  },
+  {
+   "text": "So did guard Joel Bitonio. And cornerback Denzel Ward.",
+   "key": [
+    "BITONIO.",
+    "WARD."
+   ],
+   "board": [
+    "BITONIO: OUT",
+    "WARD: OUT"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "guard",
+    "with": "corner"
+   },
+   "act": {
+    "guard": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "corner": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "The building closed. Meetings went virtual. They barely practiced.",
+   "key": [
+    "VIRTUAL.",
+    "BARELY"
+   ],
+   "board": [
+    "FACILITY",
+    "CLOSED"
+   ],
+   "place": {
+    "guard": false,
+    "corner": false,
+    "priefer": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "priefer"
+   },
+   "act": {
+    "priefer": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Special teams coach Mike Priefer would be head coach for the night.",
+   "key": [
+    "SPECIAL",
+    "TEAMS"
+   ],
+   "board": [
+    "HEAD COACH:",
+    "PRIEFER"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "priefer"
+   },
+   "act": {
+    "priefer": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In Pittsburgh. First play from scrimmage: the snap flew over Ben Roethlisberger's head.",
+   "key": [
+    "SNAP"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BROWNS 0",
+     "STEELERS 0"
+    ]
+   },
+   "place": {
+    "pitqb": "center",
+    "brown": [
+     2.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "pitqb"
+   },
+   "act": {
+    "pitqb": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "brown": {
+     "mood": "shocked",
+     "look": "pitqb"
+    }
+   },
+   "board": [
+    "BROWNS 0",
+    "STEELERS 0"
+   ]
+  },
+  {
+   "text": "Cleveland recovered it in the end zone. Touchdown.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "board": [
+    "BROWNS 7",
+    "STEELERS 0"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "brown"
+   },
+   "act": {
+    "brown": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "pitqb": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "After one quarter, it was twenty eight to nothing.",
+   "cap": "After one quarter, it was 28 to 0.",
+   "key": [
+    "28"
+   ],
+   "board": [
+    "BROWNS 28",
+    "STEELERS 0"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "brown",
+    "offset": [
+     1,
+     2,
+     3
+    ]
+   },
+   "act": {
+    "brown": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "pitqb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Roethlisberger completed forty seven passes. An NFL record.",
+   "cap": "Roethlisberger completed 47 passes. An NFL record.",
+   "key": [
+    "47"
+   ],
+   "board": [
+    "COMPLETIONS",
+    "47"
+   ],
+   "place": {
+    "brown": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "pitqb"
+   },
+   "act": {
+    "pitqb": {
+     "mood": "angry",
+     "action": "throw"
+    }
+   }
+  },
+  {
+   "text": "It wasn't enough. Cleveland won, forty eight to thirty seven.",
+   "cap": "It wasn't enough. Cleveland won, 48 to 37.",
+   "key": [
+    "48"
+   ],
+   "board": [
+    "BROWNS 48",
+    "STEELERS 37"
+   ],
+   "place": {
+    "pitqb": false,
+    "brown": "center",
+    "priefer": "sideline"
+   },
+   "shot": {
+    "type": "high",
+    "on": "brown"
+   },
+   "act": {
+    "brown": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "priefer": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "Their first playoff win since the 1994 season.",
+   "key": [
+    "1994"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "priefer"
+   },
+   "act": {
+    "priefer": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "And the head coach? He had the best seat in his own house.",
+   "key": [
+    "HOUSE."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "BROWNS 48",
+     "STEELERS 37"
+    ],
+    "couch": "#7a4a2a"
+   },
+   "place": {
+    "capy": [
+     -1.3,
+     4.4
+    ],
+    "coach": [
+     1.2,
+     4.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "capy": {
+     "mood": "smug",
+     "look": "coach"
+    }
+   },
+   "speaker": "capy",
+   "board": [
+    "BROWNS 48",
+    "STEELERS 37"
+   ]
+  },
+  {
+   "text": "Could your team win a playoff game without its head coach? Yes or no?",
+   "key": [
+    "WITHOUT"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL.com: Stunning first quarter lifts Browns over Steelers for first playoff win since 1994 season",
+   "url": "https://nfl.com/news/stunning-first-quarter-lifts-browns-over-steelers-for-first-playoff-win-since-19"
+  },
+  {
+   "title": "AP via KSL: Same old Browns? Hardly. Cleveland drills Steelers 48-37",
+   "url": "https://www.ksl.com/article/50085118/same-old-browns-hardly-cleveland-drills-steelers-48-37"
+  },
+  {
+   "title": "AP: Cruel twist: Browns lose coach for playoffs due to COVID-19",
+   "url": "https://www.clickondetroit.com/sports/2021/01/05/browns-stefanski-positive-for-covid-19-out-of-playoff-game/"
+  },
+  {
+   "title": "SI: Browns Facility Remains Closed as Team Awaits COVID-19 Test Results",
+   "url": "https://www.si.com/nfl/2021/01/06/browns-facility-remains-closed-before-steelers-wild-card"
+  },
+  {
+   "title": "The Ringer: Browns beat Steelers, end playoff drought",
+   "url": "https://www.theringer.com/2021/01/11/nfl/browns-beat-steelers-end-playoff-drought-baker-mayfield"
+  },
+  {
+   "title": "The Land on Demand: Kevin Stefanski paced with nervous energy watching Browns",
+   "url": "https://thelandondemand.com/news/2021/jan/11/kevin-stefanski-paced-nervous-energy-watching-brow"
+  }
+ ]
+}

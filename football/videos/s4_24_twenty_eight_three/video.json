@@ -1,0 +1,632 @@
+{
+ "id": "s4_24_twenty_eight_three",
+ "title": "28 to 3",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "FALCONS 28",
+   "PATRIOTS 3"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "fqb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a71930",
+    "pants": "#1b1b1b",
+    "number": "3",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "falc": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a71930",
+    "pants": "#1b1b1b",
+    "number": "55",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "back"
+  },
+  "pqb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#14284b",
+    "pants": "#c0c5c9",
+    "number": "10",
+    "hair": "short",
+    "hairColor": "#8a5a2b",
+    "skin": "#f2c39b"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "prb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#14284b",
+    "pants": "#c0c5c9",
+    "number": "20",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "back"
+  }
+ },
+ "lines": [
+  {
+   "text": "In the 2017 Super Bowl, Atlanta led twenty eight to three. Then they never scored again.",
+   "cap": "In the 2017 Super Bowl, Atlanta led 28 to 3. Then they never scored again.",
+   "key": [
+    "28",
+    "NEVER"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "fqb": [
+     0,
+     0
+    ],
+    "pqb": [
+     2.2,
+     0.2
+    ],
+    "falc": false,
+    "prb": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fqb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fqb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "pqb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Falcons against Patriots, Super Bowl fifty one. Third quarter.",
+   "cap": "Falcons against Patriots, Super Bowl LI. Third quarter.",
+   "key": [
+    "THIRD"
+   ],
+   "board": [
+    "SUPER BOWL LI",
+    "3RD QTR"
+   ],
+   "place": {
+    "capy": false,
+    "fqb": [
+     -1.3,
+     0
+    ],
+    "pqb": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "fqb",
+    "offset": [
+     1.3,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "fqb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "pqb"
+    },
+    "pqb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "fqb"
+    }
+   }
+  },
+  {
+   "text": "Matt Ryan's touchdown pass made it twenty eight to three.",
+   "cap": "Matt Ryan's touchdown pass made it 28 to 3.",
+   "key": [
+    "28"
+   ],
+   "board": [
+    "FALCONS 28",
+    "PATRIOTS 3"
+   ],
+   "place": {
+    "fqb": [
+     0,
+     0
+    ],
+    "pqb": false,
+    "falc": [
+     1.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "fqb"
+   },
+   "act": {
+    "fqb": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    },
+    "falc": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Twenty five points. Less than a half to go.",
+   "cap": "25 points. Less than a half to go.",
+   "key": [
+    "25"
+   ],
+   "board": [
+    "LEAD",
+    "25"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.6
+    ],
+    "fqb": [
+     -1.8,
+     -0.4
+    ],
+    "falc": [
+     1.8,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "fqb": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "falc": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then New England started scoring. And kept scoring. And kept scoring.",
+   "key": [
+    "KEPT"
+   ],
+   "board": [
+    "PATRIOTS",
+    "SCORING"
+   ],
+   "place": {
+    "capy": false,
+    "fqb": false,
+    "falc": false,
+    "pqb": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "pqb"
+   },
+   "act": {
+    "pqb": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty five straight points. Twenty eight all.",
+   "cap": "25 straight points. 28 all.",
+   "key": [
+    "28"
+   ],
+   "board": [
+    "FALCONS 28",
+    "PATRIOTS 28"
+   ],
+   "place": {
+    "prb": [
+     1.3,
+     0
+    ],
+    "pqb": [
+     -1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "pqb",
+    "with": "prb"
+   },
+   "act": {
+    "pqb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "prb"
+    },
+    "prb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "pqb"
+    }
+   }
+  },
+  {
+   "text": "The first overtime in Super Bowl history.",
+   "key": [
+    "FIRST"
+   ],
+   "set": "tunnel",
+   "board": [
+    "SUPER BOWL",
+    "OVERTIME"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "pqb": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pqb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "pqb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "New England won the coin toss.",
+   "key": [
+    "COIN"
+   ],
+   "board": [
+    "COIN TOSS",
+    "PATRIOTS"
+   ],
+   "place": {
+    "capy": false,
+    "pqb": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "pqb"
+   },
+   "act": {
+    "pqb": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Back then, a touchdown on the first drive ended the game.",
+   "key": [
+    "TOUCHDOWN"
+   ],
+   "board": [
+    "FIRST DRIVE TD",
+    "= GAME OVER"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "pqb": [
+     2.2,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Tom Brady drove the Patriots down the field.",
+   "key": [
+    "BRADY"
+   ],
+   "set": "field",
+   "board": [
+    "OVERTIME",
+    "PATRIOTS BALL"
+   ],
+   "place": {
+    "pqb": [
+     0,
+     0
+    ],
+    "falc": [
+     1.8,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "pqb"
+   },
+   "act": {
+    "pqb": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    },
+    "falc": {
+     "mood": "worried",
+     "look": "pqb"
+    }
+   }
+  },
+  {
+   "text": "James White ran it in from two yards. His third touchdown.",
+   "cap": "James White ran it in from 2 yards. His 3rd touchdown.",
+   "key": [
+    "3RD"
+   ],
+   "place": {
+    "prb": [
+     0,
+     0
+    ],
+    "pqb": false,
+    "falc": [
+     1.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "prb"
+   },
+   "act": {
+    "prb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "falc": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Patriots thirty four, Falcons twenty eight.",
+   "cap": "Patriots 34, Falcons 28.",
+   "key": [
+    "34,"
+   ],
+   "board": [
+    "PATRIOTS 34",
+    "FALCONS 28"
+   ],
+   "place": {
+    "pqb": [
+     -1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "prb"
+   },
+   "act": {
+    "prb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "pqb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "falc": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Thirty one points in a row.",
+   "cap": "31 points in a row.",
+   "key": [
+    "31"
+   ],
+   "board": [
+    "31",
+    "IN A ROW"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "prb",
+    "with": "pqb"
+   },
+   "act": {
+    "prb": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "pqb": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "Atlanta's offense never touched the ball in overtime.",
+   "key": [
+    "NEVER"
+   ],
+   "set": "locker",
+   "board": [
+    "OT",
+    "NO POSSESSION"
+   ],
+   "place": {
+    "fqb": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "fqb"
+   },
+   "act": {
+    "fqb": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "When your team is up twenty five, do you relax? Yes or no?",
+   "cap": "When your team is up 25, do you relax? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "UP 25:",
+    "RELAX?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.2
+    ],
+    "fqb": [
+     1.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fqb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fqb": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "ABC7: New England Patriots roar back to beat Atlanta Falcons in 1st OT Super Bowl",
+   "url": "https://abc7ny.com/super-bowl-superbowl-li-51/1739381/"
+  },
+  {
+   "title": "Atlanta Falcons: It began to turn in the third quarter",
+   "url": "https://www.atlantafalcons.com/news/it-began-to-turn-in-third-quarter-18537730"
+  },
+  {
+   "title": "Boston.com: Patriots pull off biggest comeback in Super Bowl history",
+   "url": "https://www.boston.com/sports/super-bowl-li/2017/02/05/patriots-pull-off-biggest-comeback-in-super-bowl-history"
+  },
+  {
+   "title": "CBS Sports: Five forgotten facts from the Patriots' epic comeback over the Falcons in Super Bowl LI",
+   "url": "https://www.cbssports.com/nfl/news/nfl-throwback-five-forgotten-facts-from-the-patriots-epic-comeback-win-over-the-falcons-in-super-bowl-li"
+  },
+  {
+   "title": "AJC: Five things that changed the outcome of the Falcons' Super Bowl loss",
+   "url": "https://ajc.com/sports/football/five-things-that-changed-the-outcome-the-falcons-super-bowl-loss/40yNffG54CJbAnLxktwPJJ"
+  },
+  {
+   "title": "WSLS (AP): NFL owners approve rule change for OT in playoffs (before 2022, an opening-drive TD ended playoff OT)",
+   "url": "https://www.wsls.com/sports/2022/03/29/nfl-owners-approve-rule-change-for-ot-in-playoffs/"
+  }
+ ]
+}

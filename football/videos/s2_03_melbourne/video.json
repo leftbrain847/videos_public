@@ -1,0 +1,531 @@
+{
+ "id": "s2_03_melbourne",
+ "title": "Football at the cricket ground",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "KICKOFF",
+   "10:35 AM FRI"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "purdy": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#aa0000",
+    "pants": "#b3995d",
+    "number": "13",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "stafford": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#003594",
+    "pants": "#f4f4f4",
+    "number": "9",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "beard": true
+   },
+   "at": "right",
+   "face": -20
+  },
+  "kyren": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#003594",
+    "pants": "#f4f4f4",
+    "number": "23",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "left"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#003594",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "cap": "#ffd100",
+    "headset": true
+   },
+   "at": "right",
+   "hold": "clipboard"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#7a8c99",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b"
+   },
+   "at": "couchL"
+  }
+ },
+ "lines": [
+  {
+   "text": "The NFL's first game in Australia kicked off at ten thirty five on a Friday morning.",
+   "cap": "The NFL's first game in Australia kicked off at 10:35 on a Friday morning.",
+   "key": [
+    "FRIDAY",
+    "MORNING."
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "purdy": [
+     0,
+     0
+    ],
+    "stafford": [
+     2.2,
+     0.3
+    ],
+    "kyren": false,
+    "coach": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "purdy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "purdy": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "capy"
+    },
+    "stafford": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "purdy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Local time. So people back home could watch it on Thursday night.",
+   "key": [
+    "THURSDAY"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "THURSDAY",
+     "NIGHT FOOTBALL"
+    ]
+   },
+   "place": {
+    "fan": "couchL",
+    "capy": {
+     "spot": [
+      0.9,
+      3.6
+     ],
+     "face": -15
+    }
+   },
+   "shot": {
+    "type": "wide",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The stadium was the Melbourne Cricket Ground.",
+   "key": [
+    "CRICKET"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "MELBOURNE",
+     "CRICKET GROUND"
+    ]
+   },
+   "place": {
+    "purdy": "center",
+    "stafford": "right"
+   },
+   "shot": {
+    "type": "high",
+    "on": "purdy"
+   },
+   "act": {
+    "purdy": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "stafford": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "purdy"
+    }
+   }
+  },
+  {
+   "text": "One hundred thousand and twenty one people came. On a workday.",
+   "cap": "100,021 people came. On a workday.",
+   "key": [
+    "100,021",
+    "WORKDAY."
+   ],
+   "board": [
+    "CROWD",
+    "100,021"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "purdy"
+   },
+   "act": {
+    "purdy": {
+     "mood": "shocked",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "San Francisco flew in a week early, to get used to the time zone.",
+   "key": [
+    "WEEK",
+    "EARLY,"
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "49ERS ARRIVE",
+     "1 WEEK EARLY"
+    ]
+   },
+   "place": {
+    "purdy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "purdy"
+   },
+   "act": {
+    "purdy": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The Rams stayed home, and landed about a day before kickoff.",
+   "key": [
+    "DAY"
+   ],
+   "board": [
+    "RAMS ARRIVE",
+    "1 DAY BEFORE"
+   ],
+   "place": {
+    "purdy": false,
+    "stafford": "center"
+   },
+   "shot": {
+    "type": "close",
+    "on": "stafford"
+   },
+   "act": {
+    "stafford": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The idea: keep their body clocks on California time.",
+   "key": [
+    "CALIFORNIA"
+   ],
+   "board": [
+    "BODY CLOCK",
+    "CALIFORNIA"
+   ],
+   "place": {
+    "stafford": "left",
+    "coach": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "coach",
+    "with": "stafford"
+   },
+   "act": {
+    "coach": {
+     "mood": "smug",
+     "action": "point",
+     "look": "stafford"
+    },
+    "stafford": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "coach"
+    }
+   }
+  },
+  {
+   "text": "Kyren Williams scored the first NFL touchdown ever in Australia.",
+   "key": [
+    "FIRST"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAMS 7",
+     "49ERS 3"
+    ]
+   },
+   "place": {
+    "kyren": "center",
+    "purdy": "right"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "kyren"
+   },
+   "act": {
+    "kyren": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "purdy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "kyren"
+    }
+   }
+  },
+  {
+   "text": "It was also the last time the Rams scored.",
+   "key": [
+    "LAST"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kyren"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "kyren": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Brock Purdy threw three touchdown passes.",
+   "cap": "Brock Purdy threw 3 touchdown passes.",
+   "key": [
+    "3"
+   ],
+   "board": [
+    "49ERS 24",
+    "RAMS 7"
+   ],
+   "place": {
+    "capy": false,
+    "kyren": false,
+    "purdy": "center",
+    "stafford": "right"
+   },
+   "shot": {
+    "type": "low",
+    "on": "purdy"
+   },
+   "act": {
+    "purdy": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    },
+    "stafford": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "purdy"
+    }
+   }
+  },
+  {
+   "text": "And the reigning MVP was stopped on a sneak, one yard from the end zone.",
+   "cap": "And the reigning MVP was stopped on a sneak, 1 yard from the end zone.",
+   "key": [
+    "SNEAK,"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "stafford"
+   },
+   "act": {
+    "stafford": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Final: San Francisco twenty seven, Rams seven.",
+   "cap": "Final: San Francisco 27, Rams 7.",
+   "key": [
+    "27,"
+   ],
+   "board": [
+    "49ERS 27",
+    "RAMS 7"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "purdy"
+   },
+   "act": {
+    "purdy": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The Rams coach said the travel plan was not why they lost.",
+   "key": [
+    "TRAVEL"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "POSTGAME"
+    ]
+   },
+   "place": {
+    "coach": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "coach"
+  },
+  {
+   "text": "A week early, or the day before? Which would you pick?",
+   "key": [
+    "WEEK",
+    "DAY"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "49ERS 27",
+     "RAMS 7"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "purdy": [
+     0.6,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "purdy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "purdy": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "AP via ESPN: 49ers rout Rams 27-7 in NFL's first Australia game behind Brock Purdy's 3 TD passes",
+   "url": "https://www.espn.com/nfl/recap/_/gameId/401872657"
+  },
+  {
+   "title": "Reuters via The Star: 49ers beat Rams 27-7 in landmark Australia game",
+   "url": "https://www.thestar.com.my/sport/others/2026/09/11/nfl-49ers-beat-rams-27-7-in-landmark-australia-game"
+  },
+  {
+   "title": "The Nightly: Historic NFL game at the MCG",
+   "url": "https://thenightly.com.au/sport/historic-nfl-game-at-the-mcg-sees-49ers-hand-super-bowl-favourite-rams-worst-defeat-in-700-days-c-22855081"
+  }
+ ]
+}

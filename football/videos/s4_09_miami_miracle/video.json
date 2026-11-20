@@ -1,0 +1,535 @@
+{
+ "id": "s4_09_miami_miracle",
+ "title": "The Miami Miracle",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "PATRIOTS 33",
+   "DOLPHINS 28"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#008e97",
+    "pants": "#f4f4f4",
+    "number": "17",
+    "hair": "short",
+    "hairColor": "#3b2416"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "stills": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#008e97",
+    "pants": "#f4f4f4",
+    "number": "10",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "parker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#008e97",
+    "pants": "#f4f4f4",
+    "number": "11",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "drake": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#008e97",
+    "pants": "#f4f4f4",
+    "number": "32",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": [
+    0,
+    0
+   ]
+  },
+  "gronk": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f4f4f4",
+    "pants": "#002244",
+    "number": "87",
+    "hair": "short",
+    "hairColor": "#6b4423"
+   },
+   "at": [
+    0,
+    0
+   ]
+  }
+ },
+ "lines": [
+  {
+   "text": "In 2018, the Dolphins beat the Patriots with a play that went backwards twice.",
+   "key": [
+    "TWICE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "drake"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "drake": {
+     "mood": "neutral",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "qb": false,
+    "stills": false,
+    "parker": false,
+    "drake": [
+     0.4,
+     0
+    ],
+    "gronk": false
+   },
+   "speaker": "capy",
+   "board": [
+    "PATRIOTS 33",
+    "DOLPHINS 28"
+   ]
+  },
+  {
+   "text": "New England led thirty three to twenty eight. Seven seconds left.",
+   "key": [
+    "7"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "gronk"
+   },
+   "act": {
+    "gronk": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "cap": "New England led 33 to 28. 7 seconds left.",
+   "place": {
+    "capy": false,
+    "qb": false,
+    "stills": false,
+    "parker": false,
+    "drake": false,
+    "gronk": "center"
+   }
+  },
+  {
+   "text": "Miami had the ball at its own thirty one. Sixty nine yards to go.",
+   "key": [
+    "69"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "stills": {
+     "mood": "neutral"
+    },
+    "drake": {
+     "mood": "neutral"
+    }
+   },
+   "cap": "Miami had the ball at its own 31. 69 yards to go.",
+   "place": {
+    "gronk": false,
+    "qb": "center",
+    "stills": [
+     -2.6,
+     -1.6
+    ],
+    "drake": [
+     2.6,
+     -1.6
+    ]
+   }
+  },
+  {
+   "text": "Ryan Tannehill threw it to Kenny Stills.",
+   "key": [
+    "STILLS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "stills"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "throw",
+     "look": "stills"
+    },
+    "stills": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "qb"
+    }
+   },
+   "place": {
+    "qb": [
+     1.0,
+     0
+    ],
+    "stills": [
+     -1.2,
+     0
+    ],
+    "drake": false
+   }
+  },
+  {
+   "text": "Stills pitched it back to DeVante Parker.",
+   "key": [
+    "PARKER."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "parker"
+   },
+   "act": {
+    "stills": {
+     "mood": "worried",
+     "action": "throw",
+     "look": "parker"
+    },
+    "parker": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "qb": false,
+    "stills": [
+     -1.8,
+     0
+    ],
+    "parker": [
+     0.8,
+     0.4
+    ]
+   }
+  },
+  {
+   "text": "Parker took a few steps and pitched it to Kenyan Drake.",
+   "key": [
+    "DRAKE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "parker",
+    "with": "drake"
+   },
+   "act": {
+    "parker": {
+     "mood": "worried",
+     "action": "throw",
+     "look": "drake"
+    },
+    "drake": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "parker"
+    }
+   },
+   "place": {
+    "stills": false,
+    "parker": [
+     -1.0,
+     0
+    ],
+    "drake": [
+     1.2,
+     0.2
+    ]
+   }
+  },
+  {
+   "text": "Drake ran. Then he cut back inside.",
+   "key": [
+    "INSIDE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "drake"
+   },
+   "act": {
+    "drake": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "parker": false,
+    "drake": "center"
+   }
+  },
+  {
+   "text": "New England's last line of defense? Rob Gronkowski. A tight end.",
+   "key": [
+    "TIGHT",
+    "END."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gronk"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "gronk"
+    },
+    "gronk": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "drake": false,
+    "capy": [
+     -2.0,
+     1.0
+    ],
+    "gronk": [
+     0.6,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Drake went past him and raced to the pylon.",
+   "key": [
+    "PYLON."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "drake"
+   },
+   "act": {
+    "drake": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "gronk": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   },
+   "place": {
+    "capy": false,
+    "drake": [
+     0.6,
+     0.6
+    ],
+    "gronk": [
+     -2.0,
+     -1.4
+    ]
+   }
+  },
+  {
+   "text": "Touchdown. Sixty nine yards. No time left.",
+   "key": [
+    "69"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "drake"
+   },
+   "act": {
+    "drake": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "gronk": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "cap": "Touchdown. 69 yards. No time left.",
+   "board": [
+    "DOLPHINS 34",
+    "PATRIOTS 33"
+   ]
+  },
+  {
+   "text": "Final score: Dolphins thirty four, Patriots thirty three.",
+   "key": [
+    "34"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "drake"
+   },
+   "act": {
+    "drake": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "parker": {
+     "mood": "happy",
+     "action": "clap"
+    },
+    "stills": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "cap": "Final score: Dolphins 34, Patriots 33.",
+   "set": "locker",
+   "place": {
+    "drake": "center",
+    "parker": "left",
+    "stills": "right"
+   },
+   "board": [
+    "DOLPHINS 34",
+    "PATRIOTS 33"
+   ]
+  },
+  {
+   "text": "The longest game-winning touchdown on the final play of regulation since the 1970 merger.",
+   "key": [
+    "LONGEST"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "parker"
+   },
+   "act": {
+    "parker": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Dolphins fans named it the Miami Miracle.",
+   "key": [
+    "MIRACLE."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "set": "press",
+   "place": {
+    "capy": "center"
+   },
+   "speaker": "capy",
+   "board": [
+    "THE MIAMI",
+    "MIRACLE"
+   ]
+  },
+  {
+   "text": "Two laterals, seven seconds left. Would you have pitched it? Yes or no. Tell me below.",
+   "key": [
+    "PITCHED"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "drake"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "drake": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "cap": "2 laterals, 7 seconds left. Would you have pitched it? Yes or no. Tell me below.",
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "drake": [
+     1.0,
+     0.2
+    ]
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "CBS Sports: Dolphins shock Patriots with miracle 69-yard touchdown on final play",
+   "url": "https://www.cbssports.com/nfl/news/dolphins-shock-patriots-with-miracle-69-yard-touchdown-on-final-play-to-pull-off-upset-win"
+  },
+  {
+   "title": "MiamiDolphins.com: Inside the numbers, the Miami Miracle",
+   "url": "https://www.miamidolphins.com/news/inside-the-numbers-the-miami-miracle"
+  },
+  {
+   "title": "SI: Dolphins complete two laterals for miracle game-winning touchdown vs. Patriots",
+   "url": "https://www.si.com/nfl/2018/12/09/dolphins-last-play-laterals-kenny-stills-devante-parker-kenyan-drake"
+  }
+ ]
+}

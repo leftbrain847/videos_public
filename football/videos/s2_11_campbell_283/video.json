@@ -1,0 +1,424 @@
+{
+ "id": "s2_11_campbell_283",
+ "title": "Game 283 at 40 years old",
+ "set": "locker",
+ "setOpts": {
+  "boardText": [
+   "GAMES PLAYED",
+   "DL RECORD"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "campbell": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#241773",
+    "pants": "#f4f4f4",
+    "number": "93",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#5a3825",
+    "beard": true
+   },
+   "at": "center"
+  },
+  "bijan": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a71930",
+    "pants": "#f4f4f4",
+    "number": "7",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#241773",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "cap": "#1b1b1b",
+    "headset": true
+   },
+   "at": "right",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "At forty years old, a defensive lineman just played more games than any lineman in NFL history.",
+   "cap": "At 40 years old, a defensive lineman just played more games than any lineman in NFL history.",
+   "key": [
+    "40",
+    "HISTORY."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "campbell": [
+     0,
+     0
+    ],
+    "bijan": false,
+    "coach": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "campbell"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "campbell": {
+     "mood": "happy",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Calais Campbell. Nineteenth season. Back for a second stint in Baltimore.",
+   "cap": "Calais Campbell. 19th season. Back for a second stint in Baltimore.",
+   "key": [
+    "19TH"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "campbell"
+   },
+   "act": {
+    "campbell": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He turned forty just before the season started.",
+   "cap": "He turned 40 just before the season started.",
+   "key": [
+    "40"
+   ],
+   "board": [
+    "AGE",
+    "40"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "campbell"
+   },
+   "act": {
+    "campbell": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The record for a defensive lineman belonged to Jim Marshall. Two hundred eighty two games.",
+   "cap": "The record for a defensive lineman belonged to Jim Marshall. 282 games.",
+   "key": [
+    "282"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "JIM MARSHALL",
+     "282 GAMES"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "In early October, Campbell tied it.",
+   "key": [
+    "TIED"
+   ],
+   "board": [
+    "CAMPBELL",
+    "282 GAMES"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then came a Sunday night in Atlanta. Game two hundred eighty three.",
+   "cap": "Then came a Sunday night in Atlanta. Game 283.",
+   "key": [
+    "283."
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "GAME 283",
+     "AT ATLANTA"
+    ]
+   },
+   "place": {
+    "campbell": "center"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "campbell"
+   },
+   "act": {
+    "campbell": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The record was his. Alone.",
+   "key": [
+    "ALONE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "campbell"
+   },
+   "act": {
+    "campbell": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In the fourth quarter, he stopped Bijan Robinson for a loss.",
+   "key": [
+    "LOSS."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "4TH QUARTER"
+    ]
+   },
+   "place": {
+    "campbell": [
+     -1.2,
+     0.4
+    ],
+    "bijan": [
+     1.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "campbell",
+    "with": "bijan"
+   },
+   "act": {
+    "campbell": {
+     "mood": "angry",
+     "action": "point",
+     "look": "bijan"
+    },
+    "bijan": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "campbell"
+    }
+   }
+  },
+  {
+   "text": "Baltimore won in overtime, thirty to twenty three.",
+   "cap": "Baltimore won in overtime, 30 to 23.",
+   "key": [
+    "30"
+   ],
+   "board": [
+    "BAL 30",
+    "ATL 23"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "campbell"
+   },
+   "act": {
+    "campbell": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "bijan": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "His team put it plainly: more games than any defensive lineman in NFL history.",
+   "key": [
+    "MORE",
+    "GAMES"
+   ],
+   "board": [
+    "MOST GAMES",
+    "BY A DL: 283"
+   ],
+   "place": {
+    "bijan": false,
+    "coach": [
+     1.2,
+     0.2
+    ],
+    "campbell": [
+     -1.0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "coach",
+    "with": "campbell"
+   },
+   "act": {
+    "coach": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "campbell"
+    },
+    "campbell": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "coach"
+    }
+   }
+  },
+  {
+   "text": "For scale: two hundred eighty three games is more than sixteen full seasons of seventeen games.",
+   "cap": "For scale: 283 games is more than 16 full seasons of 17 games.",
+   "key": [
+    "16"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "283 GAMES",
+     "> 16 SEASONS"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.2,
+     0.6
+    ],
+    "campbell": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    },
+    "campbell": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Two hundred eighty three games. Could you play even one? Yes or no?",
+   "cap": "283 games. Could you play even one? Yes or no?",
+   "key": [
+    "283",
+    "ONE?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "campbell"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "campbell": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "FOX45 Baltimore: Calais Campbell makes NFL history with tonight's game in Atlanta",
+   "url": "https://foxbaltimore.com/sports/sports-unlimited/ravens-defensive-lineman-calais-campbell-makes-nfl-history-with-tonights-game-in-atlanta"
+  },
+  {
+   "title": "FOX45 Baltimore: History for Ravens DL Calais Campbell (tie at 282)",
+   "url": "https://foxbaltimore.com/sports/sports-unlimited/history-for-ravens-dl-calais-campbell"
+  },
+  {
+   "title": "BaltimoreRavens.com: Grades and snap counts, Ravens vs. Falcons",
+   "url": "https://www.baltimoreravens.com/news/grades-snap-counts-ravens-falcons-calais-campbell-malaki-starks-nick-vannett-tyler-huntley-vega-ioane"
+  },
+  {
+   "title": "The Baltimore Banner: Calais Campbell's record night in Atlanta",
+   "url": "https://www.thebanner.com/sports/ravens-nfl/ravens-calais-campbell-return-atlanta-nateal-campbell-Q6EQCJ4W7NBGPFSLBKIXAKD6YQ"
+  }
+ ]
+}

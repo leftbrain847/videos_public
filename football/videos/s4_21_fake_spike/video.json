@@ -1,0 +1,576 @@
+{
+ "id": "s4_21_fake_spike",
+ "title": "The fake spike",
+ "set": "field",
+ "setOpts": {
+  "boardText": [
+   "JETS 24",
+   "DOLPHINS 21"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1aa3a8",
+    "pants": "#f4f4f4",
+    "number": "11",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1aa3a8",
+    "pants": "#f4f4f4",
+    "number": "88",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "back"
+  },
+  "cb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f5e45",
+    "pants": "#f4f4f4",
+    "number": "21",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "jet": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1f5e45",
+    "pants": "#f4f4f4",
+    "number": "70",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "beard": true
+   },
+   "at": "back"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1f5e45",
+    "pants": "#4a4a4a",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#c9c9c9"
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "In 1994, Dan Marino won a game by pretending to stop the clock.",
+   "key": [
+    "PRETENDING"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "qb": [
+     0,
+     0
+    ],
+    "cb": [
+     2.2,
+     0.2
+    ],
+    "wr": false,
+    "jet": false,
+    "coach": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "cb"
+    },
+    "cb": {
+     "mood": "confused",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Dolphins at Jets. New York led twenty four to six in the third quarter.",
+   "cap": "Dolphins at Jets. New York led 24 to 6 in the third quarter.",
+   "key": [
+    "24"
+   ],
+   "board": [
+    "JETS 24",
+    "DOLPHINS 6"
+   ],
+   "place": {
+    "capy": false,
+    "cb": [
+     -1.3,
+     0
+    ],
+    "jet": [
+     1.3,
+     0
+    ],
+    "qb": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "cb",
+    "offset": [
+     1.3,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "cb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "jet": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "Marino kept throwing to Mark Ingram. Touchdown. Touchdown.",
+   "key": [
+    "INGRAM."
+   ],
+   "board": [
+    "INGRAM",
+    "TD, TD"
+   ],
+   "place": {
+    "jet": false,
+    "cb": false,
+    "qb": [
+     -1.3,
+     0
+    ],
+    "wr": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "wr"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "wr"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Twenty four to twenty one. Miami at the Jets' eight yard line, clock running.",
+   "cap": "24 to 21. Miami at the Jets' 8-yard line, clock running.",
+   "key": [
+    "8-YARD"
+   ],
+   "board": [
+    "JETS 24",
+    "DOLPHINS 21"
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "wr": false,
+    "cb": [
+     2.0,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    },
+    "cb": {
+     "mood": "worried",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Everyone knew what came next. Spike the ball. Stop the clock.",
+   "key": [
+    "SPIKE"
+   ],
+   "board": [
+    "NEXT:",
+    "SPIKE?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "neutral",
+     "action": "hold"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Marino signaled that he'd spike it.",
+   "key": [
+    "SPIKE"
+   ],
+   "place": {
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then he didn't.",
+   "key": [
+    "DIDN'T."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A rookie cornerback bit on the fake.",
+   "key": [
+    "FAKE."
+   ],
+   "place": {
+    "cb": [
+     0,
+     0
+    ],
+    "qb": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "cb"
+   },
+   "act": {
+    "cb": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Marino threw to Ingram in the corner.",
+   "key": [
+    "CORNER."
+   ],
+   "place": {
+    "wr": [
+     0,
+     0
+    ],
+    "cb": [
+     1.6,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "cb": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "Touchdown. Twenty two seconds left. Dolphins win, twenty eight to twenty four.",
+   "cap": "Touchdown. 22 seconds left. Dolphins win, 28 to 24.",
+   "key": [
+    "28"
+   ],
+   "board": [
+    "DOLPHINS 28",
+    "JETS 24"
+   ],
+   "place": {
+    "qb": [
+     -1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "wr",
+    "with": "qb"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "cb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Ingram's fourth touchdown of the day.",
+   "cap": "Ingram's 4th touchdown of the day.",
+   "key": [
+    "4TH"
+   ],
+   "place": {
+    "qb": false,
+    "cb": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The Jets had been six and five, playing for first place.",
+   "cap": "The Jets had been 6-5, playing for first place.",
+   "key": [
+    "FIRST"
+   ],
+   "set": "locker",
+   "board": [
+    "JETS 6-5",
+    "1ST PLACE?"
+   ],
+   "place": {
+    "jet": [
+     -1.2,
+     0.2
+    ],
+    "cb": [
+     1.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "jet",
+    "with": "cb"
+   },
+   "act": {
+    "jet": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "cb": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   }
+  },
+  {
+   "text": "They never won again that season. Six and ten.",
+   "cap": "They never won again that season. 6-10.",
+   "key": [
+    "NEVER",
+    "6-10."
+   ],
+   "board": [
+    "FINAL",
+    "6-10"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "jet",
+    "offset": [
+     1.2,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "jet": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "cb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Their head coach, Pete Carroll, called it a staggering defeat. He was fired after one season.",
+   "key": [
+    "FIRED"
+   ],
+   "set": "press",
+   "board": [
+    "POSTGAME"
+   ],
+   "place": {
+    "coach": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "coach"
+  },
+  {
+   "text": "Would you have fallen for the fake spike? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "FAKE SPIKE:",
+    "FOOLED?"
+   ],
+   "place": {
+    "coach": [
+     1.2,
+     0
+    ],
+    "capy": [
+     -1.0,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NFL 100: Dan Marino's fake spike play",
+   "url": "https://www.nfl.com/100/originals/100-greatest/plays-38"
+  },
+  {
+   "title": "CBS Sports: Remember when Dan Marino's fake spike fooled the Jets in 1994",
+   "url": "https://www.cbssports.com/nfl/news/remember-when-dan-marinos-fake-spike-fools-jets-in-1994/"
+  },
+  {
+   "title": "Pro Football Reference: Miami Dolphins at New York Jets, November 27, 1994",
+   "url": "https://pro-football-reference.com/boxscores/199411270nyj.htm"
+  },
+  {
+   "title": "CBS New York: Carroll says Marino 'fake spike' play changed everything for Jets in 1994",
+   "url": "https://www.cbsnews.com/amp/newyork/news/carroll-marino-fake-spike-play-changed-everything-for-jets-in-1994"
+  }
+ ]
+}

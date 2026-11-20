@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Capy's football shorts</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header>
+  <h1>Capy's football shorts</h1>
+  <p id="count"></p>
+  <nav id="tabs" aria-label="Sets"></nav>
+</header>
+<main id="grid" aria-live="polite"></main>
+<dialog id="player" aria-label="Video player">
+  <video id="pv" controls playsinline preload="metadata"></video>
+  <div class="meta">
+    <h2 id="pt"></h2>
+    <p id="ph"></p>
+    <details><summary>Sources</summary><ul id="ps"></ul></details>
+    <div class="row"><button id="prev" type="button">Previous</button><button id="close" type="button">Close</button><button id="next" type="button">Next</button></div>
+  </div>
+</dialog>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,516 @@
+{
+ "id": "s2_04_trotter_debut",
+ "title": "A debut no rookie ever had",
+ "set": "tunnel",
+ "setOpts": {
+  "boardText": [
+   "NFL DEBUT",
+   "WEEK 1"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "trotter": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#d50a0a",
+    "pants": "#4b4b4f",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center"
+  },
+  "burrow": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#fb4f14",
+    "pants": "#1b1b1b",
+    "number": "9",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "receiver": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#fb4f14",
+    "pants": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c"
+   },
+   "at": "left"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#d50a0a",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "skin": "#e8b48f",
+    "cap": "#4b4b4f"
+   },
+   "at": "right",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "A rookie did something in his first NFL game that no rookie had ever done.",
+   "key": [
+    "FIRST",
+    "EVER"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "trotter": [
+     0,
+     0
+    ],
+    "burrow": false,
+    "receiver": false,
+    "coach": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "trotter"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "trotter": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Josiah Trotter. Linebacker. A second round pick out of Missouri.",
+   "key": [
+    "SECOND",
+    "ROUND"
+   ],
+   "board": [
+    "ROUND 2",
+    "MISSOURI"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "trotter"
+   },
+   "act": {
+    "trotter": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Week one, on the road in Cincinnati. Against Joe Burrow.",
+   "key": [
+    "BURROW."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CIN 0",
+     "TB 0"
+    ]
+   },
+   "place": {
+    "burrow": "center",
+    "trotter": "right",
+    "receiver": "left"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "burrow"
+   },
+   "act": {
+    "burrow": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "trotter"
+    },
+    "trotter": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "burrow"
+    },
+    "receiver": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "burrow"
+    }
+   }
+  },
+  {
+   "text": "First, he sacked Burrow. Tampa Bay's only sack of the day.",
+   "key": [
+    "ONLY"
+   ],
+   "board": [
+    "TB SACKS",
+    "1"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "trotter"
+   },
+   "act": {
+    "trotter": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "burrow": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Third quarter. The Bucs are down fourteen.",
+   "cap": "Third quarter. The Bucs are down 14.",
+   "key": [
+    "14."
+   ],
+   "board": [
+    "CIN 27",
+    "TB 13"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "trotter"
+   },
+   "act": {
+    "trotter": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "burrow"
+    },
+    "burrow": {
+     "mood": "smug",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "Burrow throws for Andrei Iosivas.",
+   "key": [
+    "IOSIVAS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "burrow"
+   },
+   "act": {
+    "burrow": {
+     "mood": "neutral",
+     "action": "throw",
+     "look": "receiver"
+    },
+    "receiver": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "burrow"
+    }
+   }
+  },
+  {
+   "text": "Trotter undercuts the route and gets there first.",
+   "key": [
+    "FIRST."
+   ],
+   "place": {
+    "trotter": [
+     -1.0,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "trotter",
+    "with": "receiver"
+   },
+   "act": {
+    "trotter": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "receiver"
+    },
+    "receiver": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "trotter"
+    }
+   }
+  },
+  {
+   "text": "Thirty eight yards. Touchdown.",
+   "cap": "38 yards. Touchdown.",
+   "key": [
+    "38",
+    "TOUCHDOWN."
+   ],
+   "board": [
+    "CIN 27",
+    "TB 20"
+   ],
+   "place": {
+    "trotter": "center",
+    "burrow": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "trotter"
+   },
+   "act": {
+    "trotter": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "burrow": {
+     "mood": "sad",
+     "action": "facepalm"
+    },
+    "receiver": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "That cut the lead to seven, with two forty eight left in the quarter.",
+   "cap": "That cut the lead to 7, with 2:48 left in the quarter.",
+   "key": [
+    "7,"
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     1.0
+    ],
+    "receiver": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "trotter"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "In practice that week, he played the same route too far inside.",
+   "key": [
+    "PRACTICE"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "PRACTICE",
+     "TOO FAR INSIDE"
+    ]
+   },
+   "place": {
+    "trotter": "left",
+    "coach": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "coach",
+    "with": "trotter"
+   },
+   "act": {
+    "coach": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "trotter"
+    },
+    "trotter": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "coach"
+    }
+   }
+  },
+  {
+   "text": "This time, he didn't.",
+   "key": [
+    "DIDN'T."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "trotter"
+   },
+   "act": {
+    "trotter": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "happy",
+     "action": "clap"
+    }
+   }
+  },
+  {
+   "text": "A sack and a pick six in one debut. No rookie had ever done both.",
+   "key": [
+    "BOTH."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SACK + PICK SIX",
+     "1ST EVER"
+    ]
+   },
+   "place": {
+    "capy": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The bad news? Tampa Bay lost four fumbles.",
+   "cap": "The bad news? Tampa Bay lost 4 fumbles.",
+   "key": [
+    "4"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "TB FUMBLES",
+     "LOST: 4"
+    ]
+   },
+   "place": {
+    "coach": "sideline",
+    "trotter": "center"
+   },
+   "shot": {
+    "type": "close",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "trotter": {
+     "mood": "sad",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "And the game, thirty three to twenty seven.",
+   "cap": "And the game, 33 to 27.",
+   "key": [
+    "33"
+   ],
+   "board": [
+    "CIN 33",
+    "TB 27"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "trotter"
+   },
+   "act": {
+    "trotter": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Best debut ever, even in a loss? Yes or no?",
+   "key": [
+    "BEST",
+    "DEBUT"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "trotter": [
+     0.6,
+     0.2
+    ],
+    "coach": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "trotter"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "trotter": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Buccaneers.com: Inside the moment, Josiah Trotter's pick-six in Week 1",
+   "url": "https://www.buccaneers.com/news/inside-the-moment-josiah-trotter-pick-six-week-1-2026"
+  },
+  {
+   "title": "Tampa Bay 28: Bucs rookie Josiah Trotter makes NFL history with sack and pick-six in season opener",
+   "url": "https://www.tampabay28.com/sports/bucs-rookie-josiah-trotter-makes-nfl-history-with-sack-and-pick-six-in-season-opener"
+  },
+  {
+   "title": "ProFootballTalk: Bucs LB Josiah Trotter's pick-six, sack makes history in his debut",
+   "url": "https://nbcsports.com/nfl/profootballtalk/rumor-mill/news/bucs-lb-josiah-trotters-pick-six-sack-makes-history-in-his-debut"
+  }
+ ]
+}
