@@ -1,0 +1,886 @@
+{
+ "id": "mind_12_hot_hand",
+ "title": "The hot hand was real after all",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "HOT",
+   "HAND?"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#c8102e",
+    "pants": "#1b1b1b",
+    "number": "33",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "hold": "trophy"
+  },
+  "prof": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "econ": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2e4a6a",
+    "pants": "#2a2d33",
+    "tie": "#f39c12",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "beard": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You hit three shots in a row. Science says you are not hot.",
+   "key": [
+    "NOT"
+   ],
+   "board": [
+    "3 IN A ROW",
+    "= HOT?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "prof": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen eighty five. Three psychologists study basketball.",
+   "cap": "1985. Three psychologists study basketball.",
+   "key": [
+    "BASKETBALL."
+   ],
+   "set": "office",
+   "board": [
+    "1985",
+    "SHOT LOGS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "prof": [
+     0,
+     0.2
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The question is simple. Is a streak real?",
+   "key": [
+    "STREAK"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "prof": [
+     0,
+     0.2
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One of them is Amos Tversky. A legend of human error.",
+   "key": [
+    "TVERSKY."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "prof": [
+     0,
+     0.2
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They study shots by the Philadelphia seventy sixers.",
+   "cap": "They study shots by the Philadelphia 76ers.",
+   "key": [
+    "76ERS."
+   ],
+   "set": "locker",
+   "board": [
+    "76ERS",
+    "SHOT LOGS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "prof": false,
+    "econ": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Do players shoot better right after a make? No.",
+   "key": [
+    "NO."
+   ],
+   "set": "office",
+   "board": [
+    "HOT",
+    "HAND?"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "prof": [
+     0,
+     0.2
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They run shooting tests too. Same answer.",
+   "key": [
+    "SAME"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.6
+    ],
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "prof"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "prof"
+    },
+    "prof": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Hot streaks feel real. The numbers look like coin flips.",
+   "key": [
+    "COIN"
+   ],
+   "set": "study",
+   "board": [
+    "HOT",
+    "HAND?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "prof": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It gets a name. The hot hand fallacy.",
+   "key": [
+    "FALLACY."
+   ],
+   "board": [
+    "HOT HAND",
+    "FALLACY"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "prof": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "For three decades, it is a textbook classic.",
+   "key": [
+    "CLASSIC."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "prof"
+    },
+    "prof": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Coaches scoff. Players scoff. Psychologists shrug.",
+   "key": [
+    "SCOFF."
+   ],
+   "set": "locker",
+   "board": [
+    "HOT",
+    "HAND?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "prof": false,
+    "econ": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. The math had a hole.",
+   "key": [
+    "HOLE."
+   ],
+   "set": "study",
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "prof": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty fifteen. Two economists recheck the method.",
+   "cap": "2015. Two economists recheck the method.",
+   "key": [
+    "METHOD."
+   ],
+   "set": "office",
+   "board": [
+    "2015",
+    "RECHECK"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "prof": false,
+    "econ": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "econ"
+   },
+   "act": {
+    "econ": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Flip a coin four times. After each heads, check the next flip.",
+   "key": [
+    "NEXT"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "prof": false,
+    "econ": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "econ"
+   },
+   "act": {
+    "econ": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Average it over many runs. The next flip is heads about forty percent.",
+   "cap": "Average it over many runs. The next flip is heads about 40%.",
+   "key": [
+    "40%."
+   ],
+   "set": "study",
+   "board": [
+    "NEXT FLIP:",
+    "~40% HEADS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "prof": false,
+    "econ": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "econ"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "econ"
+    },
+    "econ": {
+     "mood": "smug",
+     "action": "point",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Not fifty. A hidden bias in short streaks.",
+   "key": [
+    "BIAS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "prof": false,
+    "econ": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "econ"
+   },
+   "act": {
+    "econ": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "econ"
+    }
+   }
+  },
+  {
+   "text": "The old method had that same bias. Baked in.",
+   "key": [
+    "SAME"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "prof": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So fix the bias. Then rerun the original data.",
+   "key": [
+    "RERUN"
+   ],
+   "set": "office",
+   "board": [
+    "HOT",
+    "HAND?"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "prof": [
+     -1.4,
+     0.4
+    ],
+    "econ": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "econ"
+    },
+    "econ": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "prof"
+    }
+   }
+  },
+  {
+   "text": "The hot hand shows up. It is real. It is measurable.",
+   "key": [
+    "REAL."
+   ],
+   "set": "locker",
+   "board": [
+    "HOT HAND:",
+    "REAL"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "prof": false,
+    "econ": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The famous fallacy was partly a fallacy.",
+   "key": [
+    "FALLACY."
+   ],
+   "set": "study",
+   "board": [
+    "HOT",
+    "HAND?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "prof": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "How big is the effect? Still argued. Fans, calm down.",
+   "key": [
+    "ARGUED."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "prof": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "You hit three in a row. Do you take the next shot? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "TAKE THE",
+    "NEXT SHOT?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "prof": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Hot hand",
+   "url": "https://en.wikipedia.org/wiki/Hot_hand"
+  },
+  {
+   "title": "Nautilus: The hot hand is not a myth",
+   "url": "https://nautil.us/the-hot-hand-is-not-a-myth-643539"
+  },
+  {
+   "title": "Columbia statistical modeling blog: Hey, guess what? There really is a hot hand",
+   "url": "https://statmodeling.stat.columbia.edu/2015/07/09/hey-guess-what-there-really-is-a-hot-hand/"
+  },
+  {
+   "title": "Morningstar: The hot hand finding, revisited",
+   "url": "https://www.morningstar.com/columns/rekenthaler-report/hot-hand-finding-revisited"
+  },
+  {
+   "title": "Wikipedia: Amos Tversky",
+   "url": "https://en.wikipedia.org/wiki/Amos_Tversky"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "A 1985 study by three psychologists examined basketball",
+   "terms": [
+    "1985",
+    "Gilovich|Tversky"
+   ]
+  },
+  {
+   "claim": "Amos Tversky was one of the authors",
+   "terms": [
+    "Tversky",
+    "Gilovich"
+   ]
+  },
+  {
+   "claim": "They used shooting records of an NBA team",
+   "terms": [
+    "76ers|NBA|professional"
+   ]
+  },
+  {
+   "claim": "Players did not shoot better after a make",
+   "terms": [
+    "hot hand",
+    "fallacy|no evidence"
+   ]
+  },
+  {
+   "claim": "They also ran shooting tests",
+   "terms": [
+    "shooting|free throw",
+    "hot hand"
+   ]
+  },
+  {
+   "claim": "It became known as the hot hand fallacy",
+   "terms": [
+    "hot hand",
+    "fallacy|myth|illusion"
+   ]
+  },
+  {
+   "claim": "In 2015 two economists, Miller and Sanjurjo, rechecked the method",
+   "terms": [
+    "Miller",
+    "Sanjurjo"
+   ]
+  },
+  {
+   "claim": "In short sequences the flip after heads is heads about 40 percent on average",
+   "terms": [
+    "40"
+   ]
+  },
+  {
+   "claim": "The original method contained this bias",
+   "terms": [
+    "bias",
+    "Miller|Sanjurjo"
+   ]
+  },
+  {
+   "claim": "Correcting the bias reveals a hot hand in the original data",
+   "terms": [
+    "hot hand",
+    "evidence|exists|real"
+   ]
+  }
+ ]
+}
