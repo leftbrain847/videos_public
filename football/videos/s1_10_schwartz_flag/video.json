@@ -75,12 +75,37 @@
    "at": "desk"
   }
  },
+ "sources": [
+  {
+   "title": "CBS Chicago (AP): Texans top Lions 34-31 in OT after coach's mistake",
+   "url": "https://www.cbsnews.com/chicago/news/texans-top-lions-34-31-in-ot-after-coachs-mistake/"
+  },
+  {
+   "title": "SI (AP): NFL to examine replay rule from Lions-Texans game",
+   "url": "https://www.si.com/nfl/2012/11/23/jim-schwartz-rule-change-ap"
+  },
+  {
+   "title": "Football Zebras: Revoked replay review result of repeated rulebook revisions",
+   "url": "https://www.footballzebras.com/2012/11/revoked-replay-review-result-of-repeated-rulebook-revisions/"
+  },
+  {
+   "title": "CBS Detroit (AP): NFL passes helmet rule, ends tuck rule (challenge loophole eliminated)",
+   "url": "https://www.cbsnews.com/detroit/news/nfl-passes-helmet-rule-ends-tuck-rule"
+  },
+  {
+   "title": "Bleacher Report: Everything you need to know about the NFL's new rule changes (the 'Jim Schwartz Rule')",
+   "url": "https://bleacherreport.com/articles/1584180-everything-you-need-to-know-about-the-nfls-new-rule-changes"
+  },
+  {
+   "title": "ProFootballTalk: NFL passes Jim Schwartz rule",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-passes-jim-schwartz-rule"
+  }
+ ],
  "lines": [
   {
-   "text": "On Thanksgiving 2012, a coach threw his challenge flag, and it saved the other team's touchdown.",
+   "text": "Your challenge flag saves their touchdown.",
    "key": [
-    "FLAG,",
-    "SAVED"
+    "SAVES"
    ],
    "place": {
     "capy": [
@@ -109,17 +134,17 @@
     },
     "coach": {
      "mood": "angry",
-     "action": "throw",
+     "action": "point",
      "look": "capy"
     }
    },
    "speaker": "capy"
   },
   {
-   "text": "Houston at Detroit. Third quarter. Detroit is up ten.",
-   "cap": "Houston at Detroit. 3rd quarter. Detroit is up 10.",
+   "text": "Thanksgiving, twenty twelve. Your Lions host Houston.",
+   "cap": "Thanksgiving, 2012. Your Lions host Houston.",
    "key": [
-    "10."
+    "HOUSTON."
    ],
    "place": {
     "capy": false,
@@ -151,59 +176,305 @@
    }
   },
   {
-   "text": "Justin Forsett runs. His knee and elbow touch the turf.",
+   "text": "Third quarter. You lead by ten points.",
+   "cap": "3rd quarter. You lead by 10 points.",
    "key": [
-    "KNEE"
+    "10"
    ],
    "place": {
-    "def": [
-     1.4,
-     -0.1
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "coach": [
+     1.0,
+     0
     ]
    },
    "shot": {
     "type": "two",
-    "on": "rb",
-    "with": "def"
+    "on": "capy",
+    "with": "coach"
    },
    "act": {
-    "rb": {
-     "mood": "worried",
-     "action": "hold"
-    },
-    "def": {
-     "mood": "happy",
+    "capy": {
+     "mood": "neutral",
      "action": "point",
-     "look": "rb"
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
     }
-   }
+   },
+   "speaker": "capy"
   },
   {
-   "text": "No whistle. He keeps going. Eighty one yards. Touchdown.",
-   "cap": "No whistle. He keeps going. 81 yards. Touchdown.",
+   "text": "Justin Forsett takes the handoff. His knee hits the turf.",
    "key": [
-    "81",
-    "TOUCHDOWN."
+    "TURF."
    ],
-   "place": {
-    "def": false
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "TEXANS",
+     "LIONS"
+    ],
+    "endZone": 8,
+    "zoneA": "#1f6fb5",
+    "zoneB": "#14254a"
    },
    "shot": {
-    "type": "low",
-    "on": "rb"
+    "type": "follow",
+    "on": "rb",
+    "lead": 1
    },
-   "act": {
-    "rb": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    }
+   "act": {},
+   "play": {
+    "cast": {
+     "rb": {
+      "path": [
+       [
+        0.0,
+        -9.0,
+        0.5
+       ],
+       [
+        0.125,
+        -7.5,
+        0.45
+       ],
+       [
+        0.25,
+        -6.0,
+        0.4
+       ],
+       [
+        0.375,
+        -4.5,
+        0.35
+       ],
+       [
+        0.5,
+        -3.0,
+        0.3
+       ],
+       [
+        0.75,
+        -3.0,
+        0.3
+       ],
+       [
+        0.8125,
+        -2.75,
+        0.325
+       ],
+       [
+        0.875,
+        -2.5,
+        0.35
+       ],
+       [
+        0.9375,
+        -2.25,
+        0.375
+       ],
+       [
+        1.0,
+        -2.0,
+        0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.5,
+        "slump"
+       ],
+       [
+        0.75,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "def": {
+      "path": [
+       [
+        0.0,
+        -1.0,
+        -3.0
+       ],
+       [
+        0.125,
+        -1.9,
+        -2.65
+       ],
+       [
+        0.25,
+        -2.8,
+        -2.3
+       ],
+       [
+        0.375,
+        -3.7,
+        -1.95
+       ],
+       [
+        0.5,
+        -4.6,
+        -1.6
+       ],
+       [
+        1.0,
+        -4.6,
+        -1.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.5,
+        "idle"
+       ]
+      ],
+      "face": -120
+     }
+    },
+    "carry": [
+     [
+      0,
+      "rb"
+     ]
+    ]
    }
   },
   {
-   "text": "Every scoring play gets reviewed automatically. And replays showed he was down.",
+   "text": "No whistle. He keeps going. Eighty one yards.",
+   "cap": "No whistle. He keeps going. 81 yards.",
    "key": [
-    "AUTOMATICALLY."
+    "81"
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "rb",
+    "lead": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "rb": {
+      "path": [
+       [
+        0.0,
+        -2.0,
+        0.4
+       ],
+       [
+        0.15,
+        1.125,
+        0.45
+       ],
+       [
+        0.3,
+        4.25,
+        0.5
+       ],
+       [
+        0.45,
+        7.375,
+        0.55
+       ],
+       [
+        0.6,
+        10.5,
+        0.6
+       ],
+       [
+        1.0,
+        10.5,
+        0.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.65,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     },
+     "def": {
+      "path": [
+       [
+        0.0,
+        -4.6,
+        -1.6
+       ],
+       [
+        0.25,
+        -3.2,
+        -1.5
+       ],
+       [
+        0.5,
+        -1.8,
+        -1.4
+       ],
+       [
+        0.75,
+        -0.4,
+        -1.3
+       ],
+       [
+        1.0,
+        1.0,
+        -1.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.8,
+        "idle"
+       ]
+      ],
+      "face": 90,
+      "mood": "shocked"
+     }
+    },
+    "carry": [
+     [
+      0,
+      "rb"
+     ]
+    ]
+   },
+   "sfx": [
+    [
+     0.6,
+     "roar"
+    ]
+   ]
+  },
+  {
+   "text": "Scoring plays get reviewed automatically. Replays show he was down.",
+   "key": [
+    "DOWN."
    ],
    "set": "locker",
    "setOpts": {
@@ -236,10 +507,9 @@
    "speaker": "capy"
   },
   {
-   "text": "But Detroit's coach, Jim Schwartz, throws his challenge flag anyway.",
+   "text": "You're Jim Schwartz. You throw the flag anyway.",
    "key": [
-    "CHALLENGE",
-    "FLAG"
+    "ANYWAY."
    ],
    "set": "field",
    "setOpts": {
@@ -258,15 +528,14 @@
    "act": {
     "coach": {
      "mood": "angry",
-     "action": "throw"
+     "action": "point"
     }
    }
   },
   {
-   "text": "The rule then: challenge a play that's reviewed automatically, and there's no review at all.",
+   "text": "The rule back then? That cancels the review.",
    "key": [
-    "NO",
-    "REVIEW"
+    "CANCELS"
    ],
    "place": {
     "ref": [
@@ -293,8 +562,8 @@
    }
   },
   {
-   "text": "Plus fifteen yards, for unsportsmanlike conduct.",
-   "cap": "Plus 15 yards, for unsportsmanlike conduct.",
+   "text": "Plus fifteen yards for unsportsmanlike conduct.",
+   "cap": "Plus 15 yards for unsportsmanlike conduct.",
    "key": [
     "15"
    ],
@@ -311,7 +580,7 @@
    }
   },
   {
-   "text": "So the touchdown stands.",
+   "text": "So their touchdown stands. Your flag did that.",
    "key": [
     "STANDS."
    ],
@@ -332,10 +601,49 @@
    }
   },
   {
-   "text": "Houston comes back and wins in overtime, thirty four to thirty one.",
-   "cap": "Houston comes back and wins in overtime, 34 to 31.",
+   "text": "So, let's quickly review your review.",
    "key": [
-    "OVERTIME,"
+    "REVIEW."
+   ],
+   "place": {
+    "capy": "left",
+    "coach": "right",
+    "rb": false,
+    "def": false,
+    "ref": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "REVIEW",
+     "CANCELLED"
+    ]
+   }
+  },
+  {
+   "text": "Houston comes back. Overtime. Thirty four to thirty one.",
+   "cap": "Houston comes back. Overtime. 34 to 31.",
+   "key": [
+    "OVERTIME."
    ],
    "shot": {
     "type": "low",
@@ -347,10 +655,17 @@
      "action": "clap",
      "look": "camera"
     }
+   },
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "TEXANS 34",
+     "LIONS 31"
+    ]
    }
   },
   {
-   "text": "Schwartz said he got so mad that he overreacted.",
+   "text": "Afterward, you admit you got too mad. You overreacted.",
    "key": [
     "OVERREACTED."
    ],
@@ -375,10 +690,9 @@
    }
   },
   {
-   "text": "That March, the league closed the loophole. Now the play still gets reviewed. The coach just loses a timeout or gets penalized.",
+   "text": "That spring, the league kills the loophole.",
    "key": [
-    "STILL",
-    "REVIEWED."
+    "LOOPHOLE."
    ],
    "set": "office",
    "setOpts": {
@@ -412,7 +726,38 @@
    }
   },
   {
-   "text": "It got a nickname: the Jim Schwartz rule.",
+   "text": "Now the play still gets reviewed.",
+   "key": [
+    "REVIEWED."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NEW RULE",
+     "2013"
+    ]
+   },
+   "place": {
+    "boss": "desk",
+    "capy": [
+     2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Its nickname? The Jim Schwartz rule. Happy Thanksgiving.",
    "key": [
     "SCHWARTZ"
    ],
@@ -434,10 +779,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Would you rather lose the game, or get a rule named after you? One word, below.",
+   "text": "Lose the game, or get a rule? One word. Lions fans, pass the gravy.",
    "key": [
     "LOSE",
-    "RULE"
+    "RULE?"
    ],
    "set": "locker",
    "setOpts": {
@@ -470,30 +815,90 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "CBS Chicago (AP): Texans top Lions 34-31 in OT after coach's mistake",
-   "url": "https://www.cbsnews.com/chicago/news/texans-top-lions-34-31-in-ot-after-coachs-mistake/"
+   "claim": "On Thanksgiving 2012 the Lions hosted the Texans",
+   "terms": [
+    "Thanksgiving",
+    "Texans"
+   ]
   },
   {
-   "title": "SI (AP): NFL to examine replay rule from Lions-Texans game",
-   "url": "https://www.si.com/nfl/2012/11/23/jim-schwartz-rule-change-ap"
+   "claim": "In the third quarter Detroit led by 10",
+   "terms": [
+    "third quarter",
+    "Forsett"
+   ]
   },
   {
-   "title": "Football Zebras: Revoked replay review result of repeated rulebook revisions",
-   "url": "https://www.footballzebras.com/2012/11/revoked-replay-review-result-of-repeated-rulebook-revisions/"
+   "claim": "Justin Forsett's knee touched down but there was no whistle",
+   "terms": [
+    "Forsett",
+    "knee"
+   ]
   },
   {
-   "title": "CBS Detroit (AP): NFL passes helmet rule, ends tuck rule (challenge loophole eliminated)",
-   "url": "https://www.cbsnews.com/detroit/news/nfl-passes-helmet-rule-ends-tuck-rule"
+   "claim": "Replays showed Forsett was down",
+   "terms": [
+    "Forsett",
+    "down"
+   ]
   },
   {
-   "title": "Bleacher Report: Everything you need to know about the NFL's new rule changes (the 'Jim Schwartz Rule')",
-   "url": "https://bleacherreport.com/articles/1584180-everything-you-need-to-know-about-the-nfls-new-rule-changes"
+   "claim": "Forsett ran 81 yards for a touchdown",
+   "terms": [
+    "Forsett",
+    "81"
+   ]
   },
   {
-   "title": "ProFootballTalk: NFL passes Jim Schwartz rule",
-   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-passes-jim-schwartz-rule"
+   "claim": "Scoring plays are automatically reviewed",
+   "terms": [
+    "automatic",
+    "review"
+   ]
+  },
+  {
+   "claim": "Jim Schwartz threw the challenge flag anyway",
+   "terms": [
+    "Schwartz",
+    "challenge flag|threw his challenge|red flag"
+   ]
+  },
+  {
+   "claim": "Under the rule then, challenging an automatically reviewed play cancelled the review and drew a 15-yard unsportsmanlike penalty",
+   "terms": [
+    "unsportsmanlike",
+    "Schwartz"
+   ]
+  },
+  {
+   "claim": "Houston won 34-31 in overtime",
+   "terms": [
+    "34-31",
+    "overtime"
+   ]
+  },
+  {
+   "claim": "Schwartz said he overreacted",
+   "terms": [
+    "Schwartz",
+    "overreact"
+   ]
+  },
+  {
+   "claim": "The league changed the rule so the play is still reviewed",
+   "terms": [
+    "Schwartz",
+    "review"
+   ]
+  },
+  {
+   "claim": "It became known as the Jim Schwartz rule",
+   "terms": [
+    "Schwartz rule"
+   ]
   }
  ]
 }

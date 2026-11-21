@@ -75,11 +75,37 @@
    "at": "desk"
   }
  },
+ "sources": [
+  {
+   "title": "Fox Sports: One & Done: The Bert Emanuel non-catch helped the Rams trip the Bucs",
+   "url": "https://www.foxnews.com/sports/one-done-the-burt-emanuel-non-catch-helped-the-rams-trip-the-bucs.print"
+  },
+  {
+   "title": "ABC Action News: Former Bucs WR Bert Emanuel talks about 'the catch' in 1999 NFC Championship",
+   "url": "https://www.tampabay28.com/sports/football/tampa-bay-bucs/former-bucs-wr-bert-emanuel-talks-about-the-catch-in-1999-nfc-championship-game-vs-rams"
+  },
+  {
+   "title": "Buccaneers.com: Back in an instant (March 2000)",
+   "url": "https://www.buccaneers.com/news/back-in-an-instant-2180933"
+  },
+  {
+   "title": "Wikipedia: Bert Emanuel",
+   "url": "https://en.wikipedia.org/wiki/Bert_Emanuel"
+  },
+  {
+   "title": "ESPN: Why the Bucs' Bert Emanuel has embraced his non-catch NFL legacy",
+   "url": "https://www.espn.com/blog/tampa-bay-buccaneers/post/_/id/23363/why-the-bucs-bert-emanuel-has-embraced-his-non-catch-nfl-legacy"
+  },
+  {
+   "title": "Deadspin: Bert Emanuel, who started all the trouble, can fix the NFL's catch rule",
+   "url": "https://deadspin.com/bert-emanuel-who-started-all-the-trouble-can-fix-the-1821393650/"
+  }
+ ],
  "lines": [
   {
-   "text": "In 2000, a catch in the NFC title game was erased because the tip of the ball touched the grass.",
+   "text": "You make the catch. The ground takes it back.",
    "key": [
-    "TIP"
+    "BACK."
    ],
    "place": {
     "capy": [
@@ -115,11 +141,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Tampa Bay at St. Louis. Fourth quarter. The Rams lead eleven to six.",
-   "cap": "Tampa Bay at St. Louis. 4th quarter. The Rams lead 11 to 6.",
+   "text": "January two thousand. Your Bucs visit the Rams.",
+   "cap": "January 2000. Your Bucs visit the Rams.",
    "key": [
-    "11",
-    "6."
+    "RAMS."
    ],
    "place": {
     "capy": false,
@@ -148,12 +173,52 @@
      "mood": "smug",
      "look": "qb"
     }
-   }
+   },
+   "board": [
+    "BUCS",
+    "AT RAMS"
+   ]
   },
   {
-   "text": "Shaun King throws to Bert Emanuel.",
+   "text": "Conference title game. A Super Bowl trip on the line.",
    "key": [
-    "EMANUEL."
+    "LINE."
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "qb": [
+     1.0,
+     0
+    ],
+    "wr": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "You trail eleven to six. Late in the fourth.",
+   "cap": "You trail 11 to 6. Late in the 4th.",
+   "key": [
+    "11"
    ],
    "shot": {
     "type": "medium",
@@ -161,37 +226,329 @@
    },
    "act": {
     "qb": {
-     "mood": "neutral",
-     "action": "throw"
-    }
-   }
-  },
-  {
-   "text": "He dives, pins the ball to his chest, and lands.",
-   "key": [
-    "DIVES,"
-   ],
-   "place": {
-    "qb": false,
-    "def": false,
-    "wr": "center"
-   },
-   "shot": {
-    "type": "low",
-    "on": "wr"
-   },
-   "act": {
-    "wr": {
-     "mood": "happy",
+     "mood": "worried",
      "action": "hold",
      "look": "camera"
     }
+   },
+   "board": [
+    "BUCS 6",
+    "RAMS 11"
+   ],
+   "place": {
+    "capy": false,
+    "qb": "center",
+    "def": [
+     1.6,
+     -1.2
+    ]
    }
   },
   {
-   "text": "The tip of the ball touches the turf. It doesn't move.",
+   "text": "You're Bert Emanuel. Shaun King fires your way.",
    "key": [
-    "TOUCHES"
+    "WAY."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BUCS 6",
+     "RAMS 11"
+    ],
+    "endZone": 8,
+    "zoneA": "#b5252b",
+    "zoneB": "#1f3f8f"
+   },
+   "shot": {
+    "type": "follow",
+    "on": "qb",
+    "lead": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        -3.0,
+        1.0
+       ],
+       [
+        1,
+        -3.0,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        1.0,
+        -1.0
+       ],
+       [
+        0.25,
+        2.0,
+        -0.625
+       ],
+       [
+        0.5,
+        3.0,
+        -0.25
+       ],
+       [
+        0.75,
+        4.0,
+        0.125
+       ],
+       [
+        1.0,
+        5.0,
+        0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "def": {
+      "path": [
+       [
+        0.0,
+        1.5,
+        -3.0
+       ],
+       [
+        0.25,
+        1.925,
+        -2.6
+       ],
+       [
+        0.5,
+        2.35,
+        -2.2
+       ],
+       [
+        0.75,
+        2.775,
+        -1.8
+       ],
+       [
+        1.0,
+        3.2,
+        -1.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 60
+     }
+    },
+    "ball": [
+     [
+      0.55,
+      -2.8,
+      1.6,
+      1.0
+     ],
+     [
+      0.775,
+      0.9,
+      2.8,
+      0.775
+     ],
+     [
+      1.0,
+      4.6,
+      1.6,
+      0.55
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.55,
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "text": "You dive. You pin the ball to your chest.",
+   "key": [
+    "CHEST."
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "wr",
+    "lead": 0
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "wr": {
+      "path": [
+       [
+        0.0,
+        5.0,
+        0.5
+       ],
+       [
+        0.0625,
+        5.2,
+        0.525
+       ],
+       [
+        0.125,
+        5.4,
+        0.55
+       ],
+       [
+        0.1875,
+        5.6,
+        0.575
+       ],
+       [
+        0.25,
+        5.8,
+        0.6
+       ],
+       [
+        1.0,
+        6.0,
+        0.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.25,
+        "catch"
+       ]
+      ],
+      "face": 90
+     },
+     "def": {
+      "path": [
+       [
+        0.0,
+        3.2,
+        -1.4
+       ],
+       [
+        0.25,
+        3.475,
+        -1.3
+       ],
+       [
+        0.5,
+        3.75,
+        -1.2
+       ],
+       [
+        0.75,
+        4.025,
+        -1.1
+       ],
+       [
+        1.0,
+        4.3,
+        -1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.8,
+        "idle"
+       ]
+      ],
+      "face": 60
+     },
+     "qb": {
+      "path": [
+       [
+        0,
+        -3.0,
+        1.0
+       ],
+       [
+        1,
+        -3.0,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0,
+      4.6,
+      1.6,
+      0.55
+     ],
+     [
+      0.12,
+      5.2,
+      1.3,
+      0.58
+     ],
+     [
+      0.25,
+      5.8,
+      1.0,
+      0.6
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ],
+     [
+      0.25,
+      "wr"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "The tip of the ball touches the turf.",
+   "key": [
+    "TURF."
    ],
    "shot": {
     "type": "close",
@@ -203,12 +560,17 @@
      "action": "hold",
      "look": "camera"
     }
+   },
+   "place": {
+    "wr": "center",
+    "qb": false,
+    "def": false
    }
   },
   {
-   "text": "Replay takes a look anyway.",
+   "text": "It never moves. Replay looks anyway.",
    "key": [
-    "REPLAY"
+    "ANYWAY."
    ],
    "place": {
     "ref": [
@@ -234,7 +596,7 @@
    }
   },
   {
-   "text": "The referee's ruling: he used the ground. Incomplete.",
+   "text": "The ruling? The ground helped. Incomplete.",
    "key": [
     "INCOMPLETE."
    ],
@@ -255,10 +617,10 @@
    }
   },
   {
-   "text": "Back then, if the ball touched the ground, it wasn't a catch. Even if you held it.",
+   "text": "Back then, ball touches ground means no catch.",
    "key": [
-    "GROUND,",
-    "HELD"
+    "NO",
+    "CATCH."
    ],
    "set": "locker",
    "setOpts": {
@@ -291,9 +653,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Two more incompletions. The drive dies.",
+   "text": "Your drive stalls. No more points.",
    "key": [
-    "DIES."
+    "POINTS."
    ],
    "set": "field",
    "setOpts": {
@@ -317,8 +679,8 @@
    }
   },
   {
-   "text": "The Rams win, eleven to six. A week later, they win the Super Bowl.",
-   "cap": "The Rams win, 11 to 6. A week later, they win the Super Bowl.",
+   "text": "The Rams win, eleven to six. Then the Super Bowl.",
+   "cap": "The Rams win, 11 to 6. Then the Super Bowl.",
    "key": [
     "SUPER",
     "BOWL."
@@ -340,9 +702,9 @@
    }
   },
   {
-   "text": "That off-season, the league changed the wording.",
+   "text": "That offseason, the league rewrites the rule.",
    "key": [
-    "CHANGED"
+    "REWRITES"
    ],
    "set": "office",
    "setOpts": {
@@ -367,7 +729,7 @@
    }
   },
   {
-   "text": "Now the ball could touch the ground, as long as the receiver kept control.",
+   "text": "The ball may touch the ground. Just keep control.",
    "key": [
     "CONTROL."
    ],
@@ -395,10 +757,9 @@
    }
   },
   {
-   "text": "It became known as the Bert Emanuel rule. A little late for Bert.",
+   "text": "They call it the Bert Emanuel rule. Bit late, Bert.",
    "key": [
-    "BERT",
-    "LATE"
+    "LATE,"
    ],
    "shot": {
     "type": "medium",
@@ -418,10 +779,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Should the ground ever be able to erase a catch? Yes or no, below.",
+   "text": "Should the ground erase a catch? Yes or no. Rams fans, hush.",
    "key": [
     "YES",
-    "NO,"
+    "NO."
    ],
    "set": "locker",
    "setOpts": {
@@ -454,22 +815,61 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "Sports Illustrated Vault: Catching hell",
-   "url": "https://vault.si.com/vault/2016/01/18/catching-hell"
+   "claim": "In January 2000 the Buccaneers played the Rams in the NFC Championship",
+   "terms": [
+    "Rams",
+    "NFC Championship|NFC title"
+   ]
   },
   {
-   "title": "Fox Sports: One & Done: The Bert Emanuel non-catch helped the Rams trip the Bucs",
-   "url": "https://www.foxnews.com/sports/one-done-the-burt-emanuel-non-catch-helped-the-rams-trip-the-bucs.print"
+   "claim": "The Rams led 11-6 late in the fourth quarter",
+   "terms": [
+    "11-6"
+   ]
   },
   {
-   "title": "ABC Action News: Former Bucs WR Bert Emanuel talks about 'the catch' in 1999 NFC Championship",
-   "url": "https://www.tampabay28.com/sports/football/tampa-bay-bucs/former-bucs-wr-bert-emanuel-talks-about-the-catch-in-1999-nfc-championship-game-vs-rams"
+   "claim": "Shaun King threw to Bert Emanuel",
+   "terms": [
+    "King",
+    "Emanuel"
+   ]
   },
   {
-   "title": "Buccaneers.com: Back in an instant (March 2000)",
-   "url": "https://www.buccaneers.com/news/back-in-an-instant-2180933"
+   "claim": "Emanuel dove and caught the ball, the tip touched the ground",
+   "terms": [
+    "Emanuel",
+    "ground|turf"
+   ]
+  },
+  {
+   "claim": "Replay overturned it to incomplete",
+   "terms": [
+    "Emanuel",
+    "overturned|incomplete|reversed"
+   ]
+  },
+  {
+   "claim": "The Rams won 11-6 and won the Super Bowl",
+   "terms": [
+    "11-6",
+    "Super Bowl"
+   ]
+  },
+  {
+   "claim": "That offseason the league changed the rule; the ball may touch the ground if the receiver keeps control",
+   "terms": [
+    "control",
+    "ground"
+   ]
+  },
+  {
+   "claim": "It became known as the Bert Emanuel rule",
+   "terms": [
+    "Bert Emanuel rule|Emanuel rule"
+   ]
   }
  ]
 }
