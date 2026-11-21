@@ -583,14 +583,13 @@
    }
   },
   {
-   "text": "In twenty nineteen, astronomers spot a candidate. Maybe Snoopy.",
-   "cap": "In 2019, astronomers spot a candidate. Maybe Snoopy.",
+   "text": "Somewhere out there, Snoopy is still drifting. Alone. Quietly.",
    "key": [
-    "CANDIDATE."
+    "DRIFTING."
    ],
    "board": [
-    "2018 AP4",
-    "SNOOPY?"
+    "SNOOPY",
+    "STILL OUT THERE"
    ],
    "shot": {
     "type": "close",
@@ -738,10 +737,6 @@
   {
    "title": "Popular Science: relive the excitement of Apollo 10",
    "url": "https://www.popsci.com/blog-network/vintage-space/want-relive-excitement-apollo-10/"
-  },
-  {
-   "title": "Wikipedia: 2018 AP4",
-   "url": "https://en.wikipedia.org/wiki/2018_AP4"
   }
  ],
  "voice": "v2",
@@ -801,16 +796,9 @@
    ]
   },
   {
-   "claim": "In 2019 astronomers suggested asteroid 2018 AP4 may be Snoopy",
-   "terms": [
-    "2018 AP4"
-   ]
-  },
-  {
    "claim": "Apollo 10 set the record for the fastest humans, nearly 25,000 mph",
    "terms": [
-    "fastest",
-    "24,791|39,897|25,000"
+    "24,791|39,897"
    ]
   }
  ]

@@ -258,9 +258,9 @@
    }
   },
   {
-   "text": "So every question takes two days to answer. Minimum.",
+   "text": "So every question needs patience. Lots of patience. Really.",
    "key": [
-    "DAYS"
+    "PATIENCE."
    ],
    "place": {
     "capy": false,
@@ -756,12 +756,6 @@
    "claim": "A message takes about 22.5 hours one way",
    "terms": [
     "22.5|22 1/2|22 hours"
-   ]
-  },
-  {
-   "claim": "A round trip takes about two days",
-   "terms": [
-    "45 hours|two days|2 days|round trip|roundtrip"
    ]
   },
   {
