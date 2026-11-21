@@ -1,7 +1,7 @@
 {
  "id": "s2_16_flag_after_the_snap",
  "title": "The challenge flag that beat the snap",
- "set": "tunnel",
+ "set": "field",
  "setOpts": {
   "boardText": [
    "BRONCOS",
@@ -100,24 +100,48 @@
     -2.6,
     -1.4
    ]
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#0085ca",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "In Carolina this month, a challenge flag beat the snap. And it flipped the game.",
+   "text": "You snap the next play. Too late. The flag already flew.",
    "key": [
-    "FLAG"
+    "FLEW."
    ],
-   "set": "tunnel",
+   "speaker": "capy",
+   "set": "field",
    "setOpts": {
     "boardText": [
-     "BRONCOS",
-     "PANTHERS"
+     "CAR 14",
+     "DEN 13"
     ]
    },
    "place": {
-    "capy": "left",
-    "coach": "right"
+    "qb": false,
+    "te": false,
+    "key": false,
+    "coach": [
+     0.4,
+     0
+    ],
+    "ref": false,
+    "rusher": false,
+    "fan": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
    },
    "shot": {
     "type": "two",
@@ -132,123 +156,1109 @@
     },
     "coach": {
      "mood": "angry",
-     "action": "throw",
+     "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Panthers up fourteen to thirteen. First and goal at the one.",
-   "cap": "Panthers up 14 to 13. First and goal at the 1.",
+   "text": "You're Carolina. Up fourteen to thirteen on Denver. Home game.",
+   "cap": "You're Carolina. Up 14-13 on Denver. Home game.",
    "key": [
-    "1."
+    "14-13"
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "PANTHERS 14",
-     "BRONCOS 13"
-    ]
-   },
+   "board": [
+    "CAR 14",
+    "DEN 13"
+   ],
    "place": {
-    "qb": "right",
-    "te": [
-     0.4,
-     -1.4
+    "qb": [
+     0,
+     0
     ],
-    "key": [
-     -1.0,
-     -1.8
-    ],
-    "ref": [
-     2.8,
-     -3.2
-    ],
-    "rusher": [
-     -2.6,
-     -0.6
-    ]
+    "te": false,
+    "key": false,
+    "coach": false,
+    "ref": false,
+    "rusher": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "wide",
+    "type": "low",
     "on": "qb"
    },
    "act": {
     "qb": {
      "mood": "happy",
-     "action": "hold"
-    },
-    "te": {
-     "mood": "happy"
-    },
-    "key": {
-     "mood": "worried"
+     "action": "hold",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Bryce Young throws to the corner. The ball bounces off his tight end.",
+   "text": "Goal to go, at the one. Easy points.",
+   "cap": "Goal to go, at the 1. Easy points.",
    "key": [
-    "BOUNCES"
+    "1."
    ],
+   "board": [
+    "1ST & GOAL",
+    "AT THE 1"
+   ],
+   "place": {
+    "qb": [
+     -1.4,
+     0
+    ],
+    "te": false,
+    "key": [
+     1.6,
+     0
+    ],
+    "coach": false,
+    "ref": false,
+    "rusher": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
-    "type": "medium",
-    "on": "te"
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
    },
    "act": {
     "qb": {
      "mood": "neutral",
-     "action": "throw",
-     "look": "te"
-    },
-    "te": {
-     "mood": "shocked",
-     "action": "shrug"
+     "action": "hold",
+     "look": "key"
     },
     "key": {
-     "mood": "shocked",
-     "action": "point",
-     "look": "te"
+     "mood": "angry",
+     "action": "idle",
+     "look": "qb"
     }
    }
   },
   {
-   "text": "Safety Devon Key catches it, just above the turf.",
+   "text": "Bryce Young throws. It bounces off your tight end.",
    "key": [
-    "TURF."
+    "BOUNCES"
    ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CAR 14",
+     "DEN 13"
+    ],
+    "endZone": 45,
+    "zoneA": "#f28c28",
+    "zoneB": "#0085ca"
+   },
+   "place": {
+    "capy": false,
+    "coach": false,
+    "ref": false,
+    "rusher": false,
+    "fan": false
+   },
    "shot": {
-    "type": "low",
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "qb",
+    "lead": 0
+   },
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        40.0,
+        0.0
+       ],
+       [
+        0.044,
+        39.83,
+        0.0
+       ],
+       [
+        0.088,
+        39.67,
+        0.0
+       ],
+       [
+        0.133,
+        39.5,
+        0.0
+       ],
+       [
+        0.177,
+        39.33,
+        0.0
+       ],
+       [
+        0.221,
+        39.17,
+        0.0
+       ],
+       [
+        0.265,
+        39.0,
+        0.0
+       ],
+       [
+        0.306,
+        39.0,
+        0.0
+       ],
+       [
+        0.347,
+        39.0,
+        0.0
+       ],
+       [
+        0.388,
+        39.0,
+        0.0
+       ],
+       [
+        0.429,
+        39.0,
+        0.0
+       ],
+       [
+        0.47,
+        39.0,
+        0.0
+       ],
+       [
+        0.51,
+        39.0,
+        0.0
+       ],
+       [
+        0.551,
+        39.0,
+        0.0
+       ],
+       [
+        0.592,
+        39.0,
+        0.0
+       ],
+       [
+        0.633,
+        39.0,
+        0.0
+       ],
+       [
+        0.674,
+        39.0,
+        0.0
+       ],
+       [
+        0.714,
+        39.0,
+        0.0
+       ],
+       [
+        0.755,
+        39.0,
+        0.0
+       ],
+       [
+        0.796,
+        39.0,
+        0.0
+       ],
+       [
+        0.837,
+        39.0,
+        0.0
+       ],
+       [
+        0.878,
+        39.0,
+        0.0
+       ],
+       [
+        0.918,
+        39.0,
+        0.0
+       ],
+       [
+        0.959,
+        39.0,
+        0.0
+       ],
+       [
+        1.0,
+        39,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.265,
+        "idle"
+       ],
+       [
+        0.319,
+        "throw"
+       ]
+      ],
+      "face": 90
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        43.5,
+        3.5
+       ],
+       [
+        0.04,
+        43.71,
+        3.45
+       ],
+       [
+        0.08,
+        43.93,
+        3.4
+       ],
+       [
+        0.119,
+        44.14,
+        3.35
+       ],
+       [
+        0.159,
+        44.36,
+        3.3
+       ],
+       [
+        0.199,
+        44.57,
+        3.25
+       ],
+       [
+        0.239,
+        44.79,
+        3.2
+       ],
+       [
+        0.279,
+        45.0,
+        3.15
+       ],
+       [
+        0.319,
+        45.21,
+        3.1
+       ],
+       [
+        0.358,
+        45.43,
+        3.05
+       ],
+       [
+        0.398,
+        45.64,
+        3.0
+       ],
+       [
+        0.438,
+        45.86,
+        2.95
+       ],
+       [
+        0.478,
+        46.07,
+        2.9
+       ],
+       [
+        0.518,
+        46.29,
+        2.85
+       ],
+       [
+        0.557,
+        46.5,
+        2.8
+       ],
+       [
+        0.598,
+        46.53,
+        2.82
+       ],
+       [
+        0.638,
+        46.55,
+        2.84
+       ],
+       [
+        0.678,
+        46.58,
+        2.85
+       ],
+       [
+        0.718,
+        46.61,
+        2.87
+       ],
+       [
+        0.759,
+        46.64,
+        2.89
+       ],
+       [
+        0.799,
+        46.66,
+        2.91
+       ],
+       [
+        0.839,
+        46.69,
+        2.93
+       ],
+       [
+        0.879,
+        46.72,
+        2.95
+       ],
+       [
+        0.92,
+        46.75,
+        2.96
+       ],
+       [
+        0.96,
+        46.77,
+        2.98
+       ],
+       [
+        1.0,
+        46.8,
+        3.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.557,
+        "shrug"
+       ]
+      ],
+      "face": 90
+     },
+     "key": {
+      "path": [
+       [
+        0.0,
+        44.0,
+        -2.5
+       ],
+       [
+        0.04,
+        44.03,
+        -2.44
+       ],
+       [
+        0.08,
+        44.06,
+        -2.37
+       ],
+       [
+        0.12,
+        44.1,
+        -2.31
+       ],
+       [
+        0.16,
+        44.13,
+        -2.24
+       ],
+       [
+        0.2,
+        44.16,
+        -2.18
+       ],
+       [
+        0.24,
+        44.19,
+        -2.12
+       ],
+       [
+        0.28,
+        44.22,
+        -2.05
+       ],
+       [
+        0.32,
+        44.26,
+        -1.99
+       ],
+       [
+        0.36,
+        44.29,
+        -1.92
+       ],
+       [
+        0.4,
+        44.32,
+        -1.86
+       ],
+       [
+        0.44,
+        44.35,
+        -1.8
+       ],
+       [
+        0.48,
+        44.38,
+        -1.73
+       ],
+       [
+        0.52,
+        44.42,
+        -1.67
+       ],
+       [
+        0.56,
+        44.45,
+        -1.6
+       ],
+       [
+        0.6,
+        44.48,
+        -1.54
+       ],
+       [
+        0.64,
+        44.51,
+        -1.48
+       ],
+       [
+        0.68,
+        44.54,
+        -1.41
+       ],
+       [
+        0.72,
+        44.58,
+        -1.35
+       ],
+       [
+        0.76,
+        44.61,
+        -1.28
+       ],
+       [
+        0.8,
+        44.64,
+        -1.22
+       ],
+       [
+        0.84,
+        44.67,
+        -1.16
+       ],
+       [
+        0.88,
+        44.7,
+        -1.09
+       ],
+       [
+        0.92,
+        44.74,
+        -1.03
+       ],
+       [
+        0.96,
+        44.77,
+        -0.96
+       ],
+       [
+        1.0,
+        44.8,
+        -0.9
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 60
+     }
+    },
+    "ball": [
+     [
+      [
+       0.372,
+       39.3,
+       1.7,
+       0
+      ],
+      [
+       0.465,
+       43,
+       3.0,
+       1.4
+      ],
+      [
+       0.557,
+       46.4,
+       1.8,
+       2.7
+      ]
+     ],
+     [
+      [
+       0.557,
+       46.4,
+       1.8,
+       2.7
+      ],
+      [
+       0.77,
+       46,
+       3.4,
+       1.2
+      ],
+      [
+       1,
+       45.4,
+       1.4,
+       0.1
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Safety Devon Key catches it. Just above the turf.",
+   "key": [
+    "KEY"
+   ],
+   "act": {},
+   "place": {
+    "capy": false,
+    "coach": false,
+    "ref": false,
+    "rusher": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow",
     "on": "key"
    },
-   "act": {
-    "key": {
-     "mood": "shocked",
-     "action": "hold",
-     "look": "camera"
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        39.0,
+        0.0
+       ],
+       [
+        0.038,
+        39.04,
+        0.0
+       ],
+       [
+        0.077,
+        39.08,
+        0.0
+       ],
+       [
+        0.115,
+        39.12,
+        0.0
+       ],
+       [
+        0.154,
+        39.15,
+        0.0
+       ],
+       [
+        0.192,
+        39.19,
+        0.0
+       ],
+       [
+        0.231,
+        39.23,
+        0.0
+       ],
+       [
+        0.269,
+        39.27,
+        0.0
+       ],
+       [
+        0.308,
+        39.31,
+        0.0
+       ],
+       [
+        0.346,
+        39.35,
+        0.0
+       ],
+       [
+        0.385,
+        39.38,
+        0.0
+       ],
+       [
+        0.423,
+        39.42,
+        0.0
+       ],
+       [
+        0.462,
+        39.46,
+        0.0
+       ],
+       [
+        0.5,
+        39.5,
+        0.0
+       ],
+       [
+        0.538,
+        39.54,
+        0.0
+       ],
+       [
+        0.577,
+        39.58,
+        0.0
+       ],
+       [
+        0.615,
+        39.62,
+        0.0
+       ],
+       [
+        0.654,
+        39.65,
+        0.0
+       ],
+       [
+        0.692,
+        39.69,
+        0.0
+       ],
+       [
+        0.731,
+        39.73,
+        0.0
+       ],
+       [
+        0.769,
+        39.77,
+        0.0
+       ],
+       [
+        0.808,
+        39.81,
+        0.0
+       ],
+       [
+        0.846,
+        39.85,
+        0.0
+       ],
+       [
+        0.885,
+        39.88,
+        0.0
+       ],
+       [
+        0.923,
+        39.92,
+        0.0
+       ],
+       [
+        0.962,
+        39.96,
+        0.0
+       ],
+       [
+        1.0,
+        40,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        46.8,
+        3.0
+       ],
+       [
+        0.038,
+        46.8,
+        3.0
+       ],
+       [
+        0.077,
+        46.8,
+        3.0
+       ],
+       [
+        0.115,
+        46.8,
+        3.0
+       ],
+       [
+        0.154,
+        46.8,
+        3.0
+       ],
+       [
+        0.192,
+        46.8,
+        3.0
+       ],
+       [
+        0.231,
+        46.8,
+        3.0
+       ],
+       [
+        0.269,
+        46.8,
+        3.0
+       ],
+       [
+        0.308,
+        46.8,
+        3.0
+       ],
+       [
+        0.346,
+        46.8,
+        3.0
+       ],
+       [
+        0.385,
+        46.8,
+        3.0
+       ],
+       [
+        0.423,
+        46.8,
+        3.0
+       ],
+       [
+        0.462,
+        46.8,
+        3.0
+       ],
+       [
+        0.5,
+        46.8,
+        3.0
+       ],
+       [
+        0.538,
+        46.8,
+        3.0
+       ],
+       [
+        0.577,
+        46.8,
+        3.0
+       ],
+       [
+        0.615,
+        46.8,
+        3.0
+       ],
+       [
+        0.654,
+        46.8,
+        3.0
+       ],
+       [
+        0.692,
+        46.8,
+        3.0
+       ],
+       [
+        0.731,
+        46.8,
+        3.0
+       ],
+       [
+        0.769,
+        46.8,
+        3.0
+       ],
+       [
+        0.808,
+        46.8,
+        3.0
+       ],
+       [
+        0.846,
+        46.8,
+        3.0
+       ],
+       [
+        0.885,
+        46.8,
+        3.0
+       ],
+       [
+        0.923,
+        46.8,
+        3.0
+       ],
+       [
+        0.962,
+        46.8,
+        3.0
+       ],
+       [
+        1.0,
+        46.8,
+        3.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -120
+     },
+     "key": {
+      "path": [
+       [
+        0.0,
+        44.8,
+        -0.9
+       ],
+       [
+        0.042,
+        44.97,
+        -0.63
+       ],
+       [
+        0.084,
+        45.13,
+        -0.37
+       ],
+       [
+        0.127,
+        45.3,
+        -0.1
+       ],
+       [
+        0.166,
+        45.31,
+        -0.1
+       ],
+       [
+        0.206,
+        45.32,
+        -0.09
+       ],
+       [
+        0.246,
+        45.33,
+        -0.09
+       ],
+       [
+        0.285,
+        45.34,
+        -0.08
+       ],
+       [
+        0.325,
+        45.35,
+        -0.08
+       ],
+       [
+        0.365,
+        45.35,
+        -0.07
+       ],
+       [
+        0.405,
+        45.36,
+        -0.07
+       ],
+       [
+        0.444,
+        45.37,
+        -0.06
+       ],
+       [
+        0.484,
+        45.38,
+        -0.06
+       ],
+       [
+        0.524,
+        45.39,
+        -0.05
+       ],
+       [
+        0.563,
+        45.4,
+        -0.05
+       ],
+       [
+        0.603,
+        45.41,
+        -0.05
+       ],
+       [
+        0.643,
+        45.42,
+        -0.04
+       ],
+       [
+        0.682,
+        45.43,
+        -0.04
+       ],
+       [
+        0.722,
+        45.44,
+        -0.03
+       ],
+       [
+        0.762,
+        45.45,
+        -0.03
+       ],
+       [
+        0.802,
+        45.45,
+        -0.02
+       ],
+       [
+        0.841,
+        45.46,
+        -0.02
+       ],
+       [
+        0.881,
+        45.47,
+        -0.01
+       ],
+       [
+        0.921,
+        45.48,
+        -0.01
+       ],
+       [
+        0.96,
+        45.49,
+        -0.0
+       ],
+       [
+        1.0,
+        45.5,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.127,
+        "catch"
+       ],
+       [
+        0.355,
+        "celebrate"
+       ]
+      ],
+      "face": 60
+     }
     },
-    "te": {
-     "mood": "confused",
-     "action": "idle",
-     "look": "key"
-    }
+    "ball": [
+     [
+      0,
+      45.4,
+      1.4,
+      0.1
+     ],
+     [
+      0.127,
+      45.35,
+      0.5,
+      0.0
+     ]
+    ],
+    "carry": [
+     [
+      0.127,
+      "key"
+     ]
+    ]
    }
   },
   {
-   "text": "The call on the field: incomplete. Carolina snaps the next play.",
+   "text": "The call on the field? Incomplete. Next play.",
    "key": [
     "INCOMPLETE."
    ],
    "place": {
-    "ref": [
-     -0.2,
-     0.6
+    "qb": false,
+    "te": false,
+    "key": [
+     2.2,
+     -0.6
     ],
-    "qb": [
-     2.6,
-     -1.0
-    ]
+    "coach": false,
+    "ref": [
+     0,
+     0
+    ],
+    "rusher": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "medium",
@@ -261,45 +1271,146 @@
      "look": "camera"
     },
     "key": {
-     "mood": "angry",
+     "mood": "confused",
      "action": "shrug",
      "look": "ref"
     }
    }
   },
   {
-   "text": "But Sean Payton's red flag was already flying.",
+   "text": "You hurry up. You snap the next play. Quick.",
    "key": [
-    "RED"
+    "SNAP"
    ],
    "place": {
-    "coach": "sideline"
+    "qb": [
+     0,
+     0
+    ],
+    "te": [
+     -2.0,
+     -0.4
+    ],
+    "key": false,
+    "coach": false,
+    "ref": false,
+    "rusher": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "close",
-    "on": "coach"
+    "on": "qb"
    },
    "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "happy",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "But Sean Payton's red flag was already flying.",
+   "key": [
+    "FLYING."
+   ],
+   "speaker": "capy",
+   "place": {
+    "qb": false,
+    "te": false,
+    "key": false,
+    "coach": [
+     1.6,
+     0
+    ],
+    "ref": false,
+    "rusher": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "coach"
+    },
     "coach": {
      "mood": "angry",
-     "action": "throw",
+     "action": "point",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Replay showed the flag was out before that snap. So the old play still counted.",
+   "text": "Replay shows it came out before the snap.",
    "key": [
     "BEFORE"
    ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "REPLAY",
+     "FLAG FIRST"
+    ]
+   },
    "place": {
-    "capy": [
-     -2.0,
-     1.2
+    "qb": false,
+    "te": false,
+    "key": false,
+    "coach": false,
+    "ref": [
+     0.4,
+     0.6
     ],
-    "rusher": [
-     -3.4,
-     -1.6
+    "rusher": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the old play still counts. Rules are rules.",
+   "key": [
+    "COUNTS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "qb": false,
+    "te": false,
+    "key": false,
+    "coach": false,
+    "ref": [
+     1.6,
+     0.4
+    ],
+    "rusher": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
     ]
    },
    "shot": {
@@ -310,92 +1421,44 @@
    "act": {
     "capy": {
      "mood": "smug",
-     "action": "point",
-     "look": "ref"
+     "action": "shrug",
+     "look": "camera"
     },
     "ref": {
      "mood": "neutral",
-     "action": "talk",
-     "look": "camera"
+     "action": "idle",
+     "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
    "text": "Incomplete becomes interception. Denver ball.",
    "key": [
     "INTERCEPTION."
    ],
-   "place": {
-    "ref": [
-     2.8,
-     -3.2
-    ],
-    "key": [
-     -0.4,
-     0.2
-    ]
-   },
-   "shot": {
-    "type": "medium",
-    "on": "key"
-   },
-   "act": {
-    "key": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    },
-    "capy": {
-     "mood": "happy",
-     "action": "clap"
-    }
-   }
-  },
-  {
-   "text": "A Panthers player admitted no one thought that was possible.",
-   "key": [
-    "POSSIBLE."
-   ],
-   "set": "press",
-   "setOpts": {
-    "boardText": [
-     "REVIEW:",
-     "INT"
-    ]
-   },
-   "place": {
-    "te": "center"
-   },
-   "shot": {
-    "type": "medium",
-    "on": "te"
-   },
-   "act": {
-    "te": {
-     "mood": "confused",
-     "action": "shrug",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Denver marches eighty yards for a touchdown. Nineteen to fourteen.",
-   "cap": "Denver marches 80 yards for a touchdown. 19 to 14.",
-   "key": [
-    "80"
-   ],
    "set": "field",
    "setOpts": {
     "boardText": [
-     "BRONCOS 19",
-     "PANTHERS 14"
+     "CAR 14",
+     "DEN 13"
     ]
    },
+   "board": [
+    "RULING",
+    "INTERCEPTION"
+   ],
    "place": {
-    "key": "center",
-    "rusher": "left",
-    "qb": "right"
+    "qb": false,
+    "te": false,
+    "key": [
+     0,
+     0
+    ],
+    "coach": false,
+    "ref": false,
+    "rusher": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "high",
@@ -404,113 +1467,210 @@
    "act": {
     "key": {
      "mood": "happy",
-     "action": "cheer"
-    },
-    "rusher": {
-     "mood": "happy",
-     "action": "cheer"
+     "action": "celebrate",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Then Nik Bonitto strips the quarterback late. Final: twenty six to twenty one.",
-   "cap": "Then Nik Bonitto strips the quarterback late. Final: 26 to 21.",
+   "text": "Denver drives eighty yards. Touchdown. Lead flipped.",
+   "cap": "Denver drives 80 yards. Touchdown. Lead flipped.",
    "key": [
-    "26"
+    "80"
    ],
+   "board": [
+    "DEN 19",
+    "CAR 14"
+   ],
+   "place": {
+    "qb": false,
+    "te": false,
+    "key": false,
+    "coach": [
+     1.4,
+     0
+    ],
+    "ref": false,
+    "rusher": [
+     -1.2,
+     0
+    ],
+    "fan": false,
+    "capy": false
+   },
    "shot": {
     "type": "two",
     "on": "rusher",
-    "with": "qb"
+    "with": "coach"
    },
    "act": {
     "rusher": {
-     "mood": "angry",
-     "action": "point",
-     "look": "qb"
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
     },
-    "qb": {
-     "mood": "shocked",
-     "action": "slump"
+    "coach": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "rusher"
     }
    }
   },
   {
-   "text": "That's sixteen straight one-score wins for Denver.",
-   "cap": "That's 16 straight one-score wins for Denver.",
+   "text": "Final score. Broncos twenty six, Panthers twenty one. Ouch.",
+   "cap": "Final score. Broncos 26, Panthers 21. Ouch.",
    "key": [
-    "16"
+    "26,"
    ],
-   "shot": {
-    "type": "medium",
-    "on": "rusher"
-   },
-   "act": {
-    "rusher": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "key": {
-     "mood": "happy",
-     "action": "clap"
-    }
-   }
-  },
-  {
-   "text": "An NFL record.",
-   "key": [
-    "RECORD."
+   "board": [
+    "DEN 26",
+    "CAR 21"
    ],
    "place": {
-    "coach": [
+    "qb": [
      0,
-     1.2
+     0
     ],
-    "qb": false
+    "te": false,
+    "key": false,
+    "coach": false,
+    "ref": false,
+    "rusher": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "wide",
-    "on": "coach"
+    "type": "close",
+    "on": "qb"
    },
    "act": {
-    "coach": {
-     "mood": "smug",
-     "action": "clap"
-    },
-    "key": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "rusher": {
-     "mood": "happy",
-     "action": "cheer"
+    "qb": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Should a flag thrown before the snap still count? Yes or no?",
+   "text": "Denver's fifth straight win. Thanks to one flag.",
    "key": [
-    "BEFORE",
-    "SNAP"
+    "FIFTH"
    ],
-   "set": "locker",
+   "speaker": "capy",
+   "board": [
+    "DENVER",
+    "5 STRAIGHT"
+   ],
+   "place": {
+    "qb": false,
+    "te": false,
+    "key": false,
+    "coach": [
+     1.6,
+     0
+    ],
+    "ref": false,
+    "rusher": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Panthers fans, next time? Snap a little faster.",
+   "key": [
+    "FASTER."
+   ],
+   "speaker": "capy",
+   "set": "living",
    "setOpts": {
     "boardText": [
-     "FLAG:",
-     "IN TIME?"
+     "FLAG",
+     "BEAT SNAP"
     ]
    },
    "place": {
+    "qb": false,
+    "te": false,
+    "key": false,
+    "coach": false,
+    "ref": false,
+    "rusher": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
     "capy": [
      -1.6,
-     1.0
-    ],
-    "coach": "center"
+     3.6
+    ]
    },
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "coach"
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "angry",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Should a flag before the snap count? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "FLAG FIRST",
+    "COUNTS?"
+   ],
+   "place": {
+    "qb": false,
+    "te": false,
+    "key": false,
+    "coach": false,
+    "ref": false,
+    "rusher": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -518,35 +1678,123 @@
      "action": "talk",
      "look": "camera"
     },
-    "coach": {
-     "mood": "smug",
-     "action": "hold",
-     "look": "camera"
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
   {
-   "title": "AP: Bo Nix throws for 2 TDs, Broncos win key challenge to beat Panthers 26-21 for fifth straight victory",
+   "title": "Live 5 News (AP): Bo Nix throws for 2 TDs, Broncos win key challenge to beat Panthers 26-21",
    "url": "https://www.live5news.com/2026/11/09/bo-nix-throws-2-tds-broncos-win-key-challenge-beat-panthers-26-21-fifth-straight-victory/"
   },
   {
-   "title": "ESPN: Sean Payton's replay challenge results in key interception in Broncos' victory",
+   "title": "Fox Sports (AP): Bo Nix throws for 2 TDs, Broncos win key challenge to beat Panthers 26-21",
+   "url": "https://www.foxsports.com/articles/nfl/bo-nix-throws-for-2-tds-broncos-win-key-challenge-to-beat-panthers-2621-for-fifth-straight-victory"
+  },
+  {
+   "title": "Yahoo Sports (AP): Bo Nix throws for 2 TDs, Broncos win key challenge",
+   "url": "https://sports.yahoo.com/articles/bo-nix-throws-2-tds-221038087.html"
+  },
+  {
+   "title": "Queen City News (AP): Bo Nix throws for 2 TDs, Broncos win key challenge",
+   "url": "https://www.qcnews.com/nfl/carolina-panthers/bo-nix-throws-for-2-tds-broncos-win-key-challenge-to-beat-panthers-26-21-for-fifth-straight-victory/"
+  },
+  {
+   "title": "Sentinel Colorado (AP): Bo Nix throws for 2 TDs, Broncos win key challenge",
+   "url": "https://sentinelcolorado.com/sports/bo-nix-throws-for-2-tds-broncos-win-key-challenge-to-beat-panthers-26-21-for-fifth-straight-victory/"
+  },
+  {
+   "title": "WPTF (AP): Bo Nix throws for 2 TDs, Broncos win key challenge",
+   "url": "https://www.wptf.com/2026/11/08/bo-nix-throws-for-2-tds-broncos-win-key-challenge-to-beat-panthers-26-21-for-fifth-straight-victory/"
+  },
+  {
+   "title": "ABC11: Sean Payton's replay challenge results in key interception",
    "url": "https://abc11.com/post/sean-paytons-replay-challenge-results-key-interception-broncos-victory/20025083/"
   },
   {
-   "title": "ClutchPoints: Referee explains controversial review of crazy INT during Broncos-Panthers game",
+   "title": "ClutchPoints: Referee explains controversial review",
    "url": "https://clutchpoints.com/nfl/denver-broncos/broncos-news-referee-explains-controversial-review-crazy-int-panthers-game"
   },
   {
-   "title": "ClutchPoints: Nik Bonitto on Denver's historic one-score game winning record",
-   "url": "https://clutchpoints.com/nfl/denver-broncos/broncos-news-nik-bonitto-calls-game-secure-denver-historic-1-score-game-winning-record"
+   "title": "Pro Football Network: Controversy erupts over Panthers-Broncos interception",
+   "url": "https://www.profootballnetwork.com/controversy-erupts-panthers-broncos-interception/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Carolina led 14-13",
+   "terms": [
+    "14-13"
+   ]
   },
   {
-   "title": "Pro Football Network: Controversy erupts as Broncos' late challenge leads to wildest interception of the season",
-   "url": "https://www.profootballnetwork.com/controversy-erupts-panthers-broncos-interception/"
+   "claim": "Carolina had the ball at the 1",
+   "terms": [
+    "Young",
+    "Key"
+   ]
+  },
+  {
+   "claim": "Young's pass bounced off his tight end and Devon Key caught it",
+   "terms": [
+    "Key",
+    "tight end"
+   ]
+  },
+  {
+   "claim": "It was ruled incomplete on the field",
+   "terms": [
+    "incomplete"
+   ]
+  },
+  {
+   "claim": "Carolina snapped the next play",
+   "terms": [
+    "snap"
+   ]
+  },
+  {
+   "claim": "Sean Payton's challenge flag was thrown before the snap",
+   "terms": [
+    "Payton",
+    "challenge"
+   ]
+  },
+  {
+   "claim": "Replay showed the flag came before the snap so the play was reviewed",
+   "terms": [
+    "flag",
+    "before the snap|before the ball was snapped|prior to the snap"
+   ]
+  },
+  {
+   "claim": "The incompletion was overturned to an interception",
+   "terms": [
+    "interception"
+   ]
+  },
+  {
+   "claim": "Denver drove 80 yards for a touchdown",
+   "terms": [
+    "80"
+   ]
+  },
+  {
+   "claim": "Broncos won 26-21",
+   "terms": [
+    "26-21"
+   ]
+  },
+  {
+   "claim": "It was Denver's fifth straight win",
+   "terms": [
+    "fifth straight"
+   ]
   }
  ]
 }
