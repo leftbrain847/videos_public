@@ -414,9 +414,9 @@
     "ally": false
    },
    "shot": {
-    "type": "ots",
+    "type": "two",
     "on": "you",
-    "from": "a3"
+    "with": "a3"
    },
    "act": {
     "you": {

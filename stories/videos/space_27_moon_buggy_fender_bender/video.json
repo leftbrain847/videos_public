@@ -1,0 +1,800 @@
+{
+ "id": "space_27_moon_buggy_fender_bender",
+ "title": "A fender bender on the moon",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "APOLLO 17"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "gene": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#dfe6ee",
+    "pants": "#dfe6ee",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "jack": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#dfe6ee",
+    "pants": "#eef1f5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "ctl": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true
+   }
+  },
+  "john": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You drive a car on the moon. Then you break the fender. With a hammer.",
+   "key": [
+    "HAMMER."
+   ],
+   "board": [
+    "FENDER",
+    "BROKEN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "gene": [
+     2.6,
+     -0.6
+    ],
+    "jack": false,
+    "ctl": false,
+    "john": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "gene": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "December, nineteen seventy two. Apollo seventeen. The last moon landing so far.",
+   "cap": "December 1972. Apollo 17. The last moon landing so far.",
+   "key": [
+    "LAST"
+   ],
+   "board": [
+    "APOLLO 17",
+    "DEC 1972"
+   ],
+   "place": {
+    "capy": false,
+    "gene": [
+     -1.5,
+     0.2
+    ],
+    "jack": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "gene",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "gene": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "jack": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "gene"
+    }
+   }
+  },
+  {
+   "text": "Gene Cernan. Harrison Schmitt. They have a moon buggy. The lunar rover. Top speed? Not much.",
+   "key": [
+    "ROVER."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "gene",
+    "with": "jack"
+   },
+   "act": {
+    "gene": {
+     "mood": "smug",
+     "action": "point",
+     "look": "jack"
+    },
+    "jack": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "gene"
+    }
+   }
+  },
+  {
+   "text": "Cernan's hammer catches the rear fender. A piece snaps off.",
+   "key": [
+    "SNAPS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "gene"
+   },
+   "act": {
+    "gene": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Sounds minor. On the moon, it isn't.",
+   "key": [
+    "ISN'T."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "gene": [
+     1.4,
+     0.2
+    ],
+    "jack": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gene"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "gene"
+    },
+    "gene": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Without a fender, the wheels throw dust. A giant rooster tail of it.",
+   "key": [
+    "DUST."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    },
+    "gene": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Moon dust is dark. Dark dust soaks up sunlight. Things overheat.",
+   "key": [
+    "OVERHEAT."
+   ],
+   "board": [
+    "DARK DUST",
+    "= HEAT"
+   ],
+   "place": {
+    "capy": false,
+    "gene": [
+     -1.4,
+     0.2
+    ],
+    "jack": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "jack"
+   },
+   "act": {
+    "jack": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "gene": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "jack"
+    }
+   }
+  },
+  {
+   "text": "It's also scratchy. It gets into everything.",
+   "key": [
+    "EVERYTHING."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "jack"
+   },
+   "act": {
+    "jack": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A moonwalk ruined by a fender? Not on their watch.",
+   "key": [
+    "FENDER?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "gene": false,
+    "jack": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fix number one. Duct tape. Of course.",
+   "key": [
+    "TAPE."
+   ],
+   "board": [
+    "FIX 1:",
+    "DUCT TAPE"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "high",
+    "on": "gene"
+   },
+   "act": {
+    "gene": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "jack": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "gene"
+    }
+   }
+  },
+  {
+   "text": "But tape doesn't stick to dusty surfaces. It falls off.",
+   "key": [
+    "FALLS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "gene": [
+     -2.6,
+     -0.6
+    ],
+    "jack": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "gene": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    },
+    "jack": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Back in Houston, the team gets creative. Very creative.",
+   "key": [
+    "CREATIVE."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "FENDER FIX",
+     "WORKSHOP"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "gene": false,
+    "jack": false,
+    "ctl": [
+     -1.4,
+     0.3
+    ],
+    "john": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ctl",
+    "with": "john"
+   },
+   "act": {
+    "ctl": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "john"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "ctl"
+    }
+   }
+  },
+  {
+   "text": "Astronaut John Young helps test it. On the ground.",
+   "key": [
+    "YOUNG"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "john"
+   },
+   "act": {
+    "john": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The recipe: four stiff laminated maps. Taped together.",
+   "key": [
+    "MAPS."
+   ],
+   "board": [
+    "4 MAPS",
+    "+ TAPE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "john"
+   },
+   "act": {
+    "john": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Clamp them on. The clamps come from the cabin lights.",
+   "key": [
+    "CLAMP"
+   ],
+   "board": [
+    "+ 2 LAMP",
+    "CLAMPS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "john": [
+     1.4,
+     0.2
+    ],
+    "ctl": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "john"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "john"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "point",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Next morning, the astronauts build it. On the moon.",
+   "key": [
+    "BUILD"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "NEW FENDER",
+     "INSTALLED"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "gene": [
+     -1.4,
+     0.2
+    ],
+    "jack": [
+     1.4,
+     0.2
+    ],
+    "ctl": false,
+    "john": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "gene"
+   },
+   "act": {
+    "gene": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "jack"
+    },
+    "jack": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "gene"
+    }
+   }
+  },
+  {
+   "text": "It works. Dust problem solved. Moon garage open for business.",
+   "key": [
+    "WORKS."
+   ],
+   "board": [
+    "DUST",
+    "SOLVED"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "gene"
+   },
+   "act": {
+    "gene": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "jack": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "gene"
+    }
+   }
+  },
+  {
+   "text": "The map fender comes home. It's in the Smithsonian today. Tape and all.",
+   "key": [
+    "SMITHSONIAN"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SMITHSONIAN"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "gene": false,
+    "jack": false,
+    "ctl": false,
+    "john": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "john",
+    "offset": [
+     0.4,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "john": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "First car repair on the moon. Paper maps. Tape. Done.",
+   "key": [
+    "MAPS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "john": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Could you fix a car with duct tape? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "FIX IT WITH",
+    "DUCT TAPE?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     0.8,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Smithsonian Air and Space: duct tape auto repair on the moon",
+   "url": "https://airandspace.si.edu/stories/editorial/duct-tape-auto-repair-moon"
+  },
+  {
+   "title": "Smithsonian: maps, fender extension, Apollo 17",
+   "url": "https://airandspace.si.edu/collection-objects/maps-fender-extension-lunar-roving-vehicle-apollo-17/nasm_A19760010000"
+  },
+  {
+   "title": "NASA Apollo Lunar Surface Journal: the new fender",
+   "url": "https://www.nasa.gov/history/alsj/a17/A17NewFender.html"
+  },
+  {
+   "title": "NASA: duct tape saves the day",
+   "url": "https://www.nasa.gov/image-article/duct-tape-saves-day/"
+  },
+  {
+   "title": "Universe Today: the best engineering tool in space",
+   "url": "https://www.universetoday.com/articles/the-best-engineering-tool-in-space-duct-tape"
+  },
+  {
+   "title": "Wikipedia: Apollo 17",
+   "url": "https://en.wikipedia.org/wiki/Apollo_17"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Apollo 17, in December 1972, was the last crewed moon landing",
+   "terms": [
+    "Apollo 17",
+    "last"
+   ]
+  },
+  {
+   "claim": "Gene Cernan and Harrison Schmitt used the lunar rover",
+   "terms": [
+    "Cernan",
+    "Schmitt"
+   ]
+  },
+  {
+   "claim": "Cernan's hammer caught the fender extension and broke it off",
+   "terms": [
+    "hammer",
+    "fender"
+   ]
+  },
+  {
+   "claim": "Without the fender, the wheels threw up a rooster tail of dust",
+   "terms": [
+    "rooster tail|rooster-tail"
+   ]
+  },
+  {
+   "claim": "Dark dust absorbs sunlight and causes overheating",
+   "terms": [
+    "dust",
+    "heat|temperature|overheat|absorb"
+   ]
+  },
+  {
+   "claim": "Lunar dust is abrasive",
+   "terms": [
+    "abrasive"
+   ]
+  },
+  {
+   "claim": "They tried duct tape first; it would not stick because of dust",
+   "terms": [
+    "duct tape",
+    "stick"
+   ]
+  },
+  {
+   "claim": "Engineers on the ground worked out a fix",
+   "terms": [
+    "fender",
+    "Houston|engineers|ground|Mission Control"
+   ]
+  },
+  {
+   "claim": "John Young helped work out the fix",
+   "terms": [
+    "John Young"
+   ]
+  },
+  {
+   "claim": "The fix used four laminated maps taped together",
+   "terms": [
+    "maps",
+    "laminated|four"
+   ]
+  },
+  {
+   "claim": "Clamps from the cabin lights held it on",
+   "terms": [
+    "clamp"
+   ]
+  },
+  {
+   "claim": "The map fender is at the Smithsonian",
+   "terms": [
+    "Smithsonian|National Air and Space"
+   ]
+  }
+ ]
+}
