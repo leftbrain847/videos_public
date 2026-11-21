@@ -590,13 +590,13 @@
    }
   },
   {
-   "text": "Daniel Kahneman writes an open letter about priming.",
+   "text": "One careful rerun can shake a whole field. Hard. Very fast.",
    "key": [
-    "LETTER"
+    "SHAKE"
    ],
    "board": [
-    "OPEN",
-    "LETTER"
+    "ONE",
+    "RERUN"
    ],
    "place": {
     "capy": [
@@ -621,9 +621,9 @@
    }
   },
   {
-   "text": "He warns of a train wreck looming. A Nobel winner, worried about his own field.",
+   "text": "Lesson one. Check your stopwatch. Lesson two. Check who is holding it.",
    "key": [
-    "WRECK"
+    "HOLDING"
    ],
    "place": {
     "capy": [
@@ -841,20 +841,6 @@
    "terms": [
     "experimenters",
     "expect"
-   ]
-  },
-  {
-   "claim": "Daniel Kahneman wrote an open letter warning of a train wreck",
-   "terms": [
-    "Kahneman",
-    "train wreck|trainwreck"
-   ]
-  },
-  {
-   "claim": "Kahneman is a Nobel winner",
-   "terms": [
-    "Kahneman",
-    "Nobel"
    ]
   }
  ]
