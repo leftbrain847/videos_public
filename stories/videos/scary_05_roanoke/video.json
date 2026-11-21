@@ -1,0 +1,802 @@
+{
+ "id": "scary_05_roanoke",
+ "title": "Roanoke: the colony that left one word",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "ROANOKE"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5a4a2a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#d8d8d8",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "scroll"
+  },
+  "sailor": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#2f4a6b",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "center"
+  },
+  "curator": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2a3a5a",
+    "pants": "#1d1d1f",
+    "hair": "bob",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "magnifier"
+  }
+ },
+ "lines": [
+  {
+   "text": "You come back to your colony. Everyone is gone. Every single person.",
+   "key": [
+    "GONE."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "sailor": [
+     2.6,
+     -1.0
+    ],
+    "curator": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "sailor": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Fifteen eighty seven. You are John White.",
+   "cap": "1587. You are John White.",
+   "key": [
+    "WHITE."
+   ],
+   "board": [
+    "1587",
+    "GOV. WHITE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You lead over a hundred settlers. You land on Roanoke Island.",
+   "key": [
+    "ROANOKE"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "point"
+    },
+    "sailor": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Your granddaughter is born there. Virginia Dare.",
+   "key": [
+    "DARE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "First english child born in the Americas.",
+   "cap": "First English child born in the Americas.",
+   "key": [
+    "FIRST"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Supplies run low. The settlers beg you to go. You sail home for more.",
+   "key": [
+    "MORE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "sailor"
+   },
+   "act": {
+    "sailor": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then war breaks out. The Spanish Armada.",
+   "key": [
+    "ARMADA."
+   ],
+   "board": [
+    "WAR",
+    "ARMADA"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    },
+    "sailor": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "England needs every ship. Your rescue trip gets cancelled. You are stuck for three years.",
+   "key": [
+    "THREE"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "You land again in fifteen ninety.",
+   "cap": "You land again in 1590.",
+   "key": [
+    "1590."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "you": [
+     -2.4,
+     -0.4
+    ],
+    "sailor": [
+     2.4,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    },
+    "sailor": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It is your granddaughter's third birthday.",
+   "key": [
+    "BIRTHDAY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Nobody is there. The houses are taken down. Neatly.",
+   "key": [
+    "DOWN."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    },
+    "sailor": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "You had agreed on a cross for trouble. No cross.",
+   "key": [
+    "CROSS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "sailor"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "sailor"
+    },
+    "sailor": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Just one word carved on a post. Croatoan.",
+   "key": [
+    "CROATOAN."
+   ],
+   "board": [
+    "CROATOAN"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.7,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Croatoan is a nearby island. Friendly people live there.",
+   "key": [
+    "ISLAND."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "You set out to check. A storm hits. Anchors are lost.",
+   "key": [
+    "STORM"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "sailor"
+   },
+   "act": {
+    "sailor": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your ships head back to England instead.",
+   "key": [
+    "ENGLAND"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "You never see your family again. Not your daughter. Not your granddaughter.",
+   "key": [
+    "NEVER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Three years late. Then the weather wins. Brutal.",
+   "key": [
+    "BRUTAL."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Centuries later, digs on Hatteras find english objects. Lots of them.",
+   "cap": "Centuries later, digs on Hatteras find English objects. Lots of them.",
+   "key": [
+    "OBJECTS."
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "HATTERAS",
+     "DIG"
+    ]
+   },
+   "place": {
+    "curator": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "sailor": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "curator"
+   },
+   "act": {
+    "curator": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then your own map gets a closer look.",
+   "key": [
+    "MAP"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "curator"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "curator"
+    },
+    "curator": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A patch hides a tiny fort symbol inland. Spotted in twenty twelve.",
+   "cap": "A patch hides a tiny fort symbol inland. Spotted in 2012.",
+   "key": [
+    "FORT"
+   ],
+   "board": [
+    "MAP PATCH",
+    "FORT?"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "curator"
+   },
+   "act": {
+    "curator": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your map had a secret. You never told anyone.",
+   "key": [
+    "SECRET."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "UNSOLVED"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": [
+     2.4,
+     -0.6
+    ],
+    "sailor": false,
+    "curator": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Did they join the Croatoan? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "JOINED CROATOAN?",
+    "YES OR NO?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Roanoke Colony",
+   "url": "https://en.wikipedia.org/wiki/Roanoke_Colony"
+  },
+  {
+   "title": "Wikipedia: Virginia Dare",
+   "url": "https://en.wikipedia.org/wiki/Virginia_Dare"
+  },
+  {
+   "title": "National Geographic: The lost colony of Roanoke",
+   "url": "https://www.nationalgeographic.com/magazine/article/lost-colony-roanoke-history-theories-croatoan"
+  },
+  {
+   "title": "NC Department of Natural and Cultural Resources: Origins of the lost colony mystery",
+   "url": "https://www.dncr.nc.gov/blog/2016/08/18/origins-lost-colony-mystery"
+  },
+  {
+   "title": "National Park Service: The John White colony",
+   "url": "https://www.nps.gov/fora/learn/education/the-john-white-colony.htm"
+  },
+  {
+   "title": "History.com: What happened to the lost colony of Roanoke?",
+   "url": "https://www.history.com/articles/what-happened-to-the-lost-colony-of-roanoke"
+  },
+  {
+   "title": "World History Encyclopedia: Roanoke Colony",
+   "url": "https://www.worldhistory.org/Roanoke_Colony"
+  },
+  {
+   "title": "American Heritage: Has Roanoke's lost colony been found?",
+   "url": "https://www.americanheritage.com/has-roanokes-lost-colony-been-found"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1587 John White led the colony",
+   "terms": [
+    "John White",
+    "1587"
+   ]
+  },
+  {
+   "claim": "More than a hundred settlers came to Roanoke Island",
+   "terms": [
+    "Roanoke Island",
+    "colonists|settlers"
+   ]
+  },
+  {
+   "claim": "His granddaughter Virginia Dare was born there",
+   "terms": [
+    "Virginia Dare",
+    "granddaughter"
+   ]
+  },
+  {
+   "claim": "She was the first English child born in the Americas",
+   "terms": [
+    "first English child"
+   ]
+  },
+  {
+   "claim": "White sailed back to England for supplies",
+   "terms": [
+    "England",
+    "supplies"
+   ]
+  },
+  {
+   "claim": "The colonists urged White to go back for supplies",
+   "terms": [
+    "White",
+    "persuaded|urged|convinced|pleaded"
+   ]
+  },
+  {
+   "claim": "War with Spain and the Armada kept him away",
+   "terms": [
+    "Armada"
+   ]
+  },
+  {
+   "claim": "He returned in 1590",
+   "terms": [
+    "1590",
+    "return"
+   ]
+  },
+  {
+   "claim": "He returned on his granddaughter's third birthday",
+   "terms": [
+    "third birthday"
+   ]
+  },
+  {
+   "claim": "The houses had been taken down",
+   "terms": [
+    "houses",
+    "dismantled|taken down"
+   ]
+  },
+  {
+   "claim": "A cross was the agreed sign of distress, and there was none",
+   "terms": [
+    "cross",
+    "distress"
+   ]
+  },
+  {
+   "claim": "CROATOAN was carved on a post",
+   "terms": [
+    "Croatoan",
+    "carved"
+   ]
+  },
+  {
+   "claim": "Croatoan was a nearby island with friendly people",
+   "terms": [
+    "Croatoan",
+    "Hatteras|island"
+   ]
+  },
+  {
+   "claim": "Anchors were lost in the storm",
+   "terms": [
+    "anchor",
+    "storm"
+   ]
+  },
+  {
+   "claim": "A storm stopped the search and the ships returned to England",
+   "terms": [
+    "storm",
+    "England"
+   ]
+  },
+  {
+   "claim": "Digs on Hatteras found English artifacts",
+   "terms": [
+    "Hatteras",
+    "artifacts|archaeolog"
+   ]
+  },
+  {
+   "claim": "A patch on White's map hides a fort symbol",
+   "terms": [
+    "patch",
+    "fort"
+   ]
+  },
+  {
+   "claim": "The patch was spotted in 2012",
+   "terms": [
+    "2012",
+    "patch"
+   ]
+  }
+ ]
+}

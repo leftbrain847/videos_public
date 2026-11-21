@@ -1,0 +1,778 @@
+{
+ "id": "scary_03_wow_signal",
+ "title": "The Wow! signal: one call, no callback",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "WOW!"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "tech": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#3f6b5c",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center"
+  },
+  "rival": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5a3a5a",
+    "pants": "#2a2a2a",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#5c3a24"
+   },
+   "at": "center",
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "You read a computer printout. You grab a red pen. You write one word. Wow.",
+   "key": [
+    "WOW."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "tech": [
+     2.6,
+     -1.0
+    ],
+    "rival": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "August, nineteen seventy seven. Ohio. The Big Ear telescope.",
+   "cap": "August 1977. Ohio. The Big Ear telescope.",
+   "key": [
+    "EAR"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "AUG 1977",
+     "BIG EAR"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "tech": [
+     2.4,
+     -0.8
+    ],
+    "capy": false,
+    "rival": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "tech": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "It scans the sky for alien radio. Mostly, it hears nothing.",
+   "key": [
+    "ALIEN"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A computer prints out what it hears. Rows of numbers. Rows of letters.",
+   "key": [
+    "PRINTS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Days later, you check the paper by hand. Line by line.",
+   "key": [
+    "HAND."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "Six characters jump out. Six E Q U J five.",
+   "cap": "Six characters jump out. 6EQUJ5.",
+   "key": [
+    "6EQUJ5."
+   ],
+   "board": [
+    "6EQUJ5"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "You circle them in red. You write Wow.",
+   "cap": "You circle them in red. You write Wow!",
+   "key": [
+    "WOW."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The signal is strong. It is narrow. Your pen is shaking.",
+   "key": [
+    "NARROW."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It comes from near Sagittarius. A patch of sky full of stars.",
+   "key": [
+    "SAGITTARIUS."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "neutral",
+     "action": "point"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "tech"
+    }
+   }
+  },
+  {
+   "text": "It sits right near hydrogen's natural frequency.",
+   "key": [
+    "HYDROGEN'S"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "you": [
+     -2.4,
+     -0.4
+    ],
+    "tech": [
+     2.4,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    },
+    "tech": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Alien hunters had bet on that exact channel.",
+   "key": [
+    "EXACT"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "tech",
+    "with": "capy"
+   },
+   "act": {
+    "tech": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "tech"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It lasts seventy two seconds. Then it stops.",
+   "cap": "It lasts 72 seconds. Then it stops.",
+   "key": [
+    "72"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You point the telescope back. Again. Silence.",
+   "key": [
+    "SILENCE."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "tech": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Astronomers kept looking for years. Big dishes. Small dishes. Never again.",
+   "key": [
+    "NEVER"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Aliens called once. Then they ghosted you.",
+   "key": [
+    "GHOSTED"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then come the theories. One says comets. Two of them, passing by.",
+   "key": [
+    "COMETS."
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "THEORY",
+     "COMETS?"
+    ]
+   },
+   "place": {
+    "rival": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "tech": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rival"
+   },
+   "act": {
+    "rival": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Other scientists pick that one apart fast.",
+   "key": [
+    "APART"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rival"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "rival"
+    },
+    "rival": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A newer idea? A hydrogen cloud suddenly flaring. Lit up by a blast from a star.",
+   "key": [
+    "FLARING."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rival"
+   },
+   "act": {
+    "rival": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In twenty twelve, Earth sent a reply.",
+   "cap": "In 2012, Earth sent a reply.",
+   "key": [
+    "REPLY."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "2012",
+     "REPLY SENT"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "tech": [
+     2.4,
+     -0.8
+    ],
+    "capy": [
+     -2.4,
+     0.6
+    ],
+    "rival": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold"
+    },
+    "tech": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Thousands of tweets, beamed toward Sagittarius. From a giant dish.",
+   "key": [
+    "TWEETS,"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your first contact got a group chat.",
+   "key": [
+    "CHAT."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tech"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Still no answer. Rude.",
+   "key": [
+    "RUDE."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "WAITING"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": [
+     2.4,
+     -0.6
+    ],
+    "tech": false,
+    "rival": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Was the Wow signal aliens? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "ALIENS?",
+    "YES OR NO?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Wow! signal",
+   "url": "https://en.wikipedia.org/wiki/Wow!_signal"
+  },
+  {
+   "title": "National Geographic: This mysterious radio signal has puzzled astronomers",
+   "url": "https://www.nationalgeographic.com/science/article/wow-radio-signal-aliens-mystery"
+  },
+  {
+   "title": "Astronomy: Aug. 15, 1977, the Wow! signal arrives",
+   "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/aug-15-1977-the-wow-signal-arrives/"
+  },
+  {
+   "title": "Sky at Night: The Wow! signal",
+   "url": "https://www.skyatnightmagazine.com/space-science/wow-signal"
+  },
+  {
+   "title": "Discover: The Wow! signal, an alien missed connection?",
+   "url": "https://www.discovermagazine.com/the-sciences/the-wow-signal-an-alien-missed-connection"
+  },
+  {
+   "title": "HowStuffWorks: How the Wow! signal works",
+   "url": "https://science.howstuffworks.com/science-vs-myth/unexplained-phenomena/wow-signal.htm"
+  },
+  {
+   "title": "Universe Today: 35 years later, the Wow! signal still tantalizes",
+   "url": "https://www.universetoday.com/93754/35-years-later-the-wow-signal-still-tantalizes/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In August 1977 Ohio State's Big Ear telescope picked up the signal",
+   "terms": [
+    "Big Ear",
+    "1977"
+   ]
+  },
+  {
+   "claim": "Big Ear was used to search for extraterrestrial signals",
+   "terms": [
+    "Big Ear",
+    "SETI|extraterrestrial"
+   ]
+  },
+  {
+   "claim": "Jerry Ehman found it days later reviewing the printout",
+   "terms": [
+    "Ehman",
+    "days"
+   ]
+  },
+  {
+   "claim": "The printout read 6EQUJ5",
+   "terms": [
+    "6EQUJ5"
+   ]
+  },
+  {
+   "claim": "Ehman circled it in red and wrote Wow!",
+   "terms": [
+    "circled",
+    "Wow"
+   ]
+  },
+  {
+   "claim": "It came from the direction of Sagittarius",
+   "terms": [
+    "Sagittarius"
+   ]
+  },
+  {
+   "claim": "It was near the hydrogen line frequency",
+   "terms": [
+    "hydrogen"
+   ]
+  },
+  {
+   "claim": "It lasted 72 seconds",
+   "terms": [
+    "72",
+    "seconds"
+   ]
+  },
+  {
+   "claim": "It was never detected again",
+   "terms": [
+    "never|not been detected|failed",
+    "again|detected"
+   ]
+  },
+  {
+   "claim": "A comet theory was proposed and criticized",
+   "terms": [
+    "comet"
+   ]
+  },
+  {
+   "claim": "A newer theory points to a hydrogen cloud brightening",
+   "terms": [
+    "hydrogen",
+    "cloud",
+    "magnetar|flare|brighten"
+   ]
+  },
+  {
+   "claim": "In 2012 a reply of tweets was beamed toward the source",
+   "terms": [
+    "2012",
+    "tweets|Twitter"
+   ]
+  }
+ ]
+}
