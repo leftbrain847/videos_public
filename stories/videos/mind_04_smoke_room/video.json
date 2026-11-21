@@ -1,0 +1,984 @@
+{
+ "id": "mind_04_smoke_room",
+ "title": "The room that filled with smoke",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "BYSTANDER",
+   "EFFECT"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2e86c1",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   }
+  },
+  "c1": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#4a4a4a",
+    "pants": "#2a2a2a",
+    "tie": "#1f3f8f",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   }
+  },
+  "c2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#16a085",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Smoke is pouring into your room. You keep filling out forms.",
+   "key": [
+    "SMOKE"
+   ],
+   "board": [
+    "SMOKE?",
+    "KEEP WRITING"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "c1": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen sixty eight. Columbia University. A simple questionnaire.",
+   "cap": "1968. Columbia University. A simple questionnaire.",
+   "key": [
+    "COLUMBIA"
+   ],
+   "set": "office",
+   "board": [
+    "COLUMBIA",
+    "1968"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "c1": false,
+    "c2": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then smoke starts puffing through a wall vent. It keeps coming.",
+   "key": [
+    "VENT."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "c1": false,
+    "c2": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Alone, most people get up. They go report it.",
+   "key": [
+    "REPORT"
+   ],
+   "board": [
+    "ALONE:",
+    "MOST REPORT"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "c1": false,
+    "c2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Now add two strangers. Both are in on it.",
+   "key": [
+    "STRANGERS."
+   ],
+   "set": "study",
+   "board": [
+    "BYSTANDER",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "c1": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They see the smoke. They shrug. They keep writing.",
+   "key": [
+    "SHRUG."
+   ],
+   "set": "office",
+   "board": [
+    "BYSTANDER",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "c1": [
+     -2.2,
+     0.2
+    ],
+    "c2": [
+     2.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "c1"
+   },
+   "act": {
+    "c1": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "c2": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "c1"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "c1"
+    }
+   }
+  },
+  {
+   "text": "The smoke gets thick. You can barely see the page.",
+   "key": [
+    "THICK."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "c1": [
+     -2.2,
+     0.2
+    ],
+    "c2": [
+     2.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You stop writing. You glance at them.",
+   "key": [
+    "GLANCE"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "c1": [
+     -2.2,
+     0.2
+    ],
+    "c2": [
+     2.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "c2"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "c2"
+    },
+    "c2": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They look calm. So it must be fine.",
+   "key": [
+    "CALM."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "c1": [
+     -2.2,
+     0.2
+    ],
+    "c2": [
+     2.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "ots",
+    "on": "c1",
+    "from": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "c1"
+    },
+    "c1": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Spoiler. It is not fine.",
+   "key": [
+    "NOT"
+   ],
+   "set": "study",
+   "board": [
+    "BYSTANDER",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "c1": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "With two calm strangers? Hardly anyone reports the smoke.",
+   "key": [
+    "HARDLY"
+   ],
+   "board": [
+    "WITH 2 CALM",
+    "STRANGERS: RARELY"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "c1": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The rest just sit there. Writing. In the smoke.",
+   "key": [
+    "SMOKE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "c1": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Psychologists call this the bystander effect.",
+   "key": [
+    "BYSTANDER"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "c1": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Each person waits for someone else to act.",
+   "key": [
+    "ACT."
+   ],
+   "set": "office",
+   "board": [
+    "WAITING FOR",
+    "SOMEONE ELSE"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "c1": [
+     -2.2,
+     0.2
+    ],
+    "c2": [
+     2.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "c2"
+   },
+   "act": {
+    "c2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "c2"
+    },
+    "c1": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "A whole room full of people. Nobody moves. Nobody.",
+   "key": [
+    "NOBODY"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "c1": [
+     -2.2,
+     0.2
+    ],
+    "c2": [
+     2.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "c1"
+   },
+   "act": {
+    "c1": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. Real life checked the math.",
+   "key": [
+    "TWIST."
+   ],
+   "set": "study",
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "c1": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty nineteen. Researchers study real street fights on camera.",
+   "cap": "2019. Researchers study real street fights on camera.",
+   "key": [
+    "CAMERA."
+   ],
+   "set": "tunnel",
+   "board": [
+    "CCTV",
+    "2019"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "c1": [
+     1.4,
+     0.0
+    ],
+    "c2": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "c1"
+    },
+    "c1": {
+     "mood": "angry",
+     "action": "point",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Three countries. Two hundred nineteen fights.",
+   "cap": "Three countries. 219 fights.",
+   "key": [
+    "219"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "c1": [
+     1.4,
+     0.0
+    ],
+    "c2": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "c1",
+    "with": "you"
+   },
+   "act": {
+    "c1": {
+     "mood": "angry",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "c1"
+    }
+   }
+  },
+  {
+   "text": "In nine out of ten, somebody stepped in.",
+   "cap": "In 9 out of 10, somebody stepped in.",
+   "key": [
+    "9"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "c1": [
+     1.4,
+     0.0
+    ],
+    "c2": [
+     0,
+     1.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "c2"
+   },
+   "act": {
+    "c2": {
+     "mood": "angry",
+     "action": "point",
+     "look": "c1"
+    },
+    "c1": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "c2"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "c2"
+    }
+   }
+  },
+  {
+   "text": "More people watching made help more likely. Not less.",
+   "key": [
+    "MORE"
+   ],
+   "set": "study",
+   "board": [
+    "91%",
+    "GOT HELP"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "c1": false,
+    "c2": [
+     1.2,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "c2"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "c2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Each single person may hesitate. But in a crowd, somebody usually moves.",
+   "key": [
+    "SOMEBODY"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "c1": false,
+    "c2": [
+     1.2,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the smoke room teaches one thing. Be the somebody.",
+   "key": [
+    "SOMEBODY."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "c1": false,
+    "c2": [
+     1.2,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Smoke in your exam room. Do you get up? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "GET UP?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "c1": false,
+    "c2": [
+     1.2,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "c2"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "c2": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Bystander effect",
+   "url": "https://en.wikipedia.org/wiki/Bystander_effect"
+  },
+  {
+   "title": "Simply Psychology: Bystander effect",
+   "url": "https://www.simplypsychology.org/bystander-effect.html"
+  },
+  {
+   "title": "Wikipedia: Bibb Latané",
+   "url": "https://en.wikipedia.org/wiki/Bibb_Latan%C3%A9"
+  },
+  {
+   "title": "Neuroscience News: Bystanders will intervene to help victims of aggressive public disputes",
+   "url": "https://neurosciencenews.com/bystander-intervention-14326/"
+  },
+  {
+   "title": "Medical Xpress: Bystanders intervene to help victims in aggressive disputes",
+   "url": "https://medicalxpress.com/news/2019-06-bystanders-intervene-victims-aggressive-disputes.html"
+  },
+  {
+   "title": "Psychology Today: How often do victims of street violence receive help?",
+   "url": "https://www.psychologytoday.com/us/blog/culture-conscious/202104/how-often-do-victims-street-violence-receive-help"
+  },
+  {
+   "title": "University of Exeter repository: Would I be helped?",
+   "url": "https://ore.exeter.ac.uk/repository/handle/10871/37604"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The smoke study was run in 1968 by Latane and Darley",
+   "terms": [
+    "Latan",
+    "1968"
+   ]
+  },
+  {
+   "claim": "It took place at Columbia University",
+   "terms": [
+    "Columbia"
+   ]
+  },
+  {
+   "claim": "Participants were filling out a questionnaire",
+   "terms": [
+    "questionnaire"
+   ]
+  },
+  {
+   "claim": "Smoke came through a vent in the wall",
+   "terms": [
+    "vent"
+   ]
+  },
+  {
+   "claim": "Alone, people reported the smoke far more often than with passive others",
+   "terms": [
+    "smoke",
+    "alone"
+   ]
+  },
+  {
+   "claim": "Two strangers were confederates who acted calm",
+   "terms": [
+    "confederates|confederate"
+   ]
+  },
+  {
+   "claim": "This is called the bystander effect",
+   "terms": [
+    "bystander effect"
+   ]
+  },
+  {
+   "claim": "A 2019 study used CCTV footage of real public conflicts",
+   "terms": [
+    "CCTV|surveillance",
+    "2019|conflicts"
+   ]
+  },
+  {
+   "claim": "The footage came from three countries",
+   "terms": [
+    "three countries|Netherlands|South Africa"
+   ]
+  },
+  {
+   "claim": "The study covered 219 incidents",
+   "terms": [
+    "219"
+   ]
+  },
+  {
+   "claim": "In 9 of 10 incidents someone intervened",
+   "terms": [
+    "91|nine in ten|nine out of ten|9 out of 10"
+   ]
+  },
+  {
+   "claim": "More bystanders made intervention more likely",
+   "terms": [
+    "more bystanders|more likely"
+   ]
+  }
+ ]
+}

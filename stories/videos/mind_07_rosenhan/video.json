@@ -1,0 +1,1034 @@
+{
+ "id": "mind_07_rosenhan",
+ "title": "Sane in insane places, or was it?",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "ADMITTED",
+   "FOR WEEKS"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#8e44ad",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f",
+    "beard": true
+   },
+   "hold": "notepad"
+  },
+  "doc": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "pat": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#a7c4d9",
+    "pants": "#a7c4d9",
+    "hair": "long",
+    "hairColor": "#9a9a9a",
+    "skin": "#c68d64"
+   }
+  },
+  "jrn": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#2e86c1",
+    "pants": "#3a3a3a",
+    "lapel": "#1f5f8f",
+    "hair": "long",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You fake one symptom. A hospital keeps you for weeks.",
+   "key": [
+    "WEEKS."
+   ],
+   "board": [
+    "ADMITTED",
+    "FOR WEEKS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "doc": false,
+    "pat": false,
+    "jrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The early nineteen seventies. Psychologist David Rosenhan has a plan.",
+   "cap": "The early 1970s. Psychologist David Rosenhan has a plan.",
+   "key": [
+    "ROSENHAN"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "doc": false,
+    "pat": false,
+    "jrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Eight healthy people check into psychiatric hospitals.",
+   "cap": "8 healthy people check into psychiatric hospitals.",
+   "key": [
+    "8"
+   ],
+   "set": "office",
+   "board": [
+    "ADMISSIONS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "doc": [
+     1.4,
+     0.0
+    ],
+    "pat": false,
+    "jrn": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "doc"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "doc"
+    },
+    "doc": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Each one says the same thing. I hear voices.",
+   "key": [
+    "VOICES."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "doc": [
+     1.4,
+     0.0
+    ],
+    "pat": false,
+    "jrn": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "doc"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "doc"
+    },
+    "doc": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The voices say empty. Hollow. Thud.",
+   "key": [
+    "THUD."
+   ],
+   "board": [
+    "EMPTY",
+    "HOLLOW · THUD"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "doc": [
+     1.4,
+     0.0
+    ],
+    "pat": false,
+    "jrn": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That is the only lie. Everything else they say is true.",
+   "key": [
+    "ONLY"
+   ],
+   "set": "study",
+   "board": [
+    "ADMITTED",
+    "FOR WEEKS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "doc": false,
+    "pat": false,
+    "jrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Every single one of them is admitted.",
+   "key": [
+    "ADMITTED."
+   ],
+   "set": "office",
+   "board": [
+    "ADMITTED",
+    "FOR WEEKS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "doc": false,
+    "pat": false,
+    "jrn": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Inside, they act normal. They say the voices stopped.",
+   "key": [
+    "NORMAL."
+   ],
+   "set": "locker",
+   "board": [
+    "ADMITTED",
+    "FOR WEEKS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "doc": false,
+    "pat": [
+     1.4,
+     0.0
+    ],
+    "jrn": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "pat"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "pat"
+    },
+    "pat": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Staff never notice. Not one pseudopatient is caught.",
+   "key": [
+    "NEVER"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "doc": false,
+    "pat": [
+     1.4,
+     0.0
+    ],
+    "jrn": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "pat",
+    "with": "you"
+   },
+   "act": {
+    "pat": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "pat"
+    }
+   }
+  },
+  {
+   "text": "Stays run from seven to fifty two days.",
+   "cap": "Stays run from 7 to 52 days.",
+   "key": [
+    "52"
+   ],
+   "board": [
+    "STAYS:",
+    "7 TO 52 DAYS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "doc": false,
+    "pat": [
+     1.4,
+     0.0
+    ],
+    "jrn": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "My favorite detail. They took notes.",
+   "key": [
+    "NOTES."
+   ],
+   "set": "study",
+   "board": [
+    "ADMITTED",
+    "FOR WEEKS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "doc": false,
+    "pat": false,
+    "jrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One nurse logged it. Patient engages in writing behavior.",
+   "key": [
+    "WRITING"
+   ],
+   "set": "office",
+   "board": [
+    "PATIENT ENGAGES IN",
+    "WRITING BEHAVIOR"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "doc": [
+     0,
+     0.2
+    ],
+    "pat": false,
+    "jrn": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "I am also engaging in writing behavior. Right now.",
+   "key": [
+    "NOW."
+   ],
+   "set": "study",
+   "board": [
+    "ADMITTED",
+    "FOR WEEKS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "doc": false,
+    "pat": false,
+    "jrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The real patients were sharper. Many suspected a fake.",
+   "key": [
+    "SUSPECTED"
+   ],
+   "set": "locker",
+   "board": [
+    "ADMITTED",
+    "FOR WEEKS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "doc": false,
+    "pat": [
+     0,
+     0.4
+    ],
+    "jrn": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "pat"
+   },
+   "act": {
+    "pat": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It runs in Science in nineteen seventy three. Psychiatry is rattled.",
+   "cap": "It runs in Science in 1973. Psychiatry is rattled.",
+   "key": [
+    "1973."
+   ],
+   "set": "study",
+   "board": [
+    "SCIENCE",
+    "1973"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "doc": false,
+    "pat": false,
+    "jrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One hospital fires back. Send us your fakes. We will catch them.",
+   "key": [
+    "CATCH"
+   ],
+   "set": "office",
+   "board": [
+    "ADMITTED",
+    "FOR WEEKS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "doc": [
+     0,
+     0.2
+    ],
+    "pat": false,
+    "jrn": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Over three months, staff flag forty one impostors.",
+   "cap": "Over 3 months, staff flag 41 impostors.",
+   "key": [
+    "41"
+   ],
+   "board": [
+    "FLAGGED:",
+    "41"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "doc": [
+     0,
+     0.2
+    ],
+    "pat": false,
+    "jrn": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Rosenhan had sent nobody. Zero.",
+   "key": [
+    "NOBODY."
+   ],
+   "set": "study",
+   "board": [
+    "SENT:",
+    "0"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "doc": [
+     1.2,
+     0.0
+    ],
+    "pat": false,
+    "jrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "doc"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "doc": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Now the twist. The study itself may be the fake.",
+   "key": [
+    "FAKE."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "doc": false,
+    "pat": false,
+    "jrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty nineteen. A journalist digs through all his files.",
+   "cap": "2019. A journalist digs through all his files.",
+   "key": [
+    "FILES."
+   ],
+   "set": "office",
+   "board": [
+    "THE FILES",
+    "2019"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "doc": false,
+    "pat": false,
+    "jrn": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "jrn"
+   },
+   "act": {
+    "jrn": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Most of the fake patients? She cannot find them. Anywhere.",
+   "key": [
+    "FIND"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "doc": false,
+    "pat": false,
+    "jrn": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "jrn"
+   },
+   "act": {
+    "jrn": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One she found had a pleasant stay. His data was left out.",
+   "key": [
+    "LEFT"
+   ],
+   "set": "study",
+   "board": [
+    "ADMITTED",
+    "FOR WEEKS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "doc": false,
+    "pat": false,
+    "jrn": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "jrn"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "jrn"
+    },
+    "jrn": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "So, famous study. Real or fake? One word.",
+   "key": [
+    "REAL",
+    "FAKE?"
+   ],
+   "board": [
+    "REAL OR",
+    "FAKE?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "doc": false,
+    "pat": false,
+    "jrn": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "jrn": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Rosenhan experiment",
+   "url": "https://en.wikipedia.org/wiki/Rosenhan_experiment"
+  },
+  {
+   "title": "Wikipedia: David Rosenhan",
+   "url": "https://en.wikipedia.org/wiki/David_Rosenhan"
+  },
+  {
+   "title": "Simply Psychology: Rosenhan study",
+   "url": "https://www.simplypsychology.org/rosenhan.html"
+  },
+  {
+   "title": "NPR: The Great Pretender seeks the truth about On Being Sane in Insane Places",
+   "url": "https://www.npr.org/2019/11/04/776036170/the-great-pretender-seeks-the-truth-about-on-being-sane-in-insane-places"
+  },
+  {
+   "title": "Psychiatric Times: The Great Pretender",
+   "url": "https://www.psychiatrictimes.com/view/great-pretender-undercover-mission-changed-our-understanding-madness"
+  },
+  {
+   "title": "Psychotherapy Networker: Exposing the hoax",
+   "url": "https://www.psychotherapynetworker.org/article/exposing-hoax/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "David Rosenhan ran the study in the early 1970s",
+   "terms": [
+    "Rosenhan",
+    "1973|1972|1970s"
+   ]
+  },
+  {
+   "claim": "Eight healthy pseudopatients sought admission to psychiatric hospitals",
+   "terms": [
+    "eight",
+    "pseudopatients"
+   ]
+  },
+  {
+   "claim": "They said they heard voices",
+   "terms": [
+    "hearing voices|heard voices|voices"
+   ]
+  },
+  {
+   "claim": "The voices said empty, hollow and thud",
+   "terms": [
+    "empty",
+    "hollow",
+    "thud"
+   ]
+  },
+  {
+   "claim": "All were admitted",
+   "terms": [
+    "admitted"
+   ]
+  },
+  {
+   "claim": "Inside they behaved normally and said the voices had stopped",
+   "terms": [
+    "normal|normally",
+    "pseudopatients"
+   ]
+  },
+  {
+   "claim": "Staff did not detect them",
+   "terms": [
+    "staff",
+    "detect|discover|identif|sane"
+   ]
+  },
+  {
+   "claim": "Stays ranged from 7 to 52 days",
+   "terms": [
+    "7",
+    "52"
+   ]
+  },
+  {
+   "claim": "A record noted: patient engages in writing behavior",
+   "terms": [
+    "writing behavior|writing behaviour"
+   ]
+  },
+  {
+   "claim": "Many real patients suspected the pseudopatients",
+   "terms": [
+    "patients",
+    "suspect|suspicion"
+   ]
+  },
+  {
+   "claim": "The study was published in Science in 1973",
+   "terms": [
+    "Science",
+    "1973"
+   ]
+  },
+  {
+   "claim": "A hospital challenged Rosenhan to send pseudopatients",
+   "terms": [
+    "hospital",
+    "challenge|challenged"
+   ]
+  },
+  {
+   "claim": "Staff flagged 41 suspected impostors",
+   "terms": [
+    "41"
+   ]
+  },
+  {
+   "claim": "Rosenhan had sent no pseudopatients",
+   "terms": [
+    "Rosenhan",
+    "no pseudopatients|none|sent no"
+   ]
+  },
+  {
+   "claim": "In 2019 Susannah Cahalan examined his files",
+   "terms": [
+    "Cahalan"
+   ]
+  },
+  {
+   "claim": "Cahalan found evidence the study may have been partly fabricated",
+   "terms": [
+    "Cahalan",
+    "fabricat|fraud|hoax"
+   ]
+  },
+  {
+   "claim": "She could not find most pseudopatients",
+   "terms": [
+    "Cahalan",
+    "find|locate"
+   ]
+  },
+  {
+   "claim": "One pseudopatient she found had a positive experience and was excluded",
+   "terms": [
+    "Lando"
+   ]
+  }
+ ]
+}

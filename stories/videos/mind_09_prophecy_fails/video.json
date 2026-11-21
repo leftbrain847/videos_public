@@ -1,0 +1,990 @@
+{
+ "id": "mind_09_prophecy_fails",
+ "title": "The saucer that never came",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "WHEN PROPHECY",
+   "FAILS"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#7a5c2a",
+    "pants": "#3a3a3a",
+    "tie": "#2e86c1",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b"
+   }
+  },
+  "lead": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#e94f37",
+    "pants": "#3a3a3a",
+    "lapel": "#a83a2a",
+    "hair": "bun",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "hold": "scroll"
+  },
+  "spy": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5a6a7a",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "The world ends tonight. A flying saucer is coming for you. Pack light.",
+   "key": [
+    "SAUCER"
+   ],
+   "board": [
+    "PICKUP:",
+    "MIDNIGHT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "lead": false,
+    "spy": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen fifty four. A quiet suburb just outside Chicago.",
+   "cap": "1954. A quiet suburb just outside Chicago.",
+   "key": [
+    "CHICAGO."
+   ],
+   "set": "living",
+   "board": [
+    "CHICAGO",
+    "1954"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "lead": [
+     0,
+     4.4
+    ],
+    "spy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "lead"
+   },
+   "act": {
+    "lead": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A woman named Dorothy Martin writes down messages. From space.",
+   "key": [
+    "SPACE."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "lead": [
+     0,
+     4.4
+    ],
+    "spy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "lead"
+   },
+   "act": {
+    "lead": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They come from a planet called Clarion.",
+   "key": [
+    "CLARION."
+   ],
+   "set": "study",
+   "board": [
+    "PLANET",
+    "CLARION"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "lead": false,
+    "spy": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The warning? A great flood on December twenty first.",
+   "cap": "The warning? A great flood on December 21.",
+   "key": [
+    "FLOOD"
+   ],
+   "set": "living",
+   "board": [
+    "FLOOD:",
+    "DEC. 21"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     1.4,
+     4.2
+    ],
+    "lead": [
+     -1.4,
+     4.4
+    ],
+    "spy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "lead",
+    "with": "you"
+   },
+   "act": {
+    "lead": {
+     "mood": "worried",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "lead"
+    }
+   }
+  },
+  {
+   "text": "But believers get rescued. By flying saucer.",
+   "key": [
+    "RESCUED."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     1.4,
+     4.2
+    ],
+    "lead": [
+     -1.4,
+     4.4
+    ],
+    "spy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some followers quit their jobs. Some give away their things.",
+   "key": [
+    "QUIT"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     1.4,
+     4.2
+    ],
+    "lead": [
+     -1.4,
+     4.4
+    ],
+    "spy": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "lead": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "No metal allowed. You must remove every bit.",
+   "key": [
+    "METAL"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     1.4,
+     4.2
+    ],
+    "lead": [
+     -1.4,
+     4.4
+    ],
+    "spy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Zippers too. Apparently saucers are strict.",
+   "key": [
+    "ZIPPERS"
+   ],
+   "set": "study",
+   "board": [
+    "NO METAL",
+    "ALLOWED"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "lead": false,
+    "spy": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Small detail. A few believers are actually spies.",
+   "key": [
+    "SPIES."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "lead": false,
+    "spy": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "spy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "spy"
+    },
+    "spy": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Psychologist Leon Festinger planted observers in the group.",
+   "key": [
+    "FESTINGER"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "lead": false,
+    "spy": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "spy"
+   },
+   "act": {
+    "spy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His question is simple. What happens when a prophecy fails?",
+   "key": [
+    "FAILS?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "lead": false,
+    "spy": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "spy"
+   },
+   "act": {
+    "spy": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Midnight. Everyone waits in the living room.",
+   "key": [
+    "MIDNIGHT."
+   ],
+   "set": "living",
+   "board": [
+    "12:00",
+    "AM"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -2.2,
+     4.4
+    ],
+    "lead": [
+     0,
+     4.2
+    ],
+    "spy": [
+     2.2,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "lead"
+    },
+    "lead": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "spy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Midnight passes. No saucer. No knock. Nothing.",
+   "key": [
+    "NOTHING."
+   ],
+   "board": [
+    "12:01",
+    "NO SAUCER"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -2.2,
+     4.4
+    ],
+    "lead": [
+     0,
+     4.2
+    ],
+    "spy": [
+     2.2,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "lead"
+   },
+   "act": {
+    "lead": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Hours go by. The room sits in stunned silence. Somebody checks the clock. Again.",
+   "key": [
+    "SILENCE."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -2.2,
+     4.4
+    ],
+    "lead": [
+     0,
+     4.2
+    ],
+    "spy": [
+     2.2,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "lead": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "you"
+    },
+    "spy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "lead"
+    }
+   }
+  },
+  {
+   "text": "Then, at four forty five, a message arrives.",
+   "cap": "Then, at 4:45, a message arrives.",
+   "key": [
+    "4:45,"
+   ],
+   "board": [
+    "4:45 AM",
+    "NEW MESSAGE"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -2.2,
+     4.4
+    ],
+    "lead": [
+     0,
+     4.2
+    ],
+    "spy": [
+     2.2,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "lead"
+   },
+   "act": {
+    "lead": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Their faith saved the world. Apparently.",
+   "key": [
+    "SAVED"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -2.2,
+     4.4
+    ],
+    "lead": [
+     0,
+     4.2
+    ],
+    "spy": [
+     2.2,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "lead",
+    "with": "you"
+   },
+   "act": {
+    "lead": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "lead"
+    }
+   }
+  },
+  {
+   "text": "Here is the loophole. Instead of quitting, they believe harder.",
+   "key": [
+    "HARDER."
+   ],
+   "set": "study",
+   "board": [
+    "WHEN PROPHECY",
+    "FAILS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "lead": false,
+    "spy": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Before, they dodged reporters. Now they call the newspapers.",
+   "key": [
+    "NEWSPAPERS."
+   ],
+   "set": "living",
+   "board": [
+    "CALL THE",
+    "PRESS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "lead": [
+     0,
+     4.4
+    ],
+    "spy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "lead"
+   },
+   "act": {
+    "lead": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Festinger calls it cognitive dissonance.",
+   "key": [
+    "DISSONANCE."
+   ],
+   "set": "study",
+   "board": [
+    "COGNITIVE",
+    "DISSONANCE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "lead": false,
+    "spy": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "spy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "spy"
+    },
+    "spy": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "When reality hurts, you edit the story. You keep the belief.",
+   "key": [
+    "STORY."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "lead": false,
+    "spy": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "spy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The book comes out in nineteen fifty six. Still no saucer.",
+   "cap": "The book comes out in 1956. Still no saucer.",
+   "key": [
+    "1956."
+   ],
+   "board": [
+    "WHEN PROPHECY",
+    "FAILS · 1956"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "lead": false,
+    "spy": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "spy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Your prophecy flops. Do you admit it? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "ADMIT IT?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "lead": false,
+    "spy": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: When Prophecy Fails",
+   "url": "https://en.wikipedia.org/wiki/When_Prophecy_Fails"
+  },
+  {
+   "title": "Wikipedia: The Seekers (rapturists)",
+   "url": "https://en.wikipedia.org/wiki/The_Seekers_(rapturists)"
+  },
+  {
+   "title": "Wikipedia: Dorothy Martin",
+   "url": "https://en.wikipedia.org/wiki/Dorothy_Martin"
+  },
+  {
+   "title": "Oak Park River Forest Museum: The Seekers on Cuyler Avenue",
+   "url": "https://oprfmuseum.org/this-month-in-history/seekers-cuyler-avenue"
+  },
+  {
+   "title": "Christian Science Monitor: Five failed end-of-the-world predictions, December 21, 1954",
+   "url": "https://www.csmonitor.com/Science/2011/0518/Judgment-Day-Five-failed-end-of-the-world-predictions/December-21-1954"
+  },
+  {
+   "title": "Discover: When prophecy failed",
+   "url": "https://www.discovermagazine.com/when-prophecy-failed-4037"
+  },
+  {
+   "title": "Wikipedia: Cognitive dissonance",
+   "url": "https://en.wikipedia.org/wiki/Cognitive_dissonance"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "It happened in 1954 near Chicago",
+   "terms": [
+    "Chicago",
+    "1954"
+   ]
+  },
+  {
+   "claim": "Dorothy Martin received messages through automatic writing",
+   "terms": [
+    "Martin",
+    "automatic writing|messages"
+   ]
+  },
+  {
+   "claim": "The messages came from the planet Clarion",
+   "terms": [
+    "Clarion"
+   ]
+  },
+  {
+   "claim": "She predicted a flood on December 21",
+   "terms": [
+    "flood",
+    "December 21|21 December"
+   ]
+  },
+  {
+   "claim": "Believers would be rescued by a flying saucer",
+   "terms": [
+    "flying saucer"
+   ]
+  },
+  {
+   "claim": "Some followers quit jobs and gave away possessions",
+   "terms": [
+    "quit|left",
+    "jobs|possessions"
+   ]
+  },
+  {
+   "claim": "They were told to remove metal from their clothing",
+   "terms": [
+    "metal"
+   ]
+  },
+  {
+   "claim": "Leon Festinger planted observers in the group",
+   "terms": [
+    "Festinger",
+    "observers|infiltrated"
+   ]
+  },
+  {
+   "claim": "They waited at midnight and no saucer came",
+   "terms": [
+    "midnight"
+   ]
+  },
+  {
+   "claim": "At 4:45 a new message said their faith saved the world",
+   "terms": [
+    "4:45|4.45"
+   ]
+  },
+  {
+   "claim": "The group then sought publicity, calling newspapers",
+   "terms": [
+    "newspapers|press|publicity"
+   ]
+  },
+  {
+   "claim": "Festinger called it cognitive dissonance",
+   "terms": [
+    "Festinger",
+    "cognitive dissonance"
+   ]
+  },
+  {
+   "claim": "The book When Prophecy Fails came out in 1956",
+   "terms": [
+    "When Prophecy Fails",
+    "1956"
+   ]
+  }
+ ]
+}
