@@ -58,10 +58,11 @@
  },
  "lines": [
   {
-   "text": "In 2020, the NFL ran almost a million COVID tests. And still played every single game on the schedule.",
+   "text": "You run almost a million virus tests. You play every game.",
    "key": [
     "EVERY"
    ],
+   "speaker": "capy",
    "place": {
     "exec": false,
     "player": false
@@ -82,12 +83,11 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Two hundred fifty six games were on the schedule.",
-   "cap": "256 games were on the schedule.",
+   "text": "Twenty twenty. Two hundred fifty six games on the schedule.",
+   "cap": "2020. 256 games on the schedule.",
    "key": [
     "256"
    ],
@@ -98,6 +98,10 @@
      "256 GAMES"
     ]
    },
+   "board": [
+    "SCHEDULE",
+    "256 GAMES"
+   ],
    "place": {
     "player": "center"
    },
@@ -110,15 +114,11 @@
      "mood": "happy",
      "action": "hold"
     }
-   },
-   "board": [
-    "SCHEDULE",
-    "256 GAMES"
-   ]
+   }
   },
   {
-   "text": "Then the chaos began. The Titans' outbreak alone hit twenty four people.",
-   "cap": "Then the chaos began. The Titans' outbreak alone hit 24 people.",
+   "text": "Then the chaos starts. One outbreak in Nashville hits twenty four people.",
+   "cap": "Then the chaos starts. One outbreak in Nashville hits 24 people.",
    "key": [
     "24"
    ],
@@ -138,7 +138,7 @@
    }
   },
   {
-   "text": "Games moved to Tuesday. And to Wednesday.",
+   "text": "Games move to Tuesday. Then to Wednesday.",
    "key": [
     "WEDNESDAY."
    ],
@@ -158,9 +158,9 @@
    }
   },
   {
-   "text": "One team played a whole game with no quarterback.",
+   "text": "One team starts a receiver at quarterback.",
    "key": [
-    "NO"
+    "RECEIVER"
    ],
    "board": [
     "QB:",
@@ -179,7 +179,7 @@
    }
   },
   {
-   "text": "Another left its own county and moved to Arizona.",
+   "text": "Another leaves its county. It plays home games in Arizona.",
    "key": [
     "ARIZONA."
    ],
@@ -211,8 +211,8 @@
    }
   },
   {
-   "text": "By the end, seven hundred twenty six people had tested positive.",
-   "cap": "By the end, 726 people had tested positive.",
+   "text": "By the end, seven hundred twenty six positives.",
+   "cap": "By the end, 726 positives.",
    "key": [
     "726"
    ],
@@ -223,6 +223,10 @@
      "726"
     ]
    },
+   "board": [
+    "POSITIVE",
+    "726"
+   ],
    "place": {
     "doc": "desk"
    },
@@ -236,18 +240,13 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "board": [
-    "POSITIVE",
-    "726"
-   ]
+   }
   },
   {
    "text": "Two hundred sixty two players. Four hundred sixty four staff.",
    "cap": "262 players. 464 staff.",
    "key": [
-    "262",
-    "464"
+    "262"
    ],
    "board": [
     "PLAYERS 262",
@@ -265,8 +264,8 @@
    }
   },
   {
-   "text": "Total tests: nine hundred fifty nine thousand, eight hundred sixty.",
-   "cap": "Total tests: 959,860.",
+   "text": "Total tests? Nine hundred fifty nine thousand, eight hundred sixty.",
+   "cap": "Total tests? 959,860.",
    "key": [
     "959,860."
    ],
@@ -286,9 +285,43 @@
    }
   },
   {
-   "text": "The league found no evidence that the virus spread on the field.",
+   "text": "That's a lot of nose swabs. A lot.",
    "key": [
-    "FIELD."
+    "SWABS."
+   ],
+   "speaker": "capy",
+   "board": [
+    "SWABS:",
+    "A LOT"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "doc"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "doc": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Spread on the field? The league finds none.",
+   "key": [
+    "NONE."
    ],
    "set": "press",
    "setOpts": {
@@ -297,6 +330,10 @@
      "NONE FOUND"
     ]
    },
+   "board": [
+    "ON-FIELD SPREAD",
+    "NONE FOUND"
+   ],
    "place": {
     "exec": "center"
    },
@@ -309,15 +346,11 @@
      "mood": "neutral",
      "action": "talk"
     }
-   },
-   "board": [
-    "ON-FIELD SPREAD",
-    "NONE FOUND"
-   ]
+   }
   },
   {
-   "text": "Games cancelled: zero.",
-   "cap": "Games cancelled: 0.",
+   "text": "Games cancelled? Zero.",
+   "cap": "Games cancelled? 0.",
    "key": [
     "0."
    ],
@@ -337,8 +370,8 @@
    }
   },
   {
-   "text": "All two hundred fifty six were played.",
-   "cap": "All 256 were played.",
+   "text": "All two hundred fifty six get played.",
+   "cap": "All 256 get played.",
    "key": [
     "256"
    ],
@@ -349,6 +382,10 @@
      "256 / 256"
     ]
    },
+   "board": [
+    "PLAYED",
+    "256 / 256"
+   ],
    "place": {
     "player": [
      1.2,
@@ -372,18 +409,14 @@
      "mood": "neutral",
      "look": "player"
     }
-   },
-   "board": [
-    "PLAYED",
-    "256 / 256"
-   ]
+   }
   },
   {
-   "text": "Chaos every week. And still, every single game.",
+   "text": "Chaos every week. Still, every single game. Somehow.",
    "key": [
-    "EVERY",
-    "GAME."
+    "EVERY"
    ],
+   "speaker": "capy",
    "shot": {
     "type": "medium",
     "on": "capy"
@@ -398,13 +431,18 @@
      "mood": "happy",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Should the league have finished that season? Yes or no?",
+   "text": "Should the league have finished that season? Yes or no? Lions fans, you can say no.",
    "key": [
-    "FINISHED"
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "FINISH 2020:",
+    "YES OR NO?"
    ],
    "shot": {
     "type": "two",
@@ -422,8 +460,7 @@
      "action": "throw",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -458,6 +495,98 @@
   {
    "title": "SI: Titans fined $350,000 for COVID-19 violations (24 positives)",
    "url": "https://www.si.com/nfl/2020/10/25/titans-fined-covid-violations-350000"
+  },
+  {
+   "title": "ESPN: How the NFL navigated the COVID-19 season",
+   "url": "https://www.espn.com/nfl/insider/story/_/id/30781978/how-nfl-navigated-covid-19-season-954830-tests-100-million-zero-cancellations"
+  },
+  {
+   "title": "Fox News (AP): CDC publishes paper on NFL's efforts to play 2020 season",
+   "url": "https://www.foxnews.com/sports/cdc-publishes-paper-on-nfls-efforts-to-play-2020-season"
+  },
+  {
+   "title": "WCPO (AP): CDC publishes paper on NFL's efforts to play 2020 season",
+   "url": "https://www.wcpo.com/news/national/coronavirus/cdc-publishes-paper-on-nfls-efforts-to-play-2020-season"
+  },
+  {
+   "title": "Washington Times: NFL finally reaching finishing line",
+   "url": "https://www.washingtontimes.com/news/2021/feb/3/nfl-finally-reaching-finishing-line-unprecedented-/"
+  },
+  {
+   "title": "ESPN (AP): Saints 31, Broncos 3 recap",
+   "url": "https://www.espn.com/nfl/recap/_/gameId/401220215"
+  },
+  {
+   "title": "Fox Sports (AP): Hill leads Saints to 31-3 rout of QB-challenged Broncos",
+   "url": "https://www.foxsports.com/articles/nfl/hill-leads-saints-to-313-rout-of-qbchallenged-broncos"
+  },
+  {
+   "title": "AP via ClickOrlando: Tannehill scores 4 TDs as depleted Titans beat Bills 42-16",
+   "url": "https://www.clickorlando.com/sports/2020/10/14/tannehill-scores-4-tds-as-depleted-titans-beat-bills-42-16/"
+  },
+  {
+   "title": "Wikipedia: 2020 NFL season",
+   "url": "https://en.wikipedia.org/wiki/2020_NFL_season"
+  },
+  {
+   "title": "Wikipedia: 2020 San Francisco 49ers season",
+   "url": "https://en.wikipedia.org/wiki/2020_San_Francisco_49ers_season"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The NFL ran almost a million tests (959,860)",
+   "terms": [
+    "959,860"
+   ]
+  },
+  {
+   "claim": "All 256 scheduled games were played",
+   "terms": [
+    "256"
+   ]
+  },
+  {
+   "claim": "The Titans outbreak in Nashville hit 24 people",
+   "terms": [
+    "Titans",
+    "24"
+   ]
+  },
+  {
+   "claim": "Games moved to Tuesday",
+   "terms": [
+    "Tuesday"
+   ]
+  },
+  {
+   "claim": "One team started a receiver at quarterback",
+   "terms": [
+    "Hinton",
+    "quarterback"
+   ]
+  },
+  {
+   "claim": "The 49ers left their county and played home games in Arizona",
+   "terms": [
+    "49ers",
+    "Arizona"
+   ]
+  },
+  {
+   "claim": "262 players and 464 staff tested positive (726 in all)",
+   "terms": [
+    "262",
+    "464"
+   ]
+  },
+  {
+   "claim": "The league found no evidence of on-field spread",
+   "terms": [
+    "on-field|on the field",
+    "spread|transmission"
+   ]
   }
  ]
 }

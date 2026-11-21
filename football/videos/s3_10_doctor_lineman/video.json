@@ -60,11 +60,11 @@
  },
  "lines": [
   {
-   "text": "In 2020, a Super Bowl champion skipped the season to work in a care home.",
+   "text": "You win the Super Bowl. Next season, you work in a care home.",
    "key": [
-    "CARE",
-    "HOME."
+    "CARE"
    ],
+   "speaker": "capy",
    "place": {
     "orderly": false,
     "resident": false
@@ -84,11 +84,10 @@
      "mood": "happy",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Laurent Duvernay-Tardif. A starting guard for Kansas City.",
+   "text": "You're Laurent Duvernay-Tardif. Starting guard for Kansas City.",
    "key": [
     "GUARD"
    ],
@@ -109,10 +108,14 @@
    }
   },
   {
-   "text": "In February, he started the Super Bowl. Chiefs thirty one, Niners twenty.",
-   "cap": "In February, he started the Super Bowl. Chiefs 31, Niners 20.",
+   "text": "February twenty twenty. You start the Super Bowl. Chiefs thirty one, Niners twenty.",
+   "cap": "February 2020. You start the Super Bowl. Chiefs 31, Niners 20.",
    "key": [
     "31,"
+   ],
+   "board": [
+    "CHIEFS 31",
+    "49ERS 20"
    ],
    "shot": {
     "type": "wide",
@@ -131,7 +134,7 @@
    }
   },
   {
-   "text": "He was also a doctor. He had finished medical school at McGill.",
+   "text": "You're also a doctor. Medical school at McGill.",
    "key": [
     "DOCTOR."
    ],
@@ -142,6 +145,10 @@
      "M.D."
     ]
    },
+   "board": [
+    "McGILL",
+    "M.D."
+   ],
    "place": {
     "orderly": "center"
    },
@@ -155,14 +162,10 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "board": [
-    "McGILL",
-    "M.D."
-   ]
+   }
   },
   {
-   "text": "Then the pandemic hit.",
+   "text": "Then the pandemic hits.",
    "key": [
     "PANDEMIC"
    ],
@@ -181,7 +184,7 @@
    }
   },
   {
-   "text": "In July, he became the first NFL player to opt out of the season.",
+   "text": "July. You're the first player to opt out.",
    "key": [
     "FIRST"
    ],
@@ -213,9 +216,9 @@
    }
   },
   {
-   "text": "Instead, he went to work at a long-term care home in Quebec.",
+   "text": "You keep working at a Quebec care home.",
    "key": [
-    "QUEBEC."
+    "QUEBEC"
    ],
    "set": "living",
    "setOpts": {
@@ -225,6 +228,10 @@
     ],
     "couch": "#9bb7a0"
    },
+   "board": [
+    "CARE HOME",
+    "QUEBEC"
+   ],
    "place": {
     "orderly": [
      -1.1,
@@ -251,11 +258,7 @@
      "action": "wave",
      "look": "orderly"
     }
-   },
-   "board": [
-    "CARE HOME",
-    "QUEBEC"
-   ]
+   }
   },
   {
    "text": "Not as a doctor. As an orderly.",
@@ -275,9 +278,9 @@
    }
   },
   {
-   "text": "While his teammates played, he stayed at the care home.",
+   "text": "Your teammates play on Sunday. You stay at the care home.",
    "key": [
-    "STAYED"
+    "STAY"
    ],
    "shot": {
     "type": "high",
@@ -296,10 +299,9 @@
    }
   },
   {
-   "text": "In December, Sports Illustrated named him one of five Sportspersons of the Year.",
-   "cap": "In December, Sports Illustrated named him one of 5 Sportspersons of the Year.",
+   "text": "December. Sports Illustrated names you Sportsperson of the Year.",
    "key": [
-    "5"
+    "SPORTSPERSON"
    ],
    "set": "press",
    "setOpts": {
@@ -309,6 +311,10 @@
      "OF THE YEAR"
     ]
    },
+   "board": [
+    "SPORTSPERSON",
+    "OF THE YEAR"
+   ],
    "place": {
     "orderly": "center"
    },
@@ -321,16 +327,16 @@
      "mood": "happy",
      "action": "wave"
     }
-   },
-   "board": [
-    "SPORTSPERSON",
-    "OF THE YEAR"
-   ]
+   }
   },
   {
-   "text": "Alongside Patrick Mahomes, LeBron James, Naomi Osaka and Breanna Stewart.",
+   "text": "Alongside Mahomes, LeBron James, Naomi Osaka, Breanna Stewart.",
    "key": [
-    "MAHOMES,"
+    "OSAKA,"
+   ],
+   "board": [
+    "MAHOMES  JAMES",
+    "OSAKA  STEWART"
    ],
    "shot": {
     "type": "low",
@@ -345,10 +351,32 @@
    }
   },
   {
-   "text": "Kansas City made it back to the Super Bowl that season. Without him.",
+   "text": "Canada gives you the Lou Marsh trophy too.",
+   "key": [
+    "CANADA"
+   ],
+   "board": [
+    "LOU MARSH",
+    "TROPHY"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "orderly"
+   },
+   "act": {
+    "orderly": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Kansas City makes the Super Bowl again. Without you.",
    "key": [
     "WITHOUT"
    ],
+   "speaker": "capy",
    "set": "field",
    "setOpts": {
     "boardText": [
@@ -356,6 +384,10 @@
      "LV"
     ]
    },
+   "board": [
+    "SUPER BOWL",
+    "LV"
+   ],
    "place": {
     "capy": [
      -1.2,
@@ -367,29 +399,28 @@
     ]
    },
    "shot": {
-    "type": "medium",
-    "on": "ldt"
+    "type": "two",
+    "on": "capy",
+    "with": "ldt"
    },
    "act": {
-    "ldt": {
-     "mood": "neutral",
-     "look": "camera"
-    },
     "capy": {
      "mood": "neutral",
-     "look": "ldt"
+     "action": "talk",
+     "look": "camera"
+    },
+    "ldt": {
+     "mood": "neutral",
+     "action": "idle"
     }
-   },
-   "board": [
-    "SUPER BOWL",
-    "LV"
-   ]
+   }
   },
   {
-   "text": "Most champions take a victory lap. He took a job.",
+   "text": "Most champions take a victory lap. You take shifts.",
    "key": [
-    "JOB."
+    "SHIFTS."
    ],
+   "speaker": "capy",
    "shot": {
     "type": "medium",
     "on": "capy"
@@ -404,13 +435,18 @@
      "mood": "happy",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Would you give up a season to help where you were needed? Yes or no?",
+   "text": "Would you give up a season to help? Yes or no? Be honest.",
    "key": [
-    "SEASON"
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "SKIP A SEASON:",
+    "YES OR NO?"
    ],
    "shot": {
     "type": "two",
@@ -428,8 +464,7 @@
      "action": "wave",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -460,6 +495,100 @@
   {
    "title": "NFL.com: Tom Brady extends record with fifth Super Bowl MVP in win over Chiefs",
    "url": "https://www.nfl.com/_amp/buccaneers-qb-tom-brady-extends-record-with-fifth-super-bowl-mvp-in-win-over-chi"
+  },
+  {
+   "title": "Wikipedia: Super Bowl LIV",
+   "url": "https://en.wikipedia.org/wiki/Super_Bowl_LIV"
+  },
+  {
+   "title": "CTV News: Quebec doctors Laurent Duvernay-Tardif, Joe Schwarcz appointed to Order of Canada",
+   "url": "https://montreal.ctvnews.ca/quebec-doctors-laurent-duvernay-tardif-joe-schwarcz-appointed-to-order-of-canada-1.7149872"
+  },
+  {
+   "title": "Yahoo Sports: Why LeBron, Stewie, Mahomes, Osaka, Duvernay-Tardif were named SI Sportsperson of 2020",
+   "url": "https://sports.yahoo.com/si-sportspersons-2020-lebron-james-breanna-stewart-patrick-mahomes-naomi-osaka-duvernay-tardif-activism-justice-211902845.html"
+  },
+  {
+   "title": "CBS News: Sports Illustrated names activist athletes Sportspersons of the Year",
+   "url": "https://www.cbsnews.com/news/sports-illustrated-sportspersons-year-activist-athletes-lebron-james-naomi-osaka-patrick-mahomes/"
+  },
+  {
+   "title": "WNBA: Breanna Stewart named Sports Illustrated Sportsperson of the Year",
+   "url": "https://www.wnba.com/news/breanna-stewart-named-sports-illustrated-sportsperson-of-the-year"
+  },
+  {
+   "title": "Wikipedia: Laurent Duvernay-Tardif",
+   "url": "https://en.wikipedia.org/wiki/Laurent_Duvernay-Tardif"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "A Super Bowl champion worked in a care home the next season",
+   "terms": [
+    "Duvernay-Tardif",
+    "care"
+   ]
+  },
+  {
+   "claim": "Laurent Duvernay-Tardif was a starting guard for Kansas City",
+   "terms": [
+    "Duvernay-Tardif",
+    "guard"
+   ]
+  },
+  {
+   "claim": "He started the Super Bowl in February 2020, Chiefs 31, 49ers 20",
+   "terms": [
+    "31-20"
+   ]
+  },
+  {
+   "claim": "He is a doctor who went to medical school at McGill",
+   "terms": [
+    "McGill",
+    "medical|doctor"
+   ]
+  },
+  {
+   "claim": "He was the first player to opt out of the season",
+   "terms": [
+    "first",
+    "opt out"
+   ]
+  },
+  {
+   "claim": "He worked at a long-term care facility in Quebec as an orderly",
+   "terms": [
+    "orderly|long-term care|long term care|care facility|patient attendant"
+   ]
+  },
+  {
+   "claim": "The care home was in Quebec",
+   "terms": [
+    "care",
+    "Quebec|Montreal"
+   ]
+  },
+  {
+   "claim": "Sports Illustrated named him a Sportsperson of the Year with Mahomes, LeBron James, Naomi Osaka and Breanna Stewart",
+   "terms": [
+    "Sportsperson",
+    "Osaka"
+   ]
+  },
+  {
+   "claim": "He was a co-winner of the Lou Marsh trophy",
+   "terms": [
+    "Lou Marsh"
+   ]
+  },
+  {
+   "claim": "Kansas City made the Super Bowl again",
+   "terms": [
+    "Chiefs",
+    "Super Bowl"
+   ]
   }
  ]
 }

@@ -84,10 +84,11 @@
  },
  "lines": [
   {
-   "text": "At the end of the 2020 season, the Super Bowl had more cardboard fans than real ones.",
+   "text": "You play the Super Bowl at home. In front of cardboard.",
    "key": [
-    "CARDBOARD"
+    "CARDBOARD."
    ],
+   "speaker": "capy",
    "place": {
     "nurse": false,
     "doctor": false,
@@ -110,18 +111,17 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Super Bowl fifty five, in Tampa. The stadium holds about sixty six thousand.",
-   "cap": "Super Bowl LV, in Tampa. The stadium holds about 66,000.",
+   "text": "Super Bowl fifty five. In Tampa. Your own stadium.",
+   "cap": "Super Bowl LV. In Tampa. Your own stadium.",
    "key": [
-    "66,000."
+    "TAMPA."
    ],
    "board": [
-    "CAPACITY",
-    "65,890"
+    "SUPER BOWL LV",
+    "TAMPA"
    ],
    "shot": {
     "type": "wide",
@@ -144,11 +144,12 @@
    }
   },
   {
-   "text": "Only twenty five thousand fans were let in.",
-   "cap": "Only 25,000 fans were let in.",
+   "text": "Only twenty five thousand fans get in.",
+   "cap": "Only 25,000 fans get in.",
    "key": [
     "25,000"
    ],
+   "speaker": "capy",
    "board": [
     "FANS",
     "25,000"
@@ -163,12 +164,11 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Seven thousand five hundred of them were vaccinated health care workers, invited by the league.",
-   "cap": "7,500 of them were vaccinated health care workers, invited by the league.",
+   "text": "Seventy five hundred are vaccinated health care workers. Guests of the league.",
+   "cap": "7,500 are vaccinated health care workers. Guests of the league.",
    "key": [
     "7,500"
    ],
@@ -178,6 +178,9 @@
      "WELCOME"
     ]
    },
+   "board": [
+    "WELCOME"
+   ],
    "place": {
     "nurse": [
      -1.0,
@@ -202,10 +205,7 @@
      "mood": "happy",
      "action": "cheer"
     }
-   },
-   "board": [
-    "WELCOME"
-   ]
+   }
   },
   {
    "text": "The other seats? About thirty thousand cardboard cutouts.",
@@ -220,6 +220,10 @@
      "~30,000"
     ]
    },
+   "board": [
+    "CUTOUTS",
+    "~30,000"
+   ],
    "place": {
     "capy": "center"
    },
@@ -233,16 +237,39 @@
      "action": "shrug",
      "look": "camera"
     }
-   },
-   "board": [
-    "CUTOUTS",
-    "~30,000"
-   ]
+   }
   },
   {
-   "text": "And for the first time, a team played the Super Bowl in its own stadium. Tampa Bay.",
+   "text": "Cardboard fans. Very quiet. Very well behaved.",
    "key": [
-    "FIRST"
+    "BEHAVED."
+   ],
+   "speaker": "capy",
+   "board": [
+    "CUTOUTS",
+    "ZERO NOISE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     1.2,
+     0.4,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "No team ever played one at home. Until you.",
+   "key": [
+    "HOME."
    ],
    "board": [
     "HOME TEAM",
@@ -264,9 +291,9 @@
    }
   },
   {
-   "text": "Their opponent: Kansas City, the defending champs.",
+   "text": "Your opponent? Kansas City. Patrick Mahomes.",
    "key": [
-    "CHAMPS."
+    "MAHOMES."
    ],
    "place": {
     "bucs": [
@@ -296,10 +323,10 @@
    }
   },
   {
-   "text": "Tom Brady threw three touchdowns. Two to Rob Gronkowski.",
-   "cap": "Tom Brady threw 3 touchdowns. 2 to Rob Gronkowski.",
+   "text": "Tom Brady throws three touchdowns. Two to Rob Gronkowski.",
+   "cap": "Tom Brady throws 3 touchdowns. 2 to Rob Gronkowski.",
    "key": [
-    "3"
+    "GRONKOWSKI."
    ],
    "place": {
     "chief": false,
@@ -324,10 +351,10 @@
    }
   },
   {
-   "text": "Kansas City never reached the end zone. Three field goals.",
-   "cap": "Kansas City never reached the end zone. 3 field goals.",
+   "text": "Kansas City never reaches the end zone. Three field goals. That's it.",
+   "cap": "Kansas City never reaches the end zone. 3 field goals. That's it.",
    "key": [
-    "NEVER"
+    "3"
    ],
    "place": {
     "bucs": false,
@@ -346,10 +373,10 @@
    }
   },
   {
-   "text": "Final: thirty one to nine, Tampa Bay.",
-   "cap": "Final: 31 to 9, Tampa Bay.",
+   "text": "Tampa Bay thirty one, Kansas City nine.",
+   "cap": "Tampa Bay 31, Kansas City 9.",
    "key": [
-    "31"
+    "31,"
    ],
    "board": [
     "BUCCANEERS 31",
@@ -384,8 +411,8 @@
    }
   },
   {
-   "text": "Brady's seventh Super Bowl title, and his fifth Super Bowl MVP.",
-   "cap": "Brady's 7th Super Bowl title, and his 5th Super Bowl MVP.",
+   "text": "Brady's seventh title. His fifth Super Bowl M V P. Just another year.",
+   "cap": "Brady's 7th title. His 5th Super Bowl MVP. Just another year.",
    "key": [
     "7TH"
    ],
@@ -406,10 +433,11 @@
    }
   },
   {
-   "text": "The first champion ever crowned at home. Mostly in front of cardboard.",
+   "text": "The first champion crowned at home. Mostly by cardboard.",
    "key": [
-    "HOME."
+    "CARDBOARD."
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -1.2,
@@ -435,12 +463,17 @@
      "mood": "happy",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Would you rather watch the Super Bowl from your couch, or as a cutout in the stands? Couch or cutout?",
+   "text": "Would you watch from your couch? Or as a cutout? Couch or cutout? Chiefs fans, pick couch.",
    "key": [
+    "COUCH",
+    "CUTOUT?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "COUCH OR",
     "CUTOUT?"
    ],
    "shot": {
@@ -459,8 +492,7 @@
      "action": "wave",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -491,6 +523,87 @@
   {
    "title": "CBS Sports: Tom Brady wins seventh ring as Buccaneers dominate Chiefs",
    "url": "https://www.cbssports.com/nfl/news/2021-super-bowl-score-tom-brady-wins-seventh-ring-as-buccaneers-dominate-chiefs-and-patrick-mahomes/live/"
+  },
+  {
+   "title": "Wikipedia: Super Bowl LV",
+   "url": "https://en.wikipedia.org/wiki/Super_Bowl_LV"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Tampa Bay played the Super Bowl in its home stadium",
+   "terms": [
+    "home stadium"
+   ]
+  },
+  {
+   "claim": "Super Bowl LV was in Tampa",
+   "terms": [
+    "Super Bowl LV",
+    "Tampa"
+   ]
+  },
+  {
+   "claim": "Only 25,000 fans were let in",
+   "terms": [
+    "25,000"
+   ]
+  },
+  {
+   "claim": "7,500 of them were vaccinated health care workers invited by the league",
+   "terms": [
+    "7,500",
+    "health care|healthcare"
+   ]
+  },
+  {
+   "claim": "About 30,000 cardboard cutouts filled other seats",
+   "terms": [
+    "30,000",
+    "cutout"
+   ]
+  },
+  {
+   "claim": "No team had played the Super Bowl in its home stadium before",
+   "terms": [
+    "first",
+    "home stadium"
+   ]
+  },
+  {
+   "claim": "The opponent was Kansas City with Patrick Mahomes",
+   "terms": [
+    "Mahomes",
+    "Chiefs"
+   ]
+  },
+  {
+   "claim": "Tom Brady threw three touchdowns, two to Rob Gronkowski",
+   "terms": [
+    "Gronkowski",
+    "touchdown"
+   ]
+  },
+  {
+   "claim": "Kansas City never reached the end zone and scored three field goals",
+   "terms": [
+    "Butker",
+    "field goal"
+   ]
+  },
+  {
+   "claim": "Tampa Bay won 31-9",
+   "terms": [
+    "31-9"
+   ]
+  },
+  {
+   "claim": "Brady's seventh title and fifth Super Bowl MVP",
+   "terms": [
+    "fifth",
+    "MVP"
+   ]
   }
  ]
 }

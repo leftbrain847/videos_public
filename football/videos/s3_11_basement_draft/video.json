@@ -62,10 +62,12 @@
  },
  "lines": [
   {
-   "text": "In 2020, the NFL draft was run from a basement.",
+   "text": "You run the N F L draft. From your basement.",
+   "cap": "You run the NFL draft. From your basement.",
    "key": [
     "BASEMENT."
    ],
+   "speaker": "capy",
    "place": {
     "coach": false,
     "gm": false
@@ -86,11 +88,11 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "The pandemic shut everything down. So the draft went fully virtual.",
+   "text": "Twenty twenty. A pandemic shuts everything down. So the draft goes virtual.",
+   "cap": "2020. A pandemic shuts everything down. So the draft goes virtual.",
    "key": [
     "VIRTUAL."
    ],
@@ -115,9 +117,9 @@
    }
   },
   {
-   "text": "Commissioner Roger Goodell read the picks from the basement of his New York home.",
+   "text": "You're Roger Goodell. You announce picks from home.",
    "key": [
-    "BASEMENT"
+    "HOME."
    ],
    "place": {
     "capy": false,
@@ -139,9 +141,9 @@
    }
   },
   {
-   "text": "Coaches and general managers drafted from home too.",
+   "text": "Coaches draft from home. General managers too.",
    "key": [
-    "HOME"
+    "HOME."
    ],
    "set": "office",
    "setOpts": {
@@ -149,6 +151,9 @@
      "ON THE CLOCK"
     ]
    },
+   "board": [
+    "ON THE CLOCK"
+   ],
    "place": {
     "coach": "desk",
     "gm": [
@@ -170,15 +175,12 @@
      "action": "hold",
      "look": "coach"
     }
-   },
-   "board": [
-    "ON THE CLOCK"
-   ]
+   }
   },
   {
-   "text": "Arizona's coach, Kliff Kingsbury, drafted from his house in Paradise Valley.",
+   "text": "Arizona's Kliff Kingsbury drafts from his house. A very nice house.",
    "key": [
-    "PARADISE"
+    "KINGSBURY"
    ],
    "board": [
     "ARIZONA",
@@ -197,10 +199,43 @@
    }
   },
   {
-   "text": "Bill Belichick was on camera too. So was his dog, Nike.",
+   "text": "His home office beats most war rooms.",
    "key": [
-    "DOG,",
-    "NIKE."
+    "BEATS"
+   ],
+   "speaker": "capy",
+   "board": [
+    "WAR ROOM:",
+    "LIVING ROOM"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "coach"
+    },
+    "coach": {
+     "mood": "smug",
+     "action": "talk"
+    }
+   }
+  },
+  {
+   "text": "Round two. Bill Belichick's chair? His dog, Nike, sits in it.",
+   "cap": "Round 2. Bill Belichick's chair? His dog, Nike, sits in it.",
+   "key": [
+    "NIKE,"
    ],
    "board": [
     "NEW ENGLAND",
@@ -218,11 +253,12 @@
    }
   },
   {
-   "text": "Nike made zero picks. As far as we know.",
-   "cap": "Nike made 0 picks. As far as we know.",
+   "text": "Nike makes zero picks. As far as we know.",
+   "cap": "Nike makes 0 picks. As far as we know.",
    "key": [
     "0"
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -2.2,
@@ -230,9 +266,8 @@
     ]
    },
    "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "coach"
+    "type": "medium",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -244,11 +279,10 @@
      "mood": "confused",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "A few teams had Wi-Fi trouble.",
+   "text": "A few teams have Wi-Fi trouble.",
    "key": [
     "WI-FI"
    ],
@@ -269,9 +303,9 @@
    }
   },
   {
-   "text": "But not one team missed a pick.",
+   "text": "Still, not one team misses a pick. Not one.",
    "key": [
-    "MISSED"
+    "MISSES"
    ],
    "board": [
     "PICKS MISSED",
@@ -289,8 +323,8 @@
    }
   },
   {
-   "text": "And people watched. Round one drew fifteen point six million viewers. A record.",
-   "cap": "And people watched. Round one drew 15.6 million viewers. A record.",
+   "text": "And people watch. Round one draws fifteen point six million.",
+   "cap": "And people watch. Round 1 draws 15.6 million.",
    "key": [
     "15.6"
    ],
@@ -302,6 +336,10 @@
     ],
     "couch": "#8a6b4a"
    },
+   "board": [
+    "ROUND 1",
+    "15.6M VIEWERS"
+   ],
    "place": {
     "comm": [
      0,
@@ -317,15 +355,11 @@
      "mood": "happy",
      "action": "cheer"
     }
-   },
-   "board": [
-    "ROUND 1",
-    "15.6M VIEWERS"
-   ]
+   }
   },
   {
-   "text": "Over three days, it averaged eight point four million.",
-   "cap": "Over 3 days, it averaged 8.4 million.",
+   "text": "Three day average? Eight point four million.",
+   "cap": "3-day average? 8.4 million.",
    "key": [
     "8.4"
    ],
@@ -345,8 +379,8 @@
    }
   },
   {
-   "text": "The old record was six point two.",
-   "cap": "The old record was 6.2.",
+   "text": "The old record? Six point two.",
+   "cap": "The old record? 6.2.",
    "key": [
     "6.2."
    ],
@@ -366,10 +400,11 @@
    }
   },
   {
-   "text": "The most watched draft in history came out of a basement.",
+   "text": "The most watched draft ever? From a basement.",
    "key": [
     "BASEMENT."
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -1.3,
@@ -394,12 +429,17 @@
      "mood": "happy",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Would you rather draft from a big stage or from your couch? Stage or couch?",
+   "text": "Big stage, or your couch? Where would you draft? Stage or couch? Jets fans, either works.",
    "key": [
+    "STAGE",
+    "COUCH?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "STAGE OR",
     "COUCH?"
    ],
    "shot": {
@@ -418,8 +458,7 @@
      "action": "wave",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -434,6 +473,122 @@
   {
    "title": "Washington Times: NFL's virtual draft surprisingly more lemonade than lemon",
    "url": "https://m.washingtontimes.com/news/2020/apr/26/nfls-virtual-draft-surprisingly-more-lemonade-lemo/"
+  },
+  {
+   "title": "SI: Kliff Kingsbury's Cardinals virtual war room",
+   "url": "https://www.si.com/nfl/2020/04/24/kliff-kingsbury-arizona-cardinals-2020-nfl-draft-virtual-war-room"
+  },
+  {
+   "title": "Arizona Sports: Kliff Kingsbury flexes with his Cardinals draft war room",
+   "url": "https://arizonasports.com/nfl/arizona-cardinals/kliff-kingsbury-flexes-on-everybody-with-his-cardinals-nfl-draft-room"
+  },
+  {
+   "title": "CBS Sports: The most compelling 2020 NFL draft home setups",
+   "url": "https://www.cbssports.com/nfl/news/2020-nfl-draft-the-most-compelling-home-setups-as-the-nfl-welcomes-cameras-into-their-living-rooms"
+  },
+  {
+   "title": "The Ringer: 2020 NFL draft coach and general manager homes",
+   "url": "https://www.theringer.com/2020/04/24/nfl-draft/2020-nfl-draft-coach-general-manager-homes-kliff-kingsbury"
+  },
+  {
+   "title": "WJLA (AP): NFL draft averages record 8.4 million viewers across 3 days",
+   "url": "https://wjla.com/news/entertainment/nfl-draft-averages-record-84-million-viewers-across-3-days"
+  },
+  {
+   "title": "Boston.com (AP): NFL Draft averages record 8.4 million viewers",
+   "url": "https://www.boston.com/sports/nfl-draft/2020/04/26/nfl-draft-viewership-record"
+  },
+  {
+   "title": "Fox Business (AP): NFL draft averages record 8.4M viewers across 3 days",
+   "url": "https://www.foxbusiness.com/sports/nfl-draft-averages-record-8-4m-viewers-across-3-days"
+  },
+  {
+   "title": "CBS Sports: Bill Belichick replaced by dog at his table during second round",
+   "url": "https://www.cbssports.com/nfl/news/2020-nfl-draft-bill-belichick-replaced-by-dog-at-his-table-during-second-round"
+  },
+  {
+   "title": "ESPN: How Bill Belichick's dog became the star of draft night",
+   "url": "https://www.espn.com/nfl/story/_/id/29112134/how-patriots-coach-bill-belichick-dog-became-star-nfl-draft-night"
+  },
+  {
+   "title": "Patriots.com: Meet Nike, Bill Belichick's show-stealing dog",
+   "url": "https://www.patriots.com/news/meet-nike-bill-belichick-s-show-stealing-dog"
+  },
+  {
+   "title": "Fox Sports: 2020 NFL draft war rooms, Kliff Kingsbury",
+   "url": "https://www.foxsports.com/nfl/story/2020-nfl-draft-grades-war-rooms-kliff-kingsbury-042720"
+  },
+  {
+   "title": "Wikipedia: 2020 NFL draft",
+   "url": "https://en.wikipedia.org/wiki/2020_NFL_draft"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 2020 the NFL draft was run from Roger Goodell's basement",
+   "terms": [
+    "Goodell",
+    "basement"
+   ]
+  },
+  {
+   "claim": "The pandemic made the draft fully virtual",
+   "terms": [
+    "virtual",
+    "draft"
+   ]
+  },
+  {
+   "claim": "Coaches and general managers drafted from home",
+   "terms": [
+    "home",
+    "general manager|GMs|coaches"
+   ]
+  },
+  {
+   "claim": "Kliff Kingsbury drafted from his house in Paradise Valley",
+   "terms": [
+    "Kingsbury",
+    "house|home"
+   ]
+  },
+  {
+   "claim": "In round two Belichick's dog Nike sat in his chair",
+   "terms": [
+    "Nike",
+    "dog"
+   ]
+  },
+  {
+   "claim": "A few teams had internet trouble",
+   "terms": [
+    "Wi-Fi|wifi|internet|connectivity|connection"
+   ]
+  },
+  {
+   "claim": "No team missed a pick",
+   "terms": [
+    "glitch|without a hitch|smooth|missed|issues"
+   ]
+  },
+  {
+   "claim": "Round one drew 15.6 million viewers",
+   "terms": [
+    "15.6 million"
+   ]
+  },
+  {
+   "claim": "The three-day average was a record 8.4 million",
+   "terms": [
+    "8.4 million"
+   ]
+  },
+  {
+   "claim": "The old record was 6.2 million",
+   "terms": [
+    "6.2 million"
+   ]
   }
  ]
 }
