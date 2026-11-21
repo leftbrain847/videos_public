@@ -1,10 +1,10 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "stories-mind-1",
+ "release": "stories-heist-1",
  "listen": true,
  "replace": false,
  "videos": [
-  "mind_01_milgram_shock"
+  "heist_01_antwerp_diamonds"
  ]
 }

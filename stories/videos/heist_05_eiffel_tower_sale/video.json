@@ -1,0 +1,689 @@
+{
+ "id": "heist_05_eiffel_tower_sale",
+ "title": "The man who sold the Eiffel Tower",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "office",
+ "setOpts": {
+  "boardText": [
+   "FOR SALE:",
+   "EIFFEL TOWER"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "vic": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "hold": "envelope"
+  },
+  "andre": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#6b4426",
+    "pants": "#3a2a20",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "d2": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5f6770",
+    "pants": "#3a3f4b",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#c98d63"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You sell the Eiffel Tower. Then you come back to sell it again.",
+   "key": [
+    "AGAIN."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vic"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "vic": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vic": "right",
+    "andre": false,
+    "d2": false
+   },
+   "board": [
+    "FOR SALE:",
+    "EIFFEL TOWER"
+   ]
+  },
+  {
+   "text": "Paris, nineteen twenty five. You're Victor Lustig. Con man.",
+   "cap": "Paris, 1925. You're Victor Lustig. Con man.",
+   "key": [
+    "LUSTIG."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "vic"
+   },
+   "act": {
+    "vic": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "vic": "center"
+   },
+   "board": [
+    "PARIS",
+    "1925"
+   ]
+  },
+  {
+   "text": "You read the newspaper. The tower needs expensive repairs.",
+   "key": [
+    "REPAIRS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "vic"
+   },
+   "act": {
+    "vic": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Small detail. It's bolted to Paris.",
+   "key": [
+    "BOLTED"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vic"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "vic"
+    },
+    "vic": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vic": "right"
+   }
+  },
+  {
+   "text": "Your idea? Sell it. For scrap metal.",
+   "key": [
+    "SCRAP"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "vic"
+   },
+   "act": {
+    "vic": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "vic": "center"
+   },
+   "board": [
+    "7,000 TONS",
+    "OF SCRAP"
+   ]
+  },
+  {
+   "text": "You fake papers from a government ministry. Letterhead. Stamps. Very official.",
+   "key": [
+    "OFFICIAL."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "vic"
+   },
+   "act": {
+    "vic": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "MINISTRY OF",
+    "POSTS"
+   ]
+  },
+  {
+   "text": "You invite scrap dealers to a fancy hotel. In secret.",
+   "key": [
+    "SECRET."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "wide",
+    "on": "d2"
+   },
+   "act": {
+    "d2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "vic"
+    },
+    "andre": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "vic"
+    },
+    "vic": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "d2"
+    }
+   },
+   "place": {
+    "vic": "center",
+    "d2": "couchL",
+    "andre": "couchR"
+   },
+   "board": [
+    "HOTEL",
+    "DE CRILLON"
+   ]
+  },
+  {
+   "text": "The tower will come down, you tell them. Keep it quiet.",
+   "key": [
+    "QUIET."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "vic"
+   },
+   "act": {
+    "vic": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You pick your mark. A dealer named Andre Poisson.",
+   "key": [
+    "POISSON."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "andre"
+   },
+   "act": {
+    "andre": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Poisson hesitates. Something feels off. He's right. It is.",
+   "key": [
+    "OFF."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "andre"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "andre"
+    },
+    "andre": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "andre": "right"
+   }
+  },
+  {
+   "text": "So you confess. You're a corrupt official. You want a bribe.",
+   "key": [
+    "BRIBE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "vic",
+    "with": "andre"
+   },
+   "act": {
+    "vic": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "andre"
+    },
+    "andre": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "vic"
+    }
+   },
+   "place": {
+    "vic": "left",
+    "andre": "right",
+    "capy": false
+   }
+  },
+  {
+   "text": "Now he believes you. Who'd fake being corrupt?",
+   "key": [
+    "CORRUPT?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "andre"
+   },
+   "act": {
+    "andre": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "vic"
+    }
+   }
+  },
+  {
+   "text": "He pays for the tower. He pays your bribe.",
+   "key": [
+    "BRIBE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "vic"
+   },
+   "act": {
+    "vic": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "PAID",
+    "TWICE"
+   ]
+  },
+  {
+   "text": "You catch a train to Vienna. With a suitcase of cash. You wait for the headlines.",
+   "key": [
+    "VIENNA."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "vic": {
+     "mood": "happy",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vic": "right"
+   },
+   "board": [
+    "NEXT STOP:",
+    "VIENNA"
+   ]
+  },
+  {
+   "text": "There are no headlines. Here's the genius part. He never reports it.",
+   "key": [
+    "REPORTS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "vic": false,
+    "capy": "center"
+   }
+  },
+  {
+   "text": "He's too embarrassed. He bought the Eiffel Tower.",
+   "key": [
+    "EMBARRASSED."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "andre"
+   },
+   "act": {
+    "andre": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "place": {
+    "andre": "center"
+   }
+  },
+  {
+   "text": "So you come back. Same tower. New dealers.",
+   "key": [
+    "SAME"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vic"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "vic"
+    },
+    "vic": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vic": "right",
+    "andre": false
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "This time, a buyer goes to the police.",
+   "key": [
+    "POLICE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "d2"
+   },
+   "act": {
+    "d2": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "d2": "center",
+    "capy": false,
+    "vic": false
+   }
+  },
+  {
+   "text": "Before they catch you, you escape to America. Different country. Same hobby.",
+   "key": [
+    "HOBBY."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "wide",
+    "on": "vic"
+   },
+   "act": {
+    "vic": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "vic": "center"
+   },
+   "board": [
+    "NEW YORK",
+    "NEXT"
+   ]
+  },
+  {
+   "text": "The tower? Still standing. Still not for sale.",
+   "key": [
+    "STANDING."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vic"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "vic": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vic": "right"
+   }
+  },
+  {
+   "text": "Would you buy a landmark from a stranger? Yes or no?",
+   "key": [
+    "LANDMARK"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "vic": false,
+    "capy": "center"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Victor Lustig",
+   "url": "https://en.wikipedia.org/wiki/Victor_Lustig"
+  },
+  {
+   "title": "Smithsonian Magazine: The man who sold the Eiffel Tower. Twice.",
+   "url": "https://www.smithsonianmag.com/history/man-who-sold-eiffel-tower-twice-180958370/"
+  },
+  {
+   "title": "Smithsonian Magazine: The smoothest con man that ever lived",
+   "url": "https://www.smithsonianmag.com/history/the-smoothest-con-man-that-ever-lived-29861908/"
+  },
+  {
+   "title": "Fortune: Lessons from the man who tried to sell the Eiffel Tower twice",
+   "url": "https://fortune.com/2020/01/14/financial-scams-lessons-eiffel-tower-sale/"
+  },
+  {
+   "title": "Mental Floss: How Victor Lustig sold the Eiffel Tower twice",
+   "url": "https://www.mentalfloss.com/crime/smooth-operator-how-victor-lustig-sold-eiffel-tower"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Victor Lustig sold the Eiffel Tower in Paris in 1925",
+   "terms": [
+    "Lustig",
+    "Eiffel",
+    "1925"
+   ]
+  },
+  {
+   "claim": "Lustig was a con man",
+   "terms": [
+    "Lustig",
+    "con"
+   ]
+  },
+  {
+   "claim": "A newspaper article said the tower needed costly repairs",
+   "terms": [
+    "newspaper|article",
+    "repair"
+   ]
+  },
+  {
+   "claim": "He offered it as scrap metal",
+   "terms": [
+    "scrap"
+   ]
+  },
+  {
+   "claim": "He posed as an official of a government ministry",
+   "terms": [
+    "deputy director"
+   ]
+  },
+  {
+   "claim": "He used forged government stationery",
+   "terms": [
+    "stationery|letterhead"
+   ]
+  },
+  {
+   "claim": "He met scrap dealers at a hotel in secret",
+   "terms": [
+    "dealers",
+    "hotel"
+   ]
+  },
+  {
+   "claim": "He chose Andre Poisson",
+   "terms": [
+    "Poisson"
+   ]
+  },
+  {
+   "claim": "Lustig said he was a corrupt official who wanted a bribe",
+   "terms": [
+    "bribe"
+   ]
+  },
+  {
+   "claim": "Lustig left for Vienna with the money",
+   "terms": [
+    "Vienna|Austria"
+   ]
+  },
+  {
+   "claim": "Poisson was too embarrassed to report it",
+   "terms": [
+    "Poisson",
+    "embarrass|humiliat"
+   ]
+  },
+  {
+   "claim": "Lustig returned to sell it again",
+   "terms": [
+    "again|twice|second",
+    "Lustig"
+   ]
+  },
+  {
+   "claim": "A dealer went to the police the second time",
+   "terms": [
+    "police",
+    "dealer|victim|mark"
+   ]
+  },
+  {
+   "claim": "Lustig escaped to America",
+   "terms": [
+    "Lustig",
+    "America|United States"
+   ]
+  }
+ ]
+}
