@@ -102,6 +102,10 @@
    "url": "https://www.nfl.com/news/new-nfl-rules-for-2008-09000d5d809f6279"
   },
   {
+   "title": "Buccaneers.com: Party lines split on force-out rule",
+   "url": "https://buccaneers.com/news/party-lines-split-on-forceout-rule-2174393"
+  },
+  {
    "title": "Vindicator (AP): Owners shelve reseeding idea; other rules pass",
    "url": "https://vindyarchives.com/news/2008/apr/03/owners-shelve-reseeding-idea-other-rules-pass/"
   },
@@ -962,8 +966,8 @@
   {
    "claim": "In 2008 the owners eliminated the force-out rule; now both feet must land in bounds",
    "terms": [
-    "force-out|force out",
-    "eliminat|kill|scrap|abolish|drop"
+    "both feet",
+    "regardless|force|forceout"
    ]
   },
   {
