@@ -1,0 +1,662 @@
+{
+ "id": "heist_13_brinks_mat_gold",
+ "title": "Brink's-Mat: the wrong kind of jackpot",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "HEATHROW",
+   "WAREHOUSE"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "mick": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#3a3f4b",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "crew": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2e",
+    "pants": "#1f2a3a",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   }
+  },
+  "guard": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1f3f8f",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   }
+  },
+  "fence": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#6b4426",
+    "pants": "#3a2a20",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#a8714c"
+   },
+   "hold": "goldbar"
+  },
+  "det": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You break in for three million in cash. You find twenty six million in gold.",
+   "cap": "You break in for \u00a33 million in cash. You find \u00a326 million in gold.",
+   "key": [
+    "GOLD."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "mick"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "mick": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "mick": "center",
+    "crew": false,
+    "guard": false,
+    "fence": false,
+    "det": false
+   },
+   "board": [
+    "\u00a326,000,000",
+    "IN GOLD"
+   ]
+  },
+  {
+   "text": "London, November, nineteen eighty three. A warehouse near Heathrow airport.",
+   "cap": "London, November 1983. A warehouse near Heathrow Airport.",
+   "key": [
+    "HEATHROW"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "mick"
+   },
+   "act": {
+    "mick": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "BRINK'S-MAT",
+    "NOV 1983"
+   ]
+  },
+  {
+   "text": "Your gang has an inside man. A security guard.",
+   "key": [
+    "INSIDE"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "mick",
+    "with": "guard"
+   },
+   "act": {
+    "mick": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "guard"
+    },
+    "guard": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "mick": "left",
+    "guard": "right"
+   }
+  },
+  {
+   "text": "He gives you a key. He tells you the layout.",
+   "key": [
+    "KEY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Early morning, six of you walk in.",
+   "cap": "Early morning, 6 of you walk in.",
+   "key": [
+    "6"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "crew"
+   },
+   "act": {
+    "crew": {
+     "mood": "neutral",
+     "action": "walk"
+    },
+    "mick": {
+     "mood": "angry",
+     "action": "point"
+    }
+   },
+   "place": {
+    "crew": "right",
+    "mick": "left",
+    "guard": false
+   },
+   "board": [
+    "6:40 AM"
+   ]
+  },
+  {
+   "text": "You expect about three million pounds in cash.",
+   "cap": "You expect about \u00a33 million in cash.",
+   "key": [
+    "CASH."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "mick"
+   },
+   "act": {
+    "mick": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Instead, you open the vault. Gold bars. Thousands of them. Imagine ordering a pizza. You get the whole restaurant.",
+   "key": [
+    "BARS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "crew"
+   },
+   "act": {
+    "crew": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "crew": "gold"
+   }
+  },
+  {
+   "text": "About three tonnes of gold bullion.",
+   "key": [
+    "TONNES"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "crew"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "crew"
+    },
+    "crew": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "crew": "right",
+    "mick": false
+   },
+   "board": [
+    "3 TONNES",
+    "BULLION"
+   ]
+  },
+  {
+   "text": "Worth twenty six million pounds.",
+   "cap": "Worth \u00a326 million.",
+   "key": [
+    "MILLION"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "crew": false
+   }
+  },
+  {
+   "text": "Wrong jackpot. Bigger jackpot. You load the van anyway. It is very heavy.",
+   "key": [
+    "VAN"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "mick"
+   },
+   "act": {
+    "mick": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "mick": "center",
+    "capy": false
+   }
+  },
+  {
+   "text": "Now you have a problem. Gold bars have serial numbers.",
+   "key": [
+    "PROBLEM."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "mick"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "mick"
+    },
+    "mick": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "mick": "right"
+   }
+  },
+  {
+   "text": "So the gold gets melted down. Then it gets sold. Back into the legal market.",
+   "key": [
+    "MELTED"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "fence"
+   },
+   "act": {
+    "fence": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "fence": "center"
+   },
+   "board": [
+    "MELT",
+    "& SELL"
+   ]
+  },
+  {
+   "text": "The money gets laundered. Through banks. Through property.",
+   "key": [
+    "LAUNDERED."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "fence"
+   },
+   "act": {
+    "fence": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Meanwhile, police notice the guard's family connections.",
+   "key": [
+    "GUARD'S"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "det"
+   },
+   "act": {
+    "det": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "det": "center"
+   },
+   "board": [
+    "INSIDE",
+    "MAN?"
+   ]
+  },
+  {
+   "text": "He's a robber's brother in law. Subtle.",
+   "key": [
+    "BROTHER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "guard": "center",
+    "det": false
+   }
+  },
+  {
+   "text": "Several of the gang go to prison. The guard included.",
+   "key": [
+    "PRISON."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "det"
+   },
+   "act": {
+    "det": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "det": "center",
+    "guard": false
+   }
+  },
+  {
+   "text": "But most of the gold is never recovered.",
+   "key": [
+    "NEVER"
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "RECOVERED:",
+    "NOT MUCH"
+   ]
+  },
+  {
+   "text": "Some say that gold went into jewelry. Sold all over Britain.",
+   "key": [
+    "JEWELRY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Check your rings. You might own a tiny piece of it. Congratulations.",
+   "key": [
+    "RINGS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fence"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "fence": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "fence": "right"
+   }
+  },
+  {
+   "text": "You came for cash. You left with a gold problem. Would you take the gold?",
+   "key": [
+    "GOLD?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "fence": false
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Brink's-Mat robbery",
+   "url": "https://en.wikipedia.org/wiki/Brink%27s-Mat_robbery"
+  },
+  {
+   "title": "History Hit: What was the Brink's-Mat robbery?",
+   "url": "https://www.historyhit.com/what-was-the-brinks-mat-robbery/"
+  },
+  {
+   "title": "Crime and Investigation: Brink's-Mat bullion heist",
+   "url": "https://crimeandinvestigation.co.uk/crime-files/brinks-mat-bullion-heist"
+  },
+  {
+   "title": "Crime and Investigation: The curse of Brink's-Mat",
+   "url": "https://www.crimeandinvestigation.co.uk/articles/brinks-mat-heist-robbery-century"
+  },
+  {
+   "title": "NationalWorld: What happened to the Brink's-Mat robbers",
+   "url": "https://nationalworld.com/culture/television/brinks-mat-robbers-robbery-what-happened-who-caught-where-now-4027237"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "They expected about 3 million pounds in cash",
+   "terms": [
+    "3 million|\u00a33m|3m",
+    "cash"
+   ]
+  },
+  {
+   "claim": "They found 26 million pounds of gold",
+   "terms": [
+    "26 million|26m"
+   ]
+  },
+  {
+   "claim": "The robbery was in November 1983 at a warehouse near Heathrow",
+   "terms": [
+    "Heathrow",
+    "1983"
+   ]
+  },
+  {
+   "claim": "A security guard was the inside man",
+   "terms": [
+    "inside man|insider"
+   ]
+  },
+  {
+   "claim": "The guard provided a key and information",
+   "terms": [
+    "key"
+   ]
+  },
+  {
+   "claim": "Six robbers broke in",
+   "terms": [
+    "six|6",
+    "robbers|men"
+   ]
+  },
+  {
+   "claim": "They found about three tonnes of gold bullion",
+   "terms": [
+    "three tonnes|3 tonnes|3,000|three tons",
+    "gold"
+   ]
+  },
+  {
+   "claim": "The gold was melted down and sold",
+   "terms": [
+    "smelt|melted"
+   ]
+  },
+  {
+   "claim": "The money was laundered, including through property",
+   "terms": [
+    "launder"
+   ]
+  },
+  {
+   "claim": "The guard was the brother-in-law of a robber",
+   "terms": [
+    "brother in law|brother-in-law"
+   ]
+  },
+  {
+   "claim": "Several robbers went to prison",
+   "terms": [
+    "sentenced|jailed|prison"
+   ]
+  },
+  {
+   "claim": "Most of the gold was never recovered",
+   "terms": [
+    "never",
+    "recovered|found"
+   ]
+  },
+  {
+   "claim": "Some believe the gold ended up in jewellery in Britain",
+   "terms": [
+    "jewellery|jewelry"
+   ]
+  }
+ ]
+}
