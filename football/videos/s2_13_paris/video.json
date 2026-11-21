@@ -76,32 +76,41 @@
     "skin": "#5a3825"
    },
    "at": "left"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#d3bc8d",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "In the NFL's first game in France, the Saints ran the ball seventeen times, for eighteen yards.",
-   "cap": "In the NFL's first game in France, the Saints ran the ball 17 times, for 18 yards.",
+   "text": "First N F L game in France. You run for eighteen yards.",
+   "cap": "First NFL game in France. You run for 18 yards.",
    "key": [
-    "17",
     "18"
    ],
+   "speaker": "capy",
    "place": {
-    "capy": [
-     -2.6,
-     0.8
-    ],
     "runner": [
-     0,
+     0.2,
      0
     ],
-    "rodgers": [
-     2.2,
-     0.3
-    ],
+    "rodgers": false,
     "shough": false,
     "wilson": false,
-    "tightend": false
+    "tightend": false,
+    "fan": false,
+    "capy": [
+     -2.4,
+     0.8
+    ]
    },
    "shot": {
     "type": "two",
@@ -116,166 +125,85 @@
     },
     "runner": {
      "mood": "sad",
-     "action": "hold",
-     "look": "capy"
-    },
-    "rodgers": {
-     "mood": "smug",
-     "action": "idle",
-     "look": "runner"
+     "action": "slump",
+     "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Pittsburgh against New Orleans, at the Stade de France, just outside Paris.",
+   "text": "You're the New Orleans Saints. This week? You play in Paris.",
    "key": [
     "PARIS."
    ],
-   "set": "tunnel",
-   "setOpts": {
-    "boardText": [
-     "STADE DE FRANCE",
-     "PARIS"
-    ]
-   },
+   "board": [
+    "NO AT PIT",
+    "PARIS"
+   ],
    "place": {
-    "rodgers": "right",
-    "shough": "left"
+    "runner": [
+     -1.4,
+     0
+    ],
+    "rodgers": false,
+    "shough": [
+     1.4,
+     0
+    ],
+    "wilson": false,
+    "tightend": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "wide",
-    "on": "shough"
+    "on": "runner",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
    },
    "act": {
-    "rodgers": {
+    "runner": {
      "mood": "happy",
      "action": "wave",
      "look": "camera"
     },
     "shough": {
      "mood": "happy",
-     "action": "wave",
-     "look": "camera"
+     "action": "hold",
+     "look": "runner"
     }
    }
   },
   {
-   "text": "Aaron Rodgers, age forty two, threw the first touchdown.",
-   "cap": "Aaron Rodgers, age 42, threw the first touchdown.",
+   "text": "The Stade de France, just outside the city.",
    "key": [
-    "42,",
-    "FIRST"
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "PIT 3",
-     "NO 3"
-    ]
-   },
-   "place": {
-    "rodgers": "center",
-    "tightend": "left"
-   },
-   "shot": {
-    "type": "low",
-    "on": "rodgers"
-   },
-   "act": {
-    "rodgers": {
-     "mood": "smug",
-     "action": "point",
-     "look": "tightend"
-    },
-    "tightend": {
-     "mood": "happy",
-     "action": "idle",
-     "look": "rodgers"
-    }
-   }
-  },
-  {
-   "text": "Four yards, to tight end Darnell Washington.",
-   "cap": "4 yards, to tight end Darnell Washington.",
-   "key": [
-    "4"
+    "FRANCE,"
    ],
    "board": [
-    "PIT 10",
-    "NO 3"
+    "STADE DE",
+    "FRANCE"
    ],
-   "shot": {
-    "type": "two",
-    "on": "tightend",
-    "with": "rodgers"
-   },
-   "act": {
-    "tightend": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    },
-    "rodgers": {
-     "mood": "happy",
-     "action": "clap",
-     "look": "tightend"
-    }
-   }
-  },
-  {
-   "text": "New Orleans answered on fourth and goal, after a replay overturned a fumble at the one.",
-   "key": [
-    "REPLAY"
-   ],
-   "board": [
-    "PIT 10",
-    "NO 10"
-   ],
+   "speaker": "capy",
    "place": {
+    "runner": [
+     1.6,
+     0
+    ],
     "rodgers": false,
+    "shough": false,
+    "wilson": false,
     "tightend": false,
-    "shough": "center"
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
    },
    "shot": {
     "type": "medium",
-    "on": "shough"
-   },
-   "act": {
-    "shough": {
-     "mood": "happy",
-     "action": "throw",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Ten all. Then Pittsburgh kicked a field goal as the half ended.",
-   "cap": "10 all. Then Pittsburgh kicked a field goal as the half ended.",
-   "key": [
-    "HALF"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "HALFTIME",
-     "PIT 13  NO 10"
-    ]
-   },
-   "place": {
-    "capy": [
-     -1.2,
-     0.6
-    ],
-    "rodgers": [
-     1.4,
-     0.2
-    ]
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "rodgers"
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -283,171 +211,753 @@
      "action": "point",
      "look": "camera"
     },
+    "runner": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Pittsburgh's quarterback, Aaron Rodgers, is forty two. Still slinging.",
+   "cap": "Pittsburgh's quarterback, Aaron Rodgers, is 42. Still slinging.",
+   "key": [
+    "42."
+   ],
+   "board": [
+    "RODGERS",
+    "AGE 42"
+   ],
+   "place": {
+    "runner": false,
+    "rodgers": [
+     0,
+     0
+    ],
+    "shough": false,
+    "wilson": false,
+    "tightend": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "rodgers"
+   },
+   "act": {
     "rodgers": {
      "mood": "smug",
      "action": "hold",
-     "look": "capy"
+     "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Second half. The Saints drove all the way to the Pittsburgh ten.",
-   "cap": "Second half. The Saints drove all the way to the Pittsburgh 10.",
+   "text": "He throws the first touchdown. Four yards. Easy.",
+   "cap": "He throws the first touchdown. 4 yards. Easy.",
    "key": [
-    "10."
+    "4"
    ],
    "set": "field",
    "setOpts": {
     "boardText": [
-     "PIT 13",
-     "NO 10"
-    ]
+     "PIT 0",
+     "NO 0"
+    ],
+    "endZone": 45,
+    "zoneA": "#d3bc8d",
+    "zoneB": "#ffb612"
    },
    "place": {
-    "shough": "center",
-    "wilson": "right"
+    "capy": false,
+    "runner": false,
+    "shough": false,
+    "wilson": false,
+    "fan": false
+   },
+   "act": {},
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "rodgers",
+    "lead": 0
+   },
+   "play": {
+    "cast": {
+     "rodgers": {
+      "path": [
+       [
+        0.0,
+        37.0,
+        0.0
+       ],
+       [
+        0.045,
+        36.83,
+        0.0
+       ],
+       [
+        0.089,
+        36.67,
+        0.0
+       ],
+       [
+        0.134,
+        36.5,
+        0.0
+       ],
+       [
+        0.178,
+        36.33,
+        0.0
+       ],
+       [
+        0.223,
+        36.17,
+        0.0
+       ],
+       [
+        0.268,
+        36.0,
+        0.0
+       ],
+       [
+        0.308,
+        36.0,
+        0.0
+       ],
+       [
+        0.349,
+        36.0,
+        0.0
+       ],
+       [
+        0.39,
+        36.0,
+        0.0
+       ],
+       [
+        0.43,
+        36.0,
+        0.0
+       ],
+       [
+        0.471,
+        36.0,
+        0.0
+       ],
+       [
+        0.512,
+        36.0,
+        0.0
+       ],
+       [
+        0.553,
+        36.0,
+        0.0
+       ],
+       [
+        0.593,
+        36.0,
+        0.0
+       ],
+       [
+        0.634,
+        36.0,
+        0.0
+       ],
+       [
+        0.675,
+        36.0,
+        0.0
+       ],
+       [
+        0.715,
+        36.0,
+        0.0
+       ],
+       [
+        0.756,
+        36.0,
+        0.0
+       ],
+       [
+        0.797,
+        36.0,
+        0.0
+       ],
+       [
+        0.837,
+        36.0,
+        0.0
+       ],
+       [
+        0.878,
+        36.0,
+        0.0
+       ],
+       [
+        0.919,
+        36.0,
+        0.0
+       ],
+       [
+        0.959,
+        36.0,
+        0.0
+       ],
+       [
+        1.0,
+        36,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.268,
+        "idle"
+       ],
+       [
+        0.321,
+        "throw"
+       ],
+       [
+        0.696,
+        "cheer"
+       ]
+      ],
+      "face": 90
+     },
+     "tightend": {
+      "path": [
+       [
+        0.0,
+        41.5,
+        2.6
+       ],
+       [
+        0.042,
+        41.86,
+        2.57
+       ],
+       [
+        0.084,
+        42.21,
+        2.54
+       ],
+       [
+        0.126,
+        42.57,
+        2.51
+       ],
+       [
+        0.168,
+        42.93,
+        2.49
+       ],
+       [
+        0.21,
+        43.29,
+        2.46
+       ],
+       [
+        0.252,
+        43.64,
+        2.43
+       ],
+       [
+        0.295,
+        44.0,
+        2.4
+       ],
+       [
+        0.337,
+        44.36,
+        2.37
+       ],
+       [
+        0.379,
+        44.71,
+        2.34
+       ],
+       [
+        0.421,
+        45.07,
+        2.31
+       ],
+       [
+        0.463,
+        45.43,
+        2.29
+       ],
+       [
+        0.505,
+        45.79,
+        2.26
+       ],
+       [
+        0.547,
+        46.14,
+        2.23
+       ],
+       [
+        0.589,
+        46.5,
+        2.2
+       ],
+       [
+        0.63,
+        46.55,
+        2.2
+       ],
+       [
+        0.671,
+        46.6,
+        2.2
+       ],
+       [
+        0.712,
+        46.65,
+        2.2
+       ],
+       [
+        0.753,
+        46.7,
+        2.2
+       ],
+       [
+        0.795,
+        46.75,
+        2.2
+       ],
+       [
+        0.836,
+        46.8,
+        2.2
+       ],
+       [
+        0.877,
+        46.85,
+        2.2
+       ],
+       [
+        0.918,
+        46.9,
+        2.2
+       ],
+       [
+        0.959,
+        46.95,
+        2.2
+       ],
+       [
+        1.0,
+        47,
+        2.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.589,
+        "catch"
+       ],
+       [
+        0.696,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.375,
+      36.3,
+      1.7,
+      0.1
+     ],
+     [
+      0.482,
+      41.5,
+      3.4,
+      1.2
+     ],
+     [
+      0.589,
+      46.5,
+      1.4,
+      2.2
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "rodgers"
+     ],
+     [
+      0.589,
+      "tightend"
+     ]
+    ]
+   },
+   "sfx": [
+    [
+     0.65,
+     "roar"
+    ]
+   ]
+  },
+  {
+   "text": "To tight end Darnell Washington.",
+   "key": [
+    "WASHINGTON."
+   ],
+   "place": {
+    "runner": false,
+    "rodgers": [
+     2.4,
+     -0.8
+    ],
+    "shough": false,
+    "wilson": false,
+    "tightend": [
+     0,
+     0
+    ],
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "high",
-    "on": "shough"
+    "type": "low",
+    "on": "tightend"
    },
    "act": {
-    "shough": {
+    "tightend": {
      "mood": "happy",
-     "action": "hold",
-     "look": "wilson"
+     "action": "celebrate",
+     "look": "camera"
     },
-    "wilson": {
-     "mood": "angry",
-     "action": "idle",
-     "look": "shough"
+    "rodgers": {
+     "mood": "happy",
+     "action": "cheer"
     }
    }
   },
   {
-   "text": "Payton Wilson intercepted it.",
+   "text": "You answer with a fourth down touchdown. Ten all.",
+   "cap": "You answer with a fourth down touchdown. 10-10.",
    "key": [
-    "INTERCEPTED"
+    "10-10."
    ],
+   "board": [
+    "PIT 10",
+    "NO 10"
+   ],
+   "place": {
+    "runner": [
+     -2.0,
+     -0.4
+    ],
+    "rodgers": false,
+    "shough": [
+     0,
+     0
+    ],
+    "wilson": false,
+    "tightend": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
-    "type": "close",
-    "on": "wilson"
+    "type": "medium",
+    "on": "shough"
    },
    "act": {
-    "wilson": {
+    "shough": {
      "mood": "happy",
      "action": "cheer",
      "look": "camera"
     },
-    "shough": {
-     "mood": "shocked",
-     "action": "facepalm"
-    }
-   }
-  },
-  {
-   "text": "Another Pittsburgh field goal. Sixteen to ten.",
-   "cap": "Another Pittsburgh field goal. 16 to 10.",
-   "key": [
-    "16"
-   ],
-   "board": [
-    "PIT 16",
-    "NO 10"
-   ],
-   "shot": {
-    "type": "wide",
-    "on": "shough"
-   },
-   "act": {
-    "shough": {
-     "mood": "sad",
-     "action": "slump"
-    },
-    "wilson": {
+    "runner": {
      "mood": "happy",
      "action": "clap"
     }
    }
   },
   {
-   "text": "Late in the game, New Orleans tried a fifty two yard field goal. Wide right.",
-   "cap": "Late in the game, New Orleans tried a 52 yard field goal. Wide right.",
+   "text": "Then a Steelers field goal ends the half.",
    "key": [
-    "WIDE"
+    "HALF."
+   ],
+   "board": [
+    "HALFTIME",
+    "PIT 13 NO 10"
    ],
    "place": {
+    "runner": false,
+    "rodgers": [
+     -1.2,
+     0
+    ],
+    "shough": false,
+    "wilson": [
+     1.4,
+     0
+    ],
+    "tightend": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "rodgers",
+    "offset": [
+     1.2,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "rodgers": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "wilson": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "rodgers"
+    }
+   }
+  },
+  {
+   "text": "Second half. You drive deep. Then Payton Wilson intercepts.",
+   "key": [
+    "INTERCEPTS."
+   ],
+   "place": {
+    "runner": false,
+    "rodgers": false,
+    "shough": [
+     2.2,
+     -0.6
+    ],
+    "wilson": [
+     0,
+     0
+    ],
+    "tightend": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "wilson"
+   },
+   "act": {
+    "wilson": {
+     "mood": "happy",
+     "action": "catch",
+     "look": "camera"
+    },
+    "shough": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "wilson"
+    }
+   }
+  },
+  {
+   "text": "Another Steelers field goal. Sixteen to ten.",
+   "cap": "Another Steelers field goal. 16-10.",
+   "key": [
+    "16-10."
+   ],
+   "board": [
+    "PIT 16",
+    "NO 10"
+   ],
+   "speaker": "capy",
+   "place": {
+    "runner": false,
+    "rodgers": false,
+    "shough": [
+     1.6,
+     0.2
+    ],
     "wilson": false,
-    "runner": "right"
+    "tightend": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
    },
    "shot": {
     "type": "two",
-    "on": "shough",
-    "with": "runner"
+    "on": "capy",
+    "with": "shough"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "shough": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Late, you try a fifty two yarder. Wide right. Of course.",
+   "cap": "Late, you try a 52-yarder. Wide right. Of course.",
+   "key": [
+    "WIDE",
+    "RIGHT."
+   ],
+   "place": {
+    "runner": false,
+    "rodgers": false,
+    "shough": [
+     0,
+     0
+    ],
+    "wilson": false,
+    "tightend": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "shough"
    },
    "act": {
     "shough": {
      "mood": "sad",
      "action": "facepalm",
      "look": "camera"
-    },
-    "runner": {
-     "mood": "sad",
-     "action": "slump",
-     "look": "shough"
     }
    }
   },
   {
-   "text": "Final: Steelers sixteen, Saints ten.",
-   "cap": "Final: Steelers 16, Saints 10.",
+   "text": "Final score. Steelers sixteen, Saints ten.",
+   "cap": "Final score. Steelers 16, Saints 10.",
    "key": [
     "16,"
    ],
-   "set": "press",
-   "setOpts": {
-    "boardText": [
-     "FINAL",
-     "PIT 16  NO 10"
-    ]
-   },
+   "board": [
+    "FINAL",
+    "PIT 16 NO 10"
+   ],
    "place": {
-    "rodgers": "center"
+    "runner": [
+     1.4,
+     0
+    ],
+    "rodgers": [
+     -1.2,
+     0
+    ],
+    "shough": false,
+    "wilson": false,
+    "tightend": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "medium",
-    "on": "rodgers"
+    "type": "two",
+    "on": "rodgers",
+    "with": "runner"
    },
    "act": {
     "rodgers": {
      "mood": "happy",
-     "action": "talk",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "runner": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "rodgers"
+    }
+   }
+  },
+  {
+   "text": "Your run game? Seventeen carries. Eighteen yards.",
+   "cap": "Your run game? 17 carries. 18 yards.",
+   "key": [
+    "18"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "SAINTS RUSHING",
+     "17 FOR 18"
+    ]
+   },
+   "board": [
+    "SAINTS RUSHING",
+    "17 FOR 18"
+   ],
+   "place": {
+    "runner": [
+     0,
+     0.4
+    ],
+    "rodgers": false,
+    "shough": false,
+    "wilson": false,
+    "tightend": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "runner"
+   },
+   "act": {
+    "runner": {
+     "mood": "sad",
+     "action": "slump",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Eighteen rushing yards. Like a bad croissant, the run game never rose.",
-   "cap": "18 rushing yards. Like a bad croissant, the run game never rose.",
+   "text": "Barely over one yard per carry. Impressive.",
+   "cap": "Barely over 1 yard per carry. Impressive.",
    "key": [
-    "CROISSANT,"
+    "IMPRESSIVE."
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "SAINTS RUSHING",
-     "18 YARDS"
-    ]
-   },
+   "speaker": "capy",
+   "board": [
+    "YARDS/CARRY",
+    "1.06"
+   ],
    "place": {
-    "capy": [
-     -1.6,
-     1.0
-    ],
     "runner": [
-     0.6,
-     0.2
+     1.6,
+     0.4
+    ],
+    "rodgers": false,
+    "shough": false,
+    "wilson": false,
+    "tightend": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
     ]
    },
    "shot": {
@@ -463,21 +973,86 @@
     },
     "runner": {
      "mood": "sad",
-     "action": "slump",
+     "action": "facepalm",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Would you fly to Paris for a sixteen to ten game? Oui or non?",
-   "cap": "Would you fly to Paris for a 16 to 10 game? Oui or non?",
+   "text": "Saints fans, even the croissants rose higher. Sorry.",
    "key": [
-    "OUI",
-    "NON?"
+    "CROISSANTS"
    ],
+   "speaker": "capy",
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "PARIS",
+     "17 FOR 18"
+    ]
+   },
+   "place": {
+    "runner": false,
+    "rodgers": false,
+    "shough": false,
+    "wilson": false,
+    "tightend": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
+    "capy": [
+     -1.6,
+     3.6
+    ]
+   },
    "shot": {
-    "type": "medium",
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fly to Paris for sixteen to ten? Yes or no?",
+   "cap": "Fly to Paris for 16-10? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "FLY TO PARIS?",
+    "YES OR NO"
+   ],
+   "place": {
+    "runner": false,
+    "rodgers": false,
+    "shough": false,
+    "wilson": false,
+    "tightend": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
     "on": "capy"
    },
    "act": {
@@ -486,25 +1061,17 @@
      "action": "talk",
      "look": "camera"
     },
-    "runner": {
-     "mood": "happy",
-     "action": "wave",
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy",
-   "place": {
-    "runner": false,
-    "capy": [
-     -0.8,
-     1.0
-    ]
    }
   }
  ],
  "sources": [
   {
-   "title": "FOX 10: Sacr\u00e9 bleu! Saints run over by Steelers in France, 16-10",
+   "title": "FOX 10: Sacré bleu! Saints run over by Steelers in France, 16-10",
    "url": "https://www.fox10tv.com/2026/10/25/sacr-bleu-saints-run-over-by-steelers-france-16-10/"
   },
   {
@@ -514,6 +1081,97 @@
   {
    "title": "AP via News4Jax: Good mood among fans attending the first NFL game in Paris",
    "url": "https://www.news4jax.com/sports/2026/10/25/good-mood-among-fans-attending-the-first-nfl-game-in-paris-a-day-after-protests-and-clashes/"
+  },
+  {
+   "title": "ABC News (AP): Rodgers throws TD pass in Paris as Steelers beat Saints 16-10 in NFL's regular-season France debut",
+   "url": "https://abcnews.com/Sports/wireStory/rodgers-throws-td-pass-paris-steelers-beat-saints-137555840"
+  },
+  {
+   "title": "U.S. News (AP): Rodgers throws TD pass in Paris as Steelers beat Saints 16-10",
+   "url": "https://www.usnews.com/news/sports/articles/2026-10-25/rodgers-throws-td-pass-in-paris-as-steelers-beat-saints-16-10-in-nfls-regular-season-france-debut"
+  },
+  {
+   "title": "WTAE (AP): Rodgers throws TD pass in Paris as Steelers beat Saints 16-10",
+   "url": "https://www.wtae.com/article/steelers-win-paris/74241465"
+  },
+  {
+   "title": "FOX 8 (AP): Rodgers throws TD pass in Paris as Steelers beat Saints 16-10",
+   "url": "https://fox8.com/sports/ap-sports/ap-rodgers-throws-td-pass-in-paris-as-steelers-beat-saints-16-10-in-nfls-regular-season-france-debut/"
+  },
+  {
+   "title": "TSN (AP): Aaron Rodgers throws TD pass in Paris as Steelers beat Saints",
+   "url": "https://www.tsn.ca/nfl/article/rodgers-throws-td-pass-in-paris-as-steelers-beat-saints-in-nfls-regular-season-france-debut/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "It was the NFL's first regular-season game in France",
+   "terms": [
+    "France",
+    "first|debut"
+   ]
+  },
+  {
+   "claim": "The Saints ran 17 times for 18 yards",
+   "terms": [
+    "17",
+    "18 yards"
+   ]
+  },
+  {
+   "claim": "The game was at the Stade de France outside Paris",
+   "terms": [
+    "Stade de France"
+   ]
+  },
+  {
+   "claim": "Aaron Rodgers is 42",
+   "terms": [
+    "Rodgers",
+    "42"
+   ]
+  },
+  {
+   "claim": "Rodgers threw a 4-yard touchdown pass to tight end Darnell Washington",
+   "terms": [
+    "Washington",
+    "4-yard|4 yard"
+   ]
+  },
+  {
+   "claim": "The Saints scored a touchdown on fourth down to tie it 10-10",
+   "terms": [
+    "fourth",
+    "10-10|10 10"
+   ]
+  },
+  {
+   "claim": "A Steelers field goal ended the first half",
+   "terms": [
+    "field goal",
+    "half"
+   ]
+  },
+  {
+   "claim": "Payton Wilson intercepted a pass in the second half",
+   "terms": [
+    "Wilson",
+    "intercept"
+   ]
+  },
+  {
+   "claim": "Another Steelers field goal made it 16-10",
+   "terms": [
+    "16-10"
+   ]
+  },
+  {
+   "claim": "The Saints missed a 52-yard field goal wide right",
+   "terms": [
+    "52",
+    "wide right"
+   ]
   }
  ]
 }
