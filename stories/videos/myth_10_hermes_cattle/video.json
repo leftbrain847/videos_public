@@ -1,0 +1,964 @@
+{
+ "id": "myth_10_hermes_cattle",
+ "title": "The one-day-old cattle thief",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "MOUNT CYLLENE"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "herm": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#4a9a8a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b",
+    "sash": "#e8b923"
+   }
+  },
+  "hermL": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#4a9a8a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b",
+    "sash": "#e8b923"
+   },
+   "hold": "lyre"
+  },
+  "apollo": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f2c230",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#f2d27a",
+    "skin": "#f2c39b",
+    "sash": "#c46a3c"
+   }
+  },
+  "apolloL": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f2c230",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#f2d27a",
+    "skin": "#f2c39b",
+    "sash": "#c46a3c"
+   },
+   "hold": "lyre"
+  },
+  "zeus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b4c8c",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#e6e6e6",
+    "skin": "#f2c39b",
+    "sash": "#f6d21f",
+    "beard": true
+   }
+  },
+  "maia": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8e6aa8",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You are one day old. You steal fifty cows.",
+   "cap": "You are 1 day old. You steal 50 cows.",
+   "key": [
+    "50"
+   ],
+   "speaker": "capy",
+   "board": [
+    "AGE: 1 DAY",
+    "COWS: 50"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "herm": [
+     1.2,
+     0
+    ],
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "herm"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "herm": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Hermes. You were born at dawn, in a cave.",
+   "key": [
+    "HERMES."
+   ],
+   "place": {
+    "capy": false,
+    "herm": [
+     -1.3,
+     0.2
+    ],
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "herm",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "herm": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "maia": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "herm"
+    }
+   }
+  },
+  {
+   "text": "By noon, you have already invented the lyre.",
+   "key": [
+    "LYRE."
+   ],
+   "place": {
+    "capy": false,
+    "herm": false,
+    "hermL": [
+     0,
+     0
+    ],
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "hermL"
+   },
+   "act": {
+    "hermL": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You built it from an empty tortoise shell.",
+   "key": [
+    "TORTOISE"
+   ],
+   "board": [
+    "LYRE",
+    "TORTOISE SHELL"
+   ],
+   "place": {
+    "capy": false,
+    "herm": false,
+    "hermL": [
+     0,
+     0
+    ],
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "hermL"
+   },
+   "act": {
+    "hermL": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Most babies just nap. You start a music career.",
+   "key": [
+    "CAREER."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "herm": false,
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "By evening, you are bored. You want a bigger project.",
+   "key": [
+    "BIGGER"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "herm": [
+     1.2,
+     0
+    ],
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "herm",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "herm"
+    },
+    "herm": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your target: the sacred cattle of Apollo.",
+   "key": [
+    "APOLLO."
+   ],
+   "board": [
+    "TARGET",
+    "APOLLO'S CATTLE"
+   ],
+   "place": {
+    "capy": false,
+    "herm": false,
+    "hermL": false,
+    "apollo": [
+     0,
+     0
+    ],
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "apollo"
+   },
+   "act": {
+    "apollo": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You take fifty of them. Then the clever part.",
+   "cap": "You take 50 of them. Then the clever part.",
+   "key": [
+    "50"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "herm": [
+     1.2,
+     0
+    ],
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "herm",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "herm"
+    },
+    "herm": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You make the cows walk backwards. Now the tracks lie.",
+   "key": [
+    "BACKWARDS."
+   ],
+   "place": {
+    "capy": false,
+    "herm": [
+     0,
+     0
+    ],
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "herm"
+   },
+   "act": {
+    "herm": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You wear sandals made of twigs. So there are no footprints.",
+   "key": [
+    "SANDALS"
+   ],
+   "place": {
+    "capy": false,
+    "herm": [
+     0,
+     0
+    ],
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "herm"
+   },
+   "act": {
+    "herm": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are a newborn. You are already planning around forensics.",
+   "key": [
+    "FORENSICS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "herm": false,
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you slip back into your cradle. Very innocent. Very cute.",
+   "key": [
+    "CRADLE."
+   ],
+   "place": {
+    "capy": false,
+    "herm": [
+     -1.3,
+     0.2
+    ],
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "herm",
+    "with": "maia"
+   },
+   "act": {
+    "herm": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "maia": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "herm"
+    }
+   }
+  },
+  {
+   "text": "Apollo figures it out. He storms into your cave.",
+   "key": [
+    "STORMS"
+   ],
+   "place": {
+    "capy": false,
+    "herm": false,
+    "hermL": false,
+    "apollo": [
+     0,
+     0
+    ],
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "apollo"
+   },
+   "act": {
+    "apollo": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Your defense? You were only born yesterday.",
+   "key": [
+    "YESTERDAY."
+   ],
+   "board": [
+    "MY DEFENSE:",
+    "BORN YESTERDAY"
+   ],
+   "place": {
+    "capy": false,
+    "herm": [
+     0,
+     0
+    ],
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "herm"
+   },
+   "act": {
+    "herm": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Which is technically true.",
+   "key": [
+    "TRUE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "herm": [
+     1.2,
+     0
+    ],
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "herm"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "herm": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Apollo drags you to Zeus. A family trial.",
+   "key": [
+    "ZEUS."
+   ],
+   "place": {
+    "capy": false,
+    "herm": false,
+    "hermL": false,
+    "apollo": [
+     -1.6,
+     0.4
+    ],
+    "apolloL": false,
+    "zeus": [
+     1.6,
+     -0.4
+    ],
+    "maia": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "zeus",
+    "pan": [
+     -1.6,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "apollo": {
+     "mood": "angry",
+     "action": "point",
+     "look": "zeus"
+    },
+    "zeus": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "apollo"
+    }
+   }
+  },
+  {
+   "text": "Zeus just laughs. Then he orders you to return the cows.",
+   "key": [
+    "LAUGHS."
+   ],
+   "place": {
+    "capy": false,
+    "herm": false,
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": [
+     0,
+     0
+    ],
+    "maia": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "zeus"
+   },
+   "act": {
+    "zeus": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So you play the lyre. Apollo instantly falls in love with it.",
+   "key": [
+    "LOVE"
+   ],
+   "place": {
+    "capy": false,
+    "herm": false,
+    "hermL": [
+     -1.3,
+     0.2
+    ],
+    "apollo": [
+     1.3,
+     -0.2
+    ],
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "hermL",
+    "with": "apollo"
+   },
+   "act": {
+    "hermL": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "apollo"
+    },
+    "apollo": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "hermL"
+    }
+   }
+  },
+  {
+   "text": "You trade him the lyre. In return, you keep the cows.",
+   "key": [
+    "KEEP"
+   ],
+   "board": [
+    "TRADE",
+    "LYRE FOR COWS"
+   ],
+   "place": {
+    "capy": false,
+    "herm": false,
+    "hermL": false,
+    "apollo": false,
+    "apolloL": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "apolloL"
+   },
+   "act": {
+    "apolloL": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You robbed him. Then you sold him a harp. He paid with his own cows.",
+   "key": [
+    "HARP"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "herm": false,
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you trust a one day old? Yes or no? Apollo fans, lock the barn.",
+   "cap": "Would you trust a 1-day-old? Yes or no? Apollo fans, lock the barn.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "TRUST A BABY?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "herm": [
+     1.3,
+     0
+    ],
+    "hermL": false,
+    "apollo": false,
+    "apolloL": false,
+    "zeus": false,
+    "maia": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "herm"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "herm": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Hermes",
+   "url": "https://en.wikipedia.org/wiki/Hermes"
+  },
+  {
+   "title": "Mythopedia library: Homeric Hymn 4 to Hermes (Evelyn-White)",
+   "url": "https://mythopedia.com/library/homeric-hymns-evelyn-white-1914/4-to-hermes/"
+  },
+  {
+   "title": "ToposText: Homeric Hymn to Hermes",
+   "url": "https://topostext.org/work/357"
+  },
+  {
+   "title": "Open Maricopa, World Mythology: Hymn IV (To Hermes)",
+   "url": "https://open.maricopa.edu/worldmythologyvolume1godsandcreation/chapter/hymn-iv-to-hermes-by-homer/"
+  },
+  {
+   "title": "Theoi: Hermes myths",
+   "url": "https://www.theoi.com/Olympios/HermesMyths.html"
+  },
+  {
+   "title": "Mythopedia: Hermes",
+   "url": "https://mythopedia.com/topics/hermes/"
+  },
+  {
+   "title": "Wikipedia: Lyre",
+   "url": "https://en.wikipedia.org/wiki/Lyre"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Hermes is born at dawn in a cave",
+   "terms": [
+    "born",
+    "dawn"
+   ]
+  },
+  {
+   "claim": "By midday he has invented the lyre",
+   "terms": [
+    "midday|mid day|noon",
+    "lyre"
+   ]
+  },
+  {
+   "claim": "He makes the lyre from a tortoise shell",
+   "terms": [
+    "tortoise",
+    "lyre"
+   ]
+  },
+  {
+   "claim": "That evening he steals Apollo's cattle",
+   "terms": [
+    "cattle",
+    "Apollo"
+   ]
+  },
+  {
+   "claim": "He takes fifty of them",
+   "terms": [
+    "fifty|50",
+    "cattle|cows|kine|heifers"
+   ]
+  },
+  {
+   "claim": "He makes the cattle walk backwards",
+   "terms": [
+    "backward|backwards"
+   ]
+  },
+  {
+   "claim": "He wears sandals of twigs to hide his footprints",
+   "terms": [
+    "sandals",
+    "twigs|brushwood|myrtle|tamarisk|branches"
+   ]
+  },
+  {
+   "claim": "He goes back to his cradle",
+   "terms": [
+    "cradle",
+    "Hermes"
+   ]
+  },
+  {
+   "claim": "Apollo finds out and confronts him",
+   "terms": [
+    "Apollo",
+    "cradle"
+   ]
+  },
+  {
+   "claim": "Hermes says he was born yesterday",
+   "terms": [
+    "born",
+    "yesterday"
+   ]
+  },
+  {
+   "claim": "They take the case to Zeus",
+   "terms": [
+    "Zeus",
+    "Apollo",
+    "cattle|cows"
+   ]
+  },
+  {
+   "claim": "Zeus laughs",
+   "terms": [
+    "Zeus",
+    "laugh|laughed"
+   ]
+  },
+  {
+   "claim": "Apollo loves the lyre and Hermes trades it for the cattle",
+   "terms": [
+    "lyre",
+    "exchange|trade|traded|gave|gives"
+   ]
+  }
+ ]
+}
