@@ -68,11 +68,14 @@
  },
  "lines": [
   {
-   "text": "The Ravens won a game in Brazil with a seven second drive.",
-   "cap": "The Ravens won a game in Brazil with a 7 second drive.",
+   "text": "You have seven seconds. Your kicker needs a chance.",
+   "cap": "You have 7 seconds. Your kicker needs a chance.",
    "key": [
-    "7",
-    "SECOND"
+    "7"
+   ],
+   "board": [
+    "0:07",
+    "BAL 31 DAL 31"
    ],
    "place": {
     "capy": [
@@ -115,10 +118,9 @@
    "speaker": "capy"
   },
   {
-   "text": "It was the NFL's first game in Rio de Janeiro, at the famous Maracan\u00e3.",
-   "cap": "It was the NFL's first game in Rio de Janeiro, at the famous Maracan\u00e3.",
+   "text": "Rio de Janeiro. The league's first game there.",
    "key": [
-    "RIO"
+    "FIRST"
    ],
    "set": "tunnel",
    "setOpts": {
@@ -128,7 +130,10 @@
     ]
    },
    "place": {
+    "capy": false,
     "lamar": "center",
+    "flowers": false,
+    "loop": false,
     "dak": "right"
    },
    "shot": {
@@ -149,37 +154,9 @@
    }
   },
   {
-   "text": "Two big soccer clubs play on that grass every week, so the turf was a worry.",
+   "text": "The stadium? The famous Maracana.",
    "key": [
-    "TURF"
-   ],
-   "set": "office",
-   "setOpts": {
-    "boardText": [
-     "TURF",
-     "CHECK"
-    ]
-   },
-   "place": {
-    "capy": "center"
-   },
-   "shot": {
-    "type": "medium",
-    "on": "capy"
-   },
-   "act": {
-    "capy": {
-     "mood": "worried",
-     "action": "hold",
-     "look": "camera"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "The grass held up. The game did not.",
-   "key": [
-    "NOT."
+    "MARACANA."
    ],
    "set": "field",
    "setOpts": {
@@ -189,7 +166,10 @@
     ]
    },
    "place": {
+    "capy": false,
     "lamar": "center",
+    "flowers": false,
+    "loop": false,
     "dak": "right"
    },
    "shot": {
@@ -210,16 +190,115 @@
    }
   },
   {
-   "text": "Dallas took the lead with ten minutes left. Baltimore took it back with ninety seconds left.",
-   "cap": "Dallas took the lead with 10 minutes left. Baltimore took it back with 90 seconds left.",
+   "text": "Two big soccer clubs share that grass.",
    "key": [
-    "10",
-    "90"
+    "SOCCER"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "TURF",
+     "CHECK"
+    ]
+   },
+   "place": {
+    "capy": "center",
+    "lamar": false,
+    "flowers": false,
+    "loop": false,
+    "dak": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Everyone worries about it.",
+   "key": [
+    "WORRIES"
+   ],
+   "place": {
+    "capy": "center",
+    "lamar": false,
+    "flowers": false,
+    "loop": false,
+    "dak": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The grass holds up. The game does not.",
+   "key": [
+    "NOT."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BAL 24",
+     "DAL 21"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "lamar": "center",
+    "flowers": false,
+    "loop": false,
+    "dak": "right"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "lamar"
+   },
+   "act": {
+    "lamar": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "dak"
+    },
+    "dak": {
+     "mood": "angry",
+     "action": "point",
+     "look": "lamar"
+    }
+   }
+  },
+  {
+   "text": "Ninety seconds left. You throw a touchdown. Ravens by three.",
+   "cap": "90 seconds left. You throw a touchdown. Ravens by 3.",
+   "key": [
+    "TOUCHDOWN."
    ],
    "board": [
     "BAL 31",
     "DAL 28"
    ],
+   "place": {
+    "capy": false,
+    "lamar": "center",
+    "flowers": false,
+    "loop": false,
+    "dak": "right"
+   },
    "shot": {
     "type": "two",
     "on": "lamar",
@@ -239,8 +318,8 @@
    }
   },
   {
-   "text": "Then a Dallas field goal tied it at thirty one.",
-   "cap": "Then a Dallas field goal tied it at 31.",
+   "text": "Dallas kicks a field goal. Tied at thirty one.",
+   "cap": "Dallas kicks a field goal. Tied at 31.",
    "key": [
     "31."
    ],
@@ -248,11 +327,23 @@
     "BAL 31",
     "DAL 31"
    ],
+   "place": {
+    "capy": false,
+    "lamar": "center",
+    "flowers": false,
+    "loop": false,
+    "dak": "right"
+   },
    "shot": {
     "type": "close",
     "on": "dak"
    },
    "act": {
+    "lamar": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
     "dak": {
      "mood": "smug",
      "action": "clap",
@@ -261,18 +352,21 @@
    }
   },
   {
-   "text": "Seven seconds left. Ravens at their own thirty five.",
-   "cap": "7 seconds left. Ravens at their own 35.",
+   "text": "Seven seconds left. Your ball.",
+   "cap": "7 seconds left. Your ball.",
    "key": [
-    "7",
-    "35."
+    "BALL."
    ],
    "board": [
     "0:07",
-    "BAL OWN 35"
+    "BAL 31 DAL 31"
    ],
    "place": {
-    "flowers": "left"
+    "capy": false,
+    "lamar": "center",
+    "flowers": "left",
+    "loop": false,
+    "dak": "right"
    },
    "shot": {
     "type": "low",
@@ -284,6 +378,11 @@
      "action": "hold",
      "look": "camera"
     },
+    "dak": {
+     "mood": "smug",
+     "action": "clap",
+     "look": "camera"
+    },
     "flowers": {
      "mood": "neutral",
      "action": "idle",
@@ -292,11 +391,22 @@
    }
   },
   {
-   "text": "Lamar Jackson hits Zay Flowers for twenty seven yards.",
-   "cap": "Lamar Jackson hits Zay Flowers for 27 yards.",
+   "text": "You're Lamar Jackson. You hit Zay Flowers. Twenty seven yards.",
+   "cap": "You're Lamar Jackson. You hit Zay Flowers. 27 yards.",
    "key": [
     "27"
    ],
+   "board": [
+    "0:07",
+    "BAL OWN 35"
+   ],
+   "place": {
+    "capy": false,
+    "lamar": "center",
+    "flowers": "left",
+    "loop": false,
+    "dak": "right"
+   },
    "shot": {
     "type": "medium",
     "on": "flowers"
@@ -306,6 +416,11 @@
      "mood": "happy",
      "action": "throw",
      "look": "flowers"
+    },
+    "dak": {
+     "mood": "smug",
+     "action": "clap",
+     "look": "camera"
     },
     "flowers": {
      "mood": "happy",
@@ -319,32 +434,56 @@
    "key": [
     "RUNNING."
    ],
+   "board": [
+    "0:07",
+    "BAL OWN 35"
+   ],
+   "place": {
+    "capy": false,
+    "lamar": "center",
+    "flowers": "left",
+    "loop": false,
+    "dak": "right"
+   },
    "shot": {
     "type": "wide",
     "on": "flowers"
    },
    "act": {
-    "flowers": {
-     "mood": "worried",
-     "action": "slump"
+    "lamar": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "flowers"
     },
     "dak": {
      "mood": "happy",
-     "action": "idle"
+     "action": "idle",
+     "look": "camera"
+    },
+    "flowers": {
+     "mood": "worried",
+     "action": "slump",
+     "look": "lamar"
     }
    }
   },
   {
-   "text": "Jackson calls timeout. One second left.",
-   "cap": "Jackson calls timeout. 1 second left.",
+   "text": "You call timeout. Just in time. One second left.",
+   "cap": "You call timeout. Just in time. 1 second left.",
    "key": [
-    "TIMEOUT.",
     "1"
    ],
    "board": [
     "0:01",
     "TIMEOUT"
    ],
+   "place": {
+    "capy": false,
+    "lamar": "center",
+    "flowers": "left",
+    "loop": false,
+    "dak": "right"
+   },
    "shot": {
     "type": "close",
     "on": "lamar"
@@ -354,71 +493,254 @@
      "mood": "shocked",
      "action": "point",
      "look": "camera"
+    },
+    "dak": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "flowers": {
+     "mood": "worried",
+     "action": "slump",
+     "look": "lamar"
     }
    }
   },
   {
-   "text": "Kicker Tyler Loop, from fifty six yards.",
-   "cap": "Kicker Tyler Loop, from 56 yards.",
+   "text": "Kicker Tyler Loop. Fifty six yards.",
+   "cap": "Kicker Tyler Loop. 56 yards.",
    "key": [
     "56"
    ],
+   "board": [
+    "0:01",
+    "TIMEOUT"
+   ],
    "place": {
-    "flowers": false,
+    "capy": false,
     "lamar": "left",
-    "loop": "center"
+    "flowers": false,
+    "loop": "center",
+    "dak": "right"
    },
    "shot": {
     "type": "medium",
     "on": "loop"
    },
    "act": {
+    "lamar": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "loop"
+    },
+    "dak": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
     "loop": {
      "mood": "neutral",
      "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Last season, he missed from forty four. It cost the playoffs.",
+   "cap": "Last season, he missed from 44. It cost the playoffs.",
+   "key": [
+    "44."
+   ],
+   "board": [
+    "0:01",
+    "TIMEOUT"
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     1.0
+    ],
+    "lamar": "left",
+    "flowers": false,
+    "loop": "center",
+    "dak": "right"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "loop"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
      "look": "camera"
     },
     "lamar": {
      "mood": "worried",
      "action": "idle",
      "look": "loop"
+    },
+    "dak": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "loop": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
     }
-   }
+   },
+   "speaker": "capy"
   },
   {
-   "text": "Good. Ravens win, thirty four to thirty one.",
-   "cap": "Good. Ravens win, 34 to 31.",
+   "text": "This time? Good. Ravens thirty four, Cowboys thirty one.",
+   "cap": "This time? Good. Ravens 34, Cowboys 31.",
    "key": [
-    "34"
+    "GOOD."
    ],
    "board": [
     "BAL 34",
     "DAL 31"
    ],
    "shot": {
-    "type": "high",
-    "on": "loop"
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "loop",
+    "lead": 0
    },
-   "act": {
-    "loop": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BAL 31",
+     "DAL 31"
+    ],
+    "endZone": 16,
+    "zoneA": "#003594",
+    "zoneB": "#241773"
+   },
+   "play": {
+    "cast": {
+     "loop": {
+      "path": [
+       [
+        0,
+        6.5,
+        -4.6
+       ],
+       [
+        0.1,
+        7.8,
+        -4.2
+       ],
+       [
+        1,
+        8.2,
+        -4.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.1,
+        "kick"
+       ]
+      ],
+      "face": 90
+     },
+     "lamar": {
+      "path": [
+       [
+        0,
+        2,
+        2
+       ],
+       [
+        1,
+        2.5,
+        2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.8,
+        "cheer"
+       ]
+      ],
+      "face": 60
+     },
+     "dak": {
+      "path": [
+       [
+        0,
+        14,
+        1
+       ],
+       [
+        0.4,
+        12,
+        0.5
+       ],
+       [
+        1,
+        11.5,
+        0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.45,
+        "idle"
+       ]
+      ],
+      "face": -90,
+      "mood": "sad"
+     }
     },
-    "lamar": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "loop"
-    },
-    "dak": {
-     "mood": "sad",
-     "action": "slump"
-    }
-   }
+    "ball": [
+     [
+      0.16,
+      8.4,
+      0.3,
+      -4
+     ],
+     [
+      0.45,
+      22,
+      7.5,
+      -4
+     ],
+     [
+      0.75,
+      37,
+      5.0,
+      -4
+     ]
+    ]
+   },
+   "sfx": [
+    [
+     0.8,
+     "roar"
+    ]
+   ]
   },
   {
-   "text": "One second. Apparently, that's plenty.",
-   "cap": "1 second. Apparently, that's plenty.",
+   "text": "Seven seconds. One play. Apparently, that's plenty.",
+   "cap": "7 seconds. One play. Apparently, that's plenty.",
    "key": [
     "PLENTY."
    ],
@@ -430,7 +752,11 @@
     ]
    },
    "place": {
-    "capy": "center"
+    "capy": "center",
+    "lamar": false,
+    "flowers": false,
+    "loop": false,
+    "dak": false
    },
    "shot": {
     "type": "medium",
@@ -446,8 +772,8 @@
    "speaker": "capy"
   },
   {
-   "text": "Would you kick from fifty six, or throw it deep? Kick or throw?",
-   "cap": "Would you kick from 56, or throw it deep? Kick or throw?",
+   "text": "Fifty six yards. Kick or throw? One word. Cowboys fans, sit down.",
+   "cap": "56 yards. Kick or throw? One word. Cowboys fans, sit down.",
    "key": [
     "KICK",
     "THROW?"
@@ -459,15 +785,22 @@
      "DAL 31"
     ]
    },
+   "board": [
+    "KICK",
+    "OR THROW?"
+   ],
    "place": {
     "capy": [
      -1.6,
      1.0
     ],
+    "lamar": false,
+    "flowers": false,
     "loop": [
      0.6,
      0.2
-    ]
+    ],
+    "dak": false
    },
    "shot": {
     "type": "two",
@@ -491,16 +824,117 @@
  ],
  "sources": [
   {
-   "title": "AP via ClickOrlando: Jackson's pass, alert timeout call lead to Loop's 56-yard field goal as Ravens beat Cowboys 34-31",
+   "title": "TSN (AP): Jackson's pass, alert timeout call lead to Loop's 56-yard field goal",
+   "url": "https://www.tsn.ca/nfl/article/jacksons-pass-alert-timeout-call-lead-to-loops-56-yard-field-goal-as-ravens-beat-cowboys/"
+  },
+  {
+   "title": "ClickOrlando (AP): Ravens beat Cowboys 34-31",
    "url": "https://www.clickorlando.com/sports/2026/09/28/jacksons-pass-alert-timeout-call-lead-to-loops-56-yard-field-goal-as-ravens-beat-cowboys-34-31/"
   },
   {
-   "title": "NBC Sports: Ravens beat Cowboys on walk-off field goal in Brazil",
+   "title": "FOX Baltimore (AP): Jackson's pass, alert timeout lead to Loop's 56-yard field goal",
+   "url": "https://foxbaltimore.com/sports/sports-newsletter/baltimore-ravens-dallas-cowboys-nfl-rio-de-janeiro-brazil-lamar-jackson-tyler-loop-field-goal"
+  },
+  {
+   "title": "FOX Baltimore: Loop's clutch 56-yd FG helps atone for last season's rough end",
+   "url": "https://foxbaltimore.com/sports/sports-unlimited/loops-clutch-56-yd-fg-lifts-ravens-over-cowboys-helps-atone-for-last-seasons-rough-end"
+  },
+  {
+   "title": "BaltimoreRavens.com: Ravens beat Cowboys on last-second Tyler Loop field goal",
+   "url": "https://www.baltimoreravens.com/news/ravens-beat-cowboys-last-second-field-goal-tyler-loop-week-3"
+  },
+  {
+   "title": "BaltimoreRavens.com: Tyler Loop kick ends remarkable Rio trip",
+   "url": "https://www.baltimoreravens.com/news/tyler-loop-kick-ends-remarkable-rio-trip-lamar-jackson-stars-defense-still-needs-work-week-3-brazil-ravens-cowboys"
+  },
+  {
+   "title": "NBC Sports Bay Area: Ravens-Cowboys walk-off field goal in Brazil",
    "url": "https://www.nbcsportsbayarea.com/nfl/ravens-cowboys-walk-off-field-goal-brazil/1966784/"
   },
   {
-   "title": "AP via NBC Sports Philadelphia: Maracan\u00e3 field holds up for Ravens-Cowboys",
+   "title": "Wikipedia: Maracana Stadium",
+   "url": "https://en.wikipedia.org/wiki/Maracan%C3%A3_Stadium"
+  },
+  {
+   "title": "NBC Sports Philadelphia: Maracana stadium field for Ravens-Cowboys",
    "url": "https://www.nbcsportsphiladelphia.com/news/sports/nfl/maracana-stadium-field-ravens-cowboys/"
+  },
+  {
+   "title": "Wikipedia: 2025 Baltimore Ravens season",
+   "url": "https://en.wikipedia.org/wiki/2025_Baltimore_Ravens_season"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "It was the NFL's first game in Rio de Janeiro",
+   "terms": [
+    "first",
+    "Rio"
+   ]
+  },
+  {
+   "claim": "It was played at the Maracana",
+   "terms": [
+    "Maracana|Maracanã"
+   ]
+  },
+  {
+   "claim": "Two soccer clubs, Flamengo and Fluminense, play at the Maracana",
+   "terms": [
+    "Flamengo",
+    "Fluminense"
+   ]
+  },
+  {
+   "claim": "There were concerns about the grass, and it held up",
+   "terms": [
+    "concerns",
+    "playing surface"
+   ]
+  },
+  {
+   "claim": "Jackson threw a 2-yard TD to Matt Hibner for a 31-28 lead with 1:30 left",
+   "terms": [
+    "31-28",
+    "1:30"
+   ]
+  },
+  {
+   "claim": "Dallas tied it at 31 with a field goal with 7 seconds left",
+   "terms": [
+    "tie",
+    "31",
+    "7 seconds"
+   ]
+  },
+  {
+   "claim": "Jackson completed a 27-yard pass to Zay Flowers",
+   "terms": [
+    "27-yard",
+    "Flowers"
+   ]
+  },
+  {
+   "claim": "Jackson called a timeout with 1 second left",
+   "terms": [
+    "timeout",
+    "1 second|one second"
+   ]
+  },
+  {
+   "claim": "Tyler Loop kicked a 56-yard field goal to win 34-31",
+   "terms": [
+    "56-yard",
+    "34-31"
+   ]
+  },
+  {
+   "claim": "Last season Loop missed a 44-yard field goal in a loss that eliminated Baltimore",
+   "terms": [
+    "44-yard|44 yard",
+    "Loop"
+   ]
   }
  ]
 }
