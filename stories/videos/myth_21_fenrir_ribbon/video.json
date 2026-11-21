@@ -888,7 +888,7 @@
   {
    "claim": "It is made of the sound of a cat's footsteps",
    "terms": [
-    "cat",
+    "cat|cats",
     "steps|step|footsteps|footfall|footfalls|footstep"
    ]
   },
