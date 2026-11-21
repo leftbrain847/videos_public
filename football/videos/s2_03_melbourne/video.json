@@ -81,11 +81,14 @@
  },
  "lines": [
   {
-   "text": "The NFL's first game in Australia kicked off at ten thirty five on a Friday morning.",
-   "cap": "The NFL's first game in Australia kicked off at 10:35 on a Friday morning.",
+   "text": "You kick off at ten thirty five. On a Friday morning.",
+   "cap": "You kick off at 10:35. On a Friday morning.",
    "key": [
-    "FRIDAY",
     "MORNING."
+   ],
+   "board": [
+    "KICKOFF",
+    "10:35 AM FRI"
    ],
    "place": {
     "capy": [
@@ -129,9 +132,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Local time. So people back home could watch it on Thursday night.",
+   "text": "Why? So America can watch on T V.",
+   "cap": "Why? So America can watch on TV.",
    "key": [
-    "THURSDAY"
+    "TV."
    ],
    "set": "living",
    "setOpts": {
@@ -141,37 +145,41 @@
     ]
    },
    "place": {
-    "fan": "couchL",
     "capy": {
      "spot": [
       0.9,
       3.6
      ],
      "face": -15
-    }
+    },
+    "purdy": false,
+    "stafford": false,
+    "kyren": false,
+    "coach": false,
+    "fan": "couchL"
    },
    "shot": {
     "type": "wide",
     "on": "fan"
    },
    "act": {
-    "fan": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    },
     "capy": {
      "mood": "neutral",
      "action": "talk",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "happy",
+     "action": "cheer",
      "look": "camera"
     }
    },
    "speaker": "capy"
   },
   {
-   "text": "The stadium was the Melbourne Cricket Ground.",
+   "text": "It's the league's first game in Australia.",
    "key": [
-    "CRICKET"
+    "AUSTRALIA."
    ],
    "set": "field",
    "setOpts": {
@@ -181,8 +189,12 @@
     ]
    },
    "place": {
+    "capy": false,
     "purdy": "center",
-    "stafford": "right"
+    "stafford": "right",
+    "kyren": false,
+    "coach": false,
+    "fan": false
    },
    "shot": {
     "type": "high",
@@ -202,16 +214,62 @@
    }
   },
   {
-   "text": "One hundred thousand and twenty one people came. On a workday.",
-   "cap": "100,021 people came. On a workday.",
+   "text": "The venue? The Melbourne Cricket Ground.",
    "key": [
-    "100,021",
-    "WORKDAY."
+    "CRICKET"
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     1.0
+    ],
+    "purdy": "center",
+    "stafford": "right",
+    "kyren": false,
+    "coach": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "purdy": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "stafford": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "purdy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The crowd? One hundred thousand and twenty one.",
+   "cap": "The crowd? 100,021.",
+   "key": [
+    "100,021."
    ],
    "board": [
     "CROWD",
     "100,021"
    ],
+   "place": {
+    "capy": false,
+    "purdy": "center",
+    "stafford": "right",
+    "kyren": false,
+    "coach": false,
+    "fan": false
+   },
    "shot": {
     "type": "low",
     "on": "purdy"
@@ -221,14 +279,18 @@
      "mood": "shocked",
      "action": "cheer",
      "look": "camera"
+    },
+    "stafford": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "purdy"
     }
    }
   },
   {
-   "text": "San Francisco flew in a week early, to get used to the time zone.",
+   "text": "You're San Francisco. You fly in a week early.",
    "key": [
-    "WEEK",
-    "EARLY,"
+    "EARLY."
    ],
    "set": "tunnel",
    "setOpts": {
@@ -238,7 +300,12 @@
     ]
    },
    "place": {
-    "purdy": "center"
+    "capy": false,
+    "purdy": "center",
+    "stafford": false,
+    "kyren": false,
+    "coach": false,
+    "fan": false
    },
    "shot": {
     "type": "medium",
@@ -253,17 +320,57 @@
    }
   },
   {
-   "text": "The Rams stayed home, and landed about a day before kickoff.",
+   "text": "You adjust your body clocks. One day at a time.",
    "key": [
-    "DAY"
+    "TIME."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     1.0
+    ],
+    "purdy": "center",
+    "stafford": false,
+    "kyren": false,
+    "coach": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "purdy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "purdy": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The Rams land under two days before kickoff.",
+   "cap": "The Rams land under 2 days before kickoff.",
+   "key": [
+    "2"
    ],
    "board": [
     "RAMS ARRIVE",
-    "1 DAY BEFORE"
+    "< 2 DAYS BEFORE"
    ],
    "place": {
+    "capy": false,
     "purdy": false,
-    "stafford": "center"
+    "stafford": "center",
+    "kyren": false,
+    "coach": false,
+    "fan": false
    },
    "shot": {
     "type": "close",
@@ -278,7 +385,7 @@
    }
   },
   {
-   "text": "The idea: keep their body clocks on California time.",
+   "text": "Their body clocks stay on California time.",
    "key": [
     "CALIFORNIA"
    ],
@@ -287,8 +394,12 @@
     "CALIFORNIA"
    ],
    "place": {
+    "capy": false,
+    "purdy": false,
     "stafford": "left",
-    "coach": "right"
+    "kyren": false,
+    "coach": "right",
+    "fan": false
    },
    "shot": {
     "type": "two",
@@ -296,20 +407,21 @@
     "with": "stafford"
    },
    "act": {
-    "coach": {
-     "mood": "smug",
-     "action": "point",
-     "look": "stafford"
-    },
     "stafford": {
      "mood": "confused",
      "action": "shrug",
      "look": "coach"
+    },
+    "coach": {
+     "mood": "smug",
+     "action": "point",
+     "look": "stafford"
     }
    }
   },
   {
-   "text": "Kyren Williams scored the first NFL touchdown ever in Australia.",
+   "text": "Kyren Williams scores Australia's first touchdown. A five yard run.",
+   "cap": "Kyren Williams scores Australia's first touchdown. A 5-yard run.",
    "key": [
     "FIRST"
    ],
@@ -321,28 +433,32 @@
     ]
    },
    "place": {
+    "capy": false,
+    "purdy": "right",
+    "stafford": false,
     "kyren": "center",
-    "purdy": "right"
+    "coach": false,
+    "fan": false
    },
    "shot": {
     "type": "medium",
     "on": "kyren"
    },
    "act": {
-    "kyren": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    },
     "purdy": {
      "mood": "worried",
      "action": "idle",
      "look": "kyren"
+    },
+    "kyren": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "It was also the last time the Rams scored.",
+   "text": "It's also the last time the Rams score.",
    "key": [
     "LAST"
    ],
@@ -350,7 +466,12 @@
     "capy": [
      -2.2,
      1.0
-    ]
+    ],
+    "purdy": "right",
+    "stafford": false,
+    "kyren": "center",
+    "coach": false,
+    "fan": false
    },
    "shot": {
     "type": "two",
@@ -363,6 +484,11 @@
      "action": "shrug",
      "look": "camera"
     },
+    "purdy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "kyren"
+    },
     "kyren": {
      "mood": "confused",
      "action": "idle",
@@ -372,8 +498,8 @@
    "speaker": "capy"
   },
   {
-   "text": "Brock Purdy threw three touchdown passes.",
-   "cap": "Brock Purdy threw 3 touchdown passes.",
+   "text": "Brock Purdy throws three touchdown passes.",
+   "cap": "Brock Purdy throws 3 touchdown passes.",
    "key": [
     "3"
    ],
@@ -383,9 +509,11 @@
    ],
    "place": {
     "capy": false,
-    "kyren": false,
     "purdy": "center",
-    "stafford": "right"
+    "stafford": "right",
+    "kyren": false,
+    "coach": false,
+    "fan": false
    },
    "shot": {
     "type": "low",
@@ -405,16 +533,68 @@
    }
   },
   {
-   "text": "And the reigning MVP was stopped on a sneak, one yard from the end zone.",
-   "cap": "And the reigning MVP was stopped on a sneak, 1 yard from the end zone.",
+   "text": "Matthew Stafford tries a sneak. From the one yard line.",
+   "cap": "Matthew Stafford tries a sneak. From the 1-yard line.",
    "key": [
-    "SNEAK,"
+    "SNEAK."
    ],
+   "board": [
+    "49ERS 24",
+    "RAMS 7"
+   ],
+   "place": {
+    "capy": false,
+    "purdy": "center",
+    "stafford": "right",
+    "kyren": false,
+    "coach": false,
+    "fan": false
+   },
    "shot": {
     "type": "high",
     "on": "stafford"
    },
    "act": {
+    "purdy": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    },
+    "stafford": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fourth down. Stopped.",
+   "cap": "4th down. Stopped.",
+   "key": [
+    "STOPPED."
+   ],
+   "board": [
+    "49ERS 24",
+    "RAMS 7"
+   ],
+   "place": {
+    "capy": false,
+    "purdy": "center",
+    "stafford": "right",
+    "kyren": false,
+    "coach": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "stafford"
+   },
+   "act": {
+    "purdy": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    },
     "stafford": {
      "mood": "sad",
      "action": "slump",
@@ -432,6 +612,14 @@
     "49ERS 27",
     "RAMS 7"
    ],
+   "place": {
+    "capy": false,
+    "purdy": "center",
+    "stafford": "right",
+    "kyren": false,
+    "coach": false,
+    "fan": false
+   },
    "shot": {
     "type": "wide",
     "on": "purdy"
@@ -441,11 +629,16 @@
      "mood": "happy",
      "action": "cheer",
      "look": "camera"
+    },
+    "stafford": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "The Rams coach said the travel plan was not why they lost.",
+   "text": "The Rams coach says travel isn't the reason.",
    "key": [
     "TRAVEL"
    ],
@@ -456,7 +649,12 @@
     ]
    },
    "place": {
-    "coach": "center"
+    "capy": false,
+    "purdy": false,
+    "stafford": false,
+    "kyren": false,
+    "coach": "center",
+    "fan": false
    },
    "shot": {
     "type": "medium",
@@ -471,10 +669,10 @@
    }
   },
   {
-   "text": "A week early, or the day before? Which would you pick?",
+   "text": "A week early, or two days before? Pick one. Rams fans, we know.",
+   "cap": "A week early, or 2 days before? Pick one. Rams fans, we know.",
    "key": [
-    "WEEK",
-    "DAY"
+    "WEEK"
    ],
    "set": "field",
    "setOpts": {
@@ -483,6 +681,10 @@
      "RAMS 7"
     ]
    },
+   "board": [
+    "A WEEK EARLY",
+    "OR 2 DAYS?"
+   ],
    "place": {
     "capy": [
      -1.6,
@@ -491,7 +693,11 @@
     "purdy": [
      0.6,
      0.2
-    ]
+    ],
+    "stafford": false,
+    "kyren": false,
+    "coach": false,
+    "fan": false
    },
    "shot": {
     "type": "two",
@@ -515,16 +721,113 @@
  ],
  "sources": [
   {
-   "title": "AP via ESPN: 49ers rout Rams 27-7 in NFL's first Australia game behind Brock Purdy's 3 TD passes",
-   "url": "https://www.espn.com/nfl/recap/_/gameId/401872657"
+   "title": "TSN (AP): 49ers rout Rams in NFL's first Australia game behind Purdy's three TD passes",
+   "url": "https://www.tsn.ca/nfl/article/49ers-rout-rams-in-nfls-first-australia-game-behind-purdys-three-td-passes/"
   },
   {
-   "title": "Reuters via The Star: 49ers beat Rams 27-7 in landmark Australia game",
+   "title": "ABC News (AP): 49ers rout Rams 27-7 in NFL's first Australia game",
+   "url": "https://abcnews.com/Sports/wireStory/49ers-rout-rams-27-7-nfls-australia-game-136355823"
+  },
+  {
+   "title": "News4Jax (AP): 49ers rout Rams 27-7 in NFL's first Australia game",
+   "url": "https://www.news4jax.com/sports/2026/09/11/49ers-rout-rams-27-7-in-nfls-first-australia-game-behind-brock-purdys-3-td-passes/"
+  },
+  {
+   "title": "ClickOrlando (AP): 49ers rout Rams 27-7 in NFL's first Australia game",
+   "url": "https://www.clickorlando.com/sports/2026/09/11/49ers-rout-rams-27-7-in-nfls-first-australia-game-behind-brock-purdys-3-td-passes/"
+  },
+  {
+   "title": "The Star (Reuters): Rams blunder Down Under as 49ers win landmark Australia game",
    "url": "https://www.thestar.com.my/sport/others/2026/09/11/nfl-49ers-beat-rams-27-7-in-landmark-australia-game"
   },
   {
-   "title": "The Nightly: Historic NFL game at the MCG",
-   "url": "https://thenightly.com.au/sport/historic-nfl-game-at-the-mcg-sees-49ers-hand-super-bowl-favourite-rams-worst-defeat-in-700-days-c-22855081"
+   "title": "NFL.com: Niners-Rams in Australia, what we learned",
+   "url": "https://www.nfl.com/news/niners-rams-in-australia-what-we-learned-from-san-francisco-s-27-7-win"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Kickoff was 10:35 a.m. local time on a Friday",
+   "terms": [
+    "10:35",
+    "Friday"
+   ]
+  },
+  {
+   "claim": "The Friday morning slot was for U.S. television",
+   "terms": [
+    "television|TV",
+    "Friday"
+   ]
+  },
+  {
+   "claim": "It was the NFL's first regular-season game in Australia",
+   "terms": [
+    "first",
+    "Australia"
+   ]
+  },
+  {
+   "claim": "The game was played at the Melbourne Cricket Ground",
+   "terms": [
+    "Melbourne Cricket Ground"
+   ]
+  },
+  {
+   "claim": "Attendance was 100,021",
+   "terms": [
+    "100,021"
+   ]
+  },
+  {
+   "claim": "The 49ers arrived a week early to adjust their body clocks",
+   "terms": [
+    "49ers",
+    "week early"
+   ]
+  },
+  {
+   "claim": "The Rams flew in less than two days before kickoff and kept their body clocks on California time",
+   "terms": [
+    "Rams",
+    "California time"
+   ]
+  },
+  {
+   "claim": "Kyren Williams scored the first touchdown in Australia, a 5-yard run",
+   "terms": [
+    "Williams",
+    "5-yard"
+   ]
+  },
+  {
+   "claim": "It was the Rams' only score (final 27-7)",
+   "terms": [
+    "27-7"
+   ]
+  },
+  {
+   "claim": "Brock Purdy threw three touchdown passes",
+   "terms": [
+    "Purdy",
+    "three|3",
+    "touchdown|TD"
+   ]
+  },
+  {
+   "claim": "Stafford was stopped on a fourth-down sneak from the 1-yard line",
+   "terms": [
+    "Stafford",
+    "sneak"
+   ]
+  },
+  {
+   "claim": "Rams coach Sean McVay said the travel plan was not why they lost",
+   "terms": [
+    "McVay",
+    "travel"
+   ]
   }
  ]
 }

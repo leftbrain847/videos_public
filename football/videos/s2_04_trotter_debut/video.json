@@ -64,10 +64,10 @@
  },
  "lines": [
   {
-   "text": "A rookie did something in his first NFL game that no rookie had ever done.",
+   "text": "Your first N F L game. You make history.",
+   "cap": "Your first NFL game. You make history.",
    "key": [
-    "FIRST",
-    "EVER"
+    "HISTORY."
    ],
    "place": {
     "capy": [
@@ -102,31 +102,49 @@
    "speaker": "capy"
   },
   {
-   "text": "Josiah Trotter. Linebacker. A second round pick out of Missouri.",
+   "text": "You're Josiah Trotter. A rookie linebacker from Missouri.",
    "key": [
-    "SECOND",
-    "ROUND"
+    "ROOKIE"
    ],
    "board": [
-    "ROUND 2",
+    "ROOKIE LB",
     "MISSOURI"
    ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "trotter": [
+     0,
+     0
+    ],
+    "burrow": false,
+    "receiver": false,
+    "coach": false
+   },
    "shot": {
     "type": "close",
     "on": "trotter"
    },
    "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
     "trotter": {
      "mood": "smug",
      "action": "cross",
      "look": "camera"
     }
-   }
+   },
+   "speaker": "capy"
   },
   {
-   "text": "Week one, on the road in Cincinnati. Against Joe Burrow.",
+   "text": "Week one. On the road in Cincinnati.",
    "key": [
-    "BURROW."
+    "CINCINNATI."
    ],
    "set": "field",
    "setOpts": {
@@ -136,24 +154,26 @@
     ]
    },
    "place": {
-    "burrow": "center",
+    "capy": false,
     "trotter": "right",
-    "receiver": "left"
+    "burrow": "center",
+    "receiver": "left",
+    "coach": false
    },
    "shot": {
     "type": "wide",
     "on": "burrow"
    },
    "act": {
-    "burrow": {
-     "mood": "neutral",
-     "action": "hold",
-     "look": "trotter"
-    },
     "trotter": {
      "mood": "angry",
      "action": "idle",
      "look": "burrow"
+    },
+    "burrow": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "trotter"
     },
     "receiver": {
      "mood": "neutral",
@@ -163,14 +183,66 @@
    }
   },
   {
-   "text": "First, he sacked Burrow. Tampa Bay's only sack of the day.",
+   "text": "Across from you? Joe Burrow.",
    "key": [
-    "ONLY"
+    "BURROW."
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     1.2
+    ],
+    "trotter": "right",
+    "burrow": "center",
+    "receiver": "left",
+    "coach": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "burrow"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "burrow"
+    },
+    "trotter": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "burrow"
+    },
+    "burrow": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "trotter"
+    },
+    "receiver": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "burrow"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Third quarter. You sack him. Nine yard loss.",
+   "cap": "3rd quarter. You sack him. 9-yard loss.",
+   "key": [
+    "SACK"
    ],
    "board": [
     "TB SACKS",
     "1"
    ],
+   "place": {
+    "capy": false,
+    "trotter": "right",
+    "burrow": "center",
+    "receiver": "left",
+    "coach": false
+   },
    "shot": {
     "type": "low",
     "on": "trotter"
@@ -183,13 +255,57 @@
     },
     "burrow": {
      "mood": "shocked",
-     "action": "idle"
+     "action": "idle",
+     "look": "trotter"
+    },
+    "receiver": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "burrow"
     }
    }
   },
   {
-   "text": "Third quarter. The Bucs are down fourteen.",
-   "cap": "Third quarter. The Bucs are down 14.",
+   "text": "It's your team's only sack all day.",
+   "key": [
+    "ONLY"
+   ],
+   "board": [
+    "TB SACKS",
+    "1"
+   ],
+   "place": {
+    "capy": false,
+    "trotter": "right",
+    "burrow": "center",
+    "receiver": "left",
+    "coach": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "trotter"
+   },
+   "act": {
+    "trotter": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "burrow": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "trotter"
+    },
+    "receiver": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "burrow"
+    }
+   }
+  },
+  {
+   "text": "Your Bucs are down fourteen. Twenty seven to thirteen.",
+   "cap": "Your Bucs are down 14. 27 to 13.",
    "key": [
     "14."
    ],
@@ -197,6 +313,13 @@
     "CIN 27",
     "TB 13"
    ],
+   "place": {
+    "capy": false,
+    "trotter": "right",
+    "burrow": "center",
+    "receiver": "left",
+    "coach": false
+   },
    "shot": {
     "type": "high",
     "on": "trotter"
@@ -209,7 +332,13 @@
     },
     "burrow": {
      "mood": "smug",
-     "action": "hold"
+     "action": "hold",
+     "look": "trotter"
+    },
+    "receiver": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "burrow"
     }
    }
   },
@@ -219,98 +348,447 @@
     "IOSIVAS."
    ],
    "shot": {
-    "type": "medium",
-    "on": "burrow"
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "burrow",
+    "lead": 0
    },
-   "act": {
-    "burrow": {
-     "mood": "neutral",
-     "action": "throw",
-     "look": "receiver"
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CIN 27",
+     "TB 13"
+    ],
+    "endZone": 20,
+    "zoneA": "#d50a0a",
+    "zoneB": "#fb4f14"
+   },
+   "play": {
+    "cast": {
+     "burrow": {
+      "path": [
+       [
+        0,
+        8,
+        0.5
+       ],
+       [
+        0.35,
+        10,
+        0.5
+       ],
+       [
+        1,
+        10,
+        0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.35,
+        "idle"
+       ],
+       [
+        0.55,
+        "throw"
+       ]
+      ],
+      "face": -90
+     },
+     "receiver": {
+      "path": [
+       [
+        0,
+        4,
+        -6
+       ],
+       [
+        0.4,
+        2.5,
+        -5.5
+       ],
+       [
+        1,
+        -0.5,
+        -3.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     },
+     "trotter": {
+      "path": [
+       [
+        0,
+        -4.5,
+        1.5
+       ],
+       [
+        0.5,
+        -4,
+        0.8
+       ],
+       [
+        1,
+        -3.5,
+        0.3
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.5,
+        "run"
+       ]
+      ],
+      "face": 90
+     }
     },
-    "receiver": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "burrow"
-    }
+    "ball": [
+     [
+      0.615,
+      9.6,
+      2.0,
+      0.6
+     ],
+     [
+      0.8,
+      6.5,
+      3.6,
+      -0.8
+     ],
+     [
+      1.0,
+      3.0,
+      3.0,
+      -1.8
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "burrow"
+     ]
+    ]
    }
   },
   {
-   "text": "Trotter undercuts the route and gets there first.",
+   "text": "You jump the route. You get there first.",
    "key": [
     "FIRST."
    ],
-   "place": {
-    "trotter": [
-     -1.0,
-     0.6
-    ]
-   },
+   "board": [
+    "CIN 27",
+    "TB 13"
+   ],
    "shot": {
-    "type": "two",
-    "on": "trotter",
-    "with": "receiver"
+    "type": "follow",
+    "on": "trotter"
    },
-   "act": {
-    "trotter": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "receiver"
+   "act": {},
+   "play": {
+    "cast": {
+     "burrow": {
+      "path": [
+       [
+        0,
+        10,
+        0.5
+       ],
+       [
+        1,
+        10,
+        0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     },
+     "receiver": {
+      "path": [
+       [
+        0,
+        -0.5,
+        -3.8
+       ],
+       [
+        0.35,
+        -2.5,
+        -4.0
+       ],
+       [
+        1,
+        -2.8,
+        -4.1
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.4,
+        "slump"
+       ]
+      ],
+      "face": -90
+     },
+     "trotter": {
+      "path": [
+       [
+        0,
+        -3.5,
+        0.3
+       ],
+       [
+        0.35,
+        -2.2,
+        -1.2
+       ],
+       [
+        1,
+        1.0,
+        -1.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.32,
+        "catch"
+       ],
+       [
+        0.45,
+        "run"
+       ]
+      ],
+      "face": 60
+     }
     },
-    "receiver": {
-     "mood": "shocked",
-     "action": "shrug",
-     "look": "trotter"
-    }
+    "ball": [
+     [
+      0.0,
+      3.0,
+      3.0,
+      -1.8
+     ],
+     [
+      0.18,
+      0.4,
+      2.6,
+      -1.5
+     ],
+     [
+      0.35,
+      -2.0,
+      1.6,
+      -1.2
+     ]
+    ],
+    "carry": [
+     [
+      0.35,
+      "trotter"
+     ]
+    ]
    }
   },
   {
    "text": "Thirty eight yards. Touchdown.",
    "cap": "38 yards. Touchdown.",
    "key": [
-    "38",
-    "TOUCHDOWN."
+    "38"
+   ],
+   "board": [
+    "CIN 27",
+    "TB 20"
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "trotter"
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "trotter": {
+      "path": [
+       [
+        0.0,
+        1.0,
+        -1.5
+       ],
+       [
+        0.085,
+        3.1,
+        -1.45
+       ],
+       [
+        0.17,
+        5.2,
+        -1.4
+       ],
+       [
+        0.255,
+        7.3,
+        -1.35
+       ],
+       [
+        0.34,
+        9.4,
+        -1.3
+       ],
+       [
+        0.425,
+        11.5,
+        -1.25
+       ],
+       [
+        0.51,
+        13.6,
+        -1.2
+       ],
+       [
+        0.595,
+        15.7,
+        -1.15
+       ],
+       [
+        0.68,
+        17.8,
+        -1.1
+       ],
+       [
+        0.765,
+        19.9,
+        -1.05
+       ],
+       [
+        0.85,
+        22.0,
+        -1.0
+       ],
+       [
+        0.925,
+        22,
+        -1.0
+       ],
+       [
+        1,
+        22,
+        -1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.86,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     },
+     "receiver": {
+      "path": [
+       [
+        0,
+        -2.8,
+        -4.1
+       ],
+       [
+        1,
+        13,
+        -3.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "burrow": {
+      "path": [
+       [
+        0,
+        10,
+        2.8
+       ],
+       [
+        1,
+        13,
+        3.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 70,
+      "mood": "sad"
+     }
+    },
+    "carry": [
+     [
+      0,
+      "trotter"
+     ]
+    ]
+   },
+   "sfx": [
+    [
+     0.85,
+     "roar"
+    ]
+   ]
+  },
+  {
+   "text": "Now it's twenty seven to twenty. A one score game.",
+   "cap": "Now it's 27 to 20. A one score game.",
+   "key": [
+    "27"
    ],
    "board": [
     "CIN 27",
     "TB 20"
    ],
    "place": {
-    "trotter": "center",
-    "burrow": "right"
-   },
-   "shot": {
-    "type": "wide",
-    "on": "trotter"
-   },
-   "act": {
-    "trotter": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    },
-    "burrow": {
-     "mood": "sad",
-     "action": "facepalm"
-    },
-    "receiver": {
-     "mood": "sad",
-     "action": "slump"
-    }
-   }
-  },
-  {
-   "text": "That cut the lead to seven, with two forty eight left in the quarter.",
-   "cap": "That cut the lead to 7, with 2:48 left in the quarter.",
-   "key": [
-    "7,"
-   ],
-   "place": {
     "capy": [
      -2.6,
      1.0
     ],
-    "receiver": false
+    "trotter": "center",
+    "burrow": "right",
+    "receiver": false,
+    "coach": false
    },
    "shot": {
     "type": "medium",
@@ -321,14 +799,24 @@
      "mood": "neutral",
      "action": "point",
      "look": "trotter"
+    },
+    "trotter": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "burrow": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "receiver"
     }
    },
    "speaker": "capy"
   },
   {
-   "text": "In practice that week, he played the same route too far inside.",
+   "text": "In practice, you saw that exact play.",
    "key": [
-    "PRACTICE"
+    "PRACTICE,"
    ],
    "set": "locker",
    "setOpts": {
@@ -338,7 +826,10 @@
     ]
    },
    "place": {
+    "capy": false,
     "trotter": "left",
+    "burrow": false,
+    "receiver": false,
     "coach": "right"
    },
    "shot": {
@@ -347,23 +838,30 @@
     "with": "trotter"
    },
    "act": {
-    "coach": {
-     "mood": "neutral",
-     "action": "point",
-     "look": "trotter"
-    },
     "trotter": {
      "mood": "worried",
      "action": "idle",
      "look": "coach"
+    },
+    "coach": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "trotter"
     }
    }
   },
   {
-   "text": "This time, he didn't.",
+   "text": "You were a step late. Not this time.",
    "key": [
-    "DIDN'T."
+    "TIME."
    ],
+   "place": {
+    "capy": false,
+    "trotter": "left",
+    "burrow": false,
+    "receiver": false,
+    "coach": "right"
+   },
    "shot": {
     "type": "medium",
     "on": "trotter"
@@ -376,14 +874,16 @@
     },
     "coach": {
      "mood": "happy",
-     "action": "clap"
+     "action": "clap",
+     "look": "trotter"
     }
    }
   },
   {
-   "text": "A sack and a pick six in one debut. No rookie had ever done both.",
+   "text": "A sack. A pick six. In one debut.",
+   "cap": "A sack. A pick-six. In one debut.",
    "key": [
-    "BOTH."
+    "PICK-SIX."
    ],
    "set": "office",
    "setOpts": {
@@ -393,7 +893,11 @@
     ]
    },
    "place": {
-    "capy": "center"
+    "capy": "center",
+    "trotter": false,
+    "burrow": false,
+    "receiver": false,
+    "coach": false
    },
    "shot": {
     "type": "medium",
@@ -409,8 +913,37 @@
    "speaker": "capy"
   },
   {
-   "text": "The bad news? Tampa Bay lost four fumbles.",
-   "cap": "The bad news? Tampa Bay lost 4 fumbles.",
+   "text": "No rookie had ever done both.",
+   "key": [
+    "BOTH."
+   ],
+   "board": [
+    "SACK + PICK-SIX",
+    "1ST ROOKIE EVER"
+   ],
+   "place": {
+    "capy": "center",
+    "trotter": false,
+    "burrow": false,
+    "receiver": false,
+    "coach": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The bad news? Your team loses four fumbles.",
+   "cap": "The bad news? Your team loses 4 fumbles.",
    "key": [
     "4"
    ],
@@ -422,35 +955,46 @@
     ]
    },
    "place": {
-    "coach": "sideline",
-    "trotter": "center"
+    "capy": false,
+    "trotter": "center",
+    "burrow": false,
+    "receiver": false,
+    "coach": "sideline"
    },
    "shot": {
     "type": "close",
     "on": "coach"
    },
    "act": {
+    "trotter": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    },
     "coach": {
      "mood": "sad",
      "action": "facepalm",
      "look": "camera"
-    },
-    "trotter": {
-     "mood": "sad",
-     "action": "idle"
     }
    }
   },
   {
-   "text": "And the game, thirty three to twenty seven.",
-   "cap": "And the game, 33 to 27.",
+   "text": "Bengals thirty three, Bucs twenty seven.",
+   "cap": "Bengals 33, Bucs 27.",
    "key": [
-    "33"
+    "33,"
    ],
    "board": [
     "CIN 33",
     "TB 27"
    ],
+   "place": {
+    "capy": false,
+    "trotter": "center",
+    "burrow": false,
+    "receiver": false,
+    "coach": "sideline"
+   },
    "shot": {
     "type": "high",
     "on": "trotter"
@@ -458,15 +1002,25 @@
    "act": {
     "trotter": {
      "mood": "sad",
-     "action": "slump"
+     "action": "slump",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Best debut ever, even in a loss? Yes or no?",
+   "text": "Best debut ever, even in a loss? Yes or no? Bucs, hold onto the ball.",
    "key": [
-    "BEST",
-    "DEBUT"
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "BEST DEBUT EVER?",
+    "YES OR NO?"
    ],
    "place": {
     "capy": [
@@ -477,6 +1031,8 @@
      0.6,
      0.2
     ],
+    "burrow": false,
+    "receiver": false,
     "coach": false
    },
    "shot": {
@@ -501,16 +1057,109 @@
  ],
  "sources": [
   {
-   "title": "Buccaneers.com: Inside the moment, Josiah Trotter's pick-six in Week 1",
+   "title": "Tampa Bay 28: Bucs rookie Josiah Trotter makes NFL history with sack and pick-six",
+   "url": "https://www.tampabay28.com/sports/bucs-rookie-josiah-trotter-makes-nfl-history-with-sack-and-pick-six-in-season-opener"
+  },
+  {
+   "title": "TSN (AP): Bengals force four turnovers, Burrow throws for TD in win over Buccaneers",
+   "url": "https://www.tsn.ca/nfl/article/bengals-force-four-turnovers-burrow-throws-for-td-in-win-over-buccaneers/"
+  },
+  {
+   "title": "ABC News (AP): Bengals force 4 turnovers in 33-27 win over the Buccaneers",
+   "url": "https://abcnews.com/Sports/wireStory/bengals-force-4-turnovers-burrow-throws-td-33-136409263"
+  },
+  {
+   "title": "WCPO (AP): Bengals force 4 turnovers in 33-27 win over the Buccaneers",
+   "url": "https://www.wcpo.com/sports/football/bengals/bengals-force-4-turnovers-burrow-throws-for-td-in-33-27-win-over-the-buccaneers"
+  },
+  {
+   "title": "Buccaneers.com: Inside the moment, Josiah Trotter's pick-six",
    "url": "https://www.buccaneers.com/news/inside-the-moment-josiah-trotter-pick-six-week-1-2026"
   },
   {
-   "title": "Tampa Bay 28: Bucs rookie Josiah Trotter makes NFL history with sack and pick-six in season opener",
-   "url": "https://www.tampabay28.com/sports/bucs-rookie-josiah-trotter-makes-nfl-history-with-sack-and-pick-six-in-season-opener"
+   "title": "Saturday Down South: Former Mizzou linebacker Josiah Trotter makes NFL history in his debut",
+   "url": "https://saturdaydownsouth.com/news/college-football/former-mizzou-linebacker-josiah-trotter-makes-nfl-history-in-his-debut/"
   },
   {
    "title": "ProFootballTalk: Bucs LB Josiah Trotter's pick-six, sack makes history in his debut",
    "url": "https://nbcsports.com/nfl/profootballtalk/rumor-mill/news/bucs-lb-josiah-trotters-pick-six-sack-makes-history-in-his-debut"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Josiah Trotter is a rookie linebacker from Missouri",
+   "terms": [
+    "Trotter",
+    "Missouri|Mizzou"
+   ]
+  },
+  {
+   "claim": "Week 1, Tampa Bay played at Cincinnati against Joe Burrow",
+   "terms": [
+    "Bengals|Cincinnati",
+    "Burrow"
+   ]
+  },
+  {
+   "claim": "In the third quarter Trotter sacked Burrow for a 9-yard loss",
+   "terms": [
+    "sack",
+    "9-yard"
+   ]
+  },
+  {
+   "claim": "It was Tampa Bay's only sack of the game",
+   "terms": [
+    "only sack"
+   ]
+  },
+  {
+   "claim": "Trotter intercepted a pass intended for Andrei Iosivas",
+   "terms": [
+    "Iosivas",
+    "Trotter"
+   ]
+  },
+  {
+   "claim": "He returned it 38 yards for a touchdown",
+   "terms": [
+    "38",
+    "Trotter"
+   ]
+  },
+  {
+   "claim": "It cut the Bengals' lead to 27-20",
+   "terms": [
+    "27-20"
+   ]
+  },
+  {
+   "claim": "Trotter had seen the same play in practice and had been late on it",
+   "terms": [
+    "practice",
+    "late"
+   ]
+  },
+  {
+   "claim": "He was the first rookie with a sack and a pick-six in his debut",
+   "terms": [
+    "first",
+    "sack",
+    "pick-six|pick six"
+   ]
+  },
+  {
+   "claim": "Tampa Bay lost four fumbles",
+   "terms": [
+    "four fumbles|4 fumbles|four turnovers|4 turnovers"
+   ]
+  },
+  {
+   "claim": "The Bengals won 33-27",
+   "terms": [
+    "33-27"
+   ]
   }
  ]
 }
