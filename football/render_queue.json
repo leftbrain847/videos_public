@@ -1,25 +1,10 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "stories-myth-2",
+ "release": "stories-scary-fixes",
  "listen": true,
  "replace": true,
  "videos": [
-  "myth_17_ganesha_race",
-  "myth_18_hercules_atlas",
-  "myth_19_augean_stables",
-  "myth_20_judgment_of_paris",
-  "myth_21_fenrir_ribbon",
-  "myth_22_susanoo_orochi",
-  "myth_23_amaterasu_cave",
-  "myth_24_isis_secret_name",
-  "myth_25_horus_stone_boats",
-  "myth_26_gilgamesh_plant",
-  "myth_27_persephone_seeds",
-  "myth_28_orpheus_look_back",
-  "myth_29_phaethon_chariot",
-  "myth_30_wukong_buddha_palm",
-  "myth_31_odysseus_plow",
-  "myth_32_maui_slows_sun"
+  "scary_32_mv_alta"
  ]
 }
