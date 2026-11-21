@@ -1,11 +1,11 @@
 {
  "id": "s2_19_four_picks_win",
  "title": "Four interceptions and a win",
- "set": "locker",
+ "set": "field",
  "setOpts": {
   "boardText": [
-   "PICKS:",
-   "4"
+   "BEARS",
+   "BUCS"
   ]
  },
  "cast": {
@@ -84,49 +84,41 @@
     -1.6,
     -2.4
    ]
+  },
+  "mayfield": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#d50a0a",
+    "pants": "#c9ced3",
+    "number": "6",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "right",
+   "hold": "football"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#d50a0a",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "Caleb Williams threw four interceptions in one game. His team won anyway.",
-   "cap": "Caleb Williams threw 4 interceptions in one game. His team won anyway.",
+   "text": "You throw four interceptions. Your team still wins.",
+   "cap": "You throw 4 interceptions. Your team still wins.",
    "key": [
-    "4"
+    "WINS."
    ],
-   "place": {
-    "lb": false,
-    "cb": false,
-    "te": false,
-    "kicker": false,
-    "capy": [
-     -2.4,
-     0.8
-    ]
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "qb"
-   },
-   "act": {
-    "capy": {
-     "mood": "smug",
-     "action": "talk",
-     "look": "camera"
-    },
-    "qb": {
-     "mood": "smug",
-     "action": "hold",
-     "look": "camera"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "Sunday night in Chicago. Bears against the Buccaneers.",
-   "key": [
-    "SUNDAY"
-   ],
+   "speaker": "capy",
    "set": "field",
    "setOpts": {
     "boardText": [
@@ -135,314 +127,20 @@
     ]
    },
    "place": {
-    "qb": "center",
-    "lb": "right"
-   },
-   "shot": {
-    "type": "wide",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "neutral",
-     "action": "hold"
-    },
-    "lb": {
-     "mood": "angry",
-     "action": "cross"
-    }
-   }
-  },
-  {
-   "text": "Interception one comes at the goal line. He said he got greedy.",
-   "key": [
-    "GREEDY."
-   ],
-   "shot": {
-    "type": "two",
-    "on": "qb",
-    "with": "lb"
-   },
-   "act": {
-    "qb": {
-     "mood": "sad",
-     "action": "facepalm"
-    },
-    "lb": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   }
-  },
-  {
-   "text": "Two more before halftime.",
-   "cap": "2 more before halftime.",
-   "key": [
-    "2"
-   ],
-   "shot": {
-    "type": "close",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "worried",
-     "action": "idle",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Number four gets tipped, and a linebacker catches it.",
-   "key": [
-    "TIPPED,"
-   ],
-   "shot": {
-    "type": "medium",
-    "on": "lb"
-   },
-   "act": {
-    "lb": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "camera"
-    },
-    "qb": {
-     "mood": "sad",
-     "action": "slump"
-    }
-   }
-  },
-  {
-   "text": "Add a fumble. That's five Bears turnovers.",
-   "cap": "Add a fumble. That's 5 Bears turnovers.",
-   "key": [
-    "5"
-   ],
-   "shot": {
-    "type": "high",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "sad",
-     "action": "slump"
-    },
-    "lb": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   }
-  },
-  {
-   "text": "But Chicago's defense picked off Baker Mayfield too.",
-   "key": [
-    "TOO."
-   ],
-   "place": {
-    "capy": [
-     -2.4,
-     0.9
-    ],
-    "cb": [
-     -0.6,
-     0.2
+    "qb": [
+     0.2,
+     0
     ],
     "lb": false,
-    "qb": [
-     2.2,
-     -1.6
-    ]
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "cb"
-   },
-   "act": {
-    "capy": {
-     "mood": "smug",
-     "action": "point",
-     "look": "cb"
-    },
-    "cb": {
-     "mood": "smug",
-     "action": "hold",
-     "look": "camera"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "Jaylon Johnson returned one sixty seven yards for a touchdown.",
-   "cap": "Jaylon Johnson returned one 67 yards for a touchdown.",
-   "key": [
-    "67"
-   ],
-   "place": {
-    "capy": false
-   },
-   "shot": {
-    "type": "low",
-    "on": "cb"
-   },
-   "act": {
-    "cb": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   }
-  },
-  {
-   "text": "Late in the fourth, Tampa ties it at twenty four.",
-   "cap": "Late in the 4th, Tampa ties it at 24.",
-   "key": [
-    "24."
-   ],
-   "place": {
-    "lb": "right",
-    "cb": false
-   },
-   "shot": {
-    "type": "medium",
-    "on": "lb"
-   },
-   "act": {
-    "lb": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    },
-    "qb": {
-     "mood": "worried"
-    }
-   }
-  },
-  {
-   "text": "Williams throws again. Colston Loveland, thirty eight yards.",
-   "cap": "Williams throws again. Colston Loveland, 38 yards.",
-   "key": [
-    "38"
-   ],
-   "place": {
-    "te": [
-     2.0,
-     -0.6
-    ],
-    "lb": false
-   },
-   "shot": {
-    "type": "two",
-    "on": "qb",
-    "with": "te"
-   },
-   "act": {
-    "qb": {
-     "mood": "happy",
-     "action": "throw",
-     "look": "te"
-    },
-    "te": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "qb"
-    }
-   }
-  },
-  {
-   "text": "Cairo Santos kicks from thirty eight as time expires. Bears win, twenty seven to twenty four.",
-   "cap": "Cairo Santos kicks from 38 as time expires. Bears win, 27 to 24.",
-   "key": [
-    "27"
-   ],
-   "place": {
-    "kicker": [
-     0,
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": false,
+    "capy": [
+     -2.4,
      0.8
     ]
-   },
-   "shot": {
-    "type": "wide",
-    "on": "kicker"
-   },
-   "act": {
-    "kicker": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "qb": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "te": {
-     "mood": "happy",
-     "action": "clap"
-    }
-   }
-  },
-  {
-   "text": "Williams after the game: I could throw a hundred picks in one game.",
-   "cap": "Williams after the game: \"I could throw 100 picks in one game.\"",
-   "key": [
-    "100"
-   ],
-   "set": "press",
-   "setOpts": {
-    "boardText": [
-     "BEARS 27",
-     "BUCS 24"
-    ]
-   },
-   "place": {
-    "qb": "center"
-   },
-   "shot": {
-    "type": "medium",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "smug",
-     "action": "talk",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "And he'll keep grippin' it and rippin' it.",
-   "key": [
-    "RIPPIN'"
-   ],
-   "shot": {
-    "type": "close",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "happy",
-     "action": "talk",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Is a win with four picks still a good game? Yes or no?",
-   "key": [
-    "PICKS"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "PICKS: 4",
-     "WINS: 1"
-    ]
-   },
-   "place": {
-    "capy": [
-     -1.6,
-     1.0
-    ],
-    "qb": "center"
    },
    "shot": {
     "type": "two",
@@ -458,28 +156,1677 @@
     "qb": {
      "mood": "smug",
      "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You're Caleb Williams. Sunday night, in Chicago. Big stage.",
+   "key": [
+    "CHICAGO."
+   ],
+   "board": [
+    "SUNDAY NIGHT",
+    "TB AT CHI"
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "lb": false,
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Pick one comes at the goal line. Ouch.",
+   "cap": "Pick 1 comes at the goal line. Ouch.",
+   "key": [
+    "GOAL"
+   ],
+   "board": [
+    "INT",
+    "1"
+   ],
+   "place": {
+    "qb": [
+     -1.4,
+     0
+    ],
+    "lb": [
+     1.6,
+     0
+    ],
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "lb"
+    },
+    "lb": {
+     "mood": "happy",
+     "action": "catch",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then two more. That's three. Still going.",
+   "cap": "Then 2 more. That's 3. Still going.",
+   "key": [
+    "3."
+   ],
+   "board": [
+    "INT",
+    "3"
+   ],
+   "speaker": "capy",
+   "place": {
+    "qb": [
+     1.6,
+     0
+    ],
+    "lb": false,
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "facepalm",
      "look": "capy"
     }
+   }
+  },
+  {
+   "text": "Number four gets tipped. Picked again. Wow.",
+   "cap": "Number 4 gets tipped. Picked again. Wow.",
+   "key": [
+    "4"
+   ],
+   "board": [
+    "INT",
+    "4"
+   ],
+   "place": {
+    "qb": false,
+    "lb": [
+     0,
+     0
+    ],
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": false,
+    "capy": false
    },
-   "speaker": "capy"
+   "shot": {
+    "type": "close",
+    "on": "lb"
+   },
+   "act": {
+    "lb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Add a fumble. Five turnovers. Five.",
+   "cap": "Add a fumble. 5 turnovers. 5.",
+   "key": [
+    "TURNOVERS."
+   ],
+   "board": [
+    "TURNOVERS",
+    "5"
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "lb": false,
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Somehow, you're still in this game. Seriously.",
+   "key": [
+    "STILL"
+   ],
+   "speaker": "capy",
+   "place": {
+    "qb": [
+     1.6,
+     0
+    ],
+    "lb": false,
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Your defense picks off Baker Mayfield too. Payback.",
+   "key": [
+    "MAYFIELD"
+   ],
+   "place": {
+    "qb": false,
+    "lb": false,
+    "cb": [
+     -2.0,
+     -0.4
+    ],
+    "te": false,
+    "kicker": false,
+    "mayfield": [
+     0,
+     0
+    ],
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "mayfield"
+   },
+   "act": {
+    "mayfield": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "cb": {
+     "mood": "happy",
+     "action": "catch",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Jaylon Johnson takes one back. Sixty seven yards. Touchdown.",
+   "cap": "Jaylon Johnson takes one back. 67 yards. Touchdown.",
+   "key": [
+    "67"
+   ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CHI",
+     "TB"
+    ],
+    "endZone": 16,
+    "zoneA": "#0b162a",
+    "zoneB": "#d50a0a"
+   },
+   "place": {
+    "capy": false,
+    "qb": false,
+    "lb": false,
+    "te": false,
+    "kicker": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow",
+    "on": "cb"
+   },
+   "sfx": [
+    [
+     0.92,
+     "roar"
+    ]
+   ],
+   "play": {
+    "cast": {
+     "mayfield": {
+      "path": [
+       [
+        0.0,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.032,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.065,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.097,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.129,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.161,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.194,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.226,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.258,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.29,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.323,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.355,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.387,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.419,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.452,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.484,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.516,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.548,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.581,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.613,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.645,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.677,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.71,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.742,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.774,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.806,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.839,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.871,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.903,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.935,
+        -10.0,
+        -2.0
+       ],
+       [
+        0.968,
+        -10.0,
+        -2.0
+       ],
+       [
+        1.0,
+        -10,
+        -2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.042,
+        "throw"
+       ],
+       [
+        0.293,
+        "facepalm"
+       ]
+      ],
+      "face": -90
+     },
+     "cb": {
+      "path": [
+       [
+        0.0,
+        -20.5,
+        -1.2
+       ],
+       [
+        0.035,
+        -20.08,
+        -0.83
+       ],
+       [
+        0.07,
+        -19.67,
+        -0.47
+       ],
+       [
+        0.105,
+        -19.25,
+        -0.1
+       ],
+       [
+        0.14,
+        -18.83,
+        0.27
+       ],
+       [
+        0.175,
+        -18.42,
+        0.63
+       ],
+       [
+        0.21,
+        -18.0,
+        1.0
+       ],
+       [
+        0.242,
+        -16.36,
+        1.0
+       ],
+       [
+        0.274,
+        -14.73,
+        1.0
+       ],
+       [
+        0.307,
+        -13.09,
+        1.0
+       ],
+       [
+        0.339,
+        -11.45,
+        1.0
+       ],
+       [
+        0.371,
+        -9.82,
+        1.0
+       ],
+       [
+        0.404,
+        -8.18,
+        1.0
+       ],
+       [
+        0.436,
+        -6.55,
+        1.0
+       ],
+       [
+        0.469,
+        -4.91,
+        1.0
+       ],
+       [
+        0.501,
+        -3.27,
+        1.0
+       ],
+       [
+        0.533,
+        -1.64,
+        1.0
+       ],
+       [
+        0.566,
+        0.0,
+        1.0
+       ],
+       [
+        0.598,
+        1.64,
+        1.0
+       ],
+       [
+        0.63,
+        3.27,
+        1.0
+       ],
+       [
+        0.663,
+        4.91,
+        1.0
+       ],
+       [
+        0.695,
+        6.55,
+        1.0
+       ],
+       [
+        0.728,
+        8.18,
+        1.0
+       ],
+       [
+        0.76,
+        9.82,
+        1.0
+       ],
+       [
+        0.792,
+        11.45,
+        1.0
+       ],
+       [
+        0.825,
+        13.09,
+        1.0
+       ],
+       [
+        0.857,
+        14.73,
+        1.0
+       ],
+       [
+        0.889,
+        16.36,
+        1.0
+       ],
+       [
+        0.922,
+        18.0,
+        1.0
+       ],
+       [
+        0.961,
+        18.15,
+        1.0
+       ],
+       [
+        1.0,
+        18.3,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.21,
+        "catch"
+       ],
+       [
+        0.241,
+        "run"
+       ],
+       [
+        0.922,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.084,
+      -10.3,
+      1.7,
+      -2
+     ],
+     [
+      0.147,
+      -14,
+      2.6,
+      -0.5
+     ],
+     [
+      0.21,
+      -18,
+      1.4,
+      1.0
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "mayfield"
+     ],
+     [
+      0.21,
+      "cb"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Late in the fourth, Tampa ties it. Twenty four all. Here we go.",
+   "cap": "Late in the fourth, Tampa ties it. 24-24. Here we go.",
+   "key": [
+    "24-24."
+   ],
+   "board": [
+    "CHI 24",
+    "TB 24"
+   ],
+   "place": {
+    "qb": false,
+    "lb": [
+     1.4,
+     0
+    ],
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": [
+     -1.2,
+     0
+    ],
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "mayfield",
+    "with": "lb"
+   },
+   "act": {
+    "mayfield": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "lb": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "mayfield"
+    }
+   }
+  },
+  {
+   "text": "You throw again. No fear. Colston Loveland. Thirty eight yards.",
+   "cap": "You throw again. No fear. Colston Loveland. 38 yards.",
+   "key": [
+    "38"
+   ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CHI 24",
+     "TB 24"
+    ],
+    "endZone": 45,
+    "zoneA": "#d50a0a",
+    "zoneB": "#0b162a"
+   },
+   "place": {
+    "capy": false,
+    "lb": false,
+    "cb": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "te",
+    "lead": 0
+   },
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        0.0,
+        0.0
+       ],
+       [
+        0.035,
+        -0.4,
+        0.0
+       ],
+       [
+        0.069,
+        -0.8,
+        0.0
+       ],
+       [
+        0.104,
+        -1.2,
+        0.0
+       ],
+       [
+        0.138,
+        -1.6,
+        0.0
+       ],
+       [
+        0.173,
+        -2.0,
+        0.0
+       ],
+       [
+        0.206,
+        -2.0,
+        0.0
+       ],
+       [
+        0.239,
+        -2.0,
+        0.0
+       ],
+       [
+        0.272,
+        -2.0,
+        0.0
+       ],
+       [
+        0.305,
+        -2.0,
+        0.0
+       ],
+       [
+        0.338,
+        -2.0,
+        0.0
+       ],
+       [
+        0.371,
+        -2.0,
+        0.0
+       ],
+       [
+        0.404,
+        -2.0,
+        0.0
+       ],
+       [
+        0.437,
+        -2.0,
+        0.0
+       ],
+       [
+        0.47,
+        -2.0,
+        0.0
+       ],
+       [
+        0.504,
+        -2.0,
+        0.0
+       ],
+       [
+        0.537,
+        -2.0,
+        0.0
+       ],
+       [
+        0.57,
+        -2.0,
+        0.0
+       ],
+       [
+        0.603,
+        -2.0,
+        0.0
+       ],
+       [
+        0.636,
+        -2.0,
+        0.0
+       ],
+       [
+        0.669,
+        -2.0,
+        0.0
+       ],
+       [
+        0.702,
+        -2.0,
+        0.0
+       ],
+       [
+        0.735,
+        -2.0,
+        0.0
+       ],
+       [
+        0.768,
+        -2.0,
+        0.0
+       ],
+       [
+        0.801,
+        -2.0,
+        0.0
+       ],
+       [
+        0.835,
+        -2.0,
+        0.0
+       ],
+       [
+        0.868,
+        -2.0,
+        0.0
+       ],
+       [
+        0.901,
+        -2.0,
+        0.0
+       ],
+       [
+        0.934,
+        -2.0,
+        0.0
+       ],
+       [
+        0.967,
+        -2.0,
+        0.0
+       ],
+       [
+        1.0,
+        -2,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.173,
+        "idle"
+       ],
+       [
+        0.216,
+        "throw"
+       ]
+      ],
+      "face": 90
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        4.0,
+        3.2
+       ],
+       [
+        0.034,
+        4.71,
+        3.14
+       ],
+       [
+        0.068,
+        5.43,
+        3.09
+       ],
+       [
+        0.102,
+        6.14,
+        3.03
+       ],
+       [
+        0.136,
+        6.86,
+        2.97
+       ],
+       [
+        0.169,
+        7.57,
+        2.91
+       ],
+       [
+        0.203,
+        8.29,
+        2.86
+       ],
+       [
+        0.237,
+        9.0,
+        2.8
+       ],
+       [
+        0.271,
+        9.71,
+        2.74
+       ],
+       [
+        0.305,
+        10.43,
+        2.69
+       ],
+       [
+        0.339,
+        11.14,
+        2.63
+       ],
+       [
+        0.373,
+        11.86,
+        2.57
+       ],
+       [
+        0.407,
+        12.57,
+        2.51
+       ],
+       [
+        0.441,
+        13.29,
+        2.46
+       ],
+       [
+        0.474,
+        14.0,
+        2.4
+       ],
+       [
+        0.51,
+        15.17,
+        2.4
+       ],
+       [
+        0.546,
+        16.33,
+        2.4
+       ],
+       [
+        0.582,
+        17.5,
+        2.4
+       ],
+       [
+        0.618,
+        18.67,
+        2.4
+       ],
+       [
+        0.654,
+        19.83,
+        2.4
+       ],
+       [
+        0.69,
+        21.0,
+        2.4
+       ],
+       [
+        0.725,
+        21.06,
+        2.4
+       ],
+       [
+        0.759,
+        21.11,
+        2.4
+       ],
+       [
+        0.793,
+        21.17,
+        2.4
+       ],
+       [
+        0.828,
+        21.22,
+        2.4
+       ],
+       [
+        0.862,
+        21.28,
+        2.4
+       ],
+       [
+        0.897,
+        21.33,
+        2.4
+       ],
+       [
+        0.931,
+        21.39,
+        2.4
+       ],
+       [
+        0.966,
+        21.44,
+        2.4
+       ],
+       [
+        1.0,
+        21.5,
+        2.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.474,
+        "catch"
+       ],
+       [
+        0.507,
+        "run"
+       ],
+       [
+        0.69,
+        "idle"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.259,
+      -1.7,
+      1.7,
+      0
+     ],
+     [
+      0.367,
+      6,
+      4.4,
+      1.2
+     ],
+     [
+      0.474,
+      14,
+      1.5,
+      2.4
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.474,
+      "te"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Cairo Santos, from thirty eight. Time expires. Good.",
+   "cap": "Cairo Santos, from 38. Time expires. Good.",
+   "key": [
+    "GOOD."
+   ],
+   "sfx": [
+    [
+     0.85,
+     "roar"
+    ]
+   ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CHI 24",
+     "TB 24"
+    ],
+    "endZone": 45,
+    "zoneA": "#d50a0a",
+    "zoneB": "#0b162a"
+   },
+   "place": {
+    "capy": false,
+    "qb": false,
+    "lb": false,
+    "cb": false,
+    "te": false,
+    "mayfield": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "kicker",
+    "lead": 0
+   },
+   "play": {
+    "cast": {
+     "kicker": {
+      "path": [
+       [
+        0.0,
+        24.8,
+        -4.6
+       ],
+       [
+        0.036,
+        25.47,
+        -4.47
+       ],
+       [
+        0.073,
+        26.13,
+        -4.33
+       ],
+       [
+        0.109,
+        26.8,
+        -4.2
+       ],
+       [
+        0.147,
+        26.81,
+        -4.2
+       ],
+       [
+        0.184,
+        26.82,
+        -4.2
+       ],
+       [
+        0.221,
+        26.82,
+        -4.2
+       ],
+       [
+        0.258,
+        26.83,
+        -4.2
+       ],
+       [
+        0.295,
+        26.84,
+        -4.2
+       ],
+       [
+        0.332,
+        26.85,
+        -4.2
+       ],
+       [
+        0.369,
+        26.86,
+        -4.2
+       ],
+       [
+        0.406,
+        26.87,
+        -4.2
+       ],
+       [
+        0.443,
+        26.88,
+        -4.2
+       ],
+       [
+        0.481,
+        26.88,
+        -4.2
+       ],
+       [
+        0.518,
+        26.89,
+        -4.2
+       ],
+       [
+        0.555,
+        26.9,
+        -4.2
+       ],
+       [
+        0.592,
+        26.91,
+        -4.2
+       ],
+       [
+        0.629,
+        26.92,
+        -4.2
+       ],
+       [
+        0.666,
+        26.93,
+        -4.2
+       ],
+       [
+        0.703,
+        26.93,
+        -4.2
+       ],
+       [
+        0.74,
+        26.94,
+        -4.2
+       ],
+       [
+        0.777,
+        26.95,
+        -4.2
+       ],
+       [
+        0.814,
+        26.96,
+        -4.2
+       ],
+       [
+        0.852,
+        26.97,
+        -4.2
+       ],
+       [
+        0.889,
+        26.98,
+        -4.2
+       ],
+       [
+        0.926,
+        26.98,
+        -4.2
+       ],
+       [
+        0.963,
+        26.99,
+        -4.2
+       ],
+       [
+        1.0,
+        27,
+        -4.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.109,
+        "kick"
+       ],
+       [
+        0.73,
+        "cheer"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.158,
+      27.2,
+      0.3,
+      -4
+     ],
+     [
+      0.395,
+      46.5,
+      5.5,
+      -4
+     ],
+     [
+      0.632,
+      66,
+      4.2,
+      -4
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Bears twenty seven, Bucs twenty four. Ballgame.",
+   "cap": "Bears 27, Bucs 24. Ballgame.",
+   "key": [
+    "27,"
+   ],
+   "board": [
+    "CHI 27",
+    "TB 24"
+   ],
+   "place": {
+    "qb": [
+     -1.2,
+     0
+    ],
+    "lb": false,
+    "cb": false,
+    "te": false,
+    "kicker": [
+     1.4,
+     0
+    ],
+    "mayfield": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "celebrate",
+     "look": "camera"
+    },
+    "kicker": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Your take after? You would throw a hundred more.",
+   "key": [
+    "HUNDRED"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "BEARS",
+     "POSTGAME"
+    ]
+   },
+   "place": {
+    "qb": [
+     0,
+     0.4
+    ],
+    "lb": false,
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Bucs fans, he is not sorry. Not one bit.",
+   "key": [
+    "SORRY."
+   ],
+   "speaker": "capy",
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "4 INT",
+     "1 WIN"
+    ]
+   },
+   "place": {
+    "qb": false,
+    "lb": false,
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
+    "capy": [
+     -1.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "angry",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Four picks, one win. Is that a good game? Yes or no?",
+   "cap": "4 picks, 1 win. Is that a good game? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "4 PICKS",
+    "1 WIN"
+   ],
+   "place": {
+    "qb": false,
+    "lb": false,
+    "cb": false,
+    "te": false,
+    "kicker": false,
+    "mayfield": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
   }
  ],
  "sources": [
   {
-   "title": "ESPN (ABC7 Chicago): Caleb Williams unfazed by 4 interceptions as Bears pull out win vs. Bucs",
-   "url": "https://abc7chicago.com/post/caleb-williams-unfazed-4-interceptions-bears-pull-win-bucs/20025828/"
-  },
-  {
-   "title": "AP (Spectrum News 13): Williams connects with Loveland to set up Santos' winning field goal as Bears edge Buccaneers 27-24",
+   "title": "Spectrum News 13 (AP): Williams connects with Loveland to set up Santos' winning field goal as Bears edge Buccaneers 27-24",
    "url": "https://mynews13.com/fl/orlando/sports/2026/11/09/williams-connects-with-loveland-to-set-up-santos--winning-field-goal-as-bears-edge-buccaneers-27-24"
   },
   {
-   "title": "ClutchPoints: Todd Bowles wondering how Tampa Bay lost to Bears despite 5 turnovers",
+   "title": "KNWA (AP): Williams connects with Loveland to set up Santos' winning field goal",
+   "url": "https://www.nwahomepage.com/news/national-sports/ap-williams-connects-with-loveland-to-set-up-santos-winning-field-goal-as-bears-edge-buccaneers-27-24/"
+  },
+  {
+   "title": "AccessWDUN (AP): Williams connects with Loveland to set up Santos' winning field goal",
+   "url": "https://accessnorthga.com/ap_article/williams-connects-with-loveland-to-set-up-santos-winning-field-goal-as-bears-edge-buccaneers-27-24"
+  },
+  {
+   "title": "Daily News-Record (AP): Williams connects with Loveland, Bears edge Buccaneers 27-24",
+   "url": "https://www.dnronline.com/associated_press/virginia/williams-connects-with-loveland-to-set-up-santos-winning-field-goal-as-bears-edge-buccaneers/article_ae463d6c-9cdd-5e68-abf6-0db2ec8bb63f.html"
+  },
+  {
+   "title": "ABC7 Chicago: Caleb Williams unfazed by 4 interceptions as Bears pull out win over Bucs",
+   "url": "https://abc7chicago.com/post/caleb-williams-unfazed-4-interceptions-bears-pull-win-bucs/20025828/"
+  },
+  {
+   "title": "ESPN: Bears' Williams has moved on from career-worst 4-INT game",
+   "url": "https://espn.com/nfl/story/_/id/50515291/bears-caleb-williams-moved-4-interception-game-frustration-lingers"
+  },
+  {
+   "title": "ClutchPoints: Todd Bowles wondering how Tampa Bay lost with Bears' 5 turnovers",
    "url": "https://clutchpoints.com/nfl/tampa-bay-buccaneers/buccaneers-news-todd-bowles-wondering-tampa-bay-lost-bears-5-turnovers"
   },
   {
-   "title": "NFL.com: 2026 NFL season, Week 9: What we learned from Sunday's games",
+   "title": "NFL.com: 2026 NFL season, Week 9, what we learned from Sunday's games",
    "url": "https://www.nfl.com/news/2026-nfl-season-week-9-what-we-learned-from-sunday-s-games"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Caleb Williams threw four interceptions and the Bears won",
+   "terms": [
+    "Williams",
+    "four interceptions|4 interceptions|4-INT|four picks"
+   ]
+  },
+  {
+   "claim": "It was Sunday night in Chicago",
+   "terms": [
+    "Sunday night"
+   ]
+  },
+  {
+   "claim": "The first interception came at the goal line",
+   "terms": [
+    "goal line"
+   ]
+  },
+  {
+   "claim": "The fourth interception was tipped",
+   "terms": [
+    "tipped|deflected"
+   ]
+  },
+  {
+   "claim": "The Bears had five turnovers including a fumble",
+   "terms": [
+    "five turnovers|5 turnovers"
+   ]
+  },
+  {
+   "claim": "Jaylon Johnson returned a Baker Mayfield interception 67 yards for a touchdown",
+   "terms": [
+    "Johnson",
+    "67"
+   ]
+  },
+  {
+   "claim": "Tampa tied it at 24 late in the fourth quarter",
+   "terms": [
+    "tied",
+    "24"
+   ]
+  },
+  {
+   "claim": "Williams hit Colston Loveland for 38 yards",
+   "terms": [
+    "Loveland",
+    "38"
+   ]
+  },
+  {
+   "claim": "Cairo Santos kicked a 38-yard field goal as time expired",
+   "terms": [
+    "Santos",
+    "time expired|expired"
+   ]
+  },
+  {
+   "claim": "Santos kicked from 38 yards",
+   "terms": [
+    "Santos",
+    "38"
+   ]
+  },
+  {
+   "claim": "Bears won 27-24",
+   "terms": [
+    "27-24"
+   ]
+  },
+  {
+   "claim": "Williams said he could throw a hundred more picks and would keep throwing",
+   "terms": [
+    "hundred|100",
+    "picks|interceptions"
+   ]
   }
  ]
 }
