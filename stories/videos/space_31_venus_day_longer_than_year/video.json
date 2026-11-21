@@ -1,0 +1,708 @@
+{
+ "id": "space_31_venus_day_longer_than_year",
+ "title": "On Venus, a day is longer than a year",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "VENUS"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "sci": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "kid": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f6d21f",
+    "pants": "#4a4a4a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   }
+  },
+  "eng": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8",
+    "headset": true
+   }
+  },
+  "eng2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "headset": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Picture a planet where one day lasts longer. Longer than a whole year. Welcome.",
+   "key": [
+    "YEAR."
+   ],
+   "board": [
+    "1 DAY > 1 YEAR",
+    "?!"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "sci": false,
+    "kid": [
+     2.6,
+     -0.6
+    ],
+    "eng": false,
+    "eng2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kid": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Welcome to Venus. Our closest planetary neighbor. Sounds cozy. It isn't.",
+   "key": [
+    "VENUS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "VENUS"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "sci": [
+     0,
+     0.4
+    ],
+    "kid": false,
+    "eng": false,
+    "eng2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Its trip around the sun? About two hundred twenty five Earth days.",
+   "cap": "Its trip around the sun? About 225 Earth days.",
+   "key": [
+    "225"
+   ],
+   "board": [
+    "1 YEAR",
+    "= 225 DAYS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "But spinning once? That takes about two hundred forty three days.",
+   "cap": "But spinning once? That takes about 243 days.",
+   "key": [
+    "243"
+   ],
+   "board": [
+    "1 SPIN",
+    "= 243 DAYS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "sci": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sci"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "sci"
+    },
+    "sci": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "One spin takes longer than a full lap. Weird. Very weird.",
+   "key": [
+    "WEIRD."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It also spins backwards. The sun rises in the west.",
+   "key": [
+    "WEST."
+   ],
+   "board": [
+    "SUNRISE:",
+    "WEST"
+   ],
+   "place": {
+    "capy": false,
+    "sci": [
+     -1.4,
+     0.3
+    ],
+    "kid": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "sci",
+    "with": "kid"
+   },
+   "act": {
+    "sci": {
+     "mood": "smug",
+     "action": "point",
+     "look": "kid"
+    },
+    "kid": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "sci"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Now the weather report. It's hot. Very hot. No, hotter than that.",
+   "key": [
+    "HOT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "kid"
+   },
+   "act": {
+    "kid": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The surface sits around nine hundred degrees Fahrenheit.",
+   "cap": "The surface sits around 900 degrees Fahrenheit.",
+   "key": [
+    "900"
+   ],
+   "board": [
+    "SURFACE",
+    "~900°F"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "kid": [
+     2.6,
+     -0.6
+    ],
+    "sci": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kid": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Hot enough to melt lead. Hotter than Mercury. Even though Mercury is closer to the sun.",
+   "key": [
+    "LEAD."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Why? A thick carbon dioxide blanket. It traps all the heat. Nothing escapes.",
+   "key": [
+    "TRAPS"
+   ],
+   "place": {
+    "capy": false,
+    "kid": false,
+    "sci": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The air pressure is crushing. Like being deep under the ocean. Half a mile down.",
+   "key": [
+    "CRUSHING."
+   ],
+   "board": [
+    "PRESSURE",
+    "~90x EARTH"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "sci",
+    "offset": [
+     0.4,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "sci": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The clouds? Made of sulfuric acid. Of course they are.",
+   "key": [
+    "ACID."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "sci": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sci"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen eighty two. A Soviet lander touches down anyway. Venera thirteen. Brave robot.",
+   "cap": "1982. A Soviet lander touches down anyway. Venera 13. Brave robot.",
+   "key": [
+    "VENERA"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "VENERA 13",
+     "1982"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "sci": false,
+    "kid": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "eng",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "eng": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "It sent back color pictures from the surface. The first ones ever.",
+   "key": [
+    "COLOR"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It survived about two hours. Then Venus cooked it. Rest in peace.",
+   "key": [
+    "COOKED"
+   ],
+   "board": [
+    "SURVIVED:",
+    "~2 HOURS"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "eng",
+    "with": "eng2"
+   },
+   "act": {
+    "eng": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Long days. Short years. Acid rain. Lava heat. Zero stars.",
+   "key": [
+    "ZERO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": false,
+    "eng2": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Would you visit Venus for one day? Yes or no? Just one.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "ONE VENUS DAY?",
+    "YES OR NO"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "NASA Science: Venus facts",
+   "url": "https://science.nasa.gov/venus/facts/"
+  },
+  {
+   "title": "NASA Space Place: all about Venus",
+   "url": "https://spaceplace.nasa.gov/all-about-venus/en/"
+  },
+  {
+   "title": "National Geographic: Venus, explained",
+   "url": "https://www.nationalgeographic.com/science/article/venus-1"
+  },
+  {
+   "title": "WorldAtlas: which planet has days longer than its years",
+   "url": "https://www.worldatlas.com/space/which-planet-has-days-longer-than-its-years.html"
+  },
+  {
+   "title": "Astronomy: Venus, our mysterious neighbor",
+   "url": "https://www.astronomy.com/science/venus-our-mysterious-neighbor/"
+  },
+  {
+   "title": "Wikipedia: Venus",
+   "url": "https://en.wikipedia.org/wiki/Venus"
+  },
+  {
+   "title": "Wikipedia: Venera 13",
+   "url": "https://en.wikipedia.org/wiki/Venera_13"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "A day on Venus is longer than its year",
+   "terms": [
+    "day",
+    "longer than",
+    "year"
+   ]
+  },
+  {
+   "claim": "Venus orbits the Sun in about 225 Earth days",
+   "terms": [
+    "225"
+   ]
+  },
+  {
+   "claim": "Venus rotates once in about 243 Earth days",
+   "terms": [
+    "243"
+   ]
+  },
+  {
+   "claim": "Venus spins backwards; the Sun rises in the west",
+   "terms": [
+    "west"
+   ]
+  },
+  {
+   "claim": "The surface is about 900 degrees Fahrenheit",
+   "terms": [
+    "900"
+   ]
+  },
+  {
+   "claim": "It is hot enough to melt lead",
+   "terms": [
+    "lead"
+   ]
+  },
+  {
+   "claim": "Venus is hotter than Mercury, though Mercury is closer to the Sun",
+   "terms": [
+    "Mercury",
+    "hotter|hottest"
+   ]
+  },
+  {
+   "claim": "A thick carbon dioxide atmosphere traps heat",
+   "terms": [
+    "carbon dioxide",
+    "heat|greenhouse"
+   ]
+  },
+  {
+   "claim": "Surface pressure is like being deep in the ocean, about 90 times Earth's",
+   "terms": [
+    "90|ocean"
+   ]
+  },
+  {
+   "claim": "The clouds are sulfuric acid",
+   "terms": [
+    "sulfuric acid|sulphuric acid"
+   ]
+  },
+  {
+   "claim": "Venera 13 landed in 1982 and sent color pictures",
+   "terms": [
+    "Venera 13",
+    "1982"
+   ]
+  },
+  {
+   "claim": "Venera 13 sent the first color images from the surface of Venus",
+   "terms": [
+    "first",
+    "color|colour"
+   ]
+  },
+  {
+   "claim": "The pressure is like being about 900 meters, or half a mile, under the ocean",
+   "terms": [
+    "900 m|900 meters|3,000 feet|half a mile|1 km|kilometer"
+   ]
+  },
+  {
+   "claim": "It survived about two hours (127 minutes)",
+   "terms": [
+    "127 minutes|127"
+   ]
+  }
+ ]
+}
