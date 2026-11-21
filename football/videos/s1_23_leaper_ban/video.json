@@ -83,11 +83,41 @@
    "at": "desk"
   }
  },
+ "sources": [
+  {
+   "title": "SI: Kam Chancellor, Seahawks vs Panthers (Jan 11, 2015)",
+   "url": "https://www.si.com/nfl/2015/01/11/kam-chancellor-seattle-seahawks-carolina-panthers"
+  },
+  {
+   "title": "Seahawks.com: NFL prohibits leaping block, announces other rule changes for 2017",
+   "url": "https://seahawks.com/news/nfl-prohibits-leaping-block-announces-other-rule-changes-for-2017-184783"
+  },
+  {
+   "title": "CBS Sports: NFL passes rules banning field-goal leaps and allowing ejections for illegal hits",
+   "url": "https://www.cbssports.com/nfl/news/nfl-passes-rules-banning-blocked-field-goals-and-allowing-ejections-for-illegal-hits"
+  },
+  {
+   "title": "SI: Field goal, extra point leaping banned",
+   "url": "https://www.si.com/nfl/2017/03/28/field-goal-extra-point-leaping-banned"
+  },
+  {
+   "title": "Rams.com: NFL approved 2017 playing rules proposals",
+   "url": "https://www.therams.com/news/nfl-approved-2017-playing-rules-proposals-18691035"
+  },
+  {
+   "title": "NFL.com: In or out? Broncos return blocked PAT for win",
+   "url": "https://www.nfl.com/news/in-or-out-broncos-return-blocked-pat-for-win-0ap3000000738636"
+  },
+  {
+   "title": "ESPN: Saints season back on the brink after Broncos' stunning blocked extra point",
+   "url": "https://www.espn.com/blog/new-orleans-saints/post/_/id/24297/saints-season-back-on-the-brink-after-broncos-stunning-blocked-extra-point"
+  }
+ ],
  "lines": [
   {
-   "text": "For a few years, NFL defenders could jump right over the line to block kicks. Then it got banned.",
+   "text": "You jump over the entire line. Then they ban it.",
    "key": [
-    "JUMP"
+    "BAN"
    ],
    "place": {
     "kick": false,
@@ -123,13 +153,10 @@
    "speaker": "capy"
   },
   {
-   "text": "January 2015. Playoffs. Seattle against Carolina.",
+   "text": "January twenty fifteen. Playoffs. Carolina visits your Seahawks.",
+   "cap": "January 2015. Playoffs. Carolina visits your Seahawks.",
    "key": [
     "PLAYOFFS."
-   ],
-   "board": [
-    "PANTHERS",
-    "AT SEAHAWKS"
    ],
    "place": {
     "capy": false,
@@ -163,13 +190,16 @@
      "mood": "angry",
      "action": "idle"
     }
-   }
+   },
+   "board": [
+    "PANTHERS",
+    "AT SEAHAWKS"
+   ]
   },
   {
-   "text": "Carolina lines up for a field goal. Routine.",
+   "text": "Carolina lines up for a field goal. Very routine.",
    "key": [
-    "FIELD",
-    "GOAL"
+    "ROUTINE."
    ],
    "shot": {
     "type": "medium",
@@ -184,9 +214,9 @@
    }
   },
   {
-   "text": "Seahawks safety Kam Chancellor runs at the line, and leaps right over it.",
+   "text": "You're Kam Chancellor. You sprint at the line.",
    "key": [
-    "LEAPS"
+    "SPRINT"
    ],
    "shot": {
     "type": "low",
@@ -206,7 +236,24 @@
    }
   },
   {
-   "text": "Carolina tries again. He does it again.",
+   "text": "You leap right over it.",
+   "key": [
+    "LEAP"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "kam"
+   },
+   "act": {
+    "kam": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Carolina kicks again. You leap again.",
    "key": [
     "AGAIN."
    ],
@@ -227,12 +274,12 @@
    }
   },
   {
-   "text": "Two leaps, on back-to-back kicks, in a playoff game.",
+   "text": "Two leaps. Back to back. In a playoff game.",
+   "cap": "2 leaps. Back to back. In a playoff game.",
    "key": [
     "2",
-    "LEAPS,"
+    "LEAPS."
    ],
-   "cap": "2 leaps, on back-to-back kicks, in a playoff game.",
    "shot": {
     "type": "high",
     "on": "kam"
@@ -243,6 +290,44 @@
      "action": "clap"
     }
    }
+  },
+  {
+   "text": "Defenders flying over linemen. Kickers start praying.",
+   "key": [
+    "PRAYING."
+   ],
+   "place": {
+    "kick": false,
+    "snap": false,
+    "sim": false,
+    "exec": false,
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "kam": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kam"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "kam": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
   },
   {
    "text": "Was any of it illegal? Not at all.",
@@ -269,13 +354,10 @@
    "speaker": "capy"
   },
   {
-   "text": "In November 2016, Denver safety Justin Simmons leapt over the line and blocked an extra point.",
+   "text": "Twenty sixteen. Denver's Justin Simmons leaps. He blocks an extra point.",
+   "cap": "2016. Denver's Justin Simmons leaps. He blocks an extra point.",
    "key": [
-    "BLOCKED"
-   ],
-   "board": [
-    "BRONCOS",
-    "AT SAINTS"
+    "BLOCKS"
    ],
    "place": {
     "sim": [
@@ -297,12 +379,17 @@
      "action": "cheer",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "BRONCOS",
+    "AT SAINTS"
+   ]
   },
   {
-   "text": "So in March 2017, the owners voted on a proposal from the Philadelphia Eagles.",
+   "text": "March twenty seventeen. The Eagles propose a ban.",
+   "cap": "March 2017. The Eagles propose a ban.",
    "key": [
-    "EAGLES."
+    "EAGLES"
    ],
    "set": "office",
    "setOpts": {
@@ -311,10 +398,6 @@
      "NO LEAPING"
     ]
    },
-   "board": [
-    "PROPOSAL:",
-    "NO LEAPING"
-   ],
    "place": {
     "exec": "desk",
     "capy": "left"
@@ -334,12 +417,17 @@
      "action": "idle",
      "look": "exec"
     }
-   }
+   },
+   "board": [
+    "PROPOSAL:",
+    "NO LEAPING"
+   ]
   },
   {
-   "text": "Ban the leap on field goals and extra points.",
+   "text": "No leaping on field goals or extra points.",
    "key": [
-    "BAN"
+    "NO",
+    "LEAPING"
    ],
    "shot": {
     "type": "close",
@@ -354,13 +442,9 @@
    }
   },
   {
-   "text": "It passed.",
+   "text": "The owners pass it. Leap season is over.",
    "key": [
-    "PASSED."
-   ],
-   "board": [
-    "LEAPER BLOCK:",
-    "BANNED"
+    "PASS"
    ],
    "shot": {
     "type": "wide",
@@ -376,10 +460,14 @@
      "action": "idle",
      "look": "exec"
     }
-   }
+   },
+   "board": [
+    "LEAPER BLOCK:",
+    "BANNED"
+   ]
   },
   {
-   "text": "Now, running forward and leaping over the line on a kick is a foul.",
+   "text": "Now that leap is a foul. So gravity wins.",
    "key": [
     "FOUL."
    ],
@@ -403,7 +491,7 @@
    "speaker": "capy"
   },
   {
-   "text": "The leap lasted a few seasons. The highlights will last forever.",
+   "text": "The leap lasted a few seasons. The highlights last forever.",
    "key": [
     "FOREVER."
    ],
@@ -413,9 +501,6 @@
      "HIGHLIGHTS"
     ]
    },
-   "board": [
-    "HIGHLIGHTS"
-   ],
    "place": {
     "kam": "right",
     "capy": "left"
@@ -435,10 +520,13 @@
      "action": "idle",
      "look": "kam"
     }
-   }
+   },
+   "board": [
+    "HIGHLIGHTS"
+   ]
   },
   {
-   "text": "Should the NFL bring back the leap? Yes or no?",
+   "text": "Should the leap come back? Yes or no? Panthers fans, duck.",
    "key": [
     "YES",
     "NO?"
@@ -463,34 +551,57 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "SI: Kam Chancellor, Seahawks vs Panthers (Jan 11, 2015)",
-   "url": "https://www.si.com/nfl/2015/01/11/kam-chancellor-seattle-seahawks-carolina-panthers"
+   "claim": "In January 2015 the Panthers played at Seattle in the playoffs",
+   "terms": [
+    "Panthers",
+    "Seahawks",
+    "playoff"
+   ]
   },
   {
-   "title": "Seahawks.com: NFL prohibits leaping block, announces other rule changes for 2017",
-   "url": "https://seahawks.com/news/nfl-prohibits-leaping-block-announces-other-rule-changes-for-2017-184783"
+   "claim": "Kam Chancellor leaped over the line on field goal attempts",
+   "terms": [
+    "Chancellor",
+    "leap|jump|hurdl"
+   ]
   },
   {
-   "title": "CBS Sports: NFL passes rules banning field-goal leaps and allowing ejections for illegal hits",
-   "url": "https://www.cbssports.com/nfl/news/nfl-passes-rules-banning-blocked-field-goals-and-allowing-ejections-for-illegal-hits"
+   "claim": "He did it on back-to-back kicks",
+   "terms": [
+    "Chancellor",
+    "back-to-back|twice|again|second"
+   ]
   },
   {
-   "title": "SI: Field goal, extra point leaping banned",
-   "url": "https://www.si.com/nfl/2017/03/28/field-goal-extra-point-leaping-banned"
+   "claim": "It was legal at the time",
+   "terms": [
+    "Chancellor",
+    "legal"
+   ]
   },
   {
-   "title": "Rams.com: NFL approved 2017 playing rules proposals",
-   "url": "https://www.therams.com/news/nfl-approved-2017-playing-rules-proposals-18691035"
+   "claim": "In 2016 Justin Simmons leaped and blocked an extra point",
+   "terms": [
+    "Simmons",
+    "extra point"
+   ]
   },
   {
-   "title": "NFL.com: In or out? Broncos return blocked PAT for win",
-   "url": "https://www.nfl.com/news/in-or-out-broncos-return-blocked-pat-for-win-0ap3000000738636"
+   "claim": "In March 2017 the owners approved an Eagles proposal banning leaping on field goals and extra points",
+   "terms": [
+    "leap",
+    "field goal"
+   ]
   },
   {
-   "title": "ESPN: Saints season back on the brink after Broncos' stunning blocked extra point",
-   "url": "https://www.espn.com/blog/new-orleans-saints/post/_/id/24297/saints-season-back-on-the-brink-after-broncos-stunning-blocked-extra-point"
+   "claim": "The ban passed",
+   "terms": [
+    "leap",
+    "ban|prohibit"
+   ]
   }
  ]
 }

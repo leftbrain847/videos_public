@@ -102,13 +102,38 @@
    "at": "desk"
   }
  },
+ "sources": [
+  {
+   "title": "NFL.com: In or out? Broncos return blocked PAT for win",
+   "url": "https://www.nfl.com/news/in-or-out-broncos-return-blocked-pat-for-win-0ap3000000738636"
+  },
+  {
+   "title": "ESPN: Saints season back on the brink after Broncos' stunning blocked extra point",
+   "url": "https://www.espn.com/blog/new-orleans-saints/post/_/id/24297/saints-season-back-on-the-brink-after-broncos-stunning-blocked-extra-point"
+  },
+  {
+   "title": "NFL Football Operations: Extra point tries no longer automatic",
+   "url": "https://operations.nfl.com/updates/the-game/extra-point-tries-no-longer-automatic/"
+  },
+  {
+   "title": "NFL.com: Goodell: Moving PATs back achieved what we wanted",
+   "url": "https://www.nfl.com/_amp/goodell-moving-pats-back-achieved-what-we-wanted-0ap3000000631461"
+  },
+  {
+   "title": "Seahawks.com: NFL moves extra point to 15-yard line, defenses can return failed two-point tries",
+   "url": "https://www.seahawks.com/news/nfl-moves-extra-point-to-15-yard-line-defenses-can-return-failed-two-poin-124041"
+  },
+  {
+   "title": "SI: NFL extra point rule change 2015 season",
+   "url": "https://www.si.com/nfl/2015/05/18/nfl-extra-point-rule-change-2015-season"
+  }
+ ],
  "lines": [
   {
-   "text": "Since 2015, the defense can score on an extra point. Two points.",
+   "text": "Your extra point gets blocked. The other team scores.",
    "key": [
-    "DEFENSE"
+    "SCORES."
    ],
-   "cap": "Since 2015, the defense can score on an extra point. 2 points.",
    "place": {
     "sim": false,
     "kick": false,
@@ -140,11 +165,11 @@
    "speaker": "capy"
   },
   {
-   "text": "Here's what changed. In 2015, the NFL moved the extra point back to the fifteen yard line.",
+   "text": "Twenty fifteen. The league moves the extra point back.",
+   "cap": "2015. The league moves the extra point back.",
    "key": [
-    "15-YARD"
+    "BACK."
    ],
-   "cap": "Here's what changed. In 2015, the NFL moved the extra point back to the 15-yard line.",
    "set": "office",
    "setOpts": {
     "boardText": [
@@ -152,10 +177,6 @@
      "SNAP: 15-YD LINE"
     ]
    },
-   "board": [
-    "EXTRA POINT",
-    "SNAP: 15-YD LINE"
-   ],
    "place": {
     "exec": "desk",
     "capy": "left"
@@ -175,14 +196,18 @@
      "action": "idle",
      "look": "exec"
     }
-   }
+   },
+   "board": [
+    "EXTRA POINT",
+    "SNAP: 15-YD LINE"
+   ]
   },
   {
-   "text": "That's a thirty three yard kick.",
+   "text": "That's a thirty three yard kick now.",
+   "cap": "That's a 33-yard kick now.",
    "key": [
     "33-YARD"
    ],
-   "cap": "That's a 33-yard kick.",
    "shot": {
     "type": "close",
     "on": "exec"
@@ -196,14 +221,10 @@
    }
   },
   {
-   "text": "Kickers had been making over ninety nine percent. That season, about ninety four.",
+   "text": "Kickers made over ninety nine percent. Now, about ninety four.",
+   "cap": "Kickers made over 99%. Now, about 94.",
    "key": [
     "94."
-   ],
-   "cap": "Kickers had been making over 99%. That season, about 94.",
-   "board": [
-    "MADE: 99%",
-    "NOW: 94%"
    ],
    "shot": {
     "type": "two",
@@ -222,18 +243,17 @@
      "look": "capy"
     }
    },
+   "board": [
+    "MADE: 99%",
+    "NOW: 94%"
+   ],
    "speaker": "capy"
   },
   {
-   "text": "And a new twist. If the kick is blocked, the defense can run it back. For two points.",
+   "text": "The twist? The defense can return it now. For two points.",
+   "cap": "The twist? The defense can return it now. For 2 points.",
    "key": [
-    "RUN",
-    "BACK."
-   ],
-   "cap": "And a new twist. If the kick is blocked, the defense can run it back. For 2 points.",
-   "board": [
-    "BLOCKED?",
-    "DEFENSE: +2"
+    "RETURN"
    ],
    "shot": {
     "type": "wide",
@@ -250,14 +270,18 @@
      "action": "idle",
      "look": "exec"
     }
-   }
+   },
+   "board": [
+    "BLOCKED?",
+    "DEFENSE: +2"
+   ]
   },
   {
-   "text": "November 2016. Broncos at Saints. New Orleans scores to tie it, twenty three all.",
+   "text": "November twenty sixteen. Your Saints host Denver.",
+   "cap": "November 2016. Your Saints host Denver.",
    "key": [
-    "23"
+    "DENVER."
    ],
-   "cap": "November 2016. Broncos at Saints. New Orleans scores to tie it, 23 all.",
    "set": "field",
    "setOpts": {
     "boardText": [
@@ -265,10 +289,6 @@
      "SAINTS 23"
     ]
    },
-   "board": [
-    "BRONCOS 23",
-    "SAINTS 23"
-   ],
    "place": {
     "kick": [
      1.4,
@@ -308,14 +328,18 @@
      "mood": "worried",
      "action": "idle"
     }
-   }
+   },
+   "board": [
+    "BRONCOS 23",
+    "SAINTS 23"
+   ]
   },
   {
-   "text": "One minute twenty two left. The Saints just need the extra point.",
+   "text": "You score to tie it, twenty three all.",
+   "cap": "You score to tie it, 23 all.",
    "key": [
-    "1:22"
+    "23"
    ],
-   "cap": "1:22 left. The Saints just need the extra point.",
    "shot": {
     "type": "medium",
     "on": "kick"
@@ -329,70 +353,544 @@
    }
   },
   {
-   "text": "Broncos safety Justin Simmons leaps over the line and blocks it.",
+   "text": "One minute twenty two left. Just kick the extra point.",
+   "cap": "1:22 left. Just kick the extra point.",
    "key": [
-    "BLOCKS"
+    "1:22"
    ],
    "shot": {
-    "type": "low",
-    "on": "sim"
+    "type": "two",
+    "on": "kick",
+    "with": "saint"
    },
    "act": {
-    "sim": {
-     "mood": "angry",
-     "action": "cheer",
+    "kick": {
+     "mood": "smug",
+     "action": "idle",
      "look": "camera"
     },
-    "kick": {
-     "mood": "shocked",
-     "action": "facepalm"
+    "saint": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "kick"
     }
    }
   },
   {
-   "text": "Will Parks scoops it up and runs.",
+   "text": "What could go wrong? Everything, it turns out.",
+   "key": [
+    "EVERYTHING,"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "parks": [
+     1.0,
+     0
+    ],
+    "kick": false,
+    "saint": false,
+    "sim": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "parks"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "parks": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Justin Simmons leaps over the line. Blocked.",
+   "key": [
+    "BLOCKED."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BRONCOS 23",
+     "SAINTS 23"
+    ],
+    "endZone": 8,
+    "zoneA": "#fb4f14",
+    "zoneB": "#1b1b1b"
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "sim",
+    "lead": 0,
+    "z": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "kick": {
+      "path": [
+       [
+        0.0,
+        1.0,
+        0.6
+       ],
+       [
+        0.045,
+        1.3,
+        0.55
+       ],
+       [
+        0.09,
+        1.6,
+        0.5
+       ],
+       [
+        0.135,
+        1.9,
+        0.45
+       ],
+       [
+        0.18,
+        2.2,
+        0.4
+       ],
+       [
+        1.0,
+        2.2,
+        0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.1144,
+        "kick"
+       ],
+       [
+        0.5,
+        "idle"
+       ]
+      ],
+      "face": 90,
+      "mood": "shocked"
+     },
+     "sim": {
+      "path": [
+       [
+        0.0,
+        8.0,
+        -0.4
+       ],
+       [
+        0.0875,
+        7.35,
+        -0.35
+       ],
+       [
+        0.175,
+        6.7,
+        -0.3
+       ],
+       [
+        0.2625,
+        6.05,
+        -0.25
+       ],
+       [
+        0.35,
+        5.4,
+        -0.2
+       ],
+       [
+        1.0,
+        5.4,
+        -0.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.35,
+        "cheer"
+       ]
+      ],
+      "face": -90
+     },
+     "parks": {
+      "path": [
+       [
+        0.0,
+        8.2,
+        2.6
+       ],
+       [
+        0.25,
+        7.6,
+        2.55
+       ],
+       [
+        0.5,
+        7.0,
+        2.5
+       ],
+       [
+        0.75,
+        6.4,
+        2.45
+       ],
+       [
+        1.0,
+        5.8,
+        2.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      [
+       0.17,
+       2.6,
+       0.3,
+       0.4
+      ],
+      [
+       0.35,
+       4.8,
+       1.8,
+       0.0
+      ]
+     ],
+     [
+      [
+       0.35,
+       4.8,
+       1.8,
+       0.0
+      ],
+      [
+       0.55,
+       4.0,
+       1.0,
+       1.0
+      ],
+      [
+       0.75,
+       3.6,
+       0.15,
+       1.6
+      ],
+      [
+       1,
+       3.6,
+       0.15,
+       1.6
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Will Parks scoops it up. He runs.",
    "key": [
     "RUNS."
    ],
    "shot": {
-    "type": "close",
-    "on": "parks"
+    "type": "follow",
+    "on": "parks",
+    "lead": -1
    },
-   "act": {
-    "parks": {
-     "mood": "shocked",
-     "action": "hold",
-     "look": "camera"
-    }
+   "act": {},
+   "play": {
+    "cast": {
+     "parks": {
+      "path": [
+       [
+        0.0,
+        5.8,
+        2.4
+       ],
+       [
+        0.0875,
+        5.3,
+        2.275
+       ],
+       [
+        0.175,
+        4.8,
+        2.15
+       ],
+       [
+        0.2625,
+        4.3,
+        2.025
+       ],
+       [
+        0.35,
+        3.8,
+        1.9
+       ],
+       [
+        0.5125,
+        2.225,
+        2.175
+       ],
+       [
+        0.675,
+        0.65,
+        2.45
+       ],
+       [
+        0.8375,
+        -0.925,
+        2.725
+       ],
+       [
+        1.0,
+        -2.5,
+        3.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     },
+     "kick": {
+      "path": [
+       [
+        0.0,
+        2.2,
+        0.4
+       ],
+       [
+        0.25,
+        1.85,
+        0.0
+       ],
+       [
+        0.5,
+        1.5,
+        -0.4
+       ],
+       [
+        0.75,
+        1.15,
+        -0.8
+       ],
+       [
+        1.0,
+        0.8,
+        -1.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     },
+     "sim": {
+      "path": [
+       [
+        0,
+        5.4,
+        -0.2
+       ],
+       [
+        1,
+        5.4,
+        -0.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      0,
+      3.6,
+      0.15,
+      1.6
+     ],
+     [
+      0.35,
+      3.7,
+      0.4,
+      1.8
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ],
+     [
+      0.35,
+      "parks"
+     ]
+    ]
    }
   },
   {
-   "text": "Eighty four yards. Right along the sideline.",
+   "text": "All the way down the sideline.",
    "key": [
-    "84"
+    "SIDELINE."
    ],
-   "cap": "84 yards. Right along the sideline.",
-   "place": {
-    "parks": [
-     -5.6,
-     2.0
+   "shot": {
+    "type": "follow_high",
+    "on": "parks",
+    "lead": -1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "parks": {
+      "path": [
+       [
+        0.0,
+        -2.5,
+        3.0
+       ],
+       [
+        0.2,
+        -4.375,
+        3.15
+       ],
+       [
+        0.4,
+        -6.25,
+        3.3
+       ],
+       [
+        0.6,
+        -8.125,
+        3.45
+       ],
+       [
+        0.8,
+        -10.0,
+        3.6
+       ],
+       [
+        1.0,
+        -10.0,
+        3.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.85,
+        "celebrate"
+       ]
+      ],
+      "face": -90
+     },
+     "kick": {
+      "path": [
+       [
+        0.0,
+        0.8,
+        -1.2
+       ],
+       [
+        0.25,
+        -1.025,
+        -0.8
+       ],
+       [
+        0.5,
+        -2.85,
+        -0.4
+       ],
+       [
+        0.75,
+        -4.675,
+        0.0
+       ],
+       [
+        1.0,
+        -6.5,
+        0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.85,
+        "idle"
+       ]
+      ],
+      "face": -90,
+      "mood": "sad"
+     }
+    },
+    "carry": [
+     [
+      0,
+      "parks"
+     ]
     ]
    },
-   "shot": {
-    "type": "wide",
-    "on": "parks"
-   },
-   "act": {
-    "parks": {
-     "mood": "happy",
-     "action": "hold"
-    }
-   }
+   "sfx": [
+    [
+     0.8,
+     "roar"
+    ]
+   ]
   },
   {
-   "text": "Did he step out of bounds? The replay says no.",
+   "text": "Did he step out? Replay says no.",
    "key": [
-    "REPLAY"
+    "NO."
    ],
    "place": {
     "ref": [
@@ -423,14 +921,10 @@
    }
   },
   {
-   "text": "Two points. For the defense. On the Saints' own extra point.",
+   "text": "Two points. For Denver. On your extra point.",
+   "cap": "2 points. For Denver. On your extra point.",
    "key": [
-    "DEFENSE."
-   ],
-   "cap": "2 points. For the defense. On the Saints' own extra point.",
-   "board": [
-    "BRONCOS 25",
-    "SAINTS 23"
+    "DENVER."
    ],
    "shot": {
     "type": "medium",
@@ -447,14 +941,18 @@
      "action": "clap",
      "look": "parks"
     }
-   }
+   },
+   "board": [
+    "BRONCOS 25",
+    "SAINTS 23"
+   ]
   },
   {
    "text": "Broncos win, twenty five to twenty three.",
+   "cap": "Broncos win, 25 to 23.",
    "key": [
     "25"
    ],
-   "cap": "Broncos win, 25 to 23.",
    "set": "locker",
    "setOpts": {
     "boardText": [
@@ -462,10 +960,6 @@
      "25 - 23"
     ]
    },
-   "board": [
-    "FINAL",
-    "25 - 23"
-   ],
    "place": {
     "parks": "center",
     "sim": "right",
@@ -494,10 +988,14 @@
      "action": "idle",
      "look": "parks"
     }
-   }
+   },
+   "board": [
+    "FINAL",
+    "25 - 23"
+   ]
   },
   {
-   "text": "Have you ever seen a defense score on an extra point? Yes or no?",
+   "text": "Seen a defense score on an extra point? Yes or no? Saints fans, don't.",
    "key": [
     "YES",
     "NO?"
@@ -516,30 +1014,74 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "NFL.com: In or out? Broncos return blocked PAT for win",
-   "url": "https://www.nfl.com/news/in-or-out-broncos-return-blocked-pat-for-win-0ap3000000738636"
+   "claim": "In 2015 the NFL moved the extra point back to the 15-yard line",
+   "terms": [
+    "15-yard line|15 yard line",
+    "extra point"
+   ]
   },
   {
-   "title": "ESPN: Saints season back on the brink after Broncos' stunning blocked extra point",
-   "url": "https://www.espn.com/blog/new-orleans-saints/post/_/id/24297/saints-season-back-on-the-brink-after-broncos-stunning-blocked-extra-point"
+   "claim": "That made it a 33-yard kick",
+   "terms": [
+    "33-yard|33 yard"
+   ]
   },
   {
-   "title": "NFL Football Operations: Extra point tries no longer automatic",
-   "url": "https://operations.nfl.com/updates/the-game/extra-point-tries-no-longer-automatic/"
+   "claim": "Kickers had made over 99% and then about 94%",
+   "terms": [
+    "99",
+    "94"
+   ]
   },
   {
-   "title": "NFL.com: Goodell: Moving PATs back achieved what we wanted",
-   "url": "https://www.nfl.com/_amp/goodell-moving-pats-back-achieved-what-we-wanted-0ap3000000631461"
+   "claim": "The defense can return a blocked try for two points",
+   "terms": [
+    "defense",
+    "two points|2 points"
+   ]
   },
   {
-   "title": "Seahawks.com: NFL moves extra point to 15-yard line, defenses can return failed two-point tries",
-   "url": "https://www.seahawks.com/news/nfl-moves-extra-point-to-15-yard-line-defenses-can-return-failed-two-poin-124041"
+   "claim": "In November 2016 the Saints hosted the Broncos and tied it 23-23",
+   "terms": [
+    "Saints",
+    "23"
+   ]
   },
   {
-   "title": "SI: NFL extra point rule change 2015 season",
-   "url": "https://www.si.com/nfl/2015/05/18/nfl-extra-point-rule-change-2015-season"
+   "claim": "1:22 was left",
+   "terms": [
+    "1:22"
+   ]
+  },
+  {
+   "claim": "Justin Simmons leaped over the line and blocked it",
+   "terms": [
+    "Simmons",
+    "block"
+   ]
+  },
+  {
+   "claim": "Will Parks returned it down the sideline",
+   "terms": [
+    "Parks",
+    "sideline|returned|return"
+   ]
+  },
+  {
+   "claim": "Replay showed he stayed in bounds",
+   "terms": [
+    "Parks",
+    "bounds|step|replay"
+   ]
+  },
+  {
+   "claim": "Broncos won 25-23",
+   "terms": [
+    "25-23"
+   ]
   }
  ]
 }
