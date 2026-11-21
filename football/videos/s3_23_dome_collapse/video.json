@@ -69,10 +69,9 @@
  },
  "lines": [
   {
-   "text": "In 2010, snow brought down the roof of an NFL dome.",
+   "text": "Your stadium roof caves in. On game day. Very rude.",
    "key": [
-    "ROOF",
-    "DOME."
+    "DAY."
    ],
    "place": {
     "giant": false,
@@ -107,22 +106,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Seventeen inches fell on Minneapolis.",
-   "cap": "17 inches fell on Minneapolis.",
+   "text": "Twenty ten. Seventeen inches of snow hit Minneapolis.",
+   "cap": "2010. 17 inches of snow hit Minneapolis.",
    "key": [
-    "17",
-    "INCHES"
-   ],
-   "set": "office",
-   "setOpts": {
-    "boardText": [
-     "SNOW:",
-     "17 INCHES"
-    ]
-   },
-   "board": [
-    "SNOW:",
-    "17 INCHES"
+    "17"
    ],
    "place": {
     "boss": [
@@ -140,18 +127,23 @@
      "action": "point",
      "look": "camera"
     }
+   },
+   "board": [
+    "SNOW:",
+    "17 INCHES"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SNOW:",
+     "17 INCHES"
+    ]
    }
   },
   {
-   "text": "Around five in the morning, the Metrodome's roof gave way.",
-   "cap": "Around 5 in the morning, the Metrodome's roof gave way.",
+   "text": "Around five in the morning? The Metrodome roof gives way.",
    "key": [
-    "GAVE",
     "WAY."
-   ],
-   "board": [
-    "METRODOME",
-    "ROOF: DOWN"
    ],
    "shot": {
     "type": "close",
@@ -163,12 +155,16 @@
      "action": "hold",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "METRODOME",
+    "ROOF: DOWN"
+   ]
   },
   {
-   "text": "Nobody was hurt.",
+   "text": "Nobody is hurt. Just the roof's feelings, mostly.",
    "key": [
-    "NOBODY"
+    "FEELINGS."
    ],
    "place": {
     "capy": [
@@ -196,50 +192,16 @@
    "speaker": "capy"
   },
   {
-   "text": "It was that roof's fourth failure in twenty nine years.",
-   "cap": "It was that roof's 4th failure in 29 years.",
+   "text": "Your opponents, the Giants? Their plane gets diverted. To Kansas City.",
    "key": [
-    "4TH",
-    "29"
-   ],
-   "board": [
-    "ROOF FAILURES",
-    "4 IN 29 YEARS"
-   ],
-   "place": {
-    "capy": false
-   },
-   "shot": {
-    "type": "medium",
-    "on": "boss",
-    "offset": [
-     0,
-     0.6,
-     1.2
-    ]
-   },
-   "act": {
-    "boss": {
-     "mood": "sad",
-     "action": "facepalm"
-    }
-   }
-  },
-  {
-   "text": "The Giants were due to play there that day. Their plane got diverted to Kansas City.",
-   "key": [
-    "KANSAS",
     "CITY."
-   ],
-   "board": [
-    "GIANTS FLIGHT:",
-    "KANSAS CITY"
    ],
    "place": {
     "giant": [
      0.4,
      -0.6
-    ]
+    ],
+    "capy": false
    },
    "shot": {
     "type": "two",
@@ -257,23 +219,16 @@
      "action": "hold",
      "look": "giant"
     }
-   }
-  },
-  {
-   "text": "So the game moved. To Detroit, on Monday night.",
-   "key": [
-    "DETROIT,"
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "MONDAY",
-     "IN DETROIT"
-    ]
    },
    "board": [
-    "MONDAY",
-    "IN DETROIT"
+    "GIANTS FLIGHT:",
+    "KANSAS CITY"
+   ]
+  },
+  {
+   "text": "So the game moves. To Detroit. On a Monday night.",
+   "key": [
+    "DETROIT."
    ],
    "place": {
     "giant": [
@@ -305,17 +260,24 @@
      "action": "shrug",
      "look": "giant"
     }
+   },
+   "board": [
+    "MONDAY",
+    "IN DETROIT"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "MONDAY",
+     "IN DETROIT"
+    ]
    }
   },
   {
-   "text": "The Giants won, twenty one to three.",
-   "cap": "The Giants won, 21 to 3.",
+   "text": "The Giants win, twenty one to three.",
+   "cap": "The Giants win, 21 to 3.",
    "key": [
     "21"
-   ],
-   "board": [
-    "GIANTS 21",
-    "VIKINGS 3"
    ],
    "place": {
     "giant": [
@@ -347,25 +309,51 @@
      "action": "slump",
      "look": "giant"
     }
-   }
-  },
-  {
-   "text": "The Vikings' next home game was against the Bears. And the dome was still broken.",
-   "key": [
-    "STILL",
-    "BROKEN."
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "VIKINGS",
-     "BEARS"
-    ],
-    "grass": "#eef2f0"
    },
    "board": [
-    "VIKINGS",
-    "BEARS"
+    "GIANTS 21",
+    "VIKINGS 3"
+   ]
+  },
+  {
+   "text": "Home field advantage? Left behind in Minnesota. With the roof.",
+   "key": [
+    "ROOF."
+   ],
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "viking": [
+     1.0,
+     0
+    ],
+    "giant": false
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "viking": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "viking"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your next home game? The Bears. The dome is still broken.",
+   "key": [
+    "BROKEN."
    ],
    "place": {
     "viking": [
@@ -393,13 +381,24 @@
      "action": "cross",
      "look": "viking"
     }
+   },
+   "board": [
+    "VIKINGS",
+    "BEARS"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "VIKINGS",
+     "BEARS"
+    ],
+    "grass": "#eef2f0"
    }
   },
   {
-   "text": "So they played outdoors, at the University of Minnesota's stadium. In the snow.",
+   "text": "So you play outdoors. At the University of Minnesota's stadium.",
    "key": [
-    "OUTDOORS,",
-    "SNOW."
+    "OUTDOORS."
    ],
    "place": {
     "bear": false,
@@ -420,13 +419,10 @@
    }
   },
   {
-   "text": "It was the Vikings' first outdoor home game since 1981.",
+   "text": "Out in the snow. First outdoor home game since nineteen eighty one.",
+   "cap": "Out in the snow. First outdoor home game since 1981.",
    "key": [
     "1981."
-   ],
-   "board": [
-    "LAST OUTDOOR",
-    "HOME GAME: 1981"
    ],
    "place": {
     "viking": [
@@ -439,13 +435,9 @@
     ]
    },
    "shot": {
-    "type": "low",
-    "on": "viking",
-    "offset": [
-     -1.3,
-     1.4,
-     3
-    ]
+    "type": "two",
+    "on": "capy",
+    "with": "viking"
    },
    "act": {
     "viking": {
@@ -458,18 +450,18 @@
      "action": "point",
      "look": "viking"
     }
-   }
+   },
+   "board": [
+    "LAST OUTDOOR",
+    "HOME GAME: 1981"
+   ],
+   "speaker": "capy"
   },
   {
-   "text": "Chicago won, forty to fourteen, and clinched its division.",
-   "cap": "Chicago won, 40 to 14, and clinched its division.",
+   "text": "Chicago wins, forty to fourteen. It clinches the division too.",
+   "cap": "Chicago wins, 40 to 14. It clinches the division too.",
    "key": [
-    "40",
-    "CLINCHED"
-   ],
-   "board": [
-    "BEARS 40",
-    "VIKINGS 14"
+    "40"
    ],
    "place": {
     "capy": false,
@@ -502,13 +494,16 @@
      "action": "slump",
      "look": "bear"
     }
-   }
+   },
+   "board": [
+    "BEARS 40",
+    "VIKINGS 14"
+   ]
   },
   {
-   "text": "Two home games in one week, and neither one was in the dome.",
-   "cap": "2 home games in 1 week, and neither one was in the dome.",
+   "text": "Two home games in one week. Neither one at home.",
    "key": [
-    "NEITHER"
+    "HOME."
    ],
    "shot": {
     "type": "close",
@@ -523,21 +518,10 @@
    }
   },
   {
-   "text": "So which would you pick for a December game, a dome or open air? Dome or open?",
+   "text": "December football. Dome or outdoors? Vikings fans, no pressure.",
    "key": [
     "DOME",
-    "OPEN?"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "DOME",
-     "OR OPEN?"
-    ]
-   },
-   "board": [
-    "DOME",
-    "OR OPEN?"
+    "OUTDOORS?"
    ],
    "place": {
     "capy": [
@@ -566,6 +550,17 @@
      "look": "capy"
     }
    },
+   "board": [
+    "DOME",
+    "OR OUTDOORS?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "DOME",
+     "OR OUTDOORS?"
+    ]
+   },
    "speaker": "capy"
   }
  ],
@@ -583,16 +578,119 @@
    "url": "https://www.giants.com/news/final-giants-21-vikings-3-5115722"
   },
   {
-   "title": "Washington Times (AP): Lions halt distribution of free NFL tickets",
-   "url": "https://m.washingtontimes.com/news/2010/dec/13/lions-halt-distribution-of-free-nfl-tickets/"
-  },
-  {
    "title": "MPR News: Favre knocked out as Bears beat Vikings 40-14",
    "url": "https://www.mprnews.org/story/2010/12/20/bears-vikings"
   },
   {
    "title": "Minnesota Daily: 40K fans brave snow, see first outdoor Vikings game since '81",
    "url": "https://mndaily.com/2010/12/20/no-sell-out-40k-fans-brave-snow-see-first-outdoor-vikings-game-81"
+  },
+  {
+   "title": "Fox 9: Marking 13 years since the Metrodome roof collapse",
+   "url": "https://fox9.com/sports/vikings-marking-13-years-since-the-metrodome-roof-collapse"
+  },
+  {
+   "title": "Fox 9: Metrodome roof collapse, a tumultuous 15-year anniversary",
+   "url": "https://www.fox9.com/sports/metrodome-roof-collapse-tumultuous-vikings-15-year-anniversary"
+  },
+  {
+   "title": "Fox Sports: Metrodome roof collapses; Vikings-Giants game moved to Detroit",
+   "url": "https://www.foxsports.com/stories/other/metrodome-roof-collapses-vikings-giants-game-moved-to-detroit"
+  },
+  {
+   "title": "NESN: Vikings, Giants to play Monday night at Ford Field",
+   "url": "https://nesn.com/2010/12/vikings-giants-to-play-monday-night-at-detroits-ford-field-following-metrodome-roof-collapse"
+  },
+  {
+   "title": "AOL: Metrodome roof collapsed under 17 inches of snow",
+   "url": "https://www.aol.com/articles/metrodome-roof-collapsed-under-17-060700786.html"
+  },
+  {
+   "title": "Vikings.com: Metrodome roof collapse 2010 aftermath",
+   "url": "https://www.vikings.com/news/longform/metrodome-roof-collapse-2010-aftermath"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Metrodome roof collapsed on the day of the scheduled game",
+   "terms": [
+    "roof",
+    "collapse"
+   ]
+  },
+  {
+   "claim": "In 2010, 17 inches of snow fell on Minneapolis",
+   "terms": [
+    "17 inches"
+   ]
+  },
+  {
+   "claim": "The roof gave way around 5 a.m.",
+   "terms": [
+    "5 am|5 a.m.|five a.m.",
+    "roof"
+   ]
+  },
+  {
+   "claim": "Early that morning the Metrodome roof gave way",
+   "terms": [
+    "Metrodome",
+    "roof"
+   ]
+  },
+  {
+   "claim": "Nobody was hurt",
+   "terms": [
+    "no one|nobody|no injuries",
+    "injur|hurt"
+   ]
+  },
+  {
+   "claim": "The Giants' plane was diverted to Kansas City",
+   "terms": [
+    "Kansas City"
+   ]
+  },
+  {
+   "claim": "The game moved to Detroit on Monday night",
+   "terms": [
+    "Detroit",
+    "Monday"
+   ]
+  },
+  {
+   "claim": "The Giants won 21-3",
+   "terms": [
+    "21 3"
+   ]
+  },
+  {
+   "claim": "The next home game, against the Bears, was played outdoors at the University of Minnesota's stadium",
+   "terms": [
+    "TCF Bank Stadium|University of Minnesota",
+    "Bears"
+   ]
+  },
+  {
+   "claim": "It was in the snow, the first outdoor Vikings home game since 1981",
+   "terms": [
+    "1981",
+    "outdoor"
+   ]
+  },
+  {
+   "claim": "Chicago won 40-14",
+   "terms": [
+    "40 14"
+   ]
+  },
+  {
+   "claim": "Chicago clinched its division",
+   "terms": [
+    "clinch",
+    "division|NFC North"
+   ]
   }
  ]
 }
