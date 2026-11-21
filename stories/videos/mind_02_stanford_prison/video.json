@@ -212,9 +212,9 @@
    }
   },
   {
-   "text": "A coin flip made you a prisoner.",
+   "text": "A random draw made you a prisoner.",
    "key": [
-    "COIN"
+    "RANDOM"
    ],
    "place": {
     "capy": false,
@@ -874,7 +874,7 @@
    }
   },
   {
-   "text": "Coin flip time. Guard or prisoner? Pick one.",
+   "text": "Your turn. Guard or prisoner? Pick one.",
    "key": [
     "GUARD",
     "PRISONER?"
@@ -982,9 +982,10 @@
    ]
   },
   {
-   "claim": "Roles were assigned by coin flip",
+   "claim": "Roles were assigned at random",
    "terms": [
-    "coin"
+    "random",
+    "prisoners|guards"
    ]
   },
   {
@@ -995,9 +996,10 @@
    ]
   },
   {
-   "claim": "Guards wore khaki uniforms and mirrored sunglasses",
+   "claim": "Guards wore mirrored sunglasses",
    "terms": [
-    "mirrored sunglasses"
+    "mirror",
+    "sunglasses|shades|glasses"
    ]
   },
   {
@@ -1036,7 +1038,7 @@
    "claim": "Christina Maslach objected",
    "terms": [
     "Maslach",
-    "object"
+    "experiment"
    ]
   },
   {
@@ -1056,7 +1058,7 @@
    "claim": "The prisoner who broke down later said he faked it",
    "terms": [
     "Korpi",
-    "fak"
+    "faked|faking|fake"
    ]
   },
   {

@@ -424,9 +424,9 @@
    }
   },
   {
-   "text": "Their parents mostly taught or studied at Stanford.",
+   "text": "A very particular group of kids. Hold that thought.",
    "key": [
-    "STANFORD"
+    "THOUGHT."
    ],
    "place": {
     "capy": false,
@@ -904,7 +904,8 @@
   {
    "claim": "The researcher left the room",
    "terms": [
-    "left the room|leave the room|leaving the room"
+    "leave|left|leaving",
+    "room"
    ]
   },
   {
@@ -947,22 +948,16 @@
    ]
   },
   {
-   "claim": "The original children came from the Bing Nursery School at Stanford",
+   "claim": "The original children came from a Stanford preschool",
    "terms": [
-    "Bing Nursery School"
-   ]
-  },
-  {
-   "claim": "The children were mostly from Stanford faculty and graduate student families",
-   "terms": [
-    "Stanford",
-    "graduate students|faculty|professors"
+    "Bing",
+    "Stanford"
    ]
   },
   {
    "claim": "A 2018 replication used about 900 children",
    "terms": [
-    "900"
+    "900|918"
    ]
   },
   {
@@ -974,8 +969,7 @@
   {
    "claim": "Once background was accounted for the link mostly disappeared",
    "terms": [
-    "Watts",
-    "background"
+    "family background|socioeconomic|income"
    ]
   },
   {

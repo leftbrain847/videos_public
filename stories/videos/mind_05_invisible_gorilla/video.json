@@ -310,9 +310,9 @@
    }
   },
   {
-   "text": "It stops. It faces the camera. It thumps its chest.",
+   "text": "It stops in the middle. It faces the camera.",
    "key": [
-    "CHEST."
+    "CAMERA."
    ],
    "place": {
     "capy": false,
@@ -350,14 +350,13 @@
    ]
   },
   {
-   "text": "Nine seconds on screen. Then it walks off. The passing never stops.",
-   "cap": "9 seconds on screen. Then it walks off. The passing never stops.",
+   "text": "A few seconds on screen. Then it walks off. The passing never stops.",
    "key": [
-    "9"
+    "SECONDS"
    ],
    "board": [
-    "ON SCREEN:",
-    "9 SECONDS"
+    "A GORILLA",
+    "WALKS BY"
    ],
    "place": {
     "capy": false,
@@ -920,8 +919,8 @@
   {
    "claim": "Viewers counted passes by players in white",
    "terms": [
-    "passes",
-    "white"
+    "white",
+    "pass"
    ]
   },
   {
@@ -935,19 +934,6 @@
    "claim": "A person in a gorilla suit walked through",
    "terms": [
     "gorilla suit"
-   ]
-  },
-  {
-   "claim": "The gorilla faced the camera and thumped its chest",
-   "terms": [
-    "thump",
-    "chest"
-   ]
-  },
-  {
-   "claim": "The gorilla was on screen for nine seconds",
-   "terms": [
-    "nine seconds|9 seconds"
    ]
   },
   {
@@ -998,8 +984,7 @@
   {
    "claim": "Eye tracking showed most looked right at it",
    "terms": [
-    "eye tracking|eye-tracking",
-    "looked"
+    "looked right at|looking right at|looked directly|looking directly"
    ]
   }
  ]

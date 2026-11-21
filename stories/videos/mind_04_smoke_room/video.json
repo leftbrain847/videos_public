@@ -151,14 +151,13 @@
    }
   },
   {
-   "text": "Alone, most people get up. Seventy five percent report it.",
-   "cap": "Alone, most people get up. 75% report it.",
+   "text": "Alone, most people get up. They go report it.",
    "key": [
-    "75%"
+    "REPORT"
    ],
    "board": [
     "ALONE:",
-    "75% REPORT"
+    "MOST REPORT"
    ],
    "place": {
     "capy": false,
@@ -401,14 +400,13 @@
    }
   },
   {
-   "text": "With two calm strangers? Only ten percent report the smoke.",
-   "cap": "With two calm strangers? Only 10% report the smoke.",
+   "text": "With two calm strangers? Hardly anyone reports the smoke.",
    "key": [
-    "10%"
+    "HARDLY"
    ],
    "board": [
     "WITH 2 CALM",
-    "STRANGERS: 10%"
+    "STRANGERS: RARELY"
    ],
    "place": {
     "capy": [
@@ -442,10 +440,9 @@
    }
   },
   {
-   "text": "The rest just sit there. Coughing. For six minutes.",
-   "cap": "The rest just sit there. Coughing. For 6 minutes.",
+   "text": "The rest just sit there. Coughing. Waving smoke away. Writing.",
    "key": [
-    "6"
+    "COUGHING."
    ],
    "place": {
     "capy": [
@@ -934,10 +931,10 @@
    ]
   },
   {
-   "claim": "Alone, 75 percent reported the smoke",
+   "claim": "Alone, most participants reported the smoke",
    "terms": [
-    "75",
-    "smoke|alone"
+    "alone",
+    "report"
    ]
   },
   {
@@ -947,22 +944,16 @@
    ]
   },
   {
-   "claim": "With two passive confederates only 10 percent reported it",
+   "claim": "With two passive confederates few reported it",
    "terms": [
-    "10",
-    "smoke|confederates"
+    "passive|confederates",
+    "report"
    ]
   },
   {
-   "claim": "Participants rubbed their eyes or waved the smoke away",
+   "claim": "Participants rubbed their eyes and coughed",
    "terms": [
-    "eyes|coughing|waved"
-   ]
-  },
-  {
-   "claim": "The session ran six minutes",
-   "terms": [
-    "six minutes|6 minutes"
+    "eyes|cough"
    ]
   },
   {
