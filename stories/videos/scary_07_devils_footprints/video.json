@@ -1,0 +1,782 @@
+{
+ "id": "scary_07_devils_footprints",
+ "title": "The Devil's Footprints in the Devon snow",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "HOOFPRINTS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#6b3a2a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f0c8a8"
+   },
+   "at": "center",
+   "hold": "candle"
+  },
+  "vicar": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "scroll"
+  },
+  "farmer": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5a6b3a",
+    "pants": "#3c3c3c",
+    "hair": "curly",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "center"
+  },
+  "editor": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2a3a5a",
+    "pants": "#2a2a2a",
+    "hair": "bob",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "You open your door. Hoofprints run right past it.",
+   "key": [
+    "HOOFPRINTS"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "farmer": [
+     2.6,
+     -1.0
+    ],
+    "vicar": false,
+    "editor": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "farmer": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "February, eighteen fifty five. Devon, England. Fresh snow.",
+   "cap": "February 1855. Devon, England. Fresh snow.",
+   "key": [
+    "SNOW."
+   ],
+   "board": [
+    "FEB 1855",
+    "DEVON"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "farmer": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Overnight, tracks appear. Small. Shaped like hooves. About four inches long.",
+   "cap": "Overnight, tracks appear. Small. Shaped like hooves. About 4 inches long.",
+   "key": [
+    "HOOVES."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here's the weird part. They go in one line.",
+   "key": [
+    "LINE."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "you": [
+     -2.4,
+     -0.4
+    ],
+    "farmer": [
+     2.4,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "point",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    },
+    "farmer": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "One foot right after another. Like something on two legs.",
+   "key": [
+    "TWO"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "farmer",
+    "with": "capy"
+   },
+   "act": {
+    "farmer": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "farmer"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your neighbors find them too. Then the next town does. Then the next.",
+   "key": [
+    "TOWN"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Reports say the trail runs for miles. Maybe a hundred.",
+   "cap": "Reports say the trail runs for miles. Maybe 100.",
+   "key": [
+    "100."
+   ],
+   "board": [
+    "TRAIL:",
+    "~100 MILES?"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "All in one night. Nobody saw a thing. Nobody heard a thing.",
+   "key": [
+    "NIGHT."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "Then it gets stranger. The tracks cross a river.",
+   "key": [
+    "RIVER."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "farmer"
+   },
+   "act": {
+    "farmer": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They go up walls. Over rooftops. Through pipes, people claim.",
+   "key": [
+    "ROOFTOPS."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug"
+    },
+    "farmer": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "Over rooftops? Sure. In the snow. In the dark.",
+   "key": [
+    "DARK."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your village panics. Some locals blame the devil. Who else?",
+   "key": [
+    "DEVIL."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "THE DEVIL?",
+     "!!!"
+    ]
+   },
+   "place": {
+    "vicar": [
+     0,
+     -1.0
+    ],
+    "you": [
+     -2.4,
+     0.6
+    ],
+    "capy": false,
+    "farmer": false,
+    "editor": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "vicar"
+   },
+   "act": {
+    "vicar": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "vicar"
+    }
+   }
+  },
+  {
+   "text": "Picture your search party. Lanterns. Pitchforks. Absolutely nothing.",
+   "key": [
+    "NOTHING."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "vicar"
+   },
+   "act": {
+    "you": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "vicar"
+    },
+    "vicar": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Then the newspapers get hold of it.",
+   "key": [
+    "NEWSPAPERS"
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "THE TIMES",
+     "1855"
+    ]
+   },
+   "place": {
+    "editor": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "vicar": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "editor"
+   },
+   "act": {
+    "editor": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Letters pour in. Everyone has a theory. Some are even sane.",
+   "key": [
+    "THEORY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "editor"
+   },
+   "act": {
+    "editor": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A badger. A kangaroo. A loose balloon dragging its rope.",
+   "key": [
+    "BALLOON"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "editor"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "editor"
+    },
+    "editor": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Yes. Somebody really blamed a kangaroo.",
+   "key": [
+    "KANGAROO."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Most likely? Many animals, many tracks, lots of storytelling.",
+   "key": [
+    "STORYTELLING."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "editor"
+   },
+   "act": {
+    "editor": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Still, nobody ever proved it. The snow melted.",
+   "key": [
+    "MELTED."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "UNEXPLAINED"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": [
+     -2.4,
+     -0.4
+    ],
+    "farmer": [
+     2.4,
+     -0.6
+    ],
+    "vicar": false,
+    "editor": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    },
+    "farmer": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The evidence just walked away. Literally.",
+   "key": [
+    "LITERALLY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Devon still has not explained itself. Neither has the devil.",
+   "key": [
+    "DEVIL."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you follow the tracks? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "FOLLOW THEM?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Devil's Footprints",
+   "url": "https://en.wikipedia.org/wiki/Devil%27s_Footprints"
+  },
+  {
+   "title": "Mental Floss: The ongoing mystery of the Devil's Footprints",
+   "url": "https://www.mentalfloss.com/article/75045/ongoing-mystery-devils-footprints"
+  },
+  {
+   "title": "Discovery UK: The mystery of the Devil's Footprints",
+   "url": "https://www.discoveryuk.com/mysteries/the-mystery-of-the-devils-footprints/"
+  },
+  {
+   "title": "Great British Life: Did the devil leave hoofprints across Devon?",
+   "url": "https://www.greatbritishlife.co.uk/magazines/devon/22589681.devil-leave-hoofprints-across-devon-160-years-ago/"
+  },
+  {
+   "title": "History Collection: The baffling mystery of the Devil's Footprints",
+   "url": "https://historycollection.com/dark-prints-baffling-mystery-devils-footprints/"
+  },
+  {
+   "title": "The Vintage News: The 1855 Devil's Footprints mystery in Devon",
+   "url": "https://www.thevintagenews.com/2016/10/12/the-1855-devils-footprints-mystery-in-devon-england/"
+  },
+  {
+   "title": "Mysterious Britain: The Devil's Footprints",
+   "url": "https://mysteriousbritain.co.uk/?p=62"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In February 1855 tracks appeared in the snow in Devon",
+   "terms": [
+    "1855",
+    "Devon"
+   ]
+  },
+  {
+   "claim": "The tracks looked like hoofprints",
+   "terms": [
+    "hoof"
+   ]
+  },
+  {
+   "claim": "Each print was about four inches long",
+   "terms": [
+    "4 inches|four inches"
+   ]
+  },
+  {
+   "claim": "The tracks ran in a single line",
+   "terms": [
+    "single",
+    "line|file"
+   ]
+  },
+  {
+   "claim": "Tracks were found across many towns",
+   "terms": [
+    "towns|villages|parishes"
+   ]
+  },
+  {
+   "claim": "The trail was said to run up to about 100 miles",
+   "terms": [
+    "100|40|60",
+    "miles"
+   ]
+  },
+  {
+   "claim": "The tracks appeared in one night",
+   "terms": [
+    "night"
+   ]
+  },
+  {
+   "claim": "The tracks crossed a river",
+   "terms": [
+    "river|estuary"
+   ]
+  },
+  {
+   "claim": "They went over rooftops and walls",
+   "terms": [
+    "roof"
+   ]
+  },
+  {
+   "claim": "Some locals blamed the devil",
+   "terms": [
+    "devil"
+   ]
+  },
+  {
+   "claim": "Newspapers printed letters with theories",
+   "terms": [
+    "Illustrated London News|press|newspaper|Times"
+   ]
+  },
+  {
+   "claim": "Theories included a badger, a kangaroo and a balloon",
+   "terms": [
+    "kangaroo"
+   ]
+  },
+  {
+   "claim": "A balloon dragging a rope was one theory",
+   "terms": [
+    "balloon"
+   ]
+  }
+ ]
+}

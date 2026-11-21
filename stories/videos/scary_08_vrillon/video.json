@@ -1,0 +1,739 @@
+{
+ "id": "scary_08_vrillon",
+ "title": "Vrillon: the voice that took over the news",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "VRILLON"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#4a6fb5",
+    "pants": "#3c3c3c",
+    "hair": "ponytail",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "anchor": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2a3a5a",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
+  },
+  "eng": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "voice": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a7a9a",
+    "pants": "#2a2a2a",
+    "hair": "buzz",
+    "hairColor": "#d8d8d8",
+    "skin": "#f2c39b",
+    "sash": "#c9ced6"
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "You are watching the evening news. Then the voice changes.",
+   "key": [
+    "CHANGES."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "EVENING",
+     "NEWS"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     4.4
+    ],
+    "you": [
+     0,
+     4.2
+    ],
+    "anchor": false,
+    "eng": false,
+    "voice": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "November, nineteen seventy seven. Southern England.",
+   "cap": "November 1977. Southern England.",
+   "key": [
+    "ENGLAND."
+   ],
+   "board": [
+    "NOV 1977",
+    "SOUTHERN TV"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "The picture looks normal. The newsreader's lips keep moving. His words do not.",
+   "key": [
+    "LIPS"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NEWS",
+     "TONIGHT"
+    ]
+   },
+   "place": {
+    "anchor": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "eng": false,
+    "voice": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "anchor"
+   },
+   "act": {
+    "anchor": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "But the sound is gone. A deep, buzzing voice takes over. It echoes.",
+   "key": [
+    "VOICE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "anchor"
+   },
+   "act": {
+    "anchor": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "It says it speaks for a galactic command. Big title.",
+   "key": [
+    "GALACTIC"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "GALACTIC",
+     "COMMAND"
+    ]
+   },
+   "place": {
+    "voice": [
+     0,
+     -0.8
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "anchor": false,
+    "eng": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "voice"
+   },
+   "act": {
+    "voice": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "voice"
+    }
+   }
+  },
+  {
+   "text": "Its name? Vrillon. Very dramatic.",
+   "key": [
+    "VRILLON."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "voice"
+   },
+   "act": {
+    "voice": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It has a message for you. Humans must give up their weapons. The evil ones.",
+   "key": [
+    "WEAPONS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "voice"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "voice"
+    },
+    "voice": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It talks for minutes. Calm. Very serious. Zero commercials.",
+   "key": [
+    "SERIOUS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "voice"
+   },
+   "act": {
+    "voice": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Aliens finally call Earth. They pick regional news.",
+   "key": [
+    "REGIONAL"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "voice": [
+     2.8,
+     -1.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "voice": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then the normal sound comes back. Like nothing happened. The news just continues.",
+   "key": [
+    "NOTHING"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "EVENING",
+     "NEWS"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     4.2
+    ],
+    "capy": [
+     -2.4,
+     4.4
+    ],
+    "anchor": false,
+    "eng": false,
+    "voice": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You grab the phone. So do lots of viewers. Was that real?",
+   "key": [
+    "PHONE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "capy"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The station scrambles. Viewers want answers.",
+   "key": [
+    "ANSWERS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "VIEWERS",
+     "CALLING"
+    ]
+   },
+   "place": {
+    "anchor": [
+     0,
+     -1.0
+    ],
+    "eng": [
+     2.6,
+     -0.6
+    ],
+    "capy": false,
+    "you": false,
+    "voice": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "anchor"
+   },
+   "act": {
+    "anchor": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "anchor"
+    }
+   }
+  },
+  {
+   "text": "Engineers find the trick. Someone hijacked one transmitter in Hampshire.",
+   "key": [
+    "TRANSMITTER."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They broadcast over its signal. From somewhere nearby. Pretty skilled work.",
+   "key": [
+    "NEARBY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "eng",
+    "with": "anchor"
+   },
+   "act": {
+    "eng": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "anchor"
+    },
+    "anchor": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Who did it? Your guess is as good as mine.",
+   "key": [
+    "GUESS"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "sad",
+     "action": "shrug"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A message about peace. From a pirate broadcaster.",
+   "key": [
+    "PIRATE"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It even spoke of the age of Aquarius.",
+   "key": [
+    "AQUARIUS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The best alien impression in television history.",
+   "key": [
+    "HISTORY."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "UNKNOWN"
+    ]
+   },
+   "place": {
+    "voice": [
+     0,
+     -0.8
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "anchor": false,
+    "eng": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "voice"
+   },
+   "act": {
+    "voice": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "voice"
+    }
+   }
+  },
+  {
+   "text": "Nobody claimed it. Not even for bragging rights. Decades later, still silence.",
+   "key": [
+    "BRAGGING"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "voice"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "voice"
+    },
+    "voice": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Some people still believe the aliens were real. Some just want a sequel.",
+   "key": [
+    "REAL."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Was Vrillon an alien? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "ALIEN?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "voice": [
+     2.8,
+     -1.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "voice": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Southern Television broadcast interruption",
+   "url": "https://en.wikipedia.org/wiki/Southern_Television_broadcast_interruption"
+  },
+  {
+   "title": "Historic Mysteries: Vrillon",
+   "url": "https://www.historicmysteries.com/unexplained-mysteries/vrillon/3112/"
+  },
+  {
+   "title": "Ultimate Classic Rock: The Vrillon TV hack of 1977",
+   "url": "https://ultimateclassicrock.com/vrillon-tv-hack-1977/"
+  },
+  {
+   "title": "Discovery UK: Vrillon, the broadcast that hijacked Britain's imagination",
+   "url": "https://www.discoveryuk.com/?p=23566836"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In November 1977 the news on Southern Television was interrupted",
+   "terms": [
+    "1977",
+    "Southern Television"
+   ]
+  },
+  {
+   "claim": "The picture stayed while the sound was replaced",
+   "terms": [
+    "sound|audio",
+    "voice"
+   ]
+  },
+  {
+   "claim": "The voice claimed to speak for the Ashtar Galactic Command",
+   "terms": [
+    "Galactic Command"
+   ]
+  },
+  {
+   "claim": "The voice called itself Vrillon",
+   "terms": [
+    "Vrillon"
+   ]
+  },
+  {
+   "claim": "The voice told humanity to give up weapons",
+   "terms": [
+    "weapons"
+   ]
+  },
+  {
+   "claim": "It lasted several minutes",
+   "terms": [
+    "minutes"
+   ]
+  },
+  {
+   "claim": "Viewers phoned in",
+   "terms": [
+    "viewers",
+    "phone|called|calls|telephone"
+   ]
+  },
+  {
+   "claim": "The Hannington transmitter in Hampshire was hijacked",
+   "terms": [
+    "Hannington",
+    "transmitter"
+   ]
+  },
+  {
+   "claim": "The voice spoke of the age of Aquarius",
+   "terms": [
+    "Aquarius"
+   ]
+  }
+ ]
+}
