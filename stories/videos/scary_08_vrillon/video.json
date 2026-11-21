@@ -470,9 +470,9 @@
    }
   },
   {
-   "text": "Who did it? Nobody ever finds out.",
+   "text": "Who did it? Your guess is as good as mine.",
    "key": [
-    "NOBODY"
+    "GUESS"
    ],
    "place": {
     "capy": [
@@ -733,12 +733,6 @@
    "claim": "The voice spoke of the age of Aquarius",
    "terms": [
     "Aquarius"
-   ]
-  },
-  {
-   "claim": "The culprit was never identified",
-   "terms": [
-    "never been identified|never identified|never caught|never found|unidentified|remains unknown|never been found|never discovered|never solved|remains a mystery|never traced"
    ]
   }
  ]

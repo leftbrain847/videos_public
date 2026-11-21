@@ -286,9 +286,9 @@
    }
   },
   {
-   "text": "Then a local hunter tells you something. He saw it.",
+   "text": "Then word reaches you. Someone has seen her.",
    "key": [
-    "SAW"
+    "SEEN"
    ],
    "place": {
     "hunter": [
@@ -775,13 +775,6 @@
    "claim": "The crew assumed she sank",
    "terms": [
     "sank|sunk"
-   ]
-  },
-  {
-   "claim": "A hunter saw the ship about 45 miles away",
-   "terms": [
-    "Inuit|hunter|hunters",
-    "miles"
    ]
   },
   {
