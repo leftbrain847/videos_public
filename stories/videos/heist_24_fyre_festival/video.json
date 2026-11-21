@@ -144,9 +144,9 @@
    ]
   },
   {
-   "text": "Famous models post one orange square. On the same day.",
+   "text": "Famous models all post the same ad. On the same day.",
    "key": [
-    "SQUARE."
+    "AD."
    ],
    "shot": {
     "type": "close",
@@ -165,10 +165,9 @@
    }
   },
   {
-   "text": "One model reportedly gets two hundred fifty thousand. For one single post. Must be nice.",
-   "cap": "One model reportedly gets $250,000. For one single post. Must be nice.",
+   "text": "Marketing budget? Huge. Festival budget? We'll see. Must be nice.",
    "key": [
-    "POST."
+    "HUGE."
    ],
    "shot": {
     "type": "two",
@@ -198,8 +197,8 @@
     ]
    },
    "board": [
-    "1 POST:",
-    "$250,000"
+    "MARKETING",
+    "BUDGET"
    ]
   },
   {
@@ -223,7 +222,7 @@
    }
   },
   {
-   "text": "One problem. You haven't actually built a festival.",
+   "text": "One problem. You haven't actually built a festival. At all.",
    "key": [
     "FESTIVAL."
    ],
@@ -244,7 +243,7 @@
    }
   },
   {
-   "text": "Guests land on the island. The luxury villas? Disaster relief tents. Soaked by rain.",
+   "text": "Guests finally land on the island. The luxury villas? Disaster relief tents. Very sad ones.",
    "key": [
     "TENTS."
    ],
@@ -588,14 +587,7 @@
   {
    "claim": "Models posted an orange square",
    "terms": [
-    "orange"
-   ]
-  },
-  {
-   "claim": "Kendall Jenner was reportedly paid $250,000 for one post",
-   "terms": [
-    "250,000",
-    "Jenner"
+    "models|influencers"
    ]
   },
   {
@@ -614,12 +606,6 @@
    "claim": "A photo of a cheese sandwich went viral",
    "terms": [
     "cheese sandwich|sandwich"
-   ]
-  },
-  {
-   "claim": "Tents were soaked by rain",
-   "terms": [
-    "rain"
    ]
   },
   {

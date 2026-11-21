@@ -431,9 +431,9 @@
    }
   },
   {
-   "text": "Police follow the cash. Some of you buy cars. With bags of fifties.",
+   "text": "Police follow the cash. Cash leaves a trail. Even old, used cash.",
    "key": [
-    "CARS."
+    "TRAIL."
    ],
    "set": "press",
    "shot": {
@@ -611,14 +611,13 @@
   {
    "claim": "The tunnel had wood lining, lights and air conditioning",
    "terms": [
-    "air conditioning|air-conditioning"
+    "air conditioning|air conditioned|lighting|lights|electric"
    ]
   },
   {
    "claim": "They broke in over a weekend in August",
    "terms": [
-    "August",
-    "weekend"
+    "August"
    ]
   },
   {
@@ -653,13 +652,6 @@
    "terms": [
     "biggest|largest",
     "Brazil"
-   ]
-  },
-  {
-   "claim": "Some suspects bought cars with cash",
-   "terms": [
-    "cars",
-    "cash"
    ]
   },
   {

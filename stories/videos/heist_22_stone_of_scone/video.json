@@ -423,9 +423,9 @@
    ]
   },
   {
-   "text": "It's draped in a Scottish flag. Nice touch. Very dramatic.",
+   "text": "Left in plain sight. Nice touch. Very, very dramatic.",
    "key": [
-    "FLAG."
+    "SIGHT."
    ],
    "shot": {
     "type": "close",
@@ -630,12 +630,6 @@
    "claim": "It was left at Arbroath Abbey",
    "terms": [
     "Arbroath"
-   ]
-  },
-  {
-   "claim": "It was draped in a Scottish flag",
-   "terms": [
-    "Saltire|flag"
    ]
   },
   {

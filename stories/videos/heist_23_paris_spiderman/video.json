@@ -184,9 +184,9 @@
    ]
   },
   {
-   "text": "The motion sensors? Broken. For weeks. Waiting on repairs.",
+   "text": "Inside, it's quiet. Very quiet. Nobody comes.",
    "key": [
-    "BROKEN."
+    "QUIET."
    ],
    "set": "temple",
    "shot": {
@@ -212,9 +212,9 @@
    }
   },
   {
-   "text": "The guards don't notice a thing. Not one thing.",
+   "text": "You take your time. You choose carefully. Like it's a shopping trip.",
    "key": [
-    "THING."
+    "CAREFULLY."
    ],
    "shot": {
     "type": "close",
@@ -404,9 +404,9 @@
    }
   },
   {
-   "text": "Investigators aren't sure they believe him. The paintings are still missing.",
+   "text": "Investigators aren't sure they believe him. Neither am I. Honestly.",
    "key": [
-    "MISSING."
+    "BELIEVE"
    ],
    "shot": {
     "type": "two",
@@ -474,7 +474,7 @@
    }
   },
   {
-   "text": "Trash or hidden? Where are the paintings now? Nobody knows.",
+   "text": "Trash or hidden? Where are the paintings now? Good question.",
    "key": [
     "NOW?"
    ],
@@ -576,19 +576,6 @@
    ]
   },
   {
-   "claim": "The alarm or motion sensors had been broken for weeks",
-   "terms": [
-    "alarm|sensor",
-    "broken|faulty|not working|repair"
-   ]
-  },
-  {
-   "claim": "Guards did not notice",
-   "terms": [
-    "guards"
-   ]
-  },
-  {
    "claim": "He came for one painting and took five",
    "terms": [
     "five"
@@ -619,12 +606,6 @@
    "terms": [
     "Birn",
     "trash|rubbish|garbage|bin"
-   ]
-  },
-  {
-   "claim": "The paintings are still missing",
-   "terms": [
-    "never been found|still missing|not been recovered|never recovered|missing"
    ]
   },
   {

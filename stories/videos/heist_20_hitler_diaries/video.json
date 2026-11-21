@@ -309,9 +309,9 @@
    }
   },
   {
-   "text": "It contains a whitener. Not made until after the war.",
+   "text": "The results are brutal. It's a forgery. A clumsy one.",
    "key": [
-    "WAR."
+    "FORGERY."
    ],
    "shot": {
     "type": "two",
@@ -433,9 +433,9 @@
    }
   },
   {
-   "text": "Top editors resign. The magazine's reputation takes years to recover.",
+   "text": "The magazine is humiliated. The whole world is watching.",
    "key": [
-    "RESIGN."
+    "HUMILIATED."
    ],
    "set": "press",
    "shot": {
@@ -628,9 +628,10 @@
    ]
   },
   {
-   "claim": "The paper contained a whitener made after the war",
+   "claim": "Forensic tests showed the diaries were forgeries",
    "terms": [
-    "whitener|brightener|blankophor"
+    "forensic|tests|analysis",
+    "forg"
    ]
   },
   {
@@ -658,9 +659,9 @@
    ]
   },
   {
-   "claim": "Stern editors resigned",
+   "claim": "It became a huge scandal for the magazine",
    "terms": [
-    "resign"
+    "scandal|embarrass|humiliat"
    ]
   },
   {
