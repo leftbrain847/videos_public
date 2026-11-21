@@ -1,0 +1,1099 @@
+{
+ "id": "mind_02_stanford_prison",
+ "title": "The prison study with a script",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "STANFORD",
+   "COUNTY JAIL"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#e8e1cf",
+    "pants": "#bdb5a0",
+    "number": "247",
+    "numberColor": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   }
+  },
+  "grd": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#b59b6a",
+    "pants": "#7d6a45",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "glasses": true
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4a",
+    "pants": "#2a2d33",
+    "tie": "#7a5c2a",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "beard": true
+   }
+  },
+  "vis": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#c0392b",
+    "pants": "#3a3a3a",
+    "lapel": "#8e2a20",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You signed up for fifteen dollars a day. Easy money.",
+   "cap": "You signed up for $15 a day. Easy money.",
+   "key": [
+    "$15"
+   ],
+   "board": [
+    "$15",
+    "A DAY"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "grd": false,
+    "boss": false,
+    "vis": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then real police arrest you at home.",
+   "key": [
+    "POLICE"
+   ],
+   "set": "living",
+   "board": [
+    "ARRESTED"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.2,
+     4.4
+    ],
+    "grd": [
+     1.4,
+     4.2
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "grd"
+    },
+    "grd": {
+     "mood": "angry",
+     "action": "point",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "It is summer, nineteen seventy one. Stanford. A two week study.",
+   "cap": "It is summer, 1971. Stanford. A two-week study.",
+   "key": [
+    "1971."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.2,
+     4.4
+    ],
+    "grd": [
+     1.4,
+     4.2
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your new prison is a basement hallway.",
+   "key": [
+    "BASEMENT"
+   ],
+   "set": "locker",
+   "board": [
+    "STANFORD",
+    "COUNTY JAIL"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.0,
+     0.4
+    ],
+    "grd": false,
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A coin flip made you a prisoner.",
+   "key": [
+    "COIN"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.0,
+     0.4
+    ],
+    "grd": [
+     1.6,
+     -0.2
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "grd"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "grd"
+    },
+    "grd": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You lose your name. You are a number now.",
+   "key": [
+    "NUMBER"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.0,
+     0.4
+    ],
+    "grd": [
+     1.6,
+     -0.2
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The guards get khaki shirts. They get mirrored sunglasses too.",
+   "key": [
+    "SUNGLASSES"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.0,
+     0.4
+    ],
+    "grd": [
+     1.6,
+     -0.2
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "grd"
+   },
+   "act": {
+    "grd": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They are college students. Just like you.",
+   "key": [
+    "STUDENTS."
+   ],
+   "set": "study",
+   "board": [
+    "GUARDS =",
+    "STUDENTS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "grd": [
+     1.2,
+     0.0
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "grd"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "grd"
+    },
+    "grd": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Day two, the prisoners rebel.",
+   "key": [
+    "REBEL."
+   ],
+   "set": "locker",
+   "board": [
+    "STANFORD",
+    "COUNTY JAIL"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.2
+    ],
+    "grd": [
+     2.2,
+     -0.6
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "angry",
+     "action": "point",
+     "look": "grd"
+    },
+    "grd": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The guards answer with fire extinguishers.",
+   "key": [
+    "EXTINGUISHERS."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.2
+    ],
+    "grd": [
+     2.2,
+     -0.6
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "grd",
+    "with": "you"
+   },
+   "act": {
+    "grd": {
+     "mood": "angry",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "grd"
+    }
+   }
+  },
+  {
+   "text": "These guards are volunteers too. They earn the same as you.",
+   "key": [
+    "SAME"
+   ],
+   "set": "study",
+   "board": [
+    "STANFORD",
+    "COUNTY JAIL"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "grd": false,
+    "boss": false,
+    "vis": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One prisoner breaks down. They let him go.",
+   "key": [
+    "DOWN."
+   ],
+   "set": "locker",
+   "board": [
+    "STANFORD",
+    "COUNTY JAIL"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.2
+    ],
+    "grd": false,
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Philip Zimbardo runs it all. He plays the superintendent.",
+   "key": [
+    "SUPERINTENDENT."
+   ],
+   "set": "office",
+   "board": [
+    "SUPERINTENDENT"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "grd": false,
+    "boss": [
+     0,
+     0.2
+    ],
+    "vis": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then Christina Maslach visits. She sees the hallway.",
+   "key": [
+    "MASLACH"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "grd": false,
+    "boss": [
+     1.4,
+     0.0
+    ],
+    "vis": [
+     -1.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "vis",
+    "with": "boss"
+   },
+   "act": {
+    "vis": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "vis"
+    }
+   }
+  },
+  {
+   "text": "She objects. Hard. It was planned for two weeks. It ends after six days.",
+   "cap": "She objects. Hard. It was planned for two weeks. It ends after 6 days.",
+   "key": [
+    "6"
+   ],
+   "board": [
+    "PLANNED: 14",
+    "LASTED: 6"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "grd": false,
+    "boss": [
+     1.4,
+     0.0
+    ],
+    "vis": [
+     -1.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "vis"
+   },
+   "act": {
+    "vis": {
+     "mood": "angry",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here is the loophole. The guards had help.",
+   "key": [
+    "HELP."
+   ],
+   "set": "study",
+   "board": [
+    "THE",
+    "LOOPHOLE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "grd": false,
+    "boss": false,
+    "vis": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Recordings show staff pushing guards to be tough.",
+   "key": [
+    "TOUGH."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "grd": [
+     1.2,
+     0.0
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "grd"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "grd"
+    },
+    "grd": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The prisoner who broke down? He later said he faked it.",
+   "key": [
+    "FAKED"
+   ],
+   "set": "locker",
+   "board": [
+    "STANFORD",
+    "COUNTY JAIL"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.2
+    ],
+    "grd": false,
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He wanted out to study for exams.",
+   "key": [
+    "EXAMS."
+   ],
+   "set": "study",
+   "board": [
+    "STANFORD",
+    "COUNTY JAIL"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "grd": false,
+    "boss": false,
+    "vis": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Twenty eighteen. A researcher opens the archives.",
+   "cap": "2018. A researcher opens the archives.",
+   "key": [
+    "ARCHIVES."
+   ],
+   "board": [
+    "ARCHIVES",
+    "2018"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "grd": false,
+    "boss": false,
+    "vis": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His verdict? The guards knew what was expected of them.",
+   "key": [
+    "EXPECTED."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "grd": false,
+    "boss": false,
+    "vis": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two thousand two. The B B C ran its own prison.",
+   "cap": "2002. The BBC ran its own prison.",
+   "key": [
+    "BBC"
+   ],
+   "set": "locker",
+   "board": [
+    "BBC",
+    "2002"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "grd": [
+     1.4,
+     0.0
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "grd"
+   },
+   "act": {
+    "grd": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "grd"
+    }
+   }
+  },
+  {
+   "text": "Those guards never turned cruel. The prisoners took over.",
+   "key": [
+    "TOOK"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "grd": [
+     1.4,
+     0.0
+    ],
+    "boss": false,
+    "vis": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "grd": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Coin flip time. Guard or prisoner? Pick one.",
+   "key": [
+    "GUARD",
+    "PRISONER?"
+   ],
+   "set": "study",
+   "board": [
+    "GUARD OR",
+    "PRISONER?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "grd": false,
+    "boss": false,
+    "vis": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Stanford prison experiment",
+   "url": "https://en.wikipedia.org/wiki/Stanford_prison_experiment"
+  },
+  {
+   "title": "Simply Psychology: Stanford prison experiment",
+   "url": "https://www.simplypsychology.org/zimbardo.html"
+  },
+  {
+   "title": "Vox: The Stanford Prison Experiment was massively influential. We just learned it was a fraud.",
+   "url": "https://www.vox.com/2018/6/13/17449118/stanford-prison-experiment-fraud-psychology-replication"
+  },
+  {
+   "title": "Live Science: One of psychology's most famous experiments was deeply flawed",
+   "url": "https://www.livescience.com/62832-stanford-prison-experiment-flawed.html"
+  },
+  {
+   "title": "ScienceAlert: Famous 1971 prison experiment wasn't what most of us thought",
+   "url": "https://www.sciencealert.com/famous-1971-prison-experiment-wasnt-what-most-of-us-thought"
+  },
+  {
+   "title": "Wikipedia: BBC Prison Study",
+   "url": "https://en.wikipedia.org/wiki/BBC_Prison_Study"
+  },
+  {
+   "title": "Wikipedia: Philip Zimbardo",
+   "url": "https://en.wikipedia.org/wiki/Philip_Zimbardo"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Participants were paid $15 a day",
+   "terms": [
+    "15",
+    "day"
+   ]
+  },
+  {
+   "claim": "Prisoners were arrested at home by real police",
+   "terms": [
+    "police",
+    "arrest"
+   ]
+  },
+  {
+   "claim": "The study took place at Stanford in 1971",
+   "terms": [
+    "Stanford",
+    "1971"
+   ]
+  },
+  {
+   "claim": "It was planned to last two weeks",
+   "terms": [
+    "two weeks|two-week|14 days"
+   ]
+  },
+  {
+   "claim": "The prison was in a basement",
+   "terms": [
+    "basement"
+   ]
+  },
+  {
+   "claim": "Roles were assigned by coin flip",
+   "terms": [
+    "coin"
+   ]
+  },
+  {
+   "claim": "Prisoners were called by numbers instead of names",
+   "terms": [
+    "number",
+    "prisoners"
+   ]
+  },
+  {
+   "claim": "Guards wore khaki uniforms and mirrored sunglasses",
+   "terms": [
+    "mirrored sunglasses"
+   ]
+  },
+  {
+   "claim": "Guards and prisoners were college students",
+   "terms": [
+    "college students|students"
+   ]
+  },
+  {
+   "claim": "On the second day the prisoners rebelled",
+   "terms": [
+    "rebellion|rebelled|revolt"
+   ]
+  },
+  {
+   "claim": "Guards used fire extinguishers against the prisoners",
+   "terms": [
+    "fire extinguisher"
+   ]
+  },
+  {
+   "claim": "One prisoner broke down and was released",
+   "terms": [
+    "8612|breakdown|break down",
+    "released"
+   ]
+  },
+  {
+   "claim": "Zimbardo acted as superintendent",
+   "terms": [
+    "Zimbardo",
+    "superintendent"
+   ]
+  },
+  {
+   "claim": "Christina Maslach objected",
+   "terms": [
+    "Maslach",
+    "object"
+   ]
+  },
+  {
+   "claim": "The experiment ended after six days",
+   "terms": [
+    "six days"
+   ]
+  },
+  {
+   "claim": "Recordings show staff encouraging guards to be tough",
+   "terms": [
+    "tough",
+    "guards"
+   ]
+  },
+  {
+   "claim": "The prisoner who broke down later said he faked it",
+   "terms": [
+    "Korpi",
+    "fak"
+   ]
+  },
+  {
+   "claim": "He wanted to get out to study for exams",
+   "terms": [
+    "Korpi",
+    "study"
+   ]
+  },
+  {
+   "claim": "Thibault Le Texier studied the archives in 2018",
+   "terms": [
+    "Le Texier",
+    "archive"
+   ]
+  },
+  {
+   "claim": "Le Texier concluded the guards knew what was expected of them",
+   "terms": [
+    "Le Texier",
+    "guards"
+   ]
+  },
+  {
+   "claim": "The BBC ran its own prison study in 2002",
+   "terms": [
+    "BBC Prison Study",
+    "2002"
+   ]
+  },
+  {
+   "claim": "In the BBC study the guards did not become tyrannical and the prisoners took over",
+   "terms": [
+    "guards",
+    "prisoners",
+    "BBC"
+   ]
+  }
+ ]
+}
