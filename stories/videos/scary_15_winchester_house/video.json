@@ -1,0 +1,796 @@
+{
+ "id": "scary_15_winchester_house",
+ "title": "The Winchester house that never stopped building",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "WINCHESTER"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5aa832",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "flashlight"
+  },
+  "sarah": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#2a2a2a",
+    "pants": "#2a2a2a",
+    "hair": "bun",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "lapel": "#5a5a5a"
+   },
+   "at": "center"
+  },
+  "builder": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#c46a3c",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#5c3a24",
+    "cap": "#f6d21f"
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "prof": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "bob",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "You climb a staircase. It ends at the ceiling. Nowhere to go.",
+   "key": [
+    "CEILING."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "sarah": false,
+    "builder": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Welcome to the Winchester house. San Jose, California. Watch your step.",
+   "key": [
+    "WINCHESTER"
+   ],
+   "board": [
+    "SAN JOSE",
+    "CALIFORNIA"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It belonged to Sarah Winchester. Rifle fortune money. Lots of it.",
+   "key": [
+    "RIFLE"
+   ],
+   "place": {
+    "sarah": [
+     2.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sarah"
+   },
+   "act": {
+    "sarah": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She buys a farmhouse in eighteen eighty six. Then she starts building.",
+   "cap": "She buys a farmhouse in 1886. Then she starts building.",
+   "key": [
+    "BUILDING."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "sarah"
+   },
+   "act": {
+    "sarah": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "And building. Workers hammer away for decades. Room after room.",
+   "key": [
+    "DECADES."
+   ],
+   "place": {
+    "builder": [
+     0,
+     -0.6
+    ],
+    "you": [
+     -2.6,
+     0.2
+    ],
+    "capy": false,
+    "sarah": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "builder"
+   },
+   "act": {
+    "builder": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "builder"
+    }
+   }
+  },
+  {
+   "text": "The house grows. One hundred sixty rooms, roughly.",
+   "cap": "The house grows. 160 rooms, roughly.",
+   "key": [
+    "160"
+   ],
+   "board": [
+    "ROOMS:",
+    "~160"
+   ],
+   "place": {
+    "capy": [
+     -0.2,
+     1.2
+    ],
+    "you": [
+     -2.6,
+     0.2
+    ],
+    "builder": [
+     2.6,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Doors open onto walls. One opens onto a long drop. Outside.",
+   "key": [
+    "DROP."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "A window sits in the floor. Very normal.",
+   "key": [
+    "FLOOR."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then an earthquake hits. Nineteen oh six.",
+   "cap": "Then an earthquake hits. 1906.",
+   "key": [
+    "1906."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "builder"
+   },
+   "act": {
+    "builder": {
+     "mood": "shocked",
+     "action": "idle"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The top floors come down. The tower is gone.",
+   "key": [
+    "TOWER"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "builder"
+   },
+   "act": {
+    "builder": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She supposedly loved the number thirteen. It shows up everywhere.",
+   "cap": "She supposedly loved the number 13. It shows up everywhere.",
+   "key": [
+    "13."
+   ],
+   "place": {
+    "capy": [
+     -0.2,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "builder"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "talk",
+     "look": "camera"
+    },
+    "builder": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "So why build forever? The legend has an answer.",
+   "key": [
+    "LEGEND"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A psychic supposedly told her to keep building. For the ghosts.",
+   "key": [
+    "GHOSTS."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "THE",
+     "LEGEND"
+    ]
+   },
+   "place": {
+    "sarah": [
+     0,
+     -0.4
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "builder": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sarah"
+   },
+   "act": {
+    "sarah": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "sarah"
+    }
+   }
+  },
+  {
+   "text": "Ghosts of people killed by Winchester rifles.",
+   "key": [
+    "RIFLES."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sarah"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sarah": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Stop building, the story says. Then they get you.",
+   "key": [
+    "GET"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "sarah"
+   },
+   "act": {
+    "sarah": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Spooky. Also, there is no real evidence. None.",
+   "key": [
+    "EVIDENCE."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "sarah": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Historians say she just loved designing. Badly sometimes. Constantly.",
+   "key": [
+    "DESIGNING."
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "HISTORIAN",
+     "SAYS"
+    ]
+   },
+   "place": {
+    "prof": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "sarah": false,
+    "builder": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some odd doors are just leftovers. From that earthquake.",
+   "key": [
+    "LEFTOVERS."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "prof"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "prof"
+    },
+    "prof": {
+     "mood": "smug",
+     "action": "point",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Building stops when she dies. Nineteen twenty two.",
+   "cap": "Building stops when she dies. 1922.",
+   "key": [
+    "1922."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Months later, it opens to tourists. Spooky name included.",
+   "key": [
+    "TOURISTS."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "MYSTERY",
+     "HOUSE"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "builder": [
+     2.6,
+     -1.0
+    ],
+    "sarah": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    },
+    "builder": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Your stairway to nowhere? Now it sells tickets. Lots of tickets.",
+   "key": [
+    "TICKETS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Ghost house or design project? Pick one.",
+   "key": [
+    "GHOST",
+    "DESIGN"
+   ],
+   "board": [
+    "GHOSTS",
+    "OR DESIGN?"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Winchester Mystery House",
+   "url": "https://en.wikipedia.org/wiki/Winchester_Mystery_House"
+  },
+  {
+   "title": "Wikipedia: Sarah Winchester",
+   "url": "https://en.wikipedia.org/wiki/Sarah_Winchester"
+  },
+  {
+   "title": "Mental Floss: 14 haunting facts about the Winchester Mystery House",
+   "url": "https://www.mentalfloss.com/article/527411/14-haunting-facts-about-winchester-mystery-house"
+  },
+  {
+   "title": "HowStuffWorks: What's so scary about the Winchester house story?",
+   "url": "https://science.howstuffworks.com/science-vs-myth/afterlife/winchester-mystery-house.htm"
+  },
+  {
+   "title": "Amusing Planet: The house that Sarah couldn't stop building",
+   "url": "https://www.amusingplanet.com/2016/11/winchester-mystery-house-house-that.html"
+  },
+  {
+   "title": "ABC News: Inside the Winchester Mystery House",
+   "url": "https://abcnews.go.com/GMA/SmartHome/story?id=6115506"
+  },
+  {
+   "title": "99% Invisible: Mystery house",
+   "url": "https://99percentinvisible.org/episode/mystery-house/transcript"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The house has a staircase that ends at the ceiling",
+   "terms": [
+    "stair",
+    "ceiling"
+   ]
+  },
+  {
+   "claim": "The house is in San Jose, California",
+   "terms": [
+    "San Jose"
+   ]
+  },
+  {
+   "claim": "Sarah Winchester inherited a rifle fortune",
+   "terms": [
+    "Winchester",
+    "rifle"
+   ]
+  },
+  {
+   "claim": "She bought a farmhouse in 1886 and began building",
+   "terms": [
+    "1886"
+   ]
+  },
+  {
+   "claim": "Building went on for decades",
+   "terms": [
+    "construction|building",
+    "years|decades"
+   ]
+  },
+  {
+   "claim": "The house grew to about 160 rooms",
+   "terms": [
+    "160",
+    "rooms"
+   ]
+  },
+  {
+   "claim": "Doors open onto walls or drops",
+   "terms": [
+    "door",
+    "nowhere|wall|drop"
+   ]
+  },
+  {
+   "claim": "There is a window in the floor",
+   "terms": [
+    "window",
+    "floor"
+   ]
+  },
+  {
+   "claim": "The 1906 earthquake damaged the house and brought down the tower",
+   "terms": [
+    "1906",
+    "earthquake"
+   ]
+  },
+  {
+   "claim": "The legend says a medium told her to keep building for the ghosts of rifle victims",
+   "terms": [
+    "medium|psychic",
+    "spirits|ghosts"
+   ]
+  },
+  {
+   "claim": "The number 13 appears throughout the house",
+   "terms": [
+    "13|thirteen"
+   ]
+  },
+  {
+   "claim": "Historians find no evidence for the legend",
+   "terms": [
+    "myth|legend|no evidence"
+   ]
+  },
+  {
+   "claim": "Building stopped when she died in 1922",
+   "terms": [
+    "1922"
+   ]
+  },
+  {
+   "claim": "It opened to tourists months after her death",
+   "terms": [
+    "tourist|attraction|opened"
+   ]
+  }
+ ]
+}
