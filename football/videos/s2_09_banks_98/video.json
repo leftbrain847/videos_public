@@ -52,30 +52,52 @@
    },
    "at": "left",
    "hold": "flag"
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#97233f",
+    "pants": "#f4f4f4",
+    "number": "18",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "right"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#97233f",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "Arizona was two yards from the lead, on the last play. They lost by twelve.",
-   "cap": "Arizona was 2 yards from the lead, on the last play. They lost by 12.",
+   "text": "Two yards from winning. You lose by twelve.",
+   "cap": "2 yards from winning. You lose by 12.",
    "key": [
-    "2",
     "12."
    ],
+   "speaker": "capy",
    "place": {
+    "banks": false,
+    "brissett": [
+     0.2,
+     0
+    ],
+    "ref": false,
+    "wr": false,
+    "fan": false,
     "capy": [
      -2.6,
      0.8
-    ],
-    "brissett": [
-     0,
-     0
-    ],
-    "banks": [
-     2.2,
-     0.3
-    ],
-    "ref": false
+    ]
    },
    "shot": {
     "type": "two",
@@ -89,38 +111,44 @@
      "look": "camera"
     },
     "brissett": {
-     "mood": "happy",
+     "mood": "shocked",
      "action": "hold",
-     "look": "capy"
-    },
-    "banks": {
-     "mood": "angry",
-     "action": "idle",
-     "look": "brissett"
+     "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Week four, in New Jersey. Giants thirty, Cardinals twenty four. Arizona has the ball for one final drive.",
-   "cap": "Week 4, in New Jersey. Giants 30, Cardinals 24. Arizona has the ball for one final drive.",
+   "text": "You're the Arizona Cardinals. Week four, at the Giants.",
+   "cap": "You're the Arizona Cardinals. Week 4, at the Giants.",
    "key": [
-    "FINAL"
+    "GIANTS."
    ],
-   "set": "tunnel",
-   "setOpts": {
-    "boardText": [
-     "WEEK 4",
-     "FINAL DRIVE"
-    ]
-   },
+   "board": [
+    "WEEK 4",
+    "ARI AT NYG"
+   ],
    "place": {
-    "brissett": "left",
-    "banks": "right"
+    "banks": [
+     -1.4,
+     0
+    ],
+    "brissett": [
+     1.4,
+     0
+    ],
+    "ref": false,
+    "wr": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "wide",
-    "on": "brissett"
+    "on": "brissett",
+    "offset": [
+     -1.4,
+     0,
+     -2
+    ]
    },
    "act": {
     "brissett": {
@@ -129,98 +157,104 @@
      "look": "banks"
     },
     "banks": {
-     "mood": "angry",
+     "mood": "smug",
      "action": "cross",
      "look": "brissett"
     }
    }
   },
   {
-   "text": "Giants cornerback Deonte Banks gets flagged for pass interference.",
+   "text": "You're down thirty to twenty four. Last drive.",
+   "cap": "You're down 30-24. Last drive.",
    "key": [
-    "FLAGGED"
+    "30-24."
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "FLAG",
-     "PASS INTERFERENCE"
-    ]
-   },
+   "board": [
+    "NYG 30",
+    "ARI 24"
+   ],
    "place": {
-    "ref": [
-     -1.2,
-     0.4
-    ],
     "banks": [
-     1.2,
-     0.2
-    ]
+     -2.4,
+     -0.8
+    ],
+    "brissett": [
+     0,
+     0
+    ],
+    "ref": false,
+    "wr": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "two",
-    "on": "ref",
-    "with": "banks"
+    "type": "close",
+    "on": "brissett"
    },
    "act": {
-    "ref": {
-     "mood": "angry",
-     "action": "throw",
-     "look": "banks"
-    },
-    "banks": {
-     "mood": "shocked",
-     "action": "shrug",
-     "look": "ref"
+    "brissett": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Now Arizona is inside the ten, with seconds left.",
-   "cap": "Now Arizona is inside the 10, with seconds left.",
+   "text": "Jameis Winston already threw three touchdowns. Your turn.",
+   "cap": "Jameis Winston already threw 3 touchdowns. Your turn.",
    "key": [
-    "10,"
+    "3"
    ],
-   "set": "office",
-   "setOpts": {
-    "boardText": [
-     "ARIZONA",
-     "INSIDE THE 10"
-    ]
-   },
+   "board": [
+    "WINSTON",
+    "3 TD"
+   ],
    "place": {
-    "capy": "center"
+    "banks": [
+     0.4,
+     0
+    ],
+    "brissett": false,
+    "ref": false,
+    "wr": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "medium",
-    "on": "capy"
+    "on": "banks"
    },
    "act": {
-    "capy": {
-     "mood": "worried",
-     "action": "point",
+    "banks": {
+     "mood": "smug",
+     "action": "cross",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Fourth and goal from the two. One last play.",
-   "cap": "Fourth and goal from the 2. One last play.",
+   "text": "Jacoby Brissett gets you to the Giants' two.",
+   "cap": "Jacoby Brissett gets you to the Giants' 2.",
    "key": [
-    "FOURTH",
-    "LAST"
+    "2."
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "4TH & GOAL",
-     "AT THE 2"
-    ]
-   },
+   "board": [
+    "BALL ON",
+    "NYG 2"
+   ],
    "place": {
-    "brissett": "center",
-    "banks": "right"
+    "banks": false,
+    "brissett": [
+     0.6,
+     0
+    ],
+    "ref": false,
+    "wr": [
+     -1.6,
+     0.2
+    ],
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "low",
@@ -228,83 +262,583 @@
    },
    "act": {
     "brissett": {
-     "mood": "angry",
-     "action": "hold",
-     "look": "camera"
+     "mood": "happy",
+     "action": "point",
+     "look": "wr"
     },
-    "banks": {
-     "mood": "worried",
-     "action": "idle",
-     "look": "brissett"
-    }
-   }
-  },
-  {
-   "text": "Jacoby Brissett throws.",
-   "key": [
-    "THROWS."
-   ],
-   "shot": {
-    "type": "medium",
-    "on": "brissett"
-   },
-   "act": {
-    "brissett": {
-     "mood": "neutral",
-     "action": "throw",
-     "look": "banks"
-    }
-   }
-  },
-  {
-   "text": "Banks steps in front. Interception.",
-   "key": [
-    "INTERCEPTION."
-   ],
-   "shot": {
-    "type": "close",
-    "on": "banks"
-   },
-   "act": {
-    "banks": {
-     "mood": "shocked",
-     "action": "hold",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "And he does not stop running. Not at midfield. Not at all.",
-   "key": [
-    "RUNNING."
-   ],
-   "shot": {
-    "type": "wide",
-    "on": "banks"
-   },
-   "act": {
-    "banks": {
+    "wr": {
      "mood": "happy",
      "action": "cheer",
      "look": "camera"
-    },
-    "brissett": {
-     "mood": "shocked",
-     "action": "idle",
-     "look": "banks"
     }
    }
   },
   {
-   "text": "Ninety eight yards.",
-   "cap": "98 yards.",
+   "text": "Time for one more play. Score, you win. Easy.",
+   "key": [
+    "WIN."
+   ],
+   "speaker": "capy",
+   "board": [
+    "LAST",
+    "PLAY"
+   ],
+   "place": {
+    "banks": false,
+    "brissett": [
+     1.4,
+     0.2
+    ],
+    "ref": false,
+    "wr": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "brissett"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "brissett": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Brissett throws. Deonte Banks steps in front.",
+   "key": [
+    "BANKS"
+   ],
+   "place": {
+    "capy": false,
+    "ref": false,
+    "fan": false
+   },
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "NYG 30",
+     "ARI 24"
+    ],
+    "endZone": 45,
+    "zoneA": "#0b2265",
+    "zoneB": "#97233f"
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "brissett",
+    "lead": 0
+   },
+   "play": {
+    "cast": {
+     "brissett": {
+      "path": [
+       [
+        0.0,
+        -37,
+        0
+       ],
+       [
+        0.462,
+        -37.5,
+        -0.5
+       ],
+       [
+        1.0,
+        -38,
+        -1.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.404,
+        "throw"
+       ]
+      ],
+      "face": -90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        -41,
+        3.5
+       ],
+       [
+        0.722,
+        -45.5,
+        3.4
+       ],
+       [
+        1.0,
+        -45,
+        3.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.722,
+        "idle"
+       ]
+      ],
+      "face": -120
+     },
+     "banks": {
+      "path": [
+       [
+        0.0,
+        -47,
+        -1.8
+       ],
+       [
+        0.722,
+        -46.3,
+        0.2
+       ],
+       [
+        1.0,
+        -41,
+        0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.722,
+        "catch"
+       ],
+       [
+        0.765,
+        "run"
+       ]
+      ],
+      "face": 60
+     }
+    },
+    "ball": [
+     [
+      0.462,
+      -37.2,
+      1.7,
+      -0.4
+     ],
+     [
+      0.592,
+      -41.8,
+      2.8,
+      -0.1
+     ],
+     [
+      0.722,
+      -46.3,
+      1.4,
+      0.2
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "brissett"
+     ],
+     [
+      0.722,
+      "banks"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Interception. Then he just keeps running.",
+   "key": [
+    "RUNNING."
+   ],
+   "place": {
+    "capy": false,
+    "ref": false,
+    "fan": false
+   },
+   "act": {},
+   "shot": {
+    "type": "follow",
+    "on": "banks"
+   },
+   "play": {
+    "cast": {
+     "banks": {
+      "path": [
+       [
+        0.0,
+        -41,
+        0.5
+       ],
+       [
+        1.0,
+        -14,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        -45,
+        3.4
+       ],
+       [
+        1.0,
+        -24,
+        3.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "brissett": {
+      "path": [
+       [
+        0.0,
+        -38,
+        -1.5
+       ],
+       [
+        1.0,
+        -28,
+        -3.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "carry": [
+     [
+      0,
+      "banks"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Past midfield. Past everybody. Nobody even catches him.",
+   "key": [
+    "NOBODY"
+   ],
+   "place": {
+    "capy": false,
+    "ref": false,
+    "fan": false
+   },
+   "act": {},
+   "shot": {
+    "type": "follow_high",
+    "on": "banks"
+   },
+   "play": {
+    "cast": {
+     "banks": {
+      "path": [
+       [
+        0.0,
+        -14,
+        1.0
+       ],
+       [
+        1.0,
+        30,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        -24,
+        3.8
+       ],
+       [
+        1.0,
+        14,
+        4.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "brissett": {
+      "path": [
+       [
+        0.0,
+        -28,
+        -3.5
+       ],
+       [
+        1.0,
+        -5,
+        -4.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "carry": [
+     [
+      0,
+      "banks"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Ninety eight yards. Touchdown, Giants.",
+   "cap": "98 yards. Touchdown, Giants.",
    "key": [
     "98"
    ],
-   "board": [
-    "98",
-    "YARDS"
+   "sfx": [
+    [
+     0.5,
+     "roar"
+    ]
    ],
+   "place": {
+    "capy": false,
+    "ref": false,
+    "fan": false
+   },
+   "act": {},
+   "shot": {
+    "type": "follow",
+    "on": "banks"
+   },
+   "play": {
+    "cast": {
+     "banks": {
+      "path": [
+       [
+        0.0,
+        30,
+        1.0
+       ],
+       [
+        0.556,
+        46,
+        1.0
+       ],
+       [
+        1.0,
+        46.5,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.556,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        14,
+        4.0
+       ],
+       [
+        0.719,
+        31,
+        4.0
+       ],
+       [
+        1.0,
+        32,
+        4.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.719,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "brissett": {
+      "path": [
+       [
+        0.0,
+        -5,
+        -4.0
+       ],
+       [
+        0.654,
+        4,
+        -4.0
+       ],
+       [
+        1.0,
+        4.5,
+        -4.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.654,
+        "slump"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "carry": [
+     [
+      0,
+      "banks"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "No time left. The game ends right there.",
+   "key": [
+    "THERE."
+   ],
+   "speaker": "capy",
+   "set": "field",
+   "board": [
+    "0:00",
+    "FINAL"
+   ],
+   "place": {
+    "banks": [
+     1.6,
+     0.2
+    ],
+    "brissett": false,
+    "ref": false,
+    "wr": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "banks"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "banks": {
+     "mood": "happy",
+     "action": "celebrate",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Giants thirty six, Cardinals twenty four. Game over.",
+   "cap": "Giants 36, Cardinals 24. Game over.",
+   "key": [
+    "36,"
+   ],
+   "board": [
+    "NYG 36",
+    "ARI 24"
+   ],
+   "place": {
+    "banks": [
+     0,
+     0
+    ],
+    "brissett": [
+     2.4,
+     -0.6
+    ],
+    "ref": false,
+    "wr": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
     "type": "high",
     "on": "banks"
@@ -312,21 +846,33 @@
    "act": {
     "banks": {
      "mood": "happy",
-     "action": "cheer"
+     "action": "celebrate",
+     "look": "camera"
+    },
+    "brissett": {
+     "mood": "sad",
+     "action": "slump"
     }
    }
   },
   {
-   "text": "The clock runs out while he's still running.",
+   "text": "Two yards to win. Ninety eight yards to lose.",
+   "cap": "2 yards to win. 98 yards to lose.",
    "key": [
-    "OUT"
+    "LOSE."
    ],
-   "board": [
-    "0:00"
-   ],
+   "speaker": "capy",
    "place": {
+    "banks": [
+     1.6,
+     0
+    ],
+    "brissett": false,
+    "ref": false,
+    "wr": false,
+    "fan": false,
     "capy": [
-     -2.4,
+     -1.2,
      1.0
     ]
    },
@@ -336,66 +882,62 @@
    },
    "act": {
     "capy": {
-     "mood": "neutral",
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "banks": {
+     "mood": "happy",
      "action": "idle",
-     "look": "banks"
+     "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Touchdown, Giants. Thirty six to twenty four.",
-   "cap": "Touchdown, Giants. 36 to 24.",
+   "text": "A six point loss? Now it's twelve.",
+   "cap": "A 6-point loss? Now it's 12.",
    "key": [
-    "36"
+    "12."
    ],
    "board": [
-    "NYG 36",
-    "ARI 24"
+    "-6",
+    "-12"
    ],
    "place": {
+    "banks": false,
+    "brissett": [
+     0,
+     0
+    ],
+    "ref": false,
+    "wr": [
+     -2.0,
+     -0.4
+    ],
+    "fan": false,
     "capy": false
    },
    "shot": {
-    "type": "low",
-    "on": "banks"
+    "type": "close",
+    "on": "brissett"
    },
    "act": {
-    "banks": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "A six point lead became a twelve point win, on a play that started on their own two.",
-   "cap": "A 6 point lead became a 12 point win, on a play that started on their own 2.",
-   "key": [
-    "12"
-   ],
-   "shot": {
-    "type": "two",
-    "on": "banks",
-    "with": "brissett"
-   },
-   "act": {
-    "banks": {
-     "mood": "smug",
-     "action": "point",
-     "look": "brissett"
-    },
     "brissett": {
      "mood": "sad",
-     "action": "slump",
-     "look": "banks"
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "sad",
+     "action": "slump"
     }
    }
   },
   {
-   "text": "That week, Banks was named the NFC's Defensive Player of the Week.",
+   "text": "His prize? N F C Defensive Player of the Week.",
+   "cap": "His prize? NFC Defensive Player of the Week.",
    "key": [
-    "DEFENSIVE"
+    "WEEK."
    ],
    "set": "press",
    "setOpts": {
@@ -405,7 +947,15 @@
     ]
    },
    "place": {
-    "banks": "center"
+    "banks": [
+     0,
+     0.4
+    ],
+    "brissett": false,
+    "ref": false,
+    "wr": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "medium",
@@ -413,39 +963,85 @@
    },
    "act": {
     "banks": {
-     "mood": "happy",
-     "action": "talk",
+     "mood": "smug",
+     "action": "wave",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Flagged, then ninety eight yards the other way. Redemption? Yes or no?",
-   "cap": "Flagged, then 98 yards the other way. Redemption? Yes or no?",
+   "text": "Cardinals fans, look away. In your dreams, he's still running.",
    "key": [
-    "REDEMPTION?"
+    "STILL"
    ],
-   "set": "field",
+   "speaker": "capy",
+   "set": "living",
    "setOpts": {
     "boardText": [
-     "NYG 36",
-     "ARI 24"
+     "ARI",
+     "STILL RUNNING"
     ]
    },
    "place": {
+    "banks": false,
+    "brissett": false,
+    "ref": false,
+    "wr": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
     "capy": [
      -1.6,
-     1.0
-    ],
-    "banks": [
-     0.6,
-     0.2
+     3.6
     ]
    },
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "banks"
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Last play, at the two. Do you run or throw?",
+   "cap": "Last play, at the 2. Do you run or throw?",
+   "key": [
+    "THROW?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "RUN",
+    "OR THROW?"
+   ],
+   "place": {
+    "banks": false,
+    "brissett": false,
+    "ref": false,
+    "wr": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -453,13 +1049,12 @@
      "action": "talk",
      "look": "camera"
     },
-    "banks": {
-     "mood": "happy",
-     "action": "wave",
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -468,12 +1063,89 @@
    "url": "https://www.giants.com/news/instant-analysis-giants-clinch-36-24-victory-over-cardinals-on-deonte-banks-98-yard-pick-six"
   },
   {
-   "title": "amNY: Giants vs. Cardinals, Week 4",
-   "url": "https://www.amny.com/sports/giants-cardinals-w4-10-4-26/"
+   "title": "ESPN (AP): Winston throws 3 TD passes and Banks' pick-6 seals Giants' 36-24 win over Cardinals",
+   "url": "https://www.espn.com/nfl/recap/_/gameId/401872966"
+  },
+  {
+   "title": "ABC News (AP): Winston throws 3 TD passes and Banks' pick-6 seals Giants' 36-24 win",
+   "url": "https://abcnews.com/Sports/wireStory/winston-throws-3-td-passes-banks-pick-6-136990715"
+  },
+  {
+   "title": "azfamily (AP): Winston throws 3 touchdown passes and Banks' pick-6 seals Giants' 36-24 win",
+   "url": "https://www.azfamily.com/2026/10/04/winston-throws-3-touchdown-passes-banks-pick-6-seals-giants-36-24-win-over-cardinals/"
+  },
+  {
+   "title": "KOLD (AP): Winston throws 3 touchdown passes and Banks' pick-6 seals Giants' 36-24 win",
+   "url": "https://www.kold.com/2026/10/05/winston-throws-3-touchdown-passes-banks-pick-6-seals-giants-36-24-win-over-cardinals/"
+  },
+  {
+   "title": "TSN (AP): Winston throws three touchdown passes, Banks' pick-six seals Giants' win",
+   "url": "https://www.tsn.ca/nfl/article/winston-throws-three-touchdown-passes-banks-pick-six-seals-giants-win-over-cardinals/"
+  },
+  {
+   "title": "CBS New York: Deonte Banks' 98-yard pick-6 seals Giants' wild win over Cardinals",
+   "url": "https://www.cbsnews.com/newyork/news/new-york-giants-arizona-cardinals-jameis-winston-malik-nabers-jacoby-brissett/"
+  },
+  {
+   "title": "Giants.com: Game recap, Giants stay undefeated at home",
+   "url": "https://www.giants.com/news/game-recap-giants-stay-undefeated-at-home-sit-atop-nfc-east"
   },
   {
    "title": "Giants.com: CB Deonte Banks named NFC Defensive Player of the Week",
    "url": "https://www.giants.com/news/cb-deonte-banks-named-nfc-defensive-player-of-the-week"
+  },
+  {
+   "title": "amNY: Giants vs. Cardinals, Week 4",
+   "url": "https://www.amny.com/sports/giants-cardinals-w4-10-4-26/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Giants led the Cardinals 30-24 before Arizona's last drive",
+   "terms": [
+    "30-24"
+   ]
+  },
+  {
+   "claim": "Jameis Winston threw 3 touchdown passes",
+   "terms": [
+    "Winston",
+    "3 TD|3 touchdown|three touchdown"
+   ]
+  },
+  {
+   "claim": "Brissett's pass from the Giants' 2 was intercepted by Deonte Banks and returned 98 yards for a touchdown",
+   "terms": [
+    "Banks",
+    "98"
+   ]
+  },
+  {
+   "claim": "Brissett threw the interception",
+   "terms": [
+    "Brissett",
+    "Banks"
+   ]
+  },
+  {
+   "claim": "It came on the final play",
+   "terms": [
+    "final play|last play|time expired|no time|final snap"
+   ]
+  },
+  {
+   "claim": "Giants won 36-24",
+   "terms": [
+    "36-24"
+   ]
+  },
+  {
+   "claim": "Banks was named NFC Defensive Player of the Week",
+   "terms": [
+    "Banks",
+    "Defensive Player of the Week"
+   ]
   }
  ]
 }
