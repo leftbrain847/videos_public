@@ -434,9 +434,9 @@
    }
   },
   {
-   "text": "Sudden death overtime. First score wins. No pressure.",
+   "text": "Overtime. Detroit has the ball. No pressure.",
    "key": [
-    "FIRST"
+    "OVERTIME."
    ],
    "speaker": "capy",
    "set": "field",
@@ -450,8 +450,8 @@
     "zoneB": "#1b78c0"
    },
    "board": [
-    "SUDDEN",
-    "DEATH"
+    "LIONS",
+    "BALL"
    ],
    "place": {
     "capy": [
@@ -1051,12 +1051,6 @@
    "terms": [
     "heads",
     "audio|tape|replay|microphone"
-   ]
-  },
-  {
-   "claim": "Overtime was sudden death: first score wins",
-   "terms": [
-    "sudden death|first to score|first team to score|first score"
    ]
   },
   {

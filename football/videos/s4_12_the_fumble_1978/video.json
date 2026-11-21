@@ -2058,9 +2058,9 @@
    }
   },
   {
-   "text": "A plane flies a banner over the stadium. It mocks the team.",
+   "text": "One handoff call. It cost him his whole football career.",
    "key": [
-    "BANNER"
+    "HANDOFF"
    ],
    "set": "locker",
    "shot": {
@@ -2071,8 +2071,8 @@
     "qb": "center"
    },
    "board": [
-    "THE",
-    "BANNER"
+    "ONE",
+    "HANDOFF"
    ],
    "act": {
     "qb": {
@@ -2242,13 +2242,6 @@
    "terms": [
     "Gibson",
     "never"
-   ]
-  },
-  {
-   "claim": "A plane flew a banner over the stadium",
-   "terms": [
-    "plane|airplane|aircraft|flew|flown",
-    "banner|lousy football|15 years"
    ]
   },
   {
