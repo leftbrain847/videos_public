@@ -1,0 +1,669 @@
+{
+ "id": "scary_30_windsor_hum",
+ "title": "The Windsor Hum: a noise that kept a city awake",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "THE HUM"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#4a6fb5",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "neighbor": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#8a5a3a",
+    "pants": "#2a2a2a",
+    "hair": "bob",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
+  },
+  "sci": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "Your windows rattle at night. Something is humming. Nobody can find it.",
+   "key": [
+    "HUMMING."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "3 AM",
+     "HMMMM"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     4.4
+    ],
+    "you": [
+     0,
+     4.2
+    ],
+    "neighbor": false,
+    "sci": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "You live in Windsor, Ontario. Right across the river from Detroit. Close neighbors.",
+   "key": [
+    "DETROIT."
+   ],
+   "board": [
+    "WINDSOR",
+    "ONTARIO"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Around twenty eleven, people hear a deep rumble.",
+   "cap": "Around 2011, people hear a deep rumble.",
+   "key": [
+    "RUMBLE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Like a big truck idling outside. All night. Every night. Never stopping.",
+   "key": [
+    "NIGHT."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some people feel it in their chest. Dishes buzz. Walls hum.",
+   "key": [
+    "CHEST."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Thousands of people complain. Some cannot sleep for years. Very tired people.",
+   "key": [
+    "SLEEP"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "COMPLAINTS",
+     "THOUSANDS"
+    ]
+   },
+   "place": {
+    "neighbor": [
+     0,
+     -0.4
+    ],
+    "you": [
+     -2.6,
+     0.2
+    ],
+    "capy": [
+     2.6,
+     0.6
+    ],
+    "sci": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "neighbor"
+   },
+   "act": {
+    "neighbor": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "neighbor"
+    },
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "neighbor"
+    }
+   }
+  },
+  {
+   "text": "Theories fly. Secret military tests. Aliens. Underground tunnels. Even ghosts.",
+   "key": [
+    "ALIENS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "neighbor",
+    "with": "you"
+   },
+   "act": {
+    "neighbor": {
+     "mood": "worried",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "neighbor"
+    }
+   }
+  },
+  {
+   "text": "Your city sounds haunted. By a bass speaker. The worst speaker.",
+   "key": [
+    "BASS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then the government pays scientists to investigate.",
+   "key": [
+    "INVESTIGATE."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "HUM STUDY",
+     "2014"
+    ]
+   },
+   "place": {
+    "sci": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "neighbor": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They set up sensors. They map where it is loudest. Hours of data.",
+   "key": [
+    "SENSORS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Every clue points across the river. To Zug Island.",
+   "key": [
+    "ZUG"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sci"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "sci"
+    },
+    "sci": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "An industrial island in Michigan. Steel mills. Blast furnaces. Very loud.",
+   "key": [
+    "FURNACES."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One problem. It is in another country. The United States.",
+   "key": [
+    "COUNTRY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your scientists cannot just walk in. The source stays unconfirmed. Frustrating.",
+   "key": [
+    "UNCONFIRMED."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Years go by. The hum keeps going. People keep complaining.",
+   "key": [
+    "GOING."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "HMMMM"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     4.2
+    ],
+    "capy": [
+     -2.4,
+     4.4
+    ],
+    "neighbor": false,
+    "sci": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "In twenty twenty, the steel plant shuts down. Finally.",
+   "cap": "In 2020, the steel plant shuts down. Finally.",
+   "key": [
+    "SHUTS"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Suddenly, Windsor goes quiet. Totally quiet.",
+   "key": [
+    "QUIET."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Mystery solved by turning it off.",
+   "key": [
+    "OFF."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Not every hum gets an answer. Other towns still have theirs. Still unexplained.",
+   "key": [
+    "THEIRS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Can you hear a hum right now? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "HEAR A HUM?",
+    "YES OR NO?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NPR: It took a pandemic, mystery of Windsor hum is solved",
+   "url": "https://www.npr.org/2020/08/04/898853311/it-took-a-pandemic-mystery-of-windsor-hum-is-solved"
+  },
+  {
+   "title": "CBC News: Windsor hum, Zug Island and U.S. Steel",
+   "url": "https://www.cbc.ca/news/canada/windsor/windsor-hum-zug-island-us-steel-1.5665100"
+  },
+  {
+   "title": "Wikipedia: The Hum",
+   "url": "https://en.wikipedia.org/wiki/The_Hum"
+  },
+  {
+   "title": "Global Affairs Canada: Summary of the Windsor Hum study results",
+   "url": "https://international.gc.ca/department-ministere/windsor_hum_results-bourdonnement_windsor_resultats.aspx?lang=eng"
+  },
+  {
+   "title": "Daily Hive: The Windsor Hum",
+   "url": "https://dailyhive.com/vancouver/windsor-hum-ontario"
+  },
+  {
+   "title": "SooToday: Infamous Windsor hum dies down after U.S. Steel idles Zug Island plant",
+   "url": "https://sootoday.com/ontario-news/infamous-windsor-hum-finally-dies-down-after-us-steel-idles-zug-island-plant-2595164"
+  },
+  {
+   "title": "Wikipedia: Zug Island",
+   "url": "https://en.wikipedia.org/wiki/Zug_Island"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Residents of Windsor, Ontario heard a mysterious hum",
+   "terms": [
+    "Windsor",
+    "hum"
+   ]
+  },
+  {
+   "claim": "Windsor is across the river from Detroit",
+   "terms": [
+    "Detroit"
+   ]
+  },
+  {
+   "claim": "The hum began around 2011",
+   "terms": [
+    "2011"
+   ]
+  },
+  {
+   "claim": "It sounded like an idling engine or rumble",
+   "terms": [
+    "rumble|idling|truck"
+   ]
+  },
+  {
+   "claim": "Some felt it in their bodies and it rattled windows",
+   "terms": [
+    "rattl|vibrat|chest"
+   ]
+  },
+  {
+   "claim": "Thousands complained",
+   "terms": [
+    "thousands|complaints"
+   ]
+  },
+  {
+   "claim": "The Canadian government funded a study",
+   "terms": [
+    "study"
+   ]
+  },
+  {
+   "claim": "Researchers used sensors to locate it",
+   "terms": [
+    "sensor|monitor|seismo|microphone|instrument|equipment|measur|record"
+   ]
+  },
+  {
+   "claim": "The source was traced to Zug Island in Michigan",
+   "terms": [
+    "Zug Island"
+   ]
+  },
+  {
+   "claim": "Zug Island has steel mill blast furnaces",
+   "terms": [
+    "blast furnace|steel"
+   ]
+  },
+  {
+   "claim": "The source was in the US, outside Canadian reach",
+   "terms": [
+    "U.S.|US|American|Michigan"
+   ]
+  },
+  {
+   "claim": "In 2020 U.S. Steel idled the Zug Island plant",
+   "terms": [
+    "2020|idled|idling"
+   ]
+  },
+  {
+   "claim": "The hum went quiet afterward",
+   "terms": [
+    "quiet|stopped|gone"
+   ]
+  }
+ ]
+}

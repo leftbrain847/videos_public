@@ -1,0 +1,734 @@
+{
+ "id": "scary_29_cottingley_fairies",
+ "title": "The Cottingley fairies: two girls fool the world",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "COTTINGLEY"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#e8c0d0",
+    "pants": "#5a4a6a",
+    "hair": "braids",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "elsie": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#c0d8e8",
+    "pants": "#4a5a6a",
+    "hair": "bob",
+    "hairColor": "#6b4423",
+    "skin": "#f0c8a8"
+   },
+   "at": "center",
+   "hold": "phone"
+  },
+  "doyle": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#4a5a3a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f0c8a8",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "notepad"
+  },
+  "dad": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5a4a3a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "You are nine. You fake a photo. You fool the man behind Sherlock Holmes.",
+   "key": [
+    "HOLMES."
+   ],
+   "set": "temple",
+   "setOpts": {
+    "boardText": [
+     "COTTINGLEY",
+     "1917"
+    ],
+    "sky": "#cfe8c8"
+   },
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "elsie": [
+     2.8,
+     -0.6
+    ],
+    "doyle": false,
+    "dad": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "elsie": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Nineteen seventeen. Cottingley, England. A stream behind the house. Tiny village.",
+   "cap": "1917. Cottingley, England. A stream behind the house. Tiny village.",
+   "key": [
+    "STREAM"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle"
+    },
+    "elsie": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You are Frances. Your older cousin is Elsie. She is sixteen.",
+   "key": [
+    "ELSIE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "elsie"
+   },
+   "act": {
+    "elsie": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You keep coming home wet. You say you play with fairies. Every single time.",
+   "key": [
+    "FAIRIES."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nobody believes you. So Elsie borrows her father's camera.",
+   "key": [
+    "CAMERA."
+   ],
+   "place": {
+    "capy": [
+     -0.6,
+     1.2
+    ],
+    "you": [
+     -3.0,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "elsie"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "talk",
+     "look": "camera"
+    },
+    "elsie": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The photo shows you. Surrounded by tiny dancing fairies. Wings and all.",
+   "key": [
+    "FAIRIES."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Elsie's father says it is a prank. He is right.",
+   "key": [
+    "RIGHT."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "DAD SAYS:",
+     "PRANK"
+    ]
+   },
+   "place": {
+    "dad": [
+     0,
+     -0.4
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "elsie": false,
+    "doyle": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "dad"
+   },
+   "act": {
+    "dad": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "dad"
+    }
+   }
+  },
+  {
+   "text": "Nobody listens to him. Your fame is just starting. Poor guy.",
+   "key": [
+    "FAME"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "dad"
+   },
+   "act": {
+    "dad": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Years later, a famous author sees the photos.",
+   "key": [
+    "AUTHOR"
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "THE STRAND",
+     "1920"
+    ]
+   },
+   "place": {
+    "doyle": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "elsie": false,
+    "dad": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "doyle"
+   },
+   "act": {
+    "doyle": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Arthur Conan Doyle. Sherlock Holmes's creator. A big believer in spirits.",
+   "key": [
+    "BELIEVER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "doyle"
+   },
+   "act": {
+    "doyle": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He puts your fairies in a famous magazine. Proof, he says.",
+   "key": [
+    "MAGAZINE."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "doyle"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "doyle"
+    },
+    "doyle": {
+     "mood": "happy",
+     "action": "point",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The master of deduction. Outsmarted by kids with scissors.",
+   "key": [
+    "SCISSORS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "You take more photos. The world argues for decades. Experts disagree.",
+   "key": [
+    "DECADES."
+   ],
+   "set": "temple",
+   "setOpts": {
+    "boardText": [
+     "REAL",
+     "OR FAKE?"
+    ],
+    "sky": "#cfe8c8"
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "elsie": [
+     2.6,
+     -0.6
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "doyle": false,
+    "dad": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "elsie": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Then, in nineteen eighty three, you finally confess. Finally.",
+   "cap": "Then, in 1983, you finally confess. Finally.",
+   "key": [
+    "CONFESS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The fairies were paper cutouts. Copied from a children's book.",
+   "key": [
+    "CUTOUTS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "elsie",
+    "with": "you"
+   },
+   "act": {
+    "elsie": {
+     "mood": "smug",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "elsie"
+    }
+   }
+  },
+  {
+   "text": "They were held up with hatpins. Simple trick.",
+   "key": [
+    "HATPINS."
+   ],
+   "place": {
+    "capy": [
+     -0.6,
+     1.2
+    ],
+    "you": [
+     -3.0,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "elsie"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "elsie": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Sixty years of debate. Solved by pins. Tiny pins.",
+   "key": [
+    "PINS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "One twist. You insist the last photo was real.",
+   "key": [
+    "REAL."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Even after confessing. To the very end. Stubborn.",
+   "key": [
+    "END."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you have believed the photos? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "BELIEVE?",
+    "YES OR NO?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Cottingley Fairies",
+   "url": "https://en.wikipedia.org/wiki/Cottingley_Fairies"
+  },
+  {
+   "title": "History.com: The Cottingley fairies and altered photos",
+   "url": "https://www.history.com/articles/cottingley-fairies-altered-photos-hoax"
+  },
+  {
+   "title": "Historic UK: The Cottingley fairies",
+   "url": "https://www.historic-uk.com/CultureUK/The-Fairies-of-Cottingley/"
+  },
+  {
+   "title": "Time: The Cottingley fairies",
+   "url": "https://time.com/4876824/cottingley-fairies-book/"
+  },
+  {
+   "title": "University of Leeds Library: Fooled by fairies",
+   "url": "https://library.leeds.ac.uk/news/article/132/fooled-by-fairies"
+  },
+  {
+   "title": "Victorian Web: Conan Doyle and the fairies",
+   "url": "https://victorianweb.org/authors/doyle/fairies.html"
+  },
+  {
+   "title": "All That's Interesting: The Cottingley fairies",
+   "url": "https://allthatsinteresting.com/cottingley-fairies"
+  },
+  {
+   "title": "Skeptoid: The Cottingley fairies",
+   "url": "https://skeptoid.com/episodes/805"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1917 in Cottingley two girls photographed fairies",
+   "terms": [
+    "Cottingley",
+    "1917"
+   ]
+  },
+  {
+   "claim": "They played by a stream behind the house",
+   "terms": [
+    "beck|stream"
+   ]
+  },
+  {
+   "claim": "The girls were cousins Frances Griffiths and Elsie Wright",
+   "terms": [
+    "Frances",
+    "Elsie"
+   ]
+  },
+  {
+   "claim": "Elsie was sixteen",
+   "terms": [
+    "Elsie",
+    "16|sixteen"
+   ]
+  },
+  {
+   "claim": "Frances, aged nine, said she played with fairies",
+   "terms": [
+    "Frances",
+    "nine|9"
+   ]
+  },
+  {
+   "claim": "Elsie borrowed her father's camera",
+   "terms": [
+    "camera",
+    "father"
+   ]
+  },
+  {
+   "claim": "Elsie's father thought it was a prank",
+   "terms": [
+    "prank|trick"
+   ]
+  },
+  {
+   "claim": "Arthur Conan Doyle publicized the photos",
+   "terms": [
+    "Conan Doyle"
+   ]
+  },
+  {
+   "claim": "Conan Doyle believed in spiritualism",
+   "terms": [
+    "spiritualis"
+   ]
+  },
+  {
+   "claim": "The photos appeared in The Strand Magazine",
+   "terms": [
+    "Strand"
+   ]
+  },
+  {
+   "claim": "In 1983 the cousins confessed",
+   "terms": [
+    "1983"
+   ]
+  },
+  {
+   "claim": "The fairies were paper cutouts copied from a children's book",
+   "terms": [
+    "cut|cutout|cardboard|paper",
+    "book"
+   ]
+  },
+  {
+   "claim": "They were held up with hatpins",
+   "terms": [
+    "hatpin"
+   ]
+  },
+  {
+   "claim": "Frances insisted the fifth photo was real",
+   "terms": [
+    "fifth"
+   ]
+  }
+ ]
+}
