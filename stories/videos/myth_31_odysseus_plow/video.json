@@ -1,0 +1,897 @@
+{
+ "id": "myth_31_odysseus_plow",
+ "title": "Faking madness to skip a war",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "ITHACA"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "ody": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2f7f8a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "sash": "#d9a521",
+    "beard": true
+   }
+  },
+  "pal": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8a5a9a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#e8b923",
+    "beard": true
+   },
+   "hold": "scroll"
+  },
+  "aga": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#9a1f1f",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#e8b923",
+    "beard": true
+   }
+  },
+  "pen": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c97a9a",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You fake madness to skip a war. A baby ruins it.",
+   "key": [
+    "BABY"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ody": [
+     1.2,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ody"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ody": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Odysseus, the clever king of Ithaca.",
+   "key": [
+    "ITHACA."
+   ],
+   "board": [
+    "ODYSSEUS",
+    "ITHACA"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The Greeks are going to war with Troy.",
+   "key": [
+    "WAR"
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "pal": false,
+    "aga": [
+     0,
+     0
+    ],
+    "pen": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "aga"
+   },
+   "act": {
+    "aga": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You swore an oath to help. Now it is due.",
+   "key": [
+    "OATH"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You really do not want to go. Not at all.",
+   "key": [
+    "NOT"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You have a wife. You have a newborn son. You stay home.",
+   "key": [
+    "HOME."
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     -1.3,
+     0.2
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "ody",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "ody": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "pen"
+    },
+    "pen": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So when the recruiters come, you act insane.",
+   "key": [
+    "INSANE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "ody": false,
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You hitch an ox to your plow. Then a donkey.",
+   "key": [
+    "DONKEY."
+   ],
+   "board": [
+    "THE PLOW",
+    "OX + DONKEY"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You plow your field. You sow it with salt.",
+   "key": [
+    "SALT."
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your neighbors stare. You keep plowing. You keep smiling.",
+   "key": [
+    "SMILING."
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You put salt in a field. That is unhinged. Very convincing.",
+   "key": [
+    "CONVINCING."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ody": [
+     1.2,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ody"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "ody"
+    },
+    "ody": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One recruiter, Palamedes, is not buying it. Not one bit.",
+   "key": [
+    "PALAMEDES,"
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "pal": [
+     0,
+     0
+    ],
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "pal"
+   },
+   "act": {
+    "pal": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He takes your baby son, Telemachus.",
+   "key": [
+    "TELEMACHUS."
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "pal": [
+     -1.3,
+     0.2
+    ],
+    "aga": false,
+    "pen": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "pal",
+    "with": "pen"
+   },
+   "act": {
+    "pal": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "pen"
+    },
+    "pen": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "pal"
+    }
+   }
+  },
+  {
+   "text": "He sets the baby down. Right in front of your plow.",
+   "key": [
+    "PLOW."
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "pal": [
+     0,
+     0
+    ],
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "pal"
+   },
+   "act": {
+    "pal": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "That is a bold move. A very bold move.",
+   "key": [
+    "BOLD"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "ody": false,
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You swerve the plow. Of course you do.",
+   "key": [
+    "SWERVE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ody": [
+     1.2,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "ody",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "ody"
+    },
+    "ody": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So much for being insane.",
+   "key": [
+    "INSANE."
+   ],
+   "speaker": "capy",
+   "board": [
+    "DIAGNOSIS",
+    "SANE"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ody": false,
+    "pal": [
+     1.2,
+     0
+    ],
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "pal",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "pal": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You go to war after all. Ten years at Troy.",
+   "cap": "You go to war after all. 10 years at Troy.",
+   "key": [
+    "10"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then ten more years trying to get home. Long story.",
+   "cap": "Then 10 more years trying to get home. Long story.",
+   "key": [
+    "HOME."
+   ],
+   "board": [
+    "TIME AWAY",
+    "20 YEARS"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You never forgive Palamedes. Later, you frame him.",
+   "key": [
+    "FRAME"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     -1.3,
+     0.2
+    ],
+    "pal": [
+     1.3,
+     -0.2
+    ],
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "pal",
+    "pan": [
+     -1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "ody": {
+     "mood": "angry",
+     "action": "point",
+     "look": "pal"
+    },
+    "pal": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "ody"
+    }
+   }
+  },
+  {
+   "text": "He tried to dodge one war. He got twenty years of it.",
+   "cap": "He tried to dodge one war. He got 20 years of it.",
+   "key": [
+    "20"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ody": [
+     1.2,
+     0
+    ],
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ody"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "ody": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have faked madness? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "FAKE MADNESS?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "ody": false,
+    "pal": false,
+    "aga": false,
+    "pen": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Palamedes (mythology)",
+   "url": "https://en.wikipedia.org/wiki/Palamedes_(mythology)"
+  },
+  {
+   "title": "Wikipedia: Feigned madness",
+   "url": "https://en.wikipedia.org/wiki/Feigned_madness"
+  },
+  {
+   "title": "Wikipedia: Telemachus",
+   "url": "https://en.wikipedia.org/wiki/Telemachus"
+  },
+  {
+   "title": "Wikipedia: Odysseus",
+   "url": "https://en.wikipedia.org/wiki/Odysseus"
+  },
+  {
+   "title": "Greek Legends and Myths: Palamedes",
+   "url": "https://www.greeklegendsandmyths.com/palamedes.html"
+  },
+  {
+   "title": "University at Buffalo: Odysseus Induction (Heywood Hardy)",
+   "url": "https://www.acsu.buffalo.edu/~peradott/Journey%20of%20Odysseus/h_odysseus%20Induction.htm"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Odysseus is king of Ithaca",
+   "terms": [
+    "Odysseus",
+    "Ithaca"
+   ]
+  },
+  {
+   "claim": "He is bound by an oath to join the war against Troy",
+   "terms": [
+    "oath",
+    "Tyndareus|suitors|Helen"
+   ]
+  },
+  {
+   "claim": "He has an infant son, Telemachus",
+   "terms": [
+    "Telemachus",
+    "infant|baby|son"
+   ]
+  },
+  {
+   "claim": "He feigns madness when recruiters arrive",
+   "terms": [
+    "feigned|feign|feigning|pretended",
+    "madness|insanity|mad|insane"
+   ]
+  },
+  {
+   "claim": "He yokes an ox and an ass to his plow",
+   "terms": [
+    "ox",
+    "ass|donkey|horse"
+   ]
+  },
+  {
+   "claim": "He sows his field with salt",
+   "terms": [
+    "salt",
+    "plow|plough|field|sowing|sowed"
+   ]
+  },
+  {
+   "claim": "Palamedes sees through it",
+   "terms": [
+    "Palamedes",
+    "Odysseus"
+   ]
+  },
+  {
+   "claim": "Palamedes places the infant Telemachus in front of the plow",
+   "terms": [
+    "Telemachus",
+    "plow|plough"
+   ]
+  },
+  {
+   "claim": "Odysseus swerves, revealing he is sane",
+   "terms": [
+    "swerved|swerve|turned|stopped|avoid",
+    "Telemachus|son"
+   ]
+  },
+  {
+   "claim": "He goes to Troy for ten years and takes ten more to get home",
+   "terms": [
+    "ten years|10 years",
+    "home|Troy|Ithaca"
+   ]
+  },
+  {
+   "claim": "Odysseus later frames Palamedes",
+   "terms": [
+    "Palamedes",
+    "framed|frame|treason|false|forged"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,850 @@
+{
+ "id": "myth_32_maui_slows_sun",
+ "title": "Maui ties up the sun",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "HALEAKALA"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "maui": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c0532b",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#e8b923"
+   }
+  },
+  "mauiR": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c0532b",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#e8b923"
+   }
+  },
+  "hina": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5aa832",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#f2c230"
+   },
+   "hold": "scroll"
+  },
+  "sun": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f2c230",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#f28c28",
+    "skin": "#f6d21f",
+    "sash": "#f28c28"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "The days are too short. So you tie up the sun.",
+   "key": [
+    "SUN."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "maui": [
+     1.2,
+     0
+    ],
+    "mauiR": false,
+    "hina": false,
+    "sun": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "maui"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "maui": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Maui, trickster hero of the Pacific.",
+   "key": [
+    "MAUI,"
+   ],
+   "board": [
+    "MAUI",
+    "TRICKSTER"
+   ],
+   "place": {
+    "capy": false,
+    "maui": [
+     0,
+     0
+    ],
+    "mauiR": false,
+    "hina": false,
+    "sun": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "maui"
+   },
+   "act": {
+    "maui": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The sun races across the sky. The days fly by.",
+   "key": [
+    "RACES"
+   ],
+   "place": {
+    "capy": false,
+    "maui": false,
+    "mauiR": false,
+    "hina": false,
+    "sun": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sun"
+   },
+   "act": {
+    "sun": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your mother Hina makes bark cloth. It never dries in time.",
+   "key": [
+    "CLOTH"
+   ],
+   "place": {
+    "capy": false,
+    "maui": false,
+    "mauiR": false,
+    "hina": [
+     0,
+     0
+    ],
+    "sun": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "hina"
+   },
+   "act": {
+    "hina": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She works all day. The light is gone before she finishes.",
+   "key": [
+    "LIGHT"
+   ],
+   "place": {
+    "capy": false,
+    "maui": false,
+    "mauiR": false,
+    "hina": [
+     0,
+     0
+    ],
+    "sun": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "hina"
+   },
+   "act": {
+    "hina": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is a laundry problem. You pick a cosmic solution.",
+   "key": [
+    "COSMIC"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "maui": false,
+    "mauiR": false,
+    "hina": false,
+    "sun": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You make strong ropes. Lots of them.",
+   "key": [
+    "ROPES."
+   ],
+   "board": [
+    "ROPES",
+    "MANY"
+   ],
+   "place": {
+    "capy": false,
+    "maui": false,
+    "mauiR": [
+     0,
+     0
+    ],
+    "hina": false,
+    "sun": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "mauiR"
+   },
+   "act": {
+    "mauiR": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You test every single knot. Then you test them twice.",
+   "key": [
+    "KNOT."
+   ],
+   "place": {
+    "capy": false,
+    "maui": false,
+    "mauiR": [
+     0,
+     0
+    ],
+    "hina": false,
+    "sun": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "mauiR"
+   },
+   "act": {
+    "mauiR": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You climb the great mountain at night. You wait in the dark.",
+   "key": [
+    "DARK."
+   ],
+   "place": {
+    "capy": false,
+    "maui": [
+     0,
+     0
+    ],
+    "mauiR": false,
+    "hina": false,
+    "sun": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "maui"
+   },
+   "act": {
+    "maui": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "At dawn, the sun climbs over the rim. You see its first rays.",
+   "key": [
+    "DAWN,"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "maui": false,
+    "mauiR": false,
+    "hina": false,
+    "sun": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "sun",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "sun"
+    },
+    "sun": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You throw your ropes. You snare the rays one by one.",
+   "key": [
+    "SNARE"
+   ],
+   "place": {
+    "capy": false,
+    "maui": false,
+    "mauiR": [
+     -1.3,
+     0.2
+    ],
+    "hina": false,
+    "sun": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "mauiR",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "mauiR": {
+     "mood": "angry",
+     "action": "point",
+     "look": "sun"
+    },
+    "sun": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "mauiR"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The sun is stuck. It cannot move.",
+   "key": [
+    "STUCK."
+   ],
+   "speaker": "capy",
+   "board": [
+    "THE SUN",
+    "STUCK"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "maui": false,
+    "mauiR": false,
+    "hina": false,
+    "sun": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "sun",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "sun"
+    },
+    "sun": {
+     "mood": "angry",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You just tied up a star. That is a bold move.",
+   "key": [
+    "STAR."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "maui": [
+     1.2,
+     0
+    ],
+    "mauiR": false,
+    "hina": false,
+    "sun": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "maui"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "maui": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The sun begs to be let go.",
+   "key": [
+    "BEGS"
+   ],
+   "place": {
+    "capy": false,
+    "maui": false,
+    "mauiR": false,
+    "hina": false,
+    "sun": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "sun"
+   },
+   "act": {
+    "sun": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It promises almost anything. Just let it go.",
+   "key": [
+    "PROMISES"
+   ],
+   "place": {
+    "capy": false,
+    "maui": false,
+    "mauiR": false,
+    "hina": false,
+    "sun": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sun"
+   },
+   "act": {
+    "sun": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You make a deal. You must slow down. We need longer days.",
+   "key": [
+    "SLOW"
+   ],
+   "board": [
+    "THE DEAL",
+    "SLOW DOWN"
+   ],
+   "place": {
+    "capy": false,
+    "maui": [
+     -1.3,
+     0.2
+    ],
+    "mauiR": false,
+    "hina": false,
+    "sun": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "maui",
+    "with": "sun"
+   },
+   "act": {
+    "maui": {
+     "mood": "smug",
+     "action": "point",
+     "look": "sun"
+    },
+    "sun": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "maui"
+    }
+   }
+  },
+  {
+   "text": "The sun agrees. For part of the year, days grow long.",
+   "key": [
+    "LONG."
+   ],
+   "place": {
+    "capy": false,
+    "maui": false,
+    "mauiR": false,
+    "hina": false,
+    "sun": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sun"
+   },
+   "act": {
+    "sun": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your mother's cloth finally dries.",
+   "key": [
+    "DRIES."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "maui": false,
+    "mauiR": false,
+    "hina": [
+     1.2,
+     0
+    ],
+    "sun": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "hina",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "hina"
+    },
+    "hina": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That mountain is called Haleakala. The house of the sun.",
+   "key": [
+    "HALEAKALA."
+   ],
+   "speaker": "capy",
+   "board": [
+    "HALEAKALA",
+    "HOUSE OF THE SUN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "maui": false,
+    "mauiR": false,
+    "hina": false,
+    "sun": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He negotiated with a star. Then he won. Easily.",
+   "key": [
+    "WON."
+   ],
+   "place": {
+    "capy": false,
+    "maui": [
+     0,
+     0
+    ],
+    "mauiR": false,
+    "hina": false,
+    "sun": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "maui"
+   },
+   "act": {
+    "maui": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you lasso the sun? Yes or no? Night owls, stay out of this.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "LASSO THE SUN?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "maui": [
+     1.3,
+     0
+    ],
+    "mauiR": false,
+    "hina": false,
+    "sun": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "maui"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "maui": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "National Park Service: Haleakala deities",
+   "url": "https://www.nps.gov/hale/learn/historyculture/deities.htm"
+  },
+  {
+   "title": "National Park Service: Na Moolelo o Haleakala",
+   "url": "https://www.nps.gov/hale/learn/historyculture/nature-mo-olelo.htm"
+  },
+  {
+   "title": "Wikipedia: Maui (Hawaiian mythology)",
+   "url": "https://en.wikipedia.org/wiki/M%C4%81ui_(Hawaiian_mythology)"
+  },
+  {
+   "title": "Wikipedia: Haleakala",
+   "url": "https://en.wikipedia.org/wiki/Haleakal%C4%81"
+  },
+  {
+   "title": "Access Genealogy: Snaring the Sun (Westervelt)",
+   "url": "https://accessgenealogy.com/?p=54855"
+  },
+  {
+   "title": "Shaka Guide: The Hawaiian legend of Maui capturing the sun",
+   "url": "https://www.shakaguide.com/article/maui/ancient-hawaiian-legend-of-maui-capturing-the-sun"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Maui is a trickster demigod of Polynesian legend",
+   "terms": [
+    "Maui|Māui",
+    "trickster|demigod"
+   ]
+  },
+  {
+   "claim": "The sun moves too fast and the days are too short",
+   "terms": [
+    "sun",
+    "fast|quickly|short|hurried|raced"
+   ]
+  },
+  {
+   "claim": "His mother Hina cannot dry her kapa (bark cloth)",
+   "terms": [
+    "Hina",
+    "kapa|tapa|cloth"
+   ]
+  },
+  {
+   "claim": "Maui makes strong ropes",
+   "terms": [
+    "ropes|rope|cords|snares",
+    "sun"
+   ]
+  },
+  {
+   "claim": "He climbs Haleakala and waits for dawn",
+   "terms": [
+    "Haleakalā|Haleakala",
+    "climbed|climb|summit|crater|waited"
+   ]
+  },
+  {
+   "claim": "He snares the sun's rays one by one",
+   "terms": [
+    "rays|legs|beams",
+    "snared|lassoed|caught|noose|rope|ropes"
+   ]
+  },
+  {
+   "claim": "The sun begs to be released",
+   "terms": [
+    "sun",
+    "begged|pleaded|beg|release|released|mercy|let go"
+   ]
+  },
+  {
+   "claim": "The sun agrees to move slowly for part of the year",
+   "terms": [
+    "slowly|slower|slow",
+    "year|months|summer"
+   ]
+  },
+  {
+   "claim": "Haleakala means house of the sun",
+   "terms": [
+    "house of the sun"
+   ]
+  }
+ ]
+}

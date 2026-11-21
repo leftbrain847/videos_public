@@ -1,0 +1,881 @@
+{
+ "id": "myth_30_wukong_buddha_palm",
+ "title": "The Buddha's palm",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "HEAVEN"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "wk": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#d9a521",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#8a5a2a",
+    "skin": "#c68d64",
+    "sash": "#c0392b"
+   }
+  },
+  "buddha": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e8b923",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#c0392b"
+   }
+  },
+  "jade": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e8b923",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#2e86c1",
+    "beard": true
+   }
+  },
+  "wkS": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#d9a521",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#8a5a2a",
+    "skin": "#c68d64",
+    "sash": "#c0392b"
+   },
+   "hold": "scroll"
+  }
+ },
+ "lines": [
+  {
+   "text": "You fly to the edge of the world. You never leave a hand.",
+   "key": [
+    "HAND."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "wk": [
+     1.2,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wk"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wk": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Sun Wukong, the Monkey King. Back again.",
+   "key": [
+    "AGAIN."
+   ],
+   "board": [
+    "SUN WUKONG",
+    "MONKEY KING"
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gods of heaven cannot stop you. Now you want the throne.",
+   "key": [
+    "THRONE."
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You already ate the peaches of immortality. Very bold.",
+   "key": [
+    "PEACHES"
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the Jade Emperor calls in the Buddha.",
+   "key": [
+    "BUDDHA."
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "buddha": [
+     1.3,
+     -0.2
+    ],
+    "jade": [
+     -1.3,
+     0.2
+    ],
+    "wkS": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "jade",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "jade": {
+     "mood": "worried",
+     "action": "point",
+     "look": "buddha"
+    },
+    "buddha": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The Buddha offers you a very simple bet.",
+   "key": [
+    "BET."
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "buddha": [
+     0,
+     0
+    ],
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "buddha"
+   },
+   "act": {
+    "buddha": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Jump out of my palm. If you win, heaven is yours.",
+   "key": [
+    "PALM."
+   ],
+   "board": [
+    "THE BET",
+    "LEAVE MY PALM"
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "buddha": [
+     0,
+     0
+    ],
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "buddha"
+   },
+   "act": {
+    "buddha": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "If you lose, you go back to earth.",
+   "key": [
+    "LOSE,"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "wk": false,
+    "buddha": [
+     1.2,
+     0
+    ],
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "buddha",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "buddha"
+    },
+    "buddha": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One palm. One jump. That sounds like easy money.",
+   "key": [
+    "EASY"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "wk": false,
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One somersault of yours covers thousands of miles.",
+   "key": [
+    "SOMERSAULT"
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You leap. You fly until the world runs out.",
+   "key": [
+    "LEAP."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "wk": [
+     1.2,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "wk",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "wk"
+    },
+    "wk": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "At the end, you find five giant pillars.",
+   "cap": "At the end, you find 5 giant pillars.",
+   "key": [
+    "PILLARS."
+   ],
+   "board": [
+    "THE END?",
+    "5 PILLARS"
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "This must be the end of the world. Nobody else got here.",
+   "key": [
+    "END"
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You write your name on the middle pillar. As proof.",
+   "key": [
+    "PROOF."
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "buddha": false,
+    "jade": false,
+    "wkS": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "wkS"
+   },
+   "act": {
+    "wkS": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you somersault back. You won, you tell him.",
+   "key": [
+    "WON,"
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     -1.3,
+     0.2
+    ],
+    "buddha": [
+     1.3,
+     -0.2
+    ],
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "wk",
+    "with": "buddha"
+   },
+   "act": {
+    "wk": {
+     "mood": "smug",
+     "action": "point",
+     "look": "buddha"
+    },
+    "buddha": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "wk"
+    }
+   }
+  },
+  {
+   "text": "The Buddha calmly raises his right hand.",
+   "key": [
+    "HAND."
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "buddha": [
+     0,
+     0
+    ],
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "buddha"
+   },
+   "act": {
+    "buddha": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your writing is on his middle finger.",
+   "key": [
+    "FINGER."
+   ],
+   "speaker": "capy",
+   "board": [
+    "THE PILLARS",
+    "WERE FINGERS"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "wk": [
+     1.2,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wk"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "wk": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The pillars were his fingers. You never left his hand.",
+   "key": [
+    "FINGERS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "wk": false,
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He flips his palm over. It becomes a mountain.",
+   "key": [
+    "MOUNTAIN."
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "buddha": [
+     0,
+     0
+    ],
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "buddha"
+   },
+   "act": {
+    "buddha": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are pinned under it. For five hundred years.",
+   "cap": "You are pinned under it. For 500 years.",
+   "key": [
+    "500"
+   ],
+   "board": [
+    "PINNED",
+    "500 YEARS"
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The fastest monkey alive. Still inside the hand.",
+   "key": [
+    "INSIDE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "wk": [
+     1.2,
+     0
+    ],
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wk"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "wk": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you take that bet? Yes or no? Monkey fans, think twice.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "TAKE THE BET?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "wk": false,
+    "buddha": false,
+    "jade": false,
+    "wkS": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Sun Wukong",
+   "url": "https://en.wikipedia.org/wiki/Sun_Wukong"
+  },
+  {
+   "title": "Wikipedia: Journey to the West",
+   "url": "https://en.wikipedia.org/wiki/Journey_to_the_West"
+  },
+  {
+   "title": "Wikipedia: Five Elements Mountain",
+   "url": "https://en.wikipedia.org/wiki/Five_Elements_Mountain"
+  },
+  {
+   "title": "Wikipedia: Ruyi Jingu Bang",
+   "url": "https://en.wikipedia.org/wiki/Ruyi_Jingu_Bang"
+  },
+  {
+   "title": "Journey to the West Research: Sun Wukong (tag)",
+   "url": "https://journeytothewestresearch.com/tag/qitian-dasheng/"
+  },
+  {
+   "title": "EBSCO Research Starters: Adventures of Monkey",
+   "url": "https://ebsco.com/research-starters/literature-and-writing/adventures-monkey"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Sun Wukong is the Monkey King",
+   "terms": [
+    "Sun Wukong",
+    "Monkey King"
+   ]
+  },
+  {
+   "claim": "He rebels in heaven and wants the Jade Emperor's throne",
+   "terms": [
+    "Jade Emperor",
+    "throne"
+   ]
+  },
+  {
+   "claim": "He ate the peaches of immortality",
+   "terms": [
+    "peaches",
+    "immortality"
+   ]
+  },
+  {
+   "claim": "The Jade Emperor calls on the Buddha",
+   "terms": [
+    "Buddha",
+    "Jade Emperor"
+   ]
+  },
+  {
+   "claim": "The Buddha bets he cannot leap out of his palm",
+   "terms": [
+    "Buddha",
+    "palm"
+   ]
+  },
+  {
+   "claim": "His somersault covers a huge distance",
+   "terms": [
+    "somersault",
+    "li|miles|kilometres|kilometers"
+   ]
+  },
+  {
+   "claim": "He reaches what he thinks is the end of the world with five pillars",
+   "terms": [
+    "pillars",
+    "five"
+   ]
+  },
+  {
+   "claim": "He writes his name on a pillar",
+   "terms": [
+    "pillar|pillars",
+    "wrote|writes|write|inscribed|signed"
+   ]
+  },
+  {
+   "claim": "The pillars were the Buddha's fingers",
+   "terms": [
+    "fingers|finger",
+    "pillars|pillar"
+   ]
+  },
+  {
+   "claim": "The Buddha turns his palm into a mountain",
+   "terms": [
+    "mountain",
+    "palm|hand"
+   ]
+  },
+  {
+   "claim": "Wukong is trapped under it for 500 years",
+   "terms": [
+    "500|five hundred",
+    "years"
+   ]
+  }
+ ]
+}
