@@ -90,10 +90,6 @@
    "url": "https://patriots.com/news/ne-ind-post-game-notes-173351"
   },
   {
-   "title": "Sports Illustrated Vault: Cold-blooded: Patriots 24, Colts 14",
-   "url": "https://vault.si.com/vault/2004/01/26/cold-blooded-patriots-24-colts-14-playing-in-its-favorite-weather-new-england-mercilessly-pounded-peyton-manning-and-indys-vaunted-attack-to-earn-a-second-trip-to-the-super-bowl-in-three-years"
-  },
-  {
    "title": "Indiana Daily Student: Colts hoping rules emphasis holds up against New England",
    "url": "https://www.idsnews.com/article/2005/01/colts-hoping-rules-emphasis-holds-up-against-new-england"
   },
@@ -104,6 +100,26 @@
   {
    "title": "UT Sports (AP): Manning sets NFL season TD record",
    "url": "https://utsports.com/news/2004/12/26/Manning_Sets_NFL_Season_TD_Record"
+  },
+  {
+   "title": "Wikipedia: 2004 NFL season",
+   "url": "https://en.wikipedia.org/wiki/2004_NFL_season"
+  },
+  {
+   "title": "Wikipedia: 2004 Indianapolis Colts season",
+   "url": "https://en.wikipedia.org/wiki/2004_Indianapolis_Colts_season"
+  },
+  {
+   "title": "CBS News: Manning breaks touchdown record",
+   "url": "https://www.cbsnews.com/news/manning-breaks-touchdown-record"
+  },
+  {
+   "title": "Colts.com: Colts season in review, 2004",
+   "url": "https://www.colts.com/news/colts-season-in-review-2004-10269618"
+  },
+  {
+   "title": "New York Sun: NFL's elder statesmen play by new rules",
+   "url": "https://www.nysun.com/article/sports-nfls-elder-statesmen-play-by-new-rules"
   }
  ],
  "lines": [
@@ -147,8 +163,8 @@
    "speaker": "capy"
   },
   {
-   "text": "January two thousand four. Light snow in New England.",
-   "cap": "January 2004. Light snow in New England.",
+   "text": "January two thousand four. Snow falls in New England.",
+   "cap": "January 2004. Snow falls in New England.",
    "key": [
     "SNOW"
    ],
@@ -763,14 +779,15 @@
    "claim": "January 2004 AFC Championship in light snow in New England",
    "terms": [
     "snow",
-    "Patriots"
+    "Colts|Indianapolis"
    ]
   },
   {
    "claim": "Manning threw four interceptions",
    "terms": [
     "Manning",
-    "four interceptions|4 interceptions"
+    "four|4",
+    "intercept"
    ]
   },
   {

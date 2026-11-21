@@ -736,8 +736,8 @@
   {
    "claim": "The fair catch kick is rarely used",
    "terms": [
-    "fair catch kick|fair-catch kick",
-    "rare"
+    "fair catch",
+    "rare|seldom|obscure"
    ]
   },
   {
@@ -765,7 +765,7 @@
    "claim": "Denver was flagged for fair catch interference, 15 yards",
    "terms": [
     "interference",
-    "15"
+    "fair catch"
    ]
   },
   {
@@ -785,8 +785,8 @@
   {
    "claim": "It was the first made fair catch kick in 48 years",
    "terms": [
-    "48 years",
-    "1976"
+    "fair catch",
+    "1976|48 years"
    ]
   },
   {
