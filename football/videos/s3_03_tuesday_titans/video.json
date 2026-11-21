@@ -54,11 +54,12 @@
  },
  "lines": [
   {
-   "text": "In 2020, an NFL team won forty two to sixteen, on a Tuesday night.",
-   "cap": "In 2020, an NFL team won 42 to 16, on a Tuesday night.",
+   "text": "You win forty two to sixteen. On a Tuesday night.",
+   "cap": "You win 42-16. On a Tuesday night.",
    "key": [
     "TUESDAY"
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -1.2,
@@ -87,15 +88,13 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "It started in Nashville, in late September. Twenty four people in the Titans' building tested positive.",
-   "cap": "It started in Nashville, in late September. 24 people in the Titans' building tested positive.",
+   "text": "Twenty twenty. Nashville. Twenty four people in your building test positive.",
+   "cap": "2020. Nashville. 24 people in your building test positive.",
    "key": [
-    "24",
-    "POSITIVE."
+    "24"
    ],
    "set": "locker",
    "setOpts": {
@@ -104,6 +103,10 @@
      "TESTS: 24"
     ]
    },
+   "board": [
+    "POSITIVE",
+    "TESTS: 24"
+   ],
    "place": {
     "doc": "right",
     "qb": "left"
@@ -122,16 +125,12 @@
      "mood": "worried",
      "look": "doc"
     }
-   },
-   "board": [
-    "POSITIVE",
-    "TESTS: 24"
-   ]
+   }
   },
   {
-   "text": "So the team building was closed.",
+   "text": "So your whole building closes. Nobody gets in.",
    "key": [
-    "CLOSED."
+    "CLOSES."
    ],
    "board": [
     "FACILITY",
@@ -153,8 +152,8 @@
    }
   },
   {
-   "text": "Their game against Pittsburgh moved from October fourth to October twenty fifth.",
-   "cap": "Their game against Pittsburgh moved from October 4 to October 25.",
+   "text": "Your Pittsburgh game moves. October fourth becomes October twenty fifth.",
+   "cap": "Your Pittsburgh game moves. October 4 becomes October 25.",
    "key": [
     "25."
    ],
@@ -165,6 +164,10 @@
      "OCT 4 → OCT 25"
     ]
    },
+   "board": [
+    "PITTSBURGH",
+    "OCT 4 → OCT 25"
+   ],
    "place": {
     "boss": "desk",
     "capy": [
@@ -186,16 +189,12 @@
      "mood": "neutral",
      "look": "boss"
     }
-   },
-   "board": [
-    "PITTSBURGH",
-    "OCT 4 → OCT 25"
-   ]
+   }
   },
   {
-   "text": "Then their Sunday game against Buffalo had to move too.",
+   "text": "Then your Sunday game against Buffalo moves too.",
    "key": [
-    "SUNDAY"
+    "BUFFALO"
    ],
    "board": [
     "BUFFALO",
@@ -219,11 +218,31 @@
    }
   },
   {
-   "text": "To Tuesday. Six p.m. Central, on CBS.",
-   "cap": "To Tuesday. 6 p.m. Central, on CBS.",
+   "text": "Buffalo is unbeaten. So are you.",
+   "key": [
+    "UNBEATEN."
+   ],
+   "board": [
+    "BILLS 4-0",
+    "TITANS 3-0"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "To Tuesday. Football. On a Tuesday.",
    "key": [
     "TUESDAY."
    ],
+   "speaker": "capy",
    "board": [
     "BUFFALO",
     "TUESDAY 6 PM"
@@ -242,13 +261,13 @@
      "mood": "shocked",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "The last Tuesday game had been in 2010, because of a snowstorm.",
+   "text": "The last Tuesday game? Twenty ten. Eagles against Vikings.",
+   "cap": "The last Tuesday game? 2010. Eagles against Vikings.",
    "key": [
-    "SNOWSTORM."
+    "2010."
    ],
    "board": [
     "LAST TUESDAY GAME",
@@ -266,36 +285,56 @@
    }
   },
   {
-   "text": "It was only the second Tuesday game in seventy years.",
-   "cap": "It was only the second Tuesday game in 70 years.",
+   "text": "A blizzard pushed it back.",
    "key": [
-    "SECOND",
-    "70"
+    "BLIZZARD"
+   ],
+   "board": [
+    "2010:",
+    "BLIZZARD"
    ],
    "shot": {
-    "type": "wide",
-    "on": "boss",
-    "offset": [
-     0,
-     1,
-     2
-    ]
+    "type": "low",
+    "on": "boss"
    },
    "act": {
     "boss": {
-     "mood": "shocked",
-     "action": "hold"
-    },
-    "capy": {
-     "mood": "smug",
-     "action": "cross",
-     "look": "camera"
+     "mood": "confused",
+     "action": "shrug"
     }
    }
   },
   {
-   "text": "Then the Titans walked out and Ryan Tannehill scored four touchdowns.",
-   "cap": "Then the Titans walked out and Ryan Tannehill scored 4 touchdowns.",
+   "text": "Only the second Tuesday game in seventy years.",
+   "cap": "Only the 2nd Tuesday game in 70 years.",
+   "key": [
+    "70"
+   ],
+   "speaker": "capy",
+   "board": [
+    "TUESDAY GAMES",
+    "2 IN 70 YEARS"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "shocked",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "You walk back in. Your quarterback, Ryan Tannehill, scores four touchdowns.",
+   "cap": "You walk back in. Your quarterback, Ryan Tannehill, scores 4 touchdowns.",
    "key": [
     "4"
    ],
@@ -306,6 +345,10 @@
      "BILLS 16"
     ]
    },
+   "board": [
+    "TITANS 42",
+    "BILLS 16"
+   ],
    "place": {
     "qb": "center"
    },
@@ -318,17 +361,17 @@
      "mood": "happy",
      "action": "throw"
     }
-   },
+   }
+  },
+  {
+   "text": "Titans forty two, Bills sixteen. Bills fans, blame the Tuesday.",
+   "cap": "Titans 42, Bills 16. Bills fans, blame the Tuesday.",
+   "key": [
+    "42,"
+   ],
    "board": [
     "TITANS 42",
     "BILLS 16"
-   ]
-  },
-  {
-   "text": "Tennessee won, forty two to sixteen.",
-   "cap": "Tennessee won, 42 to 16.",
-   "key": [
-    "42"
    ],
    "shot": {
     "type": "high",
@@ -342,10 +385,10 @@
    }
   },
   {
-   "text": "Twelve days later, the league fined the Titans three hundred fifty thousand dollars for protocol violations.",
-   "cap": "12 days later, the league fined the Titans $350,000 for protocol violations.",
+   "text": "Then the league fines you. Three hundred fifty thousand dollars.",
+   "cap": "Then the league fines you. $350,000.",
    "key": [
-    "$350,000"
+    "$350,000."
    ],
    "set": "press",
    "setOpts": {
@@ -354,6 +397,10 @@
      "$350,000"
     ]
    },
+   "board": [
+    "FINE",
+    "$350,000"
+   ],
    "place": {
     "boss": "center"
    },
@@ -366,17 +413,14 @@
      "mood": "angry",
      "action": "talk"
     }
-   },
-   "board": [
-    "FINE",
-    "$350,000"
-   ]
+   }
   },
   {
-   "text": "They won on a Tuesday, and still paid for the whole week.",
+   "text": "You win on a Tuesday. You still pay for the whole week.",
    "key": [
-    "PAID"
+    "WEEK."
    ],
+   "speaker": "capy",
    "set": "field",
    "setOpts": {
     "boardText": [
@@ -384,6 +428,10 @@
      "BILLS 16"
     ]
    },
+   "board": [
+    "TITANS 42",
+    "BILLS 16"
+   ],
    "place": {
     "capy": [
      -1.0,
@@ -408,17 +456,18 @@
      "mood": "sad",
      "action": "shrug"
     }
-   },
-   "speaker": "capy",
-   "board": [
-    "TITANS 42",
-    "BILLS 16"
-   ]
+   }
   },
   {
-   "text": "Would you watch a whole football game on a Tuesday night? Yes or no?",
+   "text": "Would you watch football on a Tuesday night? Yes or no?",
    "key": [
-    "TUESDAY"
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "TUESDAY FOOTBALL:",
+    "YES OR NO?"
    ],
    "shot": {
     "type": "two",
@@ -436,8 +485,7 @@
      "action": "wave",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -464,6 +512,88 @@
   {
    "title": "CBS Sports: Bills-Titans postponement means NFL will be getting just its second Tuesday game in 70 years",
    "url": "https://www.cbssports.com/nfl/news/bills-titans-postponement-means-nfl-will-be-getting-just-its-second-tuesday-game-in-70-years"
+  },
+  {
+   "title": "Wikipedia: 2020 Tennessee Titans season",
+   "url": "https://en.wikipedia.org/wiki/2020_Tennessee_Titans_season"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Titans won 42-16 on a Tuesday night",
+   "terms": [
+    "42-16",
+    "Tuesday"
+   ]
+  },
+  {
+   "claim": "In 2020, 24 people in the Titans' building tested positive",
+   "terms": [
+    "24",
+    "positive"
+   ]
+  },
+  {
+   "claim": "The Titans' facility closed",
+   "terms": [
+    "facility|building",
+    "closed|close"
+   ]
+  },
+  {
+   "claim": "The Pittsburgh game moved from Oct. 4 to Oct. 25",
+   "terms": [
+    "Steelers|Pittsburgh",
+    "Oct 25|October 25"
+   ]
+  },
+  {
+   "claim": "The Bills game moved to Tuesday",
+   "terms": [
+    "Bills",
+    "Tuesday"
+   ]
+  },
+  {
+   "claim": "Both teams were unbeaten",
+   "terms": [
+    "unbeaten|undefeated"
+   ]
+  },
+  {
+   "claim": "The last Tuesday game was Eagles-Vikings in 2010",
+   "terms": [
+    "2010",
+    "Vikings|Eagles"
+   ]
+  },
+  {
+   "claim": "A blizzard postponed that 2010 game",
+   "terms": [
+    "snow|blizzard"
+   ]
+  },
+  {
+   "claim": "It was only the second Tuesday game in 70 years",
+   "terms": [
+    "second",
+    "Tuesday",
+    "70"
+   ]
+  },
+  {
+   "claim": "Ryan Tannehill scored four touchdowns",
+   "terms": [
+    "Tannehill",
+    "4 TDs|four touchdowns|4 touchdowns"
+   ]
+  },
+  {
+   "claim": "The league fined the Titans $350,000",
+   "terms": [
+    "350,000"
+   ]
   }
  ]
 }
