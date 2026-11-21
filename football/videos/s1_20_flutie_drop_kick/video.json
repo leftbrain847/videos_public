@@ -87,13 +87,31 @@
    "at": "center"
   }
  },
+ "sources": [
+  {
+   "title": "Patriots.com: Flutie converts NFL's first drop kick in 64 years",
+   "url": "https://www.patriots.com/news/flutie-converts-nfl-s-first-drop-kick-in-64-years-93631"
+  },
+  {
+   "title": "ESPN: Flutie converts first drop kick since 1941 championship",
+   "url": "https://www.espn.co.uk/nfl/news/story?id=2277308"
+  },
+  {
+   "title": "Wikipedia: Drop kick",
+   "url": "https://en.wikipedia.org/wiki/Drop_kick"
+  },
+  {
+   "title": "Wikipedia: Doug Flutie",
+   "url": "https://en.wikipedia.org/wiki/Doug_Flutie"
+  }
+ ],
  "lines": [
   {
-   "text": "In 2006, a forty three year old quarterback made a kick the NFL hadn't seen count in sixty four years.",
+   "text": "You're forty three. You kick like it's nineteen forty one.",
+   "cap": "You're 43. You kick like it's 1941.",
    "key": [
-    "64"
+    "1941."
    ],
-   "cap": "In 2006, a 43-year-old quarterback made a kick the NFL hadn't seen count in 64 years.",
    "place": {
     "snap": false,
     "fin": false,
@@ -124,9 +142,8 @@
    "speaker": "capy"
   },
   {
-   "text": "It's called a drop kick. And it's still legal.",
+   "text": "It's called a drop kick. Still legal.",
    "key": [
-    "STILL",
     "LEGAL."
    ],
    "shot": {
@@ -142,9 +159,9 @@
    }
   },
   {
-   "text": "You drop the ball, let it hit the ground, and kick it.",
+   "text": "Drop the ball. Let it bounce. Kick it.",
    "key": [
-    "GROUND,"
+    "BOUNCE."
    ],
    "set": "office",
    "setOpts": {
@@ -153,10 +170,6 @@
      "DROP. BOUNCE. KICK."
     ]
    },
-   "board": [
-    "DROP KICK",
-    "DROP. BOUNCE. KICK."
-   ],
    "place": {
     "capy": "left",
     "qb": "right"
@@ -177,12 +190,15 @@
      "look": "capy"
     }
    },
+   "board": [
+    "DROP KICK",
+    "DROP. BOUNCE. KICK."
+   ],
    "speaker": "capy"
   },
   {
-   "text": "No holder. No tee. Just you and a bouncing football.",
+   "text": "No holder. No tee. Just a bouncing football.",
    "key": [
-    "NO",
     "HOLDER."
    ],
    "shot": {
@@ -204,14 +220,10 @@
    }
   },
   {
-   "text": "Before 2006, the last one to count came in nineteen forty one.",
+   "text": "The last one to count? Nineteen forty one.",
+   "cap": "The last one to count? 1941.",
    "key": [
     "1941."
-   ],
-   "cap": "Before 2006, the last one to count came in 1941.",
-   "board": [
-    "LAST ONE:",
-    "1941"
    ],
    "shot": {
     "type": "wide",
@@ -224,16 +236,16 @@
      "look": "camera"
     }
    },
+   "board": [
+    "LAST ONE:",
+    "1941"
+   ],
    "speaker": "capy"
   },
   {
-   "text": "Ray McLean of the Chicago Bears. In the championship game.",
+   "text": "Ray McLean of the Chicago Bears. In a championship game.",
    "key": [
     "CHAMPIONSHIP"
-   ],
-   "board": [
-    "1941",
-    "BEARS 37 GIANTS 9"
    ],
    "place": {
     "old": "center",
@@ -254,14 +266,18 @@
      "action": "idle",
      "look": "old"
     }
-   }
+   },
+   "board": [
+    "1941",
+    "BEARS 37 GIANTS 9"
+   ]
   },
   {
-   "text": "Then, New Year's Day, two thousand six. Patriots against Dolphins.",
+   "text": "New Year's Day, two thousand six. Patriots against Miami.",
+   "cap": "New Year's Day, 2006. Patriots against Miami.",
    "key": [
     "2006."
    ],
-   "cap": "Then, New Year's Day, 2006. Patriots against Dolphins.",
    "set": "field",
    "setOpts": {
     "boardText": [
@@ -269,10 +285,6 @@
      "DOLPHINS"
     ]
    },
-   "board": [
-    "PATRIOTS",
-    "DOLPHINS"
-   ],
    "place": {
     "qb": [
      0,
@@ -312,14 +324,18 @@
      "mood": "angry",
      "action": "idle"
     }
-   }
+   },
+   "board": [
+    "PATRIOTS",
+    "DOLPHINS"
+   ]
   },
   {
-   "text": "The backup quarterback, Doug Flutie, is forty three years old.",
+   "text": "You're Doug Flutie. Backup quarterback. Forty three years old.",
+   "cap": "You're Doug Flutie. Backup quarterback. 43 years old.",
    "key": [
     "43"
    ],
-   "cap": "The backup quarterback, Doug Flutie, is 43 years old.",
    "shot": {
     "type": "medium",
     "on": "qb"
@@ -327,13 +343,13 @@
    "act": {
     "qb": {
      "mood": "happy",
-     "action": "wave",
+     "action": "idle",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Fourth quarter. The Patriots line up for an extra point.",
+   "text": "Late in the game. Your team lines up for the extra point.",
    "key": [
     "EXTRA",
     "POINT."
@@ -357,50 +373,343 @@
    }
   },
   {
-   "text": "Flutie stands back alone. No holder.",
+   "text": "You stand back alone. The snap comes.",
    "key": [
     "ALONE."
    ],
-   "shot": {
-    "type": "low",
-    "on": "qb"
+   "setOpts": {
+    "boardText": [
+     "PATRIOTS",
+     "DOLPHINS"
+    ],
+    "endZone": 8,
+    "zoneA": "#002244",
+    "zoneB": "#008e97"
    },
-   "act": {
-    "qb": {
-     "mood": "smug",
-     "action": "hold",
-     "look": "camera"
-    }
+   "shot": {
+    "type": "follow",
+    "on": "qb",
+    "lead": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        -2.0,
+        0.3
+       ],
+       [
+        1,
+        -2.0,
+        0.3
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "snap": {
+      "path": [
+       [
+        0,
+        2.0,
+        0.3
+       ],
+       [
+        1,
+        2.0,
+        0.3
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "fin": {
+      "path": [
+       [
+        0,
+        4.2,
+        -1.6
+       ],
+       [
+        1,
+        4.2,
+        -1.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     },
+     "fin2": {
+      "path": [
+       [
+        0,
+        4.2,
+        2.0
+       ],
+       [
+        1,
+        4.2,
+        2.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      0.35,
+      1.6,
+      0.4,
+      0.3
+     ],
+     [
+      0.55,
+      0.0,
+      1.5,
+      0.3
+     ],
+     [
+      0.75,
+      -1.6,
+      1.1,
+      0.3
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "snap"
+     ],
+     [
+      0.35,
+      null
+     ],
+     [
+      0.75,
+      "qb"
+     ]
+    ]
    }
   },
   {
-   "text": "He drops it. It bounces. He kicks it.",
+   "text": "You drop it. It bounces. You kick it.",
    "key": [
-    "KICKS"
+    "KICK"
    ],
    "shot": {
-    "type": "wide",
-    "on": "qb"
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "qb",
+    "lead": 0,
+    "z": 1
    },
-   "act": {
-    "qb": {
-     "mood": "neutral",
-     "action": "throw"
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        -2.0,
+        0.3
+       ],
+       [
+        0.3,
+        -1.6,
+        0.3
+       ],
+       [
+        1.0,
+        -1.4,
+        0.3
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ],
+       [
+        0.3832,
+        "kick"
+       ],
+       [
+        0.7,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "snap": {
+      "path": [
+       [
+        0,
+        2.0,
+        0.3
+       ],
+       [
+        1,
+        2.0,
+        0.3
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "fin": {
+      "path": [
+       [
+        0.0,
+        4.2,
+        -1.6
+       ],
+       [
+        0.25,
+        3.95,
+        -1.55
+       ],
+       [
+        0.5,
+        3.7,
+        -1.5
+       ],
+       [
+        0.75,
+        3.45,
+        -1.45
+       ],
+       [
+        1.0,
+        3.2,
+        -1.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     },
+     "fin2": {
+      "path": [
+       [
+        0.0,
+        4.2,
+        2.0
+       ],
+       [
+        0.25,
+        4.0,
+        1.95
+       ],
+       [
+        0.5,
+        3.8,
+        1.9
+       ],
+       [
+        0.75,
+        3.6,
+        1.85
+       ],
+       [
+        1.0,
+        3.4,
+        1.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     }
     },
-    "fin": {
-     "mood": "shocked",
-     "action": "idle",
-     "look": "qb"
-    },
-    "fin2": {
-     "mood": "confused",
-     "action": "shrug",
-     "look": "qb"
-    }
+    "ball": [
+     [
+      [
+       0,
+       -1.4,
+       1.1,
+       0.3
+      ],
+      [
+       0.2,
+       -1.2,
+       0.15,
+       0.3
+      ],
+      [
+       0.3,
+       -1.15,
+       0.35,
+       0.3
+      ]
+     ],
+     [
+      [
+       0.45,
+       -1.1,
+       0.3,
+       0.3
+      ],
+      [
+       0.75,
+       6.0,
+       4.5,
+       0.3
+      ],
+      [
+       1.0,
+       13.0,
+       4.0,
+       0.3
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ]
+    ]
    }
   },
   {
-   "text": "Good.",
+   "text": "It's good. Very, very old school.",
    "key": [
     "GOOD."
    ],
@@ -417,11 +726,11 @@
    }
   },
   {
-   "text": "The first drop kick to count in sixty four years.",
+   "text": "Sixty four years. The first one to count.",
+   "cap": "64 years. The first one to count.",
    "key": [
     "64"
    ],
-   "cap": "The first drop kick to count in 64 years.",
    "place": {
     "capy": [
      -1.8,
@@ -448,11 +757,11 @@
    "speaker": "capy"
   },
   {
-   "text": "The Patriots still lost, twenty eight to twenty six.",
+   "text": "Final score? Your Patriots lose anyway. Twenty eight to twenty six.",
+   "cap": "Final score? Your Patriots lose anyway. 28 to 26.",
    "key": [
-    "LOST,"
+    "ANYWAY."
    ],
-   "cap": "The Patriots still lost, 28 to 26.",
    "set": "locker",
    "setOpts": {
     "boardText": [
@@ -460,10 +769,6 @@
      "DOLPHINS 28 PATS 26"
     ]
    },
-   "board": [
-    "FINAL",
-    "DOLPHINS 28 PATS 26"
-   ],
    "place": {
     "qb": "center",
     "capy": "left"
@@ -483,10 +788,14 @@
      "action": "idle",
      "look": "qb"
     }
-   }
+   },
+   "board": [
+    "FINAL",
+    "DOLPHINS 28 PATS 26"
+   ]
   },
   {
-   "text": "Should kickers bring back the drop kick? Yes or no?",
+   "text": "Should kickers bring back the drop kick? Yes or no? Dolphins fans, you won anyway.",
    "key": [
     "YES",
     "NO?"
@@ -511,18 +820,61 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "Patriots.com: Flutie converts NFL's first drop kick in 64 years",
-   "url": "https://www.patriots.com/news/flutie-converts-nfl-s-first-drop-kick-in-64-years-93631"
+   "claim": "A drop kick is still legal",
+   "terms": [
+    "drop kick|drop-kick",
+    "legal"
+   ]
   },
   {
-   "title": "ESPN: Flutie converts first drop kick since 1941 championship",
-   "url": "https://www.espn.co.uk/nfl/news/story?id=2277308"
+   "claim": "The kicker drops the ball and kicks it after it bounces",
+   "terms": [
+    "drop kick|drop-kick",
+    "ground|bounce"
+   ]
   },
   {
-   "title": "Wikipedia: Drop kick",
-   "url": "https://en.wikipedia.org/wiki/Drop_kick"
+   "claim": "The last one to count before 2006 was in 1941 by Ray McLean of the Bears in the championship game",
+   "terms": [
+    "1941",
+    "McLean"
+   ]
+  },
+  {
+   "claim": "On New Year's Day 2006 the Patriots played Miami",
+   "terms": [
+    "Flutie",
+    "Dolphins"
+   ]
+  },
+  {
+   "claim": "Doug Flutie, the backup quarterback, was 43",
+   "terms": [
+    "Flutie",
+    "43"
+   ]
+  },
+  {
+   "claim": "Flutie drop kicked the extra point",
+   "terms": [
+    "Flutie",
+    "extra point"
+   ]
+  },
+  {
+   "claim": "It was the first successful drop kick in 64 years",
+   "terms": [
+    "64 years"
+   ]
+  },
+  {
+   "claim": "The Patriots lost 28-26",
+   "terms": [
+    "28-26"
+   ]
   }
  ]
 }

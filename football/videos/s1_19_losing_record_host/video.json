@@ -69,13 +69,58 @@
    "at": "center"
   }
  },
+ "sources": [
+  {
+   "title": "Seahawks.com: Reliving The Beast Quake Game 10 Years Later",
+   "url": "https://seahawks.com/news/reliving-the-beast-quake-game-10-years-later"
+  },
+  {
+   "title": "Pro Football Hall of Fame: A Wild Weekend",
+   "url": "https://profootballhof.com/blogs/2011/01/blogs-choudhrys-chronicles-a-wild-weekend"
+  },
+  {
+   "title": "Panthers.com: Panthers aren't the first sub-.500 team in the playoffs, and history isn't against them",
+   "url": "https://www.panthers.com/news/panthers-aren-t-the-first-sub-500-team-in-the-playoffs-and-history-isn-t-against-them"
+  },
+  {
+   "title": "Pro Football Hall of Fame: Panthers Attempt to Make Postseason History",
+   "url": "https://profootballhof.com/news/2015/01/news-panthers-attempt-to-make-postseason-history"
+  },
+  {
+   "title": "SI: Panthers bring statistical oddity into playoff clash with Rams",
+   "url": "https://www.si.com/nfl/panthers/onsi/panthers-bring-statistical-oddity-into-playoff-clash-with-rams-01ke657b1faa"
+  },
+  {
+   "title": "Vikings.com: 8 Takeaways from NFL Owners Meeting: Push Play Survives; No Changes for Playoff Seeding",
+   "url": "https://www.vikings.com/news/nfl-owners-meeting-tush-push-playoff-seeding"
+  },
+  {
+   "title": "SI: Packers' Proposal to Ban Eagles' Tush Push Fails Again (Lions seeding proposal off the table)",
+   "url": "https://www.si.com/nfl/packers/packers-proposal-to-ban-eagles-tush-push-fails-again"
+  },
+  {
+   "title": "Vindicator (AP): Seahawks (7-9) take NFC West",
+   "url": "https://vindyarchives.com/news/2011/jan/03/seahawks-7-9-take-nfc-west"
+  },
+  {
+   "title": "Fox News (AP): Seattle Seahawks shut down St. Louis Rams to reach playoffs",
+   "url": "https://www.foxnews.com/sports/seattle-seahawks-shut-down-st-louis-rams-to-reach-playoffs"
+  },
+  {
+   "title": "CBS News: Seahawks upset Saints 41-36",
+   "url": "https://www.cbsnews.com/newyork/news/seahawks-upset-saints-41-36/"
+  },
+  {
+   "title": "Wikipedia: Beast Quake",
+   "url": "https://en.wikipedia.org/wiki/Beast_Quake"
+  }
+ ],
  "lines": [
   {
-   "text": "In the NFL playoffs, a team with a losing record can host a team that won eleven games.",
+   "text": "You finish with a losing record. You host a playoff game anyway.",
    "key": [
-    "LOSING"
+    "ANYWAY."
    ],
-   "cap": "In the NFL playoffs, a team with a losing record can host a team that won 11 games.",
    "place": {
     "saint": false,
     "panther": false,
@@ -105,9 +150,9 @@
    "speaker": "capy"
   },
   {
-   "text": "The rule: win your division, and you get a home playoff game. Your record doesn't matter.",
+   "text": "The rule? Win your division. Get a home game.",
    "key": [
-    "DIVISION,"
+    "HOME"
    ],
    "shot": {
     "type": "close",
@@ -123,11 +168,29 @@
    "speaker": "capy"
   },
   {
-   "text": "2010. The Seattle Seahawks win their division at seven and nine.",
+   "text": "Your record doesn't matter. At all.",
+   "key": [
+    "ALL."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Twenty ten. Your Seahawks go seven and nine. Division champs.",
+   "cap": "2010. Your Seahawks go 7-9. Division champs.",
    "key": [
     "7-9."
    ],
-   "cap": "2010. The Seattle Seahawks win their division at 7-9.",
    "set": "office",
    "setOpts": {
     "boardText": [
@@ -135,10 +198,6 @@
      "7-9"
     ]
    },
-   "board": [
-    "SEAHAWKS",
-    "7-9"
-   ],
    "place": {
     "sea": "left",
     "saint": "right"
@@ -158,17 +217,17 @@
      "action": "cross",
      "look": "sea"
     }
-   }
+   },
+   "board": [
+    "SEAHAWKS",
+    "7-9"
+   ]
   },
   {
-   "text": "Their first playoff opponent: the defending champion Saints. Eleven and five.",
+   "text": "Your opponent? The defending champion Saints. Eleven and five.",
+   "cap": "Your opponent? The defending champion Saints. 11-5.",
    "key": [
     "11-5."
-   ],
-   "cap": "Their first playoff opponent: the defending champion Saints. 11-5.",
-   "board": [
-    "SAINTS 11-5",
-    "AT SEAHAWKS 7-9"
    ],
    "shot": {
     "type": "medium",
@@ -180,14 +239,18 @@
      "action": "cross",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "SAINTS 11-5",
+    "AT SEAHAWKS 7-9"
+   ]
   },
   {
-   "text": "Eleven wins, and New Orleans still has to fly to Seattle.",
+   "text": "Eleven wins. They still fly to Seattle.",
+   "cap": "11 wins. They still fly to Seattle.",
    "key": [
     "SEATTLE."
    ],
-   "cap": "11 wins, and New Orleans still has to fly to Seattle.",
    "shot": {
     "type": "two",
     "on": "saint",
@@ -206,11 +269,11 @@
    }
   },
   {
-   "text": "Seattle wins, forty one to thirty six.",
+   "text": "You win, forty one to thirty six.",
+   "cap": "You win, 41 to 36.",
    "key": [
     "41"
    ],
-   "cap": "Seattle wins, 41 to 36.",
    "set": "field",
    "setOpts": {
     "boardText": [
@@ -218,10 +281,6 @@
      "SAINTS 36"
     ]
    },
-   "board": [
-    "SEAHAWKS 41",
-    "SAINTS 36"
-   ],
    "place": {
     "sea": [
      0,
@@ -245,14 +304,18 @@
      "mood": "sad",
      "action": "slump"
     }
-   }
+   },
+   "board": [
+    "SEAHAWKS 41",
+    "SAINTS 36"
+   ]
   },
   {
-   "text": "Marshawn Lynch seals it with a sixty seven yard touchdown run.",
+   "text": "Marshawn Lynch seals it. Sixty seven yards.",
+   "cap": "Marshawn Lynch seals it. 67 yards.",
    "key": [
-    "67-YARD"
+    "67"
    ],
-   "cap": "Marshawn Lynch seals it with a 67-yard touchdown run.",
    "shot": {
     "type": "low",
     "on": "sea"
@@ -266,9 +329,9 @@
    }
   },
   {
-   "text": "The first playoff team with a losing record outside a strike year.",
+   "text": "No losing team had ever won a division.",
    "key": [
-    "LOSING"
+    "EVER"
    ],
    "place": {
     "capy": [
@@ -296,14 +359,10 @@
    "speaker": "capy"
   },
   {
-   "text": "In 2014, Carolina did it again at seven, eight and one, hosting the eleven and five Cardinals.",
+   "text": "Twenty fourteen. Carolina does it again.",
+   "cap": "2014. Carolina does it again.",
    "key": [
-    "7-8-1,"
-   ],
-   "cap": "In 2014, Carolina did it again at 7-8-1, hosting the 11-5 Cardinals.",
-   "board": [
-    "CARDINALS 11-5",
-    "AT PANTHERS 7-8-1"
+    "AGAIN."
    ],
    "place": {
     "panther": [
@@ -332,17 +391,56 @@
      "action": "idle",
      "look": "panther"
     }
-   }
+   },
+   "board": [
+    "PANTHERS",
+    "7-8-1"
+   ]
   },
   {
-   "text": "And last season, the eight and nine Panthers hosted the twelve and five Rams.",
+   "text": "Losing record. Hosting the eleven and five Cardinals.",
+   "cap": "Losing record. Hosting the 11-5 Cardinals.",
    "key": [
-    "8-9"
+    "11-5"
    ],
-   "cap": "And last season, the 8-9 Panthers hosted the 12-5 Rams.",
+   "place": {
+    "panther": [
+     2.0,
+     0.6
+    ],
+    "sea": false,
+    "saint": false,
+    "capy": [
+     -0.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "panther"
+   },
+   "act": {
+    "panther": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "panther"
+    }
+   },
    "board": [
-    "RAMS 12-5",
-    "AT PANTHERS 8-9"
+    "CARDINALS 11-5",
+    "AT PANTHERS 7-8-1"
+   ]
+  },
+  {
+   "text": "Last season, Carolina hosts the Rams. At eight and nine.",
+   "cap": "Last season, Carolina hosts the Rams. At 8-9.",
+   "key": [
+    "8-9."
    ],
    "shot": {
     "type": "high",
@@ -353,12 +451,17 @@
      "mood": "smug",
      "action": "shrug"
     }
-   }
+   },
+   "board": [
+    "RAMS 12-5",
+    "AT PANTHERS 8-9"
+   ]
   },
   {
-   "text": "In 2025, Detroit proposed seeding playoff teams by record instead.",
+   "text": "Twenty twenty five. Detroit proposes seeding by record.",
+   "cap": "2025. Detroit proposes seeding by record.",
    "key": [
-    "RECORD"
+    "RECORD."
    ],
    "set": "press",
    "setOpts": {
@@ -367,10 +470,6 @@
      "RECORD?"
     ]
    },
-   "board": [
-    "SEED BY",
-    "RECORD?"
-   ],
    "place": {
     "exec": "center"
    },
@@ -384,16 +483,16 @@
      "action": "talk",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "SEED BY",
+    "RECORD?"
+   ]
   },
   {
-   "text": "It never even got a vote. The Lions pulled it.",
+   "text": "It never even gets a vote. Pulled.",
    "key": [
-    "PULLED"
-   ],
-   "board": [
-    "PROPOSAL:",
-    "WITHDRAWN"
+    "PULLED."
    ],
    "shot": {
     "type": "close",
@@ -404,7 +503,11 @@
      "mood": "sad",
      "action": "facepalm"
     }
-   }
+   },
+   "board": [
+    "PROPOSAL:",
+    "WITHDRAWN"
+   ]
   },
   {
    "text": "So the rule stands. Win your division, get a home game.",
@@ -434,7 +537,7 @@
    "speaker": "capy"
   },
   {
-   "text": "Should a better record beat a division title? Yes or no?",
+   "text": "Should a better record beat a division title? Yes or no? Saints fans, we remember.",
    "key": [
     "YES",
     "NO?"
@@ -453,34 +556,76 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "Seahawks.com: Reliving The Beast Quake Game 10 Years Later",
-   "url": "https://seahawks.com/news/reliving-the-beast-quake-game-10-years-later"
+   "claim": "A division winner gets a home playoff game regardless of record",
+   "terms": [
+    "division",
+    "home"
+   ]
   },
   {
-   "title": "Pro Football Hall of Fame: A Wild Weekend",
-   "url": "https://profootballhof.com/blogs/2011/01/blogs-choudhrys-chronicles-a-wild-weekend"
+   "claim": "In 2010 the Seahawks won their division at 7-9",
+   "terms": [
+    "7-9",
+    "division|NFC West"
+   ]
   },
   {
-   "title": "Panthers.com: Panthers aren't the first sub-.500 team in the playoffs, and history isn't against them",
-   "url": "https://www.panthers.com/news/panthers-aren-t-the-first-sub-500-team-in-the-playoffs-and-history-isn-t-against-them"
+   "claim": "The opponent was the defending champion Saints at 11-5",
+   "terms": [
+    "Saints",
+    "11-5"
+   ]
   },
   {
-   "title": "Pro Football Hall of Fame: Panthers Attempt to Make Postseason History",
-   "url": "https://profootballhof.com/news/2015/01/news-panthers-attempt-to-make-postseason-history"
+   "claim": "Seattle won 41-36",
+   "terms": [
+    "41-36"
+   ]
   },
   {
-   "title": "SI: Panthers bring statistical oddity into playoff clash with Rams",
-   "url": "https://www.si.com/nfl/panthers/onsi/panthers-bring-statistical-oddity-into-playoff-clash-with-rams-01ke657b1faa"
+   "claim": "Marshawn Lynch sealed it with a 67-yard touchdown run",
+   "terms": [
+    "Lynch",
+    "67"
+   ]
   },
   {
-   "title": "Vikings.com: 8 Takeaways from NFL Owners Meeting: Push Play Survives; No Changes for Playoff Seeding",
-   "url": "https://www.vikings.com/news/nfl-owners-meeting-tush-push-playoff-seeding"
+   "claim": "No team with a losing record had won a division before",
+   "terms": [
+    "first",
+    "losing record"
+   ]
   },
   {
-   "title": "SI: Packers' Proposal to Ban Eagles' Tush Push Fails Again (Lions seeding proposal off the table)",
-   "url": "https://www.si.com/nfl/packers/packers-proposal-to-ban-eagles-tush-push-fails-again"
+   "claim": "In 2014 Carolina hosted the 11-5 Cardinals at 7-8-1",
+   "terms": [
+    "7-8-1",
+    "Cardinals"
+   ]
+  },
+  {
+   "claim": "Last season the 8-9 Panthers hosted the Rams",
+   "terms": [
+    "8-9",
+    "Rams"
+   ]
+  },
+  {
+   "claim": "In 2025 Detroit proposed seeding playoff teams by record",
+   "terms": [
+    "Lions|Detroit",
+    "seeding|seed"
+   ]
+  },
+  {
+   "claim": "The proposal was withdrawn without a vote",
+   "terms": [
+    "withdr",
+    "seeding|seed"
+   ]
   }
  ]
 }

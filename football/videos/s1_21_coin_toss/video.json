@@ -72,12 +72,29 @@
    "at": "desk"
   }
  },
+ "sources": [
+  {
+   "title": "CBS News: Lions Kick Past Steelers In OT (Nov 26, 1998)",
+   "url": "https://www.cbsnews.com/news/lions-kick-past-steelers-in-ot/"
+  },
+  {
+   "title": "TribLIVE: Every Thanksgiving, Charlie Batch recalls infamous Steelers-Lions coin-flip game",
+   "url": "https://triblive.com/sports/every-thanksgiving-charlie-batch-recalls-infamous-steelers-lions-coin-flip-game"
+  },
+  {
+   "title": "Fox Sports: Craziest moments in NFL history: The Thanksgiving Coin Flip Incident",
+   "url": "https://www.foxsports.com/stories/other/craziest-moments-in-nfl-history-the-thanksgiving-coin-flip-incident"
+  },
+  {
+   "title": "CBS Sports: NFL's Top 10 Thanksgiving moments",
+   "url": "https://www.cbssports.com/nfl/news/top-10-thanksgiving-nfl-moments-randy-moss-huge-day-jerome-bettis-coin-toss-the-butt-fumble-and-more"
+  }
+ ],
  "lines": [
   {
-   "text": "In 1998, an NFL overtime was decided before a single snap. By one word.",
+   "text": "You lose an overtime game. Before a single snap.",
    "key": [
-    "ONE",
-    "WORD."
+    "SNAP."
    ],
    "place": {
     "bus": false,
@@ -112,14 +129,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Thanksgiving. Steelers at Lions. Tied, sixteen to sixteen.",
+   "text": "Thanksgiving, nineteen ninety eight. Your Steelers visit Detroit.",
+   "cap": "Thanksgiving, 1998. Your Steelers visit Detroit.",
    "key": [
-    "16"
-   ],
-   "cap": "Thanksgiving. Steelers at Lions. Tied, 16 to 16.",
-   "board": [
-    "STEELERS 16",
-    "LIONS 16"
+    "DETROIT."
    ],
    "place": {
     "bus": [
@@ -155,17 +168,56 @@
      "mood": "neutral",
      "action": "idle"
     }
-   }
+   },
+   "board": [
+    "THANKSGIVING",
+    "1998"
+   ]
   },
   {
-   "text": "Overtime starts with a coin toss. Win it, and you can take the ball first.",
+   "text": "Tied sixteen to sixteen. On to overtime.",
+   "cap": "Tied 16 to 16. On to overtime.",
+   "key": [
+    "16"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "bus": [
+     1.0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bus"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "bus": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "board": [
+    "STEELERS 16",
+    "LIONS 16"
+   ]
+  },
+  {
+   "text": "It starts with a coin toss. Win it, take the ball.",
    "key": [
     "COIN",
     "TOSS."
-   ],
-   "board": [
-    "OVERTIME",
-    "COIN TOSS"
    ],
    "shot": {
     "type": "medium",
@@ -174,13 +226,32 @@
    "act": {
     "ref": {
      "mood": "neutral",
-     "action": "throw",
+     "action": "point",
      "look": "camera"
     }
+   },
+   "board": [
+    "OVERTIME",
+    "COIN TOSS"
+   ],
+   "place": {
+    "bus": [
+     -1.6,
+     0
+    ],
+    "ref": [
+     0.2,
+     -0.6
+    ],
+    "lion": [
+     1.8,
+     0
+    ],
+    "capy": false
    }
   },
   {
-   "text": "Steelers captain Jerome Bettis makes the call.",
+   "text": "You're Jerome Bettis. You make the call.",
    "key": [
     "CALL."
    ],
@@ -197,7 +268,7 @@
    }
   },
   {
-   "text": "The referee flips it. The coin lands tails.",
+   "text": "The coin lands tails.",
    "key": [
     "TAILS."
    ],
@@ -221,7 +292,7 @@
    }
   },
   {
-   "text": "Bettis says he called tails.",
+   "text": "You say you called tails.",
    "key": [
     "TAILS."
    ],
@@ -244,10 +315,9 @@
    }
   },
   {
-   "text": "The referee says he heard heads, then tails, and went with the first word.",
+   "text": "The referee says he heard heads first.",
    "key": [
-    "FIRST",
-    "WORD."
+    "HEADS."
    ],
    "shot": {
     "type": "close",
@@ -258,6 +328,28 @@
      "mood": "smug",
      "action": "shrug",
      "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "First word counts. Heads. You lose the toss.",
+   "key": [
+    "LOSE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "bus"
+    },
+    "bus": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "ref"
     }
    }
   },
@@ -284,11 +376,11 @@
    }
   },
   {
-   "text": "Two minutes and fifty two seconds later, Jason Hanson kicks a forty two yard field goal.",
+   "text": "Jason Hanson kicks a field goal. Forty two yards.",
+   "cap": "Jason Hanson kicks a field goal. 42 yards.",
    "key": [
-    "42-YARD"
+    "42"
    ],
-   "cap": "2 minutes and 52 seconds later, Jason Hanson kicks a 42-yard field goal.",
    "shot": {
     "type": "low",
     "on": "lion"
@@ -296,20 +388,16 @@
    "act": {
     "lion": {
      "mood": "happy",
-     "action": "throw",
+     "action": "cheer",
      "look": "camera"
     }
    }
   },
   {
    "text": "Lions win, nineteen to sixteen.",
+   "cap": "Lions win, 19 to 16.",
    "key": [
     "19"
-   ],
-   "cap": "Lions win, 19 to 16.",
-   "board": [
-    "LIONS 19",
-    "STEELERS 16"
    ],
    "shot": {
     "type": "medium",
@@ -324,12 +412,54 @@
      "mood": "sad",
      "action": "slump"
     }
+   },
+   "board": [
+    "LIONS 19",
+    "STEELERS 16"
+   ]
+  },
+  {
+   "text": "Your offense never touches the ball. Happy Thanksgiving.",
+   "key": [
+    "THANKSGIVING."
+   ],
+   "place": {
+    "capy": "left",
+    "bus": "right",
+    "ref": false,
+    "lion": false,
+    "exec": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bus"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "bus": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "OFFENSE",
+     "SNAPS: 0"
+    ]
    }
   },
   {
-   "text": "Bettis insists he only said tails. The referee sticks with what he heard.",
+   "text": "You insist you said tails. The ref disagrees.",
    "key": [
-    "TAILS."
+    "DISAGREES."
    ],
    "set": "press",
    "setOpts": {
@@ -338,18 +468,13 @@
      "TAILS?"
     ]
    },
-   "board": [
-    "HEADS?",
-    "TAILS?"
-   ],
    "place": {
     "bus": "left",
     "ref": "right"
    },
    "shot": {
-    "type": "two",
-    "on": "bus",
-    "with": "ref"
+    "type": "medium",
+    "on": "bus"
    },
    "act": {
     "bus": {
@@ -362,12 +487,16 @@
      "action": "cross",
      "look": "bus"
     }
-   }
+   },
+   "board": [
+    "HEADS?",
+    "TAILS?"
+   ]
   },
   {
-   "text": "So the NFL changed the toss. Now the captain calls it before the coin goes up.",
+   "text": "So the league changes the toss.",
    "key": [
-    "BEFORE"
+    "CHANGES"
    ],
    "set": "office",
    "setOpts": {
@@ -376,10 +505,6 @@
      "CALL IT FIRST"
     ]
    },
-   "board": [
-    "NEW RULE:",
-    "CALL IT FIRST"
-   ],
    "place": {
     "exec": "desk",
     "capy": "left"
@@ -399,13 +524,53 @@
      "action": "idle",
      "look": "exec"
     }
-   }
+   },
+   "board": [
+    "NEW RULE:",
+    "CALL IT FIRST"
+   ]
+  },
+  {
+   "text": "Now you call it first. Then the coin goes up.",
+   "key": [
+    "FIRST."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NEW RULE:",
+     "CALL IT FIRST"
+    ]
+   },
+   "place": {
+    "exec": "desk",
+    "capy": "left"
+   },
+   "shot": {
+    "type": "close",
+    "on": "exec"
+   },
+   "act": {
+    "exec": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exec"
+    }
+   },
+   "board": [
+    "NEW RULE:",
+    "CALL IT FIRST"
+   ]
   },
   {
    "text": "One word. One coin. One whole overtime, gone.",
    "key": [
-    "ONE",
-    "COIN."
+    "GONE."
    ],
    "shot": {
     "type": "two",
@@ -427,7 +592,7 @@
    "speaker": "capy"
   },
   {
-   "text": "Your call: heads or tails?",
+   "text": "Your call: heads or tails? Steelers fans, choose very carefully.",
    "key": [
     "HEADS",
     "TAILS?"
@@ -446,22 +611,83 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "CBS News: Lions Kick Past Steelers In OT (Nov 26, 1998)",
-   "url": "https://www.cbsnews.com/news/lions-kick-past-steelers-in-ot/"
+   "claim": "On Thanksgiving 1998 the Steelers played at Detroit",
+   "terms": [
+    "Thanksgiving",
+    "Steelers",
+    "Lions"
+   ]
   },
   {
-   "title": "TribLIVE: Every Thanksgiving, Charlie Batch recalls infamous Steelers-Lions coin-flip game",
-   "url": "https://triblive.com/sports/every-thanksgiving-charlie-batch-recalls-infamous-steelers-lions-coin-flip-game"
+   "claim": "The game was tied 16-16 and went to overtime",
+   "terms": [
+    "16-16|16 16|tied",
+    "overtime"
+   ]
   },
   {
-   "title": "Fox Sports: Craziest moments in NFL history: The Thanksgiving Coin Flip Incident",
-   "url": "https://www.foxsports.com/stories/other/craziest-moments-in-nfl-history-the-thanksgiving-coin-flip-incident"
+   "claim": "Jerome Bettis made the coin toss call",
+   "terms": [
+    "Bettis",
+    "coin"
+   ]
   },
   {
-   "title": "CBS Sports: NFL's Top 10 Thanksgiving moments",
-   "url": "https://www.cbssports.com/nfl/news/top-10-thanksgiving-nfl-moments-randy-moss-huge-day-jerome-bettis-coin-toss-the-butt-fumble-and-more"
+   "claim": "The coin landed tails",
+   "terms": [
+    "tails"
+   ]
+  },
+  {
+   "claim": "Bettis said he called tails; the referee said he heard heads",
+   "terms": [
+    "Bettis",
+    "heads"
+   ]
+  },
+  {
+   "claim": "The referee went with the first word he heard",
+   "terms": [
+    "first",
+    "heads"
+   ]
+  },
+  {
+   "claim": "Detroit got the ball",
+   "terms": [
+    "Lions",
+    "ball"
+   ]
+  },
+  {
+   "claim": "Jason Hanson kicked a 42-yard field goal and the Lions won 19-16",
+   "terms": [
+    "Hanson",
+    "42"
+   ]
+  },
+  {
+   "claim": "The Lions won 19-16",
+   "terms": [
+    "19-16"
+   ]
+  },
+  {
+   "claim": "The Steelers' offense never touched the ball in overtime",
+   "terms": [
+    "never",
+    "touch|possession|ball"
+   ]
+  },
+  {
+   "claim": "The league changed the toss so the call is made before the coin is tossed",
+   "terms": [
+    "before",
+    "toss|flip"
+   ]
   }
  ]
 }
