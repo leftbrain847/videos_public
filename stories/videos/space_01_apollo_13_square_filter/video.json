@@ -1,0 +1,1026 @@
+{
+ "id": "space_01_apollo_13_square_filter",
+ "title": "Apollo 13: a square filter, a round hole",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "APOLLO 13"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "jim": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#eef1f5",
+    "pants": "#eef1f5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "jack": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#f2a13a",
+    "pants": "#f2a13a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#c68d64"
+   }
+  },
+  "fred": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#e8e2d4",
+    "pants": "#e8e2d4",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#7b4e33"
+   }
+  },
+  "eng": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true,
+    "glasses": true
+   }
+  },
+  "eng2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#4b92db",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#5c3a24",
+    "headset": true
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You are two hundred thousand miles from home. Your air is turning to poison.",
+   "cap": "You are 200,000 miles from home. Your air is turning to poison.",
+   "key": [
+    "POISON."
+   ],
+   "board": [
+    "CO2",
+    "RISING"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "jim": [
+     -2.4,
+     -0.6
+    ],
+    "jack": false,
+    "fred": [
+     2.4,
+     -0.6
+    ],
+    "eng": false,
+    "eng2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "jim": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "fred"
+    },
+    "fred": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "jim"
+    }
+   }
+  },
+  {
+   "text": "April, nineteen seventy. Apollo thirteen is flying to the moon.",
+   "cap": "April 1970. Apollo 13 is flying to the moon.",
+   "key": [
+    "MOON."
+   ],
+   "board": [
+    "APOLLO 13",
+    "APRIL 1970"
+   ],
+   "place": {
+    "capy": false,
+    "jim": [
+     -2.2,
+     0
+    ],
+    "jack": [
+     0,
+     0.4
+    ],
+    "fred": [
+     2.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "jack"
+   },
+   "act": {
+    "jim": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "jack": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "fred": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Three men aboard. Jim Lovell, Jack Swigert, Fred Haise.",
+   "key": [
+    "THREE"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "jim",
+    "with": "fred"
+   },
+   "act": {
+    "jim": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "jack"
+    },
+    "jack": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "fred": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "jack"
+    }
+   }
+  },
+  {
+   "text": "Fifty six hours in, an oxygen tank explodes.",
+   "cap": "56 hours in, an oxygen tank explodes.",
+   "key": [
+    "EXPLODES."
+   ],
+   "board": [
+    "O2 TANK 2",
+    "GONE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "jack"
+   },
+   "act": {
+    "jack": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "jim": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "jack"
+    },
+    "fred": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "jack"
+    }
+   }
+  },
+  {
+   "text": "The radio call: Houston, we've had a problem.",
+   "key": [
+    "PROBLEM."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "HOUSTON"
+    ]
+   },
+   "board": [
+    "WE'VE HAD",
+    "A PROBLEM"
+   ],
+   "place": {
+    "capy": false,
+    "jim": false,
+    "jack": false,
+    "fred": false,
+    "eng": [
+     0,
+     0.4
+    ],
+    "eng2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The moon landing? Cancelled. New job: get three people home alive.",
+   "key": [
+    "ALIVE."
+   ],
+   "board": [
+    "LANDING: OFF",
+    "GET HOME"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The main ship is losing power. So they climb into the lunar module.",
+   "key": [
+    "LUNAR"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "POWER LOW"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "jim": [
+     -2.4,
+     -2.2
+    ],
+    "jack": [
+     0,
+     -2.0
+    ],
+    "fred": [
+     2.4,
+     -2.2
+    ],
+    "eng": false,
+    "eng2": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "jack"
+   },
+   "act": {
+    "jim": {
+     "mood": "worried",
+     "action": "walk",
+     "look": "jack"
+    },
+    "jack": {
+     "mood": "worried",
+     "action": "walk",
+     "look": "camera"
+    },
+    "fred": {
+     "mood": "worried",
+     "action": "walk",
+     "look": "jack"
+    }
+   }
+  },
+  {
+   "text": "Its name is Aquarius. Now it's a lifeboat.",
+   "key": [
+    "LIFEBOAT."
+   ],
+   "board": [
+    "AQUARIUS",
+    "= LIFEBOAT"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "jim": [
+     -2.4,
+     -0.8
+    ],
+    "jack": false,
+    "fred": [
+     2.4,
+     -0.8
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "jim": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    },
+    "fred": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It was built for two people. Now it carries three.",
+   "key": [
+    "THREE."
+   ],
+   "board": [
+    "BUILT FOR 2",
+    "CARRYING 3"
+   ],
+   "place": {
+    "capy": false,
+    "jim": [
+     -2.2,
+     0
+    ],
+    "jack": [
+     0,
+     0.3
+    ],
+    "fred": [
+     2.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "jack"
+   },
+   "act": {
+    "jim": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    },
+    "jack": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "fred": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "jack"
+    }
+   }
+  },
+  {
+   "text": "Three men breathing in a tiny cabin. Carbon dioxide piles up fast.",
+   "key": [
+    "DIOXIDE"
+   ],
+   "board": [
+    "CO2",
+    "RISING"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "fred"
+   },
+   "act": {
+    "fred": {
+     "mood": "worried",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The lifeboat's own air filters can't keep up.",
+   "key": [
+    "FILTERS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "jim"
+   },
+   "act": {
+    "jim": {
+     "mood": "worried",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Spare filters? Plenty. They're in the main ship.",
+   "key": [
+    "PLENTY."
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "jim": false,
+    "jack": [
+     1.3,
+     0.2
+    ],
+    "fred": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "jack"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "point",
+     "look": "jack"
+    },
+    "jack": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "One problem. Those filters are square. The holes are round.",
+   "key": [
+    "SQUARE.",
+    "ROUND."
+   ],
+   "board": [
+    "SQUARE FILTER",
+    "ROUND HOLE"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "jack": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.55,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Yes. A square peg in a round hole. In space. Rocket science, everyone.",
+   "key": [
+    "SPACE."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In Houston, engineers may use only what's onboard.",
+   "key": [
+    "ONBOARD."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "ONLY WHAT'S",
+     "ON BOARD"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "jim": false,
+    "jack": false,
+    "fred": false,
+    "eng": [
+     -1.5,
+     0.3
+    ],
+    "eng2": [
+     1.5,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "eng",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "eng": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Plastic bags. Cardboard covers from the flight manuals. Duct tape.",
+   "key": [
+    "TAPE."
+   ],
+   "board": [
+    "BAGS",
+    "CARDBOARD + TAPE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "point",
+     "look": "eng2"
+    }
+   }
+  },
+  {
+   "text": "They read the steps up to the crew.",
+   "key": [
+    "STEPS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "The crew builds it, piece by piece. They call it the mailbox.",
+   "key": [
+    "MAILBOX."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "THE MAILBOX"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "jim": false,
+    "jack": [
+     -1.3,
+     0.2
+    ],
+    "fred": [
+     1.3,
+     0.2
+    ],
+    "eng": false,
+    "eng2": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "jack",
+    "with": "fred"
+   },
+   "act": {
+    "jack": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "fred"
+    },
+    "fred": {
+     "mood": "happy",
+     "action": "point",
+     "look": "jack"
+    }
+   }
+  },
+  {
+   "text": "Carbon dioxide drops. Everyone breathes again.",
+   "key": [
+    "BREATHES"
+   ],
+   "board": [
+    "CO2",
+    "FALLING"
+   ],
+   "place": {
+    "jim": [
+     0,
+     -0.4
+    ],
+    "jack": [
+     -2.4,
+     0.2
+    ],
+    "fred": [
+     2.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "jim"
+   },
+   "act": {
+    "jim": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "jack": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "jim"
+    },
+    "fred": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "jim"
+    }
+   }
+  },
+  {
+   "text": "April seventeenth. Splashdown in the Pacific. All three are home.",
+   "cap": "April 17. Splashdown in the Pacific. All 3 are home.",
+   "key": [
+    "HOME."
+   ],
+   "board": [
+    "SPLASHDOWN",
+    "ALL 3 SAFE"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "jim": [
+     1.3,
+     0.2
+    ],
+    "jack": false,
+    "fred": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "jim"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "jim"
+    },
+    "jim": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nasa calls it a successful failure. Nobody lands. Everybody lives.",
+   "cap": "NASA calls it a successful failure. Nobody lands. Everybody lives.",
+   "key": [
+    "FAILURE."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.6,
+     0.2,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "jim": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Could you fix it with duct tape? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "DUCT TAPE FIX:",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "jim": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "jim": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Apollo 13",
+   "url": "https://en.wikipedia.org/wiki/Apollo_13"
+  },
+  {
+   "title": "NASA: Houston, we've had a problem",
+   "url": "https://www.nasa.gov/history/houston-weve-had-a-problem/"
+  },
+  {
+   "title": "NASA Apollo Flight Journal: building the mailbox",
+   "url": "https://www.nasa.gov/history/afj/ap13fj/15day4-mailbox.html"
+  },
+  {
+   "title": "Space.com: Apollo 13 timeline",
+   "url": "https://www.space.com/apollo-13-timeline.html"
+  },
+  {
+   "title": "Smithsonian Air and Space: the creativity that saved Apollo 13",
+   "url": "https://airandspace.si.edu/stories/editorial/conserving-creativity-saved-apollo-13-astronauts"
+  },
+  {
+   "title": "Universe Today: 13 things that saved Apollo 13, duct tape",
+   "url": "https://www.universetoday.com/63673/13-things-that-saved-apollo-13-part-10-duct-tape"
+  },
+  {
+   "title": "Live Science: Apollo 13 at 50",
+   "url": "https://www.livescience.com/apollo-13-nasa-successful-failure-50th-anniversary.html"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Apollo 13 was about 200,000 miles from Earth when the problem hit",
+   "terms": [
+    "200,000"
+   ]
+  },
+  {
+   "claim": "Apollo 13 flew to the moon in April 1970",
+   "terms": [
+    "Apollo 13",
+    "April",
+    "1970"
+   ]
+  },
+  {
+   "claim": "The crew was Jim Lovell, Jack Swigert and Fred Haise",
+   "terms": [
+    "Lovell",
+    "Swigert",
+    "Haise"
+   ]
+  },
+  {
+   "claim": "About 56 hours in, an oxygen tank exploded",
+   "terms": [
+    "oxygen tank",
+    "explo"
+   ]
+  },
+  {
+   "claim": "The crew radioed 'Houston, we've had a problem'",
+   "terms": [
+    "Houston",
+    "had a problem"
+   ]
+  },
+  {
+   "claim": "The moon landing was called off",
+   "terms": [
+    "landing|land",
+    "abort|cancel|scrub"
+   ]
+  },
+  {
+   "claim": "The crew used the lunar module Aquarius as a lifeboat",
+   "terms": [
+    "Aquarius",
+    "lifeboat"
+   ]
+  },
+  {
+   "claim": "Carbon dioxide built up in the lunar module",
+   "terms": [
+    "carbon dioxide"
+   ]
+  },
+  {
+   "claim": "The command module's lithium hydroxide canisters were square; the lunar module's were round",
+   "terms": [
+    "square",
+    "round|cylindrical"
+   ]
+  },
+  {
+   "claim": "Engineers built an adapter from items onboard, including plastic bags, cardboard and duct tape",
+   "terms": [
+    "duct tape",
+    "plastic"
+   ]
+  },
+  {
+   "claim": "The adapter used covers from the flight manuals",
+   "terms": [
+    "cover",
+    "manual"
+   ]
+  },
+  {
+   "claim": "The command module had spare canisters",
+   "terms": [
+    "command module",
+    "canister"
+   ]
+  },
+  {
+   "claim": "The command module was losing power",
+   "terms": [
+    "command module",
+    "power"
+   ]
+  },
+  {
+   "claim": "The lunar module was built for two but carried three",
+   "terms": [
+    "two",
+    "three",
+    "lunar module"
+   ]
+  },
+  {
+   "claim": "The adapter was nicknamed the mailbox",
+   "terms": [
+    "mailbox"
+   ]
+  },
+  {
+   "claim": "The crew splashed down in the Pacific on April 17",
+   "terms": [
+    "Pacific",
+    "April 17"
+   ]
+  },
+  {
+   "claim": "NASA calls Apollo 13 a successful failure",
+   "terms": [
+    "successful failure"
+   ]
+  }
+ ]
+}
