@@ -1,0 +1,923 @@
+{
+ "id": "mind_16_mozart_effect",
+ "title": "Mozart for every baby",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "MOZART",
+   "EFFECT"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f6d21f",
+    "pants": "#2e86c1",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   }
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "gov": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2a2d33",
+    "pants": "#2a2d33",
+    "tie": "#c0392b",
+    "hair": "short",
+    "hairColor": "#d8d8d8",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "hold": "envelope"
+  }
+ },
+ "lines": [
+  {
+   "text": "A governor wants every newborn to get Mozart. Free. On the state.",
+   "key": [
+    "MOZART."
+   ],
+   "board": [
+    "MOZART",
+    "FOR BABIES"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "gov": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gov"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "gov": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It starts in nineteen ninety three. A short paper in Nature.",
+   "cap": "It starts in 1993. A short paper in Nature.",
+   "key": [
+    "NATURE."
+   ],
+   "set": "office",
+   "board": [
+    "NATURE",
+    "1993"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "gov": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "College students listen to Mozart for ten minutes.",
+   "cap": "College students listen to Mozart for 10 minutes.",
+   "key": [
+    "10"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "gov": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A sonata for two pianos. Then a paper folding puzzle. Fold, cut, imagine.",
+   "key": [
+    "PUZZLE."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "gov": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "exp",
+    "with": "you"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "Their spatial reasoning scores jump.",
+   "key": [
+    "JUMP."
+   ],
+   "board": [
+    "SPATIAL",
+    "SCORES UP"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "gov": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The boost fades within about fifteen minutes.",
+   "cap": "The boost fades within about 15 minutes.",
+   "key": [
+    "15"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "gov": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fifteen minutes. Hold onto that number.",
+   "cap": "15 minutes. Hold onto that number.",
+   "key": [
+    "15"
+   ],
+   "set": "study",
+   "board": [
+    "LASTS:",
+    "~15 MIN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "gov": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the headlines hear, Mozart makes you smarter.",
+   "key": [
+    "SMARTER."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "gov": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then they hear, Mozart makes babies smarter. Much smarter.",
+   "key": [
+    "BABIES"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "gov": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Small detail. The study tested zero babies.",
+   "key": [
+    "ZERO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "gov": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nineteen ninety eight. Georgia's governor, Zell Miller, has an idea.",
+   "cap": "1998. Georgia's governor, Zell Miller, has an idea.",
+   "key": [
+    "GEORGIA'S"
+   ],
+   "set": "press",
+   "board": [
+    "GEORGIA",
+    "1998"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "gov": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "gov"
+   },
+   "act": {
+    "gov": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Every newborn leaves the hospital with classical music.",
+   "key": [
+    "CLASSICAL"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "gov": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "gov"
+   },
+   "act": {
+    "gov": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He asks for a hundred five thousand dollars.",
+   "cap": "He asks for $105,000.",
+   "key": [
+    "$105,000."
+   ],
+   "board": [
+    "BUDGET:",
+    "$105,000"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "gov": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "gov"
+   },
+   "act": {
+    "gov": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Mozart becomes a parenting strategy.",
+   "key": [
+    "STRATEGY."
+   ],
+   "set": "study",
+   "board": [
+    "MOZART",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "gov": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gov"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "gov"
+    },
+    "gov": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Parents everywhere press play. Just in case.",
+   "key": [
+    "PLAY."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "gov": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "gov": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. The effect barely survives.",
+   "key": [
+    "BARELY"
+   ],
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "gov": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Other labs rerun it. Many find nothing. Some find a sliver.",
+   "key": [
+    "NOTHING."
+   ],
+   "set": "office",
+   "board": [
+    "MOZART",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "gov": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One idea explains the tiny boost that remains.",
+   "key": [
+    "IDEA"
+   ],
+   "board": [
+    "SO WHAT",
+    "WAS IT?"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "gov": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Enjoyable sounds wake you up. Any of them.",
+   "key": [
+    "ANY"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "exp": false,
+    "gov": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So it was never Mozart. It was mood. Arousal.",
+   "key": [
+    "MOOD."
+   ],
+   "set": "study",
+   "board": [
+    "MOZART",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "gov": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Music you like wakes your brain up. Briefly. Then it wears off.",
+   "key": [
+    "BRIEFLY."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "gov": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your baby will be fine with lullabies. Or silence. Or you, singing badly.",
+   "key": [
+    "LULLABIES."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "gov": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Does music before a test help you think? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "MUSIC",
+    "HELPS?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "gov": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Mozart effect",
+   "url": "https://en.wikipedia.org/wiki/Mozart_effect"
+  },
+  {
+   "title": "NPR: Mozart effect was just what we wanted to hear",
+   "url": "https://www.npr.org/2010/06/28/128104580/mozart-effect-was-just-what-we-wanted-to-hear"
+  },
+  {
+   "title": "Scientific American: Fact or fiction, babies exposed to classical music end up smarter",
+   "url": "https://www.scientificamerican.com/article/fact-or-fiction-babies-ex/"
+  },
+  {
+   "title": "Yale Scientific: The Mozart effect, not so noteworthy",
+   "url": "https://www.yalescientific.org/2012/03/the-mozart-effect-not-so-noteworthy/"
+  },
+  {
+   "title": "KPBS (NPR): Mozart effect was just what we wanted to hear",
+   "url": "https://www.kpbs.org/news/national/2010/06/27/mozart-effect-was-just-what-we-wanted-to-hear"
+  },
+  {
+   "title": "McGill Office for Science and Society: The Mozart effect",
+   "url": "https://www.mcgill.ca/oss/node/9857"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The original paper appeared in Nature in 1993",
+   "terms": [
+    "Nature",
+    "1993"
+   ]
+  },
+  {
+   "claim": "College students listened to Mozart for 10 minutes",
+   "terms": [
+    "10 minutes|ten minutes"
+   ]
+  },
+  {
+   "claim": "It was Mozart's sonata for two pianos",
+   "terms": [
+    "two pianos"
+   ]
+  },
+  {
+   "claim": "Spatial reasoning scores rose",
+   "terms": [
+    "spatial"
+   ]
+  },
+  {
+   "claim": "The effect lasted about 10 to 15 minutes",
+   "terms": [
+    "15 minutes|fifteen minutes"
+   ]
+  },
+  {
+   "claim": "Media reported Mozart makes you smarter",
+   "terms": [
+    "Mozart",
+    "smarter"
+   ]
+  },
+  {
+   "claim": "The study did not test babies",
+   "terms": [
+    "babies|infants|children",
+    "Mozart"
+   ]
+  },
+  {
+   "claim": "In 1998 Georgia governor Zell Miller proposed classical music for every newborn",
+   "terms": [
+    "Zell Miller"
+   ]
+  },
+  {
+   "claim": "Newborns would get classical music",
+   "terms": [
+    "classical",
+    "newborn|baby|babies"
+   ]
+  },
+  {
+   "claim": "He requested $105,000",
+   "terms": [
+    "105,000"
+   ]
+  },
+  {
+   "claim": "Replications often found nothing",
+   "terms": [
+    "replicat|failed"
+   ]
+  },
+  {
+   "claim": "Effects reflect mood and arousal",
+   "terms": [
+    "arousal|mood"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,883 @@
+{
+ "id": "mind_19_radish_willpower",
+ "title": "The radish that ran out of willpower",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "COOKIES",
+   "OR RADISHES?"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#8e44ad",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   }
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "c2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#f39c12",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You resist a cookie. Then you quit a puzzle early. Science said those were linked.",
+   "key": [
+    "LINKED."
+   ],
+   "board": [
+    "COOKIES",
+    "OR RADISHES?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen ninety eight. You arrive at the lab. Ready for science.",
+   "cap": "1998. You arrive at the lab. Ready for science.",
+   "key": [
+    "LAB."
+   ],
+   "set": "office",
+   "board": [
+    "LAB",
+    "1998"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "c2": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "exp"
+    },
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The room smells of fresh chocolate chip cookies.",
+   "key": [
+    "COOKIES."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "c2": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The cookies sit on the table. Beside them, radishes.",
+   "key": [
+    "RADISHES."
+   ],
+   "board": [
+    "COOKIES",
+    "RADISHES"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "c2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your instructions? Eat the radishes. Only the radishes. Do not touch the cookies.",
+   "key": [
+    "ONLY"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "c2": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "exp",
+    "with": "you"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "Torture. Peer reviewed torture. For science.",
+   "key": [
+    "TORTURE."
+   ],
+   "set": "study",
+   "board": [
+    "COOKIES",
+    "OR RADISHES?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you get a puzzle. Secretly, it cannot be solved. You try anyway.",
+   "key": [
+    "SOLVED."
+   ],
+   "set": "office",
+   "board": [
+    "PUZZLE",
+    "(UNSOLVABLE)"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "exp": false,
+    "c2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Radish eaters give up much sooner. Way sooner. They are done.",
+   "key": [
+    "SOONER."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "exp": false,
+    "c2": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Cookie eaters keep trying far longer. Happily. Full of cookie.",
+   "key": [
+    "LONGER."
+   ],
+   "set": "locker",
+   "board": [
+    "COOKIE EATERS",
+    "KEEP GOING"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "c2": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "c2"
+   },
+   "act": {
+    "c2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The conclusion? Willpower is like a muscle. It gets tired.",
+   "key": [
+    "MUSCLE."
+   ],
+   "set": "study",
+   "board": [
+    "COOKIES",
+    "OR RADISHES?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Roy Baumeister calls it ego depletion.",
+   "key": [
+    "DEPLETION."
+   ],
+   "set": "office",
+   "board": [
+    "EGO",
+    "DEPLETION"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "c2": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Hundreds of studies follow. Then a bestselling book called Willpower.",
+   "key": [
+    "WILLPOWER."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "c2": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One study even says sugar refuels your willpower. Problem solved.",
+   "key": [
+    "SUGAR"
+   ],
+   "set": "locker",
+   "board": [
+    "COOKIES",
+    "OR RADISHES?"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "c2": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "c2"
+   },
+   "act": {
+    "c2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Self control becomes a fuel tank. Diet advice changes.",
+   "key": [
+    "TANK."
+   ],
+   "set": "study",
+   "board": [
+    "COOKIES",
+    "OR RADISHES?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. Twenty sixteen. A huge rerun.",
+   "cap": "Here is the twist. 2016. A huge rerun.",
+   "key": [
+    "2016."
+   ],
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty three labs. Over two thousand people. One shared plan.",
+   "cap": "23 labs. Over 2,000 people. One shared plan.",
+   "key": [
+    "23"
+   ],
+   "set": "office",
+   "board": [
+    "23 LABS",
+    "2,000+ PEOPLE"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     -1.4,
+     0.0
+    ],
+    "c2": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "c2"
+    },
+    "c2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "Everyone runs one test, decided in advance. No wiggle room.",
+   "key": [
+    "ADVANCE."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     -1.4,
+     0.0
+    ],
+    "c2": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "exp",
+    "with": "c2"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "c2"
+    },
+    "c2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "The result? An effect near zero. Basically nothing.",
+   "key": [
+    "ZERO."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     -1.4,
+     0.0
+    ],
+    "c2": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The cookie still smells amazing. The effect does not.",
+   "key": [
+    "NOT."
+   ],
+   "set": "study",
+   "board": [
+    "COOKIES",
+    "OR RADISHES?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Radishes are no excuse to skip the gym. Sorry.",
+   "key": [
+    "GYM."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Cookies or radishes? Pick one.",
+   "key": [
+    "COOKIES",
+    "RADISHES?"
+   ],
+   "board": [
+    "COOKIES OR",
+    "RADISHES?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "c2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Ego depletion",
+   "url": "https://en.wikipedia.org/wiki/Ego_depletion"
+  },
+  {
+   "title": "FORRT Open Social Psychology: Ego depletion",
+   "url": "https://forrt.org/open-social-psychology/chapter5.html"
+  },
+  {
+   "title": "Tilburg University: A multi-lab pre-registered replication of the ego depletion effect",
+   "url": "https://research.tilburguniversity.edu/en/publications/a-multi-lab-pre-registered-replication-of-the-ego-depletion-effec/"
+  },
+  {
+   "title": "Maastricht University: A multilab preregistered replication of the ego-depletion effect",
+   "url": "https://cris.maastrichtuniversity.nl/en/publications/a-multilab-preregistered-replication-of-the-ego-depletion-effect/"
+  },
+  {
+   "title": "Wikipedia: Roy Baumeister",
+   "url": "https://en.wikipedia.org/wiki/Roy_Baumeister"
+  },
+  {
+   "title": "APA Monitor: What you need to know about willpower",
+   "url": "https://www.apa.org/monitor/2012/01/self-control"
+  },
+  {
+   "title": "PubMed: Ego depletion, is the active self a limited resource?",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/9599441/"
+  },
+  {
+   "title": "The Psychologist (BPS): Self-control, the moral muscle",
+   "url": "https://www.bps.org.uk/psychologist/self-control-moral-muscle"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The radish study was published in 1998",
+   "terms": [
+    "1998",
+    "Baumeister"
+   ]
+  },
+  {
+   "claim": "The room smelled of fresh chocolate chip cookies",
+   "terms": [
+    "chocolate chip|cookies"
+   ]
+  },
+  {
+   "claim": "Some participants were told to eat radishes instead",
+   "terms": [
+    "radishes",
+    "chocolate|cookies"
+   ]
+  },
+  {
+   "claim": "They then faced unsolvable puzzles",
+   "terms": [
+    "unsolvable"
+   ]
+  },
+  {
+   "claim": "Radish eaters gave up faster on unsolvable puzzles",
+   "terms": [
+    "radishes",
+    "gave up|quit|persist"
+   ]
+  },
+  {
+   "claim": "Willpower was likened to a muscle",
+   "terms": [
+    "muscle"
+   ]
+  },
+  {
+   "claim": "Roy Baumeister called it ego depletion",
+   "terms": [
+    "Baumeister",
+    "ego depletion"
+   ]
+  },
+  {
+   "claim": "Baumeister co-wrote the book Willpower",
+   "terms": [
+    "Willpower",
+    "Baumeister"
+   ]
+  },
+  {
+   "claim": "A study claimed glucose restores self-control",
+   "terms": [
+    "glucose"
+   ]
+  },
+  {
+   "claim": "A 2016 replication involved 23 labs and over 2,000 people",
+   "terms": [
+    "23",
+    "2,141|2141|2,000|2000"
+   ]
+  },
+  {
+   "claim": "It was preregistered",
+   "terms": [
+    "preregistered|pre-registered|registered"
+   ]
+  },
+  {
+   "claim": "The effect was close to zero",
+   "terms": [
+    "zero|null|no evidence|small"
+   ]
+  }
+ ]
+}
