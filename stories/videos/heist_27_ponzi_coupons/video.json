@@ -1,0 +1,668 @@
+{
+ "id": "heist_27_ponzi_coupons",
+ "title": "The man who gave the scheme his name",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "office",
+ "setOpts": {
+  "boardText": [
+   "50% IN",
+   "45 DAYS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "charles": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#e9e4d8",
+    "pants": "#3a3f4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b"
+   },
+   "hold": "envelope"
+  },
+  "inv": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#8a7a5c",
+    "pants": "#3a2a20",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "inv2": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#c0392b",
+    "pants": "#22252b",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#c98d63"
+   }
+  },
+  "reporter": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#a8714c"
+   },
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "You run a scam. It becomes so famous, it gets your name. Forever.",
+   "key": [
+    "FOREVER."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "charles"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "charles": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "charles": "right",
+    "inv": false,
+    "inv2": false,
+    "reporter": false
+   },
+   "board": [
+    "PONZI",
+    "SCHEME"
+   ]
+  },
+  {
+   "text": "Boston, nineteen twenty. You're Charles Ponzi.",
+   "cap": "Boston, 1920. You're Charles Ponzi.",
+   "key": [
+    "PONZI."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "charles"
+   },
+   "act": {
+    "charles": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "charles": "center"
+   },
+   "board": [
+    "BOSTON",
+    "1920"
+   ]
+  },
+  {
+   "text": "You find a real loophole. Postal reply coupons.",
+   "key": [
+    "COUPONS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "charles"
+   },
+   "act": {
+    "charles": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Buy them cheap in one country. Swap them for stamps worth more in another.",
+   "key": [
+    "STAMPS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "charles": false
+   }
+  },
+  {
+   "text": "Tiny profit. Per coupon. Very, very tiny. You'd need mountains of coupons.",
+   "key": [
+    "TINY"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your promise to investors? Fifty percent profit in forty five days.",
+   "cap": "Your promise to investors? 50% profit in 45 days.",
+   "key": [
+    "50%"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "charles",
+    "with": "inv"
+   },
+   "act": {
+    "charles": {
+     "mood": "happy",
+     "action": "point",
+     "look": "inv"
+    },
+    "inv": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "charles"
+    }
+   },
+   "place": {
+    "charles": "left",
+    "inv": "right"
+   },
+   "board": [
+    "50%",
+    "45 DAYS"
+   ]
+  },
+  {
+   "text": "Crowds line up outside your office. Cash in hand. Around the block.",
+   "key": [
+    "CROWDS"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "inv2"
+   },
+   "act": {
+    "inv2": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "inv": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "inv2"
+    }
+   },
+   "place": {
+    "inv": "left",
+    "inv2": "right",
+    "charles": false
+   }
+  },
+  {
+   "text": "Within months, you take in millions of dollars.",
+   "key": [
+    "MILLIONS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "charles"
+   },
+   "act": {
+    "charles": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "charles": "center",
+    "inv": false,
+    "inv2": false
+   },
+   "board": [
+    "$15,000,000"
+   ]
+  },
+  {
+   "text": "Here's the secret. You barely buy any coupons.",
+   "key": [
+    "SECRET."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "charles"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "charles"
+    },
+    "charles": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "charles": "right"
+   }
+  },
+  {
+   "text": "Early investors get paid. With money from newer investors.",
+   "key": [
+    "NEWER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "charles"
+   },
+   "act": {
+    "charles": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "charles": "center"
+   }
+  },
+  {
+   "text": "It works great. For a while. Until new money stops coming in.",
+   "key": [
+    "STOPS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "inv"
+   },
+   "act": {
+    "inv": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "inv": "center",
+    "charles": false
+   }
+  },
+  {
+   "text": "A newspaper does the math. The Boston post.",
+   "key": [
+    "MATH."
+   ],
+   "set": "press",
+   "shot": {
+    "type": "medium",
+    "on": "reporter"
+   },
+   "act": {
+    "reporter": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "reporter": "center"
+   },
+   "board": [
+    "BOSTON",
+    "POST"
+   ]
+  },
+  {
+   "text": "Your promises would need millions of coupons.",
+   "key": [
+    "MILLIONS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "reporter"
+   },
+   "act": {
+    "reporter": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Only thousands exist in the entire country.",
+   "key": [
+    "THOUSANDS"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "reporter"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "reporter"
+    },
+    "reporter": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "reporter": "right"
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Investors panic. They line up again. This time to get money back.",
+   "key": [
+    "BACK."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "inv2"
+   },
+   "act": {
+    "inv2": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    },
+    "inv": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "inv": "left",
+    "inv2": "right"
+   }
+  },
+  {
+   "text": "You're arrested. Several banks collapse. Thousands of people lose their savings.",
+   "key": [
+    "COLLAPSE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "charles"
+   },
+   "act": {
+    "charles": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "charles": "center",
+    "inv": false,
+    "inv2": false
+   }
+  },
+  {
+   "text": "The newspaper wins a Pulitzer Prize. For exposing you.",
+   "key": [
+    "PULITZER"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   }
+  },
+  {
+   "text": "You spend years in prison. Then you're deported to Italy.",
+   "key": [
+    "DEPORTED"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "high",
+    "on": "charles"
+   },
+   "act": {
+    "charles": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "charles": "center"
+   }
+  },
+  {
+   "text": "A century later? Scams like it carry your name. Congratulations, I guess.",
+   "key": [
+    "NAME."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   }
+  },
+  {
+   "text": "Fifty percent in forty five days. Would you have invested? Yes or no?",
+   "cap": "50% in 45 days. Would you have invested? Yes or no?",
+   "key": [
+    "INVESTED?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Charles Ponzi",
+   "url": "https://en.wikipedia.org/wiki/Charles_Ponzi"
+  },
+  {
+   "title": "Wikipedia: Ponzi scheme",
+   "url": "https://en.wikipedia.org/wiki/Ponzi_scheme"
+  },
+  {
+   "title": "Smithsonian Magazine: In Ponzi we trust",
+   "url": "https://www.smithsonianmag.com/history/in-ponzi-we-trust-64016168/"
+  },
+  {
+   "title": "Smithsonian National Postal Museum: Ponzi scheme",
+   "url": "https://postalmuseum.si.edu/exhibition/behind-the-badge-case-histories-scams-and-schemes/ponzi-scheme"
+  },
+  {
+   "title": "Mass Moments: Ponzi scheme begins to unravel",
+   "url": "https://www.massmoments.org/moment-details/ponzi-scheme-begins-to-unravel.html"
+  },
+  {
+   "title": "National Archives Prologue: Ponzi inmate case file",
+   "url": "https://www.archives.gov/publications/prologue/2010/summer/ponzi-inmate-case-file"
+  },
+  {
+   "title": "ABA Journal: Ponzi pleads guilty",
+   "url": "https://www.abajournal.com/magazine/article/on-nov-30-1920-ponzi-was-indicted-by-suffolk-county-on-22-counts-of-larceny"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The Ponzi scheme is named after him",
+   "terms": [
+    "Ponzi scheme"
+   ]
+  },
+  {
+   "claim": "It was in Boston in 1920",
+   "terms": [
+    "Boston",
+    "1920"
+   ]
+  },
+  {
+   "claim": "He used international postal reply coupons",
+   "terms": [
+    "reply coupons"
+   ]
+  },
+  {
+   "claim": "Coupons bought cheaply abroad could be exchanged for more valuable US stamps",
+   "terms": [
+    "stamps"
+   ]
+  },
+  {
+   "claim": "He promised 50% profit in 45 days",
+   "terms": [
+    "45 days",
+    "50"
+   ]
+  },
+  {
+   "claim": "Crowds lined up to invest",
+   "terms": [
+    "line|crowd"
+   ]
+  },
+  {
+   "claim": "He took in millions within months",
+   "terms": [
+    "million"
+   ]
+  },
+  {
+   "claim": "He bought very few coupons",
+   "terms": [
+    "coupons",
+    "few|never|very little|small"
+   ]
+  },
+  {
+   "claim": "Earlier investors were paid with money from new investors",
+   "terms": [
+    "new investors|later investors|newer investors"
+   ]
+  },
+  {
+   "claim": "The Boston Post investigated",
+   "terms": [
+    "Boston Post"
+   ]
+  },
+  {
+   "claim": "Covering his promises would have needed millions of coupons, only thousands existed",
+   "terms": [
+    "160 million|million coupons",
+    "27,000|thousand"
+   ]
+  },
+  {
+   "claim": "Investors rushed to get their money back",
+   "terms": [
+    "run|withdraw|money back"
+   ]
+  },
+  {
+   "claim": "He was arrested and banks failed",
+   "terms": [
+    "arrest",
+    "bank"
+   ]
+  },
+  {
+   "claim": "The Boston Post won a Pulitzer Prize",
+   "terms": [
+    "Pulitzer"
+   ]
+  },
+  {
+   "claim": "He served prison time and was deported to Italy",
+   "terms": [
+    "deport",
+    "Italy"
+   ]
+  }
+ ]
+}

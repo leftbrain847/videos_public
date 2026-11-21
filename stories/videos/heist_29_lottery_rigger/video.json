@@ -1,0 +1,632 @@
+{
+ "id": "heist_29_lottery_rigger",
+ "title": "The man who rigged the lottery from inside",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "office",
+ "setOpts": {
+  "boardText": [
+   "HOT LOTTO",
+   "JACKPOT"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "eddie": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2e",
+    "pants": "#1f2a3a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "clerk": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#c0392b",
+    "pants": "#22252b",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#c98d63"
+   }
+  },
+  "inv": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   },
+   "hold": "clipboard"
+  },
+  "cow": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#4b92db",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You rig a lottery jackpot. Then you buy the ticket on camera. In a hoodie.",
+   "key": [
+    "HOODIE."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eddie"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "eddie": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "eddie": "center",
+    "clerk": false,
+    "inv": false,
+    "cow": false
+   },
+   "board": [
+    "HOT LOTTO",
+    "$16,500,000"
+   ]
+  },
+  {
+   "text": "You're Eddie Tipton. You build security software for lotteries.",
+   "key": [
+    "SECURITY"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "eddie"
+   },
+   "act": {
+    "eddie": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   }
+  },
+  {
+   "text": "You write the code that picks numbers. Random ones. Trusted. Respected.",
+   "key": [
+    "RANDOM"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "eddie"
+   },
+   "act": {
+    "eddie": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "RANDOM?",
+    "MOSTLY"
+   ]
+  },
+  {
+   "text": "You slip in a secret. On chosen days, the numbers aren't random. Not even a little.",
+   "key": [
+    "AREN'T"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "eddie": false
+   }
+  },
+  {
+   "text": "You know exactly what they'll be. Down to the last digit.",
+   "key": [
+    "EXACTLY"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eddie"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "eddie"
+    },
+    "eddie": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "eddie": "right"
+   }
+  },
+  {
+   "text": "December, twenty ten. You walk into a gas station in Iowa.",
+   "cap": "December 2010. You walk into a gas station in Iowa.",
+   "key": [
+    "IOWA."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "wide",
+    "on": "clerk"
+   },
+   "act": {
+    "clerk": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "eddie"
+    },
+    "eddie": {
+     "mood": "neutral",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "eddie": [
+     -2.0,
+     0.4
+    ],
+    "clerk": [
+     2.0,
+     0.4
+    ]
+   },
+   "board": [
+    "GAS",
+    "STATION"
+   ]
+  },
+  {
+   "text": "You buy one Hot Lotto ticket. A security camera films the whole thing. Every second.",
+   "key": [
+    "CAMERA"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "eddie"
+   },
+   "act": {
+    "eddie": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The jackpot? Sixteen and a half million dollars.",
+   "cap": "The jackpot? $16.5 million.",
+   "key": [
+    "MILLION"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "eddie"
+   },
+   "act": {
+    "eddie": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "clerk": false
+   }
+  },
+  {
+   "text": "You can't claim it yourself. So you hide behind lawyers. Then behind a trust.",
+   "key": [
+    "TRUST."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eddie"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "eddie"
+    },
+    "eddie": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "eddie": "right"
+   }
+  },
+  {
+   "text": "The lottery refuses to pay a mystery winner. Investigators get curious.",
+   "key": [
+    "CURIOUS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "inv"
+   },
+   "act": {
+    "inv": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "inv": "center",
+    "capy": false,
+    "eddie": false
+   }
+  },
+  {
+   "text": "They release the store video to the public.",
+   "key": [
+    "VIDEO"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "inv"
+   },
+   "act": {
+    "inv": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "inv": "center"
+   },
+   "board": [
+    "DO YOU KNOW",
+    "THIS MAN?"
+   ]
+  },
+  {
+   "text": "Your own coworkers recognize your voice. Your face. Your hoodie.",
+   "key": [
+    "COWORKERS"
+   ],
+   "set": "living",
+   "shot": {
+    "type": "close",
+    "on": "cow"
+   },
+   "act": {
+    "cow": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "cow": "center"
+   },
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The man guarding the lottery? He was rigging it.",
+   "key": [
+    "RIGGING"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "cow": false
+   }
+  },
+  {
+   "text": "Investigators find more rigged wins. In several states.",
+   "key": [
+    "STATES."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "inv"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "inv"
+    },
+    "inv": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "inv": "right"
+   },
+   "board": [
+    "RIGGED",
+    "WINS"
+   ]
+  },
+  {
+   "text": "Some tickets were cashed by your brother. Others by friends.",
+   "key": [
+    "TICKETS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "inv"
+   },
+   "act": {
+    "inv": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "inv": "center"
+   }
+  },
+  {
+   "text": "You plead guilty. The sentence is up to twenty five years.",
+   "cap": "You plead guilty. The sentence is up to 25 years.",
+   "key": [
+    "25"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "close",
+    "on": "eddie"
+   },
+   "act": {
+    "eddie": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "eddie": "center"
+   }
+  },
+  {
+   "text": "So much for random. So much for security.",
+   "key": [
+    "SECURITY."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   }
+  },
+  {
+   "text": "Perfect code. Terrible disguise.",
+   "key": [
+    "DISGUISE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Say you knew the winning numbers. Would you buy the ticket? Yes or no?",
+   "key": [
+    "NUMBERS?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Hot Lotto fraud scandal",
+   "url": "https://en.wikipedia.org/wiki/Hot_Lotto_fraud_scandal"
+  },
+  {
+   "title": "NBC News: Former lottery executive gets 25 years for rigging numbers in four states",
+   "url": "https://www.nbcnews.com/news/us-news/former-lottery-executive-gets-25-years-rigging-numbers-four-states-n795056"
+  },
+  {
+   "title": "The Register: Lottery-hacking sysadmin gets 25 years",
+   "url": "https://www.theregister.com/2017/08/23/florida_judge_gives_lottery_scammer_more_private_time/"
+  },
+  {
+   "title": "CBS Colorado: Mastermind of lottery fraud admits he rigged jackpots",
+   "url": "https://www.cbsnews.com/colorado/news/mastermind-of-lottery-fraud-admits-he-rigged-jackpots/"
+  },
+  {
+   "title": "Irish Examiner: The man who cracked the lottery",
+   "url": "https://www.irishexaminer.com/breakingnews/views/analysis/the-big-read-the-man-who-cracked-the-lottery-845121.html"
+  },
+  {
+   "title": "TechSpot: Former lottery programmer gets 25 years for rigging random number generator",
+   "url": "https://www.techspot.com/news/70696-former-lottery-programmer-gets-25-years-rigging-random.html"
+  },
+  {
+   "title": "Casino.org: Lottery fraudster Eddie Tipton sentenced to 25 years",
+   "url": "https://www.casino.org/news/lottery-fraudster-eddie-tipton-sentenced-25-years-prison/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Eddie Tipton was the security director who built lottery software",
+   "terms": [
+    "Tipton",
+    "security"
+   ]
+  },
+  {
+   "claim": "He wrote the random number generator code",
+   "terms": [
+    "random number"
+   ]
+  },
+  {
+   "claim": "His code made numbers predictable on certain days",
+   "terms": [
+    "days",
+    "predict"
+   ]
+  },
+  {
+   "claim": "In December 2010 he bought a ticket at a gas station in Iowa",
+   "terms": [
+    "2010",
+    "Iowa"
+   ]
+  },
+  {
+   "claim": "He was filmed buying the ticket",
+   "terms": [
+    "video|surveillance|camera"
+   ]
+  },
+  {
+   "claim": "The Hot Lotto jackpot was 16.5 million dollars",
+   "terms": [
+    "16.5 million"
+   ]
+  },
+  {
+   "claim": "He tried to claim it through lawyers and a trust",
+   "terms": [
+    "trust|lawyer|attorney"
+   ]
+  },
+  {
+   "claim": "The lottery refused to pay",
+   "terms": [
+    "refused|declined|never paid|not paid"
+   ]
+  },
+  {
+   "claim": "Investigators released the video",
+   "terms": [
+    "released",
+    "video"
+   ]
+  },
+  {
+   "claim": "Coworkers recognized him",
+   "terms": [
+    "recognized|recognised",
+    "co worker|coworker|colleague|co-worker"
+   ]
+  },
+  {
+   "claim": "He rigged wins in several states",
+   "terms": [
+    "states"
+   ]
+  },
+  {
+   "claim": "Friends and family claimed some prizes",
+   "terms": [
+    "brother|friend|family"
+   ]
+  },
+  {
+   "claim": "He pleaded guilty and got up to 25 years",
+   "terms": [
+    "25 years"
+   ]
+  }
+ ]
+}
