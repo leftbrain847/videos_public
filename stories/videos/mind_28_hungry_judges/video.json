@@ -217,7 +217,7 @@
    }
   },
   {
-   "text": "Then the judges take a food break. A sandwich. Some fruit.",
+   "text": "Then the judges take a food break. A quick bite. Recharge.",
    "key": [
     "FOOD"
    ],
@@ -782,7 +782,11 @@
   },
   {
    "title": "Judgment and Decision Making: The irrational hungry judge effect revisited",
-   "url": "https://dlab.sauder.ubc.ca/sjdm/journal/16/16823/jdm16823.html"
+   "url": "https://journal.sjdm.org/16/16823/jdm16823.html"
+  },
+  {
+   "title": "Daniel Lakens: Impossibly hungry judges",
+   "url": "https://daniellakens.blogspot.com/2017/07/impossibly-hungry-judges.html"
   },
   {
    "title": "Prison Legal News: Israeli study shows parole decisions may be affected by hunger",
@@ -819,13 +823,6 @@
    "claim": "Approvals returned after a food break",
    "terms": [
     "food break|meal break|snack|break"
-   ]
-  },
-  {
-   "claim": "The food break included a sandwich and fruit",
-   "terms": [
-    "sandwich",
-    "fruit"
    ]
   },
   {

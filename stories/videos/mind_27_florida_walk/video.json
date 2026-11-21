@@ -804,17 +804,17 @@
    ]
   },
   {
-   "claim": "The words related to old age, like Florida and bingo",
+   "claim": "The words related to old age, like Florida",
    "terms": [
     "Florida",
-    "bingo"
+    "elderly|old age|older|aging|age"
    ]
   },
   {
-   "claim": "Their walking time down a hallway was measured",
+   "claim": "Their walking speed was measured afterward",
    "terms": [
-    "hallway|corridor",
-    "walk"
+    "walk",
+    "speed|slow"
    ]
   },
   {
@@ -847,7 +847,7 @@
    "claim": "Daniel Kahneman wrote an open letter warning of a train wreck",
    "terms": [
     "Kahneman",
-    "train wreck"
+    "train wreck|trainwreck"
    ]
   },
   {

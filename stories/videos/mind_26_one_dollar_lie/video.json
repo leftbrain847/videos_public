@@ -165,9 +165,9 @@
    }
   },
   {
-   "text": "You load spools onto a tray. Then you unload them.",
+   "text": "Then you turn them all back. Same pegs. Same boredom.",
    "key": [
-    "SPOOLS"
+    "BOREDOM."
    ],
    "place": {
     "capy": false,
@@ -861,12 +861,6 @@
    "claim": "They turned pegs a quarter turn",
    "terms": [
     "pegs"
-   ]
-  },
-  {
-   "claim": "They loaded spools onto a tray",
-   "terms": [
-    "spools"
    ]
   },
   {

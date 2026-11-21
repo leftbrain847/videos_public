@@ -98,8 +98,8 @@
    }
   },
   {
-   "text": "The mid nineteen sixties. An elementary school in California.",
-   "cap": "The mid 1960s. An elementary school in California.",
+   "text": "The mid nineteen sixties. A public elementary school.",
+   "cap": "The mid 1960s. A public elementary school.",
    "key": [
     "SCHOOL"
    ],
@@ -341,7 +341,7 @@
    }
   },
   {
-   "text": "Months later, everyone gets tested again. Same test.",
+   "text": "Months later, everyone gets tested again. Same test. Same rules.",
    "key": [
     "AGAIN."
    ],
@@ -413,7 +413,7 @@
    }
   },
   {
-   "text": "A teacher's belief became a kid's result.",
+   "text": "A teacher's belief became a kid's result. Or so it seemed.",
    "key": [
     "BELIEF"
    ],
@@ -474,9 +474,9 @@
    }
   },
   {
-   "text": "It is named for a sculptor. His statue comes to life.",
+   "text": "Fancy name. Simple idea. Belief shapes results.",
    "key": [
-    "STATUE"
+    "BELIEF"
    ],
    "place": {
     "capy": [
@@ -501,9 +501,9 @@
    }
   },
   {
-   "text": "Rosenthal had tried this before. With rats.",
+   "text": "Same classrooms. Same lessons. Different hopes.",
    "key": [
-    "RATS."
+    "HOPES."
    ],
    "place": {
     "capy": [
@@ -528,9 +528,9 @@
    }
   },
   {
-   "text": "Rats labeled bright ran the maze better. They were not.",
+   "text": "Hope, it seems, leaks into how people teach.",
    "key": [
-    "MAZE"
+    "LEAKS"
    ],
    "place": {
     "capy": [
@@ -595,9 +595,9 @@
    }
   },
   {
-   "text": "A famous critic called the test scores unreliable.",
+   "text": "Critics dig into the numbers. They start to wobble.",
    "key": [
-    "UNRELIABLE."
+    "WOBBLE."
    ],
    "place": {
     "capy": false,
@@ -647,9 +647,9 @@
    }
   },
   {
-   "text": "Later reviews say the effect is real. Usually small.",
+   "text": "Big claims. Shaky numbers. Much smaller effects than the headlines promised.",
    "key": [
-    "SMALL."
+    "SMALLER"
    ],
    "set": "study",
    "board": [
@@ -791,10 +791,10 @@
    ]
   },
   {
-   "claim": "It took place at an elementary school in California",
+   "claim": "It took place at an elementary school",
    "terms": [
-    "elementary|Oak School",
-    "California|San Francisco"
+    "elementary",
+    "school"
    ]
   },
   {
@@ -835,36 +835,9 @@
    ]
   },
   {
-   "claim": "It is named after Pygmalion, whose statue came to life",
-   "terms": [
-    "Pygmalion",
-    "statue|sculpt"
-   ]
-  },
-  {
-   "claim": "Rosenthal had earlier run a similar study with rats",
-   "terms": [
-    "rats",
-    "maze"
-   ]
-  },
-  {
-   "claim": "Critics questioned the reliability of the test data",
-   "terms": [
-    "Thorndike|criticis|criticiz",
-    "test|data"
-   ]
-  },
-  {
    "claim": "Replications were mixed",
    "terms": [
     "replicat"
-   ]
-  },
-  {
-   "claim": "Reviews find the effect real but usually small",
-   "terms": [
-    "small"
    ]
   }
  ]
