@@ -350,9 +350,9 @@
     ]
    },
    "shot": {
-    "type": "ots",
+    "type": "two",
     "on": "c1",
-    "from": "you"
+    "with": "you"
    },
    "act": {
     "you": {
