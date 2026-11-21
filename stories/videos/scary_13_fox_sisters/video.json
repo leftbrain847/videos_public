@@ -1,0 +1,808 @@
+{
+ "id": "scary_13_fox_sisters",
+ "title": "The Fox sisters: knocks from beyond",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "HYDESVILLE"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#8a4a6a",
+    "pants": "#3c3c3c",
+    "hair": "braids",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "maggie": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#4a6fb5",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#f0c8a8"
+   },
+   "at": "center"
+  },
+  "mom": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5a4a3a",
+    "pants": "#2a2a2a",
+    "hair": "bob",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f"
+   },
+   "at": "center",
+   "hold": "candle"
+  },
+  "showman": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#7a2a2a",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64",
+    "beard": true
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "You crack your toes. You start a religion. Oops. Big oops.",
+   "key": [
+    "OOPS."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "maggie": [
+     2.6,
+     -0.6
+    ],
+    "mom": false,
+    "showman": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "maggie": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Eighteen forty eight. Hydesville, New York. You are Kate Fox.",
+   "cap": "1848. Hydesville, New York. You are Kate Fox.",
+   "key": [
+    "FOX."
+   ],
+   "board": [
+    "1848",
+    "HYDESVILLE"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "maggie": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You share a room with your sister, Maggie.",
+   "key": [
+    "MAGGIE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "maggie"
+   },
+   "act": {
+    "maggie": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "At night, strange knocks fill the house. Rap. Rap. Rap.",
+   "key": [
+    "KNOCKS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "You snap your fingers. The knocks answer back. Every time.",
+   "key": [
+    "ANSWER"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "point",
+     "look": "maggie"
+    },
+    "maggie": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "You give the spirit a name. Mister Splitfoot.",
+   "key": [
+    "SPLITFOOT."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "you": [
+     -2.4,
+     -0.4
+    ],
+    "maggie": [
+     2.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    },
+    "maggie": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your mother is terrified. The neighbors pour in. Dozens of them.",
+   "key": [
+    "NEIGHBORS"
+   ],
+   "place": {
+    "mom": [
+     -2.6,
+     -1.2
+    ],
+    "capy": false,
+    "you": [
+     0.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "mom"
+   },
+   "act": {
+    "mom": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They ask questions. The knocks reply. Everyone believes.",
+   "key": [
+    "BELIEVES."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "maggie"
+   },
+   "act": {
+    "maggie": {
+     "mood": "smug",
+     "action": "idle"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "idle"
+    },
+    "mom": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Two kids. One hobby. Every adult falls for it. Every single one.",
+   "key": [
+    "FALLS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "mom": false,
+    "you": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Soon you are on tour. Paying crowds. Seances. Big money. Big fame.",
+   "key": [
+    "SEANCES."
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "THE FOX",
+     "SISTERS"
+    ]
+   },
+   "place": {
+    "showman": [
+     -2.2,
+     0.3
+    ],
+    "you": [
+     0.2,
+     0
+    ],
+    "maggie": [
+     2.4,
+     0.3
+    ],
+    "capy": false,
+    "mom": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "showman"
+   },
+   "act": {
+    "showman": {
+     "mood": "happy",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "maggie": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Even showman P T Barnum books you.",
+   "cap": "Even showman P. T. Barnum books you.",
+   "key": [
+    "BARNUM"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "showman",
+    "with": "you"
+   },
+   "act": {
+    "showman": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "showman"
+    }
+   }
+  },
+  {
+   "text": "A whole movement grows around you. Spiritualism. It spreads fast.",
+   "key": [
+    "SPIRITUALISM."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "maggie": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Forty years later, Maggie takes a big stage.",
+   "key": [
+    "STAGE."
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "1888",
+     "NEW YORK"
+    ]
+   },
+   "place": {
+    "maggie": [
+     0,
+     0
+    ],
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "you": false,
+    "mom": false,
+    "showman": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "maggie"
+   },
+   "act": {
+    "maggie": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "maggie"
+    }
+   }
+  },
+  {
+   "text": "Eighteen eighty eight. New York City. She confesses. Everything.",
+   "cap": "1888. New York City. She confesses. Everything.",
+   "key": [
+    "CONFESSES."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "maggie"
+   },
+   "act": {
+    "maggie": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It was always us. Then she shows them how. Live.",
+   "key": [
+    "HOW."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "maggie"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "maggie"
+    },
+    "maggie": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "She cracks her toe joints. The whole hall hears it. Loud and clear.",
+   "key": [
+    "TOE"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "maggie"
+   },
+   "act": {
+    "maggie": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "As kids, they even dropped apples on strings. Thud. Thud.",
+   "key": [
+    "APPLES"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     1.0
+    ],
+    "maggie": [
+     1.4,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "maggie": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The great beyond was a foot trick. A loud one.",
+   "key": [
+    "FOOT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A year later, Maggie takes the confession back. Awkward.",
+   "key": [
+    "BACK."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "CONFESSION",
+     "TAKEN BACK"
+    ]
+   },
+   "place": {
+    "maggie": [
+     0,
+     0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": [
+     2.6,
+     -0.6
+    ],
+    "mom": false,
+    "showman": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "maggie"
+   },
+   "act": {
+    "maggie": {
+     "mood": "confused",
+     "action": "shrug"
+    },
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "maggie"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "maggie"
+    }
+   }
+  },
+  {
+   "text": "Too late. The movement keeps going without her.",
+   "key": [
+    "WITHOUT"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have believed the knocks? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "BELIEVE?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "you": [
+     0.2,
+     0
+    ],
+    "maggie": [
+     2.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Fox sisters",
+   "url": "https://en.wikipedia.org/wiki/Fox_sisters"
+  },
+  {
+   "title": "History.com: The Fox sisters and the ghost hoax that sparked spiritualism",
+   "url": "https://www.history.com/articles/ghost-hoax-spiritualism-fox-sisters"
+  },
+  {
+   "title": "Smithsonian: The Fox sisters and the rap on spiritualism",
+   "url": "https://www.smithsonianmag.com/history/the-fox-sisters-and-the-rap-on-spiritualism-99663697/"
+  },
+  {
+   "title": "Smithsonian: A very common delusion, spiritualism and the Fox sisters",
+   "url": "https://www.smithsonianmag.com/history/a-very-common-delusion-spiritualism-and-the-fox-sisters-97825064/"
+  },
+  {
+   "title": "McGill Office for Science and Society: The Fox sisters",
+   "url": "https://www.mcgill.ca/oss/node/12149"
+  },
+  {
+   "title": "All That's Interesting: The Fox sisters",
+   "url": "https://allthatsinteresting.com/fox-sisters"
+  },
+  {
+   "title": "HistoryNet: The Fox sisters, spiritualism's unlikely founders",
+   "url": "https://historynet.com/the-fox-sisters-spiritualisms-unlikely-founders/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1848 in Hydesville, New York, the Fox sisters heard knocks",
+   "terms": [
+    "Hydesville",
+    "1848"
+   ]
+  },
+  {
+   "claim": "Kate and Maggie (Margaretta) Fox were sisters",
+   "terms": [
+    "Kate",
+    "Maggie|Margaret"
+   ]
+  },
+  {
+   "claim": "Knocking sounds were heard at night",
+   "terms": [
+    "knock|rapping|raps"
+   ]
+  },
+  {
+   "claim": "Kate snapped her fingers and the knocks answered",
+   "terms": [
+    "snap",
+    "finger"
+   ]
+  },
+  {
+   "claim": "They called the spirit Mr. Splitfoot",
+   "terms": [
+    "Splitfoot"
+   ]
+  },
+  {
+   "claim": "Neighbors came to hear",
+   "terms": [
+    "neighbo"
+   ]
+  },
+  {
+   "claim": "They held paid public seances",
+   "terms": [
+    "seance|séance"
+   ]
+  },
+  {
+   "claim": "P. T. Barnum presented them",
+   "terms": [
+    "Barnum"
+   ]
+  },
+  {
+   "claim": "They helped start Spiritualism",
+   "terms": [
+    "Spiritualism"
+   ]
+  },
+  {
+   "claim": "In 1888 in New York Maggie confessed",
+   "terms": [
+    "1888",
+    "confess"
+   ]
+  },
+  {
+   "claim": "She showed how she cracked her toe joints",
+   "terms": [
+    "toe|toes",
+    "crack|joint|joints|knuckle|snap"
+   ]
+  },
+  {
+   "claim": "As children they dropped apples on strings",
+   "terms": [
+    "apple"
+   ]
+  },
+  {
+   "claim": "She later recanted the confession",
+   "terms": [
+    "recant|retract"
+   ]
+  }
+ ]
+}
