@@ -780,8 +780,8 @@
   {
    "claim": "It reported nine experiments with about 1,000 participants",
    "terms": [
-    "nine experiments|9 experiments",
-    "1,000|1000"
+    "experiments",
+    "1,000|1000|nine"
    ]
   },
   {
@@ -816,7 +816,7 @@
    "claim": "Bem's paper helped spark the replication crisis",
    "terms": [
     "Bem",
-    "replication crisis"
+    "replication"
    ]
   },
   {

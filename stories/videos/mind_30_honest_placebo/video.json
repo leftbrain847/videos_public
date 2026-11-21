@@ -165,9 +165,9 @@
    }
   },
   {
-   "text": "The bottle is clearly labeled. Placebo pills.",
+   "text": "The bottle is clearly labeled. No secrets.",
    "key": [
-    "PLACEBO"
+    "SECRETS."
    ],
    "board": [
     "PLACEBO",
@@ -294,7 +294,7 @@
    }
   },
   {
-   "text": "You take the pills twice a day. For three weeks.",
+   "text": "You take the pills. Day after day. For three weeks.",
    "key": [
     "WEEKS."
    ],
@@ -432,9 +432,9 @@
    }
   },
   {
-   "text": "Researchers call it an open label placebo.",
+   "text": "No deception at all. Still, real reported relief.",
    "key": [
-    "OPEN"
+    "DECEPTION"
    ],
    "board": [
     "OPEN-LABEL",
@@ -471,9 +471,9 @@
    }
   },
   {
-   "text": "Later trials try it for chronic back pain. Similar story.",
+   "text": "Other teams try honest placebos too. The idea spreads.",
    "key": [
-    "BACK"
+    "HONEST"
    ],
    "set": "office",
    "board": [
@@ -769,21 +769,14 @@
    ]
   },
   {
-   "claim": "The bottle was labeled placebo pills",
-   "terms": [
-    "placebo pills"
-   ]
-  },
-  {
    "claim": "They were told the pills were like sugar pills with no medication",
    "terms": [
     "sugar pills"
    ]
   },
   {
-   "claim": "Pills were taken twice daily for three weeks",
+   "claim": "The trial lasted three weeks",
    "terms": [
-    "twice daily|twice a day",
     "three weeks|3 weeks"
    ]
   },
@@ -798,18 +791,6 @@
    "terms": [
     "59",
     "35"
-   ]
-  },
-  {
-   "claim": "It is called open-label placebo",
-   "terms": [
-    "open-label|open label"
-   ]
-  },
-  {
-   "claim": "Later trials tested chronic back pain",
-   "terms": [
-    "back pain"
    ]
   },
   {

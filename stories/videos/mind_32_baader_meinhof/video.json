@@ -195,9 +195,9 @@
    }
   },
   {
-   "text": "A reader writes in. He heard an odd name twice. In one day.",
+   "text": "A reader writes in. He keeps bumping into an odd name. Again and again.",
    "key": [
-    "TWICE"
+    "ODD"
    ],
    "place": {
     "capy": false,
@@ -739,10 +739,10 @@
    ]
   },
   {
-   "claim": "A reader heard the name twice in one day",
+   "claim": "A reader wrote in about hearing the name repeatedly",
    "terms": [
-    "twice",
-    "24 hours|day"
+    "reader",
+    "Baader"
    ]
   },
   {
