@@ -1,0 +1,621 @@
+{
+ "id": "heist_26_dresden_green_vault",
+ "title": "The Green Vault and the cut window bars",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "GREEN",
+   "VAULT"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "t1": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2e",
+    "pants": "#1f2a3a",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  },
+  "t2": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#3a3f4b",
+    "pants": "#1f2a3a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c98d63"
+   }
+  },
+  "guard": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5f6770",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "judge": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#a8714c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal a king's diamonds in minutes. Then you give most of them back.",
+   "key": [
+    "BACK."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "t1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "t1": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "t1": "center",
+    "t2": false,
+    "guard": false,
+    "judge": false
+   },
+   "board": [
+    "GREEN",
+    "VAULT"
+   ]
+  },
+  {
+   "text": "Dresden, Germany. November, twenty nineteen.",
+   "cap": "Dresden, Germany. November 2019.",
+   "key": [
+    "DRESDEN,"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "DRESDEN",
+    "2019"
+   ]
+  },
+  {
+   "text": "Your target is the Green Vault. Centuries of royal treasure. Gold. Silver. Gems. Lots of gems.",
+   "key": [
+    "TREASURE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "t1": false
+   }
+  },
+  {
+   "text": "Days before, you prepare a window. Quietly. Carefully. Like a craftsman.",
+   "key": [
+    "PREPARE"
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "low",
+    "on": "t2"
+   },
+   "act": {
+    "t2": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "t2": "center"
+   }
+  },
+  {
+   "text": "Nobody notices a thing. Honestly, impressive craftsmanship. Wasted on crime.",
+   "key": [
+    "CRAFTSMANSHIP."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "t2": false
+   }
+  },
+  {
+   "text": "Early morning. You set fire to a power box nearby. Quick and quiet.",
+   "key": [
+    "FIRE"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "neutral",
+     "action": "point"
+    }
+   },
+   "place": {
+    "t1": "left",
+    "t2": "right"
+   },
+   "board": [
+    "4 AM"
+   ]
+  },
+  {
+   "text": "The streetlights go dark. The whole street. Pitch black. Perfect.",
+   "key": [
+    "DARK."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You open the window. You climb inside.",
+   "key": [
+    "INSIDE."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "two",
+    "on": "t1",
+    "with": "t2"
+   },
+   "act": {
+    "t1": {
+     "mood": "neutral",
+     "action": "walk"
+    },
+    "t2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "t1"
+    }
+   },
+   "place": {
+    "t1": "left",
+    "t2": "right"
+   }
+  },
+  {
+   "text": "You smash a display case with an axe. Over and over.",
+   "key": [
+    "AXE."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Guards watch on camera. Their rules say don't go in alone. They call police.",
+   "key": [
+    "POLICE."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "guard": "center"
+   },
+   "board": [
+    "CAMERA",
+    "FEED"
+   ]
+  },
+  {
+   "text": "You grab pieces covered in thousands of diamonds.",
+   "key": [
+    "DIAMONDS."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "t2"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "t2"
+    },
+    "t2": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "t2": "right"
+   },
+   "board": [
+    "4,300+",
+    "DIAMONDS"
+   ]
+  },
+  {
+   "text": "Then you're gone. Back out the window. You were inside for only minutes.",
+   "key": [
+    "MINUTES."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "t2"
+   },
+   "act": {
+    "t2": {
+     "mood": "happy",
+     "action": "run"
+    }
+   },
+   "place": {
+    "capy": false
+   }
+  },
+  {
+   "text": "You torch your getaway car in a garage.",
+   "key": [
+    "TORCH"
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "medium",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "t1": "center"
+   }
+  },
+  {
+   "text": "Police trace the gang anyway. They're from a well known crime family. In Berlin.",
+   "key": [
+    "FAMILY"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "judge": "center"
+   }
+  },
+  {
+   "text": "In court, a deal. Most of the jewels come back.",
+   "key": [
+    "DEAL."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "JEWELS",
+    "RETURNED"
+   ]
+  },
+  {
+   "text": "Some pieces? Still missing. Probably broken up for good.",
+   "key": [
+    "MISSING."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "judge": false
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Five men get prison sentences. Up to six years.",
+   "cap": "Five men get prison sentences. Up to 6 years.",
+   "key": [
+    "6"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "judge"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "judge"
+    },
+    "judge": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "judge": "right"
+   }
+  },
+  {
+   "text": "Fire. Axe. Glue. Then a plea deal. Quite the career arc.",
+   "key": [
+    "PLEA"
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   }
+  },
+  {
+   "text": "Diamonds or a shorter sentence? Which would you pick?",
+   "key": [
+    "SENTENCE?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Dresden Green Vault burglary",
+   "url": "https://en.wikipedia.org/wiki/Dresden_Green_Vault_burglary"
+  },
+  {
+   "title": "NPR: 5 men are sentenced to prison for their brazen jewel heist",
+   "url": "https://www.npr.org/2023/05/16/1176508582/5-men-are-sentenced-to-prison-for-their-brazen-123-million-jewel-heist"
+  },
+  {
+   "title": "NBC News: German court sentences 5 to prison for jewelry heist",
+   "url": "https://www.nbcnews.com/news/world/german-court-sentences-5-prison-100-million-jewelry-heist-rcna84607"
+  },
+  {
+   "title": "CBS News: Dresden museum jewel heist thieves jailed",
+   "url": "https://www.cbsnews.com/news/dresden-jewel-heist-germany-thieves-sentenced-prison/"
+  },
+  {
+   "title": "TheJournal.ie: Sentences in Dresden museum jewellery heist",
+   "url": "https://www.thejournal.ie/sentence-dresden-museum-jewellery-heist-green-vault-thejournal-ie-6069330-May2023/"
+  },
+  {
+   "title": "Gulf Times: German court jails 5 over record museum jewel heist",
+   "url": "https://www.gulf-times.com/article/661196/international/german-court-jails-5-over-record-museum-jewel-heist"
+  },
+  {
+   "title": "Wikipedia: Green Vault",
+   "url": "https://en.wikipedia.org/wiki/Green_Vault"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The burglary was in Dresden, Germany, in November 2019",
+   "terms": [
+    "Dresden",
+    "2019"
+   ]
+  },
+  {
+   "claim": "The Green Vault holds centuries-old royal treasure",
+   "terms": [
+    "Green Vault",
+    "treasure|jewels|collection"
+   ]
+  },
+  {
+   "claim": "They set fire to a power box",
+   "terms": [
+    "fire",
+    "power|electrical|electricity"
+   ]
+  },
+  {
+   "claim": "The streetlights went dark",
+   "terms": [
+    "street lights|streetlights|lights"
+   ]
+  },
+  {
+   "claim": "They smashed a display case with an axe",
+   "terms": [
+    "axe|ax"
+   ]
+  },
+  {
+   "claim": "Guards saw them on camera and called police",
+   "terms": [
+    "police"
+   ]
+  },
+  {
+   "claim": "The pieces were set with over 4,300 diamonds",
+   "terms": [
+    "4,300|4300"
+   ]
+  },
+  {
+   "claim": "They were inside only minutes",
+   "terms": [
+    "minutes"
+   ]
+  },
+  {
+   "claim": "They burned the getaway car in a garage",
+   "terms": [
+    "car",
+    "garage"
+   ]
+  },
+  {
+   "claim": "The gang was from a Berlin crime family",
+   "terms": [
+    "Remmo|clan|family"
+   ]
+  },
+  {
+   "claim": "A deal returned most of the jewels",
+   "terms": [
+    "deal",
+    "returned|return"
+   ]
+  },
+  {
+   "claim": "Some pieces are still missing",
+   "terms": [
+    "missing"
+   ]
+  },
+  {
+   "claim": "Five men were sentenced to up to six years",
+   "terms": [
+    "five|5",
+    "years"
+   ]
+  }
+ ]
+}
