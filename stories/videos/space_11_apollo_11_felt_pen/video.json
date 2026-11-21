@@ -235,15 +235,15 @@
    }
   },
   {
-   "text": "Next problem. The landing zone is full of boulders.",
+   "text": "Next problem? Picking a parking spot. On the moon.",
    "key": [
-    "BOULDERS."
+    "PARKING"
    ],
    "set": "space",
    "setOpts": {
     "boardText": [
-     "BOULDERS",
-     "AHEAD"
+     "PARKING",
+     "SPOT?"
     ]
    },
    "place": {
@@ -277,9 +277,9 @@
    }
   },
   {
-   "text": "Armstrong takes over by hand. He flies past them.",
+   "text": "Nobody has ever done this. Everyone holds their breath.",
    "key": [
-    "HAND."
+    "BREATH."
    ],
    "shot": {
     "type": "high",
@@ -817,19 +817,6 @@
    "claim": "Young engineers in mission control made the call to keep going",
    "terms": [
     "Bales|Garman"
-   ]
-  },
-  {
-   "claim": "The landing area was full of boulders",
-   "terms": [
-    "boulder"
-   ]
-  },
-  {
-   "claim": "Armstrong took manual control and flew past them",
-   "terms": [
-    "manual|semi-automatic|took over",
-    "Armstrong"
    ]
   },
   {
