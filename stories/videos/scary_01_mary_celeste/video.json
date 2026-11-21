@@ -1,0 +1,948 @@
+{
+ "id": "scary_01_mary_celeste",
+ "title": "The Mary Celeste: a ship with nobody on it",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "MARY CELESTE"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#2f4a6b",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "cap": "#1e2a3a"
+   },
+   "at": "center",
+   "hold": "flashlight"
+  },
+  "mate": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#7a4a2a",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "center"
+  },
+  "judge": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true,
+    "beard": true
+   },
+   "at": "center",
+   "hold": "scroll"
+  },
+  "doyle": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#4a5a3a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f0c8a8",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "notepad"
+  },
+  "crook": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5a3a5a",
+    "pants": "#2a2a2a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   },
+   "at": "center",
+   "hold": "envelope"
+  }
+ },
+ "lines": [
+  {
+   "text": "You spot a ship. Its sails are up. Nobody is steering.",
+   "key": [
+    "STEERING."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "mate": [
+     2.6,
+     -1.0
+    ],
+    "judge": false,
+    "doyle": false,
+    "crook": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "window"
+    },
+    "mate": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "December, eighteen seventy two. You captain the Dei Gratia.",
+   "cap": "December 1872. You captain the Dei Gratia.",
+   "key": [
+    "GRATIA."
+   ],
+   "board": [
+    "DEC 1872",
+    "DEI GRATIA"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "mate": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The drifting ship is called the Mary Celeste.",
+   "key": [
+    "CELESTE."
+   ],
+   "board": [
+    "ADRIFT:",
+    "MARY CELESTE"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "mate"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "mate": {
+     "mood": "worried",
+     "action": "point"
+    }
+   }
+  },
+  {
+   "text": "You climb aboard. You shout hello. Silence.",
+   "key": [
+    "SILENCE."
+   ],
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "mate": [
+     2.4,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ten people sailed on her. The captain. His wife. Their little daughter. Seven crew.",
+   "cap": "10 people sailed on her. The captain. His wife. Their little daughter. 7 crew.",
+   "key": [
+    "10"
+   ],
+   "board": [
+    "ON BOARD: 10",
+    "FOUND: 0"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Their clothes are still here. Their food too.",
+   "key": [
+    "FOOD"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "The cargo? Seventeen hundred barrels of alcohol. Basically all there.",
+   "cap": "The cargo? 1,700 barrels of alcohol. Basically all there.",
+   "key": [
+    "1,700"
+   ],
+   "board": [
+    "CARGO",
+    "1,701 BARRELS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "you": [
+     -2.2,
+     -0.4
+    ],
+    "mate": [
+     2.2,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    },
+    "mate": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Pirates would take that. Nobody took a thing.",
+   "key": [
+    "THING."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "mate",
+    "with": "capy"
+   },
+   "act": {
+    "mate": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "mate"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "One thing is missing. The lifeboat.",
+   "key": [
+    "LIFEBOAT."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.55,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "They swapped a dry ship for a rowboat. Bold.",
+   "key": [
+    "BOLD."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "mate": [
+     2.6,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "You sail her to Gibraltar. You expect a reward.",
+   "key": [
+    "REWARD."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "GIBRALTAR",
+     "INQUIRY"
+    ]
+   },
+   "place": {
+    "judge": [
+     0,
+     -1.2
+    ],
+    "you": [
+     -2.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "judge"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "judge"
+    },
+    "judge": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Instead, the court suspects you.",
+   "key": [
+    "YOU."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "angry",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "judge"
+    }
+   }
+  },
+  {
+   "text": "Rescue a ghost ship. Get treated like a pirate.",
+   "key": [
+    "PIRATE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "judge"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "judge"
+    },
+    "judge": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "You do get paid. Just less than you hoped.",
+   "key": [
+    "LESS"
+   ],
+   "place": {
+    "capy": [
+     -1.0,
+     1.6
+    ],
+    "you": [
+     -3.2,
+     0.4
+    ],
+    "judge": [
+     1.4,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A young doctor writes a story about her.",
+   "key": [
+    "STORY"
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "1884",
+     "A NEW STORY"
+    ]
+   },
+   "place": {
+    "doyle": [
+     0,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "doyle"
+   },
+   "act": {
+    "doyle": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Arthur Conan Doyle. Before Sherlock Holmes made him famous.",
+   "key": [
+    "SHERLOCK"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "doyle"
+   },
+   "act": {
+    "doyle": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He renames her the Marie Celeste. He invents the rest.",
+   "key": [
+    "INVENTS"
+   ],
+   "board": [
+    "MARY CELESTE",
+    "MARIE CELESTE"
+   ],
+   "place": {
+    "capy": [
+     -2.0,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "doyle"
+   },
+   "act": {
+    "capy": {
+     "mood": "angry",
+     "action": "point",
+     "look": "doyle"
+    },
+    "doyle": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your real mystery just got fan fiction.",
+   "key": [
+    "FICTION."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Best guess? The alcohol let off fumes.",
+   "key": [
+    "FUMES."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "THEORY",
+     "FUMES"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "mate": [
+     2.4,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "mate"
+    },
+    "mate": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The captain feared a blast. Everyone got in the boat.",
+   "key": [
+    "BOAT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "mate"
+   },
+   "act": {
+    "mate": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The ship sailed on. That little boat was never found.",
+   "key": [
+    "NEVER"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "mate"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    },
+    "mate": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Her last captain wrecks her near Haiti. On purpose.",
+   "key": [
+    "PURPOSE."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "1885",
+     "HAITI"
+    ]
+   },
+   "place": {
+    "crook": [
+     0,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "crook"
+   },
+   "act": {
+    "crook": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He wanted the insurance money. He got caught instead.",
+   "key": [
+    "CAUGHT"
+   ],
+   "board": [
+    "INSURANCE",
+    "FRAUD"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "crook"
+   },
+   "act": {
+    "capy": {
+     "mood": "angry",
+     "action": "point",
+     "look": "crook"
+    },
+    "crook": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Even the ghost ship got scammed.",
+   "key": [
+    "SCAMMED."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you get in that rowboat? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "LEAVE SHIP?",
+     "YES OR NO?"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": [
+     2.4,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Mary Celeste",
+   "url": "https://en.wikipedia.org/wiki/Mary_Celeste"
+  },
+  {
+   "title": "Royal Museums Greenwich: The mystery of the Mary Celeste",
+   "url": "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste"
+  },
+  {
+   "title": "History.com: The mystery of the Mary Celeste",
+   "url": "https://www.history.com/this-day-in-history/december-5/the-mystery-of-the-mary-celeste"
+  },
+  {
+   "title": "Smithsonian: An abandoned merchant ship was discovered floating in the Atlantic in 1872",
+   "url": "https://www.smithsonianmag.com/smart-news/an-abandoned-merchant-ship-was-discovered-floating-in-the-atlantic-in-1872-the-mystery-of-its-missing-crew-was-never-solved-180985547/"
+  },
+  {
+   "title": "American Heritage: The mystery of the Mary Celeste",
+   "url": "https://www.americanheritage.com/mystery-mary-celeste"
+  },
+  {
+   "title": "Slate: The Mary Celeste, the unluckiest ship to ever sail",
+   "url": "https://www.slate.com/articles/life/culturebox/2011/12/the_mary_celeste_the_unluckiest_ship_to_ever_sail_the_seven_seas_.html"
+  },
+  {
+   "title": "History Hit: Ghost ship, what happened to the Mary Celeste?",
+   "url": "https://www.historyhit.com/ghost-ship-what-happened-to-the-mary-celeste/"
+  },
+  {
+   "title": "NUMA: The curse of the Mary Celeste",
+   "url": "https://numa.net/2024/04/the-curse-of-the-mary-celeste/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1872 the Dei Gratia found the Mary Celeste adrift with no one aboard",
+   "terms": [
+    "Dei Gratia",
+    "Mary Celeste"
+   ]
+  },
+  {
+   "claim": "It was December 1872",
+   "terms": [
+    "December",
+    "1872"
+   ]
+  },
+  {
+   "claim": "The captain, his wife and their daughter were aboard with seven crew",
+   "terms": [
+    "wife",
+    "daughter",
+    "crew"
+   ]
+  },
+  {
+   "claim": "Belongings and food were left aboard",
+   "terms": [
+    "belongings|possessions|clothes|clothing",
+    "food|provisions|stores"
+   ]
+  },
+  {
+   "claim": "The cargo was about 1,700 barrels of alcohol",
+   "terms": [
+    "1,701|1701|1,700",
+    "barrels"
+   ]
+  },
+  {
+   "claim": "The lifeboat was missing",
+   "terms": [
+    "lifeboat|yawl",
+    "missing|gone"
+   ]
+  },
+  {
+   "claim": "The ship was taken to Gibraltar for salvage",
+   "terms": [
+    "Gibraltar",
+    "salvage"
+   ]
+  },
+  {
+   "claim": "The court suspected the salvors of foul play",
+   "terms": [
+    "foul play|suspect",
+    "Dei Gratia|salvors|crew"
+   ]
+  },
+  {
+   "claim": "The salvors were paid less than expected",
+   "terms": [
+    "salvage",
+    "sixth|award"
+   ]
+  },
+  {
+   "claim": "Arthur Conan Doyle wrote a story about it in 1884 and renamed it Marie Celeste",
+   "terms": [
+    "Conan Doyle",
+    "Marie Celeste"
+   ]
+  },
+  {
+   "claim": "One theory is that fumes from the alcohol made the captain fear an explosion",
+   "terms": [
+    "fumes|vapour|vapor",
+    "alcohol"
+   ]
+  },
+  {
+   "claim": "The lifeboat and the ten people were never found",
+   "terms": [
+    "never",
+    "seen|found"
+   ]
+  },
+  {
+   "claim": "Her last captain wrecked her near Haiti on purpose for insurance",
+   "terms": [
+    "Haiti",
+    "insurance"
+   ]
+  }
+ ]
+}
