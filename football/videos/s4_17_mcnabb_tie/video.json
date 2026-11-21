@@ -798,7 +798,7 @@
    "claim": "It was 13-13 after regulation and went to overtime",
    "terms": [
     "13-13|13 13",
-    "overtime"
+    "tie"
    ]
   },
   {
@@ -861,7 +861,7 @@
    "claim": "The next week McNabb was benched at halftime in Baltimore",
    "terms": [
     "McNabb",
-    "halftime"
+    "halftime|second half|benched"
    ]
   }
  ]
