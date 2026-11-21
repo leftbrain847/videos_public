@@ -1,0 +1,825 @@
+{
+ "id": "space_14_booster_chopsticks_catch",
+ "title": "Catching a rocket with chopsticks",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "FLIGHT 5"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "eng": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#4b92db",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#5c3a24",
+    "headset": true
+   }
+  },
+  "eng2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8",
+    "headset": true,
+    "glasses": true
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f6d21f",
+    "pants": "#4a4a4a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You launch the biggest rocket ever built. Then you catch it. With chopsticks.",
+   "key": [
+    "CHOPSTICKS."
+   ],
+   "board": [
+    "CATCH",
+    "ATTEMPT"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": [
+     2.6,
+     -0.6
+    ],
+    "eng2": false,
+    "boss": false,
+    "fan": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "October, twenty twenty four. South Texas. SpaceX launches Starship.",
+   "cap": "October 2024. South Texas. SpaceX launches Starship.",
+   "key": [
+    "STARSHIP."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "STARSHIP",
+     "FLIGHT 5"
+    ]
+   },
+   "board": [
+    "STARSHIP",
+    "FLIGHT 5"
+   ],
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     1.4,
+     0.3
+    ],
+    "boss": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "eng",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Its first stage is the super heavy booster. Two hundred thirty two feet tall.",
+   "cap": "Its first stage is the Super Heavy booster. 232 feet tall.",
+   "key": [
+    "232"
+   ],
+   "board": [
+    "SUPER HEAVY",
+    "232 FT"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "eng",
+    "with": "eng2"
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "point",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Usually, boosters crash into the ocean. Or they land on legs. Like a lunar lander.",
+   "key": [
+    "LEGS."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng": [
+     1.4,
+     0.2
+    ],
+    "eng2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "eng"
+    },
+    "eng": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "SpaceX wants something wilder. Much, much wilder.",
+   "key": [
+    "WILDER."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The plan? Fly it straight back to the launch tower.",
+   "key": [
+    "TOWER."
+   ],
+   "board": [
+    "RETURN",
+    "TO TOWER"
+   ],
+   "place": {
+    "capy": false,
+    "eng": false,
+    "boss": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The tower has two giant metal arms. People call them chopsticks.",
+   "key": [
+    "CHOPSTICKS."
+   ],
+   "board": [
+    "MECHAZILLA",
+    "ARMS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Its nickname? Mechazilla. Somebody had way too much fun naming it.",
+   "key": [
+    "MECHAZILLA."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "boss": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The booster separates from the ship. It flips around. It heads home.",
+   "key": [
+    "HOME."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "BOOSTER",
+     "RETURNING"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": false,
+    "eng2": false,
+    "boss": false,
+    "fan": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "If anything looks wrong, it ditches offshore. In the Gulf.",
+   "key": [
+    "GULF."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "ABORT:",
+     "GULF"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     1.4,
+     0.3
+    ],
+    "boss": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "eng2"
+   },
+   "act": {
+    "eng": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nothing looks wrong. The flight director gives the go. Deep breath.",
+   "key": [
+    "GO."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Engines roar. The booster slows. It slides between the arms.",
+   "key": [
+    "ARMS."
+   ],
+   "board": [
+    "CATCH",
+    "IN PROGRESS"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "eng2"
+    }
+   }
+  },
+  {
+   "text": "The chopsticks close. The rocket hangs there. Caught.",
+   "key": [
+    "CAUGHT."
+   ],
+   "board": [
+    "CAUGHT",
+    "FIRST TRY"
+   ],
+   "place": {
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     1.4,
+     0.3
+    ],
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "eng",
+    "with": "eng2"
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "eng"
+    }
+   },
+   "sfx": [
+    [
+     0.7,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "On the very first try. Nobody expected that.",
+   "key": [
+    "FIRST"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "LIVE:",
+     "CAUGHT!"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": false,
+    "eng2": false,
+    "boss": false,
+    "fan": [
+     0,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "shocked",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Engineers scream. People watching online lose their minds.",
+   "key": [
+    "MINDS."
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "fan": [
+     1.4,
+     4.4
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "happy",
+     "action": "celebrate",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Up top, the ship keeps flying. It splashes down in the Indian Ocean.",
+   "key": [
+    "INDIAN"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "SHIP:",
+     "SPLASHDOWN"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": false,
+    "eng2": false,
+    "boss": false,
+    "fan": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Why bother catching it? Reuse. Land it, refuel it, fly again.",
+   "key": [
+    "REUSE."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CATCH",
+     "REFUEL",
+     "FLY"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": false,
+    "eng2": false,
+    "boss": [
+     0,
+     0.4
+    ],
+    "fan": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A skyscraper sized rocket. Caught like a dumpling. Unreal. Truly.",
+   "key": [
+    "DUMPLING."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "boss": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Could you catch anything with chopsticks? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "CHOPSTICK SKILLS?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "boss": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "NPR: SpaceX booster caught on first attempt",
+   "url": "https://www.npr.org/2024/10/13/nx-s1-5151788/spacex-starship-booster-caught-first-launch"
+  },
+  {
+   "title": "PBS NewsHour (AP): mechanical arms catch Starship booster",
+   "url": "https://www.pbs.org/newshour/science/in-engineering-feat-by-spacex-mechanical-arms-catch-starship-booster-back-at-its-launch-pad"
+  },
+  {
+   "title": "Fox Weather: SpaceX catches Starship booster in Mechazilla arms",
+   "url": "https://www.foxweather.com/earth-space/spacex-catches-starship-booster-mechazilla-arms"
+  },
+  {
+   "title": "Scientific American: SpaceX catches a falling Starship",
+   "url": "https://www.scientificamerican.com/article/spacex-catches-a-falling-starship-a-first-in-spaceflight-history/"
+  },
+  {
+   "title": "Anchorage Daily News (AP): mechanical arms catch booster",
+   "url": "https://www.adn.com/nation-world/2024/10/13/in-an-engineering-feat-mechanical-spacex-arms-catch-starship-rocket-booster-back-at-the-launch-pad/"
+  },
+  {
+   "title": "OPB (NPR): booster caught on first attempt",
+   "url": "https://www.opb.org/article/2024/10/13/spacex-rocket-booster-caught-on-first-attempt-during-flight-test/"
+  },
+  {
+   "title": "Wikipedia: Starship flight test 5",
+   "url": "https://en.wikipedia.org/wiki/Starship_flight_test_5"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "SpaceX launched Starship from South Texas in October 2024",
+   "terms": [
+    "Starship",
+    "Texas",
+    "October"
+   ]
+  },
+  {
+   "claim": "Starship is the biggest rocket ever built",
+   "terms": [
+    "biggest|largest|most powerful",
+    "rocket"
+   ]
+  },
+  {
+   "claim": "The Super Heavy booster is 232 feet tall",
+   "terms": [
+    "232"
+   ]
+  },
+  {
+   "claim": "Boosters usually land on legs or fall into the ocean",
+   "terms": [
+    "ocean|sea|legs"
+   ]
+  },
+  {
+   "claim": "It flew back to the launch tower",
+   "terms": [
+    "launch tower|tower",
+    "return|back"
+   ]
+  },
+  {
+   "claim": "The tower's arms are called chopsticks",
+   "terms": [
+    "chopsticks"
+   ]
+  },
+  {
+   "claim": "The tower is nicknamed Mechazilla",
+   "terms": [
+    "Mechazilla"
+   ]
+  },
+  {
+   "claim": "If anything was off, the booster would ditch in the Gulf",
+   "terms": [
+    "Gulf"
+   ]
+  },
+  {
+   "claim": "The flight director gave the go",
+   "terms": [
+    "flight director|go"
+   ]
+  },
+  {
+   "claim": "The arms caught the booster on the first try",
+   "terms": [
+    "first",
+    "catch|caught"
+   ]
+  },
+  {
+   "claim": "The ship splashed down in the Indian Ocean",
+   "terms": [
+    "Indian Ocean"
+   ]
+  },
+  {
+   "claim": "Catching boosters is meant to allow quick reuse",
+   "terms": [
+    "reus"
+   ]
+  }
+ ]
+}

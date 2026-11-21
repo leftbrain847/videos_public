@@ -1,0 +1,896 @@
+{
+ "id": "mind_18_spotlight_shirt",
+ "title": "The shirt nobody noticed",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "SPOTLIGHT",
+   "EFFECT"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f6f6f6",
+    "pants": "#2e4a6a",
+    "number": "?!",
+    "numberColor": "#c0392b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "p1": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5a6a7a",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   },
+   "hold": "phone"
+  },
+  "p2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#8e6a4a",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You walk in wearing an embarrassing shirt. Barely anyone notices.",
+   "key": [
+    "BARELY"
+   ],
+   "board": [
+    "WHO",
+    "NOTICED?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The year two thousand. Cornell University. A strange request.",
+   "cap": "The year 2000. Cornell University. A strange request.",
+   "key": [
+    "CORNELL"
+   ],
+   "set": "office",
+   "board": [
+    "CORNELL",
+    "2000"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "p1": false,
+    "p2": false,
+    "exp": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "A researcher hands you a T shirt. A huge Barry Manilow face.",
+   "cap": "A researcher hands you a T-shirt. A huge Barry Manilow face.",
+   "key": [
+    "MANILOW"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "p1": false,
+    "p2": false,
+    "exp": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In pretests, students rated it embarrassing to wear.",
+   "key": [
+    "EMBARRASSING"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "p1": false,
+    "p2": false,
+    "exp": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You put it on. Then you walk into a room of peers.",
+   "key": [
+    "PEERS."
+   ],
+   "set": "locker",
+   "board": [
+    "ROOM OF",
+    "PEERS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "p1": [
+     -2.2,
+     0.0
+    ],
+    "p2": [
+     2.2,
+     0.0
+    ],
+    "exp": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "p1": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "p2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "p1"
+    }
+   }
+  },
+  {
+   "text": "You feel every single eye on that shirt.",
+   "key": [
+    "EVERY"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "p1": [
+     -2.2,
+     0.0
+    ],
+    "p2": [
+     2.2,
+     0.0
+    ],
+    "exp": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You leave fast. Your face is burning. You replay every second.",
+   "key": [
+    "BURNING."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "p1": [
+     -2.2,
+     0.0
+    ],
+    "p2": [
+     2.2,
+     0.0
+    ],
+    "exp": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Now guess. How many people noticed the shirt?",
+   "key": [
+    "NOTICED"
+   ],
+   "set": "study",
+   "board": [
+    "HOW MANY",
+    "NOTICED?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The wearers guessed about half the room.",
+   "key": [
+    "HALF"
+   ],
+   "board": [
+    "GUESS:",
+    "~50%"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The real number? Less than one in four. Way less than half.",
+   "key": [
+    "FOUR."
+   ],
+   "board": [
+    "REALITY:",
+    "~23%"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Half the room in your head. A quarter in real life.",
+   "key": [
+    "QUARTER"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Thomas Gilovich calls it the spotlight effect.",
+   "key": [
+    "SPOTLIGHT"
+   ],
+   "set": "office",
+   "board": [
+    "SPOTLIGHT",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "p1": false,
+    "p2": false,
+    "exp": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It feels like a stage light follows you.",
+   "key": [
+    "STAGE"
+   ],
+   "set": "press",
+   "board": [
+    "ALL EYES",
+    "ON YOU?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.2
+    ],
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Everyone else is busy. They are worried about their own shirt.",
+   "key": [
+    "OWN"
+   ],
+   "set": "locker",
+   "board": [
+    "SPOTLIGHT",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "p1": [
+     -1.6,
+     0.0
+    ],
+    "p2": [
+     1.6,
+     0.2
+    ],
+    "exp": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "p1"
+   },
+   "act": {
+    "p1": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "p2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "p1"
+    }
+   }
+  },
+  {
+   "text": "It works for words too. Your awkward comment in a group?",
+   "key": [
+    "COMMENT"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "p1": [
+     -1.6,
+     0.0
+    ],
+    "p2": [
+     1.6,
+     0.2
+    ],
+    "exp": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "p1",
+    "with": "p2"
+   },
+   "act": {
+    "p1": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "p2"
+    },
+    "p2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "p1"
+    }
+   }
+  },
+  {
+   "text": "People notice it far less than you think.",
+   "key": [
+    "LESS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "p1": [
+     -1.6,
+     0.0
+    ],
+    "p2": [
+     1.6,
+     0.2
+    ],
+    "exp": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "p2"
+   },
+   "act": {
+    "p2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here is the loophole. Nobody is watching you that closely.",
+   "key": [
+    "NOBODY"
+   ],
+   "set": "study",
+   "board": [
+    "THE",
+    "LOOPHOLE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That stain. That stumble. That typo in the group chat.",
+   "key": [
+    "TYPO"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "you"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Most people missed it. The rest already forgot.",
+   "key": [
+    "FORGOT."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "That is freeing, honestly. Also slightly insulting.",
+   "key": [
+    "INSULTING."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are handed the shirt. Do you wear it to class? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "WEAR IT",
+    "TO CLASS?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "p1": false,
+    "p2": false,
+    "exp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Spotlight effect",
+   "url": "https://en.wikipedia.org/wiki/Spotlight_effect"
+  },
+  {
+   "title": "Wikipedia: Thomas Gilovich",
+   "url": "https://en.wikipedia.org/wiki/Thomas_Gilovich"
+  },
+  {
+   "title": "Psychology Today: Have you fallen prey to the spotlight effect?",
+   "url": "https://www.psychologytoday.com/us/blog/between-you-and-me/201311/have-you-fallen-prey-to-the-spotlight-effect"
+  },
+  {
+   "title": "Psychology Today: Stuck in your own spotlight",
+   "url": "https://www.psychologytoday.com/us/blog/decisions-that-matter/202206/stuck-in-your-own-spotlight-misery"
+  },
+  {
+   "title": "Psychology Today: Did everyone see me do that?",
+   "url": "https://www.psychologytoday.com/ca/blog/the-social-self/200906/did-everyone-see-me-do-that"
+  },
+  {
+   "title": "Colby CogBlog: The spotlight effect",
+   "url": "https://web.colby.edu/cogblog/?p=2577"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The study was done at Cornell in 2000",
+   "terms": [
+    "Cornell",
+    "2000|Gilovich"
+   ]
+  },
+  {
+   "claim": "Participants wore a Barry Manilow T-shirt",
+   "terms": [
+    "Manilow"
+   ]
+  },
+  {
+   "claim": "The shirt was considered embarrassing",
+   "terms": [
+    "embarrass"
+   ]
+  },
+  {
+   "claim": "They entered a room of other students",
+   "terms": [
+    "room",
+    "students|peers|participants"
+   ]
+  },
+  {
+   "claim": "Wearers guessed about half noticed",
+   "terms": [
+    "half|50"
+   ]
+  },
+  {
+   "claim": "Fewer than a quarter actually noticed",
+   "terms": [
+    "23|quarter|25"
+   ]
+  },
+  {
+   "claim": "Thomas Gilovich named it the spotlight effect",
+   "terms": [
+    "Gilovich",
+    "spotlight effect"
+   ]
+  },
+  {
+   "claim": "People overestimate how much others notice their actions in group discussions",
+   "terms": [
+    "discussion|group",
+    "overestimat"
+   ]
+  }
+ ]
+}
