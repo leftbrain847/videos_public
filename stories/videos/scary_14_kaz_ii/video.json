@@ -430,9 +430,9 @@
    }
   },
   {
-   "text": "A fishing line was snagged around the propeller. A common problem.",
+   "text": "The likely story is simple. Also very sad. Truly.",
    "key": [
-    "PROPELLER."
+    "SAD."
    ],
    "shot": {
     "type": "close",
@@ -447,9 +447,9 @@
    }
   },
   {
-   "text": "Likely, one man climbed down to free it.",
+   "text": "Most likely, one man went overboard. Somehow.",
    "key": [
-    "FREE"
+    "OVERBOARD."
    ],
    "place": {
     "capy": [
@@ -700,12 +700,6 @@
    "claim": "A coroner examined the case",
    "terms": [
     "coroner"
-   ]
-  },
-  {
-   "claim": "A fishing line was caught on the propeller",
-   "terms": [
-    "propeller"
    ]
   },
   {

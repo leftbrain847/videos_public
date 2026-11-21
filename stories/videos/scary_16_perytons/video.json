@@ -159,9 +159,9 @@
    }
   },
   {
-   "text": "It once helped broadcast the moon landing.",
+   "text": "Huge. Famous. Extremely sensitive. It hears faint whispers.",
    "key": [
-    "MOON"
+    "WHISPERS."
    ],
    "place": {
     "capy": [
@@ -683,10 +683,6 @@
    "url": "https://en.wikipedia.org/wiki/Parkes_Observatory"
   },
   {
-   "title": "CSIRO: Parkes radio telescope and Apollo 11",
-   "url": "https://www.csiro.au/en/about/challenges-missions/apollo-11"
-  },
-  {
    "title": "Wikipedia: Fast radio burst",
    "url": "https://en.wikipedia.org/wiki/Fast_radio_burst"
   }
@@ -698,13 +694,6 @@
    "terms": [
     "Parkes",
     "peryton"
-   ]
-  },
-  {
-   "claim": "Parkes helped broadcast the Apollo 11 moon landing",
-   "terms": [
-    "Apollo 11",
-    "Parkes"
    ]
   },
   {
