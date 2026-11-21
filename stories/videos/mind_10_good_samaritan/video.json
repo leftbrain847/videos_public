@@ -1,0 +1,933 @@
+{
+ "id": "mind_10_good_samaritan",
+ "title": "Late for a talk on kindness",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "GOOD",
+   "SAMARITAN"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2a2d33",
+    "pants": "#2a2d33",
+    "tie": "#7a2a2a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   },
+   "hold": "scroll"
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "man": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#6b5a45",
+    "pants": "#4a4035",
+    "lapel": "#4a3b2c",
+    "hair": "long",
+    "hairColor": "#5a5a5a",
+    "skin": "#c68d64",
+    "beard": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You rush to give a talk on kindness. You walk right past someone in need.",
+   "cap": "You rush to give a talk on kindness. You walk right past someone in need.",
+   "key": [
+    "KINDNESS."
+   ],
+   "board": [
+    "A TALK ON",
+    "KINDNESS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "man": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen seventy three. Princeton Theological Seminary.",
+   "cap": "1973. Princeton Theological Seminary.",
+   "key": [
+    "SEMINARY."
+   ],
+   "set": "office",
+   "board": [
+    "PRINCETON",
+    "1973"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "man": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "exp"
+    },
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You are a seminary student. A future minister.",
+   "key": [
+    "MINISTER."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "man": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your task is a short talk. Across campus.",
+   "key": [
+    "CAMPUS."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "man": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "exp",
+    "with": "you"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "Some get the good Samaritan as their topic.",
+   "key": [
+    "SAMARITAN"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "man": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Yes. The story about helping a stranger in need.",
+   "key": [
+    "HELPING"
+   ],
+   "set": "study",
+   "board": [
+    "GOOD",
+    "SAMARITAN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "man": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the researcher checks his watch. Oh. You are late.",
+   "key": [
+    "LATE."
+   ],
+   "set": "office",
+   "board": [
+    "GOOD",
+    "SAMARITAN"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "man": false
+   },
+   "shot": {
+    "type": "ots",
+    "on": "you",
+    "from": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "worried",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "They were expecting you a few minutes ago.",
+   "key": [
+    "MINUTES"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "man": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You hurry across campus. Your notes are in hand.",
+   "key": [
+    "HURRY"
+   ],
+   "set": "tunnel",
+   "board": [
+    "GOOD",
+    "SAMARITAN"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "exp": false,
+    "man": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In a doorway, a man is slumped over. Coughing. Groaning.",
+   "key": [
+    "SLUMPED"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.6
+    ],
+    "exp": false,
+    "man": [
+     1.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "man"
+   },
+   "act": {
+    "man": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "man"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "He is an actor. You do not know that. He is very convincing.",
+   "key": [
+    "ACTOR."
+   ],
+   "set": "study",
+   "board": [
+    "GOOD",
+    "SAMARITAN"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "man": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "man"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "man"
+    },
+    "man": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Not in a hurry? Sixty three percent stopped to help.",
+   "cap": "Not in a hurry? 63% stopped to help.",
+   "key": [
+    "63%"
+   ],
+   "board": [
+    "NO HURRY:",
+    "63% HELPED"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "man": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "man": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "A little rushed? Forty five percent.",
+   "cap": "A little rushed? 45%.",
+   "key": [
+    "45%."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "man": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "man"
+   },
+   "act": {
+    "man": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Told you were late? Ten percent. One in ten.",
+   "cap": "Told you were late? 10%. One in ten.",
+   "key": [
+    "10%."
+   ],
+   "board": [
+    "LATE:",
+    "10% HELPED"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "man": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "man": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Here is the loophole. The topic barely mattered.",
+   "key": [
+    "TOPIC"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "man": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Good Samaritan speakers hurried by like everyone else.",
+   "key": [
+    "HURRIED"
+   ],
+   "set": "tunnel",
+   "board": [
+    "GOOD",
+    "SAMARITAN"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.6,
+     0.6
+    ],
+    "exp": false,
+    "man": [
+     1.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "man": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Some hurried right past the groaning man. Eyes straight ahead.",
+   "key": [
+    "PAST"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.6,
+     0.6
+    ],
+    "exp": false,
+    "man": [
+     1.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "man"
+   },
+   "act": {
+    "man": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "man"
+    }
+   }
+  },
+  {
+   "text": "On their way to preach about helping.",
+   "key": [
+    "PREACH"
+   ],
+   "set": "study",
+   "board": [
+    "GOOD",
+    "SAMARITAN"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "man": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "John Darley ran it with Daniel Batson. Their takeaway was blunt.",
+   "key": [
+    "BLUNT."
+   ],
+   "set": "office",
+   "board": [
+    "GOOD",
+    "SAMARITAN"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "man": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your hurry can beat your values. Easily.",
+   "key": [
+    "HURRY"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "man": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Kindness, it turns out, needs spare minutes.",
+   "key": [
+    "MINUTES."
+   ],
+   "set": "study",
+   "board": [
+    "GOOD",
+    "SAMARITAN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "man": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are late for something big. A stranger groans. Do you stop? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "DO YOU",
+    "STOP?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "man": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Stanford SPARQ: Take time to be a Good Samaritan",
+   "url": "https://sparq.stanford.edu/solutions/take-time-be-good-samaritan"
+  },
+  {
+   "title": "Psychology Today: My favorite psychology study",
+   "url": "https://www.psychologytoday.com/us/blog/darwins-subterranean-world/201703/my-favorite-psychology-study"
+  },
+  {
+   "title": "The Chronicle (Duke): Hurrying past our neighbors",
+   "url": "https://www.dukechronicle.com/article/2014/02/hurrying-past-our-neighbors"
+  },
+  {
+   "title": "LibreTexts: The power of the situation, case studies",
+   "url": "https://human.libretexts.org/Bookshelves/Philosophy/Logic_and_Reasoning/Critical_Reasoning%3A_A_User's_Manual_(Southworth_and_Swoyer)/23%3A_The_Power_of_the_Situation/23.01%3A_Case_Studies"
+  },
+  {
+   "title": "Wikipedia: Parable of the Good Samaritan",
+   "url": "https://en.wikipedia.org/wiki/Parable_of_the_Good_Samaritan"
+  },
+  {
+   "title": "Greater Good (Berkeley): Do we have an instinctive urge to be kind?",
+   "url": "https://greatergood.berkeley.edu/article/item/do_we_have_an_instinctive_urge_to_be_kind"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The study was in 1973",
+   "terms": [
+    "1973",
+    "Darley|Batson"
+   ]
+  },
+  {
+   "claim": "Subjects were students at Princeton Theological Seminary",
+   "terms": [
+    "Princeton",
+    "seminar"
+   ]
+  },
+  {
+   "claim": "Some were given the Good Samaritan parable as topic",
+   "terms": [
+    "Good Samaritan",
+    "talk|sermon"
+   ]
+  },
+  {
+   "claim": "Some were told they were late and expected minutes ago",
+   "terms": [
+    "late",
+    "minutes"
+   ]
+  },
+  {
+   "claim": "On the way a man was slumped in a doorway, coughing and groaning",
+   "terms": [
+    "slumped",
+    "doorway|alley"
+   ]
+  },
+  {
+   "claim": "The man was an actor/confederate",
+   "terms": [
+    "confederate|actor|victim"
+   ]
+  },
+  {
+   "claim": "In no hurry, 63 percent helped",
+   "terms": [
+    "63"
+   ]
+  },
+  {
+   "claim": "Intermediate hurry, 45 percent helped",
+   "terms": [
+    "45"
+   ]
+  },
+  {
+   "claim": "High hurry, 10 percent helped",
+   "terms": [
+    "10",
+    "hurry"
+   ]
+  },
+  {
+   "claim": "The talk topic did not significantly change helping",
+   "terms": [
+    "topic|parable|sermon",
+    "hurry|rush"
+   ]
+  },
+  {
+   "claim": "John Darley and Daniel Batson ran the study",
+   "terms": [
+    "Darley",
+    "Batson"
+   ]
+  }
+ ]
+}
