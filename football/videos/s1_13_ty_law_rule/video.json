@@ -492,10 +492,9 @@
    }
   },
   {
-   "text": "But contact past five yards was already illegal.",
-   "cap": "But contact past 5 yards was already illegal.",
+   "text": "Illegal contact was already in the rule book.",
    "key": [
-    "ILLEGAL."
+    "ALREADY"
    ],
    "set": "locker",
    "setOpts": {
@@ -528,9 +527,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Indianapolis complains to the league. Very loudly.",
+   "text": "Some call it defense. Some call it mugging.",
    "key": [
-    "LOUDLY."
+    "MUGGING."
    ],
    "shot": {
     "type": "medium",
@@ -797,13 +796,6 @@
    ]
   },
   {
-   "claim": "The Colts complained to the league",
-   "terms": [
-    "Colts",
-    "complain"
-   ]
-  },
-  {
    "claim": "Marino's record was 20 years old (1984)",
    "terms": [
     "Marino",
@@ -811,10 +803,9 @@
    ]
   },
   {
-   "claim": "Contact past five yards was already illegal",
+   "claim": "Illegal contact was already a rule",
    "terms": [
-    "five yards|5 yards",
-    "contact"
+    "illegal contact"
    ]
   },
   {
