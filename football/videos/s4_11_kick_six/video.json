@@ -695,7 +695,7 @@
    }
   },
   {
-   "text": "Too short. Too far right.",
+   "text": "The kick falls short.",
    "key": [
     "SHORT."
    ],
@@ -2586,11 +2586,10 @@
    ]
   },
   {
-   "claim": "The kick was short and off to the right",
+   "claim": "The kick was short",
    "terms": [
     "short",
-    "right|wide",
-    "kick|field goal|Griffith"
+    "57|field goal|kick"
    ]
   },
   {
