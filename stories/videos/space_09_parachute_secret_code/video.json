@@ -1,0 +1,900 @@
+{
+ "id": "space_09_parachute_secret_code",
+ "title": "The secret code on the Mars parachute",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "PERSEVERANCE"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "chen": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#4b92db",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#5c3a24",
+    "headset": true
+   }
+  },
+  "ian": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8"
+   }
+  },
+  "fan2": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You land a rover on Mars. You hide a secret message on it.",
+   "key": [
+    "SECRET"
+   ],
+   "board": [
+    "SECRET",
+    "MESSAGE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "chen": false,
+    "ian": [
+     2.6,
+     -0.6
+    ],
+    "fan": false,
+    "fan2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ian": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "February, twenty twenty one. The Perseverance rover drops toward Mars.",
+   "cap": "February 2021. The Perseverance rover drops toward Mars.",
+   "key": [
+    "PERSEVERANCE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "PERSEVERANCE",
+     "FEB 2021"
+    ]
+   },
+   "board": [
+    "PERSEVERANCE",
+    "FEB 2021"
+   ],
+   "place": {
+    "capy": false,
+    "chen": [
+     -1.4,
+     0.2
+    ],
+    "ian": [
+     1.4,
+     0.2
+    ],
+    "fan": false,
+    "fan2": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "chen",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "chen": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "ian": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "chen"
+    }
+   }
+  },
+  {
+   "text": "A giant parachute bursts open. It's over seventy feet across.",
+   "cap": "A giant parachute bursts open. It's over 70 feet across.",
+   "key": [
+    "70"
+   ],
+   "board": [
+    "PARACHUTE",
+    "70.5 FT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "chen"
+   },
+   "act": {
+    "chen": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It opens while the rover is still supersonic.",
+   "key": [
+    "SUPERSONIC."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ian"
+   },
+   "act": {
+    "ian": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "chen": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "ian"
+    }
+   }
+  },
+  {
+   "text": "It's the biggest parachute ever sent to Mars.",
+   "key": [
+    "BIGGEST"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "ian": [
+     1.4,
+     0.2
+    ],
+    "chen": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ian"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "point",
+     "look": "ian"
+    },
+    "ian": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Cameras film the landing. Then the team shares the video.",
+   "key": [
+    "VIDEO."
+   ],
+   "board": [
+    "LANDING",
+    "VIDEO"
+   ],
+   "place": {
+    "capy": false,
+    "chen": [
+     -1.4,
+     0.3
+    ],
+    "ian": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "chen"
+   },
+   "act": {
+    "chen": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ian": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "chen"
+    }
+   }
+  },
+  {
+   "text": "Millions watch. Most people see a parachute. Some see a puzzle.",
+   "key": [
+    "PUZZLE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "chen": false,
+    "ian": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ian"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "ian": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Look closer at the parachute. Red stripes. White stripes. A pattern.",
+   "key": [
+    "PATTERN."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "1 0 1 1 0 0 1",
+     "0 1 0 1 1 0 1"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "chen": false,
+    "ian": false,
+    "fan": false,
+    "fan2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "On live television, an engineer drops a hint.",
+   "key": [
+    "HINT."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "LIVE"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "chen": [
+     0,
+     0.4
+    ],
+    "ian": false,
+    "fan": false,
+    "fan2": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "chen"
+   },
+   "act": {
+    "chen": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Sometimes we leave messages, he says. For others to find.",
+   "key": [
+    "MESSAGES"
+   ],
+   "board": [
+    "MESSAGES",
+    "TO FIND"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "chen",
+    "offset": [
+     0.4,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "chen": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That's basically a dare. The internet takes it personally.",
+   "key": [
+    "PERSONALLY."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "DECODING..."
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "chen": false,
+    "ian": false,
+    "fan": [
+     1.4,
+     4.4
+    ],
+    "fan2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Within hours, fans around the world crack it.",
+   "key": [
+    "HOURS,"
+   ],
+   "place": {
+    "capy": false,
+    "fan": [
+     -1.3,
+     4.4
+    ],
+    "fan2": [
+     1.4,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "fan",
+    "offset": [
+     1.3,
+     0.6,
+     0
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "fan2": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "fan"
+    }
+   }
+  },
+  {
+   "text": "Each stripe is a bit of binary code.",
+   "key": [
+    "BINARY"
+   ],
+   "board": [
+    "1 0 1 1",
+    "0 0 1"
+   ],
+   "place": {
+    "fan": false,
+    "fan2": [
+     0,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan2",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "fan2": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Turn the bits into letters. The inner rings spell three words. Ready?",
+   "key": [
+    "THREE"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "fan2"
+   },
+   "act": {
+    "fan2": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Dare mighty things. Wow.",
+   "key": [
+    "MIGHTY"
+   ],
+   "board": [
+    "DARE MIGHTY",
+    "THINGS"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "fan2": [
+     1.4,
+     4.4
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "fan2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "It's the motto of Nasa's Jet Propulsion Laboratory.",
+   "cap": "It's the motto of NASA's Jet Propulsion Laboratory.",
+   "key": [
+    "MOTTO"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "JPL MOTTO"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "chen": [
+     -1.4,
+     0.3
+    ],
+    "ian": [
+     1.4,
+     0.3
+    ],
+    "fan": false,
+    "fan2": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "chen",
+    "with": "ian"
+   },
+   "act": {
+    "chen": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "ian"
+    },
+    "ian": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "chen"
+    }
+   }
+  },
+  {
+   "text": "The outer ring holds map coordinates. They point to the lab.",
+   "key": [
+    "COORDINATES."
+   ],
+   "board": [
+    "34 11 58 N",
+    "118 10 31 W"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "ian"
+   },
+   "act": {
+    "ian": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Behind it all is engineer Ian Clark. A big crossword fan. Of course.",
+   "key": [
+    "CROSSWORD"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "ian": [
+     1.4,
+     0.2
+    ],
+    "chen": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ian"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "ian"
+    },
+    "ian": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Only six people knew before landing day.",
+   "key": [
+    "SIX"
+   ],
+   "board": [
+    "6 PEOPLE",
+    "KNEW"
+   ],
+   "place": {
+    "capy": false,
+    "ian": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "ian"
+   },
+   "act": {
+    "ian": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A secret code, sent to Mars. Solved by total strangers online. In hours.",
+   "key": [
+    "STRANGERS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "ian": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ian": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Would you have cracked it? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "CRACK IT?",
+    "YES OR NO"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ian": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Space.com: internet sleuths solve the parachute message",
+   "url": "https://www.space.com/perseverance-rover-mars-parachute-secret-message-solved"
+  },
+  {
+   "title": "PBS NewsHour (AP): Mars rover's giant parachute carried secret message",
+   "url": "https://www.pbs.org/newshour/science/mars-rovers-giant-parachute-carried-secret-message"
+  },
+  {
+   "title": "CBS News: hidden message in binary code",
+   "url": "https://www.cbsnews.com/news/nasa-mars-perseverance-rover-parachute-hidden-message-binary-code"
+  },
+  {
+   "title": "Live Science: a secret code in the rover's parachute",
+   "url": "https://www.livescience.com/nasa-perseverance-rover-parachute-secret-code.html"
+  },
+  {
+   "title": "Digital Trends: the secret message revealed",
+   "url": "https://www.digitaltrends.com/space/revealed-the-secret-message-on-mars-rovers-parachute/"
+  },
+  {
+   "title": "EarthSky: Perseverance secret message",
+   "url": "https://earthsky.org/space/perseverance-secret-message-dare-mighty-things"
+  },
+  {
+   "title": "Wikipedia: Perseverance (rover)",
+   "url": "https://en.wikipedia.org/wiki/Perseverance_(rover)"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Perseverance landed on Mars in February 2021",
+   "terms": [
+    "Perseverance",
+    "February",
+    "2021"
+   ]
+  },
+  {
+   "claim": "The parachute was 70.5 feet across",
+   "terms": [
+    "70.5"
+   ]
+  },
+  {
+   "claim": "It was the biggest parachute sent to Mars",
+   "terms": [
+    "parachute",
+    "largest|biggest"
+   ]
+  },
+  {
+   "claim": "Cameras filmed the landing and NASA released the video",
+   "terms": [
+    "video",
+    "landing"
+   ]
+  },
+  {
+   "claim": "The parachute had a red and white pattern",
+   "terms": [
+    "red",
+    "white",
+    "pattern"
+   ]
+  },
+  {
+   "claim": "An engineer said they sometimes leave messages for others to find",
+   "terms": [
+    "messages",
+    "others to find"
+   ]
+  },
+  {
+   "claim": "The parachute opened at supersonic speed",
+   "terms": [
+    "supersonic"
+   ]
+  },
+  {
+   "claim": "Fans decoded it within hours",
+   "terms": [
+    "hours",
+    "decod|crack|solve"
+   ]
+  },
+  {
+   "claim": "The pattern was binary code",
+   "terms": [
+    "binary"
+   ]
+  },
+  {
+   "claim": "The inner rings spell Dare Mighty Things",
+   "terms": [
+    "Dare Mighty Things"
+   ]
+  },
+  {
+   "claim": "It is JPL's motto",
+   "terms": [
+    "motto"
+   ]
+  },
+  {
+   "claim": "The outer ring encodes JPL's coordinates",
+   "terms": [
+    "coordinates"
+   ]
+  },
+  {
+   "claim": "Systems engineer Ian Clark, a crossword enthusiast, designed it",
+   "terms": [
+    "Clark",
+    "crossword"
+   ]
+  },
+  {
+   "claim": "Only about six people knew before landing",
+   "terms": [
+    "six people|6 people"
+   ]
+  }
+ ]
+}

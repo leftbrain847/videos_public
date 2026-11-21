@@ -1,0 +1,921 @@
+{
+ "id": "space_10_woodpeckers_vs_shuttle",
+ "title": "Woodpeckers grounded the space shuttle",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "STS-70"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "tech": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true,
+    "glasses": true
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "owl": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f6d21f",
+    "pants": "#4a4a4a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   },
+   "hold": "clipboard"
+  },
+  "cmdr": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#eef1f5",
+    "pants": "#eef1f5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "pilot": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#f2a13a",
+    "pants": "#f2a13a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#c68d64"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Your space shuttle is ready to launch. Then birds attack it.",
+   "key": [
+    "BIRDS"
+   ],
+   "board": [
+    "LAUNCH",
+    "DELAYED"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "tech": false,
+    "boss": false,
+    "owl": false,
+    "cmdr": [
+     2.6,
+     -0.6
+    ],
+    "pilot": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "cmdr": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Spring, nineteen ninety five. Shuttle Discovery sits on its launch pad. In Florida.",
+   "cap": "Spring 1995. Shuttle Discovery sits on its launch pad. In Florida.",
+   "key": [
+    "FLORIDA."
+   ],
+   "board": [
+    "DISCOVERY",
+    "PAD 39B"
+   ],
+   "place": {
+    "capy": false,
+    "cmdr": [
+     -1.5,
+     0.2
+    ],
+    "pilot": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "cmdr",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "cmdr": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "cmdr"
+    }
+   }
+  },
+  {
+   "text": "Its giant orange fuel tank? Covered in foam.",
+   "key": [
+    "FOAM."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "cmdr",
+    "with": "pilot"
+   },
+   "act": {
+    "cmdr": {
+     "mood": "happy",
+     "action": "point",
+     "look": "pilot"
+    },
+    "pilot": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "cmdr"
+    }
+   }
+  },
+  {
+   "text": "Then a crew walks the pad. They find holes. Lots of holes.",
+   "key": [
+    "HOLES."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "TANK INSPECTION"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "tech": [
+     0,
+     0.4
+    ],
+    "boss": false,
+    "owl": false,
+    "cmdr": false,
+    "pilot": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Northern flicker woodpeckers have been pecking the foam.",
+   "key": [
+    "WOODPECKERS"
+   ],
+   "board": [
+    "SUSPECT:",
+    "WOODPECKERS"
+   ],
+   "place": {
+    "tech": [
+     -1.4,
+     0.3
+    ],
+    "boss": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "tech",
+    "with": "boss"
+   },
+   "act": {
+    "tech": {
+     "mood": "worried",
+     "action": "point",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "tech"
+    }
+   }
+  },
+  {
+   "text": "Not aliens. Not sabotage. Woodpeckers.",
+   "key": [
+    "WOODPECKERS."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "tech": false,
+    "boss": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "About two hundred holes. Some as big as four inches.",
+   "cap": "About 200 holes. Some as big as 4 inches.",
+   "key": [
+    "200"
+   ],
+   "board": [
+    "~200",
+    "HOLES"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "boss"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Billions of dollars of rocketry. Defeated by birds. Local birds.",
+   "key": [
+    "BIRDS."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "BIRDS: 1",
+     "NASA: 0"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "tech": false,
+    "boss": false,
+    "owl": false,
+    "cmdr": false,
+    "pilot": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Why the tank? It's mating season. The birds want a nest.",
+   "key": [
+    "NEST."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "cmdr": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "cmdr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "cmdr": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The holes can't be patched on the pad. Discovery has to roll back.",
+   "key": [
+    "BACK."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "ROLLBACK"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "tech": [
+     2.4,
+     -0.2
+    ],
+    "boss": [
+     0,
+     0.4
+    ],
+    "owl": false,
+    "cmdr": false,
+    "pilot": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "The launch slips by weeks. The crew just waits. And waits.",
+   "key": [
+    "WEEKS."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "NEW DATE:",
+     "JULY 13"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "tech": false,
+    "boss": false,
+    "owl": false,
+    "cmdr": [
+     -1.4,
+     0.2
+    ],
+    "pilot": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "cmdr"
+   },
+   "act": {
+    "cmdr": {
+     "mood": "sad",
+     "action": "cross",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Meanwhile, Nasa declares war. On birds.",
+   "cap": "Meanwhile, NASA declares war. On birds.",
+   "key": [
+    "WAR."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "cmdr": [
+     -2.6,
+     -0.6
+    ],
+    "pilot": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "cmdr": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    },
+    "pilot": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "They set up plastic owls around the pad.",
+   "key": [
+    "OWLS"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "PLASTIC OWLS",
+     "DEPLOYED"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "tech": false,
+    "boss": false,
+    "owl": [
+     0,
+     0.4
+    ],
+    "cmdr": false,
+    "pilot": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "owl"
+   },
+   "act": {
+    "owl": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They try balloons. Big scary eyes painted on them.",
+   "key": [
+    "EYES"
+   ],
+   "board": [
+    "SCARE-EYE",
+    "BALLOONS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "owl"
+   },
+   "act": {
+    "owl": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Workers even blast loud horns to spook them.",
+   "key": [
+    "HORNS"
+   ],
+   "place": {
+    "owl": [
+     -1.4,
+     0.3
+    ],
+    "tech": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "owl",
+    "with": "tech"
+   },
+   "act": {
+    "owl": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "tech"
+    },
+    "tech": {
+     "mood": "smug",
+     "action": "clap",
+     "look": "owl"
+    }
+   }
+  },
+  {
+   "text": "There's a team now. Its name? Bird. Bird investigation review. And deterrent.",
+   "cap": "There's a team now. Its name? B.I.R.D. Bird Investigation Review. And Deterrent.",
+   "key": [
+    "B.I.R.D."
+   ],
+   "board": [
+    "B.I.R.D.",
+    "TEAM"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "owl": [
+     1.4,
+     0.2
+    ],
+    "tech": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "owl"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "owl"
+    },
+    "owl": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Someone spent a whole afternoon on that acronym. Worth it.",
+   "key": [
+    "ACRONYM."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "owl": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "July thirteenth. Discovery finally launches. No birds aboard.",
+   "cap": "July 13. Discovery finally launches. No birds aboard.",
+   "key": [
+    "LAUNCHES."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "LIFTOFF",
+     "JULY 13 1995"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "tech": false,
+    "boss": false,
+    "owl": false,
+    "cmdr": [
+     -1.4,
+     0.2
+    ],
+    "pilot": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "cmdr"
+   },
+   "act": {
+    "cmdr": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "cmdr"
+    }
+   }
+  },
+  {
+   "text": "The crew's mascot? A woodpecker. Of course.",
+   "key": [
+    "MASCOT?"
+   ],
+   "board": [
+    "CREW",
+    "MASCOT"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    },
+    "cmdr": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "pilot"
+    }
+   }
+  },
+  {
+   "text": "The space program. Delayed by a bird. A small one, too.",
+   "key": [
+    "SMALL"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "cmdr": [
+     -2.6,
+     -0.6
+    ],
+    "pilot": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     0.6,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "cmdr": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Woodpeckers versus Nasa. Who really won? Birds or Nasa? Pick one.",
+   "cap": "Woodpeckers versus NASA. Who really won? Birds or NASA? Pick one.",
+   "key": [
+    "BIRDS"
+   ],
+   "board": [
+    "WHO WON?",
+    "BIRDS OR NASA"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "cmdr": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: STS-70",
+   "url": "https://en.wikipedia.org/wiki/STS-70"
+  },
+  {
+   "title": "AmericaSpace: Woodpecker attack, remembering STS-70",
+   "url": "https://www.americaspace.com/2020/05/29/woodpecker-attack-remembering-sts-70-25-years-on/"
+  },
+  {
+   "title": "Supercluster: STS-70",
+   "url": "https://supercluster.com/missions/sts-70-(discovery)"
+  },
+  {
+   "title": "Flight Global: Discovery pushed down launch pecking order",
+   "url": "https://www.flightglobal.com/discovery-pushed-down-launch-pecking-order/15703.article"
+  },
+  {
+   "title": "NASA KSC archive: STS-70 mission",
+   "url": "https://webarchive.library.unt.edu/eot2008/20080916010223/http:/science.ksc.nasa.gov/shuttle/missions/sts-70/mission-sts-70.html"
+  },
+  {
+   "title": "Discover: Boyish pursuits",
+   "url": "https://www.discovermagazine.com/the-sciences/boyish-pursuits"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1995 shuttle Discovery was on the pad in Florida for STS-70",
+   "terms": [
+    "Discovery",
+    "1995"
+   ]
+  },
+  {
+   "claim": "The external tank was covered in foam insulation",
+   "terms": [
+    "foam",
+    "tank"
+   ]
+  },
+  {
+   "claim": "Northern flicker woodpeckers pecked holes in the foam",
+   "terms": [
+    "flicker",
+    "woodpecker"
+   ]
+  },
+  {
+   "claim": "There were about 200 holes",
+   "terms": [
+    "200|71|135",
+    "holes"
+   ]
+  },
+  {
+   "claim": "Holes were up to four inches",
+   "terms": [
+    "4 inches|four inches|4 inch|4-inch"
+   ]
+  },
+  {
+   "claim": "It was mating season",
+   "terms": [
+    "mating"
+   ]
+  },
+  {
+   "claim": "Discovery rolled back to the Vehicle Assembly Building for repairs",
+   "terms": [
+    "roll|rolled|returned",
+    "Vehicle Assembly Building|VAB"
+   ]
+  },
+  {
+   "claim": "NASA used plastic owls",
+   "terms": [
+    "owl"
+   ]
+  },
+  {
+   "claim": "NASA used balloons with eyes",
+   "terms": [
+    "balloon"
+   ]
+  },
+  {
+   "claim": "Horns were used to scare birds",
+   "terms": [
+    "horn"
+   ]
+  },
+  {
+   "claim": "NASA formed the Bird Investigation Review and Deterrent team",
+   "terms": [
+    "Bird Investigation Review"
+   ]
+  },
+  {
+   "claim": "Discovery launched on July 13, 1995",
+   "terms": [
+    "July 13"
+   ]
+  },
+  {
+   "claim": "The crew had a woodpecker mascot",
+   "terms": [
+    "woodpecker",
+    "mascot"
+   ]
+  }
+ ]
+}
