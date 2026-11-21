@@ -1,29 +1,15 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "football-batch-1a",
+ "release": "football-batch-1b",
  "listen": true,
  "replace": false,
  "videos": [
-  "s1_01_tuck_rule",
-  "s1_02_holy_roller",
-  "s1_03_calvin_catch",
-  "s1_04_dez_caught_it",
-  "s4_01_music_city_miracle",
-  "s4_02_river_city_relay",
-  "s4_03_minneapolis_miracle",
-  "s4_04_new_meadowlands",
-  "s4_05_immaculate_reception",
-  "s4_06_double_doink",
-  "s4_07_helmet_catch",
-  "s4_08_philly_special",
-  "s4_09_miami_miracle",
-  "s4_10_the_play_band",
-  "s4_11_kick_six",
-  "s4_12_the_fumble_1978",
-  "s4_13_hail_murray",
-  "s4_14_tie_scenario",
-  "s4_15_thirteen_seconds",
-  "s4_16_fourth_and_25"
+  "s4_18_six_six_tie",
+  "s4_19_bettis_coin_toss",
+  "s4_21_fake_spike",
+  "s4_22_fourteen_seconds_dallas",
+  "s4_24_twenty_eight_three",
+  "s4_25_seven_nine_champs"
  ]
 }
