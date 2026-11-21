@@ -536,8 +536,8 @@
    }
   },
   {
-   "text": "Everyone waits. For thirty four minutes.",
-   "cap": "Everyone waits. For 34 minutes.",
+   "text": "Everyone waits. For thirty four whole minutes.",
+   "cap": "Everyone waits. For 34 whole minutes.",
    "key": [
     "34"
    ],
@@ -587,10 +587,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Then San Francisco scores seventeen straight points.",
-   "cap": "Then San Francisco scores 17 straight points.",
+   "text": "Then San Francisco storms back.",
    "key": [
-    "17"
+    "BACK."
    ],
    "place": {
     "niner": [
@@ -622,10 +621,9 @@
    }
   },
   {
-   "text": "Twenty eight to twenty three. Now it's a game.",
-   "cap": "28 to 23. Now it's a game.",
+   "text": "Now it's a game. Everyone's awake again.",
    "key": [
-    "GAME."
+    "AWAKE"
    ],
    "place": {
     "niner": [
@@ -716,8 +714,8 @@
    }
   },
   {
-   "text": "Baltimore wins, thirty four to thirty one.",
-   "cap": "Baltimore wins, 34 to 31.",
+   "text": "Baltimore hangs on. Thirty four to thirty one.",
+   "cap": "Baltimore hangs on. 34 to 31.",
    "key": [
     "34"
    ],
@@ -797,7 +795,7 @@
    }
   },
   {
-   "text": "It cut the power instead. Great job, device.",
+   "text": "It cut the power instead. Great job, little device.",
    "key": [
     "INSTEAD."
    ],
@@ -882,10 +880,6 @@
    "url": "https://globalnews.ca/news/387950/lights-out-ravens-edge-49ers-34-31-win-super-bowl-game-delayed-by-power-problem-in-2nd-half"
   },
   {
-   "title": "Yahoo Sports: After outage changes momentum, Ravens recover to win Super Bowl",
-   "url": "https://sports.yahoo.com/news/outage-changes-momentum-ravens-recover-050006293--nfl.html"
-  },
-  {
    "title": "ESPN: Utility says bad device caused Super Bowl blackout",
    "url": "https://www.espn.com/nfl/playoffs/2012/story/_/id/8929106/super-bowl-xlvii-utility-says-bad-device-caused-super-bowl-blackout"
   },
@@ -949,16 +943,10 @@
    ]
   },
   {
-   "claim": "San Francisco then scored 17 straight points",
+   "claim": "After the delay the 49ers rallied",
    "terms": [
-    "17",
-    "straight|unanswered"
-   ]
-  },
-  {
-   "claim": "It became 28-23",
-   "terms": [
-    "28 23"
+    "49ers",
+    "rally|comeback|momentum"
    ]
   },
   {

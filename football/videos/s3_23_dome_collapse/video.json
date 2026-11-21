@@ -582,10 +582,6 @@
    "url": "https://www.mprnews.org/story/2010/12/20/bears-vikings"
   },
   {
-   "title": "Minnesota Daily: 40K fans brave snow, see first outdoor Vikings game since '81",
-   "url": "https://mndaily.com/2010/12/20/no-sell-out-40k-fans-brave-snow-see-first-outdoor-vikings-game-81"
-  },
-  {
    "title": "Fox 9: Marking 13 years since the Metrodome roof collapse",
    "url": "https://fox9.com/sports/vikings-marking-13-years-since-the-metrodome-roof-collapse"
   },
@@ -596,14 +592,6 @@
   {
    "title": "Fox Sports: Metrodome roof collapses; Vikings-Giants game moved to Detroit",
    "url": "https://www.foxsports.com/stories/other/metrodome-roof-collapses-vikings-giants-game-moved-to-detroit"
-  },
-  {
-   "title": "NESN: Vikings, Giants to play Monday night at Ford Field",
-   "url": "https://nesn.com/2010/12/vikings-giants-to-play-monday-night-at-detroits-ford-field-following-metrodome-roof-collapse"
-  },
-  {
-   "title": "AOL: Metrodome roof collapsed under 17 inches of snow",
-   "url": "https://www.aol.com/articles/metrodome-roof-collapsed-under-17-060700786.html"
   },
   {
    "title": "Vikings.com: Metrodome roof collapse 2010 aftermath",
@@ -675,8 +663,7 @@
   {
    "claim": "It was in the snow, the first outdoor Vikings home game since 1981",
    "terms": [
-    "1981",
-    "outdoor"
+    "1981"
    ]
   },
   {
@@ -688,8 +675,7 @@
   {
    "claim": "Chicago clinched its division",
    "terms": [
-    "clinch",
-    "division|NFC North"
+    "clinch"
    ]
   }
  ]
