@@ -534,6 +534,18 @@
   {
    "title": "CBS San Francisco: Beathard 3 touchdowns, 49ers stun Cardinals",
    "url": "https://www.cbsnews.com/sanfrancisco/news/beathard-3-touchdowns-49ers-stun-cardinals"
+  },
+  {
+   "title": "Wikipedia: 2020 San Francisco 49ers season",
+   "url": "https://en.wikipedia.org/wiki/2020_San_Francisco_49ers_season"
+  },
+  {
+   "title": "Wikipedia: 2020 Buffalo Bills season",
+   "url": "https://en.wikipedia.org/wiki/2020_Buffalo_Bills_season"
+  },
+  {
+   "title": "Wikipedia: 2020 Washington Football Team season",
+   "url": "https://en.wikipedia.org/wiki/2020_Washington_Football_Team_season"
   }
  ],
  "voice": "v2",
@@ -568,25 +580,25 @@
   {
    "claim": "Home game one: lost to Buffalo on Monday night 34-24",
    "terms": [
-    "34-24"
+    "34-24|24-34"
    ]
   },
   {
    "claim": "Home game two: lost to Washington 23-15",
    "terms": [
-    "23-15"
+    "23-15|15-23"
    ]
   },
   {
    "claim": "As visitors they beat the Cardinals 20-12 in the same stadium",
    "terms": [
-    "20-12"
+    "20-12|12-20"
    ]
   },
   {
    "claim": "Home game three: lost to Seattle 26-23",
    "terms": [
-    "26-23"
+    "26-23|23-26"
    ]
   }
  ]

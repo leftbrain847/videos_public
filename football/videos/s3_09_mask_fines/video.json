@@ -353,10 +353,10 @@
    }
   },
   {
-   "text": "Five coaches in two days. One point seven five million dollars.",
-   "cap": "5 coaches in 2 days. $1.75 million.",
+   "text": "Five coaches in two days. The league is not kidding around.",
+   "cap": "5 coaches in 2 days. The league is not kidding around.",
    "key": [
-    "$1.75"
+    "5"
    ],
    "set": "press",
    "setOpts": {
@@ -366,8 +366,8 @@
     ]
    },
    "board": [
-    "TOTAL",
-    "$1.75M"
+    "COACHES FINED",
+    "5 IN 2 DAYS"
    ],
    "place": {
     "official": "center",
@@ -557,6 +557,22 @@
   {
    "title": "ESPN: NFL fines Raiders, Jon Gruden, takes draft pick for repeated COVID-19 violations",
    "url": "https://africa.espn.com/nfl/story/_/id/30264687/nfl-fines-raiders-jon-gruden-takes-draft-pick-repeated-covid-19-violations"
+  },
+  {
+   "title": "CBS San Francisco (AP): Raiders fined, docked draft pick for COVID violations",
+   "url": "https://www.cbsnews.com/sanfrancisco/news/ap-raiders-fined-docked-pick-for-covid-violations/"
+  },
+  {
+   "title": "CBS Sports: Raiders, Jon Gruden fined, docked draft pick for violating COVID-19 protocol",
+   "url": "https://www.cbssports.com/nfl/news/raiders-jon-gruden-reportedly-fined-docked-draft-pick-for-violating-covid-19-protocol-involving-trent-brown"
+  },
+  {
+   "title": "Sky Sports: Las Vegas Raiders, Jon Gruden fined and draft pick stripped",
+   "url": "https://www.skysports.com/nfl/news/12118/12125081/las-vegas-raiders-jon-gruden-fined-and-draft-pick-stripped-after-covid-19-violations"
+  },
+  {
+   "title": "SI: NFL fines Las Vegas Raiders, Jon Gruden for COVID-19 violations",
+   "url": "https://www.si.com/nfl/2020/11/06/nfl-fines-las-vegas-raiders-jon-gruden-covid-19-violations"
   }
  ],
  "voice": "v2",
@@ -600,12 +616,6 @@
    "terms": [
     "Gruden",
     "Payton"
-   ]
-  },
-  {
-   "claim": "Five coaches, $1.75 million in total",
-   "terms": [
-    "1.75 million"
    ]
   },
   {

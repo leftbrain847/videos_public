@@ -619,8 +619,8 @@
   {
    "claim": "The facility closed",
    "terms": [
-    "facility",
-    "closed"
+    "facility|building",
+    "closed|close|shut"
    ]
   },
   {

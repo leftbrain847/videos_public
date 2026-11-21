@@ -141,10 +141,9 @@
    }
   },
   {
-   "text": "Then the Ravens have an outbreak. About twenty players are out.",
-   "cap": "Then the Ravens have an outbreak. About 20 players are out.",
+   "text": "Then the Ravens have an outbreak. A big one.",
    "key": [
-    "20"
+    "OUTBREAK."
    ],
    "set": "locker",
    "setOpts": {
@@ -553,6 +552,22 @@
    "url": "https://www.cbssports.com/nfl/news/ravens-steelers-game-could-help-make-nfl-history-by-being-played-on-a-wednesday"
   },
   {
+   "title": "TV Technology: NBC puts tree lighting in primetime instead of NFL",
+   "url": "https://www.tvtechnology.com/news/nbc-puts-tree-lighting-in-primetime-instead-of-nfl"
+  },
+  {
+   "title": "Fox News: Steelers-Ravens game moved to Wednesday afternoon because of this reason",
+   "url": "https://www.foxnews.com/sports/steelers-ravens-game-reportedly-moved-to-wednesday-afternoon-because-of-this-reason"
+  },
+  {
+   "title": "NBC Sports Washington: Ravens-Steelers set for 3:40 pm kickoff on Wednesday",
+   "url": "https://www.nbcwashington.com/news/sports/nbcsports/ravens-steelers-set-for-340-pm-kickoff-on-wednesday/2492152/"
+  },
+  {
+   "title": "Golf Digest: Ravens-Steelers moved for the Rockefeller Center tree lighting",
+   "url": "https://www.golfdigest.com/story/baltimore-ravens-pittsburgh-steelers-nfl-covid-19-rockefeller-center-christmas-tree-lighting"
+  },
+  {
    "title": "Wikipedia: 2020 Baltimore Ravens season",
    "url": "https://en.wikipedia.org/wiki/2020_Baltimore_Ravens_season"
   },
@@ -578,10 +593,10 @@
    ]
   },
   {
-   "claim": "About 20 Ravens players were out",
+   "claim": "The Ravens had an outbreak",
    "terms": [
-    "20",
-    "players"
+    "Ravens",
+    "outbreak"
    ]
   },
   {
