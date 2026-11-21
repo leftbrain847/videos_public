@@ -1,0 +1,927 @@
+{
+ "id": "mind_14_power_pose",
+ "title": "The power pose that lost its power",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "POWER",
+   "POSE"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1f3f8f",
+    "pants": "#1b2a5c",
+    "tie": "#c0392b",
+    "hair": "long",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "spk": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#c0392b",
+    "pants": "#2a2a2a",
+    "lapel": "#8e2a20",
+    "hair": "bun",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   },
+   "hold": "mic"
+  }
+ },
+ "lines": [
+  {
+   "text": "Stand like a superhero for two minutes. Your hormones change. Supposedly.",
+   "key": [
+    "HORMONES"
+   ],
+   "board": [
+    "POWER",
+    "POSE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "spk": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Twenty ten. Three researchers publish a study on power posing.",
+   "cap": "2010. Three researchers publish a study on power posing.",
+   "key": [
+    "POSING."
+   ],
+   "set": "office",
+   "board": [
+    "POWER POSE",
+    "2010"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "spk": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "You stand wide. Hands on hips. Chin up.",
+   "key": [
+    "HIPS."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "spk": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Other volunteers slump. Arms crossed. Shoulders in. Small.",
+   "key": [
+    "SMALL."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "spk": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "sad",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two minutes later, they test your saliva.",
+   "key": [
+    "SALIVA."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "spk": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "exp",
+    "with": "you"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "Power posers show more testosterone. The dominance hormone.",
+   "key": [
+    "TESTOSTERONE."
+   ],
+   "board": [
+    "TESTOSTERONE",
+    "UP"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "spk": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Less cortisol, the stress hormone.",
+   "key": [
+    "CORTISOL,"
+   ],
+   "set": "study",
+   "board": [
+    "CORTISOL",
+    "DOWN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "spk": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They even take bigger gambles.",
+   "key": [
+    "GAMBLES."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "spk": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then comes the T E D talk. The famous one.",
+   "cap": "Then comes the TED talk. The famous one.",
+   "key": [
+    "TED"
+   ],
+   "set": "press",
+   "board": [
+    "TED",
+    "2012"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "spk": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "spk"
+   },
+   "act": {
+    "spk": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Amy Cuddy gives it in twenty twelve. Tens of millions watch.",
+   "cap": "Amy Cuddy gives it in 2012. Tens of millions watch.",
+   "key": [
+    "MILLIONS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "spk": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "spk"
+   },
+   "act": {
+    "spk": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two minutes. No cost. Everyone tries it before interviews.",
+   "key": [
+    "INTERVIEWS."
+   ],
+   "set": "locker",
+   "board": [
+    "BEFORE THE",
+    "INTERVIEW"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "exp": false,
+    "spk": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Magazines love it. Bosses love it. Everyone stands like a starfish.",
+   "key": [
+    "STARFISH."
+   ],
+   "set": "study",
+   "board": [
+    "POWER",
+    "POSE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "spk": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. The hormones never came back.",
+   "key": [
+    "NEVER"
+   ],
+   "set": "study",
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "spk": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty fifteen. A bigger team reruns it. Two hundred people.",
+   "cap": "2015. A bigger team reruns it. 200 people.",
+   "key": [
+    "200"
+   ],
+   "set": "office",
+   "board": [
+    "RERUN",
+    "200 PEOPLE"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "spk": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "No testosterone boost. No cortisol drop. Nothing.",
+   "key": [
+    "NO"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "spk": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "No extra risk taking either. The hormones were a dud.",
+   "key": [
+    "EITHER."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "spk": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the big one. Twenty sixteen.",
+   "cap": "Then the big one. 2016.",
+   "key": [
+    "2016."
+   ],
+   "set": "study",
+   "board": [
+    "2016"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "spk": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The first author, Dana Carney, posts a statement.",
+   "key": [
+    "CARNEY,"
+   ],
+   "set": "office",
+   "board": [
+    "MY POSITION",
+    "ON POWER POSES"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "spk": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She does not believe the effects are real.",
+   "key": [
+    "REAL."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "spk": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The author. Of the study. Walked away from it.",
+   "key": [
+    "AWAY"
+   ],
+   "set": "study",
+   "board": [
+    "POWER",
+    "POSE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "spk": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "One piece may survive. People report feeling more powerful.",
+   "key": [
+    "FEELING"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "spk": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "So the pose might lift your mood. Your chemistry? Not so much.",
+   "key": [
+    "CHEMISTRY?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "spk": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Big meeting tomorrow. Do you strike the superhero pose first? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "SUPERHERO",
+    "POSE?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "spk": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Power posing",
+   "url": "https://en.wikipedia.org/wiki/Power_posing"
+  },
+  {
+   "title": "Fortune: Power poses research is false, says co-author",
+   "url": "https://fortune.com/2016/10/02/power-poses-research-false/"
+  },
+  {
+   "title": "Why Evolution Is True: Power posing disavowed by senior author",
+   "url": "https://whyevolutionistrue.com/2016/09/26/second-most-popular-ted-talk-of-all-time-on-power-posing-disavowed-by-senior-author/"
+  },
+  {
+   "title": "FORRT Open Social Psychology: Power posing",
+   "url": "https://forrt.org/open-social-psychology/chapter27.html"
+  },
+  {
+   "title": "Wikipedia: Amy Cuddy",
+   "url": "https://en.wikipedia.org/wiki/Amy_Cuddy"
+  },
+  {
+   "title": "Scientific American: Power poses don't stand up",
+   "url": "https://www.scientificamerican.com/podcast/episode/power-poses-dont-stand-up/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The original power posing study was in 2010",
+   "terms": [
+    "2010",
+    "power pos"
+   ]
+  },
+  {
+   "claim": "Poses were held for about two minutes",
+   "terms": [
+    "two minutes|2 minutes|one minute|1 minute",
+    "pose"
+   ]
+  },
+  {
+   "claim": "Saliva was tested for hormones",
+   "terms": [
+    "saliva"
+   ]
+  },
+  {
+   "claim": "High power posers showed more testosterone",
+   "terms": [
+    "testosterone"
+   ]
+  },
+  {
+   "claim": "They showed less cortisol",
+   "terms": [
+    "cortisol"
+   ]
+  },
+  {
+   "claim": "They took more risks in a gamble",
+   "terms": [
+    "risk|gambl"
+   ]
+  },
+  {
+   "claim": "Amy Cuddy gave a TED talk in 2012",
+   "terms": [
+    "Cuddy",
+    "TED"
+   ]
+  },
+  {
+   "claim": "The talk was watched tens of millions of times",
+   "terms": [
+    "million"
+   ]
+  },
+  {
+   "claim": "A 2015 replication with about 200 people found no hormone effect",
+   "terms": [
+    "Ranehill|replicat",
+    "200"
+   ]
+  },
+  {
+   "claim": "No extra risk taking in the replication",
+   "terms": [
+    "risk",
+    "replicat"
+   ]
+  },
+  {
+   "claim": "In 2016 first author Dana Carney posted a statement",
+   "terms": [
+    "Carney",
+    "2016"
+   ]
+  },
+  {
+   "claim": "Carney said she does not believe the effects are real",
+   "terms": [
+    "do not believe|does not believe|doesn't believe"
+   ]
+  },
+  {
+   "claim": "Effects on feelings of power may survive",
+   "terms": [
+    "feelings of power|feel more powerful|feeling powerful|self-report"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,972 @@
+{
+ "id": "mind_15_clever_hans",
+ "title": "The horse that did math, sort of",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "CLEVER",
+   "HANS"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "own": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#4a3b2c",
+    "pants": "#2a2a2a",
+    "tie": "#1b1b1b",
+    "hair": "bald",
+    "skin": "#f2c39b",
+    "beard": true
+   }
+  },
+  "hans": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#8a5a33",
+    "pants": "#6b4426",
+    "hair": "long",
+    "hairColor": "#2b1a10",
+    "skin": "#8a5a33"
+   }
+  },
+  "stu": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#2e86c1",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "A horse does math in public. Experts cannot find the trick.",
+   "key": [
+    "TRICK."
+   ],
+   "board": [
+    "2 + 3 = ?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "own": false,
+    "hans": [
+     1.2,
+     0.0
+    ],
+    "stu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hans"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "hans": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Berlin, the early nineteen hundreds. Meet Clever Hans.",
+   "cap": "Berlin, the early 1900s. Meet Clever Hans.",
+   "key": [
+    "HANS."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CLEVER",
+     "HANS"
+    ]
+   },
+   "board": [
+    "CLEVER",
+    "HANS"
+   ],
+   "place": {
+    "capy": false,
+    "own": [
+     -1.4,
+     0.6
+    ],
+    "hans": [
+     1.2,
+     0.0
+    ],
+    "stu": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "hans"
+   },
+   "act": {
+    "hans": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "own": {
+     "mood": "happy",
+     "action": "point",
+     "look": "hans"
+    }
+   }
+  },
+  {
+   "text": "His owner, Wilhelm von Osten, taught math. He is very proud.",
+   "key": [
+    "MATH."
+   ],
+   "place": {
+    "capy": false,
+    "own": [
+     -1.4,
+     0.6
+    ],
+    "hans": [
+     1.2,
+     0.0
+    ],
+    "stu": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ask Hans to add. He taps out the answer with a hoof.",
+   "key": [
+    "TAPS"
+   ],
+   "board": [
+    "2 + 3 = ?",
+    "TAP x5"
+   ],
+   "place": {
+    "capy": false,
+    "own": [
+     -1.4,
+     0.6
+    ],
+    "hans": [
+     1.2,
+     0.0
+    ],
+    "stu": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "hans"
+   },
+   "act": {
+    "hans": {
+     "mood": "happy",
+     "action": "kick",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fractions. Dates. Even spelling. Tap, tap, tap.",
+   "key": [
+    "FRACTIONS."
+   ],
+   "place": {
+    "capy": false,
+    "own": [
+     -1.4,
+     0.6
+    ],
+    "hans": [
+     1.2,
+     0.0
+    ],
+    "stu": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "own",
+    "with": "hans"
+   },
+   "act": {
+    "own": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "hans"
+    },
+    "hans": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "own"
+    }
+   }
+  },
+  {
+   "text": "Crowds pour in. Hans becomes a celebrity. A horse celebrity.",
+   "key": [
+    "CELEBRITY."
+   ],
+   "place": {
+    "capy": false,
+    "own": [
+     -1.4,
+     0.6
+    ],
+    "hans": [
+     1.2,
+     0.0
+    ],
+    "stu": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "hans"
+   },
+   "act": {
+    "hans": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "own": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "hans"
+    }
+   }
+  },
+  {
+   "text": "Nineteen oh four. A panel of experts investigates.",
+   "cap": "1904. A panel of experts investigates.",
+   "key": [
+    "EXPERTS"
+   ],
+   "set": "study",
+   "board": [
+    "THE HANS",
+    "COMMISSION"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "own": false,
+    "hans": false,
+    "stu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A psychologist. A circus trainer. Vets. Officers.",
+   "key": [
+    "CIRCUS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "own": false,
+    "hans": false,
+    "stu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Their verdict? No trickery. No secret signals. The horse is legit.",
+   "key": [
+    "TRICKERY."
+   ],
+   "board": [
+    "VERDICT:",
+    "NO TRICK"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "own": false,
+    "hans": [
+     1.2,
+     0.0
+    ],
+    "stu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hans"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "hans"
+    },
+    "hans": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then a student, Oskar Pfungst, tries something simple.",
+   "key": [
+    "PFUNGST,"
+   ],
+   "set": "field",
+   "board": [
+    "CLEVER",
+    "HANS"
+   ],
+   "place": {
+    "capy": false,
+    "own": false,
+    "hans": [
+     1.4,
+     0.0
+    ],
+    "stu": [
+     -1.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "stu"
+   },
+   "act": {
+    "stu": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "hans"
+    },
+    "hans": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "stu"
+    }
+   }
+  },
+  {
+   "text": "He asks questions the questioner cannot answer.",
+   "key": [
+    "CANNOT"
+   ],
+   "place": {
+    "capy": false,
+    "own": false,
+    "hans": [
+     1.4,
+     0.0
+    ],
+    "stu": [
+     -1.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "stu"
+   },
+   "act": {
+    "stu": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Suddenly, Hans is terrible at math. Really terrible.",
+   "key": [
+    "TERRIBLE"
+   ],
+   "place": {
+    "capy": false,
+    "own": false,
+    "hans": [
+     1.4,
+     0.0
+    ],
+    "stu": [
+     -1.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "hans"
+   },
+   "act": {
+    "hans": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He adds blinders. Hans cannot see the asker. Wrong again.",
+   "key": [
+    "BLINDERS."
+   ],
+   "place": {
+    "capy": false,
+    "own": false,
+    "hans": [
+     1.4,
+     0.0
+    ],
+    "stu": [
+     -1.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "stu",
+    "with": "hans"
+   },
+   "act": {
+    "stu": {
+     "mood": "smug",
+     "action": "point",
+     "look": "hans"
+    },
+    "hans": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "stu"
+    }
+   }
+  },
+  {
+   "text": "Here is the loophole. Hans was reading people.",
+   "key": [
+    "PEOPLE."
+   ],
+   "set": "study",
+   "board": [
+    "THE",
+    "LOOPHOLE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "own": false,
+    "hans": false,
+    "stu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Near the answer, the humans tense up.",
+   "key": [
+    "TENSE"
+   ],
+   "set": "field",
+   "board": [
+    "CLEVER",
+    "HANS"
+   ],
+   "place": {
+    "capy": false,
+    "own": [
+     -1.4,
+     0.6
+    ],
+    "hans": [
+     1.4,
+     0.0
+    ],
+    "stu": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "hans"
+    },
+    "hans": {
+     "mood": "neutral",
+     "action": "kick",
+     "look": "own"
+    }
+   }
+  },
+  {
+   "text": "At the right number, they relax. A tiny head movement.",
+   "key": [
+    "RELAX."
+   ],
+   "place": {
+    "capy": false,
+    "own": [
+     -1.4,
+     0.6
+    ],
+    "hans": [
+     1.4,
+     0.0
+    ],
+    "stu": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "own"
+   },
+   "act": {
+    "own": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "hans"
+    }
+   }
+  },
+  {
+   "text": "Hans stops tapping. Right on cue.",
+   "key": [
+    "CUE."
+   ],
+   "place": {
+    "capy": false,
+    "own": [
+     -1.4,
+     0.6
+    ],
+    "hans": [
+     1.4,
+     0.0
+    ],
+    "stu": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "hans"
+   },
+   "act": {
+    "hans": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "own": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "hans"
+    }
+   }
+  },
+  {
+   "text": "Any questioner could do it. Even strangers. Without meaning to.",
+   "key": [
+    "STRANGERS."
+   ],
+   "place": {
+    "capy": false,
+    "own": [
+     -1.4,
+     0.6
+    ],
+    "hans": [
+     1.4,
+     0.0
+    ],
+    "stu": false
+   },
+   "shot": {
+    "type": "ots",
+    "on": "own",
+    "from": "hans"
+   },
+   "act": {
+    "own": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "hans"
+    },
+    "hans": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "own"
+    }
+   }
+  },
+  {
+   "text": "Nobody was cheating. Not even the owner.",
+   "key": [
+    "CHEATING."
+   ],
+   "set": "study",
+   "board": [
+    "CLEVER",
+    "HANS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "own": [
+     1.2,
+     0.0
+    ],
+    "hans": false,
+    "stu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "own"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "own"
+    },
+    "own": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It becomes known as the Clever Hans effect.",
+   "key": [
+    "EFFECT."
+   ],
+   "board": [
+    "CLEVER HANS",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "own": [
+     1.2,
+     0.0
+    ],
+    "hans": false,
+    "stu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "own": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It still bites today. Think of sniffer dogs reading their handlers.",
+   "key": [
+    "DOGS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "own": false,
+    "hans": false,
+    "stu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your expectations leak. Animals notice. So do people. Constantly.",
+   "key": [
+    "LEAK."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "own": false,
+    "hans": false,
+    "stu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So, was Hans actually smart? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "WAS HANS",
+    "SMART?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "own": false,
+    "hans": [
+     1.2,
+     0.0
+    ],
+    "stu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hans"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "hans": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Clever Hans",
+   "url": "https://en.wikipedia.org/wiki/Clever_Hans"
+  },
+  {
+   "title": "Britannica: Clever Hans",
+   "url": "https://www.britannica.com/topic/Clever-Hans"
+  },
+  {
+   "title": "Britannica Explore: What Clever Hans teaches us about being human",
+   "url": "https://explore.britannica.com/explore/savingearth/what-clever-hans-teaches-us-about-being-human"
+  },
+  {
+   "title": "Atlas Obscura: How counting horses and reading dogs convinced us animals could think",
+   "url": "https://www.atlasobscura.com/articles/how-counting-horses-and-reading-dogs-convinced-us-animals-could-think"
+  },
+  {
+   "title": "Project Gutenberg: Clever Hans, by Oskar Pfungst",
+   "url": "https://www.gutenberg.org/cache/epub/33936/pg33936-images.html"
+  },
+  {
+   "title": "Wikipedia: Observer-expectancy effect",
+   "url": "https://en.wikipedia.org/wiki/Observer-expectancy_effect"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Clever Hans was a horse in Berlin in the early 1900s",
+   "terms": [
+    "Hans",
+    "Berlin"
+   ]
+  },
+  {
+   "claim": "His owner Wilhelm von Osten was a math teacher",
+   "terms": [
+    "von Osten",
+    "teacher"
+   ]
+  },
+  {
+   "claim": "Hans answered by tapping his hoof",
+   "terms": [
+    "tap",
+    "hoof"
+   ]
+  },
+  {
+   "claim": "He answered arithmetic, fractions, dates and spelling",
+   "terms": [
+    "fractions"
+   ]
+  },
+  {
+   "claim": "A 1904 commission investigated",
+   "terms": [
+    "1904",
+    "commission"
+   ]
+  },
+  {
+   "claim": "The panel included a circus trainer",
+   "terms": [
+    "circus"
+   ]
+  },
+  {
+   "claim": "The commission found no trickery",
+   "terms": [
+    "trick"
+   ]
+  },
+  {
+   "claim": "Oskar Pfungst investigated",
+   "terms": [
+    "Pfungst"
+   ]
+  },
+  {
+   "claim": "When the questioner did not know the answer, Hans failed",
+   "terms": [
+    "questioner",
+    "answer"
+   ]
+  },
+  {
+   "claim": "Hans failed when he could not see the questioner",
+   "terms": [
+    "see",
+    "questioner"
+   ]
+  },
+  {
+   "claim": "Hans responded to involuntary cues from the questioner",
+   "terms": [
+    "cues",
+    "Hans"
+   ]
+  },
+  {
+   "claim": "The owner was not cheating",
+   "terms": [
+    "von Osten",
+    "fraud|cheat|unaware|unintentional|not aware"
+   ]
+  },
+  {
+   "claim": "It is called the Clever Hans effect",
+   "terms": [
+    "Clever Hans effect"
+   ]
+  },
+  {
+   "claim": "The effect is studied in detection dogs and their handlers",
+   "terms": [
+    "dogs",
+    "handler"
+   ]
+  }
+ ]
+}
