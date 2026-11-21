@@ -601,7 +601,7 @@
     "LOOSE."
    ],
    "shot": {
-    "type": "low",
+    "type": "follow_high",
     "on": "eli"
    },
    "act": {},
@@ -2137,7 +2137,7 @@
     "HELMET."
    ],
    "shot": {
-    "type": "low",
+    "type": "follow_high",
     "on": "tyree"
    },
    "act": {},
@@ -2640,7 +2640,7 @@
   {
    "claim": "The Patriots led the Giants 14-10 with about a minute left",
    "terms": [
-    "14-10|14–10|14 10"
+    "14-10|14\u201310|14 10"
    ]
   },
   {
@@ -2694,7 +2694,7 @@
   {
    "claim": "Final score Giants 17, Patriots 14",
    "terms": [
-    "17-14|17–14|17 14"
+    "17-14|17\u201314|17 14"
    ]
   },
   {

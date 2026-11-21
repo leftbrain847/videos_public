@@ -605,10 +605,8 @@
     "DAL 31"
    ],
    "shot": {
-    "type": "follow_high",
-    "on": "ball",
-    "fallback": "loop",
-    "lead": 0
+    "type": "follow",
+    "on": "loop"
    },
    "act": {},
    "set": "field",
@@ -876,7 +874,7 @@
   {
    "claim": "It was played at the Maracana",
    "terms": [
-    "Maracana|Maracanã"
+    "Maracana|Maracan\u00e3"
    ]
   },
   {

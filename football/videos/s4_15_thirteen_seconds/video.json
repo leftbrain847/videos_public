@@ -1187,11 +1187,8 @@
     "0"
    ],
    "shot": {
-    "type": "follow_high",
-    "on": "ball",
-    "fallback": "butk",
-    "lead": 0,
-    "z": -4
+    "type": "follow",
+    "on": "butk"
    },
    "act": {},
    "sfx": [
