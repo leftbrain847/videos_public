@@ -1,0 +1,692 @@
+{
+ "id": "heist_09_millennium_dome",
+ "title": "The Millennium Dome raid",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "MILLENNIUM",
+   "STAR"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "ray": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#3a3f4b",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "crew": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2e",
+    "pants": "#1f2a3a",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   }
+  },
+  "cleaner": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#4b92db",
+    "pants": "#1d2f4f",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You smash into a vault with a digger. The diamonds are fake. The cleaners are cops.",
+   "key": [
+    "COPS."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ray"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "ray": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "ray": "center",
+    "crew": false,
+    "cleaner": false,
+    "boss": false
+   },
+   "board": [
+    "MILLENNIUM",
+    "STAR"
+   ]
+  },
+  {
+   "text": "London. November, two thousand.",
+   "cap": "London. November 2000.",
+   "key": [
+    "LONDON."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "ray"
+   },
+   "act": {
+    "ray": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "LONDON",
+    "NOV 2000"
+   ]
+  },
+  {
+   "text": "Your target sits inside the Millennium dome. A diamond show.",
+   "cap": "Your target sits inside the Millennium Dome. A diamond show.",
+   "key": [
+    "DIAMOND"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ray"
+   },
+   "act": {
+    "ray": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The star is the Millennium star. Over two hundred carats.",
+   "cap": "The star is the Millennium Star. Over 200 carats.",
+   "key": [
+    "CARATS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "ray": false
+   },
+   "board": [
+    "203",
+    "CARATS"
+   ]
+  },
+  {
+   "text": "Your plan sounds like a spy movie. Newspapers will say so too.",
+   "key": [
+    "MOVIE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "crew"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "crew"
+    },
+    "crew": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "crew": "right"
+   }
+  },
+  {
+   "text": "Step one. Crash a bulldozer through the wall.",
+   "key": [
+    "BULLDOZER"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "crew"
+   },
+   "act": {
+    "crew": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "crew": "center"
+   },
+   "board": [
+    "STEP 1:",
+    "DIGGER"
+   ]
+  },
+  {
+   "text": "Step two. Smoke bombs. Sledgehammers. Grab the stones.",
+   "key": [
+    "STONES."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ray"
+   },
+   "act": {
+    "ray": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "ray": "left"
+   }
+  },
+  {
+   "text": "Step three. Escape by speedboat. Down the river Thames.",
+   "key": [
+    "SPEEDBOAT."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "ray"
+   },
+   "act": {
+    "ray": {
+     "mood": "smug",
+     "action": "point"
+    }
+   },
+   "board": [
+    "STEP 3:",
+    "SPEEDBOAT"
+   ]
+  },
+  {
+   "text": "One problem. Police already know. They know everything.",
+   "key": [
+    "KNOW."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "ray": false,
+    "crew": false
+   }
+  },
+  {
+   "text": "They've been watching you for months.",
+   "key": [
+    "MONTHS."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "boss": "center"
+   },
+   "board": [
+    "OPERATION",
+    "MAGICIAN"
+   ]
+  },
+  {
+   "text": "Quietly, they swap the real diamonds for fakes. Worthless glass.",
+   "key": [
+    "FAKES."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Officers hide inside. Some dressed as cleaners.",
+   "key": [
+    "CLEANERS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "cleaner"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "cleaner"
+    },
+    "cleaner": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "cleaner": "right",
+    "boss": false
+   }
+  },
+  {
+   "text": "November seventh. Morning. Your digger smashes through the gates.",
+   "cap": "November 7th. Morning. Your digger smashes through the gates.",
+   "key": [
+    "SMASHES"
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "wide",
+    "on": "crew"
+   },
+   "act": {
+    "crew": {
+     "mood": "angry",
+     "action": "run"
+    }
+   },
+   "place": {
+    "crew": "right",
+    "ray": "left"
+   },
+   "board": [
+    "NOV 7",
+    "9:30 AM"
+   ]
+  },
+  {
+   "text": "You hammer the glass case. It holds. You hammer again. It cracks.",
+   "key": [
+    "AGAIN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ray"
+   },
+   "act": {
+    "ray": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the cleaners drop their mops. Surprise.",
+   "key": [
+    "SURPRISE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "cleaner",
+    "with": "ray"
+   },
+   "act": {
+    "cleaner": {
+     "mood": "angry",
+     "action": "point",
+     "look": "ray"
+    },
+    "ray": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "cleaner"
+    }
+   },
+   "place": {
+    "cleaner": "right",
+    "ray": "left",
+    "crew": false
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Police swarm in from everywhere. On the river, your boat crew gets caught. Everyone does.",
+   "key": [
+    "CAUGHT"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "ray"
+   },
+   "act": {
+    "ray": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Even if you'd won, you'd have stolen glass.",
+   "key": [
+    "GLASS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "ray": false,
+    "cleaner": false
+   }
+  },
+  {
+   "text": "Your famous line? You were twelve inches from payday.",
+   "cap": "Your famous line? You were 12 inches from payday.",
+   "key": [
+    "PAYDAY."
+   ],
+   "set": "press",
+   "shot": {
+    "type": "medium",
+    "on": "ray"
+   },
+   "act": {
+    "ray": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "ray": "center"
+   }
+  },
+  {
+   "text": "The court is not amused. The leaders get up to eighteen years.",
+   "cap": "The court is not amused. The leaders get up to 18 years.",
+   "key": [
+    "YEARS."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "boss": "center",
+    "ray": false
+   },
+   "board": [
+    "UP TO",
+    "18 YEARS"
+   ]
+  },
+  {
+   "text": "A bulldozer heist. Sounds crazy. Police thought so too. They were ready.",
+   "key": [
+    "READY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "boss": "right"
+   }
+  },
+  {
+   "text": "Twelve inches from payday. Would you swing one more time?",
+   "cap": "12 inches from payday. Would you swing one more time?",
+   "key": [
+    "TIME?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "boss": false
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Millennium Dome raid",
+   "url": "https://en.wikipedia.org/wiki/Millennium_Dome_raid"
+  },
+  {
+   "title": "Irish Times: Police foil Millennium Dome diamond heist worthy of James Bond",
+   "url": "https://www.irishtimes.com/news/police-foil-millennium-dome-diamond-heist-worthy-of-james-bond-1.1114449"
+  },
+  {
+   "title": "Irish Times: Four jailed for daring diamond raid on Dome",
+   "url": "https://www.irishtimes.com/news/four-jailed-for-daring-diamond-raid-on-dome-1.1050924"
+  },
+  {
+   "title": "ABC News: Millennium Dome diamond heist thwarted",
+   "url": "https://abcnews.go.com/International/story?id=82162"
+  },
+  {
+   "title": "Crime and Investigation: Millennium Dome heist",
+   "url": "https://crimeandinvestigation.co.uk/crime-files/millennium-dome-heist"
+  },
+  {
+   "title": "Dawn: Dome diamond raid",
+   "url": "https://www.dawn.com/news/22615"
+  },
+  {
+   "title": "Kent Online: The old-style Kent crooks who tried to raid the Dome",
+   "url": "https://www.kentonline.co.uk/kent/news/amp/the-old-style-kent-crooks-who-tried-to-raid-the-dome-236957/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The raid was in London in November 2000",
+   "terms": [
+    "Dome",
+    "November",
+    "2000"
+   ]
+  },
+  {
+   "claim": "The target was a diamond exhibition in the Millennium Dome",
+   "terms": [
+    "Millennium Dome",
+    "diamond"
+   ]
+  },
+  {
+   "claim": "The Millennium Star is over 200 carats",
+   "terms": [
+    "Millennium Star",
+    "carat"
+   ]
+  },
+  {
+   "claim": "The plan was compared to a movie",
+   "terms": [
+    "Bond|film|movie"
+   ]
+  },
+  {
+   "claim": "They used a JCB digger to smash in",
+   "terms": [
+    "JCB|digger|bulldozer"
+   ]
+  },
+  {
+   "claim": "They used smoke bombs and sledgehammers",
+   "terms": [
+    "smoke",
+    "sledgehammer"
+   ]
+  },
+  {
+   "claim": "The escape was a speedboat on the Thames",
+   "terms": [
+    "speedboat",
+    "Thames"
+   ]
+  },
+  {
+   "claim": "Police knew in advance and had been watching for months",
+   "terms": [
+    "police",
+    "months|tipped|surveillance"
+   ]
+  },
+  {
+   "claim": "The diamonds were replaced with fakes",
+   "terms": [
+    "replica|fake|imitation"
+   ]
+  },
+  {
+   "claim": "Officers were disguised as cleaners",
+   "terms": [
+    "cleaners"
+   ]
+  },
+  {
+   "claim": "They hammered the glass",
+   "terms": [
+    "sledgehammer|hammer",
+    "glass"
+   ]
+  },
+  {
+   "claim": "The boat crew was also caught",
+   "terms": [
+    "boat",
+    "arrest"
+   ]
+  },
+  {
+   "claim": "A robber said they were 12 inches from payday",
+   "terms": [
+    "12 inches",
+    "pay"
+   ]
+  },
+  {
+   "claim": "The leaders got up to 18 years",
+   "terms": [
+    "18 years"
+   ]
+  }
+ ]
+}

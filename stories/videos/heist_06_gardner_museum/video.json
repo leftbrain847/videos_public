@@ -1,0 +1,740 @@
+{
+ "id": "heist_06_gardner_museum",
+ "title": "The empty frames in Boston",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "GARDNER",
+   "MUSEUM"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "cop1": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "cop2": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   }
+  },
+  "guard": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5f6770",
+    "pants": "#22252b",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "agent": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal five hundred million dollars of art. The frames are still hanging.",
+   "cap": "You steal $500 million of art. The frames are still hanging.",
+   "key": [
+    "HANGING."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "cop1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "cop1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "cop1": "center",
+    "cop2": false,
+    "guard": false,
+    "agent": false
+   },
+   "board": [
+    "EMPTY",
+    "FRAMES"
+   ]
+  },
+  {
+   "text": "Boston. March, nineteen ninety. One in the morning.",
+   "cap": "Boston. March 1990. 1 in the morning.",
+   "key": [
+    "BOSTON."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "cop1"
+   },
+   "act": {
+    "cop1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "MARCH 18",
+    "1990"
+   ]
+  },
+  {
+   "text": "You dress as a police officer. So does your partner.",
+   "key": [
+    "POLICE"
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "two",
+    "on": "cop1",
+    "with": "cop2"
+   },
+   "act": {
+    "cop1": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "cop2": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "cop1"
+    }
+   },
+   "place": {
+    "cop1": "left",
+    "cop2": "right"
+   }
+  },
+  {
+   "text": "You ring the museum buzzer. You say there's a disturbance.",
+   "key": [
+    "DISTURBANCE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "cop1"
+   },
+   "act": {
+    "cop1": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The night guard is not supposed to open. He opens.",
+   "key": [
+    "OPENS."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "close",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "guard": "center"
+   },
+   "board": [
+    "RULE #1:",
+    "DON'T OPEN"
+   ]
+  },
+  {
+   "text": "You tell him he looks familiar. There's a warrant.",
+   "key": [
+    "WARRANT."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "cop1",
+    "with": "guard"
+   },
+   "act": {
+    "cop1": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "guard"
+    },
+    "guard": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "cop1"
+    }
+   },
+   "place": {
+    "cop1": "left",
+    "guard": "right"
+   }
+  },
+  {
+   "text": "He steps away from the alarm button. Big mistake.",
+   "key": [
+    "MISTAKE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "guard"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "guard": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "cop1"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "guard": "right",
+    "cop1": false
+   }
+  },
+  {
+   "text": "Both guards end up handcuffed in the basement.",
+   "key": [
+    "BASEMENT."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "capy": false,
+    "guard": "center"
+   }
+  },
+  {
+   "text": "Now you have the museum to yourself.",
+   "key": [
+    "YOURSELF."
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "wide",
+    "on": "cop2"
+   },
+   "act": {
+    "cop2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "cop1": {
+     "mood": "happy",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "cop1": "left",
+    "cop2": "right"
+   }
+  },
+  {
+   "text": "You cut two Rembrandts out of their frames.",
+   "key": [
+    "REMBRANDTS"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "cop1"
+   },
+   "act": {
+    "cop1": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "REMBRANDT",
+    "x2"
+   ]
+  },
+  {
+   "text": "One is his only seascape. A ship in a storm.",
+   "key": [
+    "SEASCAPE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "cop1": false,
+    "cop2": false
+   }
+  },
+  {
+   "text": "You take a Vermeer. A Manet. Sketches by Degas.",
+   "key": [
+    "VERMEER."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "cop2"
+   },
+   "act": {
+    "cop2": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "cop2": "center",
+    "capy": false
+   },
+   "board": [
+    "VERMEER",
+    "MANET, DEGAS"
+   ]
+  },
+  {
+   "text": "Thirteen works. Eighty one minutes. Then you just leave. Twice. You make two trips to the car.",
+   "cap": "13 works. 81 minutes. Then you just leave. Twice. You make 2 trips to the car.",
+   "key": [
+    "LEAVE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "cop2"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "cop2"
+    },
+    "cop2": {
+     "mood": "smug",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "cop2": "right"
+   },
+   "board": [
+    "13 WORKS",
+    "81 MIN"
+   ]
+  },
+  {
+   "text": "Experts value the art at half a billion. At least.",
+   "key": [
+    "BILLION"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "cop2": false,
+    "capy": "center"
+   },
+   "board": [
+    "VALUE:",
+    "$500,000,000"
+   ]
+  },
+  {
+   "text": "It's the biggest art theft in history.",
+   "key": [
+    "BIGGEST"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "agent": "center"
+   },
+   "board": [
+    "FBI",
+    "CASE"
+   ]
+  },
+  {
+   "text": "The reward? Ten million dollars. Nobody collects.",
+   "cap": "The reward? $10 million. Nobody collects.",
+   "key": [
+    "NOBODY"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "REWARD",
+    "$10,000,000"
+   ]
+  },
+  {
+   "text": "Decades later, not one painting has come home.",
+   "key": [
+    "HOME."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "agent"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "agent"
+    },
+    "agent": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "agent": "right"
+   }
+  },
+  {
+   "text": "Here's the eerie part. The museum kept the empty frames.",
+   "key": [
+    "FRAMES."
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "EMPTY",
+    "FRAME"
+   ],
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Visitors still stare at nothing. On purpose.",
+   "key": [
+    "NOTHING."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Waiting for the paintings to come back. Nobody knows if they ever will.",
+   "key": [
+    "BACK."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "guard": "altar",
+    "capy": "left"
+   }
+  },
+  {
+   "text": "Fake cops. Real guards. Empty walls. Would you have opened that door?",
+   "key": [
+    "DOOR?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "guard": false,
+    "capy": "center"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Isabella Stewart Gardner Museum theft",
+   "url": "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft"
+  },
+  {
+   "title": "Isabella Stewart Gardner Museum: Theft",
+   "url": "https://www.gardnermuseum.org/node/126"
+  },
+  {
+   "title": "FBI: Inside the Isabella Stewart Gardner Museum heist",
+   "url": "https://www.fbi.gov/news/podcasts/inside-the-isabella-stewart-gardner-museum-heist"
+  },
+  {
+   "title": "Guinness World Records: The greatest art robbery remains unsolved",
+   "url": "https://www.guinnessworldrecords.com/news/2026/3/missing-have-you-seen-this-painting-the-greatest-art-robbery-remains-unsolved"
+  },
+  {
+   "title": "Boston Public Library: Boston's greatest unsolved mystery",
+   "url": "https://bpl.org/blogs/post/bostons-greatest-unsolved-mystery-the-gardner-museum-art-heist"
+  },
+  {
+   "title": "Mental Floss: Gardner Museum art heist facts",
+   "url": "https://www.mentalfloss.com/article/645785/isabella-stewart-gardner-museum-art-heist-facts"
+  },
+  {
+   "title": "A&E: The unsolved heist at the Isabella Stewart Gardner Museum",
+   "url": "https://www.aetv.com/articles/the-unsolved-heist-at-isabella-stewart-gardner-museum"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The theft was in Boston in March 1990",
+   "terms": [
+    "Boston",
+    "1990"
+   ]
+  },
+  {
+   "claim": "The thieves were dressed as police officers",
+   "terms": [
+    "police",
+    "officers",
+    "dressed|disguised"
+   ]
+  },
+  {
+   "claim": "They said they were answering a disturbance",
+   "terms": [
+    "disturbance"
+   ]
+  },
+  {
+   "claim": "The guard let them in against protocol",
+   "terms": [
+    "guard",
+    "protocol|rules|policy"
+   ]
+  },
+  {
+   "claim": "They said the guard looked familiar and there was a warrant",
+   "terms": [
+    "warrant"
+   ]
+  },
+  {
+   "claim": "The guard stepped away from the alarm button",
+   "terms": [
+    "alarm",
+    "button|desk"
+   ]
+  },
+  {
+   "claim": "Both guards were handcuffed in the basement",
+   "terms": [
+    "handcuff",
+    "basement"
+   ]
+  },
+  {
+   "claim": "They cut Rembrandts out of their frames",
+   "terms": [
+    "Rembrandt",
+    "frames",
+    "cut"
+   ]
+  },
+  {
+   "claim": "The Storm on the Sea of Galilee is Rembrandt's only seascape",
+   "terms": [
+    "only seascape"
+   ]
+  },
+  {
+   "claim": "Works by Vermeer, Manet and Degas were taken",
+   "terms": [
+    "Vermeer",
+    "Manet",
+    "Degas"
+   ]
+  },
+  {
+   "claim": "Thirteen works were stolen",
+   "terms": [
+    "13|thirteen",
+    "works"
+   ]
+  },
+  {
+   "claim": "The thieves were inside for 81 minutes",
+   "terms": [
+    "81 minutes"
+   ]
+  },
+  {
+   "claim": "The thieves made two trips to their car",
+   "terms": [
+    "two trips|2 trips"
+   ]
+  },
+  {
+   "claim": "The art is valued at $500 million",
+   "terms": [
+    "500 million"
+   ]
+  },
+  {
+   "claim": "It is the biggest art theft in history",
+   "terms": [
+    "largest|biggest|greatest",
+    "art|property",
+    "theft|robbery|heist"
+   ]
+  },
+  {
+   "claim": "The reward is $10 million",
+   "terms": [
+    "10 million",
+    "reward"
+   ]
+  },
+  {
+   "claim": "None of the works have been recovered",
+   "terms": [
+    "recovered",
+    "works|none|never"
+   ]
+  },
+  {
+   "claim": "Empty frames still hang in the museum",
+   "terms": [
+    "empty frames"
+   ]
+  }
+ ]
+}
