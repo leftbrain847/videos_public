@@ -136,14 +136,13 @@
    }
   },
   {
-   "text": "Four dollars fifty. One hour. Help science learn about memory.",
-   "cap": "$4.50. One hour. Help science learn about memory.",
+   "text": "One hour of your time. A study of memory.",
    "key": [
-    "$4.50."
+    "MEMORY."
    ],
    "board": [
-    "PAY",
-    "$4.50"
+    "MEMORY",
+    "STUDY"
    ],
    "place": {
     "capy": false,
@@ -837,10 +836,9 @@
    }
   },
   {
-   "text": "Seventy percent were still ready to keep going.",
-   "cap": "70% were still ready to keep going.",
+   "text": "The obedience rate was only slightly lower.",
    "key": [
-    "70%"
+    "LOWER."
    ],
    "place": {
     "capy": [
@@ -957,12 +955,6 @@
    "terms": [
     "newspaper",
     "advertisement|ad"
-   ]
-  },
-  {
-   "claim": "Participants were paid $4.50",
-   "terms": [
-    "4.50"
    ]
   },
   {
@@ -1098,10 +1090,10 @@
    ]
   },
   {
-   "claim": "In the 2009 replication 70 percent were willing to continue",
+   "claim": "In the 2009 replication obedience was only slightly lower than Milgram's",
    "terms": [
     "Burger",
-    "70"
+    "slightly lower|similar|virtually identical|comparable"
    ]
   }
  ]
