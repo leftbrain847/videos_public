@@ -1,0 +1,979 @@
+{
+ "id": "myth_08_vamana_three_steps",
+ "title": "Three tiny steps",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE SACRIFICE"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "bali": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8e2b6a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#e8b923",
+    "beard": true
+   },
+   "hold": "goldbar"
+  },
+  "vam": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f2c230",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#c46a3c"
+   },
+   "hold": "scroll"
+  },
+  "shuk": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f4f4f4",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#e6e6e6",
+    "skin": "#c68d64",
+    "sash": "#c0532b",
+    "beard": true
+   }
+  },
+  "god": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e86c1",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64",
+    "sash": "#e8b923"
+   }
+  },
+  "fan": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5aa832",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24",
+    "sash": "#e8b923"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "A tiny guest wants three steps of land. You agree.",
+   "cap": "A tiny guest wants 3 steps of land. You agree.",
+   "key": [
+    "AGREE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "bali": [
+     1.2,
+     0
+    ],
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bali"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "bali": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Bali, king of the asuras. Famous for being generous.",
+   "key": [
+    "BALI,"
+   ],
+   "board": [
+    "KING",
+    "BALI"
+   ],
+   "place": {
+    "capy": false,
+    "bali": [
+     0,
+     0
+    ],
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "bali"
+   },
+   "act": {
+    "bali": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You have conquered all three worlds.",
+   "cap": "You have conquered all 3 worlds.",
+   "key": [
+    "3"
+   ],
+   "board": [
+    "WORLDS OWNED",
+    "3 OF 3"
+   ],
+   "place": {
+    "capy": false,
+    "bali": [
+     0,
+     0
+    ],
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "bali"
+   },
+   "act": {
+    "bali": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gods have lost everything. So they ask Vishnu for help.",
+   "key": [
+    "VISHNU"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "bali": false,
+    "vam": false,
+    "shuk": false,
+    "god": [
+     1.2,
+     0
+    ],
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "god",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "god": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Vishnu arrives as Vamana. A short young priest.",
+   "key": [
+    "VAMANA."
+   ],
+   "place": {
+    "capy": false,
+    "bali": false,
+    "vam": [
+     0,
+     0
+    ],
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "vam"
+   },
+   "act": {
+    "vam": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are hosting a great sacrifice. You hand out gifts to everyone.",
+   "key": [
+    "GIFTS"
+   ],
+   "place": {
+    "capy": false,
+    "bali": [
+     -1.3,
+     0.2
+    ],
+    "vam": [
+     1.3,
+     -0.2
+    ],
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "bali",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "bali": {
+     "mood": "happy",
+     "action": "point",
+     "look": "vam"
+    },
+    "vam": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "bali"
+    }
+   }
+  },
+  {
+   "text": "The little priest asks for one small thing. Just one.",
+   "key": [
+    "ONE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "bali": false,
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The land he can cover in three steps.",
+   "cap": "The land he can cover in 3 steps.",
+   "key": [
+    "3"
+   ],
+   "board": [
+    "REQUEST",
+    "3 STEPS"
+   ],
+   "place": {
+    "capy": false,
+    "bali": false,
+    "vam": [
+     0,
+     0
+    ],
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "vam"
+   },
+   "act": {
+    "vam": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "With those tiny legs? Easy deal.",
+   "key": [
+    "EASY"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "bali": false,
+    "vam": [
+     1.2,
+     0
+    ],
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vam"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "vam": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Your guru Shukra warns you. Do not do it.",
+   "key": [
+    "WARNS"
+   ],
+   "place": {
+    "capy": false,
+    "bali": [
+     1.3,
+     -0.2
+    ],
+    "vam": false,
+    "shuk": [
+     -1.3,
+     0.2
+    ],
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "shuk",
+    "with": "bali"
+   },
+   "act": {
+    "shuk": {
+     "mood": "angry",
+     "action": "point",
+     "look": "bali"
+    },
+    "bali": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "shuk"
+    }
+   }
+  },
+  {
+   "text": "You agree anyway. A true king keeps his word.",
+   "key": [
+    "WORD."
+   ],
+   "place": {
+    "capy": false,
+    "bali": [
+     0,
+     0
+    ],
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "bali"
+   },
+   "act": {
+    "bali": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then Vamana starts to grow. And grow. And grow.",
+   "key": [
+    "GROW."
+   ],
+   "place": {
+    "capy": false,
+    "bali": false,
+    "vam": [
+     0,
+     0
+    ],
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "vam",
+    "offset": [
+     0,
+     -0.6,
+     -1.0
+    ]
+   },
+   "act": {
+    "vam": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "His first step covers the entire earth.",
+   "key": [
+    "EARTH."
+   ],
+   "board": [
+    "STEP 1",
+    "EARTH"
+   ],
+   "place": {
+    "capy": false,
+    "bali": false,
+    "vam": [
+     0,
+     0
+    ],
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "vam"
+   },
+   "act": {
+    "vam": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His second step covers the heavens.",
+   "key": [
+    "HEAVENS."
+   ],
+   "board": [
+    "STEP 2",
+    "HEAVENS"
+   ],
+   "place": {
+    "capy": false,
+    "bali": [
+     1.3,
+     -0.2
+    ],
+    "vam": [
+     -1.3,
+     0.2
+    ],
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "vam",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "vam": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "bali": {
+     "mood": "shocked",
+     "action": "slump",
+     "look": "vam"
+    }
+   }
+  },
+  {
+   "text": "That leaves one more step. There is nowhere left to put it.",
+   "key": [
+    "NOWHERE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "bali": [
+     1.2,
+     0
+    ],
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bali"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "bali": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So you kneel. You offer your own head.",
+   "key": [
+    "HEAD."
+   ],
+   "place": {
+    "capy": false,
+    "bali": [
+     0,
+     0
+    ],
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "bali"
+   },
+   "act": {
+    "bali": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His foot presses you down to the underworld.",
+   "key": [
+    "UNDERWORLD."
+   ],
+   "board": [
+    "NEW ADDRESS",
+    "UNDERWORLD"
+   ],
+   "place": {
+    "capy": false,
+    "bali": [
+     0,
+     0.2
+    ],
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "bali"
+   },
+   "act": {
+    "bali": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "But he respects your honesty. You get a yearly visit home.",
+   "key": [
+    "YEARLY"
+   ],
+   "place": {
+    "capy": false,
+    "bali": [
+     1.3,
+     -0.2
+    ],
+    "vam": [
+     -1.3,
+     0.2
+    ],
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "vam",
+    "with": "bali"
+   },
+   "act": {
+    "vam": {
+     "mood": "happy",
+     "action": "point",
+     "look": "bali"
+    },
+    "bali": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "vam"
+    }
+   }
+  },
+  {
+   "text": "In Kerala, people still welcome you back. Every year. The festival is Onam.",
+   "key": [
+    "ONAM."
+   ],
+   "board": [
+    "ONAM",
+    "WELCOME BACK"
+   ],
+   "place": {
+    "capy": false,
+    "bali": false,
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Lost the world. Kept a holiday. Not bad.",
+   "key": [
+    "HOLIDAY."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "bali": false,
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The lesson: ask how big the feet get.",
+   "key": [
+    "FEET"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "bali": false,
+    "vam": [
+     1.2,
+     0
+    ],
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vam"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "vam"
+    },
+    "vam": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Would you give him three steps? Yes or no? Bali fans, think carefully.",
+   "cap": "Would you give him 3 steps? Yes or no? Bali fans, think carefully.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "3 STEPS?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "bali": false,
+    "vam": false,
+    "shuk": false,
+    "god": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Vamana",
+   "url": "https://en.wikipedia.org/wiki/Vamana"
+  },
+  {
+   "title": "Wikipedia: Mahabali",
+   "url": "https://en.wikipedia.org/wiki/Mahabali"
+  },
+  {
+   "title": "Wikipedia: Onam",
+   "url": "https://en.wikipedia.org/wiki/Onam"
+  },
+  {
+   "title": "Wikipedia: Trivikrama",
+   "url": "https://en.wikipedia.org/wiki/Trivikrama"
+  },
+  {
+   "title": "Wikipedia: Shukra",
+   "url": "https://en.wikipedia.org/wiki/Shukra"
+  },
+  {
+   "title": "Mythopedia: Vamana",
+   "url": "https://mythopedia.com/topics/vamana/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Bali is a king of the asuras",
+   "terms": [
+    "Bali|Mahabali",
+    "asura"
+   ]
+  },
+  {
+   "claim": "Bali is famous for his generosity",
+   "terms": [
+    "generous|generosity",
+    "Mahabali|Bali"
+   ]
+  },
+  {
+   "claim": "He conquered the three worlds",
+   "terms": [
+    "three worlds",
+    "Bali|Mahabali"
+   ]
+  },
+  {
+   "claim": "The gods ask Vishnu for help",
+   "terms": [
+    "Vishnu",
+    "Indra|devas|gods"
+   ]
+  },
+  {
+   "claim": "Vishnu comes as Vamana, a dwarf brahmin",
+   "terms": [
+    "Vamana",
+    "dwarf"
+   ]
+  },
+  {
+   "claim": "Bali is performing a great sacrifice and giving gifts",
+   "terms": [
+    "Bali|Mahabali",
+    "sacrifice|yajna|ritual"
+   ]
+  },
+  {
+   "claim": "Vamana asks for the land he can cover in three steps",
+   "terms": [
+    "three",
+    "steps|paces|strides"
+   ]
+  },
+  {
+   "claim": "Bali's guru Shukra warns him",
+   "terms": [
+    "Shukra|Shukracharya",
+    "warn|warned|warns"
+   ]
+  },
+  {
+   "claim": "Vamana grows to a cosmic size",
+   "terms": [
+    "giant|gigantic|cosmic|grew|grows",
+    "form|size"
+   ]
+  },
+  {
+   "claim": "His first step covers the earth",
+   "terms": [
+    "first",
+    "earth"
+   ]
+  },
+  {
+   "claim": "His second step covers the heavens",
+   "terms": [
+    "second",
+    "heaven|heavens|sky"
+   ]
+  },
+  {
+   "claim": "Bali offers his head for the third step",
+   "terms": [
+    "third",
+    "head"
+   ]
+  },
+  {
+   "claim": "Bali is pushed down to the underworld",
+   "terms": [
+    "Patala|Sutala|underworld|netherworld",
+    "Bali|Mahabali"
+   ]
+  },
+  {
+   "claim": "Bali may visit his people once a year, celebrated in Kerala as Onam",
+   "terms": [
+    "Onam",
+    "Mahabali|Bali",
+    "year|annual|annually"
+   ]
+  }
+ ]
+}

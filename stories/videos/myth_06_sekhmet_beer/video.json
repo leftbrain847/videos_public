@@ -1,0 +1,1035 @@
+{
+ "id": "myth_06_sekhmet_beer",
+ "title": "Beer saves the world",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE SUN COURT"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "ra": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e8b923",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#9a9a9a",
+    "skin": "#8d5a3b",
+    "sash": "#c0392b",
+    "beard": true
+   }
+  },
+  "sek": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c0392b",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#b5782a",
+    "skin": "#8d5a3b",
+    "sash": "#e8b923"
+   }
+  },
+  "hat": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e86c1",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#e8b923"
+   }
+  },
+  "human": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#6f9a4a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#d9a521"
+   }
+  },
+  "human2": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8e6a3a",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24",
+    "sash": "#d9a521"
+   }
+  },
+  "brewer": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#a0522d",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24",
+    "sash": "#d9a521"
+   },
+   "hold": "bag"
+  }
+ },
+ "lines": [
+  {
+   "text": "You stop the end of the world. With beer.",
+   "key": [
+    "BEER."
+   ],
+   "speaker": "capy",
+   "board": [
+    "SAVE THE WORLD",
+    "WITH BEER"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ra": [
+     1.2,
+     0
+    ],
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ra"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ra": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Ra, king of the gods. You are getting old.",
+   "key": [
+    "OLD."
+   ],
+   "place": {
+    "capy": false,
+    "ra": [
+     0,
+     0
+    ],
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "ra"
+   },
+   "act": {
+    "ra": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your bones are silver. Your flesh is gold.",
+   "key": [
+    "SILVER."
+   ],
+   "board": [
+    "BONES: SILVER",
+    "FLESH: GOLD"
+   ],
+   "place": {
+    "capy": false,
+    "ra": [
+     0,
+     0
+    ],
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "ra"
+   },
+   "act": {
+    "ra": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your humans notice. They start plotting against you.",
+   "key": [
+    "PLOTTING"
+   ],
+   "place": {
+    "capy": false,
+    "ra": false,
+    "sek": false,
+    "hat": false,
+    "human": [
+     -1.3,
+     0.3
+    ],
+    "human2": [
+     1.3,
+     -0.2
+    ],
+    "brewer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "human",
+    "with": "human2"
+   },
+   "act": {
+    "human": {
+     "mood": "smug",
+     "action": "point",
+     "look": "human2"
+    },
+    "human2": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "human"
+    }
+   }
+  },
+  {
+   "text": "So you send your eye to punish them.",
+   "key": [
+    "EYE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "ra": false,
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your eye is a goddess too. Her name is Hathor.",
+   "key": [
+    "HATHOR."
+   ],
+   "place": {
+    "capy": false,
+    "ra": false,
+    "sek": false,
+    "hat": [
+     0,
+     0
+    ],
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "hat"
+   },
+   "act": {
+    "hat": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She turns into Sekhmet. A furious lioness.",
+   "key": [
+    "LIONESS."
+   ],
+   "place": {
+    "capy": false,
+    "ra": false,
+    "sek": [
+     0,
+     0
+    ],
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "sek"
+   },
+   "act": {
+    "sek": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "She does not just punish. She goes on a rampage.",
+   "key": [
+    "RAMPAGE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ra": false,
+    "sek": [
+     1.2,
+     0
+    ],
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sek"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "sek"
+    },
+    "sek": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She loves it. She wants every last human gone.",
+   "key": [
+    "EVERY"
+   ],
+   "board": [
+    "HUMANS",
+    "LEFT: FEW"
+   ],
+   "place": {
+    "capy": false,
+    "ra": false,
+    "sek": [
+     -1.0,
+     0.3
+    ],
+    "hat": false,
+    "human": [
+     2.0,
+     -1.0
+    ],
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "sek",
+    "pan": [
+     1.0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "sek": {
+     "mood": "happy",
+     "action": "point",
+     "look": "human"
+    },
+    "human": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "sek"
+    }
+   }
+  },
+  {
+   "text": "You change your mind. Too late. She does not.",
+   "key": [
+    "NOT."
+   ],
+   "place": {
+    "capy": false,
+    "ra": [
+     -1.3,
+     0.2
+    ],
+    "sek": [
+     1.3,
+     -0.2
+    ],
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "ra",
+    "with": "sek"
+   },
+   "act": {
+    "ra": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "sek"
+    },
+    "sek": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "ra"
+    }
+   }
+  },
+  {
+   "text": "Never build a weapon with its own opinions.",
+   "key": [
+    "OPINIONS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "ra": false,
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So you order beer. A whole lot. Seven thousand jars.",
+   "cap": "So you order beer. A whole lot. 7,000 jars.",
+   "key": [
+    "7,000"
+   ],
+   "board": [
+    "ORDER:",
+    "7,000 JARS"
+   ],
+   "place": {
+    "capy": false,
+    "ra": [
+     -1.3,
+     0.2
+    ],
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "brewer",
+    "pan": [
+     -1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "ra": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "brewer"
+    },
+    "brewer": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "ra"
+    }
+   }
+  },
+  {
+   "text": "You dye it red. It looks just like blood.",
+   "key": [
+    "RED."
+   ],
+   "place": {
+    "capy": false,
+    "ra": false,
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "brewer"
+   },
+   "act": {
+    "brewer": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "At night, you flood the fields with it.",
+   "key": [
+    "FLOOD"
+   ],
+   "board": [
+    "FIELDS",
+    "FULL OF BEER"
+   ],
+   "place": {
+    "capy": false,
+    "ra": [
+     0,
+     0
+    ],
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "ra"
+   },
+   "act": {
+    "ra": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Morning comes. Sekhmet sees a giant red lake.",
+   "key": [
+    "LAKE."
+   ],
+   "place": {
+    "capy": false,
+    "ra": false,
+    "sek": [
+     0,
+     0
+    ],
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "sek"
+   },
+   "act": {
+    "sek": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She thinks it is blood. She drinks it all.",
+   "key": [
+    "DRINKS"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ra": false,
+    "sek": [
+     1.2,
+     0
+    ],
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sek"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "sek": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Her one weakness? An open bar.",
+   "key": [
+    "BAR."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "ra": false,
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She gets so drunk. She forgets the whole mission.",
+   "key": [
+    "DRUNK."
+   ],
+   "place": {
+    "capy": false,
+    "ra": false,
+    "sek": [
+     0,
+     0
+    ],
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "sek"
+   },
+   "act": {
+    "sek": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then she naps. All of humanity is saved. Barely.",
+   "key": [
+    "SAVED."
+   ],
+   "place": {
+    "capy": false,
+    "ra": false,
+    "sek": false,
+    "hat": false,
+    "human": [
+     -1.3,
+     0.3
+    ],
+    "human2": [
+     1.3,
+     -0.2
+    ],
+    "brewer": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "human",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "human": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "human2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Not by a hero. Not by an army. By a brewery.",
+   "key": [
+    "BREWERY."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "ra": false,
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Later, Egyptians honored her with festivals of drunkenness.",
+   "key": [
+    "DRUNKENNESS."
+   ],
+   "board": [
+    "FESTIVAL OF",
+    "DRUNKENNESS"
+   ],
+   "place": {
+    "capy": false,
+    "ra": false,
+    "sek": false,
+    "hat": [
+     -1.3,
+     0.2
+    ],
+    "human": [
+     1.3,
+     -0.2
+    ],
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "hat",
+    "with": "human"
+   },
+   "act": {
+    "hat": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "human": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "hat"
+    }
+   }
+  },
+  {
+   "text": "A holiday for when beer saved the world.",
+   "key": [
+    "SAVED"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ra": false,
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "brewer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "brewer"
+    },
+    "brewer": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Could you resist seven thousand jars? Yes or no? Be honest.",
+   "cap": "Could you resist 7,000 jars? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "RESIST 7,000?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "ra": false,
+    "sek": false,
+    "hat": false,
+    "human": false,
+    "human2": false,
+    "brewer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Book of the Heavenly Cow",
+   "url": "https://en.wikipedia.org/wiki/Book_of_the_Heavenly_Cow"
+  },
+  {
+   "title": "Wikipedia: Sekhmet",
+   "url": "https://en.wikipedia.org/wiki/Sekhmet"
+  },
+  {
+   "title": "Wikipedia: Hathor",
+   "url": "https://en.wikipedia.org/wiki/Hathor"
+  },
+  {
+   "title": "Wikipedia: Eye of Ra",
+   "url": "https://en.wikipedia.org/wiki/Eye_of_Ra"
+  },
+  {
+   "title": "Project Gutenberg: Legends of the Gods (Budge)",
+   "url": "https://www.gutenberg.org/cache/epub/9411/pg9411.html"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Ra, king of the gods, grows old",
+   "terms": [
+    "Ra",
+    "old"
+   ]
+  },
+  {
+   "claim": "In his old age his bones are silver and his flesh gold",
+   "terms": [
+    "silver",
+    "gold"
+   ]
+  },
+  {
+   "claim": "Humans plot against him",
+   "terms": [
+    "plot|plotted|plotting|rebel|rebelled|rebellion|conspire",
+    "Ra|mankind|humans|humanity"
+   ]
+  },
+  {
+   "claim": "He sends his Eye to punish them",
+   "terms": [
+    "Eye",
+    "punish"
+   ]
+  },
+  {
+   "claim": "The Eye is the goddess Hathor",
+   "terms": [
+    "Hathor",
+    "Eye"
+   ]
+  },
+  {
+   "claim": "She becomes Sekhmet, a lioness",
+   "terms": [
+    "Sekhmet",
+    "lioness"
+   ]
+  },
+  {
+   "claim": "She rampages and slaughters humans",
+   "terms": [
+    "Sekhmet",
+    "slaughter|slaughtered|slaughtering|destroy|destroyed|rampage|killing|kill"
+   ]
+  },
+  {
+   "claim": "Ra changes his mind",
+   "terms": [
+    "Ra",
+    "relent|relented|changes his mind|changed his mind|regret|regretted|pity|stop"
+   ]
+  },
+  {
+   "claim": "He orders seven thousand jars of beer",
+   "terms": [
+    "7,000|seven thousand|7000",
+    "beer"
+   ]
+  },
+  {
+   "claim": "The beer is dyed red to look like blood",
+   "terms": [
+    "beer",
+    "red",
+    "blood"
+   ]
+  },
+  {
+   "claim": "The beer floods the fields",
+   "terms": [
+    "beer",
+    "fields"
+   ]
+  },
+  {
+   "claim": "Sekhmet drinks it and gets drunk",
+   "terms": [
+    "drunk",
+    "beer"
+   ]
+  },
+  {
+   "claim": "Egyptians held festivals of drunkenness for the goddess",
+   "terms": [
+    "Festival of Drunkenness|festival of drunkenness|drunkenness",
+    "Hathor|Sekhmet"
+   ]
+  }
+ ]
+}

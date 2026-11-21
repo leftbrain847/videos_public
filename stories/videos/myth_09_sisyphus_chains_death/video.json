@@ -1,0 +1,1003 @@
+{
+ "id": "myth_09_sisyphus_chains_death",
+ "title": "Sisyphus chains up Death",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "CORINTH"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "sis": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8a5a2a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#e8b48f",
+    "sash": "#e8b923",
+    "beard": true
+   }
+  },
+  "than": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b2b33",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b",
+    "sash": "#8a8f96"
+   }
+  },
+  "zeus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b4c8c",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#e6e6e6",
+    "skin": "#f2c39b",
+    "sash": "#f6d21f",
+    "beard": true
+   }
+  },
+  "ares": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#9a1f1f",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64",
+    "sash": "#8a8f96",
+    "beard": true
+   }
+  },
+  "wife": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a8ac0",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  },
+  "pers": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#7a3f8e",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b",
+    "sash": "#5c9e4a"
+   }
+  },
+  "siss": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8a5a2a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#e8b48f",
+    "sash": "#e8b923",
+    "beard": true
+   },
+   "hold": "bag"
+  }
+ },
+ "lines": [
+  {
+   "text": "You chain up death itself. Nobody can die.",
+   "key": [
+    "CHAIN"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "sis": [
+     1.2,
+     0
+    ],
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sis"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sis": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Sisyphus, king of Corinth. You are too clever by half.",
+   "key": [
+    "CORINTH."
+   ],
+   "board": [
+    "SISYPHUS",
+    "KING OF CORINTH"
+   ],
+   "place": {
+    "capy": false,
+    "sis": [
+     0,
+     0
+    ],
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "sis"
+   },
+   "act": {
+    "sis": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You snitch on Zeus. He took a river god's daughter.",
+   "key": [
+    "SNITCH"
+   ],
+   "place": {
+    "capy": false,
+    "sis": [
+     -1.3,
+     0.2
+    ],
+    "than": false,
+    "zeus": [
+     1.3,
+     -0.2
+    ],
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "sis",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "sis": {
+     "mood": "smug",
+     "action": "point",
+     "look": "zeus"
+    },
+    "zeus": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "sis"
+    }
+   }
+  },
+  {
+   "text": "Zeus sends Thanatos. That is death himself. He comes to collect you.",
+   "key": [
+    "THANATOS."
+   ],
+   "place": {
+    "capy": false,
+    "sis": false,
+    "than": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "than"
+   },
+   "act": {
+    "than": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You have one move. It is a bold one.",
+   "key": [
+    "BOLD"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "sis": false,
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You ask him to demonstrate the chains.",
+   "key": [
+    "CHAINS"
+   ],
+   "place": {
+    "capy": false,
+    "sis": [
+     -1.3,
+     0.2
+    ],
+    "than": [
+     1.3,
+     -0.2
+    ],
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "sis",
+    "with": "than"
+   },
+   "act": {
+    "sis": {
+     "mood": "happy",
+     "action": "point",
+     "look": "than"
+    },
+    "than": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "sis"
+    }
+   }
+  },
+  {
+   "text": "He puts them on. You lock them shut.",
+   "key": [
+    "LOCK"
+   ],
+   "place": {
+    "capy": false,
+    "sis": false,
+    "than": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "than"
+   },
+   "act": {
+    "than": {
+     "mood": "shocked",
+     "action": "slump",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Now nobody on earth can die. Not one person.",
+   "key": [
+    "DIE."
+   ],
+   "speaker": "capy",
+   "board": [
+    "DEATHS TODAY",
+    "0"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "sis": [
+     1.2,
+     0
+    ],
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "sis",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "sis": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is great for you. It is terrible for wars.",
+   "key": [
+    "WARS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "sis": false,
+    "than": false,
+    "zeus": false,
+    "ares": [
+     1.2,
+     0
+    ],
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ares"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "ares": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ares, god of war, is furious. His battles are pointless.",
+   "key": [
+    "POINTLESS."
+   ],
+   "place": {
+    "capy": false,
+    "sis": false,
+    "than": false,
+    "zeus": false,
+    "ares": [
+     0,
+     0
+    ],
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "ares"
+   },
+   "act": {
+    "ares": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ares frees death. You get dragged to the underworld.",
+   "key": [
+    "UNDERWORLD."
+   ],
+   "place": {
+    "capy": false,
+    "sis": [
+     1.3,
+     -0.2
+    ],
+    "than": false,
+    "zeus": false,
+    "ares": [
+     -1.3,
+     0.2
+    ],
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "ares",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "ares": {
+     "mood": "smug",
+     "action": "point",
+     "look": "sis"
+    },
+    "sis": {
+     "mood": "worried",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "But you planned ahead. You told your wife something.",
+   "key": [
+    "WIFE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "sis": false,
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Do not bury me, you say. Skip the funeral rites.",
+   "key": [
+    "BURY"
+   ],
+   "place": {
+    "capy": false,
+    "sis": false,
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": [
+     0,
+     0
+    ],
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wife"
+   },
+   "act": {
+    "wife": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Down below, you complain to Persephone.",
+   "key": [
+    "PERSEPHONE."
+   ],
+   "place": {
+    "capy": false,
+    "sis": [
+     -1.3,
+     0.2
+    ],
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": [
+     1.3,
+     -0.2
+    ],
+    "siss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "sis",
+    "with": "pers"
+   },
+   "act": {
+    "sis": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "pers"
+    },
+    "pers": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "sis"
+    }
+   }
+  },
+  {
+   "text": "My wife never buried me. Let me go scold her.",
+   "key": [
+    "SCOLD"
+   ],
+   "place": {
+    "capy": false,
+    "sis": [
+     0,
+     0
+    ],
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "sis"
+   },
+   "act": {
+    "sis": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She lets you go. You go home. You simply never come back.",
+   "key": [
+    "NEVER"
+   ],
+   "board": [
+    "RETURN DATE",
+    "NEVER"
+   ],
+   "place": {
+    "capy": false,
+    "sis": [
+     0,
+     0
+    ],
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "sis"
+   },
+   "act": {
+    "sis": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You escaped death twice. You live to old age.",
+   "key": [
+    "TWICE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "sis": [
+     1.2,
+     0
+    ],
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sis"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "sis": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "When you finally die, Zeus is waiting.",
+   "key": [
+    "WAITING."
+   ],
+   "place": {
+    "capy": false,
+    "sis": false,
+    "than": false,
+    "zeus": [
+     0,
+     0
+    ],
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "zeus"
+   },
+   "act": {
+    "zeus": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your punishment: roll a boulder up a hill.",
+   "key": [
+    "BOULDER"
+   ],
+   "board": [
+    "TASK",
+    "BOULDER UP HILL"
+   ],
+   "place": {
+    "capy": false,
+    "sis": false,
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "siss"
+   },
+   "act": {
+    "siss": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It rolls back down every single time. Forever.",
+   "key": [
+    "FOREVER."
+   ],
+   "place": {
+    "capy": false,
+    "sis": false,
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "siss"
+   },
+   "act": {
+    "siss": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You cheat death twice. You get cardio forever.",
+   "key": [
+    "CARDIO"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "sis": false,
+    "than": false,
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have chained up death? Yes or no? Ares fans, stay out of it.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "CHAIN DEATH?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "sis": false,
+    "than": [
+     1.3,
+     0
+    ],
+    "zeus": false,
+    "ares": false,
+    "wife": false,
+    "pers": false,
+    "siss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "than"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "than": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Sisyphus",
+   "url": "https://en.wikipedia.org/wiki/Sisyphus"
+  },
+  {
+   "title": "Wikipedia: Thanatos",
+   "url": "https://en.wikipedia.org/wiki/Thanatos"
+  },
+  {
+   "title": "GreekMythology.com: Sisyphus",
+   "url": "https://www.greekmythology.com/Myths/Mortals/Sisyphus/sisyphus.html"
+  },
+  {
+   "title": "Mythopedia: Sisyphus",
+   "url": "https://mythopedia.com/topics/sisyphus/"
+  },
+  {
+   "title": "Theoi: Sisyphos",
+   "url": "https://www.theoi.com/Heros/Sisyphos.html"
+  },
+  {
+   "title": "Timeless Myths: Sisyphus",
+   "url": "https://timelessmyths.com/classical/royal-houses/aeolids/sisyphus"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Sisyphus is king of Corinth (Ephyra)",
+   "terms": [
+    "Sisyphus",
+    "Corinth|Ephyra"
+   ]
+  },
+  {
+   "claim": "He reveals Zeus's abduction of Aegina, daughter of the river god Asopus",
+   "terms": [
+    "Aegina",
+    "Asopus"
+   ]
+  },
+  {
+   "claim": "Zeus sends Thanatos (Death) for him",
+   "terms": [
+    "Thanatos",
+    "Zeus"
+   ]
+  },
+  {
+   "claim": "Sisyphus asks Thanatos to show how the chains work and chains him",
+   "terms": [
+    "chains|chained|shackles|shackled",
+    "Thanatos"
+   ]
+  },
+  {
+   "claim": "With Death chained, nobody can die",
+   "terms": [
+    "no one|nobody|no mortal|no humans",
+    "die|died|dying"
+   ]
+  },
+  {
+   "claim": "Ares, angry that battles had no deaths, frees Thanatos",
+   "terms": [
+    "Ares",
+    "freed|free|frees|released"
+   ]
+  },
+  {
+   "claim": "Sisyphus tells his wife not to bury him",
+   "terms": [
+    "wife|Merope",
+    "bury|burial|buried"
+   ]
+  },
+  {
+   "claim": "In the underworld he complains to Persephone and is allowed to return to scold his wife",
+   "terms": [
+    "Persephone",
+    "wife"
+   ]
+  },
+  {
+   "claim": "He refuses to return and lives to old age",
+   "terms": [
+    "old age"
+   ]
+  },
+  {
+   "claim": "His punishment is rolling a boulder up a hill",
+   "terms": [
+    "boulder",
+    "hill"
+   ]
+  },
+  {
+   "claim": "It rolls back down every time, forever",
+   "terms": [
+    "roll|rolls|rolled|rolling",
+    "back|down",
+    "eternity|forever|eternally|endless"
+   ]
+  }
+ ]
+}
