@@ -1,0 +1,825 @@
+{
+ "id": "space_23_gemini_8_death_spin",
+ "title": "Gemini 8: Neil Armstrong's first near miss",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "GEMINI 8"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "neil": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#eef1f5",
+    "pants": "#eef1f5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "dave": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#dfe6ee",
+    "pants": "#dfe6ee",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "ctl": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true,
+    "glasses": true
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Your spacecraft starts spinning. Once every second. It keeps speeding up.",
+   "key": [
+    "SPINNING."
+   ],
+   "board": [
+    "SPIN RATE",
+    "1 REV/SEC"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "neil": [
+     2.6,
+     -0.6
+    ],
+    "dave": false,
+    "ctl": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "March, nineteen sixty six. Gemini eight launches.",
+   "cap": "March 1966. Gemini 8 launches.",
+   "key": [
+    "GEMINI"
+   ],
+   "board": [
+    "GEMINI 8",
+    "MARCH 1966"
+   ],
+   "place": {
+    "capy": false,
+    "neil": [
+     -1.5,
+     0.2
+    ],
+    "dave": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "neil",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "neil": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "dave": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "neil"
+    }
+   }
+  },
+  {
+   "text": "Aboard: Neil Armstrong. Beside him, rookie Dave Scott. First flight for him.",
+   "key": [
+    "ARMSTRONG."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "neil",
+    "with": "dave"
+   },
+   "act": {
+    "neil": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "dave"
+    },
+    "dave": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "neil"
+    }
+   }
+  },
+  {
+   "text": "Their mission? Dock with an unmanned target rocket. Called Agena. Simple, right?",
+   "key": [
+    "AGENA."
+   ],
+   "board": [
+    "TARGET:",
+    "AGENA"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "dave"
+   },
+   "act": {
+    "dave": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nobody has ever docked two spacecraft before. They pull it off.",
+   "key": [
+    "DOCKED"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "neil": [
+     1.4,
+     0.2
+    ],
+    "dave": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "neil"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "neil"
+    },
+    "neil": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "First docking in history. Then the whole stack starts to roll.",
+   "key": [
+    "ROLL."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "They blame the Agena. Reasonable guess. So they undock.",
+   "key": [
+    "UNDOCK."
+   ],
+   "place": {
+    "capy": false,
+    "neil": [
+     -1.4,
+     0.2
+    ],
+    "dave": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "neil"
+   },
+   "act": {
+    "neil": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "dave": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "neil"
+    }
+   }
+  },
+  {
+   "text": "Bad news. The spin gets worse. Much worse.",
+   "key": [
+    "WORSE."
+   ],
+   "board": [
+    "SPIN",
+    "INCREASING"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "dave"
+   },
+   "act": {
+    "dave": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "dave"
+    }
+   }
+  },
+  {
+   "text": "Plot twist. Not the Agena.",
+   "key": [
+    "TWIST."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "neil": false,
+    "dave": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The real culprit is their own thruster. It's stuck on.",
+   "key": [
+    "STUCK"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "THRUSTER 8",
+     "STUCK ON"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "neil": false,
+    "dave": false,
+    "ctl": [
+     0,
+     0.4
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They're out of radio contact. Houston can only wait. Helplessly.",
+   "key": [
+    "WAIT."
+   ],
+   "place": {
+    "ctl": [
+     -1.4,
+     0.3
+    ],
+    "boss": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ctl",
+    "with": "boss"
+   },
+   "act": {
+    "ctl": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "ctl"
+    }
+   }
+  },
+  {
+   "text": "The spin hits one turn per second. Roughly.",
+   "key": [
+    "SECOND."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "1 TURN",
+     "PER SECOND"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "neil": [
+     -1.4,
+     0.2
+    ],
+    "dave": [
+     1.4,
+     0.2
+    ],
+    "ctl": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "neil"
+   },
+   "act": {
+    "neil": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "dave": {
+     "mood": "worried",
+     "action": "slump",
+     "look": "neil"
+    }
+   }
+  },
+  {
+   "text": "Their vision starts to blur. Blackout is coming. Fast.",
+   "key": [
+    "BLACKOUT"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "neil": [
+     -2.6,
+     -0.6
+    ],
+    "dave": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    },
+    "dave": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Armstrong shuts off the main thrusters. He fires the reentry thrusters instead. Genius move.",
+   "key": [
+    "REENTRY"
+   ],
+   "place": {
+    "capy": false,
+    "neil": [
+     0,
+     0.3
+    ],
+    "dave": [
+     2.4,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "neil"
+   },
+   "act": {
+    "neil": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Slowly, the spinning stops. Chaos, over.",
+   "key": [
+    "STOPS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "dave"
+   },
+   "act": {
+    "dave": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "dave"
+    }
+   }
+  },
+  {
+   "text": "But the rules are strict. Use those thrusters, go home. Now.",
+   "key": [
+    "NOW."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "MISSION RULE:",
+     "COME HOME"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "neil": false,
+    "dave": false,
+    "ctl": false,
+    "boss": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The mission is cut short. They splash down in the Pacific. Disappointed, but alive.",
+   "key": [
+    "PACIFIC."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "SPLASHDOWN",
+     "PACIFIC"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "neil": [
+     -1.4,
+     0.2
+    ],
+    "dave": [
+     1.4,
+     0.2
+    ],
+    "ctl": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "dave",
+    "with": "neil"
+   },
+   "act": {
+    "dave": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "neil"
+    },
+    "neil": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "dave"
+    }
+   }
+  },
+  {
+   "text": "Calm under pressure. Three years later, he lands on the moon.",
+   "key": [
+    "MOON."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "neil": [
+     1.4,
+     0.2
+    ],
+    "dave": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "neil"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "neil"
+    },
+    "neil": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The dizzy ride was basically a job interview. He passed.",
+   "key": [
+    "INTERVIEW."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Could you stay calm in a spinning capsule? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "STAY CALM?",
+    "YES OR NO"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     0.8,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Gemini 8",
+   "url": "https://en.wikipedia.org/wiki/Gemini_8"
+  },
+  {
+   "title": "NASA: Gemini's first docking turns to wild ride in orbit",
+   "url": "https://www.nasa.gov/history/geminis-first-docking-turns-to-wild-ride-in-orbit/"
+  },
+  {
+   "title": "NASA: 55 years ago, Gemini VIII, the first docking in space",
+   "url": "https://www.nasa.gov/missions/gemini/55-years-ago-gemini-viii-the-first-docking-in-space/"
+  },
+  {
+   "title": "Space.com: Gemini 8 achieved first space docking",
+   "url": "https://www.space.com/32290-gemini-space-docking-50-years.html"
+  },
+  {
+   "title": "TIME archive: Gemini's wild ride",
+   "url": "https://time.com/archive/6889218/space-geminis-wild-ride/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Gemini 8 launched in March 1966",
+   "terms": [
+    "Gemini 8|Gemini VIII",
+    "1966"
+   ]
+  },
+  {
+   "claim": "The crew was Neil Armstrong and David Scott",
+   "terms": [
+    "Armstrong",
+    "Scott"
+   ]
+  },
+  {
+   "claim": "They docked with an Agena target vehicle",
+   "terms": [
+    "Agena",
+    "dock"
+   ]
+  },
+  {
+   "claim": "It was the first docking of two spacecraft",
+   "terms": [
+    "first",
+    "docking"
+   ]
+  },
+  {
+   "claim": "The docked vehicles began to roll and they undocked",
+   "terms": [
+    "undock"
+   ]
+  },
+  {
+   "claim": "The spin got worse after undocking",
+   "terms": [
+    "spin|roll",
+    "worse|faster|increas"
+   ]
+  },
+  {
+   "claim": "A stuck thruster was the cause",
+   "terms": [
+    "thruster",
+    "stuck"
+   ]
+  },
+  {
+   "claim": "They were out of contact with ground stations",
+   "terms": [
+    "contact|tracking"
+   ]
+  },
+  {
+   "claim": "The spin reached about one revolution per second",
+   "terms": [
+    "one revolution per second|1 revolution per second|revolution per second"
+   ]
+  },
+  {
+   "claim": "They risked blacking out; vision blurred",
+   "terms": [
+    "blur|black out|blackout|consciousness"
+   ]
+  },
+  {
+   "claim": "Armstrong shut down the main thrusters and used the reentry control system",
+   "terms": [
+    "reentry|re-entry",
+    "thruster|control"
+   ]
+  },
+  {
+   "claim": "Rules required an early return; the mission was cut short",
+   "terms": [
+    "mission rule|cut short|early|abort"
+   ]
+  },
+  {
+   "claim": "They splashed down in the Pacific",
+   "terms": [
+    "Pacific"
+   ]
+  },
+  {
+   "claim": "Armstrong landed on the moon three years later",
+   "terms": [
+    "Apollo 11|moon"
+   ]
+  }
+ ]
+}

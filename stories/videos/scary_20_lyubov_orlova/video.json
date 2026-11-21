@@ -1,0 +1,742 @@
+{
+ "id": "scary_20_lyubov_orlova",
+ "title": "The Lyubov Orlova: a cruise ship nobody wanted",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "ORLOVA"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#c46a3c",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "cap": "#1e2a3a"
+   },
+   "at": "center",
+   "hold": "flashlight"
+  },
+  "tug": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2f4a6b",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#5c3a24"
+   },
+   "at": "center"
+  },
+  "official": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "bob",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "editor": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#7a2a2a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   },
+   "at": "center",
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "You lose a cruise ship. Nobody wants it back. Not even its owner.",
+   "key": [
+    "BACK."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "tug": [
+     2.8,
+     -1.0
+    ],
+    "official": false,
+    "editor": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "tug": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The Lyubov Orlova. Built in nineteen seventy six. In Yugoslavia.",
+   "cap": "The Lyubov Orlova. Built in 1976. In Yugoslavia.",
+   "key": [
+    "ORLOVA."
+   ],
+   "board": [
+    "BUILT 1976",
+    "LYUBOV ORLOVA"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "tug": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "She carried tourists to the Arctic. Then Antarctica. Penguins included.",
+   "key": [
+    "ANTARCTICA."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "tug"
+   },
+   "act": {
+    "tug": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In twenty ten, she gets stuck in Newfoundland. Over unpaid wages.",
+   "cap": "In 2010, she gets stuck in Newfoundland. Over unpaid wages.",
+   "key": [
+    "WAGES."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She sits there for years. Rusting. Forgotten.",
+   "key": [
+    "RUSTING."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "tug": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Finally she is sold for scrap. Your job? Tow her south.",
+   "key": [
+    "SCRAP."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "Next stop, the Dominican Republic. A scrapyard waits.",
+   "key": [
+    "DOMINICAN"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "One day out, the tow line snaps. Just like that.",
+   "key": [
+    "SNAPS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "tug"
+   },
+   "act": {
+    "tug": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "A big empty ship. Drifting. Nobody aboard. Nobody steering.",
+   "key": [
+    "DRIFTING."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Crews catch her. Then she drifts toward oil rigs. Dangerous.",
+   "key": [
+    "RIGS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "HAZARD",
+     "ADRIFT"
+    ]
+   },
+   "place": {
+    "official": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "tug": false,
+    "editor": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Officials tow her out to international waters. Far from shore.",
+   "key": [
+    "INTERNATIONAL"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "official"
+   },
+   "act": {
+    "official": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then they let her go. Problem solved, apparently.",
+   "key": [
+    "APPARENTLY."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "official"
+   },
+   "act": {
+    "capy": {
+     "mood": "angry",
+     "action": "point",
+     "look": "official"
+    },
+    "official": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A whole cruise ship. Released into the wild. Like a pet goldfish.",
+   "key": [
+    "WILD."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Weeks pass. She drifts off every map. Nobody tracks her.",
+   "key": [
+    "MAP."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "LOCATION",
+     "UNKNOWN"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "tug": [
+     2.6,
+     -1.0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "official": false,
+    "editor": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    },
+    "tug": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "A huge empty ship. Somewhere out there. Then nothing.",
+   "key": [
+    "NOTHING."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the tabloids wake up. They smell a story.",
+   "key": [
+    "TABLOIDS"
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "GHOST SHIP",
+     "OF RATS!"
+    ]
+   },
+   "place": {
+    "editor": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "tug": false,
+    "official": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "editor"
+   },
+   "act": {
+    "editor": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ghost ship full of hungry rats. Heading your way. Lock your doors.",
+   "key": [
+    "RATS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "editor"
+   },
+   "act": {
+    "editor": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Was any of that true? Experts doubted it. Strongly.",
+   "key": [
+    "DOUBTED"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "editor"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "editor": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Most likely, she sank somewhere in the Atlantic. Quietly.",
+   "key": [
+    "SANK"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "PROBABLY",
+     "SUNK"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": [
+     2.6,
+     -0.6
+    ],
+    "tug": false,
+    "official": false,
+    "editor": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Nobody has ever found her. Not a single trace.",
+   "key": [
+    "FOUND"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you board a drifting ghost ship? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "BOARD IT?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: MV Lyubov Orlova",
+   "url": "https://en.wikipedia.org/wiki/MV_Lyubov_Orlova"
+  },
+  {
+   "title": "NPR: A ghost ship with cannibal rats, a story too grim to be true",
+   "url": "https://www.npr.org/2014/01/25/266127581/a-ghost-ship-with-cannibal-rats-a-story-too-grim-to-be-true"
+  },
+  {
+   "title": "NPR: Rat-infested ghost ship might be heading for UK",
+   "url": "https://www.npr.org/sections/thetwo-way/2014/01/23/265371526/rat-infested-ghost-ship-might-be-heading-for-u-k"
+  },
+  {
+   "title": "Live Science: Abandoned ghost ship Lyubov Orlova",
+   "url": "https://www.livescience.com/34557-abandoned-ghost-ship-lyubov-orlova.html"
+  },
+  {
+   "title": "Irish Times: Rat-infested Russian ghost ship drifts towards Irish coast",
+   "url": "https://www.irishtimes.com/news/environment/rat-infested-russian-ghost-ship-drifts-towards-irish-coast-1.1666881"
+  },
+  {
+   "title": "National Geographic: Ghost ship",
+   "url": "https://www.nationalgeographic.com/science/article/140319-ghost-ship-malaysia-airliner-atlantic-ocean"
+  },
+  {
+   "title": "CBC: Lyubov Orlova tow break report",
+   "url": "https://amp.cbc.ca/lite/story/1.2680781"
+  },
+  {
+   "title": "Moscow Times: Russian ghost ship crewed by cannibal rats",
+   "url": "https://www.themoscowtimes.com/2014/01/23/russian-ghost-ship-crewed-by-cannibal-rats-bobbing-toward-britain-reports-say-a31393"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Lyubov Orlova was built in 1976",
+   "terms": [
+    "Lyubov Orlova",
+    "1976"
+   ]
+  },
+  {
+   "claim": "She was built in Yugoslavia",
+   "terms": [
+    "Yugoslavia"
+   ]
+  },
+  {
+   "claim": "She was a cruise ship that sailed to the Arctic and Antarctica",
+   "terms": [
+    "Antarctic"
+   ]
+  },
+  {
+   "claim": "In 2010 she was seized in Newfoundland over unpaid wages",
+   "terms": [
+    "seized",
+    "St. John|Newfoundland"
+   ]
+  },
+  {
+   "claim": "She was sold for scrap",
+   "terms": [
+    "scrap"
+   ]
+  },
+  {
+   "claim": "She was being towed to the Dominican Republic",
+   "terms": [
+    "Dominican Republic"
+   ]
+  },
+  {
+   "claim": "The tow line broke",
+   "terms": [
+    "tow",
+    "broke|snapped|parted"
+   ]
+  },
+  {
+   "claim": "She drifted toward oil rigs",
+   "terms": [
+    "oil"
+   ]
+  },
+  {
+   "claim": "She was towed into international waters and released",
+   "terms": [
+    "international waters"
+   ]
+  },
+  {
+   "claim": "Tabloids said she was full of cannibal rats",
+   "terms": [
+    "rats"
+   ]
+  },
+  {
+   "claim": "She probably sank",
+   "terms": [
+    "sank|sunk"
+   ]
+  }
+ ]
+}
