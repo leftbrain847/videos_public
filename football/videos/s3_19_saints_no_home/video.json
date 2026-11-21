@@ -51,13 +51,34 @@
    },
    "at": "desk",
    "hold": "clipboard"
+  },
+  "falcon": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a71930",
+    "pants": "#1b1b1b",
+    "number": "4",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "deloatch": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#c9a74a",
+    "number": "27",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   }
   }
  },
  "lines": [
   {
-   "text": "In 2005, the New Orleans Saints played their first home game in New Jersey.",
+   "text": "Your first home game is in New Jersey.",
    "key": [
-    "NEW",
     "JERSEY."
    ],
    "place": {
@@ -92,18 +113,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Hurricane Katrina had forced the whole team out of New Orleans.",
+   "text": "Two thousand five. Hurricane Katrina hits New Orleans. The Superdome is damaged.",
+   "cap": "2005. Hurricane Katrina hits New Orleans. The Superdome is damaged.",
    "key": [
     "KATRINA"
-   ],
-   "set": "office",
-   "setOpts": {
-    "boardText": [
-     "EVACUATED"
-    ]
-   },
-   "board": [
-    "EVACUATED"
    ],
    "place": {
     "coach": "desk"
@@ -123,17 +136,21 @@
      "action": "hold",
      "look": "camera"
     }
+   },
+   "board": [
+    "EVACUATED"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "EVACUATED"
+    ]
    }
   },
   {
-   "text": "So they set up in San Antonio, Texas, for the entire season.",
+   "text": "Your team moves to San Antonio, Texas. For the whole season.",
    "key": [
-    "SAN",
-    "ANTONIO,"
-   ],
-   "board": [
-    "NEW BASE:",
-    "SAN ANTONIO"
+    "SEASON."
    ],
    "place": {
     "coach": [
@@ -151,53 +168,52 @@
      "action": "point",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "NEW BASE:",
+    "SAN ANTONIO"
+   ]
   },
   {
-   "text": "Practice was at a high school sports complex.",
+   "text": "Your first home game? It's at Giants Stadium.",
    "key": [
-    "HIGH",
-    "SCHOOL"
+    "STADIUM."
    ],
    "place": {
-    "saint": [
+    "saint": false,
+    "capy": [
      0.2,
      -0.6
     ]
    },
    "shot": {
     "type": "two",
-    "on": "coach",
-    "with": "saint"
+    "on": "capy",
+    "with": "coach"
    },
    "act": {
     "coach": {
-     "mood": "smug",
+     "mood": "confused",
      "action": "shrug",
-     "look": "saint"
+     "look": "capy"
     },
     "saint": {
      "mood": "confused",
      "action": "shrug",
      "look": "coach"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
     }
-   }
+   },
+   "speaker": "capy"
   },
   {
-   "text": "Their first home game was at Giants Stadium. Against the Giants. On Monday night.",
+   "text": "Against the Giants. In their own building.",
    "key": [
-    "GIANTS"
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "HOME: SAINTS",
-     "AWAY: GIANTS"
-    ]
-   },
-   "board": [
-    "HOME: SAINTS",
-    "AWAY: GIANTS"
+    "BUILDING."
    ],
    "place": {
     "saint": [
@@ -229,14 +245,59 @@
      "action": "cross",
      "look": "saint"
     }
+   },
+   "board": [
+    "HOME: SAINTS",
+    "AWAY: GIANTS"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "HOME: SAINTS",
+     "AWAY: GIANTS"
+    ]
    }
   },
   {
-   "text": "Home team in name only. They lost, twenty seven to ten.",
-   "cap": "Home team in name only. They lost, 27 to 10.",
+   "text": "You're the home team. On paper, anyway.",
    "key": [
-    "NAME",
-    "ONLY."
+    "ANYWAY."
+   ],
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "saint": [
+     1.0,
+     0
+    ],
+    "giant": false
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "saint": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "saint"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "You lose, twenty seven to ten.",
+   "cap": "You lose, 27 to 10.",
+   "key": [
+    "27"
    ],
    "place": {
     "saint": [
@@ -246,7 +307,8 @@
     "giant": [
      1.2,
      0
-    ]
+    ],
+    "capy": false
    },
    "shot": {
     "type": "two",
@@ -267,15 +329,10 @@
    }
   },
   {
-   "text": "Three more home games were in San Antonio, at the Alamodome.",
-   "cap": "3 more home games were in San Antonio, at the Alamodome.",
+   "text": "Three more home games? At the Alamodome. In Texas.",
+   "cap": "3 more home games? At the Alamodome. In Texas.",
    "key": [
-    "3",
-    "ALAMODOME."
-   ],
-   "board": [
-    "ALAMODOME",
-    "3 GAMES"
+    "3"
    ],
    "place": {
     "giant": false,
@@ -283,10 +340,7 @@
      4.6,
      0.5
     ],
-    "capy": [
-     6.6,
-     0.8
-    ]
+    "capy": false
    },
    "shot": {
     "type": "low",
@@ -308,18 +362,17 @@
      "action": "point",
      "look": "saint"
     }
-   }
+   },
+   "board": [
+    "ALAMODOME",
+    "3 GAMES"
+   ]
   },
   {
-   "text": "Four were in Baton Rouge, at LSU's Tiger Stadium.",
-   "cap": "4 were in Baton Rouge, at LSU's Tiger Stadium.",
+   "text": "Four more? In Baton Rouge. At Tiger Stadium.",
+   "cap": "4 more? In Baton Rouge. At Tiger Stadium.",
    "key": [
-    "4",
-    "BATON"
-   ],
-   "board": [
-    "BATON ROUGE",
-    "4 GAMES"
+    "4"
    ],
    "shot": {
     "type": "low",
@@ -336,17 +389,17 @@
      "action": "shrug",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "BATON ROUGE",
+    "4 GAMES"
+   ]
   },
   {
-   "text": "Zero were in New Orleans.",
-   "cap": "0 were in New Orleans.",
+   "text": "Home games in New Orleans? Zero.",
+   "cap": "Home games in New Orleans? 0.",
    "key": [
-    "0"
-   ],
-   "board": [
-    "NEW ORLEANS",
-    "0 GAMES"
+    "0."
    ],
    "shot": {
     "type": "medium",
@@ -364,14 +417,23 @@
      "look": "camera"
     }
    },
-   "speaker": "capy"
+   "board": [
+    "NEW ORLEANS",
+    "0 GAMES"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     6.6,
+     0.8
+    ]
+   }
   },
   {
-   "text": "They finished three and thirteen.",
-   "cap": "They finished 3 and 13.",
+   "text": "You finish three and thirteen. A long year on the road.",
+   "cap": "You finish 3-13. A long year on the road.",
    "key": [
-    "3",
-    "13."
+    "3-13."
    ],
    "place": {
     "capy": false,
@@ -392,13 +454,10 @@
    }
   },
   {
-   "text": "Then, in September 2006, the Superdome reopened. Monday night, against Atlanta.",
+   "text": "September, two thousand six. The Superdome reopens.",
+   "cap": "September 2006. The Superdome reopens.",
    "key": [
-    "REOPENED."
-   ],
-   "board": [
-    "SUPERDOME",
-    "IS BACK"
+    "REOPENS."
    ],
    "place": {
     "saint": [
@@ -430,12 +489,16 @@
      "action": "clap",
      "look": "saint"
     }
-   }
+   },
+   "board": [
+    "SUPERDOME",
+    "IS BACK"
+   ]
   },
   {
-   "text": "Early in the first quarter, Steve Gleason blocked a punt.",
+   "text": "Monday night, against Atlanta. First quarter.",
    "key": [
-    "BLOCKED"
+    "ATLANTA."
    ],
    "place": {
     "coach": false,
@@ -454,34 +517,260 @@
      "action": "cheer",
      "look": "camera"
     }
+   },
+   "board": [
+    "SAINTS 0",
+    "FALCONS 3"
+   ]
+  },
+  {
+   "text": "You're Steve Gleason. You block the punt.",
+   "key": [
+    "BLOCK"
+   ],
+   "act": {},
+   "shot": {
+    "type": "follow",
+    "on": "saint"
+   },
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "SAINTS 0",
+     "FALCONS 3"
+    ],
+    "endZone": 8,
+    "zoneA": "#a71930",
+    "zoneB": "#a71930"
+   },
+   "play": {
+    "cast": {
+     "saint": {
+      "path": [
+       [
+        0,
+        0,
+        1.8
+       ],
+       [
+        0.5,
+        3.4,
+        1.6
+       ],
+       [
+        1,
+        3.6,
+        1.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.55,
+        "idle"
+       ]
+      ]
+     },
+     "falcon": {
+      "path": [
+       [
+        0,
+        5.4,
+        0.6
+       ],
+       [
+        1,
+        5.4,
+        0.6
+       ]
+      ],
+      "actions": [
+       [
+        0.15,
+        "kick"
+       ]
+      ],
+      "face": -90
+     },
+     "deloatch": {
+      "path": [
+       [
+        0,
+        0.5,
+        -3.8
+       ],
+       [
+        1,
+        3,
+        -3.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.22,
+      5.1,
+      1.0,
+      0.6
+     ],
+     [
+      0.4,
+      3.9,
+      1.8,
+      1.4
+     ]
+    ]
    }
   },
   {
-   "text": "Curtis Deloatch fell on it in the end zone. Touchdown.",
+   "text": "Curtis Deloatch falls on it. Touchdown.",
    "key": [
     "TOUCHDOWN."
    ],
+   "act": {},
    "shot": {
-    "type": "wide",
-    "on": "saint"
+    "type": "follow_high",
+    "on": "ball"
    },
-   "act": {
-    "saint": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    }
-   }
+   "play": {
+    "cast": {
+     "saint": {
+      "path": [
+       [
+        0,
+        3.6,
+        1.6
+       ],
+       [
+        1,
+        4.2,
+        2.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.7,
+        "cheer"
+       ]
+      ]
+     },
+     "falcon": {
+      "path": [
+       [
+        0,
+        5.4,
+        0.6
+       ],
+       [
+        1,
+        5.4,
+        0.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.7,
+        "slump"
+       ]
+      ],
+      "face": -90
+     },
+     "deloatch": {
+      "path": [
+       [
+        0,
+        3,
+        -3.6
+       ],
+       [
+        0.3,
+        6.2,
+        -3.0
+       ],
+       [
+        0.55,
+        9.2,
+        -1.4
+       ],
+       [
+        1,
+        9.4,
+        -1.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.55,
+        "catch"
+       ],
+       [
+        0.75,
+        "celebrate"
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0,
+      3.9,
+      1.6,
+      1.4
+     ],
+     [
+      0.3,
+      7.0,
+      0.6,
+      -0.2
+     ],
+     [
+      0.55,
+      9.2,
+      0.3,
+      -1.4
+     ]
+    ],
+    "carry": [
+     [
+      0.55,
+      "deloatch"
+     ]
+    ]
+   },
+   "sfx": [
+    [
+     0.6,
+     "roar"
+    ]
+   ]
   },
   {
-   "text": "The Saints won, twenty three to three.",
-   "cap": "The Saints won, 23 to 3.",
+   "text": "The Saints win, twenty three to three.",
+   "cap": "The Saints win, 23 to 3.",
    "key": [
     "23"
-   ],
-   "board": [
-    "SAINTS 23",
-    "FALCONS 3"
    ],
    "place": {
     "saint": [
@@ -513,24 +802,17 @@
      "action": "cheer",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "SAINTS 23",
+    "FALCONS 3"
+   ]
   },
   {
-   "text": "Would you follow your team to another state for a season? Yes or no?",
+   "text": "Would you follow your team to another state? Yes or no?",
    "key": [
     "YES",
     "NO?"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "HOME:",
-     "?"
-    ]
-   },
-   "board": [
-    "HOME:",
-    "?"
    ],
    "place": {
     "capy": [
@@ -559,6 +841,17 @@
      "look": "capy"
     }
    },
+   "board": [
+    "HOME:",
+    "?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "HOME:",
+     "?"
+    ]
+   },
    "speaker": "capy"
   }
  ],
@@ -582,6 +875,121 @@
   {
    "title": "Wikipedia: 2005 New Orleans Saints season",
    "url": "https://en.wikipedia.org/wiki/2005_New_Orleans_Saints_season"
+  },
+  {
+   "title": "Wikipedia: 2006 New Orleans Saints season",
+   "url": "https://en.wikipedia.org/wiki/2006_New_Orleans_Saints_season"
+  },
+  {
+   "title": "Wikipedia: Steve Gleason",
+   "url": "https://en.wikipedia.org/wiki/Steve_Gleason"
+  },
+  {
+   "title": "Wikipedia: 2006 Atlanta Falcons-New Orleans Saints game",
+   "url": "https://en.wikipedia.org/wiki/2006_Atlanta_Falcons%E2%80%93New_Orleans_Saints_game"
+  },
+  {
+   "title": "ESPN: Steve Gleason's 2006 blocked punt symbolized the rebirth of the Saints",
+   "url": "https://www.espn.com/nfl/story/_/id/17611735"
+  },
+  {
+   "title": "NewOrleansSaints.com: This day in Saints history, September 25",
+   "url": "https://www.neworleanssaints.com/news/this-day-in-new-orleans-saints-history-september-25-17749367"
+  },
+  {
+   "title": "Spokesman-Review (AP): A grand reopening",
+   "url": "https://www.spokesman.com/stories/2006/sep/26/a-grand-reopening"
+  },
+  {
+   "title": "Lawrence Journal-World (AP): Saints roll in return, 23-3",
+   "url": "https://www2.ljworld.com/news/2006/sep/26/saints_roll_return_233/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Saints' first home game of 2005 was at Giants Stadium in New Jersey",
+   "terms": [
+    "Giants Stadium"
+   ]
+  },
+  {
+   "claim": "Hurricane Katrina hit New Orleans in 2005",
+   "terms": [
+    "Katrina",
+    "2005"
+   ]
+  },
+  {
+   "claim": "The Superdome was damaged",
+   "terms": [
+    "Superdome",
+    "damage"
+   ]
+  },
+  {
+   "claim": "The team relocated to San Antonio for the season",
+   "terms": [
+    "San Antonio"
+   ]
+  },
+  {
+   "claim": "The Saints lost 27-10",
+   "terms": [
+    "27 10"
+   ]
+  },
+  {
+   "claim": "Three home games were at the Alamodome",
+   "terms": [
+    "Alamodome"
+   ]
+  },
+  {
+   "claim": "Four home games were at Tiger Stadium in Baton Rouge",
+   "terms": [
+    "Tiger Stadium|Baton Rouge"
+   ]
+  },
+  {
+   "claim": "The Saints finished 3-13",
+   "terms": [
+    "3 13"
+   ]
+  },
+  {
+   "claim": "The Superdome reopened in September 2006",
+   "terms": [
+    "Superdome",
+    "2006"
+   ]
+  },
+  {
+   "claim": "The reopening game was Monday night against Atlanta",
+   "terms": [
+    "Falcons|Atlanta",
+    "Monday"
+   ]
+  },
+  {
+   "claim": "Steve Gleason blocked a punt",
+   "terms": [
+    "Gleason",
+    "block"
+   ]
+  },
+  {
+   "claim": "Curtis Deloatch recovered it in the end zone for a touchdown",
+   "terms": [
+    "Deloatch",
+    "touchdown|end zone"
+   ]
+  },
+  {
+   "claim": "The Saints won 23-3",
+   "terms": [
+    "23 3"
+   ]
   }
  ]
 }

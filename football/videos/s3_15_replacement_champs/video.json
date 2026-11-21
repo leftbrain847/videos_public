@@ -68,11 +68,10 @@
  },
  "lines": [
   {
-   "text": "In 1987, a team of fill-in players went three and oh in the NFL. And every win counted.",
-   "cap": "In 1987, a team of fill-in players went 3 and 0 in the NFL. And every win counted.",
+   "text": "You never played in the N F L. Now you're unbeaten. Three wins.",
+   "cap": "You never played in the NFL. Now you're unbeaten. 3 wins.",
    "key": [
-    "3",
-    "COUNTED."
+    "3"
    ],
    "place": {
     "striker": false,
@@ -107,18 +106,11 @@
    "speaker": "capy"
   },
   {
-   "text": "The real players had gone on strike. For twenty four days.",
-   "cap": "The real players had gone on strike. For 24 days.",
+   "text": "Nineteen eighty seven. The real players go on strike.",
+   "cap": "1987. The real players go on strike.",
    "key": [
-    "STRIKE.",
-    "24"
+    "STRIKE."
    ],
-   "set": "tunnel",
-   "setOpts": {
-    "boardText": [
-     "ON STRIKE"
-    ]
-   },
    "place": {
     "striker": "center"
    },
@@ -132,14 +124,18 @@
      "action": "cross",
      "look": "camera"
     }
+   },
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "ON STRIKE"
+    ]
    }
   },
   {
-   "text": "So the league hired replacements, and three weeks of their games went in the standings.",
-   "cap": "So the league hired replacements, and 3 weeks of their games went in the standings.",
+   "text": "So the league hires replacements. Their games count.",
    "key": [
-    "REPLACEMENTS,",
-    "STANDINGS."
+    "COUNT."
    ],
    "place": {
     "striker": [
@@ -170,9 +166,8 @@
    }
   },
   {
-   "text": "Chicago's fill-ins even got a nickname. The Spare Bears.",
+   "text": "Chicago's fill-ins even get a nickname. The Spare Bears.",
    "key": [
-    "SPARE",
     "BEARS."
    ],
    "shot": {
@@ -188,18 +183,10 @@
    }
   },
   {
-   "text": "But in Washington, not one regular player crossed the picket line.",
+   "text": "In Washington? Not one regular crosses the picket line.",
    "key": [
-    "NOT",
     "ONE"
    ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "REGULARS:",
-     "0"
-    ]
-   },
    "place": {
     "rep1": [
      -0.2,
@@ -215,13 +202,9 @@
     ]
    },
    "shot": {
-    "type": "wide",
-    "on": "rep1",
-    "offset": [
-     0,
-     0,
-     -2.5
-    ]
+    "type": "two",
+    "on": "capy",
+    "with": "rep1"
    },
    "act": {
     "rep1": {
@@ -240,12 +223,19 @@
      "look": "rep1"
     }
    },
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "REGULARS:",
+     "0"
+    ]
+   },
    "speaker": "capy"
   },
   {
-   "text": "So their roster was pure replacements.",
+   "text": "So your roster is all replacements. Every single one.",
    "key": [
-    "PURE"
+    "EVERY"
    ],
    "shot": {
     "type": "medium",
@@ -260,22 +250,10 @@
    }
   },
   {
-   "text": "Game one: they beat the Cardinals, twenty eight to twenty one.",
-   "cap": "Game 1: they beat the Cardinals, 28 to 21.",
+   "text": "Game one? You beat the Cardinals. Twenty eight to twenty one.",
+   "cap": "Game 1? You beat the Cardinals. 28 to 21.",
    "key": [
-    "28",
-    "21."
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "GAME 1",
-     "28-21"
-    ]
-   },
-   "board": [
-    "GAME 1",
-    "28-21"
+    "28"
    ],
    "place": {
     "rep1": [
@@ -307,18 +285,24 @@
      "action": "cheer",
      "look": "camera"
     }
+   },
+   "board": [
+    "GAME 1",
+    "28-21"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "GAME 1",
+     "28-21"
+    ]
    }
   },
   {
-   "text": "Game two: the Giants, thirty eight to twelve.",
-   "cap": "Game 2: the Giants, 38 to 12.",
+   "text": "Game two? The Giants. Thirty eight to twelve.",
+   "cap": "Game 2? The Giants. 38 to 12.",
    "key": [
-    "38",
-    "12."
-   ],
-   "board": [
-    "GAME 2",
-    "38-12"
+    "38"
    ],
    "shot": {
     "type": "wide",
@@ -338,13 +322,52 @@
      "mood": "happy",
      "action": "throw"
     }
-   }
+   },
+   "board": [
+    "GAME 2",
+    "38-12"
+   ]
   },
   {
-   "text": "Game three was on Monday night. In Dallas.",
-   "cap": "Game 3 was on Monday night. In Dallas.",
+   "text": "Three wins, no losses. Somebody check on the regulars.",
+   "cap": "3 wins, no losses. Somebody check on the regulars.",
    "key": [
-    "MONDAY",
+    "REGULARS."
+   ],
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "rep1": [
+     1.0,
+     0
+    ],
+    "rep2": false
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "rep1": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rep1"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Game three. Monday night. In Dallas.",
+   "cap": "Game 3. Monday night. In Dallas.",
+   "key": [
     "DALLAS."
    ],
    "place": {
@@ -356,7 +379,8 @@
     "star": [
      1.4,
      0
-    ]
+    ],
+    "capy": false
    },
    "shot": {
     "type": "two",
@@ -377,7 +401,7 @@
    }
   },
   {
-   "text": "And Dallas had stars back, including Tony Dorsett.",
+   "text": "Dallas has stars back. Like Tony Dorsett.",
    "key": [
     "DORSETT."
    ],
@@ -394,15 +418,10 @@
    }
   },
   {
-   "text": "The fill-ins won anyway. Thirteen to seven.",
-   "cap": "The fill-ins won anyway. 13 to 7.",
+   "text": "Your fill-ins win anyway. Thirteen to seven.",
+   "cap": "Your fill-ins win anyway. 13 to 7.",
    "key": [
-    "13",
-    "7."
-   ],
-   "board": [
-    "GAME 3",
-    "13-7"
+    "13"
    ],
    "place": {
     "rep1": [
@@ -434,14 +453,59 @@
      "action": "slump",
      "look": "rep1"
     }
-   }
+   },
+   "board": [
+    "GAME 3",
+    "13-7"
+   ]
   },
   {
-   "text": "The regulars came back. And that season, Washington won the Super Bowl, forty two to ten.",
-   "cap": "The regulars came back. And that season, Washington won the Super Bowl, 42 to 10.",
+   "text": "Cowboys stars, beaten by substitutes. On Monday night television.",
    "key": [
-    "SUPER",
-    "BOWL,"
+    "TELEVISION."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "rep1": [
+     -2.2,
+     0
+    ],
+    "star": [
+     2.2,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "rep1": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    },
+    "star": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The regulars return. Washington wins the Super Bowl. Forty two to ten.",
+   "cap": "The regulars return. Washington wins the Super Bowl. 42 to 10.",
+   "key": [
+    "42"
    ],
    "place": {
     "rep1": false,
@@ -463,18 +527,11 @@
    }
   },
   {
-   "text": "The replacements finally got Super Bowl rings in 2018. Thirty one years after the strike.",
-   "cap": "The replacements finally got Super Bowl rings in 2018. 31 years after the strike.",
+   "text": "Your rings arrive in twenty eighteen. Thirty one years late.",
+   "cap": "Your rings arrive in 2018. 31 years late.",
    "key": [
-    "RINGS",
-    "31"
+    "LATE."
    ],
-   "set": "press",
-   "setOpts": {
-    "boardText": [
-     "2018"
-    ]
-   },
    "place": {
     "rep1": "left",
     "rep2": "right"
@@ -495,21 +552,20 @@
      "action": "clap",
      "look": "rep1"
     }
+   },
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "2018"
+    ]
    }
   },
   {
-   "text": "If the NFL called you tomorrow, would you suit up? Yes or no?",
+   "text": "The league calls you tomorrow. Do you play? Yes or no?",
    "key": [
     "YES",
     "NO?"
    ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "ROSTER:",
-     "YOU?"
-    ]
-   },
    "place": {
     "capy": [
      -1.4,
@@ -537,6 +593,13 @@
      "look": "camera"
     }
    },
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "ROSTER:",
+     "YOU?"
+    ]
+   },
    "speaker": "capy"
   }
  ],
@@ -546,16 +609,8 @@
    "url": "https://www.profootballhof.com/football-history/football-history/1980-1999/1987"
   },
   {
-   "title": "Commanders.com: Redskins honor 1987 replacement players with Super Bowl rings",
-   "url": "https://commanders.com/news/redskins-honor-1987-replacement-players-with-super-bowl-rings"
-  },
-  {
    "title": "ESPN: Redskins' 1987 replacement players to get Super Bowl rings",
    "url": "https://www.espn.com/blog/washington-commanders/post/_/id/36663"
-  },
-  {
-   "title": "Washington Times: A team indivisible",
-   "url": "https://m.washingtontimes.com/news/2011/jul/6/a-team-indivisible/"
   },
   {
    "title": "ESPN: NFL replacements part of history",
@@ -564,6 +619,123 @@
   {
    "title": "SI: Rare photos from the 1987 NFL season",
    "url": "https://www.si.com/nfl/2010/10/15/15rare-photos-from-the-1987-nfl-season"
+  },
+  {
+   "title": "Wikipedia: 1987 NFL strike",
+   "url": "https://en.wikipedia.org/wiki/1987_NFL_strike"
+  },
+  {
+   "title": "Wikipedia: 1987 Washington Redskins season",
+   "url": "https://en.wikipedia.org/wiki/1987_Washington_Redskins_season"
+  },
+  {
+   "title": "Wikipedia: Super Bowl XXII",
+   "url": "https://en.wikipedia.org/wiki/Super_Bowl_XXII"
+  },
+  {
+   "title": "FanSided: Washington replacements slay Dallas Cowboys during '87 NFL strike",
+   "url": "https://fansided.com/2021/07/21/washington-replacements-dallas-cowboys-1987-nfl-strike"
+  },
+  {
+   "title": "Commanders.com: Redskins legacy, replacements shock Cowboys",
+   "url": "https://commanders.com/news/redskins-legacy-replacements-shock-cowboys-14073156"
+  },
+  {
+   "title": "Commanders.com: Redskins legacy, the 1987 replacement team",
+   "url": "https://commanders.com/news/redskins-legacy-1987-replacement-team-8651631"
+  },
+  {
+   "title": "Commanders.com: 1987 replacement players receive Super Bowl rings",
+   "url": "https://www.commanders.com/news/on-a-day-of-celebration-1987-replacement-players-receive-super-bowl-rings"
+  },
+  {
+   "title": "ESPN: Washington Redskins issue Super Bowl rings to 1987 replacements",
+   "url": "https://africa.espn.com/nfl/story/_/id/22682035/washington-redskins-issue-super-bowl-rings-1987-scabs"
+  },
+  {
+   "title": "WTVR: Redskins replacement players finally receive their rings",
+   "url": "https://wtvr.com/2018/06/12/redskins-replacement-players-finally-receive-their-rings"
+  },
+  {
+   "title": "Wikipedia: 1987 NFL season",
+   "url": "https://en.wikipedia.org/wiki/1987_NFL_season"
+  },
+  {
+   "title": "Wikipedia: 1987 Chicago Bears season",
+   "url": "https://en.wikipedia.org/wiki/1987_Chicago_Bears_season"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1987 the players went on strike",
+   "terms": [
+    "1987",
+    "strike"
+   ]
+  },
+  {
+   "claim": "The league used replacement players and their games counted",
+   "terms": [
+    "replacement",
+    "count|standings|official"
+   ]
+  },
+  {
+   "claim": "Chicago's replacements were nicknamed the Spare Bears",
+   "terms": [
+    "Spare Bears"
+   ]
+  },
+  {
+   "claim": "No Washington regular crossed the picket line",
+   "terms": [
+    "picket"
+   ]
+  },
+  {
+   "claim": "Washington's replacements beat the Cardinals 28-21",
+   "terms": [
+    "28 21"
+   ]
+  },
+  {
+   "claim": "They beat the Giants 38-12",
+   "terms": [
+    "38 12"
+   ]
+  },
+  {
+   "claim": "Game three was Monday night in Dallas",
+   "terms": [
+    "Monday night|Monday Night",
+    "Dallas|Cowboys"
+   ]
+  },
+  {
+   "claim": "Dallas had stars back, including Tony Dorsett",
+   "terms": [
+    "Dorsett"
+   ]
+  },
+  {
+   "claim": "Washington's replacements won 13-7",
+   "terms": [
+    "13 7"
+   ]
+  },
+  {
+   "claim": "Washington won the Super Bowl 42-10",
+   "terms": [
+    "42 10"
+   ]
+  },
+  {
+   "claim": "The replacement players got Super Bowl rings in 2018",
+   "terms": [
+    "ring",
+    "2018|replacement"
+   ]
   }
  ]
 }
