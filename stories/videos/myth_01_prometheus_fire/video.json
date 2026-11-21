@@ -1,0 +1,1125 @@
+{
+ "id": "myth_01_prometheus_fire",
+ "title": "Prometheus robs Zeus",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE HEIST"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "prom": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c0532b",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#e8b48f",
+    "sash": "#d9a521",
+    "beard": true
+   }
+  },
+  "promf": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c0532b",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#e8b48f",
+    "sash": "#d9a521",
+    "beard": true
+   },
+   "hold": "candle"
+  },
+  "zeus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b4c8c",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#e6e6e6",
+    "skin": "#f2c39b",
+    "sash": "#f6d21f",
+    "beard": true
+   }
+  },
+  "human": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#6f9a4a",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#5a3a22",
+    "skin": "#8d5a3b",
+    "sash": "#d9a521"
+   }
+  },
+  "human2": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#6f9a4a",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#5a3a22",
+    "skin": "#8d5a3b",
+    "sash": "#d9a521"
+   },
+   "hold": "candle"
+  },
+  "pandora": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#b85c9e",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64",
+    "sash": "#d9a521"
+   }
+  },
+  "herc": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#7a4a2a",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24",
+    "sash": "#d9a521"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You are a Titan. Today you rob a god.",
+   "key": [
+    "ROB"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "prom": [
+     1.2,
+     0
+    ],
+    "promf": false,
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "prom"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "prom": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Your name is Prometheus. Your mark is Zeus. King of the gods.",
+   "key": [
+    "ZEUS."
+   ],
+   "board": [
+    "PROMETHEUS",
+    "VS ZEUS"
+   ],
+   "place": {
+    "capy": false,
+    "prom": [
+     -1.6,
+     0.3
+    ],
+    "promf": false,
+    "zeus": [
+     1.6,
+     -0.3
+    ],
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "zeus",
+    "offset": [
+     -1.6,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "prom": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "zeus"
+    },
+    "zeus": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Step one: a feast at Mecone. One ox to divide.",
+   "key": [
+    "OX"
+   ],
+   "board": [
+    "MECONE",
+    "1 OX"
+   ],
+   "place": {
+    "capy": false,
+    "prom": [
+     -1.6,
+     0.3
+    ],
+    "promf": false,
+    "zeus": [
+     1.6,
+     -0.3
+    ],
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "prom",
+    "with": "zeus"
+   },
+   "act": {
+    "prom": {
+     "mood": "happy",
+     "action": "point",
+     "look": "zeus"
+    },
+    "zeus": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "prom"
+    }
+   }
+  },
+  {
+   "text": "You build two piles. Zeus gets to choose.",
+   "key": [
+    "CHOOSE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "prom": [
+     -2.2,
+     -0.6
+    ],
+    "promf": false,
+    "zeus": [
+     2.2,
+     -0.6
+    ],
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "prom": {
+     "mood": "smug",
+     "action": "idle"
+    },
+    "zeus": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "First pile: the meat, hidden in a stomach.",
+   "key": [
+    "STOMACH."
+   ],
+   "board": [
+    "PILE 1",
+    "MEAT"
+   ],
+   "place": {
+    "capy": false,
+    "prom": [
+     0,
+     0
+    ],
+    "promf": false,
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "prom"
+   },
+   "act": {
+    "prom": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Second pile: bones, wrapped in shiny fat.",
+   "key": [
+    "FAT."
+   ],
+   "board": [
+    "PILE 2",
+    "BONES + FAT"
+   ],
+   "place": {
+    "capy": false,
+    "prom": [
+     0,
+     0
+    ],
+    "promf": false,
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "prom"
+   },
+   "act": {
+    "prom": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Zeus picks the shiny pile. Of course he does.",
+   "key": [
+    "SHINY"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "prom": false,
+    "promf": false,
+    "zeus": [
+     1.3,
+     0
+    ],
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "zeus"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "zeus": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So humans keep the meat. The gods get bones.",
+   "key": [
+    "BONES."
+   ],
+   "board": [
+    "HUMANS: MEAT",
+    "GODS: BONES"
+   ],
+   "place": {
+    "capy": false,
+    "prom": false,
+    "promf": false,
+    "zeus": [
+     1.4,
+     -0.2
+    ],
+    "human": [
+     -1.4,
+     0.4
+    ],
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "human",
+    "with": "zeus"
+   },
+   "act": {
+    "human": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "zeus": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "human"
+    }
+   }
+  },
+  {
+   "text": "Every sacrifice since then? You rigged it.",
+   "key": [
+    "RIGGED"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -0.4,
+     1.2
+    ],
+    "prom": false,
+    "promf": false,
+    "zeus": false,
+    "human": [
+     2.2,
+     -0.4
+    ],
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "human": {
+     "mood": "happy",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Zeus is furious. So he hides fire from humans.",
+   "key": [
+    "FIRE"
+   ],
+   "place": {
+    "capy": false,
+    "prom": false,
+    "promf": false,
+    "zeus": [
+     0,
+     0
+    ],
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "zeus"
+   },
+   "act": {
+    "zeus": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fine. Step two is the real heist.",
+   "key": [
+    "HEIST."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "prom": false,
+    "promf": [
+     1.3,
+     0
+    ],
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "promf"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "promf"
+    },
+    "promf": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "You climb up to the gods. You carry a hollow fennel stalk.",
+   "cap": "You climb up to the gods. You carry a hollow fennel stalk.",
+   "key": [
+    "FENNEL"
+   ],
+   "place": {
+    "capy": false,
+    "prom": false,
+    "promf": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "promf"
+   },
+   "act": {
+    "promf": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You hide a spark inside it. You stroll right back out.",
+   "key": [
+    "SPARK"
+   ],
+   "place": {
+    "capy": false,
+    "prom": false,
+    "promf": [
+     1.2,
+     0.4
+    ],
+    "zeus": [
+     -2.4,
+     -2.2
+    ],
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "promf"
+   },
+   "act": {
+    "promf": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "zeus": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "The greatest smuggling job ever. Inside a vegetable.",
+   "key": [
+    "VEGETABLE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "prom": false,
+    "promf": [
+     1.2,
+     0
+    ],
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "promf"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "promf": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Now humans have fire again. Zeus is not amused.",
+   "key": [
+    "AMUSED."
+   ],
+   "place": {
+    "capy": false,
+    "prom": false,
+    "promf": false,
+    "zeus": [
+     1.4,
+     -0.4
+    ],
+    "human": false,
+    "human2": [
+     -1.4,
+     0.4
+    ],
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "human2",
+    "with": "zeus"
+   },
+   "act": {
+    "human2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "zeus": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "human2"
+    }
+   }
+  },
+  {
+   "text": "His revenge on humans: Pandora, carrying a jar.",
+   "key": [
+    "PANDORA,"
+   ],
+   "board": [
+    "GIFT FROM",
+    "ZEUS"
+   ],
+   "place": {
+    "capy": false,
+    "prom": false,
+    "promf": false,
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": [
+     0,
+     0
+    ],
+    "herc": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "pandora"
+   },
+   "act": {
+    "pandora": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She opens it. Every trouble flies into the world.",
+   "key": [
+    "TROUBLE"
+   ],
+   "place": {
+    "capy": false,
+    "prom": false,
+    "promf": false,
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": [
+     -1.2,
+     -2.2
+    ],
+    "herc": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "pandora",
+    "offset": [
+     1.2,
+     0,
+     -2.5
+    ]
+   },
+   "act": {
+    "pandora": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Only hope stays inside the jar. Cold comfort.",
+   "key": [
+    "HOPE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "prom": false,
+    "promf": false,
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the bill comes for you. You get chained to a rock.",
+   "key": [
+    "CHAINED"
+   ],
+   "board": [
+    "PUNISHMENT",
+    "A ROCK"
+   ],
+   "place": {
+    "capy": false,
+    "prom": [
+     0,
+     -0.4
+    ],
+    "promf": false,
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "prom"
+   },
+   "act": {
+    "prom": {
+     "mood": "worried",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "An eagle visits you. Every single day. Not to chat.",
+   "key": [
+    "EAGLE"
+   ],
+   "place": {
+    "capy": false,
+    "prom": [
+     0,
+     0
+    ],
+    "promf": false,
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "prom"
+   },
+   "act": {
+    "prom": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Finally, Heracles shoots the eagle. You walk free.",
+   "key": [
+    "FREE."
+   ],
+   "place": {
+    "capy": false,
+    "prom": [
+     -1.3,
+     0.2
+    ],
+    "promf": false,
+    "zeus": false,
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "prom",
+    "with": "herc"
+   },
+   "act": {
+    "prom": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "herc"
+    },
+    "herc": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "prom"
+    }
+   }
+  },
+  {
+   "text": "One ox. One stalk. One shiny pile. Every trouble ever.",
+   "key": [
+    "EVER."
+   ],
+   "speaker": "capy",
+   "board": [
+    "1 OX",
+    "1 STALK"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "prom": [
+     -2.2,
+     -0.8
+    ],
+    "promf": false,
+    "zeus": [
+     2.2,
+     -0.8
+    ],
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     0,
+     0,
+     -3
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "prom": {
+     "mood": "smug",
+     "action": "idle"
+    },
+    "zeus": {
+     "mood": "angry",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "Would you pick the shiny pile? Yes or no? Zeus fans, stay quiet.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "SHINY PILE:",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "prom": false,
+    "promf": false,
+    "zeus": [
+     1.3,
+     0
+    ],
+    "human": false,
+    "human2": false,
+    "pandora": false,
+    "herc": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "zeus"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "zeus": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Prometheus",
+   "url": "https://en.wikipedia.org/wiki/Prometheus"
+  },
+  {
+   "title": "Wikipedia: Trick at Mecone",
+   "url": "https://en.wikipedia.org/wiki/Trick_at_Mecone"
+  },
+  {
+   "title": "Britannica: Prometheus",
+   "url": "https://www.britannica.com/topic/Prometheus-Greek-god"
+  },
+  {
+   "title": "World History Encyclopedia: Prometheus",
+   "url": "https://www.worldhistory.org/Prometheus/"
+  },
+  {
+   "title": "Theoi: Prometheus",
+   "url": "https://www.theoi.com/Titan/TitanPrometheus.html"
+  },
+  {
+   "title": "Wikipedia: Pandora",
+   "url": "https://en.wikipedia.org/wiki/Pandora"
+  },
+  {
+   "title": "Wikipedia: Pandora's box",
+   "url": "https://en.wikipedia.org/wiki/Pandora%27s_box"
+  },
+  {
+   "title": "Britannica: Pandora",
+   "url": "https://www.britannica.com/topic/Pandora-Greek-mythology"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "In the myth, Prometheus is a Titan",
+   "terms": [
+    "Prometheus",
+    "Titan"
+   ]
+  },
+  {
+   "claim": "At Mecone an ox is divided between gods and humans",
+   "terms": [
+    "Mecone|Mekone",
+    "ox"
+   ]
+  },
+  {
+   "claim": "One portion hid the meat inside the ox's stomach",
+   "terms": [
+    "meat|flesh|beef",
+    "stomach|paunch"
+   ]
+  },
+  {
+   "claim": "The other portion was bones wrapped in fat, and Zeus chose it",
+   "terms": [
+    "Zeus",
+    "bones",
+    "fat"
+   ]
+  },
+  {
+   "claim": "So humans keep the meat and burn the bones for the gods, in every sacrifice after",
+   "terms": [
+    "burn",
+    "bones"
+   ]
+  },
+  {
+   "claim": "Angry, Zeus hides fire from humans",
+   "terms": [
+    "Zeus",
+    "fire",
+    "hid|hide|hidden|withheld|withhold"
+   ]
+  },
+  {
+   "claim": "Prometheus steals fire back hidden in a hollow fennel stalk",
+   "terms": [
+    "fennel",
+    "fire"
+   ]
+  },
+  {
+   "claim": "Zeus sends Pandora as punishment for the theft of fire",
+   "terms": [
+    "Pandora",
+    "punish"
+   ]
+  },
+  {
+   "claim": "Pandora opens a jar and releases evils into the world",
+   "terms": [
+    "Pandora",
+    "jar",
+    "evil"
+   ]
+  },
+  {
+   "claim": "Only hope stays inside the jar",
+   "terms": [
+    "hope",
+    "jar"
+   ]
+  },
+  {
+   "claim": "Prometheus is chained to a rock",
+   "terms": [
+    "chained|bound",
+    "rock"
+   ]
+  },
+  {
+   "claim": "An eagle comes every day to eat his liver",
+   "terms": [
+    "eagle",
+    "liver"
+   ]
+  },
+  {
+   "claim": "Heracles kills the eagle and frees him",
+   "terms": [
+    "Heracles",
+    "eagle"
+   ]
+  }
+ ]
+}
