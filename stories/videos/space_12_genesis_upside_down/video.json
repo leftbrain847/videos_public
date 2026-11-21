@@ -1,0 +1,851 @@
+{
+ "id": "space_12_genesis_upside_down",
+ "title": "Genesis: pieces of the sun, dropped on Utah",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "GENESIS"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "sci": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "pilot": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8",
+    "headset": true
+   }
+  },
+  "pilot2": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "headset": true
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You spend years collecting pieces of the sun. Then you drop them.",
+   "key": [
+    "DROP"
+   ],
+   "board": [
+    "SUN SAMPLES",
+    "CRASHED"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "sci": [
+     2.6,
+     -0.6
+    ],
+    "pilot": false,
+    "pilot2": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Meet Genesis. A Nasa probe launched in two thousand one.",
+   "cap": "Meet Genesis. A NASA probe launched in 2001.",
+   "key": [
+    "GENESIS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "GENESIS",
+     "2001"
+    ]
+   },
+   "board": [
+    "GENESIS",
+    "2001"
+   ],
+   "place": {
+    "capy": false,
+    "sci": [
+     -1.4,
+     0.3
+    ],
+    "pilot": false,
+    "pilot2": false,
+    "boss": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "sci",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "sci"
+    }
+   }
+  },
+  {
+   "text": "Its job? Catch the solar wind. Tiny particles streaming off the sun. Literal sun dust.",
+   "key": [
+    "WIND."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "sci",
+    "with": "boss"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "point",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "sci"
+    }
+   }
+  },
+  {
+   "text": "It parks far out in space. It collects for over two years.",
+   "key": [
+    "COLLECTS"
+   ],
+   "board": [
+    "COLLECTING",
+    "2+ YEARS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then it heads home. A capsule full of priceless samples.",
+   "key": [
+    "SAMPLES."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "sci": [
+     1.4,
+     0.2
+    ],
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sci"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "sci"
+    },
+    "sci": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The landing plan is pure Hollywood. I'm not kidding.",
+   "key": [
+    "HOLLYWOOD."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Helicopters will snag the capsule in midair. With a hook.",
+   "key": [
+    "HOOK."
+   ],
+   "board": [
+    "MIDAIR",
+    "CATCH"
+   ],
+   "place": {
+    "capy": false,
+    "sci": false,
+    "pilot": [
+     -1.4,
+     0.3
+    ],
+    "pilot2": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "pilot2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "pilot"
+    }
+   }
+  },
+  {
+   "text": "The pilots? Actual Hollywood stunt pilots.",
+   "key": [
+    "STUNT"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "pilot2"
+   },
+   "act": {
+    "pilot2": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "pilot2"
+    }
+   }
+  },
+  {
+   "text": "September eighth, two thousand four. The sky over Utah.",
+   "cap": "September 8, 2004. The sky over Utah.",
+   "key": [
+    "UTAH."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "SEPT 8 2004",
+     "UTAH"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "sci": false,
+    "pilot": false,
+    "pilot2": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The capsule streaks in fast. Any second now, the parachute opens.",
+   "key": [
+    "PARACHUTE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CHUTE:",
+     "WAITING"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "sci": [
+     -1.4,
+     0.3
+    ],
+    "pilot": false,
+    "pilot2": false,
+    "boss": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "sci",
+    "with": "boss"
+   },
+   "act": {
+    "sci": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "sci"
+    }
+   }
+  },
+  {
+   "text": "It doesn't. Nothing opens.",
+   "key": [
+    "DOESN'T."
+   ],
+   "board": [
+    "CHUTE:",
+    "NONE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The capsule slams into the desert. It cracks open.",
+   "key": [
+    "DESERT."
+   ],
+   "board": [
+    "IMPACT",
+    "DESERT"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "sci"
+    }
+   }
+  },
+  {
+   "text": "The stunt pilots just circle overhead. There's nothing left to catch.",
+   "key": [
+    "NOTHING"
+   ],
+   "place": {
+    "sci": false,
+    "boss": false,
+    "pilot": [
+     -1.4,
+     0.3
+    ],
+    "pilot2": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "pilot",
+    "with": "pilot2"
+   },
+   "act": {
+    "pilot": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "pilot2"
+    },
+    "pilot2": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "pilot"
+    }
+   }
+  },
+  {
+   "text": "Investigators find the cause. Sensors installed upside down.",
+   "key": [
+    "UPSIDE"
+   ],
+   "board": [
+    "SENSORS",
+    "UPSIDE DOWN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "pilot": [
+     -2.6,
+     -0.6
+    ],
+    "pilot2": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    },
+    "pilot2": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "They never felt the capsule slowing down. So the chute never fired.",
+   "key": [
+    "FIRED."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The mistake came from the design drawings. Nobody caught it. For years.",
+   "key": [
+    "DRAWINGS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "DESIGN",
+     "DRAWING"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "sci": false,
+    "pilot": false,
+    "pilot2": false,
+    "boss": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Scientists dig through the wreck anyway. Carefully. Very carefully.",
+   "key": [
+    "WRECK"
+   ],
+   "place": {
+    "sci": [
+     -2.4,
+     -0.4
+    ],
+    "boss": [
+     0.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "boss",
+    "offset": [
+     -1.0,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "sci": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "sci"
+    }
+   }
+  },
+  {
+   "text": "Many samples survive the crash. The science still happens. Years of it.",
+   "key": [
+    "SURVIVE."
+   ],
+   "board": [
+    "SAMPLES",
+    "RECOVERED"
+   ],
+   "place": {
+    "sci": [
+     0,
+     0.4
+    ],
+    "boss": [
+     2.4,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "sci"
+    }
+   }
+  },
+  {
+   "text": "Pieces of the sun. Flown a million miles. Then dropped on Utah.",
+   "key": [
+    "UTAH."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "sci": [
+     1.4,
+     0.2
+    ],
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sci"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Catching a capsule with a helicopter. Great plan or bad idea? Pick one.",
+   "key": [
+    "PLAN",
+    "IDEA?"
+   ],
+   "board": [
+    "GREAT PLAN",
+    "OR BAD IDEA?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "sci": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Genesis (spacecraft)",
+   "url": "https://en.wikipedia.org/wiki/Genesis_(spacecraft)"
+  },
+  {
+   "title": "Nature (2004): Genesis capsule crash",
+   "url": "https://www.nature.com/news/2004/041018/full/news041018-1.html"
+  },
+  {
+   "title": "NPR: Genesis space capsule crashes in desert",
+   "url": "https://www.npr.org/2004/09/08/3896327/genesis-space-capsule-crashes-in-desert"
+  },
+  {
+   "title": "Space.com: Genesis crash inquiry helps Stardust return",
+   "url": "https://www.space.com/1899-genesis-crash-inquiry-helps-stardust-return.html"
+  },
+  {
+   "title": "Universe Today: Genesis accident report released",
+   "url": "https://www.universetoday.com/articles/genesis-accident-report-released"
+  },
+  {
+   "title": "General Aviation News: design flaw led to Genesis crash",
+   "url": "https://generalaviationnews.com/2004/12/24/design-law-led-to-genesis-crash/"
+  },
+  {
+   "title": "NBC News: Genesis crash inquiry helps Stardust team",
+   "url": "https://www.nbcnews.com/id/wbna10627760"
+  },
+  {
+   "title": "KSL: Genesis crash",
+   "url": "https://www.ksl.com/article/80639"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Genesis was a NASA probe launched in 2001",
+   "terms": [
+    "Genesis",
+    "2001"
+   ]
+  },
+  {
+   "claim": "It collected solar wind particles",
+   "terms": [
+    "solar wind"
+   ]
+  },
+  {
+   "claim": "It collected for over two years",
+   "terms": [
+    "two years|2 years|three years|27 months|29 months|850 days"
+   ]
+  },
+  {
+   "claim": "Helicopters planned to catch the capsule in midair",
+   "terms": [
+    "helicopter",
+    "midair|mid-air"
+   ]
+  },
+  {
+   "claim": "The pilots were Hollywood stunt pilots",
+   "terms": [
+    "stunt"
+   ]
+  },
+  {
+   "claim": "The capsule came down over Utah on September 8, 2004",
+   "terms": [
+    "Utah",
+    "September 8|Sept. 8"
+   ]
+  },
+  {
+   "claim": "The parachute did not open",
+   "terms": [
+    "parachute",
+    "fail|did not|didn't"
+   ]
+  },
+  {
+   "claim": "The capsule crashed into the desert",
+   "terms": [
+    "crash",
+    "desert"
+   ]
+  },
+  {
+   "claim": "Sensors (accelerometers) were installed upside down",
+   "terms": [
+    "upside down|backward|backwards"
+   ]
+  },
+  {
+   "claim": "The error came from the design drawings",
+   "terms": [
+    "design|drawing"
+   ]
+  },
+  {
+   "claim": "Genesis worked about a million miles from Earth",
+   "terms": [
+    "million miles|1.5 million"
+   ]
+  },
+  {
+   "claim": "Many samples were recovered",
+   "terms": [
+    "sample",
+    "recover|salvage|surviv"
+   ]
+  }
+ ]
+}

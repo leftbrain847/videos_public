@@ -1,0 +1,848 @@
+{
+ "id": "space_13_starliner_nine_months",
+ "title": "The eight-day trip that lasted nine months",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "STARLINER"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "butch": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#dfe6ee",
+    "pants": "#dfe6ee",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "suni": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#d9534f",
+    "pants": "#d9534f",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#5c3a24"
+   }
+  },
+  "ctl": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true,
+    "glasses": true
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You pack for about a week in space. You come home nine months later. Surprise.",
+   "key": [
+    "NINE"
+   ],
+   "board": [
+    "PLANNED: ~8 DAYS",
+    "ACTUAL: 286"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "butch": false,
+    "suni": [
+     2.6,
+     -0.6
+    ],
+    "ctl": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "suni": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "June, twenty twenty four. Butch Wilmore. Suni Williams.",
+   "cap": "June 2024. Butch Wilmore. Suni Williams.",
+   "key": [
+    "WILMORE."
+   ],
+   "board": [
+    "CREW FLIGHT",
+    "TEST"
+   ],
+   "place": {
+    "capy": false,
+    "butch": [
+     -1.5,
+     0.2
+    ],
+    "suni": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "butch",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "butch": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "suni": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They're test pilots for Boeing's brand new capsule. Starliner.",
+   "key": [
+    "STARLINER."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "butch",
+    "with": "suni"
+   },
+   "act": {
+    "butch": {
+     "mood": "smug",
+     "action": "point",
+     "look": "suni"
+    },
+    "suni": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "butch"
+    }
+   }
+  },
+  {
+   "text": "The plan: fly to the space station. Stay about eight days. Fly home.",
+   "key": [
+    "EIGHT"
+   ],
+   "board": [
+    "PLAN:",
+    "~8 DAYS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "suni"
+   },
+   "act": {
+    "suni": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "On the way up, thrusters start dropping out. One by one.",
+   "key": [
+    "THRUSTERS"
+   ],
+   "place": {
+    "butch": [
+     0,
+     0.3
+    ],
+    "suni": [
+     2.4,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "butch"
+   },
+   "act": {
+    "butch": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "suni": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "butch"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Helium is leaking too. They still dock. Barely.",
+   "key": [
+    "BARELY."
+   ],
+   "board": [
+    "HELIUM",
+    "LEAKS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "butch": [
+     1.4,
+     0.2
+    ],
+    "suni": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "butch"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "butch"
+    },
+    "butch": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then engineers study the thrusters. For weeks. Then months. The crew keeps waiting.",
+   "key": [
+    "MONTHS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "THRUSTER",
+     "TESTS"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "butch": false,
+    "suni": false,
+    "ctl": [
+     -1.4,
+     0.3
+    ],
+    "boss": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "ctl"
+    }
+   }
+  },
+  {
+   "text": "August. Nasa makes the call. Starliner comes home empty.",
+   "cap": "August. NASA makes the call. Starliner comes home empty.",
+   "key": [
+    "EMPTY."
+   ],
+   "board": [
+    "STARLINER:",
+    "NO CREW"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your ride home leaves. Without you. Rude.",
+   "key": [
+    "WITHOUT"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "STARLINER",
+     "DEPARTED"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "butch": false,
+    "suni": false,
+    "ctl": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It lands in the New Mexico desert. Perfectly. With nobody inside. Ouch.",
+   "key": [
+    "NOBODY"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "suni": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "suni"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "suni": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The two join the station crew. They fix things. They run science. They wait.",
+   "key": [
+    "SCIENCE."
+   ],
+   "place": {
+    "capy": false,
+    "butch": [
+     -1.5,
+     0.2
+    ],
+    "suni": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "suni"
+   },
+   "act": {
+    "butch": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "suni": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They need a new ride. A SpaceX Dragon. But not right away.",
+   "cap": "They need a new ride. A SpaceX Dragon. But not right away.",
+   "key": [
+    "DRAGON."
+   ],
+   "board": [
+    "NEW RIDE:",
+    "DRAGON"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "butch"
+   },
+   "act": {
+    "butch": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "suni": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "butch"
+    }
+   }
+  },
+  {
+   "text": "In September, Dragon arrives with two empty seats. Saved just for them.",
+   "key": [
+    "SEATS."
+   ],
+   "board": [
+    "2 SEATS",
+    "RESERVED"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "suni"
+   },
+   "act": {
+    "suni": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "March, twenty twenty five. They finally splash down. Off Florida.",
+   "cap": "March 2025. They finally splash down. Off Florida.",
+   "key": [
+    "FLORIDA."
+   ],
+   "board": [
+    "SPLASHDOWN",
+    "MARCH 18 2025"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "butch": [
+     -2.6,
+     -0.6
+    ],
+    "suni": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    },
+    "butch": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    },
+    "suni": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Total time away: two hundred eighty six days.",
+   "cap": "Total time away: 286 days.",
+   "key": [
+    "286"
+   ],
+   "board": [
+    "286",
+    "DAYS"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     0.8,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "butch": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    },
+    "suni": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The welcome party? A pod of dolphins. Circling the capsule. Seriously.",
+   "key": [
+    "DOLPHINS."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "LIVE:",
+     "DOLPHINS"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "butch": [
+     1.4,
+     4.4
+    ],
+    "suni": [
+     -1.3,
+     4.4
+    ],
+    "ctl": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "suni",
+    "with": "butch",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "suni": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    },
+    "butch": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "suni"
+    }
+   }
+  },
+  {
+   "text": "Eight days. Two hundred eighty six. Off by just a little.",
+   "cap": "8 days. 286. Off by just a little.",
+   "key": [
+    "LITTLE."
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "suni": [
+     1.4,
+     4.4
+    ],
+    "butch": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "suni": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Lesson learned. Always pack extra socks. Lots of socks.",
+   "key": [
+    "SOCKS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "PACKING LIST",
+     "+ SOCKS"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "butch": false,
+    "suni": false,
+    "ctl": false,
+    "boss": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have stayed nine months? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "9 MONTHS?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "boss": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Boeing Crew Flight Test",
+   "url": "https://en.wikipedia.org/wiki/Boeing_Crew_Flight_Test"
+  },
+  {
+   "title": "CBS News: Starliner astronauts return after 286 days",
+   "url": "https://www.cbsnews.com/news/crew-9-astronauts-return-earth"
+  },
+  {
+   "title": "Scientific American: after 286 days, astronauts return with a splash",
+   "url": "https://www.scientificamerican.com/article/after-286-days-in-space-nasa-astronauts-return-to-earth-with-a-splash/"
+  },
+  {
+   "title": "NASASpaceflight: Crew-9 and Starliner CFT astronauts return",
+   "url": "https://www.nasaspaceflight.com/2025/03/crew-9-return/"
+  },
+  {
+   "title": "Fox Weather: 10-day mission turned into 9 months",
+   "url": "https://www.foxweather.com/earth-space/nasa-starliner-astronauts-butch-wilmore-suni-williams-splash-down-spacex-dragon"
+  },
+  {
+   "title": "AccuWeather: Starliner astronauts splash down after 9 months",
+   "url": "https://www.accuweather.com/en/space-news/starliner-astronauts-suni-williams-butch-wilmore-splash-down-on-earth-after-9-months-in-space/1756872"
+  },
+  {
+   "title": "ABC7: Dragon splashes down with Wilmore and Williams",
+   "url": "https://abc7.com/post/nasas-suni-williams-butch-wilmore-are-finally-returning-home-months-space/16044681/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Butch Wilmore and Suni Williams launched in June 2024",
+   "terms": [
+    "Wilmore",
+    "Williams",
+    "June"
+   ]
+  },
+  {
+   "claim": "They flew Boeing's Starliner on a test flight",
+   "terms": [
+    "Boeing",
+    "Starliner"
+   ]
+  },
+  {
+   "claim": "The plan was about eight days at the station",
+   "terms": [
+    "eight-day|eight days|8-day|8 days|week"
+   ]
+  },
+  {
+   "claim": "Thrusters failed on the way",
+   "terms": [
+    "thruster"
+   ]
+  },
+  {
+   "claim": "Helium leaked",
+   "terms": [
+    "helium",
+    "leak"
+   ]
+  },
+  {
+   "claim": "NASA decided in August that Starliner would come home empty",
+   "terms": [
+    "August",
+    "empty|uncrewed|without"
+   ]
+  },
+  {
+   "claim": "Starliner landed in New Mexico without crew",
+   "terms": [
+    "New Mexico"
+   ]
+  },
+  {
+   "claim": "They joined the station crew",
+   "terms": [
+    "station",
+    "crew"
+   ]
+  },
+  {
+   "claim": "A Dragon arrived in September with two empty seats",
+   "terms": [
+    "September",
+    "Dragon|Crew-9"
+   ]
+  },
+  {
+   "claim": "They came home on a SpaceX Dragon with two seats kept for them",
+   "terms": [
+    "Dragon",
+    "two|seats"
+   ]
+  },
+  {
+   "claim": "They splashed down off Florida in March 2025",
+   "terms": [
+    "Florida",
+    "March"
+   ]
+  },
+  {
+   "claim": "They were away 286 days",
+   "terms": [
+    "286"
+   ]
+  },
+  {
+   "claim": "Dolphins circled the capsule at splashdown",
+   "terms": [
+    "dolphin"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,808 @@
+{
+ "id": "space_15_ingenuity_72_flights",
+ "title": "The Mars helicopter that wouldn't quit",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "INGENUITY"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "pilot": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "glasses": true,
+    "headset": true
+   }
+  },
+  "eng": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8"
+   },
+   "hold": "clipboard"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You build a helicopter for five flights. It flies seventy two.",
+   "cap": "You build a helicopter for 5 flights. It flies 72.",
+   "key": [
+    "72."
+   ],
+   "board": [
+    "PLANNED: 5",
+    "FLOWN: 72"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "pilot": false,
+    "eng": [
+     2.6,
+     -0.6
+    ],
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Meet Ingenuity. A tiny helicopter that rode to Mars. Under a rover's belly.",
+   "key": [
+    "BELLY."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "INGENUITY",
+     "1.8 KG"
+    ]
+   },
+   "board": [
+    "INGENUITY",
+    "1.8 KG"
+   ],
+   "place": {
+    "capy": false,
+    "pilot": [
+     -1.4,
+     0.3
+    ],
+    "eng": [
+     1.4,
+     0.3
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "eng",
+    "offset": [
+     -1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "pilot": {
+     "mood": "happy",
+     "action": "point",
+     "look": "eng"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "pilot"
+    }
+   }
+  },
+  {
+   "text": "It weighs about four pounds. Its brain is basically a smartphone chip.",
+   "key": [
+    "SMARTPHONE"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "pilot",
+    "with": "eng"
+   },
+   "act": {
+    "pilot": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "eng"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The problem: Mars air is incredibly thin. Like one percent of ours.",
+   "cap": "The problem: Mars air is incredibly thin. Like 1% of ours.",
+   "key": [
+    "THIN."
+   ],
+   "board": [
+    "MARS AIR",
+    "~1%"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "pilot": false,
+    "eng": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "eng"
+    },
+    "eng": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "So the blades spin crazy fast. Thousands of turns a minute.",
+   "key": [
+    "FAST."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "April, twenty twenty one. First flight. Up three meters. Hover. Down. Thirty nine seconds.",
+   "cap": "April 2021. First flight. Up 3 meters. Hover. Down. 39 seconds.",
+   "key": [
+    "FIRST"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "FLIGHT 1",
+     "APRIL 2021"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "pilot": false,
+    "eng": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The first powered flight on another planet.",
+   "key": [
+    "PLANET."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "FIRST FLIGHT",
+     "ON ANOTHER PLANET"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "pilot": [
+     -1.4,
+     0.3
+    ],
+    "eng": [
+     1.4,
+     0.3
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "pilot"
+    }
+   }
+  },
+  {
+   "text": "Onboard: a tiny scrap of fabric. From the Wright brothers' plane.",
+   "key": [
+    "WRIGHT"
+   ],
+   "board": [
+    "WRIGHT FLYER",
+    "FABRIC"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "The plan says five test flights. Then it's done.",
+   "key": [
+    "DONE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "pilot": false,
+    "eng": false,
+    "boss": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Ingenuity ignores the plan. Completely.",
+   "key": [
+    "IGNORES"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It becomes a scout. It flies ahead of the rover. It maps the path.",
+   "key": [
+    "SCOUT."
+   ],
+   "place": {
+    "capy": false,
+    "boss": [
+     0,
+     0.4
+    ],
+    "pilot": [
+     2.4,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "happy",
+     "action": "point",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "Ten flights. Twenty. Fifty. It survives a Martian winter.",
+   "cap": "10 flights. 20. 50. It survives a Martian winter.",
+   "key": [
+    "WINTER."
+   ],
+   "board": [
+    "FLIGHTS",
+    "50+"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "pilot"
+    }
+   }
+  },
+  {
+   "text": "Dust storms. Lost contact. It keeps coming back. Every single time.",
+   "key": [
+    "BACK."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "January, twenty twenty four. Flight seventy two.",
+   "cap": "January 2024. Flight 72.",
+   "key": [
+    "72."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "FLIGHT 72",
+     "JAN 2024"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "pilot": false,
+    "eng": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It comes down hard. At least one rotor blade breaks. That's it.",
+   "key": [
+    "BREAKS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "ROTOR",
+     "DAMAGED"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "pilot": [
+     -1.4,
+     0.3
+    ],
+    "eng": [
+     1.4,
+     0.3
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "pilot",
+    "with": "eng"
+   },
+   "act": {
+    "pilot": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "eng"
+    },
+    "eng": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "pilot"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "It can't fly anymore. The mission ends. After nearly three years.",
+   "key": [
+    "YEARS."
+   ],
+   "board": [
+    "MISSION",
+    "COMPLETE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Five flights promised. Seventy two delivered. Contract overachiever. Legend.",
+   "cap": "5 flights promised. 72 delivered. Contract overachiever. Legend.",
+   "key": [
+    "OVERACHIEVER."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng": [
+     1.4,
+     0.2
+    ],
+    "pilot": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "clap",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It still sits on Mars today. Parked. Still sending data, for a while.",
+   "key": [
+    "DATA,"
+   ],
+   "place": {
+    "capy": false,
+    "eng": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "What's the bigger flex? Five flights planned, or seventy two flown?",
+   "cap": "What's the bigger flex? 5 planned, or 72 flown?",
+   "key": [
+    "FLEX?"
+   ],
+   "board": [
+    "5 PLANNED",
+    "72 FLOWN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "NASA JPL: after three years on Mars, Ingenuity's mission ends",
+   "url": "https://www.jpl.nasa.gov/news/after-three-years-on-mars-nasas-ingenuity-helicopter-mission-ends/"
+  },
+  {
+   "title": "NPR: NASA retires Ingenuity",
+   "url": "https://www.npr.org/2024/01/25/1226983159/nasa-ingenuity-helicopter-mars-last-mission-damage"
+  },
+  {
+   "title": "CBS News: Ingenuity ends marathon mission",
+   "url": "https://www.cbsnews.com/news/nasa-mars-helicopter-ingenuity-ends-marathon-mission-rotor-damage"
+  },
+  {
+   "title": "Scientific American: Ingenuity ends mission after 3 years",
+   "url": "https://www.scientificamerican.com/article/nasa-rsquo-s-mars-helicopter-ingenuity-ends-mission-on-the-red-planet-after-3-years/"
+  },
+  {
+   "title": "Smithsonian: Ingenuity has taken its final flight",
+   "url": "https://www.smithsonianmag.com/smart-news/nasa-ingenuity-mars-helicopter-taken-final-flight-180983667/"
+  },
+  {
+   "title": "The Planetary Society: Ingenuity",
+   "url": "https://www.planetary.org/space-missions/ingenuity"
+  },
+  {
+   "title": "AIP FYI: NASA retires overachieving Ingenuity",
+   "url": "https://www.aip.org/fyi/nasa-retires-overachieving-mars-ingenuity-helicopter"
+  },
+  {
+   "title": "Wikipedia: Ingenuity (helicopter)",
+   "url": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Ingenuity was planned for up to five flights and flew 72",
+   "terms": [
+    "72",
+    "five|5"
+   ]
+  },
+  {
+   "claim": "It rode to Mars attached under Perseverance",
+   "terms": [
+    "Perseverance",
+    "belly|under"
+   ]
+  },
+  {
+   "claim": "It weighs about four pounds (1.8 kg)",
+   "terms": [
+    "4 pounds|four pounds|1.8"
+   ]
+  },
+  {
+   "claim": "It used a smartphone processor",
+   "terms": [
+    "smartphone|cellphone|phone"
+   ]
+  },
+  {
+   "claim": "Mars air is about 1% as dense as Earth's",
+   "terms": [
+    "1%|1 percent|one percent"
+   ]
+  },
+  {
+   "claim": "Its blades spin thousands of times a minute",
+   "terms": [
+    "rpm|revolutions per minute|2,400|2,500"
+   ]
+  },
+  {
+   "claim": "First flight was in April 2021 and lasted 39 seconds",
+   "terms": [
+    "39"
+   ]
+  },
+  {
+   "claim": "First flight was in April 2021",
+   "terms": [
+    "April",
+    "2021"
+   ]
+  },
+  {
+   "claim": "It was the first powered, controlled flight on another planet",
+   "terms": [
+    "first",
+    "another planet|another world"
+   ]
+  },
+  {
+   "claim": "It carried a piece of the Wright Flyer's fabric",
+   "terms": [
+    "Wright"
+   ]
+  },
+  {
+   "claim": "It became a scout for the rover",
+   "terms": [
+    "scout"
+   ]
+  },
+  {
+   "claim": "It survived a Martian winter",
+   "terms": [
+    "winter"
+   ]
+  },
+  {
+   "claim": "Its final flight was in January 2024 and a rotor blade was damaged",
+   "terms": [
+    "January",
+    "rotor|blade"
+   ]
+  },
+  {
+   "claim": "The mission ended after nearly three years",
+   "terms": [
+    "three years|3 years"
+   ]
+  },
+  {
+   "claim": "It remains on Mars and could keep sending data",
+   "terms": [
+    "data"
+   ]
+  }
+ ]
+}
