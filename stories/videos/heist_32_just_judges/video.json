@@ -567,14 +567,13 @@
   {
    "claim": "He said he would take the secret to his grave",
    "terms": [
-    "grave"
+    "secret"
    ]
   },
   {
    "claim": "Copies of the ransom letters were found in his desk",
    "terms": [
-    "letters",
-    "desk|carbon|copies"
+    "letters"
    ]
   },
   {

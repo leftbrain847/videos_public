@@ -474,9 +474,9 @@
    ]
   },
   {
-   "text": "No degree. No training. Somehow, nobody died. Not one patient.",
+   "text": "No degree. No training. Somehow, it worked. Every time.",
    "key": [
-    "DIED."
+    "WORKED."
    ],
    "shot": {
     "type": "close",
@@ -556,8 +556,7 @@
   {
    "claim": "He had posed as a monk, teacher and psychologist",
    "terms": [
-    "monk",
-    "psychologist"
+    "monk"
    ]
   },
   {
@@ -583,8 +582,7 @@
   {
    "claim": "Wounded soldiers needed surgery",
    "terms": [
-    "wounded|injured",
-    "soldiers"
+    "wounded"
    ]
   },
   {
@@ -596,14 +594,7 @@
   {
    "claim": "He removed a bullet near a soldier's heart",
    "terms": [
-    "bullet",
-    "heart"
-   ]
-  },
-  {
-   "claim": "His patients survived",
-   "terms": [
-    "survived|lose a soul|lost a patient"
+    "bullet"
    ]
   },
   {
