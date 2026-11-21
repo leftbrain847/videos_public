@@ -374,8 +374,8 @@
    }
   },
   {
-   "text": "Four hundred seven yards. Twenty seven completions. Zero touchdowns.",
-   "cap": "407 yards. 27 completions. 0 touchdowns.",
+   "text": "Four hundred seven yards. Through the fog. Zero touchdowns.",
+   "cap": "407 yards. Through the fog. 0 touchdowns.",
    "key": [
     "0"
    ],
@@ -601,14 +601,6 @@
  ],
  "sources": [
   {
-   "title": "NFL.com 100 Greatest Games: NFC Divisional Playoff, 'The Fog Bowl'",
-   "url": "https://www.nfl.com/100/originals/100-greatest/games-50"
-  },
-  {
-   "title": "SI Vault: The game was lost in the fog (Jan 9, 1989)",
-   "url": "https://vault.si.com/vault/1989/01/09/nfl-playoffs-the-game-was-lost-in-the-fog-in-the-mists-of-soldier-field-the-mistake-prone-eagles-were-beaten-by-the-bears-as-best-as-anyone-could-see"
-  },
-  {
    "title": "AP via Fox 32: 30 years after Fog Bowl, Bears-Eagles meet again in playoffs",
    "url": "https://fox32chicago.com/sports/30-years-after-fog-bowl-bears-eagles-meet-again-in-playoffs"
   },
@@ -679,13 +671,6 @@
    "terms": [
     "Cunningham",
     "intercept"
-   ]
-  },
-  {
-   "claim": "Cunningham completed 27 passes",
-   "terms": [
-    "Cunningham",
-    "27"
    ]
   },
   {

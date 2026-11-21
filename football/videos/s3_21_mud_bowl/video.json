@@ -826,14 +826,6 @@
  ],
  "sources": [
   {
-   "title": "SI Vault: Miami was one tough mudder (Jan 31, 1983)",
-   "url": "https://vault.si.com/vault/1983/01/31/miami-was-one-tough-mudder"
-  },
-  {
-   "title": "NFL.com 100 Greatest Games: Mud Bowl",
-   "url": "https://nfl.com/100/originals/100-greatest/games-100"
-  },
-  {
    "title": "MiamiDolphins.com: In my own words, A.J. Duhe vs. New York Jets",
    "url": "https://www.miamidolphins.com/news/in-my-own-words-a-j-duhe-vs-new-york-jets-three-interceptions-1983"
   },
@@ -850,12 +842,28 @@
    "url": "https://ca.news.yahoo.com/moment-of-glory-dolphins-lb-aj-duhe-started-decades-of-jets-misery-with-the-aj-duhe-game-130049308.html"
   },
   {
-   "title": "Pro Football Reference: AFC Championship, Jets at Dolphins, January 23, 1983",
-   "url": "https://pro-football-reference.com/boxscores/198301230mia.htm"
-  },
-  {
    "title": "SI: Miami Dolphins history, 100 greatest plays, number 11",
    "url": "https://www.si.com/nfl/dolphins/news/miami-dolphins-history-100-greatest-plays-number-11"
+  },
+  {
+   "title": "Barry Popik: Mud Bowl (1983 Jets-Dolphins AFC Championship)",
+   "url": "https://barrypopik.com/blog/mud_bowl_1983"
+  },
+  {
+   "title": "Wikipedia: 1982 Miami Dolphins season",
+   "url": "https://en.wikipedia.org/wiki/1982_Miami_Dolphins_season"
+  },
+  {
+   "title": "Wikipedia: 1982-83 NFL playoffs",
+   "url": "https://en.wikipedia.org/wiki/1982%E2%80%9383_NFL_playoffs"
+  },
+  {
+   "title": "Phinsider/FanSided: 50 moments in Miami Dolphins history",
+   "url": "https://phinphanatic.com/2015/11/17/50-moments-in-miami-dolphins-history/32"
+  },
+  {
+   "title": "Ultimate70s: NFL game summary, January 23, 1983",
+   "url": "https://www.ultimate70s.com/nflbox/19830123/NYJ/N"
   }
  ],
  "voice": "v2",
@@ -864,7 +872,7 @@
    "claim": "Jets quarterback Richard Todd threw five interceptions",
    "terms": [
     "Todd",
-    "five interceptions|5 interceptions|intercepted five|intercepted 5"
+    "five|5"
    ]
   },
   {
@@ -877,15 +885,13 @@
   {
    "claim": "Heavy rain fell and the field was left uncovered, with no tarp",
    "terms": [
-    "rain",
-    "tarp|cover|uncovered"
+    "tarp|uncovered"
    ]
   },
   {
    "claim": "The Jets complained the field was turned to mud",
    "terms": [
-    "Jets",
-    "mud"
+    "mud|muddy"
    ]
   },
   {
@@ -897,8 +903,8 @@
   {
    "claim": "Todd went 15 of 37 for 103 yards",
    "terms": [
-    "Todd|15",
-    "103"
+    "Todd",
+    "103|15 of 37|15 37"
    ]
   },
   {

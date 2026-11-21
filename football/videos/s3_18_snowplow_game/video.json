@@ -610,16 +610,8 @@
  ],
  "sources": [
   {
-   "title": "NFL.com 100 Greatest Games: Week 14, 'Snowplow Game'",
-   "url": "https://www.nfl.com/100/originals/100-greatest/games-94"
-  },
-  {
    "title": "Patriots Hall of Fame: Clear a path",
    "url": "https://www.patriotshalloffame.com/exhibit-patriots-memories-weather-clear-a-path/"
-  },
-  {
-   "title": "SI Vault: The Pats' naughty snowplow (Jan 10, 2005)",
-   "url": "https://vault.si.com/vault/2005/01/10/the-pats-naughty-snowplow"
   },
   {
    "title": "MiamiDolphins.com: Bo knows the Snow Plow Game",
@@ -628,6 +620,26 @@
   {
    "title": "Wikipedia: Snowplow Game",
    "url": "https://en.wikipedia.org/wiki/Snowplow_Game"
+  },
+  {
+   "title": "ESPN Classic: Snowplow helps Patriots beat Dolphins",
+   "url": "https://www.espn.com/classic/s/moment001212snowplow.html"
+  },
+  {
+   "title": "ESPN AFC East blog: Patriots top plays, Snow Plow Game",
+   "url": "https://www.espn.com/blog/afceast/post/_/id/70748/patriots-top-plays-snow-plow-game"
+  },
+  {
+   "title": "National Weather Service Louisville: The Snow Plow Game",
+   "url": "https://weather.gov/lmk/snow_plow_game"
+  },
+  {
+   "title": "FanSided: The Patriots beat the Dolphins thanks to a convict and a snowplow",
+   "url": "https://fansided.com/2021/07/26/patriots-beat-dolphins-convict-1982-snowplow-game"
+  },
+  {
+   "title": "Grunge: How a snowplow changed NFL rules forever",
+   "url": "https://www.grunge.com/835362/how-a-snowplow-changed-nfl-rules-forever"
   }
  ],
  "voice": "v2",
@@ -657,15 +669,14 @@
   {
    "claim": "4:45 left when New England called timeout",
    "terms": [
-    "4:45",
-    "timeout|time out"
+    "4:45"
    ]
   },
   {
    "claim": "Coach Ron Meyer sent the tractor out",
    "terms": [
     "Meyer",
-    "tractor|plow"
+    "plow|Henderson|tractor"
    ]
   },
   {
@@ -699,14 +710,14 @@
    "claim": "Don Shula protested",
    "terms": [
     "Shula",
-    "protest|complain|furious"
+    "protest|complain|furious|angry|upset"
    ]
   },
   {
    "claim": "The league later banned using snowplows that way",
    "terms": [
-    "ban|outlaw|prohibit",
-    "plow|snow"
+    "plow|snow",
+    "ban|outlaw|prohibit|illegal"
    ]
   },
   {
