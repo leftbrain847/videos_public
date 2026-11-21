@@ -150,8 +150,8 @@
    }
   },
   {
-   "text": "Your last sack? Back in twenty twenty three.",
-   "cap": "Your last sack? Back in 2023.",
+   "text": "Your last sack? Back in twenty twenty three. Long ago.",
+   "cap": "Your last sack? Back in 2023. Long ago.",
    "key": [
     "2023."
    ],
@@ -696,9 +696,9 @@
    }
   },
   {
-   "text": "Later, you split another with Byron Young. One and a half.",
+   "text": "Later, you keep coming. All game long.",
    "key": [
-    "YOUNG."
+    "COMING."
    ],
    "place": {
     "donald": [
@@ -803,7 +803,7 @@
    }
   },
   {
-   "text": "The win felt even better.",
+   "text": "The win felt even better. Team first.",
    "key": [
     "BETTER."
    ],
@@ -831,15 +831,15 @@
    }
   },
   {
-   "text": "Sean McVay calls you one of one. High praise.",
+   "text": "Not bad for a retiree. High praise.",
    "key": [
-    "ONE."
+    "PRAISE."
    ],
    "set": "press",
    "setOpts": {
     "boardText": [
      "RAMS",
-     "ONE OF ONE"
+     "34-6"
     ]
    },
    "place": {
@@ -866,7 +866,7 @@
    }
   },
   {
-   "text": "Cardinals fans, he was retired. Couch retired.",
+   "text": "Cardinals fans, he was retired. Couch retired. Now look.",
    "key": [
     "RETIRED."
    ],
@@ -1026,12 +1026,6 @@
    ]
   },
   {
-   "claim": "Donald split another sack with Byron Young for 1.5 on the day",
-   "terms": [
-    "Byron Young"
-   ]
-  },
-  {
    "claim": "Rams won 34-6",
    "terms": [
     "34-6"
@@ -1041,13 +1035,6 @@
    "claim": "Donald said the win felt even better than the sack",
    "terms": [
     "felt even better"
-   ]
-  },
-  {
-   "claim": "Sean McVay called him one of one",
-   "terms": [
-    "McVay",
-    "one-of-one|one of one"
    ]
   }
  ]

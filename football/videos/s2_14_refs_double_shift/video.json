@@ -612,14 +612,13 @@
    }
   },
   {
-   "text": "Fourteen hours, start to finish. Long day.",
-   "cap": "14 hours, start to finish. Long day.",
+   "text": "One very, very long day. Start to finish.",
    "key": [
-    "14"
+    "LONG"
    ],
    "board": [
     "ON DUTY",
-    "14 HOURS"
+    "ALL DAY"
    ],
    "place": {
     "willard": [
@@ -887,12 +886,6 @@
    "claim": "The four worked 242 plays",
    "terms": [
     "242"
-   ]
-  },
-  {
-   "claim": "The day lasted 14 hours",
-   "terms": [
-    "14 hours"
    ]
   }
  ]
