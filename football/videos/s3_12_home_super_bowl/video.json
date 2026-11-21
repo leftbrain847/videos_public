@@ -523,6 +523,10 @@
   {
    "title": "CBS Sports: Tom Brady wins seventh ring as Buccaneers dominate Chiefs",
    "url": "https://www.cbssports.com/nfl/news/2021-super-bowl-score-tom-brady-wins-seventh-ring-as-buccaneers-dominate-chiefs-and-patrick-mahomes/live/"
+  },
+  {
+   "title": "Wikipedia: Super Bowl LV",
+   "url": "https://en.wikipedia.org/wiki/Super_Bowl_LV"
   }
  ],
  "voice": "v2",
@@ -570,7 +574,7 @@
   {
    "claim": "Kansas City were the defending champions",
    "terms": [
-    "defending"
+    "defending champion|defending Super Bowl|defending champs"
    ]
   },
   {
@@ -583,8 +587,8 @@
   {
    "claim": "Kansas City never reached the end zone and scored three field goals",
    "terms": [
-    "field goals",
-    "end zone|touchdown"
+    "Butker",
+    "field goal"
    ]
   },
   {

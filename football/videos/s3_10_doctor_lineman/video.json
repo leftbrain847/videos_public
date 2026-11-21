@@ -497,6 +497,14 @@
    "url": "https://www.nfl.com/_amp/buccaneers-qb-tom-brady-extends-record-with-fifth-super-bowl-mvp-in-win-over-chi"
   },
   {
+   "title": "Wikipedia: Super Bowl LIV",
+   "url": "https://en.wikipedia.org/wiki/Super_Bowl_LIV"
+  },
+  {
+   "title": "CTV News: Quebec doctors Laurent Duvernay-Tardif, Joe Schwarcz appointed to Order of Canada",
+   "url": "https://montreal.ctvnews.ca/quebec-doctors-laurent-duvernay-tardif-joe-schwarcz-appointed-to-order-of-canada-1.7149872"
+  },
+  {
    "title": "Yahoo Sports: Why LeBron, Stewie, Mahomes, Osaka, Duvernay-Tardif were named SI Sportsperson of 2020",
    "url": "https://sports.yahoo.com/si-sportspersons-2020-lebron-james-breanna-stewart-patrick-mahomes-naomi-osaka-duvernay-tardif-activism-justice-211902845.html"
   },
@@ -552,7 +560,7 @@
   {
    "claim": "He worked at a long-term care facility in Quebec as an orderly",
    "terms": [
-    "orderly"
+    "orderly|long-term care|long term care|care facility|patient attendant"
    ]
   },
   {
