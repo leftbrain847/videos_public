@@ -88,11 +88,12 @@
  },
  "lines": [
   {
-   "text": "In 2020, five NFL head coaches were fined a hundred thousand dollars each. Over masks.",
-   "cap": "In 2020, five NFL head coaches were fined $100,000 each. Over masks.",
+   "text": "Your mask slips. That costs a hundred thousand dollars.",
+   "cap": "Your mask slips. That costs $100,000.",
    "key": [
-    "$100,000"
+    "$100,000."
    ],
+   "speaker": "capy",
    "place": {
     "coachB": false,
     "coachC": false,
@@ -115,14 +116,13 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "The rule: on the sideline, everyone except the players wears a mask. At all times.",
+   "text": "Twenty twenty. Sideline rule: everyone but players wears a mask.",
+   "cap": "2020. Sideline rule: everyone but players wears a mask.",
    "key": [
-    "ALL",
-    "TIMES."
+    "MASK."
    ],
    "set": "office",
    "setOpts": {
@@ -131,6 +131,10 @@
      "MASKS ON"
     ]
    },
+   "board": [
+    "SIDELINE RULE:",
+    "MASKS ON"
+   ],
    "place": {
     "official": "desk"
    },
@@ -144,16 +148,12 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "board": [
-    "SIDELINE RULE:",
-    "MASKS ON"
-   ]
+   }
   },
   {
-   "text": "The league even sent a memo warning of accountability.",
+   "text": "The league even sends a memo. It warns of accountability.",
    "key": [
-    "MEMO"
+    "MEMO."
    ],
    "board": [
     "MEMO:",
@@ -172,9 +172,10 @@
    }
   },
   {
-   "text": "Week two. Three head coaches didn't keep theirs on.",
+   "text": "Week two. Three head coaches let theirs slip.",
+   "cap": "Week 2. 3 head coaches let theirs slip.",
    "key": [
-    "THREE"
+    "3"
    ],
    "set": "field",
    "setOpts": {
@@ -182,7 +183,11 @@
      "WEEK 2"
     ]
    },
+   "board": [
+    "WEEK 2"
+   ],
    "place": {
+    "capy": false,
     "coachA": [
      0,
      -0.4
@@ -213,15 +218,12 @@
      "mood": "neutral",
      "action": "point"
     }
-   },
-   "board": [
-    "WEEK 2"
-   ]
+   }
   },
   {
    "text": "Pete Carroll. Vic Fangio. Kyle Shanahan.",
    "key": [
-    "FANGIO."
+    "SHANAHAN."
    ],
    "board": [
     "CARROLL",
@@ -245,8 +247,8 @@
    }
   },
   {
-   "text": "A hundred thousand dollars each. Plus two hundred fifty thousand for each team.",
-   "cap": "$100,000 each. Plus $250,000 for each team.",
+   "text": "A hundred thousand dollars each. Plus two hundred fifty thousand per team.",
+   "cap": "$100,000 each. Plus $250,000 per team.",
    "key": [
     "$250,000"
    ],
@@ -267,10 +269,13 @@
    }
   },
   {
-   "text": "The next night, in Las Vegas, two more.",
+   "text": "The next night, in Las Vegas? Two more coaches.",
    "key": [
-    "TWO",
-    "MORE."
+    "TWO"
+   ],
+   "board": [
+    "MONDAY NIGHT",
+    "LAS VEGAS"
    ],
    "place": {
     "coachA": false,
@@ -278,10 +283,6 @@
     "coachC": false,
     "raider": "center"
    },
-   "board": [
-    "MONDAY NIGHT",
-    "LAS VEGAS"
-   ],
    "shot": {
     "type": "low",
     "on": "raider"
@@ -294,7 +295,7 @@
    }
   },
   {
-   "text": "Jon Gruden and Sean Payton. Same fines.",
+   "text": "Jon Gruden. Sean Payton. Same fines. Same rule.",
    "key": [
     "SAME"
    ],
@@ -314,10 +315,48 @@
    }
   },
   {
-   "text": "Five coaches in two days. One point seven five million dollars.",
-   "cap": "5 coaches in 2 days. $1.75 million.",
+   "text": "Nobody reads the memo. Apparently.",
    "key": [
-    "$1.75"
+    "MEMO."
+   ],
+   "speaker": "capy",
+   "board": [
+    "MEMO:",
+    "UNREAD"
+   ],
+   "place": {
+    "capy": [
+     -2.0,
+     0.8
+    ],
+    "raider": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "raider"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "raider": {
+     "mood": "confused",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Five coaches in two days. The league is not kidding around.",
+   "cap": "5 coaches in 2 days. The league is not kidding around.",
+   "key": [
+    "5"
    ],
    "set": "press",
    "setOpts": {
@@ -326,6 +365,10 @@
      "$1.75M"
     ]
    },
+   "board": [
+    "COACHES FINED",
+    "5 IN 2 DAYS"
+   ],
    "place": {
     "official": "center",
     "capy": [
@@ -347,15 +390,11 @@
      "mood": "smug",
      "look": "official"
     }
-   },
-   "board": [
-    "TOTAL",
-    "$1.75M"
-   ]
+   }
   },
   {
-   "text": "By November, the Raiders were fined again. Five hundred thousand dollars.",
-   "cap": "By November, the Raiders were fined again. $500,000.",
+   "text": "By November, the Raiders get fined again. Five hundred thousand dollars.",
+   "cap": "By November, the Raiders get fined again. $500,000.",
    "key": [
     "$500,000."
    ],
@@ -379,8 +418,8 @@
    }
   },
   {
-   "text": "Gruden, another hundred fifty thousand.",
-   "cap": "Gruden, another $150,000.",
+   "text": "Their head coach? Another hundred fifty thousand.",
+   "cap": "Their head coach? Another $150,000.",
    "key": [
     "$150,000."
    ],
@@ -400,8 +439,8 @@
    }
   },
   {
-   "text": "And they lost a sixth round draft pick. The first team to lose a pick over COVID rules.",
-   "cap": "And they lost a 6th round draft pick. The first team to lose a pick over COVID rules.",
+   "text": "They also lose a sixth round draft pick.",
+   "cap": "They also lose a 6th-round draft pick.",
    "key": [
     "PICK."
    ],
@@ -425,6 +464,7 @@
    "key": [
     "CLOTH"
    ],
+   "speaker": "capy",
    "set": "field",
    "setOpts": {
     "boardText": [
@@ -432,6 +472,10 @@
      "$100,000"
     ]
    },
+   "board": [
+    "FINE:",
+    "$100,000"
+   ],
    "place": {
     "capy": [
      -1.2,
@@ -456,18 +500,19 @@
      "mood": "sad",
      "look": "capy"
     }
-   },
-   "speaker": "capy",
-   "board": [
-    "FINE:",
-    "$100,000"
-   ]
+   }
   },
   {
-   "text": "Would a hundred thousand dollar fine make you wear the mask? Yes or no?",
-   "cap": "Would a $100,000 fine make you wear the mask? Yes or no?",
+   "text": "A hundred thousand dollar fine. Mask up? Yes or no? Raiders fans, don't answer.",
+   "cap": "A $100,000 fine. Mask up? Yes or no? Raiders fans, don't answer.",
    "key": [
-    "$100,000"
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "MASK UP:",
+    "YES OR NO?"
    ],
    "shot": {
     "type": "two",
@@ -485,8 +530,7 @@
      "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -513,6 +557,87 @@
   {
    "title": "ESPN: NFL fines Raiders, Jon Gruden, takes draft pick for repeated COVID-19 violations",
    "url": "https://africa.espn.com/nfl/story/_/id/30264687/nfl-fines-raiders-jon-gruden-takes-draft-pick-repeated-covid-19-violations"
+  },
+  {
+   "title": "CBS San Francisco (AP): Raiders fined, docked draft pick for COVID violations",
+   "url": "https://www.cbsnews.com/sanfrancisco/news/ap-raiders-fined-docked-pick-for-covid-violations/"
+  },
+  {
+   "title": "CBS Sports: Raiders, Jon Gruden fined, docked draft pick for violating COVID-19 protocol",
+   "url": "https://www.cbssports.com/nfl/news/raiders-jon-gruden-reportedly-fined-docked-draft-pick-for-violating-covid-19-protocol-involving-trent-brown"
+  },
+  {
+   "title": "Sky Sports: Las Vegas Raiders, Jon Gruden fined and draft pick stripped",
+   "url": "https://www.skysports.com/nfl/news/12118/12125081/las-vegas-raiders-jon-gruden-fined-and-draft-pick-stripped-after-covid-19-violations"
+  },
+  {
+   "title": "SI: NFL fines Las Vegas Raiders, Jon Gruden for COVID-19 violations",
+   "url": "https://www.si.com/nfl/2020/11/06/nfl-fines-las-vegas-raiders-jon-gruden-covid-19-violations"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 2020 coaches were fined $100,000 over masks",
+   "terms": [
+    "100,000",
+    "mask"
+   ]
+  },
+  {
+   "claim": "On the sideline everyone but players had to wear a mask",
+   "terms": [
+    "sideline",
+    "mask"
+   ]
+  },
+  {
+   "claim": "The league sent a memo warning of accountability",
+   "terms": [
+    "memo"
+   ]
+  },
+  {
+   "claim": "In week 2 Pete Carroll, Vic Fangio and Kyle Shanahan were fined",
+   "terms": [
+    "Carroll",
+    "Fangio",
+    "Shanahan"
+   ]
+  },
+  {
+   "claim": "Teams were fined $250,000 each",
+   "terms": [
+    "250,000"
+   ]
+  },
+  {
+   "claim": "The next night in Las Vegas, Jon Gruden and Sean Payton were fined",
+   "terms": [
+    "Gruden",
+    "Payton"
+   ]
+  },
+  {
+   "claim": "In November the Raiders were fined $500,000",
+   "terms": [
+    "Raiders",
+    "500,000"
+   ]
+  },
+  {
+   "claim": "Gruden was fined $150,000",
+   "terms": [
+    "Gruden",
+    "150,000"
+   ]
+  },
+  {
+   "claim": "The Raiders lost a sixth-round draft pick",
+   "terms": [
+    "sixth round|6th round",
+    "pick"
+   ]
   }
  ]
 }

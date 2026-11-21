@@ -97,10 +97,11 @@
  },
  "lines": [
   {
-   "text": "In 2020, the Browns won a playoff game while their head coach watched from home.",
+   "text": "You win a playoff game. Your head coach watches from home.",
    "key": [
     "HOME."
    ],
+   "speaker": "capy",
    "place": {
     "priefer": false,
     "guard": false,
@@ -124,11 +125,11 @@
      "action": "cross",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "That week, head coach Kevin Stefanski tested positive.",
+   "text": "Twenty twenty season. Wild card week. Coach Kevin Stefanski tests positive.",
+   "cap": "2020 season. Wild card week. Coach Kevin Stefanski tests positive.",
    "key": [
     "POSITIVE."
    ],
@@ -141,6 +142,10 @@
      "OUT"
     ]
    },
+   "board": [
+    "HEAD COACH:",
+    "OUT"
+   ],
    "place": {
     "guard": [
      -1.4,
@@ -172,16 +177,11 @@
      "mood": "worried",
      "action": "hold"
     }
-   },
-   "board": [
-    "HEAD COACH:",
-    "OUT"
-   ]
+   }
   },
   {
-   "text": "So did guard Joel Bitonio. And cornerback Denzel Ward.",
+   "text": "So does Joel Bitonio. So does Denzel Ward.",
    "key": [
-    "BITONIO.",
     "WARD."
    ],
    "board": [
@@ -205,10 +205,9 @@
    }
   },
   {
-   "text": "The building closed. Meetings went virtual. They barely practiced.",
+   "text": "Your building closes. Meetings go virtual. Practice? Barely.",
    "key": [
-    "VIRTUAL.",
-    "BARELY"
+    "BARELY."
    ],
    "board": [
     "FACILITY",
@@ -232,10 +231,9 @@
    }
   },
   {
-   "text": "Special teams coach Mike Priefer would be head coach for the night.",
+   "text": "Special teams coach Mike Priefer runs the game. For one night.",
    "key": [
-    "SPECIAL",
-    "TEAMS"
+    "PRIEFER"
    ],
    "board": [
     "HEAD COACH:",
@@ -254,9 +252,47 @@
    }
   },
   {
-   "text": "In Pittsburgh. First play from scrimmage: the snap flew over Ben Roethlisberger's head.",
+   "text": "Your special teams guy is the boss now.",
    "key": [
-    "SNAP"
+    "BOSS"
+   ],
+   "speaker": "capy",
+   "board": [
+    "HEAD COACH:",
+    "PRIEFER"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "priefer": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "priefer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "priefer"
+    },
+    "priefer": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "In Pittsburgh. First snap. It flies over Ben Roethlisberger's head.",
+   "key": [
+    "HEAD."
    ],
    "set": "field",
    "setOpts": {
@@ -265,7 +301,12 @@
      "STEELERS 0"
     ]
    },
+   "board": [
+    "BROWNS 0",
+    "STEELERS 0"
+   ],
    "place": {
+    "capy": false,
     "pitqb": "center",
     "brown": [
      2.4,
@@ -286,14 +327,10 @@
      "mood": "shocked",
      "look": "pitqb"
     }
-   },
-   "board": [
-    "BROWNS 0",
-    "STEELERS 0"
-   ]
+   }
   },
   {
-   "text": "Cleveland recovered it in the end zone. Touchdown.",
+   "text": "Your safety recovers it in the end zone. Touchdown.",
    "key": [
     "TOUCHDOWN."
    ],
@@ -317,25 +354,37 @@
    }
   },
   {
-   "text": "After one quarter, it was twenty eight to nothing.",
-   "cap": "After one quarter, it was 28 to 0.",
+   "text": "After one quarter? Twenty eight to nothing. In a playoff game.",
+   "cap": "After one quarter? 28-0. In a playoff game.",
    "key": [
-    "28"
+    "28-0."
    ],
+   "speaker": "capy",
    "board": [
     "BROWNS 28",
     "STEELERS 0"
    ],
-   "shot": {
-    "type": "wide",
-    "on": "brown",
-    "offset": [
-     1,
-     2,
-     3
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "brown": [
+     0.8,
+     0.2
     ]
    },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "brown"
+   },
    "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
     "brown": {
      "mood": "happy",
      "action": "cheer"
@@ -347,8 +396,8 @@
    }
   },
   {
-   "text": "Roethlisberger completed forty seven passes. An NFL record.",
-   "cap": "Roethlisberger completed 47 passes. An NFL record.",
+   "text": "Roethlisberger completes forty seven passes. A playoff record.",
+   "cap": "Roethlisberger completes 47 passes. A playoff record.",
    "key": [
     "47"
    ],
@@ -357,7 +406,8 @@
     "47"
    ],
    "place": {
-    "brown": false
+    "brown": false,
+    "capy": false
    },
    "shot": {
     "type": "close",
@@ -371,10 +421,10 @@
    }
   },
   {
-   "text": "It wasn't enough. Cleveland won, forty eight to thirty seven.",
-   "cap": "It wasn't enough. Cleveland won, 48 to 37.",
+   "text": "It's not enough. Browns forty eight, Steelers thirty seven.",
+   "cap": "It's not enough. Browns 48, Steelers 37.",
    "key": [
-    "48"
+    "48,"
    ],
    "board": [
     "BROWNS 48",
@@ -401,9 +451,10 @@
    }
   },
   {
-   "text": "Their first playoff win since the 1994 season.",
+   "text": "Your first playoff win since nineteen ninety four.",
+   "cap": "Your first playoff win since 1994.",
    "key": [
-    "1994"
+    "1994."
    ],
    "shot": {
     "type": "medium",
@@ -418,10 +469,11 @@
    }
   },
   {
-   "text": "And the head coach? He had the best seat in his own house.",
+   "text": "Your head coach? Best seat in his own house.",
    "key": [
     "HOUSE."
    ],
+   "speaker": "capy",
    "set": "living",
    "setOpts": {
     "boardText": [
@@ -430,6 +482,10 @@
     ],
     "couch": "#7a4a2a"
    },
+   "board": [
+    "BROWNS 48",
+    "STEELERS 37"
+   ],
    "place": {
     "capy": [
      -1.3,
@@ -442,28 +498,35 @@
    },
    "shot": {
     "type": "medium",
-    "on": "coach"
+    "on": "capy",
+    "offset": [
+     1.0,
+     0.4,
+     1.2
+    ]
    },
    "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
     "coach": {
      "mood": "happy",
      "action": "cheer"
-    },
-    "capy": {
-     "mood": "smug",
-     "look": "coach"
     }
-   },
-   "speaker": "capy",
-   "board": [
-    "BROWNS 48",
-    "STEELERS 37"
-   ]
+   }
   },
   {
-   "text": "Could your team win a playoff game without its head coach? Yes or no?",
+   "text": "Could your team win without its head coach? Yes or no? Steelers fans, don't answer.",
    "key": [
-    "WITHOUT"
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "NO HEAD COACH:",
+    "YES OR NO?"
    ],
    "shot": {
     "type": "two",
@@ -481,8 +544,7 @@
      "action": "clap",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -509,6 +571,110 @@
   {
    "title": "The Land on Demand: Kevin Stefanski paced with nervous energy watching Browns",
    "url": "https://thelandondemand.com/news/2021/jan/11/kevin-stefanski-paced-nervous-energy-watching-brow"
+  },
+  {
+   "title": "ESPN (AP): Browns 48, Steelers 37 recap",
+   "url": "https://www.espn.com/nfl/recap/_/gameId/401220394"
+  },
+  {
+   "title": "ClevelandBrowns.com: Resilient Browns blitz Steelers with historic 1st quarter",
+   "url": "https://www.clevelandbrowns.com/news/resilient-browns-blitz-steelers-with-historic-1st-quarter-win-big-to-advance-to-"
+  },
+  {
+   "title": "WCPO (AP): Same old Browns? Hardly. Cleveland drills Steelers 48-37",
+   "url": "https://www.wcpo.com/sports/same-old-browns-hardly-cleveland-drills-steelers-48-37"
+  },
+  {
+   "title": "KSAT (AP): Same old Browns? Hardly. Cleveland drills Steelers 48-37",
+   "url": "https://www.ksat.com/sports/2021/01/11/same-old-browns-hardly-cleveland-drills-steelers-48-37/"
+  },
+  {
+   "title": "Wikipedia: 2020 Cleveland Browns season",
+   "url": "https://en.wikipedia.org/wiki/2020_Cleveland_Browns_season"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Browns won a playoff game while their head coach watched from home",
+   "terms": [
+    "Stefanski",
+    "home"
+   ]
+  },
+  {
+   "claim": "Head coach Kevin Stefanski tested positive in wild card week",
+   "terms": [
+    "Stefanski",
+    "positive"
+   ]
+  },
+  {
+   "claim": "Joel Bitonio and Denzel Ward also tested positive",
+   "terms": [
+    "Bitonio",
+    "Ward"
+   ]
+  },
+  {
+   "claim": "The facility closed",
+   "terms": [
+    "facility|building",
+    "closed|close|shut"
+   ]
+  },
+  {
+   "claim": "Meetings went virtual",
+   "terms": [
+    "virtual"
+   ]
+  },
+  {
+   "claim": "Special teams coach Mike Priefer was acting head coach",
+   "terms": [
+    "Priefer",
+    "head coach"
+   ]
+  },
+  {
+   "claim": "The first snap flew over Ben Roethlisberger's head",
+   "terms": [
+    "snap",
+    "Roethlisberger"
+   ]
+  },
+  {
+   "claim": "Cleveland recovered it in the end zone for a touchdown",
+   "terms": [
+    "end zone",
+    "touchdown|recovered"
+   ]
+  },
+  {
+   "claim": "It was 28-0 after one quarter",
+   "terms": [
+    "28-0"
+   ]
+  },
+  {
+   "claim": "Roethlisberger completed 47 passes, a playoff record",
+   "terms": [
+    "47",
+    "record"
+   ]
+  },
+  {
+   "claim": "Browns won 48-37",
+   "terms": [
+    "48-37"
+   ]
+  },
+  {
+   "claim": "First playoff win since the 1994 season",
+   "terms": [
+    "1994",
+    "playoff"
+   ]
   }
  ]
 }
