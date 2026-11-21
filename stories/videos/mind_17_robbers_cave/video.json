@@ -1,0 +1,1012 @@
+{
+ "id": "mind_17_robbers_cave",
+ "title": "The summer camp built for a war",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "EAGLES",
+   "VS. RATTLERS"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "eag": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#2e86c1",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   },
+   "hold": "flag"
+  },
+  "rat": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#c0392b",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   }
+  },
+  "staff": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5c9e4a",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "bald",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true,
+    "beard": false
+   },
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "You go to summer camp. The counselors are secretly starting a war.",
+   "key": [
+    "WAR."
+   ],
+   "board": [
+    "EAGLES",
+    "VS. RATTLERS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "eag": [
+     1.2,
+     0.2
+    ],
+    "rat": false,
+    "staff": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eag"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eag": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen fifty four. Robbers Cave State Park, Oklahoma.",
+   "cap": "1954. Robbers Cave State Park, Oklahoma.",
+   "key": [
+    "OKLAHOMA."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "ROBBERS CAVE",
+     "1954"
+    ]
+   },
+   "board": [
+    "ROBBERS CAVE",
+    "1954"
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "eag"
+   },
+   "act": {
+    "eag": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "rat": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty two boys. About eleven years old. Split into two groups.",
+   "cap": "22 boys. About 11 years old. Split into two groups.",
+   "key": [
+    "22"
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eag"
+   },
+   "act": {
+    "eag": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "At first, each group thinks it is alone.",
+   "key": [
+    "ALONE."
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "rat"
+   },
+   "act": {
+    "rat": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They pick names. The Eagles. The Rattlers.",
+   "key": [
+    "EAGLES.",
+    "RATTLERS."
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "eag",
+    "with": "rat"
+   },
+   "act": {
+    "eag": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "rat"
+    },
+    "rat": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "eag"
+    }
+   }
+  },
+  {
+   "text": "Then the staff lets them find each other.",
+   "key": [
+    "FIND"
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": [
+     0,
+     -1.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "staff"
+   },
+   "act": {
+    "staff": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "eag": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "rat"
+    },
+    "rat": {
+     "mood": "angry",
+     "action": "point",
+     "look": "eag"
+    }
+   }
+  },
+  {
+   "text": "A tournament begins. Baseball. Tug of war. Prizes.",
+   "key": [
+    "PRIZES."
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": [
+     0,
+     -1.6
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "eag"
+   },
+   "act": {
+    "eag": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Winners get a trophy. Medals. Pocketknives.",
+   "key": [
+    "POCKETKNIVES."
+   ],
+   "board": [
+    "PRIZE:",
+    "POCKETKNIVES"
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": [
+     0,
+     -1.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rat"
+   },
+   "act": {
+    "rat": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Pocketknives. For eleven year olds. During a feud.",
+   "key": [
+    "FEUD."
+   ],
+   "set": "study",
+   "board": [
+    "EAGLES",
+    "VS. RATTLERS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "eag": false,
+    "rat": false,
+    "staff": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It escalates fast. A team flag gets burned.",
+   "key": [
+    "BURNED."
+   ],
+   "set": "field",
+   "board": [
+    "EAGLES",
+    "VS. RATTLERS"
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "rat",
+    "with": "eag"
+   },
+   "act": {
+    "rat": {
+     "mood": "smug",
+     "action": "point",
+     "look": "eag"
+    },
+    "eag": {
+     "mood": "angry",
+     "action": "point",
+     "look": "rat"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Cabins get raided. Insults fly. Grudges grow.",
+   "key": [
+    "RAIDED."
+   ],
+   "set": "locker",
+   "board": [
+    "CABIN",
+    "RAID"
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     1.6,
+     0.0
+    ],
+    "rat": [
+     -1.4,
+     0.4
+    ],
+    "staff": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "rat"
+   },
+   "act": {
+    "rat": {
+     "mood": "angry",
+     "action": "point",
+     "look": "eag"
+    },
+    "eag": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "rat"
+    }
+   }
+  },
+  {
+   "text": "The camp staff? Taking notes. They are the researchers.",
+   "key": [
+    "RESEARCHERS."
+   ],
+   "place": {
+    "capy": false,
+    "eag": false,
+    "rat": false,
+    "staff": [
+     0,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "staff"
+   },
+   "act": {
+    "staff": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Psychologist Muzafer Sherif runs it. Now he wants peace.",
+   "key": [
+    "PEACE."
+   ],
+   "set": "study",
+   "board": [
+    "EAGLES",
+    "VS. RATTLERS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "eag": false,
+    "rat": false,
+    "staff": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "staff"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "staff"
+    },
+    "staff": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Shared meals do not work. Food becomes ammunition.",
+   "key": [
+    "AMMUNITION."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "eag": false,
+    "rat": false,
+    "staff": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "staff"
+   },
+   "act": {
+    "staff": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the staff secretly cuts off the water.",
+   "key": [
+    "WATER"
+   ],
+   "set": "field",
+   "board": [
+    "EAGLES",
+    "VS. RATTLERS"
+   ],
+   "place": {
+    "capy": false,
+    "eag": false,
+    "rat": false,
+    "staff": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "staff"
+   },
+   "act": {
+    "staff": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Both groups must work together to fix it.",
+   "key": [
+    "TOGETHER"
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "eag",
+    "with": "rat"
+   },
+   "act": {
+    "eag": {
+     "mood": "worried",
+     "action": "point",
+     "look": "rat"
+    },
+    "rat": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "eag"
+    }
+   }
+  },
+  {
+   "text": "Then a supply truck stalls. Everyone pulls it with a rope.",
+   "key": [
+    "TRUCK"
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "eag"
+   },
+   "act": {
+    "eag": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "rat": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The hostility fades. Both groups ride home on one bus.",
+   "key": [
+    "BUS."
+   ],
+   "place": {
+    "capy": false,
+    "eag": [
+     -1.4,
+     0.4
+    ],
+    "rat": [
+     1.6,
+     0.0
+    ],
+    "staff": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rat"
+   },
+   "act": {
+    "rat": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "eag"
+    },
+    "eag": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "rat"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. This was the second attempt.",
+   "key": [
+    "SECOND"
+   ],
+   "set": "study",
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "eag": false,
+    "rat": false,
+    "staff": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nineteen fifty three. An earlier camp in New York.",
+   "cap": "1953. An earlier camp in New York.",
+   "key": [
+    "1953."
+   ],
+   "board": [
+    "MIDDLE GROVE",
+    "1953"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "eag": false,
+    "rat": false,
+    "staff": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Those boys suspected the staff. They refused to turn on each other.",
+   "key": [
+    "REFUSED"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "eag": [
+     1.2,
+     0.2
+    ],
+    "rat": false,
+    "staff": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eag"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "eag"
+    },
+    "eag": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The researchers called that study off. Peace ruined it.",
+   "key": [
+    "PEACE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "eag": false,
+    "rat": false,
+    "staff": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Camp starts a rivalry. Do you play along? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "PLAY",
+    "ALONG?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "eag": false,
+    "rat": [
+     1.2,
+     0.2
+    ],
+    "staff": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rat"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "rat": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Realistic conflict theory",
+   "url": "https://en.wikipedia.org/wiki/Realistic_conflict_theory"
+  },
+  {
+   "title": "Wikipedia: Muzafer Sherif",
+   "url": "https://en.wikipedia.org/wiki/Muzafer_Sherif"
+  },
+  {
+   "title": "Simply Psychology: Robbers Cave experiment",
+   "url": "https://www.simplypsychology.org/robbers-cave.html"
+  },
+  {
+   "title": "The Psychologist (BPS): A view from the boys",
+   "url": "https://bps.org.uk/psychologist/view-boys"
+  },
+  {
+   "title": "APA: The Lost Boys, by Gina Perry",
+   "url": "https://www.apa.org/ed/precollege/psychology-teacher-network/activities-books/lost-boys"
+  },
+  {
+   "title": "Classics in the History of Psychology: Sherif et al., chapter 5",
+   "url": "https://www.yorku.ca/pclassic/Sherif/chap5.htm"
+  },
+  {
+   "title": "Art of Manliness: The Robbers Cave experiment",
+   "url": "https://www.artofmanliness.com/culture/history/robbers-cave-experiment/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The study took place in 1954 at Robbers Cave State Park, Oklahoma",
+   "terms": [
+    "Robbers Cave",
+    "Oklahoma"
+   ]
+  },
+  {
+   "claim": "There were 22 boys",
+   "terms": [
+    "22",
+    "boys"
+   ]
+  },
+  {
+   "claim": "The boys were about 11 years old",
+   "terms": [
+    "11|eleven",
+    "boys|year"
+   ]
+  },
+  {
+   "claim": "At first each group did not know the other existed",
+   "terms": [
+    "other group|existence|unaware|did not know"
+   ]
+  },
+  {
+   "claim": "The groups were the Eagles and the Rattlers",
+   "terms": [
+    "Eagles",
+    "Rattlers"
+   ]
+  },
+  {
+   "claim": "A tournament included baseball and tug of war",
+   "terms": [
+    "tug of war|tug-of-war",
+    "baseball"
+   ]
+  },
+  {
+   "claim": "Prizes included a trophy, medals and pocketknives",
+   "terms": [
+    "knives|pocketknives|pocket knives"
+   ]
+  },
+  {
+   "claim": "A group's flag was burned",
+   "terms": [
+    "flag",
+    "burn"
+   ]
+  },
+  {
+   "claim": "Cabins were raided",
+   "terms": [
+    "raid"
+   ]
+  },
+  {
+   "claim": "Muzafer Sherif ran the study",
+   "terms": [
+    "Sherif"
+   ]
+  },
+  {
+   "claim": "Shared meals turned into food fights",
+   "terms": [
+    "food"
+   ]
+  },
+  {
+   "claim": "Staff cut off the water supply so both groups had to fix it",
+   "terms": [
+    "water"
+   ]
+  },
+  {
+   "claim": "A stalled truck was pulled by both groups with a rope",
+   "terms": [
+    "truck"
+   ]
+  },
+  {
+   "claim": "Both groups rode home on one bus",
+   "terms": [
+    "bus"
+   ]
+  },
+  {
+   "claim": "An earlier 1953 camp was in New York",
+   "terms": [
+    "1953",
+    "Middle Grove|New York"
+   ]
+  },
+  {
+   "claim": "In 1953 the boys suspected manipulation and the study was abandoned",
+   "terms": [
+    "1953",
+    "abandon|terminat|ended|called off|suspect"
+   ]
+  }
+ ]
+}
