@@ -2,79 +2,717 @@
  "id": "s3_18_snowplow_game",
  "title": "The tractor that kicked a field goal",
  "set": "field",
- "setOpts": {"boardText": ["MIAMI 0", "NEW ENG 0"], "grass": "#dfe7dc"},
+ "setOpts": {
+  "boardText": [
+   "MIAMI 0",
+   "NEW ENG 0"
+  ],
+  "grass": "#dfe7dc"
+ },
  "cast": {
-  "capy": {"kind": "capy", "at": "left", "face": 20},
-  "driver": {"look": {"outfit": "hoodie", "shirt": "#e07a22", "pants": "#3c3c3c", "hair": "short", "hairColor": "#2a1a10", "skin": "#c68e62", "cap": "#2e7d32"}, "at": "center"},
-  "kicker": {"look": {"outfit": "jersey", "shirt": "#c8102e", "pants": "#f4f4f4", "number": "1", "hair": "short", "hairColor": "#d9b16a", "skin": "#f2c39b", "longSleeve": true}, "at": "right"},
-  "coach": {"look": {"outfit": "polo", "shirt": "#1f3f8f", "pants": "#4a4a4a", "skin": "#f0c8a0", "hair": "short", "hairColor": "#6b4423", "headset": true}, "at": "right", "face": -20},
-  "rival": {"look": {"outfit": "polo", "shirt": "#16807a", "pants": "#3c3c3c", "skin": "#f2c39b", "hair": "short", "hairColor": "#3b2416"}, "at": "center", "hold": "clipboard"}
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "driver": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#e07a22",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#c68e62",
+    "cap": "#2e7d32"
+   },
+   "at": "center"
+  },
+  "kicker": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#c8102e",
+    "pants": "#f4f4f4",
+    "number": "1",
+    "hair": "short",
+    "hairColor": "#d9b16a",
+    "skin": "#f2c39b",
+    "longSleeve": true
+   },
+   "at": "right"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1f3f8f",
+    "pants": "#4a4a4a",
+    "skin": "#f0c8a0",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "headset": true
+   },
+   "at": "right",
+   "face": -20
+  },
+  "rival": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#16807a",
+    "pants": "#3c3c3c",
+    "skin": "#f2c39b",
+    "hair": "short",
+    "hairColor": "#3b2416"
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
  },
  "lines": [
-  {"text": "In 1982, a snowplow decided an NFL game.", "key": ["SNOWPLOW"],
-   "place": {"kicker": false, "coach": false, "rival": false, "capy": [-2.4, 0.8], "driver": [0.6, 0]},
-   "shot": {"type": "two", "on": "capy", "with": "driver"},
-   "act": {"capy": {"mood": "smug", "action": "talk", "look": "camera"}, "driver": {"mood": "happy", "action": "wave", "look": "capy"}}, "speaker": "capy"},
-  {"text": "Miami at New England, in a snowstorm. Nobody could score.", "key": ["SNOWSTORM.", "NOBODY"],
-   "place": {"capy": false, "driver": false, "kicker": [0, 0]},
-   "shot": {"type": "high", "on": "kicker"},
-   "act": {"kicker": {"mood": "worried", "action": "cross", "look": "camera"}}},
-  {"text": "Late in the fourth quarter, it was still zero to zero.", "cap": "Late in the 4th quarter, it was still 0 to 0.", "key": ["0", "TO"],
-   "place": {"kicker": [4.6, 0.5], "coach": [6.6, 0.5]},
-   "shot": {"type": "low", "on": "kicker", "offset": [-1.3, 1.4, 3]},
-   "act": {"kicker": {"mood": "worried", "action": "cross", "look": "camera"}, "coach": {"mood": "angry", "action": "cross", "look": "kicker"}}},
-  {"text": "With four forty five left, New England called timeout before a field goal try.", "cap": "With 4:45 left, New England called timeout before a field goal try.", "key": ["4:45", "TIMEOUT"],
-   "place": {"kicker": [-1.2, 0], "coach": [1.2, 0]},
-   "shot": {"type": "two", "on": "kicker", "with": "coach"},
-   "act": {"coach": {"mood": "smug", "action": "point", "look": "kicker"}, "kicker": {"mood": "neutral", "action": "idle", "look": "coach"}}},
-  {"text": "Then their coach sent a man out on a John Deere tractor.", "key": ["TRACTOR."],
-   "shot": {"type": "close", "on": "coach"},
-   "act": {"coach": {"mood": "smug", "action": "point", "look": "camera"}}},
-  {"text": "He swept a clean patch in the snow, right where the kick would go down.", "key": ["CLEAN", "PATCH"],
-   "place": {"coach": false, "kicker": false, "driver": [0, 0.5]},
-   "shot": {"type": "wide", "on": "driver"},
-   "act": {"driver": {"mood": "happy", "action": "point"}}},
-  {"text": "The driver? Mark Henderson. A burglar on a prison work release program.", "key": ["PRISON"],
-   "shot": {"type": "medium", "on": "driver"},
-   "act": {"driver": {"mood": "smug", "action": "shrug", "look": "camera"}}},
-  {"text": "John Smith kicked it from thirty three yards. Good.", "cap": "John Smith kicked it from 33 yards. Good.", "key": ["33", "GOOD."],
-   "place": {"driver": false, "kicker": [0, 0]},
-   "shot": {"type": "low", "on": "kicker"},
-   "act": {"kicker": {"mood": "happy", "action": "cheer", "look": "camera"}}},
-  {"text": "Final score: three to nothing.", "cap": "Final score: 3 to 0.", "key": ["3"],
-   "board": ["NEW ENG 3", "MIAMI 0"],
-   "place": {"kicker": [4.6, 0.5], "driver": [6.6, 0.5]},
-   "shot": {"type": "low", "on": "kicker", "offset": [-1.3, 1.4, 3]},
-   "act": {"kicker": {"mood": "happy", "action": "cheer", "look": "camera"}, "driver": {"mood": "happy", "action": "wave", "look": "camera"}}},
-  {"text": "Miami coach Don Shula was furious, and he protested.", "key": ["FURIOUS,", "PROTESTED."],
-   "set": "press", "setOpts": {"boardText": ["POSTGAME"]}, "board": ["POSTGAME"],
-   "place": {"rival": "center"},
-   "shot": {"type": "medium", "on": "rival"},
-   "act": {"rival": {"mood": "angry", "action": "point", "look": "camera"}}},
-  {"text": "The three points stood anyway.", "cap": "The 3 points stood anyway.", "key": ["STOOD"],
-   "place": {"capy": [-1.8, 0.6]},
-   "shot": {"type": "two", "on": "capy", "with": "rival"},
-   "act": {"capy": {"mood": "smug", "action": "shrug", "look": "camera"}, "rival": {"mood": "angry", "action": "facepalm"}}, "speaker": "capy"},
-  {"text": "But the league then banned snow clearing help during play.", "key": ["BANNED"],
-   "board": ["NEW RULE:", "NO PLOWS"],
-   "shot": {"type": "close", "on": "rival"},
-   "act": {"rival": {"mood": "smug", "action": "hold", "look": "camera"}}},
-  {"text": "And the tractor? It now hangs from the ceiling at the Patriots Hall of Fame.", "key": ["CEILING"],
-   "set": "tunnel", "setOpts": {"boardText": ["HALL OF FAME"]}, "board": ["HALL OF FAME"],
-   "place": {"driver": "center"},
-   "shot": {"type": "wide", "on": "driver"},
-   "act": {"driver": {"mood": "happy", "action": "point", "look": "camera"}}},
-  {"text": "So, was the plow fair play or genius? One word.", "key": ["FAIR", "GENIUS?"],
-   "set": "locker", "setOpts": {"boardText": ["FAIR", "OR GENIUS?"]}, "board": ["FAIR", "OR GENIUS?"],
-   "place": {"capy": [-1.4, 1.0], "driver": [1.2, 0]},
-   "shot": {"type": "two", "on": "capy", "with": "driver"},
-   "act": {"capy": {"mood": "smug", "action": "talk", "look": "camera"}, "driver": {"mood": "smug", "action": "shrug", "look": "capy"}}, "speaker": "capy"}
+  {
+   "text": "You need a field goal. So you call a snowplow.",
+   "key": [
+    "SNOWPLOW."
+   ],
+   "place": {
+    "kicker": false,
+    "coach": false,
+    "rival": false,
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "driver": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "driver"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "driver": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Nineteen eighty two. Miami at New England. Snowstorm.",
+   "cap": "1982. Miami at New England. Snowstorm.",
+   "key": [
+    "SNOWSTORM."
+   ],
+   "place": {
+    "capy": false,
+    "driver": false,
+    "kicker": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "kicker"
+   },
+   "act": {
+    "kicker": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fourth quarter. Still zero to zero. So exciting, really.",
+   "cap": "4th quarter. Still 0 to 0. So exciting, really.",
+   "key": [
+    "0"
+   ],
+   "place": {
+    "kicker": [
+     1.4,
+     0
+    ],
+    "coach": false,
+    "capy": [
+     -1.6,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "kicker": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    },
+    "coach": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "kicker"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Four forty five left. You call timeout.",
+   "cap": "4:45 left. You call timeout.",
+   "key": [
+    "TIMEOUT."
+   ],
+   "place": {
+    "kicker": [
+     -1.2,
+     0
+    ],
+    "coach": [
+     1.2,
+     0
+    ],
+    "capy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "kicker",
+    "with": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "smug",
+     "action": "point",
+     "look": "kicker"
+    },
+    "kicker": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "coach"
+    }
+   }
+  },
+  {
+   "text": "You're coach Ron Meyer. You wave to the tractor.",
+   "key": [
+    "TRACTOR."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The driver sweeps a clean spot. Right where your kick goes down.",
+   "key": [
+    "SPOT."
+   ],
+   "act": {},
+   "shot": {
+    "type": "follow",
+    "on": "driver"
+   },
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "MIAMI 0",
+     "NEW ENG 0"
+    ],
+    "grass": "#dfe7dc",
+    "endZone": 20
+   },
+   "play": {
+    "cast": {
+     "driver": {
+      "path": [
+       [
+        0,
+        -4,
+        0
+       ],
+       [
+        1,
+        0.5,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ]
+      ]
+     },
+     "kicker": {
+      "path": [
+       [
+        0,
+        4,
+        -2
+       ],
+       [
+        1,
+        4,
+        -2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "text": "Nobody stops him. There's no rule against it. Yet.",
+   "key": [
+    "YET."
+   ],
+   "place": {
+    "capy": [
+     -1.8,
+     0.8
+    ],
+    "driver": [
+     1.0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "driver": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "driver"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The driver? Mark Henderson. On prison work release.",
+   "key": [
+    "RELEASE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "driver"
+   },
+   "act": {
+    "driver": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "driver": [
+     0,
+     0.5
+    ]
+   }
+  },
+  {
+   "text": "John Smith kicks it from thirty three yards.",
+   "cap": "John Smith kicks it from 33 yards.",
+   "key": [
+    "33"
+   ],
+   "act": {},
+   "shot": {
+    "type": "follow_high",
+    "on": "ball"
+   },
+   "play": {
+    "cast": {
+     "kicker": {
+      "path": [
+       [
+        0,
+        -1.2,
+        0
+       ],
+       [
+        0.12,
+        0,
+        0
+       ],
+       [
+        1,
+        0,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.12,
+        "kick"
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.18,
+      0.3,
+      0.3,
+      0
+     ],
+     [
+      0.6,
+      10,
+      5,
+      0
+     ],
+     [
+      1,
+      20,
+      6,
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "text": "It's good. New England three, Miami zero.",
+   "cap": "It's good. New England 3, Miami 0.",
+   "key": [
+    "3,"
+   ],
+   "place": {
+    "kicker": [
+     4.6,
+     0.5
+    ],
+    "driver": [
+     6.6,
+     0.5
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "kicker",
+    "offset": [
+     -1.3,
+     1.4,
+     3
+    ]
+   },
+   "act": {
+    "kicker": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "driver": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "NEW ENG 3",
+    "MIAMI 0"
+   ]
+  },
+  {
+   "text": "Miami coach Don Shula is furious. He protests.",
+   "key": [
+    "PROTESTS."
+   ],
+   "place": {
+    "rival": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rival"
+   },
+   "act": {
+    "rival": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "POSTGAME"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "POSTGAME"
+    ]
+   }
+  },
+  {
+   "text": "The points stand anyway. Miami fans are still not over it.",
+   "key": [
+    "STAND"
+   ],
+   "place": {
+    "capy": [
+     -1.8,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rival"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "rival": {
+     "mood": "angry",
+     "action": "facepalm"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then the league bans that kind of help.",
+   "key": [
+    "BANS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rival"
+   },
+   "act": {
+    "rival": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "NEW RULE:",
+    "NO PLOWS"
+   ]
+  },
+  {
+   "text": "And the tractor? It hangs in the Patriots Hall of Fame.",
+   "key": [
+    "FAME."
+   ],
+   "place": {
+    "driver": "center"
+   },
+   "shot": {
+    "type": "wide",
+    "on": "driver"
+   },
+   "act": {
+    "driver": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "HALL OF FAME"
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "HALL OF FAME"
+    ]
+   }
+  },
+  {
+   "text": "Fair play or cheating? One word. Dolphins fans, we know.",
+   "key": [
+    "FAIR",
+    "CHEATING?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "driver": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "driver"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "driver": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "board": [
+    "FAIR",
+    "OR CHEATING?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "FAIR",
+     "OR CHEATING?"
+    ]
+   },
+   "speaker": "capy"
+  }
  ],
  "sources": [
-  {"title": "NFL.com 100 Greatest Games: Week 14, 'Snowplow Game'", "url": "https://www.nfl.com/100/originals/100-greatest/games-94"},
-  {"title": "Patriots Hall of Fame: Clear a path", "url": "https://www.patriotshalloffame.com/exhibit-patriots-memories-weather-clear-a-path/"},
-  {"title": "SI Vault: The Pats' naughty snowplow (Jan 10, 2005)", "url": "https://vault.si.com/vault/2005/01/10/the-pats-naughty-snowplow"},
-  {"title": "MiamiDolphins.com: Bo knows the Snow Plow Game", "url": "https://www.miamidolphins.com/news/bo-knows-the-snow-plow-game-19968143"},
-  {"title": "Wikipedia: Snowplow Game", "url": "https://en.wikipedia.org/wiki/Snowplow_Game"}
+  {
+   "title": "NFL.com 100 Greatest Games: Week 14, 'Snowplow Game'",
+   "url": "https://www.nfl.com/100/originals/100-greatest/games-94"
+  },
+  {
+   "title": "Patriots Hall of Fame: Clear a path",
+   "url": "https://www.patriotshalloffame.com/exhibit-patriots-memories-weather-clear-a-path/"
+  },
+  {
+   "title": "SI Vault: The Pats' naughty snowplow (Jan 10, 2005)",
+   "url": "https://vault.si.com/vault/2005/01/10/the-pats-naughty-snowplow"
+  },
+  {
+   "title": "MiamiDolphins.com: Bo knows the Snow Plow Game",
+   "url": "https://www.miamidolphins.com/news/bo-knows-the-snow-plow-game-19968143"
+  },
+  {
+   "title": "Wikipedia: Snowplow Game",
+   "url": "https://en.wikipedia.org/wiki/Snowplow_Game"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "A snowplow cleared a spot for a game-winning field goal",
+   "terms": [
+    "snowplow|snow plow",
+    "field goal"
+   ]
+  },
+  {
+   "claim": "December 1982, Miami at New England, in a snowstorm",
+   "terms": [
+    "1982",
+    "Miami|Dolphins",
+    "snow"
+   ]
+  },
+  {
+   "claim": "Still 0-0 in the fourth quarter",
+   "terms": [
+    "fourth quarter|4th quarter",
+    "0 0|scoreless"
+   ]
+  },
+  {
+   "claim": "4:45 left when New England called timeout",
+   "terms": [
+    "4:45",
+    "timeout|time out"
+   ]
+  },
+  {
+   "claim": "Coach Ron Meyer sent the tractor out",
+   "terms": [
+    "Meyer",
+    "tractor|plow"
+   ]
+  },
+  {
+   "claim": "The driver cleared a spot for the kick",
+   "terms": [
+    "spot|patch|path",
+    "kick|holder|Smith"
+   ]
+  },
+  {
+   "claim": "The driver was Mark Henderson, a prisoner on work release",
+   "terms": [
+    "Henderson",
+    "work release|furlough"
+   ]
+  },
+  {
+   "claim": "John Smith kicked a 33-yard field goal",
+   "terms": [
+    "Smith",
+    "33"
+   ]
+  },
+  {
+   "claim": "Final 3-0 New England",
+   "terms": [
+    "3 0"
+   ]
+  },
+  {
+   "claim": "Don Shula protested",
+   "terms": [
+    "Shula",
+    "protest|complain|furious"
+   ]
+  },
+  {
+   "claim": "The league later banned using snowplows that way",
+   "terms": [
+    "ban|outlaw|prohibit",
+    "plow|snow"
+   ]
+  },
+  {
+   "claim": "The tractor hangs in the Patriots Hall of Fame",
+   "terms": [
+    "Hall of Fame",
+    "tractor|plow"
+   ]
+  }
  ]
 }
