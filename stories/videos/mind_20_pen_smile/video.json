@@ -1,0 +1,897 @@
+{
+ "id": "mind_20_pen_smile",
+ "title": "Bite a pen, feel happier?",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "PEN IN",
+   "YOUR TEETH"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#2e86c1",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "hold": "notepad"
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "p2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#e94f37",
+    "pants": "#4a4a4a",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Bite a pen. Cartoons get funnier. That was the claim.",
+   "key": [
+    "FUNNIER."
+   ],
+   "board": [
+    "PEN IN",
+    "YOUR TEETH"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "p2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen eighty eight. Germany. A sneaky little setup.",
+   "cap": "1988. Germany. A sneaky little setup.",
+   "key": [
+    "SNEAKY"
+   ],
+   "set": "office",
+   "board": [
+    "GERMANY",
+    "1988"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "p2": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "Hold a pen between your teeth. Your face is forced into a smile.",
+   "key": [
+    "SMILE."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "p2": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Hold it with your lips instead. Now you cannot smile.",
+   "key": [
+    "LIPS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "p2": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "p2"
+   },
+   "act": {
+    "p2": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nobody mentions smiling. You think it is about holding pens. That is the trick.",
+   "key": [
+    "TRICK."
+   ],
+   "set": "study",
+   "board": [
+    "PEN IN",
+    "YOUR TEETH"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "p2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you rate how funny some cartoons are.",
+   "key": [
+    "CARTOONS"
+   ],
+   "set": "office",
+   "board": [
+    "PEN IN",
+    "YOUR TEETH"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "p2": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "exp",
+    "with": "you"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "The forced smilers rate them funnier.",
+   "key": [
+    "FUNNIER."
+   ],
+   "board": [
+    "SMILERS:",
+    "FUNNIER"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "p2": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So your face can steer your mood. Fake it until you make it.",
+   "key": [
+    "FAKE"
+   ],
+   "set": "study",
+   "board": [
+    "PEN IN",
+    "YOUR TEETH"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "p2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It becomes a textbook favorite. The facial feedback hypothesis.",
+   "key": [
+    "FACIAL"
+   ],
+   "board": [
+    "FACIAL",
+    "FEEDBACK"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "p2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. Twenty sixteen.",
+   "cap": "Here is the twist. 2016.",
+   "key": [
+    "2016."
+   ],
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "p2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Many labs rerun it. Same steps. Thousands of people. Careful plans.",
+   "key": [
+    "MANY"
+   ],
+   "set": "office",
+   "board": [
+    "MULTI-LAB",
+    "RERUN"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     -1.4,
+     0.0
+    ],
+    "p2": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "p2"
+    },
+    "p2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "The pen does nothing. No effect. Not even a smirk.",
+   "key": [
+    "NOTHING."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     -1.4,
+     0.0
+    ],
+    "p2": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The original author points to one difference. A camera.",
+   "key": [
+    "CAMERA."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     -1.4,
+     0.0
+    ],
+    "p2": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The new labs filmed everyone. Maybe that felt awkward.",
+   "key": [
+    "FILMED"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     -1.4,
+     0.0
+    ],
+    "p2": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "p2",
+    "with": "exp"
+   },
+   "act": {
+    "p2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "p2"
+    }
+   }
+  },
+  {
+   "text": "The fight goes on. Lab against lab. Paper against paper.",
+   "key": [
+    "LAB."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     -1.4,
+     0.0
+    ],
+    "p2": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "p2"
+   },
+   "act": {
+    "p2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the biggest test yet. Nineteen countries.",
+   "cap": "Then the biggest test yet. 19 countries.",
+   "key": [
+    "19"
+   ],
+   "set": "study",
+   "board": [
+    "19 COUNTRIES",
+    "2022"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "p2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Almost four thousand people. Many ways to smile.",
+   "cap": "Almost 4,000 people. Many ways to smile.",
+   "key": [
+    "4,000"
+   ],
+   "set": "office",
+   "board": [
+    "PEN IN",
+    "YOUR TEETH"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": false,
+    "p2": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "p2"
+    },
+    "p2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Pen in the mouth? Still not much. Barely a blip.",
+   "key": [
+    "PEN"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": false,
+    "p2": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Copying a smiling face? A small boost in happiness.",
+   "key": [
+    "SMALL"
+   ],
+   "set": "study",
+   "board": [
+    "PEN IN",
+    "YOUR TEETH"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "p2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "So smiling might help. A little. The pen, not so much.",
+   "key": [
+    "LITTLE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "p2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Pen in your teeth right now. Feel happier? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "FEEL",
+    "HAPPIER?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "p2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Facial feedback hypothesis",
+   "url": "https://en.wikipedia.org/wiki/Facial_feedback_hypothesis"
+  },
+  {
+   "title": "Stanford Report: Posing smiles can brighten mood",
+   "url": "https://news.stanford.edu/stories/2022/10/posing-smiles-can-brighten-mood"
+  },
+  {
+   "title": "BPS Research Digest: Adopting a smile can make you feel happier, large global study finds",
+   "url": "https://bps.org.uk/research-digest/adopting-smile-can-make-you-feel-happier-large-global-study-finds"
+  },
+  {
+   "title": "Chapman University: A multi-lab test of the facial feedback hypothesis",
+   "url": "https://digitalcommons.chapman.edu/psychology_articles/330"
+  },
+  {
+   "title": "UWA: A multi-lab test of the facial feedback hypothesis by the Many Smiles Collaboration",
+   "url": "https://research-repository.uwa.edu.au/en/publications/a-multi-lab-test-of-the-facial-feedback-hypothesis-by-the-many-sm/"
+  },
+  {
+   "title": "Wikipedia: Fritz Strack",
+   "url": "https://en.wikipedia.org/wiki/Fritz_Strack"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The pen study was published in 1988 by Strack and colleagues",
+   "terms": [
+    "Strack",
+    "1988"
+   ]
+  },
+  {
+   "claim": "It was done in Germany",
+   "terms": [
+    "Germany|German"
+   ]
+  },
+  {
+   "claim": "Holding a pen in the teeth forces a smile; with the lips it prevents one",
+   "terms": [
+    "teeth",
+    "lips"
+   ]
+  },
+  {
+   "claim": "Participants rated how funny cartoons were",
+   "terms": [
+    "cartoons"
+   ]
+  },
+  {
+   "claim": "The smile group rated them funnier",
+   "terms": [
+    "cartoons",
+    "funn"
+   ]
+  },
+  {
+   "claim": "This supports the facial feedback hypothesis",
+   "terms": [
+    "facial feedback hypothesis"
+   ]
+  },
+  {
+   "claim": "In 2016, many labs replicated it",
+   "terms": [
+    "replicat",
+    "pen"
+   ]
+  },
+  {
+   "claim": "The replication found no effect",
+   "terms": [
+    "replicat",
+    "fail|no effect|not"
+   ]
+  },
+  {
+   "claim": "Strack pointed to the camera recording as a difference",
+   "terms": [
+    "camera"
+   ]
+  },
+  {
+   "claim": "The Many Smiles study spanned 19 countries",
+   "terms": [
+    "19 countries"
+   ]
+  },
+  {
+   "claim": "It included nearly 4,000 people",
+   "terms": [
+    "3,878|3878|3,800|4,000|nearly 4000"
+   ]
+  },
+  {
+   "claim": "The pen-in-mouth task had little effect while mimicking smiles slightly increased happiness",
+   "terms": [
+    "pen",
+    "happiness|happier"
+   ]
+  }
+ ]
+}

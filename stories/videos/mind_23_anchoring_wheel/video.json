@@ -1,0 +1,870 @@
+{
+ "id": "mind_23_anchoring_wheel",
+ "title": "A rigged wheel moves your guess",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "SPIN",
+   "THE WHEEL"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f39c12",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   }
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "judge": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "tie": "#7a2a2a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "glasses": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "A spinning wheel changes your answer. You know the wheel is random.",
+   "key": [
+    "RANDOM."
+   ],
+   "board": [
+    "SPIN",
+    "THE WHEEL"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "judge": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen seventy four. Amos Tversky teams up with Daniel Kahneman.",
+   "cap": "1974. Amos Tversky teams up with Daniel Kahneman.",
+   "key": [
+    "KAHNEMAN."
+   ],
+   "set": "office",
+   "board": [
+    "1974"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "judge": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "They bring a wheel of fortune. Numbers zero to one hundred.",
+   "cap": "They bring a wheel of fortune. Numbers 0 to 100.",
+   "key": [
+    "WHEEL"
+   ],
+   "board": [
+    "WHEEL:",
+    "0 - 100"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "judge": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is secretly rigged. It only lands on ten or sixty five.",
+   "cap": "It is secretly rigged. It only lands on 10 or 65.",
+   "key": [
+    "RIGGED."
+   ],
+   "set": "study",
+   "board": [
+    "ONLY",
+    "10 OR 65"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "judge": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You spin. It lands on ten. You shrug. Whatever.",
+   "cap": "You spin. It lands on 10. You shrug. Whatever.",
+   "key": [
+    "10."
+   ],
+   "set": "office",
+   "board": [
+    "SPIN",
+    "THE WHEEL"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "judge": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "exp": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Now the real question. What share of United Nations countries are African?",
+   "key": [
+    "AFRICAN?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "judge": false
+   },
+   "shot": {
+    "type": "ots",
+    "on": "you",
+    "from": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "Wheel lands on ten? The typical guess is twenty five percent.",
+   "cap": "Wheel lands on 10? The typical guess is 25%.",
+   "key": [
+    "25%."
+   ],
+   "board": [
+    "WHEEL 10:",
+    "GUESS 25%"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "judge": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Wheel lands on sixty five? Forty five percent.",
+   "cap": "Wheel lands on 65? 45%.",
+   "key": [
+    "45%."
+   ],
+   "board": [
+    "WHEEL 65:",
+    "GUESS 45%"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "judge": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A random number. Twenty points of difference.",
+   "cap": "A random number. 20 points of difference.",
+   "key": [
+    "20"
+   ],
+   "set": "study",
+   "board": [
+    "SPIN",
+    "THE WHEEL"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "judge": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It is called anchoring.",
+   "key": [
+    "ANCHORING."
+   ],
+   "board": [
+    "ANCHORING"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "judge": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The first number you see drags your guess.",
+   "key": [
+    "DRAGS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "judge": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Even when that number is obviously meaningless. Even when it is silly.",
+   "key": [
+    "MEANINGLESS."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "judge": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. Experts fall for it too.",
+   "key": [
+    "EXPERTS"
+   ],
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "judge": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "judge"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "judge"
+    },
+    "judge": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "In one study, experienced judges roll dice.",
+   "key": [
+    "DICE."
+   ],
+   "set": "press",
+   "board": [
+    "ROLL",
+    "THE DICE"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "judge": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The dice are loaded. Some land high. Some land low.",
+   "key": [
+    "LOADED."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "judge": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then they read a case. Then they pick a sentence.",
+   "key": [
+    "SENTENCE."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "judge": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Higher dice, longer sentences. From a dice roll.",
+   "key": [
+    "LONGER"
+   ],
+   "board": [
+    "HIGH DICE =",
+    "LONGER SENTENCE"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "judge": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Anchors work in shops too. That crossed out price?",
+   "key": [
+    "PRICE?"
+   ],
+   "set": "vault",
+   "board": [
+    "WAS $99",
+    "NOW $49"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "exp": false,
+    "judge": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It makes the real price feel small. Tiny, even.",
+   "key": [
+    "SMALL."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "exp": false,
+    "judge": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Negotiating? Say your number first. Drop the anchor.",
+   "key": [
+    "ANCHOR."
+   ],
+   "set": "study",
+   "board": [
+    "SPIN",
+    "THE WHEEL"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "judge": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "A store shows a crossed out price first. Does it work on you? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "WORKS",
+    "ON YOU?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "judge": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Anchoring effect",
+   "url": "https://en.wikipedia.org/wiki/Anchoring_effect"
+  },
+  {
+   "title": "Simply Psychology: Anchoring bias",
+   "url": "https://www.simplypsychology.org/what-is-the-anchoring-bias.html"
+  },
+  {
+   "title": "LibreTexts: Anchoring (Cognitive Psychology)",
+   "url": "https://socialsci.libretexts.org/Bookshelves/Psychology/Cognitive_Psychology/Cognitive_Psychology_(Andrade_and_Walker)/09%3A_Decision_Making/9.03%3A_Anchoring"
+  },
+  {
+   "title": "LitCharts: Thinking, Fast and Slow, chapter 11",
+   "url": "https://www.litcharts.com/lit/thinking-fast-and-slow/part-2-chapter-11"
+  },
+  {
+   "title": "The New Republic: Pick a number, any number",
+   "url": "https://newrepublic.com/article/75236/pick-number-any-number"
+  },
+  {
+   "title": "Read the Sequences: Anchoring and adjustment",
+   "url": "https://www.readthesequences.com/AnchoringAndAdjustment"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The wheel study was by Tversky and Kahneman in 1974",
+   "terms": [
+    "Tversky",
+    "Kahneman"
+   ]
+  },
+  {
+   "claim": "They used a wheel of fortune numbered 0 to 100",
+   "terms": [
+    "wheel of fortune"
+   ]
+  },
+  {
+   "claim": "The wheel was rigged to stop at 10 or 65",
+   "terms": [
+    "10",
+    "65"
+   ]
+  },
+  {
+   "claim": "They asked the percentage of African countries in the UN",
+   "terms": [
+    "African",
+    "United Nations|UN"
+   ]
+  },
+  {
+   "claim": "The low group's median guess was 25 percent",
+   "terms": [
+    "25",
+    "45"
+   ]
+  },
+  {
+   "claim": "The high group's median guess was 45 percent",
+   "terms": [
+    "45",
+    "65"
+   ]
+  },
+  {
+   "claim": "This is called anchoring",
+   "terms": [
+    "anchoring"
+   ]
+  },
+  {
+   "claim": "Experienced judges rolled loaded dice before sentencing",
+   "terms": [
+    "dice",
+    "sentenc|judge"
+   ]
+  },
+  {
+   "claim": "Higher dice led to longer sentences",
+   "terms": [
+    "dice",
+    "sentenc"
+   ]
+  },
+  {
+   "claim": "Prices and negotiations are affected by anchors",
+   "terms": [
+    "negotiat|price",
+    "anchor"
+   ]
+  }
+ ]
+}
