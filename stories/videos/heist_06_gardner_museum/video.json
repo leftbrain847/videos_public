@@ -193,9 +193,9 @@
    ]
   },
   {
-   "text": "You tell him he looks familiar. There's a warrant.",
+   "text": "Rule one for night guards. Never let anyone in.",
    "key": [
-    "WARRANT."
+    "RULE"
    ],
    "shot": {
     "type": "two",
@@ -220,7 +220,7 @@
    }
   },
   {
-   "text": "He steps away from the alarm button. Big mistake.",
+   "text": "He just broke rule one. Big mistake.",
    "key": [
     "MISTAKE."
    ],
@@ -248,7 +248,7 @@
    }
   },
   {
-   "text": "Both guards end up handcuffed in the basement.",
+   "text": "Both guards end up handcuffed in the basement. Duct tape over their eyes.",
    "key": [
     "BASEMENT."
    ],
@@ -362,8 +362,8 @@
    ]
   },
   {
-   "text": "Thirteen works. Eighty one minutes. Then you just leave. Twice. You make two trips to the car.",
-   "cap": "13 works. 81 minutes. Then you just leave. Twice. You make 2 trips to the car.",
+   "text": "Thirteen works. Eighty one minutes. Then you just leave.",
+   "cap": "13 works. 81 minutes. Then you just leave.",
    "key": [
     "LEAVE."
    ],
@@ -465,7 +465,7 @@
    ]
   },
   {
-   "text": "Decades later, not one painting has come home.",
+   "text": "Decades later, not one painting has come home. Not a single one.",
    "key": [
     "HOME."
    ],
@@ -522,7 +522,7 @@
    ]
   },
   {
-   "text": "Visitors still stare at nothing. On purpose.",
+   "text": "Visitors still stare at nothing. On purpose. Every single day.",
    "key": [
     "NOTHING."
    ],
@@ -588,10 +588,6 @@
    "url": "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft"
   },
   {
-   "title": "Isabella Stewart Gardner Museum: Theft",
-   "url": "https://www.gardnermuseum.org/node/126"
-  },
-  {
    "title": "FBI: Inside the Isabella Stewart Gardner Museum heist",
    "url": "https://www.fbi.gov/news/podcasts/inside-the-isabella-stewart-gardner-museum-heist"
   },
@@ -642,19 +638,6 @@
    ]
   },
   {
-   "claim": "They said the guard looked familiar and there was a warrant",
-   "terms": [
-    "warrant"
-   ]
-  },
-  {
-   "claim": "The guard stepped away from the alarm button",
-   "terms": [
-    "alarm",
-    "button|desk"
-   ]
-  },
-  {
    "claim": "Both guards were handcuffed in the basement",
    "terms": [
     "handcuff",
@@ -662,10 +645,15 @@
    ]
   },
   {
+   "claim": "The guards were bound with duct tape",
+   "terms": [
+    "duct tape"
+   ]
+  },
+  {
    "claim": "They cut Rembrandts out of their frames",
    "terms": [
     "Rembrandt",
-    "frames",
     "cut"
    ]
   },
@@ -694,12 +682,6 @@
    "claim": "The thieves were inside for 81 minutes",
    "terms": [
     "81 minutes"
-   ]
-  },
-  {
-   "claim": "The thieves made two trips to their car",
-   "terms": [
-    "two trips|2 trips"
    ]
   },
   {

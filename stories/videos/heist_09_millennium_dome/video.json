@@ -465,10 +465,9 @@
    }
   },
   {
-   "text": "Your famous line? You were twelve inches from payday.",
-   "cap": "Your famous line? You were 12 inches from payday.",
+   "text": "In court, the gang admires the trap. Total disaster. Nicely planned, though.",
    "key": [
-    "PAYDAY."
+    "TRAP."
    ],
    "set": "press",
    "shot": {
@@ -540,10 +539,9 @@
    }
   },
   {
-   "text": "Twelve inches from payday. Would you swing one more time?",
-   "cap": "12 inches from payday. Would you swing one more time?",
+   "text": "Digger, speedboat, fake diamonds. Would you have smelled the trap?",
    "key": [
-    "TIME?"
+    "TRAP?"
    ],
    "speaker": "capy",
    "shot": {
@@ -587,10 +585,6 @@
   {
    "title": "Dawn: Dome diamond raid",
    "url": "https://www.dawn.com/news/22615"
-  },
-  {
-   "title": "Kent Online: The old-style Kent crooks who tried to raid the Dome",
-   "url": "https://www.kentonline.co.uk/kent/news/amp/the-old-style-kent-crooks-who-tried-to-raid-the-dome-236957/"
   }
  ],
  "claims": [
@@ -673,13 +667,6 @@
    "terms": [
     "boat",
     "arrest"
-   ]
-  },
-  {
-   "claim": "A robber said they were 12 inches from payday",
-   "terms": [
-    "12 inches",
-    "pay"
    ]
   },
   {

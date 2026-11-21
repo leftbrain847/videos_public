@@ -600,12 +600,12 @@
    "url": "https://www.cnbc.com/2016/03/10/how-a-hackers-typo-helped-stop-a-billion-dollar-bank-heist.html"
   },
   {
-   "title": "OCCRP: Typo triggers alarm, prevents billion dollar bank heist",
-   "url": "https://www.occrp.org/en/daily/5038-bangladesh-typo-triggers-alarm-prevents-billion-dollar-bank-heist"
-  },
-  {
    "title": "The Daily Star: When North Korean hackers almost pulled off a billion-dollar heist",
    "url": "https://www.thedailystar.net/tech-startup/news/when-north-korean-hackers-almost-pulled-billion-dollar-heist-bangladesh-bank-2115317"
+  },
+  {
+   "title": "Dhaka Tribune: The Lazarus heist, how North Korea almost stole $1 billion",
+   "url": "https://www.dhakatribune.com/world/250266/the-lazarus-heist-how-north-korea-almost-stole-1"
   },
   {
    "title": "ISACA: Lessons learned from the Bangladesh Bank heist",
@@ -652,7 +652,7 @@
    "claim": "35 payment orders for nearly $1 billion were sent",
    "terms": [
     "35",
-    "billion"
+    "instructions|requests|transfers|orders|messages"
    ]
   },
   {
@@ -697,8 +697,7 @@
   {
    "claim": "A Jupiter address matched a sanctioned ship",
    "terms": [
-    "Jupiter",
-    "ship|vessel|tanker"
+    "Jupiter"
    ]
   },
   {

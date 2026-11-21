@@ -99,9 +99,9 @@
    ]
   },
   {
-   "text": "Quebec makes most of the world's maple syrup.",
+   "text": "Quebec, Canada. Maple syrup country.",
    "key": [
-    "MOST"
+    "SYRUP"
    ],
    "shot": {
     "type": "wide",
@@ -164,9 +164,9 @@
    }
   },
   {
-   "text": "You're Richard Vallieres. You rent space in that warehouse.",
+   "text": "You're Richard Vallieres. That warehouse? The man renting it out? He's in on it. Convenient.",
    "key": [
-    "RENT"
+    "CONVENIENT."
    ],
    "set": "office",
    "shot": {
@@ -330,9 +330,9 @@
    ]
   },
   {
-   "text": "She climbs up on the stack. A barrel wobbles.",
+   "text": "She checks the barrels. Something feels off.",
    "key": [
-    "WOBBLES."
+    "OFF."
    ],
    "shot": {
     "type": "medium",
@@ -347,9 +347,9 @@
    }
   },
   {
-   "text": "Full barrels of syrup don't wobble.",
+   "text": "Spoiler. It's not syrup.",
    "key": [
-    "WOBBLE."
+    "SPOILER."
    ],
    "shot": {
     "type": "close",
@@ -501,7 +501,7 @@
    ]
   },
   {
-   "text": "You fought the fine. All the way to the Supreme Court.",
+   "text": "You fought the fine. All the way to Canada's Supreme Court.",
    "key": [
     "SUPREME"
    ],
@@ -614,13 +614,6 @@
    ]
   },
   {
-   "claim": "Quebec produces most of the world's maple syrup",
-   "terms": [
-    "Quebec",
-    "world"
-   ]
-  },
-  {
    "claim": "Producers keep a strategic reserve",
    "terms": [
     "strategic reserve|reserve"
@@ -640,9 +633,9 @@
    ]
   },
   {
-   "claim": "Vallieres rented space in the warehouse",
+   "claim": "The man who rented out the warehouse was part of the scheme",
    "terms": [
-    "rent",
+    "Caron",
     "warehouse"
    ]
   },
@@ -664,13 +657,6 @@
    "terms": [
     "inventory",
     "2012"
-   ]
-  },
-  {
-   "claim": "An inspector climbed the barrels and one wobbled",
-   "terms": [
-    "inspector|auditor",
-    "barrel"
    ]
   },
   {
