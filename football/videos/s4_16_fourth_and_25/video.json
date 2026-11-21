@@ -1504,10 +1504,10 @@
    ]
   },
   {
-   "claim": "The Vikings started 6-0 and missed the playoffs",
+   "claim": "The Vikings won their first six games",
    "terms": [
-    "6 0",
-    "playoff|postseason"
+    "6 0|first six|six straight",
+    "Vikings|Minnesota"
    ]
   },
   {

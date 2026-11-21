@@ -153,10 +153,10 @@
    ]
   },
   {
-   "text": "The twenty eighteen Super Bowl. Eagles versus Patriots. You lead by three.",
-   "cap": "The 2018 Super Bowl. Eagles versus Patriots. You lead by 3.",
+   "text": "The twenty eighteen Super Bowl. Eagles versus Patriots.",
+   "cap": "The 2018 Super Bowl. Eagles versus Patriots.",
    "key": [
-    "3."
+    "SUPER"
    ],
    "shot": {
     "type": "wide",
@@ -3185,13 +3185,6 @@
    "terms": [
     "Super Bowl",
     "Patriots"
-   ]
-  },
-  {
-   "claim": "Philadelphia led by three in the final minute of the first half",
-   "terms": [
-    "15-12|15 12",
-    "half"
    ]
   },
   {

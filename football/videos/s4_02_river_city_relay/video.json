@@ -177,10 +177,10 @@
    ]
   },
   {
-   "text": "Jaguars twenty, Saints thirteen. Seconds left. No timeouts.",
-   "cap": "Jaguars 20, Saints 13. Seconds left. No timeouts.",
+   "text": "Jaguars twenty, Saints thirteen. Seconds left. One last play.",
+   "cap": "Jaguars 20, Saints 13. Seconds left. One last play.",
    "key": [
-    "TIMEOUTS."
+    "LAST"
    ],
    "shot": {
     "type": "wide",
@@ -3170,12 +3170,12 @@
    ]
   },
   {
-   "text": "N F L dot com called it this. Most anticlimactic extra point try in league history.",
+   "text": "The Saints' season ended right there. Their playoff hopes were gone.",
    "key": [
-    "ANTICLIMACTIC"
+    "ENDED"
    ],
    "speaker": "capy",
-   "cap": "NFL.com called it this. Most anticlimactic extra point try in league history.",
+   "cap": "The Saints' season ended right there. Their playoff hopes were gone.",
    "shot": {
     "type": "low",
     "on": "capy"
@@ -3291,13 +3291,6 @@
    ]
   },
   {
-   "claim": "Saints had no timeouts",
-   "terms": [
-    "timeout",
-    "Saints|New Orleans"
-   ]
-  },
-  {
    "claim": "Saints had the ball at their own 25, 75 yards to go",
    "terms": [
     "own 25|75 yard"
@@ -3370,12 +3363,6 @@
    "terms": [
     "playoff",
     "eliminat|hope|ended|out of"
-   ]
-  },
-  {
-   "claim": "NFL.com called it the most anticlimactic extra point try in league history",
-   "terms": [
-    "anticlimactic"
    ]
   }
  ]

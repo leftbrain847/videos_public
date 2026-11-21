@@ -2541,11 +2541,11 @@
    ]
   },
   {
-   "claim": "Gabriel Davis caught his fourth touchdown to put the Bills up 36-33",
+   "claim": "Gabriel Davis caught his fourth touchdown",
    "terms": [
     "Davis",
     "four|4th",
-    "36 33"
+    "touchdown"
    ]
   },
   {
@@ -2601,6 +2601,13 @@
    "terms": [
     "owners",
     "both teams|each team"
+   ]
+  },
+  {
+   "claim": "That put the Bills up 36-33 with 13 seconds left",
+   "terms": [
+    "36 33",
+    "13 seconds|thirteen seconds|0:13"
    ]
   }
  ]

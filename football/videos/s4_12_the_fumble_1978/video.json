@@ -2058,9 +2058,9 @@
    }
   },
   {
-   "text": "Fans burn tickets. A plane flies a banner over the stadium.",
+   "text": "A plane flies a banner over the stadium. It mocks the team.",
    "key": [
-    "BURN"
+    "BANNER"
    ],
    "set": "locker",
    "shot": {
@@ -2071,8 +2071,8 @@
     "qb": "center"
    },
    "board": [
-    "TICKETS:",
-    "BURNED"
+    "THE",
+    "BANNER"
    ],
    "act": {
     "qb": {
@@ -2234,13 +2234,6 @@
    "terms": [
     "Gibson",
     "never"
-   ]
-  },
-  {
-   "claim": "Fans burned tickets",
-   "terms": [
-    "burn",
-    "ticket"
    ]
   },
   {
