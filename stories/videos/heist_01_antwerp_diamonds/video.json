@@ -362,7 +362,7 @@
    ]
   },
   {
-   "text": "Loose diamonds. Gold. Jewelry. Nobody ever finds the diamonds.",
+   "text": "Loose diamonds, mostly. Nobody ever finds them. Not then. Not now.",
    "key": [
     "NOBODY"
    ],
@@ -379,9 +379,9 @@
    }
   },
   {
-   "text": "Perfect crime. Almost. Your partner dumps the trash. In a forest.",
+   "text": "Perfect crime. Almost. Then your partner dumps your trash. Carelessly.",
    "key": [
-    "FOREST."
+    "TRASH"
    ],
    "set": "haunted",
    "shot": {
@@ -403,7 +403,7 @@
    ]
   },
   {
-   "text": "A man finds the bags. He calls the police. Of course he does.",
+   "text": "The police find it. Every scrap. Of course they do.",
    "key": [
     "POLICE."
    ],
@@ -430,7 +430,7 @@
    }
   },
   {
-   "text": "Inside? A half eaten salami sandwich.",
+   "text": "Inside? A half eaten salami sandwich. Somebody got hungry.",
    "key": [
     "SALAMI"
    ],
@@ -601,8 +601,16 @@
    "url": "https://en.wikipedia.org/wiki/Antwerp_diamond_heist"
   },
   {
-   "title": "Wired: The untold story of the world's biggest diamond heist",
-   "url": "https://www.wired.com/2009/03/ff-diamonds/"
+   "title": "Boing Boing: How to rob the world's most secure diamond vault",
+   "url": "https://boingboing.net/2009/03/12/howto-rob-the-worlds.html"
+  },
+  {
+   "title": "Kottke: How to steal 100 million in diamonds",
+   "url": "https://kottke.org/09/03/how-to-steal-100-million-in-diamonds"
+  },
+  {
+   "title": "Neatorama: The world's biggest diamond heist",
+   "url": "https://neatorama.com/2009/03/11/the-worlds-biggest-diamond-heist"
   },
   {
    "title": "Salon: Flawless, review",
@@ -630,13 +638,6 @@
    "claim": "The target was the Antwerp Diamond Centre",
    "terms": [
     "Antwerp Diamond Centre|Antwerp Diamond Center"
-   ]
-  },
-  {
-   "claim": "Loot included loose diamonds, gold and jewelry",
-   "terms": [
-    "gold",
-    "jewel"
    ]
   },
   {
@@ -718,23 +719,23 @@
    ]
   },
   {
-   "claim": "An accomplice dumped the garbage in a forest",
+   "claim": "An accomplice discarded garbage including the sandwich",
    "terms": [
-    "garbage|rubbish|trash",
-    "forest|woods"
+    "sandwich",
+    "discard|dump|litter|scatter"
    ]
   },
   {
-   "claim": "A man found the bags and called police",
+   "claim": "Police found the garbage with the sandwich",
    "terms": [
     "police",
-    "garbage|rubbish|trash|bags"
+    "sandwich"
    ]
   },
   {
    "claim": "Among the garbage was a half-eaten salami sandwich",
    "terms": [
-    "salami",
+    "eaten",
     "sandwich"
    ]
   },
