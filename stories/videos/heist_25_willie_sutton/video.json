@@ -1,0 +1,656 @@
+{
+ "id": "heist_25_willie_sutton",
+ "title": "The quote Willie Sutton never said",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "WHERE THE",
+   "MONEY IS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "willie": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5f6770",
+    "pants": "#3a3f4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b"
+   }
+  },
+  "teller": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#2e86c1",
+    "pants": "#22252b",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#c98d63"
+   }
+  },
+  "reporter": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#8a7a5c",
+    "pants": "#3a2a20",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "hold": "notepad"
+  },
+  "kid": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#27ae60",
+    "pants": "#22252b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You become America's most famous bank robber. For a quote you never said.",
+   "key": [
+    "SAID."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "willie"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "willie": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "willie": "center",
+    "teller": false,
+    "reporter": false,
+    "kid": false
+   },
+   "board": [
+    "WHERE THE",
+    "MONEY IS"
+   ]
+  },
+  {
+   "text": "You're Willie Sutton. You rob banks. For a living.",
+   "key": [
+    "BANKS."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "willie"
+   },
+   "act": {
+    "willie": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "1920s",
+    "TO 1952"
+   ]
+  },
+  {
+   "text": "Your trick? Costumes. A mail carrier. A cop. A repairman.",
+   "key": [
+    "COSTUMES."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "willie"
+   },
+   "act": {
+    "willie": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You walk in before opening time. Staff let you in.",
+   "key": [
+    "OPENING"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "willie",
+    "with": "teller"
+   },
+   "act": {
+    "willie": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "teller"
+    },
+    "teller": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "willie"
+    }
+   },
+   "place": {
+    "willie": "left",
+    "teller": "right"
+   }
+  },
+  {
+   "text": "Then you pull out a gun. Politely.",
+   "key": [
+    "POLITELY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "teller"
+   },
+   "act": {
+    "teller": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Newspapers call you Slick Willie. Also, the Actor. You earned it.",
+   "key": [
+    "ACTOR."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "willie": false,
+    "teller": false
+   },
+   "board": [
+    "SLICK",
+    "WILLIE"
+   ]
+  },
+  {
+   "text": "You get caught. You escape. More than once.",
+   "key": [
+    "ESCAPE."
+   ],
+   "set": "tunnel",
+   "shot": {
+    "type": "low",
+    "on": "willie"
+   },
+   "act": {
+    "willie": {
+     "mood": "happy",
+     "action": "run"
+    }
+   },
+   "place": {
+    "willie": "center"
+   }
+  },
+  {
+   "text": "Once, you crawl out through a tunnel. Right under the prison wall.",
+   "key": [
+    "TUNNEL"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "willie"
+   },
+   "act": {
+    "willie": {
+     "mood": "worried",
+     "action": "walk"
+    }
+   },
+   "board": [
+    "EASTERN STATE",
+    "1945"
+   ]
+  },
+  {
+   "text": "Nineteen fifty. The F B I wants you badly. Top ten most wanted.",
+   "cap": "1950. The FBI wants you badly. Top 10 Most Wanted.",
+   "key": [
+    "WANTED"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "willie"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "willie"
+    },
+    "willie": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "willie": "right"
+   },
+   "board": [
+    "MOST",
+    "WANTED"
+   ]
+  },
+  {
+   "text": "Then someone recognizes you. From your wanted poster. Out in public. In broad daylight.",
+   "key": [
+    "POSTER."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "medium",
+    "on": "kid"
+   },
+   "act": {
+    "kid": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "kid": "center"
+   }
+  },
+  {
+   "text": "Caught. Again. This time, for good. No more costumes. Ever.",
+   "key": [
+    "GOOD."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "willie"
+   },
+   "act": {
+    "willie": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "willie": [
+     2.0,
+     0.4
+    ],
+    "kid": [
+     -2.0,
+     0.4
+    ]
+   }
+  },
+  {
+   "text": "Then comes the legend. A reporter asks why you rob banks.",
+   "key": [
+    "WHY"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "two",
+    "on": "reporter",
+    "with": "willie"
+   },
+   "act": {
+    "reporter": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "willie"
+    },
+    "willie": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "reporter"
+    }
+   },
+   "place": {
+    "reporter": "left",
+    "willie": "right"
+   }
+  },
+  {
+   "text": "Your answer? Because that's where the money is.",
+   "key": [
+    "MONEY"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "reporter": false,
+    "willie": false
+   },
+   "board": [
+    "BECAUSE THAT'S",
+    "WHERE THE MONEY IS"
+   ]
+  },
+  {
+   "text": "Perfect quote. One problem. You said you never said it.",
+   "key": [
+    "NEVER"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "willie"
+   },
+   "act": {
+    "willie": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "willie": "center",
+    "capy": false
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "A reporter probably made it up. It stuck anyway.",
+   "key": [
+    "STUCK"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "reporter"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "reporter"
+    },
+    "reporter": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "reporter": "right",
+    "willie": false
+   }
+  },
+  {
+   "text": "Doctors even named a rule after it. Check the obvious first. Sutton's law.",
+   "key": [
+    "LAW."
+   ],
+   "set": "study",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "SUTTON'S",
+    "LAW"
+   ]
+  },
+  {
+   "text": "The final twist? Years later, a bank hires you. For an ad.",
+   "key": [
+    "AD."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "medium",
+    "on": "willie"
+   },
+   "act": {
+    "willie": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "willie": "center"
+   }
+  },
+  {
+   "text": "The bank robber sells bank cards. On television.",
+   "key": [
+    "TELEVISION."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "willie"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "willie": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "willie": "right"
+   }
+  },
+  {
+   "text": "Famous for words you never said. Would you correct the record? Yes or no?",
+   "key": [
+    "RECORD?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "willie": false
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Willie Sutton",
+   "url": "https://en.wikipedia.org/wiki/Willie_Sutton"
+  },
+  {
+   "title": "Wikipedia: Sutton's law",
+   "url": "https://en.wikipedia.org/wiki/Sutton%27s_law"
+  },
+  {
+   "title": "Snopes: Willie Sutton, where the money is",
+   "url": "https://www.snopes.com/fact-check/willie-sutton/"
+  },
+  {
+   "title": "Federal Reserve Bank of New York, Liberty Street Economics: the gentleman bank robber",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2016/08/historical-echoes-thats-where-the-celebrity-advertising-was-or-the-gentleman-bank-robber/"
+  },
+  {
+   "title": "Smithsonian Magazine: The daring escape from the Eastern State Penitentiary",
+   "url": "https://www.smithsonianmag.com/arts-culture/the-daring-escape-from-the-eastern-state-penitentiary-180947688/"
+  },
+  {
+   "title": "IrishCentral: How Willie Sutton became America's most famous bank robber",
+   "url": "https://www.irishcentral.com/roots/history/irish-ghetto-kid-willie-sutton-became-americas-most-famous-bank-robber"
+  },
+  {
+   "title": "PhillyVoice: Eastern State Penitentiary escape tunnel",
+   "url": "https://www.phillyvoice.com/eastern-state-penitentiary-prison-escape-tunnel-slick-willie-sutton/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Willie Sutton was a famous American bank robber",
+   "terms": [
+    "Sutton",
+    "bank robber"
+   ]
+  },
+  {
+   "claim": "Sutton robbed banks for a living",
+   "terms": [
+    "Sutton",
+    "robbed|robber|robberies"
+   ]
+  },
+  {
+   "claim": "He used disguises like a mail carrier, police officer or repairman",
+   "terms": [
+    "disguise"
+   ]
+  },
+  {
+   "claim": "He arrived before opening time",
+   "terms": [
+    "opening|before the bank opened|early"
+   ]
+  },
+  {
+   "claim": "He was called Slick Willie and The Actor",
+   "terms": [
+    "Slick Willie",
+    "Actor"
+   ]
+  },
+  {
+   "claim": "He escaped prison more than once",
+   "terms": [
+    "escape"
+   ]
+  },
+  {
+   "claim": "He escaped Eastern State Penitentiary through a tunnel in 1945",
+   "terms": [
+    "Eastern State",
+    "tunnel"
+   ]
+  },
+  {
+   "claim": "He was on the FBI's Ten Most Wanted list",
+   "terms": [
+    "Most Wanted"
+   ]
+  },
+  {
+   "claim": "A young man recognized him on the subway from a wanted poster",
+   "terms": [
+    "recogni"
+   ]
+  },
+  {
+   "claim": "The famous quote is because that's where the money is",
+   "terms": [
+    "where the money is"
+   ]
+  },
+  {
+   "claim": "Sutton denied saying it",
+   "terms": [
+    "never said|denied|did not say"
+   ]
+  },
+  {
+   "claim": "A reporter probably made it up",
+   "terms": [
+    "reporter"
+   ]
+  },
+  {
+   "claim": "Sutton's law in medicine is named after the quote",
+   "terms": [
+    "Sutton's law|Sutton s law"
+   ]
+  },
+  {
+   "claim": "A bank later hired him for an advertisement",
+   "terms": [
+    "commercial|advertis",
+    "bank"
+   ]
+  }
+ ]
+}

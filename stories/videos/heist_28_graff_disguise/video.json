@@ -1,0 +1,617 @@
+{
+ "id": "heist_28_graff_disguise",
+ "title": "The makeup artist who aged two robbers",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "GRAFF",
+   "LONDON"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "rob": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "short",
+    "hairColor": "#d9d9d9",
+    "skin": "#e8b48f"
+   }
+  },
+  "rob2": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b2e",
+    "pants": "#23262d",
+    "hair": "bald",
+    "hairColor": "#d9d9d9",
+    "skin": "#c98d63"
+   }
+  },
+  "artist": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#8e44ad",
+    "pants": "#22252b",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "hold": "notepad"
+  },
+  "det": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#8a7a5c",
+    "pants": "#3a2a20",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#a8714c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You rob a London jeweler. Forty million pounds of gems. You're disguised as two old men.",
+   "cap": "You rob a London jeweler. \u00a340 million of gems. You're disguised as two old men.",
+   "key": [
+    "OLD"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rob"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "rob": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "rob": "center",
+    "rob2": false,
+    "artist": false,
+    "det": false
+   },
+   "board": [
+    "\u00a340,000,000",
+    "IN GEMS"
+   ]
+  },
+  {
+   "text": "August, two thousand nine. Central London. A store called Graff Diamonds.",
+   "cap": "August 2009. Central London. A store called Graff Diamonds.",
+   "key": [
+    "GRAFF"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "rob"
+   },
+   "act": {
+    "rob": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "NEW BOND",
+    "STREET"
+   ]
+  },
+  {
+   "text": "Step one. You book a professional makeup artist. A real professional.",
+   "key": [
+    "MAKEUP"
+   ],
+   "set": "study",
+   "shot": {
+    "type": "medium",
+    "on": "artist"
+   },
+   "act": {
+    "artist": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "artist": "center"
+   }
+  },
+  {
+   "text": "You tell her a cover story. She believes you. Why wouldn't she?",
+   "key": [
+    "STORY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "artist",
+    "with": "rob"
+   },
+   "act": {
+    "artist": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "rob"
+    },
+    "rob": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "artist"
+    }
+   },
+   "place": {
+    "artist": "left",
+    "rob": "right"
+   }
+  },
+  {
+   "text": "She spends hours on you. Wrinkles. Gray hair. A new face.",
+   "key": [
+    "WRINKLES."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rob"
+   },
+   "act": {
+    "rob": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You walk out decades older. Your own mother wouldn't know you.",
+   "key": [
+    "OLDER."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rob"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "rob"
+    },
+    "rob": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "rob": "right",
+    "artist": false
+   }
+  },
+  {
+   "text": "You walk into the store. Two well dressed gentlemen.",
+   "key": [
+    "GENTLEMEN."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "wide",
+    "on": "rob2"
+   },
+   "act": {
+    "rob": {
+     "mood": "neutral",
+     "action": "walk"
+    },
+    "rob2": {
+     "mood": "neutral",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "rob": "left",
+    "rob2": "right"
+   }
+  },
+  {
+   "text": "Then you pull out guns. Staff are terrified. You grab what you came for.",
+   "key": [
+    "GUNS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "rob2"
+   },
+   "act": {
+    "rob2": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You grab forty three pieces of jewelry. Rings. Necklaces. Watches.",
+   "cap": "You grab 43 pieces of jewelry. Rings. Necklaces. Watches.",
+   "key": [
+    "43"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "rob"
+   },
+   "act": {
+    "rob": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "43",
+    "PIECES"
+   ]
+  },
+  {
+   "text": "About forty million pounds. Britain's biggest jewelry robbery at the time.",
+   "cap": "About \u00a340 million. Britain's biggest jewelry robbery at the time.",
+   "key": [
+    "BIGGEST"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "rob": false,
+    "rob2": false
+   }
+  },
+  {
+   "text": "You switch getaway cars. Again. Then again. Very professional.",
+   "key": [
+    "CARS"
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "medium",
+    "on": "rob2"
+   },
+   "act": {
+    "rob2": {
+     "mood": "smug",
+     "action": "run"
+    }
+   },
+   "place": {
+    "rob2": "center"
+   }
+  },
+  {
+   "text": "But in one car, somebody leaves a phone. Oops.",
+   "key": [
+    "PHONE"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "det"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "det": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "det": "right"
+   },
+   "board": [
+    "EVIDENCE:",
+    "1 PHONE"
+   ],
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Police follow the phone. Then the people it called. Then their friends.",
+   "key": [
+    "CALLED."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "det"
+   },
+   "act": {
+    "det": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "det": "center"
+   }
+  },
+  {
+   "text": "Hours of makeup. Undone by a phone bill.",
+   "key": [
+    "BILL."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "det": false
+   }
+  },
+  {
+   "text": "Several men are convicted. The gunman gets twenty three years.",
+   "cap": "Several men are convicted. The gunman gets 23 years.",
+   "key": [
+    "23"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "det"
+   },
+   "act": {
+    "det": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "det": "center"
+   },
+   "board": [
+    "23",
+    "YEARS"
+   ]
+  },
+  {
+   "text": "The makeup artist? Innocent. She had no idea.",
+   "key": [
+    "INNOCENT."
+   ],
+   "set": "study",
+   "shot": {
+    "type": "medium",
+    "on": "artist"
+   },
+   "act": {
+    "artist": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "artist": "center"
+   }
+  },
+  {
+   "text": "The jewels? Most were never recovered.",
+   "key": [
+    "NEVER"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "artist"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "artist": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "artist": "right"
+   }
+  },
+  {
+   "text": "Perfect disguise. Perfect getaway. Forgotten phone. The jewels might still be out there somewhere.",
+   "key": [
+    "PHONE."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "artist": false
+   }
+  },
+  {
+   "text": "Would you notice two fake old men? Yes or no?",
+   "key": [
+    "FAKE"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: 2009 Graff Diamonds robbery",
+   "url": "https://en.wikipedia.org/wiki/2009_Graff_Diamonds_robbery"
+  },
+  {
+   "title": "Irish Times: Men jailed for UK's biggest gem heist",
+   "url": "https://www.irishtimes.com/news/men-jailed-for-uk-s-biggest-gem-heist-1.862185"
+  },
+  {
+   "title": "The Scotsman: 23 years for gunman in biggest UK gem robbery",
+   "url": "https://www.scotsman.com/news/23-years-for-gunman-in-biggest-uk-gem-robbery-1709978"
+  },
+  {
+   "title": "Yorkshire Post: Gunman behind Britain's biggest jewellery raid jailed for 23 years",
+   "url": "https://www.yorkshirepost.co.uk/news/gunman-behind-britains-biggest-jewellery-raid-jailed-23-years-1965814"
+  },
+  {
+   "title": "FashionNetwork: Two arrested over Britain's biggest gem robbery",
+   "url": "https://uk.fashionnetwork.com/news/Two-arrested-over-britain-s-biggest-gem-robbery,501270.html"
+  },
+  {
+   "title": "FashionNetwork: Celebrity diamond store suffered one of Britain's biggest heists",
+   "url": "https://au.fashionnetwork.com/news/Celebrity-diamond-store-suffered-one-of-Britain-s-biggest-heists-to-date,111708.html"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The robbery took about 40 million pounds of jewelry",
+   "terms": [
+    "40 million|40m"
+   ]
+  },
+  {
+   "claim": "The robbers were disguised to look older",
+   "terms": [
+    "disguise|prosthetic|make up|make-up|makeup"
+   ]
+  },
+  {
+   "claim": "It was in August 2009 on New Bond Street at Graff",
+   "terms": [
+    "Graff"
+   ]
+  },
+  {
+   "claim": "They hired a professional makeup artist",
+   "terms": [
+    "make up artist|make-up artist|makeup artist"
+   ]
+  },
+  {
+   "claim": "They were armed with guns",
+   "terms": [
+    "gun|handgun|armed"
+   ]
+  },
+  {
+   "claim": "They took 43 items",
+   "terms": [
+    "43"
+   ]
+  },
+  {
+   "claim": "It was Britain's biggest jewelry robbery",
+   "terms": [
+    "biggest|largest",
+    "gem|jewellery|jewelry|diamond"
+   ]
+  },
+  {
+   "claim": "They switched getaway cars",
+   "terms": [
+    "cars|vehicles",
+    "switch|changed|getaway"
+   ]
+  },
+  {
+   "claim": "A phone left in a car led police to them",
+   "terms": [
+    "phone"
+   ]
+  },
+  {
+   "claim": "The gunman got 23 years",
+   "terms": [
+    "23 years"
+   ]
+  },
+  {
+   "claim": "Most jewels were never recovered",
+   "terms": [
+    "never|not been",
+    "recovered"
+   ]
+  }
+ ]
+}
