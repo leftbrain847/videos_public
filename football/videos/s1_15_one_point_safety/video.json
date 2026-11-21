@@ -154,8 +154,7 @@
    "speaker": "capy"
   },
   {
-   "text": "The N F L has never seen one.",
-   "cap": "The NFL has never seen one.",
+   "text": "Most fans have never seen one live.",
    "key": [
     "NEVER"
    ],
@@ -1147,13 +1146,6 @@
    "terms": [
     "safety",
     "1-point|one-point|one point|1 point"
-   ]
-  },
-  {
-   "claim": "The NFL has never had a one-point safety",
-   "terms": [
-    "NFL",
-    "never"
    ]
   },
   {

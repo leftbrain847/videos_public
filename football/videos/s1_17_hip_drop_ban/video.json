@@ -98,6 +98,22 @@
   {
    "title": "Football Zebras: What is a hip-drop tackle and how is the ban going to be enforced?",
    "url": "https://www.footballzebras.com/?p=42013"
+  },
+  {
+   "title": "News4Jax (AP): NFL owners unanimously approve a rule that bans the hip-drop tackle",
+   "url": "https://www.news4jax.com/sports/2024/03/25/nfl-owners-unanimously-approve-a-rule-that-bans-the-hip-drop-tackle/"
+  },
+  {
+   "title": "NBC News: NFL owners unanimously approve a rule banning the hip-drop tackle",
+   "url": "https://www.nbcnews.com/news/sports/nfl-owners-unanimously-approve-rule-banning-hip-drop-tackle-rcna145042"
+  },
+  {
+   "title": "49ers Webzone: NFL players' hip-drop tackles and flags",
+   "url": "https://49erswebzone.com/news/187604-nfl-players-hip-drop-tackles-flagged"
+  },
+  {
+   "title": "American Football International: NFL fines two players for hip-drop tackles, no fine for the only one flagged",
+   "url": "https://www.americanfootballinternational.com/?p=185062"
   }
  ],
  "lines": [
@@ -630,7 +646,7 @@
    "claim": "The first flag came in Week 16 on Panthers linebacker Jacoby Windmon",
    "terms": [
     "Windmon",
-    "Week 16"
+    "first|Week 16"
    ]
   },
   {
