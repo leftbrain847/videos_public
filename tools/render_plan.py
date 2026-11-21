@@ -49,7 +49,11 @@ def plan(raw):
     if bad:
         sys.exit(f"unknown video ids: {bad}")
     # dir: the video folder relative to football/ (where engine/make.sh runs), e.g. videos/<id> or ../stories/videos/<id>
-    return [{"id": i, "index": every.index(i), "dir": "videos/" + i if videos.channel(i) == "football" else "../stories/videos/" + i}
+    # index seeds the gameplay reel; count within the channel so adding stories never changes a football video's reel
+    def index(i):
+        c = videos.CHANNELS[videos.channel(i)]["dir"]
+        return sorted(p.name for p in c.iterdir() if (p / "video.json").exists()).index(i)
+    return [{"id": i, "index": index(i), "dir": "videos/" + i if videos.channel(i) == "football" else "../stories/videos/" + i}
             for i in dict.fromkeys(ids)]
 
 

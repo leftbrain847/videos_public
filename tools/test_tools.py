@@ -24,7 +24,7 @@ def test_queue():
     v, tag, *_ = render_plan.settings({"EVENT": "workflow_dispatch", "VIDEOS": "a b", "TAG": ""}, q)
     assert v == "a b" and tag == ""
     expect_exit(lambda: render_plan.plan("s4_01_music_city_miracle $(id)"))
-    assert render_plan.plan("s4_01_music_city_miracle")[0] == {"id": "s4_01_music_city_miracle", "index": render_plan.videos.all_ids().index("s4_01_music_city_miracle"), "dir": "videos/s4_01_music_city_miracle"}
+    assert render_plan.plan("s4_01_music_city_miracle")[0] == {"id": "s4_01_music_city_miracle", "index": sorted(p.name for p in render_plan.videos.CHANNELS["football"]["dir"].iterdir() if (p / "video.json").exists()).index("s4_01_music_city_miracle"), "dir": "videos/s4_01_music_city_miracle"}
     import videos
     assert videos.channel("myth_01_medusa") == "stories" and videos.channel("s1_01_tuck_rule") == "football" and videos.channel("myth_1_x") is None
     assert videos.video_dir("space_03_voyager").parts[-3:] == ("stories", "videos", "space_03_voyager")
