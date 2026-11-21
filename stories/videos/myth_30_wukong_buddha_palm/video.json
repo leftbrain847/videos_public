@@ -783,8 +783,8 @@
    "url": "https://en.wikipedia.org/wiki/Journey_to_the_West"
   },
   {
-   "title": "Columbia University, Asia for Educators: Buddhism in Journey to the West",
-   "url": "https://columbia.edu/cu/weai/exeas/resources/buddhism-journey-major4.html"
+   "title": "The China Story (ANU): The origins of 'I was here' graffiti",
+   "url": "https://www.thechinastory.org/yearbooks/yearbook-2013/introduction-engineering-chinese-civilisation/the-origins-of-i-was-here-graffiti/"
   },
   {
    "title": "Hitchhiker's Guide to Religion: The Monkey King's rebellion in heaven",
@@ -797,6 +797,10 @@
   {
    "title": "EBSCO Research Starters: Adventures of Monkey",
    "url": "https://ebsco.com/research-starters/literature-and-writing/adventures-monkey"
+  },
+  {
+   "title": "Journey to the West Research: Buddha palm",
+   "url": "https://journeytothewestresearch.com/tag/buddha-palm/"
   }
  ],
  "claims": [
@@ -852,7 +856,7 @@
   {
    "claim": "He writes his name on a pillar",
    "terms": [
-    "pillar|pillars|column|columns",
+    "pillar|pillars|column|columns|finger|fingers",
     "wrote|writes|write|writing|inscribed|signed|scrawled"
    ]
   },
