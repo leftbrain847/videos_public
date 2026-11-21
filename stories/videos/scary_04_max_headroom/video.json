@@ -1,0 +1,827 @@
+{
+ "id": "scary_04_max_headroom",
+ "title": "The masked man who hijacked Chicago TV",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "SIGNAL"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5aa832",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "eng": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "agent": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center",
+   "hold": "notepad"
+  },
+  "mask": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#e8e0d0",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#f2e8c8",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "You are watching the sports news. Then the screen glitches. Then it goes dark.",
+   "key": [
+    "GLITCHES."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "SPORTS",
+     "TONIGHT"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     4.4
+    ],
+    "you": [
+     0,
+     4.2
+    ],
+    "eng": false,
+    "agent": false,
+    "mask": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "November, nineteen eighty seven. Chicago.",
+   "cap": "November 1987. Chicago.",
+   "key": [
+    "CHICAGO."
+   ],
+   "board": [
+    "NOV 1987",
+    "CHICAGO"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "A man in a Max Headroom mask appears. He bobs around. Sunglasses on.",
+   "key": [
+    "MASK"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "NO SIGNAL",
+     "???"
+    ]
+   },
+   "place": {
+    "mask": [
+     0,
+     -0.6
+    ],
+    "capy": false,
+    "you": false,
+    "eng": false,
+    "agent": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "mask"
+   },
+   "act": {
+    "mask": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.1,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Behind him, a sheet of metal wobbles. Production value? Zero.",
+   "key": [
+    "METAL"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "mask"
+   },
+   "act": {
+    "mask": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "No words. Just a loud buzz. It is deeply weird.",
+   "key": [
+    "BUZZ."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "mask"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "mask"
+    },
+    "mask": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The station grabs its signal back. He vanishes.",
+   "key": [
+    "VANISHES."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "WGN",
+     "ENGINEERS"
+    ]
+   },
+   "place": {
+    "eng": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "agent": false,
+    "mask": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The sportscaster comes back. He is as lost as you.",
+   "key": [
+    "LOST"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Sports fans are confused. Bears fans, more than usual.",
+   "key": [
+    "USUAL."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "SPORTS",
+     "???"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.2,
+     4.4
+    ],
+    "you": [
+     1.4,
+     4.2
+    ],
+    "eng": false,
+    "agent": false,
+    "mask": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Two hours later, he strikes again.",
+   "key": [
+    "AGAIN."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "capy"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Same night, a public channel. During doctor who.",
+   "cap": "Same night, a public channel. During Doctor Who.",
+   "key": [
+    "WHO."
+   ],
+   "board": [
+    "DOCTOR WHO",
+    "INTERRUPTED"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "This time, he has sound.",
+   "key": [
+    "SOUND."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "NO SIGNAL",
+     "!!!"
+    ]
+   },
+   "place": {
+    "mask": [
+     0,
+     -0.6
+    ],
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "you": false,
+    "eng": false,
+    "agent": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "mask"
+   },
+   "act": {
+    "mask": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "mask"
+    }
+   }
+  },
+  {
+   "text": "He mumbles. He cackles. He hums a cartoon theme song.",
+   "key": [
+    "CARTOON"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "mask"
+   },
+   "act": {
+    "mask": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He waves around a can of soda.",
+   "key": [
+    "SODA."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "mask"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "mask"
+    },
+    "mask": {
+     "mood": "smug",
+     "action": "cheer"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then it cuts to static. About ninety seconds total.",
+   "cap": "Then it cuts to static. About 90 seconds total.",
+   "key": [
+    "90"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "mask"
+   },
+   "act": {
+    "mask": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Doctor who fans just want their show back.",
+   "cap": "Doctor Who fans just want their show back.",
+   "key": [
+    "BACK."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     1.0
+    ],
+    "mask": [
+     1.0,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "mask": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your public channel just aired a fever dream. On purpose? Nope.",
+   "key": [
+    "DREAM."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "mask": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Federal investigators get the case. The F C C leads it.",
+   "key": [
+    "INVESTIGATORS"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CASE OPEN",
+     "SUSPECT: ?"
+    ]
+   },
+   "place": {
+    "agent": [
+     0,
+     -1.0
+    ],
+    "eng": [
+     2.6,
+     -0.6
+    ],
+    "capy": false,
+    "you": false,
+    "mask": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "agent"
+    }
+   }
+  },
+  {
+   "text": "They interview people. They chase rumors. They hit dead ends.",
+   "key": [
+    "RUMORS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "agent",
+    "with": "eng"
+   },
+   "act": {
+    "agent": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "eng"
+    },
+    "eng": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "agent"
+    }
+   }
+  },
+  {
+   "text": "Nobody is ever caught.",
+   "key": [
+    "CAUGHT."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Decades later, still no name. Not one. Not even a good guess.",
+   "key": [
+    "NAME."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "agent"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "agent": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Hijacking two stations? Wild. Getting away with it? Wilder.",
+   "key": [
+    "WILDER."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Somewhere out there, he still has that mask.",
+   "key": [
+    "MASK."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "UNSOLVED"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "mask": [
+     3.0,
+     -2.6
+    ],
+    "you": false,
+    "eng": false,
+    "agent": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "mask": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you change the channel? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "CHANGE CHANNEL?",
+    "YES OR NO?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Max Headroom signal hijacking",
+   "url": "https://en.wikipedia.org/wiki/Max_Headroom_signal_hijacking"
+  },
+  {
+   "title": "WTTW News: 30 years later, Max Headroom incident remains a mystery",
+   "url": "https://news.wttw.com/2017/11/21/30-years-later-notorious-max-headroom-incident-remains-mystery"
+  },
+  {
+   "title": "Chicago Sun-Times: Chicago TV got hacked in the Max Headroom incident",
+   "url": "https://chicago.suntimes.com/2014/11/22/18445550/27-years-ago-saturday-chicago-tv-got-hacked-in-the-max-headroom-incident"
+  },
+  {
+   "title": "AV Club: In 1987, someone hacked into WGN",
+   "url": "https://www.avclub.com/in-1987-someone-hacked-into-wgn-in-one-of-tvs-strange-1798268082"
+  },
+  {
+   "title": "Chicagoist: Remembering the strangest TV hack in Chicago history",
+   "url": "https://www.chicagoist.com/2015/11/20/video_remembering_the_very_weird_ma.php"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In November 1987 a broadcast was hijacked in Chicago",
+   "terms": [
+    "1987",
+    "Chicago"
+   ]
+  },
+  {
+   "claim": "The intruder wore a Max Headroom mask",
+   "terms": [
+    "Max Headroom",
+    "mask"
+   ]
+  },
+  {
+   "claim": "A sheet of corrugated metal moved behind him",
+   "terms": [
+    "metal"
+   ]
+  },
+  {
+   "claim": "The first intrusion had no audio, just a buzz",
+   "terms": [
+    "buzz|buzzing",
+    "sound|audio"
+   ]
+  },
+  {
+   "claim": "WGN got its signal back",
+   "terms": [
+    "WGN",
+    "signal"
+   ]
+  },
+  {
+   "claim": "It interrupted a sports report",
+   "terms": [
+    "sports"
+   ]
+  },
+  {
+   "claim": "About two hours later it happened again during Doctor Who on WTTW",
+   "terms": [
+    "Doctor Who",
+    "WTTW"
+   ]
+  },
+  {
+   "claim": "The second time there was audio and he hummed a cartoon theme",
+   "terms": [
+    "Clutch Cargo"
+   ]
+  },
+  {
+   "claim": "He held a can of Pepsi",
+   "terms": [
+    "Pepsi"
+   ]
+  },
+  {
+   "claim": "It lasted about 90 seconds",
+   "terms": [
+    "90 seconds|ninety seconds"
+   ]
+  },
+  {
+   "claim": "The sportscaster Dan Roan came back puzzled",
+   "terms": [
+    "Roan",
+    "wondering"
+   ]
+  },
+  {
+   "claim": "The FCC investigated",
+   "terms": [
+    "FCC",
+    "investigat"
+   ]
+  },
+  {
+   "claim": "Nobody was ever caught",
+   "terms": [
+    "unidentified|never been identified|never identified|never caught|never found|remains a mystery|never been caught"
+   ]
+  }
+ ]
+}
