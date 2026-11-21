@@ -3,8 +3,23 @@
  "mode": "render",
  "release": "stories-heist-1",
  "listen": true,
- "replace": false,
+ "replace": true,
  "videos": [
-  "heist_01_antwerp_diamonds"
+  "heist_01_antwerp_diamonds",
+  "heist_02_mona_lisa",
+  "heist_03_db_cooper",
+  "heist_04_louvre_jewels",
+  "heist_05_eiffel_tower_sale",
+  "heist_06_gardner_museum",
+  "heist_07_bangladesh_bank_typo",
+  "heist_08_maple_syrup",
+  "heist_09_millennium_dome",
+  "heist_10_colonel_blood",
+  "heist_11_great_train_robbery",
+  "heist_12_big_maple_leaf",
+  "heist_13_brinks_mat_gold",
+  "heist_14_van_meegeren",
+  "heist_15_world_cup_pickles",
+  "heist_16_abagnale_doubts"
  ]
 }
