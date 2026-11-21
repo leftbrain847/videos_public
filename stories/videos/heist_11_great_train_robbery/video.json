@@ -1,0 +1,721 @@
+{
+ "id": "heist_11_great_train_robbery",
+ "title": "The Great Train Robbery's board game",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "ROYAL MAIL",
+   "TRAIN"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "bruce": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "ronnie": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#2e86c1",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   }
+  },
+  "gang": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5f6770",
+    "pants": "#22252b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   }
+  },
+  "det": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#8a7a5c",
+    "pants": "#3a2a20",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#a8714c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You pull off the robbery of the century. Then you lose to a board game.",
+   "key": [
+    "GAME."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bruce"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "bruce": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "bruce": "center",
+    "ronnie": false,
+    "gang": false,
+    "det": false
+   },
+   "board": [
+    "ROYAL MAIL",
+    "TRAIN"
+   ]
+  },
+  {
+   "text": "England. August, nineteen sixty three.",
+   "cap": "England. August 1963.",
+   "key": [
+    "ENGLAND."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "bruce"
+   },
+   "act": {
+    "bruce": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "AUG 8",
+    "1963"
+   ]
+  },
+  {
+   "text": "A mail train heads to London. It's carrying used cash. Lots of it.",
+   "key": [
+    "CASH."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "bruce"
+   },
+   "act": {
+    "bruce": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your gang has about fifteen people.",
+   "cap": "Your gang has about 15 people.",
+   "key": [
+    "15"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "gang"
+   },
+   "act": {
+    "gang": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "bruce": {
+     "mood": "smug",
+     "action": "point",
+     "look": "gang"
+    },
+    "ronnie": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "bruce"
+    }
+   },
+   "place": {
+    "bruce": "left",
+    "gang": "center",
+    "ronnie": "right"
+   }
+  },
+  {
+   "text": "The trick? You rig a railway signal. You turn it red.",
+   "key": [
+    "RED."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "bruce": false,
+    "gang": false,
+    "ronnie": false
+   },
+   "board": [
+    "SIGNAL:",
+    "RED"
+   ]
+  },
+  {
+   "text": "The driver sees red. He stops. The train sits in the dark. Right where you want it.",
+   "key": [
+    "DARK."
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "low",
+    "on": "gang"
+   },
+   "act": {
+    "gang": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "gang": "center"
+   },
+   "board": [
+    "3 AM",
+    "STOP"
+   ]
+  },
+  {
+   "text": "You unload sack after sack of cash.",
+   "key": [
+    "CASH."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ronnie"
+   },
+   "act": {
+    "ronnie": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "ronnie": "right",
+    "gang": "left"
+   }
+  },
+  {
+   "text": "The haul? Over two and a half million pounds.",
+   "cap": "The haul? Over \u00a32.5 million.",
+   "key": [
+    "MILLION"
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bruce"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "bruce"
+    },
+    "bruce": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "bruce": "right"
+   },
+   "board": [
+    "THE HAUL",
+    "\u00a32,600,000"
+   ]
+  },
+  {
+   "text": "Today, that's tens of millions. The biggest robbery Britain had ever seen.",
+   "key": [
+    "TENS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "bruce": false
+   }
+  },
+  {
+   "text": "You hide out at a farm. You wait for things to calm down.",
+   "key": [
+    "FARM."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "wide",
+    "on": "gang"
+   },
+   "act": {
+    "gang": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "ronnie": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "gang"
+    }
+   },
+   "place": {
+    "gang": "couchL",
+    "ronnie": "couchR"
+   },
+   "board": [
+    "LEATHERSLADE",
+    "FARM"
+   ]
+  },
+  {
+   "text": "You get bored. You play Monopoly. With the real money.",
+   "key": [
+    "MONOPOLY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ronnie"
+   },
+   "act": {
+    "ronnie": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "board": [
+    "GO",
+    "COLLECT"
+   ]
+  },
+  {
+   "text": "Police are closing in. So you leave in a hurry. You torch nothing. You clean nothing.",
+   "key": [
+    "HURRY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gang"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "gang"
+    },
+    "gang": {
+     "mood": "worried",
+     "action": "run"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     0.4
+    ],
+    "gang": [
+     2.0,
+     0.4
+    ],
+    "ronnie": false
+   }
+  },
+  {
+   "text": "You forget to wipe the board.",
+   "key": [
+    "BOARD."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "gang": false
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Police find fingerprints on the Monopoly set. Also on a ketchup bottle.",
+   "key": [
+    "KETCHUP"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "det"
+   },
+   "act": {
+    "det": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "det": "center"
+   },
+   "board": [
+    "EVIDENCE:",
+    "MONOPOLY"
+   ]
+  },
+  {
+   "text": "One by one, the gang gets arrested.",
+   "key": [
+    "ARRESTED."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "det"
+   },
+   "act": {
+    "det": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Many of you get thirty years in prison.",
+   "cap": "Many of you get 30 years in prison.",
+   "key": [
+    "30"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "bruce"
+   },
+   "act": {
+    "bruce": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "bruce": "center",
+    "det": false
+   }
+  },
+  {
+   "text": "Then Ronnie Biggs escapes. Over a prison wall. With a rope ladder.",
+   "key": [
+    "ESCAPES."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ronnie"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "ronnie"
+    },
+    "ronnie": {
+     "mood": "happy",
+     "action": "run"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "ronnie": "right"
+   }
+  },
+  {
+   "text": "He ends up in Brazil. For decades.",
+   "key": [
+    "BRAZIL."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ronnie"
+   },
+   "act": {
+    "ronnie": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "ronnie": "center"
+   },
+   "board": [
+    "RIO",
+    "DE JANEIRO"
+   ]
+  },
+  {
+   "text": "In two thousand one, he flies home. On purpose. Straight to prison.",
+   "cap": "In 2001, he flies home. On purpose. Straight to prison.",
+   "key": [
+    "PURPOSE."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "ronnie": "right"
+   }
+  },
+  {
+   "text": "Millions in cash. Undone by a property game.",
+   "key": [
+    "PROPERTY"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "ronnie": false
+   }
+  },
+  {
+   "text": "Would you play Monopoly with stolen money? Yes or no?",
+   "key": [
+    "MONOPOLY"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Great Train Robbery (1963)",
+   "url": "https://en.wikipedia.org/wiki/Great_Train_Robbery_(1963)"
+  },
+  {
+   "title": "Wikipedia: Ronnie Biggs",
+   "url": "https://en.wikipedia.org/wiki/Ronnie_Biggs"
+  },
+  {
+   "title": "SBS News: Train robbery was crime of the century",
+   "url": "https://www.sbs.com.au/news/article/train-robbery-was-crime-of-the-century/zehugpdu6"
+  },
+  {
+   "title": "HowStuffWorks: How the Great Train Robbery worked",
+   "url": "https://history.howstuffworks.com/historical-events/great-train-robbery.htm"
+  },
+  {
+   "title": "Smithsonian Magazine: Big mystery behind the Great Train Robbery may finally be solved",
+   "url": "https://www.smithsonianmag.com/history/big-mystery-behind-great-train-robbery-may-finally-been-solved-180952054/"
+  },
+  {
+   "title": "Crime and Investigation: The Great Train Robbery",
+   "url": "https://www.crimeandinvestigation.co.uk/crime-files/great-train-robbery"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The robbery was in England in August 1963",
+   "terms": [
+    "August",
+    "1963"
+   ]
+  },
+  {
+   "claim": "It was called the crime of the century",
+   "terms": [
+    "crime of the century"
+   ]
+  },
+  {
+   "claim": "A mail train was heading to London",
+   "terms": [
+    "train",
+    "London"
+   ]
+  },
+  {
+   "claim": "The gang had about 15 members",
+   "terms": [
+    "15|fifteen",
+    "gang"
+   ]
+  },
+  {
+   "claim": "They rigged a signal to show red",
+   "terms": [
+    "signal",
+    "red"
+   ]
+  },
+  {
+   "claim": "They unloaded mailbags of cash",
+   "terms": [
+    "sacks|mailbags|bags"
+   ]
+  },
+  {
+   "claim": "The haul was over 2.5 million pounds",
+   "terms": [
+    "2.6 million|2,631,684|2.5 million"
+   ]
+  },
+  {
+   "claim": "It was the biggest robbery in Britain at the time",
+   "terms": [
+    "largest|biggest",
+    "robbery"
+   ]
+  },
+  {
+   "claim": "They hid at Leatherslade Farm",
+   "terms": [
+    "Leatherslade Farm"
+   ]
+  },
+  {
+   "claim": "They played Monopoly with the real money",
+   "terms": [
+    "Monopoly"
+   ]
+  },
+  {
+   "claim": "Fingerprints were found on the Monopoly set and a ketchup bottle",
+   "terms": [
+    "fingerprint",
+    "Monopoly|ketchup"
+   ]
+  },
+  {
+   "claim": "Many were sentenced to 30 years",
+   "terms": [
+    "30 years"
+   ]
+  },
+  {
+   "claim": "Ronnie Biggs escaped over a prison wall",
+   "terms": [
+    "Biggs",
+    "escape"
+   ]
+  },
+  {
+   "claim": "Biggs escaped with a rope ladder",
+   "terms": [
+    "rope ladder"
+   ]
+  },
+  {
+   "claim": "Biggs lived in Brazil",
+   "terms": [
+    "Biggs",
+    "Brazil"
+   ]
+  },
+  {
+   "claim": "Biggs returned to Britain in 2001",
+   "terms": [
+    "2001",
+    "Biggs"
+   ]
+  }
+ ]
+}
