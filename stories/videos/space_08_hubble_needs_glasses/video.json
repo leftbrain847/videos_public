@@ -775,6 +775,10 @@
    "url": "https://asd.gsfc.nasa.gov/archive/hubble/missions/sm1.html"
   },
   {
+   "title": "Wikipedia: STS-61",
+   "url": "https://en.wikipedia.org/wiki/STS-61"
+  },
+  {
    "title": "Wikipedia: COSTAR",
    "url": "https://en.wikipedia.org/wiki/Corrective_Optics_Space_Telescope_Axial_Replacement"
   }
@@ -869,7 +873,8 @@
   {
    "claim": "It took five spacewalks",
    "terms": [
-    "five spacewalks|5 spacewalks"
+    "five|5",
+    "spacewalk|EVA"
    ]
   },
   {

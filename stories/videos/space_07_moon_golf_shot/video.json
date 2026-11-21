@@ -765,6 +765,14 @@
    "url": "https://www.clickondetroit.com/sports/2021/02/05/out-of-this-world-shepard-puts-golf-on-moon-50-years-ago/"
   },
   {
+   "title": "NBC DFW (AP): Shepard put golf on the moon 50 years ago",
+   "url": "https://www.nbcdfw.com/news/local/texas-news/out-of-this-world-shepard-put-golf-on-moon-50-years-ago/2543922/"
+  },
+  {
+   "title": "Irish Golfer: how far did Shepard hit his moon shot",
+   "url": "https://irishgolfer.ie/latest-golf-news/2021/02/05/how-far-did-shepard-hit-his-moon-shot-50-years-ago-this-week/"
+  },
+  {
    "title": "SlashGear: images find Shepard's golf balls",
    "url": "https://www.slashgear.com/apollo-14-50th-anniversary-images-find-alan-shepards-golf-balls-05658300/"
   }
@@ -802,8 +810,8 @@
   {
    "claim": "He attached it to a tool handle for collecting samples",
    "terms": [
-    "handle",
-    "sample|scoop"
+    "6-iron|six-iron|six iron",
+    "handle|tool|scoop"
    ]
   },
   {
@@ -815,7 +823,8 @@
   {
    "claim": "His first swings hit mostly dirt",
    "terms": [
-    "dirt|dust"
+    "dust|dirt|sand",
+    "swing|shot|ball"
    ]
   },
   {

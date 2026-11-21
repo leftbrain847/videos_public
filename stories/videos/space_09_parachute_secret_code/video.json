@@ -797,6 +797,18 @@
    "url": "https://earthsky.org/space/perseverance-secret-message-dare-mighty-things"
   },
   {
+   "title": "ScienceDaily (NASA): Perseverance provides front-row seat to landing",
+   "url": "https://www.sciencedaily.com/releases/2021/02/210222171749.htm"
+  },
+  {
+   "title": "NASA JPL: testing proves its worth with successful Mars parachute deployment",
+   "url": "https://www.jpl.nasa.gov/news/testing-proves-its-worth-with-successful-mars-parachute-deployment/"
+  },
+  {
+   "title": "Wikipedia: Mars 2020",
+   "url": "https://en.wikipedia.org/wiki/Mars_2020"
+  },
+  {
    "title": "Wikipedia: Perseverance (rover)",
    "url": "https://en.wikipedia.org/wiki/Perseverance_(rover)"
   }
@@ -821,7 +833,7 @@
    "claim": "It was the biggest parachute sent to Mars",
    "terms": [
     "parachute",
-    "largest|biggest"
+    "largest|biggest|heaviest"
    ]
   },
   {
@@ -887,7 +899,7 @@
    "claim": "Systems engineer Ian Clark, a crossword enthusiast, designed it",
    "terms": [
     "Clark",
-    "crossword"
+    "crossword|puzzle"
    ]
   },
   {

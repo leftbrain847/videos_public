@@ -712,13 +712,13 @@
    }
   },
   {
-   "text": "The crew's mascot? A woodpecker. Of course.",
+   "text": "Somewhere in Florida, a woodpecker is very proud.",
    "key": [
-    "MASCOT?"
+    "PROUD."
    ],
    "board": [
-    "CREW",
-    "MASCOT"
+    "BIRDS: 1",
+    "NASA: 0"
    ],
    "shot": {
     "type": "medium",
@@ -827,6 +827,22 @@
    "url": "https://webarchive.library.unt.edu/eot2008/20080916010223/http:/science.ksc.nasa.gov/shuttle/missions/sts-70/mission-sts-70.html"
   },
   {
+   "title": "Roanoke Times (1995): woodpeckers and the shuttle",
+   "url": "https://scholar.lib.vt.edu/VA-news/ROA-Times/issues/1995/rt9506/950625/06260108.htm"
+  },
+  {
+   "title": "Spokesman-Review (1995): NASA gets lots of advice on shooing woodpeckers",
+   "url": "https://www.spokesman.com/stories/1995/jun/04/nasa-gets-lots-of-advice-on-shooing-woodpeckers/"
+  },
+  {
+   "title": "Scripps News: birds pose safety threats to NASA's rockets",
+   "url": "https://www.scrippsnews.com/science-and-tech/space/birds-pose-safety-threats-to-nasa-s-rockets"
+  },
+  {
+   "title": "NASA (1995) STS-70 document",
+   "url": "https://corpora.tika.apache.org/base/docs/govdocs1/013/013223.html"
+  },
+  {
    "title": "Discover: Boyish pursuits",
    "url": "https://www.discovermagazine.com/the-sciences/boyish-pursuits"
   }
@@ -908,13 +924,6 @@
    "claim": "Discovery launched on July 13, 1995",
    "terms": [
     "July 13"
-   ]
-  },
-  {
-   "claim": "The crew had a woodpecker mascot",
-   "terms": [
-    "woodpecker",
-    "mascot"
    ]
   }
  ]
