@@ -15,7 +15,7 @@ RULES = {
     "min_distinct_shots": 5,
     "max_same_shot_run": 2,
     "keys_per_line": (1, 2),
-    "sets": {"locker", "field", "press", "office", "living", "tunnel"},
+    "sets": {"locker", "field", "press", "office", "living", "tunnel", "haunted", "vault", "temple", "space", "study"},
     "shots": {"wide", "medium", "close", "low", "high", "two", "ots", "follow", "follow_high"},
     "moods": {"neutral", "angry", "worried", "shocked", "happy", "sad", "smug", "confused"},
     "actions": {"idle", "talk", "point", "cheer", "facepalm", "shrug", "throw", "hold", "cross", "slump", "clap", "wave", "run", "walk", "catch", "kick", "celebrate"},
@@ -26,7 +26,22 @@ RULES = {
     # J, 2026-11-20 UAT: feature Capy more. In v2 scripts she is the subject of at least this many shots (shot on/with
     # capy), including the first and last lines. A J-approved video is marked "locked" and keeps its approved cut.
     "capy_min_shots": 5,
+    # Story series (stories/videos/<series>_<nn>_<slug>): 90 s, Capy in the series' outfit. Line, word and Capy-shot
+    # limits above are for 60 s and scale with target_s.
+    "series": {
+        "scary": {"outfit": "raincoat",  "target_s": 90},
+        "heist": {"outfit": "detective", "target_s": 90},
+        "myth":  {"outfit": "toga",      "target_s": 90},
+        "space": {"outfit": "astronaut", "target_s": 90},
+        "mind":  {"outfit": "cardigan",  "target_s": 90},
+    },
 }
+
+
+def scaled(rng, S):
+    """A 60 s (lo, hi) limit scaled to the script's own length."""
+    f = float(S.get("target_s", 60)) / 60
+    return (round(rng[0] * f), round(rng[1] * f))
 
 
 def norm(w):
@@ -37,11 +52,18 @@ def check(vd):
     errs = []
     S = json.loads((Path(vd) / "video.json").read_text())
     L, cast = S.get("lines", []), S.get("cast", {})
-    if not (RULES["lines"][0] <= len(L) <= RULES["lines"][1]):
-        errs.append(f"{len(L)} lines (want {RULES['lines']})")
+    lr, wr = scaled(RULES["lines"], S), scaled(RULES["words"], S)
+    if not (lr[0] <= len(L) <= lr[1]):
+        errs.append(f"{len(L)} lines (want {lr})")
     words = sum(len(l["text"].split()) for l in L)
-    if not (RULES["words"][0] <= words <= RULES["words"][1]):
-        errs.append(f"{words} spoken words (want {RULES['words']})")
+    if not (wr[0] <= words <= wr[1]):
+        errs.append(f"{words} spoken words (want {wr})")
+    ser = RULES["series"].get(Path(vd).resolve().name.split("_")[0])
+    if ser:
+        if float(S.get("target_s", 60)) != ser["target_s"]:
+            errs.append(f"story series videos are {ser['target_s']} s: set \"target_s\": {ser['target_s']}")
+        if (cast.get("capy", {}).get("look") or {}).get("outfit") != ser["outfit"]:
+            errs.append(f"Capy wears the series outfit here: cast.capy.look.outfit = \"{ser['outfit']}\"")
     if len([s for s in S.get("sources", []) if s.get("url", "").startswith("http")]) < RULES["min_sources"]:
         errs.append("needs at least 2 sources with urls")
     if RULES["narrator"] not in cast or cast[RULES["narrator"]].get("kind") != "capy":
@@ -171,8 +193,9 @@ def voice_errors(vd):
     out += play_errors(S, json.loads(tj.read_text()) if tj.exists() else None)
     if not S.get("locked"):
         n = sum(1 for l in S.get("lines", []) if "capy" in ((l.get("shot") or {}).get("on"), (l.get("shot") or {}).get("with")))
-        if n < RULES["capy_min_shots"]:
-            out.append(f"Capy is the subject of {n} shots (want {RULES['capy_min_shots']}+: she opens, guides and closes)")
+        want = round(RULES["capy_min_shots"] * float(S.get("target_s", 60)) / 60)
+        if n < want:
+            out.append(f"Capy is the subject of {n} shots (want {want}+: she opens, guides and closes)")
     unsure = sorted({n for l in S.get("lines", []) for n in voice.unsure_names(l["text"])})
     return S, out, unsure
 

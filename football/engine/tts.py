@@ -81,7 +81,7 @@ def main():
             sys.exit("speech rules failed (run check.py):\n  " + "\n  ".join(errs))
     from kokoro_onnx import Kokoro
     k = Kokoro(str(Path(a.models) / "kokoro-v1.0.onnx"), str(Path(a.models) / "voices-v1.0.bin"))
-    T = TIMING["target_s"]; speed = VOICE["speed"]
+    T = float(S.get("target_s", TIMING["target_s"])); speed = VOICE["speed"]   # 60 s shorts; story series set 90
     while True:
         clips = [synth(k, l["text"], speed) for l in S["lines"]]
         sr = clips[0][1]; speech = sum(len(c[0]) for c in clips) / sr

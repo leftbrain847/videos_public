@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with: { python-version: '3.12' }
       - name: Every script passes the guidelines check
-        run: python3 football/engine/check.py football/videos/*/
+        run: python3 football/engine/check.py football/videos/*/ $(ls -d stories/videos/*/ 2>/dev/null)
       - name: Engine and site files parse
         run: |
           node --check football/engine/kit.js
@@ -54,15 +54,15 @@ jobs:
         run: |
           set -euo pipefail
           CHANGED=$(git diff --name-only --diff-filter=AM "$BASE" HEAD)   # fails the job if the base is missing
-          if grep -qx 'tools/fact_check.py' <<< "$CHANGED"; then
-            FILES=$(ls football/videos/*/video.json)
+          if grep -qxE 'tools/(fact_check|videos)\.py' <<< "$CHANGED"; then
+            FILES=$(compgen -G 'football/videos/*/video.json'; compgen -G 'stories/videos/*/video.json' || true)
           else
-            FILES=$(grep -E '^football/videos/s[1-4]_[0-9]{2}_[a-z0-9_]{1,60}/video\.json$' <<< "$CHANGED" || true)
+            FILES=$(grep -E '^(football/videos/s[1-4]|stories/videos/(scary|heist|myth|space|mind))_[0-9]{2}_[a-z0-9_]{1,60}/video\.json$' <<< "$CHANGED" || true)
           fi
           IDS=""
           for f in $FILES; do
             id=$(cut -d/ -f3 <<< "$f")
-            [[ "$id" =~ ^s[1-4]_[0-9]{2}_[a-z0-9_]{1,60}$ ]] && grep -q '"voice": "v2"' "$f" && IDS="$IDS $id"
+            [[ "$id" =~ ^(s[1-4]|scary|heist|myth|space|mind)_[0-9]{2}_[a-z0-9_]{1,60}$ ]] && grep -q '"voice": "v2"' "$f" && IDS="$IDS $id"
           done
           if [ -z "$IDS" ]; then echo "no v2 scripts changed"; exit 0; fi
           python3 tools/fact_check.py $IDS

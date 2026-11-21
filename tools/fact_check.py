@@ -11,6 +11,8 @@ import html.parser, json, re, sys, urllib.error, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import videos  # noqa: E402  id -> folder for every channel
 CFG = {"window": 40, "snippet_words": 15, "need": 2, "bytes": 3_000_000, "timeout": 30}
 
 
@@ -88,7 +90,7 @@ def snippet(words, span, n=CFG["snippet_words"]):
 
 
 def check(vid):
-    S = json.loads((ROOT / "football" / "videos" / vid / "video.json").read_text())
+    S = json.loads((videos.video_dir(vid) / "video.json").read_text())
     pages = {}
     for s in S.get("sources", []):
         u = s.get("url", "")

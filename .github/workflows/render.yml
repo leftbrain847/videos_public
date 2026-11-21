@@ -86,6 +86,7 @@ jobs:
         include: ${{ fromJSON(needs.plan.outputs.matrix) }}
     env:
       VID: ${{ matrix.id }}
+      VDIR: ${{ matrix.dir }}   # relative to football/: videos/<id> or ../stories/videos/<id> (from tools/render_plan.py, validated)
       IDX: ${{ matrix.index }}
       KOKORO_MODELS: /home/runner/kokoro
       CHROME: /usr/bin/google-chrome
@@ -112,7 +113,7 @@ jobs:
       - name: Render
         env:
           PWMOD: ${{ github.workspace }}/football/engine/node_modules/playwright-core
-        run: cd football && bash engine/make.sh "videos/$VID" "$IDX"
+        run: cd football && bash engine/make.sh "$VDIR" "$IDX"
       - name: Review pack, web copy and poster
         run: |
           cd football && S="${VID%%_*}"; D="out/release"; R="out/review"; mkdir -p "$D" "$R"
@@ -134,8 +135,8 @@ jobs:
           name: 'voice-${{ matrix.id }}'
           retention-days: 1
           path: |
-            football/videos/${{ matrix.id }}/build/narration.wav
-            football/videos/${{ matrix.id }}/build/timing.json
+            football/${{ matrix.dir }}/build/narration.wav
+            football/${{ matrix.dir }}/build/timing.json
 
   # Its own job, and only after the release job, so the speech-to-text install and model can't touch the released files.
   listen:
@@ -149,19 +150,20 @@ jobs:
         include: ${{ fromJSON(needs.plan.outputs.matrix) }}
     env:
       VID: ${{ matrix.id }}
+      VDIR: ${{ matrix.dir }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with: { persist-credentials: false }
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with: { python-version: '3.13' }
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
-        with: { name: 'voice-${{ matrix.id }}', path: 'football/videos/${{ matrix.id }}/build' }
+        with: { name: 'voice-${{ matrix.id }}', path: 'football/${{ matrix.dir }}/build' }
       - name: Transcribe each line and diff it against the script
         run: |
           pip install -q --require-hashes -r football/engine/listen-requirements.txt
           mkdir -p football/out/listen
-          cd football && python3 engine/listen.py "videos/$VID" | tee "out/listen/$VID.listen.txt"
-          cp "videos/$VID/build/listen.json" "out/listen/$VID.listen.json"
+          cd football && python3 engine/listen.py "$VDIR" | tee "out/listen/$VID.listen.txt"
+          cp "$VDIR/build/listen.json" "out/listen/$VID.listen.json"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         if: always()
         with: { name: 'listen-${{ matrix.id }}', path: football/out/listen/, retention-days: 30 }
@@ -189,10 +191,10 @@ jobs:
           TAG: ${{ needs.plan.outputs.release }}
           REPLACE: ${{ needs.plan.outputs.replace }}
         run: |
-          [[ "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ ]] || { printf 'bad release tag\n'; exit 1; }
+          [[ "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ || "$TAG" =~ ^stories-(scary|heist|myth|space|mind)-[0-9a-z-]{1,20}$ ]] || { printf 'bad release tag\n'; exit 1; }
           compgen -G 'files/*' >/dev/null || { printf 'nothing passed facts and rendered; nothing to release\n'; exit 0; }
           gh release view "$TAG" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || \
-            gh release create "$TAG" -R "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "$TAG" --notes "Football shorts: 1080x1920 masters (*.master.mp4), 720x1280 web copies, posters and contact sheets."
+            gh release create "$TAG" -R "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "$TAG" --notes "1080x1920 masters (*.master.mp4) for posting, 720x1280 web copies, posters and contact sheets."
           if [[ "$REPLACE" == "true" ]]; then gh release upload "$TAG" files/* -R "$GITHUB_REPOSITORY" --clobber
           else gh release upload "$TAG" files/* -R "$GITHUB_REPOSITORY"; fi
           echo "Uploaded to https://github.com/$GITHUB_REPOSITORY/releases/tag/$TAG" >> "$GITHUB_STEP_SUMMARY"

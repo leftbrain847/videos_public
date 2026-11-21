@@ -7,7 +7,9 @@ Files are named <id>.mp4, <id>.master.mp4, <id>.jpg, <id>.review.jpg. Prints wha
 import json, re, sys
 from pathlib import Path
 
-ID = re.compile(r"^(s[1-4]_\d\d_[a-z0-9_]{1,60}?)(\.master|\.review)?\.(mp4|jpg)$")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import videos  # noqa: E402
+ID = re.compile(r"^(" + videos.ID_PATTERN + r")(\.master|\.review)?\.(mp4|jpg)$")
 
 
 def passed(facts, vid):
