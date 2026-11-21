@@ -86,7 +86,7 @@ jobs:
         include: ${{ fromJSON(needs.plan.outputs.matrix) }}
     env:
       VID: ${{ matrix.id }}
-      VDIR: ${{ matrix.dir }}   # relative to football/: videos/<id> or ../stories/videos/<id> (from tools/render_plan.py, validated)
+      VDIR: ${{ matrix.dir }}   # matrix.path is the same folder relative to the repo root (artifact paths can't contain ..); relative to football/: videos/<id> or ../stories/videos/<id> (from tools/render_plan.py, validated)
       IDX: ${{ matrix.index }}
       KOKORO_MODELS: /home/runner/kokoro
       CHROME: /usr/bin/google-chrome
@@ -135,8 +135,8 @@ jobs:
           name: 'voice-${{ matrix.id }}'
           retention-days: 1
           path: |
-            football/${{ matrix.dir }}/build/narration.wav
-            football/${{ matrix.dir }}/build/timing.json
+            ${{ matrix.path }}/build/narration.wav
+            ${{ matrix.path }}/build/timing.json
 
   # Its own job, and only after the release job, so the speech-to-text install and model can't touch the released files.
   listen:
@@ -157,7 +157,7 @@ jobs:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with: { python-version: '3.13' }
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
-        with: { name: 'voice-${{ matrix.id }}', path: 'football/${{ matrix.dir }}/build' }
+        with: { name: 'voice-${{ matrix.id }}', path: '${{ matrix.path }}/build' }
       - name: Transcribe each line and diff it against the script
         run: |
           pip install -q --require-hashes -r football/engine/listen-requirements.txt
