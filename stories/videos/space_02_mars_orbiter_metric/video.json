@@ -1,0 +1,1014 @@
+{
+ "id": "space_02_mars_orbiter_metric",
+ "title": "The Mars orbiter lost to a unit mix-up",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "MARS 1999"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "lm": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#4b92db",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#5c3a24",
+    "glasses": true
+   }
+  },
+  "jpl": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8",
+    "headset": true
+   }
+  },
+  "nav": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "headset": true
+   },
+   "hold": "clipboard"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You fly a spacecraft to Mars. One missing conversion destroys it.",
+   "key": [
+    "CONVERSION"
+   ],
+   "board": [
+    "LBF",
+    "VS N"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "lm": [
+     -2.6,
+     -0.6
+    ],
+    "jpl": [
+     2.6,
+     -0.6
+    ],
+    "nav": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "lm": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "jpl"
+    },
+    "jpl": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "lm"
+    }
+   }
+  },
+  {
+   "text": "It's the Mars Climate Orbiter. It launches in December, nineteen ninety eight.",
+   "cap": "It's the Mars Climate Orbiter. It launches in December 1998.",
+   "key": [
+    "1998."
+   ],
+   "board": [
+    "MARS CLIMATE",
+    "ORBITER"
+   ],
+   "place": {
+    "capy": false,
+    "lm": [
+     -2.0,
+     0
+    ],
+    "jpl": [
+     2.0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "lm",
+    "offset": [
+     2.0,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "lm": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    },
+    "jpl": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Its job? Study the weather on Mars.",
+   "key": [
+    "WEATHER"
+   ],
+   "board": [
+    "JOB:",
+    "MARS WEATHER"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "lm",
+    "with": "jpl"
+   },
+   "act": {
+    "lm": {
+     "mood": "happy",
+     "action": "point",
+     "look": "jpl"
+    },
+    "jpl": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "lm"
+    }
+   }
+  },
+  {
+   "text": "It costs one hundred twenty five million dollars.",
+   "cap": "It costs $125 million.",
+   "key": [
+    "$125"
+   ],
+   "board": [
+    "$125",
+    "MILLION"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "lm": false,
+    "jpl": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "jpl"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "jpl": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Two teams fly it. One works at Lockheed Martin.",
+   "key": [
+    "LOCKHEED"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "LOCKHEED MARTIN"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "lm": [
+     0,
+     0.4
+    ],
+    "jpl": false,
+    "nav": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "lm"
+   },
+   "act": {
+    "lm": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The other sits at Nasa's Jet Propulsion Laboratory.",
+   "cap": "The other sits at NASA's Jet Propulsion Laboratory.",
+   "key": [
+    "JET"
+   ],
+   "board": [
+    "NASA JPL",
+    "PASADENA"
+   ],
+   "place": {
+    "lm": false,
+    "jpl": [
+     0,
+     0.4
+    ],
+    "nav": [
+     2.4,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "jpl"
+   },
+   "act": {
+    "jpl": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    },
+    "nav": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "jpl"
+    }
+   }
+  },
+  {
+   "text": "Here's the catch. The two teams speak different units.",
+   "key": [
+    "UNITS."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "LBF VS N"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "lm": [
+     -2.6,
+     -0.6
+    ],
+    "jpl": [
+     2.6,
+     -0.6
+    ],
+    "nav": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "lm": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "jpl"
+    },
+    "jpl": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "lm"
+    }
+   }
+  },
+  {
+   "text": "Two teams. One spacecraft. What could go wrong?",
+   "key": [
+    "WRONG?"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "lm": [
+     1.3,
+     0.2
+    ],
+    "jpl": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "lm"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "lm": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Lockheed's software reports thrust in pound force seconds.",
+   "cap": "Lockheed's software reports thrust in pound-force seconds.",
+   "key": [
+    "POUND-FORCE"
+   ],
+   "board": [
+    "LOCKHEED:",
+    "POUND-FORCE"
+   ],
+   "place": {
+    "capy": false,
+    "lm": [
+     -1.4,
+     0.2
+    ],
+    "jpl": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "lm"
+   },
+   "act": {
+    "lm": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "jpl": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "lm"
+    }
+   }
+  },
+  {
+   "text": "Nasa's navigation software expects metric. Newton seconds.",
+   "cap": "NASA's navigation software expects metric. Newton-seconds.",
+   "key": [
+    "METRIC."
+   ],
+   "board": [
+    "NASA:",
+    "NEWTON-SECONDS"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "jpl",
+    "offset": [
+     0.3,
+     0,
+     0.3
+    ]
+   },
+   "act": {
+    "jpl": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "lm": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "jpl"
+    }
+   }
+  },
+  {
+   "text": "Nobody converts. One pound force equals four point four newtons. Oops.",
+   "cap": "Nobody converts. 1 pound-force equals 4.4 newtons. Oops.",
+   "key": [
+    "4.4"
+   ],
+   "board": [
+    "1 LBF",
+    "= 4.45 N"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "lm": [
+     -2.6,
+     -0.6
+    ],
+    "jpl": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "lm": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    },
+    "jpl": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "So every small course fix is logged wrong.",
+   "key": [
+    "WRONG."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "COURSE FIXES"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "lm": false,
+    "jpl": false,
+    "nav": [
+     0,
+     0.4
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "nav"
+   },
+   "act": {
+    "nav": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Month after month, it drifts off its path.",
+   "key": [
+    "DRIFTS"
+   ],
+   "board": [
+    "PATH",
+    "DRIFTING"
+   ],
+   "place": {
+    "nav": [
+     -1.3,
+     0.3
+    ],
+    "boss": [
+     1.3,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "nav",
+    "with": "boss"
+   },
+   "act": {
+    "nav": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "nav"
+    }
+   }
+  },
+  {
+   "text": "September twenty third, nineteen ninety nine. Arrival day at Mars.",
+   "cap": "September 23, 1999. Arrival day at Mars.",
+   "key": [
+    "ARRIVAL"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "SEPT 23 1999",
+     "ORBIT BURN"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "lm": false,
+    "jpl": [
+     1.3,
+     0.2
+    ],
+    "nav": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "jpl"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "jpl"
+    },
+    "jpl": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The orbiter fires its main engine. Then it slips behind Mars.",
+   "key": [
+    "BEHIND"
+   ],
+   "place": {
+    "capy": false,
+    "jpl": [
+     0,
+     0.2
+    ],
+    "lm": [
+     -2.4,
+     -0.4
+    ],
+    "nav": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "jpl"
+   },
+   "act": {
+    "jpl": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "lm": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "jpl"
+    }
+   }
+  },
+  {
+   "text": "It never calls home again. Ever.",
+   "key": [
+    "NEVER"
+   ],
+   "board": [
+    "SIGNAL",
+    "LOST"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "jpl"
+   },
+   "act": {
+    "jpl": {
+     "mood": "shocked",
+     "action": "slump",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.35,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "It flew far too low. About fifty seven kilometers up. Way too low.",
+   "cap": "It flew far too low. About 57 km up. Way too low.",
+   "key": [
+    "57"
+   ],
+   "board": [
+    "ALTITUDE",
+    "57 KM"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "jpl": [
+     2.6,
+     -0.6
+    ],
+    "lm": [
+     -2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    },
+    "jpl": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    },
+    "lm": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The atmosphere likely destroyed it. Gone.",
+   "key": [
+    "DESTROYED"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The investigation finds the cause. English units. Never converted to metric. Ouch.",
+   "key": [
+    "CONVERTED."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "REPORT"
+    ]
+   },
+   "board": [
+    "CAUSE:",
+    "UNITS"
+   ],
+   "place": {
+    "capy": false,
+    "lm": false,
+    "jpl": false,
+    "nav": [
+     2.4,
+     -0.2
+    ],
+    "boss": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    },
+    "nav": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "A spacecraft worth millions. Lost to unit homework. Your science teacher is smiling.",
+   "key": [
+    "HOMEWORK."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "boss": [
+     1.4,
+     0.2
+    ],
+    "nav": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The project rules already said metric. In writing.",
+   "key": [
+    "WRITING."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Should everyone just use metric? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "METRIC",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "boss": [
+     2.6,
+     -0.4
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0.2,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Mars Climate Orbiter",
+   "url": "https://en.wikipedia.org/wiki/Mars_Climate_Orbiter"
+  },
+  {
+   "title": "IEEE Spectrum: Why the Mars probe went off course",
+   "url": "https://spectrum.ieee.org/why-the-mars-probe-went-off-course"
+  },
+  {
+   "title": "Deseret News (1999): Metric miscalculation becomes cosmic blunder",
+   "url": "https://www.deseret.com/1999/10/1/19468365/metric-miscalculation-becomes-cosmic-blunder-for-mars-probers/"
+  },
+  {
+   "title": "Physics Today: Mars Climate Orbiter lost",
+   "url": "https://physicstoday.aip.org/news/mars-climate-orbiter-lost"
+  },
+  {
+   "title": "Interesting Engineering: NASA's Mars Climate Orbiter",
+   "url": "https://interestingengineering.com/science/nasa-mars-climate-orbiter"
+  },
+  {
+   "title": "IFLScience: why 1999 was a terrible year for NASA's Mars exploration",
+   "url": "https://www.iflscience.com/software-confusion-and-a-vanishing-lander-why-1999-was-a-terrible-year-for-nasas-mars-exploration-83484"
+  },
+  {
+   "title": "NASA Science: Mars Climate Orbiter",
+   "url": "https://science.nasa.gov/mission/mars-climate-orbiter/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Mars Climate Orbiter launched in December 1998",
+   "terms": [
+    "Climate Orbiter",
+    "December",
+    "1998"
+   ]
+  },
+  {
+   "claim": "Its job was to study the Martian weather and climate",
+   "terms": [
+    "weather|climate",
+    "Mars|Martian"
+   ]
+  },
+  {
+   "claim": "The orbiter cost $125 million",
+   "terms": [
+    "125 million"
+   ]
+  },
+  {
+   "claim": "Lockheed Martin built it and its ground software",
+   "terms": [
+    "Lockheed"
+   ]
+  },
+  {
+   "claim": "NASA's Jet Propulsion Laboratory navigated it",
+   "terms": [
+    "Jet Propulsion Laboratory|JPL",
+    "navigat"
+   ]
+  },
+  {
+   "claim": "Lockheed's software gave thrust results in pound-force seconds",
+   "terms": [
+    "pound",
+    "second"
+   ]
+  },
+  {
+   "claim": "NASA's software expected metric newton-seconds",
+   "terms": [
+    "newton",
+    "metric"
+   ]
+  },
+  {
+   "claim": "The units were not converted",
+   "terms": [
+    "metric",
+    "English|imperial|customary"
+   ]
+  },
+  {
+   "claim": "It reached Mars on September 23, 1999",
+   "terms": [
+    "September 23",
+    "1999"
+   ]
+  },
+  {
+   "claim": "Contact was lost when it passed behind Mars",
+   "terms": [
+    "behind",
+    "Mars"
+   ]
+  },
+  {
+   "claim": "It flew far too low, about 57 km up",
+   "terms": [
+    "57"
+   ]
+  },
+  {
+   "claim": "It was likely destroyed in the atmosphere",
+   "terms": [
+    "atmosphere",
+    "destroy|burn|disintegrat"
+   ]
+  },
+  {
+   "claim": "One pound-force is about 4.45 newtons",
+   "terms": [
+    "4.45"
+   ]
+  },
+  {
+   "claim": "The project specification already called for metric units",
+   "terms": [
+    "specification|contract",
+    "metric|SI"
+   ]
+  },
+  {
+   "claim": "The orbiter drifted off course as the error built up",
+   "terms": [
+    "trajector",
+    "error"
+   ]
+  }
+ ]
+}
