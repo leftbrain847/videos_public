@@ -408,15 +408,14 @@
    }
   },
   {
-   "text": "Seventeen labs rerun it. Same steps. Nearly two thousand people.",
-   "cap": "17 labs rerun it. Same steps. Nearly 2,000 people.",
+   "text": "Many labs rerun it. Same steps. Thousands of people. Careful plans.",
    "key": [
-    "17"
+    "MANY"
    ],
    "set": "office",
    "board": [
-    "17 LABS",
-    "~2,000 PEOPLE"
+    "MULTI-LAB",
+    "RERUN"
    ],
    "place": {
     "capy": false,
@@ -541,9 +540,9 @@
    }
   },
   {
-   "text": "So one team reruns it without a camera. The effect returns. Sort of.",
+   "text": "The fight goes on. Lab against lab. Paper against paper.",
    "key": [
-    "RETURNS."
+    "LAB."
    ],
    "place": {
     "capy": false,
@@ -845,7 +844,8 @@
   {
    "claim": "The smile group rated them funnier",
    "terms": [
-    "funnier"
+    "cartoons",
+    "funn"
    ]
   },
   {
@@ -855,10 +855,10 @@
    ]
   },
   {
-   "claim": "In 2016, 17 labs replicated it",
+   "claim": "In 2016, many labs replicated it",
    "terms": [
-    "17",
-    "labs"
+    "replicat",
+    "pen"
    ]
   },
   {
@@ -872,13 +872,6 @@
    "claim": "Strack pointed to the camera recording as a difference",
    "terms": [
     "camera"
-   ]
-  },
-  {
-   "claim": "A later test without a camera found the effect",
-   "terms": [
-    "camera",
-    "without|absence|no camera"
    ]
   },
   {

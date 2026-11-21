@@ -273,7 +273,7 @@
    "set": "office",
    "board": [
     "SMASHED:",
-    "40.5 MPH"
+    "40.8 MPH"
    ],
    "place": {
     "capy": false,
@@ -297,7 +297,7 @@
    }
   },
   {
-   "text": "Same film. Same crash. Different verb. Six extra miles an hour.",
+   "text": "Same film. Same crash. Different verb. Nearly seven extra miles an hour.",
    "key": [
     "VERB."
    ],
@@ -845,9 +845,9 @@
    ]
   },
   {
-   "claim": "Smashed got about 40.5 mph",
+   "claim": "Smashed got about 40.8 mph",
    "terms": [
-    "40.5"
+    "40.8"
    ]
   },
   {

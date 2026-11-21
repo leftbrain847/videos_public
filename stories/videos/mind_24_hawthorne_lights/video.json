@@ -755,10 +755,6 @@
    "url": "https://www.nber.org/papers/w15016"
   },
   {
-   "title": "Wilson Quarterly: Null effect",
-   "url": "https://www.wilsonquarterly.com/quarterly/undefined/null-effect"
-  },
-  {
    "title": "McGill Office for Science and Society: The Hawthorne effect",
    "url": "https://www.mcgill.ca/oss/node/9398"
   },
@@ -823,8 +819,8 @@
   {
    "claim": "They found little evidence of a Hawthorne effect",
    "terms": [
-    "Levitt|reanaly",
-    "little evidence|no evidence|weak|scant|slim"
+    "Levitt",
+    "fiction|evidence|myth"
    ]
   }
  ]
