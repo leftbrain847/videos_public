@@ -772,9 +772,9 @@
    }
   },
   {
-   "text": "Eye tracking says most looked right at it.",
+   "text": "Years of training. Still no gorilla. Not even a hint.",
    "key": [
-    "LOOKED"
+    "GORILLA."
    ],
    "place": {
     "capy": false,
@@ -979,12 +979,6 @@
    "claim": "83 percent of radiologists missed the gorilla",
    "terms": [
     "83"
-   ]
-  },
-  {
-   "claim": "Eye tracking showed most looked right at it",
-   "terms": [
-    "looked right at|looking right at|looked directly|looking directly"
    ]
   }
  ]

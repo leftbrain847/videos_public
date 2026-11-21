@@ -278,9 +278,9 @@
    }
   },
   {
-   "text": "The guards get khaki shirts. They get mirrored sunglasses too.",
+   "text": "The guards get uniforms. You get a number.",
    "key": [
-    "SUNGLASSES"
+    "UNIFORMS."
    ],
    "place": {
     "capy": false,
@@ -996,10 +996,10 @@
    ]
   },
   {
-   "claim": "Guards wore mirrored sunglasses",
+   "claim": "Guards wore uniforms",
    "terms": [
-    "mirror",
-    "sunglasses|shades|glasses"
+    "guards",
+    "uniform"
    ]
   },
   {

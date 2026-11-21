@@ -292,7 +292,7 @@
    }
   },
   {
-   "text": "You rub your eyes. You glance at them.",
+   "text": "You stop writing. You glance at them.",
    "key": [
     "GLANCE"
    ],
@@ -440,9 +440,9 @@
    }
   },
   {
-   "text": "The rest just sit there. Coughing. Waving smoke away. Writing.",
+   "text": "The rest just sit there. Writing. In the smoke.",
    "key": [
-    "COUGHING."
+    "SMOKE."
    ],
    "place": {
     "capy": [
@@ -931,29 +931,16 @@
    ]
   },
   {
-   "claim": "Alone, most participants reported the smoke",
+   "claim": "Alone, people reported the smoke far more often than with passive others",
    "terms": [
-    "alone",
-    "report"
+    "smoke",
+    "alone"
    ]
   },
   {
    "claim": "Two strangers were confederates who acted calm",
    "terms": [
     "confederates|confederate"
-   ]
-  },
-  {
-   "claim": "With two passive confederates few reported it",
-   "terms": [
-    "passive|confederates",
-    "report"
-   ]
-  },
-  {
-   "claim": "Participants rubbed their eyes and coughed",
-   "terms": [
-    "eyes|cough"
    ]
   },
   {

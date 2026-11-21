@@ -385,14 +385,14 @@
    }
   },
   {
-   "text": "One preschool. On the Stanford campus.",
+   "text": "Hardly a random sample of humanity.",
    "key": [
-    "CAMPUS."
+    "RANDOM"
    ],
    "set": "office",
    "board": [
     "ONE",
-    "PRESCHOOL"
+    "SMALL GROUP"
    ],
    "place": {
     "capy": false,
@@ -945,13 +945,6 @@
    "terms": [
     "The Marshmallow Test",
     "Mischel"
-   ]
-  },
-  {
-   "claim": "The original children came from a Stanford preschool",
-   "terms": [
-    "Bing",
-    "Stanford"
    ]
   },
   {
