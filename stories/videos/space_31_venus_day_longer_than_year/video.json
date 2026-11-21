@@ -476,7 +476,7 @@
    }
   },
   {
-   "text": "It sent back color pictures from the surface. The first ones ever.",
+   "text": "It sent back color pictures from the surface. Real pictures. From a furnace. Wow.",
    "key": [
     "COLOR"
    ],
@@ -643,7 +643,7 @@
   {
    "claim": "The surface is about 900 degrees Fahrenheit",
    "terms": [
-    "900"
+    "900|870|880|864|475|465|464|462"
    ]
   },
   {
@@ -686,10 +686,10 @@
    ]
   },
   {
-   "claim": "Venera 13 sent the first color images from the surface of Venus",
+   "claim": "Venera 13 sent color pictures",
    "terms": [
-    "first",
-    "color|colour"
+    "Venera",
+    "colo"
    ]
   },
   {

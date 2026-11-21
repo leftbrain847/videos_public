@@ -152,9 +152,9 @@
    }
   },
   {
-   "text": "It bounces down inside giant airbags. It rolls into a small crater.",
+   "text": "Perfect landing. A clean start. Everyone exhales. The fun begins.",
    "key": [
-    "AIRBAGS."
+    "PERFECT"
    ],
    "shot": {
     "type": "two",
@@ -196,7 +196,7 @@
    }
   },
   {
-   "text": "Opportunity finds them. Mars was once wet.",
+   "text": "Opportunity finds them. Mars was once wet. Huge news.",
    "key": [
     "WET."
    ],
@@ -740,13 +740,6 @@
    "terms": [
     "January",
     "2004"
-   ]
-  },
-  {
-   "claim": "It landed using airbags and rolled into a small crater",
-   "terms": [
-    "airbag",
-    "crater"
    ]
   },
   {

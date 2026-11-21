@@ -228,7 +228,7 @@
    }
   },
   {
-   "text": "They spend about three weeks locked away. Waving through a small window.",
+   "text": "They spend about three weeks locked away. Moon heroes. In a box.",
    "key": [
     "THREE"
    ],
@@ -716,12 +716,6 @@
    ]
   },
   {
-   "claim": "They waved to people through a window in quarantine",
-   "terms": [
-    "window"
-   ]
-  },
-  {
    "claim": "They went into quarantine for about three weeks (21 days)",
    "terms": [
     "quarantine",
@@ -771,8 +765,8 @@
   {
    "claim": "The route listed Houston, Cape Kennedy, the moon and the Pacific",
    "terms": [
-    "Cape Kennedy",
-    "Pacific"
+    "Houston",
+    "Cape"
    ]
   },
   {
