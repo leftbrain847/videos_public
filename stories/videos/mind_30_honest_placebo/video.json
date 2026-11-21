@@ -95,15 +95,14 @@
    }
   },
   {
-   "text": "Twenty ten. Harvard researchers. Patients with irritable bowel syndrome.",
-   "cap": "2010. Harvard researchers. Patients with irritable bowel syndrome.",
+   "text": "Harvard researchers try something bold. Patients with irritable bowel syndrome.",
+   "cap": "Harvard researchers try something bold. Patients with irritable bowel syndrome.",
    "key": [
     "HARVARD"
    ],
    "set": "office",
    "board": [
-    "HARVARD",
-    "2010"
+    "HARVARD"
    ],
    "place": {
     "capy": false,
@@ -294,7 +293,7 @@
    }
   },
   {
-   "text": "You take the pills. Day after day. For three weeks.",
+   "text": "You take the pills. Day after day. For weeks.",
    "key": [
     "WEEKS."
    ],
@@ -750,10 +749,10 @@
  ],
  "claims": [
   {
-   "claim": "Harvard researchers ran the study in 2010",
+   "claim": "Harvard researchers ran the study",
    "terms": [
     "Harvard",
-    "2010"
+    "placebo"
    ]
   },
   {
@@ -772,12 +771,6 @@
    "claim": "They were told the pills were like sugar pills with no medication",
    "terms": [
     "sugar pills"
-   ]
-  },
-  {
-   "claim": "The trial lasted three weeks",
-   "terms": [
-    "three weeks|3 weeks"
    ]
   },
   {
