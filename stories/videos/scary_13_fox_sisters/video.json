@@ -707,10 +707,6 @@
    "url": "https://www.smithsonianmag.com/history/a-very-common-delusion-spiritualism-and-the-fox-sisters-97825064/"
   },
   {
-   "title": "Gizmodo: The sisters who talked to the dead",
-   "url": "https://gizmodo.com/the-sisters-who-talked-to-the-dead-and-sparked-americ-1718100628"
-  },
-  {
    "title": "McGill Office for Science and Society: The Fox sisters",
    "url": "https://www.mcgill.ca/oss/node/12149"
   },
@@ -792,8 +788,8 @@
   {
    "claim": "She showed how she cracked her toe joints",
    "terms": [
-    "toe",
-    "joint"
+    "toe|toes",
+    "crack|joint|joints|knuckle|snap"
    ]
   },
   {

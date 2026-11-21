@@ -396,15 +396,15 @@
    "speaker": "capy"
   },
   {
-   "text": "Five government departments investigate. Nobody agrees.",
+   "text": "Government departments investigate. Nobody agrees.",
    "key": [
-    "FIVE"
+    "INVESTIGATE."
    ],
    "set": "office",
    "setOpts": {
     "boardText": [
-     "5 AGENCIES",
-     "1 SHIP"
+     "INVESTIGATION",
+     "1921"
     ]
    },
    "place": {
@@ -687,20 +687,12 @@
    "url": "https://www.dncr.nc.gov/blog/2016/01/31/carroll-deering-ghost-ship"
   },
   {
-   "title": "NCpedia: The ghost ship Carroll A. Deering",
-   "url": "https://ncpedia.org/node/11726"
-  },
-  {
    "title": "Legends of America: Carroll A. Deering",
    "url": "https://www.legendsofamerica.com/deering-ghost-ship/"
   },
   {
    "title": "Stars and Stripes: Outer Banks shipwreck mystery",
    "url": "https://stripes.com/history/2023-01-31/outer-banks-shipwreck-mystery-9003837.html"
-  },
-  {
-   "title": "US Coast Guard: Ghost ship Carroll A. Deering",
-   "url": "https://mycg.uscg.mil/News/Article/3946247/ghostship-carroll-a-deering"
   }
  ],
  "voice": "v2",
@@ -778,10 +770,9 @@
    ]
   },
   {
-   "claim": "Five government departments investigated",
+   "claim": "Government departments investigated",
    "terms": [
-    "five",
-    "departments|agencies"
+    "investigat"
    ]
   },
   {
@@ -819,8 +810,8 @@
   {
    "claim": "The crew was never found",
    "terms": [
-    "never",
-    "found|seen|solved"
+    "crew",
+    "disappear|vanish|never|fate"
    ]
   }
  ]
