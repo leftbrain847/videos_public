@@ -1,0 +1,841 @@
+{
+ "id": "myth_24_isis_secret_name",
+ "title": "Isis hacks the sun god",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE SUN COURT"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "isis": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e86c1",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#e8b923"
+   }
+  },
+  "isisS": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e86c1",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#e8b923"
+   },
+   "hold": "bag"
+  },
+  "ra": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e8b923",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#9a9a9a",
+    "skin": "#8d5a3b",
+    "sash": "#c0392b",
+    "beard": true
+   }
+  },
+  "god": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5aa832",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24",
+    "sash": "#e8b923"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal a god's password. You use his own spit.",
+   "key": [
+    "SPIT."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "isis": [
+     1.2,
+     0
+    ],
+    "isisS": false,
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "isis"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "isis": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Isis. A goddess with very big plans.",
+   "key": [
+    "ISIS."
+   ],
+   "board": [
+    "ISIS",
+    "BIG PLANS"
+   ],
+   "place": {
+    "capy": false,
+    "isis": [
+     0,
+     0
+    ],
+    "isisS": false,
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "isis"
+   },
+   "act": {
+    "isis": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ra, the sun god, is very old now. He drools. A lot.",
+   "key": [
+    "DROOLS."
+   ],
+   "place": {
+    "capy": false,
+    "isis": false,
+    "isisS": false,
+    "ra": [
+     0,
+     0
+    ],
+    "god": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ra"
+   },
+   "act": {
+    "ra": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His power lives in a secret name. Nobody knows it.",
+   "key": [
+    "SECRET"
+   ],
+   "board": [
+    "SECRET NAME",
+    "??????"
+   ],
+   "place": {
+    "capy": false,
+    "isis": false,
+    "isisS": false,
+    "ra": [
+     0,
+     0
+    ],
+    "god": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "ra"
+   },
+   "act": {
+    "ra": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is basically the password to the universe.",
+   "key": [
+    "PASSWORD"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "isis": false,
+    "isisS": false,
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So you collect his drool. You mix it with earth. It is gross.",
+   "key": [
+    "EARTH."
+   ],
+   "place": {
+    "capy": false,
+    "isis": false,
+    "isisS": [
+     0,
+     0
+    ],
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "isisS"
+   },
+   "act": {
+    "isisS": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You shape the mud into a snake.",
+   "key": [
+    "SNAKE."
+   ],
+   "place": {
+    "capy": false,
+    "isis": false,
+    "isisS": [
+     0,
+     0
+    ],
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "isisS"
+   },
+   "act": {
+    "isisS": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You leave it on his path. He walks it every day.",
+   "key": [
+    "PATH"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "isis": [
+     1.2,
+     0
+    ],
+    "isisS": false,
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "isis",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "isis"
+    },
+    "isis": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It bites him. The poison burns like fire.",
+   "key": [
+    "BITES"
+   ],
+   "place": {
+    "capy": false,
+    "isis": false,
+    "isisS": false,
+    "ra": [
+     0,
+     0
+    ],
+    "god": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "ra"
+   },
+   "act": {
+    "ra": {
+     "mood": "shocked",
+     "action": "slump",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "He cannot cure it. He never created this poison.",
+   "key": [
+    "CREATED"
+   ],
+   "place": {
+    "capy": false,
+    "isis": false,
+    "isisS": false,
+    "ra": [
+     -1.3,
+     0.2
+    ],
+    "god": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "ra",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "ra": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "god": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "ra"
+    }
+   }
+  },
+  {
+   "text": "Locked out of his own body. By his own spit.",
+   "key": [
+    "LOCKED"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "isis": false,
+    "isisS": false,
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The other gods gather around him. Nobody can help.",
+   "key": [
+    "NOBODY"
+   ],
+   "place": {
+    "capy": false,
+    "isis": false,
+    "isisS": false,
+    "ra": false,
+    "god": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "god"
+   },
+   "act": {
+    "god": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You step in. Tell me your name. Then I heal you.",
+   "key": [
+    "NAME."
+   ],
+   "board": [
+    "THE DEAL:",
+    "NAME = CURE"
+   ],
+   "place": {
+    "capy": false,
+    "isis": [
+     -1.3,
+     0.2
+    ],
+    "isisS": false,
+    "ra": [
+     1.3,
+     -0.2
+    ],
+    "god": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "isis",
+    "with": "ra"
+   },
+   "act": {
+    "isis": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "ra"
+    },
+    "ra": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "isis"
+    }
+   }
+  },
+  {
+   "text": "He offers names. Khepri at dawn. Ra at noon. Atum at night.",
+   "key": [
+    "NAMES."
+   ],
+   "board": [
+    "KHEPRI  RA",
+    "ATUM"
+   ],
+   "place": {
+    "capy": false,
+    "isis": false,
+    "isisS": false,
+    "ra": [
+     0,
+     0
+    ],
+    "god": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ra"
+   },
+   "act": {
+    "ra": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The poison does not budge. Those are not the name.",
+   "key": [
+    "BUDGE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "isis": false,
+    "isisS": false,
+    "ra": [
+     1.2,
+     0
+    ],
+    "god": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ra"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "ra": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Finally, he gives in. The secret name passes into you.",
+   "key": [
+    "PASSES"
+   ],
+   "place": {
+    "capy": false,
+    "isis": [
+     0,
+     0
+    ],
+    "isisS": false,
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "isis"
+   },
+   "act": {
+    "isis": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You speak the spell. The poison leaves him. He lives.",
+   "key": [
+    "LEAVES"
+   ],
+   "place": {
+    "capy": false,
+    "isis": [
+     -1.3,
+     0.2
+    ],
+    "isisS": false,
+    "ra": [
+     1.3,
+     -0.2
+    ],
+    "god": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "isis",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "isis": {
+     "mood": "smug",
+     "action": "point",
+     "look": "ra"
+    },
+    "ra": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The myth never tells us the name. She kept it secret.",
+   "key": [
+    "KEPT"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "isis": false,
+    "isisS": false,
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The most powerful god alive. He got hacked by drool.",
+   "key": [
+    "HACKED"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "isis": [
+     1.2,
+     0
+    ],
+    "isisS": false,
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "isis"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "isis"
+    },
+    "isis": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you give up your secret name? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "GIVE UP THE NAME?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "isis": false,
+    "isisS": false,
+    "ra": false,
+    "god": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "UCL Digital Egypt: Isis and Ra",
+   "url": "https://www.ucl.ac.uk/museums-static/digitalegypt//literature/isisandra.html"
+  },
+  {
+   "title": "Minneapolis Institute of Art: The story of Isis and Ra",
+   "url": "https://www.artsmia.org/world-myths/artbytheme/isis_story.html"
+  },
+  {
+   "title": "Ancient Egypt Online: Isis and Ra",
+   "url": "https://ancientegyptonline.co.uk/isisra/"
+  },
+  {
+   "title": "The Story Museum: The story of Ra and Isis",
+   "url": "https://www.storymuseum.org.uk/1001-stories/the-story-of-ra-and-isis"
+  },
+  {
+   "title": "TheCollector: How Isis got Ra to reveal his secret name",
+   "url": "https://www.thecollector.com/isis-ra-secret-name/"
+  },
+  {
+   "title": "Wikipedia: Isis",
+   "url": "https://en.wikipedia.org/wiki/Isis"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Ra grows old and drools",
+   "terms": [
+    "old",
+    "saliva|spittle|drool|drooled|dribbled|spit"
+   ]
+  },
+  {
+   "claim": "Ra's power is in a secret name",
+   "terms": [
+    "secret name",
+    "Ra|Re"
+   ]
+  },
+  {
+   "claim": "Isis mixes his spittle with earth",
+   "terms": [
+    "earth|dust|clay",
+    "saliva|spittle|spit"
+   ]
+  },
+  {
+   "claim": "She shapes it into a snake",
+   "terms": [
+    "serpent|snake",
+    "Isis"
+   ]
+  },
+  {
+   "claim": "She leaves it on his path",
+   "terms": [
+    "path|way",
+    "serpent|snake"
+   ]
+  },
+  {
+   "claim": "The snake bites him and the poison burns",
+   "terms": [
+    "bit|bites|bitten|stung",
+    "poison|venom"
+   ]
+  },
+  {
+   "claim": "He cannot cure it because he did not create it",
+   "terms": [
+    "not create|did not make|had not created|did not create|not made|created"
+   ]
+  },
+  {
+   "claim": "Isis offers to heal him if he tells her his name",
+   "terms": [
+    "Isis",
+    "name",
+    "heal|cure"
+   ]
+  },
+  {
+   "claim": "He offers other names: Khepri, Ra, Atum",
+   "terms": [
+    "Khepri|Kheper|Khepera",
+    "Atum|Tem|Temu"
+   ]
+  },
+  {
+   "claim": "The poison stays",
+   "terms": [
+    "poison|venom",
+    "name"
+   ]
+  },
+  {
+   "claim": "Finally his name passes to Isis",
+   "terms": [
+    "name",
+    "pass|passed|passes|revealed|reveals|told"
+   ]
+  },
+  {
+   "claim": "Isis heals him",
+   "terms": [
+    "Isis",
+    "heal|healed|cure|cured|spell"
+   ]
+  }
+ ]
+}

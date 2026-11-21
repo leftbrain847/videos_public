@@ -1,0 +1,981 @@
+{
+ "id": "myth_22_susanoo_orochi",
+ "title": "The serpent and the sake",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "IZUMO"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "sus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e5a8a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#c0392b",
+    "beard": true
+   }
+  },
+  "old": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8a7a5c",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#e6e6e6",
+    "skin": "#e8b48f",
+    "sash": "#4a3b2c",
+    "beard": true
+   }
+  },
+  "oldw": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#9a6a8a",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#e6e6e6",
+    "skin": "#e8b48f",
+    "sash": "#4a3b2c"
+   }
+  },
+  "kushi": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e86a9a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b",
+    "sash": "#e8b923"
+   }
+  },
+  "brewer": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#a0522d",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#8a8f96"
+   },
+   "hold": "bag"
+  },
+  "oro": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#3a6a3a",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#1b1b1b",
+    "skin": "#7ba05b",
+    "sash": "#c0392b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You beat an eight headed monster. With alcohol.",
+   "key": [
+    "ALCOHOL."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "sus": [
+     1.2,
+     0
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sus"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sus": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Susanoo, god of storms. You got kicked out of heaven.",
+   "key": [
+    "KICKED"
+   ],
+   "board": [
+    "SUSANOO",
+    "EXILED"
+   ],
+   "place": {
+    "capy": false,
+    "sus": [
+     0,
+     0
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "sus"
+   },
+   "act": {
+    "sus": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Up there, you wrecked your sister's rice fields.",
+   "key": [
+    "RICE"
+   ],
+   "place": {
+    "capy": false,
+    "sus": [
+     0,
+     0
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sus"
+   },
+   "act": {
+    "sus": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You land in Izumo. You find an old couple crying.",
+   "key": [
+    "CRYING."
+   ],
+   "place": {
+    "capy": false,
+    "sus": false,
+    "old": [
+     -1.3,
+     0.2
+    ],
+    "oldw": [
+     1.3,
+     -0.2
+    ],
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "old",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "old": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "oldw": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A serpent named Orochi keeps taking their daughters.",
+   "key": [
+    "OROCHI"
+   ],
+   "place": {
+    "capy": false,
+    "sus": false,
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "oro"
+   },
+   "act": {
+    "oro": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Every year, it takes one daughter. Seven are already gone.",
+   "cap": "Every year, it takes one daughter. 7 are already gone.",
+   "key": [
+    "7"
+   ],
+   "board": [
+    "DAUGHTERS",
+    "1 LEFT"
+   ],
+   "place": {
+    "capy": false,
+    "sus": false,
+    "old": [
+     0,
+     0
+    ],
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "old"
+   },
+   "act": {
+    "old": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It has eight heads. It also has eight tails. It is huge.",
+   "cap": "It has 8 heads. It also has 8 tails. It is huge.",
+   "key": [
+    "8"
+   ],
+   "board": [
+    "HEADS: 8",
+    "TAILS: 8"
+   ],
+   "place": {
+    "capy": false,
+    "sus": false,
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "oro"
+   },
+   "act": {
+    "oro": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Eight heads. Zero manners.",
+   "cap": "8 heads. Zero manners.",
+   "key": [
+    "MANNERS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "sus": false,
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The last daughter is Kushinada. You make a deal.",
+   "key": [
+    "DEAL."
+   ],
+   "place": {
+    "capy": false,
+    "sus": [
+     -1.3,
+     0.2
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": [
+     1.3,
+     -0.2
+    ],
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "sus",
+    "with": "kushi"
+   },
+   "act": {
+    "sus": {
+     "mood": "smug",
+     "action": "point",
+     "look": "kushi"
+    },
+    "kushi": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "sus"
+    }
+   }
+  },
+  {
+   "text": "You get to marry her. You handle the serpent.",
+   "key": [
+    "MARRY"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "sus": [
+     1.2,
+     0
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "sus",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "sus"
+    },
+    "sus": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "First, you turn her into a comb. It goes in your hair.",
+   "key": [
+    "COMB."
+   ],
+   "board": [
+    "KUSHINADA",
+    "NOW A COMB"
+   ],
+   "place": {
+    "capy": false,
+    "sus": [
+     0,
+     0
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "sus"
+   },
+   "act": {
+    "sus": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The safest hiding place in all of Japan. Clever.",
+   "key": [
+    "SAFEST"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "sus": [
+     1.2,
+     0
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sus"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "sus"
+    },
+    "sus": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you order the strongest sake possible. It is brewed eight times.",
+   "cap": "Then you order the strongest sake possible. It is brewed 8 times.",
+   "key": [
+    "STRONGEST"
+   ],
+   "place": {
+    "capy": false,
+    "sus": false,
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": [
+     0,
+     0
+    ],
+    "oro": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "brewer"
+   },
+   "act": {
+    "brewer": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You set out eight big vats. One for each head.",
+   "cap": "You set out 8 big vats. One for each head.",
+   "key": [
+    "VATS."
+   ],
+   "board": [
+    "SAKE",
+    "8 VATS"
+   ],
+   "place": {
+    "capy": false,
+    "sus": [
+     -1.3,
+     0.2
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": [
+     1.3,
+     -0.2
+    ],
+    "oro": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "sus",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "sus": {
+     "mood": "smug",
+     "action": "point",
+     "look": "brewer"
+    },
+    "brewer": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "sus"
+    }
+   }
+  },
+  {
+   "text": "Orochi arrives. Each head dives into its own vat. Greedy.",
+   "key": [
+    "VAT."
+   ],
+   "place": {
+    "capy": false,
+    "sus": false,
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "oro"
+   },
+   "act": {
+    "oro": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The whole monster gets very drunk. Then it falls asleep.",
+   "key": [
+    "ASLEEP."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "sus": false,
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "oro",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "oro"
+    },
+    "oro": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You draw your sword. You cut the serpent to pieces.",
+   "key": [
+    "PIECES."
+   ],
+   "place": {
+    "capy": false,
+    "sus": [
+     0,
+     0
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "sus"
+   },
+   "act": {
+    "sus": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In one tail, your blade chips. There is another sword inside.",
+   "key": [
+    "SWORD"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "sus": [
+     1.2,
+     0
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sus"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "sus"
+    },
+    "sus": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That sword is Kusanagi. One of Japan's three sacred treasures.",
+   "cap": "That sword is Kusanagi. One of Japan's 3 sacred treasures.",
+   "key": [
+    "KUSANAGI."
+   ],
+   "board": [
+    "KUSANAGI",
+    "SACRED SWORD"
+   ],
+   "place": {
+    "capy": false,
+    "sus": [
+     0,
+     0
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sus"
+   },
+   "act": {
+    "sus": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A tip for heroes: big snakes are lightweights.",
+   "key": [
+    "LIGHTWEIGHTS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "sus": false,
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you try the sake plan? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "SAKE PLAN?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "sus": [
+     1.3,
+     0
+    ],
+    "old": false,
+    "oldw": false,
+    "kushi": false,
+    "brewer": false,
+    "oro": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sus"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sus": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Yamata no Orochi",
+   "url": "https://en.wikipedia.org/wiki/Yamata_no_Orochi"
+  },
+  {
+   "title": "Wikipedia: Kushinadahime",
+   "url": "https://en.wikipedia.org/wiki/Kushinadahime"
+  },
+  {
+   "title": "Wikipedia: Kusanagi no Tsurugi",
+   "url": "https://en.wikipedia.org/wiki/Kusanagi_no_Tsurugi"
+  },
+  {
+   "title": "Nippon.com: Tales from Kojiki, Susanoo and the eight-headed serpent",
+   "url": "https://www.nippon.com/en/japan-topics/b11204/"
+  },
+  {
+   "title": "Japanese Wiki Corpus (Kyoto): Yamata no Orochi",
+   "url": "https://japanese-wiki-corpus.github.io/literature/Yamata%20no%20Orochi%20(the%20eight-headed%20monster%20serpent).html"
+  },
+  {
+   "title": "Wikipedia: Susanoo-no-Mikoto",
+   "url": "https://en.wikipedia.org/wiki/Susanoo-no-Mikoto"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Susanoo, the storm god, is expelled from heaven",
+   "terms": [
+    "Susanoo",
+    "expelled|banished|cast out|exiled"
+   ]
+  },
+  {
+   "claim": "In heaven he wrecked his sister Amaterasu's rice fields",
+   "terms": [
+    "rice",
+    "Amaterasu"
+   ]
+  },
+  {
+   "claim": "He arrives in Izumo and finds an elderly couple weeping",
+   "terms": [
+    "Izumo",
+    "weeping|crying|wept"
+   ]
+  },
+  {
+   "claim": "The serpent Orochi takes one of their daughters each year",
+   "terms": [
+    "daughters",
+    "year|every year|each year"
+   ]
+  },
+  {
+   "claim": "Seven daughters are already gone",
+   "terms": [
+    "seven|7",
+    "daughters"
+   ]
+  },
+  {
+   "claim": "Orochi has eight heads and eight tails",
+   "terms": [
+    "eight heads",
+    "eight tails"
+   ]
+  },
+  {
+   "claim": "The last daughter is Kushinada",
+   "terms": [
+    "Kushinada|Kushinadahime|Kushinada-hime",
+    "daughter"
+   ]
+  },
+  {
+   "claim": "Susanoo asks to marry her in exchange for killing the serpent",
+   "terms": [
+    "Susanoo",
+    "marry|marriage|hand"
+   ]
+  },
+  {
+   "claim": "He turns her into a comb in his hair",
+   "terms": [
+    "comb",
+    "hair"
+   ]
+  },
+  {
+   "claim": "He has sake brewed eight times over",
+   "terms": [
+    "sake",
+    "eight|8"
+   ]
+  },
+  {
+   "claim": "Eight vats are set out, one per head",
+   "terms": [
+    "vats|vat",
+    "eight|8"
+   ]
+  },
+  {
+   "claim": "Orochi drinks and falls asleep drunk",
+   "terms": [
+    "drunk|drank|intoxicated",
+    "asleep|sleep|slept"
+   ]
+  },
+  {
+   "claim": "Susanoo cuts the serpent to pieces",
+   "terms": [
+    "Susanoo",
+    "cut|chopped|slew|sliced|hacked"
+   ]
+  },
+  {
+   "claim": "In a tail his sword chips on another sword",
+   "terms": [
+    "tail",
+    "sword"
+   ]
+  },
+  {
+   "claim": "That sword is Kusanagi, one of the three Imperial Regalia",
+   "terms": [
+    "Kusanagi",
+    "Regalia|regalia|treasures"
+   ]
+  }
+ ]
+}
