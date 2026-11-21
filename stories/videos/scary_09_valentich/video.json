@@ -680,7 +680,8 @@
   {
    "claim": "He was 20 years old",
    "terms": [
-    "20 year old"
+    "20",
+    "Valentich"
    ]
   },
   {
@@ -734,8 +735,8 @@
   {
    "claim": "Seventeen seconds of metallic scraping sounds followed",
    "terms": [
-    "metallic",
-    "17|seventeen"
+    "17|seventeen",
+    "seconds"
    ]
   },
   {

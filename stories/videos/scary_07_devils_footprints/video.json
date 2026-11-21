@@ -401,7 +401,7 @@
    }
   },
   {
-   "text": "Men with guns follow the trail. They find nothing.",
+   "text": "Picture your search party. Lanterns. Pitchforks. Absolutely nothing.",
    "key": [
     "NOTHING."
    ],
@@ -761,16 +761,9 @@
    ]
   },
   {
-   "claim": "Armed men followed the trail",
-   "terms": [
-    "armed|guns"
-   ]
-  },
-  {
    "claim": "Newspapers printed letters with theories",
    "terms": [
-    "Times|newspaper",
-    "letters|letter"
+    "Illustrated London News|press|newspaper|Times"
    ]
   },
   {

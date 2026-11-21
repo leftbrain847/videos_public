@@ -324,10 +324,9 @@
    }
   },
   {
-   "text": "Forty five miles away. Floating. Fine.",
-   "cap": "45 miles away. Floating. Fine.",
+   "text": "Miles away. Floating. Totally fine.",
    "key": [
-    "45"
+    "FINE."
    ],
    "shot": {
     "type": "close",
@@ -734,10 +733,6 @@
   {
    "title": "Amusing Planet: SS Baychimo, the unsinkable ghost ship",
    "url": "https://www.amusingplanet.com/2020/12/ss-baychimo-unsinkable-ghost-ship.html"
-  },
-  {
-   "title": "The Vintage News: SS Baychimo ghost ship",
-   "url": "https://thevintagenews.com/2018/09/11/ss-baychimo-ghost-ship"
   }
  ],
  "voice": "v2",
@@ -753,7 +748,7 @@
    "claim": "She was a cargo steamer carrying furs",
    "terms": [
     "cargo",
-    "fur"
+    "fur|furs|pelts"
    ]
   },
   {
@@ -785,15 +780,15 @@
   {
    "claim": "A hunter saw the ship about 45 miles away",
    "terms": [
-    "45",
+    "Inuit|hunter|hunters",
     "miles"
    ]
   },
   {
    "claim": "The company flew out the furs",
    "terms": [
-    "fur",
-    "aircraft|airplane|plane|flew"
+    "fur|furs|pelts",
+    "aircraft|airplane|plane|planes|flew|airlift"
    ]
   },
   {

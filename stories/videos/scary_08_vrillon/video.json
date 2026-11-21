@@ -388,15 +388,15 @@
    "speaker": "capy"
   },
   {
-   "text": "The station apologizes on air that night.",
+   "text": "The station scrambles. Viewers want answers.",
    "key": [
-    "APOLOGIZES"
+    "ANSWERS."
    ],
    "set": "office",
    "setOpts": {
     "boardText": [
-     "WE",
-     "APOLOGIZE"
+     "VIEWERS",
+     "CALLING"
     ]
    },
    "place": {
@@ -671,16 +671,8 @@
    "url": "https://ultimateclassicrock.com/vrillon-tv-hack-1977/"
   },
   {
-   "title": "Lost Media Wiki: Southern Television hijacking",
-   "url": "https://www.lostmediawiki.com/Southern_Television_hijacking_(lost_television_hijack;_1977)"
-  },
-  {
    "title": "Discovery UK: Vrillon, the broadcast that hijacked Britain's imagination",
    "url": "https://www.discoveryuk.com/?p=23566836"
-  },
-  {
-   "title": "Boing Boing: In 1977 a voice claiming to be an alien took over British TV",
-   "url": "https://boingboing.net/2026/07/22/southern-television-vrillon.html"
   }
  ],
  "voice": "v2",
@@ -731,12 +723,6 @@
    ]
   },
   {
-   "claim": "The station apologized",
-   "terms": [
-    "apolog"
-   ]
-  },
-  {
    "claim": "The Hannington transmitter in Hampshire was hijacked",
    "terms": [
     "Hannington",
@@ -752,8 +738,7 @@
   {
    "claim": "The culprit was never identified",
    "terms": [
-    "never",
-    "identified|caught|found"
+    "never been identified|never identified|never caught|never found|unidentified|remains unknown|never been found|never discovered|never solved|remains a mystery|never traced"
    ]
   }
  ]
