@@ -175,10 +175,9 @@
    ]
   },
   {
-   "text": "Tied sixteen to sixteen. On to overtime.",
-   "cap": "Tied 16 to 16. On to overtime.",
+   "text": "Tied after four quarters. On to overtime.",
    "key": [
-    "16"
+    "OVERTIME."
    ],
    "place": {
     "capy": [
@@ -419,7 +418,7 @@
    ]
   },
   {
-   "text": "Your offense never touches the ball. Happy Thanksgiving.",
+   "text": "Your turkey is getting very cold. Happy Thanksgiving.",
    "key": [
     "THANKSGIVING."
    ],
@@ -622,9 +621,9 @@
    ]
   },
   {
-   "claim": "The game was tied 16-16 and went to overtime",
+   "claim": "The game went to overtime",
    "terms": [
-    "16-16|16 16|tied",
+    "Bettis",
     "overtime"
    ]
   },
@@ -663,23 +662,16 @@
    ]
   },
   {
-   "claim": "Jason Hanson kicked a 42-yard field goal and the Lions won 19-16",
+   "claim": "Jason Hanson kicked a 42-yard field goal",
    "terms": [
     "Hanson",
-    "42"
+    "field goal"
    ]
   },
   {
    "claim": "The Lions won 19-16",
    "terms": [
     "19-16"
-   ]
-  },
-  {
-   "claim": "The Steelers' offense never touched the ball in overtime",
-   "terms": [
-    "never",
-    "touch|possession|ball"
    ]
   },
   {

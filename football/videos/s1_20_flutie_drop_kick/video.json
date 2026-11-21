@@ -101,6 +101,10 @@
    "url": "https://en.wikipedia.org/wiki/Drop_kick"
   },
   {
+   "title": "Wikipedia: 2005 New England Patriots season",
+   "url": "https://en.wikipedia.org/wiki/2005_New_England_Patriots_season"
+  },
+  {
    "title": "Wikipedia: Doug Flutie",
    "url": "https://en.wikipedia.org/wiki/Doug_Flutie"
   }
@@ -142,9 +146,9 @@
    "speaker": "capy"
   },
   {
-   "text": "It's called a drop kick. Still legal.",
+   "text": "It's called a drop kick. Almost extinct.",
    "key": [
-    "LEGAL."
+    "EXTINCT."
    ],
    "shot": {
     "type": "close",
@@ -823,10 +827,10 @@
  "voice": "v2",
  "claims": [
   {
-   "claim": "A drop kick is still legal",
+   "claim": "The drop kick was supplanted and is rarely used",
    "terms": [
     "drop kick|drop-kick",
-    "legal"
+    "supplant|rare|rarely"
    ]
   },
   {
@@ -873,7 +877,7 @@
   {
    "claim": "The Patriots lost 28-26",
    "terms": [
-    "28-26"
+    "28-26|26-28"
    ]
   }
  ]

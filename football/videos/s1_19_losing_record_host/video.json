@@ -75,16 +75,8 @@
    "url": "https://seahawks.com/news/reliving-the-beast-quake-game-10-years-later"
   },
   {
-   "title": "Pro Football Hall of Fame: A Wild Weekend",
-   "url": "https://profootballhof.com/blogs/2011/01/blogs-choudhrys-chronicles-a-wild-weekend"
-  },
-  {
    "title": "Panthers.com: Panthers aren't the first sub-.500 team in the playoffs, and history isn't against them",
    "url": "https://www.panthers.com/news/panthers-aren-t-the-first-sub-500-team-in-the-playoffs-and-history-isn-t-against-them"
-  },
-  {
-   "title": "Pro Football Hall of Fame: Panthers Attempt to Make Postseason History",
-   "url": "https://profootballhof.com/news/2015/01/news-panthers-attempt-to-make-postseason-history"
   },
   {
    "title": "SI: Panthers bring statistical oddity into playoff clash with Rams",
@@ -97,6 +89,26 @@
   {
    "title": "SI: Packers' Proposal to Ban Eagles' Tush Push Fails Again (Lions seeding proposal off the table)",
    "url": "https://www.si.com/nfl/packers/packers-proposal-to-ban-eagles-tush-push-fails-again"
+  },
+  {
+   "title": "CBS Sports: Panthers are fourth team ever to make NFL playoffs with losing record",
+   "url": "https://www.cbssports.com/nfl/news/panthers-are-fourth-team-ever-to-make-nfl-playoffs-with-losing-record"
+  },
+  {
+   "title": "WFAE: Cardinals up next for Panthers in home playoff game",
+   "url": "https://www.wfae.org/sports/2014-12-29/cardinals-up-next-for-panthers-in-home-playoff-game"
+  },
+  {
+   "title": "Wikipedia: 2014 Carolina Panthers season",
+   "url": "https://en.wikipedia.org/wiki/2014_Carolina_Panthers_season"
+  },
+  {
+   "title": "ABC11: Panthers win NFC South, will host Rams in the NFL playoffs",
+   "url": "https://abc11.com/post/nfl-carolina-panthers-clinch-nfc-south-playoff-berth-falcons-beat-saints/18352007/"
+  },
+  {
+   "title": "NBC New York: NFL teams that made the playoffs with a losing record",
+   "url": "https://www.nbcnewyork.com/news/sports/nfl/nfl-teams-make-playoffs-losing-record/6436644/?amp=1"
   },
   {
    "title": "Vindicator (AP): Seahawks (7-9) take NFC West",
@@ -490,9 +502,9 @@
    ]
   },
   {
-   "text": "It never even gets a vote. Pulled.",
+   "text": "Division titles still rule. For now.",
    "key": [
-    "PULLED."
+    "RULE."
    ],
    "shot": {
     "type": "close",
@@ -617,13 +629,6 @@
    "claim": "In 2025 Detroit proposed seeding playoff teams by record",
    "terms": [
     "Lions|Detroit",
-    "seeding|seed"
-   ]
-  },
-  {
-   "claim": "The proposal was withdrawn without a vote",
-   "terms": [
-    "withdr",
     "seeding|seed"
    ]
   }

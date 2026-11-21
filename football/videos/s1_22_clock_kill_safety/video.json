@@ -174,10 +174,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Your Ravens lead Cincinnati, nineteen to twelve. Eleven seconds left.",
-   "cap": "Your Ravens lead Cincinnati, 19 to 12. 11 seconds left.",
+   "text": "Your Ravens lead Cincinnati. Just seconds left.",
    "key": [
-    "11"
+    "SECONDS"
    ],
    "place": {
     "capy": false
@@ -214,7 +213,7 @@
    ]
   },
   {
-   "text": "You're Sam Koch, the punter. You have to punt.",
+   "text": "You're Sam Koch, the punter. You have to punt. Or do you?",
    "key": [
     "PUNT."
    ],
@@ -868,10 +867,10 @@
  "voice": "v2",
  "claims": [
   {
-   "claim": "The Ravens led the Bengals 19-12 with 11 seconds left",
+   "claim": "The Ravens led with seconds left",
    "terms": [
-    "19-12|19 12",
-    "11 seconds"
+    "Koch",
+    "seconds"
    ]
   },
   {
