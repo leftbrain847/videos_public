@@ -1,14 +1,10 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "stories-mind-fixes",
+ "release": "stories-mind-fixes-2",
  "listen": true,
  "replace": true,
  "videos": [
-  "mind_04_smoke_room",
-  "mind_08_asch_lines",
-  "mind_10_good_samaritan",
-  "mind_13_choice_blindness",
   "mind_15_clever_hans"
  ]
 }
