@@ -31,14 +31,8 @@
    }
   },
   "hans": {
-   "look": {
-    "outfit": "hoodie",
-    "shirt": "#8a5a33",
-    "pants": "#6b4426",
-    "hair": "long",
-    "hairColor": "#2b1a10",
-    "skin": "#8a5a33"
-   }
+   "kind": "horse",
+   "look": {}
   },
   "stu": {
    "look": {

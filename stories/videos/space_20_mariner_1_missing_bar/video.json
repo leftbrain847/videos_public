@@ -1,0 +1,804 @@
+{
+ "id": "space_20_mariner_1_missing_bar",
+ "title": "Mariner 1: the most expensive hyphen in history",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "MARINER 1"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "coder": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "hold": "notepad"
+  },
+  "rso": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "headset": true
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#4b92db",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#5c3a24"
+   }
+  },
+  "writer": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8",
+    "beard": true,
+    "glasses": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You launch a rocket to Venus. One tiny missing mark sinks it.",
+   "key": [
+    "MARK"
+   ],
+   "board": [
+    "R",
+    "R WITH BAR"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "coder": [
+     2.6,
+     -0.6
+    ],
+    "rso": false,
+    "boss": false,
+    "writer": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coder": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "July, nineteen sixty two. Mariner one sits on the pad in Florida.",
+   "cap": "July 1962. Mariner 1 sits on the pad in Florida.",
+   "key": [
+    "MARINER"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "MARINER 1",
+     "TO VENUS"
+    ]
+   },
+   "board": [
+    "MARINER 1",
+    "TO VENUS"
+   ],
+   "place": {
+    "capy": false,
+    "coder": false,
+    "rso": [
+     1.4,
+     0.3
+    ],
+    "boss": [
+     -1.4,
+     0.3
+    ],
+    "writer": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "boss",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    },
+    "rso": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "Its mission? Fly past Venus. America's first trip to another planet.",
+   "key": [
+    "VENUS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "boss",
+    "with": "rso"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "rso"
+    },
+    "rso": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "Liftoff. For a few minutes, everything looks fine. Smooth.",
+   "key": [
+    "FINE."
+   ],
+   "board": [
+    "LIFTOFF",
+    "NOMINAL"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rso"
+   },
+   "act": {
+    "rso": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the rocket starts weaving. Left. Right. Left again. Very wrong.",
+   "key": [
+    "WRONG."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "rso"
+   },
+   "act": {
+    "rso": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "rso"
+    }
+   },
+   "sfx": [
+    [
+     0.7,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "It's heading toward shipping lanes. Maybe toward actual people. Not ideal.",
+   "key": [
+    "PEOPLE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "boss": false,
+    "rso": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rso"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "rso"
+    },
+    "rso": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The range safety officer has one job here. He presses the button. Boom.",
+   "key": [
+    "BUTTON."
+   ],
+   "board": [
+    "DESTRUCT"
+   ],
+   "place": {
+    "capy": false,
+    "rso": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "rso"
+   },
+   "act": {
+    "rso": {
+     "mood": "sad",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "About five minutes in, Mariner one is gone.",
+   "cap": "About 5 minutes in, Mariner 1 is gone.",
+   "key": [
+    "GONE."
+   ],
+   "board": [
+    "MARINER 1",
+    "DESTROYED"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "rso"
+   },
+   "act": {
+    "rso": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Price tag: around eighteen million dollars. In nineteen sixty two money.",
+   "cap": "Price tag: around $18.5 million. In 1962 money.",
+   "key": [
+    "MILLION."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "rso": [
+     -2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "rso": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Investigators trace it to the guidance software.",
+   "key": [
+    "SOFTWARE."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "GUIDANCE",
+     "CODE"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "coder": [
+     0,
+     0.4
+    ],
+    "rso": false,
+    "boss": false,
+    "writer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coder"
+   },
+   "act": {
+    "coder": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A handwritten formula had a tiny bar. Over one symbol.",
+   "key": [
+    "BAR"
+   ],
+   "board": [
+    "R-BAR",
+    "VS PLAIN R"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "coder"
+   },
+   "act": {
+    "coder": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That bar meant use the smoothed average. It got left out. Somehow.",
+   "key": [
+    "LEFT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "coder": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coder"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "coder"
+    },
+    "coder": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "So the computer chased tiny wobbles. It overcorrected.",
+   "key": [
+    "OVERCORRECTED."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "coder": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "A hardware glitch made things worse. Together, they doomed the flight.",
+   "key": [
+    "DOOMED"
+   ],
+   "place": {
+    "capy": false,
+    "coder": [
+     -1.4,
+     0.3
+    ],
+    "boss": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "coder",
+    "with": "boss"
+   },
+   "act": {
+    "coder": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "coder"
+    }
+   }
+  },
+  {
+   "text": "A famous writer named it. Arthur C Clarke. The most expensive hyphen in history.",
+   "cap": "A famous writer named it. Arthur C. Clarke. The most expensive hyphen in history.",
+   "key": [
+    "HYPHEN"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "MOST EXPENSIVE",
+     "HYPHEN EVER"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "coder": false,
+    "rso": false,
+    "boss": false,
+    "writer": [
+     0,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "writer",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "writer": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Technically a bar, not a hyphen. Still expensive. Very.",
+   "key": [
+    "EXPENSIVE."
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "writer": [
+     1.4,
+     4.4
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "writer",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "writer": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Five weeks later, the backup launches. Mariner two. Fingers crossed.",
+   "cap": "Five weeks later, the backup launches. Mariner 2. Fingers crossed.",
+   "key": [
+    "BACKUP"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "MARINER 2",
+     "LAUNCHED"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "coder": false,
+    "rso": false,
+    "boss": false,
+    "writer": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It reaches Venus. The first spacecraft to fly past another planet.",
+   "key": [
+    "FIRST"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "MARINER 2",
+     "AT VENUS"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "coder": [
+     2.4,
+     -0.2
+    ],
+    "rso": false,
+    "boss": [
+     0,
+     0.4
+    ],
+    "writer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "coder": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "Proofread your code. Is one symbol worth eighteen million dollars? Yes or no?",
+   "cap": "Proofread your code. Is one symbol worth $18 million? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "1 SYMBOL",
+    "= $18.5M?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "boss": false,
+    "coder": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coder": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Mariner 1",
+   "url": "https://en.wikipedia.org/wiki/Mariner_1"
+  },
+  {
+   "title": "Mental Floss: in 1962, NASA launched and destroyed Mariner 1",
+   "url": "https://www.mentalfloss.com/science/space/day-1962-nasa-launched-and-destroyed-mariner-1"
+  },
+  {
+   "title": "YourStory: how a missing hyphen cost NASA $18.5M",
+   "url": "https://yourstory.com/2025/02/nasa-mariner-1-coding-error-18-million-loss"
+  },
+  {
+   "title": "Wikipedia: Mariner 2",
+   "url": "https://en.wikipedia.org/wiki/Mariner_2"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Mariner 1 launched in July 1962 from Florida toward Venus",
+   "terms": [
+    "Mariner 1",
+    "1962",
+    "Venus"
+   ]
+  },
+  {
+   "claim": "It was America's first attempt to fly by another planet",
+   "terms": [
+    "first",
+    "Venus"
+   ]
+  },
+  {
+   "claim": "The rocket veered off course",
+   "terms": [
+    "off course|veered|erratic"
+   ]
+  },
+  {
+   "claim": "It could have crashed into shipping lanes or populated areas",
+   "terms": [
+    "shipping lanes|populated"
+   ]
+  },
+  {
+   "claim": "The range safety officer destroyed it about 293 seconds after launch",
+   "terms": [
+    "range safety",
+    "293|destroy"
+   ]
+  },
+  {
+   "claim": "It cost about $18.5 million",
+   "terms": [
+    "18.5 million|18.5"
+   ]
+  },
+  {
+   "claim": "The cause was traced to the guidance software",
+   "terms": [
+    "guidance",
+    "software|program|code"
+   ]
+  },
+  {
+   "claim": "A handwritten formula's overbar was left out",
+   "terms": [
+    "overbar|bar|hyphen"
+   ]
+  },
+  {
+   "claim": "The bar meant smoothing/averaging",
+   "terms": [
+    "smooth|average"
+   ]
+  },
+  {
+   "claim": "A hardware failure contributed",
+   "terms": [
+    "hardware|antenna"
+   ]
+  },
+  {
+   "claim": "Arthur C. Clarke called it the most expensive hyphen in history",
+   "terms": [
+    "Clarke",
+    "most expensive hyphen"
+   ]
+  },
+  {
+   "claim": "Mariner 2 launched about five weeks later",
+   "terms": [
+    "Mariner 2",
+    "August|five weeks|1962"
+   ]
+  },
+  {
+   "claim": "Mariner 2 was the first spacecraft to fly past another planet",
+   "terms": [
+    "Mariner 2",
+    "first"
+   ]
+  }
+ ]
+}

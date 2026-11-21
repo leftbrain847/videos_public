@@ -1,0 +1,589 @@
+{
+ "id": "heist_32_just_judges",
+ "title": "The panel that never came back",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "GHENT",
+   "ALTARPIECE"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "thief": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#3a3f4b",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "hold": "envelope"
+  },
+  "priest": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "hair": "bald",
+    "hairColor": "#d9d9d9",
+    "skin": "#e8b48f",
+    "sash": "#7a1f3d"
+   }
+  },
+  "arsene": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#6b4426",
+    "pants": "#3a2a20",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b"
+   }
+  },
+  "cop": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal one panel of a famous altarpiece. You take the secret to your grave.",
+   "key": [
+    "GRAVE."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "thief"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "thief": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "thief": "center",
+    "priest": false,
+    "arsene": false,
+    "cop": false
+   },
+   "board": [
+    "MISSING",
+    "SINCE 1934"
+   ]
+  },
+  {
+   "text": "Ghent, Belgium. April, nineteen thirty four.",
+   "cap": "Ghent, Belgium. April 1934.",
+   "key": [
+    "GHENT,"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "thief"
+   },
+   "act": {
+    "thief": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "GHENT",
+    "1934"
+   ]
+  },
+  {
+   "text": "The Ghent Altarpiece hangs in the cathedral. Six hundred years of masterpiece.",
+   "key": [
+    "MASTERPIECE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "priest"
+   },
+   "act": {
+    "priest": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "priest": "center",
+    "thief": false
+   }
+  },
+  {
+   "text": "It's also the most stolen artwork in history. Truly. Thieves love this thing.",
+   "key": [
+    "STOLEN"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "priest": false
+   }
+  },
+  {
+   "text": "One night, someone takes one panel. The just Judges.",
+   "key": [
+    "JUDGES."
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "low",
+    "on": "thief"
+   },
+   "act": {
+    "thief": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "thief": "center"
+   },
+   "board": [
+    "THE JUST",
+    "JUDGES"
+   ]
+  },
+  {
+   "text": "Then the ransom letters start. One million Belgian francs.",
+   "cap": "Then the ransom letters start. 1 million Belgian francs.",
+   "key": [
+    "FRANCS."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "thief"
+   },
+   "act": {
+    "thief": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "thief": "center"
+   },
+   "board": [
+    "RANSOM:",
+    "1,000,000 FR"
+   ]
+  },
+  {
+   "text": "To prove it's real, the thief returns half. The back side. Generous.",
+   "key": [
+    "HALF"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "thief"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "thief"
+    },
+    "thief": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "thief": "right"
+   }
+  },
+  {
+   "text": "The church refuses to pay. Letters keep coming. One after another. Nobody pays.",
+   "key": [
+    "LETTERS"
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "wide",
+    "on": "priest"
+   },
+   "act": {
+    "priest": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "priest": "center"
+   }
+  },
+  {
+   "text": "Months later, a local stockbroker collapses. Arsene Goedertier.",
+   "key": [
+    "GOEDERTIER."
+   ],
+   "set": "study",
+   "shot": {
+    "type": "medium",
+    "on": "arsene"
+   },
+   "act": {
+    "arsene": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "arsene": "center"
+   }
+  },
+  {
+   "text": "On his deathbed, he whispers. Only he knows where it is.",
+   "key": [
+    "KNOWS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "arsene"
+   },
+   "act": {
+    "arsene": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The secret goes to his grave, he says. He keeps his word.",
+   "key": [
+    "WORD."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "arsene"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "arsene": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "arsene": "right"
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Police search his desk. They find copies of the ransom letters.",
+   "key": [
+    "LETTERS."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "cop": "center"
+   },
+   "board": [
+    "EVIDENCE:",
+    "LETTERS"
+   ]
+  },
+  {
+   "text": "But no panel. Not in the desk. Not in his house. Not then. Not since.",
+   "key": [
+    "SINCE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Searches go on for decades. Walls. Houses. Even the cathedral itself.",
+   "key": [
+    "CATHEDRAL"
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   }
+  },
+  {
+   "text": "Today, a copy hangs in its place. Painted in the nineteen forties.",
+   "cap": "Today, a copy hangs in its place. Painted in the 1940s.",
+   "key": [
+    "COPY"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "priest"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "priest"
+    },
+    "priest": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "priest": "right"
+   }
+  },
+  {
+   "text": "The real one? Maybe in a wall in Ghent. Maybe gone forever.",
+   "key": [
+    "FOREVER."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "priest": false
+   }
+  },
+  {
+   "text": "A heist with no profit. Just a mystery. Ninety years. Still counting.",
+   "cap": "A heist with no profit. Just a mystery. 90 years. Still counting.",
+   "key": [
+    "COUNTING."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Will the just Judges ever be found? Yes or no?",
+   "key": [
+    "FOUND?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: The Just Judges",
+   "url": "https://en.wikipedia.org/wiki/The_Just_Judges"
+  },
+  {
+   "title": "Wikipedia: Ghent Altarpiece",
+   "url": "https://en.wikipedia.org/wiki/Ghent_Altarpiece"
+  },
+  {
+   "title": "Visit Gent: Disappearance of the Just Judges panel",
+   "url": "https://visit.gent.be/en/disappearance-just-judges-panel"
+  },
+  {
+   "title": "Mental Floss: The enduring mystery of the Ghent Altarpiece",
+   "url": "https://www.mentalfloss.com/article/546749/enduring-mystery-ghent-altarpiece-worlds-most-stolen-painting"
+  },
+  {
+   "title": "AP via ClickOrlando: Belgium shows restored masterpiece but stolen panel rankles",
+   "url": "https://www.clickorlando.com/entertainment/2021/03/26/belgium-shows-restored-masterpiece-but-stolen-panel-rankles/"
+  },
+  {
+   "title": "Monuments Men and Women Foundation: The Righteous Judges",
+   "url": "https://www.monumentsmenandwomenfnd.org/wwii-most-wanted/van-eyck/the-righteous-judges"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The Just Judges panel was stolen in Ghent in April 1934",
+   "terms": [
+    "1934",
+    "Just Judges"
+   ]
+  },
+  {
+   "claim": "The Ghent Altarpiece hangs in St Bavo's Cathedral",
+   "terms": [
+    "Bavo"
+   ]
+  },
+  {
+   "claim": "The altarpiece is the most stolen artwork",
+   "terms": [
+    "most stolen|most frequently stolen"
+   ]
+  },
+  {
+   "claim": "Ransom letters demanded one million Belgian francs",
+   "terms": [
+    "ransom",
+    "million"
+   ]
+  },
+  {
+   "claim": "The thief returned the reverse side as proof",
+   "terms": [
+    "John the Baptist|reverse|back"
+   ]
+  },
+  {
+   "claim": "The church refused to pay",
+   "terms": [
+    "refused|declined"
+   ]
+  },
+  {
+   "claim": "Stockbroker Arsene Goedertier collapsed months later",
+   "terms": [
+    "Goedertier"
+   ]
+  },
+  {
+   "claim": "On his deathbed he said he alone knew where it was",
+   "terms": [
+    "deathbed|death bed|dying"
+   ]
+  },
+  {
+   "claim": "He said he would take the secret to his grave",
+   "terms": [
+    "secret"
+   ]
+  },
+  {
+   "claim": "Copies of the ransom letters were found in his desk",
+   "terms": [
+    "letters"
+   ]
+  },
+  {
+   "claim": "The panel has never been found",
+   "terms": [
+    "never",
+    "found|recovered"
+   ]
+  },
+  {
+   "claim": "A copy by Jef Van der Veken replaced it in the 1940s",
+   "terms": [
+    "Van der Veken|copy"
+   ]
+  }
+ ]
+}
