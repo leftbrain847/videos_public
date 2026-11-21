@@ -1,0 +1,855 @@
+{
+ "id": "mind_28_hungry_judges",
+ "title": "Justice before lunch",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "PAROLE",
+   "BOARD"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#e67e22",
+    "pants": "#e67e22",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   }
+  },
+  "judge": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "tie": "#7a2a2a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "hold": "envelope"
+  },
+  "stat": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#2e86c1",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "Your parole may depend on the judge's lunch. Seriously.",
+   "key": [
+    "LUNCH."
+   ],
+   "board": [
+    "PAROLE",
+    "BOARD"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "judge": false,
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Twenty eleven. Researchers study Israeli parole boards.",
+   "cap": "2011. Researchers study Israeli parole boards.",
+   "key": [
+    "PAROLE"
+   ],
+   "set": "press",
+   "board": [
+    "PAROLE",
+    "HEARINGS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "judge": [
+     0,
+     0.2
+    ],
+    "stat": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They track over a thousand real rulings. Each one is a real person.",
+   "cap": "They track over 1,000 real rulings.",
+   "key": [
+    "1,000"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "judge": [
+     0,
+     0.2
+    ],
+    "stat": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Early in a session, two thirds get approved.",
+   "key": [
+    "APPROVED."
+   ],
+   "board": [
+    "START OF SESSION:",
+    "~65% YES"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "judge": [
+     0,
+     0.2
+    ],
+    "stat": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "As the session drags on, approvals sink. Toward zero.",
+   "key": [
+    "ZERO."
+   ],
+   "board": [
+    "BEFORE THE BREAK:",
+    "~0% YES"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "judge": [
+     0,
+     0.2
+    ],
+    "stat": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the judges take a food break. A quick bite. Recharge.",
+   "key": [
+    "FOOD"
+   ],
+   "set": "study",
+   "board": [
+    "FOOD",
+    "BREAK"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "judge": false,
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "After the snack, approvals jump right back up. The pattern repeats. Break after break.",
+   "key": [
+    "BACK"
+   ],
+   "set": "press",
+   "board": [
+    "PAROLE",
+    "BOARD"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "judge": [
+     0,
+     0.2
+    ],
+    "stat": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Justice, apparently, runs on sandwiches.",
+   "key": [
+    "SANDWICHES."
+   ],
+   "set": "study",
+   "board": [
+    "PAROLE",
+    "BOARD"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "judge": false,
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The headlines write themselves. Hungry judges are harsh judges.",
+   "key": [
+    "HARSH"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "judge": false,
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Your freedom. Decided by blood sugar.",
+   "key": [
+    "SUGAR."
+   ],
+   "set": "study",
+   "board": [
+    "PAROLE",
+    "BOARD"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "judge": false,
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It spreads everywhere. Talks. Books. Classrooms. Office break rooms.",
+   "key": [
+    "EVERYWHERE."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "judge": false,
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. Look closely at the schedule.",
+   "key": [
+    "SCHEDULE."
+   ],
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "judge": false,
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The order of the cases was not random.",
+   "key": [
+    "RANDOM."
+   ],
+   "set": "office",
+   "board": [
+    "CASE",
+    "ORDER"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "judge": false,
+    "stat": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "stat"
+   },
+   "act": {
+    "stat": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Prisoners without lawyers often came last.",
+   "key": [
+    "LAWYERS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "judge": false,
+    "stat": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "stat"
+   },
+   "act": {
+    "stat": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Cases with lawyers tended to go first. Earlier in the day.",
+   "key": [
+    "FIRST."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "judge": false,
+    "stat": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "stat"
+   },
+   "act": {
+    "stat": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Those cases were denied more often anyway.",
+   "key": [
+    "DENIED."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "judge": false,
+    "stat": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "stat",
+    "with": "you"
+   },
+   "act": {
+    "stat": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "stat"
+    }
+   }
+  },
+  {
+   "text": "Simulations show scheduling alone can fake the curve.",
+   "key": [
+    "SCHEDULING"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "judge": false,
+    "stat": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "stat"
+   },
+   "act": {
+    "stat": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Critics add one more thing. The drop is too big. Real effects are rarely that dramatic.",
+   "key": [
+    "BIG."
+   ],
+   "set": "study",
+   "board": [
+    "PAROLE",
+    "BOARD"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "judge": false,
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "If hunger did that, nobody would survive lunch.",
+   "key": [
+    "LUNCH."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "judge": false,
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Hunger matters. Just probably not this much. Sorry, sandwiches.",
+   "key": [
+    "MUCH."
+   ],
+   "set": "study",
+   "board": [
+    "PAROLE",
+    "BOARD"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "judge": [
+     1.2,
+     0.0
+    ],
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "judge"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "judge"
+    },
+    "judge": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Still, bring the judge a snack. Just in case. Maybe two.",
+   "key": [
+    "SNACK."
+   ],
+   "set": "press",
+   "board": [
+    "PAROLE",
+    "BOARD"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "judge": [
+     0,
+     0.2
+    ],
+    "stat": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You face a judge tomorrow. Before lunch or after?",
+   "key": [
+    "BEFORE",
+    "AFTER?"
+   ],
+   "set": "study",
+   "board": [
+    "BEFORE OR",
+    "AFTER LUNCH?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "judge": false,
+    "stat": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Hungry judge effect",
+   "url": "https://en.wikipedia.org/wiki/Hungry_judge_effect"
+  },
+  {
+   "title": "Scientific American: Hungry judges dispense rough justice",
+   "url": "https://www.scientificamerican.com/article/hungry-judges-dispense-rough-justice/"
+  },
+  {
+   "title": "National Geographic: Justice is served, but more so after lunch",
+   "url": "https://www.nationalgeographic.com/science/article/justice-is-served-but-more-so-after-lunch-how-food-breaks-sway-the-decisions-of-judges"
+  },
+  {
+   "title": "PMC: Extraneous factors in judicial decisions (Danziger et al. 2011)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3084045/"
+  },
+  {
+   "title": "Judgment and Decision Making: The irrational hungry judge effect revisited",
+   "url": "https://journal.sjdm.org/16/16823/jdm16823.html"
+  },
+  {
+   "title": "Daniel Lakens: Impossibly hungry judges",
+   "url": "https://daniellakens.blogspot.com/2017/07/impossibly-hungry-judges.html"
+  },
+  {
+   "title": "Prison Legal News: Israeli study shows parole decisions may be affected by hunger",
+   "url": "https://www.prisonlegalnews.org/news/2012/feb/15/israeli-study-shows-parole-decisions-may-be-affected-by-whether-board-members-are-hungry"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "A 2011 study examined Israeli parole boards",
+   "terms": [
+    "Israeli",
+    "parole"
+   ]
+  },
+  {
+   "claim": "It covered over 1,000 rulings",
+   "terms": [
+    "1,112|1112|1,000|1000"
+   ]
+  },
+  {
+   "claim": "Early in a session about 65 percent were approved",
+   "terms": [
+    "65"
+   ]
+  },
+  {
+   "claim": "Approvals dropped to nearly zero before a break",
+   "terms": [
+    "zero"
+   ]
+  },
+  {
+   "claim": "Approvals returned after a food break",
+   "terms": [
+    "food break|meal break|snack|break"
+   ]
+  },
+  {
+   "claim": "Critics found the case order was not random",
+   "terms": [
+    "order",
+    "random"
+   ]
+  },
+  {
+   "claim": "Prisoners without lawyers tended to come last",
+   "terms": [
+    "lawyer|counsel|represent"
+   ]
+  },
+  {
+   "claim": "Simulations show scheduling can produce the pattern",
+   "terms": [
+    "simulat",
+    "overestimat|schedul|plan"
+   ]
+  },
+  {
+   "claim": "Critics argued the effect size is implausibly large",
+   "terms": [
+    "implausib|too large|too big|overestimat"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,829 @@
+{
+ "id": "mind_29_feeling_future",
+ "title": "The psychic paper that fixed psychology",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "FEELING",
+   "THE FUTURE"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5a3e6e",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   },
+   "hold": "notepad"
+  },
+  "bem": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#4a3b2c",
+    "pants": "#2a2a2a",
+    "tie": "#7a5c2a",
+    "hair": "short",
+    "hairColor": "#d8d8d8",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "hold": "scroll"
+  },
+  "rep": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You study for a test after taking it. It helps. Supposedly.",
+   "key": [
+    "AFTER"
+   ],
+   "board": [
+    "FEELING",
+    "THE FUTURE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "bem": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Twenty eleven. A top psychology journal publishes something wild.",
+   "cap": "2011. A top psychology journal publishes something wild.",
+   "key": [
+    "WILD."
+   ],
+   "set": "press",
+   "board": [
+    "JOURNAL",
+    "2011"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "bem": [
+     0,
+     0.2
+    ],
+    "rep": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "bem"
+   },
+   "act": {
+    "bem": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Cornell psychologist Daryl Bem makes a bold claim. People can feel the future.",
+   "key": [
+    "FUTURE."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "bem": [
+     0,
+     0.2
+    ],
+    "rep": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "bem"
+   },
+   "act": {
+    "bem": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nine experiments. About a thousand participants. Years of work.",
+   "cap": "9 experiments. About 1,000 participants. Years of work.",
+   "key": [
+    "1,000"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "bem": [
+     0,
+     0.2
+    ],
+    "rep": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "bem"
+   },
+   "act": {
+    "bem": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In one, you see a list of words. Then a surprise memory test.",
+   "key": [
+    "SURPRISE"
+   ],
+   "set": "office",
+   "board": [
+    "MEMORY",
+    "TEST"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "bem": false,
+    "rep": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "rep": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "After the test, you practice some words. Just some.",
+   "key": [
+    "AFTER"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "bem": false,
+    "rep": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The words you practice later? You recalled them better. Earlier.",
+   "key": [
+    "EARLIER."
+   ],
+   "board": [
+    "PRACTICE LATER,",
+    "REMEMBER EARLIER?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "bem": false,
+    "rep": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Studying after the exam. Finally, my kind of science.",
+   "key": [
+    "EXAM."
+   ],
+   "set": "study",
+   "board": [
+    "FEELING",
+    "THE FUTURE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "bem": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Eight of the nine experiments come out positive.",
+   "cap": "8 of the 9 experiments come out positive.",
+   "key": [
+    "8"
+   ],
+   "board": [
+    "POSITIVE:",
+    "8 OF 9"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "bem": [
+     1.2,
+     0.0
+    ],
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bem"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "bem"
+    },
+    "bem": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The methods look standard. That is exactly the problem.",
+   "key": [
+    "PROBLEM."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "bem": [
+     1.2,
+     0.0
+    ],
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "bem": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Here is the loophole. Normal methods just proved the impossible.",
+   "key": [
+    "IMPOSSIBLE."
+   ],
+   "board": [
+    "THE",
+    "LOOPHOLE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "bem": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So maybe the normal methods are broken. Badly.",
+   "key": [
+    "BROKEN."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "bem": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Researchers rerun the memory study. Exactly as described.",
+   "key": [
+    "EXACTLY"
+   ],
+   "set": "office",
+   "board": [
+    "RERUN"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "bem": false,
+    "rep": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rep"
+   },
+   "act": {
+    "rep": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The future stays unfelt. No effect. Not even a little.",
+   "key": [
+    "NO"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "bem": false,
+    "rep": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "rep"
+   },
+   "act": {
+    "rep": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They send it to the same journal. It turns them down.",
+   "key": [
+    "DOWN."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "bem": false,
+    "rep": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "rep",
+    "with": "you"
+   },
+   "act": {
+    "rep": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "rep"
+    }
+   }
+  },
+  {
+   "text": "The reason? It does not publish straight replications. Only new findings.",
+   "key": [
+    "REPLICATIONS."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "bem": false,
+    "rep": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rep"
+   },
+   "act": {
+    "rep": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Bem's paper helps spark the replication crisis.",
+   "key": [
+    "CRISIS."
+   ],
+   "set": "study",
+   "board": [
+    "REPLICATION",
+    "CRISIS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "bem": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Psychology starts preregistering studies. Sharing data. Rerunning classics.",
+   "key": [
+    "PREREGISTERING"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "bem": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "A psychic paper made science more careful. Much more.",
+   "key": [
+    "CAREFUL."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "bem": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nobody saw that coming. Except maybe Bem. He felt it.",
+   "key": [
+    "BEM."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "bem": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Can people feel the future? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "FEEL THE",
+    "FUTURE?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "bem": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Daryl Bem",
+   "url": "https://en.wikipedia.org/wiki/Daryl_Bem"
+  },
+  {
+   "title": "Wikipedia: Replication crisis",
+   "url": "https://en.wikipedia.org/wiki/Replication_crisis"
+  },
+  {
+   "title": "The Psychologist (BPS): Replication, replication, replication",
+   "url": "https://bps.org.uk/psychologist/replication-replication-replication"
+  },
+  {
+   "title": "Science-Based Medicine: The power of replication, Bem's psi research",
+   "url": "https://sciencebasedmedicine.org/the-power-of-replication-bems-psi-research/"
+  },
+  {
+   "title": "PMC: Failing the future, three unsuccessful attempts to replicate Bem (Ritchie et al. 2012)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3303812/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Bem's paper was published in 2011",
+   "terms": [
+    "Bem",
+    "2011"
+   ]
+  },
+  {
+   "claim": "It appeared in a top psychology journal",
+   "terms": [
+    "Journal of Personality and Social Psychology"
+   ]
+  },
+  {
+   "claim": "Daryl Bem was a Cornell psychologist",
+   "terms": [
+    "Bem",
+    "Cornell"
+   ]
+  },
+  {
+   "claim": "It reported nine experiments with about 1,000 participants",
+   "terms": [
+    "experiments",
+    "1,000|1000|nine"
+   ]
+  },
+  {
+   "claim": "One experiment tested retroactive facilitation of recall",
+   "terms": [
+    "recall",
+    "retroactive|practice"
+   ]
+  },
+  {
+   "claim": "Eight of nine experiments were significant",
+   "terms": [
+    "eight|8",
+    "nine|9"
+   ]
+  },
+  {
+   "claim": "Replications of the recall study found no effect",
+   "terms": [
+    "replicat",
+    "recall|Ritchie"
+   ]
+  },
+  {
+   "claim": "The same journal declined to publish a replication",
+   "terms": [
+    "replication",
+    "reject|refus|declin"
+   ]
+  },
+  {
+   "claim": "Bem's paper helped spark the replication crisis",
+   "terms": [
+    "Bem",
+    "replication"
+   ]
+  },
+  {
+   "claim": "Psychology moved toward preregistration",
+   "terms": [
+    "preregistration|pre-registration|preregistered|pre-registered"
+   ]
+  }
+ ]
+}
