@@ -593,9 +593,9 @@
    }
   },
   {
-   "text": "By June, the science instruments are back too. Full recovery.",
+   "text": "Weeks later, the science instruments are back too. Full recovery.",
    "key": [
-    "JUNE,"
+    "SCIENCE"
    ],
    "board": [
     "SCIENCE",
@@ -735,8 +735,8 @@
   {
    "claim": "It is the farthest human-made object",
    "terms": [
-    "farthest|most distant",
-    "human-made|human made|man-made"
+    "farthest|most distant|furthest",
+    "spacecraft|object|human"
    ]
   },
   {
@@ -761,7 +761,7 @@
   {
    "claim": "A round trip takes about two days",
    "terms": [
-    "45 hours|two days|2 days"
+    "45 hours|two days|2 days|round trip|roundtrip"
    ]
   },
   {
@@ -797,9 +797,10 @@
    ]
   },
   {
-   "claim": "Science data returned by June 2024",
+   "claim": "Science data returned later",
    "terms": [
-    "June"
+    "science",
+    "instrument|data"
    ]
   }
  ]

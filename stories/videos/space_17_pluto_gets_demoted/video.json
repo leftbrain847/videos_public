@@ -149,7 +149,7 @@
    }
   },
   {
-   "text": "His name is Clyde Tombaugh. A farm kid from Kansas. He just found planet nine.",
+   "text": "His name is Clyde Tombaugh. Twenty four years old. He just found planet nine.",
    "key": [
     "NINE."
    ],
@@ -430,7 +430,7 @@
    }
   },
   {
-   "text": "Rule one: orbit the sun. Pluto passes.",
+   "text": "Rule one: orbit the sun. Pluto passes. Easy.",
    "key": [
     "PASSES."
    ],
@@ -476,7 +476,7 @@
    }
   },
   {
-   "text": "Rule two: be round. Pluto passes.",
+   "text": "Rule two: be round. Pluto passes. Easy.",
    "key": [
     "ROUND."
    ],
@@ -526,7 +526,7 @@
    ]
   },
   {
-   "text": "Pluto becomes a dwarf planet. The solar system drops to eight. Just like that.",
+   "text": "Pluto becomes a dwarf planet. The solar system drops to eight. Just like that. Gone.",
    "key": [
     "EIGHT."
    ],
@@ -563,7 +563,7 @@
    }
   },
   {
-   "text": "Fans are furious. Protest signs everywhere. New Mexico even declares it a planet anyway.",
+   "text": "Fans are furious. Protest signs everywhere. The vote stands anyway. Sorry, Pluto.",
    "key": [
     "ANYWAY."
    ],
@@ -760,10 +760,10 @@
    ]
   },
   {
-   "claim": "Tombaugh grew up on a farm in Kansas",
+   "claim": "Tombaugh was 24 when he found Pluto",
    "terms": [
-    "farm",
-    "Kansas"
+    "Tombaugh",
+    "24"
    ]
   },
   {
@@ -797,7 +797,7 @@
    "claim": "Eris is more massive than Pluto",
    "terms": [
     "Eris",
-    "massive"
+    "massive|larger|bigger"
    ]
   },
   {
@@ -826,12 +826,6 @@
    "terms": [
     "dwarf planet",
     "eight|8"
-   ]
-  },
-  {
-   "claim": "New Mexico declared Pluto a planet",
-   "terms": [
-    "New Mexico"
    ]
   },
   {

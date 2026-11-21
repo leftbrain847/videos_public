@@ -434,7 +434,7 @@
    }
   },
   {
-   "text": "Grissom puts it away. The flight ends safely. Three orbits later.",
+   "text": "Grissom puts it away. The flight ends safely. Hours later.",
    "key": [
     "SAFELY."
    ],
@@ -746,8 +746,8 @@
    "url": "https://airandspace.si.edu/stories/editorial/how-astronaut-smuggled-sandwich-space"
   },
   {
-   "title": "Mental Floss: the contraband corned beef",
-   "url": "https://www.mentalfloss.com/article/26849/foooood-iiiiin-spaaaaace-curious-case-contraband-corned-beef"
+   "title": "Gizmodo: 50 years ago NASA astronauts smuggled a corned beef sandwich",
+   "url": "https://gizmodo.com/50-years-ago-nasa-astronauts-smuggled-a-corned-beef-sa-1693431694"
   },
   {
    "title": "Wikipedia: Gemini 3",
@@ -813,12 +813,6 @@
    "terms": [
     "crumbs",
     "equipment|electronics|instruments"
-   ]
-  },
-  {
-   "claim": "Gemini 3 made three orbits",
-   "terms": [
-    "three orbits|3 orbits"
    ]
   },
   {
