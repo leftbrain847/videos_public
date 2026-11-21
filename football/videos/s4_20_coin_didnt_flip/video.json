@@ -2,111 +2,963 @@
  "id": "s4_20_coin_didnt_flip",
  "title": "The coin that didn't flip",
  "set": "field",
- "setOpts": {"boardText": ["COIN", "DIDN'T FLIP"]},
- "cast": {
-  "capy": {"kind": "capy", "at": "left", "face": 20},
-  "qb": {"look": {"outfit": "jersey", "shirt": "#24493a", "pants": "#f2b81c", "number": "8", "hair": "short", "hairColor": "#3b2416", "skin": "#f2c39b", "beard": true}, "at": "center", "hold": "football"},
-  "wr": {"look": {"outfit": "jersey", "shirt": "#24493a", "pants": "#f2b81c", "number": "83", "hair": "short", "hairColor": "#d9b16a"}, "at": "back"},
-  "lb": {"look": {"outfit": "jersey", "shirt": "#24493a", "pants": "#f2b81c", "number": "50", "hair": "long", "hairColor": "#e0c27a", "skin": "#f2c39b"}, "at": "back"},
-  "ref": {"look": {"outfit": "ref", "pants": "#f4f4f4", "hair": "short", "hairColor": "#6b4423", "skin": "#e8b48f", "cap": "#f4f4f4"}, "at": "back"},
-  "card": {"look": {"outfit": "jersey", "shirt": "#a3233f", "pants": "#f4f4f4", "number": "13", "hair": "long", "hairColor": "#1b1b1b", "skin": "#6b4430"}, "at": "right", "face": -20, "hold": "football"}
+ "setOpts": {
+  "boardText": [
+   "COIN",
+   "DIDN'T FLIP"
+  ]
  },
- "lines": [
-  {"text": "In a 2016 playoff game, the overtime coin toss didn't flip. At all.",
-   "key": ["FLIP."], "speaker": "capy",
-   "place": {"capy": [-2.2, 0.8], "ref": [0, 0], "qb": [2.0, 0.2], "wr": false, "lb": false, "card": false},
-   "shot": {"type": "two", "on": "capy", "with": "ref"},
-   "act": {"capy": {"mood": "smug", "action": "talk", "look": "camera"}, "ref": {"mood": "confused", "action": "shrug"}, "qb": {"mood": "angry", "action": "cross", "look": "ref"}}},
-  {"text": "Packers at Cardinals. Green Bay down seven, fourth-and-twenty from its own four.",
-   "cap": "Packers at Cardinals. Green Bay down 7, 4th-and-20 from its own 4.",
-   "key": ["4TH-AND-20"],
-   "board": ["CARDINALS 20", "PACKERS 13"],
-   "place": {"capy": false, "ref": false, "qb": [0, 0], "card": [2.2, -0.6]},
-   "shot": {"type": "medium", "on": "qb"},
-   "act": {"qb": {"mood": "worried", "action": "hold", "look": "camera"}, "card": {"mood": "smug", "look": "qb"}}},
-  {"text": "Aaron Rodgers threw sixty yards to Jeff Janis. First down.",
-   "cap": "Aaron Rodgers threw 60 yards to Jeff Janis. First down.",
-   "key": ["60"],
-   "place": {"wr": [1.8, -1.2]},
-   "shot": {"type": "low", "on": "qb"},
-   "act": {"qb": {"mood": "angry", "action": "throw", "look": "wr"}, "wr": {"mood": "happy", "action": "cheer"}}},
-  {"text": "Then, with five seconds left, a Hail Mary. Janis again. Touchdown.",
-   "cap": "Then, with 5 seconds left, a Hail Mary. Janis again. Touchdown.",
-   "key": ["HAIL", "MARY."],
-   "board": ["0:05", "TOUCHDOWN"],
-   "place": {"wr": [0, 0], "qb": false, "card": [1.6, -0.4]},
-   "shot": {"type": "low", "on": "wr", "offset": [-0.6, 0, 0]},
-   "act": {"wr": {"mood": "shocked", "action": "cheer", "look": "camera"}, "card": {"mood": "shocked", "action": "facepalm"}}},
-  {"text": "Extra point. Twenty all. Overtime.",
-   "cap": "Extra point. 20 all. Overtime.",
-   "key": ["20"],
-   "board": ["CARDINALS 20", "PACKERS 20"],
-   "place": {"qb": [-1.4, 0], "wr": [0, 0.4], "card": [2.0, -0.2]},
-   "shot": {"type": "wide", "on": "wr"},
-   "act": {"qb": {"mood": "happy", "action": "cheer"}, "wr": {"mood": "happy", "action": "cheer"}, "card": {"mood": "worried", "action": "idle"}}},
-  {"text": "Now, the coin toss. Rodgers called tails.",
-   "key": ["TAILS."],
-   "board": ["OVERTIME", "COIN TOSS"],
-   "place": {"wr": false, "card": false, "capy": [0, 1.4], "qb": [-1.8, -0.2], "ref": [1.8, -0.2]},
-   "shot": {"type": "two", "on": "capy", "with": "qb"},
-   "act": {"capy": {"mood": "neutral", "action": "point", "look": "qb"}, "qb": {"mood": "neutral", "action": "point", "look": "ref"}, "ref": {"mood": "neutral", "action": "hold", "look": "qb"}},
-   "speaker": "capy"},
-  {"text": "The coin went up and came down flat. It never turned over.",
-   "key": ["FLAT."],
-   "board": ["FLIPS:", "0"],
-   "place": {"capy": false, "ref": [0, 0], "qb": [-1.8, 0.2]},
-   "shot": {"type": "high", "on": "ref"},
-   "act": {"ref": {"mood": "confused", "action": "shrug"}, "qb": {"mood": "confused", "look": "ref"}}},
-  {"text": "A Packers linebacker said it sat there like a saucer.",
-   "key": ["SAUCER."],
-   "place": {"lb": [0, 0], "ref": false, "qb": false},
-   "shot": {"type": "close", "on": "lb"},
-   "act": {"lb": {"mood": "angry", "action": "talk", "look": "camera"}}},
-  {"text": "So the referee tossed it again. Without a new call.",
-   "key": ["AGAIN."],
-   "place": {"lb": false, "ref": [0, 0], "qb": [-1.8, 0.2]},
-   "shot": {"type": "medium", "on": "ref"},
-   "act": {"ref": {"mood": "neutral", "action": "throw", "look": "camera"}, "qb": {"mood": "angry", "action": "point", "look": "ref"}}},
-  {"text": "Heads. Arizona got the ball.",
-   "key": ["ARIZONA"],
-   "board": ["COIN:", "HEADS"],
-   "place": {"card": [1.8, 0.2]},
-   "shot": {"type": "two", "on": "ref", "with": "card"},
-   "act": {"card": {"mood": "happy", "action": "cheer"}, "ref": {"mood": "neutral", "action": "point", "look": "card"}, "qb": {"mood": "angry", "action": "cross"}}},
-  {"text": "Rodgers called it confusing. The league said no rule required the coin to flip.",
-   "key": ["NO", "RULE"],
-   "set": "press",
-   "board": ["COIN", "CONFUSING"],
-   "place": {"qb": "center"},
-   "shot": {"type": "medium", "on": "qb"},
-   "act": {"qb": {"mood": "angry", "action": "shrug", "look": "camera"}}},
-  {"text": "First play of overtime: Larry Fitzgerald, seventy five yards.",
-   "cap": "First play of overtime: Larry Fitzgerald, 75 yards.",
-   "key": ["75"],
-   "set": "field",
-   "board": ["FITZGERALD", "+75 YARDS"],
-   "place": {"card": [0, 0], "lb": [1.8, -1.0]},
-   "shot": {"type": "low", "on": "card"},
-   "act": {"card": {"mood": "happy", "action": "hold", "look": "camera"}, "lb": {"mood": "shocked", "action": "shrug", "look": "card"}}},
-  {"text": "Moments later, a five yard shovel pass to Fitzgerald. Cardinals win, twenty six to twenty.",
-   "cap": "Moments later, a 5-yard shovel pass to Fitzgerald. Cardinals win, 26 to 20.",
-   "key": ["26"],
-   "board": ["CARDINALS 26", "PACKERS 20"],
-   "shot": {"type": "wide", "on": "card", "offset": [1, 0, -2]},
-   "act": {"card": {"mood": "happy", "action": "cheer"}, "lb": {"mood": "sad", "action": "slump"}}},
-  {"text": "Should the coin have been tossed again? Yes or no?",
-   "key": ["YES", "NO?"],
-   "board": ["TOSS AGAIN?", "YES OR NO"],
-   "place": {"capy": [-1.2, 1.2], "ref": [1.2, 0.2], "card": false, "lb": false},
-   "shot": {"type": "two", "on": "capy", "with": "ref"},
-   "act": {"capy": {"mood": "smug", "action": "talk", "look": "camera"}, "ref": {"mood": "confused", "action": "shrug", "look": "capy"}},
-   "speaker": "capy"}
- ],
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#24493a",
+    "pants": "#f2b81c",
+    "number": "8",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "wr": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#24493a",
+    "pants": "#f2b81c",
+    "number": "83",
+    "hair": "short",
+    "hairColor": "#d9b16a"
+   },
+   "at": "back"
+  },
+  "lb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#24493a",
+    "pants": "#f2b81c",
+    "number": "50",
+    "hair": "long",
+    "hairColor": "#e0c27a",
+    "skin": "#f2c39b"
+   },
+   "at": "back"
+  },
+  "ref": {
+   "look": {
+    "outfit": "ref",
+    "pants": "#f4f4f4",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f",
+    "cap": "#f4f4f4"
+   },
+   "at": "back"
+  },
+  "card": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#a3233f",
+    "pants": "#f4f4f4",
+    "number": "13",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": "right",
+   "face": -20,
+   "hold": "football"
+  }
+ },
  "sources": [
-  {"title": "NFL.com: Cardinals survive Packers' Hail Mary in wild OT win", "url": "https://nfl.com/news/cardinals-survive-packers-hail-mary-in-wild-ot-win-0ap3000000623980"},
-  {"title": "KOLD (AP): Cards beat Packers 26-20 in overtime", "url": "https://www.kold.com/story/30985467/cards-beat-packers-26-20-in-overtime"},
-  {"title": "SI: Packers QB Aaron Rodgers upset over coin toss in loss to Cardinals", "url": "https://www.si.com/nfl/2016/01/17/green-bay-packers-arizona-cardinals-aaron-rodgers-coin-toss"},
-  {"title": "CBS Sports: NFL on Packers-Cardinals coin toss flap, ref didn't need to re-flip", "url": "https://www.cbssports.com/nfl/news/nfl-on-packers-cardinals-coin-toss-flap-ref-didnt-need-to-re-flip"},
-  {"title": "Arizona Cardinals: Folktales, the coin that didn't flip", "url": "https://www.azcardinals.com/news/folktales-the-coin-that-didn-t-flip"}
+  {
+   "title": "NFL.com: Cardinals survive Packers' Hail Mary in wild OT win",
+   "url": "https://nfl.com/news/cardinals-survive-packers-hail-mary-in-wild-ot-win-0ap3000000623980"
+  },
+  {
+   "title": "KOLD (AP): Cards beat Packers 26-20 in overtime",
+   "url": "https://www.kold.com/story/30985467/cards-beat-packers-26-20-in-overtime"
+  },
+  {
+   "title": "SI: Packers QB Aaron Rodgers upset over coin toss in loss to Cardinals",
+   "url": "https://www.si.com/nfl/2016/01/17/green-bay-packers-arizona-cardinals-aaron-rodgers-coin-toss"
+  },
+  {
+   "title": "CBS Sports: NFL on Packers-Cardinals coin toss flap, ref didn't need to re-flip",
+   "url": "https://www.cbssports.com/nfl/news/nfl-on-packers-cardinals-coin-toss-flap-ref-didnt-need-to-re-flip"
+  },
+  {
+   "title": "Arizona Cardinals: Folktales, the coin that didn't flip",
+   "url": "https://www.azcardinals.com/news/folktales-the-coin-that-didn-t-flip"
+  },
+  {
+   "title": "Wikipedia: Hail Larry",
+   "url": "https://en.wikipedia.org/wiki/Hail_Larry"
+  },
+  {
+   "title": "ABC7 (AP): Coin toss, catch controversy heighten drama of Cardinals' win",
+   "url": "https://abc7.com/post/coin-toss-catch-controversy-heighten-drama-of-cardinals-win/1162038/"
+  },
+  {
+   "title": "SI (AP): Cardinals-Packers game had a little bit of everything",
+   "url": "https://www.si.com/nfl/2016/01/17/ap-fbn-packers-cardinals-big-plays"
+  },
+  {
+   "title": "Fox Sports: OT coin toss in Arizona doesn't flip",
+   "url": "https://www.foxsports.com/stories/other/weve-now-seen-everything-as-ot-coin-toss-in-arizona-doesnt-flip"
+  }
+ ],
+ "lines": [
+  {
+   "text": "Overtime starts with a coin toss. Yours doesn't flip.",
+   "key": [
+    "FLIP."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "ref": [
+     0,
+     0
+    ],
+    "qb": [
+     2.0,
+     0.2
+    ],
+    "wr": false,
+    "lb": false,
+    "card": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "confused",
+     "action": "shrug"
+    },
+    "qb": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "ref"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "January twenty sixteen. Playoffs. Your Packers visit Arizona.",
+   "cap": "January 2016. Playoffs. Your Packers visit Arizona.",
+   "key": [
+    "ARIZONA."
+   ],
+   "place": {
+    "capy": false,
+    "ref": false,
+    "qb": [
+     0,
+     0
+    ],
+    "card": [
+     2.2,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "card": {
+     "mood": "smug",
+     "look": "qb"
+    }
+   },
+   "board": [
+    "PACKERS",
+    "AT CARDINALS"
+   ]
+  },
+  {
+   "text": "Down seven. Fourth and twenty. From your own four.",
+   "cap": "Down 7. 4th and 20. From your own 4.",
+   "key": [
+    "4TH"
+   ],
+   "place": {
+    "capy": false,
+    "ref": false,
+    "qb": [
+     0,
+     0
+    ],
+    "card": [
+     2.2,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "card": {
+     "mood": "smug",
+     "look": "qb"
+    }
+   },
+   "board": [
+    "CARDINALS 20",
+    "PACKERS 13"
+   ]
+  },
+  {
+   "text": "Aaron Rodgers throws sixty yards to Jeff Janis.",
+   "cap": "Aaron Rodgers throws 60 yards to Jeff Janis.",
+   "key": [
+    "60"
+   ],
+   "place": {
+    "wr": [
+     1.8,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "angry",
+     "action": "point",
+     "look": "wr"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Last play. Hail Mary. Janis again. Touchdown.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "place": {
+    "wr": [
+     0,
+     0
+    ],
+    "qb": false,
+    "card": [
+     1.6,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "wr",
+    "offset": [
+     -0.6,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "wr": {
+     "mood": "shocked",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "card": {
+     "mood": "shocked",
+     "action": "facepalm"
+    }
+   },
+   "board": [
+    "0:05",
+    "TOUCHDOWN"
+   ]
+  },
+  {
+   "text": "Extra point. Twenty all. Overtime.",
+   "cap": "Extra point. 20 all. Overtime.",
+   "key": [
+    "20"
+   ],
+   "place": {
+    "qb": [
+     -1.4,
+     0
+    ],
+    "wr": [
+     0,
+     0.4
+    ],
+    "card": [
+     2.0,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "wr"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "card": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   },
+   "board": [
+    "CARDINALS 20",
+    "PACKERS 20"
+   ]
+  },
+  {
+   "text": "Now the coin toss. Rodgers calls tails.",
+   "key": [
+    "TAILS."
+   ],
+   "place": {
+    "wr": false,
+    "card": false,
+    "capy": [
+     0,
+     1.4
+    ],
+    "qb": [
+     -1.8,
+     -0.2
+    ],
+    "ref": [
+     1.8,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "ref"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "qb"
+    }
+   },
+   "board": [
+    "OVERTIME",
+    "COIN TOSS"
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "The coin goes up. It never turns over.",
+   "key": [
+    "OVER."
+   ],
+   "place": {
+    "capy": false,
+    "ref": [
+     0,
+     0
+    ],
+    "qb": [
+     -1.8,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "confused",
+     "action": "shrug"
+    },
+    "qb": {
+     "mood": "confused",
+     "look": "ref"
+    }
+   },
+   "board": [
+    "FLIPS:",
+    "0"
+   ]
+  },
+  {
+   "text": "A coin toss with no toss. Very impressive.",
+   "key": [
+    "IMPRESSIVE."
+   ],
+   "place": {
+    "capy": false,
+    "ref": [
+     0,
+     0
+    ],
+    "qb": [
+     -1.8,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "FLIPS:",
+    "0"
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "One Green Bay player calls it a saucer.",
+   "key": [
+    "SAUCER."
+   ],
+   "place": {
+    "lb": [
+     0,
+     0
+    ],
+    "ref": false,
+    "qb": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "lb"
+   },
+   "act": {
+    "lb": {
+     "mood": "angry",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the referee tosses it again. No new call.",
+   "key": [
+    "AGAIN."
+   ],
+   "place": {
+    "lb": false,
+    "ref": [
+     0,
+     0
+    ],
+    "qb": [
+     -1.8,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "angry",
+     "action": "shrug",
+     "look": "ref"
+    }
+   }
+  },
+  {
+   "text": "Heads. Arizona gets the ball.",
+   "key": [
+    "ARIZONA"
+   ],
+   "place": {
+    "card": [
+     1.8,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ref",
+    "with": "card"
+   },
+   "act": {
+    "card": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "card"
+    },
+    "qb": {
+     "mood": "angry",
+     "action": "cross"
+    }
+   },
+   "board": [
+    "COIN:",
+    "HEADS"
+   ]
+  },
+  {
+   "text": "So your season rides on a wobbly coin.",
+   "key": [
+    "COIN."
+   ],
+   "place": {
+    "card": false,
+    "ref": [
+     1.8,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   },
+   "board": [
+    "COIN:",
+    "HEADS"
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "Rodgers calls it confusing. The league backs the referee.",
+   "key": [
+    "REFEREE."
+   ],
+   "set": "press",
+   "place": {
+    "qb": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "angry",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "COIN",
+    "CONFUSING"
+   ]
+  },
+  {
+   "text": "First play: Larry Fitzgerald. Seventy five yards.",
+   "cap": "First play: Larry Fitzgerald. 75 yards.",
+   "key": [
+    "75"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CARDINALS 20",
+     "PACKERS 20"
+    ],
+    "endZone": 8,
+    "zoneA": "#24493a",
+    "zoneB": "#97233f"
+   },
+   "shot": {
+    "type": "follow",
+    "on": "card",
+    "lead": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "card": {
+      "path": [
+       [
+        0.0,
+        -8.0,
+        0.8
+       ],
+       [
+        0.075,
+        -7.25,
+        0.475
+       ],
+       [
+        0.15,
+        -6.5,
+        0.15
+       ],
+       [
+        0.225,
+        -5.75,
+        -0.175
+       ],
+       [
+        0.3,
+        -5.0,
+        -0.5
+       ],
+       [
+        0.375,
+        -4.0,
+        -0.125
+       ],
+       [
+        0.45,
+        -3.0,
+        0.25
+       ],
+       [
+        0.525,
+        -2.0,
+        0.625
+       ],
+       [
+        0.6,
+        -1.0,
+        1.0
+       ],
+       [
+        0.675,
+        -0.125,
+        0.75
+       ],
+       [
+        0.75,
+        0.75,
+        0.5
+       ],
+       [
+        0.825,
+        1.625,
+        0.25
+       ],
+       [
+        0.9,
+        2.5,
+        0.0
+       ],
+       [
+        1.0,
+        2.8,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.92,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "lb": {
+      "path": [
+       [
+        0.0,
+        -2.0,
+        -3.5
+       ],
+       [
+        0.125,
+        -2.05,
+        -3.025
+       ],
+       [
+        0.25,
+        -2.1,
+        -2.55
+       ],
+       [
+        0.375,
+        -2.15,
+        -2.075
+       ],
+       [
+        0.5,
+        -2.2,
+        -1.6
+       ],
+       [
+        0.625,
+        -1.5,
+        -1.65
+       ],
+       [
+        0.75,
+        -0.8,
+        -1.7
+       ],
+       [
+        0.875,
+        -0.1,
+        -1.75
+       ],
+       [
+        1.0,
+        0.6,
+        -1.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "carry": [
+     [
+      0,
+      "card"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Then a shovel pass. Touchdown. Arizona wins, twenty six to twenty.",
+   "cap": "Then a shovel pass. Touchdown. Arizona wins, 26 to 20.",
+   "key": [
+    "26"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "card",
+    "offset": [
+     1,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "card": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "lb": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "board": [
+    "CARDINALS 26",
+    "PACKERS 20"
+   ],
+   "place": {
+    "card": [
+     0,
+     0
+    ],
+    "lb": [
+     1.8,
+     -1.0
+    ]
+   }
+  },
+  {
+   "text": "Should the coin have been tossed again? Yes or no? Packers fans, call heads.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.2
+    ],
+    "ref": [
+     1.2,
+     0.2
+    ],
+    "card": false,
+    "lb": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "board": [
+    "TOSS AGAIN?",
+    "YES OR NO"
+   ],
+   "speaker": "capy"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In the January 2016 playoffs the Packers played at Arizona",
+   "terms": [
+    "Packers",
+    "Cardinals"
+   ]
+  },
+  {
+   "claim": "Green Bay was down seven, fourth-and-20 from its own 4",
+   "terms": [
+    "fourth-and-20|4th-and-20|fourth and 20|4th and 20"
+   ]
+  },
+  {
+   "claim": "Rodgers threw 60 yards to Jeff Janis",
+   "terms": [
+    "Janis",
+    "60"
+   ]
+  },
+  {
+   "claim": "On the last play a Hail Mary to Janis scored a touchdown",
+   "terms": [
+    "Hail Mary",
+    "Janis"
+   ]
+  },
+  {
+   "claim": "The extra point tied it 20-20 and the game went to overtime",
+   "terms": [
+    "20-20|20 20|tied",
+    "overtime"
+   ]
+  },
+  {
+   "claim": "Rodgers called tails and the coin did not flip",
+   "terms": [
+    "tails",
+    "coin"
+   ]
+  },
+  {
+   "claim": "A Packers player compared the coin to a saucer",
+   "terms": [
+    "saucer"
+   ]
+  },
+  {
+   "claim": "The referee tossed it again without a new call",
+   "terms": [
+    "coin",
+    "again|re-flip|reflip|second"
+   ]
+  },
+  {
+   "claim": "It came up heads and Arizona got the ball",
+   "terms": [
+    "heads",
+    "Cardinals|Arizona"
+   ]
+  },
+  {
+   "claim": "Rodgers called it confusing and the league backed the referee",
+   "terms": [
+    "Rodgers",
+    "coin",
+    "flip"
+   ]
+  },
+  {
+   "claim": "Larry Fitzgerald ran 75 yards on the first play of overtime",
+   "terms": [
+    "Fitzgerald",
+    "75"
+   ]
+  },
+  {
+   "claim": "A shovel pass touchdown won it 26-20",
+   "terms": [
+    "26-20"
+   ]
+  }
  ]
 }
