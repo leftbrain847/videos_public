@@ -1,0 +1,1108 @@
+{
+ "id": "mind_01_milgram_shock",
+ "title": "The shock machine nobody was shocked by",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "OBEDIENCE",
+   "STUDY"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#3f7fbf",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "lrn": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5b6b7a",
+    "pants": "#3a3a3a",
+    "tie": "#7a2a2a",
+    "hair": "bald",
+    "skin": "#e8b48f",
+    "glasses": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You are about to shock a stranger. Nobody is forcing you.",
+   "key": [
+    "SHOCK"
+   ],
+   "board": [
+    "SHOCK",
+    "A STRANGER?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen sixty one. Yale University. You answered a newspaper ad.",
+   "cap": "1961. Yale University. You answered a newspaper ad.",
+   "key": [
+    "YALE"
+   ],
+   "set": "office",
+   "board": [
+    "YALE",
+    "1961"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.2,
+     0.4
+    ],
+    "exp": [
+     1.6,
+     0.0
+    ],
+    "lrn": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    },
+    "exp": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Four dollars fifty. One hour. Help science learn about memory.",
+   "cap": "$4.50. One hour. Help science learn about memory.",
+   "key": [
+    "$4.50."
+   ],
+   "board": [
+    "PAY",
+    "$4.50"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.2,
+     0.4
+    ],
+    "exp": [
+     1.6,
+     0.0
+    ],
+    "lrn": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You draw a slip. It says teacher. The other man draws learner.",
+   "key": [
+    "TEACHER."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.2,
+     0.4
+    ],
+    "exp": false,
+    "lrn": [
+     1.6,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "lrn"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "point",
+     "look": "lrn"
+    },
+    "lrn": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Small detail. Both slips said teacher.",
+   "key": [
+    "BOTH"
+   ],
+   "set": "study",
+   "board": [
+    "BOTH SLIPS:",
+    "TEACHER"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They strap the learner into a chair. In the next room.",
+   "key": [
+    "STRAP"
+   ],
+   "set": "office",
+   "board": [
+    "NEXT ROOM"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     2.4,
+     0.4
+    ],
+    "lrn": [
+     0,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "lrn"
+   },
+   "act": {
+    "lrn": {
+     "mood": "worried",
+     "action": "slump",
+     "look": "exp"
+    },
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "lrn"
+    }
+   }
+  },
+  {
+   "text": "Your machine has thirty switches. Fifteen volts up to four fifty.",
+   "cap": "Your machine has 30 switches. 15 volts up to 450.",
+   "key": [
+    "450."
+   ],
+   "board": [
+    "15 VOLTS",
+    "TO 450 VOLTS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.2
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The last two switches read X X X.",
+   "cap": "The last two switches read XXX.",
+   "key": [
+    "XXX."
+   ],
+   "set": "study",
+   "board": [
+    "435 · 450",
+    "XXX"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Wrong answer? Flip the next switch. Every single time.",
+   "key": [
+    "NEXT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "One fifty volts. He demands to be let out.",
+   "cap": "150 volts. He demands to be let out.",
+   "key": [
+    "150"
+   ],
+   "set": "office",
+   "board": [
+    "150 VOLTS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "lrn": [
+     0,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "lrn"
+   },
+   "act": {
+    "lrn": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You look back. A calm man in a gray coat.",
+   "key": [
+    "GRAY"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.6
+    ],
+    "exp": [
+     1.4,
+     -0.2
+    ],
+    "lrn": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "exp"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "exp"
+    },
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "He has one line. The experiment requires that you continue.",
+   "key": [
+    "CONTINUE."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.6
+    ],
+    "exp": [
+     1.4,
+     -0.2
+    ],
+    "lrn": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Later, the learner pounds on the wall.",
+   "key": [
+    "WALL."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "lrn": [
+     0,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "lrn"
+   },
+   "act": {
+    "lrn": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Then nothing. He stops answering.",
+   "key": [
+    "NOTHING."
+   ],
+   "set": "study",
+   "board": [
+    "...",
+    "SILENCE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Yale students had guessed first. About one in a hundred finishes.",
+   "cap": "Yale students had guessed first. About 1 in 100 finishes.",
+   "key": [
+    "1",
+    "100"
+   ],
+   "board": [
+    "GUESS:",
+    "1 IN 100"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "you": [
+     1.6,
+     0.2
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Real result? Twenty six out of forty.",
+   "cap": "Real result? 26 out of 40.",
+   "key": [
+    "26"
+   ],
+   "board": [
+    "26 OF 40",
+    "WENT TO 450"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "you": [
+     1.6,
+     0.2
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Sixty five percent pressed the very last switch.",
+   "cap": "65% pressed the very last switch.",
+   "key": [
+    "65%"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "you": [
+     1.6,
+     0.2
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here is the loophole. Nobody was ever shocked.",
+   "key": [
+    "NOBODY"
+   ],
+   "board": [
+    "REAL SHOCKS:",
+    "0"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "you": [
+     1.6,
+     0.2
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The learner was an actor. The screams were a tape.",
+   "key": [
+    "ACTOR."
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "you": false,
+    "exp": false,
+    "lrn": [
+     1.4,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "lrn"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "lrn"
+    },
+    "lrn": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Much later, Gina Perry dug through the recordings.",
+   "key": [
+    "RECORDINGS."
+   ],
+   "set": "office",
+   "board": [
+    "ARCHIVE",
+    "TAPES"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     -0.2
+    ],
+    "lrn": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Many teachers doubted the shocks were real.",
+   "key": [
+    "DOUBTED"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.6,
+     0.6
+    ],
+    "exp": [
+     1.4,
+     -0.2
+    ],
+    "lrn": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "exp",
+    "with": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "exp"
+    },
+    "exp": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Two thousand nine. A careful rerun stopped at one fifty.",
+   "cap": "2009. A careful rerun stopped at 150.",
+   "key": [
+    "150."
+   ],
+   "set": "study",
+   "board": [
+    "2009 RERUN",
+    "STOP AT 150"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "you": [
+     1.6,
+     0.0
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Seventy percent were still ready to keep going.",
+   "cap": "70% were still ready to keep going.",
+   "key": [
+    "70%"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "you": [
+     1.6,
+     0.0
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you flip the last switch? Yes or no? Be honest. I take notes.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "LAST SWITCH:",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "you": [
+     1.6,
+     0.0
+    ],
+    "exp": false,
+    "lrn": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Milgram experiment",
+   "url": "https://en.wikipedia.org/wiki/Milgram_experiment"
+  },
+  {
+   "title": "Simple English Wikipedia: Milgram experiment",
+   "url": "https://simple.wikipedia.org/wiki/Milgram_experiment"
+  },
+  {
+   "title": "Simply Psychology: Milgram shock experiment",
+   "url": "https://www.simplypsychology.org/milgram.html"
+  },
+  {
+   "title": "Lumen Learning: The Milgram shock experiment",
+   "url": "https://courses.lumenlearning.com/suny-esc-introtocollegereadingandwriting/chapter/the-milgram-shock-experiment/"
+  },
+  {
+   "title": "NPR: Taking a closer look at Milgram's shocking obedience study",
+   "url": "https://www.npr.org/2013/08/28/209559002/taking-a-closer-look-at-milgrams-shocking-obedience-study"
+  },
+  {
+   "title": "PsyPost: Unpublished data from Milgram's experiments casts doubt on his claims",
+   "url": "https://www.psypost.org/unpublished-data-from-stanley-milgrams-experiments-casts-doubts-on-his-claims-about-obedience/"
+  },
+  {
+   "title": "Wikipedia: Stanley Milgram",
+   "url": "https://en.wikipedia.org/wiki/Stanley_Milgram"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The study ran at Yale University starting in 1961",
+   "terms": [
+    "Yale",
+    "1961"
+   ]
+  },
+  {
+   "claim": "Participants answered a newspaper ad",
+   "terms": [
+    "newspaper",
+    "advertisement|ad"
+   ]
+  },
+  {
+   "claim": "Participants were paid $4.50",
+   "terms": [
+    "4.50"
+   ]
+  },
+  {
+   "claim": "It was presented as a study of memory and learning",
+   "terms": [
+    "memory",
+    "learning"
+   ]
+  },
+  {
+   "claim": "The participant was the teacher and the other man the learner",
+   "terms": [
+    "teacher",
+    "learner"
+   ]
+  },
+  {
+   "claim": "The draw was rigged: both slips said teacher",
+   "terms": [
+    "both",
+    "teacher"
+   ]
+  },
+  {
+   "claim": "The learner was strapped into a chair",
+   "terms": [
+    "strapped",
+    "chair"
+   ]
+  },
+  {
+   "claim": "The shock generator had 30 switches from 15 to 450 volts",
+   "terms": [
+    "30",
+    "switches"
+   ]
+  },
+  {
+   "claim": "The switches ran from 15 to 450 volts",
+   "terms": [
+    "15",
+    "450"
+   ]
+  },
+  {
+   "claim": "The last switches were labeled XXX",
+   "terms": [
+    "XXX"
+   ]
+  },
+  {
+   "claim": "At 150 volts the learner demands to be released",
+   "terms": [
+    "150",
+    "volts"
+   ]
+  },
+  {
+   "claim": "The experimenter wore a gray lab coat",
+   "terms": [
+    "gray|grey",
+    "coat"
+   ]
+  },
+  {
+   "claim": "One prod was: The experiment requires that you continue",
+   "terms": [
+    "experiment requires that you continue"
+   ]
+  },
+  {
+   "claim": "The learner pounded on the wall, then went silent",
+   "terms": [
+    "wall",
+    "silen"
+   ]
+  },
+  {
+   "claim": "Yale psychology students predicted very few would go to the maximum",
+   "terms": [
+    "Yale",
+    "psychology",
+    "maximum"
+   ]
+  },
+  {
+   "claim": "26 of 40 participants went to the maximum",
+   "terms": [
+    "26",
+    "40"
+   ]
+  },
+  {
+   "claim": "65 percent went to the final 450-volt shock",
+   "terms": [
+    "65",
+    "450"
+   ]
+  },
+  {
+   "claim": "No real shocks were given; the learner was an actor",
+   "terms": [
+    "actor|confederate",
+    "learner"
+   ]
+  },
+  {
+   "claim": "The learner's screams were prerecorded",
+   "terms": [
+    "prerecorded|recorded",
+    "learner"
+   ]
+  },
+  {
+   "claim": "Gina Perry studied the archived recordings",
+   "terms": [
+    "Perry",
+    "recordings|tapes|archive"
+   ]
+  },
+  {
+   "claim": "Many participants doubted the shocks were real",
+   "terms": [
+    "doubt|suspicious|believe",
+    "real|genuine"
+   ]
+  },
+  {
+   "claim": "A 2009 replication stopped at 150 volts",
+   "terms": [
+    "2009",
+    "150"
+   ]
+  },
+  {
+   "claim": "In the 2009 replication 70 percent were willing to continue",
+   "terms": [
+    "Burger",
+    "70"
+   ]
+  }
+ ]
+}
