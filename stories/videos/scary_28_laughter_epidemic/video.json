@@ -1,0 +1,741 @@
+{
+ "id": "scary_28_laughter_epidemic",
+ "title": "The laughter epidemic that closed schools",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "KASHASHA 1962"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a4a3a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "girl": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#e8e0d0",
+    "pants": "#2a5a8c",
+    "hair": "braids",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "center"
+  },
+  "girl2": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#e8e0d0",
+    "pants": "#2a5a8c",
+    "hair": "afro",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center"
+  },
+  "doc": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "You run a school. Your students start laughing. They cannot stop. Not even a little.",
+   "key": [
+    "STOP."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "KASHASHA",
+     "SCHOOL"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "you": [
+     0.4,
+     -0.6
+    ],
+    "girl": false,
+    "girl2": false,
+    "doc": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "January, nineteen sixty two. Tanganyika, near Lake Victoria. A new country.",
+   "cap": "January 1962. Tanganyika, near Lake Victoria. A new country.",
+   "key": [
+    "VICTORIA."
+   ],
+   "board": [
+    "JAN 1962",
+    "TANGANYIKA"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It starts with three girls at boarding school.",
+   "key": [
+    "THREE"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "DORM",
+     "NIGHT"
+    ]
+   },
+   "place": {
+    "girl": [
+     -0.4,
+     -0.2
+    ],
+    "girl2": [
+     2.2,
+     -0.6
+    ],
+    "capy": [
+     -2.8,
+     0.8
+    ],
+    "you": false,
+    "doc": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "girl"
+   },
+   "act": {
+    "girl": {
+     "mood": "happy",
+     "action": "celebrate",
+     "look": "camera"
+    },
+    "girl2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "girl"
+    },
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "girl"
+    }
+   }
+  },
+  {
+   "text": "Then it spreads. Fast. Classroom to classroom. Nobody can stop it.",
+   "key": [
+    "SPREADS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "girl",
+    "with": "girl2"
+   },
+   "act": {
+    "girl": {
+     "mood": "happy",
+     "action": "celebrate"
+    },
+    "girl2": {
+     "mood": "happy",
+     "action": "celebrate"
+    }
+   }
+  },
+  {
+   "text": "Soon, ninety five students are affected. Out of one hundred fifty nine.",
+   "cap": "Soon, 95 students are affected. Out of 159.",
+   "key": [
+    "95"
+   ],
+   "board": [
+    "AFFECTED",
+    "95 / 159"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "girl"
+   },
+   "act": {
+    "girl": {
+     "mood": "happy",
+     "action": "celebrate"
+    },
+    "girl2": {
+     "mood": "sad",
+     "action": "celebrate"
+    }
+   }
+  },
+  {
+   "text": "This is not fun laughing. It comes with crying. Fainting too.",
+   "key": [
+    "CRYING."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "girl2"
+   },
+   "act": {
+    "girl2": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some attacks last hours. Some last for days.",
+   "key": [
+    "DAYS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "girl2"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    },
+    "girl2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Laughing for days. Sounds fun. Absolutely is not. Trust me.",
+   "key": [
+    "NOT."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "girl": false,
+    "girl2": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "In March, you close the school. What else can you do?",
+   "key": [
+    "CLOSE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SCHOOL",
+     "CLOSED"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     -0.6
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "girl": false,
+    "girl2": false,
+    "doc": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The students go home. Then it spreads in their villages.",
+   "key": [
+    "VILLAGES."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Other schools close too. Over a dozen of them. Parents panic.",
+   "key": [
+    "DOZEN"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Hundreds of people are affected. Maybe a thousand. Maybe more.",
+   "key": [
+    "THOUSAND."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Doctors test everything. Blood. Food. Water. Nothing toxic. Everything comes back clean.",
+   "key": [
+    "TOXIC."
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "TESTS",
+     "NEGATIVE"
+    ]
+   },
+   "place": {
+    "doc": [
+     0,
+     -1.0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "girl": false,
+    "girl2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "doc"
+    }
+   }
+  },
+  {
+   "text": "Their best explanation is mass hysteria. Stress, spreading person to person.",
+   "key": [
+    "HYSTERIA."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The country just gained independence. Big changes everywhere. Uncertainty.",
+   "key": [
+    "INDEPENDENCE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "doc"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "doc": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Strict schools. High pressure. Kids feeling all of it.",
+   "key": [
+    "PRESSURE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The bodies found an exit first.",
+   "key": [
+    "EXIT"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "After about eighteen months, it fades out.",
+   "cap": "After about 18 months, it fades out.",
+   "key": [
+    "FADES"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "EPIDEMIC",
+     "OVER"
+    ]
+   },
+   "place": {
+    "girl": [
+     0,
+     0
+    ],
+    "girl2": [
+     2.4,
+     -0.6
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "doc": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "girl"
+   },
+   "act": {
+    "girl": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "girl2": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "girl"
+    }
+   }
+  },
+  {
+   "text": "No virus. No poison. Just people catching each other's panic. Just humans.",
+   "key": [
+    "PANIC."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Is laughter actually contagious? Be honest. Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "CONTAGIOUS?",
+    "YES OR NO?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "girl"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "girl": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Tanganyika laughter epidemic",
+   "url": "https://en.wikipedia.org/wiki/Tanganyika_laughter_epidemic"
+  },
+  {
+   "title": "Mental Floss: The strange laughing epidemic of 1962",
+   "url": "https://www.mentalfloss.com/history/strange-months-long-laughing-epidemic-1962-no-one-could-stop"
+  },
+  {
+   "title": "HowStuffWorks: The 1962 Tanganyika laughter epidemic",
+   "url": "https://health.howstuffworks.com/mental-health/human-nature/behavior/1962-tanganyika-laughter-epidemic.htm"
+  },
+  {
+   "title": "IFLScience: The Tanganyika laughing epidemic of 1962",
+   "url": "https://www.iflscience.com/the-tanganyika-laughing-epidemic-of-1962-a-case-of-mass-hysteria-at-the-end-of-colonial-psychiatry-83540"
+  },
+  {
+   "title": "History Daily: The 1962 Tanganyika laughing epidemic",
+   "url": "https://historydaily.org/1962-tanganyika-laughing-epidemic/2"
+  },
+  {
+   "title": "All That's Interesting: The laughing epidemic of 1962",
+   "url": "https://allthatsinteresting.com/mass-hysteria/9"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In January 1962 a laughter epidemic began in Tanganyika near Lake Victoria",
+   "terms": [
+    "1962",
+    "Tanganyika"
+   ]
+  },
+  {
+   "claim": "It began with three girls at a boarding school",
+   "terms": [
+    "three",
+    "girls"
+   ]
+  },
+  {
+   "claim": "95 of 159 students were affected",
+   "terms": [
+    "95",
+    "159"
+   ]
+  },
+  {
+   "claim": "Symptoms included crying",
+   "terms": [
+    "crying"
+   ]
+  },
+  {
+   "claim": "Symptoms included fainting",
+   "terms": [
+    "fainting"
+   ]
+  },
+  {
+   "claim": "Attacks lasted hours up to days",
+   "terms": [
+    "hours"
+   ]
+  },
+  {
+   "claim": "The school closed in March",
+   "terms": [
+    "March"
+   ]
+  },
+  {
+   "claim": "It spread to villages",
+   "terms": [
+    "villages|village"
+   ]
+  },
+  {
+   "claim": "Fourteen schools closed",
+   "terms": [
+    "14",
+    "schools"
+   ]
+  },
+  {
+   "claim": "About a thousand people were affected",
+   "terms": [
+    "1,000|1000|thousand"
+   ]
+  },
+  {
+   "claim": "Tests found nothing toxic",
+   "terms": [
+    "toxic|poison"
+   ]
+  },
+  {
+   "claim": "It is explained as mass hysteria or mass psychogenic illness",
+   "terms": [
+    "mass hysteria|mass psychogenic"
+   ]
+  },
+  {
+   "claim": "The country had just gained independence",
+   "terms": [
+    "independence"
+   ]
+  },
+  {
+   "claim": "It ended after about 18 months",
+   "terms": [
+    "18 months"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,750 @@
+{
+ "id": "scary_25_flight_19",
+ "title": "Flight 19: the squadron that started the Bermuda Triangle",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "FLIGHT 19"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "headset": true
+   },
+   "at": "center"
+  },
+  "pilot": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5a4a2a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "cap": "#3a4a2a"
+   },
+   "at": "center"
+  },
+  "officer": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2a4a",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#c68d64"
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "writer": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5a3a5a",
+    "pants": "#2a2a2a",
+    "hair": "curly",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "center",
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "You hear a pilot on the radio. He is completely lost. Static everywhere.",
+   "key": [
+    "LOST."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NAS",
+     "FORT LAUDERDALE"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "you": [
+     0.4,
+     -0.6
+    ],
+    "pilot": false,
+    "officer": false,
+    "writer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "December, nineteen forty five. Fort Lauderdale, Florida.",
+   "cap": "December 1945. Fort Lauderdale, Florida.",
+   "key": [
+    "FLORIDA."
+   ],
+   "board": [
+    "DEC 1945",
+    "FLIGHT 19"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Five Navy torpedo bombers take off. A routine training flight. Easy day.",
+   "key": [
+    "ROUTINE"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "5 AVENGERS",
+     "14 MEN"
+    ]
+   },
+   "place": {
+    "pilot": [
+     0,
+     -0.6
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "officer": false,
+    "writer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "pilot"
+    }
+   }
+  },
+  {
+   "text": "Fourteen men in total. The leader is an experienced instructor.",
+   "key": [
+    "INSTRUCTOR."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then his compasses seem to fail. He thinks so, anyway.",
+   "key": [
+    "COMPASSES"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pilot"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "He believes they are over the Florida Keys. He is wrong.",
+   "key": [
+    "KEYS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They are actually near the Bahamas. Totally different direction.",
+   "key": [
+    "BAHAMAS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "LOST",
+     "WHERE?"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     -0.6
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "pilot": false,
+    "officer": false,
+    "writer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You try to guide them home. The radio keeps breaking up. Words drop out.",
+   "key": [
+    "RADIO"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Hours pass. The weather turns. Their fuel runs low.",
+   "key": [
+    "FUEL"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then the last transmission. Then nothing. Silence.",
+   "key": [
+    "NOTHING."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "A big rescue plane takes off to search. Thirteen men aboard.",
+   "cap": "A big rescue plane takes off to search. 13 men aboard.",
+   "key": [
+    "13"
+   ],
+   "place": {
+    "officer": [
+     2.6,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "officer"
+   },
+   "act": {
+    "officer": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It disappears too. Thirteen more men.",
+   "cap": "It disappears too. 13 more men.",
+   "key": [
+    "TOO."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "A ship nearby reports flames on the water. Then nothing.",
+   "key": [
+    "FLAMES"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "officer"
+   },
+   "act": {
+    "officer": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That plane type was known for leaking fumes.",
+   "key": [
+    "FUMES."
+   ],
+   "place": {
+    "capy": [
+     -0.6,
+     1.0
+    ],
+    "you": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "officer"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "officer": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The Navy first blames the flight leader.",
+   "key": [
+    "BLAMES"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "officer"
+   },
+   "act": {
+    "officer": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His mother fights it. The report changes. Cause unknown.",
+   "key": [
+    "UNKNOWN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "officer"
+   },
+   "act": {
+    "officer": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Years later, writers bundle it into a legend. The Bermuda Triangle.",
+   "key": [
+    "TRIANGLE."
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "BERMUDA",
+     "TRIANGLE"
+    ]
+   },
+   "place": {
+    "writer": [
+     0,
+     -1.0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "pilot": false,
+    "officer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "writer"
+   },
+   "act": {
+    "writer": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "writer"
+    }
+   }
+  },
+  {
+   "text": "Lost pilots. Bad weather. Ocean at night. Mysterious enough. No triangle needed.",
+   "key": [
+    "ENOUGH."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "writer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "writer": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The wreckage has never been found. Not one plane.",
+   "key": [
+    "NEVER"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "MISSING"
+    ]
+   },
+   "place": {
+    "pilot": [
+     0,
+     -0.4
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "officer": false,
+    "writer": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "sad",
+     "action": "idle"
+    },
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "pilot"
+    }
+   }
+  },
+  {
+   "text": "The legend needed no monsters. Just one wrong turn. Plus bad luck.",
+   "key": [
+    "TURN."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Trust your compass or your gut? Pick one.",
+   "key": [
+    "COMPASS",
+    "GUT?"
+   ],
+   "board": [
+    "COMPASS",
+    "OR GUT?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Flight 19",
+   "url": "https://en.wikipedia.org/wiki/Flight_19"
+  },
+  {
+   "title": "Naval History and Heritage Command: The disappearance of Flight 19 and Training 49",
+   "url": "https://history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html"
+  },
+  {
+   "title": "History.com: The mysterious disappearance of Flight 19",
+   "url": "https://www.history.com/articles/the-mysterious-disappearance-of-flight-19"
+  },
+  {
+   "title": "Smithsonian: How the disappearance of Flight 19 fueled the Bermuda Triangle legend",
+   "url": "https://www.smithsonianmag.com/history/how-the-disappearance-of-flight-19-a-navy-squadron-lost-in-1945-fueled-the-legend-of-the-bermuda-triangle-180987759/"
+  },
+  {
+   "title": "History Hit: The mysterious disappearance of Flight 19",
+   "url": "https://www.historyhit.com/the-mysterious-disappearance-of-flight-19/"
+  },
+  {
+   "title": "HistoryNet: Five TBM Avenger bombers lost in the Bermuda Triangle",
+   "url": "https://historynet.com/five-tbm-avenger-bombers-lost-in-the-bermuda-triangle/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In December 1945 Flight 19 left Fort Lauderdale",
+   "terms": [
+    "1945",
+    "Fort Lauderdale"
+   ]
+  },
+  {
+   "claim": "Five Navy Avenger torpedo bombers flew a training flight",
+   "terms": [
+    "five",
+    "Avenger"
+   ]
+  },
+  {
+   "claim": "There were 14 men",
+   "terms": [
+    "14"
+   ]
+  },
+  {
+   "claim": "The leader was an experienced instructor, Charles Taylor",
+   "terms": [
+    "Taylor",
+    "instructor"
+   ]
+  },
+  {
+   "claim": "He believed his compasses had failed",
+   "terms": [
+    "compass"
+   ]
+  },
+  {
+   "claim": "He thought they were over the Florida Keys",
+   "terms": [
+    "Florida Keys"
+   ]
+  },
+  {
+   "claim": "They were near the Bahamas",
+   "terms": [
+    "Bahamas"
+   ]
+  },
+  {
+   "claim": "Radio contact was poor",
+   "terms": [
+    "radio"
+   ]
+  },
+  {
+   "claim": "Weather worsened and fuel ran low",
+   "terms": [
+    "fuel"
+   ]
+  },
+  {
+   "claim": "A PBM Mariner rescue plane with 13 men also vanished",
+   "terms": [
+    "Mariner",
+    "13"
+   ]
+  },
+  {
+   "claim": "A ship reported flames",
+   "terms": [
+    "flames"
+   ]
+  },
+  {
+   "claim": "The Mariner type was known for fuel vapor problems",
+   "terms": [
+    "fumes|vapor|flying gas tank"
+   ]
+  },
+  {
+   "claim": "The Navy first blamed Taylor, then changed the report to causes unknown",
+   "terms": [
+    "unknown"
+   ]
+  },
+  {
+   "claim": "Taylor's mother challenged the finding",
+   "terms": [
+    "mother"
+   ]
+  },
+  {
+   "claim": "It became central to the Bermuda Triangle legend",
+   "terms": [
+    "Bermuda Triangle"
+   ]
+  },
+  {
+   "claim": "The wreckage was never found",
+   "terms": [
+    "never",
+    "found"
+   ]
+  }
+ ]
+}
