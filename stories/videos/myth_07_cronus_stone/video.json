@@ -1,0 +1,952 @@
+{
+ "id": "myth_07_cronus_stone",
+ "title": "The rock in the blanket",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "MOUNT OTHRYS"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "rhea": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#3a8a6a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#5a3a22",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  },
+  "rheas": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#3a8a6a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#5a3a22",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   },
+   "hold": "bag"
+  },
+  "kron": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a4a7a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "sash": "#8a8f96",
+    "beard": true
+   }
+  },
+  "zeus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b4c8c",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#e6e6e6",
+    "skin": "#f2c39b",
+    "sash": "#f6d21f",
+    "beard": true
+   }
+  },
+  "kid": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c46a3c",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#d9a521"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Your husband swallows your babies. So you hand him a rock.",
+   "key": [
+    "ROCK."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "rhea": [
+     1.2,
+     0
+    ],
+    "rheas": false,
+    "kron": false,
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rhea"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "rhea": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Rhea. Your husband is Cronus. King of the Titans.",
+   "key": [
+    "CRONUS."
+   ],
+   "board": [
+    "CRONUS",
+    "KING OF TITANS"
+   ],
+   "place": {
+    "capy": false,
+    "rhea": [
+     -1.4,
+     0.3
+    ],
+    "rheas": false,
+    "kron": [
+     1.4,
+     -0.3
+    ],
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "kron",
+    "pan": [
+     -1.4,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "rhea": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "kron"
+    },
+    "kron": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A prophecy warns him. One child will overthrow him.",
+   "key": [
+    "OVERTHROW"
+   ],
+   "place": {
+    "capy": false,
+    "rhea": false,
+    "rheas": false,
+    "kron": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "kron"
+   },
+   "act": {
+    "kron": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His solution is terrible. He swallows every baby. Whole.",
+   "key": [
+    "WHOLE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "rhea": false,
+    "rheas": false,
+    "kron": false,
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Five children. Five gulps. Every one a god.",
+   "cap": "5 children. 5 gulps. Every one a god.",
+   "key": [
+    "5"
+   ],
+   "board": [
+    "SWALLOWED",
+    "5"
+   ],
+   "place": {
+    "capy": false,
+    "rhea": false,
+    "rheas": false,
+    "kron": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "kron"
+   },
+   "act": {
+    "kron": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The worst dad in mythology? A strong contender.",
+   "key": [
+    "CONTENDER."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "rhea": false,
+    "rheas": false,
+    "kron": [
+     1.2,
+     0
+    ],
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kron"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "kron"
+    },
+    "kron": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Your sixth baby is Zeus. You have a plan.",
+   "cap": "Your 6th baby is Zeus. You have a plan.",
+   "key": [
+    "PLAN."
+   ],
+   "place": {
+    "capy": false,
+    "rhea": [
+     0,
+     0
+    ],
+    "rheas": false,
+    "kron": false,
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "rhea"
+   },
+   "act": {
+    "rhea": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You hide Zeus in a cave on Crete.",
+   "key": [
+    "CRETE."
+   ],
+   "board": [
+    "ZEUS",
+    "HIDDEN: CRETE"
+   ],
+   "place": {
+    "capy": false,
+    "rhea": [
+     0,
+     0
+    ],
+    "rheas": false,
+    "kron": false,
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rhea"
+   },
+   "act": {
+    "rhea": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you wrap a stone in baby clothes. It is a very convincing baby.",
+   "key": [
+    "STONE"
+   ],
+   "place": {
+    "capy": false,
+    "rhea": false,
+    "rheas": [
+     0,
+     0
+    ],
+    "kron": false,
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "rheas"
+   },
+   "act": {
+    "rheas": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You hand the bundle to Cronus. He swallows it in one gulp.",
+   "key": [
+    "SWALLOWS"
+   ],
+   "place": {
+    "capy": false,
+    "rhea": false,
+    "rheas": [
+     -1.3,
+     0.2
+    ],
+    "kron": [
+     1.3,
+     -0.2
+    ],
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "rheas",
+    "with": "kron"
+   },
+   "act": {
+    "rheas": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "kron"
+    },
+    "kron": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "rheas"
+    }
+   },
+   "sfx": [
+    [
+     0.7,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "He does not check. Not even a quick peek.",
+   "key": [
+    "PEEK."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "rhea": false,
+    "rheas": false,
+    "kron": false,
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Meanwhile, Zeus grows up in secret. He is raised on goat milk.",
+   "key": [
+    "GOAT"
+   ],
+   "place": {
+    "capy": false,
+    "rhea": false,
+    "rheas": false,
+    "kron": false,
+    "zeus": [
+     0,
+     0
+    ],
+    "kid": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "zeus"
+   },
+   "act": {
+    "zeus": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then he comes home. He brings a potion. A nasty one.",
+   "key": [
+    "POTION."
+   ],
+   "place": {
+    "capy": false,
+    "rhea": false,
+    "rheas": false,
+    "kron": [
+     1.3,
+     -0.2
+    ],
+    "zeus": [
+     -1.3,
+     0.2
+    ],
+    "kid": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "zeus",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "zeus": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "kron"
+    },
+    "kron": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "zeus"
+    }
+   }
+  },
+  {
+   "text": "Cronus throws up. The stone comes out first.",
+   "key": [
+    "FIRST."
+   ],
+   "board": [
+    "OUT FIRST:",
+    "THE STONE"
+   ],
+   "place": {
+    "capy": false,
+    "rhea": false,
+    "rheas": false,
+    "kron": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "kron"
+   },
+   "act": {
+    "kron": {
+     "mood": "shocked",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then all five siblings. Out they come.",
+   "cap": "Then all 5 siblings. Out they come.",
+   "key": [
+    "SIBLINGS."
+   ],
+   "place": {
+    "capy": false,
+    "rhea": false,
+    "rheas": false,
+    "kron": false,
+    "zeus": [
+     -1.3,
+     0.2
+    ],
+    "kid": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "zeus",
+    "with": "kid"
+   },
+   "act": {
+    "zeus": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "kid"
+    },
+    "kid": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "This is a problem for Cronus. His kids are back.",
+   "key": [
+    "BACK."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "rhea": false,
+    "rheas": false,
+    "kron": false,
+    "zeus": false,
+    "kid": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kid"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "kid": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They fight the Titans for ten years. Zeus wins.",
+   "cap": "They fight the Titans for 10 years. Zeus wins.",
+   "key": [
+    "WINS."
+   ],
+   "board": [
+    "WAR",
+    "10 YEARS"
+   ],
+   "place": {
+    "capy": false,
+    "rhea": false,
+    "rheas": false,
+    "kron": false,
+    "zeus": [
+     0,
+     0
+    ],
+    "kid": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "zeus"
+   },
+   "act": {
+    "zeus": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The prophecy came true anyway. Exactly as he feared.",
+   "key": [
+    "TRUE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "rhea": false,
+    "rheas": false,
+    "kron": [
+     1.2,
+     0
+    ],
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "kron",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "kron": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That stone? Zeus sets it up at Delphi.",
+   "key": [
+    "DELPHI."
+   ],
+   "speaker": "capy",
+   "board": [
+    "THE STONE",
+    "DELPHI"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "rhea": false,
+    "rheas": false,
+    "kron": false,
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A rock in a blanket. It ended a whole dynasty. That is incredible.",
+   "key": [
+    "DYNASTY."
+   ],
+   "place": {
+    "capy": false,
+    "rhea": [
+     -1.3,
+     0.2
+    ],
+    "rheas": false,
+    "kron": false,
+    "zeus": [
+     1.3,
+     -0.2
+    ],
+    "kid": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "rhea",
+    "with": "zeus"
+   },
+   "act": {
+    "rhea": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "zeus": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "rhea"
+    }
+   }
+  },
+  {
+   "text": "Would you notice the rock? Yes or no? Be honest, dads.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "NOTICE THE ROCK?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "rhea": false,
+    "rheas": false,
+    "kron": [
+     1.3,
+     0
+    ],
+    "zeus": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kron"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kron": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Cronus",
+   "url": "https://en.wikipedia.org/wiki/Cronus"
+  },
+  {
+   "title": "Wikipedia: Rhea (mythology)",
+   "url": "https://en.wikipedia.org/wiki/Rhea_(mythology)"
+  },
+  {
+   "title": "Wikipedia: Titanomachy",
+   "url": "https://en.wikipedia.org/wiki/Titanomachy"
+  },
+  {
+   "title": "Wikipedia: Omphalos",
+   "url": "https://en.wikipedia.org/wiki/Omphalos"
+  },
+  {
+   "title": "Theoi: Kronos",
+   "url": "https://www.theoi.com/Titan/TitanKronos.html"
+  },
+  {
+   "title": "Wikipedia: Zeus",
+   "url": "https://en.wikipedia.org/wiki/Zeus"
+  },
+  {
+   "title": "Wikipedia: Amalthea",
+   "url": "https://en.wikipedia.org/wiki/Amalthea_(mythology)"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Rhea's husband Cronus is king of the Titans",
+   "terms": [
+    "Cronus|Kronos",
+    "Titans"
+   ]
+  },
+  {
+   "claim": "A prophecy says one of his children will overthrow him",
+   "terms": [
+    "overthrow|overthrown",
+    "children|son|sons|child"
+   ]
+  },
+  {
+   "claim": "He swallows each child at birth",
+   "terms": [
+    "swallow|swallowed",
+    "born|birth"
+   ]
+  },
+  {
+   "claim": "Five children are swallowed",
+   "terms": [
+    "Hestia",
+    "Demeter",
+    "Poseidon"
+   ]
+  },
+  {
+   "claim": "Zeus, the sixth, is hidden on Crete",
+   "terms": [
+    "Zeus",
+    "Crete"
+   ]
+  },
+  {
+   "claim": "Rhea wraps a stone in swaddling clothes",
+   "terms": [
+    "stone",
+    "swaddling|wrapped"
+   ]
+  },
+  {
+   "claim": "Cronus swallows the stone",
+   "terms": [
+    "swallowed|swallow",
+    "stone"
+   ]
+  },
+  {
+   "claim": "Zeus is raised on the milk of a goat",
+   "terms": [
+    "goat",
+    "Amalthea"
+   ]
+  },
+  {
+   "claim": "Zeus returns with a potion that makes Cronus vomit",
+   "terms": [
+    "Metis|potion|drug|emetic",
+    "vomit|disgorge|disgorged|regurgitate"
+   ]
+  },
+  {
+   "claim": "The stone comes out first",
+   "terms": [
+    "stone",
+    "first"
+   ]
+  },
+  {
+   "claim": "Then the siblings come out",
+   "terms": [
+    "siblings|brothers|children",
+    "disgorge|disgorged|vomit|regurgitate|freed"
+   ]
+  },
+  {
+   "claim": "The gods fight the Titans for ten years and Zeus wins",
+   "terms": [
+    "ten years|10 years",
+    "Titans"
+   ]
+  },
+  {
+   "claim": "Zeus sets the stone up at Delphi",
+   "terms": [
+    "stone",
+    "Delphi"
+   ]
+  }
+ ]
+}

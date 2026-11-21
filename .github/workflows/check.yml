@@ -23,18 +23,21 @@ jobs:
         run: |
           node --check football/engine/kit.js
           node --check site/football/app.js
+          node --check site/stories/app.js
           python3 -m py_compile football/engine/*.py tools/*.py
           python3 tools/test_tools.py
       - name: Gallery data builds and every listed file exists
         run: |
           python3 tools/build_site.py football
+          python3 tools/build_site.py stories
           python3 - <<'PY'
           import json, pathlib
-          d = json.load(open('site/football/videos.json'))
-          rel = 'https://github.com/leftbrain847/videos_public/releases/download/football-batch-'
-          missing = [p for v in d['videos'] for p in (v['video'], v['poster']) if not p.startswith(rel) and not pathlib.Path('site/football', p).exists()]
-          assert not missing, missing[:5]
-          print(len(d['videos']), 'videos, all files present')
+          for ch, pre in (('football', 'football-batch-'), ('stories', 'stories-')):
+              d = json.load(open(f'site/{ch}/videos.json'))
+              rel = 'https://github.com/leftbrain847/videos_public/releases/download/' + pre
+              missing = [p for v in d['videos'] for p in (v['video'], v['poster']) if not p.startswith(rel) and not pathlib.Path('site', ch, p).exists()]
+              assert not missing, (ch, missing[:5])
+              print(ch, len(d['videos']), 'videos, all files present')
           PY
   facts:
     # Fact-checks the scripts a PR changes (every v2 script when the checker itself changes), so failing claims show
