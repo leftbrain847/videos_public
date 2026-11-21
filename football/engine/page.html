@@ -63,7 +63,7 @@ window.load = async (script, tim) => {
   await document.fonts.load('900 80px Inter');
   let seed = 3;
   for (const [id, c] of Object.entries(S.cast || {})) {
-    const p = c.kind === 'capy' ? capy(c.look || {}) : person(c.look || {}, seed += 17);
+    const p = c.kind === 'capy' ? capy(c.look || {}) : c.kind === 'horse' ? capy({ ...(c.look || {}), animal: 'horse' }) : person(c.look || {}, seed += 17);
     if (c.hold && PROPS[c.hold]) { const pr = PROPS[c.hold](); pr.position.set(0, -0.1, 0.18); p.userData.parts.held.add(pr); }
     cast[id] = { p, cfg: c };
   }

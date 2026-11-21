@@ -42,6 +42,10 @@
    },
    "hold": "goldbar"
   },
+  "svad": {
+   "kind": "horse",
+   "look": {}
+  },
   "odin": {
    "look": {
     "outfit": "robe",
@@ -97,7 +101,8 @@
     "build": false,
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "two",
@@ -135,7 +140,8 @@
     "build": false,
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "close",
@@ -163,7 +169,8 @@
     ],
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "medium",
@@ -198,7 +205,8 @@
     "freyja": [
      1.3,
      -0.2
-    ]
+    ],
+    "svad": false
    },
    "shot": {
     "type": "two",
@@ -233,7 +241,8 @@
     "build": false,
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "medium",
@@ -261,7 +270,8 @@
      0
     ],
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "low",
@@ -292,7 +302,8 @@
      0.2
     ],
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "wide",
@@ -334,7 +345,8 @@
     "build": false,
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "close",
@@ -361,21 +373,31 @@
     "capy": false,
     "loki": false,
     "build": [
-     0,
+     -1.0,
      0
     ],
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": [
+     1.0,
+     0
+    ]
    },
    "shot": {
-    "type": "medium",
-    "on": "build"
+    "type": "two",
+    "on": "svad",
+    "with": "build"
    },
    "act": {
     "build": {
      "mood": "happy",
      "action": "cheer",
+     "look": "camera"
+    },
+    "svad": {
+     "mood": "happy",
+     "action": "idle",
      "look": "camera"
     }
    }
@@ -403,7 +425,8 @@
      0
     ],
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "two",
@@ -438,7 +461,8 @@
     "build": false,
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "close",
@@ -469,7 +493,8 @@
      0.2
     ],
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "two",
@@ -503,7 +528,8 @@
     "build": false,
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "low",
@@ -541,7 +567,8 @@
     "build": false,
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "two",
@@ -567,25 +594,35 @@
     "WOODS."
    ],
    "place": {
-    "capy": false,
-    "loki": false,
-    "build": [
-     0,
-     0
+    "capy": [
+     -1.2,
+     0.6
     ],
+    "loki": false,
+    "build": false,
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": [
+     1.1,
+     0
+    ]
    },
    "shot": {
-    "type": "close",
-    "on": "build"
+    "type": "two",
+    "on": "svad",
+    "with": "capy"
    },
    "act": {
-    "build": {
-     "mood": "angry",
-     "action": "cross",
+    "svad": {
+     "mood": "happy",
+     "action": "run",
      "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "svad"
     }
    }
   },
@@ -611,12 +648,12 @@
     ],
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "build"
+    "type": "medium",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -645,7 +682,8 @@
     ],
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "low",
@@ -673,7 +711,8 @@
      0,
      0
     ],
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "medium",
@@ -702,7 +741,8 @@
     "build": false,
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "medium",
@@ -743,7 +783,8 @@
      -0.2
     ],
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "two",
@@ -777,7 +818,8 @@
      0
     ],
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "close",
@@ -814,7 +856,8 @@
     "build": false,
     "odin": false,
     "thor": false,
-    "freyja": false
+    "freyja": false,
+    "svad": false
    },
    "shot": {
     "type": "two",

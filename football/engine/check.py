@@ -20,6 +20,7 @@ RULES = {
     "moods": {"neutral", "angry", "worried", "shocked", "happy", "sad", "smug", "confused"},
     "actions": {"idle", "talk", "point", "cheer", "facepalm", "shrug", "throw", "hold", "cross", "slump", "clap", "wave", "run", "walk", "catch", "kick", "celebrate"},
     "narrator": "capy",
+    "kinds": ("capy", "horse"),   # cast kinds page.html can build; anything else renders as a person
     # Speech rules live in voice.py. A script marked "voice": "v2" must pass all of them (strict); older scripts get a
     # one-line count until they're rewritten. strict=True here would hold every script to them.
     "voice": {"strict": False, "mark": "v2"},
@@ -71,6 +72,9 @@ def check(vd):
         errs.append("needs at least 2 sources with urls")
     if RULES["narrator"] not in cast or cast[RULES["narrator"]].get("kind") != "capy":
         errs.append("cast must include capy (kind: capy)")
+    for k, c in cast.items():
+        if c.get("kind") not in (None, *RULES["kinds"]):
+            errs.append(f"cast {k}: unknown kind {c.get('kind')} (known: {', '.join(RULES['kinds'])})")
     if S.get("set") not in RULES["sets"]:
         errs.append(f"unknown set {S.get('set')}")
     shots, run = [], 1
