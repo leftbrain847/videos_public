@@ -1,10 +1,25 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "stories-heist-1",
+ "release": "stories-mind-1",
  "listen": true,
- "replace": false,
+ "replace": true,
  "videos": [
-  "heist_01_antwerp_diamonds"
+  "mind_01_milgram_shock",
+  "mind_02_stanford_prison",
+  "mind_03_marshmallow_test",
+  "mind_04_smoke_room",
+  "mind_05_invisible_gorilla",
+  "mind_06_lemon_juice",
+  "mind_07_rosenhan",
+  "mind_08_asch_lines",
+  "mind_09_prophecy_fails",
+  "mind_10_good_samaritan",
+  "mind_11_jam_study",
+  "mind_12_hot_hand",
+  "mind_13_choice_blindness",
+  "mind_14_power_pose",
+  "mind_15_clever_hans",
+  "mind_16_mozart_effect"
  ]
 }
