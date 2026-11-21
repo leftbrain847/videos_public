@@ -444,9 +444,9 @@
    ]
   },
   {
-   "text": "The coin itself is never found.",
+   "text": "The coin itself? Probably long gone.",
    "key": [
-    "NEVER"
+    "GONE."
    ],
    "set": "temple",
    "shot": {
@@ -649,13 +649,6 @@
    "terms": [
     "three|3",
     "convicted|guilty|jailed"
-   ]
-  },
-  {
-   "claim": "The coin has never been found",
-   "terms": [
-    "never",
-    "found|recovered"
    ]
   }
  ]

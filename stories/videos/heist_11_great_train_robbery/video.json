@@ -122,9 +122,9 @@
    ]
   },
   {
-   "text": "A mail train carries used banknotes to London. Lots of them.",
+   "text": "A Royal Mail train heads to London. It's carrying used cash. Lots of it.",
    "key": [
-    "BANKNOTES"
+    "CASH."
    ],
    "shot": {
     "type": "medium",
@@ -630,9 +630,9 @@
    ]
   },
   {
-   "claim": "The Royal Mail train carried used banknotes to London",
+   "claim": "A Royal Mail train was heading to London",
    "terms": [
-    "banknotes|notes",
+    "Royal Mail",
     "London"
    ]
   },
