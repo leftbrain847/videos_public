@@ -1,0 +1,1001 @@
+{
+ "id": "mind_03_marshmallow_test",
+ "title": "The marshmallow test had a loophole",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "1 NOW",
+   "2 LATER"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f39c12",
+    "pants": "#2e86c1",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   }
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  },
+  "kid": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#27ae60",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You are four. A marshmallow sits in front of you.",
+   "key": [
+    "MARSHMALLOW"
+   ],
+   "board": [
+    "1 NOW",
+    "2 LATER"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "A grown up makes an offer. Then leaves the room.",
+   "key": [
+    "LEAVES"
+   ],
+   "set": "office",
+   "board": [
+    "BACK IN",
+    "15 MIN"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.2,
+     0.6
+    ],
+    "exp": [
+     1.4,
+     0.4
+    ],
+    "kid": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "exp",
+    "with": "you"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "Eat it now? Fine, one marshmallow. Wait, you get two.",
+   "key": [
+    "TWO."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.2,
+     0.6
+    ],
+    "exp": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fifteen minutes. Alone. You stare at sugar.",
+   "cap": "15 minutes. Alone. You stare at sugar.",
+   "key": [
+    "15"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.2,
+     0.6
+    ],
+    "exp": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Stanford, the late nineteen sixties. Walter Mischel runs it.",
+   "cap": "Stanford, the late 1960s. Walter Mischel runs it.",
+   "key": [
+    "MISCHEL"
+   ],
+   "set": "office",
+   "board": [
+    "STANFORD",
+    "LATE 1960s"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "kid": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some kids cover their eyes. Others turn around. Some just eat it.",
+   "key": [
+    "EAT"
+   ],
+   "set": "office",
+   "board": [
+    "1 NOW",
+    "2 LATER"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": false,
+    "kid": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "kid"
+   },
+   "act": {
+    "kid": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Years later, Mischel checks on those same kids.",
+   "key": [
+    "LATER,"
+   ],
+   "set": "study",
+   "board": [
+    "FOLLOW-UP"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The kids who waited? Higher S A T scores.",
+   "cap": "The kids who waited? Higher SAT scores.",
+   "key": [
+    "SAT"
+   ],
+   "board": [
+    "WAITED =",
+    "HIGHER SAT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "kid": [
+     1.2,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kid"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "kid"
+    },
+    "kid": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "So willpower looks like destiny. Every parent panics. A book follows.",
+   "key": [
+    "DESTINY."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "kid": [
+     1.2,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "kid"
+   },
+   "act": {
+    "kid": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "kid"
+    }
+   }
+  },
+  {
+   "text": "Here is the loophole. Look at who the kids were.",
+   "key": [
+    "WHO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Hardly a random sample of humanity.",
+   "key": [
+    "RANDOM"
+   ],
+   "set": "office",
+   "board": [
+    "ONE",
+    "SMALL GROUP"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.2,
+     0.6
+    ],
+    "exp": false,
+    "kid": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "kid"
+    },
+    "kid": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "A very particular group of kids. Hold that thought.",
+   "key": [
+    "THOUGHT."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.2,
+     0.6
+    ],
+    "exp": false,
+    "kid": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "kid"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "kid"
+    },
+    "kid": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty eighteen. A rerun with about nine hundred kids.",
+   "cap": "2018. A rerun with about 900 kids.",
+   "key": [
+    "900"
+   ],
+   "set": "study",
+   "board": [
+    "2018",
+    "~900 KIDS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Many more kinds of families. Much bigger math.",
+   "key": [
+    "FAMILIES."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then they account for family background.",
+   "key": [
+    "BACKGROUND."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The link mostly shrinks away. Just like the marshmallow.",
+   "key": [
+    "SHRINKS"
+   ],
+   "board": [
+    "THE LINK:",
+    "MOSTLY GONE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It gets better. Twenty twelve, Rochester. Same snack, one small change.",
+   "cap": "It gets better. 2012, Rochester. Same snack, one small change.",
+   "key": [
+    "ROCHESTER."
+   ],
+   "set": "office",
+   "board": [
+    "ROCHESTER",
+    "2012"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "kid": [
+     -1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "kid"
+    },
+    "kid": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "First, a grown up promises better art supplies.",
+   "key": [
+    "PROMISES"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "kid": [
+     -1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "exp",
+    "with": "kid"
+   },
+   "act": {
+    "exp": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "kid"
+    },
+    "kid": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "The supplies never come. The promise breaks.",
+   "key": [
+    "BREAKS."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "kid": [
+     -1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "kid"
+   },
+   "act": {
+    "kid": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Those kids waited about three minutes.",
+   "cap": "Those kids waited about 3 minutes.",
+   "key": [
+    "3"
+   ],
+   "board": [
+    "BROKEN PROMISE",
+    "3 MIN"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "kid": [
+     -1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "kid"
+   },
+   "act": {
+    "kid": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "exp": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "kid"
+    }
+   }
+  },
+  {
+   "text": "With a reliable grown up? About twelve minutes.",
+   "cap": "With a reliable grown-up? About 12 minutes.",
+   "key": [
+    "12."
+   ],
+   "set": "study",
+   "board": [
+    "KEPT PROMISE",
+    "12 MIN"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "So waiting may be about trust. Not just willpower.",
+   "key": [
+    "TRUST."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "You, at four. Do you eat it now? Or wait? Now or wait? I am taking notes.",
+   "key": [
+    "NOW",
+    "WAIT?"
+   ],
+   "board": [
+    "NOW OR",
+    "WAIT?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Stanford marshmallow experiment",
+   "url": "https://en.wikipedia.org/wiki/Stanford_marshmallow_experiment"
+  },
+  {
+   "title": "APS Observer: A new approach to the marshmallow test yields complicated findings",
+   "url": "https://www.psychologicalscience.org/publications/observer/obsonline/a-new-approach-to-the-marshmallow-test-yields-complex-findings.html"
+  },
+  {
+   "title": "EurekAlert: Revisiting the marshmallow test",
+   "url": "https://www.eurekalert.org/news-releases/823358"
+  },
+  {
+   "title": "University of Rochester: Delaying gratification depends as much on nurture as on nature",
+   "url": "https://www.rochester.edu/news/printable.php?id=4622"
+  },
+  {
+   "title": "Smithsonian: The marshmallow test gets more complicated",
+   "url": "https://www.smithsonianmag.com/science-nature/the-marshmallow-test-gets-more-complicated-73835934/"
+  },
+  {
+   "title": "Scientific American: To predict success in children, look beyond willpower",
+   "url": "https://www.scientificamerican.com/article/to-predict-success-chidren-look-beyond-willpower/"
+  },
+  {
+   "title": "Wikipedia: Walter Mischel",
+   "url": "https://en.wikipedia.org/wiki/Walter_Mischel"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Children were offered one marshmallow now or two if they waited",
+   "terms": [
+    "marshmallow",
+    "two"
+   ]
+  },
+  {
+   "claim": "The researcher left the room",
+   "terms": [
+    "leave|left|leaving",
+    "room"
+   ]
+  },
+  {
+   "claim": "The wait was about 15 minutes",
+   "terms": [
+    "15 minutes"
+   ]
+  },
+  {
+   "claim": "Walter Mischel ran it at Stanford in the late 1960s",
+   "terms": [
+    "Mischel",
+    "Stanford"
+   ]
+  },
+  {
+   "claim": "The studies began in the late 1960s",
+   "terms": [
+    "1960s|1968|1970|1972"
+   ]
+  },
+  {
+   "claim": "Children covered their eyes or turned around",
+   "terms": [
+    "cover",
+    "eyes"
+   ]
+  },
+  {
+   "claim": "Follow-ups found kids who waited had higher SAT scores",
+   "terms": [
+    "SAT"
+   ]
+  },
+  {
+   "claim": "Mischel wrote a book, The Marshmallow Test",
+   "terms": [
+    "The Marshmallow Test",
+    "Mischel"
+   ]
+  },
+  {
+   "claim": "A 2018 replication used about 900 children",
+   "terms": [
+    "900|918"
+   ]
+  },
+  {
+   "claim": "The replication accounted for family background",
+   "terms": [
+    "family background|background"
+   ]
+  },
+  {
+   "claim": "Once background was accounted for the link mostly disappeared",
+   "terms": [
+    "family background|socioeconomic|income"
+   ]
+  },
+  {
+   "claim": "A 2012 Rochester study tested reliability",
+   "terms": [
+    "Rochester",
+    "reliable|unreliable"
+   ]
+  },
+  {
+   "claim": "An adult promised better art supplies and did not deliver",
+   "terms": [
+    "art supplies|crayons"
+   ]
+  },
+  {
+   "claim": "Children with the unreliable adult waited about 3 minutes",
+   "terms": [
+    "three minutes|3 minutes"
+   ]
+  },
+  {
+   "claim": "Children with the reliable adult waited about 12 minutes",
+   "terms": [
+    "12 minutes|twelve minutes"
+   ]
+  },
+  {
+   "claim": "Waiting may depend on trust, not only willpower",
+   "terms": [
+    "trust|reliab",
+    "willpower|self-control|nurture"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,985 @@
+{
+ "id": "mind_05_invisible_gorilla",
+ "title": "The gorilla half of you never see",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "COUNT THE",
+   "PASSES"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#c0392b",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "w1": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f6f6f6",
+    "pants": "#d9d4c7",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   }
+  },
+  "b1": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#1b1b1b",
+    "pants": "#2a2a2a",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "gor": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2b",
+    "pants": "#2b2b2b",
+    "hair": "buzz",
+    "hairColor": "#111111",
+    "skin": "#3a2a20"
+   }
+  },
+  "doc": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "A gorilla walks right past you. You never see it.",
+   "key": [
+    "GORILLA"
+   ],
+   "board": [
+    "DID YOU",
+    "SEE IT?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen ninety nine. Harvard. You watch a short video.",
+   "cap": "1999. Harvard. You watch a short video.",
+   "key": [
+    "HARVARD."
+   ],
+   "set": "office",
+   "board": [
+    "COUNT THE",
+    "PASSES"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Players in white pass a basketball. Your job is counting their passes.",
+   "key": [
+    "COUNTING."
+   ],
+   "set": "locker",
+   "board": [
+    "COUNT THE",
+    "PASSES"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "w1": [
+     -1.6,
+     0.4
+    ],
+    "b1": [
+     1.6,
+     -0.2
+    ],
+    "gor": false,
+    "doc": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "w1"
+   },
+   "act": {
+    "w1": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "b1"
+    },
+    "b1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "w1"
+    }
+   }
+  },
+  {
+   "text": "Players in black pass too. You ignore them.",
+   "key": [
+    "IGNORE"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "w1": [
+     -1.6,
+     0.4
+    ],
+    "b1": [
+     1.6,
+     -0.2
+    ],
+    "gor": false,
+    "doc": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "b1",
+    "with": "w1"
+   },
+   "act": {
+    "b1": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "w1"
+    },
+    "w1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "b1"
+    }
+   }
+  },
+  {
+   "text": "You focus hard. Every single pass counts. You nail the number.",
+   "key": [
+    "FOCUS"
+   ],
+   "set": "office",
+   "board": [
+    "COUNT THE",
+    "PASSES"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Midway, someone in a gorilla suit strolls in.",
+   "key": [
+    "SUIT"
+   ],
+   "set": "locker",
+   "board": [
+    "COUNT THE",
+    "PASSES"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "w1": [
+     -2.4,
+     0.4
+    ],
+    "b1": [
+     2.4,
+     -0.2
+    ],
+    "gor": [
+     0,
+     0.6
+    ],
+    "doc": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "gor"
+   },
+   "act": {
+    "gor": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "w1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "b1"
+    },
+    "b1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "w1"
+    }
+   }
+  },
+  {
+   "text": "It stops in the middle. It faces the camera.",
+   "key": [
+    "CAMERA."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "w1": [
+     -2.4,
+     0.4
+    ],
+    "b1": [
+     2.4,
+     -0.2
+    ],
+    "gor": [
+     0,
+     0.6
+    ],
+    "doc": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "gor"
+   },
+   "act": {
+    "gor": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "A few seconds on screen. Then it walks off. The passing never stops.",
+   "key": [
+    "SECONDS"
+   ],
+   "board": [
+    "A GORILLA",
+    "WALKS BY"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": [
+     0,
+     0.6
+    ],
+    "doc": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "gor"
+   },
+   "act": {
+    "gor": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Quick question. Did you see the gorilla?",
+   "key": [
+    "GORILLA?"
+   ],
+   "set": "study",
+   "board": [
+    "COUNT THE",
+    "PASSES"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "About half the viewers never saw it.",
+   "key": [
+    "HALF"
+   ],
+   "board": [
+    "MISSED IT:",
+    "ABOUT HALF"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Not a blurry gorilla. A big, chest thumping gorilla.",
+   "key": [
+    "BIG,"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Psychologists call this inattentional blindness.",
+   "key": [
+    "BLINDNESS."
+   ],
+   "board": [
+    "INATTENTIONAL",
+    "BLINDNESS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Focus on one thing. Your brain skips the rest.",
+   "key": [
+    "SKIPS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The study even won an Ig Nobel Prize.",
+   "key": [
+    "IG",
+    "NOBEL"
+   ],
+   "board": [
+    "IG NOBEL",
+    "PRIZE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Surely experts are immune. Trained eyes. Years of practice. Right?",
+   "key": [
+    "EXPERTS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty thirteen. Radiologists hunt for nodules in lung scans.",
+   "cap": "2013. Radiologists hunt for nodules in lung scans.",
+   "key": [
+    "RADIOLOGISTS"
+   ],
+   "set": "office",
+   "board": [
+    "LUNG",
+    "SCANS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Researchers slip a gorilla into the scan.",
+   "key": [
+    "GORILLA"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is forty eight times bigger. Bigger than a typical nodule.",
+   "cap": "It is 48 times bigger. Bigger than a typical nodule.",
+   "key": [
+    "48"
+   ],
+   "set": "study",
+   "board": [
+    "48x",
+    "BIGGER"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "doc"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "doc"
+    },
+    "doc": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Eighty three percent of the radiologists miss it.",
+   "cap": "83% of the radiologists miss it.",
+   "key": [
+    "83%"
+   ],
+   "board": [
+    "MISSED IT:",
+    "83%"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "high",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "doc"
+    }
+   }
+  },
+  {
+   "text": "Years of training. Still no gorilla. Not even a hint.",
+   "key": [
+    "GORILLA."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your eyes saw it. Your brain said no thanks. Deleted.",
+   "key": [
+    "BRAIN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Count your passes. Watch for gorillas. Would you have spotted it? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "SPOTTED IT?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "w1": false,
+    "b1": false,
+    "gor": false,
+    "doc": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Inattentional blindness",
+   "url": "https://en.wikipedia.org/wiki/Inattentional_blindness"
+  },
+  {
+   "title": "Wikipedia: The Invisible Gorilla",
+   "url": "https://en.wikipedia.org/wiki/The_Invisible_Gorilla"
+  },
+  {
+   "title": "NPR: Why even radiologists can miss a gorilla hiding in plain sight",
+   "url": "https://www.npr.org/sections/health-shots/2013/02/11/171409656/why-even-radiologists-can-miss-a-gorilla-hiding-in-plain-sight"
+  },
+  {
+   "title": "APS: The (really scary) invisible gorilla",
+   "url": "https://www.psychologicalscience.org/news/were-only-human/the-really-scary-invisible-gorilla.html"
+  },
+  {
+   "title": "PMC: The invisible gorilla strikes again (Drew, Vo, Wolfe 2013)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3964612/"
+  },
+  {
+   "title": "The Scientist: Gorillas in the lung",
+   "url": "https://www.the-scientist.com/gorillas-in-the-lung-39006"
+  },
+  {
+   "title": "Wikipedia: Daniel Simons",
+   "url": "https://en.wikipedia.org/wiki/Daniel_Simons"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The gorilla study was run in 1999",
+   "terms": [
+    "gorilla",
+    "1999"
+   ]
+  },
+  {
+   "claim": "It was run at Harvard",
+   "terms": [
+    "Harvard"
+   ]
+  },
+  {
+   "claim": "Viewers counted passes by players in white",
+   "terms": [
+    "white",
+    "pass"
+   ]
+  },
+  {
+   "claim": "Players in black also passed a ball",
+   "terms": [
+    "black",
+    "white"
+   ]
+  },
+  {
+   "claim": "A person in a gorilla suit walked through",
+   "terms": [
+    "gorilla suit"
+   ]
+  },
+  {
+   "claim": "About half of viewers missed the gorilla",
+   "terms": [
+    "half",
+    "gorilla"
+   ]
+  },
+  {
+   "claim": "This is called inattentional blindness",
+   "terms": [
+    "inattentional blindness"
+   ]
+  },
+  {
+   "claim": "The study won an Ig Nobel Prize",
+   "terms": [
+    "Ig Nobel"
+   ]
+  },
+  {
+   "claim": "In 2013 radiologists searched lung scans for nodules",
+   "terms": [
+    "radiologists",
+    "nodule"
+   ]
+  },
+  {
+   "claim": "Researchers inserted a gorilla into the scans",
+   "terms": [
+    "gorilla",
+    "radiologists"
+   ]
+  },
+  {
+   "claim": "The gorilla was 48 times the size of a typical nodule",
+   "terms": [
+    "48"
+   ]
+  },
+  {
+   "claim": "83 percent of radiologists missed the gorilla",
+   "terms": [
+    "83"
+   ]
+  }
+ ]
+}
