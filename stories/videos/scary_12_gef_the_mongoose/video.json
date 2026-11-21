@@ -1,0 +1,820 @@
+{
+ "id": "scary_12_gef_the_mongoose",
+ "title": "Gef, the talking mongoose in the walls",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "GEF"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5a4a2a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "candle"
+  },
+  "girl": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#c46a3c",
+    "pants": "#3c3c3c",
+    "hair": "ponytail",
+    "hairColor": "#6b4423",
+    "skin": "#f0c8a8"
+   },
+   "at": "center"
+  },
+  "price": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2a3a5a",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "notepad"
+  },
+  "lab": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bob",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "magnifier"
+  }
+ },
+ "lines": [
+  {
+   "text": "Your farmhouse wall starts talking. It says it is a mongoose.",
+   "key": [
+    "MONGOOSE."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "girl": [
+     2.8,
+     -1.0
+    ],
+    "price": false,
+    "lab": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "girl": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Nineteen thirty one. The Isle of man. The Irving family farm.",
+   "cap": "1931. The Isle of Man. The Irving family farm.",
+   "key": [
+    "MAN."
+   ],
+   "board": [
+    "1931",
+    "ISLE OF MAN"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "girl": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "First, scratching in the walls. Then barking. Then actual words.",
+   "key": [
+    "WORDS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The voice says its name is Gef. He is a mongoose, apparently.",
+   "key": [
+    "GEF."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "girl"
+   },
+   "act": {
+    "girl": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Gef says he was born in India. In eighteen fifty two.",
+   "cap": "Gef says he was born in India. In 1852.",
+   "key": [
+    "INDIA."
+   ],
+   "place": {
+    "capy": [
+     -2.0,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "girl"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "girl"
+    },
+    "girl": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "He sings. He chats. He tells you local gossip. Loudly.",
+   "key": [
+    "GOSSIP."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "He even kills rabbits for the family dinner.",
+   "key": [
+    "RABBITS"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A pest that does chores. Honestly, an upgrade. Free rabbit dinners.",
+   "key": [
+    "UPGRADE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Mostly, Gef talks with your daughter, Voirrey.",
+   "key": [
+    "VOIRREY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "girl"
+   },
+   "act": {
+    "girl": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The newspapers go wild. Reporters climb your hill. Hoping for a word.",
+   "key": [
+    "NEWSPAPERS"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "girl": [
+     2.8,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "girl": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Nobody outside the family gets a good look.",
+   "key": [
+    "LOOK."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then a famous ghost hunter visits. Harry Price.",
+   "key": [
+    "PRICE."
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "GHOST HUNTER",
+     "VISIT"
+    ]
+   },
+   "place": {
+    "price": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "girl": false,
+    "lab": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "price"
+   },
+   "act": {
+    "price": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Gef refuses to say a word. Not one. Not even hello.",
+   "key": [
+    "WORD."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "price"
+   },
+   "act": {
+    "price": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your star mongoose got stage fright.",
+   "key": [
+    "FRIGHT."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "price"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "price"
+    },
+    "price": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The family sends hair samples. Gef's fur, they say.",
+   "key": [
+    "FUR,"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SAMPLE",
+     "GEF FUR?"
+    ]
+   },
+   "place": {
+    "lab": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "girl": false,
+    "price": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "lab"
+   },
+   "act": {
+    "lab": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "An expert checks it. It is dog hair. Not mongoose.",
+   "key": [
+    "DOG"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "lab"
+   },
+   "act": {
+    "lab": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Probably from the family's own sheepdog.",
+   "key": [
+    "SHEEPDOG."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "lab"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "lab"
+    },
+    "lab": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your talking mongoose? Partly a sheepdog.",
+   "key": [
+    "SHEEPDOG."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Did someone throw their voice? Many skeptics think so.",
+   "key": [
+    "VOICE?"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "THEORY:",
+     "VENTRILOQUISM"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "girl": [
+     2.8,
+     -0.8
+    ],
+    "you": false,
+    "price": false,
+    "lab": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "girl": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Decades later, Voirrey insists it was no hoax.",
+   "key": [
+    "HOAX."
+   ],
+   "board": [
+    "REAL",
+    "OR HOAX?"
+   ],
+   "place": {
+    "girl": [
+     0,
+     0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": [
+     2.8,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "girl"
+   },
+   "act": {
+    "girl": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "girl"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "girl"
+    }
+   }
+  },
+  {
+   "text": "She also says Gef made her life miserable.",
+   "key": [
+    "MISERABLE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "girl"
+   },
+   "act": {
+    "girl": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The family sells the farm. The voice goes quiet. For good.",
+   "key": [
+    "QUIET."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "girl": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Talking mongoose. Real or hoax?",
+   "key": [
+    "REAL",
+    "HOAX?"
+   ],
+   "board": [
+    "GEF:",
+    "REAL OR HOAX?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "girl"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "girl": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Gef",
+   "url": "https://en.wikipedia.org/wiki/Gef"
+  },
+  {
+   "title": "National Geographic: Gef the talking mongoose",
+   "url": "https://www.nationalgeographic.com/history/article/gef-talking-mongoose-isle-of-man"
+  },
+  {
+   "title": "Mysterious Britain: Gef, the talking mongoose",
+   "url": "https://mysteriousbritain.co.uk/?p=2824"
+  },
+  {
+   "title": "Grunge: The bizarre true story of Gef the talking mongoose",
+   "url": "https://www.grunge.com/369711/the-bizarre-true-story-of-gef-the-talking-mongoose"
+  },
+  {
+   "title": "Encyclopedia.com: Talking mongoose",
+   "url": "https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/talking-mongoose"
+  },
+  {
+   "title": "London Review of Books: Gef! The strange tale of an extra special talking mongoose",
+   "url": "https://www.lrb.co.uk/v39/n15/bee-wilson/i-am-the-fifth-dimension"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1931 on the Isle of Man the Irving family reported a talking mongoose",
+   "terms": [
+    "Isle of Man",
+    "Irving"
+   ]
+  },
+  {
+   "claim": "It started in 1931",
+   "terms": [
+    "1931"
+   ]
+  },
+  {
+   "claim": "It began with scratching and animal noises",
+   "terms": [
+    "scratch|barking|noises"
+   ]
+  },
+  {
+   "claim": "The voice called itself Gef",
+   "terms": [
+    "Gef",
+    "mongoose"
+   ]
+  },
+  {
+   "claim": "Gef claimed to be born in 1852 in India",
+   "terms": [
+    "1852",
+    "India|Delhi"
+   ]
+  },
+  {
+   "claim": "Gef sang and gossiped",
+   "terms": [
+    "sing|sang|songs",
+    "Gef"
+   ]
+  },
+  {
+   "claim": "Gef killed rabbits for the family",
+   "terms": [
+    "rabbits"
+   ]
+  },
+  {
+   "claim": "Gef mostly talked with the daughter Voirrey",
+   "terms": [
+    "Voirrey"
+   ]
+  },
+  {
+   "claim": "Newspapers covered the story",
+   "terms": [
+    "newspaper|press|reporters"
+   ]
+  },
+  {
+   "claim": "Harry Price investigated",
+   "terms": [
+    "Harry Price"
+   ]
+  },
+  {
+   "claim": "Hair samples said to be Gef's were sent for testing",
+   "terms": [
+    "hair",
+    "sample"
+   ]
+  },
+  {
+   "claim": "The hair was dog hair, probably from the family sheepdog",
+   "terms": [
+    "dog",
+    "hair"
+   ]
+  },
+  {
+   "claim": "Skeptics suspected ventriloquism",
+   "terms": [
+    "ventriloqu"
+   ]
+  },
+  {
+   "claim": "Voirrey later said it was not a hoax",
+   "terms": [
+    "Voirrey",
+    "hoax"
+   ]
+  },
+  {
+   "claim": "Voirrey said Gef made her life a misery",
+   "terms": [
+    "Voirrey",
+    "life"
+   ]
+  },
+  {
+   "claim": "The family sold the farm",
+   "terms": [
+    "sold|left",
+    "farm"
+   ]
+  }
+ ]
+}

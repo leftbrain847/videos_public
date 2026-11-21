@@ -1,0 +1,1095 @@
+{
+ "id": "myth_16_midas_touch",
+ "title": "The golden touch",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "PHRYGIA"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "midas": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8e2b6a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b",
+    "sash": "#e8b923",
+    "beard": true
+   }
+  },
+  "midasG": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e8b923",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b",
+    "sash": "#e8b923",
+    "beard": true
+   },
+   "hold": "goldbar"
+  },
+  "sil": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#7a9a5a",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#e6e6e6",
+    "skin": "#e8b48f",
+    "sash": "#8e2b6a",
+    "beard": true
+   }
+  },
+  "dion": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#6a3f8e",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#5c9e4a"
+   }
+  },
+  "apollo": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f2c230",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#f2d27a",
+    "skin": "#f2c39b",
+    "sash": "#c46a3c"
+   },
+   "hold": "lyre"
+  },
+  "pan": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#6b4426",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "sash": "#5c9e4a",
+    "beard": true
+   }
+  },
+  "barber": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a8ac0",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#4a3b2c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You get one wish. You pick the worst one.",
+   "key": [
+    "WORST"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "midas": [
+     1.2,
+     0
+    ],
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "midas"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "midas": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Midas, a rich king in Phrygia.",
+   "key": [
+    "MIDAS,"
+   ],
+   "board": [
+    "KING MIDAS",
+    "PHRYGIA"
+   ],
+   "place": {
+    "capy": false,
+    "midas": [
+     0,
+     0
+    ],
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "midas"
+   },
+   "act": {
+    "midas": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your farmers find a drunk old satyr. They bring him to you.",
+   "key": [
+    "SATYR."
+   ],
+   "place": {
+    "capy": false,
+    "midas": false,
+    "midasG": false,
+    "sil": [
+     0,
+     0
+    ],
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sil"
+   },
+   "act": {
+    "sil": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is Silenus, teacher of the god Dionysus.",
+   "key": [
+    "SILENUS,"
+   ],
+   "place": {
+    "capy": false,
+    "midas": [
+     1.3,
+     -0.2
+    ],
+    "midasG": false,
+    "sil": [
+     -1.3,
+     0.2
+    ],
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "sil",
+    "with": "midas"
+   },
+   "act": {
+    "sil": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "midas"
+    },
+    "midas": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "sil"
+    }
+   }
+  },
+  {
+   "text": "You host him for ten days. A great party. Then you bring him home.",
+   "cap": "You host him for 10 days. A great party. Then you bring him home.",
+   "key": [
+    "10"
+   ],
+   "place": {
+    "capy": false,
+    "midas": [
+     0,
+     0
+    ],
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "midas"
+   },
+   "act": {
+    "midas": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Dionysus is grateful. Name any wish, he says.",
+   "key": [
+    "WISH,"
+   ],
+   "place": {
+    "capy": false,
+    "midas": false,
+    "midasG": false,
+    "sil": false,
+    "dion": [
+     0,
+     0
+    ],
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "dion"
+   },
+   "act": {
+    "dion": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Everything you touch turns to gold. That is your whole wish.",
+   "key": [
+    "GOLD."
+   ],
+   "board": [
+    "WISH:",
+    "GOLDEN TOUCH"
+   ],
+   "place": {
+    "capy": false,
+    "midas": [
+     -1.3,
+     0.2
+    ],
+    "midasG": false,
+    "sil": false,
+    "dion": [
+     1.3,
+     -0.2
+    ],
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "midas",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "midas": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "dion": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "midas"
+    }
+   }
+  },
+  {
+   "text": "Nobody asks a single follow up question.",
+   "key": [
+    "QUESTION."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "midas": false,
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A twig turns gold. A stone turns gold.",
+   "key": [
+    "GOLD."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "midas": false,
+    "midasG": [
+     1.2,
+     0
+    ],
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "midasG",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "midasG"
+    },
+    "midasG": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are thrilled. You throw a feast.",
+   "key": [
+    "FEAST."
+   ],
+   "place": {
+    "capy": false,
+    "midas": false,
+    "midasG": [
+     0,
+     0
+    ],
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "midasG"
+   },
+   "act": {
+    "midasG": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The bread turns to gold in your teeth.",
+   "key": [
+    "TEETH."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "midas": false,
+    "midasG": [
+     1.2,
+     0
+    ],
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "midasG",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "midasG": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Your wine becomes liquid gold. In your mouth.",
+   "key": [
+    "LIQUID"
+   ],
+   "board": [
+    "DINNER",
+    "GOLD"
+   ],
+   "place": {
+    "capy": false,
+    "midas": false,
+    "midasG": [
+     0,
+     0
+    ],
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "midasG"
+   },
+   "act": {
+    "midasG": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The richest man alive. He is also starving.",
+   "key": [
+    "STARVING."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "midas": false,
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You beg Dionysus to take it back.",
+   "key": [
+    "BEG"
+   ],
+   "place": {
+    "capy": false,
+    "midas": false,
+    "midasG": [
+     -1.3,
+     0.2
+    ],
+    "sil": false,
+    "dion": [
+     1.3,
+     -0.2
+    ],
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "midasG",
+    "with": "dion"
+   },
+   "act": {
+    "midasG": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "dion"
+    },
+    "dion": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "midasG"
+    }
+   }
+  },
+  {
+   "text": "He says: bathe in the river Pactolus.",
+   "key": [
+    "PACTOLUS,"
+   ],
+   "place": {
+    "capy": false,
+    "midas": false,
+    "midasG": false,
+    "sil": false,
+    "dion": [
+     0,
+     0
+    ],
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "dion"
+   },
+   "act": {
+    "dion": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gift washes off into the water. The river sand turns gold.",
+   "key": [
+    "SAND"
+   ],
+   "board": [
+    "PACTOLUS",
+    "GOLD SAND"
+   ],
+   "place": {
+    "capy": false,
+    "midas": [
+     0,
+     0
+    ],
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "midas"
+   },
+   "act": {
+    "midas": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Lesson learned? Not quite.",
+   "key": [
+    "QUITE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "midas": [
+     1.2,
+     0
+    ],
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "midas"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "midas": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Later, you judge a music contest. Pan against Apollo.",
+   "key": [
+    "APOLLO."
+   ],
+   "place": {
+    "capy": false,
+    "midas": false,
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": [
+     1.3,
+     -0.2
+    ],
+    "pan": [
+     -1.3,
+     0.2
+    ],
+    "barber": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "apollo",
+    "pan": [
+     -1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "pan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "apollo": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Everyone else picks Apollo. You pick Pan.",
+   "key": [
+    "PAN."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "midas": [
+     1.2,
+     0
+    ],
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "midas"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "midas"
+    },
+    "midas": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Apollo gives you donkey ears.",
+   "key": [
+    "DONKEY"
+   ],
+   "place": {
+    "capy": false,
+    "midas": false,
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": [
+     0,
+     0
+    ],
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "apollo"
+   },
+   "act": {
+    "apollo": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You hide them under a purple turban. Only your barber knows.",
+   "key": [
+    "BARBER"
+   ],
+   "place": {
+    "capy": false,
+    "midas": [
+     -1.3,
+     0.2
+    ],
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "midas",
+    "with": "barber"
+   },
+   "act": {
+    "midas": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "barber"
+    },
+    "barber": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "midas"
+    }
+   }
+  },
+  {
+   "text": "He whispers it into a hole. Then reeds grow there. They whisper it too.",
+   "key": [
+    "REEDS"
+   ],
+   "board": [
+    "THE REEDS",
+    "KNOW"
+   ],
+   "place": {
+    "capy": false,
+    "midas": false,
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "barber"
+   },
+   "act": {
+    "barber": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you take the golden touch? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "GOLDEN TOUCH?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "midas": false,
+    "midasG": false,
+    "sil": false,
+    "dion": false,
+    "apollo": false,
+    "pan": false,
+    "barber": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Midas",
+   "url": "https://en.wikipedia.org/wiki/Midas"
+  },
+  {
+   "title": "Theoi: Midas",
+   "url": "https://www.theoi.com/Heros/Midas.html"
+  },
+  {
+   "title": "Perseids: Ovid, Metamorphoses 11.85-221 (More translation)",
+   "url": "https://fgh.perseids.org/read/latinLit/phi0959/phi006/perseus-eng3/11.85-11.221"
+  },
+  {
+   "title": "Montclair State University: Midas, Pan and Apollo (Ovid, Metamorphoses XI)",
+   "url": "https://msuweb.montclair.edu/~furrg/chaucer/midasassesears.html"
+  },
+  {
+   "title": "Wikipedia: Pactolus",
+   "url": "https://en.wikipedia.org/wiki/Pactolus"
+  },
+  {
+   "title": "Eclectic Light: Ovid on canvas, the Midas touch and ears",
+   "url": "https://eclecticlight.co/2017/11/17/changing-stories-ovids-metamorphoses-on-canvas-58-the-midas-touch-and-ears/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Midas is a king of Phrygia",
+   "terms": [
+    "Midas",
+    "Phrygia"
+   ]
+  },
+  {
+   "claim": "His people find the drunk satyr Silenus",
+   "terms": [
+    "Silenus",
+    "drunk|drunken|wine"
+   ]
+  },
+  {
+   "claim": "Silenus is the teacher of Dionysus",
+   "terms": [
+    "Silenus",
+    "Dionysus|Bacchus"
+   ]
+  },
+  {
+   "claim": "Midas hosts him for ten days and returns him",
+   "terms": [
+    "ten days"
+   ]
+  },
+  {
+   "claim": "Dionysus grants him any wish",
+   "terms": [
+    "Dionysus|Bacchus",
+    "wish"
+   ]
+  },
+  {
+   "claim": "He wishes that everything he touches turns to gold",
+   "terms": [
+    "touch|touched|touches",
+    "gold"
+   ]
+  },
+  {
+   "claim": "A twig and a stone turn to gold",
+   "terms": [
+    "twig",
+    "stone"
+   ]
+  },
+  {
+   "claim": "Bread turns to gold in his teeth",
+   "terms": [
+    "bread",
+    "teeth"
+   ]
+  },
+  {
+   "claim": "Wine pours into his mouth as liquid gold",
+   "terms": [
+    "wine",
+    "gold"
+   ]
+  },
+  {
+   "claim": "He begs Dionysus to take the gift back",
+   "terms": [
+    "Midas",
+    "beg|begged|prayed|implored|pray"
+   ]
+  },
+  {
+   "claim": "He washes in the river Pactolus",
+   "terms": [
+    "Pactolus",
+    "wash|washed|bathe|bathed"
+   ]
+  },
+  {
+   "claim": "The river's sands turn gold",
+   "terms": [
+    "Pactolus",
+    "sand|sands"
+   ]
+  },
+  {
+   "claim": "Midas judges a music contest between Pan and Apollo",
+   "terms": [
+    "Pan",
+    "Apollo",
+    "contest"
+   ]
+  },
+  {
+   "claim": "Others favor Apollo, Midas prefers Pan",
+   "terms": [
+    "Midas",
+    "Pan"
+   ]
+  },
+  {
+   "claim": "Apollo gives him donkey ears",
+   "terms": [
+    "ears",
+    "ass|donkey"
+   ]
+  },
+  {
+   "claim": "He hides them under a turban; only his barber knows",
+   "terms": [
+    "hair|barber",
+    "secret"
+   ]
+  },
+  {
+   "claim": "The barber whispers into a hole and reeds whisper the secret",
+   "terms": [
+    "reeds",
+    "whisper|whispered|whispering|murmur"
+   ]
+  }
+ ]
+}
