@@ -377,10 +377,9 @@
    }
   },
   {
-   "text": "In twenty eleven, police finally make arrests.",
-   "cap": "In 2011, police finally make arrests.",
+   "text": "Years later, suspects finally go on trial.",
    "key": [
-    "ARRESTS."
+    "TRIAL."
    ],
    "shot": {
     "type": "medium",
@@ -523,10 +522,6 @@
    "url": "https://www.nbcnews.com/id/wbna28066894"
   },
   {
-   "title": "Washington Times: Robbers in drag steal $108 million in jewels",
-   "url": "https://www.washingtontimes.com/news/2008/dec/6/robbers-in-drag-steal-108-million-in-jewels/"
-  },
-  {
    "title": "CBS News: Cross-dressed crooks grab $108M in jewelry",
    "url": "https://www.cbsnews.com/news/cross-dressed-crooks-grab-108m-in-jewelry/"
   },
@@ -537,6 +532,14 @@
   {
    "title": "Jerusalem Post: Gunmen in drag get millions in Paris diamond heist",
    "url": "https://www.jpost.com/international/gunmen-in-drag-get-millions-in-paris-diamond-heist/article-123256"
+  },
+  {
+   "title": "CBS News: Diamonds are a cross-dressing thief's best friend",
+   "url": "https://www.cbsnews.com/news/diamonds-are-a-cross-dressing-thiefs-best-friend/"
+  },
+  {
+   "title": "Dawn: Jewellery worth $100m looted in Paris",
+   "url": "https://www.dawn.com/news/333305"
   },
   {
    "title": "OCCRP: Balkan ties to huge jewel theft?",
@@ -603,9 +606,9 @@
    ]
   },
   {
-   "claim": "Arrests were made in 2011",
+   "claim": "Suspects later went on trial",
    "terms": [
-    "arrest"
+    "trial"
    ]
   },
   {
