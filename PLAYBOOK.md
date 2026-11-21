@@ -29,6 +29,9 @@ This is how 74 scripts were written and 100 videos rendered, checked and release
 - **`git push -f` is refused** by the permission classifier. Use fresh branches or cherry-picks.
 - **Deleting scheduled tasks is refused**; that's fine. Schedule 2–3 one-shot wake-ups (`send_later`) as a backstop in case your turn ends.
 - **Every human message interrupts** the running step, and has killed background writers. Before J sleeps, tell him: no messages until morning.
+- **Plan for the 5-hour usage limit.** When it hits, every background agent dies mid-work, leaving PRs half-fixed. Afterwards, don't resume the dead writers (each resume replays a 300–580k context). Start one small fixer per series with a short brief: merge main into each open PR, swap dead sources, merge when green. Three fixers cleared 12 PRs in about 30 min for ~150k tokens each.
+- **Only one render run at a time.** Detect a running render through `actions/workflows/render.yml/runs`, never through the last N runs of all workflows: busy PR checks push the render off that list and a second batch slips in.
+- **Look at job conclusions, not just the release.** A release can hold all 16 videos while every listen-back job failed (2026-11-21: `upload-artifact` refuses paths containing `..`; story folders are now passed as repo-root paths).
 - **Ask everything up front** (permissions, publishing, budget), then run with no further questions.
 
 ## Timings to expect (2026-11-21)
@@ -44,6 +47,8 @@ This is how 74 scripts were written and 100 videos rendered, checked and release
 ## Known gaps
 - The facts check proves words appear near each other on a page, not that a claim is true. It also rewards cutting true claims that have only one source. Writers list every cut claim in their report, and the orchestrator passes them to J.
 - New on-field plays cause most broken frames. Writers should render one draft of each new play, not just stills.
+- **Sources CI can't open.** Many news sites answer CI with 403 (paywalls, bot walls), Gutenberg sometimes with 503. Prefer Wikipedia (check the exact title), .gov/.edu, NASA/ESA and museum pages. A writer's sandbox can't reach the sites either, so CI's facts run is the only check.
+- **Contact-sheet sweep findings (stories, 2026-11-21):** writers faked an animal with a person (Clever Hans as a dark-skinned human: never again; use `kind: "horse"` from kit.js `ANIMALS`, or keep the animal off screen), and `ots` shots framed the back of a head (now banned for story series in check.py).
 - Gameplay variety: all reels come from 2 capture sessions.
 
 ## Standard for new series (decided 2026-11-21)
