@@ -63,14 +63,81 @@
     "glasses": true
    },
    "at": "desk"
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#e8c25a",
+    "number": "7",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "beard": true
+   },
+   "at": "left",
+   "hold": "football"
   }
  },
+ "sources": [
+  {
+   "title": "NFL.com: NFL: Steelers' Jesse James lost control of the football",
+   "url": "https://nfl.com/_amp/nfl-steelers-jesse-james-lost-control-of-the-football-0ap3000000894836"
+  },
+  {
+   "title": "NESN: Jesse James catch overturned in controversial Patriots-Steelers ending",
+   "url": "https://nesn.com/2017/12/jesse-james-catch-overturned-in-controversial-patriots-steelers-ending"
+  },
+  {
+   "title": "TribLIVE: Steelers' overturned touchdown adds to confusion over NFL's catch rule",
+   "url": "https://archive.triblive.com/sports/steelers/steelers-overturned-touchdown-adds-to-confusion-over-nfls-catch-rule"
+  },
+  {
+   "title": "CBS Sports: NFL VP of officiating tries to explain why Steelers TD got overturned",
+   "url": "https://www.cbssports.com/nfl/news/nfl-vp-of-officiating-tries-to-explain-why-steelers-td-got-overturned-vs-patriots"
+  },
+  {
+   "title": "NFL.com: NFL teams unanimously approve simplified catch rule",
+   "url": "https://www.nfl.com/news/nfl-teams-unanimously-approve-simplified-catch-rule-0ap3000000923342"
+  },
+  {
+   "title": "SI: NFL owners vote unanimously on changes to catch rule",
+   "url": "https://www.si.com/nfl/2018/03/27/owners-vote-unanimously-change-catch-rule"
+  },
+  {
+   "title": "CBS Sports: The catch rule explained, why Steelers' apparent go-ahead TD was overturned",
+   "url": "https://www.cbssports.com/nfl/news/the-catch-rule-explained-why-steelers-apparent-game-winning-td-was-overturned"
+  },
+  {
+   "title": "CBS Sports: Jesse James' overturned touchdown latest example of why fans hate NFL's catch rule",
+   "url": "https://www.cbssports.com/nfl/news/jesse-james-overturned-touchdown-latest-example-of-why-fans-hate-nfls-catch-rule"
+  },
+  {
+   "title": "ESPN: Emotions high after controversial non-catch call",
+   "url": "https://africa.espn.com/nfl/story/_/id/21799060/emotions-high-controversial-non-catch-call-end-pittsburgh-steelers-new-england-patriots-game"
+  },
+  {
+   "title": "Bangor Daily News (AP): When a catch isn't a catch",
+   "url": "https://www.bangordailynews.com/2017/12/18/sports/when-a-catch-isnt-a-catch-and-how-it-hurt-steelers/"
+  },
+  {
+   "title": "UPI: Teams unanimously approve simplified catch rule",
+   "url": "https://www.upi.com/Sports_News/NFL/2018/03/27/Teams-unanimously-approve-simplified-catch-rule/4451522169969/"
+  },
+  {
+   "title": "UPI: Jesse James pleased with new NFL catch rule",
+   "url": "https://www.upi.com/Sports_News/NFL/2018/03/28/Pittsburgh-Steelers-TE-Jesse-James-pleased-with-new-NFL-catch-rule/4381522247692/"
+  },
+  {
+   "title": "Steelers.com: James reacts to new catch rule",
+   "url": "https://www.steelers.com/news/james-reacts-to-new-catch-rule-20491200"
+  }
+ ],
  "lines": [
   {
-   "text": "In 2017, Jesse James caught the go-ahead touchdown against New England. Then replay erased it.",
+   "text": "You score the winning touchdown. Then it disappears.",
    "key": [
-    "TOUCHDOWN",
-    "ERASED"
+    "DISAPPEARS."
    ],
    "place": {
     "capy": [
@@ -83,7 +150,8 @@
     ],
     "lb": false,
     "ref": false,
-    "own": false
+    "own": false,
+    "qb": false
    },
    "shot": {
     "type": "two",
@@ -105,11 +173,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Pittsburgh trailed twenty seven to twenty four. Twenty eight seconds left.",
-   "cap": "Pittsburgh trailed 27 to 24. 28 seconds left.",
+   "text": "Twenty seventeen. Your Steelers face the Patriots.",
+   "cap": "2017. Your Steelers face the Patriots.",
    "key": [
-    "27",
-    "28"
+    "2017."
    ],
    "place": {
     "capy": false,
@@ -137,40 +204,68 @@
      "mood": "angry",
      "look": "te"
     }
-   }
-  },
-  {
-   "text": "James catches a pass just short of the goal line.",
-   "key": [
-    "SHORT"
-   ],
-   "shot": {
-    "type": "medium",
-    "on": "te"
    },
-   "act": {
-    "te": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "camera"
-    }
-   }
+   "board": [
+    "STEELERS",
+    "VS PATRIOTS"
+   ]
   },
   {
-   "text": "He goes down, and stretches the ball across.",
+   "text": "You trail twenty seven to twenty four. Final minute.",
+   "cap": "You trail 27 to 24. Final minute.",
    "key": [
-    "STRETCHES"
+    "27"
    ],
    "place": {
-    "lb": [
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "te": [
      1.0,
-     -0.5
-    ]
+     0
+    ],
+    "lb": false
    },
    "shot": {
     "type": "two",
-    "on": "te",
-    "with": "lb"
+    "on": "capy",
+    "with": "te"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "board": [
+    "PATRIOTS 27",
+    "STEELERS 24"
+   ]
+  },
+  {
+   "text": "The winner likely gets home field in January.",
+   "key": [
+    "JANUARY."
+   ],
+   "place": {
+    "te": "center",
+    "lb": [
+     1.6,
+     -0.8
+    ],
+    "qb": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "lb"
    },
    "act": {
     "te": {
@@ -184,9 +279,318 @@
    }
   },
   {
-   "text": "Touchdown on the field. Pittsburgh leads.",
+   "text": "You're Jesse James. Ben Roethlisberger fires it to you.",
    "key": [
-    "LEADS."
+    "YOU."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PATRIOTS 27",
+     "STEELERS 24"
+    ],
+    "endZone": 8,
+    "zoneA": "#1b1b1b",
+    "zoneB": "#14254a"
+   },
+   "shot": {
+    "type": "follow",
+    "on": "te",
+    "lead": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        -3.0,
+        1.0
+       ],
+       [
+        1,
+        -3.0,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        2.0,
+        -1.0
+       ],
+       [
+        0.175,
+        2.875,
+        -0.675
+       ],
+       [
+        0.35,
+        3.75,
+        -0.35
+       ],
+       [
+        0.525,
+        4.625,
+        -0.025
+       ],
+       [
+        0.7,
+        5.5,
+        0.3
+       ],
+       [
+        0.775,
+        5.625,
+        0.325
+       ],
+       [
+        0.85,
+        5.75,
+        0.35
+       ],
+       [
+        0.925,
+        5.875,
+        0.375
+       ],
+       [
+        1.0,
+        6.0,
+        0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.7,
+        "catch"
+       ]
+      ],
+      "face": 90
+     },
+     "lb": {
+      "path": [
+       [
+        0.0,
+        3.0,
+        -2.5
+       ],
+       [
+        0.25,
+        3.25,
+        -2.125
+       ],
+       [
+        0.5,
+        3.5,
+        -1.75
+       ],
+       [
+        0.75,
+        3.75,
+        -1.375
+       ],
+       [
+        1.0,
+        4.0,
+        -1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ]
+     }
+    },
+    "ball": [
+     [
+      0.25,
+      -2.8,
+      1.6,
+      1.0
+     ],
+     [
+      0.475,
+      1.35,
+      3.1,
+      0.65
+     ],
+     [
+      0.7,
+      5.5,
+      1.3,
+      0.3
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.25,
+      null
+     ],
+     [
+      0.7,
+      "te"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "You catch it short. You dive. The ball crosses the line.",
+   "key": [
+    "LINE."
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "te",
+    "lead": 0
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "te": {
+      "path": [
+       [
+        0.0,
+        6.0,
+        0.4
+       ],
+       [
+        0.125,
+        6.7,
+        0.4
+       ],
+       [
+        0.25,
+        7.4,
+        0.4
+       ],
+       [
+        0.375,
+        8.1,
+        0.4
+       ],
+       [
+        0.5,
+        8.8,
+        0.4
+       ],
+       [
+        1,
+        8.8,
+        0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.5,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "lb": {
+      "path": [
+       [
+        0.0,
+        4.0,
+        -1.0
+       ],
+       [
+        0.125,
+        4.75,
+        -0.95
+       ],
+       [
+        0.25,
+        5.5,
+        -0.9
+       ],
+       [
+        0.375,
+        6.25,
+        -0.85
+       ],
+       [
+        0.5,
+        7.0,
+        -0.8
+       ],
+       [
+        1,
+        7.0,
+        -0.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.5,
+        "idle"
+       ]
+      ],
+      "mood": "worried"
+     },
+     "qb": {
+      "path": [
+       [
+        0,
+        -3.0,
+        1.0
+       ],
+       [
+        1,
+        -3.0,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "carry": [
+     [
+      0,
+      "te"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Touchdown on the field. Steelers lead.",
+   "key": [
+    "LEAD."
    ],
    "shot": {
     "type": "low",
@@ -201,12 +605,24 @@
      "mood": "sad",
      "action": "slump"
     }
+   },
+   "board": [
+    "TOUCHDOWN?",
+    "STEELERS"
+   ],
+   "place": {
+    "te": "center",
+    "lb": [
+     1.6,
+     -0.8
+    ],
+    "qb": false
    }
   },
   {
-   "text": "Then replay sees the ball move as it hits the ground.",
+   "text": "Then replay takes a closer look.",
    "key": [
-    "MOVE"
+    "LOOK."
    ],
    "place": {
     "ref": [
@@ -232,7 +648,30 @@
    }
   },
   {
-   "text": "The league said a receiver going to the ground has to survive the ground.",
+   "text": "The ball moves as it hits the ground.",
+   "key": [
+    "GROUND."
+   ],
+   "place": {
+    "ref": [
+     -1.6,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "ref"
+   },
+   "act": {
+    "ref": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The rule back then? Survive the ground.",
    "key": [
     "SURVIVE"
    ],
@@ -267,7 +706,7 @@
    "speaker": "capy"
   },
   {
-   "text": "This one didn't. Incomplete.",
+   "text": "You did not survive it. Incomplete.",
    "key": [
     "INCOMPLETE."
    ],
@@ -304,25 +743,165 @@
    }
   },
   {
-   "text": "Two plays later, Pittsburgh threw an interception in the end zone.",
+   "text": "Two plays later, the Patriots intercept it.",
    "key": [
-    "INTERCEPTION"
+    "INTERCEPT"
    ],
-   "place": {
-    "ref": false,
-    "te": false,
-    "lb": "center"
+   "setOpts": {
+    "boardText": [
+     "PATRIOTS 27",
+     "STEELERS 24"
+    ],
+    "endZone": 8,
+    "zoneA": "#1b1b1b",
+    "zoneB": "#14254a"
    },
    "shot": {
-    "type": "close",
-    "on": "lb"
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "lb",
+    "lead": 0,
+    "z": 1
    },
-   "act": {
-    "lb": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    }
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        -1.0,
+        1.0
+       ],
+       [
+        1,
+        -1.0,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "lb": {
+      "path": [
+       [
+        0.0,
+        8.5,
+        -2.0
+       ],
+       [
+        0.175,
+        8.75,
+        -1.625
+       ],
+       [
+        0.35,
+        9.0,
+        -1.25
+       ],
+       [
+        0.525,
+        9.25,
+        -0.875
+       ],
+       [
+        0.7,
+        9.5,
+        -0.5
+       ],
+       [
+        1.0,
+        9.8,
+        -0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.7,
+        "catch"
+       ]
+      ]
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        6.0,
+        0.5
+       ],
+       [
+        0.25,
+        6.25,
+        0.575
+       ],
+       [
+        0.5,
+        6.5,
+        0.65
+       ],
+       [
+        0.75,
+        6.75,
+        0.725
+       ],
+       [
+        1.0,
+        7.0,
+        0.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.25,
+      -0.8,
+      1.6,
+      1.0
+     ],
+     [
+      0.475,
+      4.35,
+      3.6,
+      0.25
+     ],
+     [
+      0.7,
+      9.5,
+      1.3,
+      -0.5
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.25,
+      null
+     ],
+     [
+      0.7,
+      "lb"
+     ]
+    ]
    }
   },
   {
@@ -331,6 +910,17 @@
    "key": [
     "27"
    ],
+   "place": {
+    "te": [
+     -0.8,
+     0
+    ],
+    "lb": [
+     0.8,
+     0
+    ],
+    "qb": false
+   },
    "shot": {
     "type": "high",
     "on": "te"
@@ -344,44 +934,50 @@
      "mood": "happy",
      "action": "cheer"
     }
-   },
+   }
+  },
+  {
+   "text": "The ground wins this one. Again.",
+   "key": [
+    "AGAIN."
+   ],
    "place": {
-    "te": [
-     -0.8,
-     0
-    ],
-    "lb": [
-     0.8,
-     0
+    "capy": "left",
+    "te": "right",
+    "lb": false,
+    "qb": false,
+    "ref": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "te"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "GROUND 1",
+     "STEELERS 0"
     ]
    }
   },
   {
-   "text": "The winner was in line for home field in the playoffs.",
+   "text": "That March, the owners rewrite the catch rule.",
    "key": [
-    "HOME",
-    "FIELD"
-   ],
-   "place": {
-    "lb": false
-   },
-   "shot": {
-    "type": "low",
-    "on": "te"
-   },
-   "act": {
-    "te": {
-     "mood": "sad",
-     "action": "idle",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Three months later, the owners rewrote the catch rule.",
-   "cap": "3 months later, the owners rewrote the catch rule.",
-   "key": [
-    "REWROTE"
+    "RULE."
    ],
    "set": "office",
    "setOpts": {
@@ -406,9 +1002,9 @@
    }
   },
   {
-   "text": "Jesse James's play was one of the reasons why.",
+   "text": "No more surviving the ground. Every team votes yes. Your catch? A big reason.",
    "key": [
-    "REASONS."
+    "REASON."
    ],
    "place": {
     "capy": [
@@ -424,7 +1020,7 @@
    "act": {
     "capy": {
      "mood": "smug",
-     "action": "shrug",
+     "action": "point",
      "look": "camera"
     },
     "own": {
@@ -436,15 +1032,14 @@
    "speaker": "capy"
   },
   {
-   "text": "Would you have counted it? Yes or no, below.",
+   "text": "Catch or no catch? One word. Patriots fans, sit down.",
    "key": [
-    "YES",
-    "NO,"
+    "CATCH?"
    ],
    "set": "locker",
    "setOpts": {
     "boardText": [
-     "TOUCHDOWN?",
+     "CATCH?",
      "YES / NO"
     ]
    },
@@ -472,30 +1067,99 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "NFL.com: NFL: Steelers' Jesse James lost control of the football",
-   "url": "https://nfl.com/_amp/nfl-steelers-jesse-james-lost-control-of-the-football-0ap3000000894836"
+   "claim": "In 2017 Jesse James's go-ahead touchdown against the Patriots was overturned",
+   "terms": [
+    "James",
+    "overturned"
+   ]
   },
   {
-   "title": "NESN: Jesse James catch overturned in controversial Patriots-Steelers ending",
-   "url": "https://nesn.com/2017/12/jesse-james-catch-overturned-in-controversial-patriots-steelers-ending"
+   "claim": "The Steelers trailed the Patriots 27-24 late",
+   "terms": [
+    "Patriots",
+    "27-24"
+   ]
   },
   {
-   "title": "TribLIVE: Steelers' overturned touchdown adds to confusion over NFL's catch rule",
-   "url": "https://archive.triblive.com/sports/steelers/steelers-overturned-touchdown-adds-to-confusion-over-nfls-catch-rule"
+   "claim": "The winner was in line for home field in the playoffs",
+   "terms": [
+    "home field|home-field",
+    "Patriots"
+   ]
   },
   {
-   "title": "CBS Sports: NFL VP of officiating tries to explain why Steelers TD got overturned",
-   "url": "https://www.cbssports.com/nfl/news/nfl-vp-of-officiating-tries-to-explain-why-steelers-td-got-overturned-vs-patriots"
+   "claim": "Ben Roethlisberger threw the pass to Jesse James",
+   "terms": [
+    "Roethlisberger",
+    "James"
+   ]
   },
   {
-   "title": "NFL.com: NFL teams unanimously approve simplified catch rule",
-   "url": "https://www.nfl.com/news/nfl-teams-unanimously-approve-simplified-catch-rule-0ap3000000923342"
+   "claim": "James stretched the ball across the goal line",
+   "terms": [
+    "James",
+    "goal line"
+   ]
   },
   {
-   "title": "SI: NFL owners vote unanimously on changes to catch rule",
-   "url": "https://www.si.com/nfl/2018/03/27/owners-vote-unanimously-change-catch-rule"
+   "claim": "Replay saw the ball move when it hit the ground",
+   "terms": [
+    "ball",
+    "ground",
+    "replay|review"
+   ]
+  },
+  {
+   "claim": "The rule then said a receiver going to the ground must survive the ground",
+   "terms": [
+    "survive",
+    "ground"
+   ]
+  },
+  {
+   "claim": "The play was ruled incomplete",
+   "terms": [
+    "incomplete",
+    "James"
+   ]
+  },
+  {
+   "claim": "Two plays later Roethlisberger was intercepted in the end zone",
+   "terms": [
+    "intercept",
+    "end zone"
+   ]
+  },
+  {
+   "claim": "The Patriots won 27-24",
+   "terms": [
+    "Patriots",
+    "27-24"
+   ]
+  },
+  {
+   "claim": "In March 2018 the owners unanimously approved a new catch rule",
+   "terms": [
+    "unanimous",
+    "catch rule"
+   ]
+  },
+  {
+   "claim": "The new rule dropped the survive-the-ground requirement",
+   "terms": [
+    "ground",
+    "catch rule"
+   ]
+  },
+  {
+   "claim": "The James play was cited when the catch rule changed",
+   "terms": [
+    "James",
+    "catch rule"
+   ]
   }
  ]
 }

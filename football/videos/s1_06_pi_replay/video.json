@@ -73,14 +73,68 @@
     "glasses": true
    },
    "at": "desk"
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#c8a96a",
+    "number": "9",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "at": "left",
+   "hold": "football"
   }
  },
+ "sources": [
+  {
+   "title": "SI: Why the NFL scrapped pass interference replay review for 2020",
+   "url": "https://www.si.com/nfl/2020/09/13/pass-interference-replay-review-scrapped-nfl-explainer"
+  },
+  {
+   "title": "NFL.com: Owners make pass interference, non-calls reviewable",
+   "url": "https://www.nfl.com/news/owners-make-pass-interference-non-calls-reviewable-0ap3000001024371"
+  },
+  {
+   "title": "Yahoo Sports: NFL will review all pass interference calls, non-calls in wake of NFC championship",
+   "url": "https://sports.yahoo.com/nfl-will-review-all-pass-interference-calls-noncalls-in-wake-of-nfc-championship-game-000351212.html"
+  },
+  {
+   "title": "CBS Sports: Pass interference replay review will not be returning in 2020",
+   "url": "https://www.cbssports.com/nfl/news/pass-interference-replay-review-will-not-be-returning-in-2020-and-competition-committee-chair-explains-why"
+  },
+  {
+   "title": "ESPN: What went wrong with NFL officiating in 2019 (13 of 81 challenges overturned)",
+   "url": "https://africa.espn.com/nfl/story/_/id/28447306/what-went-wrong-nfl-officiating-2019-comes-next"
+  },
+  {
+   "title": "Bleacher Report: Packers' Mark Murphy: pass interference replay results were 'not great' in 2019",
+   "url": "https://bleacherreport.com/articles/2877873-packers-mark-murphy-pass-interference-replay-results-were-not-great-in-2019"
+  },
+  {
+   "title": "theScore: Competition committee admits new PI rule was 'not great' in 2019",
+   "url": "https://thescore.com/nfl/news/1952891/competition-committee-admits-new-pi-rule-was-not-great-in-2019"
+  },
+  {
+   "title": "ESPN: Pass interference replay challenge rule finalized",
+   "url": "https://africa.espn.com/nfl/story/_/id/27017122/pass-interference-replay-challenge-rule-finalized"
+  },
+  {
+   "title": "6abc: Pass interference now reviewable by NFL officials",
+   "url": "https://6abc.com/pass-inteference-rule-nfl-changes-rams-saints-blown-call-nfc-championship-game/5220285/"
+  },
+  {
+   "title": "SI: NFL VP says pass interference replay failed miserably",
+   "url": "https://www.si.com/nfl/2020/05/26/pass-interference-replay-failed-miserably-nfl-vp"
+  }
+ ],
  "lines": [
   {
-   "text": "In 2019, one missed call changed NFL replay. The fix lasted one season.",
+   "text": "You get robbed on national television. The fix lasts one year.",
    "key": [
-    "ONE",
-    "SEASON."
+    "YEAR."
    ],
    "place": {
     "capy": [
@@ -94,7 +148,8 @@
     "wr": false,
     "cb": false,
     "coach": false,
-    "own": false
+    "own": false,
+    "qb": false
    },
    "shot": {
     "type": "two",
@@ -116,11 +171,10 @@
    "speaker": "capy"
   },
   {
-   "text": "NFC Championship. Rams at Saints. Tied twenty to twenty, under two minutes left.",
-   "cap": "NFC Championship. Rams at Saints. Tied 20 to 20, under 2 minutes left.",
+   "text": "January twenty nineteen. You're the Saints.",
+   "cap": "January 2019. You're the Saints.",
    "key": [
-    "TIED",
-    "20"
+    "SAINTS."
    ],
    "place": {
     "capy": false,
@@ -152,48 +206,397 @@
      "mood": "angry",
      "look": "wr"
     }
-   }
+   },
+   "board": [
+    "NFC TITLE",
+    "RAMS AT SAINTS"
+   ]
   },
   {
-   "text": "Third down. A Rams cornerback hits the receiver before the ball gets there.",
+   "text": "Conference title game. The Rams are in town.",
    "key": [
-    "BEFORE"
+    "RAMS"
    ],
    "place": {
-    "cb": [
-     0.6,
-     -0.2
-    ]
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "wr": [
+     1.0,
+     0
+    ],
+    "ref": false
    },
    "shot": {
     "type": "two",
-    "on": "wr",
-    "with": "cb"
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Tied twenty to twenty. Under two minutes left.",
+   "cap": "Tied 20 to 20. Under 2 minutes left.",
+   "key": [
+    "20"
+   ],
+   "place": {
+    "wr": "center",
+    "ref": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wr"
    },
    "act": {
     "wr": {
-     "mood": "shocked",
-     "action": "shrug",
-     "look": "cb"
-    },
-    "cb": {
-     "mood": "angry",
-     "action": "point",
-     "look": "wr"
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
     }
+   },
+   "board": [
+    "RAMS 20",
+    "SAINTS 20"
+   ]
+  },
+  {
+   "text": "Third down. Drew Brees throws your way.",
+   "key": [
+    "WAY."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAMS 20",
+     "SAINTS 20"
+    ],
+    "endZone": 8,
+    "zoneA": "#1b1b1b",
+    "zoneB": "#1f3f8f"
+   },
+   "shot": {
+    "type": "follow",
+    "on": "qb",
+    "lead": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        -3.0,
+        1.0
+       ],
+       [
+        1,
+        -3.0,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        1.0,
+        1.0
+       ],
+       [
+        0.25,
+        2.0,
+        0.75
+       ],
+       [
+        0.5,
+        3.0,
+        0.5
+       ],
+       [
+        0.75,
+        4.0,
+        0.25
+       ],
+       [
+        1.0,
+        5.0,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "cb": {
+      "path": [
+       [
+        0.0,
+        1.5,
+        -1.5
+       ],
+       [
+        0.25,
+        1.875,
+        -1.325
+       ],
+       [
+        0.5,
+        2.25,
+        -1.15
+       ],
+       [
+        0.75,
+        2.625,
+        -0.975
+       ],
+       [
+        1.0,
+        3.0,
+        -0.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.6,
+      -2.8,
+      1.6,
+      1.0
+     ],
+     [
+      0.8,
+      0.6,
+      3.4,
+      0.6
+     ],
+     [
+      1.0,
+      4.0,
+      2.2,
+      0.2
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.6,
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "text": "A Rams corner hits your receiver. Early.",
+   "key": [
+    "EARLY."
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "wr",
+    "lead": 0
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "wr": {
+      "path": [
+       [
+        0.0,
+        5.0,
+        0.0
+       ],
+       [
+        0.075,
+        5.3,
+        0.05
+       ],
+       [
+        0.15,
+        5.6,
+        0.1
+       ],
+       [
+        0.225,
+        5.9,
+        0.15
+       ],
+       [
+        0.3,
+        6.2,
+        0.2
+       ],
+       [
+        1,
+        6.2,
+        0.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.3,
+        "idle"
+       ]
+      ],
+      "face": 90,
+      "mood": "shocked"
+     },
+     "cb": {
+      "path": [
+       [
+        0.0,
+        3.0,
+        -0.8
+       ],
+       [
+        0.075,
+        3.4,
+        -0.6
+       ],
+       [
+        0.15,
+        3.8,
+        -0.4
+       ],
+       [
+        0.225,
+        4.2,
+        -0.2
+       ],
+       [
+        0.3,
+        4.6,
+        0.0
+       ],
+       [
+        1,
+        4.6,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.3,
+        "idle"
+       ]
+      ],
+      "face": 90,
+      "mood": "smug"
+     },
+     "qb": {
+      "path": [
+       [
+        0,
+        -3.0,
+        1.0
+       ],
+       [
+        1,
+        -3.0,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0,
+      4.0,
+      2.2,
+      0.2
+     ],
+     [
+      0.25,
+      5.8,
+      1.8,
+      0.4
+     ],
+     [
+      0.5,
+      7.6,
+      0.2,
+      0.6
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ]
+    ]
    }
   },
   {
    "text": "No flag. Nothing.",
    "key": [
-    "NO",
-    "FLAG."
+    "NOTHING."
    ],
    "place": {
     "ref": [
      -2.2,
      0.6
-    ]
+    ],
+    "wr": [
+     0.8,
+     0
+    ],
+    "cb": [
+     2.6,
+     -0.4
+    ],
+    "qb": false
    },
    "shot": {
     "type": "medium",
@@ -208,12 +611,17 @@
    }
   },
   {
-   "text": "New Orleans kicks a field goal. The Rams tie it, then win in overtime.",
+   "text": "You kick a field goal. The Rams tie it.",
    "key": [
-    "OVERTIME."
+    "TIE"
    ],
    "place": {
-    "ref": false
+    "ref": false,
+    "cb": "center",
+    "wr": [
+     -1.8,
+     0.2
+    ]
    },
    "shot": {
     "type": "low",
@@ -232,9 +640,8 @@
    }
   },
   {
-   "text": "Los Angeles goes to the Super Bowl. New Orleans goes home.",
+   "text": "They win in overtime. They go to the Super Bowl.",
    "key": [
-    "SUPER",
     "BOWL."
    ],
    "shot": {
@@ -249,8 +656,48 @@
    }
   },
   {
-   "text": "Two months later, the owners voted thirty one to one.",
-   "cap": "2 months later, the owners voted 31 to 1.",
+   "text": "New Orleans takes it calmly. Just kidding.",
+   "key": [
+    "KIDDING."
+   ],
+   "place": {
+    "capy": "left",
+    "wr": "right",
+    "ref": false,
+    "cb": false,
+    "own": false,
+    "coach": false,
+    "qb": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "MAD"
+    ]
+   }
+  },
+  {
+   "text": "That March, owners vote thirty one to one.",
+   "cap": "That March, owners vote 31 to 1.",
    "key": [
     "31"
    ],
@@ -277,10 +724,9 @@
    }
   },
   {
-   "text": "Pass interference could now be reviewed. Even when no flag was thrown.",
+   "text": "Pass interference is now reviewable. Even with no flag.",
    "key": [
-    "REVIEWED.",
-    "NO"
+    "FLAG."
    ],
    "shot": {
     "type": "low",
@@ -295,7 +741,8 @@
    }
   },
   {
-   "text": "Only for one year, as a trial.",
+   "text": "It's a one year trial.",
+   "cap": "It's a 1-year trial.",
    "key": [
     "TRIAL."
    ],
@@ -324,8 +771,8 @@
    "speaker": "capy"
   },
   {
-   "text": "That season, coaches challenged eighty one pass interference plays.",
-   "cap": "That season, coaches challenged 81 pass interference plays.",
+   "text": "That season, coaches challenge eighty one of them.",
+   "cap": "That season, coaches challenge 81 of them.",
    "key": [
     "81"
    ],
@@ -346,13 +793,14 @@
    "act": {
     "coach": {
      "mood": "angry",
-     "action": "throw"
+     "action": "point",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Thirteen got overturned. Thirteen, out of eighty one.",
-   "cap": "13 got overturned. 13, out of 81.",
+   "text": "Thirteen get overturned. That's it.",
+   "cap": "13 get overturned. That's it.",
    "key": [
     "13"
    ],
@@ -368,9 +816,8 @@
    }
   },
   {
-   "text": "A competition committee member called the results not great.",
+   "text": "The committee calls the results not great.",
    "key": [
-    "NOT",
     "GREAT."
    ],
    "set": "office",
@@ -395,9 +842,10 @@
    }
   },
   {
-   "text": "So for 2020, the league quietly dropped it.",
+   "text": "So for twenty twenty, it's gone. Quietly.",
+   "cap": "So for 2020, it's gone. Quietly.",
    "key": [
-    "DROPPED"
+    "QUIETLY."
    ],
    "place": {
     "capy": [
@@ -425,10 +873,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Should replay judge pass interference? Yes or no, below.",
+   "text": "Should replay judge pass interference? Yes or no. Saints fans, breathe.",
    "key": [
     "YES",
-    "NO,"
+    "NO."
    ],
    "set": "locker",
    "setOpts": {
@@ -461,34 +909,96 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "SI: Why the NFL scrapped pass interference replay review for 2020",
-   "url": "https://www.si.com/nfl/2020/09/13/pass-interference-replay-review-scrapped-nfl-explainer"
+   "claim": "In January 2019 the Rams played the Saints in the NFC Championship",
+   "terms": [
+    "NFC Championship|NFC title",
+    "Rams",
+    "Saints"
+   ]
   },
   {
-   "title": "NFL.com: Owners make pass interference, non-calls reviewable",
-   "url": "https://www.nfl.com/news/owners-make-pass-interference-non-calls-reviewable-0ap3000001024371"
+   "claim": "The game was tied 20-20 with under two minutes left",
+   "terms": [
+    "20-20"
+   ]
   },
   {
-   "title": "Yahoo Sports: NFL will review all pass interference calls, non-calls in wake of NFC championship",
-   "url": "https://sports.yahoo.com/nfl-will-review-all-pass-interference-calls-noncalls-in-wake-of-nfc-championship-game-000351212.html"
+   "claim": "On third down Drew Brees threw toward Tommylee Lewis",
+   "terms": [
+    "Brees",
+    "Lewis"
+   ]
   },
   {
-   "title": "CBS Sports: Pass interference replay review will not be returning in 2020",
-   "url": "https://www.cbssports.com/nfl/news/pass-interference-replay-review-will-not-be-returning-in-2020-and-competition-committee-chair-explains-why"
+   "claim": "A Rams cornerback, Nickell Robey-Coleman, hit the receiver before the ball arrived",
+   "terms": [
+    "Robey-Coleman",
+    "Lewis"
+   ]
   },
   {
-   "title": "ESPN: What went wrong with NFL officiating in 2019 (13 of 81 challenges overturned)",
-   "url": "https://africa.espn.com/nfl/story/_/id/28447306/what-went-wrong-nfl-officiating-2019-comes-next"
+   "claim": "No flag was thrown",
+   "terms": [
+    "Robey-Coleman",
+    "flag|penalty|call"
+   ]
   },
   {
-   "title": "Bleacher Report: Packers' Mark Murphy: pass interference replay results were 'not great' in 2019",
-   "url": "https://bleacherreport.com/articles/2877873-packers-mark-murphy-pass-interference-replay-results-were-not-great-in-2019"
+   "claim": "The Saints kicked a field goal, the Rams tied it and won in overtime",
+   "terms": [
+    "field goal",
+    "overtime"
+   ]
   },
   {
-   "title": "theScore: Competition committee admits new PI rule was 'not great' in 2019",
-   "url": "https://thescore.com/nfl/news/1952891/competition-committee-admits-new-pi-rule-was-not-great-in-2019"
+   "claim": "The Rams went to the Super Bowl",
+   "terms": [
+    "Rams",
+    "Super Bowl"
+   ]
+  },
+  {
+   "claim": "In March 2019 the owners voted 31-1",
+   "terms": [
+    "31-1"
+   ]
+  },
+  {
+   "claim": "Pass interference became reviewable, including when no flag was thrown",
+   "terms": [
+    "pass interference",
+    "non-calls|non calls|not called|no flag"
+   ]
+  },
+  {
+   "claim": "It was a one-year trial",
+   "terms": [
+    "one-year|one year|1-year",
+    "pass interference"
+   ]
+  },
+  {
+   "claim": "In 2019 coaches challenged 81 pass interference plays and 13 were overturned",
+   "terms": [
+    "81",
+    "13"
+   ]
+  },
+  {
+   "claim": "The competition committee called the results not great",
+   "terms": [
+    "not great"
+   ]
+  },
+  {
+   "claim": "The league dropped pass interference review for 2020",
+   "terms": [
+    "2020",
+    "pass interference"
+   ]
   }
  ]
 }
