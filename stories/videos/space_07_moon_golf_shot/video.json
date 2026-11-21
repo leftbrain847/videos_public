@@ -1,0 +1,869 @@
+{
+ "id": "space_07_moon_golf_shot",
+ "title": "Golf on the moon: miles and miles?",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "APOLLO 14"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "alan": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#eef1f5",
+    "pants": "#eef1f5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "ed": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#dfe6ee",
+    "pants": "#dfe6ee",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "expert": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8",
+    "glasses": true
+   }
+  },
+  "cur": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You hit a golf ball on the moon. Then you brag about it. A lot.",
+   "key": [
+    "BRAG."
+   ],
+   "board": [
+    "MOON GOLF",
+    "HOW FAR?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "alan": [
+     2.6,
+     -0.6
+    ],
+    "ed": false,
+    "expert": false,
+    "cur": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "alan": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "February, nineteen seventy one. Apollo fourteen is on the moon.",
+   "cap": "February 1971. Apollo 14 is on the moon.",
+   "key": [
+    "MOON."
+   ],
+   "board": [
+    "APOLLO 14",
+    "FEB 1971"
+   ],
+   "place": {
+    "capy": false,
+    "alan": [
+     -1.5,
+     0.2
+    ],
+    "ed": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "alan",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "alan": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "ed": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "alan"
+    }
+   }
+  },
+  {
+   "text": "The commander is Alan Shepard. He was America's first man in space.",
+   "key": [
+    "FIRST"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "alan"
+   },
+   "act": {
+    "alan": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He has a secret. Two golf balls, smuggled inside his suit.",
+   "key": [
+    "GOLF"
+   ],
+   "board": [
+    "2 GOLF BALLS",
+    "SMUGGLED"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "alan": [
+     1.4,
+     0.2
+    ],
+    "ed": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "alan"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "alan"
+    },
+    "alan": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Plus the head of a six iron.",
+   "cap": "Plus the head of a 6-iron.",
+   "key": [
+    "6-IRON."
+   ],
+   "board": [
+    "6-IRON",
+    "HEAD"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "alan"
+   },
+   "act": {
+    "alan": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "alan"
+    }
+   }
+  },
+  {
+   "text": "He clips it onto a tool handle. It's meant for scooping moon rocks.",
+   "key": [
+    "SCOOPING"
+   ],
+   "place": {
+    "capy": false,
+    "alan": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "alan"
+   },
+   "act": {
+    "alan": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Golf club built from spare parts. On the moon.",
+   "key": [
+    "PARTS."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "alan": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "alan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "His suit is stiff. He can only swing with one hand. Awkward.",
+   "key": [
+    "HAND."
+   ],
+   "place": {
+    "capy": false,
+    "alan": [
+     0,
+     0.3
+    ],
+    "ed": [
+     2.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "alan"
+   },
+   "act": {
+    "alan": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "ed": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "alan"
+    }
+   }
+  },
+  {
+   "text": "His first swings mostly hit moon dust.",
+   "key": [
+    "DUST."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "alan",
+    "offset": [
+     0.4,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "alan": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "ed": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "alan"
+    }
+   }
+  },
+  {
+   "text": "Golf on the moon. He whiffs. Very relatable.",
+   "key": [
+    "RELATABLE."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "alan": [
+     2.6,
+     -0.6
+    ],
+    "ed": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "alan": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then he finally connects. The ball sails off into the dark.",
+   "key": [
+    "CONNECTS."
+   ],
+   "place": {
+    "capy": false,
+    "alan": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "alan"
+   },
+   "act": {
+    "alan": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "His verdict? Miles. And miles. And miles.",
+   "key": [
+    "MILES"
+   ],
+   "board": [
+    "MILES AND MILES",
+    "AND MILES"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "alan": [
+     1.4,
+     0.2
+    ],
+    "ed": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "alan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "alan"
+    },
+    "alan": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "For fifty years, nobody really checks. Why would they?",
+   "cap": "For 50 years, nobody really checks. Why would they?",
+   "key": [
+    "50"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.6,
+     0,
+     0.3
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "alan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then an image expert studies the footage. Andy Saunders.",
+   "key": [
+    "SAUNDERS,"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "FOOTAGE",
+     "RESTORED"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "alan": false,
+    "ed": false,
+    "expert": [
+     0,
+     0.4
+    ],
+    "cur": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "expert"
+   },
+   "act": {
+    "expert": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He enhances every single frame. He tracks both balls.",
+   "key": [
+    "BOTH"
+   ],
+   "board": [
+    "BALL 1",
+    "BALL 2"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "expert"
+   },
+   "act": {
+    "expert": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ball one? About twenty four yards.",
+   "cap": "Ball one? About 24 yards.",
+   "key": [
+    "24"
+   ],
+   "board": [
+    "BALL 1",
+    "24 YARDS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "expert": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "expert"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "expert"
+    },
+    "expert": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Ball two? About forty yards. That's it.",
+   "cap": "Ball two? About 40 yards. That's it.",
+   "key": [
+    "40"
+   ],
+   "board": [
+    "BALL 2",
+    "40 YARDS"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "expert": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Miles and miles. Forty yards. Basically the same thing, right?",
+   "cap": "Miles and miles. 40 yards. Basically the same thing, right?",
+   "key": [
+    "SAME"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     1.2,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "expert": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The club now sits in a golf museum. In New Jersey.",
+   "key": [
+    "MUSEUM"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "GOLF MUSEUM",
+     "NEW JERSEY"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "alan": false,
+    "ed": false,
+    "expert": false,
+    "cur": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "cur"
+   },
+   "act": {
+    "cur": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Those two balls are still up there today.",
+   "key": [
+    "STILL"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "2 BALLS",
+     "STILL THERE"
+    ]
+   },
+   "board": [
+    "2 BALLS",
+    "STILL THERE"
+   ],
+   "place": {
+    "capy": false,
+    "alan": [
+     0,
+     0.3
+    ],
+    "ed": false,
+    "expert": false,
+    "cur": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "alan"
+   },
+   "act": {
+    "alan": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Forty yards in moon gravity. Could you beat it? Yes or no?",
+   "cap": "40 yards in moon gravity. Could you beat it? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "BEAT 40 YDS?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "alan": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "alan": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Apollo 14",
+   "url": "https://en.wikipedia.org/wiki/Apollo_14"
+  },
+  {
+   "title": "USGA: Shepard's moon club at 50",
+   "url": "https://www.usga.org/content/usga/home-page/articles/2021/02/shepard-moon-club-50th-anniversary-usga-museum.html"
+  },
+  {
+   "title": "Space.com: Apollo 14 golf shot analysis",
+   "url": "https://www.space.com/apollo-14-moon-landing-golf-shot-analysis"
+  },
+  {
+   "title": "Astronomy: Alan Shepard's golf balls, now we know where they landed",
+   "url": "https://www.astronomy.com/observing/alan-shepard-smacked-golf-balls-on-the-moon-and-now-we-know-where-they-landed/"
+  },
+  {
+   "title": "Guinness World Records: the 50-year golf mystery",
+   "url": "https://guinnessworldrecords.com/news/2024/11/how-oldest-person-to-walk-on-the-moon-sparked-50-year-mystery-with-famous-golf-swing"
+  },
+  {
+   "title": "ClickOnDetroit (AP): Shepard puts golf on the moon 50 years ago",
+   "url": "https://www.clickondetroit.com/sports/2021/02/05/out-of-this-world-shepard-puts-golf-on-moon-50-years-ago/"
+  },
+  {
+   "title": "NBC DFW (AP): Shepard put golf on the moon 50 years ago",
+   "url": "https://www.nbcdfw.com/news/local/texas-news/out-of-this-world-shepard-put-golf-on-moon-50-years-ago/2543922/"
+  },
+  {
+   "title": "Irish Golfer: how far did Shepard hit his moon shot",
+   "url": "https://irishgolfer.ie/latest-golf-news/2021/02/05/how-far-did-shepard-hit-his-moon-shot-50-years-ago-this-week/"
+  },
+  {
+   "title": "SlashGear: images find Shepard's golf balls",
+   "url": "https://www.slashgear.com/apollo-14-50th-anniversary-images-find-alan-shepards-golf-balls-05658300/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Apollo 14 landed on the moon in February 1971",
+   "terms": [
+    "Apollo 14",
+    "February",
+    "1971"
+   ]
+  },
+  {
+   "claim": "Alan Shepard was the commander and America's first man in space",
+   "terms": [
+    "Shepard",
+    "first American|first U.S.|first man|first person"
+   ]
+  },
+  {
+   "claim": "He brought two golf balls",
+   "terms": [
+    "golf balls",
+    "two|2"
+   ]
+  },
+  {
+   "claim": "He brought a six-iron head",
+   "terms": [
+    "6-iron|six-iron"
+   ]
+  },
+  {
+   "claim": "He attached it to a tool handle for collecting samples",
+   "terms": [
+    "6-iron|six-iron|six iron",
+    "handle|tool|scoop"
+   ]
+  },
+  {
+   "claim": "His stiff suit meant a one-handed swing",
+   "terms": [
+    "one-handed|one hand"
+   ]
+  },
+  {
+   "claim": "His first swings hit mostly dirt",
+   "terms": [
+    "dust|dirt|sand",
+    "swing|shot|ball"
+   ]
+  },
+  {
+   "claim": "He said the ball went miles and miles and miles",
+   "terms": [
+    "miles and miles"
+   ]
+  },
+  {
+   "claim": "In 2021 image expert Andy Saunders analyzed the footage",
+   "terms": [
+    "Saunders"
+   ]
+  },
+  {
+   "claim": "The first ball went about 24 yards",
+   "terms": [
+    "24 yards"
+   ]
+  },
+  {
+   "claim": "The second ball went about 40 yards",
+   "terms": [
+    "40 yards"
+   ]
+  },
+  {
+   "claim": "The club is at the USGA museum in New Jersey",
+   "terms": [
+    "USGA",
+    "museum"
+   ]
+  },
+  {
+   "claim": "The golf balls are still on the moon",
+   "terms": [
+    "golf balls",
+    "still|remain"
+   ]
+  }
+ ]
+}
