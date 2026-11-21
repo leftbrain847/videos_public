@@ -1,10 +1,25 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "stories-myth-fixes",
+ "release": "stories-scary-1",
  "listen": true,
  "replace": true,
  "videos": [
-  "myth_12_loki_builder_horse"
+  "scary_01_mary_celeste",
+  "scary_02_flannan_isles",
+  "scary_03_wow_signal",
+  "scary_04_max_headroom",
+  "scary_05_roanoke",
+  "scary_06_baychimo",
+  "scary_07_devils_footprints",
+  "scary_08_vrillon",
+  "scary_09_valentich",
+  "scary_10_dancing_plague",
+  "scary_11_carroll_deering",
+  "scary_12_gef_the_mongoose",
+  "scary_13_fox_sisters",
+  "scary_14_kaz_ii",
+  "scary_15_winchester_house",
+  "scary_16_perytons"
  ]
 }
