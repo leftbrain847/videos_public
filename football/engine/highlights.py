@@ -24,8 +24,9 @@ REEL = {
     # tracking camera: follow the disks and zoom in, so they read on a phone
     "track": {
         "on": True,
-        "min_h": 640, "max_h": 1300,   # crop window height in capture px (width = h * 9/8); 640 = 1.5x zoom
-        "margin": 1.5, "pad_px": 220,  # window height >= disks' spread * margin + pad
+        "min_h": 560, "max_h": 860,    # crop window height in capture px (width = h * 9/8); 640 = 1.5x zoom, 860 ~ 1.1x
+        "margin": 1.25, "pad_px": 180, # window height >= the action's spread * margin + pad
+        "core": [20, 80],              # frame the middle of the action: these percentiles of disk positions, not stragglers
         "smooth": 0.12,                # per-frame easing of center and size (lower = calmer camera)
         "bright": 110, "min_area": 30, # disk detection: brightness threshold, smallest blob
         "field": [110, 200, 970, 1820],# x0, y0, x1, y1: search area (skips the HUD and sidelines)
@@ -75,8 +76,10 @@ def tracked(p, out):
         n, _, st, _ = cv2.connectedComponentsWithStats((g > T["bright"]).astype(np.uint8))
         b = [s for s in st[1:] if s[4] >= T["min_area"]]
         if b:
-            bx0 = min(s[0] for s in b) + x0; bx1 = max(s[0] + s[2] for s in b) + x0
-            by0 = min(s[1] for s in b) + y0; by1 = max(s[1] + s[3] for s in b) + y0
+            xs = np.array([s[0] + s[2] / 2 for s in b]) + x0; ys = np.array([s[1] + s[3] / 2 for s in b]) + y0
+            lo, hi = T["core"]
+            bx0, bx1 = np.percentile(xs, lo), np.percentile(xs, hi)
+            by0, by1 = np.percentile(ys, lo), np.percentile(ys, hi)
             tcx, tcy = (bx0 + bx1) / 2, (by0 + by1) / 2
             th = max((by1 - by0) * T["margin"] + T["pad_px"], (bx1 - bx0) * T["margin"] * 8 / 9 + T["pad_px"])
             th = min(max(th, T["min_h"]), T["max_h"])
