@@ -81,10 +81,10 @@
  },
  "lines": [
   {
-   "text": "Week two. The Packers and the Jets were flagged twenty seven times. In one game.",
-   "cap": "Week 2. The Packers and the Jets were flagged 27 times. In one game.",
+   "text": "You get flagged fourteen times. You still win.",
+   "cap": "You get flagged 14 times. You still win.",
    "key": [
-    "27"
+    "WIN."
    ],
    "place": {
     "capy": [
@@ -128,45 +128,130 @@
    "speaker": "capy"
   },
   {
-   "text": "Green Bay: fourteen penalties, one hundred thirty three yards.",
-   "cap": "Green Bay: 14 penalties, 133 yards.",
+   "text": "You're Green Bay. Week two, at the Jets.",
    "key": [
-    "14",
+    "JETS."
+   ],
+   "board": [
+    "WEEK 2",
+    "GB AT NYJ"
+   ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "ref": [
+     0,
+     0
+    ],
+    "packer": [
+     2.2,
+     0.3
+    ],
+    "jet": false,
+    "moore": false,
+    "kicker": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "packer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "packer"
+    },
+    "packer": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Fourteen penalties. One hundred thirty three yards.",
+   "cap": "14 penalties. 133 yards.",
+   "key": [
     "133"
    ],
    "board": [
     "GREEN BAY",
     "14 FLAGS / 133 YDS"
    ],
+   "place": {
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "ref": [
+     0,
+     0
+    ],
+    "packer": [
+     2.2,
+     0.3
+    ],
+    "jet": false,
+    "moore": false,
+    "kicker": false
+   },
    "shot": {
-    "type": "medium",
+    "type": "close",
     "on": "packer"
    },
    "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "packer"
+    },
     "packer": {
      "mood": "sad",
      "action": "facepalm",
      "look": "camera"
     }
-   }
+   },
+   "speaker": "capy"
   },
   {
-   "text": "New York: thirteen more, for one hundred fifty six.",
-   "cap": "New York: 13 more, for 156.",
+   "text": "The Jets? Thirteen more. One hundred fifty six yards.",
+   "cap": "The Jets? 13 more. 156 yards.",
    "key": [
-    "13",
-    "156."
+    "156"
    ],
    "board": [
     "NEW YORK",
     "13 FLAGS / 156 YDS"
    ],
    "place": {
+    "capy": false,
+    "ref": [
+     0,
+     0
+    ],
+    "packer": [
+     2.2,
+     0.3
+    ],
     "jet": [
      -1.4,
      0.4
     ],
-    "capy": false
+    "moore": false,
+    "kicker": false
    },
    "shot": {
     "type": "two",
@@ -174,21 +259,26 @@
     "with": "ref"
    },
    "act": {
-    "jet": {
-     "mood": "angry",
-     "action": "shrug",
-     "look": "ref"
-    },
     "ref": {
      "mood": "neutral",
      "action": "point",
      "look": "jet"
+    },
+    "packer": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "jet": {
+     "mood": "angry",
+     "action": "shrug",
+     "look": "ref"
     }
    }
   },
   {
-   "text": "Two hundred eighty nine yards, walked off by the officials.",
-   "cap": "289 yards, walked off by the officials.",
+   "text": "Twenty seven flags. Two hundred eighty nine yards.",
+   "cap": "27 flags. 289 yards.",
    "key": [
     "289"
    ],
@@ -199,8 +289,17 @@
      "289"
     ]
    },
+   "board": [
+    "27 FLAGS",
+    "289 YARDS"
+   ],
    "place": {
-    "ref": "center"
+    "capy": false,
+    "ref": "center",
+    "packer": false,
+    "jet": false,
+    "moore": false,
+    "kicker": false
    },
    "shot": {
     "type": "wide",
@@ -215,11 +314,10 @@
    }
   },
   {
-   "text": "With eleven minutes left, Green Bay trailed seventeen to seven.",
-   "cap": "With 11 minutes left, Green Bay trailed 17 to 7.",
+   "text": "Eleven minutes left. You're down seventeen to seven.",
+   "cap": "11 minutes left. You're down 17 to 7.",
    "key": [
-    "17",
-    "7."
+    "17"
    ],
    "set": "field",
    "setOpts": {
@@ -228,9 +326,17 @@
      "GB 7"
     ]
    },
+   "board": [
+    "NYJ 17",
+    "GB 7"
+   ],
    "place": {
+    "capy": false,
+    "ref": false,
     "packer": "center",
-    "jet": "left"
+    "jet": "left",
+    "moore": false,
+    "kicker": false
    },
    "shot": {
     "type": "low",
@@ -250,14 +356,23 @@
    }
   },
   {
-   "text": "Then, a short touchdown pass to Christian Watson.",
+   "text": "Jordan Love hits Christian Watson. Three yards. Touchdown.",
+   "cap": "Jordan Love hits Christian Watson. 3 yards. Touchdown.",
    "key": [
-    "TOUCHDOWN"
+    "TOUCHDOWN."
    ],
    "board": [
     "NYJ 17",
     "GB 14"
    ],
+   "place": {
+    "capy": false,
+    "ref": false,
+    "packer": "center",
+    "jet": "left",
+    "moore": false,
+    "kicker": false
+   },
    "shot": {
     "type": "medium",
     "on": "packer"
@@ -270,25 +385,39 @@
     },
     "jet": {
      "mood": "worried",
-     "action": "idle"
+     "action": "idle",
+     "look": "packer"
     }
    }
   },
   {
-   "text": "Then, a sixty three yard punt return.",
-   "cap": "Then, a 63 yard punt return.",
+   "text": "Then Skyy Moore returns a punt. Sixty three yards.",
+   "cap": "Then Skyy Moore returns a punt. 63 yards.",
    "key": [
     "63"
    ],
+   "board": [
+    "NYJ 17",
+    "GB 14"
+   ],
    "place": {
+    "capy": false,
+    "ref": false,
+    "packer": "center",
     "jet": false,
-    "moore": "left"
+    "moore": "left",
+    "kicker": false
    },
    "shot": {
     "type": "low",
     "on": "moore"
    },
    "act": {
+    "packer": {
+     "mood": "happy",
+     "action": "throw",
+     "look": "camera"
+    },
     "moore": {
      "mood": "happy",
      "action": "cheer",
@@ -297,54 +426,66 @@
    }
   },
   {
-   "text": "Then, a field goal to tie it, with two fifty nine left.",
-   "cap": "Then, a field goal to tie it, with 2:59 left.",
+   "text": "Trey Smack ties it from thirty four. Two fifty nine left.",
+   "cap": "Trey Smack ties it from 34. 2:59 left.",
    "key": [
-    "TIE"
+    "34."
    ],
    "board": [
     "NYJ 17",
     "GB 17"
    ],
    "place": {
+    "capy": false,
+    "ref": false,
+    "packer": "right",
+    "jet": false,
     "moore": false,
-    "kicker": "center",
-    "packer": "right"
+    "kicker": "center"
    },
    "shot": {
     "type": "wide",
     "on": "kicker"
    },
    "act": {
-    "kicker": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    },
     "packer": {
      "mood": "happy",
      "action": "clap",
      "look": "kicker"
+    },
+    "kicker": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Overtime. The Jets got the ball first, and their quarterback was sacked on the first two plays.",
+   "text": "Overtime. The Jets have the ball.",
    "key": [
-    "SACKED"
+    "OVERTIME."
    ],
    "board": [
     "OVERTIME"
    ],
    "place": {
-    "kicker": false,
-    "jet": "center"
+    "capy": false,
+    "ref": false,
+    "packer": "right",
+    "jet": "center",
+    "moore": false,
+    "kicker": false
    },
    "shot": {
     "type": "medium",
     "on": "jet"
    },
    "act": {
+    "packer": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "kicker"
+    },
     "jet": {
      "mood": "sad",
      "action": "slump",
@@ -353,35 +494,42 @@
    }
   },
   {
-   "text": "Three and out.",
+   "text": "Geno Smith gets sacked. Then sacked again.",
    "key": [
-    "OUT."
+    "AGAIN."
+   ],
+   "board": [
+    "OVERTIME"
    ],
    "place": {
-    "capy": [
-     -2.4,
-     1.0
-    ]
+    "capy": false,
+    "ref": false,
+    "packer": "right",
+    "jet": "center",
+    "moore": false,
+    "kicker": false
    },
    "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "jet"
+    "type": "close",
+    "on": "jet"
    },
    "act": {
-    "capy": {
-     "mood": "smug",
-     "action": "shrug",
+    "packer": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "kicker"
+    },
+    "jet": {
+     "mood": "shocked",
+     "action": "slump",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "A rookie kicker hit from twenty six yards. Green Bay wins, twenty to seventeen.",
-   "cap": "A rookie kicker hit from 26 yards. Green Bay wins, 20 to 17.",
+   "text": "Smack hits from twenty six. You win, twenty to seventeen.",
+   "cap": "Smack hits from 26. You win, 20 to 17.",
    "key": [
-    "26",
     "20"
    ],
    "board": [
@@ -390,30 +538,77 @@
    ],
    "place": {
     "capy": false,
+    "ref": false,
+    "packer": "right",
     "jet": false,
-    "kicker": "center",
-    "packer": "right"
+    "moore": false,
+    "kicker": "center"
    },
    "shot": {
     "type": "low",
     "on": "kicker"
    },
    "act": {
+    "packer": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "kicker"
+    },
     "kicker": {
      "mood": "happy",
      "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It snaps a six game losing streak.",
+   "cap": "It snaps a 6-game losing streak.",
+   "key": [
+    "LOSING"
+   ],
+   "board": [
+    "GB 20",
+    "NYJ 17"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     1.0
+    ],
+    "ref": false,
+    "packer": "right",
+    "jet": false,
+    "moore": false,
+    "kicker": "center"
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "packer"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
      "look": "camera"
     },
     "packer": {
      "mood": "happy",
      "action": "cheer",
      "look": "kicker"
+    },
+    "kicker": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
     }
-   }
+   },
+   "speaker": "capy"
   },
   {
-   "text": "Green Bay's total after two games: twenty six penalties.",
-   "cap": "Green Bay's total after two games: 26 penalties.",
+   "text": "Your total after two games? Twenty six penalties.",
+   "cap": "Your total after two games? 26 penalties.",
    "key": [
     "26"
    ],
@@ -424,6 +619,10 @@
      "26 FLAGS"
     ]
    },
+   "board": [
+    "GB AFTER 2 GAMES",
+    "26 PENALTIES"
+   ],
    "place": {
     "capy": [
      -1.4,
@@ -432,12 +631,53 @@
     "ref": [
      1.4,
      0.2
-    ]
+    ],
+    "packer": false,
+    "jet": false,
+    "moore": false,
+    "kicker": false
    },
    "shot": {
     "type": "two",
     "on": "capy",
     "with": "ref"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "ref": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The most in the league.",
+   "key": [
+    "MOST"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     0.6
+    ],
+    "ref": [
+     1.4,
+     0.2
+    ],
+    "packer": false,
+    "jet": false,
+    "moore": false,
+    "kicker": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -465,7 +705,12 @@
     ]
    },
    "place": {
-    "ref": "center"
+    "capy": false,
+    "ref": "center",
+    "packer": false,
+    "jet": false,
+    "moore": false,
+    "kicker": false
    },
    "shot": {
     "type": "medium",
@@ -480,10 +725,11 @@
    }
   },
   {
-   "text": "Could you win with fourteen penalties? Yes or no?",
-   "cap": "Could you win with 14 penalties? Yes or no?",
+   "text": "Could you win with fourteen flags? Yes or no? Jets fans, don't answer.",
+   "cap": "Could you win with 14 flags? Yes or no? Jets fans, don't answer.",
    "key": [
-    "14"
+    "YES",
+    "NO?"
    ],
    "set": "field",
    "setOpts": {
@@ -492,15 +738,23 @@
      "NYJ 17"
     ]
    },
+   "board": [
+    "WIN WITH 14 FLAGS?",
+    "YES OR NO?"
+   ],
    "place": {
     "capy": [
      -1.6,
      1.0
     ],
+    "ref": false,
     "packer": [
      0.6,
      0.2
-    ]
+    ],
+    "jet": false,
+    "moore": false,
+    "kicker": false
    },
    "shot": {
     "type": "two",
@@ -524,12 +778,116 @@
  ],
  "sources": [
   {
-   "title": "Packers.com: Game recap, 5 takeaways from Packers' overtime victory over Jets",
+   "title": "TSN (AP): Packers survive scare against Jets with FG in overtime",
+   "url": "https://www.tsn.ca/nfl/article/packers-survive-scare-against-jets-with-fg-in-overtime/"
+  },
+  {
+   "title": "Spectrum News 1 (AP): Trey Smack's OT kick lifts Packers past Jets",
+   "url": "https://spectrumnews1.com/wi/milwaukee/news/2026/09/21/trey-smack-ot-packers-jets-skid"
+  },
+  {
+   "title": "Chicago Sun-Times (AP): Packers beat Jets in OT to end six-game skid",
+   "url": "https://chicago.suntimes.com/nfl/2026/09/20/packers-beat-jets-in-ot-to-end-six-game-skid"
+  },
+  {
+   "title": "FOX6 Milwaukee: Packers win in overtime against Jets",
+   "url": "https://www.fox6now.com/sports/packers-jets-score-092026"
+  },
+  {
+   "title": "Packers.com: 5 takeaways from Packers' overtime victory over Jets",
    "url": "https://www.packers.com/news/game-recap-5-takeaways-from-packers-overtime-victory-over-jets-week-2-2026"
   },
   {
-   "title": "AP via AJC: Packers piling up the penalties in first two weeks of the season",
-   "url": "https://www.ajc.com/news/2026/09/packers-piling-up-the-penalties-in-first-two-weeks-of-the-season/"
+   "title": "Fox Sports (AP): Packers piling up the penalties in first two weeks of the season",
+   "url": "https://www.foxsports.com/articles/nfl/packers-piling-up-the-penalties-in-first-two-weeks-of-the-season"
+  },
+  {
+   "title": "Bastille Post (AP): Packers piling up the penalties in first two weeks of the season",
+   "url": "https://www.bastillepost.com/global/article/6177252-packers-piling-up-the-penalties-in-first-two-weeks-of-the-season"
+  },
+  {
+   "title": "Spectrum News 1: Packers penalties",
+   "url": "https://spectrumnews1.com/wi/milwaukee/news/2026/09/21/packers-penalties-green-bay-nfl"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Green Bay had 14 accepted penalties for 133 yards",
+   "terms": [
+    "14",
+    "133 yards"
+   ]
+  },
+  {
+   "claim": "The Jets had 13 accepted penalties for 156 yards",
+   "terms": [
+    "13",
+    "156 yards"
+   ]
+  },
+  {
+   "claim": "The Jets led 17-7 with 11:04 remaining",
+   "terms": [
+    "17-7",
+    "11:04"
+   ]
+  },
+  {
+   "claim": "Jordan Love threw a 3-yard touchdown pass to Christian Watson",
+   "terms": [
+    "Watson",
+    "3-yard"
+   ]
+  },
+  {
+   "claim": "Skyy Moore returned a punt 63 yards",
+   "terms": [
+    "Moore",
+    "63"
+   ]
+  },
+  {
+   "claim": "Trey Smack's 34-yard field goal tied it with 2:59 remaining",
+   "terms": [
+    "34",
+    "2:59"
+   ]
+  },
+  {
+   "claim": "In overtime Geno Smith was sacked on consecutive plays",
+   "terms": [
+    "Smith",
+    "sacked",
+    "consecutive"
+   ]
+  },
+  {
+   "claim": "Smack's 26-yard field goal won it 20-17 in overtime",
+   "terms": [
+    "Smack",
+    "26-yard"
+   ]
+  },
+  {
+   "claim": "Green Bay won 20-17",
+   "terms": [
+    "20-17"
+   ]
+  },
+  {
+   "claim": "The win snapped a six-game skid",
+   "terms": [
+    "six-game|6-game",
+    "skid"
+   ]
+  },
+  {
+   "claim": "Green Bay had 26 penalties after two games, the most in the NFL",
+   "terms": [
+    "26 total penalties",
+    "most"
+   ]
   }
  ]
 }
