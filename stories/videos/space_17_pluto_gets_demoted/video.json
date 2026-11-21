@@ -1,0 +1,844 @@
+{
+ "id": "space_17_pluto_gets_demoted",
+ "title": "The day Pluto got fired",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "PLANETS: 9"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "clyde": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  },
+  "girl": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f6d21f",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#c58a3d",
+    "skin": "#e8b48f"
+   }
+  },
+  "mike": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8",
+    "glasses": true
+   }
+  },
+  "vote": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "hold": "clipboard"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You're a planet for seventy six years. Then a vote fires you.",
+   "cap": "You're a planet for 76 years. Then a vote fires you.",
+   "key": [
+    "FIRES"
+   ],
+   "board": [
+    "PLANETS: 9",
+    "NOW 8"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "clyde": false,
+    "girl": false,
+    "mike": false,
+    "vote": [
+     2.6,
+     -0.6
+    ],
+    "fan": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "vote": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen thirty. A young astronomer in Arizona. He spots a faint dot.",
+   "cap": "1930. A young astronomer in Arizona. He spots a faint dot.",
+   "key": [
+    "DOT."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "LOWELL",
+     "OBSERVATORY"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "clyde": [
+     0,
+     0.4
+    ],
+    "girl": false,
+    "mike": false,
+    "vote": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "clyde"
+   },
+   "act": {
+    "clyde": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His name is Clyde Tombaugh. A farm kid from Kansas. He just found planet nine.",
+   "key": [
+    "NINE."
+   ],
+   "board": [
+    "PLANET",
+    "NINE"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "clyde"
+   },
+   "act": {
+    "clyde": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The name comes from a girl in England. She's eleven.",
+   "cap": "The name comes from a girl in England. She's 11.",
+   "key": [
+    "11."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "NAME IT:",
+     "PLUTO"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "clyde": false,
+    "girl": [
+     0,
+     4.4
+    ],
+    "mike": false,
+    "vote": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "girl",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "girl": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Venetia Burney suggests Pluto. The Roman god of the underworld. Dark. Cold. Fitting.",
+   "key": [
+    "PLUTO."
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "girl": [
+     1.4,
+     4.4
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "girl",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "girl"
+    },
+    "girl": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "For decades, every school poster says nine planets. Kids memorize it.",
+   "key": [
+    "NINE"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    },
+    "girl": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then, in two thousand five, astronomers find Eris.",
+   "cap": "Then, in 2005, astronomers find Eris.",
+   "key": [
+    "ERIS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "ERIS",
+     "FOUND"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "clyde": false,
+    "girl": false,
+    "mike": [
+     0,
+     0.4
+    ],
+    "vote": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "mike"
+   },
+   "act": {
+    "mike": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It's out past Pluto. It's even more massive. Awkward.",
+   "key": [
+    "MASSIVE."
+   ],
+   "board": [
+    "ERIS",
+    "> PLUTO"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "mike"
+   },
+   "act": {
+    "mike": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So is Eris a planet too? Then what about the others? Chaos.",
+   "key": [
+    "OTHERS?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "mike": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "mike"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "mike"
+    },
+    "mike": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "August, two thousand six. Astronomers meet in Prague.",
+   "cap": "August 2006. Astronomers meet in Prague.",
+   "key": [
+    "PRAGUE."
+   ],
+   "board": [
+    "IAU",
+    "PRAGUE 2006"
+   ],
+   "place": {
+    "capy": false,
+    "mike": false,
+    "vote": [
+     -1.4,
+     0.3
+    ],
+    "fan": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "vote",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "vote": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "vote"
+    }
+   }
+  },
+  {
+   "text": "They vote on what a planet actually is. Finally.",
+   "key": [
+    "VOTE"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "vote"
+   },
+   "act": {
+    "vote": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Rule one: orbit the sun. Pluto passes.",
+   "key": [
+    "PASSES."
+   ],
+   "board": [
+    "1. ORBIT SUN",
+    "PASS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "vote": [
+     -2.6,
+     -0.6
+    ],
+    "fan": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "vote": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    },
+    "fan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Rule two: be round. Pluto passes.",
+   "key": [
+    "ROUND."
+   ],
+   "board": [
+    "2. BE ROUND",
+    "PASS"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Rule three: clear your neighborhood. Pluto fails.",
+   "key": [
+    "FAILS."
+   ],
+   "board": [
+    "3. CLEAR ORBIT",
+    "FAIL"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.8,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Pluto becomes a dwarf planet. The solar system drops to eight. Just like that.",
+   "key": [
+    "EIGHT."
+   ],
+   "board": [
+    "PLANETS:",
+    "8"
+   ],
+   "place": {
+    "capy": false,
+    "vote": [
+     0,
+     0.4
+    ],
+    "fan": [
+     2.4,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "vote"
+   },
+   "act": {
+    "vote": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "vote"
+    }
+   }
+  },
+  {
+   "text": "Fans are furious. Protest signs everywhere. New Mexico even declares it a planet anyway.",
+   "key": [
+    "ANYWAY."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "PLUTO IS",
+     "A PLANET"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "clyde": false,
+    "girl": false,
+    "mike": false,
+    "vote": false,
+    "fan": [
+     0,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The man who found Eris wrote a book. How I killed Pluto.",
+   "cap": "The man who found Eris wrote a book. How I Killed Pluto.",
+   "key": [
+    "KILLED"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "HOW I KILLED",
+     "PLUTO"
+    ]
+   },
+   "place": {
+    "capy": [
+     1.4,
+     1.0
+    ],
+    "clyde": false,
+    "girl": false,
+    "mike": [
+     -1.4,
+     0.3
+    ],
+    "vote": false,
+    "fan": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "mike",
+    "with": "capy"
+   },
+   "act": {
+    "mike": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "mike"
+    }
+   }
+  },
+  {
+   "text": "Fired by committee. Then mocked in a book title. Brutal. Absolutely brutal.",
+   "key": [
+    "BRUTAL."
+   ],
+   "place": {
+    "mike": false,
+    "capy": [
+     0,
+     1.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Should Pluto be a planet again? Yes or no? Choose wisely.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "PLUTO:",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "mike": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "mike": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Pluto",
+   "url": "https://en.wikipedia.org/wiki/Pluto"
+  },
+  {
+   "title": "Wikipedia: IAU definition of planet",
+   "url": "https://en.wikipedia.org/wiki/IAU_definition_of_planet"
+  },
+  {
+   "title": "Astronomy: It's official, IAU demotes Pluto",
+   "url": "https://www.astronomy.com/science/its-official-iau-demotes-pluto/"
+  },
+  {
+   "title": "History.com: Pluto demoted to dwarf planet",
+   "url": "https://www.history.com/this-day-in-history/august-24/pluto-demoted-dwarf-planet"
+  },
+  {
+   "title": "History.com: the rise and fall of planet Pluto",
+   "url": "https://www.history.com/articles/the-rise-and-fall-of-planet-pluto"
+  },
+  {
+   "title": "EarthSky: Pluto became a dwarf planet on August 24, 2006",
+   "url": "https://earthsky.org/space/pluto-dwarf-planet-august-24-2006/"
+  },
+  {
+   "title": "National Geographic: Pluto not a planet, astronomers rule",
+   "url": "https://www.nationalgeographic.com/science/article/dwarf-planet-pluto-astronomy"
+  },
+  {
+   "title": "Wikipedia: Venetia Burney",
+   "url": "https://en.wikipedia.org/wiki/Venetia_Burney"
+  },
+  {
+   "title": "Wikipedia: How I Killed Pluto and Why It Had It Coming",
+   "url": "https://en.wikipedia.org/wiki/How_I_Killed_Pluto_and_Why_It_Had_It_Coming"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Pluto was discovered in 1930 and demoted in 2006 (76 years)",
+   "terms": [
+    "1930",
+    "2006"
+   ]
+  },
+  {
+   "claim": "Tombaugh grew up on a farm in Kansas",
+   "terms": [
+    "farm",
+    "Kansas"
+   ]
+  },
+  {
+   "claim": "Clyde Tombaugh found it at Lowell Observatory in Arizona",
+   "terms": [
+    "Tombaugh",
+    "Lowell|Arizona|Flagstaff"
+   ]
+  },
+  {
+   "claim": "Venetia Burney, an 11-year-old in England, suggested the name",
+   "terms": [
+    "Venetia",
+    "11"
+   ]
+  },
+  {
+   "claim": "Pluto is named for the god of the underworld",
+   "terms": [
+    "underworld"
+   ]
+  },
+  {
+   "claim": "Eris was found in 2005",
+   "terms": [
+    "Eris",
+    "2005"
+   ]
+  },
+  {
+   "claim": "Eris is more massive than Pluto",
+   "terms": [
+    "Eris",
+    "massive"
+   ]
+  },
+  {
+   "claim": "In August 2006 the IAU met in Prague",
+   "terms": [
+    "Prague",
+    "2006"
+   ]
+  },
+  {
+   "claim": "The IAU voted on a definition of planet",
+   "terms": [
+    "IAU|International Astronomical Union",
+    "vote|voted"
+   ]
+  },
+  {
+   "claim": "A planet must orbit the Sun, be round, and clear its neighborhood",
+   "terms": [
+    "clear",
+    "neighbo"
+   ]
+  },
+  {
+   "claim": "Pluto became a dwarf planet; there are eight planets",
+   "terms": [
+    "dwarf planet",
+    "eight|8"
+   ]
+  },
+  {
+   "claim": "New Mexico declared Pluto a planet",
+   "terms": [
+    "New Mexico"
+   ]
+  },
+  {
+   "claim": "Mike Brown, who found Eris, wrote How I Killed Pluto",
+   "terms": [
+    "How I Killed Pluto"
+   ]
+  }
+ ]
+}

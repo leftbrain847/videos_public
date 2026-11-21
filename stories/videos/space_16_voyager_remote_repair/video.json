@@ -1,0 +1,806 @@
+{
+ "id": "space_16_voyager_remote_repair",
+ "title": "Fixing Voyager 1 from 15 billion miles away",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "VOYAGER 1"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "eng": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "glasses": true,
+    "headset": true
+   }
+  },
+  "eng2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "headset": true
+   },
+   "hold": "clipboard"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Your computer is fifteen billion miles away. It's broken. Fix it.",
+   "cap": "Your computer is 15 billion miles away. It's broken. Fix it.",
+   "key": [
+    "BROKEN."
+   ],
+   "board": [
+    "VOYAGER 1",
+    "15 BILLION MI"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": [
+     2.6,
+     -0.6
+    ],
+    "eng2": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Voyager one launched in nineteen seventy seven. It's still flying.",
+   "cap": "Voyager 1 launched in 1977. It's still flying.",
+   "key": [
+    "1977."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "LAUNCHED",
+     "1977"
+    ]
+   },
+   "board": [
+    "LAUNCHED",
+    "1977"
+   ],
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     1.4,
+     0.3
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "eng",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "It's the farthest human made object. Ever. By a lot.",
+   "key": [
+    "FARTHEST"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "eng",
+    "with": "eng2"
+   },
+   "act": {
+    "eng": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "November, twenty twenty three. It starts sending nonsense.",
+   "cap": "November 2023. It starts sending nonsense.",
+   "key": [
+    "NONSENSE."
+   ],
+   "board": [
+    "0101 1011",
+    "???? ????"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Not silence. Gibberish. The data makes no sense at all. Just noise.",
+   "key": [
+    "GIBBERISH."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng": false,
+    "eng2": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng2"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Every message needs about twenty two hours. One way.",
+   "cap": "Every message needs about 22 hours. One way.",
+   "key": [
+    "22"
+   ],
+   "board": [
+    "ONE WAY:",
+    "~22.5 HOURS"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "So every question takes two days to answer. Minimum.",
+   "key": [
+    "DAYS"
+   ],
+   "place": {
+    "capy": false,
+    "eng2": false,
+    "boss": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The team digs through old documents. Some from the nineteen seventies.",
+   "cap": "The team digs through old documents. Some from the 1970s.",
+   "key": [
+    "DOCUMENTS."
+   ],
+   "place": {
+    "boss": [
+     2.4,
+     -0.2
+    ],
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     0.6,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Months later, they find it. One memory chip has failed.",
+   "key": [
+    "CHIP"
+   ],
+   "board": [
+    "1 CHIP",
+    "FAILED"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That chip held part of the computer's code. Important code.",
+   "key": [
+    "CODE."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": [
+     -2.6,
+     -0.6
+    ],
+    "eng2": [
+     2.6,
+     -0.6
+    ],
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    },
+    "eng2": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nobody can fly out there to replace it. So they move the code instead.",
+   "key": [
+    "MOVE"
+   ],
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "smug",
+     "action": "point",
+     "look": "eng"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "eng2"
+    }
+   }
+  },
+  {
+   "text": "They split it into pieces. Then they tuck each piece elsewhere in memory.",
+   "key": [
+    "PIECES."
+   ],
+   "board": [
+    "CODE",
+    "RELOCATED"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "eng2",
+    "with": "eng"
+   },
+   "act": {
+    "eng2": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "eng"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "eng2"
+    }
+   }
+  },
+  {
+   "text": "One wrong move could end the mission. Forever. No pressure.",
+   "key": [
+    "FOREVER."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng2": [
+     1.4,
+     0.2
+    ],
+    "eng": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng2"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "April, twenty twenty four. They send the first patch. Then they wait. And wait.",
+   "cap": "April 2024. They send the first patch. Then they wait. And wait.",
+   "key": [
+    "WAIT."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "PATCH SENT",
+     "WAITING..."
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": false,
+    "eng2": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two days later, readable data comes back.",
+   "key": [
+    "READABLE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "DATA:",
+     "READABLE"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     1.4,
+     0.3
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "The room erupts. Voyager is talking again. Sensibly, this time.",
+   "key": [
+    "TALKING"
+   ],
+   "place": {
+    "boss": [
+     0,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "boss"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "By June, the science instruments are back too. Full recovery.",
+   "key": [
+    "JUNE,"
+   ],
+   "board": [
+    "SCIENCE",
+    "RESTORED"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A software update. For a computer older than your parents' car.",
+   "key": [
+    "UPDATE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng2": [
+     1.4,
+     0.2
+    ],
+    "eng": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng2"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Could you fix a computer you can't touch? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "COULD YOU",
+    "FIX IT?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng2": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "IEEE Spectrum: how NASA fixed Voyager 1",
+   "url": "https://spectrum.ieee.org/voyager-1"
+  },
+  {
+   "title": "The Register: Voyager 1 engineering updates",
+   "url": "https://www.theregister.com/2024/04/23/voyager_1_engineering_updates/"
+  },
+  {
+   "title": "Universe Today: NASA restores communications with Voyager 1",
+   "url": "https://www.universetoday.com/articles/nasa-restores-communications-with-voyager-1"
+  },
+  {
+   "title": "Sky at Night: Voyager 1 back in working order",
+   "url": "https://www.skyatnightmagazine.com/news/voyager-1-transmitting-again"
+  },
+  {
+   "title": "Hackaday: Voyager 1 resumes sending engineering updates",
+   "url": "https://hackaday.com/2024/04/22/nasas-voyager-1-resumes-sending-engineering-updates-to-earth/"
+  },
+  {
+   "title": "ABC13: Voyager 1 sending data for the first time in 5 months",
+   "url": "https://abc13.com/post/where-is-voyager-1-now-location-how-far-nasa/14725631/"
+  },
+  {
+   "title": "Wikipedia: Voyager 1",
+   "url": "https://en.wikipedia.org/wiki/Voyager_1"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Voyager 1 is over 15 billion miles away",
+   "terms": [
+    "15 billion"
+   ]
+  },
+  {
+   "claim": "Voyager 1 launched in 1977",
+   "terms": [
+    "1977"
+   ]
+  },
+  {
+   "claim": "It is the farthest human-made object",
+   "terms": [
+    "farthest|most distant",
+    "human-made|human made|man-made"
+   ]
+  },
+  {
+   "claim": "In November 2023 it began sending unreadable data",
+   "terms": [
+    "November",
+    "2023"
+   ]
+  },
+  {
+   "claim": "The data was gibberish, not silence",
+   "terms": [
+    "gibberish|garbled|unreadable|nonsense"
+   ]
+  },
+  {
+   "claim": "A message takes about 22.5 hours one way",
+   "terms": [
+    "22.5|22 1/2|22 hours"
+   ]
+  },
+  {
+   "claim": "A round trip takes about two days",
+   "terms": [
+    "45 hours|two days|2 days"
+   ]
+  },
+  {
+   "claim": "Engineers dug through decades-old documents",
+   "terms": [
+    "document"
+   ]
+  },
+  {
+   "claim": "A single failed chip in the flight data subsystem was the cause",
+   "terms": [
+    "chip"
+   ]
+  },
+  {
+   "claim": "The chip held part of the flight data subsystem's code",
+   "terms": [
+    "flight data subsystem|FDS",
+    "code|software"
+   ]
+  },
+  {
+   "claim": "Engineers moved the code to other places in memory",
+   "terms": [
+    "code",
+    "memory"
+   ]
+  },
+  {
+   "claim": "In April 2024 readable data returned",
+   "terms": [
+    "April"
+   ]
+  },
+  {
+   "claim": "Science data returned by June 2024",
+   "terms": [
+    "June"
+   ]
+  }
+ ]
+}
