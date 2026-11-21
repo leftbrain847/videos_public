@@ -774,6 +774,10 @@
   {
    "title": "Wikipedia: Eridanos (mythology)",
    "url": "https://en.wikipedia.org/wiki/Eridanos_(mythology)"
+  },
+  {
+   "title": "Poetry in Translation: Ovid, Metamorphoses Book II (A. S. Kline)",
+   "url": "https://www.poetryintranslation.com/PITBR/Latin/Metamorph2.php"
   }
  ],
  "claims": [
@@ -829,8 +833,8 @@
   {
    "claim": "The earth burns: rivers dry up, mountains burn",
    "terms": [
-    "river",
-    "mountain"
+    "river|streams",
+    "mountain|hills"
    ]
   },
   {
