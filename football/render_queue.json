@@ -1,10 +1,25 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "stories-scary-fixes",
+ "release": "stories-space-2",
  "listen": true,
  "replace": true,
  "videos": [
-  "scary_32_mv_alta"
+  "space_17_pluto_gets_demoted",
+  "space_18_corned_beef_sandwich",
+  "space_19_apollo_10_so_close",
+  "space_20_mariner_1_missing_bar",
+  "space_21_ariane_5_number_overflow",
+  "space_22_satellite_dropped_on_floor",
+  "space_23_gemini_8_death_spin",
+  "space_24_helmet_fills_with_water",
+  "space_25_dart_hits_asteroid",
+  "space_26_moon_landing_on_a_budget",
+  "space_27_moon_buggy_fender_bender",
+  "space_28_lost_tool_bag_orbit",
+  "space_29_opportunity_90_days",
+  "space_30_neutron_star_spoonful",
+  "space_31_venus_day_longer_than_year",
+  "space_32_moon_rocks_at_customs"
  ]
 }
