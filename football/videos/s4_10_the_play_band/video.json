@@ -3232,6 +3232,26 @@
   {
    "title": "California Magazine: Recounting The Play, play by play, 40 years on",
    "url": "https://alumni.berkeley.edu/california-magazine/online/recounting-the-play-play-by-play-40-years-on"
+  },
+  {
+   "title": "Wikipedia: The Play (American football)",
+   "url": "https://en.wikipedia.org/wiki/The_Play_(American_football)"
+  },
+  {
+   "title": "Wikipedia: 1982 California Golden Bears football team",
+   "url": "https://en.wikipedia.org/wiki/1982_California_Golden_Bears_football_team"
+  },
+  {
+   "title": "UC Berkeley: The Anatomy of a Miracle",
+   "url": "https://people.eecs.berkeley.edu/~pattrsn/anatomyofmiracle.htm"
+  },
+  {
+   "title": "Sports Illustrated: An oral history of The Play",
+   "url": "https://www.si.com/more-sports/2012/10/18/play-stanford-cal"
+  },
+  {
+   "title": "Stanford Report: Stanford marks 40 years since The Play",
+   "url": "https://news.stanford.edu/report/2022/11/17/stanford-marks-40-years-since-play/"
   }
  ],
  "voice": "v2",
@@ -3315,7 +3335,7 @@
   {
    "claim": "Final score Cal 25, Stanford 20",
    "terms": [
-    "25-20|25 20"
+    "25-20|25 20|25 to 20|20-25|20 25"
    ]
   },
   {
