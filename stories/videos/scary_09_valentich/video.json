@@ -1,0 +1,775 @@
+{
+ "id": "scary_09_valentich",
+ "title": "The pilot who said: it's not an aircraft",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "BASS STRAIT"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "headset": true
+   },
+   "at": "center"
+  },
+  "pilot": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5a4a2a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#c68d64",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You are on the radio with a pilot. Then silence. Total silence.",
+   "key": [
+    "SILENCE."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "FLIGHT",
+     "SERVICE"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "you": [
+     0.4,
+     -0.6
+    ],
+    "pilot": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "October, nineteen seventy eight. Melbourne, Australia. You work flight service.",
+   "cap": "October 1978. Melbourne, Australia. You work flight service.",
+   "key": [
+    "MELBOURNE,"
+   ],
+   "board": [
+    "OCT 1978",
+    "MELBOURNE"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "He flies a small Cessna over Bass Strait. He is twenty years old.",
+   "cap": "He flies a small Cessna over Bass Strait. He is 20 years old.",
+   "key": [
+    "CESSNA"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "NIGHT",
+     "FLIGHT"
+    ]
+   },
+   "place": {
+    "pilot": [
+     0,
+     -0.6
+    ],
+    "capy": false,
+    "you": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He is headed for King Island. An easy evening trip.",
+   "key": [
+    "EASY"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then he asks you. Is there any traffic near me?",
+   "key": [
+    "TRAFFIC"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "TRAFFIC?",
+     "NONE"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     -0.6
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "pilot": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You check. No known traffic out there. Your screen is empty.",
+   "key": [
+    "NO"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He says a big aircraft just passed over.",
+   "key": [
+    "BIG"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "UNKNOWN",
+     "AIRCRAFT"
+    ]
+   },
+   "place": {
+    "pilot": [
+     0,
+     -0.6
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "pilot"
+    }
+   }
+  },
+  {
+   "text": "It has four bright lights. It seems to circle him. Then it hovers.",
+   "cap": "It has 4 bright lights. It seems to circle him. Then it hovers.",
+   "key": [
+    "4"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pilot"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then his engine starts running rough.",
+   "key": [
+    "ROUGH."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His last words? It is not an aircraft.",
+   "key": [
+    "AIRCRAFT."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "pilot"
+   },
+   "act": {
+    "pilot": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Then a metallic scraping sound. Seventeen seconds of it.",
+   "cap": "Then a metallic scraping sound. 17 seconds of it.",
+   "key": [
+    "17"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "17 SEC",
+     "STATIC"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     -0.6
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "pilot": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Then nothing.",
+   "key": [
+    "NOTHING."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Ships search. Planes search. No trace of him. No trace of the plane.",
+   "key": [
+    "TRACE"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Years later, an engine part washes up. On an island. Maybe his.",
+   "key": [
+    "MAYBE"
+   ],
+   "place": {
+    "boss": [
+     2.6,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Official investigators can't say what happened.",
+   "key": [
+    "CAN'T"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "sad",
+     "action": "shrug"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "One theory? He got disoriented in the dark. Over open water, that happens.",
+   "key": [
+    "DISORIENTED"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Upside down, his own lights could fool him.",
+   "key": [
+    "FOOL"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Others say U F O. Full stop.",
+   "cap": "Others say UFO. Full stop.",
+   "key": [
+    "UFO."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "He loved reading U F O stories. That does not help.",
+   "cap": "He loved reading UFO stories. That does not help.",
+   "key": [
+    "STORIES."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "you": [
+     0.4,
+     -0.6
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Nobody knows. That is the scary part. The radio just stopped.",
+   "key": [
+    "SCARY"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "MISSING"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "pilot": [
+     2.8,
+     -2.6
+    ],
+    "you": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "pilot": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "What did he see? A plane or a U F O?",
+   "cap": "What did he see? A plane or a UFO?",
+   "key": [
+    "PLANE",
+    "UFO?"
+   ],
+   "board": [
+    "PLANE",
+    "OR UFO?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Disappearance of Frederick Valentich",
+   "url": "https://en.wikipedia.org/wiki/Disappearance_of_Frederick_Valentich"
+  },
+  {
+   "title": "Snopes: Frederick Valentich's UFO sighting and disappearance",
+   "url": "https://www.snopes.com/articles/383824/frederick-valentich-ufo-disappearance/"
+  },
+  {
+   "title": "Flight Safety Australia: Leaving this world",
+   "url": "https://www.flightsafetyaustralia.com/?p=209431"
+  },
+  {
+   "title": "Fear of Landing: The alien abduction of Frederick Valentich",
+   "url": "https://fearoflanding.com/accidents/accident-reports/the-alien-abduction-of-frederick-valentich/"
+  },
+  {
+   "title": "Plane and Pilot: Strange lights before Cessna 182 goes missing",
+   "url": "https://planeandpilotmag.com/?p=604007"
+  },
+  {
+   "title": "Historic Mysteries: Frederick Valentich",
+   "url": "https://www.historicmysteries.com/?p=40149"
+  },
+  {
+   "title": "Atlas Obscura: Frederick Valentich memorial plaque",
+   "url": "https://www.atlasobscura.com/places/frederick-valentich-memorial-plaque"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In October 1978 a young pilot vanished near Melbourne",
+   "terms": [
+    "1978",
+    "Melbourne"
+   ]
+  },
+  {
+   "claim": "He flew a Cessna over Bass Strait",
+   "terms": [
+    "Cessna",
+    "Bass Strait"
+   ]
+  },
+  {
+   "claim": "He was flying to King Island",
+   "terms": [
+    "King Island"
+   ]
+  },
+  {
+   "claim": "He was 20 years old",
+   "terms": [
+    "20 year old"
+   ]
+  },
+  {
+   "claim": "He worked with Melbourne flight service",
+   "terms": [
+    "flight service"
+   ]
+  },
+  {
+   "claim": "The object was reported hovering",
+   "terms": [
+    "hovering"
+   ]
+  },
+  {
+   "claim": "He asked about traffic and was told there was no known traffic",
+   "terms": [
+    "traffic"
+   ]
+  },
+  {
+   "claim": "He reported a large aircraft passing over him",
+   "terms": [
+    "large aircraft"
+   ]
+  },
+  {
+   "claim": "It had four bright lights",
+   "terms": [
+    "four bright lights"
+   ]
+  },
+  {
+   "claim": "He said it was orbiting him",
+   "terms": [
+    "orbit|circl"
+   ]
+  },
+  {
+   "claim": "He reported the engine rough idling",
+   "terms": [
+    "rough"
+   ]
+  },
+  {
+   "claim": "His last words included it is not an aircraft",
+   "terms": [
+    "not an aircraft"
+   ]
+  },
+  {
+   "claim": "Seventeen seconds of metallic scraping sounds followed",
+   "terms": [
+    "metallic",
+    "17|seventeen"
+   ]
+  },
+  {
+   "claim": "Searches found no trace",
+   "terms": [
+    "search",
+    "trace"
+   ]
+  },
+  {
+   "claim": "An engine cowl flap was found years later on an island",
+   "terms": [
+    "cowl flap",
+    "island"
+   ]
+  },
+  {
+   "claim": "Investigators could not determine what happened",
+   "terms": [
+    "not be determined|undetermined|could not|unknown"
+   ]
+  },
+  {
+   "claim": "One theory is that he became disoriented",
+   "terms": [
+    "disorient"
+   ]
+  },
+  {
+   "claim": "He was interested in UFOs",
+   "terms": [
+    "UFO",
+    "interest|believer|obsess"
+   ]
+  }
+ ]
+}

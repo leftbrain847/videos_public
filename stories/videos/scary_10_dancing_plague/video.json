@@ -1,0 +1,788 @@
+{
+ "id": "scary_10_dancing_plague",
+ "title": "The dancing plague of 1518",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "STRASBOURG 1518"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#6b3a2a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "candle"
+  },
+  "dancer": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8a4a6a",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#c58a3d",
+    "skin": "#f0c8a8",
+    "sash": "#e8c060"
+   },
+   "at": "center"
+  },
+  "doc": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true,
+    "beard": true
+   },
+   "at": "center",
+   "hold": "scroll"
+  },
+  "prof": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "bob",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "Your neighbor starts dancing in the street. She does not stop. Not for days.",
+   "key": [
+    "STOP."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "dancer": [
+     0.6,
+     0
+    ],
+    "you": [
+     3.0,
+     -1.0
+    ],
+    "doc": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "dancer"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "dancer": {
+     "mood": "happy",
+     "action": "celebrate"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "dancer"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "July, fifteen eighteen. The city of Strasbourg.",
+   "cap": "July 1518. The city of Strasbourg.",
+   "key": [
+    "STRASBOURG."
+   ],
+   "board": [
+    "JULY 1518",
+    "STRASBOURG"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "dancer"
+   },
+   "act": {
+    "dancer": {
+     "mood": "happy",
+     "action": "celebrate"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "dancer"
+    }
+   }
+  },
+  {
+   "text": "A woman named Frau Troffea dances for days. Alone, at first.",
+   "key": [
+    "DAYS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "dancer"
+   },
+   "act": {
+    "dancer": {
+     "mood": "worried",
+     "action": "celebrate",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "No music. No party. Just dancing. People stop to stare.",
+   "key": [
+    "DANCING."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Within a week, dozens more join her.",
+   "key": [
+    "DOZENS"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ],
+    "dancer": [
+     3.0,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    },
+    "dancer": {
+     "mood": "sad",
+     "action": "celebrate"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "By August, some reports say four hundred people.",
+   "cap": "By August, some reports say 400 people.",
+   "key": [
+    "400"
+   ],
+   "board": [
+    "DANCERS",
+    "~400?"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "dancer"
+   },
+   "act": {
+    "dancer": {
+     "mood": "sad",
+     "action": "celebrate"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "dancer"
+    }
+   }
+  },
+  {
+   "text": "They look exhausted. Some look terrified. Nobody can stop.",
+   "key": [
+    "TERRIFIED."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "dancer"
+   },
+   "act": {
+    "dancer": {
+     "mood": "worried",
+     "action": "celebrate",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your city leaders ask the doctors. They have an answer.",
+   "key": [
+    "ANSWER."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "DIAGNOSIS",
+     "HOT BLOOD"
+    ]
+   },
+   "place": {
+    "doc": [
+     0,
+     -1.0
+    ],
+    "you": [
+     -2.4,
+     0.6
+    ],
+    "capy": false,
+    "dancer": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "doc"
+    }
+   }
+  },
+  {
+   "text": "The diagnosis? Hot blood.",
+   "key": [
+    "BLOOD."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The cure? More dancing. Seriously.",
+   "key": [
+    "MORE"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     -4.6,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "doc"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "doc"
+    },
+    "doc": {
+     "mood": "happy",
+     "action": "point",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "They clear halls. They build a stage. They hire musicians.",
+   "key": [
+    "MUSICIANS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "doc"
+   },
+   "act": {
+    "doc": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your city's medical plan was a dance party.",
+   "key": [
+    "PARTY."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It does not work. More people join in. The music just makes it worse.",
+   "key": [
+    "JOIN"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "DANCING"
+    ]
+   },
+   "place": {
+    "dancer": [
+     0,
+     0
+    ],
+    "you": [
+     -2.6,
+     -0.4
+    ],
+    "capy": [
+     2.6,
+     0.6
+    ],
+    "doc": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "dancer"
+   },
+   "act": {
+    "dancer": {
+     "mood": "sad",
+     "action": "celebrate"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "dancer"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "dancer"
+    }
+   }
+  },
+  {
+   "text": "So the leaders flip. Now music is banned.",
+   "key": [
+    "BANNED."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "capy"
+   },
+   "act": {
+    "you": {
+     "mood": "angry",
+     "action": "point",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Dancers are taken to a hilltop shrine. Saint Vitus.",
+   "key": [
+    "VITUS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "dancer"
+   },
+   "act": {
+    "dancer": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "By September, it fades away. As strangely as it started.",
+   "key": [
+    "FADES"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "dancer"
+   },
+   "act": {
+    "dancer": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So what happened? Historians still argue. Loudly.",
+   "key": [
+    "ARGUE."
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "THEORIES",
+     "1518"
+    ]
+   },
+   "place": {
+    "prof": [
+     0,
+     -1.0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "dancer": false,
+    "doc": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "prof"
+    }
+   }
+  },
+  {
+   "text": "One idea is stress turning into mass hysteria.",
+   "key": [
+    "HYSTERIA."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Famine. Disease. A city at its absolute limit. Stress everywhere.",
+   "key": [
+    "LIMIT."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "prof"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    },
+    "prof": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Another idea blames moldy grain. A fungus called ergot.",
+   "key": [
+    "ERGOT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Either way, the dance floor was not safe. Sit this one out.",
+   "key": [
+    "SAFE."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Five hundred years later, still no clear answer.",
+   "key": [
+    "ANSWER."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you join the dance? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "JOIN THE DANCE?",
+     "YES OR NO?"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "dancer": [
+     0.6,
+     0
+    ],
+    "you": false,
+    "doc": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "dancer"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "dancer": {
+     "mood": "happy",
+     "action": "celebrate"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Dancing plague of 1518",
+   "url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+  },
+  {
+   "title": "History.com: What was the dancing plague of 1518?",
+   "url": "https://www.history.com/articles/what-was-the-dancing-plague-of-1518"
+  },
+  {
+   "title": "Mental Floss: The 16th-century dance plague",
+   "url": "https://www.mentalfloss.com/article/58895/16th-century-dance-plague"
+  },
+  {
+   "title": "Popular Science: The mysterious dancing plague of 1518",
+   "url": "https://www.popsci.com/science/dancing-plague-medieval-strasbourg/"
+  },
+  {
+   "title": "HistoryNet: The dancing plague of 1518",
+   "url": "https://www.historynet.com/the-dancing-plague-of-1518-historys-oddest-epidemic.htm"
+  },
+  {
+   "title": "Big Think: The dancing plague",
+   "url": "https://bigthink.com/culture-religion/dancing-plague-middle-ages"
+  },
+  {
+   "title": "Ripley's: The dance plague that struck Strasbourg",
+   "url": "https://ripleys.com/stories/the-dance-plague-that-struck-strasbourg"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In July 1518 a dancing plague hit Strasbourg",
+   "terms": [
+    "1518",
+    "Strasbourg"
+   ]
+  },
+  {
+   "claim": "It began with Frau Troffea dancing for days",
+   "terms": [
+    "Troffea"
+   ]
+  },
+  {
+   "claim": "Within a week dozens more joined",
+   "terms": [
+    "week",
+    "34|30|thirty|dozens"
+   ]
+  },
+  {
+   "claim": "By August some reports say 400 people",
+   "terms": [
+    "400"
+   ]
+  },
+  {
+   "claim": "Doctors blamed hot blood",
+   "terms": [
+    "hot blood"
+   ]
+  },
+  {
+   "claim": "The cure was more dancing: a stage and musicians",
+   "terms": [
+    "musicians"
+   ]
+  },
+  {
+   "claim": "Later music and dancing were banned",
+   "terms": [
+    "banned|ban"
+   ]
+  },
+  {
+   "claim": "Dancers were taken to a shrine of Saint Vitus",
+   "terms": [
+    "shrine",
+    "Vitus"
+   ]
+  },
+  {
+   "claim": "It ended by September",
+   "terms": [
+    "September"
+   ]
+  },
+  {
+   "claim": "One theory is mass hysteria or mass psychogenic illness",
+   "terms": [
+    "mass",
+    "hysteria|psychogenic"
+   ]
+  },
+  {
+   "claim": "The city faced famine and disease",
+   "terms": [
+    "famine"
+   ]
+  },
+  {
+   "claim": "Another theory is ergot",
+   "terms": [
+    "ergot"
+   ]
+  }
+ ]
+}

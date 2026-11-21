@@ -1,0 +1,831 @@
+{
+ "id": "scary_06_baychimo",
+ "title": "The Baychimo: the ship that would not sink",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "BAYCHIMO"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#2f4a6b",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "cap": "#1e2a3a"
+   },
+   "at": "center",
+   "hold": "flashlight"
+  },
+  "mate": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#8a3a2a",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "center"
+  },
+  "hunter": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#6b5a3a",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#a86b45"
+   },
+   "at": "center"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "Your ship gets stuck in ice. Then it sails off without you.",
+   "key": [
+    "WITHOUT"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "mate": [
+     2.6,
+     -1.0
+    ],
+    "hunter": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "window"
+    },
+    "mate": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Nineteen thirty one. Arctic Alaska. You crew the Baychimo.",
+   "cap": "1931. Arctic Alaska. You crew the Baychimo.",
+   "key": [
+    "BAYCHIMO."
+   ],
+   "board": [
+    "1931",
+    "BAYCHIMO"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "mate": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "She is a cargo steamer. Her hold is full of furs.",
+   "key": [
+    "FURS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "mate"
+   },
+   "act": {
+    "mate": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then autumn comes early. Pack ice traps the ship.",
+   "key": [
+    "TRAPS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You can't free her. You can't sail her. You can only wait.",
+   "key": [
+    "SAIL"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "mate": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "So you build a shelter nearby. You wait it out.",
+   "key": [
+    "SHELTER"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then a monster blizzard rolls in. Days of white.",
+   "key": [
+    "BLIZZARD"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "mate"
+   },
+   "act": {
+    "mate": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "When it clears, you look out. The ship is gone.",
+   "key": [
+    "GONE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.7,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "Sunk, you figure. Fair enough. Time to go home.",
+   "key": [
+    "SUNK,"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then a local hunter tells you something. He saw it.",
+   "key": [
+    "SAW"
+   ],
+   "place": {
+    "hunter": [
+     -2.4,
+     -0.4
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "capy": false,
+    "mate": [
+     2.8,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "hunter",
+    "with": "you"
+   },
+   "act": {
+    "hunter": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "hunter"
+    }
+   }
+  },
+  {
+   "text": "Forty five miles away. Floating. Fine.",
+   "cap": "45 miles away. Floating. Fine.",
+   "key": [
+    "45"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "hunter"
+   },
+   "act": {
+    "hunter": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your company sends planes. They grab the furs.",
+   "key": [
+    "FURS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CARGO",
+     "SAVED"
+    ]
+   },
+   "place": {
+    "boss": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "mate": false,
+    "hunter": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then they leave the ship to the ice. Done. Case closed.",
+   "key": [
+    "DONE."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Except the ship is not done with you.",
+   "key": [
+    "NOT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "People keep spotting her. Year after year.",
+   "key": [
+    "SPOTTING"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "SIGHTED",
+     "AGAIN"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "mate": [
+     2.4,
+     -0.8
+    ],
+    "hunter": [
+     -2.4,
+     -0.6
+    ],
+    "capy": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    },
+    "mate": {
+     "mood": "confused",
+     "action": "shrug"
+    },
+    "hunter": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Some even climb aboard. Nobody ever brings her home.",
+   "key": [
+    "HOME."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "hunter"
+   },
+   "act": {
+    "hunter": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You abandoned her. She refused to sink. Petty.",
+   "key": [
+    "PETTY."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "you": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The last sighting? Nineteen sixty nine. Frozen in ice.",
+   "cap": "The last sighting? 1969. Frozen in ice.",
+   "key": [
+    "1969."
+   ],
+   "board": [
+    "LAST SEEN",
+    "1969"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "hunter": [
+     -4.6,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Thirty eight years. Drifting. No crew at all.",
+   "cap": "38 years. Drifting. No crew at all.",
+   "key": [
+    "38"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In two thousand six, Alaska starts a search.",
+   "cap": "In 2006, Alaska starts a search.",
+   "key": [
+    "SEARCH."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "2006",
+     "SEARCH"
+    ]
+   },
+   "place": {
+    "boss": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "mate": false,
+    "hunter": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They still have not found her. Not a plank.",
+   "key": [
+    "PLANK."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Somewhere up north, your old ship waits. Maybe.",
+   "key": [
+    "WAITS."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "MISSING"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": [
+     2.4,
+     -0.6
+    ],
+    "mate": false,
+    "hunter": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you climb aboard? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "CLIMB ABOARD?",
+    "YES OR NO?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: SS Baychimo",
+   "url": "https://en.wikipedia.org/wiki/SS_Baychimo"
+  },
+  {
+   "title": "Anchorage Daily News: The mysterious fate of the Baychimo",
+   "url": "https://adn.com/alaska-life/2023/10/29/the-mysterious-fate-of-the-baychimo-the-ghost-ship-that-haunted-the-arctic-for-decades"
+  },
+  {
+   "title": "Explorersweb: The SS Baychimo, 38 years as a ghost ship",
+   "url": "https://explorersweb.com/exploration-mysteries-baychimo-ghost-ship/"
+  },
+  {
+   "title": "Marine Insight: The longest drifting vessel in history",
+   "url": "https://www.marineinsight.com/know-more/haunted-ghost-ship-the-longest-drifting-vessel-in-history/"
+  },
+  {
+   "title": "Historic Mysteries: SS Baychimo",
+   "url": "https://www.historicmysteries.com/ss-baychimo/"
+  },
+  {
+   "title": "Amusing Planet: SS Baychimo, the unsinkable ghost ship",
+   "url": "https://www.amusingplanet.com/2020/12/ss-baychimo-unsinkable-ghost-ship.html"
+  },
+  {
+   "title": "The Vintage News: SS Baychimo ghost ship",
+   "url": "https://thevintagenews.com/2018/09/11/ss-baychimo-ghost-ship"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1931 the Baychimo was off Alaska",
+   "terms": [
+    "Baychimo",
+    "1931"
+   ]
+  },
+  {
+   "claim": "She was a cargo steamer carrying furs",
+   "terms": [
+    "cargo",
+    "fur"
+   ]
+  },
+  {
+   "claim": "Pack ice trapped the ship",
+   "terms": [
+    "ice",
+    "trapped"
+   ]
+  },
+  {
+   "claim": "The crew built a shelter nearby to wait",
+   "terms": [
+    "shelter|hut",
+    "crew"
+   ]
+  },
+  {
+   "claim": "A blizzard hit and afterwards the ship was gone",
+   "terms": [
+    "blizzard"
+   ]
+  },
+  {
+   "claim": "The crew assumed she sank",
+   "terms": [
+    "sank|sunk"
+   ]
+  },
+  {
+   "claim": "A hunter saw the ship about 45 miles away",
+   "terms": [
+    "45",
+    "miles"
+   ]
+  },
+  {
+   "claim": "The company flew out the furs",
+   "terms": [
+    "fur",
+    "aircraft|airplane|plane|flew"
+   ]
+  },
+  {
+   "claim": "The ship was sighted many times over the years",
+   "terms": [
+    "sighted|sightings"
+   ]
+  },
+  {
+   "claim": "People boarded her but she was never salvaged",
+   "terms": [
+    "boarded"
+   ]
+  },
+  {
+   "claim": "The last sighting was in 1969, frozen in ice",
+   "terms": [
+    "1969"
+   ]
+  },
+  {
+   "claim": "She drifted for 38 years",
+   "terms": [
+    "38",
+    "years"
+   ]
+  },
+  {
+   "claim": "In 2006 Alaska began a search for the ship",
+   "terms": [
+    "2006"
+   ]
+  }
+ ]
+}
