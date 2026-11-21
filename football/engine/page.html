@@ -7,7 +7,7 @@ html, body { margin: 0; background: #000; }
 <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
 <script type="module">
 import * as THREE from 'three';
-import { STYLE, person, capy, setMood, pose, PROPS, SETS, lights, textTexture, football } from './kit.js';
+import { STYLE, person, capy, ANIMALS, setMood, pose, PROPS, SETS, lights, textTexture, football } from './kit.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
@@ -63,7 +63,7 @@ window.load = async (script, tim) => {
   await document.fonts.load('900 80px Inter');
   let seed = 3;
   for (const [id, c] of Object.entries(S.cast || {})) {
-    const p = c.kind === 'capy' ? capy(c.look || {}) : c.kind === 'horse' ? capy({ ...(c.look || {}), animal: 'horse' }) : person(c.look || {}, seed += 17);
+    const p = c.kind === 'capy' ? capy(c.look || {}) : ANIMALS[c.kind] ? capy({ ...(c.look || {}), animal: c.kind }) : person(c.look || {}, seed += 17);
     if (c.hold && PROPS[c.hold]) { const pr = PROPS[c.hold](); pr.position.set(0, -0.1, 0.18); p.userData.parts.held.add(pr); }
     cast[id] = { p, cfg: c };
   }

@@ -230,6 +230,9 @@ if __name__ == "__main__":
 
 def test_every_cast_kind_is_built_by_the_page():
     import check
-    page = (Path(__file__).parent / "page.html").read_text()
-    for k in check.RULES["kinds"]:
-        assert f"c.kind === '{k}'" in page, k
+    import re
+    here = Path(__file__).parent
+    page, kit = (here / "page.html").read_text(), (here / "kit.js").read_text()
+    assert "c.kind === 'capy'" in page and "ANIMALS[c.kind]" in page
+    animals = set(re.findall(r"^  (\w+):\s*\{ fur:", kit.split("export const ANIMALS")[1].split("};")[0], re.M))
+    assert set(check.RULES["kinds"]) - {"capy"} == animals, animals

@@ -277,6 +277,7 @@ export const CAPY_OUTFITS = {
 };
 // other animals reuse Capy's rig (so pose/talk/mood work); cast them with kind: "horse"
 export const ANIMALS = {
+  wolf:  { fur: '#7d838c', furDark: '#3a3e44', muzzle: '#d9dcdf', noseTip: '#141414', outfit: 'none', orange: false, snout: [0.46, 0.36, 0.95], ears: 'pointed' },
   horse: { fur: '#8b5a2b', furDark: '#3b2414', mane: '#2a1a0e', blaze: '#f4efe6', outfit: 'none', orange: false, snout: [0.62, 0.5, 0.95], ears: 'pointed' },
 };
 export function capy(look = {}) {
@@ -319,13 +320,14 @@ export function capy(look = {}) {
   const head = new THREE.Group(); head.userData.baseY = 2.55; head.position.y = 2.55; g.add(head); parts.head = head;
   add(head, new RoundedBoxGeometry(1.05, 0.95, 1.1, 8, 0.4), fur, [0, 0.05, 0]);
   const sn = C.snout || [0.86, 0.58, 0.55], sz = 0.28 + sn[2] / 2;   // muzzle size; its front face sits at z = sz + sn[2]/2
-  add(head, new RoundedBoxGeometry(sn[0], sn[1], sn[2], 8, 0.24), fur, [0, -0.12 - (sn[2] - 0.55) * 0.3, sz]);
+  add(head, new RoundedBoxGeometry(sn[0], sn[1], sn[2], 8, Math.min(0.24, sn[1] * 0.45)), C.muzzle ? mat(C.muzzle, { roughness: 0.85 }) : fur, [0, -0.12 - (sn[2] - 0.55) * 0.3, sz]);
   const nz = sz + sn[2] / 2 + 0.005, ny = -0.02 - (sn[2] - 0.55) * 0.3;
   for (const sx of [-1, 1]) {
     add(head, new THREE.SphereGeometry(0.06, 14, 10), dark, [sx * 0.14, ny, nz], [1.3, 0.7, 0.6]);           // nostrils
     if (C.ears === 'pointed') add(head, new THREE.ConeGeometry(0.13, 0.4, 16), fur, [sx * 0.32, 0.62, -0.1], [1, 1, 0.6], [0, 0, -sx * 0.2]);
     else add(head, new THREE.SphereGeometry(0.12, 18, 12), dark, [sx * 0.42, 0.55, -0.05], [1, 0.75, 0.55]);          // ears
   }
+  if (C.noseTip) add(head, new THREE.SphereGeometry(0.11, 18, 12), mat(C.noseTip, { roughness: 0.4 }), [0, ny + 0.04, nz + 0.02], [1.2, 0.8, 0.8]);
   if (C.mane) for (let i = 0; i < 8; i++) add(head, new RoundedBoxGeometry(0.24, 0.36, 0.26, 2, 0.1), mat(C.mane, { roughness: 0.9 }), [0, 0.6 - i * 0.05, 0.38 - i * 0.17], [1, 1, 1], [-0.2 - i * 0.1, 0, 0]);
   if (C.blaze) add(head, new RoundedBoxGeometry(0.16, 0.5, 0.04, 2, 0.02), mat(C.blaze), [0, 0.1, 0.56]);
   parts.eyes = [];

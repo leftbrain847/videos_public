@@ -20,7 +20,7 @@ RULES = {
     "moods": {"neutral", "angry", "worried", "shocked", "happy", "sad", "smug", "confused"},
     "actions": {"idle", "talk", "point", "cheer", "facepalm", "shrug", "throw", "hold", "cross", "slump", "clap", "wave", "run", "walk", "catch", "kick", "celebrate"},
     "narrator": "capy",
-    "kinds": ("capy", "horse"),   # cast kinds page.html can build; anything else renders as a person
+    "kinds": ("capy", "horse", "wolf"),   # capy + kit.js ANIMALS keys (page.html builds each); anything else renders as a person
     # Speech rules live in voice.py. A script marked "voice": "v2" must pass all of them (strict); older scripts get a
     # one-line count until they're rewritten. strict=True here would hold every script to them.
     "voice": {"strict": False, "mark": "v2"},

@@ -43,14 +43,9 @@
    }
   },
   "fen": {
+   "kind": "wolf",
    "look": {
-    "outfit": "robe",
-    "shirt": "#5a5a64",
-    "pants": "#8a6d4b",
-    "hair": "long",
-    "hairColor": "#2a2a2a",
-    "skin": "#c68d64",
-    "sash": "#8a8f96"
+    "height": 1.25
    }
   },
   "dwarf": {
