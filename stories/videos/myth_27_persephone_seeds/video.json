@@ -1,0 +1,1022 @@
+{
+ "id": "myth_27_persephone_seeds",
+ "title": "One seed, every winter",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE UNDERWORLD"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "pers": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#7a3f8e",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "sash": "#5c9e4a"
+   }
+  },
+  "persS": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#7a3f8e",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "sash": "#5c9e4a"
+   }
+  },
+  "dem": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#d9a521",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b",
+    "sash": "#5c9e4a"
+   }
+  },
+  "hades": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b2b33",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b",
+    "sash": "#8e2b3a",
+    "beard": true
+   }
+  },
+  "zeus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b4c8c",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#e6e6e6",
+    "skin": "#f2c39b",
+    "sash": "#f6d21f",
+    "beard": true
+   }
+  },
+  "hermes": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#4a9a8a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b",
+    "sash": "#e8b923"
+   }
+  },
+  "farmer": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#6f9a4a",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "sash": "#8a6d4b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You eat a few seeds. Now you lose part of every year.",
+   "key": [
+    "SEEDS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "pers": [
+     1.2,
+     0
+    ],
+    "persS": false,
+    "dem": false,
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pers"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "pers": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Persephone, the daughter of Demeter.",
+   "key": [
+    "PERSEPHONE,"
+   ],
+   "place": {
+    "capy": false,
+    "pers": [
+     -1.3,
+     0.2
+    ],
+    "persS": false,
+    "dem": [
+     1.3,
+     -0.2
+    ],
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "pers",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "pers": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "dem": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "pers"
+    }
+   }
+  },
+  {
+   "text": "Your mother is the goddess of the harvest. She runs grain, crops, everything.",
+   "key": [
+    "HARVEST."
+   ],
+   "place": {
+    "capy": false,
+    "pers": false,
+    "persS": false,
+    "dem": [
+     0,
+     0
+    ],
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "dem"
+   },
+   "act": {
+    "dem": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You were just picking flowers in a meadow.",
+   "key": [
+    "FLOWERS"
+   ],
+   "place": {
+    "capy": false,
+    "pers": [
+     0,
+     0
+    ],
+    "persS": false,
+    "dem": false,
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "pers"
+   },
+   "act": {
+    "pers": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One day, the earth opens. Hades carries you off.",
+   "key": [
+    "HADES"
+   ],
+   "place": {
+    "capy": false,
+    "pers": false,
+    "persS": false,
+    "dem": false,
+    "hades": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "hades"
+   },
+   "act": {
+    "hades": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "He takes you down to the underworld. You are his queen now.",
+   "key": [
+    "QUEEN"
+   ],
+   "board": [
+    "NEW HOME",
+    "UNDERWORLD"
+   ],
+   "place": {
+    "capy": false,
+    "pers": [
+     -1.3,
+     0.2
+    ],
+    "persS": false,
+    "dem": false,
+    "hades": [
+     1.3,
+     -0.2
+    ],
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "hades",
+    "with": "pers"
+   },
+   "act": {
+    "pers": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "hades"
+    },
+    "hades": {
+     "mood": "happy",
+     "action": "point",
+     "look": "pers"
+    }
+   }
+  },
+  {
+   "text": "That is the worst first date in history.",
+   "key": [
+    "WORST"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "pers": false,
+    "persS": false,
+    "dem": false,
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She wanders for nine days with torches. No sign of you.",
+   "key": [
+    "TORCHES."
+   ],
+   "place": {
+    "capy": false,
+    "pers": false,
+    "persS": false,
+    "dem": [
+     0,
+     0
+    ],
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "dem"
+   },
+   "act": {
+    "dem": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your mother searches the whole earth. Then she stops the crops.",
+   "key": [
+    "CROPS."
+   ],
+   "place": {
+    "capy": false,
+    "pers": false,
+    "persS": false,
+    "dem": [
+     0,
+     0
+    ],
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "dem"
+   },
+   "act": {
+    "dem": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nothing grows. Humans start to starve. The fields stay empty.",
+   "key": [
+    "STARVE."
+   ],
+   "board": [
+    "HARVEST",
+    "ZERO"
+   ],
+   "place": {
+    "capy": false,
+    "pers": false,
+    "persS": false,
+    "dem": false,
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "farmer"
+   },
+   "act": {
+    "farmer": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "No harvest means no offerings for the gods.",
+   "key": [
+    "OFFERINGS"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "pers": false,
+    "persS": false,
+    "dem": false,
+    "hades": false,
+    "zeus": [
+     1.2,
+     0
+    ],
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "zeus",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "zeus"
+    },
+    "zeus": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Suddenly, Zeus cares a lot.",
+   "key": [
+    "CARES"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "pers": false,
+    "persS": false,
+    "dem": false,
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So he sends Hermes to bring you home.",
+   "key": [
+    "HERMES"
+   ],
+   "place": {
+    "capy": false,
+    "pers": false,
+    "persS": false,
+    "dem": false,
+    "hades": false,
+    "zeus": [
+     -1.3,
+     0.2
+    ],
+    "hermes": [
+     1.3,
+     -0.2
+    ],
+    "farmer": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "hermes",
+    "pan": [
+     -1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "zeus": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "hermes"
+    },
+    "hermes": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "zeus"
+    }
+   }
+  },
+  {
+   "text": "Hades agrees to let you go. Then he offers you a snack.",
+   "key": [
+    "SNACK."
+   ],
+   "place": {
+    "capy": false,
+    "pers": false,
+    "persS": false,
+    "dem": false,
+    "hades": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "hades"
+   },
+   "act": {
+    "hades": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A pomegranate seed. You eat it.",
+   "key": [
+    "POMEGRANATE"
+   ],
+   "speaker": "capy",
+   "board": [
+    "SNACK",
+    "POMEGRANATE"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "pers": false,
+    "persS": [
+     1.2,
+     0
+    ],
+    "dem": false,
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "persS",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "persS"
+    },
+    "persS": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That is the trap. Eat food down there. You must return.",
+   "key": [
+    "TRAP."
+   ],
+   "place": {
+    "capy": false,
+    "pers": false,
+    "persS": [
+     1.3,
+     -0.2
+    ],
+    "dem": false,
+    "hades": [
+     -1.3,
+     0.2
+    ],
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "hades",
+    "with": "persS"
+   },
+   "act": {
+    "hades": {
+     "mood": "smug",
+     "action": "point",
+     "look": "persS"
+    },
+    "persS": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "hades"
+    }
+   }
+  },
+  {
+   "text": "That is fine print. In fruit form. Brutal.",
+   "key": [
+    "FRUIT"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "pers": false,
+    "persS": false,
+    "dem": false,
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So a deal is made. For part of every year, you go back.",
+   "key": [
+    "BACK."
+   ],
+   "board": [
+    "EVERY YEAR",
+    "PART DOWN BELOW"
+   ],
+   "place": {
+    "capy": false,
+    "pers": [
+     0,
+     0
+    ],
+    "persS": false,
+    "dem": false,
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "pers"
+   },
+   "act": {
+    "pers": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "When you leave, your mother grieves. The fields die. Winter comes.",
+   "key": [
+    "WINTER"
+   ],
+   "place": {
+    "capy": false,
+    "pers": false,
+    "persS": false,
+    "dem": [
+     0,
+     0
+    ],
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "dem"
+   },
+   "act": {
+    "dem": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "When you come back, the world blooms again. Spring returns.",
+   "key": [
+    "SPRING"
+   ],
+   "place": {
+    "capy": false,
+    "pers": [
+     -1.3,
+     0.2
+    ],
+    "persS": false,
+    "dem": [
+     1.3,
+     -0.2
+    ],
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "pers",
+    "with": "dem"
+   },
+   "act": {
+    "pers": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "dem": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Every winter, a mom misses her kid.",
+   "key": [
+    "WINTER"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "pers": false,
+    "persS": false,
+    "dem": [
+     1.2,
+     0
+    ],
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "dem"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "dem": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have eaten the seed? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "EAT THE SEED?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "pers": false,
+    "persS": false,
+    "dem": false,
+    "hades": false,
+    "zeus": false,
+    "hermes": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Persephone",
+   "url": "https://en.wikipedia.org/wiki/Persephone"
+  },
+  {
+   "title": "Wikipedia: Homeric Hymn to Demeter",
+   "url": "https://en.wikipedia.org/wiki/Homeric_Hymn_to_Demeter"
+  },
+  {
+   "title": "Wikipedia: Demeter",
+   "url": "https://en.wikipedia.org/wiki/Demeter"
+  },
+  {
+   "title": "Mythopedia library: Homeric Hymn 2 to Demeter (Evelyn-White)",
+   "url": "https://mythopedia.com/library/homeric-hymns-evelyn-white-1914/2-to-demeter/"
+  },
+  {
+   "title": "ToposText: Homeric Hymn to Demeter",
+   "url": "https://topostext.org/work/355"
+  },
+  {
+   "title": "Wikipedia: Abduction of Persephone",
+   "url": "https://en.wikipedia.org/wiki/Abduction_of_Persephone"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Persephone is the daughter of Demeter",
+   "terms": [
+    "Persephone",
+    "Demeter",
+    "daughter"
+   ]
+  },
+  {
+   "claim": "Demeter is goddess of the harvest",
+   "terms": [
+    "Demeter",
+    "harvest|grain|agriculture"
+   ]
+  },
+  {
+   "claim": "She was picking flowers in a meadow",
+   "terms": [
+    "flowers",
+    "meadow|picking|gathering"
+   ]
+  },
+  {
+   "claim": "Demeter wanders nine days with torches",
+   "terms": [
+    "nine days",
+    "torches|torch"
+   ]
+  },
+  {
+   "claim": "The earth opens and Hades carries her off",
+   "terms": [
+    "Hades",
+    "earth"
+   ]
+  },
+  {
+   "claim": "He takes her to the underworld as his queen",
+   "terms": [
+    "underworld",
+    "queen|wife"
+   ]
+  },
+  {
+   "claim": "Demeter searches the earth",
+   "terms": [
+    "Demeter",
+    "search|searched|searching|sought"
+   ]
+  },
+  {
+   "claim": "Demeter stops the crops and nothing grows",
+   "terms": [
+    "Demeter",
+    "crops|famine|grow|seed"
+   ]
+  },
+  {
+   "claim": "Humans starve and the gods lose their offerings",
+   "terms": [
+    "famine|starve|starvation|hunger",
+    "offerings|sacrifices|honors"
+   ]
+  },
+  {
+   "claim": "Zeus sends Hermes to bring her back",
+   "terms": [
+    "Zeus",
+    "Hermes"
+   ]
+  },
+  {
+   "claim": "Hades gives her a pomegranate seed to eat",
+   "terms": [
+    "pomegranate",
+    "seed|seeds"
+   ]
+  },
+  {
+   "claim": "Having eaten food of the underworld she must return",
+   "terms": [
+    "eaten|eat|ate|eating",
+    "underworld"
+   ]
+  },
+  {
+   "claim": "She spends part of every year below",
+   "terms": [
+    "year",
+    "third|part|portion|half|months"
+   ]
+  },
+  {
+   "claim": "Her absence brings winter; her return brings spring",
+   "terms": [
+    "spring",
+    "winter|return|returns"
+   ]
+  }
+ ]
+}

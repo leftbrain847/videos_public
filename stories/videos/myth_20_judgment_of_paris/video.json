@@ -1,0 +1,1042 @@
+{
+ "id": "myth_20_judgment_of_paris",
+ "title": "One apple, ten years of war",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "MOUNT IDA"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "paris": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8e2b3a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  },
+  "parisA": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8e2b3a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   },
+   "hold": "bag"
+  },
+  "eris": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#3a3a4a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#8e2b3a",
+    "skin": "#f2c39b",
+    "sash": "#c0392b"
+   },
+   "hold": "bag"
+  },
+  "hera": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b4c8c",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "sash": "#e8b923"
+   }
+  },
+  "athena": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8a8f96",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#2b4c8c"
+   }
+  },
+  "aph": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e86a9a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#f2d27a",
+    "skin": "#f2c39b",
+    "sash": "#e8b923"
+   }
+  },
+  "zeus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b4c8c",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#e6e6e6",
+    "skin": "#f2c39b",
+    "sash": "#f6d21f",
+    "beard": true
+   }
+  },
+  "helen": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f2c230",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b",
+    "sash": "#c0392b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You judge one beauty contest. It starts a war.",
+   "key": [
+    "WAR."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "paris": [
+     1.2,
+     0
+    ],
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "paris"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "paris": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It all begins at a wedding. One goddess is not invited.",
+   "key": [
+    "INVITED."
+   ],
+   "place": {
+    "capy": false,
+    "paris": false,
+    "parisA": false,
+    "eris": [
+     0,
+     0
+    ],
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eris"
+   },
+   "act": {
+    "eris": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Her name is Eris. She is the goddess of strife.",
+   "key": [
+    "STRIFE."
+   ],
+   "place": {
+    "capy": false,
+    "paris": false,
+    "parisA": false,
+    "eris": [
+     0,
+     0
+    ],
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "eris"
+   },
+   "act": {
+    "eris": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She was left off the list. She takes it personally.",
+   "key": [
+    "PERSONALLY."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "paris": false,
+    "parisA": false,
+    "eris": [
+     1.2,
+     0
+    ],
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "eris",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "eris"
+    },
+    "eris": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She rolls in a golden apple. It says: to the fairest.",
+   "key": [
+    "FAIREST."
+   ],
+   "board": [
+    "THE APPLE",
+    "TO THE FAIREST"
+   ],
+   "place": {
+    "capy": false,
+    "paris": false,
+    "parisA": false,
+    "eris": [
+     0,
+     0
+    ],
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "eris"
+   },
+   "act": {
+    "eris": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "That is not a gift. That is a grenade.",
+   "key": [
+    "GRENADE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "paris": false,
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Hera wants it. Athena wants it. Aphrodite wants it too.",
+   "key": [
+    "WANTS"
+   ],
+   "place": {
+    "capy": false,
+    "paris": false,
+    "parisA": false,
+    "eris": false,
+    "hera": [
+     -2.2,
+     -0.2
+    ],
+    "athena": [
+     0,
+     0.2
+    ],
+    "aph": [
+     2.2,
+     -0.2
+    ],
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "athena"
+   },
+   "act": {
+    "hera": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    },
+    "athena": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    },
+    "aph": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Zeus refuses to choose. That is a smart move.",
+   "key": [
+    "REFUSES"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "paris": false,
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": [
+     1.2,
+     0
+    ],
+    "helen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "zeus",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "zeus"
+    },
+    "zeus": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He hands the job to you. Paris, a prince of Troy.",
+   "key": [
+    "PARIS,"
+   ],
+   "board": [
+    "THE JUDGE",
+    "PARIS"
+   ],
+   "place": {
+    "capy": false,
+    "paris": [
+     0,
+     0
+    ],
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "paris"
+   },
+   "act": {
+    "paris": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "At the time, you herd sheep. Up on a mountain.",
+   "key": [
+    "SHEEP"
+   ],
+   "place": {
+    "capy": false,
+    "paris": [
+     0,
+     0
+    ],
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "paris"
+   },
+   "act": {
+    "paris": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Each goddess offers you a bribe.",
+   "key": [
+    "BRIBE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "paris": [
+     1.2,
+     0
+    ],
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "paris"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "paris"
+    },
+    "paris": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Hera offers power. You would rule over many kingdoms.",
+   "key": [
+    "POWER."
+   ],
+   "board": [
+    "HERA:",
+    "POWER"
+   ],
+   "place": {
+    "capy": false,
+    "paris": false,
+    "parisA": false,
+    "eris": false,
+    "hera": [
+     0,
+     0
+    ],
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "hera"
+   },
+   "act": {
+    "hera": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Athena offers wisdom. Plus great skill in battle.",
+   "key": [
+    "WISDOM."
+   ],
+   "board": [
+    "ATHENA:",
+    "WISDOM"
+   ],
+   "place": {
+    "capy": false,
+    "paris": false,
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": [
+     0,
+     0
+    ],
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "athena"
+   },
+   "act": {
+    "athena": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Aphrodite offers you the most beautiful woman alive.",
+   "key": [
+    "BEAUTIFUL"
+   ],
+   "board": [
+    "APHRODITE:",
+    "LOVE"
+   ],
+   "place": {
+    "capy": false,
+    "paris": false,
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "aph"
+   },
+   "act": {
+    "aph": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two of those offers are actually useful. You pick the third.",
+   "key": [
+    "THIRD."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "paris": false,
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You hand Aphrodite the golden apple.",
+   "key": [
+    "APHRODITE"
+   ],
+   "place": {
+    "capy": false,
+    "paris": false,
+    "parisA": [
+     -1.3,
+     0.2
+    ],
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": [
+     1.3,
+     -0.2
+    ],
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "parisA",
+    "with": "aph"
+   },
+   "act": {
+    "parisA": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "aph"
+    },
+    "aph": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The woman is Helen. One small detail. She is already married.",
+   "key": [
+    "MARRIED."
+   ],
+   "place": {
+    "capy": false,
+    "paris": false,
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "helen"
+   },
+   "act": {
+    "helen": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Her husband is Menelaus. He is the king of Sparta.",
+   "key": [
+    "SPARTA."
+   ],
+   "board": [
+    "MENELAUS",
+    "KING OF SPARTA"
+   ],
+   "place": {
+    "capy": false,
+    "paris": false,
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "helen"
+   },
+   "act": {
+    "helen": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You take Helen home to Troy. The Greeks sail after you. A thousand ships.",
+   "key": [
+    "SAIL"
+   ],
+   "place": {
+    "capy": false,
+    "paris": [
+     -1.3,
+     0.2
+    ],
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "paris",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "paris": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "helen"
+    },
+    "helen": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "paris"
+    }
+   }
+  },
+  {
+   "text": "Ten years of war. All over one apple.",
+   "cap": "10 years of war. All over one apple.",
+   "key": [
+    "APPLE."
+   ],
+   "speaker": "capy",
+   "board": [
+    "TROJAN WAR",
+    "10 YEARS"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "paris": [
+     1.2,
+     0
+    ],
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "paris"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "paris": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Which gift would you pick? Power, wisdom, or love? One word.",
+   "key": [
+    "POWER,",
+    "LOVE?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "POWER, WISDOM",
+    "OR LOVE?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "paris": false,
+    "parisA": false,
+    "eris": false,
+    "hera": false,
+    "athena": false,
+    "aph": false,
+    "zeus": false,
+    "helen": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Judgement of Paris",
+   "url": "https://en.wikipedia.org/wiki/Judgement_of_Paris"
+  },
+  {
+   "title": "Wikipedia: Apple of Discord",
+   "url": "https://en.wikipedia.org/wiki/Apple_of_Discord"
+  },
+  {
+   "title": "Wikipedia: Eris (mythology)",
+   "url": "https://en.wikipedia.org/wiki/Eris_(mythology)"
+  },
+  {
+   "title": "Wikipedia: Helen of Troy",
+   "url": "https://en.wikipedia.org/wiki/Helen_of_Troy"
+  },
+  {
+   "title": "Wikipedia: Paris (mythology)",
+   "url": "https://en.wikipedia.org/wiki/Paris_(mythology)"
+  },
+  {
+   "title": "Wikipedia: Trojan War",
+   "url": "https://en.wikipedia.org/wiki/Trojan_War"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Eris is not invited to a wedding",
+   "terms": [
+    "Eris",
+    "invited"
+   ]
+  },
+  {
+   "claim": "Eris is the goddess of strife",
+   "terms": [
+    "Eris",
+    "strife|discord"
+   ]
+  },
+  {
+   "claim": "She throws in a golden apple inscribed to the fairest",
+   "terms": [
+    "apple",
+    "fairest"
+   ]
+  },
+  {
+   "claim": "Hera, Athena and Aphrodite each claim it",
+   "terms": [
+    "Hera",
+    "Athena",
+    "Aphrodite"
+   ]
+  },
+  {
+   "claim": "Zeus refuses to choose and hands the decision to Paris",
+   "terms": [
+    "Zeus",
+    "Paris"
+   ]
+  },
+  {
+   "claim": "Paris is a prince of Troy",
+   "terms": [
+    "Paris",
+    "Troy|Trojan"
+   ]
+  },
+  {
+   "claim": "He is herding on a mountain, Mount Ida",
+   "terms": [
+    "Ida",
+    "Paris"
+   ]
+  },
+  {
+   "claim": "Each goddess offers him a bribe",
+   "terms": [
+    "bribe|bribes|bribed|offered"
+   ]
+  },
+  {
+   "claim": "Hera offers power over kingdoms",
+   "terms": [
+    "Hera",
+    "kingdom|kingdoms|power|rule|king"
+   ]
+  },
+  {
+   "claim": "Athena offers wisdom and skill in war",
+   "terms": [
+    "Athena",
+    "wisdom|skill"
+   ]
+  },
+  {
+   "claim": "Aphrodite offers the most beautiful woman",
+   "terms": [
+    "Aphrodite",
+    "most beautiful"
+   ]
+  },
+  {
+   "claim": "He gives the apple to Aphrodite",
+   "terms": [
+    "Paris",
+    "Aphrodite",
+    "apple"
+   ]
+  },
+  {
+   "claim": "The woman is Helen, already married to Menelaus, king of Sparta",
+   "terms": [
+    "Helen",
+    "Menelaus",
+    "Sparta"
+   ]
+  },
+  {
+   "claim": "Paris takes Helen to Troy and the Greeks follow, starting the Trojan War",
+   "terms": [
+    "Helen",
+    "Trojan War"
+   ]
+  },
+  {
+   "claim": "The Greeks launch a thousand ships",
+   "terms": [
+    "thousand ships"
+   ]
+  },
+  {
+   "claim": "The war lasts ten years",
+   "terms": [
+    "ten years|10 years|ten year",
+    "war|siege"
+   ]
+  }
+ ]
+}

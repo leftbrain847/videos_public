@@ -1,0 +1,953 @@
+{
+ "id": "myth_21_fenrir_ribbon",
+ "title": "The ribbon made of nothing",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "ASGARD"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "odin": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#4a5a7a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "sash": "#d9a521",
+    "beard": true
+   }
+  },
+  "tyr": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8a3a2a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#8a8f96",
+    "beard": true
+   }
+  },
+  "fen": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a5a64",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#2a2a2a",
+    "skin": "#c68d64",
+    "sash": "#8a8f96"
+   }
+  },
+  "dwarf": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a4a3a",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#2a1a10",
+    "skin": "#c68d64",
+    "sash": "#c46a3c",
+    "beard": true
+   },
+   "hold": "scroll"
+  },
+  "thor": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#b23a2a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c8692a",
+    "skin": "#f2c39b",
+    "sash": "#8a8f96",
+    "beard": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You tie up a wolf. With things that do not exist.",
+   "key": [
+    "EXIST."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "odin": [
+     1.2,
+     0
+    ],
+    "tyr": false,
+    "fen": false,
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "odin"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "odin": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are the gods of Asgard. You have a wolf problem.",
+   "key": [
+    "WOLF"
+   ],
+   "place": {
+    "capy": false,
+    "odin": [
+     -1.3,
+     0.2
+    ],
+    "tyr": false,
+    "fen": false,
+    "dwarf": false,
+    "thor": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "odin",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "odin": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "thor": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The wolf is called Fenrir. He keeps growing.",
+   "key": [
+    "GROWING."
+   ],
+   "board": [
+    "FENRIR",
+    "STILL GROWING"
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": false,
+    "fen": [
+     0,
+     0
+    ],
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "fen"
+   },
+   "act": {
+    "fen": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A prophecy says he will help end everything.",
+   "key": [
+    "EVERYTHING."
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": false,
+    "fen": [
+     0,
+     0
+    ],
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "fen"
+   },
+   "act": {
+    "fen": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Only one god dares to feed him. His name is Tyr.",
+   "key": [
+    "TYR."
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": [
+     0,
+     0
+    ],
+    "fen": false,
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "tyr"
+   },
+   "act": {
+    "tyr": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Every office has that one brave guy.",
+   "key": [
+    "BRAVE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "odin": false,
+    "tyr": false,
+    "fen": false,
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You try a heavy iron chain. He snaps it.",
+   "key": [
+    "SNAPS"
+   ],
+   "board": [
+    "CHAIN 1",
+    "BROKEN"
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": false,
+    "fen": [
+     0,
+     0
+    ],
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fen"
+   },
+   "act": {
+    "fen": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "You try a chain twice as strong. He snaps that too.",
+   "key": [
+    "TOO."
+   ],
+   "speaker": "capy",
+   "board": [
+    "CHAIN 2",
+    "BROKEN"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "odin": false,
+    "tyr": false,
+    "fen": [
+     1.2,
+     0
+    ],
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "fen",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "fen"
+    },
+    "fen": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So you hire the dwarves. They live underground.",
+   "key": [
+    "DWARVES."
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": false,
+    "fen": false,
+    "dwarf": [
+     0,
+     0
+    ],
+    "thor": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "dwarf"
+   },
+   "act": {
+    "dwarf": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They make a ribbon called Gleipnir. It is soft as silk.",
+   "key": [
+    "GLEIPNIR."
+   ],
+   "board": [
+    "GLEIPNIR",
+    "SOFT AS SILK"
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": false,
+    "fen": false,
+    "dwarf": [
+     0,
+     0
+    ],
+    "thor": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "dwarf"
+   },
+   "act": {
+    "dwarf": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The recipe? First, the sound of a cat's footsteps.",
+   "key": [
+    "CAT'S"
+   ],
+   "board": [
+    "INGREDIENT 1",
+    "CAT FOOTSTEPS"
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": false,
+    "fen": false,
+    "dwarf": [
+     0,
+     0
+    ],
+    "thor": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "dwarf"
+   },
+   "act": {
+    "dwarf": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The beard of a woman. The roots of a mountain.",
+   "key": [
+    "BEARD"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "odin": false,
+    "tyr": false,
+    "fen": false,
+    "dwarf": [
+     1.2,
+     0
+    ],
+    "thor": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "dwarf"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "dwarf"
+    },
+    "dwarf": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The breath of a fish. The spit of a bird.",
+   "key": [
+    "FISH."
+   ],
+   "board": [
+    "+ FISH BREATH",
+    "+ BIRD SPIT"
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": false,
+    "fen": false,
+    "dwarf": [
+     0,
+     0
+    ],
+    "thor": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "dwarf"
+   },
+   "act": {
+    "dwarf": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The myth says they used them all up. That is why cats walk silently.",
+   "key": [
+    "SILENTLY."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "odin": false,
+    "tyr": false,
+    "fen": false,
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fenrir sees a silk ribbon. He smells a trick.",
+   "key": [
+    "TRICK."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "odin": false,
+    "tyr": false,
+    "fen": [
+     1.2,
+     0
+    ],
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "fen",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "fen"
+    },
+    "fen": {
+     "mood": "confused",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He agrees on one condition. A hand in his mouth.",
+   "key": [
+    "MOUTH."
+   ],
+   "place": {
+    "capy": false,
+    "odin": [
+     1.3,
+     -0.2
+    ],
+    "tyr": false,
+    "fen": [
+     -1.3,
+     0.2
+    ],
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "fen",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "fen": {
+     "mood": "smug",
+     "action": "point",
+     "look": "odin"
+    },
+    "odin": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "fen"
+    }
+   }
+  },
+  {
+   "text": "Nobody moves. Then Tyr steps up. He puts his hand in.",
+   "key": [
+    "HAND"
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": [
+     -1.3,
+     0.2
+    ],
+    "fen": [
+     1.3,
+     -0.2
+    ],
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "tyr",
+    "with": "fen"
+   },
+   "act": {
+    "tyr": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "fen"
+    },
+    "fen": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "tyr"
+    }
+   }
+  },
+  {
+   "text": "The ribbon holds. The wolf cannot break free.",
+   "key": [
+    "HOLDS."
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": false,
+    "fen": [
+     0,
+     0
+    ],
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "fen"
+   },
+   "act": {
+    "fen": {
+     "mood": "angry",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So Fenrir bites. Tyr loses his hand.",
+   "key": [
+    "HAND."
+   ],
+   "board": [
+    "TYR",
+    "ONE HAND"
+   ],
+   "place": {
+    "capy": false,
+    "odin": false,
+    "tyr": [
+     0,
+     0
+    ],
+    "fen": false,
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "tyr"
+   },
+   "act": {
+    "tyr": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gods laugh. All except Tyr.",
+   "key": [
+    "EXCEPT"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "odin": false,
+    "tyr": [
+     1.2,
+     0
+    ],
+    "fen": false,
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tyr"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "tyr": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you put your hand in? Yes or no? Dog owners, be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "HAND IN THE MOUTH?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "odin": false,
+    "tyr": false,
+    "fen": false,
+    "dwarf": false,
+    "thor": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Gleipnir",
+   "url": "https://en.wikipedia.org/wiki/Gleipnir"
+  },
+  {
+   "title": "Wikipedia: Fenrir",
+   "url": "https://en.wikipedia.org/wiki/Fenrir"
+  },
+  {
+   "title": "Wikipedia: Tyr",
+   "url": "https://en.wikipedia.org/wiki/T%C3%BDr"
+  },
+  {
+   "title": "Norse Mythology for Smart People: The Binding of Fenrir",
+   "url": "https://norse-mythology.org/?p=337"
+  },
+  {
+   "title": "University of Victoria, Old Norse myths in images: Gleipnir",
+   "url": "https://myndir.uvic.ca/GlpNr01.html"
+  },
+  {
+   "title": "MIT: Fenris (from the Prose Edda)",
+   "url": "https://web.mit.edu/norvin/www/somethingelse/fenris.html"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The gods raise the wolf Fenrir, who keeps growing",
+   "terms": [
+    "Fenrir",
+    "grow|grew|growing"
+   ]
+  },
+  {
+   "claim": "Prophecies say he will bring doom at the end of the world",
+   "terms": [
+    "Fenrir",
+    "Ragnarök|Ragnarok|prophecy|prophecies|foretold"
+   ]
+  },
+  {
+   "claim": "Only Tyr dares to feed him",
+   "terms": [
+    "Týr|Tyr",
+    "feed|food"
+   ]
+  },
+  {
+   "claim": "He breaks the first chain",
+   "terms": [
+    "Leyding|Lœðingr|Laeding|fetter|chain",
+    "broke|breaks|snapped"
+   ]
+  },
+  {
+   "claim": "He breaks a second chain twice as strong",
+   "terms": [
+    "Dromi|Drómi",
+    "twice"
+   ]
+  },
+  {
+   "claim": "The dwarves make the ribbon Gleipnir",
+   "terms": [
+    "Gleipnir",
+    "dwarves|dwarfs"
+   ]
+  },
+  {
+   "claim": "Gleipnir is as soft as silk",
+   "terms": [
+    "Gleipnir",
+    "silk"
+   ]
+  },
+  {
+   "claim": "It is made of the sound of a cat's footsteps",
+   "terms": [
+    "cat|cats",
+    "steps|step|footsteps|footfall|footfalls|footstep"
+   ]
+  },
+  {
+   "claim": "And a woman's beard and the roots of a mountain",
+   "terms": [
+    "beard",
+    "roots"
+   ]
+  },
+  {
+   "claim": "And the breath of a fish and the spittle of a bird",
+   "terms": [
+    "breath",
+    "fish",
+    "bird"
+   ]
+  },
+  {
+   "claim": "That is why these things no longer exist",
+   "terms": [
+    "exist|exists|existed|existing"
+   ]
+  },
+  {
+   "claim": "Fenrir is suspicious of the soft ribbon",
+   "terms": [
+    "Fenrir",
+    "suspicious|trick|deceit|wary"
+   ]
+  },
+  {
+   "claim": "He demands that a god put a hand in his mouth",
+   "terms": [
+    "hand",
+    "mouth"
+   ]
+  },
+  {
+   "claim": "Tyr puts his hand in Fenrir's mouth",
+   "terms": [
+    "Týr|Tyr",
+    "hand",
+    "mouth"
+   ]
+  },
+  {
+   "claim": "Fenrir cannot break free and bites off Tyr's hand",
+   "terms": [
+    "hand",
+    "bit|bites|bitten|bite"
+   ]
+  },
+  {
+   "claim": "The gods laugh, except Tyr",
+   "terms": [
+    "laughed|laugh",
+    "except|save|but"
+   ]
+  }
+ ]
+}

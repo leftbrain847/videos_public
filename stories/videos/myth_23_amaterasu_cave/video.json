@@ -1,0 +1,969 @@
+{
+ "id": "myth_23_amaterasu_cave",
+ "title": "The sun goes on strike",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "HEAVEN"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "ama": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f2c230",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b",
+    "sash": "#c0392b"
+   }
+  },
+  "sus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e5a8a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#c0392b",
+    "beard": true
+   }
+  },
+  "uzu": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e86a9a",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b",
+    "sash": "#5c9e4a"
+   }
+  },
+  "omoi": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#6a3f8e",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "sash": "#e8b923",
+    "beard": true
+   },
+   "hold": "scroll"
+  },
+  "taji": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8a3a2a",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64",
+    "sash": "#8a8f96",
+    "beard": true
+   }
+  },
+  "god": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e86c1",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "The sun hides in a cave. A party gets her out.",
+   "key": [
+    "PARTY"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ama": [
+     1.2,
+     0
+    ],
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ama"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ama": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Amaterasu, goddess of the sun.",
+   "key": [
+    "SUN."
+   ],
+   "board": [
+    "AMATERASU",
+    "THE SUN"
+   ],
+   "place": {
+    "capy": false,
+    "ama": [
+     0,
+     0
+    ],
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "ama"
+   },
+   "act": {
+    "ama": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your brother Susanoo runs wild. He trashes your palace.",
+   "key": [
+    "WILD"
+   ],
+   "place": {
+    "capy": false,
+    "ama": false,
+    "sus": [
+     0,
+     0
+    ],
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sus"
+   },
+   "act": {
+    "sus": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You have had enough. So you hide in a cave.",
+   "key": [
+    "CAVE."
+   ],
+   "place": {
+    "capy": false,
+    "ama": [
+     0,
+     0
+    ],
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "ama"
+   },
+   "act": {
+    "ama": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You shut the rock door. The whole world goes dark.",
+   "key": [
+    "DARK."
+   ],
+   "speaker": "capy",
+   "board": [
+    "THE SUN",
+    "OFFLINE"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ama": false,
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "god",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "god": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "No sun means no crops. No light. Everyone panics.",
+   "key": [
+    "PANICS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "ama": false,
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gods gather outside the cave. They need a plan.",
+   "key": [
+    "PLAN."
+   ],
+   "place": {
+    "capy": false,
+    "ama": false,
+    "sus": false,
+    "uzu": false,
+    "omoi": [
+     1.3,
+     -0.2
+    ],
+    "taji": false,
+    "god": [
+     -1.3,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "god",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "god": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "omoi"
+    },
+    "omoi": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "god"
+    }
+   }
+  },
+  {
+   "text": "The god of wisdom makes one. It is ridiculous.",
+   "key": [
+    "RIDICULOUS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ama": false,
+    "sus": false,
+    "uzu": false,
+    "omoi": [
+     1.2,
+     0
+    ],
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "omoi",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "omoi"
+    },
+    "omoi": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They hang a mirror on a tree. Right outside.",
+   "key": [
+    "MIRROR"
+   ],
+   "board": [
+    "STEP 1",
+    "MIRROR"
+   ],
+   "place": {
+    "capy": false,
+    "ama": false,
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "god"
+   },
+   "act": {
+    "god": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They bring in roosters. The roosters crow. A lot.",
+   "key": [
+    "ROOSTERS"
+   ],
+   "board": [
+    "STEP 2",
+    "ROOSTERS"
+   ],
+   "place": {
+    "capy": false,
+    "ama": false,
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "god"
+   },
+   "act": {
+    "god": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then a goddess, Uzume, starts a dance. A wild one.",
+   "key": [
+    "DANCE."
+   ],
+   "place": {
+    "capy": false,
+    "ama": false,
+    "sus": false,
+    "uzu": [
+     0,
+     0
+    ],
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "uzu"
+   },
+   "act": {
+    "uzu": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She stomps on an upturned tub. It booms like thunder.",
+   "key": [
+    "BOOMS."
+   ],
+   "board": [
+    "STEP 3",
+    "DANCE PARTY"
+   ],
+   "place": {
+    "capy": false,
+    "ama": false,
+    "sus": false,
+    "uzu": [
+     0,
+     0
+    ],
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "uzu"
+   },
+   "act": {
+    "uzu": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gods laugh so hard the heavens shake.",
+   "key": [
+    "LAUGH"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ama": false,
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "god"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "god": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Inside the cave, you hear laughing. You get curious.",
+   "key": [
+    "CURIOUS."
+   ],
+   "place": {
+    "capy": false,
+    "ama": [
+     0,
+     0
+    ],
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "ama"
+   },
+   "act": {
+    "ama": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Why are they so happy without you? You peek out.",
+   "key": [
+    "PEEK"
+   ],
+   "place": {
+    "capy": false,
+    "ama": [
+     0,
+     0
+    ],
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ama"
+   },
+   "act": {
+    "ama": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Uzume says: we found a better goddess. Better than you.",
+   "key": [
+    "BETTER"
+   ],
+   "place": {
+    "capy": false,
+    "ama": [
+     1.3,
+     -0.2
+    ],
+    "sus": false,
+    "uzu": [
+     -1.3,
+     0.2
+    ],
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "uzu",
+    "with": "ama"
+   },
+   "act": {
+    "uzu": {
+     "mood": "smug",
+     "action": "point",
+     "look": "ama"
+    },
+    "ama": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "uzu"
+    }
+   }
+  },
+  {
+   "text": "You see a dazzling goddess. Wait. It is your reflection.",
+   "key": [
+    "REFLECTION."
+   ],
+   "place": {
+    "capy": false,
+    "ama": [
+     0,
+     0
+    ],
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "ama"
+   },
+   "act": {
+    "ama": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You lean closer. A strong god pulls you right out.",
+   "key": [
+    "PULLS"
+   ],
+   "place": {
+    "capy": false,
+    "ama": [
+     1.3,
+     -0.2
+    ],
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": [
+     -1.3,
+     0.2
+    ],
+    "god": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "taji",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "taji": {
+     "mood": "angry",
+     "action": "point",
+     "look": "ama"
+    },
+    "ama": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "taji"
+    }
+   }
+  },
+  {
+   "text": "They block the cave with a rope. The sun is back.",
+   "key": [
+    "BACK."
+   ],
+   "speaker": "capy",
+   "board": [
+    "THE SUN",
+    "BACK ONLINE"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ama": [
+     1.2,
+     0
+    ],
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "ama",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "ama": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You were fooled by a mirror. Then lured by a party. Relatable.",
+   "key": [
+    "RELATABLE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "ama": false,
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have peeked? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "PEEK?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "ama": [
+     1.3,
+     0
+    ],
+    "sus": false,
+    "uzu": false,
+    "omoi": false,
+    "taji": false,
+    "god": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ama"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ama": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Amano-Iwato",
+   "url": "https://en.wikipedia.org/wiki/Amano-Iwato"
+  },
+  {
+   "title": "Wikipedia: Amaterasu",
+   "url": "https://en.wikipedia.org/wiki/Amaterasu"
+  },
+  {
+   "title": "Wikipedia: Ame-no-Uzume",
+   "url": "https://en.wikipedia.org/wiki/Ame-no-Uzume"
+  },
+  {
+   "title": "Nippon.com: Tales from Kojiki, the sun goddess and the cave of heaven",
+   "url": "https://www.nippon.com/en/japan-topics/b11203/"
+  },
+  {
+   "title": "Nippon.com: Amaterasu, the Japanese sun goddess",
+   "url": "https://www.nippon.com/en/japan-topics/g00748/"
+  },
+  {
+   "title": "Japan Tourism Agency: Opening Amano Iwato, the Heavenly Stone Cave",
+   "url": "https://www.mlit.go.jp/tagengo-db/en/H30-01334.html"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Amaterasu is the sun goddess",
+   "terms": [
+    "Amaterasu",
+    "sun goddess|goddess of the sun"
+   ]
+  },
+  {
+   "claim": "Her brother Susanoo runs riot",
+   "terms": [
+    "Susanoo",
+    "brother"
+   ]
+  },
+  {
+   "claim": "She hides in a cave",
+   "terms": [
+    "Amaterasu",
+    "cave"
+   ]
+  },
+  {
+   "claim": "She closes it with a rock and the world goes dark",
+   "terms": [
+    "dark|darkness",
+    "world"
+   ]
+  },
+  {
+   "claim": "The gods gather and the god of wisdom, Omoikane, makes a plan",
+   "terms": [
+    "Omoikane",
+    "wisdom|plan"
+   ]
+  },
+  {
+   "claim": "A mirror is hung on a tree outside",
+   "terms": [
+    "mirror",
+    "tree|sakaki"
+   ]
+  },
+  {
+   "claim": "Roosters are brought to crow",
+   "terms": [
+    "roosters|cocks|crow|crowing"
+   ]
+  },
+  {
+   "claim": "Ame-no-Uzume dances on an upturned tub",
+   "terms": [
+    "Uzume",
+    "tub|bucket"
+   ]
+  },
+  {
+   "claim": "The gods laugh loudly",
+   "terms": [
+    "gods|deities",
+    "laugh|laughed|laughter"
+   ]
+  },
+  {
+   "claim": "Amaterasu, curious, peeks out",
+   "terms": [
+    "Amaterasu",
+    "curious|curiosity|peek|peeked|peered"
+   ]
+  },
+  {
+   "claim": "Uzume says there is a goddess greater than her",
+   "terms": [
+    "Uzume",
+    "deity|goddess",
+    "better|other|superior|greater|illustrious"
+   ]
+  },
+  {
+   "claim": "Amaterasu sees her reflection in the mirror",
+   "terms": [
+    "reflection",
+    "mirror"
+   ]
+  },
+  {
+   "claim": "A strong god pulls her out",
+   "terms": [
+    "Tajikarao|Tajikara|Tajikarawo",
+    "pulled|drew|dragged"
+   ]
+  },
+  {
+   "claim": "A rope is placed to block the cave and light returns",
+   "terms": [
+    "rope|shimenawa",
+    "cave|entrance"
+   ]
+  }
+ ]
+}
