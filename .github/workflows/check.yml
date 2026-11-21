@@ -47,14 +47,21 @@ jobs:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with: { python-version: '3.12' }
       - name: Check every claim in the changed scripts against two sources
+        shell: bash
         env:
           BASE: ${{ github.event.pull_request.base.sha }}
         run: |
-          if git diff --name-only "$BASE" HEAD | grep -qx 'tools/fact_check.py'; then
-            IDS=$(grep -l '"voice": "v2"' football/videos/*/video.json | cut -d/ -f3 || true)
+          set -euo pipefail
+          CHANGED=$(git diff --name-only --diff-filter=AM "$BASE" HEAD)   # fails the job if the base is missing
+          if grep -qx 'tools/fact_check.py' <<< "$CHANGED"; then
+            FILES=$(ls football/videos/*/video.json)
           else
-            IDS=$(git diff --name-only "$BASE" HEAD | grep -oE '^football/videos/s[1-4]_[0-9]{2}_[a-z0-9_]{1,60}/video\.json$' | cut -d/ -f3 || true)
+            FILES=$(grep -E '^football/videos/s[1-4]_[0-9]{2}_[a-z0-9_]{1,60}/video\.json$' <<< "$CHANGED" || true)
           fi
-          IDS=$(echo "$IDS" | grep -E '^s[1-4]_[0-9]{2}_[a-z0-9_]{1,60}$' | sort -u | tr "\n" " " || true)
-          if [ -z "$IDS" ]; then echo "no scripts changed"; exit 0; fi
+          IDS=""
+          for f in $FILES; do
+            id=$(cut -d/ -f3 <<< "$f")
+            [[ "$id" =~ ^s[1-4]_[0-9]{2}_[a-z0-9_]{1,60}$ ]] && grep -q '"voice": "v2"' "$f" && IDS="$IDS $id"
+          done
+          if [ -z "$IDS" ]; then echo "no v2 scripts changed"; exit 0; fi
           python3 tools/fact_check.py $IDS

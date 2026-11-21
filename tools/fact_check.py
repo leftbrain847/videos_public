@@ -56,7 +56,8 @@ def norm(w):
 
 
 def same(word, term):
-    """A page word matches a term word exactly, or by prefix for words of 4+ letters (timeout -> timeouts)."""
+    """A page word matches a term word exactly, or by prefix for words of 4+ letters (timeout -> timeouts). In a phrase
+    only the last word may prefix-match ("time expire" -> "time expired")."""
     return word == term or (len(term) >= 4 and not term.isdigit() and word.startswith(term))
 
 
@@ -66,7 +67,7 @@ def find(words, terms, window=CFG["window"]):
     hits = []
     for t in terms:
         alts = [[n for n in map(norm, SPLIT.split(a)) if n] for a in t.split("|")]
-        pos = [i for i in range(len(nw)) for a in alts if a and all(same(nw[i + k] if i + k < len(nw) else "", x) for k, x in enumerate(a))]
+        pos = [i for i in range(len(nw)) for a in alts if a and nw[i:i + len(a) - 1] == a[:-1] and i + len(a) <= len(nw) and same(nw[i + len(a) - 1], a[-1])]
         if not pos:
             return None
         hits.append(pos)
@@ -98,6 +99,8 @@ def check(vid):
                 pages[u] = None; print(f"{vid}: could not open {u}: {e}")
     out = []
     for c in S.get("claims", []):
+        if not c.get("terms"):
+            sys.exit(f"{vid}: claim has no terms: {c.get('claim')!r}")
         per = []
         for u, words in pages.items():
             span = find(words, c["terms"]) if words else None
