@@ -1,14 +1,10 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "football-batch-fixes",
+ "release": "stories-scary-1",
  "listen": true,
  "replace": false,
  "videos": [
-  "s1_14_fair_catch_kick",
-  "s2_07_rio_walkoff",
-  "s3_03_tuesday_titans",
-  "s4_07_helmet_catch",
-  "s4_15_thirteen_seconds"
+  "scary_01_mary_celeste"
  ]
 }
