@@ -349,18 +349,31 @@
     "15"
    ],
    "shot": {
-    "type": "low",
-    "on": "def2"
+    "type": "two",
+    "on": "def2",
+    "with": "returner"
    },
    "act": {
     "def2": {
      "mood": "worried",
-     "action": "facepalm"
+     "action": "facepalm",
+     "look": "returner"
     },
     "returner": {
      "mood": "happy",
-     "action": "idle"
+     "action": "idle",
+     "look": "camera"
     }
+   },
+   "place": {
+    "returner": [
+     -1.6,
+     0.4
+    ],
+    "def2": [
+     1.8,
+     0.0
+    ]
    }
   },
   {
