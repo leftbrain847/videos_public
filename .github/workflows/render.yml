@@ -81,7 +81,7 @@ jobs:
     timeout-minutes: 120
     strategy:
       fail-fast: false
-      max-parallel: 20
+      max-parallel: 16   # leaves 4 of the 20 free runners for PR checks while a batch renders
       matrix:
         include: ${{ fromJSON(needs.plan.outputs.matrix) }}
     env:
