@@ -243,10 +243,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Their clothes are still here. So is six months of food.",
-   "cap": "Their clothes are still here. So is 6 months of food.",
+   "text": "Their clothes are still here. Their food too.",
    "key": [
-    "FOOD."
+    "FOOD"
    ],
    "shot": {
     "type": "low",
@@ -451,9 +450,9 @@
    }
   },
   {
-   "text": "Did your crew do something? They dig for blood. They find nothing.",
+   "text": "Rescue a ghost ship. Get treated like a pirate.",
    "key": [
-    "NOTHING."
+    "PIRATE."
    ],
    "shot": {
     "type": "two",
@@ -827,10 +826,6 @@
    "url": "https://www.rmg.co.uk/stories/maritime-history/mystery-mary-celeste"
   },
   {
-   "title": "Britannica: Mary Celeste",
-   "url": "https://www.britannica.com/topic/Mary-Celeste"
-  },
-  {
    "title": "History.com: The mystery of the Mary Celeste",
    "url": "https://www.history.com/this-day-in-history/december-5/the-mystery-of-the-mary-celeste"
   },
@@ -841,6 +836,18 @@
   {
    "title": "American Heritage: The mystery of the Mary Celeste",
    "url": "https://www.americanheritage.com/mystery-mary-celeste"
+  },
+  {
+   "title": "Slate: The Mary Celeste, the unluckiest ship to ever sail",
+   "url": "https://www.slate.com/articles/life/culturebox/2011/12/the_mary_celeste_the_unluckiest_ship_to_ever_sail_the_seven_seas_.html"
+  },
+  {
+   "title": "History Hit: Ghost ship, what happened to the Mary Celeste?",
+   "url": "https://www.historyhit.com/ghost-ship-what-happened-to-the-mary-celeste/"
+  },
+  {
+   "title": "NUMA: The curse of the Mary Celeste",
+   "url": "https://numa.net/2024/04/the-curse-of-the-mary-celeste/"
   }
  ],
  "voice": "v2",
@@ -868,10 +875,10 @@
    ]
   },
   {
-   "claim": "Belongings were left aboard along with six months of food",
+   "claim": "Belongings and food were left aboard",
    "terms": [
-    "six month",
-    "food|provisions"
+    "belongings|possessions|clothes|clothing",
+    "food|provisions|stores"
    ]
   },
   {
@@ -900,13 +907,6 @@
    "terms": [
     "foul play|suspect",
     "Dei Gratia|salvors|crew"
-   ]
-  },
-  {
-   "claim": "The stains thought to be blood were tested and found not to be blood",
-   "terms": [
-    "blood",
-    "stain"
    ]
   },
   {
