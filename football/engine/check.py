@@ -29,11 +29,11 @@ RULES = {
     # Story series (stories/videos/<series>_<nn>_<slug>): 90 s, Capy in the series' outfit. Line, word and Capy-shot
     # limits above are for 60 s and scale with target_s.
     "series": {
-        "scary": {"outfit": "raincoat",  "target_s": 90},
-        "heist": {"outfit": "detective", "target_s": 90},
-        "myth":  {"outfit": "toga",      "target_s": 90},
-        "space": {"outfit": "astronaut", "target_s": 90},
-        "mind":  {"outfit": "cardigan",  "target_s": 90},
+        "scary": {"outfit": "raincoat",  "target_s": 90, "banned_shots": ["ots"]},
+        "heist": {"outfit": "detective", "target_s": 90, "banned_shots": ["ots"]},
+        "myth":  {"outfit": "toga",      "target_s": 90, "banned_shots": ["ots"]},
+        "space": {"outfit": "astronaut", "target_s": 90, "banned_shots": ["ots"]},
+        "mind":  {"outfit": "cardigan",  "target_s": 90, "banned_shots": ["ots"]},
     },
 }
 
@@ -64,6 +64,9 @@ def check(vd):
             errs.append(f"story series videos are {ser['target_s']} s: set \"target_s\": {ser['target_s']}")
         if (cast.get("capy", {}).get("look") or {}).get("outfit") != ser["outfit"]:
             errs.append(f"Capy wears the series outfit here: cast.capy.look.outfit = \"{ser['outfit']}\"")
+        for i, l in enumerate(L):   # story sets seat people facing the camera, so an over-the-shoulder shot frames the back of a head
+            if (l.get("shot") or {}).get("type") in ser.get("banned_shots", ()):
+                errs.append(f"line {i + 1}: shot type {l['shot']['type']} is not used in story videos (use two)")
     if len([s for s in S.get("sources", []) if s.get("url", "").startswith("http")]) < RULES["min_sources"]:
         errs.append("needs at least 2 sources with urls")
     if RULES["narrator"] not in cast or cast[RULES["narrator"]].get("kind") != "capy":
