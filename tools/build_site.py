@@ -8,12 +8,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 REPO = "leftbrain847/videos_public"
-TAG = re.compile(r"football-batch-[0-9a-z-]{1,30}")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import videos  # noqa: E402  id and release-tag rules per channel
 SETS = {
-    "s1": "Wait, that's the rule?",
-    "s2": "This season",
-    "s3": "The strange years",
-    "s4": "Endings nobody forgets",
+    "football": {"s1": "Wait, that's the rule?", "s2": "This season", "s3": "The strange years", "s4": "Endings nobody forgets"},
+    "stories": {"scary": "True & eerie", "heist": "Heists & cons", "myth": "Myths & legends", "space": "Space & science", "mind": "Mind games"},
 }
 
 
@@ -23,14 +22,15 @@ def main():
     # web copies live in GitHub Releases (one per batch); site/<channel>/releases.json maps video id -> release tag
     rel_file = site / "releases.json"
     releases = json.loads(rel_file.read_text()) if rel_file.exists() else {}
-    bad = {k: t for k, t in releases.items() if not TAG.fullmatch(t)}
+    C = videos.CHANNELS[ch]
+    bad = {k: t for k, t in releases.items() if not C["tag"].fullmatch(t)}
     if bad:
         raise SystemExit(f"bad release tags in {rel_file}: {bad}")
     items = []
     for vj in sorted((ROOT / ch / "videos").glob("*/video.json")):
         v = json.loads(vj.read_text())
         vid = v.get("id", vj.parent.name)
-        if not re.fullmatch(r"s\d_\d+_[a-z0-9_]+", vid) or vid != vj.parent.name:
+        if not C["id"].fullmatch(vid) or vid != vj.parent.name:
             raise SystemExit(f"bad video id {vid!r} in {vj}")
         s = vid.split("_")[0]
         media = site / "media" / s / f"{vid}.mp4"
@@ -44,13 +44,13 @@ def main():
             continue
         hook = v["lines"][0].get("cap", v["lines"][0]["text"]) if v.get("lines") else ""
         items.append({
-            "id": vid, "set": s, "n": int(re.match(r"s\d_(\d+)", vid).group(1)),
+            "id": vid, "set": s, "n": int(vid.split("_")[1]),
             "title": v.get("title", vid), "hook": hook,
             "video": video, "poster": f"posters/{s}/{vid}.jpg",
             "sources": [{"title": x.get("title", ""), "url": x["url"]} for x in v.get("sources", []) if x.get("url", "").startswith("https://")],
         })
     items.sort(key=lambda x: (x["set"], x["n"]))
-    out = {"sets": SETS, "videos": items}
+    out = {"sets": SETS[ch], "videos": items}
     (site / "videos.json").write_text(json.dumps(out, indent=1, ensure_ascii=False))
     print(f"site/{ch}/videos.json: {len(items)} videos")
 
