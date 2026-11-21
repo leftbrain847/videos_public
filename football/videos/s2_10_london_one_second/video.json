@@ -64,31 +64,53 @@
    },
    "at": "right",
    "face": -20
+  },
+  "cover": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#004c54",
+    "pants": "#f4f4f4",
+    "number": "41",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "right"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#004c54",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "In London, the Eagles took the lead with eight seconds left. They still lost.",
-   "cap": "In London, the Eagles took the lead with 8 seconds left. They still lost.",
+   "text": "Eight seconds left. You lead by one. You still lose.",
+   "cap": "8 seconds left. You lead by 1. You still lose.",
    "key": [
-    "8",
-    "LOST."
+    "LOSE."
    ],
+   "speaker": "capy",
    "place": {
+    "little": false,
+    "lawrence": false,
+    "returner": false,
+    "elliott": [
+     0.2,
+     0
+    ],
+    "cover": false,
+    "fan": false,
     "capy": [
      -2.6,
      0.8
-    ],
-    "elliott": [
-     0,
-     0
-    ],
-    "little": [
-     2.2,
-     0.3
-    ],
-    "lawrence": false,
-    "returner": false
+    ]
    },
    "shot": {
     "type": "two",
@@ -102,68 +124,80 @@
      "look": "camera"
     },
     "elliott": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "capy"
-    },
-    "little": {
-     "mood": "worried",
+     "mood": "shocked",
      "action": "idle",
-     "look": "elliott"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "Week six. Jacksonville against Philadelphia, at a soccer stadium in north London.",
-   "cap": "Week 6. Jacksonville against Philadelphia, at a soccer stadium in north London.",
-   "key": [
-    "LONDON."
-   ],
-   "set": "tunnel",
-   "setOpts": {
-    "boardText": [
-     "LONDON",
-     "WEEK 6"
-    ]
-   },
-   "place": {
-    "lawrence": "left",
-    "elliott": "right"
-   },
-   "shot": {
-    "type": "wide",
-    "on": "lawrence"
-   },
-   "act": {
-    "lawrence": {
-     "mood": "happy",
-     "action": "wave",
-     "look": "camera"
-    },
-    "elliott": {
-     "mood": "happy",
-     "action": "wave",
      "look": "camera"
     }
    }
   },
   {
-   "text": "With three twenty left, Trevor Lawrence threw a touchdown to Parker Washington.",
-   "cap": "With 3:20 left, Trevor Lawrence threw a touchdown to Parker Washington.",
+   "text": "You're the Philadelphia Eagles. Week six, in London.",
+   "cap": "You're the Philadelphia Eagles. Week 6, in London.",
    "key": [
-    "TOUCHDOWN"
+    "LONDON."
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "JAX 16",
-     "PHI 14"
+   "board": [
+    "WEEK 6",
+    "LONDON"
+   ],
+   "place": {
+    "little": false,
+    "lawrence": [
+     1.4,
+     0
+    ],
+    "returner": false,
+    "elliott": [
+     -1.4,
+     0
+    ],
+    "cover": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "elliott",
+    "offset": [
+     1.4,
+     0,
+     -2
     ]
    },
+   "act": {
+    "elliott": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "lawrence"
+    },
+    "lawrence": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "elliott"
+    }
+   }
+  },
+  {
+   "text": "Three minutes left. Trevor Lawrence finds Parker Washington. Touchdown.",
+   "cap": "3 minutes left. Trevor Lawrence finds Parker Washington. Touchdown.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "board": [
+    "JAX TD",
+    "3:20 LEFT"
+   ],
    "place": {
-    "lawrence": "center",
-    "elliott": "right"
+    "little": false,
+    "lawrence": [
+     0,
+     0
+    ],
+    "returner": false,
+    "elliott": false,
+    "cover": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "low",
@@ -174,23 +208,29 @@
      "mood": "happy",
      "action": "cheer",
      "look": "camera"
-    },
-    "elliott": {
-     "mood": "worried",
-     "action": "idle",
-     "look": "lawrence"
     }
    }
   },
   {
-   "text": "Then the extra point went wide left. Sixteen to fourteen.",
-   "cap": "Then the extra point went wide left. 16 to 14.",
+   "text": "Then Cam Little misses the extra point. Wide left.",
    "key": [
-    "WIDE"
+    "MISSES"
+   ],
+   "board": [
+    "EXTRA POINT",
+    "NO GOOD"
    ],
    "place": {
+    "little": [
+     0,
+     0
+    ],
     "lawrence": false,
-    "little": "center"
+    "returner": false,
+    "elliott": false,
+    "cover": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "close",
@@ -205,17 +245,257 @@
    }
   },
   {
-   "text": "Philadelphia drove down the field. Jake Elliott, from forty eight yards. Good.",
-   "cap": "Philadelphia drove down the field. Jake Elliott, from 48 yards. Good.",
+   "text": "Jaguars sixteen, Eagles fourteen. Your ball. Your chance.",
+   "cap": "Jaguars 16, Eagles 14. Your ball. Your chance.",
    "key": [
-    "48"
+    "14."
    ],
+   "board": [
+    "JAX 16",
+    "PHI 14"
+   ],
+   "speaker": "capy",
    "place": {
-    "little": false,
-    "elliott": "center"
+    "little": [
+     1.6,
+     0
+    ],
+    "lawrence": false,
+    "returner": false,
+    "elliott": false,
+    "cover": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
    },
    "shot": {
-    "type": "medium",
+    "type": "two",
+    "on": "capy",
+    "with": "little"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "little": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Jake Elliott kicks from forty eight. Good.",
+   "cap": "Jake Elliott kicks from 48. Good.",
+   "key": [
+    "GOOD."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "JAX 16",
+     "PHI 14"
+    ],
+    "endZone": 45,
+    "zoneA": "#101820",
+    "zoneB": "#004c54"
+   },
+   "place": {
+    "capy": false,
+    "little": false,
+    "lawrence": false,
+    "returner": false,
+    "cover": false,
+    "fan": false
+   },
+   "act": {},
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "elliott",
+    "lead": 0
+   },
+   "play": {
+    "cast": {
+     "elliott": {
+      "path": [
+       [
+        0.0,
+        14.8,
+        -4.6
+       ],
+       [
+        0.047,
+        15.47,
+        -4.47
+       ],
+       [
+        0.093,
+        16.13,
+        -4.33
+       ],
+       [
+        0.14,
+        16.8,
+        -4.2
+       ],
+       [
+        0.188,
+        16.81,
+        -4.2
+       ],
+       [
+        0.235,
+        16.82,
+        -4.2
+       ],
+       [
+        0.283,
+        16.83,
+        -4.2
+       ],
+       [
+        0.331,
+        16.84,
+        -4.2
+       ],
+       [
+        0.379,
+        16.86,
+        -4.2
+       ],
+       [
+        0.427,
+        16.87,
+        -4.2
+       ],
+       [
+        0.474,
+        16.88,
+        -4.2
+       ],
+       [
+        0.522,
+        16.89,
+        -4.2
+       ],
+       [
+        0.57,
+        16.9,
+        -4.2
+       ],
+       [
+        0.618,
+        16.91,
+        -4.2
+       ],
+       [
+        0.665,
+        16.92,
+        -4.2
+       ],
+       [
+        0.713,
+        16.93,
+        -4.2
+       ],
+       [
+        0.761,
+        16.94,
+        -4.2
+       ],
+       [
+        0.809,
+        16.96,
+        -4.2
+       ],
+       [
+        0.857,
+        16.97,
+        -4.2
+       ],
+       [
+        0.904,
+        16.98,
+        -4.2
+       ],
+       [
+        0.952,
+        16.99,
+        -4.2
+       ],
+       [
+        1.0,
+        17,
+        -4.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.14,
+        "kick"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.202,
+      17.2,
+      0.3,
+      -4
+     ],
+     [
+      0.505,
+      41.5,
+      5.5,
+      -4
+     ],
+     [
+      0.808,
+      66,
+      4.2,
+      -4
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Eagles seventeen, Jaguars sixteen. Eight seconds left. Easy, right?",
+   "cap": "Eagles 17, Jaguars 16. 8 seconds left. Easy, right?",
+   "key": [
+    "17,"
+   ],
+   "board": [
+    "PHI 17",
+    "JAX 16"
+   ],
+   "place": {
+    "little": [
+     2.4,
+     -0.8
+    ],
+    "lawrence": false,
+    "returner": false,
+    "elliott": [
+     0,
+     0
+    ],
+    "cover": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "high",
     "on": "elliott"
    },
    "act": {
@@ -223,45 +503,37 @@
      "mood": "happy",
      "action": "cheer",
      "look": "camera"
+    },
+    "little": {
+     "mood": "sad",
+     "action": "slump"
     }
    }
   },
   {
-   "text": "Eagles seventeen, Jaguars sixteen. Eight seconds left.",
-   "cap": "Eagles 17, Jaguars 16. 8 seconds left.",
+   "text": "All you need now? A kickoff. One tackle. That's it.",
    "key": [
-    "8"
+    "TACKLE."
    ],
+   "speaker": "capy",
    "board": [
-    "PHI 17",
-    "JAX 16"
+    "KICK OFF",
+    "1 TACKLE"
    ],
-   "shot": {
-    "type": "close",
-    "on": "elliott"
-   },
-   "act": {
-    "elliott": {
-     "mood": "smug",
-     "action": "clap",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "All Philadelphia had to do was kick off, and make one tackle.",
-   "key": [
-    "KICK"
-   ],
-   "set": "office",
-   "setOpts": {
-    "boardText": [
-     "0:08",
-     "KICKOFF"
-    ]
-   },
    "place": {
-    "capy": "center"
+    "little": false,
+    "lawrence": false,
+    "returner": false,
+    "elliott": [
+     1.6,
+     0
+    ],
+    "cover": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
    },
    "shot": {
     "type": "medium",
@@ -272,139 +544,930 @@
      "mood": "neutral",
      "action": "shrug",
      "look": "camera"
+    },
+    "elliott": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Ameer Abdullah caught it, and ran fifty three yards.",
-   "cap": "Ameer Abdullah caught it, and ran 53 yards.",
+   "text": "Ameer Abdullah catches it. Then he runs. And runs.",
    "key": [
-    "53"
+    "RUNS."
    ],
    "set": "field",
    "setOpts": {
     "boardText": [
      "PHI 17",
      "JAX 16"
-    ]
+    ],
+    "endZone": 45,
+    "zoneA": "#101820",
+    "zoneB": "#004c54"
    },
    "place": {
-    "returner": "center",
-    "elliott": "right"
+    "capy": false,
+    "little": false,
+    "lawrence": false,
+    "elliott": false,
+    "fan": false
    },
+   "act": {},
    "shot": {
-    "type": "low",
+    "type": "follow_high",
     "on": "returner"
    },
-   "act": {
-    "returner": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "camera"
+   "play": {
+    "cast": {
+     "returner": {
+      "path": [
+       [
+        0.0,
+        -48.0,
+        0.5
+       ],
+       [
+        0.04,
+        -47.88,
+        0.44
+       ],
+       [
+        0.08,
+        -47.75,
+        0.38
+       ],
+       [
+        0.119,
+        -47.62,
+        0.31
+       ],
+       [
+        0.159,
+        -47.5,
+        0.25
+       ],
+       [
+        0.199,
+        -47.38,
+        0.19
+       ],
+       [
+        0.239,
+        -47.25,
+        0.12
+       ],
+       [
+        0.278,
+        -47.12,
+        0.06
+       ],
+       [
+        0.318,
+        -47.0,
+        0.0
+       ],
+       [
+        0.358,
+        -45.76,
+        0.0
+       ],
+       [
+        0.398,
+        -44.53,
+        0.0
+       ],
+       [
+        0.439,
+        -43.29,
+        0.0
+       ],
+       [
+        0.479,
+        -42.06,
+        0.0
+       ],
+       [
+        0.519,
+        -40.82,
+        0.0
+       ],
+       [
+        0.559,
+        -39.59,
+        0.0
+       ],
+       [
+        0.599,
+        -38.35,
+        0.0
+       ],
+       [
+        0.639,
+        -37.12,
+        0.0
+       ],
+       [
+        0.679,
+        -35.88,
+        0.0
+       ],
+       [
+        0.719,
+        -34.65,
+        0.0
+       ],
+       [
+        0.759,
+        -33.41,
+        0.0
+       ],
+       [
+        0.799,
+        -32.18,
+        0.0
+       ],
+       [
+        0.84,
+        -30.94,
+        0.0
+       ],
+       [
+        0.88,
+        -29.71,
+        0.0
+       ],
+       [
+        0.92,
+        -28.47,
+        0.0
+       ],
+       [
+        0.96,
+        -27.24,
+        0.0
+       ],
+       [
+        1.0,
+        -26,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.318,
+        "catch"
+       ],
+       [
+        0.358,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "cover": {
+      "path": [
+       [
+        0.0,
+        -12.0,
+        -3.0
+       ],
+       [
+        0.04,
+        -11.68,
+        -2.98
+       ],
+       [
+        0.08,
+        -11.36,
+        -2.96
+       ],
+       [
+        0.12,
+        -11.04,
+        -2.94
+       ],
+       [
+        0.16,
+        -10.72,
+        -2.92
+       ],
+       [
+        0.2,
+        -10.4,
+        -2.9
+       ],
+       [
+        0.24,
+        -10.08,
+        -2.88
+       ],
+       [
+        0.28,
+        -9.76,
+        -2.86
+       ],
+       [
+        0.32,
+        -9.44,
+        -2.84
+       ],
+       [
+        0.36,
+        -9.12,
+        -2.82
+       ],
+       [
+        0.4,
+        -8.8,
+        -2.8
+       ],
+       [
+        0.44,
+        -8.48,
+        -2.78
+       ],
+       [
+        0.48,
+        -8.16,
+        -2.76
+       ],
+       [
+        0.52,
+        -7.84,
+        -2.74
+       ],
+       [
+        0.56,
+        -7.52,
+        -2.72
+       ],
+       [
+        0.6,
+        -7.2,
+        -2.7
+       ],
+       [
+        0.64,
+        -6.88,
+        -2.68
+       ],
+       [
+        0.68,
+        -6.56,
+        -2.66
+       ],
+       [
+        0.72,
+        -6.24,
+        -2.64
+       ],
+       [
+        0.76,
+        -5.92,
+        -2.62
+       ],
+       [
+        0.8,
+        -5.6,
+        -2.6
+       ],
+       [
+        0.84,
+        -5.28,
+        -2.58
+       ],
+       [
+        0.88,
+        -4.96,
+        -2.56
+       ],
+       [
+        0.92,
+        -4.64,
+        -2.54
+       ],
+       [
+        0.96,
+        -4.32,
+        -2.52
+       ],
+       [
+        1.0,
+        -4,
+        -2.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     }
     },
-    "elliott": {
-     "mood": "shocked",
-     "action": "idle",
-     "look": "returner"
-    }
+    "ball": [
+     [
+      0,
+      -20,
+      12,
+      0
+     ],
+     [
+      0.159,
+      -34,
+      8,
+      0
+     ],
+     [
+      0.318,
+      -47,
+      1.4,
+      0
+     ]
+    ],
+    "carry": [
+     [
+      0.318,
+      "returner"
+     ]
+    ]
    }
   },
   {
-   "text": "He went down at the Eagles' thirty nine. One second left.",
-   "cap": "He went down at the Eagles' 39. 1 second left.",
+   "text": "Fifty three yards. Down at your thirty nine.",
+   "cap": "53 yards. Down at your 39.",
+   "key": [
+    "53"
+   ],
+   "place": {
+    "capy": false,
+    "little": false,
+    "lawrence": false,
+    "elliott": false,
+    "fan": false
+   },
+   "act": {},
+   "shot": {
+    "type": "follow",
+    "on": "returner"
+   },
+   "play": {
+    "cast": {
+     "returner": {
+      "path": [
+       [
+        0.0,
+        -26.0,
+        0.0
+       ],
+       [
+        0.048,
+        -24.4,
+        0.01
+       ],
+       [
+        0.096,
+        -22.8,
+        0.02
+       ],
+       [
+        0.144,
+        -21.2,
+        0.03
+       ],
+       [
+        0.192,
+        -19.6,
+        0.04
+       ],
+       [
+        0.24,
+        -18.0,
+        0.05
+       ],
+       [
+        0.288,
+        -16.4,
+        0.06
+       ],
+       [
+        0.336,
+        -14.8,
+        0.07
+       ],
+       [
+        0.384,
+        -13.2,
+        0.08
+       ],
+       [
+        0.433,
+        -11.6,
+        0.09
+       ],
+       [
+        0.481,
+        -10.0,
+        0.1
+       ],
+       [
+        0.529,
+        -8.4,
+        0.11
+       ],
+       [
+        0.577,
+        -6.8,
+        0.12
+       ],
+       [
+        0.625,
+        -5.2,
+        0.13
+       ],
+       [
+        0.673,
+        -3.6,
+        0.14
+       ],
+       [
+        0.721,
+        -2.0,
+        0.15
+       ],
+       [
+        0.769,
+        -0.4,
+        0.16
+       ],
+       [
+        0.817,
+        1.2,
+        0.17
+       ],
+       [
+        0.865,
+        2.8,
+        0.18
+       ],
+       [
+        0.913,
+        4.4,
+        0.19
+       ],
+       [
+        0.961,
+        6.0,
+        0.2
+       ],
+       [
+        1.0,
+        6.3,
+        0.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.961,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "cover": {
+      "path": [
+       [
+        0.0,
+        -4.0,
+        -2.5
+       ],
+       [
+        0.048,
+        -3.4,
+        -2.46
+       ],
+       [
+        0.096,
+        -2.8,
+        -2.41
+       ],
+       [
+        0.144,
+        -2.2,
+        -2.37
+       ],
+       [
+        0.192,
+        -1.6,
+        -2.32
+       ],
+       [
+        0.24,
+        -1.0,
+        -2.27
+       ],
+       [
+        0.288,
+        -0.4,
+        -2.23
+       ],
+       [
+        0.336,
+        0.2,
+        -2.19
+       ],
+       [
+        0.384,
+        0.8,
+        -2.14
+       ],
+       [
+        0.433,
+        1.4,
+        -2.1
+       ],
+       [
+        0.481,
+        2.0,
+        -2.05
+       ],
+       [
+        0.529,
+        2.6,
+        -2.0
+       ],
+       [
+        0.577,
+        3.2,
+        -1.96
+       ],
+       [
+        0.625,
+        3.8,
+        -1.92
+       ],
+       [
+        0.673,
+        4.4,
+        -1.87
+       ],
+       [
+        0.721,
+        5.0,
+        -1.83
+       ],
+       [
+        0.769,
+        5.6,
+        -1.78
+       ],
+       [
+        0.817,
+        6.2,
+        -1.74
+       ],
+       [
+        0.865,
+        6.8,
+        -1.69
+       ],
+       [
+        0.913,
+        7.4,
+        -1.65
+       ],
+       [
+        0.961,
+        8.0,
+        -1.6
+       ],
+       [
+        1.0,
+        8,
+        -1.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.961,
+        "idle"
+       ]
+      ],
+      "face": -120
+     }
+    },
+    "carry": [
+     [
+      0,
+      "returner"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "One second left. Just enough for him.",
+   "cap": "1 second left. Just enough for him.",
    "key": [
     "1"
    ],
+   "speaker": "capy",
    "board": [
     "0:01",
-    "BALL ON PHI 39"
+    "PHI 39"
    ],
+   "place": {
+    "little": false,
+    "lawrence": false,
+    "returner": [
+     1.6,
+     0.2
+    ],
+    "elliott": false,
+    "cover": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
    "shot": {
-    "type": "high",
-    "on": "returner"
+    "type": "two",
+    "on": "capy",
+    "with": "returner"
    },
    "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
     "returner": {
      "mood": "happy",
      "action": "cheer",
      "look": "camera"
-    },
-    "elliott": {
-     "mood": "worried",
-     "action": "facepalm"
     }
    }
   },
   {
-   "text": "Cam Little, from fifty seven yards.",
-   "cap": "Cam Little, from 57 yards.",
+   "text": "Cam Little lines up. Fifty seven yards. No pressure.",
+   "cap": "Cam Little lines up. 57 yards. No pressure.",
    "key": [
     "57"
    ],
    "place": {
+    "little": [
+     0,
+     0
+    ],
+    "lawrence": false,
     "returner": false,
-    "little": "center"
+    "elliott": false,
+    "cover": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "medium",
+    "type": "close",
     "on": "little"
    },
    "act": {
     "little": {
-     "mood": "neutral",
+     "mood": "worried",
      "action": "idle",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Good. Jaguars win, nineteen to seventeen.",
-   "cap": "Good. Jaguars win, 19 to 17.",
+   "text": "Good. Jaguars nineteen, Eagles seventeen.",
+   "cap": "Good. Jaguars 19, Eagles 17.",
    "key": [
-    "19"
+    "19,"
    ],
-   "board": [
-    "JAX 19",
-    "PHI 17"
+   "sfx": [
+    [
+     0.85,
+     "roar"
+    ]
    ],
-   "shot": {
-    "type": "wide",
-    "on": "little"
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PHI 17",
+     "JAX 16"
+    ],
+    "endZone": 45,
+    "zoneA": "#101820",
+    "zoneB": "#004c54"
    },
-   "act": {
-    "little": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
+   "place": {
+    "capy": false,
+    "lawrence": false,
+    "returner": false,
+    "elliott": false,
+    "cover": false,
+    "fan": false
+   },
+   "act": {},
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "little",
+    "lead": 0
+   },
+   "play": {
+    "cast": {
+     "little": {
+      "path": [
+       [
+        0.0,
+        5.8,
+        -4.6
+       ],
+       [
+        0.044,
+        6.47,
+        -4.47
+       ],
+       [
+        0.088,
+        7.13,
+        -4.33
+       ],
+       [
+        0.131,
+        7.8,
+        -4.2
+       ],
+       [
+        0.177,
+        7.81,
+        -4.2
+       ],
+       [
+        0.223,
+        7.82,
+        -4.2
+       ],
+       [
+        0.269,
+        7.83,
+        -4.2
+       ],
+       [
+        0.314,
+        7.84,
+        -4.2
+       ],
+       [
+        0.36,
+        7.85,
+        -4.2
+       ],
+       [
+        0.406,
+        7.86,
+        -4.2
+       ],
+       [
+        0.451,
+        7.87,
+        -4.2
+       ],
+       [
+        0.497,
+        7.88,
+        -4.2
+       ],
+       [
+        0.543,
+        7.89,
+        -4.2
+       ],
+       [
+        0.589,
+        7.91,
+        -4.2
+       ],
+       [
+        0.634,
+        7.92,
+        -4.2
+       ],
+       [
+        0.68,
+        7.93,
+        -4.2
+       ],
+       [
+        0.726,
+        7.94,
+        -4.2
+       ],
+       [
+        0.771,
+        7.95,
+        -4.2
+       ],
+       [
+        0.817,
+        7.96,
+        -4.2
+       ],
+       [
+        0.863,
+        7.97,
+        -4.2
+       ],
+       [
+        0.909,
+        7.98,
+        -4.2
+       ],
+       [
+        0.954,
+        7.99,
+        -4.2
+       ],
+       [
+        1.0,
+        8,
+        -4.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.131,
+        "kick"
+       ],
+       [
+        0.876,
+        "cheer"
+       ]
+      ],
+      "face": 90
+     }
     },
-    "elliott": {
-     "mood": "sad",
-     "action": "slump",
-     "look": "little"
-    }
+    "ball": [
+     [
+      0.19,
+      8.2,
+      0.3,
+      -4
+     ],
+     [
+      0.475,
+      37.0,
+      5.5,
+      -4
+     ],
+     [
+      0.759,
+      66,
+      4.2,
+      -4
+     ]
+    ]
    }
   },
   {
-   "text": "The same kicker who had missed that extra point, three minutes earlier.",
+   "text": "Yes. The same guy who missed the extra point.",
    "key": [
-    "SAME"
+    "MISSED"
    ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "PAT: MISSED",
-     "57 YDS: GOOD"
-    ]
-   },
+   "speaker": "capy",
    "place": {
     "little": [
-     1.2,
-     0.2
+     1.6,
+     0
     ],
+    "lawrence": false,
+    "returner": false,
+    "elliott": false,
+    "cover": false,
+    "fan": false,
     "capy": [
      -1.2,
-     0.6
+     1.0
     ]
    },
    "shot": {
@@ -420,40 +1483,91 @@
     },
     "little": {
      "mood": "happy",
-     "action": "shrug",
-     "look": "capy"
+     "action": "celebrate",
+     "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Up by one with eight seconds left. Kick it deep, or kick it short?",
-   "cap": "Up by one with 8 seconds left. Kick it deep, or kick it short?",
+   "text": "Eagles fans, it's a long flight home. Sorry.",
    "key": [
-    "DEEP,",
-    "SHORT?"
+    "FLIGHT"
    ],
-   "set": "field",
+   "speaker": "capy",
+   "set": "living",
    "setOpts": {
     "boardText": [
-     "JAX 19",
-     "PHI 17"
+     "PHI 17",
+     "JAX 19"
     ]
    },
    "place": {
+    "little": false,
+    "lawrence": false,
+    "returner": false,
+    "elliott": false,
+    "cover": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
     "capy": [
      -1.6,
-     1.0
-    ],
-    "elliott": [
-     0.6,
-     0.2
+     3.6
     ]
    },
    "shot": {
-    "type": "two",
+    "type": "medium",
     "on": "capy",
-    "with": "elliott"
+    "offset": [
+     1.0,
+     0.4,
+     1.2
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Up one, eight seconds left. Kick it deep or short?",
+   "cap": "Up 1, 8 seconds left. Kick it deep or short?",
+   "key": [
+    "DEEP",
+    "SHORT?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "DEEP",
+    "OR SHORT?"
+   ],
+   "place": {
+    "little": false,
+    "lawrence": false,
+    "returner": false,
+    "elliott": false,
+    "cover": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -461,23 +1575,106 @@
      "action": "talk",
      "look": "camera"
     },
-    "elliott": {
+    "fan": {
      "mood": "confused",
      "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
   {
-   "title": "AP via TSN: Little's 57-yard FG gives Jaguars win over Eagles in wild finish in London",
+   "title": "TSN (AP): Little's 57-yard FG gives Jaguars win over Eagles in wild finish in London",
    "url": "https://www.tsn.ca/nfl/article/littles-57-yard-fg-gives-jaguars-win-over-eagles-in-wild-finish-in-london/"
+  },
+  {
+   "title": "ABC News (AP): Cam Little's 57-yard FG gives Jaguars 19-17 win over Eagles in wild finish in London",
+   "url": "https://abcnews.com/Sports/wireStory/cam-littles-57-yard-fg-jaguars-19-17-137180032"
+  },
+  {
+   "title": "Bozeman Daily Chronicle (AP): Cam Little's 57-yard FG gives Jaguars 19-17 win over Eagles",
+   "url": "https://www.bozemandailychronicle.com/wire/sports/cam-littles-57-yard-fg-gives-jaguars-19-17-win-over-eagles-in-wild-finish/article_588758bc-b4d0-5d86-a2be-6a9f054264b8.html"
+  },
+  {
+   "title": "WHEC (AP): Cam Little's 57-yard FG gives Jaguars 19-17 win over Eagles in wild finish in London",
+   "url": "https://www.whec.com/ap-top-news/cam-littles-57-yard-fg-gives-jaguars-19-17-win-over-eagles-in-wild-finish-in-london/"
+  },
+  {
+   "title": "Bay News 9 (AP): Cam Little's 57-yard FG gives Jaguars 19-17 win over Eagles",
+   "url": "https://baynews9.com/fl/tampa/sports/2026/10/12/cam-little-s-57-yard-fg-gives-jaguars-19-17-win-over-eagles-in-wild-finish-in-london"
   },
   {
    "title": "Newsweek: Jaguars win thriller against Eagles in London with wild last-second score",
    "url": "https://www.newsweek.com/sports/nfl/jaguars-win-thriller-against-eagles-london-wild-last-second-score-12553210"
+  },
+  {
+   "title": "OutKick (Fox News): Jaguars kicker sticks it to Eagles fans after game-winning 57-yard field goal",
+   "url": "https://www.foxnews.com/outkick-sports/jaguars-kicker-sticks-eagles-fans-nailing-game-winning-57-yard-field-goal-london"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The game was in London",
+   "terms": [
+    "London"
+   ]
+  },
+  {
+   "claim": "Trevor Lawrence threw a touchdown pass to Parker Washington with 3:20 left",
+   "terms": [
+    "Washington",
+    "3:20"
+   ]
+  },
+  {
+   "claim": "Little missed the extra point wide left, leaving it 16-14",
+   "terms": [
+    "wide left|missed the extra point|extra point",
+    "16-14"
+   ]
+  },
+  {
+   "claim": "Jake Elliott kicked a 48-yard field goal",
+   "terms": [
+    "Elliott",
+    "48"
+   ]
+  },
+  {
+   "claim": "Eagles led 17-16 with 8 seconds left",
+   "terms": [
+    "17-16",
+    "8 seconds|eight seconds"
+   ]
+  },
+  {
+   "claim": "Ameer Abdullah returned the kickoff 53 yards to the Eagles 39 with 1 second left",
+   "terms": [
+    "Abdullah",
+    "53"
+   ]
+  },
+  {
+   "claim": "The return ended at the Eagles 39",
+   "terms": [
+    "Abdullah",
+    "39"
+   ]
+  },
+  {
+   "claim": "One second was left",
+   "terms": [
+    "1 second|one second"
+   ]
+  },
+  {
+   "claim": "Cam Little kicked a 57-yard field goal to win 19-17",
+   "terms": [
+    "57",
+    "19-17"
+   ]
   }
  ]
 }
