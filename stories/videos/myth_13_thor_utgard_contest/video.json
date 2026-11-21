@@ -1,0 +1,999 @@
+{
+ "id": "myth_13_thor_utgard_contest",
+ "title": "Thor loses to a grandma",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "UTGARD"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "thor": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#b23a2a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c8692a",
+    "skin": "#f2c39b",
+    "sash": "#8a8f96",
+    "beard": true
+   }
+  },
+  "thorH": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#b23a2a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c8692a",
+    "skin": "#f2c39b",
+    "sash": "#8a8f96",
+    "beard": true
+   },
+   "hold": "trophy"
+  },
+  "loki": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#3f7a3a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  },
+  "king": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a5a6a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#3b3b3b",
+    "skin": "#e8b48f",
+    "sash": "#c46a3c",
+    "beard": true
+   }
+  },
+  "thj": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c97a3a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#e8c070",
+    "skin": "#f2c39b",
+    "sash": "#4a3b2c"
+   }
+  },
+  "elli": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#9a8a7a",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#e6e6e6",
+    "skin": "#f2c39b",
+    "sash": "#6b4426"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You lose a drinking contest. Against the ocean.",
+   "key": [
+    "OCEAN."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "thor": [
+     1.2,
+     0
+    ],
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "thor"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "thor": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Thor. You visit a giant's fortress, far away.",
+   "key": [
+    "FORTRESS."
+   ],
+   "board": [
+    "UTGARD",
+    "GIANTS ONLY"
+   ],
+   "place": {
+    "capy": false,
+    "thor": [
+     0,
+     0
+    ],
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "thor"
+   },
+   "act": {
+    "thor": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The king is Utgard-Loki. He sneers at how small you are.",
+   "key": [
+    "SMALL"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "thorH": false,
+    "loki": false,
+    "king": [
+     0,
+     0
+    ],
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "king"
+   },
+   "act": {
+    "king": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "First, your friend Loki enters an eating contest. Easy, right?",
+   "key": [
+    "EATING"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "thorH": false,
+    "loki": [
+     0,
+     0
+    ],
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "loki"
+   },
+   "act": {
+    "loki": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His rival eats the meat. The bones. The trough too.",
+   "key": [
+    "TROUGH"
+   ],
+   "board": [
+    "EATING CONTEST",
+    "LOKI LOSES"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "thorH": false,
+    "loki": [
+     -1.3,
+     0.2
+    ],
+    "king": [
+     1.3,
+     -0.2
+    ],
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "loki",
+    "with": "king"
+   },
+   "act": {
+    "loki": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "king": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "loki"
+    }
+   }
+  },
+  {
+   "text": "Your servant Thjalfi runs a race. He loses badly. Very badly.",
+   "key": [
+    "LOSES"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": [
+     0,
+     0
+    ],
+    "elli": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "thj"
+   },
+   "act": {
+    "thj": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Not a great start for team thunder.",
+   "key": [
+    "THUNDER."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "thor": false,
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your turn. You must drain this drinking horn.",
+   "key": [
+    "HORN."
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "thorH": [
+     0,
+     0
+    ],
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "thorH"
+   },
+   "act": {
+    "thorH": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You gulp three times. Big gulps. The level barely drops.",
+   "cap": "You gulp 3 times. Big gulps. The level barely drops.",
+   "key": [
+    "BARELY"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "thorH": [
+     0,
+     0
+    ],
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "thorH"
+   },
+   "act": {
+    "thorH": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Next, lift the king's cat off the floor.",
+   "key": [
+    "CAT"
+   ],
+   "place": {
+    "capy": false,
+    "thor": [
+     -1.3,
+     0.2
+    ],
+    "thorH": false,
+    "loki": false,
+    "king": [
+     1.3,
+     -0.2
+    ],
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "king",
+    "pan": [
+     -1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "thor": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "king"
+    },
+    "king": {
+     "mood": "smug",
+     "action": "point",
+     "look": "thor"
+    }
+   }
+  },
+  {
+   "text": "You strain. Only one paw comes up.",
+   "cap": "You strain. Only 1 paw comes up.",
+   "key": [
+    "PAW"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "thor": [
+     1.2,
+     0
+    ],
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "thor",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "thor"
+    },
+    "thor": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Finally, you wrestle an old woman. Her name is Elli.",
+   "key": [
+    "ELLI."
+   ],
+   "place": {
+    "capy": false,
+    "thor": [
+     -1.3,
+     0.2
+    ],
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "thor",
+    "with": "elli"
+   },
+   "act": {
+    "thor": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "elli"
+    },
+    "elli": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "thor"
+    }
+   }
+  },
+  {
+   "text": "She forces you down to one knee. With ease.",
+   "key": [
+    "KNEE."
+   ],
+   "board": [
+    "THOR",
+    "PINNED"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "elli"
+   },
+   "act": {
+    "elli": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The god of thunder. Pinned by a grandma.",
+   "key": [
+    "GRANDMA."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "thor": false,
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "elli"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "elli": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Next morning, the king tells you the truth.",
+   "key": [
+    "TRUTH."
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "thorH": false,
+    "loki": false,
+    "king": [
+     0,
+     0
+    ],
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "king"
+   },
+   "act": {
+    "king": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Loki's rival was fire itself. It eats anything.",
+   "key": [
+    "FIRE"
+   ],
+   "board": [
+    "THE RIVAL",
+    "WAS FIRE"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "thorH": false,
+    "loki": [
+     0,
+     0
+    ],
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "loki"
+   },
+   "act": {
+    "loki": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Thjalfi raced against thought. Nobody outruns thought.",
+   "key": [
+    "THOUGHT."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "thor": false,
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": [
+     1.2,
+     0
+    ],
+    "elli": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "thj"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "thj": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your horn was linked to the sea. You lowered the ocean.",
+   "key": [
+    "OCEAN."
+   ],
+   "speaker": "capy",
+   "board": [
+    "HORN = SEA",
+    "TIDES"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "thor": false,
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The cat was the world serpent. In a cat disguise.",
+   "key": [
+    "SERPENT."
+   ],
+   "place": {
+    "capy": false,
+    "thor": [
+     -1.3,
+     0.2
+    ],
+    "thorH": false,
+    "loki": false,
+    "king": [
+     1.3,
+     -0.2
+    ],
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "thor",
+    "with": "king"
+   },
+   "act": {
+    "thor": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "king"
+    },
+    "king": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "thor"
+    }
+   }
+  },
+  {
+   "text": "The old woman was old age itself. Nobody beats old age.",
+   "key": [
+    "AGE."
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "elli"
+   },
+   "act": {
+    "elli": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Every loss was a trick. The giants were terrified of you.",
+   "key": [
+    "TERRIFIED"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "thor": [
+     1.2,
+     0
+    ],
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "thor"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "thor"
+    },
+    "thor": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have spotted the trick? Yes or no? Giants, stay quiet.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "SPOT THE TRICK?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "thor": false,
+    "thorH": false,
+    "loki": false,
+    "king": false,
+    "thj": false,
+    "elli": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Utgarda-Loki",
+   "url": "https://en.wikipedia.org/wiki/%C3%9Atgar%C3%B0a-Loki"
+  },
+  {
+   "title": "Wikipedia: Elli",
+   "url": "https://en.wikipedia.org/wiki/Elli"
+  },
+  {
+   "title": "Wikipedia: Logi",
+   "url": "https://en.wikipedia.org/wiki/Logi"
+  },
+  {
+   "title": "Norse Mythology for Smart People: The Tale of Utgarda-Loki",
+   "url": "https://norse-mythology.org/tale-utgarda-loki/"
+  },
+  {
+   "title": "Hurstwic: Thor and Utgard-Loki (Snorri, Gylfaginning)",
+   "url": "https://www.hurstwic.com/history/articles/mythology/myths/text/thor_utgard.htm"
+  },
+  {
+   "title": "Timeless Myths: Fighting Illusions",
+   "url": "https://timelessmyths.com/norse/sagas/of-thor-giants/fighting-illusions"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Thor travels to the giant king Utgarda-Loki's stronghold",
+   "terms": [
+    "Thor",
+    "Útgarða|Utgarda|Utgard"
+   ]
+  },
+  {
+   "claim": "Loki enters an eating contest and loses: his rival eats the meat, the bones and the trough",
+   "terms": [
+    "Logi",
+    "eat|ate|eaten|eating|consumed"
+   ]
+  },
+  {
+   "claim": "Thjalfi runs a race and loses",
+   "terms": [
+    "Þjálfi|Thjalfi|Thialfi",
+    "race|run|running"
+   ]
+  },
+  {
+   "claim": "Thor tries to drain a drinking horn",
+   "terms": [
+    "horn",
+    "drink|drinking"
+   ]
+  },
+  {
+   "claim": "He takes three draughts and barely lowers it",
+   "terms": [
+    "three",
+    "horn"
+   ]
+  },
+  {
+   "claim": "He is challenged to lift the king's cat",
+   "terms": [
+    "cat",
+    "lift"
+   ]
+  },
+  {
+   "claim": "Only one paw leaves the floor",
+   "terms": [
+    "paw|foot|feet",
+    "single|one"
+   ]
+  },
+  {
+   "claim": "He wrestles an old woman named Elli",
+   "terms": [
+    "Elli",
+    "wrestle|wrestled|wrestling"
+   ]
+  },
+  {
+   "claim": "She forces him down to one knee",
+   "terms": [
+    "knee"
+   ]
+  },
+  {
+   "claim": "Loki's rival was fire",
+   "terms": [
+    "Logi",
+    "fire"
+   ]
+  },
+  {
+   "claim": "Thjalfi raced thought",
+   "terms": [
+    "Hugi",
+    "thought"
+   ]
+  },
+  {
+   "claim": "The horn's end was in the sea, and his drinking lowered it",
+   "terms": [
+    "sea",
+    "horn"
+   ]
+  },
+  {
+   "claim": "The cat was the Midgard Serpent",
+   "terms": [
+    "cat",
+    "serpent|Jörmungandr|Jormungandr"
+   ]
+  },
+  {
+   "claim": "Elli was old age",
+   "terms": [
+    "Elli",
+    "old age"
+   ]
+  },
+  {
+   "claim": "The giants were frightened by Thor's strength",
+   "terms": [
+    "afraid|fear|frightened|terrified|terror",
+    "Thor|strength"
+   ]
+  }
+ ]
+}
