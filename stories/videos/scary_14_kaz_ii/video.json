@@ -1,0 +1,718 @@
+{
+ "id": "scary_14_kaz_ii",
+ "title": "The Kaz II: engine running, nobody aboard",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "KAZ II"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#c46a3c",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "cap": "#f6f6f6"
+   },
+   "at": "center",
+   "hold": "flashlight"
+  },
+  "mate": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2f4a6b",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "center"
+  },
+  "coroner": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "bob",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "A catamaran drifts past. Engine running. Nobody aboard. Not a soul.",
+   "key": [
+    "NOBODY"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "mate": [
+     2.8,
+     -1.0
+    ],
+    "coroner": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "window"
+    },
+    "mate": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "April, two thousand seven. Off Queensland, Australia.",
+   "cap": "April 2007. Off Queensland, Australia.",
+   "key": [
+    "QUEENSLAND,"
+   ],
+   "board": [
+    "APRIL 2007",
+    "QUEENSLAND"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "mate": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The boat is called the Kaz two. A sleek catamaran.",
+   "cap": "The boat is called the Kaz II. A sleek catamaran.",
+   "key": [
+    "KAZ"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "mate"
+   },
+   "act": {
+    "mate": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Three men left Airlie Beach days earlier.",
+   "key": [
+    "THREE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You climb aboard. The laptop is on. Still running.",
+   "key": [
+    "LAPTOP"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "Food is set out. Ready to eat. Nobody ate it.",
+   "key": [
+    "FOOD"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The radio works. The engine hums along. The G P S too.",
+   "cap": "The radio works. The engine hums along. The GPS too.",
+   "key": [
+    "ENGINE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "mate"
+   },
+   "act": {
+    "mate": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Life jackets are still on board.",
+   "key": [
+    "JACKETS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "So where are the three men? Where did they go?",
+   "key": [
+    "WHERE"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "mate": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Nothing broken. Everyone gone. The ocean said nothing.",
+   "key": [
+    "NOTHING."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Search crews comb the sea for days. They find nothing. Not a trace.",
+   "key": [
+    "DAYS."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "mate"
+   },
+   "act": {
+    "mate": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "mate"
+    }
+   }
+  },
+  {
+   "text": "Then police check a video camera on board. They press play.",
+   "key": [
+    "CAMERA"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The men look relaxed. Normal day at sea. Calm water.",
+   "key": [
+    "NORMAL"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "mate"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "mate"
+    },
+    "mate": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Online, the theories go wild. Pirates. Freak waves. Worse.",
+   "key": [
+    "WILD."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "you": [
+     -2.4,
+     -0.4
+    ],
+    "mate": [
+     2.8,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    },
+    "mate": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then a coroner studies the boring facts.",
+   "key": [
+    "CORONER"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "INQUEST",
+     "FINDINGS"
+    ]
+   },
+   "place": {
+    "coroner": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "mate": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coroner"
+   },
+   "act": {
+    "coroner": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A fishing line was snagged around the propeller. A common problem.",
+   "key": [
+    "PROPELLER."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "coroner"
+   },
+   "act": {
+    "coroner": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Likely, one man climbed down to free it.",
+   "key": [
+    "FREE"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coroner"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coroner": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then a wind gust. The others fall in trying to help. It happens fast.",
+   "key": [
+    "HELP."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "coroner"
+   },
+   "act": {
+    "coroner": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The boat sails on. Without anyone at the wheel.",
+   "key": [
+    "WHEEL."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "NO CREW",
+     "STILL SAILING"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "mate": [
+     2.6,
+     -1.0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "coroner": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle"
+    },
+    "mate": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "No trick. No monster. Just the sea being the sea. Respect it.",
+   "key": [
+    "SEA."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you sail without a life jacket on? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "LIFE JACKET?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Kaz II",
+   "url": "https://en.wikipedia.org/wiki/Kaz_II"
+  },
+  {
+   "title": "Irish Times: Crewless yacht found drifting off Australia",
+   "url": "https://www.irishtimes.com/news/crewless-yacht-found-drifting-off-australia-1.805929"
+  },
+  {
+   "title": "Irish Times: Rescue teams baffled over disappearance of yachtsmen",
+   "url": "https://www.irishtimes.com/news/rescue-teams-baffled-over-disappearance-of-yachtsmen-1.1202826"
+  },
+  {
+   "title": "Taipei Times: Ghost yacht found off Australia",
+   "url": "https://www.taipeitimes.com/News/front/archives/2007/04/21/2003357545"
+  },
+  {
+   "title": "Herald Net: Australian boat's crew vanishes",
+   "url": "https://www.heraldnet.com/news/australian-boats-crew-vanishes"
+  },
+  {
+   "title": "Sail-World: The unsolved mystery of the Kaz II",
+   "url": "https://www.sail-world.com/-45859/"
+  },
+  {
+   "title": "Seabreeze: The unsolved mystery of the Kaz II",
+   "url": "https://www.seabreeze.com.au/News/Sailing/The-Unsolved-Mystery-of-the-Kaz-II"
+  },
+  {
+   "title": "RTE News: Crew missing from yacht off Australia",
+   "url": "https://www.rte.ie/news/2007/0420/88100-australia"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In April 2007 the Kaz II was found drifting off Queensland",
+   "terms": [
+    "Kaz II",
+    "2007"
+   ]
+  },
+  {
+   "claim": "The Kaz II was a catamaran",
+   "terms": [
+    "catamaran"
+   ]
+  },
+  {
+   "claim": "Three men had left Airlie Beach",
+   "terms": [
+    "Airlie Beach"
+   ]
+  },
+  {
+   "claim": "The laptop was running",
+   "terms": [
+    "laptop"
+   ]
+  },
+  {
+   "claim": "Food was set out",
+   "terms": [
+    "food"
+   ]
+  },
+  {
+   "claim": "The radio worked and the engine was running",
+   "terms": [
+    "engine",
+    "running"
+   ]
+  },
+  {
+   "claim": "The GPS was working",
+   "terms": [
+    "GPS"
+   ]
+  },
+  {
+   "claim": "Life jackets were still aboard",
+   "terms": [
+    "life jackets"
+   ]
+  },
+  {
+   "claim": "Searches found nothing",
+   "terms": [
+    "search"
+   ]
+  },
+  {
+   "claim": "Police checked a video camera found aboard",
+   "terms": [
+    "video"
+   ]
+  },
+  {
+   "claim": "A coroner examined the case",
+   "terms": [
+    "coroner"
+   ]
+  },
+  {
+   "claim": "A fishing line was caught on the propeller",
+   "terms": [
+    "propeller"
+   ]
+  },
+  {
+   "claim": "One man likely went overboard and the others tried to help",
+   "terms": [
+    "overboard"
+   ]
+  }
+ ]
+}
