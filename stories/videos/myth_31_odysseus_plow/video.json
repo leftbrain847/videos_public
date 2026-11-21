@@ -882,8 +882,8 @@
   {
    "claim": "He goes to Troy for ten years and takes ten more to get home",
    "terms": [
-    "ten years|10 years",
-    "home|Troy|Ithaca"
+    "ten years|10 years|twenty years|20 years",
+    "Troy|Ithaca|home"
    ]
   },
   {

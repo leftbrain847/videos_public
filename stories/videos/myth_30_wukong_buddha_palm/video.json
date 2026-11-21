@@ -783,12 +783,12 @@
    "url": "https://en.wikipedia.org/wiki/Journey_to_the_West"
   },
   {
-   "title": "Wikipedia: Five Elements Mountain",
-   "url": "https://en.wikipedia.org/wiki/Five_Elements_Mountain"
+   "title": "Columbia University, Asia for Educators: Buddhism in Journey to the West",
+   "url": "https://columbia.edu/cu/weai/exeas/resources/buddhism-journey-major4.html"
   },
   {
-   "title": "Wikipedia: Ruyi Jingu Bang",
-   "url": "https://en.wikipedia.org/wiki/Ruyi_Jingu_Bang"
+   "title": "Hitchhiker's Guide to Religion: The Monkey King's rebellion in heaven",
+   "url": "https://www.hitchhikersguidetoreligion.com/lore/monkey-king-heaven-rebellion/"
   },
   {
    "title": "Journey to the West Research: Sun Wukong (tag)",
@@ -811,7 +811,7 @@
    "claim": "He rebels in heaven and wants the Jade Emperor's throne",
    "terms": [
     "Jade Emperor",
-    "throne"
+    "throne|seat|overthrow|usurp|abdicate|vacate"
    ]
   },
   {
@@ -845,22 +845,22 @@
   {
    "claim": "He reaches what he thinks is the end of the world with five pillars",
    "terms": [
-    "pillars",
-    "five"
+    "pillar|pillars|columns",
+    "five|5"
    ]
   },
   {
    "claim": "He writes his name on a pillar",
    "terms": [
-    "pillar|pillars",
-    "wrote|writes|write|inscribed|signed"
+    "pillar|pillars|column|columns",
+    "wrote|writes|write|writing|inscribed|signed|scrawled"
    ]
   },
   {
    "claim": "The pillars were the Buddha's fingers",
    "terms": [
     "fingers|finger",
-    "pillars|pillar"
+    "pillar|pillars|column|columns"
    ]
   },
   {
