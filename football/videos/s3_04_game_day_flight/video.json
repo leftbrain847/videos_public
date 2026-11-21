@@ -490,10 +490,6 @@
    "url": "https://www.nbcboston.com/news/sports/nfl/new-england-patriots/patriots-chiefs-recap-october-5-2020/2207226/?amp=1"
   },
   {
-   "title": "NESN: Patriots Not Making Excuses After Unique Day Ends In Loss Vs. Chiefs",
-   "url": "https://nesn.com/2020/10/patriots-not-making-excuses-after-unique-day-ends-in-loss-vs-chiefs"
-  },
-  {
    "title": "NFL.com: Patriots set to depart for Kansas City Monday morning",
    "url": "https://www.nfl.com/news/patriots-set-to-depart-for-kansas-city-monday-morning-no-covid-positives"
   },
@@ -519,8 +515,8 @@
   {
    "claim": "In 2020, the Patriots flew in on the day of the game",
    "terms": [
-    "Patriots",
-    "Monday morning|same day|day of the game"
+    "flew|fly|travel",
+    "Monday"
    ]
   },
   {
