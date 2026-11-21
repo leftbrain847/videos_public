@@ -1,0 +1,660 @@
+{
+ "id": "heist_18_the_scream",
+ "title": "Thanks for the poor security",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "NATIONAL",
+   "GALLERY"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "pal": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2e",
+    "pants": "#1f2a3a",
+    "hair": "short",
+    "hairColor": "#e8d28a",
+    "skin": "#f2c39b"
+   }
+  },
+  "pal2": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#3a3f4b",
+    "pants": "#1f2a3a",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "guard": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5f6770",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "charley": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#6b4426",
+    "pants": "#3a2a20",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b"
+   },
+   "hold": "bag"
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal the most famous scream in art. You leave a thank you note.",
+   "key": [
+    "NOTE."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pal"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "pal": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "pal": "center",
+    "pal2": false,
+    "guard": false,
+    "charley": false
+   },
+   "board": [
+    "THE SCREAM",
+    "1893"
+   ]
+  },
+  {
+   "text": "Norway. February, nineteen ninety four.",
+   "cap": "Norway. February 1994.",
+   "key": [
+    "NORWAY."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "pal"
+   },
+   "act": {
+    "pal": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "OSLO",
+    "FEB 1994"
+   ]
+  },
+  {
+   "text": "The whole world is watching. It's opening day of the Winter Olympics.",
+   "key": [
+    "OLYMPICS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "pal": false
+   },
+   "board": [
+    "WINTER",
+    "OLYMPICS"
+   ]
+  },
+  {
+   "text": "Perfect timing. Every cop in the country is busy.",
+   "key": [
+    "BUSY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "For the Olympics, the gallery moves the painting. Closer to the ground. For the crowds.",
+   "key": [
+    "GROUND."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "guard"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "guard"
+    },
+    "guard": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "guard": "right"
+   }
+  },
+  {
+   "text": "Early morning. You lean a ladder on the wall.",
+   "key": [
+    "LADDER"
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "low",
+    "on": "pal"
+   },
+   "act": {
+    "pal": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "pal2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "pal"
+    }
+   },
+   "place": {
+    "pal": "left",
+    "pal2": "right"
+   },
+   "board": [
+    "6:30 AM"
+   ]
+  },
+  {
+   "text": "You climb. You smash the window.",
+   "key": [
+    "SMASH"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "pal"
+   },
+   "act": {
+    "pal": {
+     "mood": "angry",
+     "action": "throw",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You grab the painting. You slide back down.",
+   "key": [
+    "DOWN."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "pal",
+    "with": "pal2"
+   },
+   "act": {
+    "pal": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "pal2"
+    },
+    "pal2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "pal"
+    }
+   }
+  },
+  {
+   "text": "Total time? Under a minute. Faster than ordering coffee. Seriously.",
+   "key": [
+    "MINUTE."
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "UNDER",
+    "1 MIN"
+   ]
+  },
+  {
+   "text": "The alarm goes off. Too late. You're already gone.",
+   "key": [
+    "GONE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "guard": "center",
+    "capy": false
+   }
+  },
+  {
+   "text": "You leave a note. Thanks for the poor security.",
+   "key": [
+    "SECURITY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "guard"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "guard": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "guard": "right"
+   },
+   "board": [
+    "THANKS FOR",
+    "THE POOR SECURITY"
+   ],
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Norway is embarrassed. In front of the entire world. During its own party.",
+   "key": [
+    "WORLD."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "guard": "center"
+   }
+  },
+  {
+   "text": "Weeks later, a ransom demand arrives. One million dollars.",
+   "cap": "Weeks later, a ransom demand arrives. $1 million.",
+   "key": [
+    "MILLION"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "pal"
+   },
+   "act": {
+    "pal": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "pal": "center"
+   },
+   "board": [
+    "RANSOM:",
+    "$1,000,000"
+   ]
+  },
+  {
+   "text": "The gallery says no. Not one cent.",
+   "key": [
+    "NO."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "guard": "center",
+    "pal": false
+   }
+  },
+  {
+   "text": "Then a buyer shows up. He says he's from the Getty Museum.",
+   "key": [
+    "GETTY"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "charley",
+    "with": "pal"
+   },
+   "act": {
+    "charley": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "pal"
+    },
+    "pal": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "charley"
+    }
+   },
+   "place": {
+    "charley": "left",
+    "pal": "right",
+    "guard": false
+   },
+   "board": [
+    "BUYER:",
+    "THE GETTY?"
+   ]
+  },
+  {
+   "text": "He's not. He's an undercover cop from London.",
+   "key": [
+    "UNDERCOVER"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "charley"
+   },
+   "act": {
+    "charley": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Police find the painting in a hotel. By the sea. Unharmed. Still screaming.",
+   "key": [
+    "UNHARMED."
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "MAY 1994",
+    "RECOVERED"
+   ]
+  },
+  {
+   "text": "The thieves are convicted. Case closed. Mostly. Courts get complicated. Very, very complicated.",
+   "key": [
+    "CONVICTED."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "charley"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "charley": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "charley": "right"
+   }
+  },
+  {
+   "text": "A thank you note. A fake buyer. A real scream.",
+   "key": [
+    "SCREAM."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "charley": false
+   }
+  },
+  {
+   "text": "Would you leave a note? Or is that just showing off?",
+   "key": [
+    "NOTE?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: The Scream",
+   "url": "https://en.wikipedia.org/wiki/The_Scream"
+  },
+  {
+   "title": "Wikipedia: Pal Enger",
+   "url": "https://en.wikipedia.org/wiki/P%C3%A5l_Enger"
+  },
+  {
+   "title": "History.com: The Scream recovered",
+   "url": "https://www.history.com/this-day-in-history/the-scream-recovered"
+  },
+  {
+   "title": "Spyscape: The Scream heist and Scotland Yard's artful recovery",
+   "url": "https://spyscape.com/article/the-scream-heist-scotland-yards-artful-recovery"
+  },
+  {
+   "title": "Artlark: Art theft at Munch's Oslo museum",
+   "url": "https://artlark.org/2022/02/12/art-theft-munchs-oslo-museum-scream/"
+  },
+  {
+   "title": "Mental Floss: Stolen art recovered",
+   "url": "https://www.mentalfloss.com/art/stolen-art-recovered"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The Scream was stolen in Norway in February 1994",
+   "terms": [
+    "1994",
+    "stolen|theft"
+   ]
+  },
+  {
+   "claim": "It was the opening day of the Winter Olympics in Lillehammer",
+   "terms": [
+    "Olympics",
+    "Lillehammer"
+   ]
+  },
+  {
+   "claim": "The painting had been moved to a lower gallery for the Olympics",
+   "terms": [
+    "moved",
+    "gallery"
+   ]
+  },
+  {
+   "claim": "They used a ladder and broke a window",
+   "terms": [
+    "ladder",
+    "window"
+   ]
+  },
+  {
+   "claim": "It took less than a minute",
+   "terms": [
+    "minute|seconds"
+   ]
+  },
+  {
+   "claim": "They left a note thanking the gallery for the poor security",
+   "terms": [
+    "poor security"
+   ]
+  },
+  {
+   "claim": "A ransom of one million dollars was demanded",
+   "terms": [
+    "ransom"
+   ]
+  },
+  {
+   "claim": "The gallery refused to pay",
+   "terms": [
+    "refused|declined"
+   ]
+  },
+  {
+   "claim": "An undercover officer posed as a buyer from the Getty Museum",
+   "terms": [
+    "Getty"
+   ]
+  },
+  {
+   "claim": "The undercover officer was from London's Metropolitan Police",
+   "terms": [
+    "Scotland Yard|Metropolitan|British"
+   ]
+  },
+  {
+   "claim": "The Scream was recovered undamaged in May 1994 at a hotel",
+   "terms": [
+    "recovered",
+    "May"
+   ]
+  },
+  {
+   "claim": "The convictions were overturned because the British agents used false identities",
+   "terms": [
+    "convicted"
+   ]
+  }
+ ]
+}

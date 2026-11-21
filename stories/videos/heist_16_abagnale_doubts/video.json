@@ -1,0 +1,605 @@
+{
+ "id": "heist_16_abagnale_doubts",
+ "title": "Catch me if you can. Or check the records.",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "office",
+ "setOpts": {
+  "boardText": [
+   "CATCH ME",
+   "IF YOU CAN"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "frank": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "hold": "clipboard"
+  },
+  "agent": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#a8714c"
+   }
+  },
+  "author": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#7a5c8e",
+    "pants": "#3a2a20",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f"
+   },
+   "hold": "notepad"
+  },
+  "fan": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f39c12",
+    "pants": "#2f4fa8",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#c98d63"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You're the most famous con man alive. The biggest con might be your life story.",
+   "key": [
+    "STORY."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "frank"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "frank": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "frank": "center",
+    "agent": false,
+    "author": false,
+    "fan": false
+   },
+   "board": [
+    "CATCH ME",
+    "IF YOU CAN"
+   ]
+  },
+  {
+   "text": "You're Frank Abagnale. Your memoir becomes a hit film.",
+   "key": [
+    "FILM."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "frank"
+   },
+   "act": {
+    "frank": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   }
+  },
+  {
+   "text": "The story goes like this. You're a teenager. You pose as an airline pilot.",
+   "key": [
+    "PILOT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "frank"
+   },
+   "act": {
+    "frank": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "PAN AM",
+    "PILOT?"
+   ]
+  },
+  {
+   "text": "You fly for free. All over the world. Nobody checks your license.",
+   "key": [
+    "FREE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "frank"
+   },
+   "act": {
+    "frank": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You pose as a doctor. Then a lawyer.",
+   "key": [
+    "LAWYER."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "frank"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "frank"
+    },
+    "frank": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "frank": "right"
+   }
+  },
+  {
+   "text": "You cash millions in fake checks. All before age twenty one.",
+   "cap": "You cash millions in fake checks. All before age 21.",
+   "key": [
+    "CHECKS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "frank"
+   },
+   "act": {
+    "frank": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "frank": "center"
+   },
+   "board": [
+    "$2.5 MILLION",
+    "IN CHECKS"
+   ]
+  },
+  {
+   "text": "Then you go straight. You teach banks about fraud. You give speeches.",
+   "key": [
+    "SPEECHES."
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "frank"
+    },
+    "frank": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "frank": "center",
+    "fan": [
+     3.0,
+     2.0
+    ]
+   }
+  },
+  {
+   "text": "Audiences love it. Hollywood loves it.",
+   "key": [
+    "HOLLYWOOD"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "fan": false
+   }
+  },
+  {
+   "text": "Then a writer checks the records. His name is Alan Logan.",
+   "key": [
+    "RECORDS."
+   ],
+   "set": "study",
+   "shot": {
+    "type": "medium",
+    "on": "author"
+   },
+   "act": {
+    "author": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "author": "center"
+   },
+   "board": [
+    "PUBLIC",
+    "RECORDS"
+   ]
+  },
+  {
+   "text": "Prison records. Court papers. Old newspapers. Boring stuff. Very powerful stuff.",
+   "key": [
+    "NEWSPAPERS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "author"
+   },
+   "act": {
+    "author": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You said you were flying planes. Records put you in prison. For some of those years.",
+   "key": [
+    "PRISON."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "author"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "author"
+    },
+    "author": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "author": "right"
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "His book has a title. The greatest hoax on earth.",
+   "cap": "His book has a title. The Greatest Hoax on Earth.",
+   "key": [
+    "HOAX"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "author"
+   },
+   "act": {
+    "author": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "THE GREATEST",
+    "HOAX ON EARTH"
+   ]
+  },
+  {
+   "text": "He's not the first doubter. Reporters questioned your story for years.",
+   "key": [
+    "DOUBTER."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "agent": "center"
+   }
+  },
+  {
+   "text": "You did commit real fraud. You did go to prison.",
+   "key": [
+    "REAL"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "But the movie version? Much bigger.",
+   "key": [
+    "BIGGER."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "agent"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "agent": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "agent": "right"
+   }
+  },
+  {
+   "text": "So what's the real con? The checks? Or the speeches?",
+   "key": [
+    "SPEECHES?"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "agent": false
+   }
+  },
+  {
+   "text": "A con man told a story. It was about conning people. Everyone believed it.",
+   "key": [
+    "BELIEVED"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Honestly? Very on brand. Respect.",
+   "key": [
+    "BRAND."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Pilot, doctor, lawyer. Which part do you believe? None or all?",
+   "key": [
+    "BELIEVE?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "frank"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "frank": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "frank": "right"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Frank Abagnale",
+   "url": "https://en.wikipedia.org/wiki/Frank_Abagnale"
+  },
+  {
+   "title": "Wikipedia: Catch Me If You Can",
+   "url": "https://en.wikipedia.org/wiki/Catch_Me_If_You_Can"
+  },
+  {
+   "title": "WHYY: Could this famous conman be lying about his story?",
+   "url": "https://whyy.org/segments/the-greatest-hoax-on-earth/"
+  },
+  {
+   "title": "Looper: Everything Catch Me If You Can doesn't tell you about the true story",
+   "url": "https://www.looper.com/884584/everything-catch-me-if-you-can-doesnt-tell-you-about-the-true-story"
+  },
+  {
+   "title": "All That's Interesting: Is Catch Me If You Can a true story?",
+   "url": "https://allthatsinteresting.com/catch-me-if-you-can-true-story"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Abagnale's memoir became the film Catch Me If You Can",
+   "terms": [
+    "Abagnale",
+    "Catch Me If You Can"
+   ]
+  },
+  {
+   "claim": "He claimed to pose as an airline pilot as a teenager",
+   "terms": [
+    "pilot"
+   ]
+  },
+  {
+   "claim": "He claimed to fly for free around the world",
+   "terms": [
+    "free|deadhead|flights"
+   ]
+  },
+  {
+   "claim": "He claimed to pose as a doctor and a lawyer",
+   "terms": [
+    "doctor|physician",
+    "lawyer"
+   ]
+  },
+  {
+   "claim": "He claimed to cash millions in bad checks",
+   "terms": [
+    "check|cheque",
+    "million"
+   ]
+  },
+  {
+   "claim": "He became a security consultant and speaker on fraud",
+   "terms": [
+    "consultant|speaker|lecture"
+   ]
+  },
+  {
+   "claim": "Alan Logan investigated records",
+   "terms": [
+    "Logan",
+    "records"
+   ]
+  },
+  {
+   "claim": "Records show he was in prison when he claimed to be a pilot",
+   "terms": [
+    "prison",
+    "pilot"
+   ]
+  },
+  {
+   "claim": "Logan's book is The Greatest Hoax on Earth",
+   "terms": [
+    "Greatest Hoax on Earth"
+   ]
+  },
+  {
+   "claim": "His claims had been doubted for years",
+   "terms": [
+    "doubt|question|disput"
+   ]
+  },
+  {
+   "claim": "He did commit real fraud and went to prison",
+   "terms": [
+    "fraud|forg",
+    "prison"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,692 @@
+{
+ "id": "heist_15_world_cup_pickles",
+ "title": "The dog who found the World Cup",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "WORLD CUP",
+   "ON SHOW"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "thief": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#3a3f4b",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "guard": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   }
+  },
+  "dave": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#c0392b",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "bald",
+    "hairColor": "#d9d9d9",
+    "skin": "#f2c39b"
+   },
+   "hold": "envelope"
+  },
+  "cop": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal the World Cup trophy. A dog named Pickles ruins everything.",
+   "key": [
+    "PICKLES"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "thief"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "thief": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "thief": "center",
+    "guard": false,
+    "dave": false,
+    "boss": false,
+    "cop": false
+   },
+   "board": [
+    "WORLD CUP",
+    "STOLEN"
+   ]
+  },
+  {
+   "text": "London, March, nineteen sixty six. England is hosting the World Cup.",
+   "cap": "London, March 1966. England is hosting the World Cup.",
+   "key": [
+    "HOSTING"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "thief"
+   },
+   "act": {
+    "thief": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "LONDON",
+    "1966"
+   ]
+  },
+  {
+   "text": "The trophy goes on display. At a stamp exhibition. Naturally.",
+   "key": [
+    "STAMP"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "thief": false
+   }
+  },
+  {
+   "text": "Guards watch it around the clock. Mostly.",
+   "key": [
+    "MOSTLY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "guard": "center",
+    "capy": false
+   }
+  },
+  {
+   "text": "On a Sunday, you slip in. You force open the case.",
+   "key": [
+    "CASE."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "thief"
+   },
+   "act": {
+    "thief": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "thief": "altar",
+    "guard": false
+   }
+  },
+  {
+   "text": "You walk out with the World Cup. Nobody sees you.",
+   "key": [
+    "NOBODY"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "thief"
+   },
+   "act": {
+    "thief": {
+     "mood": "happy",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "thief": "center"
+   }
+  },
+  {
+   "text": "The country panics. Months before kickoff. Very embarrassing for the hosts.",
+   "key": [
+    "PANICS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "guard"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "guard"
+    },
+    "guard": {
+     "mood": "worried",
+     "action": "facepalm"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "guard": "right",
+    "thief": false
+   }
+  },
+  {
+   "text": "Then a ransom note arrives. It goes to England's football boss. Pay up.",
+   "key": [
+    "RANSOM"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "boss": "center"
+   },
+   "board": [
+    "RANSOM:",
+    "\u00a315,000"
+   ]
+  },
+  {
+   "text": "Fifteen thousand pounds. Or the cup gets melted down.",
+   "cap": "15,000 pounds. Or the cup gets melted down.",
+   "key": [
+    "MELTED"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Police set up a fake handover. Fake cash. Real handcuffs. They arrest a man.",
+   "key": [
+    "ARREST"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "cop",
+    "with": "thief"
+   },
+   "act": {
+    "cop": {
+     "mood": "angry",
+     "action": "point",
+     "look": "thief"
+    },
+    "thief": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "cop"
+    }
+   },
+   "place": {
+    "cop": "left",
+    "thief": "right",
+    "boss": false
+   }
+  },
+  {
+   "text": "He claims he's just a middleman. No trophy.",
+   "key": [
+    "MIDDLEMAN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "thief"
+   },
+   "act": {
+    "thief": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A week later, a man walks his dog. South London. Nothing special.",
+   "key": [
+    "DOG"
+   ],
+   "set": "living",
+   "shot": {
+    "type": "wide",
+    "on": "dave"
+   },
+   "act": {
+    "dave": {
+     "mood": "happy",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "dave": "center"
+   },
+   "board": [
+    "SOUTH",
+    "LONDON"
+   ]
+  },
+  {
+   "text": "The dog is a collie. His name is Pickles.",
+   "key": [
+    "COLLIE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "dave": false
+   }
+  },
+  {
+   "text": "Pickles sniffs a bundle under a hedge. Wrapped in newspaper.",
+   "key": [
+    "NEWSPAPER."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "dave"
+   },
+   "act": {
+    "dave": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "dave": "center",
+    "capy": false
+   }
+  },
+  {
+   "text": "Inside? The World Cup. Unharmed. Wrapped like a takeaway.",
+   "key": [
+    "WORLD"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "dave"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "dave"
+    },
+    "dave": {
+     "mood": "shocked",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     0.4
+    ],
+    "dave": [
+     2.0,
+     0.4
+    ]
+   },
+   "board": [
+    "FOUND!"
+   ],
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Pickles becomes a national hero. He even gets a reward.",
+   "key": [
+    "HERO."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "dave"
+   },
+   "act": {
+    "dave": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "capy": false,
+    "dave": "center"
+   }
+  },
+  {
+   "text": "That summer, England wins the World Cup. Pickles goes to the party.",
+   "key": [
+    "PARTY."
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "ENGLAND",
+    "CHAMPIONS"
+   ]
+  },
+  {
+   "text": "The trophy? Stolen again in Brazil years later. Never seen again.",
+   "key": [
+    "AGAIN"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Best security that trophy ever had? A dog.",
+   "key": [
+    "DOG."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "guard"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "guard": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "guard": "right"
+   }
+  },
+  {
+   "text": "Should every museum hire a Pickles? Yes or no?",
+   "key": [
+    "PICKLES?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "guard": false
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: 1966 theft of the Jules Rimet Trophy",
+   "url": "https://en.wikipedia.org/wiki/1966_theft_of_the_Jules_Rimet_Trophy"
+  },
+  {
+   "title": "Wikipedia: Pickles (dog)",
+   "url": "https://en.wikipedia.org/wiki/Pickles_(dog)"
+  },
+  {
+   "title": "FIFA: Pickles and the stolen World Cup",
+   "url": "https://inside.fifa.com/en/news/pickles-and-the-stolen-world-cup-2771152"
+  },
+  {
+   "title": "Irish Times: World Cup moments, Pickles the dog saves the day",
+   "url": "https://www.irishtimes.com/sport/soccer/international/world-cup-moments-who-s-a-good-boy-pickles-the-dog-saves-the-day-1.3479033"
+  },
+  {
+   "title": "Sports Illustrated: The dog that saved the 1966 World Cup",
+   "url": "https://www.si.com/soccer/dog-saved-1966-world-cup-pickles-stolen-trophy"
+  },
+  {
+   "title": "Londonist: Pickles and the World Cup",
+   "url": "https://londonist.com/london/history/picklesworldcup"
+  },
+  {
+   "title": "Wikipedia: FIFA World Cup Trophy",
+   "url": "https://en.wikipedia.org/wiki/FIFA_World_Cup_Trophy"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The World Cup trophy was stolen in London in March 1966",
+   "terms": [
+    "stolen",
+    "March",
+    "1966"
+   ]
+  },
+  {
+   "claim": "England hosted the 1966 World Cup",
+   "terms": [
+    "England",
+    "host"
+   ]
+  },
+  {
+   "claim": "The trophy was shown at a stamp exhibition",
+   "terms": [
+    "stamp",
+    "exhibition"
+   ]
+  },
+  {
+   "claim": "Guards were watching it",
+   "terms": [
+    "guard"
+   ]
+  },
+  {
+   "claim": "It was stolen on a Sunday",
+   "terms": [
+    "Sunday"
+   ]
+  },
+  {
+   "claim": "The thief forced open the display case",
+   "terms": [
+    "case|cabinet",
+    "display"
+   ]
+  },
+  {
+   "claim": "The Football Association chairman got a ransom note",
+   "terms": [
+    "ransom",
+    "Mears|Football Association"
+   ]
+  },
+  {
+   "claim": "The ransom demand was 15,000 pounds",
+   "terms": [
+    "15,000"
+   ]
+  },
+  {
+   "claim": "Police set up a handover and arrested a man",
+   "terms": [
+    "Betchley",
+    "arrest"
+   ]
+  },
+  {
+   "claim": "He claimed to be a middleman",
+   "terms": [
+    "middleman|middle man"
+   ]
+  },
+  {
+   "claim": "A man walking his dog in south London found it",
+   "terms": [
+    "Corbett",
+    "walk"
+   ]
+  },
+  {
+   "claim": "The dog was a collie named Pickles",
+   "terms": [
+    "collie",
+    "Pickles"
+   ]
+  },
+  {
+   "claim": "It was wrapped in newspaper under a hedge",
+   "terms": [
+    "newspaper",
+    "hedge"
+   ]
+  },
+  {
+   "claim": "Pickles was rewarded and became famous",
+   "terms": [
+    "Pickles",
+    "reward|celebrity|hero|famous"
+   ]
+  },
+  {
+   "claim": "England won the 1966 World Cup and Pickles attended the celebration",
+   "terms": [
+    "Pickles",
+    "celebration|party|banquet"
+   ]
+  },
+  {
+   "claim": "The trophy was stolen again in Brazil in 1983 and never recovered",
+   "terms": [
+    "1983",
+    "Brazil|Rio"
+   ]
+  }
+ ]
+}
