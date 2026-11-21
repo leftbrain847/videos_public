@@ -1,0 +1,637 @@
+{
+ "id": "heist_23_paris_spiderman",
+ "title": "Spider-Man and the broken alarm",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "MODERN ART",
+   "PARIS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "vjeran": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2e",
+    "pants": "#1f2a3a",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b"
+   }
+  },
+  "guard": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5f6770",
+    "pants": "#22252b",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#c98d63"
+   }
+  },
+  "birn": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5a4a6a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "judge": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "hair": "bald",
+    "hairColor": "#d9d9d9",
+    "skin": "#a8714c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal five masterpieces in one night. Then your friend throws them in the trash. Allegedly.",
+   "key": [
+    "ALLEGEDLY."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vjeran"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "vjeran": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vjeran": "center",
+    "guard": false,
+    "birn": false,
+    "judge": false
+   },
+   "board": [
+    "5",
+    "MASTERPIECES"
+   ]
+  },
+  {
+   "text": "Paris. May, twenty ten. You're Vjeran Tomic.",
+   "cap": "Paris. May 2010. You're Vjeran Tomic.",
+   "key": [
+    "TOMIC."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "vjeran"
+   },
+   "act": {
+    "vjeran": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "PARIS",
+    "MAY 2010"
+   ]
+  },
+  {
+   "text": "Newspapers call you Spider man. You climb buildings. Without a rope. Like it's nothing.",
+   "key": [
+    "ROPE."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "vjeran"
+   },
+   "act": {
+    "vjeran": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your target? The city's Museum of Modern Art. Full of masterpieces.",
+   "key": [
+    "MODERN"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "vjeran": false
+   }
+  },
+  {
+   "text": "You cut a padlock. You remove a window. You walk in.",
+   "key": [
+    "WINDOW."
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "medium",
+    "on": "vjeran"
+   },
+   "act": {
+    "vjeran": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "vjeran": "center"
+   },
+   "board": [
+    "3 AM"
+   ]
+  },
+  {
+   "text": "The motion sensors? Broken. For weeks. Waiting on repairs.",
+   "key": [
+    "BROKEN."
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "guard"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "guard": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "guard": "right"
+   }
+  },
+  {
+   "text": "The guards don't notice a thing. Not one thing.",
+   "key": [
+    "THING."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "guard": "center"
+   }
+  },
+  {
+   "text": "You came for one painting. You leave with five. Greedy.",
+   "key": [
+    "FIVE."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "vjeran"
+   },
+   "act": {
+    "vjeran": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "vjeran": "center",
+    "guard": false
+   },
+   "board": [
+    "ORDERED: 1",
+    "TAKEN: 5"
+   ]
+  },
+  {
+   "text": "A Picasso. A Matisse. A Braque. A Modigliani. A Leger.",
+   "key": [
+    "PICASSO."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "vjeran"
+   },
+   "act": {
+    "vjeran": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Value? About a hundred million euros.",
+   "cap": "Value? About 100 million euros.",
+   "key": [
+    "EUROS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vjeran"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "vjeran"
+    },
+    "vjeran": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vjeran": "right"
+   },
+   "board": [
+    "\u20ac100,000,000"
+   ]
+  },
+  {
+   "text": "You pass them to a watch dealer. His name is Yonathan Birn. He hides them.",
+   "key": [
+    "HIDES"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "two",
+    "on": "vjeran",
+    "with": "birn"
+   },
+   "act": {
+    "vjeran": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "birn"
+    },
+    "birn": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "vjeran"
+    }
+   },
+   "place": {
+    "vjeran": "left",
+    "birn": "right"
+   }
+  },
+  {
+   "text": "Police close in. Over a year later, you're all arrested.",
+   "key": [
+    "ARRESTED."
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "judge": "center"
+   }
+  },
+  {
+   "text": "Birn's story in court? He panicked. He threw the paintings in the trash.",
+   "key": [
+    "TRASH."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "close",
+    "on": "birn"
+   },
+   "act": {
+    "birn": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "birn": "center"
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "A hundred million euros. In a dumpster. Supposedly.",
+   "cap": "100 million euros. In a dumpster. Supposedly.",
+   "key": [
+    "SUPPOSEDLY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "birn": false
+   }
+  },
+  {
+   "text": "Investigators aren't sure they believe him. The paintings are still missing.",
+   "key": [
+    "MISSING."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "judge"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "judge"
+    },
+    "judge": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "judge": "right"
+   }
+  },
+  {
+   "text": "The court gives you eight years in prison.",
+   "cap": "The court gives you 8 years in prison.",
+   "key": [
+    "8"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "medium",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "judge": "center"
+   }
+  },
+  {
+   "text": "Broken alarm. Climbing thief. Panicking fence. Nobody comes out of this looking good.",
+   "key": [
+    "GOOD."
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   }
+  },
+  {
+   "text": "Trash or hidden? Where are the paintings now? Nobody knows.",
+   "key": [
+    "NOW?"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Do you believe they're really in the trash? Yes or no?",
+   "key": [
+    "TRASH?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Vjeran Tomic",
+   "url": "https://en.wikipedia.org/wiki/Vjeran_Tomic"
+  },
+  {
+   "title": "The Art Newspaper: Spider-Man and accomplices sentenced in Paris museum theft",
+   "url": "https://www.theartnewspaper.com/2017/02/21/spider-man-and-accomplices-sentenced-in-paris-museum-theft"
+  },
+  {
+   "title": "AP via Boston.com: 3 men convicted in $110 million Paris modern art heist",
+   "url": "https://www.boston.com/news/arts/2017/02/20/3-men-convicted-in-110-million-paris-modern-art-heist/"
+  },
+  {
+   "title": "AP via KSL: 3 men convicted in $110 million Paris modern art heist",
+   "url": "https://www.ksl.com/article/43245962"
+  },
+  {
+   "title": "Irish Times: Spiderman art thief sentenced over Paris heist",
+   "url": "https://www.irishtimes.com/news/world/europe/spiderman-art-thief-sentenced-over-104m-paris-heist-1.2982738"
+  },
+  {
+   "title": "The Week: Spiderman art thief jailed for Paris museum heist",
+   "url": "https://theweek.com/81801/spiderman-art-thief-jailed-for-paris-museum-heist"
+  },
+  {
+   "title": "South China Morning Post: Spiderman and two others found guilty",
+   "url": "https://www.scmp.com/culture/arts-entertainment/article/2072490/spiderman-and-two-others-found-guilty-paris-art-heist"
+  },
+  {
+   "title": "The Art Newspaper: How one man walked off with five masterpieces",
+   "url": "https://www.theartnewspaper.com/news/trial-testimony-reveals-how-one-man-walked-off-with-five-masterpieces-worth-euro108m-from-a-paris-museum"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The theft was in Paris in May 2010",
+   "terms": [
+    "2010",
+    "Paris"
+   ]
+  },
+  {
+   "claim": "The thief was Vjeran Tomic",
+   "terms": [
+    "Tomic"
+   ]
+  },
+  {
+   "claim": "He was nicknamed Spider-Man and climbed buildings",
+   "terms": [
+    "Spiderman|Spider-Man|Spider Man"
+   ]
+  },
+  {
+   "claim": "The target was the Paris Museum of Modern Art",
+   "terms": [
+    "Museum of Modern Art"
+   ]
+  },
+  {
+   "claim": "He cut a padlock and removed a window",
+   "terms": [
+    "padlock|window"
+   ]
+  },
+  {
+   "claim": "The alarm or motion sensors had been broken for weeks",
+   "terms": [
+    "alarm|sensor",
+    "broken|faulty|not working|repair"
+   ]
+  },
+  {
+   "claim": "Guards did not notice",
+   "terms": [
+    "guards"
+   ]
+  },
+  {
+   "claim": "He came for one painting and took five",
+   "terms": [
+    "five"
+   ]
+  },
+  {
+   "claim": "Works by Picasso, Matisse, Braque, Modigliani and Leger",
+   "terms": [
+    "Picasso",
+    "Matisse",
+    "Modigliani"
+   ]
+  },
+  {
+   "claim": "The paintings were worth about 100 million euros",
+   "terms": [
+    "100 million|104 million|108 million|110 million"
+   ]
+  },
+  {
+   "claim": "He passed them to Yonathan Birn",
+   "terms": [
+    "Birn"
+   ]
+  },
+  {
+   "claim": "Birn said he panicked and threw them in the trash",
+   "terms": [
+    "Birn",
+    "trash|rubbish|garbage|bin"
+   ]
+  },
+  {
+   "claim": "The paintings are still missing",
+   "terms": [
+    "never been found|still missing|not been recovered|never recovered|missing"
+   ]
+  },
+  {
+   "claim": "Tomic got eight years",
+   "terms": [
+    "eight years|8 years"
+   ]
+  }
+ ]
+}

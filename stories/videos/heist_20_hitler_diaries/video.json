@@ -1,0 +1,680 @@
+{
+ "id": "heist_20_hitler_diaries",
+ "title": "The diaries with the wrong initials",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "SECRET",
+   "DIARIES?"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "konrad": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#6b4426",
+    "pants": "#3a2a20",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "hold": "notepad"
+  },
+  "gerd": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "bald",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f"
+   }
+  },
+  "editor": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "short",
+    "hairColor": "#d9d9d9",
+    "skin": "#f2c39b"
+   }
+  },
+  "lab": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eef1f5",
+    "pants": "#3a3f4b",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#a8714c"
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You fake a dictator's diaries. A magazine pays millions. The cover has the wrong initials.",
+   "key": [
+    "INITIALS."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "konrad"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "konrad": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "konrad": "center",
+    "gerd": false,
+    "editor": false,
+    "lab": false
+   },
+   "board": [
+    "INITIALS:",
+    "F. H.?"
+   ]
+  },
+  {
+   "text": "You're Konrad Kujau. A forger in West Germany.",
+   "key": [
+    "FORGER"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "konrad"
+   },
+   "act": {
+    "konrad": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   }
+  },
+  {
+   "text": "Your product? Diaries supposedly written by Adolf Hitler.",
+   "key": [
+    "DIARIES"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "konrad"
+   },
+   "act": {
+    "konrad": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your story? They survived a plane crash. Back in nineteen forty five.",
+   "cap": "Your story? They survived a plane crash. Back in 1945.",
+   "key": [
+    "CRASH"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "konrad"
+   },
+   "act": {
+    "konrad": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "PLANE CRASH",
+    "1945"
+   ]
+  },
+  {
+   "text": "A reporter named Gerd Heidemann believes every word.",
+   "key": [
+    "BELIEVES"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "konrad",
+    "with": "gerd"
+   },
+   "act": {
+    "konrad": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "gerd"
+    },
+    "gerd": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "konrad"
+    }
+   },
+   "place": {
+    "konrad": "left",
+    "gerd": "right"
+   }
+  },
+  {
+   "text": "His magazine buys all sixty volumes. One famous German magazine.",
+   "cap": "His magazine buys all 60 volumes. One famous German magazine.",
+   "key": [
+    "60"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "gerd"
+   },
+   "act": {
+    "gerd": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "board": [
+    "60",
+    "VOLUMES"
+   ]
+  },
+  {
+   "text": "The price? About nine million marks.",
+   "cap": "The price? About 9 million marks.",
+   "key": [
+    "MILLION"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gerd"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "gerd"
+    },
+    "gerd": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "gerd": "right",
+    "konrad": false
+   },
+   "board": [
+    "DM 9,300,000"
+   ]
+  },
+  {
+   "text": "April, nineteen eighty three. The magazine announces the scoop of the century.",
+   "cap": "April 1983. The magazine announces the scoop of the century.",
+   "key": [
+    "SCOOP"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "editor"
+   },
+   "act": {
+    "editor": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "editor": "center"
+   },
+   "board": [
+    "SCOOP OF",
+    "THE CENTURY"
+   ]
+  },
+  {
+   "text": "A famous historian says they look real. Then he changes his mind. At the press conference.",
+   "key": [
+    "MIND."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "editor"
+   },
+   "act": {
+    "editor": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Experts test the paper. They take their time.",
+   "key": [
+    "PAPER."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "lab"
+   },
+   "act": {
+    "lab": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "lab"
+    }
+   },
+   "place": {
+    "lab": "right",
+    "capy": "left"
+   }
+  },
+  {
+   "text": "It contains a whitener. Not made until after the war.",
+   "key": [
+    "WAR."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "lab"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "lab"
+    },
+    "lab": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "lab": "right"
+   },
+   "board": [
+    "PAPER:",
+    "POSTWAR"
+   ],
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The glue. The thread. Also too modern.",
+   "key": [
+    "MODERN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "lab"
+   },
+   "act": {
+    "lab": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   }
+  },
+  {
+   "text": "Then people look at the cover. The initials say F H. Not A H.",
+   "cap": "Then people look at the cover. The initials say F.H. Not A.H.",
+   "key": [
+    "NOT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "lab": false
+   }
+  },
+  {
+   "text": "The fake falls apart in about two weeks.",
+   "cap": "The fake falls apart in about 2 weeks.",
+   "key": [
+    "WEEKS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You go to prison. So does the reporter. For over four years.",
+   "cap": "You go to prison. So does the reporter. For over 4 years.",
+   "key": [
+    "PRISON."
+   ],
+   "set": "study",
+   "shot": {
+    "type": "two",
+    "on": "konrad",
+    "with": "gerd"
+   },
+   "act": {
+    "konrad": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "gerd": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "konrad": "left",
+    "gerd": "right"
+   }
+  },
+  {
+   "text": "Top editors resign. The magazine's reputation takes years to recover.",
+   "key": [
+    "RESIGN."
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "editor"
+   },
+   "act": {
+    "editor": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "editor": "center"
+   }
+  },
+  {
+   "text": "Decades later, the fakes land in an archive. They're kept as evidence.",
+   "key": [
+    "EVIDENCE."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "lab"
+   },
+   "act": {
+    "lab": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "lab": "center"
+   }
+  },
+  {
+   "text": "After prison, you sell your own paintings. Signed. As fakes.",
+   "key": [
+    "FAKES."
+   ],
+   "set": "study",
+   "shot": {
+    "type": "low",
+    "on": "konrad"
+   },
+   "act": {
+    "konrad": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "konrad": "center"
+   }
+  },
+  {
+   "text": "Millions spent. Experts consulted. Nobody checked the cover.",
+   "key": [
+    "COVER."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "konrad"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "konrad": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "konrad": "right"
+   }
+  },
+  {
+   "text": "Would you have spotted the fake before paying? Yes or no?",
+   "key": [
+    "SPOTTED"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "konrad": false
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Hitler Diaries",
+   "url": "https://en.wikipedia.org/wiki/Hitler_Diaries"
+  },
+  {
+   "title": "Wikipedia: Konrad Kujau",
+   "url": "https://en.wikipedia.org/wiki/Konrad_Kujau"
+  },
+  {
+   "title": "Encyclopedia.com: Hitler Diaries",
+   "url": "https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/hitler-diaries"
+  },
+  {
+   "title": "German History in Documents: Stern presents Hitler's diaries",
+   "url": "https://germanhistorydocs.org/en/two-germanies-1961-1989/stern-presents-hitler-s-diaries-april-22-1983"
+  },
+  {
+   "title": "Times of Israel: Fake Hitler diaries to be displayed at German national archives",
+   "url": "https://www.timesofisrael.com/fake-hitler-diaries-from-1980s-scam-to-be-displayed-at-german-national-archives/"
+  },
+  {
+   "title": "Time: Top 10 hoaxes, the Hitler diaries",
+   "url": "https://content.time.com/time/specials/packages/article/0,28804,1931133_1931132_1931123,00.html"
+  },
+  {
+   "title": "EBSCO Research Starters: Hitler diaries hoax",
+   "url": "https://www.ebsco.com/research-starters/science/hitler-diaries-hoax"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Konrad Kujau forged the Hitler diaries",
+   "terms": [
+    "Kujau",
+    "forg"
+   ]
+  },
+  {
+   "claim": "Kujau lived in West Germany",
+   "terms": [
+    "West Germany|Stuttgart"
+   ]
+  },
+  {
+   "claim": "The cover story was that they survived a 1945 plane crash",
+   "terms": [
+    "crash",
+    "1945"
+   ]
+  },
+  {
+   "claim": "Reporter Gerd Heidemann believed them",
+   "terms": [
+    "Heidemann"
+   ]
+  },
+  {
+   "claim": "Stern bought 60 volumes",
+   "terms": [
+    "60|sixty",
+    "volumes"
+   ]
+  },
+  {
+   "claim": "Stern paid about 9.3 million marks",
+   "terms": [
+    "9.3 million|9.3"
+   ]
+  },
+  {
+   "claim": "Stern announced them in April 1983",
+   "terms": [
+    "April",
+    "1983"
+   ]
+  },
+  {
+   "claim": "Historian Hugh Trevor-Roper authenticated them then changed his mind",
+   "terms": [
+    "Trevor-Roper|Trevor Roper"
+   ]
+  },
+  {
+   "claim": "The paper contained a whitener made after the war",
+   "terms": [
+    "whitener|brightener|blankophor"
+   ]
+  },
+  {
+   "claim": "The glue and thread were also modern",
+   "terms": [
+    "glue|thread|binding"
+   ]
+  },
+  {
+   "claim": "The initials on the cover read FH instead of AH",
+   "terms": [
+    "FH"
+   ]
+  },
+  {
+   "claim": "The hoax was exposed in about two weeks",
+   "terms": [
+    "two weeks|2 weeks|fortnight"
+   ]
+  },
+  {
+   "claim": "Kujau and Heidemann were sentenced to over four years",
+   "terms": [
+    "four years|4 years|42 months|56 months"
+   ]
+  },
+  {
+   "claim": "Stern editors resigned",
+   "terms": [
+    "resign"
+   ]
+  },
+  {
+   "claim": "The fake diaries went to the German national archives",
+   "terms": [
+    "archive"
+   ]
+  },
+  {
+   "claim": "Kujau later sold paintings as signed fakes",
+   "terms": [
+    "Kujau",
+    "paintings|fakes"
+   ]
+  }
+ ]
+}

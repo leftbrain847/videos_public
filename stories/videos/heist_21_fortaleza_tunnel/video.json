@@ -1,0 +1,678 @@
+{
+ "id": "heist_21_fortaleza_tunnel",
+ "title": "The fake lawn company that dug to the money",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "tunnel",
+ "setOpts": {
+  "boardText": [
+   "GREEN",
+   "LAWNS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "boss": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#27ae60",
+    "pants": "#3a3f2b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   }
+  },
+  "digger": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f39c12",
+    "pants": "#3a3f4b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c"
+   }
+  },
+  "clerk": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "cop": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You open a lawn company. You sell zero lawns. You dig straight into a central bank.",
+   "key": [
+    "BANK."
+   ],
+   "speaker": "capy",
+   "set": "vault",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "boss": "center",
+    "digger": false,
+    "clerk": false,
+    "cop": false
+   },
+   "board": [
+    "FAKE",
+    "LAWN CO."
+   ]
+  },
+  {
+   "text": "Fortaleza, Brazil. Two thousand five.",
+   "cap": "Fortaleza, Brazil. 2005.",
+   "key": [
+    "BRAZIL."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "FORTALEZA",
+    "2005"
+   ]
+  },
+  {
+   "text": "You rent a house near the central bank. You put up a sign.",
+   "key": [
+    "SIGN."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "boss": "center"
+   },
+   "board": [
+    "ARTIFICIAL",
+    "GRASS"
+   ]
+  },
+  {
+   "text": "Your business? Artificial grass. Very convincing.",
+   "key": [
+    "GRASS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "boss": "right"
+   }
+  },
+  {
+   "text": "The neighbors see trucks hauling dirt. Landscaping, obviously.",
+   "key": [
+    "DIRT."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "boss": false
+   }
+  },
+  {
+   "text": "Under the house, your crew digs a tunnel. For months. Quietly.",
+   "key": [
+    "TUNNEL."
+   ],
+   "set": "tunnel",
+   "shot": {
+    "type": "wide",
+    "on": "digger"
+   },
+   "act": {
+    "digger": {
+     "mood": "neutral",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "digger": "center"
+   }
+  },
+  {
+   "text": "About seventy eight meters long. Under a busy avenue.",
+   "cap": "About 78 meters long. Under a busy avenue.",
+   "key": [
+    "METERS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "digger"
+   },
+   "act": {
+    "digger": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "78 M"
+   ]
+  },
+  {
+   "text": "You line it with wood. You add lights. You add air conditioning.",
+   "key": [
+    "CONDITIONING."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "digger"
+   },
+   "act": {
+    "digger": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Comfiest tunnel in history.",
+   "key": [
+    "COMFIEST"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "digger"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "digger"
+    },
+    "digger": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "digger": "right"
+   }
+  },
+  {
+   "text": "One weekend in August, you reach the bank. You break through the vault floor.",
+   "key": [
+    "FLOOR."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "low",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "boss": "center"
+   },
+   "board": [
+    "SATURDAY",
+    "NIGHT"
+   ]
+  },
+  {
+   "text": "Inside? Stacks of used fifty real notes.",
+   "cap": "Inside? Stacks of used 50-real notes.",
+   "key": [
+    "NOTES."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You haul out the cash. About three and a half tonnes of it.",
+   "cap": "You haul out the cash. About 3.5 tonnes of it.",
+   "key": [
+    "TONNES"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "digger"
+   },
+   "act": {
+    "digger": {
+     "mood": "worried",
+     "action": "walk"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "point",
+     "look": "digger"
+    }
+   },
+   "place": {
+    "digger": "right",
+    "boss": "left"
+   },
+   "board": [
+    "3.5",
+    "TONNES"
+   ]
+  },
+  {
+   "text": "Over one hundred sixty million reais. Then you vanish.",
+   "cap": "Over 160 million reais. Then you vanish.",
+   "key": [
+    "VANISH."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "boss": "right",
+    "digger": false
+   }
+  },
+  {
+   "text": "Monday morning, bank staff open the vault. Surprise. There's a hole in the floor.",
+   "key": [
+    "SURPRISE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "clerk"
+   },
+   "act": {
+    "clerk": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "clerk": "center",
+    "capy": false,
+    "boss": false
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "It's one of the biggest bank robberies ever. In Brazil's history, maybe the biggest.",
+   "key": [
+    "BIGGEST"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "clerk": false
+   }
+  },
+  {
+   "text": "Police follow the cash. Some of you buy cars. With bags of fifties.",
+   "key": [
+    "CARS."
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "cop": "center"
+   },
+   "board": [
+    "CASH",
+    "CAR DEALER"
+   ]
+  },
+  {
+   "text": "Over time, dozens of people are arrested.",
+   "key": [
+    "ARRESTED."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Most of the money is never recovered.",
+   "key": [
+    "NEVER"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "cop"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "cop": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "cop": "right"
+   }
+  },
+  {
+   "text": "The fake lawn company? Never sold a single lawn. Not one.",
+   "key": [
+    "LAWN."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   }
+  },
+  {
+   "text": "A lawn company with zero lawns. Would you have noticed?",
+   "key": [
+    "LAWNS?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Banco Central burglary at Fortaleza",
+   "url": "https://en.wikipedia.org/wiki/Banco_Central_burglary_at_Fortaleza"
+  },
+  {
+   "title": "Agencia Brasil: Police investigate biggest bank robbery in Brazilian history",
+   "url": "https://memoria.ebc.com.br/agenciabrasil//noticia/2005-08-08/police-investigate-biggest-bank-robbery-brazilian-history"
+  },
+  {
+   "title": "Taipei Times: Brazil bank heist (2005)",
+   "url": "https://www.taipeitimes.com/News/world/archives/2005/08/13/2003267574"
+  },
+  {
+   "title": "MercoPress: Record bank heist in Brazil",
+   "url": "https://en.mercopress.com/2005/08/09/record-bank-heist-in-brazil-65-million-us-dollars"
+  },
+  {
+   "title": "NationalWorld: Fortaleza bank heist 2005, the true story",
+   "url": "https://www.nationalworld.com/culture/television/fortaleza-bank-heist-2005-true-story-netflix-the-great-robbery-of-brazils-central-bank-3614350"
+  },
+  {
+   "title": "Infobae: 3 tons, assault on the Brazilian Central Bank",
+   "url": "https://www.infobae.com/en/2022/03/23/like-la-casa-de-papel-but-in-reality-3-tons-assault-on-the-brazilian-central-bank-rises-in-netflixs-top-10/"
+  },
+  {
+   "title": "Mail and Guardian: Brazil bank heist",
+   "url": "https://mg.co.za/?p=385489"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The burglary was at the Banco Central in Fortaleza, Brazil, in 2005",
+   "terms": [
+    "Fortaleza",
+    "2005"
+   ]
+  },
+  {
+   "claim": "The gang rented a house near the bank",
+   "terms": [
+    "house",
+    "rent"
+   ]
+  },
+  {
+   "claim": "They set up a fake artificial grass or landscaping company",
+   "terms": [
+    "grass|landscaping|lawn"
+   ]
+  },
+  {
+   "claim": "They dug a tunnel",
+   "terms": [
+    "tunnel"
+   ]
+  },
+  {
+   "claim": "The tunnel took months to dig",
+   "terms": [
+    "months"
+   ]
+  },
+  {
+   "claim": "The tunnel was about 78 metres long",
+   "terms": [
+    "78"
+   ]
+  },
+  {
+   "claim": "The tunnel had wood lining, lights and air conditioning",
+   "terms": [
+    "air conditioning|air-conditioning"
+   ]
+  },
+  {
+   "claim": "They broke in over a weekend in August",
+   "terms": [
+    "August",
+    "weekend"
+   ]
+  },
+  {
+   "claim": "The money was in 50 real notes",
+   "terms": [
+    "50",
+    "notes|bills"
+   ]
+  },
+  {
+   "claim": "The haul weighed about 3.5 tonnes",
+   "terms": [
+    "3.5|3,5|three and a half",
+    "tonnes|tons"
+   ]
+  },
+  {
+   "claim": "They stole over 160 million reais",
+   "terms": [
+    "164|160",
+    "reais"
+   ]
+  },
+  {
+   "claim": "It was discovered Monday morning",
+   "terms": [
+    "Monday"
+   ]
+  },
+  {
+   "claim": "It was one of the biggest bank robberies in Brazil's history",
+   "terms": [
+    "biggest|largest",
+    "Brazil"
+   ]
+  },
+  {
+   "claim": "Some suspects bought cars with cash",
+   "terms": [
+    "cars",
+    "cash"
+   ]
+  },
+  {
+   "claim": "Many people were arrested",
+   "terms": [
+    "arrest"
+   ]
+  },
+  {
+   "claim": "Most of the money was never recovered",
+   "terms": [
+    "recovered"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,671 @@
+{
+ "id": "heist_24_fyre_festival",
+ "title": "The luxury festival with the sad sandwich",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "living",
+ "setOpts": {
+  "boardText": [
+   "FYRE",
+   "FESTIVAL"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "billy": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#4b92db",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "hold": "phone"
+  },
+  "fan": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#e94f37",
+    "pants": "#2f4fa8",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#c98d63"
+   }
+  },
+  "fan2": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f39c12",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  },
+  "judge": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "hair": "bald",
+    "hairColor": "#d9d9d9",
+    "skin": "#a8714c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You sell a luxury island festival. Guests get disaster tents. Plus one very sad sandwich.",
+   "key": [
+    "SANDWICH."
+   ],
+   "speaker": "capy",
+   "set": "vault",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "billy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "billy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "billy": "center",
+    "fan": false,
+    "fan2": false,
+    "judge": false
+   },
+   "board": [
+    "FYRE",
+    "FESTIVAL"
+   ]
+  },
+  {
+   "text": "Twenty seventeen. You're Billy McFarland. You have a pitch.",
+   "cap": "2017. You're Billy McFarland. You have a pitch.",
+   "key": [
+    "PITCH."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "wide",
+    "on": "billy"
+   },
+   "act": {
+    "billy": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "billy": "center"
+   },
+   "board": [
+    "2017"
+   ]
+  },
+  {
+   "text": "A music festival. In the Bahamas. Supermodels. Yachts. Gourmet food.",
+   "key": [
+    "YACHTS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "billy"
+   },
+   "act": {
+    "billy": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "THE BAHAMAS"
+   ]
+  },
+  {
+   "text": "Famous models post one orange square. On the same day.",
+   "key": [
+    "SQUARE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "billy": false
+   }
+  },
+  {
+   "text": "One model reportedly gets two hundred fifty thousand. For one single post. Must be nice.",
+   "cap": "One model reportedly gets $250,000. For one single post. Must be nice.",
+   "key": [
+    "POST."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "billy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "billy"
+    },
+    "billy": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     0.4
+    ],
+    "billy": [
+     2.0,
+     0.4
+    ]
+   },
+   "board": [
+    "1 POST:",
+    "$250,000"
+   ]
+  },
+  {
+   "text": "Tickets sell out. Some packages cost tens of thousands of dollars.",
+   "key": [
+    "THOUSANDS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "billy"
+   },
+   "act": {
+    "billy": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "capy": false,
+    "billy": "center"
+   }
+  },
+  {
+   "text": "One problem. You haven't actually built a festival.",
+   "key": [
+    "FESTIVAL."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "billy": false
+   }
+  },
+  {
+   "text": "Guests land on the island. The luxury villas? Disaster relief tents. Soaked by rain.",
+   "key": [
+    "TENTS."
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "wide",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "fan2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "fan"
+    }
+   },
+   "place": {
+    "fan": "left",
+    "fan2": "right"
+   },
+   "board": [
+    "LUXURY",
+    "VILLAS?"
+   ]
+  },
+  {
+   "text": "The gourmet food? Two slices of bread. Some cheese. A salad.",
+   "key": [
+    "CHEESE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Someone posts a photo of it. The internet explodes.",
+   "key": [
+    "EXPLODES."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan2"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "fan2"
+    },
+    "fan2": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "fan2": "right",
+    "fan": false
+   },
+   "board": [
+    "CHEESE",
+    "SANDWICH"
+   ],
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Bands cancel. The festival is called off. Guests scramble for flights home. Some sleep in the airport.",
+   "key": [
+    "FLIGHTS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "fan2"
+   },
+   "act": {
+    "fan2": {
+     "mood": "worried",
+     "action": "run"
+    }
+   },
+   "place": {
+    "capy": false,
+    "fan2": "center"
+   }
+  },
+  {
+   "text": "Investors find out the numbers were fake too.",
+   "key": [
+    "FAKE"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "judge": "center"
+   }
+  },
+  {
+   "text": "You plead guilty to wire fraud. Investors lost millions.",
+   "key": [
+    "FRAUD."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "close",
+    "on": "billy"
+   },
+   "act": {
+    "billy": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "billy": "center"
+   }
+  },
+  {
+   "text": "Then, out on bail, you run another scam. More fake tickets.",
+   "key": [
+    "ANOTHER"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "billy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "billy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "billy": "right"
+   }
+  },
+  {
+   "text": "The judge gives you six years in prison.",
+   "cap": "The judge gives you 6 years in prison.",
+   "key": [
+    "6"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "medium",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "judge": "center"
+   },
+   "board": [
+    "6 YEARS"
+   ]
+  },
+  {
+   "text": "Later, two documentaries come out. In the same week.",
+   "key": [
+    "DOCUMENTARIES"
+   ],
+   "set": "living",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "NOW",
+    "STREAMING"
+   ]
+  },
+  {
+   "text": "Paradise on a poster. A cheese sandwich in real life. Classic.",
+   "key": [
+    "LIFE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Influencers sold the dream. The tents sold the truth.",
+   "key": [
+    "TRUTH."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     0.4
+    ],
+    "fan": [
+     2.0,
+     0.4
+    ]
+   }
+  },
+  {
+   "text": "Would you have bought a ticket? Yes or no?",
+   "key": [
+    "TICKET?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "fan": false
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Fyre Festival",
+   "url": "https://en.wikipedia.org/wiki/Fyre_Festival"
+  },
+  {
+   "title": "Wikipedia: Billy McFarland",
+   "url": "https://en.wikipedia.org/wiki/Billy_McFarland_(entrepreneur)"
+  },
+  {
+   "title": "AP via KOMO: Promoter of failed Fyre Festival gets 6 years in prison",
+   "url": "https://komonews.com/news/entertainment/promoter-of-failed-fyre-festival-gets-6-years-in-prison"
+  },
+  {
+   "title": "Engadget: Creator of doomed Fyre Festival gets six-year prison sentence",
+   "url": "https://www.engadget.com/2018/10/11/billy-mcfarland-fyre-festival-sentenced-federal-prison/"
+  },
+  {
+   "title": "NBC New York: Fyre Festival promoter sentenced to six years",
+   "url": "https://www.nbcnewyork.com/news/local/fyre-music-festival-promoter-sentenced-to-six-years-in-federal-prison-bahamas-new-york-ny/540009/"
+  },
+  {
+   "title": "CNN: Fyre Festival organizer sentenced",
+   "url": "https://www.cnn.com/2018/10/12/us/fyre-festival-organizer-prison-trnd/index.html"
+  },
+  {
+   "title": "Wikipedia: Fyre (film)",
+   "url": "https://en.wikipedia.org/wiki/Fyre_(film)"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Fyre Festival was in 2017, organized by Billy McFarland",
+   "terms": [
+    "McFarland",
+    "2017"
+   ]
+  },
+  {
+   "claim": "It promised a luxury festival in the Bahamas",
+   "terms": [
+    "Bahamas",
+    "luxury"
+   ]
+  },
+  {
+   "claim": "Models posted an orange square",
+   "terms": [
+    "orange"
+   ]
+  },
+  {
+   "claim": "Kendall Jenner was reportedly paid $250,000 for one post",
+   "terms": [
+    "250,000",
+    "Jenner"
+   ]
+  },
+  {
+   "claim": "Some packages cost tens of thousands of dollars",
+   "terms": [
+    "12,000|$12,000|thousand"
+   ]
+  },
+  {
+   "claim": "Guests were housed in disaster relief tents",
+   "terms": [
+    "tents"
+   ]
+  },
+  {
+   "claim": "A photo of a cheese sandwich went viral",
+   "terms": [
+    "cheese sandwich|sandwich"
+   ]
+  },
+  {
+   "claim": "Tents were soaked by rain",
+   "terms": [
+    "rain"
+   ]
+  },
+  {
+   "claim": "Guests were stranded at the airport",
+   "terms": [
+    "airport"
+   ]
+  },
+  {
+   "claim": "Bands cancelled and the festival was called off",
+   "terms": [
+    "cancel"
+   ]
+  },
+  {
+   "claim": "Investors were defrauded",
+   "terms": [
+    "investors"
+   ]
+  },
+  {
+   "claim": "McFarland pleaded guilty to wire fraud",
+   "terms": [
+    "pleaded guilty",
+    "wire fraud"
+   ]
+  },
+  {
+   "claim": "While on bail he ran another ticket scam",
+   "terms": [
+    "bail",
+    "ticket"
+   ]
+  },
+  {
+   "claim": "He was sentenced to six years",
+   "terms": [
+    "six years|6 years"
+   ]
+  },
+  {
+   "claim": "Two documentaries were released",
+   "terms": [
+    "Hulu",
+    "Netflix"
+   ]
+  }
+ ]
+}
