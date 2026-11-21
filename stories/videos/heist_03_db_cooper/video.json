@@ -174,9 +174,9 @@
    ]
   },
   {
-   "text": "She figures it's your phone number. She doesn't even read it.",
+   "text": "Very calm hijacking. So far. She doesn't even read it.",
    "key": [
-    "NUMBER."
+    "CALM"
    ],
    "shot": {
     "type": "close",
@@ -603,12 +603,24 @@
    "url": "https://en.wikipedia.org/wiki/Cooper_vane"
   },
   {
-   "title": "Britannica: D.B. Cooper",
-   "url": "https://www.britannica.com/biography/D-B-Cooper"
+   "title": "NPR: FBI is giving up on solving the mystery of D.B. Cooper",
+   "url": "https://www.npr.org/sections/thetwo-way/2016/07/13/485839902/fbi-is-giving-up-on-solving-the-mystery-of-d-b-cooper"
   },
   {
-   "title": "NPR: FBI ends its D.B. Cooper investigation",
-   "url": "https://www.npr.org/sections/thetwo-way/2016/07/12/485742402/fbi-ends-its-hunt-for-skyjacker-d-b-cooper"
+   "title": "UPI: FBI ends 45-year search for D.B. Cooper",
+   "url": "https://www.upi.com/Top_News/US/2016/07/13/FBI-ends-45-year-search-for-infamous-DB-Cooper-plane-hijacker/5101468404616/"
+  },
+  {
+   "title": "Christian Science Monitor: FBI closes notorious unsolved skyjacking case",
+   "url": "https://www.csmonitor.com/USA/Justice/2016/0713/D.B.-Cooper-FBI-closes-notorious-unsolved-skyjacking-case"
+  },
+  {
+   "title": "Global News: FBI closes unsolved D.B. Cooper skyjacking case after 45 years",
+   "url": "https://globalnews.ca/news/2821499/fbi-closes-unsolved-d-b-cooper-skyjacking-case-after-45-years"
+  },
+  {
+   "title": "HowStuffWorks: How the hunt for D.B. Cooper worked",
+   "url": "https://history.howstuffworks.com/historical-events/hunt-for-d-b-cooper-worked.htm"
   },
   {
    "title": "Smithsonian Magazine: The D.B. Cooper mystery",
@@ -619,8 +631,7 @@
   {
    "claim": "The hijacking was in November 1971, the day before Thanksgiving",
    "terms": [
-    "Thanksgiving",
-    "1971"
+    "Thanksgiving"
    ]
   },
   {
@@ -647,13 +658,7 @@
    "claim": "He handed a note to a flight attendant",
    "terms": [
     "note",
-    "flight attendant"
-   ]
-  },
-  {
-   "claim": "She assumed it was a phone number",
-   "terms": [
-    "phone number"
+    "attendant"
    ]
   },
   {
@@ -666,8 +671,7 @@
   {
    "claim": "It was raining when he jumped",
    "terms": [
-    "rain",
-    "jump"
+    "rain"
    ]
   },
   {
@@ -688,8 +692,7 @@
    "claim": "Passengers were released in Seattle for the money",
    "terms": [
     "passengers",
-    "Seattle",
-    "released"
+    "release|exchange|freed"
    ]
   },
   {
@@ -701,8 +704,7 @@
   {
    "claim": "He jumped from the rear stairs",
    "terms": [
-    "stair",
-    "jump"
+    "stairs|airstair|stairway"
    ]
   },
   {
@@ -715,7 +717,6 @@
   {
    "claim": "In 1980 a boy found $5,800 along the river",
    "terms": [
-    "1980",
     "5,800"
    ]
   },
@@ -730,7 +731,7 @@
    "claim": "The FBI ended its active investigation in 2016",
    "terms": [
     "2016",
-    "investigation"
+    "investigation|case"
    ]
   },
   {

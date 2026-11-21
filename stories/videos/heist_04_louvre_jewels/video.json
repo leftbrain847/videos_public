@@ -609,7 +609,7 @@
    "claim": "The robbery was on a Sunday morning in October 2025",
    "terms": [
     "Sunday",
-    "October|Oct"
+    "Louvre"
    ]
   },
   {
@@ -642,7 +642,7 @@
    "claim": "They cut through a window",
    "terms": [
     "window",
-    "cut"
+    "cutter|cut|grinder"
    ]
   },
   {
@@ -687,8 +687,7 @@
    "claim": "The crown of Empress Eugenie was dropped",
    "terms": [
     "crown",
-    "Eug",
-    "dropped|found"
+    "Eug\u00e9nie|Eugenie"
    ]
   },
   {
@@ -714,8 +713,7 @@
   {
    "claim": "Most of the jewels are still missing",
    "terms": [
-    "jewels",
-    "missing|not been recovered|not recovered"
+    "still missing|not been recovered|not recovered|remain missing|yet to be recovered"
    ]
   }
  ]

@@ -40,16 +40,6 @@
     "skin": "#e8b48f"
    }
   },
-  "wife": {
-   "look": {
-    "outfit": "coat",
-    "shirt": "#8e44ad",
-    "pants": "#3a2a20",
-    "hair": "bun",
-    "hairColor": "#6b4423",
-    "skin": "#f2c39b"
-   }
-  },
   "d2": {
    "look": {
     "outfit": "suit",
@@ -89,7 +79,6 @@
     "capy": "left",
     "vic": "right",
     "andre": false,
-    "wife": false,
     "d2": false
    },
    "board": [
@@ -141,9 +130,9 @@
    }
   },
   {
-   "text": "Some Parisians think it's an eyesore anyway.",
+   "text": "Small detail. It's bolted to Paris.",
    "key": [
-    "EYESORE"
+    "BOLTED"
    ],
    "shot": {
     "type": "two",
@@ -285,31 +274,31 @@
    }
   },
   {
-   "text": "His wife thinks you're suspicious. She's right. She's the smart one.",
+   "text": "Poisson hesitates. Something feels off. He's right. It is.",
    "key": [
-    "RIGHT."
+    "OFF."
    ],
    "set": "office",
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "wife"
+    "with": "andre"
    },
    "act": {
     "capy": {
      "mood": "smug",
      "action": "point",
-     "look": "wife"
+     "look": "andre"
     },
-    "wife": {
-     "mood": "angry",
+    "andre": {
+     "mood": "worried",
      "action": "cross",
      "look": "camera"
     }
    },
    "place": {
     "capy": "left",
-    "wife": "right"
+    "andre": "right"
    }
   },
   {
@@ -337,8 +326,7 @@
    "place": {
     "vic": "left",
     "andre": "right",
-    "capy": false,
-    "wife": false
+    "capy": false
    }
   },
   {
@@ -631,12 +619,6 @@
    ]
   },
   {
-   "claim": "Some Parisians considered it an eyesore",
-   "terms": [
-    "eyesore"
-   ]
-  },
-  {
    "claim": "He offered it as scrap metal",
    "terms": [
     "scrap"
@@ -645,8 +627,7 @@
   {
    "claim": "He posed as an official of a government ministry",
    "terms": [
-    "Ministry|ministry",
-    "official"
+    "deputy director"
    ]
   },
   {
@@ -669,14 +650,6 @@
    ]
   },
   {
-   "claim": "Poisson's wife was suspicious",
-   "terms": [
-    "Poisson",
-    "wife",
-    "suspicious"
-   ]
-  },
-  {
    "claim": "Lustig said he was a corrupt official who wanted a bribe",
    "terms": [
     "bribe"
@@ -685,7 +658,7 @@
   {
    "claim": "Lustig left for Vienna with the money",
    "terms": [
-    "Vienna"
+    "Vienna|Austria"
    ]
   },
   {

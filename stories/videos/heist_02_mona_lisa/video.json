@@ -601,8 +601,24 @@
    "url": "https://www.smithsonianmag.com/smart-news/theft-made-mona-lisa-masterpiece-180959845/"
   },
   {
-   "title": "History.com: The Mona Lisa is stolen",
-   "url": "https://www.history.com/this-day-in-history/august-21/mona-lisa-stolen-from-the-louvre"
+   "title": "The Week: Stealing the Mona Lisa",
+   "url": "https://theweek.com/articles/481790/stealing-mona-lisa"
+  },
+  {
+   "title": "History Today: The Mona Lisa is stolen from the Louvre",
+   "url": "https://www.historytoday.com/archive/months-past/mona-lisa-stolen-louvre"
+  },
+  {
+   "title": "Smithsonian Magazine: Stolen, how the Mona Lisa became the world's most famous painting",
+   "url": "https://www.smithsonianmag.com/arts-culture/stolen-how-the-mona-lisa-became-the-worlds-most-famous-painting-16406234/"
+  },
+  {
+   "title": "CrimeReads: The Mona Lisa wasn't really that famous until it was stolen",
+   "url": "https://crimereads.com/the-mona-lisa-wasnt-really-that-famous-until-it-was-stolen-in-1911/"
+  },
+  {
+   "title": "Spokesman-Review: How the 1911 theft of the Mona Lisa made it famous",
+   "url": "https://www.spokesman.com/stories/2019/oct/20/how-the-1911-theft-of-the-mona-lisa-made-it-the-wo/"
   },
   {
    "title": "NPR: The theft that made the Mona Lisa a masterpiece",
@@ -622,8 +638,7 @@
    "claim": "Vincenzo Peruggia had worked at the Louvre",
    "terms": [
     "Peruggia",
-    "Louvre",
-    "work"
+    "Louvre"
    ]
   },
   {
@@ -642,22 +657,20 @@
   {
    "claim": "He hid in a closet overnight",
    "terms": [
-    "closet",
-    "Peruggia"
+    "closet|storeroom|cupboard|storage room"
    ]
   },
   {
    "claim": "The museum was closed on Monday",
    "terms": [
-    "Monday",
-    "closed"
+    "Monday"
    ]
   },
   {
    "claim": "He took the painting out under his smock",
    "terms": [
-    "under",
-    "smock"
+    "smock|coat",
+    "under"
    ]
   },
   {
@@ -669,15 +682,14 @@
   {
    "claim": "The Louvre closed for a week",
    "terms": [
-    "closed",
-    "week"
+    "week",
+    "closed|reopen"
    ]
   },
   {
    "claim": "Pablo Picasso was questioned",
    "terms": [
-    "Picasso",
-    "questioned"
+    "Picasso"
    ]
   },
   {
@@ -705,9 +717,7 @@
   {
    "claim": "He was caught in Florence trying to sell it",
    "terms": [
-    "Florence",
-    "Peruggia",
-    "sell"
+    "Florence"
    ]
   },
   {
@@ -719,7 +729,6 @@
   {
    "claim": "He hoped for a reward",
    "terms": [
-    "Peruggia",
     "reward"
    ]
   },
