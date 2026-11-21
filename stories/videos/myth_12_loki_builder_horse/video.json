@@ -1,0 +1,961 @@
+{
+ "id": "myth_12_loki_builder_horse",
+ "title": "Loki becomes a horse",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "ASGARD"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "loki": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#3f7a3a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  },
+  "build": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#7a6a52",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "sash": "#4a3b2c",
+    "beard": true
+   },
+   "hold": "goldbar"
+  },
+  "odin": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#4a5a7a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "sash": "#d9a521",
+    "beard": true
+   }
+  },
+  "thor": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#b23a2a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c8692a",
+    "skin": "#f2c39b",
+    "sash": "#8a8f96",
+    "beard": true
+   }
+  },
+  "freyja": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#d9a521",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#f2d27a",
+    "skin": "#f2c39b",
+    "sash": "#b85c9e"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You cancel a construction deal. By becoming a horse.",
+   "key": [
+    "HORSE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "loki": [
+     1.2,
+     0
+    ],
+    "build": false,
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "loki"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "loki": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Loki. The gods need a wall around Asgard.",
+   "key": [
+    "WALL"
+   ],
+   "board": [
+    "ASGARD",
+    "NEEDS A WALL"
+   ],
+   "place": {
+    "capy": false,
+    "loki": [
+     0,
+     0
+    ],
+    "build": false,
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "loki"
+   },
+   "act": {
+    "loki": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A builder shows up. He can do it in one winter.",
+   "key": [
+    "WINTER."
+   ],
+   "place": {
+    "capy": false,
+    "loki": false,
+    "build": [
+     0,
+     0
+    ],
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "build"
+   },
+   "act": {
+    "build": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His price? The goddess Freyja. Plus the sun. Plus the moon.",
+   "key": [
+    "MOON."
+   ],
+   "board": [
+    "PRICE",
+    "FREYJA + SUN + MOON"
+   ],
+   "place": {
+    "capy": false,
+    "loki": false,
+    "build": [
+     -1.3,
+     0.2
+    ],
+    "odin": false,
+    "thor": false,
+    "freyja": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "build",
+    "with": "freyja"
+   },
+   "act": {
+    "build": {
+     "mood": "happy",
+     "action": "point",
+     "look": "freyja"
+    },
+    "freyja": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "build"
+    }
+   }
+  },
+  {
+   "text": "Cheap, by the standards of gods.",
+   "key": [
+    "CHEAP,"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "loki": false,
+    "build": false,
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gods agree. They are sure he will fail.",
+   "key": [
+    "FAIL."
+   ],
+   "place": {
+    "capy": false,
+    "loki": false,
+    "build": false,
+    "odin": [
+     0,
+     0
+    ],
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "odin"
+   },
+   "act": {
+    "odin": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One rule: no help from anyone.",
+   "key": [
+    "NO"
+   ],
+   "place": {
+    "capy": false,
+    "loki": false,
+    "build": [
+     1.3,
+     -0.2
+    ],
+    "odin": [
+     -1.3,
+     0.2
+    ],
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "odin",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "odin": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "build"
+    },
+    "build": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "odin"
+    }
+   }
+  },
+  {
+   "text": "You talk them into one exception. His horse.",
+   "key": [
+    "EXCEPTION."
+   ],
+   "place": {
+    "capy": false,
+    "loki": [
+     0,
+     0
+    ],
+    "build": false,
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "loki"
+   },
+   "act": {
+    "loki": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The stallion is called Svadilfari. It does most of the work.",
+   "key": [
+    "SVADILFARI."
+   ],
+   "board": [
+    "SVADILFARI",
+    "DOES THE WORK"
+   ],
+   "place": {
+    "capy": false,
+    "loki": false,
+    "build": [
+     0,
+     0
+    ],
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "build"
+   },
+   "act": {
+    "build": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Three days before summer, the wall is done. Almost.",
+   "cap": "3 days before summer, the wall is done. Almost.",
+   "key": [
+    "3"
+   ],
+   "speaker": "capy",
+   "board": [
+    "DEADLINE",
+    "3 DAYS LEFT"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "loki": false,
+    "build": false,
+    "odin": [
+     1.2,
+     0
+    ],
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "odin",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "odin": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Now everyone remembers who said yes. To the horse.",
+   "key": [
+    "HORSE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "loki": false,
+    "build": false,
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gods blame you. They threaten your life.",
+   "key": [
+    "BLAME"
+   ],
+   "place": {
+    "capy": false,
+    "loki": [
+     1.3,
+     -0.2
+    ],
+    "build": false,
+    "odin": [
+     -1.3,
+     0.2
+    ],
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "odin",
+    "with": "loki"
+   },
+   "act": {
+    "odin": {
+     "mood": "angry",
+     "action": "point",
+     "look": "loki"
+    },
+    "loki": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "odin"
+    }
+   }
+  },
+  {
+   "text": "So you fix it. You turn yourself into a mare.",
+   "key": [
+    "MARE."
+   ],
+   "place": {
+    "capy": false,
+    "loki": [
+     0,
+     0
+    ],
+    "build": false,
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "loki"
+   },
+   "act": {
+    "loki": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.7,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "You trot past the stallion. It runs after you.",
+   "key": [
+    "STALLION."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "loki": [
+     1.2,
+     0
+    ],
+    "build": false,
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "loki",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "loki"
+    },
+    "loki": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "All night long. Into the woods. No more hauling stone.",
+   "key": [
+    "WOODS."
+   ],
+   "place": {
+    "capy": false,
+    "loki": false,
+    "build": [
+     0,
+     0
+    ],
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "build"
+   },
+   "act": {
+    "build": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The wall misses the deadline. The deal is off.",
+   "key": [
+    "DEADLINE."
+   ],
+   "speaker": "capy",
+   "board": [
+    "WALL",
+    "NOT DONE"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "loki": false,
+    "build": [
+     1.2,
+     0
+    ],
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "build"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "build": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The builder rages. He turns out to be a giant.",
+   "key": [
+    "GIANT."
+   ],
+   "place": {
+    "capy": false,
+    "loki": false,
+    "build": [
+     0,
+     0
+    ],
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "build"
+   },
+   "act": {
+    "build": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then Thor comes home. That ends the argument.",
+   "key": [
+    "THOR"
+   ],
+   "place": {
+    "capy": false,
+    "loki": false,
+    "build": false,
+    "odin": false,
+    "thor": [
+     0,
+     0
+    ],
+    "freyja": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "thor"
+   },
+   "act": {
+    "thor": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Months later, you give birth. To a foal.",
+   "key": [
+    "FOAL."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "loki": false,
+    "build": false,
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It has eight legs. Its name is Sleipnir.",
+   "cap": "It has 8 legs. Its name is Sleipnir.",
+   "key": [
+    "8"
+   ],
+   "board": [
+    "SLEIPNIR",
+    "LEGS: 8"
+   ],
+   "place": {
+    "capy": false,
+    "loki": [
+     -1.3,
+     0.2
+    ],
+    "build": false,
+    "odin": [
+     1.3,
+     -0.2
+    ],
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "loki",
+    "with": "odin"
+   },
+   "act": {
+    "loki": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "odin": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "loki"
+    }
+   }
+  },
+  {
+   "text": "He becomes the horse of Odin. The best horse ever.",
+   "key": [
+    "ODIN."
+   ],
+   "place": {
+    "capy": false,
+    "loki": false,
+    "build": false,
+    "odin": [
+     0,
+     0
+    ],
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "odin"
+   },
+   "act": {
+    "odin": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have taken that deal? Yes or no? Asgard fans, check your contracts.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "TAKE THE DEAL?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "loki": [
+     1.3,
+     0
+    ],
+    "build": false,
+    "odin": false,
+    "thor": false,
+    "freyja": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "loki"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "loki": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Svadilfari",
+   "url": "https://en.wikipedia.org/wiki/Sva%C3%B0ilfari"
+  },
+  {
+   "title": "Wikipedia: Sleipnir",
+   "url": "https://en.wikipedia.org/wiki/Sleipnir"
+  },
+  {
+   "title": "Norse Mythology for Smart People: The Fortification of Asgard",
+   "url": "https://norse-mythology.org/tales/the-fortification-of-asgard/"
+  },
+  {
+   "title": "Hurstwic: The Wall of Asgard (Snorri, Gylfaginning)",
+   "url": "https://www.hurstwic.com/history/articles/mythology/myths/text/wall_of_asgard.htm"
+  },
+  {
+   "title": "Wikipedia: Loki",
+   "url": "https://en.wikipedia.org/wiki/Loki"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "A builder offers to build a wall for the gods",
+   "terms": [
+    "builder",
+    "wall|fortification|fortress"
+   ]
+  },
+  {
+   "claim": "He says he can do it in one winter",
+   "terms": [
+    "winter",
+    "builder"
+   ]
+  },
+  {
+   "claim": "His price is Freyja, the sun and the moon",
+   "terms": [
+    "Freyja",
+    "sun",
+    "moon"
+   ]
+  },
+  {
+   "claim": "The gods agree, setting terms they think he cannot meet",
+   "terms": [
+    "builder",
+    "help"
+   ]
+  },
+  {
+   "claim": "Loki persuades them to let him use his horse",
+   "terms": [
+    "Loki",
+    "stallion|horse"
+   ]
+  },
+  {
+   "claim": "The stallion Svadilfari does much of the work",
+   "terms": [
+    "Svaðilfari|Svadilfari",
+    "stallion"
+   ]
+  },
+  {
+   "claim": "Three days before summer the wall is nearly done",
+   "terms": [
+    "three days",
+    "summer"
+   ]
+  },
+  {
+   "claim": "The gods blame Loki and threaten him",
+   "terms": [
+    "Loki",
+    "threat|threaten|threatened|death"
+   ]
+  },
+  {
+   "claim": "Loki turns into a mare and lures the stallion away",
+   "terms": [
+    "mare",
+    "Loki"
+   ]
+  },
+  {
+   "claim": "The builder misses the deadline",
+   "terms": [
+    "builder",
+    "finish|finished|complete|completed|deadline"
+   ]
+  },
+  {
+   "claim": "The builder is revealed as a giant",
+   "terms": [
+    "builder",
+    "giant|jötunn|jotunn|hrimthurs|rock giant"
+   ]
+  },
+  {
+   "claim": "Thor returns and kills him",
+   "terms": [
+    "Thor",
+    "hammer|killed|kills|slew"
+   ]
+  },
+  {
+   "claim": "Loki gives birth to an eight-legged foal, Sleipnir",
+   "terms": [
+    "Sleipnir",
+    "eight|8"
+   ]
+  },
+  {
+   "claim": "Sleipnir becomes Odin's horse",
+   "terms": [
+    "Sleipnir",
+    "Odin"
+   ]
+  }
+ ]
+}
