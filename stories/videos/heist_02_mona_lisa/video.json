@@ -1,0 +1,746 @@
+{
+ "id": "heist_02_mona_lisa",
+ "title": "The day the Mona Lisa vanished",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "THE JOB",
+   "PARIS 1911"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "vin": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#e9e4d8",
+    "pants": "#3a3f4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  },
+  "guard": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "pablo": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#2e86c1",
+    "pants": "#22252b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   }
+  },
+  "dealer": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#6b4426",
+    "pants": "#3a2a20",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "hold": "envelope"
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal the most famous painting on Earth. It wasn't famous yet.",
+   "key": [
+    "YET."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vin"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "vin": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vin": "center",
+    "guard": false,
+    "pablo": false,
+    "dealer": false
+   },
+   "board": [
+    "MISSING:",
+    "MONA LISA"
+   ]
+  },
+  {
+   "text": "Paris. August, nineteen eleven.",
+   "cap": "Paris. August 1911.",
+   "key": [
+    "PARIS."
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "wide",
+    "on": "vin"
+   },
+   "act": {
+    "vin": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "vin": "center"
+   },
+   "board": [
+    "THE LOUVRE",
+    "AUG 1911"
+   ]
+  },
+  {
+   "text": "You're Vincenzo Peruggia. You used to work at the Louvre.",
+   "key": [
+    "LOUVRE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "vin"
+   },
+   "act": {
+    "vin": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You even helped build its glass cases. Bold.",
+   "key": [
+    "BOLD."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vin"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "vin"
+    },
+    "vin": {
+     "mood": "happy",
+     "action": "point"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vin": "right"
+   }
+  },
+  {
+   "text": "Your plan? Wear the white smock the workers wear.",
+   "key": [
+    "SMOCK"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "vin"
+   },
+   "act": {
+    "vin": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then hide in a closet overnight.",
+   "key": [
+    "CLOSET"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "vin"
+   },
+   "act": {
+    "vin": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "vin": "altar"
+   },
+   "board": [
+    "SUNDAY",
+    "NIGHT"
+   ]
+  },
+  {
+   "text": "Monday morning, the museum is closed. Perfect.",
+   "key": [
+    "CLOSED."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "vin"
+   },
+   "act": {
+    "vin": {
+     "mood": "happy",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "vin": "center"
+   },
+   "board": [
+    "MONDAY",
+    "CLOSED"
+   ]
+  },
+  {
+   "text": "You lift the painting off the wall. You ditch the frame.",
+   "key": [
+    "FRAME."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "vin"
+    },
+    "vin": {
+     "mood": "neutral",
+     "action": "hold"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vin": "right"
+   }
+  },
+  {
+   "text": "You tuck it under your smock. You walk right out the door.",
+   "key": [
+    "DOOR."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "vin"
+   },
+   "act": {
+    "vin": {
+     "mood": "smug",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "capy": false
+   }
+  },
+  {
+   "text": "Nobody notices. The guards think it's being photographed. For a whole day.",
+   "key": [
+    "DAY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "vin": false
+   }
+  },
+  {
+   "text": "A painter finally asks where it went. Good question.",
+   "key": [
+    "QUESTION."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "guard": "altar",
+    "capy": false
+   },
+   "board": [
+    "WHERE IS",
+    "IT?"
+   ]
+  },
+  {
+   "text": "The Louvre shuts for a week. Police search everywhere.",
+   "key": [
+    "WEEK."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "worried",
+     "action": "point"
+    }
+   },
+   "place": {
+    "guard": "center"
+   },
+   "board": [
+    "CLOSED",
+    "1 WEEK"
+   ]
+  },
+  {
+   "text": "They question a young artist. Pablo Picasso.",
+   "key": [
+    "PICASSO."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pablo"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "pablo"
+    },
+    "pablo": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "pablo": "right"
+   },
+   "board": [
+    "SUSPECT?",
+    "PICASSO"
+   ]
+  },
+  {
+   "text": "Wrong guy. You're at home. In your tiny apartment. With the painting.",
+   "key": [
+    "PAINTING."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "wide",
+    "on": "vin"
+   },
+   "act": {
+    "vin": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "vin": "center"
+   },
+   "board": [
+    "MONA LISA"
+   ]
+  },
+  {
+   "text": "For two years, she sits in a trunk.",
+   "cap": "For 2 years, she sits in a trunk.",
+   "key": [
+    "TRUNK."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "vin"
+   },
+   "act": {
+    "vin": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Meanwhile, crowds line up. They stare at the empty wall.",
+   "key": [
+    "EMPTY"
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "high",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "guard": "altar"
+   },
+   "board": [
+    "EMPTY",
+    "WALL"
+   ]
+  },
+  {
+   "text": "Newspapers go wild. The theft makes her famous. Worldwide.",
+   "key": [
+    "WORLDWIDE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "guard": false
+   }
+  },
+  {
+   "text": "Then you take her to Florence. You try to sell her.",
+   "key": [
+    "SELL"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "two",
+    "on": "vin",
+    "with": "dealer"
+   },
+   "act": {
+    "vin": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "dealer"
+    },
+    "dealer": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "vin"
+    }
+   },
+   "place": {
+    "vin": "left",
+    "dealer": "right"
+   },
+   "board": [
+    "FLORENCE",
+    "1913"
+   ]
+  },
+  {
+   "text": "The dealer says he's interested. Then he calls the police.",
+   "key": [
+    "POLICE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "dealer"
+   },
+   "act": {
+    "dealer": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your defense? You were bringing her home to Italy. Very noble. You also wanted a reward.",
+   "key": [
+    "ITALY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "vin"
+   },
+   "act": {
+    "vin": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Patriot. Thief. Free advertising.",
+   "key": [
+    "ADVERTISING."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "vin"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "vin": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "vin": "right",
+    "dealer": false
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "You hid her for two years. Could you keep that secret?",
+   "key": [
+    "SECRET?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "vin": false
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Mona Lisa",
+   "url": "https://en.wikipedia.org/wiki/Mona_Lisa"
+  },
+  {
+   "title": "Wikipedia: Vincenzo Peruggia",
+   "url": "https://en.wikipedia.org/wiki/Vincenzo_Peruggia"
+  },
+  {
+   "title": "Smithsonian Magazine: The theft that made the Mona Lisa a masterpiece",
+   "url": "https://www.smithsonianmag.com/smart-news/theft-made-mona-lisa-masterpiece-180959845/"
+  },
+  {
+   "title": "The Week: Stealing the Mona Lisa",
+   "url": "https://theweek.com/articles/481790/stealing-mona-lisa"
+  },
+  {
+   "title": "Smithsonian Magazine: Stolen, how the Mona Lisa became the world's most famous painting",
+   "url": "https://www.smithsonianmag.com/arts-culture/stolen-how-the-mona-lisa-became-the-worlds-most-famous-painting-16406234/"
+  },
+  {
+   "title": "CrimeReads: The Mona Lisa wasn't really that famous until it was stolen",
+   "url": "https://crimereads.com/the-mona-lisa-wasnt-really-that-famous-until-it-was-stolen-in-1911/"
+  },
+  {
+   "title": "Spokesman-Review: How the 1911 theft of the Mona Lisa made it famous",
+   "url": "https://www.spokesman.com/stories/2019/oct/20/how-the-1911-theft-of-the-mona-lisa-made-it-the-wo/"
+  },
+  {
+   "title": "NPR: The theft that made the Mona Lisa a masterpiece",
+   "url": "https://www.npr.org/2011/07/30/138800110/the-theft-that-made-the-mona-lisa-a-masterpiece"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The Mona Lisa was stolen from the Louvre in August 1911",
+   "terms": [
+    "stolen",
+    "Louvre",
+    "1911"
+   ]
+  },
+  {
+   "claim": "Vincenzo Peruggia had worked at the Louvre",
+   "terms": [
+    "Peruggia",
+    "Louvre"
+   ]
+  },
+  {
+   "claim": "Peruggia had helped build the painting's glass case",
+   "terms": [
+    "Peruggia",
+    "glass"
+   ]
+  },
+  {
+   "claim": "He wore a white smock like the workers",
+   "terms": [
+    "smock"
+   ]
+  },
+  {
+   "claim": "He hid in a closet overnight",
+   "terms": [
+    "closet|storeroom|cupboard|storage room"
+   ]
+  },
+  {
+   "claim": "The museum was closed on Monday",
+   "terms": [
+    "Monday"
+   ]
+  },
+  {
+   "claim": "He took the painting out under his smock",
+   "terms": [
+    "smock|coat",
+    "under"
+   ]
+  },
+  {
+   "claim": "The theft was not noticed until the next day",
+   "terms": [
+    "next day|following day|until the next|day later"
+   ]
+  },
+  {
+   "claim": "The Louvre closed for a week",
+   "terms": [
+    "week",
+    "closed|reopen"
+   ]
+  },
+  {
+   "claim": "Pablo Picasso was questioned",
+   "terms": [
+    "Picasso"
+   ]
+  },
+  {
+   "claim": "Peruggia kept the painting in his apartment for two years",
+   "terms": [
+    "Peruggia",
+    "apartment",
+    "two years|2 years"
+   ]
+  },
+  {
+   "claim": "Crowds came to see the empty space",
+   "terms": [
+    "empty",
+    "Louvre"
+   ]
+  },
+  {
+   "claim": "The theft made the Mona Lisa world famous",
+   "terms": [
+    "theft",
+    "famous"
+   ]
+  },
+  {
+   "claim": "He was caught in Florence trying to sell it",
+   "terms": [
+    "Florence"
+   ]
+  },
+  {
+   "claim": "Guards assumed it was being photographed",
+   "terms": [
+    "photograph"
+   ]
+  },
+  {
+   "claim": "He hoped for a reward",
+   "terms": [
+    "reward"
+   ]
+  },
+  {
+   "claim": "He kept it in a trunk",
+   "terms": [
+    "trunk"
+   ]
+  },
+  {
+   "claim": "Peruggia said he was returning it to Italy",
+   "terms": [
+    "Peruggia",
+    "Italy",
+    "return"
+   ]
+  }
+ ]
+}
