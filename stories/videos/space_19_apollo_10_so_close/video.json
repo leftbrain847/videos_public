@@ -1,0 +1,805 @@
+{
+ "id": "space_19_apollo_10_so_close",
+ "title": "Apollo 10: nine miles from the moon, no landing allowed",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "APOLLO 10"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "tom": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#eef1f5",
+    "pants": "#eef1f5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "gene": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#dfe6ee",
+    "pants": "#dfe6ee",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "john": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#f2a13a",
+    "pants": "#f2a13a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#c68d64"
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "hold": "clipboard"
+  },
+  "sci": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "glasses": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You fly all the way to the moon. You get nine miles away. Then you turn around.",
+   "cap": "You fly all the way to the moon. You get 9 miles away. Then you turn around.",
+   "key": [
+    "AROUND."
+   ],
+   "board": [
+    "ALTITUDE",
+    "~9 MILES"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "tom": false,
+    "gene": [
+     2.6,
+     -0.6
+    ],
+    "john": false,
+    "boss": false,
+    "sci": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "gene": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "May, nineteen sixty nine. Apollo ten is the dress rehearsal. The full show, minus the ending.",
+   "cap": "May 1969. Apollo 10 is the dress rehearsal. The full show, minus the ending.",
+   "key": [
+    "REHEARSAL."
+   ],
+   "board": [
+    "APOLLO 10",
+    "MAY 1969"
+   ],
+   "place": {
+    "capy": false,
+    "tom": [
+     -2.2,
+     0
+    ],
+    "john": [
+     0,
+     0.4
+    ],
+    "gene": [
+     2.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "john"
+   },
+   "act": {
+    "tom": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "gene": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Do everything for the landing. Except actually land.",
+   "key": [
+    "EXCEPT"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "tom",
+    "with": "gene"
+   },
+   "act": {
+    "tom": {
+     "mood": "smug",
+     "action": "point",
+     "look": "gene"
+    },
+    "gene": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "tom"
+    }
+   }
+  },
+  {
+   "text": "The ships get names from a comic strip. Charlie Brown. Snoopy.",
+   "key": [
+    "SNOOPY."
+   ],
+   "board": [
+    "CHARLIE BROWN",
+    "+ SNOOPY"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "tom": false,
+    "john": false,
+    "gene": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gene"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "gene"
+    },
+    "gene": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "John Young stays in orbit. Tom Stafford, Gene Cernan drop down. In Snoopy.",
+   "key": [
+    "DROP"
+   ],
+   "place": {
+    "capy": false,
+    "tom": [
+     -1.4,
+     0.2
+    ],
+    "gene": [
+     1.4,
+     0.2
+    ],
+    "john": [
+     0,
+     -2.4
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "gene"
+   },
+   "act": {
+    "tom": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "gene": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They swoop down. About forty seven thousand feet up.",
+   "cap": "They swoop down. About 47,000 feet up.",
+   "key": [
+    "47,000"
+   ],
+   "board": [
+    "47,000 FT",
+    "ABOVE MOON"
+   ],
+   "place": {
+    "john": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "tom"
+   },
+   "act": {
+    "tom": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "gene": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "tom"
+    }
+   }
+  },
+  {
+   "text": "Close enough to wave. Not close enough to touch.",
+   "key": [
+    "TOUCH."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "tom": [
+     -2.6,
+     -0.6
+    ],
+    "gene": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    },
+    "tom": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    },
+    "gene": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Now, the obvious question. Why not just land?",
+   "key": [
+    "LAND?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nasa had a fix for that temptation.",
+   "cap": "NASA had a fix for that temptation.",
+   "key": [
+    "TEMPTATION."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "FUEL",
+     "PLAN"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "tom": false,
+    "gene": false,
+    "john": false,
+    "boss": [
+     0,
+     0.4
+    ],
+    "sci": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Snoopy's ascent stage carried less fuel. Not enough to land, then come back.",
+   "key": [
+    "FUEL."
+   ],
+   "board": [
+    "FUEL:",
+    "NOT ENOUGH"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Land there? You'd be stuck. Permanently. Forever.",
+   "key": [
+    "STUCK."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "boss": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "So they test the radar. They photograph the landing site. They leave.",
+   "key": [
+    "LEAVE."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "SITE PHOTOS",
+     "DONE"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "tom": [
+     -1.4,
+     0.2
+    ],
+    "gene": [
+     1.4,
+     0.2
+    ],
+    "john": false,
+    "boss": false,
+    "sci": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "gene"
+   },
+   "act": {
+    "gene": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    },
+    "tom": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "gene"
+    }
+   }
+  },
+  {
+   "text": "Two months later, Apollo eleven lands right there. Without them.",
+   "cap": "Two months later, Apollo 11 lands right there. Without them.",
+   "key": [
+    "WITHOUT"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "tom": [
+     -2.6,
+     -0.6
+    ],
+    "gene": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     0.8,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "tom": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    },
+    "gene": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Snoopy's top half gets cut loose. It drifts off around the sun.",
+   "key": [
+    "SUN."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SNOOPY",
+     "SOLAR ORBIT"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "tom": false,
+    "gene": false,
+    "john": false,
+    "boss": false,
+    "sci": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Somewhere out there, Snoopy is still drifting. Alone. Quietly.",
+   "key": [
+    "DRIFTING."
+   ],
+   "board": [
+    "SNOOPY",
+    "STILL OUT THERE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Bonus record. Heading home, Apollo ten hits a top speed. Nearly twenty five thousand miles per hour.",
+   "cap": "Bonus record. Heading home, Apollo 10 hits a top speed. Nearly 25,000 mph.",
+   "key": [
+    "25,000"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "FASTEST",
+     "HUMANS EVER"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "tom": false,
+    "gene": false,
+    "john": [
+     0,
+     0.3
+    ],
+    "boss": false,
+    "sci": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "john"
+   },
+   "act": {
+    "john": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Still the fastest humans have ever traveled.",
+   "key": [
+    "FASTEST"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "john": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "john"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "john"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nine miles from the moon. Not allowed to land. Would you have landed anyway? Yes or no?",
+   "cap": "9 miles from the moon. Not allowed to land. Would you have landed anyway? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "LAND ANYWAY?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "john": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Apollo 10",
+   "url": "https://en.wikipedia.org/wiki/Apollo_10"
+  },
+  {
+   "title": "NASA: Apollo 10 clears the way for the first moon landing",
+   "url": "https://www.nasa.gov/history/50-years-ago-apollo-10-clears-the-way-for-the-first-moon-landing/"
+  },
+  {
+   "title": "Smithsonian: curator reflects on Apollo 10",
+   "url": "https://www.smithsonianmag.com/science-nature/smithsonian-curator-reflects-apollo-10-mission-made-landing-moon-possible-180972216/"
+  },
+  {
+   "title": "Sky at Night: the story of Apollo 10",
+   "url": "https://www.skyatnightmagazine.com/space-missions/the-story-of-apollo-10"
+  },
+  {
+   "title": "HuffPost UK: the true story of the Apollo 10 Snoopy mission",
+   "url": "https://www.huffingtonpost.co.uk/entry/were-in-trouble-the-incredible-true-story-of-the-1969-apollo-10-snoopy-moon-mission_uk_5ce806d1e4b05c15deab861b"
+  },
+  {
+   "title": "Popular Science: relive the excitement of Apollo 10",
+   "url": "https://www.popsci.com/blog-network/vintage-space/want-relive-excitement-apollo-10/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Apollo 10 in May 1969 was a dress rehearsal for the landing",
+   "terms": [
+    "dress rehearsal",
+    "1969"
+   ]
+  },
+  {
+   "claim": "The spacecraft were named Charlie Brown and Snoopy",
+   "terms": [
+    "Charlie Brown",
+    "Snoopy"
+   ]
+  },
+  {
+   "claim": "Young stayed in orbit; Stafford and Cernan flew Snoopy down",
+   "terms": [
+    "Stafford",
+    "Cernan"
+   ]
+  },
+  {
+   "claim": "Snoopy came within about 47,000 feet (9 miles) of the moon",
+   "terms": [
+    "47,000"
+   ]
+  },
+  {
+   "claim": "The ascent stage had too little fuel to land and return",
+   "terms": [
+    "fuel",
+    "ascent"
+   ]
+  },
+  {
+   "claim": "They tested the radar and photographed the landing site",
+   "terms": [
+    "landing site",
+    "radar|photograph"
+   ]
+  },
+  {
+   "claim": "Apollo 11 landed two months later",
+   "terms": [
+    "Apollo 11",
+    "two months|July"
+   ]
+  },
+  {
+   "claim": "Snoopy's ascent stage went into orbit around the Sun",
+   "terms": [
+    "heliocentric|solar orbit|orbit around the Sun|orbit the Sun"
+   ]
+  },
+  {
+   "claim": "Apollo 10 set the record for the fastest humans, nearly 25,000 mph",
+   "terms": [
+    "24,791|39,897"
+   ]
+  }
+ ]
+}

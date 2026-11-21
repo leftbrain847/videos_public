@@ -1,0 +1,788 @@
+{
+ "id": "mind_32_baader_meinhof",
+ "title": "The word that follows you everywhere",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "SEEN IT",
+   "TWICE TODAY?"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#e94f37",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "hold": "phone"
+  },
+  "rdr": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#6a5a4a",
+    "pants": "#2a2a2a",
+    "tie": "#1f3f8f",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "envelope"
+  },
+  "ling": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#16a085",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "bald",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true,
+    "beard": true
+   },
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "You learn a new word. Suddenly, it is everywhere.",
+   "key": [
+    "EVERYWHERE."
+   ],
+   "board": [
+    "SEEN IT",
+    "TWICE TODAY?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "You buy a red car. Now red cars are on every street. Every single one.",
+   "key": [
+    "RED"
+   ],
+   "set": "tunnel",
+   "board": [
+    "RED CARS",
+    "EVERYWHERE"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "rdr": false,
+    "ling": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The world did not change. Your filter did. Sneaky little filter.",
+   "key": [
+    "FILTER"
+   ],
+   "set": "study",
+   "board": [
+    "SEEN IT",
+    "TWICE TODAY?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nineteen ninety four. A newspaper in Saint Paul, Minnesota.",
+   "cap": "1994. A newspaper in St. Paul, Minnesota.",
+   "key": [
+    "NEWSPAPER"
+   ],
+   "set": "office",
+   "board": [
+    "PIONEER",
+    "PRESS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "rdr": [
+     0,
+     0.2
+    ],
+    "ling": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "rdr"
+   },
+   "act": {
+    "rdr": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A reader writes in. He keeps bumping into an odd name. Again and again.",
+   "key": [
+    "ODD"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "rdr": [
+     0,
+     0.2
+    ],
+    "ling": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rdr"
+   },
+   "act": {
+    "rdr": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It belonged to a German militant group. From the seventies.",
+   "key": [
+    "GERMAN"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "rdr": [
+     0,
+     0.2
+    ],
+    "ling": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "rdr"
+   },
+   "act": {
+    "rdr": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Other readers write back. It happens to them too. Constantly, apparently.",
+   "key": [
+    "TOO."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "rdr": [
+     1.4,
+     0.0
+    ],
+    "ling": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "rdr",
+    "with": "you"
+   },
+   "act": {
+    "rdr": {
+     "mood": "happy",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "rdr"
+    }
+   }
+  },
+  {
+   "text": "So readers dub it the Baader Meinhof phenomenon.",
+   "cap": "So readers dub it the Baader-Meinhof phenomenon.",
+   "key": [
+    "PHENOMENON."
+   ],
+   "set": "study",
+   "board": [
+    "BAADER-MEINHOF",
+    "PHENOMENON"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Yes. A memory quirk named after that group. By accident.",
+   "key": [
+    "ACCIDENT."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two thousand five. Linguist Arnold Zwicky gives it a calmer name.",
+   "cap": "2005. Linguist Arnold Zwicky gives it a calmer name.",
+   "key": [
+    "CALMER"
+   ],
+   "set": "office",
+   "board": [
+    "2005"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "rdr": false,
+    "ling": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "ling"
+   },
+   "act": {
+    "ling": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The frequency illusion.",
+   "key": [
+    "ILLUSION."
+   ],
+   "board": [
+    "FREQUENCY",
+    "ILLUSION"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "rdr": false,
+    "ling": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "ling"
+   },
+   "act": {
+    "ling": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Step one. Selective attention. Your brain flags the new thing.",
+   "key": [
+    "ATTENTION."
+   ],
+   "set": "study",
+   "board": [
+    "SEEN IT",
+    "TWICE TODAY?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Step two. Confirmation bias. Every sighting feels like proof.",
+   "key": [
+    "PROOF."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The misses never get counted. Only the hits. Every time.",
+   "key": [
+    "HITS."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is not happening more. You are noticing more. Big difference.",
+   "key": [
+    "NOTICING"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Same trick behind lucky numbers. Spooky coincidences. Clocks at eleven eleven.",
+   "cap": "Same trick behind lucky numbers. Spooky coincidences. Clocks at 11:11.",
+   "key": [
+    "11:11."
+   ],
+   "set": "tunnel",
+   "board": [
+    "11:11"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "rdr": false,
+    "ling": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here is the loophole. You know the name now.",
+   "key": [
+    "NAME"
+   ],
+   "set": "study",
+   "board": [
+    "THE",
+    "LOOPHOLE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So expect to hear Baader Meinhof again soon. Probably twice.",
+   "cap": "So expect to hear Baader-Meinhof again soon. Probably twice.",
+   "key": [
+    "TWICE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "That is not fate. That is your filter. You are welcome.",
+   "key": [
+    "WELCOME."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Has a new word ever followed you around? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "FOLLOWED",
+    "BY A WORD?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "rdr": false,
+    "ling": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Frequency illusion",
+   "url": "https://en.wikipedia.org/wiki/Frequency_illusion"
+  },
+  {
+   "title": "Language Log: Frequency illusion in the OED",
+   "url": "https://languagelog.ldc.upenn.edu/nll/?p=42180"
+  },
+  {
+   "title": "HowStuffWorks: What's the Baader-Meinhof phenomenon?",
+   "url": "https://science.howstuffworks.com/life/inside-the-mind/human-brain/mandela-effect.htm"
+  },
+  {
+   "title": "Scribbr: Where does the Baader-Meinhof phenomenon's name come from?",
+   "url": "https://www.scribbr.com/frequently-asked-questions/baader-meinhof-phenomenons-name/"
+  },
+  {
+   "title": "Pacific Standard: There's a name for that, the Baader-Meinhof phenomenon",
+   "url": "https://psmag.com/social-justice/theres-a-name-for-that-the-baader-meinhof-phenomenon-59670/"
+  },
+  {
+   "title": "SciTechDaily: The frequency illusion",
+   "url": "https://scitechdaily.com/the-frequency-illusion-why-youll-probably-hear-the-name-baader-meinhof-again-soon/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The name began in 1994 with a St. Paul newspaper",
+   "terms": [
+    "1994",
+    "Pioneer Press|St. Paul"
+   ]
+  },
+  {
+   "claim": "A reader wrote in about hearing the name repeatedly",
+   "terms": [
+    "reader",
+    "Baader"
+   ]
+  },
+  {
+   "claim": "The name refers to a German militant group",
+   "terms": [
+    "Baader-Meinhof|Baader Meinhof",
+    "German|West German"
+   ]
+  },
+  {
+   "claim": "Other readers reported the same experience",
+   "terms": [
+    "readers",
+    "letters|wrote|write"
+   ]
+  },
+  {
+   "claim": "It became known as the Baader-Meinhof phenomenon",
+   "terms": [
+    "Baader-Meinhof phenomenon|Baader Meinhof phenomenon"
+   ]
+  },
+  {
+   "claim": "Arnold Zwicky named it the frequency illusion in 2005",
+   "terms": [
+    "Zwicky",
+    "frequency illusion"
+   ]
+  },
+  {
+   "claim": "It involves selective attention",
+   "terms": [
+    "selective attention"
+   ]
+  },
+  {
+   "claim": "It involves confirmation bias",
+   "terms": [
+    "confirmation bias"
+   ]
+  }
+ ]
+}
