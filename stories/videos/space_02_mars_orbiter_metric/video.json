@@ -447,8 +447,8 @@
    }
   },
   {
-   "text": "Nobody converts. One pound force equals four point four newtons.",
-   "cap": "Nobody converts. 1 pound-force equals 4.4 newtons.",
+   "text": "Nobody converts. One pound force equals four point four newtons. Oops.",
+   "cap": "Nobody converts. 1 pound-force equals 4.4 newtons. Oops.",
    "key": [
     "4.4"
    ],
@@ -643,7 +643,7 @@
    }
   },
   {
-   "text": "It never calls home again.",
+   "text": "It never calls home again. Ever.",
    "key": [
     "NEVER"
    ],
@@ -670,8 +670,8 @@
    ]
   },
   {
-   "text": "It flew far too low. About fifty seven kilometers up.",
-   "cap": "It flew far too low. About 57 km up.",
+   "text": "It flew far too low. About fifty seven kilometers up. Way too low.",
+   "cap": "It flew far too low. About 57 km up. Way too low.",
    "key": [
     "57"
    ],
@@ -717,7 +717,7 @@
    }
   },
   {
-   "text": "The atmosphere likely destroyed it. Or it skipped back out into space.",
+   "text": "The atmosphere likely destroyed it. Gone.",
    "key": [
     "DESTROYED"
    ],
@@ -735,7 +735,7 @@
    }
   },
   {
-   "text": "The investigation finds the cause. English units. Never converted to metric.",
+   "text": "The investigation finds the cause. English units. Never converted to metric. Ouch.",
    "key": [
     "CONVERTED."
    ],
@@ -984,16 +984,10 @@
    ]
   },
   {
-   "claim": "It was likely destroyed in the atmosphere, or skipped back into space",
+   "claim": "It was likely destroyed in the atmosphere",
    "terms": [
     "atmosphere",
     "destroy|burn|disintegrat"
-   ]
-  },
-  {
-   "claim": "Or it re-entered space in an orbit around the Sun",
-   "terms": [
-    "heliocentric|solar orbit|orbit around the Sun"
    ]
   },
   {

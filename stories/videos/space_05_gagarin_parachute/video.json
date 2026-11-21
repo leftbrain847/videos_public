@@ -182,23 +182,35 @@
    }
   },
   {
-   "text": "He launches a senior lieutenant. During the flight, he's promoted to major.",
+   "text": "One lap. That's the whole trip. Still history, though.",
    "key": [
-    "MAJOR."
+    "HISTORY,"
    ],
-   "board": [
-    "PROMOTED",
-    "TO MAJOR"
-   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "yuri": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
    "shot": {
-    "type": "medium",
-    "on": "yuri"
+    "type": "close",
+    "on": "capy"
    },
    "act": {
-    "yuri": {
-     "mood": "shocked",
-     "action": "idle",
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
      "look": "camera"
+    },
+    "yuri": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
     }
    }
   },
@@ -835,13 +847,6 @@
    ]
   },
   {
-   "claim": "Gagarin was promoted from senior lieutenant to major during the flight",
-   "terms": [
-    "lieutenant",
-    "major"
-   ]
-  },
-  {
    "claim": "At liftoff he said 'Let's go!' (Poyekhali)",
    "terms": [
     "Poyekhali|let's go"
@@ -878,8 +883,8 @@
   {
    "claim": "A farm woman and a girl saw him land",
    "terms": [
-    "farm",
-    "girl|granddaughter|daughter"
+    "woman",
+    "granddaughter|daughter|girl"
    ]
   },
   {
@@ -906,8 +911,8 @@
   {
    "claim": "The Soviets claimed he landed with his spacecraft",
    "terms": [
-    "claimed|concealed|hid|lied",
-    "land"
+    "secret|concealed|lied|did not reveal",
+    "capsule|spacecraft|parachute"
    ]
   },
   {

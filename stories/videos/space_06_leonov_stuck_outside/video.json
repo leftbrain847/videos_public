@@ -257,9 +257,9 @@
    }
   },
   {
-   "text": "It's stiff as a balloon. His hands slip out of his gloves.",
+   "text": "It's stiff as a balloon. He can barely bend his arms.",
    "key": [
-    "GLOVES."
+    "BEND"
    ],
    "speaker": "capy",
    "shot": {
@@ -743,12 +743,6 @@
    "terms": [
     "suit",
     "balloon|inflat"
-   ]
-  },
-  {
-   "claim": "His hands slipped out of his gloves",
-   "terms": [
-    "glove"
    ]
   },
   {

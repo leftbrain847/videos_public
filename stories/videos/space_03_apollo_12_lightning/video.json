@@ -743,13 +743,12 @@
    }
   },
   {
-   "text": "Five days later, they land on the moon.",
-   "cap": "5 days later, they land on the moon.",
+   "text": "Days later, they land on the moon. Right on target.",
    "key": [
     "LAND"
    ],
    "board": [
-    "NOV 19",
+    "APOLLO 12",
     "ON THE MOON"
    ],
    "place": {
@@ -928,6 +927,18 @@
    "url": "https://www.iflscience.com/lighting-hit-apollo-12-just-365-seconds-after-launch-after-that-it-got-very-interesting-80025"
   },
   {
+   "title": "Universe Today: Apollo 12 and SCE to AUX",
+   "url": "https://www.universetoday.com/articles/this-day-in-space-history-apollo-12-and-sce-to-aux"
+  },
+  {
+   "title": "Vice: John Aaron, Apollo 12 and SCE to AUX",
+   "url": "https://www.vice.com/en/article/john-aaron-apollo-12-curiosity-luck-and-sce-to-aux"
+  },
+  {
+   "title": "Today I Found Out: where steely-eyed missile man came from",
+   "url": "https://www.todayifoundout.com/index.php/2014/03/nasa-expression-steely-eyed-missile-man-come/"
+  },
+  {
    "title": "Sky at Night: Apollo 12 story",
    "url": "https://www.skyatnightmagazine.com/space-missions/apollo-12-story-second-mission-moon"
   }
@@ -1019,15 +1030,18 @@
    ]
   },
   {
-   "claim": "Data was restored and the mission continued",
+   "claim": "Switching SCE to AUX brought the data back",
    "terms": [
-    "restored|restore"
+    "SCE",
+    "Aux"
    ]
   },
   {
-   "claim": "Conrad and Bean landed on the moon on November 19",
+   "claim": "Conrad and Bean landed on the moon",
    "terms": [
-    "November 19"
+    "Conrad",
+    "Bean",
+    "moon"
    ]
   },
   {
