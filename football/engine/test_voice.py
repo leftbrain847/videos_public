@@ -209,7 +209,7 @@ def test_fact_check_matching_and_snippets():
 def test_gallery_reads_release_links():
     sys.path.insert(0, str(ROOT.parent.parent / "tools"))
     import build_site
-    assert build_site.TAG.fullmatch("football-batch-1") and not build_site.TAG.fullmatch("v1; rm -rf /")
+    T = build_site.videos.CHANNELS["football"]["tag"]; assert T.fullmatch("football-batch-1") and not T.fullmatch("v1; rm -rf /")
 
 
 def run():
