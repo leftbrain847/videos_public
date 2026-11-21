@@ -246,9 +246,9 @@
    }
   },
   {
-   "text": "They test Cornell players too. Same answer.",
+   "text": "They run shooting tests too. Same answer.",
    "key": [
-    "CORNELL"
+    "SAME"
    ],
    "place": {
     "capy": false,
@@ -829,9 +829,9 @@
    ]
   },
   {
-   "claim": "They used shooting records of the Philadelphia 76ers",
+   "claim": "They used shooting records of an NBA team",
    "terms": [
-    "76ers"
+    "76ers|NBA|professional"
    ]
   },
   {
@@ -842,15 +842,17 @@
    ]
   },
   {
-   "claim": "They also tested Cornell players",
+   "claim": "They also ran shooting tests",
    "terms": [
-    "Cornell"
+    "shooting|free throw",
+    "hot hand"
    ]
   },
   {
    "claim": "It became known as the hot hand fallacy",
    "terms": [
-    "hot hand fallacy"
+    "hot hand",
+    "fallacy|myth|illusion"
    ]
   },
   {

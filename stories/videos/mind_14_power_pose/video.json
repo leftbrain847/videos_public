@@ -196,9 +196,9 @@
    }
   },
   {
-   "text": "Two minutes later, they test your saliva.",
+   "text": "Two minutes later, they measure your hormones.",
    "key": [
-    "SALIVA."
+    "HORMONES."
    ],
    "place": {
     "capy": false,
@@ -843,7 +843,7 @@
    "claim": "The original power posing study was in 2010",
    "terms": [
     "2010",
-    "power pos"
+    "power posing|power pose|power poses"
    ]
   },
   {
@@ -854,9 +854,10 @@
    ]
   },
   {
-   "claim": "Saliva was tested for hormones",
+   "claim": "Hormones were measured",
    "terms": [
-    "saliva"
+    "hormone",
+    "testosterone|cortisol"
    ]
   },
   {

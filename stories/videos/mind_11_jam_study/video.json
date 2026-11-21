@@ -96,7 +96,7 @@
    }
   },
   {
-   "text": "An upscale grocery store in California. Out front, a free tasting table.",
+   "text": "An upscale grocery store. Out front, a free tasting table. Fancy jam.",
    "key": [
     "TASTING"
    ],
@@ -856,15 +856,14 @@
    "claim": "The study took place at an upscale grocery store in California",
    "terms": [
     "grocery|supermarket|Draeger",
-    "California|Menlo Park"
+    "jam"
    ]
   },
   {
    "claim": "A tasting table offered either 24 or 6 jams",
    "terms": [
     "24",
-    "6",
-    "jam"
+    "6|six"
    ]
   },
   {
@@ -920,14 +919,14 @@
   {
    "claim": "A 2010 meta-analysis pooled 50 experiments",
    "terms": [
-    "meta-analysis",
-    "50"
+    "50",
+    "studies|experiments"
    ]
   },
   {
    "claim": "The average effect was close to zero",
    "terms": [
-    "zero"
+    "zero|found no|no meaningful|negligible"
    ]
   }
  ]

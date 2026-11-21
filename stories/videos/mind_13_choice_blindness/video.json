@@ -586,8 +586,8 @@
    }
   },
   {
-   "text": "Then they try politics. Twenty twelve. A voter survey.",
-   "cap": "Then they try politics. 2012. A voter survey.",
+   "text": "Then they try politics. A real voter survey.",
+   "cap": "Then they try politics. A real voter survey.",
    "key": [
     "POLITICS."
    ],
@@ -841,10 +841,10 @@
    ]
   },
   {
-   "claim": "Participants chose the more attractive of two faces",
+   "claim": "Participants chose between two photos of faces",
    "terms": [
-    "attractive",
-    "faces|face"
+    "photograph|photos|faces",
+    "attractive|choose|chose|chosen"
    ]
   },
   {
@@ -896,10 +896,10 @@
    ]
   },
   {
-   "claim": "A 2012 voter survey reversed some answers",
+   "claim": "A voter survey reversed some answers",
    "terms": [
-    "survey|political",
-    "2012|reversed|manipulated"
+    "political|politics",
+    "survey|questionnaire"
    ]
   }
  ]
