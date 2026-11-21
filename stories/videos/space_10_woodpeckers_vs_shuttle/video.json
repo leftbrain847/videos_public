@@ -354,9 +354,9 @@
    }
   },
   {
-   "text": "Why the tank? It's mating season. The birds want a nest.",
+   "text": "Why the tank? Honestly, nobody thought to ask the birds.",
    "key": [
-    "NEST."
+    "BIRDS."
    ],
    "place": {
     "capy": [
@@ -516,14 +516,14 @@
    }
   },
   {
-   "text": "They set up plastic owls around the pad.",
+   "text": "They play recorded owl calls around the pad.",
    "key": [
-    "OWLS"
+    "OWL"
    ],
    "set": "office",
    "setOpts": {
     "boardText": [
-     "PLASTIC OWLS",
+     "OWL CALLS",
      "DEPLOYED"
     ]
    },
@@ -843,6 +843,18 @@
    "url": "https://corpora.tika.apache.org/base/docs/govdocs1/013/013223.html"
   },
   {
+   "title": "Space Centre: the BIRD team mission patch",
+   "url": "https://spacecentre.co.uk/collections/categories/space-oddities/the-bird-team-mission-patch"
+  },
+  {
+   "title": "Spaceline: STS-70 fact sheet",
+   "url": "https://www.spaceline.org/?p=3167"
+  },
+  {
+   "title": "NASA: STS-70",
+   "url": "https://www.nasa.gov/mission/sts-70/"
+  },
+  {
    "title": "Discover: Boyish pursuits",
    "url": "https://www.discovermagazine.com/the-sciences/boyish-pursuits"
   }
@@ -884,12 +896,6 @@
    ]
   },
   {
-   "claim": "It was mating season",
-   "terms": [
-    "mating"
-   ]
-  },
-  {
    "claim": "Discovery rolled back to the Vehicle Assembly Building for repairs",
    "terms": [
     "roll|rolled|returned",
@@ -897,7 +903,7 @@
    ]
   },
   {
-   "claim": "NASA used plastic owls",
+   "claim": "NASA used recorded owl sounds",
    "terms": [
     "owl"
    ]

@@ -154,14 +154,13 @@
    }
   },
   {
-   "text": "A giant parachute bursts open. It's over seventy feet across.",
-   "cap": "A giant parachute bursts open. It's over 70 feet across.",
+   "text": "A giant parachute bursts open. High above the ground.",
    "key": [
-    "70"
+    "PARACHUTE"
    ],
    "board": [
     "PARACHUTE",
-    "70.5 FT"
+    "OPEN"
    ],
    "shot": {
     "type": "close",
@@ -198,9 +197,9 @@
    }
   },
   {
-   "text": "It's the biggest parachute ever sent to Mars.",
+   "text": "Everything works. Mission control finally exhales. For now.",
    "key": [
-    "BIGGEST"
+    "EXHALES."
    ],
    "place": {
     "capy": [
@@ -647,9 +646,9 @@
    }
   },
   {
-   "text": "Behind it all is engineer Ian Clark. A big crossword fan. Of course.",
+   "text": "Behind it all is engineer Ian Clark. He hid it in plain sight. Brilliant.",
    "key": [
-    "CROSSWORD"
+    "PLAIN"
    ],
    "place": {
     "capy": [
@@ -824,19 +823,6 @@
    ]
   },
   {
-   "claim": "The parachute was 70.5 feet across",
-   "terms": [
-    "70.5"
-   ]
-  },
-  {
-   "claim": "It was the biggest parachute sent to Mars",
-   "terms": [
-    "parachute",
-    "largest|biggest|heaviest"
-   ]
-  },
-  {
    "claim": "Cameras filmed the landing and NASA released the video",
    "terms": [
     "video",
@@ -896,10 +882,9 @@
    ]
   },
   {
-   "claim": "Systems engineer Ian Clark, a crossword enthusiast, designed it",
+   "claim": "Engineer Ian Clark designed the code",
    "terms": [
-    "Clark",
-    "crossword|puzzle"
+    "Ian Clark"
    ]
   },
   {
