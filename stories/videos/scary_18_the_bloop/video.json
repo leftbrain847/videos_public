@@ -1,0 +1,715 @@
+{
+ "id": "scary_18_the_bloop",
+ "title": "The Bloop: a sea monster made of ice",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "THE BLOOP"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#2f6b8c",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "glasses": true,
+    "headset": true
+   },
+   "at": "center"
+  },
+  "tech": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#3f6b5c",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "fan": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#5a3a5a",
+    "pants": "#3c3c3c",
+    "hair": "curly",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "Your underwater microphones catch a sound. It is enormous. Nothing should be this loud.",
+   "key": [
+    "ENORMOUS."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "tech": [
+     2.8,
+     -1.0
+    ],
+    "fan": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Nineteen ninety seven. The Pacific Ocean. Deep underwater.",
+   "cap": "1997. The Pacific Ocean. Deep underwater.",
+   "key": [
+    "PACIFIC"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "1997",
+     "PACIFIC"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "tech": [
+     2.6,
+     -0.8
+    ],
+    "capy": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You work with a United States ocean agency. Listening to the sea. All day long.",
+   "key": [
+    "LISTENING"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your hydrophones float deep underwater. Thousands of miles apart.",
+   "key": [
+    "HYDROPHONES"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then several pick up the same sound. Exactly the same.",
+   "key": [
+    "SAME"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Very low. Very loud. Rising in pitch.",
+   "key": [
+    "LOUD."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tech"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "It sounds a little like an animal. A huge one.",
+   "key": [
+    "ANIMAL."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "But it is louder than any known animal. Even a blue whale.",
+   "key": [
+    "WHALE."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "you": [
+     -2.6,
+     -0.4
+    ],
+    "tech": [
+     2.8,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    },
+    "tech": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your team names it the Bloop. Very scientific.",
+   "key": [
+    "BLOOP."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The internet does the math. Bigger than a whale means monster.",
+   "key": [
+    "MONSTER."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "SEA MONSTER?",
+     "!!!"
+    ]
+   },
+   "place": {
+    "fan": [
+     0,
+     4.2
+    ],
+    "capy": [
+     -2.4,
+     4.4
+    ],
+    "you": false,
+    "tech": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "shocked",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "fan"
+    }
+   }
+  },
+  {
+   "text": "Even better? Nobody could see it. Only hear it.",
+   "key": [
+    "HEAR"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Perfect conditions for imagination. Unlimited imagination. Zero facts.",
+   "key": [
+    "IMAGINATION."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your science recording becomes a monster legend. Overnight.",
+   "key": [
+    "LEGEND."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then your team keeps listening. For years. Patiently.",
+   "key": [
+    "YEARS."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "MORE DATA",
+     "ANTARCTICA"
+    ]
+   },
+   "place": {
+    "tech": [
+     0,
+     -0.8
+    ],
+    "you": [
+     -2.6,
+     0.2
+    ],
+    "capy": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "tech"
+    }
+   }
+  },
+  {
+   "text": "You hear more sounds like it. Near Antarctica.",
+   "key": [
+    "ANTARCTICA."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They come from ice. Giant icebergs cracking off glaciers. Massive ones.",
+   "key": [
+    "ICE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "tech"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "point",
+     "look": "tech"
+    },
+    "tech": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Scientists call them icequakes. Real word.",
+   "key": [
+    "ICEQUAKES."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the Bloop was a giant ice crack. Not a beast.",
+   "key": [
+    "BEAST."
+   ],
+   "place": {
+    "capy": [
+     -0.4,
+     1.2
+    ],
+    "you": [
+     -2.6,
+     0.2
+    ],
+    "tech": [
+     2.6,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The sea monster was an ice cube. A really big one.",
+   "key": [
+    "CUBE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Some fans still refuse to believe it. They want the monster.",
+   "key": [
+    "REFUSE"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "BELIEVERS"
+    ]
+   },
+   "place": {
+    "fan": [
+     0,
+     0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": [
+     2.6,
+     -0.6
+    ],
+    "tech": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "angry",
+     "action": "cross"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "fan"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "fan"
+    }
+   }
+  },
+  {
+   "text": "Monster or ice? Pick one. Choose wisely.",
+   "key": [
+    "MONSTER",
+    "ICE?"
+   ],
+   "board": [
+    "MONSTER",
+    "OR ICE?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "NOAA Ocean Service: What is the Bloop?",
+   "url": "https://oceanservice.noaa.gov/facts/bloop.html"
+  },
+  {
+   "title": "Wikipedia: Bloop",
+   "url": "https://en.wikipedia.org/wiki/Bloop"
+  },
+  {
+   "title": "Popular Science: The sea monster goes bloop, or does it?",
+   "url": "https://www.popsci.com/environment/sea-monster-bloop-sound/"
+  },
+  {
+   "title": "HowStuffWorks: Is the Bloop real?",
+   "url": "https://science.howstuffworks.com/science-vs-myth/is-the-bloop-real.htm"
+  },
+  {
+   "title": "Business Insider: Listen to the Bloop",
+   "url": "https://www.businessinsider.nl/listen-to-the-bloop-a-strange-noise-recorded-in-the-southern-pacific-ocean-that-stumped-scientists-for-years/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1997 NOAA recorded the Bloop in the Pacific",
+   "terms": [
+    "1997",
+    "NOAA"
+   ]
+  },
+  {
+   "claim": "It was picked up by hydrophones far apart",
+   "terms": [
+    "hydrophone"
+   ]
+  },
+  {
+   "claim": "The sound was very low frequency and rose in pitch",
+   "terms": [
+    "frequency"
+   ]
+  },
+  {
+   "claim": "It resembled an animal sound",
+   "terms": [
+    "animal"
+   ]
+  },
+  {
+   "claim": "It was louder than any known animal, even a blue whale",
+   "terms": [
+    "blue whale|louder|any known animal"
+   ]
+  },
+  {
+   "claim": "It was named the Bloop",
+   "terms": [
+    "Bloop"
+   ]
+  },
+  {
+   "claim": "Similar sounds were later recorded near Antarctica",
+   "terms": [
+    "Antarctic"
+   ]
+  },
+  {
+   "claim": "The sounds came from icebergs cracking and calving",
+   "terms": [
+    "iceberg|glacier",
+    "crack|calving|fracturing"
+   ]
+  },
+  {
+   "claim": "They are called icequakes",
+   "terms": [
+    "icequake|ice quake"
+   ]
+  }
+ ]
+}
