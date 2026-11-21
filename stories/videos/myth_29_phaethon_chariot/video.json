@@ -1,0 +1,851 @@
+{
+ "id": "myth_29_phaethon_chariot",
+ "title": "Borrowing dad's sun",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE SUN PALACE"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "pha": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f28c28",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#f2d27a",
+    "skin": "#f2c39b",
+    "sash": "#c0392b"
+   }
+  },
+  "hel": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f2c230",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#f28c28",
+    "skin": "#f2c39b",
+    "sash": "#c0392b",
+    "beard": true
+   }
+  },
+  "friend": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a8ac0",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "sash": "#8a8f96"
+   }
+  },
+  "zeus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b4c8c",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#e6e6e6",
+    "skin": "#f2c39b",
+    "sash": "#f6d21f",
+    "beard": true
+   }
+  },
+  "farmer": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#6f9a4a",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "sash": "#8a6d4b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You borrow your dad's ride for a day. It is the sun.",
+   "key": [
+    "SUN."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "pha": [
+     1.2,
+     0
+    ],
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pha"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "pha": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Phaethon. Your father is Helios, the sun god.",
+   "key": [
+    "HELIOS,"
+   ],
+   "board": [
+    "DAD",
+    "THE SUN"
+   ],
+   "place": {
+    "capy": false,
+    "pha": [
+     -1.3,
+     0.2
+    ],
+    "hel": [
+     1.3,
+     -0.2
+    ],
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "pha",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "pha": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "hel"
+    },
+    "hel": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "pha"
+    }
+   }
+  },
+  {
+   "text": "A friend mocks you. He says you are lying about your dad.",
+   "key": [
+    "LYING."
+   ],
+   "place": {
+    "capy": false,
+    "pha": false,
+    "hel": false,
+    "friend": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "friend"
+   },
+   "act": {
+    "friend": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So you march to the sun palace. You ask him.",
+   "key": [
+    "PALACE"
+   ],
+   "place": {
+    "capy": false,
+    "pha": [
+     0,
+     0
+    ],
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "pha"
+   },
+   "act": {
+    "pha": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Helios swears by the river Styx. You get any wish you want.",
+   "key": [
+    "STYX."
+   ],
+   "place": {
+    "capy": false,
+    "pha": false,
+    "hel": [
+     0,
+     0
+    ],
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "hel"
+   },
+   "act": {
+    "hel": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "An oath on the Styx cannot be broken. Not even by gods.",
+   "key": [
+    "BROKEN."
+   ],
+   "speaker": "capy",
+   "board": [
+    "OATH ON STYX",
+    "UNBREAKABLE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "pha": false,
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your wish: drive the sun chariot. Just for a day.",
+   "key": [
+    "CHARIOT"
+   ],
+   "place": {
+    "capy": false,
+    "pha": [
+     0,
+     0
+    ],
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "pha"
+   },
+   "act": {
+    "pha": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Helios begs you to pick anything else. Anything.",
+   "key": [
+    "ANYTHING."
+   ],
+   "place": {
+    "capy": false,
+    "pha": [
+     1.3,
+     -0.2
+    ],
+    "hel": [
+     -1.3,
+     0.2
+    ],
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "hel",
+    "with": "pha"
+   },
+   "act": {
+    "hel": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "pha"
+    },
+    "pha": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "hel"
+    }
+   }
+  },
+  {
+   "text": "You refuse. He is bound by his own oath. Forever.",
+   "key": [
+    "BOUND"
+   ],
+   "place": {
+    "capy": false,
+    "pha": false,
+    "hel": [
+     0,
+     0
+    ],
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "hel"
+   },
+   "act": {
+    "hel": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He literally cannot say no. That is a rookie mistake.",
+   "key": [
+    "ROOKIE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "pha": false,
+    "hel": [
+     1.2,
+     0
+    ],
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hel"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "hel": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Four fiery horses pull it. You cannot hold them.",
+   "cap": "4 fiery horses pull it. You cannot hold them.",
+   "key": [
+    "4"
+   ],
+   "board": [
+    "HORSEPOWER",
+    "4 FIRE HORSES"
+   ],
+   "place": {
+    "capy": false,
+    "pha": [
+     0,
+     0
+    ],
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "pha"
+   },
+   "act": {
+    "pha": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They feel how light you are. They bolt.",
+   "key": [
+    "BOLT."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "pha": [
+     1.2,
+     0
+    ],
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "pha",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "pha"
+    },
+    "pha": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You fly too high. The earth starts to freeze over.",
+   "key": [
+    "FREEZE."
+   ],
+   "place": {
+    "capy": false,
+    "pha": false,
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "farmer"
+   },
+   "act": {
+    "farmer": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You dive too low. The whole earth catches fire.",
+   "key": [
+    "FIRE."
+   ],
+   "place": {
+    "capy": false,
+    "pha": false,
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "farmer"
+   },
+   "act": {
+    "farmer": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The rivers dry up. The mountains burn. The whole world smokes.",
+   "key": [
+    "SMOKES."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "pha": false,
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "farmer",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "farmer": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Zeus has seen enough. He throws a thunderbolt. Right at you.",
+   "key": [
+    "THUNDERBOLT."
+   ],
+   "place": {
+    "capy": false,
+    "pha": false,
+    "hel": false,
+    "friend": false,
+    "zeus": [
+     0,
+     0
+    ],
+    "farmer": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "zeus"
+   },
+   "act": {
+    "zeus": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You fall from the sky. You land in the river Eridanus.",
+   "key": [
+    "ERIDANUS."
+   ],
+   "board": [
+    "PHAETHON",
+    "GROUNDED"
+   ],
+   "place": {
+    "capy": false,
+    "pha": [
+     0,
+     0
+    ],
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "pha"
+   },
+   "act": {
+    "pha": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That is the worst driving test in history.",
+   "key": [
+    "DRIVING"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "pha": false,
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The real mistake was the promise. Not the kid.",
+   "key": [
+    "PROMISE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "pha": false,
+    "hel": [
+     1.2,
+     0
+    ],
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hel"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "hel"
+    },
+    "hel": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you lend him the sun? Yes or no? Parents, be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "LEND THE SUN?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "pha": false,
+    "hel": false,
+    "friend": false,
+    "zeus": false,
+    "farmer": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Phaethon",
+   "url": "https://en.wikipedia.org/wiki/Phaethon"
+  },
+  {
+   "title": "Theoi: Ovid, Metamorphoses 2",
+   "url": "https://www.theoi.com/Text/OvidMetamorphoses2.html"
+  },
+  {
+   "title": "Perseids: Ovid, Metamorphoses 2.1-2.400 (More translation)",
+   "url": "https://fgh.perseids.org/read/latinLit/phi0959/phi006/perseus-eng3/2.1-2.400"
+  },
+  {
+   "title": "Wikipedia: Helios",
+   "url": "https://en.wikipedia.org/wiki/Helios"
+  },
+  {
+   "title": "GreekMythology.com: Phaethon",
+   "url": "https://www.greekmythology.com/Myths/Mortals/Phaethon/phaethon.html"
+  },
+  {
+   "title": "Wikipedia: Eridanos (mythology)",
+   "url": "https://en.wikipedia.org/wiki/Eridanos_(mythology)"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Phaethon's father is Helios, the sun god",
+   "terms": [
+    "Phaethon",
+    "Helios|Sun"
+   ]
+  },
+  {
+   "claim": "A friend mocks him and doubts his parentage",
+   "terms": [
+    "Epaphus",
+    "mocked|taunted|doubted|teased|mock"
+   ]
+  },
+  {
+   "claim": "He goes to his father's palace",
+   "terms": [
+    "palace",
+    "Sun|Helios|Phoebus"
+   ]
+  },
+  {
+   "claim": "Helios swears by the Styx to grant any wish",
+   "terms": [
+    "Styx",
+    "swore|swears|oath"
+   ]
+  },
+  {
+   "claim": "Phaethon asks to drive the sun chariot for a day",
+   "terms": [
+    "chariot",
+    "day"
+   ]
+  },
+  {
+   "claim": "Helios begs him to choose something else",
+   "terms": [
+    "beg|begged|pleaded|implored|urged|warned",
+    "Phaethon"
+   ]
+  },
+  {
+   "claim": "The horses feel the lighter weight and run wild",
+   "terms": [
+    "horses",
+    "weight|light|lighter"
+   ]
+  },
+  {
+   "claim": "The earth burns: rivers dry up, mountains burn",
+   "terms": [
+    "rivers",
+    "mountains"
+   ]
+  },
+  {
+   "claim": "Zeus strikes him with a thunderbolt",
+   "terms": [
+    "thunderbolt",
+    "Zeus|Jupiter|Jove"
+   ]
+  },
+  {
+   "claim": "He falls into the river Eridanus",
+   "terms": [
+    "Eridanus|Eridanos",
+    "fell|falls|fall"
+   ]
+  }
+ ]
+}

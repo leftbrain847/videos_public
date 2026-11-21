@@ -1,0 +1,903 @@
+{
+ "id": "myth_25_horus_stone_boats",
+ "title": "The fake stone boat",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE NILE"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "horus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e86c1",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#e8b923"
+   }
+  },
+  "set": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#9a1f1f",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#3a3a4a",
+    "beard": true
+   }
+  },
+  "god": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e8b923",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#9a9a9a",
+    "skin": "#8d5a3b",
+    "sash": "#c0392b",
+    "beard": true
+   }
+  },
+  "isis": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a8ac0",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#e8b923"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You win a stone boat race. Your boat is painted wood.",
+   "key": [
+    "WOOD."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "horus": [
+     1.2,
+     0
+    ],
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "horus"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "horus": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Horus. Your father Osiris was once king.",
+   "key": [
+    "HORUS."
+   ],
+   "board": [
+    "HORUS",
+    "HEIR"
+   ],
+   "place": {
+    "capy": false,
+    "horus": [
+     0,
+     0
+    ],
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "horus"
+   },
+   "act": {
+    "horus": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your uncle Seth wants the throne of Egypt.",
+   "key": [
+    "THRONE"
+   ],
+   "place": {
+    "capy": false,
+    "horus": false,
+    "set": [
+     0,
+     0
+    ],
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "set"
+   },
+   "act": {
+    "set": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Seth is strong. Seth is loud. Seth does not lose quietly.",
+   "key": [
+    "QUIETLY."
+   ],
+   "place": {
+    "capy": false,
+    "horus": false,
+    "set": [
+     0,
+     0
+    ],
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "set"
+   },
+   "act": {
+    "set": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gods have argued about it. For eighty years.",
+   "cap": "The gods have argued about it. For 80 years.",
+   "key": [
+    "80"
+   ],
+   "board": [
+    "THE TRIAL",
+    "YEAR 80"
+   ],
+   "place": {
+    "capy": false,
+    "horus": false,
+    "set": false,
+    "god": [
+     -1.3,
+     0.2
+    ],
+    "isis": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "god",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "god": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "isis": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "god"
+    }
+   }
+  },
+  {
+   "text": "Eighty years. The longest meeting in all of history.",
+   "cap": "80 years. The longest meeting in all of history.",
+   "key": [
+    "MEETING"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "horus": false,
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Seth proposes a contest. A race in boats of stone.",
+   "key": [
+    "STONE."
+   ],
+   "board": [
+    "THE RACE",
+    "STONE BOATS"
+   ],
+   "place": {
+    "capy": false,
+    "horus": false,
+    "set": [
+     0,
+     0
+    ],
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "set"
+   },
+   "act": {
+    "set": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The winner gets the crown. Simple.",
+   "key": [
+    "CROWN."
+   ],
+   "place": {
+    "capy": false,
+    "horus": [
+     1.3,
+     -0.2
+    ],
+    "set": [
+     -1.3,
+     0.2
+    ],
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "set",
+    "with": "horus"
+   },
+   "act": {
+    "set": {
+     "mood": "smug",
+     "action": "point",
+     "look": "horus"
+    },
+    "horus": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "set"
+    }
+   }
+  },
+  {
+   "text": "Stone boats. A very bold plan.",
+   "key": [
+    "BOLD"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "horus": false,
+    "set": [
+     1.2,
+     0
+    ],
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "set"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "set": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Meanwhile, you build your boat. You use cedar wood.",
+   "key": [
+    "CEDAR"
+   ],
+   "place": {
+    "capy": false,
+    "horus": [
+     0,
+     0
+    ],
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "horus"
+   },
+   "act": {
+    "horus": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you coat it in plaster. Now it looks like stone.",
+   "key": [
+    "PLASTER."
+   ],
+   "board": [
+    "STONE BOAT",
+    "(WOOD)"
+   ],
+   "place": {
+    "capy": false,
+    "horus": [
+     0,
+     0
+    ],
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "horus"
+   },
+   "act": {
+    "horus": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Seth cuts the top off a mountain. He carves a real one.",
+   "key": [
+    "MOUNTAIN."
+   ],
+   "place": {
+    "capy": false,
+    "horus": false,
+    "set": [
+     0,
+     0
+    ],
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "set"
+   },
+   "act": {
+    "set": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is solid rock. It is very heavy. See the problem yet?",
+   "key": [
+    "HEAVY."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "horus": false,
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is race day. Every god is watching.",
+   "key": [
+    "WATCHING."
+   ],
+   "place": {
+    "capy": false,
+    "horus": false,
+    "set": false,
+    "god": [
+     -1.3,
+     0.2
+    ],
+    "isis": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "isis",
+    "pan": [
+     -1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "god": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "isis": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Seth's boat hits the water. It sinks immediately.",
+   "key": [
+    "SINKS"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "horus": false,
+    "set": [
+     1.2,
+     0
+    ],
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "set",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "set": {
+     "mood": "shocked",
+     "action": "slump",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Your boat floats. Because it is made of wood.",
+   "key": [
+    "FLOATS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "horus": [
+     1.2,
+     0
+    ],
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "horus",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "horus"
+    },
+    "horus": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Seth is furious. He turns into a hippo.",
+   "key": [
+    "HIPPO."
+   ],
+   "place": {
+    "capy": false,
+    "horus": false,
+    "set": [
+     0,
+     0
+    ],
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "set"
+   },
+   "act": {
+    "set": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He swims under your boat. He wrecks it completely.",
+   "key": [
+    "WRECKS"
+   ],
+   "place": {
+    "capy": false,
+    "horus": [
+     0,
+     0
+    ],
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "horus"
+   },
+   "act": {
+    "horus": {
+     "mood": "shocked",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nobody wins that day. The fight just drags on.",
+   "key": [
+    "DRAGS"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "horus": false,
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In the end, the gods crown you. King of Egypt.",
+   "key": [
+    "KING"
+   ],
+   "board": [
+    "KING",
+    "HORUS"
+   ],
+   "place": {
+    "capy": false,
+    "horus": [
+     0,
+     0
+    ],
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "horus"
+   },
+   "act": {
+    "horus": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So physics beat cheating. Eventually.",
+   "key": [
+    "PHYSICS"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "horus": [
+     1.2,
+     0
+    ],
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "horus"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "horus"
+    },
+    "horus": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you spot the fake stone boat? Yes or no? Seth fans, stay dry.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "SPOT THE FAKE?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "horus": false,
+    "set": false,
+    "god": false,
+    "isis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: The Contendings of Horus and Seth",
+   "url": "https://en.wikipedia.org/wiki/The_Contendings_of_Horus_and_Seth"
+  },
+  {
+   "title": "TheCollector: The Contendings of Horus and Seth",
+   "url": "https://www.thecollector.com/contendings-horus-and-seth-egyptian-titans/"
+  },
+  {
+   "title": "World History Edu: The conflict between Horus and Seth",
+   "url": "https://worldhistoryedu.com/the-conflict-between-horus-and-seth-over-the-throne-of-ancient-egypt/"
+  },
+  {
+   "title": "Satyori: Contendings of Horus and Set",
+   "url": "https://satyori.com/mythology/contendings-of-horus-and-set/"
+  },
+  {
+   "title": "Hitchhiker's Guide to Religion: Horus and Seth tribunal",
+   "url": "https://www.hitchhikersguidetoreligion.com/lore/horus-and-seth-tribunal/"
+  },
+  {
+   "title": "Wikipedia: Horus",
+   "url": "https://en.wikipedia.org/wiki/Horus"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Horus is the son of Osiris",
+   "terms": [
+    "Horus",
+    "Osiris",
+    "son"
+   ]
+  },
+  {
+   "claim": "His uncle Seth wants the throne",
+   "terms": [
+    "Set|Seth",
+    "throne"
+   ]
+  },
+  {
+   "claim": "The gods argue over it for eighty years",
+   "terms": [
+    "80|eighty",
+    "years"
+   ]
+  },
+  {
+   "claim": "Seth proposes a race in stone boats",
+   "terms": [
+    "stone",
+    "boats|boat|ships|ship"
+   ]
+  },
+  {
+   "claim": "Horus builds a boat of cedar wood",
+   "terms": [
+    "cedar|pine|wood",
+    "boat|ship"
+   ]
+  },
+  {
+   "claim": "He covers it in plaster so it looks like stone",
+   "terms": [
+    "plaster|gypsum",
+    "stone"
+   ]
+  },
+  {
+   "claim": "Seth cuts the top off a mountain to make his boat",
+   "terms": [
+    "mountain|peak",
+    "boat|ship"
+   ]
+  },
+  {
+   "claim": "Seth's boat sinks",
+   "terms": [
+    "sank|sinks|sink|sunk"
+   ]
+  },
+  {
+   "claim": "Seth turns into a hippopotamus",
+   "terms": [
+    "hippopotamus|hippo|hippopotami"
+   ]
+  },
+  {
+   "claim": "He wrecks Horus's boat",
+   "terms": [
+    "hippopotamus|hippo|hippopotami",
+    "boat|ship|vessel"
+   ]
+  },
+  {
+   "claim": "The gods finally crown Horus king",
+   "terms": [
+    "Horus",
+    "king|throne|crowned"
+   ]
+  }
+ ]
+}

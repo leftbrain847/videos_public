@@ -1,0 +1,866 @@
+{
+ "id": "myth_26_gilgamesh_plant",
+ "title": "Lost to a bath break",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "URUK"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "gil": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c46a3c",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64",
+    "sash": "#e8b923",
+    "beard": true
+   }
+  },
+  "gilP": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c46a3c",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64",
+    "sash": "#e8b923",
+    "beard": true
+   }
+  },
+  "utna": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f0ead8",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#e6e6e6",
+    "skin": "#c68d64",
+    "sash": "#2e86c1",
+    "beard": true
+   }
+  },
+  "wife": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#9a6a8a",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#e6e6e6",
+    "skin": "#c68d64",
+    "sash": "#2e86c1"
+   },
+   "hold": "bag"
+  }
+ },
+ "lines": [
+  {
+   "text": "You find the plant of eternal youth. A snake takes it.",
+   "key": [
+    "SNAKE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "gil": [
+     1.2,
+     0
+    ],
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gil"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "gil": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Gilgamesh, king of Uruk.",
+   "key": [
+    "URUK."
+   ],
+   "board": [
+    "GILGAMESH",
+    "KING OF URUK"
+   ],
+   "place": {
+    "capy": false,
+    "gil": [
+     0,
+     0
+    ],
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "gil"
+   },
+   "act": {
+    "gil": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your best friend Enkidu has died. Now death scares you.",
+   "key": [
+    "SCARES"
+   ],
+   "place": {
+    "capy": false,
+    "gil": [
+     0,
+     0
+    ],
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "gil"
+   },
+   "act": {
+    "gil": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You go looking for the one immortal human.",
+   "key": [
+    "IMMORTAL"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "gil": false,
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His name is Utnapishtim. He survived the great flood.",
+   "key": [
+    "FLOOD."
+   ],
+   "place": {
+    "capy": false,
+    "gil": false,
+    "gilP": false,
+    "utna": [
+     0,
+     0
+    ],
+    "wife": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "utna"
+   },
+   "act": {
+    "utna": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He gives you a test. Stay awake for a week.",
+   "key": [
+    "AWAKE"
+   ],
+   "board": [
+    "THE TEST",
+    "NO SLEEP"
+   ],
+   "place": {
+    "capy": false,
+    "gil": [
+     1.3,
+     -0.2
+    ],
+    "gilP": false,
+    "utna": [
+     -1.3,
+     0.2
+    ],
+    "wife": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "utna",
+    "with": "gil"
+   },
+   "act": {
+    "utna": {
+     "mood": "smug",
+     "action": "point",
+     "look": "gil"
+    },
+    "gil": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "utna"
+    }
+   }
+  },
+  {
+   "text": "You sit down. You fall asleep right away. In seconds.",
+   "key": [
+    "ASLEEP"
+   ],
+   "place": {
+    "capy": false,
+    "gil": [
+     0,
+     0
+    ],
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "gil"
+   },
+   "act": {
+    "gil": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His wife bakes a loaf. One for each day you sleep.",
+   "key": [
+    "LOAF"
+   ],
+   "place": {
+    "capy": false,
+    "gil": false,
+    "gilP": false,
+    "utna": false,
+    "wife": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wife"
+   },
+   "act": {
+    "wife": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You wake up to seven loaves. Some are moldy.",
+   "cap": "You wake up to 7 loaves. Some are moldy.",
+   "key": [
+    "MOLDY."
+   ],
+   "speaker": "capy",
+   "board": [
+    "LOAVES",
+    "7"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "gil": [
+     1.2,
+     0
+    ],
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "gil",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "gil": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You were defeated by bread. Very moldy bread.",
+   "key": [
+    "BREAD."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "gil": false,
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "As you leave, he tells you a secret.",
+   "key": [
+    "SECRET."
+   ],
+   "place": {
+    "capy": false,
+    "gil": false,
+    "gilP": false,
+    "utna": [
+     0,
+     0
+    ],
+    "wife": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "utna"
+   },
+   "act": {
+    "utna": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "There is a plant on the sea floor. It makes you young again.",
+   "key": [
+    "YOUNG"
+   ],
+   "board": [
+    "THE PLANT",
+    "YOUTH"
+   ],
+   "place": {
+    "capy": false,
+    "gil": false,
+    "gilP": false,
+    "utna": [
+     0,
+     0
+    ],
+    "wife": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "utna"
+   },
+   "act": {
+    "utna": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You tie stones to your feet. You sink. You grab it.",
+   "key": [
+    "STONES"
+   ],
+   "place": {
+    "capy": false,
+    "gil": false,
+    "gilP": [
+     0,
+     0
+    ],
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "gilP"
+   },
+   "act": {
+    "gilP": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.7,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "You plan to test it first. On an old man.",
+   "key": [
+    "TEST"
+   ],
+   "place": {
+    "capy": false,
+    "gil": false,
+    "gilP": [
+     0,
+     0
+    ],
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "gilP"
+   },
+   "act": {
+    "gilP": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "On the way home, you stop. You bathe in a pool.",
+   "key": [
+    "BATHE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "gil": false,
+    "gilP": [
+     1.2,
+     0
+    ],
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gilP"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "gilP"
+    },
+    "gilP": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A snake smells the plant. It slithers off with it.",
+   "key": [
+    "SLITHERS"
+   ],
+   "board": [
+    "THE PLANT",
+    "GONE"
+   ],
+   "place": {
+    "capy": false,
+    "gil": [
+     0,
+     0
+    ],
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "gil"
+   },
+   "act": {
+    "gil": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "As it goes, it sheds its old skin.",
+   "key": [
+    "SKIN."
+   ],
+   "place": {
+    "capy": false,
+    "gil": [
+     0,
+     0
+    ],
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "gil"
+   },
+   "act": {
+    "gil": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You sit down by the water. You weep like a child.",
+   "key": [
+    "WEEP."
+   ],
+   "place": {
+    "capy": false,
+    "gil": [
+     0,
+     0
+    ],
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "gil"
+   },
+   "act": {
+    "gil": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You lost eternal youth on a bath break.",
+   "key": [
+    "BATH"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "gil": [
+     1.2,
+     0
+    ],
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gil"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "gil": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The world's oldest story. Its lesson: eat the snack now.",
+   "key": [
+    "NOW."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "gil": false,
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you eat it right away? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "EAT IT NOW?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "gil": [
+     1.3,
+     0
+    ],
+    "gilP": false,
+    "utna": false,
+    "wife": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gil"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "gil": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Epic of Gilgamesh",
+   "url": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh"
+  },
+  {
+   "title": "Wikipedia: Utnapishtim",
+   "url": "https://en.wikipedia.org/wiki/Utnapishtim"
+  },
+  {
+   "title": "SparkNotes: The Epic of Gilgamesh, Tablet XI",
+   "url": "https://www.sparknotes.com/lit/gilgamesh/section9/"
+  },
+  {
+   "title": "GradeSaver: The Epic of Gilgamesh, Tablet XI summary",
+   "url": "https://www.gradesaver.com/the-epic-of-gilgamesh/study-guide/summary-tablet-xi"
+  },
+  {
+   "title": "New World Encyclopedia: Gilgamesh, Epic of",
+   "url": "https://www.newworldencyclopedia.org/entry/Gilgamesh"
+  },
+  {
+   "title": "Kenyon College: Epic of Gilgamesh summary",
+   "url": "https://www2.kenyon.edu/Depts/Religion/Fac/Suydam/Reln310/Gilgameshsummary.htm"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Gilgamesh is king of Uruk",
+   "terms": [
+    "Gilgamesh",
+    "Uruk"
+   ]
+  },
+  {
+   "claim": "After Enkidu dies, Gilgamesh fears death",
+   "terms": [
+    "Enkidu",
+    "death|died|dies"
+   ]
+  },
+  {
+   "claim": "He seeks Utnapishtim, the man granted immortality",
+   "terms": [
+    "Utnapishtim",
+    "immortality|immortal|eternal life"
+   ]
+  },
+  {
+   "claim": "Utnapishtim survived the great flood",
+   "terms": [
+    "Utnapishtim",
+    "flood"
+   ]
+  },
+  {
+   "claim": "The test is to stay awake for six days and seven nights",
+   "terms": [
+    "six days",
+    "seven nights"
+   ]
+  },
+  {
+   "claim": "Gilgamesh falls asleep",
+   "terms": [
+    "Gilgamesh",
+    "asleep|sleep|slept"
+   ]
+  },
+  {
+   "claim": "Utnapishtim's wife bakes a loaf for each day he sleeps",
+   "terms": [
+    "wife",
+    "loaf|loaves|bread"
+   ]
+  },
+  {
+   "claim": "Some of the loaves are moldy",
+   "terms": [
+    "loaves|loaf|bread",
+    "moldy|mouldy|mold|mould|stale"
+   ]
+  },
+  {
+   "claim": "He is told of a plant on the sea floor that restores youth",
+   "terms": [
+    "plant",
+    "youth|young"
+   ]
+  },
+  {
+   "claim": "He ties stones to his feet to dive for it",
+   "terms": [
+    "stones",
+    "feet"
+   ]
+  },
+  {
+   "claim": "He plans to test it on an old man",
+   "terms": [
+    "old man",
+    "plant"
+   ]
+  },
+  {
+   "claim": "He stops to bathe in a pool",
+   "terms": [
+    "bathe|bathes|bathing|pool|spring|well",
+    "snake|serpent"
+   ]
+  },
+  {
+   "claim": "A snake takes the plant",
+   "terms": [
+    "snake|serpent",
+    "plant"
+   ]
+  },
+  {
+   "claim": "The snake sheds its skin",
+   "terms": [
+    "shed|sheds|sloughed|skin",
+    "snake|serpent"
+   ]
+  },
+  {
+   "claim": "Gilgamesh weeps",
+   "terms": [
+    "Gilgamesh",
+    "wept|weeps|weep|weeping"
+   ]
+  }
+ ]
+}
