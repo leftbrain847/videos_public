@@ -824,10 +824,6 @@
   {
    "title": "Occult World: Anansi",
    "url": "https://occult-world.com/?p=80923"
-  },
-  {
-   "title": "Myth and Folklore Wiki: Anansi",
-   "url": "https://mfr.fandom.com/wiki/Anansi"
   }
  ],
  "claims": [
@@ -913,8 +909,8 @@
   {
    "claim": "The fairy slaps the doll and gets stuck",
    "terms": [
-    "stuck",
-    "doll|fairy|hand"
+    "doll|gum|fairy",
+    "stuck|stick|sticks|glued|caught|trapped|fast"
    ]
   },
   {

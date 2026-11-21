@@ -814,12 +814,20 @@
    "url": "https://en.wikipedia.org/wiki/Hesperides"
   },
   {
-   "title": "Theoi: Apollodorus, Library 2",
-   "url": "https://www.theoi.com/Text/ApollodorusLibrary2.html"
+   "title": "Theoi: Apollodorus, Library 2 (part 2)",
+   "url": "https://www.theoi.com/Text/Ap2b.html"
   },
   {
    "title": "Theoi: Hesperides",
-   "url": "https://www.theoi.com/Nymphe/NymphaiHesperides.html"
+   "url": "https://www.theoi.com/Titan/Hesperides.html"
+  },
+  {
+   "title": "Wikipedia: Apples of the Hesperides",
+   "url": "https://en.wikipedia.org/wiki/Apples_of_the_Hesperides"
+  },
+  {
+   "title": "Perseus (Tufts): Herakles, the apples of the Hesperides",
+   "url": "https://static.perseus.tufts.edu/Herakles/apples.html"
   },
   {
    "title": "Wikipedia: Golden apple",
@@ -874,14 +882,13 @@
    "claim": "Atlas returns and offers to deliver the apples himself",
    "terms": [
     "Atlas",
-    "Eurystheus",
-    "himself"
+    "Eurystheus|himself|deliver|carry"
    ]
   },
   {
    "claim": "Heracles pretends to agree and asks him to hold it while he puts a pad on his head",
    "terms": [
-    "pad|cushion",
+    "pad|padding|cushion",
     "head|shoulders"
    ]
   },

@@ -785,8 +785,16 @@
    "url": "https://en.wikipedia.org/wiki/Labours_of_Hercules"
   },
   {
-   "title": "Theoi: Apollodorus, Library 2",
-   "url": "https://www.theoi.com/Text/ApollodorusLibrary2.html"
+   "title": "Theoi: Apollodorus, Library 2 (part 1)",
+   "url": "https://www.theoi.com/Text/Ap2a.html"
+  },
+  {
+   "title": "Theoi: Apollodorus, Library 2 (part 2)",
+   "url": "https://www.theoi.com/Text/Ap2b.html"
+  },
+  {
+   "title": "Perseus (Tufts): Herakles, the Augean stables",
+   "url": "https://static.perseus.tufts.edu/Herakles/augean.html"
   },
   {
    "title": "Wikipedia: Alfeios",
@@ -842,8 +850,8 @@
   {
    "claim": "He breaks holes in the walls of the stables",
    "terms": [
-    "wall|walls|foundations",
-    "rivers|river"
+    "breach|holes|hole|wall|walls|foundations",
+    "Alpheus|Peneus|rivers|river"
    ]
   },
   {
@@ -857,7 +865,7 @@
    "claim": "Eurystheus refuses to count the labor because Heracles was paid",
    "terms": [
     "Eurystheus",
-    "count|counted"
+    "hire|count|counted|discount|discounted|admit"
    ]
   },
   {
