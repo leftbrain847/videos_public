@@ -1,0 +1,8 @@
+{
+ "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
+ "mode": "facts",
+ "release": "",
+ "listen": false,
+ "replace": false,
+ "videos": ["s4_01_music_city_miracle"]
+}

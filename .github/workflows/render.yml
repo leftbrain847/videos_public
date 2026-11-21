@@ -2,6 +2,11 @@ name: render
 # Renders football shorts on demand. No secrets; every action pinned to a commit SHA; the token is read-only except in
 # the release job, which only uploads files to a GitHub Release. Masters and web copies go to the release, never to git.
 on:
+  # J's phone can start a run by hand; Claude starts runs by merging a PR that edits football/render_queue.json
+  # (Claude's token can't call workflow_dispatch). Only merged PRs reach main, so the queue is as trusted as main.
+  push:
+    branches: [main]
+    paths: [football/render_queue.json]
   workflow_dispatch:
     inputs:
       videos:
@@ -24,7 +29,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: render-${{ inputs.release || github.run_id }}
+  group: render-${{ github.run_id }}   # one release tag per run (football-batch-1a, -1b, ...): two runs on one tag could race on release create
   cancel-in-progress: false
 defaults:
   run:
@@ -36,20 +41,26 @@ jobs:
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
       ids: ${{ steps.plan.outputs.ids }}
+      release: ${{ steps.plan.outputs.release }}
+      listen: ${{ steps.plan.outputs.listen }}
+      replace: ${{ steps.plan.outputs.replace }}
+      mode: ${{ steps.plan.outputs.mode }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with: { persist-credentials: false }
       - id: plan
         env:
+          EVENT: ${{ github.event_name }}
           VIDEOS: ${{ inputs.videos }}
           TAG: ${{ inputs.release }}
-        run: |
-          [[ -z "$TAG" || "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ ]] || { printf 'bad release tag\n'; exit 1; }
-          python3 tools/render_plan.py >> "$GITHUB_OUTPUT"
+          LISTEN: ${{ inputs.listen }}
+          REPLACE: ${{ inputs.replace }}
+        run: python3 tools/render_plan.py >> "$GITHUB_OUTPUT"
 
   # Always runs: a release needs every claim checked against two sources.
   facts:
     needs: plan
+    continue-on-error: ${{ needs.plan.outputs.mode == 'render' }}   # render: a failed claim holds back only its own video (see release); facts mode: red
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -65,6 +76,7 @@ jobs:
 
   render:
     needs: plan
+    if: ${{ needs.plan.outputs.mode == 'render' }}
     runs-on: ubuntu-latest
     timeout-minutes: 120
     strategy:
@@ -127,7 +139,7 @@ jobs:
 
   # Its own job, and only after the release job, so the speech-to-text install and model can't touch the released files.
   listen:
-    if: ${{ !cancelled() && inputs.listen && needs.render.result != 'skipped' }}
+    if: ${{ !cancelled() && needs.plan.outputs.listen == 'true' && needs.render.result != 'skipped' }}
     needs: [plan, render, release]
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -155,23 +167,30 @@ jobs:
         with: { name: 'listen-${{ matrix.id }}', path: football/out/listen/, retention-days: 30 }
 
   release:
-    if: ${{ !cancelled() && inputs.release != '' && needs.facts.result == 'success' && needs.render.result != 'skipped' }}
-    needs: [render, facts]
+    if: ${{ !cancelled() && needs.plan.outputs.release != '' && needs.render.result != 'skipped' }}
+    needs: [plan, render, facts]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
       contents: write   # this job only: create the release and upload its files
     steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with: { persist-credentials: false, path: src }
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with: { pattern: 'media-*', path: files, merge-multiple: true }
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        continue-on-error: true   # no facts artifact = no video passes
+        with: { name: facts, path: facts }
+      - name: Keep only videos whose every claim passed two sources
+        run: python3 src/tools/release_filter.py facts files
       - name: Upload to the release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ inputs.release }}
-          REPLACE: ${{ inputs.replace }}
+          TAG: ${{ needs.plan.outputs.release }}
+          REPLACE: ${{ needs.plan.outputs.replace }}
         run: |
           [[ "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ ]] || { printf 'bad release tag\n'; exit 1; }
-          compgen -G 'files/*' >/dev/null || { printf 'no rendered files to release\n'; exit 1; }
+          compgen -G 'files/*' >/dev/null || { printf 'nothing passed facts and rendered; nothing to release\n'; exit 0; }
           gh release view "$TAG" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || \
             gh release create "$TAG" -R "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "$TAG" --notes "Football shorts: 1080x1920 masters (*.master.mp4), 720x1280 web copies, posters and contact sheets."
           if [[ "$REPLACE" == "true" ]]; then gh release upload "$TAG" files/* -R "$GITHUB_REPOSITORY" --clobber
