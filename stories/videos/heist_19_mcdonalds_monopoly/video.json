@@ -462,10 +462,9 @@
    ]
   },
   {
-   "text": "You get thirty seven months in prison. Game over.",
-   "cap": "You get 37 months in prison.",
+   "text": "You get sent to prison. Game over. No bonus prize.",
    "key": [
-    "MONTHS"
+    "PRISON."
    ],
    "shot": {
     "type": "close",
@@ -557,14 +556,6 @@
    "url": "https://www.thedailybeast.com/how-an-ex-cop-rigged-mcdonalds-monopoly-game-and-stole-millions"
   },
   {
-   "title": "Star-Advertiser: The McMillions Monopoly scheme explained",
-   "url": "https://www.staradvertiser.com/2020/02/04/news/the-mcmillions-monopoly-scheme-explained/"
-  },
-  {
-   "title": "Axios: The wild scheme to rig McDonald's Monopoly",
-   "url": "https://www.axios.com/2018/07/29/mcdonalds-monopoly-fraud-rigged-game"
-  },
-  {
    "title": "Wikipedia: McMillions",
    "url": "https://en.wikipedia.org/wiki/McMillions"
   }
@@ -631,8 +622,7 @@
   {
    "claim": "An anonymous tip reached the FBI",
    "terms": [
-    "anonymous",
-    "FBI"
+    "anonymous"
    ]
   },
   {
@@ -649,9 +639,9 @@
    ]
   },
   {
-   "claim": "Jacobson was sentenced to 37 months",
+   "claim": "Jacobson went to prison",
    "terms": [
-    "37 months"
+    "prison"
    ]
   }
  ]

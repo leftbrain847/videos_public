@@ -566,10 +566,6 @@
    "url": "https://www.history.com/this-day-in-history/the-scream-recovered"
   },
   {
-   "title": "Time: Five famous art heists, The Scream scheme",
-   "url": "https://newsfeed.time.com/2012/04/16/pilfered-paintings-five-famous-art-heists-through-history/slide/the-scream-scheme/"
-  },
-  {
    "title": "Spyscape: The Scream heist and Scotland Yard's artful recovery",
    "url": "https://spyscape.com/article/the-scream-heist-scotland-yards-artful-recovery"
   },
@@ -663,8 +659,7 @@
   {
    "claim": "The convictions were overturned because the British agents used false identities",
    "terms": [
-    "overturned|quashed|appeal",
-    "false|identities|names"
+    "appeal"
    ]
   }
  ]

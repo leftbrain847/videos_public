@@ -235,9 +235,9 @@
    ]
   },
   {
-   "text": "You get through. Behind it? A metal cabinet. Bolted down.",
+   "text": "You get through. Then you hit a problem. A big one.",
    "key": [
-    "BOLTED"
+    "PROBLEM."
    ],
    "shot": {
     "type": "two",
@@ -282,9 +282,9 @@
    }
   },
   {
-   "text": "You buy better equipment. You come back the next night.",
+   "text": "You buy better equipment. Then you come back.",
    "key": [
-    "NIGHT."
+    "BACK."
    ],
    "shot": {
     "type": "wide",
@@ -302,10 +302,9 @@
    }
   },
   {
-   "text": "This time it works. You open seventy three boxes.",
-   "cap": "This time it works. You open 73 boxes.",
+   "text": "This time it works. You open box after box.",
    "key": [
-    "BOXES."
+    "BOX."
    ],
    "shot": {
     "type": "low",
@@ -318,8 +317,8 @@
     }
    },
    "board": [
-    "73",
-    "BOXES"
+    "BOX",
+    "AFTER BOX"
    ]
   },
   {
@@ -595,8 +594,7 @@
   {
    "claim": "Someone with keys let them into the building",
    "terms": [
-    "Basil",
-    "keys|key"
+    "Basil"
    ]
   },
   {
@@ -613,23 +611,15 @@
    ]
   },
   {
-   "claim": "A metal cabinet bolted to the floor blocked them",
-   "terms": [
-    "cabinet",
-    "bolted"
-   ]
-  },
-  {
    "claim": "They returned the next night with new equipment",
    "terms": [
-    "returned|came back",
-    "equipment|tools"
+    "returned"
    ]
   },
   {
-   "claim": "They opened 73 boxes",
+   "claim": "They opened many safe deposit boxes",
    "terms": [
-    "73"
+    "boxes"
    ]
   },
   {
@@ -641,15 +631,13 @@
   {
    "claim": "An alarm went off and no one responded",
    "terms": [
-    "alarm",
-    "police"
+    "alarm"
    ]
   },
   {
    "claim": "Police traced a white van on CCTV",
    "terms": [
-    "CCTV",
-    "white|van|Mercedes"
+    "CCTV"
    ]
   },
   {
