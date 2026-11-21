@@ -122,7 +122,7 @@
    ]
   },
   {
-   "text": "A Royal Mail train heads to London. It's carrying used cash. Lots of it.",
+   "text": "A mail train heads to London. It's carrying used cash. Lots of it.",
    "key": [
     "CASH."
    ],
@@ -595,10 +595,6 @@
    "url": "https://en.wikipedia.org/wiki/Ronnie_Biggs"
   },
   {
-   "title": "British Transport Police: The Great Train Robbery",
-   "url": "https://www.btp.police.uk/police-forces/british-transport-police/areas/campaigns/our-history/crime-history/great-train-robbery/"
-  },
-  {
    "title": "SBS News: Train robbery was crime of the century",
    "url": "https://www.sbs.com.au/news/article/train-robbery-was-crime-of-the-century/zehugpdu6"
   },
@@ -630,9 +626,9 @@
    ]
   },
   {
-   "claim": "A Royal Mail train was heading to London",
+   "claim": "A mail train was heading to London",
    "terms": [
-    "Royal Mail",
+    "train",
     "London"
    ]
   },
