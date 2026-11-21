@@ -86,20 +86,37 @@
    },
    "at": "right",
    "hold": "clipboard"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#ff3c00",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "The Browns fell behind seventeen to nothing. Then they won anyway. Again.",
-   "cap": "The Browns fell behind 17 to 0. Then they won anyway. Again.",
+   "text": "Down seventeen to nothing. You win anyway. Again.",
+   "cap": "Down 17-0. You win anyway. Again.",
    "key": [
     "AGAIN."
    ],
+   "speaker": "capy",
    "place": {
+    "qb": [
+     0.2,
+     0
+    ],
     "te": false,
     "rb": false,
     "hou": false,
     "coach": false,
+    "fan": false,
     "capy": [
      -2.4,
      0.8
@@ -121,25 +138,105 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "One week earlier, they had lost in overtime on a failed two point try.",
-   "cap": "One week earlier, they had lost in overtime on a failed 2 point try.",
+   "text": "You're Deshaun Watson. Cleveland Browns. Number four.",
+   "cap": "You're Deshaun Watson. Cleveland Browns. Number 4.",
    "key": [
-    "OVERTIME"
+    "BROWNS."
    ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "LAST WEEK:",
-     "L 22-23"
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Today's opponent? Houston. Your old team. Awkward.",
+   "key": [
+    "OLD"
+   ],
+   "board": [
+    "HOU AT CLE",
+    "OLD TEAM"
+   ],
+   "place": {
+    "qb": [
+     -1.4,
+     0
+    ],
+    "te": false,
+    "rb": false,
+    "hou": [
+     1.6,
+     0
+    ],
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     1.4,
+     0,
+     -2
     ]
    },
+   "act": {
+    "qb": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "hou"
+    },
+    "hou": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Last week? An overtime loss. A failed two point try.",
+   "cap": "Last week? An overtime loss. A failed 2-point try.",
+   "key": [
+    "FAILED"
+   ],
+   "board": [
+    "LAST WEEK",
+    "L 23-22 OT"
+   ],
    "place": {
-    "coach": "center",
-    "qb": false
+    "qb": false,
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": [
+     0,
+     0.4
+    ],
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "medium",
@@ -148,14 +245,137 @@
    "act": {
     "coach": {
      "mood": "sad",
-     "action": "facepalm"
+     "action": "facepalm",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Now they face Houston, Deshaun Watson's old team.",
+   "text": "Early on, the Texans lead seventeen to nothing. Yikes.",
+   "cap": "Early on, the Texans lead 17-0. Yikes.",
    "key": [
-    "HOUSTON,"
+    "17-0."
+   ],
+   "board": [
+    "HOU 17",
+    "CLE 0"
+   ],
+   "place": {
+    "qb": false,
+    "te": false,
+    "rb": false,
+    "hou": [
+     0,
+     0
+    ],
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "hou"
+   },
+   "act": {
+    "hou": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It looks over. It is not. Not even close.",
+   "key": [
+    "NOT."
+   ],
+   "speaker": "capy",
+   "place": {
+    "qb": [
+     1.6,
+     0
+    ],
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "You chip away. One drive at a time. Patiently.",
+   "key": [
+    "DRIVE"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "COMEBACK",
+     "ONE DRIVE"
+    ]
+   },
+   "place": {
+    "qb": [
+     1.4,
+     0
+    ],
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": [
+     -1.2,
+     0
+    ],
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "coach",
+    "with": "qb"
+   },
+   "act": {
+    "coach": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "coach"
+    }
+   }
+  },
+  {
+   "text": "You throw for three hundred twelve yards. Against your old team.",
+   "cap": "You throw for 312 yards. Against your old team.",
+   "key": [
+    "312"
+   ],
+   "board": [
+    "WATSON",
+    "312 YDS"
    ],
    "set": "field",
    "setOpts": {
@@ -165,131 +385,537 @@
     ]
    },
    "place": {
-    "qb": "left",
-    "hou": "right"
-   },
-   "shot": {
-    "type": "two",
-    "on": "qb",
-    "with": "hou"
-   },
-   "act": {
-    "qb": {
-     "mood": "neutral",
-     "action": "hold",
-     "look": "hou"
-    },
-    "hou": {
-     "mood": "smug",
-     "action": "cross",
-     "look": "qb"
-    }
-   }
-  },
-  {
-   "text": "Early on, the Texans lead seventeen to nothing. It looks over.",
-   "cap": "Early on, the Texans lead 17 to 0. It looks over.",
-   "key": [
-    "17"
-   ],
-   "shot": {
-    "type": "medium",
-    "on": "hou"
-   },
-   "act": {
-    "hou": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    },
-    "qb": {
-     "mood": "worried"
-    }
-   }
-  },
-  {
-   "text": "Then Cleveland starts chipping away, one drive at a time.",
-   "key": [
-    "CHIPPING"
-   ],
-   "place": {
-    "qb": "center",
-    "rb": [
-     -2.2,
-     -1.2
+    "qb": [
+     0,
+     0
     ],
-    "te": [
-     2.2,
-     -1.4
-    ],
-    "hou": false
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "wide",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "angry",
-     "action": "point",
-     "look": "camera"
-    },
-    "rb": {
-     "mood": "neutral",
-     "action": "clap"
-    },
-    "te": {
-     "mood": "neutral"
-    }
-   }
-  },
-  {
-   "text": "Watson throws for three hundred twelve yards.",
-   "cap": "Watson throws for 312 yards.",
-   "key": [
-    "312"
-   ],
-   "shot": {
-    "type": "low",
+    "type": "high",
     "on": "qb"
    },
    "act": {
     "qb": {
      "mood": "happy",
      "action": "throw",
-     "look": "te"
-    }
-   }
-  },
-  {
-   "text": "Late in the fourth quarter, Cleveland still trails.",
-   "cap": "Late in the 4th quarter, Cleveland still trails.",
-   "key": [
-    "TRAILS."
-   ],
-   "shot": {
-    "type": "close",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "worried",
-     "action": "idle",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Watson finds tight end Harold Fannin for thirty yards.",
-   "cap": "Watson finds tight end Harold Fannin for 30 yards.",
+   "text": "Final minute. You still trail. Of course.",
    "key": [
-    "30"
+    "TRAIL."
+   ],
+   "speaker": "capy",
+   "board": [
+    "FINAL MINUTE",
+    "CLE TRAILS"
    ],
    "place": {
-    "te": [
-     1.8,
-     0.0
+    "qb": [
+     1.6,
+     0
+    ],
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
     ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "You throw the go ahead touchdown. Ice cold.",
+   "key": [
+    "TOUCHDOWN."
+   ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CLE 20",
+     "HOU 24"
+    ],
+    "endZone": 45,
+    "zoneA": "#03202f",
+    "zoneB": "#ff3c00"
+   },
+   "place": {
+    "capy": false,
+    "rb": false,
+    "coach": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "te",
+    "lead": 0
+   },
+   "sfx": [
+    [
+     0.65,
+     "roar"
+    ]
+   ],
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        38.0,
+        0.0
+       ],
+       [
+        0.054,
+        37.62,
+        0.0
+       ],
+       [
+        0.109,
+        37.25,
+        0.0
+       ],
+       [
+        0.163,
+        36.88,
+        0.0
+       ],
+       [
+        0.217,
+        36.5,
+        0.0
+       ],
+       [
+        0.266,
+        36.5,
+        0.0
+       ],
+       [
+        0.315,
+        36.5,
+        0.0
+       ],
+       [
+        0.364,
+        36.5,
+        0.0
+       ],
+       [
+        0.413,
+        36.5,
+        0.0
+       ],
+       [
+        0.462,
+        36.5,
+        0.0
+       ],
+       [
+        0.511,
+        36.5,
+        0.0
+       ],
+       [
+        0.56,
+        36.5,
+        0.0
+       ],
+       [
+        0.609,
+        36.5,
+        0.0
+       ],
+       [
+        0.658,
+        36.5,
+        0.0
+       ],
+       [
+        0.706,
+        36.5,
+        0.0
+       ],
+       [
+        0.755,
+        36.5,
+        0.0
+       ],
+       [
+        0.804,
+        36.5,
+        0.0
+       ],
+       [
+        0.853,
+        36.5,
+        0.0
+       ],
+       [
+        0.902,
+        36.5,
+        0.0
+       ],
+       [
+        0.951,
+        36.5,
+        0.0
+       ],
+       [
+        1.0,
+        36.5,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.217,
+        "idle"
+       ],
+       [
+        0.248,
+        "throw"
+       ],
+       [
+        0.714,
+        "cheer"
+       ]
+      ],
+      "face": 90
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        42.0,
+        4.0
+       ],
+       [
+        0.049,
+        42.38,
+        3.87
+       ],
+       [
+        0.098,
+        42.75,
+        3.73
+       ],
+       [
+        0.147,
+        43.12,
+        3.6
+       ],
+       [
+        0.197,
+        43.5,
+        3.47
+       ],
+       [
+        0.246,
+        43.88,
+        3.33
+       ],
+       [
+        0.295,
+        44.25,
+        3.2
+       ],
+       [
+        0.344,
+        44.62,
+        3.07
+       ],
+       [
+        0.393,
+        45.0,
+        2.93
+       ],
+       [
+        0.442,
+        45.38,
+        2.8
+       ],
+       [
+        0.491,
+        45.75,
+        2.67
+       ],
+       [
+        0.54,
+        46.12,
+        2.53
+       ],
+       [
+        0.59,
+        46.5,
+        2.4
+       ],
+       [
+        0.641,
+        46.56,
+        2.4
+       ],
+       [
+        0.692,
+        46.62,
+        2.4
+       ],
+       [
+        0.743,
+        46.69,
+        2.4
+       ],
+       [
+        0.795,
+        46.75,
+        2.4
+       ],
+       [
+        0.846,
+        46.81,
+        2.4
+       ],
+       [
+        0.897,
+        46.88,
+        2.4
+       ],
+       [
+        0.949,
+        46.94,
+        2.4
+       ],
+       [
+        1.0,
+        47,
+        2.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.59,
+        "catch"
+       ],
+       [
+        0.714,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     },
+     "hou": {
+      "path": [
+       [
+        0.0,
+        42.5,
+        -1.8
+       ],
+       [
+        0.049,
+        42.67,
+        -1.68
+       ],
+       [
+        0.098,
+        42.85,
+        -1.57
+       ],
+       [
+        0.147,
+        43.02,
+        -1.45
+       ],
+       [
+        0.197,
+        43.2,
+        -1.33
+       ],
+       [
+        0.246,
+        43.38,
+        -1.22
+       ],
+       [
+        0.295,
+        43.55,
+        -1.1
+       ],
+       [
+        0.344,
+        43.73,
+        -0.98
+       ],
+       [
+        0.393,
+        43.9,
+        -0.87
+       ],
+       [
+        0.442,
+        44.08,
+        -0.75
+       ],
+       [
+        0.491,
+        44.25,
+        -0.63
+       ],
+       [
+        0.54,
+        44.43,
+        -0.52
+       ],
+       [
+        0.59,
+        44.6,
+        -0.4
+       ],
+       [
+        0.641,
+        44.6,
+        -0.4
+       ],
+       [
+        0.692,
+        44.6,
+        -0.4
+       ],
+       [
+        0.743,
+        44.6,
+        -0.4
+       ],
+       [
+        0.795,
+        44.6,
+        -0.4
+       ],
+       [
+        0.846,
+        44.6,
+        -0.4
+       ],
+       [
+        0.897,
+        44.6,
+        -0.4
+       ],
+       [
+        0.949,
+        44.6,
+        -0.4
+       ],
+       [
+        1.0,
+        44.6,
+        -0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.621,
+        "slump"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.31,
+      36.8,
+      1.7,
+      0
+     ],
+     [
+      0.45,
+      41.5,
+      3.6,
+      1.2
+     ],
+     [
+      0.59,
+      46.5,
+      1.5,
+      2.4
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.59,
+      "te"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Browns twenty seven, Texans twenty four. Final.",
+   "cap": "Browns 27, Texans 24. Final.",
+   "key": [
+    "27,"
+   ],
+   "board": [
+    "CLE 27",
+    "HOU 24"
+   ],
+   "place": {
+    "qb": [
+     -1.2,
+     0
+    ],
+    "te": [
+     1.4,
+     0
+    ],
+    "rb": false,
+    "hou": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "two",
@@ -299,121 +925,40 @@
    "act": {
     "qb": {
      "mood": "happy",
-     "action": "throw",
-     "look": "te"
+     "action": "celebrate",
+     "look": "camera"
     },
     "te": {
      "mood": "happy",
-     "action": "hold",
+     "action": "cheer",
      "look": "qb"
     }
    }
   },
   {
-   "text": "In the final minute, the Browns score the go-ahead touchdown.",
+   "text": "That's your sixth fourth quarter game winning drive.",
+   "cap": "That's your sixth 4th-quarter game-winning drive.",
    "key": [
-    "FINAL"
+    "SIXTH"
    ],
-   "place": {
-    "rb": [
-     -0.8,
-     0.6
-    ],
-    "te": [
-     2.4,
-     -1.6
-    ],
-    "qb": [
-     1.0,
-     -2.0
-    ]
-   },
-   "shot": {
-    "type": "medium",
-    "on": "rb"
-   },
-   "act": {
-    "rb": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Browns win, twenty seven to twenty four.",
-   "cap": "Browns win, 27 to 24.",
-   "key": [
-    "27"
-   ],
-   "shot": {
-    "type": "high",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "rb": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "te": {
-     "mood": "happy",
-     "action": "clap"
-    }
-   }
-  },
-  {
-   "text": "That's Watson's sixth game-winning drive this season. Tied with Bo Nix for the most in the league.",
-   "cap": "That's Watson's 6th game-winning drive this season. Tied with Bo Nix for the most in the league.",
-   "key": [
-    "6TH"
-   ],
-   "set": "locker",
+   "set": "office",
    "setOpts": {
     "boardText": [
-     "GW DRIVES:",
+     "GW DRIVES",
      "6"
     ]
    },
    "place": {
-    "capy": [
-     -2.2,
-     0.9
-    ],
-    "qb": "center"
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "qb"
-   },
-   "act": {
-    "capy": {
-     "mood": "smug",
-     "action": "point",
-     "look": "qb"
-    },
-    "qb": {
-     "mood": "smug",
-     "action": "cross",
-     "look": "camera"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "And the Browns have six wins. Every single one came on a game-winning drive.",
-   "cap": "And the Browns have 6 wins. Every single one came on a game-winning drive.",
-   "key": [
-    "EVERY"
-   ],
-   "place": {
-    "capy": false,
     "qb": false,
-    "coach": "center"
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": [
+     0.4,
+     0.6
+    ],
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "medium",
@@ -421,30 +966,37 @@
    },
    "act": {
     "coach": {
-     "mood": "smug",
-     "action": "hold",
+     "mood": "happy",
+     "action": "point",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Is this team clutch, or just lucky? Clutch or lucky?",
+   "text": "The Browns are six and four. Somehow.",
+   "cap": "The Browns are 6-4. Somehow.",
    "key": [
-    "CLUTCH"
+    "6-4."
    ],
-   "set": "press",
-   "setOpts": {
-    "boardText": [
-     "BROWNS 27",
-     "TEXANS 24"
-    ]
-   },
+   "speaker": "capy",
+   "board": [
+    "BROWNS",
+    "6-4"
+   ],
    "place": {
-    "capy": [
-     -1.6,
-     1.0
+    "qb": false,
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": [
+     1.6,
+     0.4
     ],
-    "coach": "center"
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
    },
    "shot": {
     "type": "two",
@@ -453,35 +1005,234 @@
    },
    "act": {
     "capy": {
-     "mood": "smug",
-     "action": "talk",
+     "mood": "shocked",
+     "action": "idle",
      "look": "camera"
     },
     "coach": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Six wins. Six comeback drives. Every single one. Wow.",
+   "cap": "6 wins. 6 comeback drives. Every single one. Wow.",
+   "key": [
+    "EVERY"
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
      "mood": "smug",
      "action": "cross",
      "look": "camera"
     }
+   }
+  },
+  {
+   "text": "Browns fans, your heart rate called. It's tired. Very tired.",
+   "key": [
+    "TIRED."
+   ],
+   "speaker": "capy",
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "CLE",
+     "6-4"
+    ]
    },
-   "speaker": "capy"
+   "place": {
+    "qb": false,
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
+    "capy": [
+     -1.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "worried",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Is this team clutch? Or just lucky?",
+   "key": [
+    "CLUTCH?",
+    "LUCKY?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "CLUTCH",
+    "OR LUCKY?"
+   ],
+   "place": {
+    "qb": false,
+    "te": false,
+    "rb": false,
+    "hou": false,
+    "coach": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
   }
  ],
  "sources": [
   {
-   "title": "NFL.com: 2026 NFL season, Week 10: What we learned from Sunday's games",
-   "url": "https://www.nfl.com/news/2026-nfl-season-week-10-what-we-learned-from-sunday-s-games"
+   "title": "ESPN Africa (AP): Deshaun Watson throws for 312 yards against his old team as the Browns rally past the Texans 27-24",
+   "url": "https://africa.espn.com/nfl/recap/_/gameId/401873056"
   },
   {
-   "title": "ESPN: Big questions from NFL Week 10",
-   "url": "https://www.espn.com/nfl/story/_/id/50443510/week-10-sunday-games-takeaways-questions-2026"
+   "title": "TSN (AP): Watson throws for 312 yards against his old team as Browns rally past Texans",
+   "url": "https://www.tsn.ca/nfl/article/watson-throws-for-312-yards-against-his-old-team-as-browns-rally-past-texans/"
   },
   {
-   "title": "Bleacher Report: 2026 NFL Week 11 biggest takeaways for every team",
-   "url": "https://bleacherreport.com/articles/25535540-2026-nfl-week-11-biggest-takeaways-every-team"
+   "title": "Spectrum News 1 (AP): Browns rally past the Texans 27-24",
+   "url": "https://spectrumnews1.com/oh/columbus/news/2026/11/16/browns-rally-past-the-texans-27-24"
   },
   {
-   "title": "AP (News 5 Cleveland): Saints hold on for a 23-22 OT win over the Browns by stopping a 2-point conversion",
+   "title": "FOX 26 Houston (AP): Deshaun Watson throws for 312 yards against his old team",
+   "url": "https://www.fox26houston.com/sports/houston-texans-cleveland-browns-recap-november-2026.amp"
+  },
+  {
+   "title": "News 5 Cleveland: Deshaun Watson rallies Browns to 27-24 win over Texans",
+   "url": "https://www.news5cleveland.com/sports/browns/deshaun-watson-rallies-browns-to-27-24-win-over-texans"
+  },
+  {
+   "title": "Yahoo Sports: Deshaun Watson orchestrates his sixth 4th-quarter game-winning drive for a 27-24 victory and a 6-4 mark",
+   "url": "https://sports.yahoo.com/articles/deshaun-watson-orchestrates-sixth-4th-215614077.html"
+  },
+  {
+   "title": "NFL.com: Browns follow familiar path, slow start, fast finish and another one-score victory",
+   "url": "https://www.nfl.com/news/browns-follow-familiar-path-slow-start-fast-finish-and-another-one-score-victory"
+  },
+  {
+   "title": "BrownsZone: Watson rallies Cleveland from early hole, then leads another winning drive in final minute",
+   "url": "https://www.brownszone.com/2026/11/15/browns-27-texans-24-deshaun-watson-rallies-cleveland-from-early-hole-then-leads-another-winning-drive-in-final-minute"
+  },
+  {
+   "title": "OutKick (Fox News): Browns make NFL history as they storm back for sixth win",
+   "url": "https://www.foxnews.com/outkick-sports/browns-make-nfl-history-storm-back-pick-sixth-win-season-texans"
+  },
+  {
+   "title": "News 5 Cleveland (AP): Saints hold on for a 23-22 OT win over the Browns by stopping a 2-point conversion",
    "url": "https://www.news5cleveland.com/news/local-news/saints-hold-on-for-a-23-22-ot-win-over-the-browns-by-stopping-a-2-point-conversion"
+  },
+  {
+   "title": "Fox Sports (AP): Saints hold on for a 23-22 overtime victory over the Browns",
+   "url": "https://www.foxsports.com/articles/nfl/saints-hold-on-for-a-2322-overtime-victory-over-the-browns-by-stopping-a-2point-conversion"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The week before, the Browns lost in overtime on a failed 2-point try",
+   "terms": [
+    "23-22",
+    "2-point"
+   ]
+  },
+  {
+   "claim": "Houston is Watson's old team",
+   "terms": [
+    "old team|former team"
+   ]
+  },
+  {
+   "claim": "The Texans led 17-0",
+   "terms": [
+    "17-0|17 0|17-point"
+   ]
+  },
+  {
+   "claim": "Watson threw for 312 yards",
+   "terms": [
+    "Watson",
+    "312"
+   ]
+  },
+  {
+   "claim": "Watson threw the go-ahead touchdown in the final minute",
+   "terms": [
+    "go-ahead|final minute"
+   ]
+  },
+  {
+   "claim": "Browns won 27-24",
+   "terms": [
+    "27-24"
+   ]
+  },
+  {
+   "claim": "It was Watson's sixth fourth-quarter game-winning drive",
+   "terms": [
+    "sixth"
+   ]
+  },
+  {
+   "claim": "The Browns are 6-4, every win on a game-winning drive",
+   "terms": [
+    "6-4"
+   ]
   }
  ]
 }

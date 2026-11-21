@@ -68,19 +68,36 @@
     -2.0
    ],
    "hold": "football"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#1b1b1b",
+    "pants": "#ffb612",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "Joe Burrow just tied a Peyton Manning record. Five straight games with four or more touchdowns.",
-   "cap": "Joe Burrow just tied a Peyton Manning record. 5 straight games with 4 or more touchdowns.",
+   "text": "Five straight games. Four touchdown passes or more. Every time.",
+   "cap": "5 straight games. 4 touchdown passes or more. Every time.",
    "key": [
     "5"
    ],
+   "speaker": "capy",
    "place": {
+    "qb": [
+     0.2,
+     0
+    ],
     "wr": false,
     "oldqb": false,
     "stl": false,
+    "fan": false,
     "capy": [
      -2.4,
      0.8
@@ -102,48 +119,165 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Manning set that mark back in two thousand four, with the Colts.",
-   "cap": "Manning set that mark back in 2004, with the Colts.",
+   "text": "You're Joe Burrow. Cincinnati Bengals. You're on fire.",
    "key": [
-    "2004,"
+    "BURROW."
    ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "RECORD:",
-     "5 GAMES"
-    ]
-   },
+   "board": [
+    "BURROW",
+    "5 STRAIGHT"
+   ],
    "place": {
-    "oldqb": "left",
-    "qb": "right"
+    "qb": [
+     0,
+     0
+    ],
+    "wr": false,
+    "oldqb": false,
+    "stl": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "two",
-    "on": "oldqb",
-    "with": "qb"
+    "type": "low",
+    "on": "qb"
    },
    "act": {
-    "oldqb": {
-     "mood": "smug",
-     "action": "point",
-     "look": "qb"
-    },
     "qb": {
-     "mood": "happy",
+     "mood": "smug",
      "action": "hold",
-     "look": "oldqb"
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Sunday night, under the lights, the Bengals host their rivals, the Steelers.",
+   "text": "Only one quarterback had ever done that. Peyton Manning. Legend.",
    "key": [
-    "STEELERS."
+    "MANNING."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "RECORD",
+     "MANNING"
+    ]
+   },
+   "place": {
+    "qb": false,
+    "wr": false,
+    "oldqb": [
+     0.4,
+     0.6
+    ],
+    "stl": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "oldqb"
+   },
+   "act": {
+    "oldqb": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He did it in two thousand four. His M V P season.",
+   "cap": "He did it in 2004. His MVP season.",
+   "key": [
+    "2004."
+   ],
+   "board": [
+    "MANNING",
+    "2004 MVP"
+   ],
+   "speaker": "capy",
+   "place": {
+    "qb": false,
+    "wr": false,
+    "oldqb": [
+     1.6,
+     0.4
+    ],
+    "stl": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "oldqb"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "oldqb"
+    },
+    "oldqb": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Four touchdowns is a great day. Five weeks straight? Absurd.",
+   "cap": "4 touchdowns is a great day. 5 weeks straight? Absurd.",
+   "key": [
+    "ABSURD."
+   ],
+   "speaker": "capy",
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "4+ TD GAMES",
+     "5 IN A ROW"
+    ]
+   },
+   "place": {
+    "qb": false,
+    "wr": false,
+    "oldqb": false,
+    "stl": false,
+    "fan": false,
+    "capy": [
+     -1.0,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     1.0,
+     0.4,
+     1.2
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Sunday night, game five. The Steelers come to town. No pressure.",
+   "cap": "Sunday night, game 5. The Steelers come to town. No pressure.",
+   "key": [
+    "STEELERS"
    ],
    "set": "field",
    "setOpts": {
@@ -153,236 +287,659 @@
     ]
    },
    "place": {
-    "qb": "center",
-    "stl": "right",
-    "wr": "left"
+    "qb": [
+     -1.4,
+     0
+    ],
+    "wr": false,
+    "oldqb": false,
+    "stl": [
+     1.6,
+     0
+    ],
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "wide",
-    "on": "qb"
+    "on": "qb",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
    },
    "act": {
     "qb": {
      "mood": "neutral",
-     "action": "hold"
-    },
-    "stl": {
-     "mood": "angry",
-     "action": "cross"
-    }
-   }
-  },
-  {
-   "text": "By halftime, Burrow has three hundred two yards and three touchdowns.",
-   "cap": "By halftime, Burrow has 302 yards and 3 touchdowns.",
-   "key": [
-    "302"
-   ],
-   "shot": {
-    "type": "low",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "happy",
-     "action": "throw",
-     "look": "wr"
-    },
-    "wr": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   }
-  },
-  {
-   "text": "Cincinnati leads, twenty four to three.",
-   "cap": "Cincinnati leads, 24 to 3.",
-   "key": [
-    "24"
-   ],
-   "shot": {
-    "type": "high",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "stl": {
-     "mood": "sad",
-     "action": "slump"
-    }
-   }
-  },
-  {
-   "text": "Here's the strange part. Cincinnati completed twenty one passes before Pittsburgh completed one.",
-   "cap": "Here's the strange part. Cincinnati completed 21 passes before Pittsburgh completed 1.",
-   "key": [
-    "21"
-   ],
-   "place": {
-    "capy": [
-     0.6,
-     1.4
-    ]
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "stl"
-   },
-   "act": {
-    "capy": {
-     "mood": "smug",
-     "action": "point",
+     "action": "hold",
      "look": "stl"
     },
     "stl": {
-     "mood": "confused",
-     "action": "shrug",
-     "look": "capy"
+     "mood": "angry",
+     "action": "hold",
+     "look": "qb"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "That tied a record going back to nineteen seventy eight.",
-   "cap": "That tied a record going back to 1978.",
+   "text": "Your first touchdown pass? Easy.",
    "key": [
-    "1978."
+    "EASY."
+   ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CIN 0",
+     "PIT 0"
+    ],
+    "endZone": 45,
+    "zoneA": "#ffb612",
+    "zoneB": "#fb4f14"
+   },
+   "place": {
+    "capy": false,
+    "oldqb": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "wr",
+    "lead": 0
+   },
+   "sfx": [
+    [
+     0.68,
+     "roar"
+    ]
+   ],
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        32.0,
+        0.0
+       ],
+       [
+        0.051,
+        31.62,
+        0.0
+       ],
+       [
+        0.103,
+        31.25,
+        0.0
+       ],
+       [
+        0.154,
+        30.88,
+        0.0
+       ],
+       [
+        0.205,
+        30.5,
+        0.0
+       ],
+       [
+        0.258,
+        30.5,
+        0.0
+       ],
+       [
+        0.311,
+        30.5,
+        0.0
+       ],
+       [
+        0.364,
+        30.5,
+        0.0
+       ],
+       [
+        0.417,
+        30.5,
+        0.0
+       ],
+       [
+        0.47,
+        30.5,
+        0.0
+       ],
+       [
+        0.523,
+        30.5,
+        0.0
+       ],
+       [
+        0.576,
+        30.5,
+        0.0
+       ],
+       [
+        0.629,
+        30.5,
+        0.0
+       ],
+       [
+        0.682,
+        30.5,
+        0.0
+       ],
+       [
+        0.735,
+        30.5,
+        0.0
+       ],
+       [
+        0.788,
+        30.5,
+        0.0
+       ],
+       [
+        0.841,
+        30.5,
+        0.0
+       ],
+       [
+        0.894,
+        30.5,
+        0.0
+       ],
+       [
+        0.947,
+        30.5,
+        0.0
+       ],
+       [
+        1.0,
+        30.5,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.205,
+        "idle"
+       ],
+       [
+        0.239,
+        "throw"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        40.0,
+        3.8
+       ],
+       [
+        0.051,
+        40.58,
+        3.68
+       ],
+       [
+        0.103,
+        41.17,
+        3.57
+       ],
+       [
+        0.154,
+        41.75,
+        3.45
+       ],
+       [
+        0.205,
+        42.33,
+        3.33
+       ],
+       [
+        0.256,
+        42.92,
+        3.22
+       ],
+       [
+        0.308,
+        43.5,
+        3.1
+       ],
+       [
+        0.359,
+        44.08,
+        2.98
+       ],
+       [
+        0.41,
+        44.67,
+        2.87
+       ],
+       [
+        0.462,
+        45.25,
+        2.75
+       ],
+       [
+        0.513,
+        45.83,
+        2.63
+       ],
+       [
+        0.564,
+        46.42,
+        2.52
+       ],
+       [
+        0.615,
+        47.0,
+        2.4
+       ],
+       [
+        0.67,
+        47.07,
+        2.4
+       ],
+       [
+        0.725,
+        47.14,
+        2.4
+       ],
+       [
+        0.78,
+        47.21,
+        2.4
+       ],
+       [
+        0.835,
+        47.29,
+        2.4
+       ],
+       [
+        0.89,
+        47.36,
+        2.4
+       ],
+       [
+        0.945,
+        47.43,
+        2.4
+       ],
+       [
+        1.0,
+        47.5,
+        2.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.615,
+        "catch"
+       ],
+       [
+        0.752,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     },
+     "stl": {
+      "path": [
+       [
+        0.0,
+        41.0,
+        -1.5
+       ],
+       [
+        0.051,
+        41.29,
+        -1.42
+       ],
+       [
+        0.103,
+        41.58,
+        -1.33
+       ],
+       [
+        0.154,
+        41.88,
+        -1.25
+       ],
+       [
+        0.205,
+        42.17,
+        -1.17
+       ],
+       [
+        0.256,
+        42.46,
+        -1.08
+       ],
+       [
+        0.308,
+        42.75,
+        -1.0
+       ],
+       [
+        0.359,
+        43.04,
+        -0.92
+       ],
+       [
+        0.41,
+        43.33,
+        -0.83
+       ],
+       [
+        0.462,
+        43.62,
+        -0.75
+       ],
+       [
+        0.513,
+        43.92,
+        -0.67
+       ],
+       [
+        0.564,
+        44.21,
+        -0.58
+       ],
+       [
+        0.615,
+        44.5,
+        -0.5
+       ],
+       [
+        0.67,
+        44.5,
+        -0.5
+       ],
+       [
+        0.725,
+        44.5,
+        -0.5
+       ],
+       [
+        0.78,
+        44.5,
+        -0.5
+       ],
+       [
+        0.835,
+        44.5,
+        -0.5
+       ],
+       [
+        0.89,
+        44.5,
+        -0.5
+       ],
+       [
+        0.945,
+        44.5,
+        -0.5
+       ],
+       [
+        1.0,
+        44.5,
+        -0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.65,
+        "slump"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.308,
+      30.8,
+      1.7,
+      0
+     ],
+     [
+      0.462,
+      39,
+      4.0,
+      1.3
+     ],
+     [
+      0.615,
+      47,
+      1.5,
+      2.4
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.615,
+      "wr"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Ja'Marr Chase goes for over two hundred yards. Wow.",
+   "cap": "Ja'Marr Chase goes for over 200 yards. Wow.",
+   "key": [
+    "200"
+   ],
+   "board": [
+    "CHASE",
+    "200+ YDS"
    ],
    "place": {
+    "qb": false,
+    "wr": [
+     0,
+     0
+    ],
+    "oldqb": false,
+    "stl": false,
+    "fan": false,
     "capy": false
    },
    "shot": {
     "type": "close",
+    "on": "wr"
+   },
+   "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You finish with over four hundred yards. Smooth.",
+   "cap": "You finish with over 400 yards. Smooth.",
+   "key": [
+    "400"
+   ],
+   "board": [
+    "BURROW",
+    "400+ YDS"
+   ],
+   "place": {
+    "qb": [
+     -1.2,
+     0
+    ],
+    "wr": [
+     1.4,
+     0
+    ],
+    "oldqb": false,
+    "stl": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "wr"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "point",
+     "look": "wr"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Four touchdowns. Again. Like clockwork.",
+   "cap": "4 touchdowns. Again. Like clockwork.",
+   "key": [
+    "AGAIN."
+   ],
+   "speaker": "capy",
+   "board": [
+    "TD PASSES",
+    "4"
+   ],
+   "place": {
+    "qb": [
+     1.6,
+     0
+    ],
+    "wr": false,
+    "oldqb": false,
+    "stl": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Bengals thirty eight, Steelers eighteen. Not close.",
+   "cap": "Bengals 38, Steelers 18. Not close.",
+   "key": [
+    "38,"
+   ],
+   "board": [
+    "CIN 38",
+    "PIT 18"
+   ],
+   "place": {
+    "qb": false,
+    "wr": false,
+    "oldqb": false,
+    "stl": [
+     0,
+     0
+    ],
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "high",
     "on": "stl"
    },
    "act": {
     "stl": {
      "mood": "sad",
-     "action": "facepalm"
-    }
-   }
-  },
-  {
-   "text": "Ja'Marr Chase: eleven catches, two hundred thirty one yards.",
-   "cap": "Ja'Marr Chase: 11 catches, 231 yards.",
-   "key": [
-    "231"
-   ],
-   "place": {
-    "wr": [
-     -1.0,
-     0.6
-    ],
-    "qb": [
-     1.8,
-     -1.8
-    ]
-   },
-   "shot": {
-    "type": "medium",
-    "on": "wr"
-   },
-   "act": {
-    "wr": {
-     "mood": "happy",
-     "action": "hold",
+     "action": "slump",
      "look": "camera"
     }
    }
   },
   {
-   "text": "And somehow, not one of those catches was a touchdown.",
+   "text": "Your fifth straight win, too. On a roll.",
    "key": [
-    "NOT"
+    "FIFTH"
    ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "wr": false,
+    "oldqb": false,
+    "stl": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
     "type": "close",
-    "on": "wr"
-   },
-   "act": {
-    "wr": {
-     "mood": "confused",
-     "action": "shrug",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Burrow finishes thirty five of forty four, over four hundred yards, four touchdowns.",
-   "cap": "Burrow finishes 35 of 44, over 400 yards, 4 touchdowns.",
-   "key": [
-    "400"
-   ],
-   "set": "press",
-   "setOpts": {
-    "boardText": [
-     "BENGALS 38",
-     "STEELERS 18"
-    ]
-   },
-   "place": {
-    "qb": "center"
-   },
-   "shot": {
-    "type": "medium",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "smug",
-     "action": "talk",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Bengals win, thirty eight to eighteen. Their fifth straight win.",
-   "cap": "Bengals win, 38 to 18. Their 5th straight win.",
-   "key": [
-    "38"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "STREAK:",
-     "5"
-    ]
-   },
-   "place": {
-    "qb": "center",
-    "wr": "right"
-   },
-   "shot": {
-    "type": "wide",
     "on": "qb"
    },
    "act": {
     "qb": {
      "mood": "happy",
-     "action": "cheer"
-    },
-    "wr": {
-     "mood": "happy",
-     "action": "cheer"
+     "action": "celebrate",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Will Burrow make it six in a row and own the record alone? Yes or no?",
-   "cap": "Will Burrow make it 6 in a row and own the record alone? Yes or no?",
+   "text": "You now share the record. With Peyton Manning. Elite company.",
    "key": [
-    "6"
+    "SHARE"
    ],
+   "speaker": "capy",
    "place": {
-    "capy": [
-     -1.6,
-     1.0
+    "qb": [
+     1.6,
+     0
     ],
-    "wr": false
+    "wr": false,
+    "oldqb": false,
+    "stl": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
    },
    "shot": {
     "type": "two",
@@ -391,35 +948,193 @@
    },
    "act": {
     "capy": {
-     "mood": "smug",
-     "action": "talk",
+     "mood": "neutral",
+     "action": "shrug",
      "look": "camera"
     },
     "qb": {
      "mood": "smug",
-     "action": "hold",
+     "action": "idle",
      "look": "capy"
     }
+   }
+  },
+  {
+   "text": "Steelers fans, your secondary would like a word. Or a nap.",
+   "key": [
+    "WORD."
+   ],
+   "speaker": "capy",
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "CIN 38",
+     "PIT 18"
+    ]
    },
-   "speaker": "capy"
+   "place": {
+    "qb": false,
+    "wr": false,
+    "oldqb": false,
+    "stl": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
+    "capy": [
+     -1.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "angry",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Six straight next? Can he own it alone? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "6 STRAIGHT?",
+    "YES OR NO"
+   ],
+   "place": {
+    "qb": false,
+    "wr": false,
+    "oldqb": false,
+    "stl": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
   }
  ],
  "sources": [
   {
-   "title": "WKRC Local 12: Joe Burrow ties NFL record with historic start against Steelers",
+   "title": "Local 12: Joe Burrow ties NFL record with historic start against Steelers",
    "url": "https://local12.com/sports/bengals/joe-burrow-ties-nfl-record-with-historic-start-against-steelers-peyton-manning-aaron-rodgers-bengals-quarterback"
   },
   {
-   "title": "WKRC Local 12 (AP): Burrow throws for 406 yards, 4 TDs as Bengals beat Steelers 38-18",
+   "title": "Local 12: Burrow throws for 406 yards, 4 TDs as Bengals beat Steelers 38-18",
    "url": "https://local12.com/sports/bengals/burrow-throws-406-yards-4-td-bengals-beat-steelers-38-18-sunday-night-football-chase-200-yards"
   },
   {
-   "title": "TSN (ESPN): Surging Burrow helps Bengals' winning streak reach five games",
+   "title": "TSN: Surging Burrow helps Bengals' winning streak reach five games",
    "url": "https://www.tsn.ca/nfl/article/surging-burrow-helps-bengals-winning-streak-reach-five-games/"
   },
   {
-   "title": "NFL.com: 2026 NFL season, Week 10: What we learned from Sunday's games",
+   "title": "Yahoo Sports: Joe Burrow ties Peyton Manning's NFL record set in 2004 MVP season",
+   "url": "https://sports.yahoo.com/articles/joe-burrow-ties-peyton-manning-153352632.html"
+  },
+  {
+   "title": "ProFootballTalk: Joe Burrow, Ja'Marr Chase torch Steelers in 38-18 Bengals victory",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sunday-night-football-joe-burrow-jamarr-chase-torch-steelers-in-38-18-bengals-victory"
+  },
+  {
+   "title": "Yahoo Sports: NFL announces historic Joe Burrow news amid Bengals' win over Steelers",
+   "url": "https://sports.yahoo.com/articles/nfl-announces-historic-joe-burrow-075326225.html"
+  },
+  {
+   "title": "Bengals.com: Bengals push back on Steelers to muscle into first place in AFC North",
+   "url": "https://www.bengals.com/news/bengals-push-back-on-steelers-to-muscle-into-first-place-in-afc-north-joe-burrow-jonathan-allen-jordan-battle"
+  },
+  {
+   "title": "NFL.com: 2026 NFL season, Week 10, what we learned from Sunday's games",
    "url": "https://www.nfl.com/news/2026-nfl-season-week-10-what-we-learned-from-sunday-s-games"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Burrow threw four or more touchdown passes in five straight games",
+   "terms": [
+    "Burrow",
+    "five straight|fifth straight|5 straight|five consecutive"
+   ]
+  },
+  {
+   "claim": "Peyton Manning was the only other quarterback to do it",
+   "terms": [
+    "Manning"
+   ]
+  },
+  {
+   "claim": "Manning did it in 2004, his MVP season",
+   "terms": [
+    "Manning",
+    "2004"
+   ]
+  },
+  {
+   "claim": "It was Sunday night against the Steelers",
+   "terms": [
+    "Sunday night|Sunday Night Football",
+    "Steelers"
+   ]
+  },
+  {
+   "claim": "Ja'Marr Chase had over 200 receiving yards",
+   "terms": [
+    "Chase",
+    "200|231"
+   ]
+  },
+  {
+   "claim": "Burrow threw for over 400 yards and four touchdowns",
+   "terms": [
+    "406|409",
+    "4 TD|four touchdown|4 touchdown|4 TDs"
+   ]
+  },
+  {
+   "claim": "Bengals won 38-18",
+   "terms": [
+    "38-18"
+   ]
+  },
+  {
+   "claim": "It was Cincinnati's fifth straight win",
+   "terms": [
+    "five games|fifth straight|five straight"
+   ]
   }
  ]
 }
