@@ -377,9 +377,9 @@
    }
   },
   {
-   "text": "Years later, suspects finally go on trial.",
+   "text": "The investigation drags on. For years. Slowly.",
    "key": [
-    "TRIAL."
+    "YEARS."
    ],
    "shot": {
     "type": "medium",
@@ -603,12 +603,6 @@
    "claim": "Police suspected the Pink Panthers",
    "terms": [
     "Pink Panther"
-   ]
-  },
-  {
-   "claim": "Suspects later went on trial",
-   "terms": [
-    "trial"
    ]
   },
   {
