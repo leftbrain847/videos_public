@@ -1,0 +1,933 @@
+{
+ "id": "mind_11_jam_study",
+ "title": "Twenty four jams, almost no sales",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "24 JAMS",
+   "OR 6?"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#e94f37",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   },
+   "hold": "bag"
+  },
+  "clerk": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#27ae60",
+    "pants": "#3a3a3a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b"
+   }
+  },
+  "prof": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "More choice should sell more jam. It sold way less.",
+   "key": [
+    "LESS."
+   ],
+   "board": [
+    "24 JAMS",
+    "OR 6?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "clerk": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "An upscale grocery store. Out front, a free tasting table. Fancy jam.",
+   "key": [
+    "TASTING"
+   ],
+   "set": "vault",
+   "board": [
+    "FREE",
+    "TASTING"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     1.6,
+     0.6
+    ],
+    "clerk": [
+     -1.4,
+     0.0
+    ],
+    "prof": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "clerk"
+   },
+   "act": {
+    "clerk": {
+     "mood": "happy",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "clerk"
+    }
+   }
+  },
+  {
+   "text": "Some hours it offers twenty four jams. Other hours, just six.",
+   "cap": "Some hours it offers 24 jams. Other hours, just 6.",
+   "key": [
+    "24",
+    "6."
+   ],
+   "board": [
+    "24 JAMS",
+    "OR 6"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     1.6,
+     0.6
+    ],
+    "clerk": [
+     -1.4,
+     0.0
+    ],
+    "prof": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "clerk"
+   },
+   "act": {
+    "clerk": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are a shopper. Free jam. Obviously you stop.",
+   "key": [
+    "STOP."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     1.6,
+     0.6
+    ],
+    "clerk": [
+     -1.4,
+     0.0
+    ],
+    "prof": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The big display pulls more people in. Sixty percent stop.",
+   "cap": "The big display pulls more people in. 60% stop.",
+   "key": [
+    "60%"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     1.6,
+     0.6
+    ],
+    "clerk": [
+     -1.4,
+     0.0
+    ],
+    "prof": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "clerk",
+    "with": "you"
+   },
+   "act": {
+    "clerk": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "clerk"
+    }
+   }
+  },
+  {
+   "text": "The small display? Forty percent.",
+   "cap": "The small display? 40%.",
+   "key": [
+    "40%."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     1.6,
+     0.6
+    ],
+    "clerk": [
+     -1.4,
+     0.0
+    ],
+    "prof": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "clerk"
+   },
+   "act": {
+    "clerk": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the big display wins. Right? Obviously.",
+   "key": [
+    "WINS."
+   ],
+   "set": "study",
+   "board": [
+    "24 JAMS:",
+    "60% STOP"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "clerk": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Each taster gets a coupon. Then the researchers count sales.",
+   "key": [
+    "COUNT"
+   ],
+   "set": "office",
+   "board": [
+    "COUPONS",
+    "REDEEMED"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "clerk": false,
+    "prof": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "From the big display, three percent buy jam.",
+   "cap": "From the big display, 3% buy jam.",
+   "key": [
+    "3%"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "clerk": false,
+    "prof": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "From the small display? Thirty percent.",
+   "cap": "From the small display? 30%.",
+   "key": [
+    "30%."
+   ],
+   "board": [
+    "24 JAMS: 3%",
+    "6 JAMS: 30%"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "clerk": false,
+    "prof": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Six jams beat twenty four. Easily.",
+   "cap": "6 jams beat 24. Easily.",
+   "key": [
+    "6"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "clerk": false,
+    "prof": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ten times the buyers. With a quarter of the jam.",
+   "key": [
+    "TEN"
+   ],
+   "set": "study",
+   "board": [
+    "24 JAMS",
+    "OR 6?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "clerk": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Psychologists call it choice overload.",
+   "key": [
+    "OVERLOAD."
+   ],
+   "board": [
+    "CHOICE",
+    "OVERLOAD"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "clerk": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Too many options. Your brain simply gives up. You walk away.",
+   "key": [
+    "GIVES"
+   ],
+   "set": "vault",
+   "board": [
+    "TOO MANY",
+    "OPTIONS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "clerk": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The jam study becomes famous. It anchors a bestselling book.",
+   "key": [
+    "BESTSELLING"
+   ],
+   "set": "study",
+   "board": [
+    "THE PARADOX",
+    "OF CHOICE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "clerk": false,
+    "prof": [
+     1.4,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "prof"
+    },
+    "prof": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The Paradox of Choice. Less is more. Everyone nods.",
+   "key": [
+    "LESS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "clerk": false,
+    "prof": [
+     1.4,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "prof"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "prof": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. The jam does not travel well.",
+   "key": [
+    "TRAVEL"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "clerk": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Other labs try it. Many find no overload at all. None.",
+   "key": [
+    "NO"
+   ],
+   "set": "office",
+   "board": [
+    "24 JAMS",
+    "OR 6?"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "clerk": false,
+    "prof": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty ten. A review pools fifty experiments.",
+   "cap": "2010. A review pools 50 experiments.",
+   "key": [
+    "50"
+   ],
+   "board": [
+    "META-ANALYSIS",
+    "50 STUDIES"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "clerk": false,
+    "prof": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The average effect of more choice? About zero.",
+   "key": [
+    "ZERO."
+   ],
+   "set": "study",
+   "board": [
+    "AVERAGE EFFECT:",
+    "≈ 0"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "clerk": false,
+    "prof": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "prof"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "prof"
+    },
+    "prof": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Sometimes more options hurt. Sometimes they help.",
+   "key": [
+    "HELP."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "clerk": false,
+    "prof": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "prof": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It depends on you. Not on the jam.",
+   "key": [
+    "YOU."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "clerk": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You see the tasting table. Six jams or twenty four? Which one?",
+   "cap": "You see the tasting table. 6 jams or 24? Which one?",
+   "key": [
+    "6",
+    "24?"
+   ],
+   "board": [
+    "6 OR 24?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "clerk": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Choice overload",
+   "url": "https://en.wikipedia.org/wiki/Choice_overload"
+  },
+  {
+   "title": "Wikipedia: The Paradox of Choice",
+   "url": "https://en.wikipedia.org/wiki/The_Paradox_of_Choice"
+  },
+  {
+   "title": "Psychology Today: Is choice overload a real thing?",
+   "url": "https://www.psychologytoday.com/us/blog/pop-psych/201602/is-choice-overload-real-thing"
+  },
+  {
+   "title": "Christian Science Monitor: The paradox of choice, a theory loses favor",
+   "url": "https://www.csmonitor.com/Business/Donald-Marron/2012/0719/The-Paradox-of-Choice-A-theory-loses-favor"
+  },
+  {
+   "title": "UCF Pressbooks: The paradox of choice",
+   "url": "https://pressbooks.online.ucf.edu/lumenpsychology/chapter/assignment-thinking-and-intelligence-the-paradox-of-choice/"
+  },
+  {
+   "title": "Wikipedia: Sheena Iyengar",
+   "url": "https://en.wikipedia.org/wiki/Sheena_Iyengar"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The study took place at an upscale grocery store in California",
+   "terms": [
+    "grocery|supermarket|Draeger",
+    "jam"
+   ]
+  },
+  {
+   "claim": "A tasting table offered either 24 or 6 jams",
+   "terms": [
+    "24",
+    "6|six"
+   ]
+  },
+  {
+   "claim": "60 percent stopped at the large display",
+   "terms": [
+    "60"
+   ]
+  },
+  {
+   "claim": "40 percent stopped at the small display",
+   "terms": [
+    "40"
+   ]
+  },
+  {
+   "claim": "Tasters got a coupon",
+   "terms": [
+    "coupon"
+   ]
+  },
+  {
+   "claim": "3 percent bought from the large display",
+   "terms": [
+    "3",
+    "jam"
+   ]
+  },
+  {
+   "claim": "30 percent bought from the small display",
+   "terms": [
+    "30"
+   ]
+  },
+  {
+   "claim": "This is called choice overload",
+   "terms": [
+    "choice overload"
+   ]
+  },
+  {
+   "claim": "It underpinned the book The Paradox of Choice",
+   "terms": [
+    "Paradox of Choice",
+    "jam"
+   ]
+  },
+  {
+   "claim": "Other researchers failed to replicate it",
+   "terms": [
+    "replicate|replication"
+   ]
+  },
+  {
+   "claim": "A 2010 meta-analysis pooled 50 experiments",
+   "terms": [
+    "50",
+    "studies|experiments"
+   ]
+  },
+  {
+   "claim": "The average effect was close to zero",
+   "terms": [
+    "zero|found no|no meaningful|negligible"
+   ]
+  }
+ ]
+}
