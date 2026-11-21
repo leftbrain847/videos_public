@@ -1,0 +1,755 @@
+{
+ "id": "space_22_satellite_dropped_on_floor",
+ "title": "The satellite that fell on the factory floor",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "NOAA-N PRIME"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "tech": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true
+   }
+  },
+  "tech2": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8"
+   }
+  },
+  "night": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "hold": "clipboard"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "insp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#4b92db",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#5c3a24",
+    "glasses": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Your satellite never leaves the ground. It falls over. Indoors. In front of everyone.",
+   "key": [
+    "INDOORS."
+   ],
+   "board": [
+    "SATELLITE",
+    "ON FLOOR"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "tech": [
+     2.6,
+     -0.6
+    ],
+    "tech2": false,
+    "night": false,
+    "boss": false,
+    "insp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "September, two thousand three. A factory in Sunnyvale, California. A spotless clean room.",
+   "cap": "September 2003. A factory in Sunnyvale, California. A spotless clean room.",
+   "key": [
+    "SUNNYVALE,"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CLEAN ROOM"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "tech": [
+     -1.4,
+     0.3
+    ],
+    "tech2": [
+     1.4,
+     0.3
+    ],
+    "night": false,
+    "boss": false,
+    "insp": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "tech",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "tech": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "tech2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "tech"
+    }
+   }
+  },
+  {
+   "text": "Lockheed Martin is building a weather satellite. Called N Prime.",
+   "cap": "Lockheed Martin is building a weather satellite. Called N-Prime.",
+   "key": [
+    "WEATHER"
+   ],
+   "board": [
+    "NOAA-N PRIME",
+    "WEATHER SAT"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "tech",
+    "with": "tech2"
+   },
+   "act": {
+    "tech": {
+     "mood": "happy",
+     "action": "point",
+     "look": "tech2"
+    },
+    "tech2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "tech"
+    }
+   }
+  },
+  {
+   "text": "It's for Noaa, America's weather agency. It's nearly finished.",
+   "cap": "It's for NOAA, America's weather agency. It's nearly finished.",
+   "key": [
+    "FINISHED."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "tech2"
+   },
+   "act": {
+    "tech2": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It sits upright on a turnover cart. Time to tilt it flat. Routine stuff.",
+   "key": [
+    "TILT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "tech": false,
+    "tech2": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tech2"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "tech2"
+    },
+    "tech2": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Here's the thing nobody checked. The bolts.",
+   "key": [
+    "BOLTS."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "tech2": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Earlier, another team borrowed the cart. They removed twenty four bolts.",
+   "cap": "Earlier, another team borrowed the cart. They removed 24 bolts.",
+   "key": [
+    "24"
+   ],
+   "board": [
+    "BOLTS",
+    "REMOVED: 24"
+   ],
+   "place": {
+    "capy": false,
+    "tech2": false,
+    "night": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "night"
+   },
+   "act": {
+    "night": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They didn't write it down. Nobody looks. Nobody asks.",
+   "key": [
+    "NOBODY"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "night"
+   },
+   "act": {
+    "night": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The crew starts to rotate the cart.",
+   "key": [
+    "ROTATE"
+   ],
+   "place": {
+    "night": false,
+    "tech": [
+     -1.4,
+     0.3
+    ],
+    "tech2": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "tech2": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "tech"
+    }
+   }
+  },
+  {
+   "text": "The satellite slides off. It slams onto the floor. Hard.",
+   "key": [
+    "FLOOR."
+   ],
+   "board": [
+    "IMPACT"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "tech2"
+   },
+   "act": {
+    "tech": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "tech2": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "A drop of about three feet. That's plenty enough.",
+   "key": [
+    "ENOUGH."
+   ],
+   "board": [
+    "DROP:",
+    "~3 FT"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "tech": [
+     -2.6,
+     -0.6
+    ],
+    "tech2": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    },
+    "tech2": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Panels crack. Parts bend. Months of work, dented. Silence in the room.",
+   "key": [
+    "DENTED."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Investigators blame missed procedures. Nobody checked the bolts before moving it.",
+   "key": [
+    "PROCEDURES."
+   ],
+   "place": {
+    "capy": false,
+    "tech": false,
+    "tech2": false,
+    "insp": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "insp"
+   },
+   "act": {
+    "insp": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The repair bill? About one hundred thirty five million dollars.",
+   "cap": "The repair bill? About $135 million.",
+   "key": [
+    "$135"
+   ],
+   "board": [
+    "REPAIRS",
+    "~$135M"
+   ],
+   "place": {
+    "boss": [
+     2.4,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "insp"
+   },
+   "act": {
+    "insp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "insp"
+    }
+   }
+  },
+  {
+   "text": "Lockheed agrees to cover it. Using its own profits. Expensive lesson.",
+   "key": [
+    "PROFITS."
+   ],
+   "place": {
+    "insp": false,
+    "boss": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Years later, the fixed satellite finally launches. Twenty oh nine.",
+   "cap": "Years later, the fixed satellite finally launches. 2009.",
+   "key": [
+    "2009."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "NOAA-19",
+     "LAUNCHED 2009"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "tech": [
+     1.4,
+     0.2
+    ],
+    "tech2": false,
+    "night": false,
+    "boss": false,
+    "insp": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tech"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "tech"
+    },
+    "tech": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It flies as Noaa nineteen. Watching the weather from orbit. Finally.",
+   "cap": "It flies as NOAA-19. Watching the weather from orbit. Finally.",
+   "key": [
+    "NOAA-19."
+   ],
+   "place": {
+    "capy": false,
+    "tech": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Rocket science, foiled by a missing checklist. Very relatable. Very human.",
+   "key": [
+    "CHECKLIST."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "tech": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Before lifting something heavy, do you double check? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "DOUBLE CHECK?",
+    "YES OR NO"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     0.8,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Space.com: Lockheed Martin profits to pay for NOAA N-Prime repairs",
+   "url": "https://www.space.com/417-lockheed-martin-profits-pay-noaa-prime-repairs.html"
+  },
+  {
+   "title": "Space.com: back from the brink, broken satellite fixed",
+   "url": "https://www.space.com/6081-brink-broken-satellite-fixed-ready-fly.html"
+  },
+  {
+   "title": "Spaceflight Now: NOAA-N Prime mishap report",
+   "url": "https://spaceflightnow.com/news/n0410/04noaanreport/"
+  },
+  {
+   "title": "Spaceflight Now: NOAA-N Prime launch preview",
+   "url": "https://spaceflightnow.com/delta/d338/090201preview.html"
+  },
+  {
+   "title": "Via Satellite: NASA says workers caused NOAA N-Prime accident",
+   "url": "https://www.satellitetoday.com/uncategorized/2004/10/11/nasa-workers-caused-noaa-n-prime-accident/"
+  },
+  {
+   "title": "Wikipedia: NOAA-19",
+   "url": "https://en.wikipedia.org/wiki/NOAA-19"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In September 2003 the NOAA-N Prime satellite fell at a Lockheed Martin plant in Sunnyvale, California",
+   "terms": [
+    "Sunnyvale"
+   ]
+  },
+  {
+   "claim": "It was a NOAA weather satellite",
+   "terms": [
+    "weather",
+    "satellite"
+   ]
+  },
+  {
+   "claim": "It was being rotated on a turnover cart",
+   "terms": [
+    "turnover cart|turn over cart|cart"
+   ]
+  },
+  {
+   "claim": "Another team had removed 24 bolts without documenting it",
+   "terms": [
+    "24 bolts"
+   ]
+  },
+  {
+   "claim": "The satellite fell to the floor",
+   "terms": [
+    "fell|dropped|toppled",
+    "floor"
+   ]
+  },
+  {
+   "claim": "It fell about three feet",
+   "terms": [
+    "3 feet|three feet|0.9 m"
+   ]
+  },
+  {
+   "claim": "Investigators blamed failure to follow procedures",
+   "terms": [
+    "procedure"
+   ]
+  },
+  {
+   "claim": "Repairs cost about $135 million",
+   "terms": [
+    "135 million"
+   ]
+  },
+  {
+   "claim": "Lockheed Martin agreed to pay using its profits",
+   "terms": [
+    "profit"
+   ]
+  },
+  {
+   "claim": "The satellite launched in 2009 as NOAA-19",
+   "terms": [
+    "NOAA-19|NOAA 19",
+    "2009"
+   ]
+  }
+ ]
+}
