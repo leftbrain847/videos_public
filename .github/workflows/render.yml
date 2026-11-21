@@ -1,11 +1,15 @@
 name: render
-# Renders football shorts on demand. No secrets; every action pinned to a commit SHA; the token is read-only except in
+# Renders football shorts: on demand, or by itself when a push to main adds or changes a batch file
+# (football/batches/*.json, see tools/render_plan.py), so a merged batch PR renders and publishes with no one clicking. No secrets; every action pinned to a commit SHA; the token is read-only except in
 # the release job, which only uploads files to a GitHub Release. Masters and web copies go to the release, never to git.
 on:
+  push:
+    branches: [main]
+    paths: ['football/batches/*.json']
   workflow_dispatch:
     inputs:
       videos:
-        description: 'Video ids, space separated (max 20), e.g. s4_01_music_city_miracle'
+        description: 'Video ids, space separated (max 30), e.g. s4_01_music_city_miracle'
         required: true
         type: string
       release:
@@ -24,7 +28,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: render-${{ inputs.release || github.run_id }}
+  group: render-${{ inputs.release || 'main' }}
   cancel-in-progress: false
 defaults:
   run:
@@ -36,15 +40,26 @@ jobs:
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
       ids: ${{ steps.plan.outputs.ids }}
+      release: ${{ steps.plan.outputs.release }}
+      replace: ${{ steps.plan.outputs.replace }}
+      listen: ${{ steps.plan.outputs.listen }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-        with: { persist-credentials: false }
+        with: { persist-credentials: false, fetch-depth: 0 }
       - id: plan
         env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
           VIDEOS: ${{ inputs.videos }}
           TAG: ${{ inputs.release }}
+          REPLACE: ${{ inputs.replace }}
+          LISTEN: ${{ inputs.listen }}
         run: |
-          [[ -z "$TAG" || "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ ]] || { printf 'bad release tag\n'; exit 1; }
+          if [[ "$EVENT" == "push" ]]; then
+            FILES=$(git diff --name-only --diff-filter=AM "$BEFORE" "$GITHUB_SHA" -- 'football/batches/*.json')
+            [[ $(wc -w <<< "$FILES") -eq 1 ]] || { printf 'a push must add or change exactly one batch file\n'; exit 1; }
+            export BATCH="$FILES"
+          fi
           python3 tools/render_plan.py >> "$GITHUB_OUTPUT"
 
   # Always runs: a release needs every claim checked against two sources.
@@ -127,7 +142,7 @@ jobs:
 
   # Its own job, and only after the release job, so the speech-to-text install and model can't touch the released files.
   listen:
-    if: ${{ !cancelled() && inputs.listen && needs.render.result != 'skipped' }}
+    if: ${{ !cancelled() && needs.plan.outputs.listen == 'true' && needs.render.result != 'skipped' }}
     needs: [plan, render, release]
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -155,8 +170,8 @@ jobs:
         with: { name: 'listen-${{ matrix.id }}', path: football/out/listen/, retention-days: 30 }
 
   release:
-    if: ${{ !cancelled() && inputs.release != '' && needs.facts.result == 'success' && needs.render.result != 'skipped' }}
-    needs: [render, facts]
+    if: ${{ !cancelled() && needs.plan.outputs.release != '' && needs.facts.result == 'success' && needs.render.result != 'skipped' }}
+    needs: [plan, render, facts]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
@@ -167,8 +182,8 @@ jobs:
       - name: Upload to the release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ inputs.release }}
-          REPLACE: ${{ inputs.replace }}
+          TAG: ${{ needs.plan.outputs.release }}
+          REPLACE: ${{ needs.plan.outputs.replace }}
         run: |
           [[ "$TAG" =~ ^football-batch-[0-9a-z-]{1,30}$ ]] || { printf 'bad release tag\n'; exit 1; }
           compgen -G 'files/*' >/dev/null || { printf 'no rendered files to release\n'; exit 1; }

@@ -185,7 +185,7 @@ def test_render_plan_rejects_bad_ids():
     import render_plan
     m = render_plan.plan("s4_01_music_city_miracle")
     assert m[0]["id"] == "s4_01_music_city_miracle" and isinstance(m[0]["index"], int)
-    for bad in ("../etc", "s1_01_x;rm", " ".join(["s4_01_music_city_miracle"] * 21)):
+    for bad in ("../etc", "s1_01_x;rm", " ".join(["s4_01_music_city_miracle"] * 31)):
         try:
             render_plan.plan(bad); assert False, bad
         except SystemExit:
