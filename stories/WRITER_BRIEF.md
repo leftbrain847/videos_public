@@ -31,6 +31,7 @@ football/videos/s1_02_holy_roller. Match their quality and structure exactly.
   no 3 identical shot types in a row, Capy on screen at least 5 lines. Spot-check with
   `cd football && node engine/render.mjs ../stories/videos/<id> --stills 5,25,45,70 --draft` after tts.py (outputs
   stories/videos/<id>/build/still_*.jpg; Read them). Do this for EVERY video with a play or a new staging; it costs ~1-2 min.
+  Never let a person stand in for an animal: use an animal kind (`"kind": "horse"`; ask for a new one in kit.js `ANIMALS`) or keep the animal off screen. No `ots` shots (check.py rejects them: the sets seat people facing camera, so they frame the back of a head).
   Look for: camera inside a body or crowd, a shot of empty floor/wall, Capy's head blocking the subject. Fix before the PR.
 
 ## Shipping (push as you go; work must survive if you're cut off)

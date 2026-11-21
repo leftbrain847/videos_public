@@ -31,14 +31,8 @@
    }
   },
   "hans": {
-   "look": {
-    "outfit": "hoodie",
-    "shirt": "#8a5a33",
-    "pants": "#6b4426",
-    "hair": "long",
-    "hairColor": "#2b1a10",
-    "skin": "#8a5a33"
-   }
+   "kind": "horse",
+   "look": {}
   },
   "stu": {
    "look": {
@@ -856,6 +850,14 @@
   {
    "title": "Wikipedia: Oskar Pfungst",
    "url": "https://en.wikipedia.org/wiki/Oskar_Pfungst"
+  },
+  {
+   "title": "Wikipedia: Wilhelm von Osten",
+   "url": "https://en.wikipedia.org/wiki/Wilhelm_von_Osten"
+  },
+  {
+   "title": "Simple English Wikipedia: Clever Hans",
+   "url": "https://simple.wikipedia.org/wiki/Clever_Hans"
   },
   {
    "title": "FutureLearn: Clever Hans (logical and critical thinking)",

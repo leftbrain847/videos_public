@@ -1,0 +1,727 @@
+{
+ "id": "scary_32_mv_alta",
+ "title": "The MV Alta: a ghost ship that showed up in Ireland",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "MV ALTA"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#c46a3c",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "cap": "#1e2a3a"
+   },
+   "at": "center",
+   "hold": "flashlight"
+  },
+  "coast": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#1d2a4a",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#5c3a24",
+    "cap": "#f6f6f6"
+   },
+   "at": "center"
+  },
+  "sailor": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2f4a6b",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   },
+   "at": "center"
+  },
+  "local": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5a6b3a",
+    "pants": "#2a2a2a",
+    "hair": "curly",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
+  }
+ },
+ "lines": [
+  {
+   "text": "A storm hits your coast. A ship with no crew comes with it. Just like that.",
+   "key": [
+    "CREW"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "local": [
+     2.8,
+     -1.0
+    ],
+    "coast": false,
+    "sailor": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "window"
+    },
+    "local": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "February, twenty twenty. Ballycotton, Ireland. Storm Dennis.",
+   "cap": "February 2020. Ballycotton, Ireland. Storm Dennis.",
+   "key": [
+    "DENNIS."
+   ],
+   "board": [
+    "FEB 2020",
+    "STORM DENNIS"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "local": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "A rusty cargo ship sits on the rocks. Nobody aboard. Rust everywhere.",
+   "key": [
+    "ROCKS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "local"
+   },
+   "act": {
+    "local": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Her name is the Alta. Built in nineteen seventy six.",
+   "cap": "Her name is the Alta. Built in 1976.",
+   "key": [
+    "ALTA."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So where did she come from? Rewind a year and a half.",
+   "key": [
+    "REWIND"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Twenty eighteen. The Alta breaks down in the Atlantic.",
+   "cap": "2018. The Alta breaks down in the Atlantic.",
+   "key": [
+    "ATLANTIC."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "2018",
+     "DEAD IN WATER"
+    ]
+   },
+   "place": {
+    "sailor": [
+     0,
+     -0.8
+    ],
+    "coast": [
+     2.6,
+     -0.6
+    ],
+    "capy": false,
+    "you": false,
+    "local": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sailor"
+   },
+   "act": {
+    "sailor": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "coast": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "sailor"
+    }
+   }
+  },
+  {
+   "text": "Her ten crew drift for weeks. Far southeast of Bermuda. Bad luck.",
+   "key": [
+    "BERMUDA."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "sailor"
+   },
+   "act": {
+    "sailor": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The United States coast guard rescues them all.",
+   "key": [
+    "RESCUES"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "coast",
+    "with": "sailor"
+   },
+   "act": {
+    "coast": {
+     "mood": "happy",
+     "action": "point",
+     "look": "sailor"
+    },
+    "sailor": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "The ship gets left behind. Empty. Drifting. Lights off.",
+   "key": [
+    "DRIFTING."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "coast"
+   },
+   "act": {
+    "coast": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then a tug tows her toward South America.",
+   "key": [
+    "TUG"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coast"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coast": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The tug gets hijacked. In Guyana. Seriously.",
+   "key": [
+    "HIJACKED."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "So the Alta is cut loose. Again.",
+   "key": [
+    "AGAIN."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "coast"
+   },
+   "act": {
+    "coast": {
+     "mood": "sad",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "A ship abandoned twice. Even ghosts get ghosted.",
+   "key": [
+    "GHOSTED."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "coast": false,
+    "sailor": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A British navy ship spots her mid Atlantic.",
+   "key": [
+    "BRITISH"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "SPOTTED",
+     "MID ATLANTIC"
+    ]
+   },
+   "place": {
+    "coast": [
+     0,
+     -0.4
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "sailor": false,
+    "local": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coast"
+   },
+   "act": {
+    "coast": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "coast"
+    }
+   }
+  },
+  {
+   "text": "Nobody claims her. Nobody tows her. She just keeps going. Eerie.",
+   "key": [
+    "GOING."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "coast"
+   },
+   "act": {
+    "coast": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "For over a year, she drifts alone.",
+   "key": [
+    "ALONE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coast"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "coast": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then the storm drops her on your doorstep.",
+   "key": [
+    "DOORSTEP."
+   ],
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "local": [
+     2.6,
+     -1.0
+    ],
+    "coast": false,
+    "capy": [
+     -2.6,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    },
+    "local": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Crowds come to look. Officials warn them away. Crowds come anyway.",
+   "key": [
+    "AWAY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "local"
+   },
+   "act": {
+    "local": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The wreck stays on the rocks. Slowly breaking apart. Piece by piece.",
+   "key": [
+    "APART."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "No ghosts. No curse. Just a ship nobody wanted. Poor thing.",
+   "key": [
+    "WANTED."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you climb onto that wreck? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "CLIMB ABOARD?",
+    "YES OR NO?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: MV Alta",
+   "url": "https://en.wikipedia.org/wiki/MV_Alta"
+  },
+  {
+   "title": "Irish Times: MV Alta, the unmanned voyage of the Ballycotton ghost ship",
+   "url": "https://www.irishtimes.com/news/environment/mv-alta-the-unmanned-voyage-of-the-ballycotton-ghost-ship-1.4179888"
+  },
+  {
+   "title": "Irish Times: Storm Dennis washes abandoned ghost ship onto rocks off Co Cork",
+   "url": "https://irishtimes.com/news/ireland/irish-news/storm-dennis-washes-abandoned-ghost-ship-onto-rocks-off-co-cork-1.4175774"
+  },
+  {
+   "title": "CTV News: Ghost ship from Caribbean washes ashore in Ireland",
+   "url": "https://www.ctvnews.ca/world/ghost-ship-from-caribbean-washes-ashore-in-ireland-1.4815998"
+  },
+  {
+   "title": "Euronews: Ghost ship, why did this vessel wash up in Ireland",
+   "url": "https://www.euronews.com/2020/02/18/ghost-ship-why-did-this-vessel-wash-up-in-ireland-without-any-crew-aboard"
+  },
+  {
+   "title": "The Star: A ghost ship has washed up on the Irish shore after Storm Dennis",
+   "url": "https://www.thestar.co.uk/read-this/a-ghost-ship-has-washed-up-on-the-irish-shore-after-storm-dennis-1849130"
+  },
+  {
+   "title": "MarineLink: Ghost ship washes up in Ireland",
+   "url": "https://www.marinelink.com/news/ghost-ship-washes-ireland-475771"
+  },
+  {
+   "title": "Express Tribune: Ghost ship washes ashore in Ireland in Storm Dennis",
+   "url": "https://tribune.com.pk/story/2159305/ghost-ship-washes-ashore-ireland-storm-dennis"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In February 2020 a ghost ship ran aground near Ballycotton, Ireland, in Storm Dennis",
+   "terms": [
+    "Ballycotton",
+    "Storm Dennis"
+   ]
+  },
+  {
+   "claim": "It was a cargo ship with no one aboard",
+   "terms": [
+    "cargo|merchant|freighter|ship|vessel",
+    "crew|unmanned|abandoned|nobody|no one"
+   ]
+  },
+  {
+   "claim": "The ship was the MV Alta, built in 1976",
+   "terms": [
+    "Alta",
+    "1976"
+   ]
+  },
+  {
+   "claim": "In 2018 the Alta became disabled in the Atlantic",
+   "terms": [
+    "2018",
+    "disab|broke|adrift|drift|engine|mechanical"
+   ]
+  },
+  {
+   "claim": "Ten crew were rescued southeast of Bermuda",
+   "terms": [
+    "10|ten",
+    "crew"
+   ]
+  },
+  {
+   "claim": "The US Coast Guard rescued them",
+   "terms": [
+    "Coast Guard"
+   ]
+  },
+  {
+   "claim": "The ship was abandoned and drifted",
+   "terms": [
+    "abandoned",
+    "drift"
+   ]
+  },
+  {
+   "claim": "A tug towed her toward South America",
+   "terms": [
+    "tow"
+   ]
+  },
+  {
+   "claim": "The tug was hijacked in Guyana",
+   "terms": [
+    "hijack"
+   ]
+  },
+  {
+   "claim": "A British navy ship, HMS Protector, saw her in the mid Atlantic",
+   "terms": [
+    "HMS Protector"
+   ]
+  },
+  {
+   "claim": "She drifted for over a year",
+   "terms": [
+    "year"
+   ]
+  },
+  {
+   "claim": "Officials warned people to stay away",
+   "terms": [
+    "warn|danger|stay away"
+   ]
+  }
+ ]
+}

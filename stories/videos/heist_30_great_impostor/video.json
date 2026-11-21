@@ -1,0 +1,648 @@
+{
+ "id": "heist_30_great_impostor",
+ "title": "The fake surgeon of the Korean War",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "office",
+ "setOpts": {
+  "boardText": [
+   "DR. JOSEPH",
+   "CYR?"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "fred": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#eef1f5",
+    "pants": "#3a3f4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "hold": "clipboard"
+  },
+  "sailor": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   }
+  },
+  "officer": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f"
+   }
+  },
+  "mom": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#7a5c8e",
+    "pants": "#3a2a20",
+    "hair": "bun",
+    "hairColor": "#d9d9d9",
+    "skin": "#f2c39b"
+   },
+   "hold": "envelope"
+  }
+ },
+ "lines": [
+  {
+   "text": "You're not a doctor. You perform surgery anyway. On a warship. In a war.",
+   "key": [
+    "WAR."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fred"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "fred": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "fred": "right",
+    "sailor": false,
+    "officer": false,
+    "mom": false
+   },
+   "board": [
+    "SURGEON?",
+    "NOT REALLY"
+   ]
+  },
+  {
+   "text": "You're Ferdinand Waldo Demara. They call you the great Impostor.",
+   "key": [
+    "IMPOSTOR."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "fred"
+   },
+   "act": {
+    "fred": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "fred": "center"
+   }
+  },
+  {
+   "text": "Over the years, you've been a monk. A teacher. A psychologist.",
+   "key": [
+    "PSYCHOLOGIST."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "fred"
+   },
+   "act": {
+    "fred": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It's nineteen fifty one. You borrow a real doctor's papers. Without asking.",
+   "cap": "It's 1951. You borrow a real doctor's papers. Without asking.",
+   "key": [
+    "PAPERS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "fred"
+   },
+   "act": {
+    "fred": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "DR. JOSEPH",
+    "CYR"
+   ]
+  },
+  {
+   "text": "Now you're doctor Joseph Cyr. You join the Canadian navy. As a surgeon.",
+   "key": [
+    "NAVY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fred"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "fred"
+    },
+    "fred": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "fred": "right"
+   }
+  },
+  {
+   "text": "They send you to a warship. Off the coast of Korea.",
+   "key": [
+    "KOREA."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "wide",
+    "on": "officer"
+   },
+   "act": {
+    "officer": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "fred": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "officer"
+    }
+   },
+   "place": {
+    "officer": "left",
+    "fred": "right"
+   },
+   "board": [
+    "HMCS",
+    "CAYUGA"
+   ]
+  },
+  {
+   "text": "You're the only doctor on board. The only one.",
+   "key": [
+    "ONLY"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "officer": false,
+    "fred": false
+   }
+  },
+  {
+   "text": "Then wounded soldiers arrive. Some need surgery. Right now. Tonight.",
+   "key": [
+    "SURGERY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "sailor"
+   },
+   "act": {
+    "sailor": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "sailor": "center",
+    "capy": false
+   }
+  },
+  {
+   "text": "So you read a medical textbook. Fast.",
+   "key": [
+    "TEXTBOOK."
+   ],
+   "set": "study",
+   "shot": {
+    "type": "low",
+    "on": "fred"
+   },
+   "act": {
+    "fred": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "fred": "center"
+   }
+  },
+  {
+   "text": "You operate. One soldier has a bullet near his heart.",
+   "key": [
+    "HEART."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "fred",
+    "with": "sailor"
+   },
+   "act": {
+    "fred": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "sailor"
+    },
+    "sailor": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "fred"
+    }
+   },
+   "place": {
+    "fred": "left",
+    "sailor": "right"
+   }
+  },
+  {
+   "text": "You take a deep breath. You remove it anyway. He survives.",
+   "key": [
+    "SURVIVES."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "sailor"
+   },
+   "act": {
+    "sailor": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The navy is thrilled. Newspapers tell the story.",
+   "key": [
+    "NEWSPAPERS"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   }
+  },
+  {
+   "text": "Back home, someone reads about the heroic doctor. Cyr's real mother.",
+   "key": [
+    "MOTHER."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "medium",
+    "on": "mom"
+   },
+   "act": {
+    "mom": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "mom": "center"
+   }
+  },
+  {
+   "text": "Her son is a doctor. In Canada. Not on a warship.",
+   "key": [
+    "WARSHIP."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "mom"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "mom": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     0.4
+    ],
+    "mom": [
+     2.0,
+     0.4
+    ]
+   }
+  },
+  {
+   "text": "The navy quietly sends you home. No charges. Just a very awkward goodbye.",
+   "key": [
+    "CHARGES."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "officer"
+   },
+   "act": {
+    "officer": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "officer": "center"
+   }
+  },
+  {
+   "text": "Then you sell your story. To life magazine. You get paid.",
+   "cap": "Then you sell your story. To Life magazine. You get paid.",
+   "key": [
+    "LIFE"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "fred"
+   },
+   "act": {
+    "fred": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "fred": "center",
+    "officer": false
+   }
+  },
+  {
+   "text": "Hollywood turns it into a movie. The great Impostor. Tony Curtis plays you.",
+   "key": [
+    "MOVIE."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "fred": false
+   },
+   "board": [
+    "NOW",
+    "SHOWING"
+   ]
+  },
+  {
+   "text": "No degree. No training. Somehow, it worked. Every time.",
+   "key": [
+    "WORKED."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A textbook surgeon. Would you let him operate? Yes or no?",
+   "key": [
+    "OPERATE"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Ferdinand Waldo Demara",
+   "url": "https://en.wikipedia.org/wiki/Ferdinand_Waldo_Demara"
+  },
+  {
+   "title": "Legion Magazine: Playing doctor aboard ship",
+   "url": "https://legionmagazine.com/playing-doctor-aboard-ship/"
+  },
+  {
+   "title": "Time: Medicine, all at sea (1952)",
+   "url": "https://content.time.com/time/subscriber/article/0,33009,889381,00.html"
+  },
+  {
+   "title": "War History Online: The Great Impostor, Fred Demara",
+   "url": "https://www.warhistoryonline.com/war-articles/imposter.html"
+  },
+  {
+   "title": "The Conversation: How to become a great impostor",
+   "url": "https://theconversation.com/how-to-become-a-great-impostor-98798"
+  },
+  {
+   "title": "We Are The Mighty: Impostor pretended to be a navy surgeon in the Korean War",
+   "url": "https://www.wearethemighty.com/articles/impostor-pretended-navy-surgeon-korean-war/"
+  },
+  {
+   "title": "Wikipedia: The Great Impostor (film)",
+   "url": "https://en.wikipedia.org/wiki/The_Great_Impostor"
+  },
+  {
+   "title": "Coffee or Die: Ferdinand Demara, the greatest impostor",
+   "url": "https://www.coffeeordie.com/ferdinand-demara-greatest-impostor"
+  },
+  {
+   "title": "National Catholic Reporter: Brother, doctor, soldier, lies",
+   "url": "https://ncronline.org/news/people/brother-doctor-soldier-lies"
+  },
+  {
+   "title": "Now I Know: The doctor is in, we think",
+   "url": "https://nowiknow.com/?p=8184"
+  },
+  {
+   "title": "War History Online: Fred Demara impersonated a naval surgeon",
+   "url": "https://www.warhistoryonline.com/newsbreak/the-great-imposter-how-fred-demara-jr-impersonated-a-naval-surgeon-during-the-korean-war-carrying-out-medical-duties-despite-no-formal-training.html"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Demara performed surgery on a warship during the Korean War",
+   "terms": [
+    "Demara",
+    "Korean War"
+   ]
+  },
+  {
+   "claim": "He was called the Great Impostor",
+   "terms": [
+    "Great Impostor"
+   ]
+  },
+  {
+   "claim": "He had posed as a monk, teacher and psychologist",
+   "terms": [
+    "monk"
+   ]
+  },
+  {
+   "claim": "In 1951 he used the papers of a real doctor",
+   "terms": [
+    "1951",
+    "Cyr"
+   ]
+  },
+  {
+   "claim": "As Joseph Cyr he joined the Royal Canadian Navy",
+   "terms": [
+    "Cyr",
+    "Canadian Navy"
+   ]
+  },
+  {
+   "claim": "He served on the destroyer HMCS Cayuga off Korea",
+   "terms": [
+    "Cayuga"
+   ]
+  },
+  {
+   "claim": "Wounded soldiers needed surgery",
+   "terms": [
+    "wounded"
+   ]
+  },
+  {
+   "claim": "He read medical textbooks",
+   "terms": [
+    "textbook"
+   ]
+  },
+  {
+   "claim": "He removed a bullet near a soldier's heart",
+   "terms": [
+    "bullet"
+   ]
+  },
+  {
+   "claim": "Newspapers reported his heroics",
+   "terms": [
+    "newspaper|press"
+   ]
+  },
+  {
+   "claim": "The real Cyr's mother read the story",
+   "terms": [
+    "mother"
+   ]
+  },
+  {
+   "claim": "The navy sent him home without charges",
+   "terms": [
+    "charges|deported|discharged"
+   ]
+  },
+  {
+   "claim": "He sold his story to Life magazine",
+   "terms": [
+    "Life"
+   ]
+  },
+  {
+   "claim": "A film called The Great Impostor was made",
+   "terms": [
+    "film|movie",
+    "Tony Curtis|1961"
+   ]
+  }
+ ]
+}
