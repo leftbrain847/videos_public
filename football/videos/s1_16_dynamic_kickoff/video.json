@@ -103,12 +103,49 @@
    "at": "desk"
   }
  },
+ "sources": [
+  {
+   "title": "NFL.com: NFL owners pass new hybrid kickoff rule at Annual League Meeting",
+   "url": "https://www.nfl.com/news/nfl-owners-pass-new-kickoff-rule-at-annual-league-meeting"
+  },
+  {
+   "title": "KSHB (AP): NFL owners approve a radical overhaul to kickoff rules, adopting setup used in XFL",
+   "url": "https://www.kshb.com/sports/nfl-owners-approve-a-radical-overhaul-to-kickoff-rules-ap-source-says-adopting-setup-used-in-xfl"
+  },
+  {
+   "title": "NFL.com: NFL owners vote to make dynamic kickoff permanent, adjust ball spot on touchbacks to 35-yard line",
+   "url": "https://www.nfl.com/_amp/nfl-owners-vote-to-make-dynamic-kickoff-permanent-adjust-ball-spot-on-touchbacks-to-35-yard-line"
+  },
+  {
+   "title": "NFL.com: Looking at tweak to kickoff, other rules changes for 2025 season",
+   "url": "https://www.nfl.com/news/looking-at-tweak-to-kickoff-other-rules-changes-for-2025-season"
+  },
+  {
+   "title": "Washington Times (AP): 2025 NFL season kicks off with permanent kickoff changes",
+   "url": "https://m.washingtontimes.com/news/2025/sep/2/2025-nfl-season-kicks-permanent-kickoff-changes/"
+  },
+  {
+   "title": "NFL.com: Kickoff rule change leads to highest return rate since 2010",
+   "url": "https://www.nfl.com/news/nfl-kickoff-rule-change-leads-to-highest-return-rate-since-2010"
+  },
+  {
+   "title": "Fox Sports (AP): NFL's kickoff rule change leads to highest return rate since 2010",
+   "url": "https://www.foxsports.com/articles/nfl/nfls-kickoff-rule-change-leads-to-highest-return-rate-since-2010"
+  },
+  {
+   "title": "News4Jax (AP): NFL's kickoff rule change leads to highest return rate since 2010",
+   "url": "https://www.news4jax.com/sports/2025/09/09/nfls-kickoff-rule-change-leads-to-highest-return-rate-since-2010/"
+  },
+  {
+   "title": "theScore: NFL's kickoff rule change leads to highest return rate in 15 years",
+   "url": "https://thescore.com/nfl/news/3341905"
+  }
+ ],
  "lines": [
   {
-   "text": "In 2024, the NFL told kickoff players to stand still until the ball lands.",
+   "text": "Your kickoff team must stand still. Until the ball lands.",
    "key": [
-    "STAND",
-    "STILL"
+    "STILL."
    ],
    "place": {
     "kicker": false,
@@ -146,7 +183,8 @@
    "speaker": "capy"
   },
   {
-   "text": "Because almost nobody was returning kicks anymore.",
+   "text": "Twenty twenty three. Almost nobody returns kicks anymore.",
+   "cap": "2023. Almost nobody returns kicks anymore.",
    "key": [
     "NOBODY"
    ],
@@ -157,10 +195,6 @@
      "21.8%"
     ]
    },
-   "board": [
-    "RETURNS",
-    "21.8%"
-   ],
    "place": {
     "exec": "desk",
     "capy": "left"
@@ -179,14 +213,18 @@
      "action": "idle",
      "look": "exec"
     }
-   }
+   },
+   "board": [
+    "RETURNS",
+    "21.8%"
+   ]
   },
   {
-   "text": "In 2023, only twenty one point eight percent of kickoffs were returned. A record low.",
+   "text": "Just twenty one point eight percent. A record low.",
+   "cap": "Just 21.8%. A record low.",
    "key": [
-    "21.8%"
+    "21.8%."
    ],
-   "cap": "In 2023, only 21.8% of kickoffs were returned. A record low.",
    "shot": {
     "type": "close",
     "on": "exec"
@@ -200,7 +238,7 @@
    }
   },
   {
-   "text": "The kickoff was turning into a play where nothing happens.",
+   "text": "The kickoff is turning into a nothing play.",
    "key": [
     "NOTHING"
    ],
@@ -224,14 +262,9 @@
    "speaker": "capy"
   },
   {
-   "text": "So the owners borrowed a kickoff from the X F L.",
+   "text": "So the owners redesign the whole kickoff play.",
    "key": [
-    "XFL."
-   ],
-   "cap": "So the owners borrowed a kickoff from the XFL.",
-   "board": [
-    "NEW KICKOFF",
-    "FROM THE XFL"
+    "REDESIGN"
    ],
    "shot": {
     "type": "wide",
@@ -248,14 +281,18 @@
      "action": "idle",
      "look": "exec"
     }
-   }
+   },
+   "board": [
+    "NEW KICKOFF",
+    "FROM THE XFL"
+   ]
   },
   {
-   "text": "Now the kicker stands alone at the thirty five.",
+   "text": "Your kicker stands alone at the thirty five.",
+   "cap": "Your kicker stands alone at the 35.",
    "key": [
     "ALONE"
    ],
-   "cap": "Now the kicker stands alone at the 35.",
    "set": "field",
    "setOpts": {
     "boardText": [
@@ -263,10 +300,6 @@
      "COVER: 40"
     ]
    },
-   "board": [
-    "KICKER: 35",
-    "COVER: 40"
-   ],
    "place": {
     "kicker": [
      -3.8,
@@ -295,14 +328,18 @@
      "action": "idle",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "KICKER: 35",
+    "COVER: 40"
+   ]
   },
   {
-   "text": "His ten teammates line up at the other team's forty, just yards from the blockers.",
+   "text": "Your ten teammates line up at their forty.",
+   "cap": "Your 10 teammates line up at their 40.",
    "key": [
-    "40"
+    "40."
    ],
-   "cap": "His 10 teammates line up at the other team's 40, just yards from the blockers.",
    "shot": {
     "type": "high",
     "on": "c2"
@@ -323,46 +360,342 @@
    }
   },
   {
-   "text": "And nobody moves until the ball lands or a returner touches it.",
+   "text": "You kick. Nobody moves. Not until the ball lands.",
    "key": [
-    "NOBODY",
-    "MOVES"
+    "LANDS."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "KICKER: 35",
+     "COVER: 40"
+    ],
+    "endZone": 8,
+    "zoneA": "#c8102e",
+    "zoneB": "#008e97"
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "kicker",
+    "lead": 0,
+    "z": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "kicker": {
+      "path": [
+       [
+        0.0,
+        -9.0,
+        0.6
+       ],
+       [
+        0.03,
+        -8.75,
+        0.55
+       ],
+       [
+        0.06,
+        -8.5,
+        0.5
+       ],
+       [
+        0.09,
+        -8.25,
+        0.45
+       ],
+       [
+        0.12,
+        -8.0,
+        0.4
+       ],
+       [
+        1.0,
+        -7.6,
+        0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.0985,
+        "kick"
+       ],
+       [
+        0.3,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "c1": {
+      "path": [
+       [
+        0.0,
+        2.0,
+        -2.6
+       ],
+       [
+        0.65,
+        2.0,
+        -2.6
+       ],
+       [
+        0.7375,
+        2.65,
+        -2.35
+       ],
+       [
+        0.825,
+        3.3,
+        -2.1
+       ],
+       [
+        0.9125,
+        3.95,
+        -1.85
+       ],
+       [
+        1.0,
+        4.6,
+        -1.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.65,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "c2": {
+      "path": [
+       [
+        0.0,
+        2.0,
+        0.0
+       ],
+       [
+        0.65,
+        2.0,
+        0.0
+       ],
+       [
+        0.7375,
+        2.7,
+        0.0
+       ],
+       [
+        0.825,
+        3.4,
+        0.0
+       ],
+       [
+        0.9125,
+        4.1,
+        0.0
+       ],
+       [
+        1.0,
+        4.8,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.65,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "c3": {
+      "path": [
+       [
+        0.0,
+        2.0,
+        2.6
+       ],
+       [
+        0.65,
+        2.0,
+        2.6
+       ],
+       [
+        0.7375,
+        2.65,
+        2.35
+       ],
+       [
+        0.825,
+        3.3,
+        2.1
+       ],
+       [
+        0.9125,
+        3.95,
+        1.85
+       ],
+       [
+        1.0,
+        4.6,
+        1.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.65,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "ret": {
+      "path": [
+       [
+        0.0,
+        7.4,
+        0.0
+       ],
+       [
+        0.1625,
+        7.3,
+        0.05
+       ],
+       [
+        0.325,
+        7.2,
+        0.1
+       ],
+       [
+        0.4875,
+        7.1,
+        0.15
+       ],
+       [
+        0.65,
+        7.0,
+        0.2
+       ],
+       [
+        1.0,
+        6.6,
+        0.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.65,
+        "catch"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      0.15,
+      -7.8,
+      0.4,
+      0.4
+     ],
+     [
+      0.4,
+      -0.4,
+      6.2,
+      0.3
+     ],
+     [
+      0.65,
+      7.0,
+      1.2,
+      0.2
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ],
+     [
+      0.65,
+      "ret"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Ten grown men stand very still. Great television, honestly.",
+   "key": [
+    "STILL."
    ],
    "place": {
     "capy": [
      -4.4,
      0.4
-    ]
+    ],
+    "c1": [
+     -2.4,
+     -1.2
+    ],
+    "c2": [
+     0,
+     -1.2
+    ],
+    "c3": [
+     2.4,
+     -1.2
+    ],
+    "kicker": false,
+    "ret": false
    },
    "shot": {
     "type": "two",
-    "on": "c1",
+    "on": "capy",
     "with": "c2"
    },
    "act": {
-    "c1": {
-     "mood": "worried",
-     "action": "idle",
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
      "look": "camera"
     },
     "c2": {
-     "mood": "worried",
+     "mood": "neutral",
      "action": "idle",
      "look": "camera"
-    },
-    "capy": {
-     "mood": "smug",
-     "action": "point",
-     "look": "c1"
     }
-   }
+   },
+   "speaker": "capy"
   },
   {
-   "text": "Kick it into the end zone in the air, and the other team starts at the thirty.",
+   "text": "Kick it into the end zone? Their ball at the thirty.",
+   "cap": "Kick it into the end zone? Their ball at the 30.",
    "key": [
     "30."
    ],
-   "cap": "Kick it into the end zone in the air, and the other team starts at the 30.",
    "place": {
     "ret": [
      0.6,
@@ -395,11 +728,11 @@
    }
   },
   {
-   "text": "In 2024, returns jumped to almost thirty three percent.",
+   "text": "Twenty twenty four. Returns jump to almost thirty three percent.",
+   "cap": "2024. Returns jump to almost 33%.",
    "key": [
-    "33%"
+    "33%."
    ],
-   "cap": "In 2024, returns jumped to almost 33%.",
    "set": "press",
    "setOpts": {
     "boardText": [
@@ -407,10 +740,6 @@
      "32.8%"
     ]
    },
-   "board": [
-    "2024 RETURNS",
-    "32.8%"
-   ],
    "place": {
     "exec": "center"
    },
@@ -424,17 +753,17 @@
      "action": "talk",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "2024 RETURNS",
+    "32.8%"
+   ]
   },
   {
-   "text": "In 2025, the owners made it permanent, and moved that touchback out to the thirty five.",
+   "text": "Twenty twenty five. The owners make it permanent.",
+   "cap": "2025. The owners make it permanent.",
    "key": [
-    "PERMANENT"
-   ],
-   "cap": "In 2025, the owners made it permanent, and moved that touchback out to the 35.",
-   "board": [
-    "TOUCHBACK",
-    "35"
+    "PERMANENT."
    ],
    "shot": {
     "type": "close",
@@ -446,17 +775,17 @@
      "action": "point",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "DYNAMIC KICKOFF",
+    "PERMANENT"
+   ]
   },
   {
-   "text": "Their goal: returns on sixty to seventy percent of kickoffs.",
+   "text": "The touchback moves out to the thirty five.",
+   "cap": "The touchback moves out to the 35.",
    "key": [
-    "70%"
-   ],
-   "cap": "Their goal: returns on 60 to 70% of kickoffs.",
-   "board": [
-    "GOAL:",
-    "60-70%"
+    "35."
    ],
    "place": {
     "capy": "right"
@@ -475,10 +804,14 @@
      "action": "idle",
      "look": "exec"
     }
-   }
+   },
+   "board": [
+    "TOUCHBACK",
+    "35"
+   ]
   },
   {
-   "text": "Same game. Same field. A brand new play nobody may move on.",
+   "text": "Same game. Same field. Brand new kickoff. Mostly standing.",
    "key": [
     "BRAND",
     "NEW"
@@ -503,10 +836,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Should the kickoff go back to the old way? Yes or no?",
+   "text": "Should the old kickoff come back? Yes or no. Kickers, stay calm.",
    "key": [
     "YES",
-    "NO"
+    "NO."
    ],
    "shot": {
     "type": "close",
@@ -522,26 +855,66 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "NFL.com: NFL owners pass new hybrid kickoff rule at Annual League Meeting",
-   "url": "https://www.nfl.com/news/nfl-owners-pass-new-kickoff-rule-at-annual-league-meeting"
+   "claim": "In 2023 only 21.8% of kickoffs were returned, a record low",
+   "terms": [
+    "21.8"
+   ]
   },
   {
-   "title": "KSHB (AP): NFL owners approve a radical overhaul to kickoff rules, adopting setup used in XFL",
-   "url": "https://www.kshb.com/sports/nfl-owners-approve-a-radical-overhaul-to-kickoff-rules-ap-source-says-adopting-setup-used-in-xfl"
+   "claim": "The owners approved a new kickoff",
+   "terms": [
+    "kickoff",
+    "approve"
+   ]
   },
   {
-   "title": "NFL.com: NFL owners vote to make dynamic kickoff permanent, adjust ball spot on touchbacks to 35-yard line",
-   "url": "https://www.nfl.com/_amp/nfl-owners-vote-to-make-dynamic-kickoff-permanent-adjust-ball-spot-on-touchbacks-to-35-yard-line"
+   "claim": "The kicker lines up at the 35",
+   "terms": [
+    "kicker",
+    "35"
+   ]
   },
   {
-   "title": "NFL.com: Looking at tweak to kickoff, other rules changes for 2025 season",
-   "url": "https://www.nfl.com/news/looking-at-tweak-to-kickoff-other-rules-changes-for-2025-season"
+   "claim": "The coverage team lines up at the receiving team's 40",
+   "terms": [
+    "40"
+   ]
   },
   {
-   "title": "Washington Times (AP): 2025 NFL season kicks off with permanent kickoff changes",
-   "url": "https://m.washingtontimes.com/news/2025/sep/2/2025-nfl-season-kicks-permanent-kickoff-changes/"
+   "claim": "Nobody may move until the ball is touched or hits the ground",
+   "terms": [
+    "ball",
+    "ground|touched|lands"
+   ]
+  },
+  {
+   "claim": "A kick into the end zone in the air puts the ball at the 30",
+   "terms": [
+    "end zone",
+    "30"
+   ]
+  },
+  {
+   "claim": "In 2024 returns rose to 32.8%",
+   "terms": [
+    "32.8"
+   ]
+  },
+  {
+   "claim": "In 2025 the owners made the kickoff permanent",
+   "terms": [
+    "permanent"
+   ]
+  },
+  {
+   "claim": "Touchbacks moved to the 35",
+   "terms": [
+    "touchback",
+    "35-yard|35"
+   ]
   }
  ]
 }
