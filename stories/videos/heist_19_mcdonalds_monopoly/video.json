@@ -1,0 +1,658 @@
+{
+ "id": "heist_19_mcdonalds_monopoly",
+ "title": "Uncle Jerry rigs the Monopoly game",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "office",
+ "setOpts": {
+  "boardText": [
+   "GAME",
+   "PIECES"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "jerry": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b"
+   },
+   "hold": "envelope"
+  },
+  "winner": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#e94f37",
+    "pants": "#2f4fa8",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#c98d63"
+   }
+  },
+  "agent": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  },
+  "agent2": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2b2b2e",
+    "pants": "#23262d",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You don't win the McDonald's Monopoly game. You decide who wins it.",
+   "key": [
+    "DECIDE"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "jerry"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "jerry": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "jerry": "center",
+    "winner": false,
+    "agent": false,
+    "agent2": false
+   },
+   "board": [
+    "WINNER:",
+    "YOUR FRIEND"
+   ]
+  },
+  {
+   "text": "You're Jerome Jacobson. Friends call you Uncle Jerry.",
+   "key": [
+    "JERRY."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "jerry"
+   },
+   "act": {
+    "jerry": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   }
+  },
+  {
+   "text": "You're a former cop. Now you run security for the game.",
+   "key": [
+    "SECURITY"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "jerry"
+   },
+   "act": {
+    "jerry": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "HEAD OF",
+    "SECURITY"
+   ]
+  },
+  {
+   "text": "Your job is to protect the winning pieces. From people like you.",
+   "key": [
+    "YOU."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "jerry"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "jerry"
+    },
+    "jerry": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "jerry": "right"
+   }
+  },
+  {
+   "text": "You carry the pieces to the printer yourself.",
+   "key": [
+    "YOURSELF."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "jerry"
+   },
+   "act": {
+    "jerry": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false,
+    "jerry": "center"
+   }
+  },
+  {
+   "text": "Then the big winners go into your pocket. Literally.",
+   "key": [
+    "POCKET."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "jerry"
+   },
+   "act": {
+    "jerry": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You hand them out. To friends. To family. To total strangers.",
+   "key": [
+    "STRANGERS."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "two",
+    "on": "jerry",
+    "with": "winner"
+   },
+   "act": {
+    "jerry": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "winner"
+    },
+    "winner": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "jerry"
+    }
+   },
+   "place": {
+    "jerry": [
+     -2.0,
+     0.4
+    ],
+    "winner": [
+     2.0,
+     0.4
+    ]
+   }
+  },
+  {
+   "text": "They claim the prize. They pay you a cut.",
+   "key": [
+    "CUT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "winner"
+   },
+   "act": {
+    "winner": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "board": [
+    "$1,000,000",
+    "WINNER!"
+   ]
+  },
+  {
+   "text": "Million dollar winners. Cars. Vacations. All fixed.",
+   "key": [
+    "FIXED."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "jerry": false,
+    "winner": false
+   }
+  },
+  {
+   "text": "This goes on for about twelve years. Nobody notices a thing.",
+   "cap": "This goes on for about 12 years.",
+   "key": [
+    "12"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "1989",
+    "TO 2001"
+   ]
+  },
+  {
+   "text": "The total? Over twenty four million dollars in prizes.",
+   "cap": "The total? Over $24 million in prizes.",
+   "key": [
+    "MILLION"
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "wide",
+    "on": "jerry"
+   },
+   "act": {
+    "jerry": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "jerry": "center"
+   },
+   "board": [
+    "TOTAL:",
+    "$24,000,000+"
+   ]
+  },
+  {
+   "text": "Then comes an anonymous tip. Straight to the F B I.",
+   "cap": "Then comes an anonymous tip. Straight to the FBI.",
+   "key": [
+    "TIP"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "agent": "center"
+   }
+  },
+  {
+   "text": "Agents go undercover. They even film fake commercials with the winners.",
+   "key": [
+    "COMMERCIALS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "agent",
+    "with": "agent2"
+   },
+   "act": {
+    "agent": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "agent2"
+    },
+    "agent2": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "agent": "left",
+    "agent2": "right"
+   }
+  },
+  {
+   "text": "The winners happily talk on camera. About their big win.",
+   "key": [
+    "CAMERA."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "close",
+    "on": "winner"
+   },
+   "act": {
+    "winner": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "winner": "center"
+   }
+  },
+  {
+   "text": "Their stories don't add up. Not even a little.",
+   "key": [
+    "UP."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "winner"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "winner"
+    },
+    "winner": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     0.4
+    ],
+    "winner": [
+     2.0,
+     0.4
+    ]
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "It's two thousand one. The F B I arrests you. Plus dozens of others.",
+   "cap": "It's 2001. The FBI arrests you. Plus dozens of others.",
+   "key": [
+    "DOZENS"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "agent": "center"
+   },
+   "board": [
+    "OPERATION",
+    "FINAL ANSWER"
+   ]
+  },
+  {
+   "text": "You get thirty seven months in prison. Game over.",
+   "cap": "You get 37 months in prison.",
+   "key": [
+    "MONTHS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "jerry"
+   },
+   "act": {
+    "jerry": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "jerry": "center",
+    "agent": false
+   }
+  },
+  {
+   "text": "Millions of customers peeled those stickers. The big ones were never in play.",
+   "key": [
+    "NEVER"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "jerry": false
+   }
+  },
+  {
+   "text": "Good news, though. Your fries were always real. Mostly.",
+   "key": [
+    "FRIES"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Did you ever win anything from that game? Yes or no?",
+   "key": [
+    "WIN"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: McDonald's Monopoly",
+   "url": "https://en.wikipedia.org/wiki/McDonald%27s_Monopoly"
+  },
+  {
+   "title": "U.S. Department of Justice: Defendants charged in McDonald's game fraud (2001)",
+   "url": "https://www.justice.gov/archive/opa/pr/2001/August/422ag.htm"
+  },
+  {
+   "title": "CNBC: How the McMillions scam rigged the McDonald's Monopoly game",
+   "url": "https://www.cnbc.com/2020/02/07/how-mcmillions-scam-rigged-the-mcdonalds-monopoly-game.html"
+  },
+  {
+   "title": "The Daily Beast: How an ex-cop rigged McDonald's Monopoly game and stole millions",
+   "url": "https://www.thedailybeast.com/how-an-ex-cop-rigged-mcdonalds-monopoly-game-and-stole-millions"
+  },
+  {
+   "title": "Star-Advertiser: The McMillions Monopoly scheme explained",
+   "url": "https://www.staradvertiser.com/2020/02/04/news/the-mcmillions-monopoly-scheme-explained/"
+  },
+  {
+   "title": "Axios: The wild scheme to rig McDonald's Monopoly",
+   "url": "https://www.axios.com/2018/07/29/mcdonalds-monopoly-fraud-rigged-game"
+  },
+  {
+   "title": "Wikipedia: McMillions",
+   "url": "https://en.wikipedia.org/wiki/McMillions"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Jerome Jacobson rigged the McDonald's Monopoly game",
+   "terms": [
+    "Jacobson",
+    "Monopoly"
+   ]
+  },
+  {
+   "claim": "He was known as Uncle Jerry",
+   "terms": [
+    "Uncle Jerry"
+   ]
+  },
+  {
+   "claim": "He was a former police officer",
+   "terms": [
+    "police officer|cop"
+   ]
+  },
+  {
+   "claim": "He was head of security for the game's marketing company",
+   "terms": [
+    "Jacobson",
+    "security"
+   ]
+  },
+  {
+   "claim": "He took the winning pieces himself",
+   "terms": [
+    "Jacobson",
+    "pieces"
+   ]
+  },
+  {
+   "claim": "He passed them to recruits who claimed prizes and paid him",
+   "terms": [
+    "recruit|friends|family"
+   ]
+  },
+  {
+   "claim": "Prizes included $1 million and cars",
+   "terms": [
+    "million",
+    "car|cars"
+   ]
+  },
+  {
+   "claim": "It lasted about 12 years",
+   "terms": [
+    "12 years|twelve years|1989"
+   ]
+  },
+  {
+   "claim": "Over $24 million in prizes were stolen",
+   "terms": [
+    "24 million"
+   ]
+  },
+  {
+   "claim": "An anonymous tip reached the FBI",
+   "terms": [
+    "anonymous",
+    "FBI"
+   ]
+  },
+  {
+   "claim": "Agents filmed fake commercials with winners",
+   "terms": [
+    "commercial"
+   ]
+  },
+  {
+   "claim": "The FBI made arrests in 2001",
+   "terms": [
+    "2001",
+    "arrest|charged|indict"
+   ]
+  },
+  {
+   "claim": "Jacobson was sentenced to 37 months",
+   "terms": [
+    "37 months"
+   ]
+  }
+ ]
+}

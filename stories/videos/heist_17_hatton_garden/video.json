@@ -1,0 +1,675 @@
+{
+ "id": "heist_17_hatton_garden",
+ "title": "The pensioners of Hatton Garden",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "HATTON",
+   "GARDEN"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "brian": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5f6770",
+    "pants": "#3a3f4b",
+    "hair": "bald",
+    "hairColor": "#d9d9d9",
+    "skin": "#f2c39b"
+   }
+  },
+  "terry": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#8a7a5c",
+    "pants": "#3a3f4b",
+    "hair": "short",
+    "hairColor": "#d9d9d9",
+    "skin": "#e8b48f"
+   }
+  },
+  "basil": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2e",
+    "pants": "#1f2a3a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#c98d63"
+   }
+  },
+  "cop": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You pull off one of Britain's biggest burglaries. You're seventy six. Your crew needs naps.",
+   "cap": "You pull off one of Britain's biggest burglaries. You're 76. Your crew needs naps.",
+   "key": [
+    "NAPS."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "brian"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "brian": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "brian": "center",
+    "terry": false,
+    "basil": false,
+    "cop": false
+   },
+   "board": [
+    "AGE:",
+    "76"
+   ]
+  },
+  {
+   "text": "London. Easter weekend, twenty fifteen. The jewelry district.",
+   "cap": "London. Easter weekend, 2015. The jewelry district.",
+   "key": [
+    "EASTER"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "brian"
+   },
+   "act": {
+    "brian": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "EASTER",
+    "2015"
+   ]
+  },
+  {
+   "text": "Your target is a safe deposit vault. Full of gems. Full of cash.",
+   "key": [
+    "VAULT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "brian"
+   },
+   "act": {
+    "brian": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your crew? Mostly in their sixties. Some in their seventies.",
+   "key": [
+    "SEVENTIES."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "brian",
+    "with": "terry"
+   },
+   "act": {
+    "brian": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "terry"
+    },
+    "terry": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "brian": "left",
+    "terry": "right"
+   },
+   "board": [
+    "AVERAGE AGE:",
+    "60+"
+   ]
+  },
+  {
+   "text": "Somebody with a key lets you in. Quietly.",
+   "key": [
+    "KEY"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "basil"
+   },
+   "act": {
+    "basil": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "basil": "center",
+    "brian": false,
+    "terry": false
+   }
+  },
+  {
+   "text": "You climb down the elevator shaft.",
+   "key": [
+    "SHAFT."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "terry"
+   },
+   "act": {
+    "terry": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "terry": "center",
+    "basil": false
+   }
+  },
+  {
+   "text": "Then you drill through a thick concrete wall. With a diamond drill.",
+   "key": [
+    "DRILL."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "terry"
+   },
+   "act": {
+    "terry": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "WALL:",
+    "50 CM"
+   ]
+  },
+  {
+   "text": "You get through. Behind it? A metal cabinet. Bolted down.",
+   "key": [
+    "BOLTED"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "terry"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "terry"
+    },
+    "terry": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "terry": "right"
+   }
+  },
+  {
+   "text": "So you go home. Like it's a normal job.",
+   "key": [
+    "HOME."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "terry": false
+   }
+  },
+  {
+   "text": "You buy better equipment. You come back the next night.",
+   "key": [
+    "NIGHT."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "brian"
+   },
+   "act": {
+    "brian": {
+     "mood": "happy",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "brian": "left",
+    "terry": "right"
+   }
+  },
+  {
+   "text": "This time it works. You open seventy three boxes.",
+   "cap": "This time it works. You open 73 boxes.",
+   "key": [
+    "BOXES."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "brian"
+   },
+   "act": {
+    "brian": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "board": [
+    "73",
+    "BOXES"
+   ]
+  },
+  {
+   "text": "The loot? Around fourteen million pounds. Maybe more.",
+   "cap": "The loot? Around \u00a314 million. Maybe more.",
+   "key": [
+    "MILLION"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "brian"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "brian"
+    },
+    "brian": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "brian": "right",
+    "terry": false
+   }
+  },
+  {
+   "text": "An alarm went off that first night. Nobody came. Unlucky for the vault.",
+   "key": [
+    "NOBODY"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "brian": false
+   }
+  },
+  {
+   "text": "But police find the security footage. They spot your white van.",
+   "key": [
+    "FOOTAGE."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "cop": "center"
+   },
+   "board": [
+    "CCTV",
+    "MATCH"
+   ]
+  },
+  {
+   "text": "Then they bug your cars. Your pub. They just listen.",
+   "key": [
+    "LISTEN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You brag. On tape. About everything. The drill. The vault. The loot.",
+   "key": [
+    "BRAG."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "close",
+    "on": "terry"
+   },
+   "act": {
+    "terry": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "terry": "center"
+   }
+  },
+  {
+   "text": "Arrested. Convicted. Several of you get up to seven years.",
+   "cap": "Arrested. Convicted. Several of you get up to 7 years.",
+   "key": [
+    "7"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "cop"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "cop"
+    },
+    "cop": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "cop": "right"
+   }
+  },
+  {
+   "text": "The man with the key? Nicknamed Basil. Caught years later.",
+   "key": [
+    "BASIL."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "basil"
+   },
+   "act": {
+    "basil": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "basil": "center",
+    "capy": false,
+    "cop": false
+   }
+  },
+  {
+   "text": "Old school crew. Old school mistake. They talked. A lot.",
+   "key": [
+    "TALKED."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   }
+  },
+  {
+   "text": "A crew that brags at the pub. Would you trust them?",
+   "key": [
+    "THEM?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Hatton Garden safe deposit burglary",
+   "url": "https://en.wikipedia.org/wiki/Hatton_Garden_safe_deposit_burglary"
+  },
+  {
+   "title": "NPR: Seven British men guilty of massive Easter gem heist",
+   "url": "https://www.npr.org/sections/thetwo-way/2016/01/14/463081162/seven-british-men-guilty-of-massive-easter-gem-heist"
+  },
+  {
+   "title": "ITV: The Dad's Army masterminds behind the heist",
+   "url": "https://www.itv.com/news/2016-01-14/hatton-garden-the-dads-army-masterminds-behind-the-heist"
+  },
+  {
+   "title": "RTE: Hatton Garden robbery sentences",
+   "url": "https://www.rte.ie/news/2016/0309/773691-hatton-garden-robbery/"
+  },
+  {
+   "title": "The New Daily: Pensioners behind Britain's biggest heist",
+   "url": "https://www.thenewdaily.com.au/news/2016/03/13/pensioners-behind-britains-biggest-heist/"
+  },
+  {
+   "title": "Crime and Investigation: What happened to the Hatton Garden burglars",
+   "url": "https://www.crimeandinvestigation.co.uk/articles/what-happened-hatton-garden-burglars"
+  },
+  {
+   "title": "The Week: How the real Hatton Garden robbery played out",
+   "url": "https://theweek.com/63246/how-the-real-hatton-garden-robbery-played-out"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "It was one of the biggest burglaries in English or British history",
+   "terms": [
+    "biggest|largest",
+    "burglary"
+   ]
+  },
+  {
+   "claim": "The ringleader Brian Reader was 76",
+   "terms": [
+    "Reader",
+    "76"
+   ]
+  },
+  {
+   "claim": "It happened over the Easter weekend in 2015",
+   "terms": [
+    "Easter",
+    "2015"
+   ]
+  },
+  {
+   "claim": "The target was a safe deposit vault in Hatton Garden",
+   "terms": [
+    "safe deposit",
+    "Hatton Garden"
+   ]
+  },
+  {
+   "claim": "Most of the gang were in their sixties and seventies",
+   "terms": [
+    "60s|sixties|pensioners|elderly",
+    "70s|seventies|gang"
+   ]
+  },
+  {
+   "claim": "Someone with keys let them into the building",
+   "terms": [
+    "Basil",
+    "keys|key"
+   ]
+  },
+  {
+   "claim": "They went down the lift shaft",
+   "terms": [
+    "lift shaft|elevator shaft"
+   ]
+  },
+  {
+   "claim": "They drilled through a concrete wall with a diamond drill",
+   "terms": [
+    "drill",
+    "wall"
+   ]
+  },
+  {
+   "claim": "A metal cabinet bolted to the floor blocked them",
+   "terms": [
+    "cabinet",
+    "bolted"
+   ]
+  },
+  {
+   "claim": "They returned the next night with new equipment",
+   "terms": [
+    "returned|came back",
+    "equipment|tools"
+   ]
+  },
+  {
+   "claim": "They opened 73 boxes",
+   "terms": [
+    "73"
+   ]
+  },
+  {
+   "claim": "The loot was around 14 million pounds",
+   "terms": [
+    "14 million|14m"
+   ]
+  },
+  {
+   "claim": "An alarm went off and no one responded",
+   "terms": [
+    "alarm",
+    "police"
+   ]
+  },
+  {
+   "claim": "Police traced a white van on CCTV",
+   "terms": [
+    "CCTV",
+    "white|van|Mercedes"
+   ]
+  },
+  {
+   "claim": "Police bugged their cars and the pub",
+   "terms": [
+    "bugged|bugging|listening|recorded"
+   ]
+  },
+  {
+   "claim": "Gang members got up to seven years",
+   "terms": [
+    "seven years|7 years"
+   ]
+  },
+  {
+   "claim": "The man with the keys, called Basil, was caught years later",
+   "terms": [
+    "Basil",
+    "2018|2019"
+   ]
+  }
+ ]
+}
