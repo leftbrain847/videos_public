@@ -771,6 +771,22 @@
    "url": "https://www.abcactionnews.com/news/apollo/50-years-later-the-pen-that-saved-apollo-11"
   },
   {
+   "title": "Gulf Today: Aldrin's felt-tip pen sells for $857,600",
+   "url": "https://www.gulftoday.ae/news/2026/07/16/buzz-aldrins-apollo-11-felt-tip-pen-sells-for-857600-at-auction"
+  },
+  {
+   "title": "All That's Interesting: Aldrin's pen sold for $850,000",
+   "url": "https://allthatsinteresting.com/buzz-aldrin-apollo-11-pen"
+  },
+  {
+   "title": "Galerie: Aldrin's Apollo 11 pen draws $857,600",
+   "url": "https://galeriemagazine.com/?p=244904"
+  },
+  {
+   "title": "NASA Apollo Lunar Surface Journal: the landing",
+   "url": "https://www.nasa.gov/history/alsj/a11/a11.landing.html"
+  },
+  {
    "title": "Wikipedia: Apollo Guidance Computer",
    "url": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer"
   }
@@ -812,7 +828,7 @@
   {
    "claim": "Armstrong took manual control and flew past them",
    "terms": [
-    "manual",
+    "manual|semi-automatic|took over",
     "Armstrong"
    ]
   },
@@ -864,7 +880,7 @@
   {
    "claim": "Aldrin kept the pen; it sold at auction in 2026 for more than $850,000",
    "terms": [
-    "850,000|850000"
+    "857,600|850,000|850000"
    ]
   }
  ]

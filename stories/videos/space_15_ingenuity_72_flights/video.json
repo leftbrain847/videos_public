@@ -142,9 +142,9 @@
    }
   },
   {
-   "text": "It weighs about four pounds. Its brain is basically a smartphone chip.",
+   "text": "It weighs about four pounds. Lighter than a bowling ball.",
    "key": [
-    "SMARTPHONE"
+    "BOWLING"
    ],
    "shot": {
     "type": "two",
@@ -223,8 +223,8 @@
    }
   },
   {
-   "text": "April, twenty twenty one. First flight. Up three meters. Hover. Down. Thirty nine seconds.",
-   "cap": "April 2021. First flight. Up 3 meters. Hover. Down. 39 seconds.",
+   "text": "April, twenty twenty one. First flight. Up three meters. Hover. Down. History.",
+   "cap": "April 2021. First flight. Up 3 meters. Hover. Down. History.",
    "key": [
     "FIRST"
    ],
@@ -361,7 +361,7 @@
    }
   },
   {
-   "text": "Ingenuity ignores the plan. Completely.",
+   "text": "Ingenuity ignores the plan. Completely. Happily.",
    "key": [
     "IGNORES"
    ],
@@ -444,7 +444,7 @@
    }
   },
   {
-   "text": "Dust storms. Lost contact. It keeps coming back. Every single time.",
+   "text": "Dust storms. Lost contact. It keeps coming back. Every single time. Like a champ.",
    "key": [
     "BACK."
    ],
@@ -611,7 +611,7 @@
    }
   },
   {
-   "text": "It still sits on Mars today. Parked. Still sending data, for a while.",
+   "text": "It still sits on Mars today. Parked. Still sending data, for a while. Retired.",
    "key": [
     "DATA,"
    ],
@@ -730,12 +730,6 @@
    ]
   },
   {
-   "claim": "It used a smartphone processor",
-   "terms": [
-    "smartphone|cellphone|phone"
-   ]
-  },
-  {
    "claim": "Mars air is about 1% as dense as Earth's",
    "terms": [
     "1%|1 percent|one percent"
@@ -745,12 +739,6 @@
    "claim": "Its blades spin thousands of times a minute",
    "terms": [
     "rpm|revolutions per minute|2,400|2,500"
-   ]
-  },
-  {
-   "claim": "First flight was in April 2021 and lasted 39 seconds",
-   "terms": [
-    "39"
    ]
   },
   {

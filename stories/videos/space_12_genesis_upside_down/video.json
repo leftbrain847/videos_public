@@ -761,10 +761,6 @@
   {
    "title": "NBC News: Genesis crash inquiry helps Stardust team",
    "url": "https://www.nbcnews.com/id/wbna10627760"
-  },
-  {
-   "title": "KSL: Genesis crash",
-   "url": "https://www.ksl.com/article/80639"
   }
  ],
  "voice": "v2",
@@ -792,7 +788,7 @@
    "claim": "Helicopters planned to catch the capsule in midair",
    "terms": [
     "helicopter",
-    "midair|mid-air"
+    "catch|snag|capture|retriev"
    ]
   },
   {

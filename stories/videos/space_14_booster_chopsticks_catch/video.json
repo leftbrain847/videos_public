@@ -217,9 +217,9 @@
    }
   },
   {
-   "text": "This one has no legs at all. That's on purpose.",
+   "text": "SpaceX wants something wilder. Much, much wilder.",
    "key": [
-    "PURPOSE."
+    "WILDER."
    ],
    "speaker": "capy",
    "shot": {
@@ -636,7 +636,7 @@
    }
   },
   {
-   "text": "A skyscraper sized rocket. Caught like a dumpling. Unreal.",
+   "text": "A skyscraper sized rocket. Caught like a dumpling. Unreal. Truly.",
    "key": [
     "DUMPLING."
    ],
@@ -769,12 +769,6 @@
    "claim": "Boosters usually land on legs or fall into the ocean",
    "terms": [
     "ocean|sea|legs"
-   ]
-  },
-  {
-   "claim": "The booster has no landing legs",
-   "terms": [
-    "legs"
    ]
   },
   {

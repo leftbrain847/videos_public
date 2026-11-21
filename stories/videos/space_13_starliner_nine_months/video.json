@@ -751,6 +751,10 @@
    "url": "https://www.accuweather.com/en/space-news/starliner-astronauts-suni-williams-butch-wilmore-splash-down-on-earth-after-9-months-in-space/1756872"
   },
   {
+   "title": "Wikipedia: Boeing Starliner",
+   "url": "https://en.wikipedia.org/wiki/Boeing_Starliner"
+  },
+  {
    "title": "ABC7: Dragon splashes down with Wilmore and Williams",
    "url": "https://abc7.com/post/nasas-suni-williams-butch-wilmore-are-finally-returning-home-months-space/16044681/"
   }
@@ -794,14 +798,14 @@
   {
    "claim": "NASA decided in August that Starliner would come home empty",
    "terms": [
-    "August",
-    "empty|uncrewed|without"
+    "Starliner",
+    "without|empty|uncrewed"
    ]
   },
   {
    "claim": "Starliner landed in New Mexico without crew",
    "terms": [
-    "New Mexico"
+    "New Mexico|White Sands"
    ]
   },
   {
