@@ -149,9 +149,9 @@
    }
   },
   {
-   "text": "You throw a feast. You drink too much. You pass out.",
+   "text": "Your life is good. Too good, apparently.",
    "key": [
-    "OUT."
+    "GOOD,"
    ],
    "place": {
     "capy": false,
@@ -228,7 +228,7 @@
    ]
   },
   {
-   "text": "Bad night. Worse morning.",
+   "text": "That is a bad night. Then a worse morning.",
    "key": [
     "WORSE"
    ],
@@ -814,8 +814,16 @@
    "url": "https://en.wikipedia.org/wiki/Journey_to_the_West"
   },
   {
-   "title": "Mythopedia: Sun Wukong",
-   "url": "https://mythopedia.com/chinese-mythology/gods/sun-wukong/"
+   "title": "Wikipedia: Yanluo Wang",
+   "url": "https://en.wikipedia.org/wiki/Yanluo_Wang"
+  },
+  {
+   "title": "Journey to the West Research: the Immortal Register",
+   "url": "https://journeytothewestresearch.com/tag/underworld/"
+  },
+  {
+   "title": "EBSCO Research Starters: Adventures of Monkey",
+   "url": "https://ebsco.com/research-starters/literature-and-writing/adventures-monkey"
   },
   {
    "title": "Wikipedia: Jade Emperor",
@@ -832,13 +840,6 @@
    "terms": [
     "Sun Wukong",
     "Monkey King"
-   ]
-  },
-  {
-   "claim": "After a feast he falls asleep drunk",
-   "terms": [
-    "drunk|drinking|banquet|feast",
-    "sleep|asleep"
    ]
   },
   {

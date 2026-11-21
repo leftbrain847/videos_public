@@ -841,10 +841,6 @@
   {
    "title": "ToposText: Homeric Hymn to Aphrodite",
    "url": "https://topostext.org/work/358"
-  },
-  {
-   "title": "Theoi: Eos",
-   "url": "https://www.theoi.com/Titan/TitanisEos.html"
   }
  ],
  "claims": [
@@ -907,7 +903,7 @@
   {
    "claim": "His voice babbles on endlessly",
    "terms": [
-    "voice",
+    "babbles|babbling|babble|voice",
     "endless|endlessly|ceaseless|ceaselessly|unceasing"
    ]
   },

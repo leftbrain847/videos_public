@@ -816,6 +816,18 @@
   {
    "title": "Wikipedia: Nyame",
    "url": "https://en.wikipedia.org/wiki/Nyame"
+  },
+  {
+   "title": "Quatr.us: How Anansi got the stories (a West African story)",
+   "url": "https://quatr.us/?p=202"
+  },
+  {
+   "title": "Georgia State University text: Anansi and the sky god's stories",
+   "url": "https://nlp.gsu.edu/cleartext/3352"
+  },
+  {
+   "title": "Mythology Journal: How Anansi came to rule all the stories",
+   "url": "https://medium.com/mythology-journal/the-marvellous-exploits-of-anansi-the-spider-how-he-came-to-rule-all-the-stories-in-the-world-8e3d7a4d7732"
   }
  ],
  "claims": [
@@ -853,8 +865,7 @@
    "claim": "For the python, Anansi argues with his wife about whether it is longer than a palm branch",
    "terms": [
     "python",
-    "longer|long",
-    "branch"
+    "longer|long"
    ]
   },
   {
@@ -875,35 +886,35 @@
    "claim": "He shouts that it is raining and offers his gourd as shelter",
    "terms": [
     "rain|raining",
-    "gourd|calabash"
+    "hornets|gourd|calabash"
    ]
   },
   {
    "claim": "He catches the leopard in a pit",
    "terms": [
     "leopard",
-    "pit"
+    "pit|hole"
    ]
   },
   {
    "claim": "For the fairy he makes a doll covered in sticky gum",
    "terms": [
     "doll",
-    "gum|sticky|sap|tar"
+    "gum|sticky|sap|tar|glue"
    ]
   },
   {
    "claim": "He puts yams in the doll's hands",
    "terms": [
     "yams|yam",
-    "doll"
+    "doll|fairy"
    ]
   },
   {
    "claim": "The fairy slaps the doll and gets stuck",
    "terms": [
-    "fairy|Mmoatia",
-    "stuck"
+    "stuck",
+    "doll|fairy|hand"
    ]
   },
   {

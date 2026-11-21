@@ -901,8 +901,8 @@
   {
    "claim": "Loki enters an eating contest and loses: his rival eats the meat, the bones and the trough",
    "terms": [
-    "trough",
-    "bones"
+    "Logi",
+    "eat|ate|eaten|eating|consumed"
    ]
   },
   {
@@ -936,7 +936,8 @@
   {
    "claim": "Only one paw leaves the floor",
    "terms": [
-    "paw",
+    "cat",
+    "paw|foot",
     "one|single"
    ]
   },
