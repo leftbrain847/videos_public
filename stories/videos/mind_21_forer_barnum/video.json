@@ -1,0 +1,948 @@
+{
+ "id": "mind_21_forer_barnum",
+ "title": "The personality test everyone aced",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "YOUR",
+   "PROFILE"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#27ae60",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "hold": "envelope"
+  },
+  "prof": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#4a3b2c",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true,
+    "tie": "#7a5c2a"
+   },
+   "hold": "clipboard"
+  },
+  "s2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#2e86c1",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "hold": "envelope"
+  }
+ },
+ "lines": [
+  {
+   "text": "You take a personality test. Your profile is eerily accurate. So is everyone's.",
+   "key": [
+    "EVERYONE'S."
+   ],
+   "board": [
+    "YOUR",
+    "PROFILE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "prof": false,
+    "s2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen forty eight. Psychologist Bertram Forer teaches a class.",
+   "cap": "1948. Psychologist Bertram Forer teaches a class.",
+   "key": [
+    "FORER"
+   ],
+   "set": "office",
+   "board": [
+    "PSYCH 101",
+    "1948"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "s2": [
+     -3.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "prof"
+    },
+    "s2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "prof"
+    }
+   }
+  },
+  {
+   "text": "He gives his students a personality test. Long. Detailed. Serious.",
+   "key": [
+    "TEST."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "s2": [
+     -3.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Later, each student gets a private profile. Their name is on it.",
+   "key": [
+    "PRIVATE"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "s2": [
+     -3.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "prof"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "prof"
+    },
+    "prof": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "It says you want people to like you.",
+   "key": [
+    "LIKE"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "s2": [
+     -3.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Sometimes you are outgoing. Sometimes you are reserved.",
+   "key": [
+    "RESERVED."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "s2": [
+     -3.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You have potential you have not used yet. Ouch. But fair.",
+   "key": [
+    "POTENTIAL"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "s2": [
+     -3.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Wow. It really gets you.",
+   "key": [
+    "GETS"
+   ],
+   "set": "study",
+   "board": [
+    "YOUR",
+    "PROFILE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "prof": false,
+    "s2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Students rate how well it fits. Zero to five.",
+   "cap": "Students rate how well it fits. 0 to 5.",
+   "key": [
+    "5."
+   ],
+   "set": "office",
+   "board": [
+    "YOUR",
+    "PROFILE"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "s2": [
+     -3.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "s2"
+   },
+   "act": {
+    "s2": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "prof": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The average rating? Four point two six.",
+   "cap": "The average rating? 4.26.",
+   "key": [
+    "4.26."
+   ],
+   "board": [
+    "ACCURACY:",
+    "4.26 / 5"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "s2": [
+     -3.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Most say it fits them very well.",
+   "key": [
+    "WELL."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "prof": [
+     1.4,
+     0.0
+    ],
+    "s2": [
+     -3.4,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "s2",
+    "with": "you"
+   },
+   "act": {
+    "s2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "s2"
+    }
+   }
+  },
+  {
+   "text": "Here is the loophole. Every single profile was identical.",
+   "key": [
+    "IDENTICAL."
+   ],
+   "set": "study",
+   "board": [
+    "SAME",
+    "PROFILE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "prof": false,
+    "s2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Forer built it mostly from an astrology book.",
+   "key": [
+    "ASTROLOGY"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "prof": false,
+    "s2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Vague. Flattering. True of almost anyone. That is the design.",
+   "key": [
+    "ANYONE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "prof": false,
+    "s2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It becomes known as the Barnum effect.",
+   "key": [
+    "BARNUM"
+   ],
+   "board": [
+    "BARNUM",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "prof": false,
+    "s2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Named after the showman P T Barnum. A little something for everyone.",
+   "cap": "Named after the showman P.T. Barnum. A little something for everyone.",
+   "key": [
+    "SOMETHING"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "prof": false,
+    "s2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Psychologist Paul Meehl gave it that name.",
+   "key": [
+    "MEEHL"
+   ],
+   "set": "office",
+   "board": [
+    "YOUR",
+    "PROFILE"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "prof": [
+     0,
+     0.2
+    ],
+    "s2": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Horoscopes run on it. So do many online quizzes.",
+   "key": [
+    "HOROSCOPES"
+   ],
+   "set": "locker",
+   "board": [
+    "YOUR",
+    "HOROSCOPE"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "prof": false,
+    "s2": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "s2"
+   },
+   "act": {
+    "s2": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You read it. You nod. You feel deeply seen.",
+   "key": [
+    "SEEN."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "prof": false,
+    "s2": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "s2"
+   },
+   "act": {
+    "s2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Classrooms keep rerunning the trick. It keeps working.",
+   "key": [
+    "WORKING."
+   ],
+   "set": "study",
+   "board": [
+    "YOUR",
+    "PROFILE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "prof": false,
+    "s2": [
+     1.2,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "s2"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "s2"
+    },
+    "s2": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "If it fits everyone, it describes no one. Including you.",
+   "key": [
+    "NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "prof": false,
+    "s2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Has a horoscope ever nailed you? Yes or no? I will not tell.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "NAILED",
+    "YOU?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "prof": false,
+    "s2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Barnum effect",
+   "url": "https://en.wikipedia.org/wiki/Barnum_effect"
+  },
+  {
+   "title": "Wikipedia: Bertram Forer",
+   "url": "https://en.wikipedia.org/wiki/Bertram_Forer"
+  },
+  {
+   "title": "SciTechDaily: The Barnum effect, why horoscopes are so popular",
+   "url": "https://scitechdaily.com/the-barnum-effect-why-horoscopes-are-so-popular/"
+  },
+  {
+   "title": "The Skeptic's Dictionary: Forer effect",
+   "url": "https://www.skepdic.com/forer.html"
+  },
+  {
+   "title": "Wikipedia: Paul E. Meehl",
+   "url": "https://en.wikipedia.org/wiki/Paul_E._Meehl"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Bertram Forer ran the demonstration in 1948",
+   "terms": [
+    "Forer",
+    "1948"
+   ]
+  },
+  {
+   "claim": "He gave students a personality test",
+   "terms": [
+    "personality",
+    "students"
+   ]
+  },
+  {
+   "claim": "Each got what seemed a personal profile",
+   "terms": [
+    "personal|personality",
+    "sketch|profile|description|vignette"
+   ]
+  },
+  {
+   "claim": "A statement said they had a great need for others to like them",
+   "terms": [
+    "like",
+    "admire"
+   ]
+  },
+  {
+   "claim": "It said at times extroverted and at times introverted",
+   "terms": [
+    "extroverted|extraverted",
+    "introverted"
+   ]
+  },
+  {
+   "claim": "It said they had unused capacity",
+   "terms": [
+    "unused"
+   ]
+  },
+  {
+   "claim": "Students rated accuracy on a 0 to 5 scale",
+   "terms": [
+    "0",
+    "5",
+    "scale"
+   ]
+  },
+  {
+   "claim": "The average rating was 4.26",
+   "terms": [
+    "4.26"
+   ]
+  },
+  {
+   "claim": "Every profile was identical",
+   "terms": [
+    "identical|same"
+   ]
+  },
+  {
+   "claim": "Forer took most statements from an astrology book",
+   "terms": [
+    "astrology"
+   ]
+  },
+  {
+   "claim": "It is called the Barnum effect",
+   "terms": [
+    "Barnum effect"
+   ]
+  },
+  {
+   "claim": "It is named after P.T. Barnum",
+   "terms": [
+    "Barnum",
+    "P. T.|P.T.|showman"
+   ]
+  },
+  {
+   "claim": "Paul Meehl coined the name",
+   "terms": [
+    "Meehl"
+   ]
+  },
+  {
+   "claim": "Horoscopes rely on it",
+   "terms": [
+    "horoscope|astrology"
+   ]
+  }
+ ]
+}
