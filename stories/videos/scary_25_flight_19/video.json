@@ -623,8 +623,8 @@
    "url": "https://en.wikipedia.org/wiki/Flight_19"
   },
   {
-   "title": "Naval History and Heritage Command: The disappearance of Flight 19 and Training 49",
-   "url": "https://history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-057/h-057-4.html"
+   "title": "Wikipedia: Bermuda Triangle",
+   "url": "https://en.wikipedia.org/wiki/Bermuda_Triangle"
   },
   {
    "title": "History.com: The mysterious disappearance of Flight 19",
@@ -742,8 +742,8 @@
   {
    "claim": "The wreckage was never found",
    "terms": [
-    "never",
-    "found"
+    "wreckage|debris|trace|remains",
+    "never|no"
    ]
   }
  ]
