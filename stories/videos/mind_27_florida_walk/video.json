@@ -1,0 +1,861 @@
+{
+ "id": "mind_27_florida_walk",
+ "title": "Read Florida, walk slower?",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "FLORIDA",
+   "BINGO · GRAY"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#16a085",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "hold": "notepad"
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "phone"
+  },
+  "be": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#f6d21f",
+    "pants": "#1b1b1b",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You read the word Florida. You walk slower. Supposedly.",
+   "key": [
+    "SLOWER."
+   ],
+   "board": [
+    "FLORIDA",
+    "BINGO · GRAY"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "be": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen ninety six. New York University. A simple word puzzle.",
+   "cap": "1996. New York University. A simple word puzzle.",
+   "key": [
+    "PUZZLE."
+   ],
+   "set": "office",
+   "board": [
+    "NYU",
+    "1996"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "be": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "exp": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You unscramble jumbled sentences. Nothing special.",
+   "key": [
+    "UNSCRAMBLE"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "be": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It feels like homework. Shuffle the words. Make a sentence.",
+   "key": [
+    "HOMEWORK."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "be": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Hidden inside are old age words. Wrinkle. Bingo. Florida.",
+   "key": [
+    "FLORIDA."
+   ],
+   "set": "study",
+   "board": [
+    "WRINKLE",
+    "BINGO · FLORIDA"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "be": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you leave down the hallway. Someone is secretly timing you.",
+   "key": [
+    "TIMING"
+   ],
+   "set": "tunnel",
+   "board": [
+    "HALLWAY"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.0,
+     0.4
+    ],
+    "exp": [
+     1.8,
+     -2.0
+    ],
+    "be": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Primed students walk to the elevator slower. Not by a lot. But enough to publish.",
+   "key": [
+    "SLOWER."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.0,
+     0.4
+    ],
+    "exp": [
+     1.8,
+     -2.0
+    ],
+    "be": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Read about bingo. Walk like a retiree.",
+   "key": [
+    "RETIREE."
+   ],
+   "set": "study",
+   "board": [
+    "FLORIDA",
+    "BINGO · GRAY"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "be": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is called behavioral priming. It becomes a superstar finding.",
+   "key": [
+    "PRIMING."
+   ],
+   "board": [
+    "BEHAVIORAL",
+    "PRIMING"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "be": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Textbooks love it. Bestsellers love it. Keynote speakers love it.",
+   "key": [
+    "BESTSELLERS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "be": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. Twenty twelve. Belgium.",
+   "cap": "Here is the twist. 2012. Belgium.",
+   "key": [
+    "BELGIUM."
+   ],
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "be": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A team reruns it with infrared sensors. No human timers. The sensors just count.",
+   "key": [
+    "INFRARED"
+   ],
+   "set": "tunnel",
+   "board": [
+    "INFRARED",
+    "SENSORS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.0,
+     0.4
+    ],
+    "exp": false,
+    "be": [
+     1.6,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "be"
+   },
+   "act": {
+    "be": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Primed people walk at a perfectly normal speed.",
+   "key": [
+    "NORMAL"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.0,
+     0.4
+    ],
+    "exp": false,
+    "be": [
+     1.6,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then a sneaky extra test. Some timers expect slow walkers.",
+   "key": [
+    "EXPECT"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.0,
+     0.4
+    ],
+    "exp": false,
+    "be": [
+     1.6,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "be"
+   },
+   "act": {
+    "be": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Those experimenters, timing by hand, see slower walking.",
+   "key": [
+    "HAND,"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.0,
+     0.4
+    ],
+    "exp": false,
+    "be": [
+     1.6,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "be",
+    "with": "you"
+   },
+   "act": {
+    "be": {
+     "mood": "smug",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "be"
+    }
+   }
+  },
+  {
+   "text": "The slowdown was in the watcher's head. Maybe.",
+   "key": [
+    "WATCHER'S"
+   ],
+   "set": "study",
+   "board": [
+    "FLORIDA",
+    "BINGO · GRAY"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "be": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Daniel Kahneman writes an open letter about priming.",
+   "key": [
+    "LETTER"
+   ],
+   "board": [
+    "OPEN",
+    "LETTER"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "be": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He warns of a train wreck looming. A Nobel winner, worried about his own field.",
+   "key": [
+    "WRECK"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "be": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Priming research faces a reckoning. Many findings wobble.",
+   "key": [
+    "RECKONING."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "be": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "be"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "be"
+    },
+    "be": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Your walking speed is your own business. Mostly.",
+   "key": [
+    "BUSINESS."
+   ],
+   "set": "tunnel",
+   "board": [
+    "FLORIDA",
+    "BINGO · GRAY"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "exp": false,
+    "be": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Can reading the word Florida slow you down? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "set": "study",
+   "board": [
+    "FLORIDA =",
+    "SLOWER?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "be": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "National Geographic (Ed Yong): Primed by expectations, why a classic psychology experiment isn't what it seemed",
+   "url": "https://www.nationalgeographic.com/science/article/primed-by-expectations-why-a-classic-psychology-experiment-isnt-what-it-seemed"
+  },
+  {
+   "title": "National Geographic: A failed replication draws a scathing personal attack",
+   "url": "https://www.nationalgeographic.com/science/article/failed-replication-bargh-psychology-study-doyen"
+  },
+  {
+   "title": "PMC: Behavioral priming, it's all in the mind, but whose mind? (Doyen et al. 2012)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3261136/"
+  },
+  {
+   "title": "Scientific American: What's next for psychology's embattled field of social priming",
+   "url": "https://www.scientificamerican.com/article/whats-next-for-psychologys-embattled-field-of-social-priming/"
+  },
+  {
+   "title": "Wikipedia: Priming (psychology)",
+   "url": "https://en.wikipedia.org/wiki/Priming_(psychology)"
+  },
+  {
+   "title": "Wikipedia: Replication crisis",
+   "url": "https://en.wikipedia.org/wiki/Replication_crisis"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The study was published in 1996 by Bargh and colleagues",
+   "terms": [
+    "Bargh",
+    "1996"
+   ]
+  },
+  {
+   "claim": "It was run at New York University",
+   "terms": [
+    "New York University|NYU"
+   ]
+  },
+  {
+   "claim": "Participants unscrambled sentences",
+   "terms": [
+    "scrambled|unscramble"
+   ]
+  },
+  {
+   "claim": "The words related to old age, like Florida and bingo",
+   "terms": [
+    "Florida",
+    "bingo"
+   ]
+  },
+  {
+   "claim": "Their walking time down a hallway was measured",
+   "terms": [
+    "hallway|corridor",
+    "walk"
+   ]
+  },
+  {
+   "claim": "Primed students walked more slowly",
+   "terms": [
+    "slower|slowly"
+   ]
+  },
+  {
+   "claim": "A 2012 Belgian team reran it with infrared sensors",
+   "terms": [
+    "infrared"
+   ]
+  },
+  {
+   "claim": "Primed participants did not walk slower",
+   "terms": [
+    "Doyen",
+    "replicat|failed|no effect"
+   ]
+  },
+  {
+   "claim": "Experimenters who expected slow walking measured slower walking by hand",
+   "terms": [
+    "experimenters",
+    "expect"
+   ]
+  },
+  {
+   "claim": "Daniel Kahneman wrote an open letter warning of a train wreck",
+   "terms": [
+    "Kahneman",
+    "train wreck"
+   ]
+  },
+  {
+   "claim": "Kahneman is a Nobel winner",
+   "terms": [
+    "Kahneman",
+    "Nobel"
+   ]
+  }
+ ]
+}

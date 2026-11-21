@@ -1,0 +1,914 @@
+{
+ "id": "mind_26_one_dollar_lie",
+ "title": "Paid one dollar to believe a lie",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "$1",
+   "OR $20?"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#2e86c1",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "exp": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "short",
+    "hairColor": "#2b2b2b",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "hold": "envelope"
+  },
+  "nxt": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f39c12",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You get paid one dollar to lie. Then you start believing it.",
+   "cap": "You get paid $1 to lie. Then you start believing it.",
+   "key": [
+    "$1"
+   ],
+   "board": [
+    "$1",
+    "OR $20?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "nxt": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen fifty nine. Stanford. The most boring hour of your life.",
+   "cap": "1959. Stanford. The most boring hour of your life.",
+   "key": [
+    "BORING"
+   ],
+   "set": "office",
+   "board": [
+    "STANFORD",
+    "1959"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "nxt": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    },
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You turn pegs. A quarter turn. Over. Over. Over. Again.",
+   "key": [
+    "PEGS."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "nxt": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You load spools onto a tray. Then you unload them.",
+   "key": [
+    "SPOOLS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "nxt": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Riveting. Truly. Science is so glamorous.",
+   "key": [
+    "RIVETING."
+   ],
+   "set": "study",
+   "board": [
+    "$1",
+    "OR $20?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "nxt": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then a favor. Tell the next student it was fun.",
+   "key": [
+    "FUN."
+   ],
+   "set": "office",
+   "board": [
+    "$1",
+    "OR $20?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "nxt": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "exp",
+    "with": "you"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "Some get twenty dollars to say it. Easy money.",
+   "cap": "Some get $20 to say it. Easy money.",
+   "key": [
+    "$20"
+   ],
+   "board": [
+    "PAY:",
+    "$20"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "nxt": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some of you get one dollar.",
+   "cap": "Some of you get $1.",
+   "key": [
+    "$1."
+   ],
+   "board": [
+    "PAY:",
+    "$1"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": [
+     1.4,
+     0.0
+    ],
+    "nxt": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You tell the waiting student it was enjoyable. Really fun.",
+   "key": [
+    "ENJOYABLE."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": false,
+    "nxt": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "nxt"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "nxt"
+    },
+    "nxt": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Later, you rate the task privately. How fun was it, honestly?",
+   "key": [
+    "HONESTLY?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "exp": false,
+    "nxt": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The twenty dollar group? It was boring. Obviously.",
+   "cap": "The $20 group? It was boring. Obviously.",
+   "key": [
+    "BORING."
+   ],
+   "set": "study",
+   "board": [
+    "$20 GROUP:",
+    "BORING"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "nxt": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The one dollar group? It was kind of fun.",
+   "cap": "The $1 group? It was kind of fun.",
+   "key": [
+    "FUN."
+   ],
+   "board": [
+    "$1 GROUP:",
+    "KIND OF FUN"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "nxt": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Less money. More belief. Backwards, right?",
+   "key": [
+    "BELIEF."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "nxt": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Leon Festinger calls it cognitive dissonance.",
+   "key": [
+    "DISSONANCE."
+   ],
+   "set": "office",
+   "board": [
+    "COGNITIVE",
+    "DISSONANCE"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "nxt": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty dollars explains a lie. One dollar does not.",
+   "cap": "$20 explains a lie. $1 does not.",
+   "key": [
+    "NOT."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     0,
+     0.2
+    ],
+    "nxt": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So your brain quietly edits the belief instead. Problem solved.",
+   "key": [
+    "EDITS"
+   ],
+   "set": "study",
+   "board": [
+    "$1",
+    "OR $20?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "nxt": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. Twenty twenty four.",
+   "cap": "Here is the twist. 2024.",
+   "key": [
+    "2024."
+   ],
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "nxt": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Dozens of labs rerun a classic dissonance setup. Thousands of people.",
+   "key": [
+    "LABS"
+   ],
+   "set": "office",
+   "board": [
+    "MULTILAB",
+    "RERUN"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     -1.4,
+     0.0
+    ],
+    "nxt": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "nxt"
+    },
+    "nxt": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "exp"
+    }
+   }
+  },
+  {
+   "text": "The predicted attitude change does not show up. Anywhere.",
+   "key": [
+    "ATTITUDE"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "exp": [
+     -1.4,
+     0.0
+    ],
+    "nxt": [
+     1.4,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "exp"
+   },
+   "act": {
+    "exp": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Dissonance may still be real. That classic recipe looks shaky.",
+   "key": [
+    "SHAKY."
+   ],
+   "set": "study",
+   "board": [
+    "$1",
+    "OR $20?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "exp": false,
+    "nxt": [
+     1.2,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "nxt"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "nxt"
+    },
+    "nxt": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Pegs, however, remain boring. That part is confirmed. Forever.",
+   "key": [
+    "BORING."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "exp": false,
+    "nxt": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A boring task. One dollar. Would you lie about it? Yes or no?",
+   "cap": "A boring task. $1. Would you lie about it? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "LIE FOR",
+    "$1?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "exp": false,
+    "nxt": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Cognitive dissonance",
+   "url": "https://en.wikipedia.org/wiki/Cognitive_dissonance"
+  },
+  {
+   "title": "Simply Psychology: Cognitive dissonance",
+   "url": "https://www.simplypsychology.org/cognitive-dissonance.html"
+  },
+  {
+   "title": "Wikipedia: Leon Festinger",
+   "url": "https://en.wikipedia.org/wiki/Leon_Festinger"
+  },
+  {
+   "title": "APS Observer: Multilab replication challenges long-held theories on cognitive dissonance",
+   "url": "https://www.psychologicalscience.org/observer/multilab-replication-cognitive-dissonance"
+  },
+  {
+   "title": "University of Arizona: A multilab replication of the induced-compliance paradigm",
+   "url": "https://experts.arizona.edu/en/publications/a-multilab-replication-of-the-induced-compliance-paradigm-of-cogn/"
+  },
+  {
+   "title": "UWA: A multilab replication of the induced-compliance paradigm of cognitive dissonance",
+   "url": "https://research-repository.uwa.edu.au/en/publications/a-multilab-replication-of-the-induced-compliance-paradigm-of-cogn/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Festinger and Carlsmith ran the study in 1959 at Stanford",
+   "terms": [
+    "Festinger",
+    "Carlsmith"
+   ]
+  },
+  {
+   "claim": "Participants did a boring hour of tasks",
+   "terms": [
+    "boring",
+    "task"
+   ]
+  },
+  {
+   "claim": "They turned pegs a quarter turn",
+   "terms": [
+    "pegs"
+   ]
+  },
+  {
+   "claim": "They loaded spools onto a tray",
+   "terms": [
+    "spools"
+   ]
+  },
+  {
+   "claim": "They were asked to tell the next participant the task was enjoyable",
+   "terms": [
+    "enjoyable|interesting"
+   ]
+  },
+  {
+   "claim": "Some were paid $20, others $1",
+   "terms": [
+    "$1|1",
+    "$20|20"
+   ]
+  },
+  {
+   "claim": "The $1 group later rated the task as more enjoyable",
+   "terms": [
+    "$1|one dollar",
+    "enjoyable|enjoyed"
+   ]
+  },
+  {
+   "claim": "Festinger called it cognitive dissonance",
+   "terms": [
+    "Festinger",
+    "cognitive dissonance"
+   ]
+  },
+  {
+   "claim": "A 2024 multilab replication tested a classic dissonance paradigm",
+   "terms": [
+    "multilab|multi-lab",
+    "dissonance"
+   ]
+  },
+  {
+   "claim": "It did not find the predicted attitude change",
+   "terms": [
+    "attitude",
+    "not|no|fail"
+   ]
+  }
+ ]
+}

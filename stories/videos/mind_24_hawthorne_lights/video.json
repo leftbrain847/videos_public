@@ -1,0 +1,835 @@
+{
+ "id": "mind_24_hawthorne_lights",
+ "title": "Brighter lights, dimmer lights, more work",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "LIGHTS",
+   "UP OR DOWN?"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#6b5a45",
+    "pants": "#3a3a3a",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4a",
+    "pants": "#2a2d33",
+    "tie": "#1f3f8f",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b"
+   },
+   "hold": "clipboard"
+  },
+  "econ": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5a3e6e",
+    "pants": "#2a2d33",
+    "tie": "#f39c12",
+    "hair": "bald",
+    "skin": "#e8b48f",
+    "glasses": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "They brighten the lights. You work harder. They dim them. You work harder.",
+   "key": [
+    "HARDER."
+   ],
+   "board": [
+    "LIGHTS",
+    "UP OR DOWN?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "boss": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The nineteen twenties. A giant factory outside Chicago. Long rows of workbenches.",
+   "cap": "The 1920s. A giant factory outside Chicago. Long rows of workbenches.",
+   "key": [
+    "FACTORY"
+   ],
+   "set": "tunnel",
+   "board": [
+    "HAWTHORNE",
+    "WORKS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "boss": [
+     1.6,
+     0.0
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The Hawthorne plant. It builds telephone equipment. Lots of it.",
+   "key": [
+    "TELEPHONE"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "boss": [
+     1.6,
+     0.0
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The question is simple. Does better lighting boost output?",
+   "key": [
+    "LIGHTING"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "boss": [
+     1.6,
+     0.0
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They raise the lights. Output goes up.",
+   "key": [
+    "UP."
+   ],
+   "board": [
+    "LIGHTS UP",
+    "OUTPUT UP"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "boss": [
+     1.6,
+     0.0
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They lower the lights. Output goes up again.",
+   "key": [
+    "AGAIN."
+   ],
+   "board": [
+    "LIGHTS DOWN",
+    "OUTPUT UP?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "boss": [
+     1.6,
+     0.0
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Even the group with unchanged lights improves. Nobody can explain it.",
+   "key": [
+    "UNCHANGED"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "boss": [
+     1.6,
+     0.0
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "boss",
+    "with": "you"
+   },
+   "act": {
+    "boss": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "So maybe it was never the lights.",
+   "key": [
+    "NEVER"
+   ],
+   "set": "study",
+   "board": [
+    "LIGHTS",
+    "UP OR DOWN?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "boss": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Maybe it was the attention. Being watched made people try harder.",
+   "key": [
+    "WATCHED"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "boss": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Decades later, it gets a name. The Hawthorne effect.",
+   "key": [
+    "HAWTHORNE"
+   ],
+   "board": [
+    "HAWTHORNE",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "boss": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It lands in management textbooks everywhere. For decades.",
+   "key": [
+    "TEXTBOOKS"
+   ],
+   "set": "office",
+   "board": [
+    "LIGHTS",
+    "UP OR DOWN?"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "boss": [
+     0,
+     0.2
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Bosses learn one lesson. Watch your workers.",
+   "key": [
+    "WATCH"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "boss": [
+     0,
+     0.2
+    ],
+    "econ": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. Someone finally checks the data. Carefully.",
+   "key": [
+    "DATA."
+   ],
+   "set": "study",
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "boss": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Economist Steven Levitt teams up with a colleague.",
+   "key": [
+    "LEVITT"
+   ],
+   "set": "office",
+   "board": [
+    "THE ORIGINAL",
+    "DATA"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "boss": false,
+    "econ": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "econ"
+   },
+   "act": {
+    "econ": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The lighting data was thought lost. They track it down anyway.",
+   "key": [
+    "LOST."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "boss": false,
+    "econ": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "econ"
+   },
+   "act": {
+    "econ": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They run the numbers properly. Week by week. Day by day.",
+   "key": [
+    "PROPERLY."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "boss": false,
+    "econ": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "econ"
+   },
+   "act": {
+    "econ": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Their verdict? The famous data patterns were fiction. Only a slight effect survives.",
+   "key": [
+    "FICTION."
+   ],
+   "set": "study",
+   "board": [
+    "LIGHTS",
+    "UP OR DOWN?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "boss": false,
+    "econ": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "econ"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "econ"
+    },
+    "econ": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The watching effect fell apart. Once someone watched closely.",
+   "key": [
+    "CLOSELY."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "boss": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Being observed can still change behavior. Just not this neatly. Sorry, textbooks.",
+   "key": [
+    "NEATLY."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "boss": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The lights, for the record, were innocent. Completely innocent.",
+   "key": [
+    "INNOCENT."
+   ],
+   "set": "tunnel",
+   "board": [
+    "LIGHTS",
+    "UP OR DOWN?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "boss": false,
+    "econ": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Do you work harder when someone watches? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "set": "study",
+   "board": [
+    "WORK HARDER",
+    "WHEN WATCHED?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "boss": false,
+    "econ": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Hawthorne effect",
+   "url": "https://en.wikipedia.org/wiki/Hawthorne_effect"
+  },
+  {
+   "title": "Wikipedia: Hawthorne Works",
+   "url": "https://en.wikipedia.org/wiki/Hawthorne_Works"
+  },
+  {
+   "title": "NBER: Was there really a Hawthorne effect at the Hawthorne plant?",
+   "url": "https://www.nber.org/papers/w15016"
+  },
+  {
+   "title": "McGill Office for Science and Society: The Hawthorne effect",
+   "url": "https://www.mcgill.ca/oss/node/9398"
+  },
+  {
+   "title": "EconPapers: Was there really a Hawthorne effect at the Hawthorne plant?",
+   "url": "https://econpapers.repec.org/RePEc:nbr:nberwo:15016"
+  },
+  {
+   "title": "EconPapers (AEJ Applied): Was there really a Hawthorne effect at the Hawthorne plant?",
+   "url": "https://econpapers.repec.org/RePEc:aea:aejapp:v:3:y:2011:i:1:p:224-38"
+  },
+  {
+   "title": "Freakonomics: Was there really a Hawthorne effect in the original Hawthorne studies?",
+   "url": "https://freakonomics.com/2009/06/was-there-really-a-hawthorne-effect-in-the-original-hawthorne-studies/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The studies ran in the 1920s near Chicago",
+   "terms": [
+    "Hawthorne",
+    "Chicago|Cicero"
+   ]
+  },
+  {
+   "claim": "Hawthorne Works made telephone equipment for Western Electric",
+   "terms": [
+    "Western Electric"
+   ]
+  },
+  {
+   "claim": "The studies tested whether lighting affected productivity",
+   "terms": [
+    "lighting|illumination",
+    "productivity|output"
+   ]
+  },
+  {
+   "claim": "Output rose when lighting was increased and when it was decreased",
+   "terms": [
+    "illumination|lighting",
+    "increase|decrease|lower"
+   ]
+  },
+  {
+   "claim": "Being watched may have made workers try harder",
+   "terms": [
+    "observ|watched|attention"
+   ]
+  },
+  {
+   "claim": "It became known as the Hawthorne effect",
+   "terms": [
+    "Hawthorne effect"
+   ]
+  },
+  {
+   "claim": "Steven Levitt and John List reexamined the data",
+   "terms": [
+    "Levitt",
+    "List"
+   ]
+  },
+  {
+   "claim": "The illumination data had been thought lost",
+   "terms": [
+    "lost|rediscovered|destroyed|survived"
+   ]
+  },
+  {
+   "claim": "They found the famous patterns fictional, with only slight evidence of an effect",
+   "terms": [
+    "fictional",
+    "slight|evidence"
+   ]
+  }
+ ]
+}
