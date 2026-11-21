@@ -1,0 +1,813 @@
+{
+ "id": "space_26_moon_landing_on_a_budget",
+ "title": "India's moon landing cost less than a space movie",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "CHANDRAYAAN-3"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "eng": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#4b92db",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#5c3a24",
+    "headset": true
+   }
+  },
+  "eng2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   },
+   "hold": "clipboard"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f6d21f",
+    "pants": "#4a4a4a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You land on the moon. It costs less than a Hollywood space movie. Seriously.",
+   "key": [
+    "MOVIE."
+   ],
+   "board": [
+    "MOON MISSION",
+    "VS MOVIE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": [
+     2.6,
+     -0.6
+    ],
+    "eng2": false,
+    "boss": false,
+    "fan": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Twenty nineteen. India's first lander tries to touch down. It crashes.",
+   "cap": "2019. India's first lander tries to touch down. It crashes.",
+   "key": [
+    "CRASHES."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CHANDRAYAAN-2",
+     "2019"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     1.4,
+     0.3
+    ],
+    "boss": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Four years later, they try again. Chandrayaan three. Same goal, smarter design.",
+   "cap": "Four years later, they try again. Chandrayaan-3. Same goal, smarter design.",
+   "key": [
+    "AGAIN."
+   ],
+   "board": [
+    "CHANDRAYAAN-3",
+    "2023"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "eng",
+    "with": "eng2"
+   },
+   "act": {
+    "eng": {
+     "mood": "smug",
+     "action": "point",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "The target is near the moon's south pole. Nobody has landed there. Ever.",
+   "key": [
+    "POLE."
+   ],
+   "board": [
+    "TARGET:",
+    "SOUTH POLE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Why there? Scientists think it may hold water ice. Useful for future crews.",
+   "key": [
+    "ICE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng": false,
+    "eng2": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng2"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Days before, Russia's lander races there too.",
+   "key": [
+    "RUSSIA'S"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It crashes. Now the pressure is all on India. Every eye.",
+   "key": [
+    "PRESSURE"
+   ],
+   "board": [
+    "LUNA-25:",
+    "CRASHED"
+   ],
+   "place": {
+    "capy": false,
+    "eng2": false,
+    "boss": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "August twenty third, twenty twenty three. The lander, Vikram, starts its descent. Slowly.",
+   "cap": "August 23, 2023. The lander, Vikram, starts its descent. Slowly.",
+   "key": [
+    "VIKRAM,"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "LIVE:",
+     "LANDING"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": false,
+    "eng2": false,
+    "boss": false,
+    "fan": [
+     0,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Millions watch live. Schools stream it in classrooms. Nobody breathes.",
+   "key": [
+    "LIVE."
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "fan": [
+     1.4,
+     4.4
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Touchdown. India lands near the south pole. First country ever. History.",
+   "key": [
+    "FIRST"
+   ],
+   "board": [
+    "TOUCHDOWN",
+    "SOUTH POLE"
+   ],
+   "place": {
+    "capy": false,
+    "fan": [
+     0,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "fan",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "celebrate",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Only four nations have ever soft landed there.",
+   "key": [
+    "FOUR"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "4TH NATION",
+     "ON THE MOON"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": false,
+    "boss": [
+     1.4,
+     0.3
+    ],
+    "fan": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "boss",
+    "offset": [
+     -1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "A little rover, Pragyan, rolls out. It confirms sulfur in the soil. Science, delivered.",
+   "key": [
+    "SULFUR"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "PRAGYAN:",
+     "SULFUR FOUND"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": false,
+    "eng2": [
+     0,
+     0.3
+    ],
+    "boss": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then Vikram does a little hop. About forty centimeters. Just to show off.",
+   "cap": "Then Vikram does a little hop. About 40 cm. Just to show off.",
+   "key": [
+    "HOP."
+   ],
+   "board": [
+    "HOP TEST",
+    "~40 CM"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Proof you don't need a blockbuster budget.",
+   "key": [
+    "BUDGET."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng2": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Now the best part. The price. Brace yourself.",
+   "key": [
+    "PRICE."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng2": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The mission cost roughly seventy five million dollars.",
+   "cap": "The mission cost roughly $75 million.",
+   "key": [
+    "$75"
+   ],
+   "board": [
+    "MISSION",
+    "~$75M"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The movie Interstellar cost over twice that. To film.",
+   "key": [
+    "INTERSTELLAR"
+   ],
+   "board": [
+    "INTERSTELLAR",
+    "~$165M"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng2": false,
+    "boss": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Real moon landing. Cheaper than a fake one. Hollywood, take notes.",
+   "key": [
+    "CHEAPER"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The mission or the movie? Which would you fund? Pick one.",
+   "key": [
+    "MISSION",
+    "MOVIE?"
+   ],
+   "board": [
+    "MISSION",
+    "OR MOVIE?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "boss": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0.2,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Chandrayaan-3",
+   "url": "https://en.wikipedia.org/wiki/Chandrayaan-3"
+  },
+  {
+   "title": "Business Insider India: how India landed on the moon at a fraction of the cost",
+   "url": "https://www.businessinsider.in/science/news/how-india-landed-on-the-moon-and-flew-to-mars-at-a-fraction-of-the-cost-of-nasa-and-russia-missions/articleshow/103033247.cms"
+  },
+  {
+   "title": "Gulf Times (Reuters): Chandrayaan-3 punches home India's lead in budget space flights",
+   "url": "https://www.gulf-times.com/article/667154/international/chandrayaan-3-punches-home-indias-lead-in-budget-space-flights"
+  },
+  {
+   "title": "The East African (Reuters): India first to land near moon's south pole",
+   "url": "https://www.theeastafrican.co.ke/tea/sustainability/india-first-nation-to-land-spacecraft-near-moon-south-pole-4344676"
+  },
+  {
+   "title": "ThePrint (Reuters): budget space flights",
+   "url": "https://theprint.in/india/chandrayaan-3-punches-home-indias-lead-in-budget-space-flights/1728845"
+  },
+  {
+   "title": "The New Stack: Chandrayaan-3's successful moon landing",
+   "url": "https://thenewstack.io/indias-space-victory-chandrayaan-3s-successful-moon-landing/"
+  },
+  {
+   "title": "Wikipedia: Chandrayaan-2",
+   "url": "https://en.wikipedia.org/wiki/Chandrayaan-2"
+  },
+  {
+   "title": "Wikipedia: Luna 25",
+   "url": "https://en.wikipedia.org/wiki/Luna_25"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "India's Chandrayaan-2 lander crashed in 2019",
+   "terms": [
+    "Chandrayaan-2|Chandrayaan 2",
+    "crash"
+   ]
+  },
+  {
+   "claim": "Chandrayaan-3 landed near the moon's south pole, first ever",
+   "terms": [
+    "south pole",
+    "first"
+   ]
+  },
+  {
+   "claim": "The south pole region may hold water ice",
+   "terms": [
+    "water ice|ice"
+   ]
+  },
+  {
+   "claim": "Russia's Luna-25 crashed days earlier",
+   "terms": [
+    "Luna-25|Luna 25",
+    "crash"
+   ]
+  },
+  {
+   "claim": "The landing was on August 23, 2023; the lander was Vikram",
+   "terms": [
+    "August 23|23 August",
+    "Vikram"
+   ]
+  },
+  {
+   "claim": "Millions watched live, including in schools",
+   "terms": [
+    "school|watched|live"
+   ]
+  },
+  {
+   "claim": "India became the fourth country to soft-land on the moon",
+   "terms": [
+    "fourth"
+   ]
+  },
+  {
+   "claim": "The Pragyan rover confirmed sulfur",
+   "terms": [
+    "Pragyan",
+    "sulfur|sulphur"
+   ]
+  },
+  {
+   "claim": "Vikram did a hop test of about 40 cm",
+   "terms": [
+    "hop",
+    "40"
+   ]
+  },
+  {
+   "claim": "The mission cost about $75 million",
+   "terms": [
+    "75 million"
+   ]
+  },
+  {
+   "claim": "Interstellar cost about $165 million to make",
+   "terms": [
+    "Interstellar",
+    "165"
+   ]
+  }
+ ]
+}

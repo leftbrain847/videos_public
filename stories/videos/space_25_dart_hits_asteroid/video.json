@@ -1,0 +1,779 @@
+{
+ "id": "space_25_dart_hits_asteroid",
+ "title": "DART: we punched an asteroid on purpose",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "DART"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "eng": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true,
+    "glasses": true
+   }
+  },
+  "sci": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8"
+   },
+   "hold": "clipboard"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "astro2": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "glasses": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You crash a spacecraft into an asteroid. On purpose. To save the planet someday.",
+   "key": [
+    "PURPOSE."
+   ],
+   "board": [
+    "TARGET:",
+    "DIMORPHOS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": [
+     2.6,
+     -0.6
+    ],
+    "sci": false,
+    "boss": false,
+    "astro2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The mission is called Dart. Double Asteroid Redirection test.",
+   "cap": "The mission is called DART. Double Asteroid Redirection Test.",
+   "key": [
+    "DART."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "D.A.R.T."
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "sci": [
+     1.4,
+     0.3
+    ],
+    "boss": false,
+    "astro2": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "eng",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "The question is simple. Can we nudge a space rock off course?",
+   "key": [
+    "NUDGE"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "eng",
+    "with": "sci"
+   },
+   "act": {
+    "eng": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "sci"
+    },
+    "sci": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "The target is a small moonlet called Dimorphos.",
+   "key": [
+    "DIMORPHOS."
+   ],
+   "board": [
+    "DIMORPHOS",
+    "~160 M WIDE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It circles a bigger asteroid, Didymos. Neither one threatens Earth.",
+   "key": [
+    "THREATENS"
+   ],
+   "board": [
+    "DIDYMOS",
+    "+ DIMORPHOS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng": false,
+    "sci": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sci"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "sci"
+    },
+    "sci": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Perfect test dummy. Nobody gets hurt. Not even feelings.",
+   "key": [
+    "DUMMY."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Dart launches in late twenty twenty one. It flies for ten months.",
+   "cap": "DART launches in late 2021. It flies for 10 months.",
+   "key": [
+    "10"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "LAUNCH",
+     "NOV 2021"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": false,
+    "sci": false,
+    "boss": false,
+    "astro2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "September twenty sixth, twenty twenty two. Impact day.",
+   "cap": "September 26, 2022. Impact day.",
+   "key": [
+    "IMPACT"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "IMPACT DAY",
+     "SEPT 26 2022"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "sci": false,
+    "boss": [
+     1.4,
+     0.3
+    ],
+    "astro2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "The camera streams one picture per second. The rock grows. And grows.",
+   "key": [
+    "GROWS."
+   ],
+   "board": [
+    "CLOSING IN"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the feed stops. Direct hit. Bullseye.",
+   "key": [
+    "HIT."
+   ],
+   "board": [
+    "SIGNAL LOST",
+    "= DIRECT HIT"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "eng"
+    }
+   },
+   "sfx": [
+    [
+     0.35,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The room cheers. For losing a spacecraft. Space is weird. Wonderfully weird.",
+   "key": [
+    "WEIRD."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng": [
+     1.4,
+     0.2
+    ],
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "eng"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "celebrate",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Impact speed? About fourteen thousand miles per hour.",
+   "cap": "Impact speed? About 14,000 mph.",
+   "key": [
+    "14,000"
+   ],
+   "board": [
+    "IMPACT SPEED",
+    "~14,000 MPH"
+   ],
+   "place": {
+    "capy": false,
+    "eng": false,
+    "sci": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A tiny Italian satellite flew behind it. It photographed the debris plume.",
+   "key": [
+    "PLUME."
+   ],
+   "board": [
+    "LICIACUBE",
+    "PHOTOS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Now the real question. Did the orbit change? Even a little?",
+   "key": [
+    "ORBIT"
+   ],
+   "place": {
+    "astro2": [
+     0,
+     0.4
+    ],
+    "sci": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "astro2"
+   },
+   "act": {
+    "astro2": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The bar for success? Change it by seventy three seconds. At least.",
+   "cap": "The bar for success? Change it by 73 seconds. At least.",
+   "key": [
+    "73"
+   ],
+   "board": [
+    "GOAL:",
+    "73 SECONDS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "astro2"
+   },
+   "act": {
+    "astro2": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Telescopes measure it. The orbit got shorter by thirty two minutes.",
+   "cap": "Telescopes measure it. The orbit got shorter by 32 minutes.",
+   "key": [
+    "32"
+   ],
+   "board": [
+    "RESULT:",
+    "32 MINUTES"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "astro2": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "astro2"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "astro2"
+    },
+    "astro2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The goal was seventy three seconds. They got thirty two minutes. Overachievers.",
+   "cap": "The goal was 73 seconds. They got 32 minutes. Overachievers.",
+   "key": [
+    "OVERACHIEVERS."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "clap",
+     "look": "camera"
+    },
+    "astro2": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Humanity moved a celestial body. For the first time ever.",
+   "key": [
+    "FIRST"
+   ],
+   "board": [
+    "FIRST TIME",
+    "EVER"
+   ],
+   "place": {
+    "capy": false,
+    "astro2": [
+     -1.4,
+     0.3
+    ],
+    "boss": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "boss",
+    "offset": [
+     -1.0,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "astro2"
+    },
+    "astro2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "A real asteroid heads for Earth. Would you trust this plan? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "TRUST IT?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "boss": [
+     2.6,
+     -0.6
+    ],
+    "astro2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "NASA: DART mission impact changed asteroid's motion",
+   "url": "https://www.nasa.gov/press-release/nasa-confirms-dart-mission-impact-changed-asteroid-s-motion-in-space"
+  },
+  {
+   "title": "Johns Hopkins APL: DART impact changed asteroid's motion",
+   "url": "https://www.jhuapl.edu/news/news-releases/221011-dart-mission-impact-changed-asteroids-motion-in-space"
+  },
+  {
+   "title": "Space.com: DART changed asteroid's orbit",
+   "url": "https://www.space.com/nasa-dart-asteroid-impact-orbit-change-success"
+  },
+  {
+   "title": "Live Science: DART mission a success",
+   "url": "https://www.livescience.com/dart-mission-a-success"
+  },
+  {
+   "title": "Hub (Johns Hopkins): DART successfully altered asteroid orbit",
+   "url": "https://hub.jhu.edu/2022/10/11/dart-successfully-altered-asteroid-orbit/"
+  },
+  {
+   "title": "Science News Explores: DART bumped an asteroid",
+   "url": "https://www.snexplores.org/article/nasas-dart-spacecraft-successfully-bumped-an-asteroid-onto-a-new-path"
+  },
+  {
+   "title": "Wikipedia: Double Asteroid Redirection Test",
+   "url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "DART stands for Double Asteroid Redirection Test",
+   "terms": [
+    "Double Asteroid Redirection Test"
+   ]
+  },
+  {
+   "claim": "The test was whether an impact can change an asteroid's motion",
+   "terms": [
+    "deflect|change",
+    "asteroid"
+   ]
+  },
+  {
+   "claim": "The target was the moonlet Dimorphos",
+   "terms": [
+    "Dimorphos"
+   ]
+  },
+  {
+   "claim": "Dimorphos orbits Didymos; neither threatens Earth",
+   "terms": [
+    "Didymos"
+   ]
+  },
+  {
+   "claim": "Neither asteroid poses a threat to Earth",
+   "terms": [
+    "threat|hazard"
+   ]
+  },
+  {
+   "claim": "DART launched in November 2021 and flew about ten months",
+   "terms": [
+    "November|2021",
+    "launch"
+   ]
+  },
+  {
+   "claim": "It hit Dimorphos on September 26, 2022",
+   "terms": [
+    "September 26|Sept. 26"
+   ]
+  },
+  {
+   "claim": "It hit at about 14,000 mph",
+   "terms": [
+    "14,000"
+   ]
+  },
+  {
+   "claim": "The Italian cubesat LICIACube photographed the plume",
+   "terms": [
+    "LICIACube"
+   ]
+  },
+  {
+   "claim": "The success threshold was 73 seconds",
+   "terms": [
+    "73 seconds"
+   ]
+  },
+  {
+   "claim": "The orbit shortened by 32 minutes",
+   "terms": [
+    "32 minutes"
+   ]
+  },
+  {
+   "claim": "It was the first time humanity changed the motion of a celestial object",
+   "terms": [
+    "first time",
+    "celestial|object"
+   ]
+  }
+ ]
+}
