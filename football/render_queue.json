@@ -1,15 +1,29 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "football-batch-1b",
+ "release": "football-batch-2",
  "listen": true,
  "replace": false,
  "videos": [
-  "s4_18_six_six_tie",
-  "s4_19_bettis_coin_toss",
-  "s4_21_fake_spike",
-  "s4_22_fourteen_seconds_dallas",
-  "s4_24_twenty_eight_three",
-  "s4_25_seven_nine_champs"
+  "s1_05_jesse_james",
+  "s1_06_pi_replay",
+  "s1_07_ineligible_trick",
+  "s1_08_illegal_bat",
+  "s2_01_bears_59",
+  "s2_02_one_point_short",
+  "s2_03_melbourne",
+  "s2_04_trotter_debut",
+  "s3_01_zero_quarterbacks",
+  "s3_02_cardboard_crowd",
+  "s3_03_tuesday_titans",
+  "s3_04_game_day_flight",
+  "s3_14_strike_1982",
+  "s3_15_replacement_champs",
+  "s3_16_fog_bowl",
+  "s3_17_ice_bowl",
+  "s3_18_snowplow_game",
+  "s3_19_saints_no_home",
+  "s3_20_snow_bowl_2013",
+  "s3_21_mud_bowl"
  ]
 }
