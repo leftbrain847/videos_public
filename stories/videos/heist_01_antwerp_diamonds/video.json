@@ -156,8 +156,8 @@
    ]
   },
   {
-   "text": "It has ten layers of security. Heat sensors. Radar. A magnetic field.",
-   "cap": "It has 10 layers of security. Heat sensors. Radar. A magnetic field.",
+   "text": "It has ten layers of security. Ten. Somebody was very nervous.",
+   "cap": "It has 10 layers of security. Ten. Somebody was very nervous.",
    "key": [
     "10"
    ],
@@ -182,33 +182,7 @@
    ]
   },
   {
-   "text": "The lock has a hundred million combinations. Rude.",
-   "cap": "The lock has 100 million combinations. Rude.",
-   "key": [
-    "RUDE."
-   ],
-   "shot": {
-    "type": "close",
-    "on": "leo"
-   },
-   "act": {
-    "leo": {
-     "mood": "shocked",
-     "action": "idle",
-     "look": "camera"
-    }
-   },
-   "place": {
-    "capy": "left",
-    "leo": "center"
-   },
-   "board": [
-    "100,000,000",
-    "COMBINATIONS"
-   ]
-  },
-  {
-   "text": "You're Leonardo Notarbartolo. You rent an office in the building.",
+   "text": "You're Leonardo Notarbartolo. You rent an office in the building. Upstairs from the diamonds.",
    "key": [
     "OFFICE"
    ],
@@ -601,10 +575,6 @@
    "url": "https://en.wikipedia.org/wiki/Antwerp_diamond_heist"
   },
   {
-   "title": "Boing Boing: How to rob the world's most secure diamond vault",
-   "url": "https://boingboing.net/2009/03/12/howto-rob-the-worlds.html"
-  },
-  {
    "title": "Kottke: How to steal 100 million in diamonds",
    "url": "https://kottke.org/09/03/how-to-steal-100-million-in-diamonds"
   },
@@ -659,21 +629,6 @@
    "claim": "The vault had ten layers of security",
    "terms": [
     "ten layers|10 layers"
-   ]
-  },
-  {
-   "claim": "Security included heat sensors, radar and a magnetic field",
-   "terms": [
-    "infrared|heat",
-    "radar",
-    "magnetic"
-   ]
-  },
-  {
-   "claim": "The lock had 100 million combinations",
-   "terms": [
-    "100 million|100,000,000",
-    "combinations"
    ]
   },
   {
