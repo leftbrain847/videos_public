@@ -76,12 +76,37 @@
    "at": "desk"
   }
  },
+ "sources": [
+  {
+   "title": "UPI: NFL kills receiver 'force-out' rule (April 2008)",
+   "url": "https://www.upi.com/Sports_News/2008/04/02/NFL-kills-receiver-force-out-rule/UPI-47601207170267/"
+  },
+  {
+   "title": "Star Tribune: Elimination of force-out rule came too late for Vikings",
+   "url": "https://www.startribune.com/elimination-of-force-out-rule-came-too-late-for-vikings/17313044"
+  },
+  {
+   "title": "Houston Texans: Texans will be playing by new rules",
+   "url": "https://www.houstontexans.com/news/texans-will-be-playing-by-new-rules-2665708"
+  },
+  {
+   "title": "Buccaneers.com: Rules of the game",
+   "url": "https://buccaneers.com/news/rules-of-the-game-2174556"
+  },
+  {
+   "title": "Deseret News (AP): Last-second play boots Vikings from playoffs",
+   "url": "https://www.deseret.com/2003/12/29/19803762/last-second-play-boots-vikings-from-playoffs/"
+  },
+  {
+   "title": "Arizona Cardinals: Nate Poole, Josh McCown and the miracle in the desert",
+   "url": "https://www.azcardinals.com/news/nate-poole-josh-mccown-vikings-cardinals-miracle-in-the-desert-larry-fitzgerald"
+  }
+ ],
  "lines": [
   {
-   "text": "Until 2008, an NFL receiver could land out of bounds and still get credit for a catch.",
+   "text": "You land out of bounds. It's still a touchdown.",
    "key": [
-    "OUT",
-    "CATCH."
+    "TOUCHDOWN."
    ],
    "place": {
     "capy": "left",
@@ -111,10 +136,10 @@
    "speaker": "capy"
   },
   {
-   "text": "If a defender pushed him out in the air, an official decided whether he would have landed in bounds.",
+   "text": "The old force out rule. A defender shoves you midair.",
+   "cap": "The old force-out rule. A defender shoves you midair.",
    "key": [
-    "WOULD",
-    "HAVE"
+    "FORCE-OUT"
    ],
    "place": {
     "ref": [
@@ -147,9 +172,9 @@
    }
   },
   {
-   "text": "It was called the force-out. Here's how it ended a season.",
+   "text": "Would you have landed in bounds? Then it's a catch.",
    "key": [
-    "FORCE-OUT."
+    "CATCH."
    ],
    "shot": {
     "type": "two",
@@ -171,11 +196,10 @@
    "speaker": "capy"
   },
   {
-   "text": "December 2003. Minnesota leads Arizona, seventeen to twelve. Last play.",
-   "cap": "December 2003. Minnesota leads Arizona, 17 to 12. Last play.",
+   "text": "December two thousand three. Your Cardinals host Minnesota.",
+   "cap": "December 2003. Your Cardinals host Minnesota.",
    "key": [
-    "17",
-    "LAST"
+    "MINNESOTA."
    ],
    "set": "field",
    "setOpts": {
@@ -209,13 +233,17 @@
      "mood": "smug",
      "look": "qb"
     }
-   }
+   },
+   "board": [
+    "CARDINALS",
+    "VS VIKINGS"
+   ]
   },
   {
-   "text": "Fourth and twenty five. A Vikings win means the playoffs.",
-   "cap": "4th and 25. A Vikings win means the playoffs.",
+   "text": "The Vikings lead seventeen to twelve. Last play.",
+   "cap": "The Vikings lead 17 to 12. Last play.",
    "key": [
-    "25."
+    "LAST"
    ],
    "shot": {
     "type": "medium",
@@ -226,13 +254,17 @@
      "mood": "worried",
      "action": "hold"
     }
-   }
+   },
+   "board": [
+    "VIKINGS 17",
+    "CARDINALS 12"
+   ]
   },
   {
-   "text": "Josh McCown throws to Nate Poole in the end zone.",
+   "text": "Fourth and twenty five. A Vikings win means playoffs.",
+   "cap": "4th and 25. A Vikings win means playoffs.",
    "key": [
-    "END",
-    "ZONE."
+    "25."
    ],
    "shot": {
     "type": "low",
@@ -240,47 +272,371 @@
    },
    "act": {
     "qb": {
-     "mood": "neutral",
-     "action": "throw"
+     "mood": "worried",
+     "action": "hold"
     }
    }
   },
   {
-   "text": "One foot comes down. Then he's pushed out.",
+   "text": "Josh McCown throws it to the end zone.",
    "key": [
-    "PUSHED"
+    "ZONE."
    ],
-   "place": {
-    "qb": false,
-    "wr": [
-     -0.6,
-     0
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "VIKINGS 17",
+     "CARDINALS 12"
     ],
-    "db": [
-     0.8,
-     -0.3
-    ]
+    "endZone": 8,
+    "zoneA": "#9b2335",
+    "zoneB": "#4b2a7b"
    },
    "shot": {
-    "type": "two",
-    "on": "wr",
-    "with": "db"
+    "type": "follow",
+    "on": "qb",
+    "lead": 1
    },
-   "act": {
-    "wr": {
-     "mood": "shocked",
-     "action": "hold",
-     "look": "db"
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        -5.0,
+        0.5
+       ],
+       [
+        0.1,
+        -5.25,
+        0.25
+       ],
+       [
+        0.2,
+        -5.5,
+        0.0
+       ],
+       [
+        0.3,
+        -5.75,
+        -0.25
+       ],
+       [
+        0.4,
+        -6.0,
+        -0.5
+       ],
+       [
+        1.0,
+        -6.0,
+        -0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.4,
+        "hold"
+       ],
+       [
+        0.4352,
+        "throw"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        4.0,
+        -1.0
+       ],
+       [
+        0.25,
+        5.125,
+        -1.75
+       ],
+       [
+        0.5,
+        6.25,
+        -2.5
+       ],
+       [
+        0.75,
+        7.375,
+        -3.25
+       ],
+       [
+        1.0,
+        8.5,
+        -4.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "db": {
+      "path": [
+       [
+        0.0,
+        8.0,
+        -1.0
+       ],
+       [
+        0.25,
+        8.8,
+        -1.65
+       ],
+       [
+        0.5,
+        9.6,
+        -2.3
+       ],
+       [
+        0.75,
+        10.4,
+        -2.95
+       ],
+       [
+        1.0,
+        11.2,
+        -3.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -120
+     }
     },
-    "db": {
-     "mood": "angry",
-     "action": "point",
-     "look": "wr"
-    }
+    "ball": [
+     [
+      0.5,
+      -5.8,
+      1.6,
+      -0.5
+     ],
+     [
+      0.75,
+      0.1,
+      5.0,
+      -2.25
+     ],
+     [
+      1.0,
+      6.0,
+      3.0,
+      -4.0
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.5,
+      null
+     ]
+    ]
    }
   },
   {
-   "text": "The officials rule a force-out. Touchdown.",
+   "text": "Nate Poole catches it. Then he's shoved out.",
+   "key": [
+    "OUT."
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "wr",
+    "lead": 0
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "wr": {
+      "path": [
+       [
+        0.0,
+        8.5,
+        -4.0
+       ],
+       [
+        0.075,
+        8.75,
+        -4.375
+       ],
+       [
+        0.15,
+        9.0,
+        -4.75
+       ],
+       [
+        0.225,
+        9.25,
+        -5.125
+       ],
+       [
+        0.3,
+        9.5,
+        -5.5
+       ],
+       [
+        0.4,
+        9.675,
+        -6.0
+       ],
+       [
+        0.5,
+        9.85,
+        -6.5
+       ],
+       [
+        0.6,
+        10.025,
+        -7.0
+       ],
+       [
+        0.7,
+        10.2,
+        -7.5
+       ],
+       [
+        1.0,
+        10.2,
+        -7.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.3,
+        "catch"
+       ],
+       [
+        0.7,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "db": {
+      "path": [
+       [
+        0.0,
+        11.2,
+        -3.6
+       ],
+       [
+        0.075,
+        11.2,
+        -3.825
+       ],
+       [
+        0.15,
+        11.2,
+        -4.05
+       ],
+       [
+        0.225,
+        11.2,
+        -4.275
+       ],
+       [
+        0.3,
+        11.2,
+        -4.5
+       ],
+       [
+        0.4,
+        11.25,
+        -4.875
+       ],
+       [
+        0.5,
+        11.3,
+        -5.25
+       ],
+       [
+        0.6,
+        11.35,
+        -5.625
+       ],
+       [
+        0.7,
+        11.4,
+        -6.0
+       ],
+       [
+        1.0,
+        11.4,
+        -6.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.7,
+        "idle"
+       ]
+      ],
+      "face": -150
+     }
+    },
+    "ball": [
+     [
+      0,
+      6.0,
+      3.0,
+      -4.0
+     ],
+     [
+      0.15,
+      7.8,
+      2.4,
+      -4.8
+     ],
+     [
+      0.3,
+      9.5,
+      1.4,
+      -5.5
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ],
+     [
+      0.3,
+      "wr"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "The officials rule a force out. Touchdown.",
+   "cap": "The officials rule a force-out. Touchdown.",
    "key": [
     "TOUCHDOWN."
    ],
@@ -288,7 +644,16 @@
     "ref": [
      -2.2,
      0.4
-    ]
+    ],
+    "wr": [
+     0.6,
+     0
+    ],
+    "db": [
+     2.6,
+     -0.4
+    ],
+    "qb": false
    },
    "shot": {
     "type": "medium",
@@ -306,8 +671,8 @@
    }
   },
   {
-   "text": "Replay upholds it. Arizona wins, eighteen to seventeen.",
-   "cap": "Replay upholds it. Arizona wins, 18 to 17.",
+   "text": "Cardinals win, eighteen to seventeen.",
+   "cap": "Cardinals win, 18 to 17.",
    "key": [
     "18"
    ],
@@ -327,12 +692,17 @@
      "mood": "sad",
      "action": "slump"
     }
-   }
+   },
+   "board": [
+    "CARDINALS 18",
+    "VIKINGS 17"
+   ]
   },
   {
-   "text": "Minnesota is out of the playoffs.",
+   "text": "Minnesota misses the playoffs. Green Bay gets in.",
    "key": [
-    "OUT"
+    "GREEN",
+    "BAY"
    ],
    "place": {
     "wr": false,
@@ -348,10 +718,54 @@
      "action": "idle",
      "look": "camera"
     }
+   },
+   "board": [
+    "NFC NORTH",
+    "PACKERS"
+   ]
+  },
+  {
+   "text": "Your team had nothing to play for. You played anyway.",
+   "key": [
+    "ANYWAY."
+   ],
+   "place": {
+    "capy": "left",
+    "wr": "right",
+    "db": false,
+    "qb": false,
+    "ref": false,
+    "own": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wr"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "wr": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "PLAYING FOR",
+     "NOTHING"
+    ]
    }
   },
   {
-   "text": "In 2008, the owners killed the force-out.",
+   "text": "In two thousand eight, the force out dies.",
+   "cap": "In 2008, the force-out dies.",
    "key": [
     "2008,"
    ],
@@ -378,7 +792,7 @@
    }
   },
   {
-   "text": "Now both feet have to come down in bounds. Pushed or not.",
+   "text": "Now both feet must land in bounds.",
    "key": [
     "BOTH",
     "FEET"
@@ -396,9 +810,9 @@
    }
   },
   {
-   "text": "Unless a defender holds the receiver and carries him out.",
+   "text": "Unless a defender carries you out. Yes, carries.",
    "key": [
-    "CARRIES"
+    "CARRIES."
    ],
    "place": {
     "capy": [
@@ -426,10 +840,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Should a push out of bounds still count as a catch? Yes or no, below.",
+   "text": "Should a shove still count as a catch? Yes or no. Vikings fans, look away.",
    "key": [
     "YES",
-    "NO,"
+    "NO."
    ],
    "set": "locker",
    "setOpts": {
@@ -462,30 +876,88 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "UPI: NFL kills receiver 'force-out' rule (April 2008)",
-   "url": "https://www.upi.com/Sports_News/2008/04/02/NFL-kills-receiver-force-out-rule/UPI-47601207170267/"
+   "claim": "Under the force-out rule, an official judged whether a receiver pushed out would have landed in bounds",
+   "terms": [
+    "force-out|force out",
+    "bounds"
+   ]
   },
   {
-   "title": "Star Tribune: Elimination of force-out rule came too late for Vikings",
-   "url": "https://www.startribune.com/elimination-of-force-out-rule-came-too-late-for-vikings/17313044"
+   "claim": "In December 2003 the Cardinals hosted the Vikings",
+   "terms": [
+    "Cardinals",
+    "Vikings",
+    "2003"
+   ]
   },
   {
-   "title": "Houston Texans: Texans will be playing by new rules",
-   "url": "https://www.houstontexans.com/news/texans-will-be-playing-by-new-rules-2665708"
+   "claim": "The Vikings led 17-12 before the last play",
+   "terms": [
+    "Vikings",
+    "17-12"
+   ]
   },
   {
-   "title": "Buccaneers.com: Rules of the game",
-   "url": "https://buccaneers.com/news/rules-of-the-game-2174556"
+   "claim": "It was fourth-and-25 and a Vikings win meant the playoffs",
+   "terms": [
+    "fourth-and-25|4th-and-25|fourth and 25|4th and 25"
+   ]
   },
   {
-   "title": "Deseret News (AP): Last-second play boots Vikings from playoffs",
-   "url": "https://www.deseret.com/2003/12/29/19803762/last-second-play-boots-vikings-from-playoffs/"
+   "claim": "Josh McCown threw to Nate Poole in the end zone",
+   "terms": [
+    "McCown",
+    "Poole"
+   ]
   },
   {
-   "title": "Arizona Cardinals: Nate Poole, Josh McCown and the miracle in the desert",
-   "url": "https://www.azcardinals.com/news/nate-poole-josh-mccown-vikings-cardinals-miracle-in-the-desert-larry-fitzgerald"
+   "claim": "Poole was pushed out and officials ruled a force-out touchdown",
+   "terms": [
+    "Poole",
+    "force|pushed"
+   ]
+  },
+  {
+   "claim": "The Cardinals won 18-17",
+   "terms": [
+    "18-17"
+   ]
+  },
+  {
+   "claim": "Minnesota missed the playoffs and Green Bay got in",
+   "terms": [
+    "Packers|Green Bay",
+    "playoff"
+   ]
+  },
+  {
+   "claim": "The Cardinals were already out of contention, with a losing record",
+   "terms": [
+    "Cardinals",
+    "3-12|4-12"
+   ]
+  },
+  {
+   "claim": "In 2008 the owners eliminated the force-out rule; now both feet must land in bounds",
+   "terms": [
+    "force-out|force out",
+    "2008"
+   ]
+  },
+  {
+   "claim": "Both feet must come down in bounds",
+   "terms": [
+    "both feet"
+   ]
+  },
+  {
+   "claim": "Except when a defender carries the receiver out",
+   "terms": [
+    "carr"
+   ]
   }
  ]
 }
