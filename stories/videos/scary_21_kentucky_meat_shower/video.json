@@ -168,10 +168,9 @@
    }
   },
   {
-   "text": "The patch is roughly a hundred yards long.",
-   "cap": "The patch is roughly 100 yards long.",
+   "text": "You look up again. Still not one cloud.",
    "key": [
-    "100"
+    "CLOUD."
    ],
    "place": {
     "capy": [
@@ -652,13 +651,6 @@
    "claim": "Some flakes were several inches across",
    "terms": [
     "inches"
-   ]
-  },
-  {
-   "claim": "It covered an area about 100 yards long",
-   "terms": [
-    "100",
-    "yard"
    ]
   },
   {
