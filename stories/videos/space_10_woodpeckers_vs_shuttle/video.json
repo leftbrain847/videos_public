@@ -72,7 +72,7 @@
  },
  "lines": [
   {
-   "text": "Your space shuttle is ready to launch. Then birds attack it.",
+   "text": "Your space shuttle is ready to launch. Then birds attack it. Real birds.",
    "key": [
     "BIRDS"
    ],
@@ -113,8 +113,8 @@
    }
   },
   {
-   "text": "Spring, nineteen ninety five. Shuttle Discovery sits on its launch pad. In Florida.",
-   "cap": "Spring 1995. Shuttle Discovery sits on its launch pad. In Florida.",
+   "text": "Spring, nineteen ninety five. Shuttle Discovery sits on its launch pad. In sunny Florida.",
+   "cap": "Spring 1995. Shuttle Discovery sits on its launch pad. In sunny Florida.",
    "key": [
     "FLORIDA."
    ],
@@ -473,8 +473,8 @@
    }
   },
   {
-   "text": "Meanwhile, Nasa declares war. On birds.",
-   "cap": "Meanwhile, NASA declares war. On birds.",
+   "text": "Meanwhile, Nasa declares war. On birds. Small ones.",
+   "cap": "Meanwhile, NASA declares war. On birds. Small ones.",
    "key": [
     "WAR."
    ],
@@ -551,13 +551,13 @@
    }
   },
   {
-   "text": "They try balloons. Big scary eyes painted on them.",
+   "text": "Fake predators. For real woodpeckers. In sunny Florida.",
    "key": [
-    "EYES"
+    "PREDATORS."
    ],
    "board": [
-    "SCARE-EYE",
-    "BALLOONS"
+    "FAKE",
+    "PREDATORS"
    ],
    "shot": {
     "type": "close",
@@ -572,7 +572,7 @@
    }
   },
   {
-   "text": "Workers even blast loud horns to spook them.",
+   "text": "Workers even blast air horns to spook them.",
    "key": [
     "HORNS"
    ],
@@ -605,14 +605,13 @@
    }
   },
   {
-   "text": "There's a team now. Its name? Bird. Bird investigation review. And deterrent.",
-   "cap": "There's a team now. Its name? B.I.R.D. Bird Investigation Review. And Deterrent.",
+   "text": "Rocket scientists. Now working part time as bird bouncers. Seriously.",
    "key": [
-    "B.I.R.D."
+    "BOUNCERS."
    ],
    "board": [
-    "B.I.R.D.",
-    "TEAM"
+    "BIRD",
+    "BOUNCERS"
    ],
    "place": {
     "capy": [
@@ -645,9 +644,9 @@
    }
   },
   {
-   "text": "Someone spent a whole afternoon on that acronym. Worth it.",
+   "text": "Somebody put that on a resume. Probably. Proudly.",
    "key": [
-    "ACRONYM."
+    "RESUME."
    ],
    "speaker": "capy",
    "shot": {
@@ -712,7 +711,7 @@
    }
   },
   {
-   "text": "Somewhere in Florida, a woodpecker is very proud.",
+   "text": "Somewhere in Florida, a woodpecker is extremely proud.",
    "key": [
     "PROUD."
    ],
@@ -909,21 +908,9 @@
    ]
   },
   {
-   "claim": "NASA used balloons with eyes",
-   "terms": [
-    "balloon"
-   ]
-  },
-  {
    "claim": "Horns were used to scare birds",
    "terms": [
     "horn"
-   ]
-  },
-  {
-   "claim": "NASA formed the Bird Investigation Review and Deterrent team",
-   "terms": [
-    "Bird Investigation Review"
    ]
   },
   {
