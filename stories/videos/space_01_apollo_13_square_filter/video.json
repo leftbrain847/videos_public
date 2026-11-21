@@ -73,8 +73,7 @@
  },
  "lines": [
   {
-   "text": "You are two hundred thousand miles from home. Your air is turning to poison.",
-   "cap": "You are 200,000 miles from home. Your air is turning to poison.",
+   "text": "You are on your way to the moon. Your air is turning to poison.",
    "key": [
     "POISON."
    ],
@@ -306,7 +305,7 @@
    }
   },
   {
-   "text": "The main ship is losing power. So they climb into the lunar module.",
+   "text": "The main ship is in trouble. So they climb into the lunar module.",
    "key": [
     "LUNAR"
    ],
@@ -628,13 +627,13 @@
    }
   },
   {
-   "text": "Plastic bags. Cardboard covers from the flight manuals. Duct tape.",
+   "text": "Plastic bags. Spacesuit hoses. A card from the flight plan. Duct tape.",
    "key": [
     "TAPE."
    ],
    "board": [
-    "BAGS",
-    "CARDBOARD + TAPE"
+    "BAGS + HOSES",
+    "CARD + TAPE"
    ],
    "shot": {
     "type": "medium",
@@ -905,12 +904,6 @@
  "voice": "v2",
  "claims": [
   {
-   "claim": "Apollo 13 was about 200,000 miles from Earth when the problem hit",
-   "terms": [
-    "200,000"
-   ]
-  },
-  {
    "claim": "Apollo 13 flew to the moon in April 1970",
    "terms": [
     "Apollo 13",
@@ -975,10 +968,18 @@
    ]
   },
   {
-   "claim": "The adapter used covers from the flight manuals",
+   "claim": "The adapter used spacesuit hoses, plastic bags and duct tape",
    "terms": [
-    "cover",
-    "manual"
+    "hose",
+    "plastic bag",
+    "duct tape"
+   ]
+  },
+  {
+   "claim": "The adapter used a card from the flight plan",
+   "terms": [
+    "card",
+    "duct tape"
    ]
   },
   {
@@ -986,13 +987,6 @@
    "terms": [
     "command module",
     "canister"
-   ]
-  },
-  {
-   "claim": "The command module was losing power",
-   "terms": [
-    "command module",
-    "power"
    ]
   },
   {
