@@ -297,57 +297,57 @@
         0.0
        ],
        [
-        0.089,
+        0.09,
         36.67,
         0.0
        ],
        [
-        0.134,
+        0.135,
         36.5,
         0.0
        ],
        [
-        0.178,
+        0.179,
         36.33,
         0.0
        ],
        [
-        0.223,
+        0.224,
         36.17,
         0.0
        ],
        [
-        0.268,
+        0.269,
         36.0,
         0.0
        ],
        [
-        0.308,
+        0.31,
         36.0,
         0.0
        ],
        [
-        0.349,
+        0.35,
         36.0,
         0.0
        ],
        [
-        0.39,
+        0.391,
         36.0,
         0.0
        ],
        [
-        0.43,
+        0.432,
         36.0,
         0.0
        ],
        [
-        0.471,
+        0.472,
         36.0,
         0.0
        ],
        [
-        0.512,
+        0.513,
         36.0,
         0.0
        ],
@@ -357,12 +357,12 @@
         0.0
        ],
        [
-        0.593,
+        0.594,
         36.0,
         0.0
        ],
        [
-        0.634,
+        0.635,
         36.0,
         0.0
        ],
@@ -372,7 +372,7 @@
         0.0
        ],
        [
-        0.715,
+        0.716,
         36.0,
         0.0
        ],
@@ -387,7 +387,7 @@
         0.0
        ],
        [
-        0.837,
+        0.838,
         36.0,
         0.0
        ],
@@ -418,15 +418,15 @@
         "walk"
        ],
        [
-        0.268,
+        0.269,
         "idle"
        ],
        [
-        0.321,
+        0.323,
         "throw"
        ],
        [
-        0.696,
+        0.7,
         "cheer"
        ]
       ],
@@ -445,102 +445,102 @@
         2.57
        ],
        [
-        0.084,
+        0.085,
         42.21,
         2.54
        ],
        [
-        0.126,
+        0.127,
         42.57,
         2.51
        ],
        [
-        0.168,
+        0.169,
         42.93,
         2.49
        ],
        [
-        0.21,
+        0.211,
         43.29,
         2.46
        ],
        [
-        0.252,
+        0.254,
         43.64,
         2.43
        ],
        [
-        0.295,
+        0.296,
         44.0,
         2.4
        ],
        [
-        0.337,
+        0.338,
         44.36,
         2.37
        ],
        [
-        0.379,
+        0.381,
         44.71,
         2.34
        ],
        [
-        0.421,
+        0.423,
         45.07,
         2.31
        ],
        [
-        0.463,
+        0.465,
         45.43,
         2.29
        ],
        [
-        0.505,
+        0.508,
         45.79,
         2.26
        ],
        [
-        0.547,
+        0.55,
         46.14,
         2.23
        ],
        [
-        0.589,
+        0.592,
         46.5,
         2.2
        ],
        [
-        0.63,
+        0.633,
         46.55,
         2.2
        ],
        [
-        0.671,
+        0.674,
         46.6,
         2.2
        ],
        [
-        0.712,
+        0.715,
         46.65,
         2.2
        ],
        [
-        0.753,
+        0.755,
         46.7,
         2.2
        ],
        [
-        0.795,
+        0.796,
         46.75,
         2.2
        ],
        [
-        0.836,
+        0.837,
         46.8,
         2.2
        ],
        [
-        0.877,
+        0.878,
         46.85,
         2.2
        ],
@@ -566,11 +566,11 @@
         "run"
        ],
        [
-        0.589,
+        0.592,
         "catch"
        ],
        [
-        0.696,
+        0.7,
         "celebrate"
        ]
       ],
@@ -579,19 +579,19 @@
     },
     "ball": [
      [
-      0.375,
+      0.377,
       36.3,
       1.7,
       0.1
      ],
      [
-      0.482,
+      0.485,
       41.5,
       3.4,
       1.2
      ],
      [
-      0.589,
+      0.592,
       46.5,
       1.4,
       2.2
@@ -603,7 +603,7 @@
       "rodgers"
      ],
      [
-      0.589,
+      0.592,
       "tightend"
      ]
     ]
@@ -820,11 +820,9 @@
    }
   },
   {
-   "text": "Late, you try a fifty two yarder. Wide right. Of course.",
-   "cap": "Late, you try a 52-yarder. Wide right. Of course.",
+   "text": "Late, you need one more comeback drive. It never comes. Bummer.",
    "key": [
-    "WIDE",
-    "RIGHT."
+    "NEVER"
    ],
    "place": {
     "runner": false,
@@ -1101,6 +1099,14 @@
   {
    "title": "TSN (AP): Aaron Rodgers throws TD pass in Paris as Steelers beat Saints",
    "url": "https://www.tsn.ca/nfl/article/rodgers-throws-td-pass-in-paris-as-steelers-beat-saints-in-nfls-regular-season-france-debut/"
+  },
+  {
+   "title": "WTAE (AP): Rodgers throws TD pass in Paris as Steelers beat Saints 16-10",
+   "url": "https://www.wtae.com/article/steelers-win-paris/74241465"
+  },
+  {
+   "title": "TSN (AP): Aaron Rodgers throws TD pass in Paris as Steelers beat Saints",
+   "url": "https://www.tsn.ca/nfl/article/rodgers-throws-td-pass-in-paris-as-steelers-beat-saints-in-nfls-regular-season-france-debut/"
   }
  ],
  "voice": "v2",
@@ -1164,13 +1170,6 @@
    "claim": "Another Steelers field goal made it 16-10",
    "terms": [
     "16-10"
-   ]
-  },
-  {
-   "claim": "The Saints missed a 52-yard field goal wide right",
-   "terms": [
-    "52",
-    "wide right"
    ]
   }
  ]
