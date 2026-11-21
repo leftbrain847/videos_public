@@ -85,10 +85,11 @@
  },
  "lines": [
   {
-   "text": "In 2020, a Thanksgiving night game was played on a Wednesday afternoon.",
+   "text": "Your Thanksgiving night game kicks off Wednesday. In the afternoon.",
    "key": [
-    "WEDNESDAY"
+    "WEDNESDAY."
    ],
+   "speaker": "capy",
    "place": {
     "exec": false,
     "rg3": false,
@@ -111,12 +112,11 @@
      "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Ravens at Steelers. Set for Thanksgiving night, November twenty sixth.",
-   "cap": "Ravens at Steelers. Set for Thanksgiving night, November 26.",
+   "text": "Twenty twenty. Ravens at Steelers. Thanksgiving night, November twenty sixth.",
+   "cap": "2020. Ravens at Steelers. Thanksgiving night, November 26.",
    "key": [
     "26."
    ],
@@ -141,8 +141,8 @@
    }
   },
   {
-   "text": "Then about twenty Ravens players landed on the COVID list.",
-   "cap": "Then about 20 Ravens players landed on the COVID list.",
+   "text": "Then the Ravens have an outbreak. About twenty players are out.",
+   "cap": "Then the Ravens have an outbreak. About 20 players are out.",
    "key": [
     "20"
    ],
@@ -155,6 +155,10 @@
      "~20 PLAYERS"
     ]
    },
+   "board": [
+    "COVID LIST",
+    "~20 PLAYERS"
+   ],
    "place": {
     "rg3": "center",
     "mcsorley": "right"
@@ -172,16 +176,13 @@
      "mood": "worried",
      "look": "rg3"
     }
-   },
-   "board": [
-    "COVID LIST",
-    "~20 PLAYERS"
-   ]
+   }
   },
   {
-   "text": "Including their starting quarterback, Lamar Jackson.",
+   "text": "Including the quarterback, Lamar Jackson. The reigning M V P.",
+   "cap": "Including the quarterback, Lamar Jackson. The reigning MVP.",
    "key": [
-    "LAMAR"
+    "MVP."
    ],
    "board": [
     "QB1:",
@@ -199,7 +200,7 @@
    }
   },
   {
-   "text": "First, the game moved to Sunday.",
+   "text": "First, the game moves to Sunday. Fine.",
    "key": [
     "SUNDAY."
    ],
@@ -210,6 +211,10 @@
      "SUN"
     ]
    },
+   "board": [
+    "THU →",
+    "SUN"
+   ],
    "place": {
     "exec": "desk",
     "capy": [
@@ -231,14 +236,10 @@
      "mood": "neutral",
      "look": "exec"
     }
-   },
-   "board": [
-    "THU →",
-    "SUN"
-   ]
+   }
   },
   {
-   "text": "Then it moved to Tuesday.",
+   "text": "Then to Tuesday. Still fine.",
    "key": [
     "TUESDAY."
    ],
@@ -259,10 +260,12 @@
    }
   },
   {
-   "text": "Then to Wednesday. Three postponements for just one game.",
+   "text": "Then to Wednesday. Three moves. One game.",
+   "cap": "Then to Wednesday. 3 moves. 1 game.",
    "key": [
-    "THREE"
+    "3"
    ],
+   "speaker": "capy",
    "board": [
     "TUE →",
     "WED"
@@ -282,12 +285,11 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Kickoff: three forty in the afternoon.",
-   "cap": "Kickoff: 3:40 in the afternoon.",
+   "text": "Kickoff? Three forty in the afternoon.",
+   "cap": "Kickoff? 3:40 in the afternoon.",
    "key": [
     "3:40"
    ],
@@ -316,9 +318,15 @@
    }
   },
   {
-   "text": "Why so early? NBC was showing a Christmas tree lighting that night.",
+   "text": "Why so early? N B C has a Christmas tree lighting. The tree wins.",
+   "cap": "Why so early? NBC has a Christmas tree lighting. The tree wins.",
    "key": [
     "TREE"
+   ],
+   "speaker": "capy",
+   "board": [
+    "NBC TONIGHT:",
+    "TREE LIGHTING"
    ],
    "shot": {
     "type": "medium",
@@ -333,12 +341,11 @@
     "exec": {
      "mood": "sad"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "It was the first Wednesday game in eight years.",
-   "cap": "It was the first Wednesday game in 8 years.",
+   "text": "It's the first Wednesday game in eight years.",
+   "cap": "It's the first Wednesday game in 8 years.",
    "key": [
     "8"
    ],
@@ -349,6 +356,10 @@
      "STEELERS 0"
     ]
    },
+   "board": [
+    "RAVENS 0",
+    "STEELERS 0"
+   ],
    "place": {
     "rg3": "center",
     "steeler": [
@@ -370,15 +381,11 @@
      "action": "cross",
      "look": "rg3"
     }
-   },
-   "board": [
-    "RAVENS 0",
-    "STEELERS 0"
-   ]
+   }
   },
   {
-   "text": "Robert Griffin the third started instead, and ran for sixty eight yards.",
-   "cap": "Robert Griffin III started instead, and ran for 68 yards.",
+   "text": "Robert Griffin the third starts. He runs for sixty eight yards.",
+   "cap": "Robert Griffin III starts. He runs for 68 yards.",
    "key": [
     "68"
    ],
@@ -394,8 +401,8 @@
    }
   },
   {
-   "text": "Late, backup Trace McSorley threw a seventy yard touchdown.",
-   "cap": "Late, backup Trace McSorley threw a 70-yard touchdown.",
+   "text": "Late, Trace McSorley throws a seventy yard touchdown.",
+   "cap": "Late, Trace McSorley throws a 70-yard touchdown.",
    "key": [
     "70-YARD"
    ],
@@ -415,10 +422,9 @@
    }
   },
   {
-   "text": "Pittsburgh still won, nineteen to fourteen, to go eleven and oh.",
-   "cap": "Pittsburgh still won, 19 to 14, to go 11-0.",
+   "text": "Steelers nineteen, Ravens fourteen. Pittsburgh stays perfect. Eleven and zero.",
+   "cap": "Steelers 19, Ravens 14. Pittsburgh stays perfect. 11-0.",
    "key": [
-    "19",
     "11-0."
    ],
    "board": [
@@ -452,11 +458,12 @@
    }
   },
   {
-   "text": "Thanksgiving dinner, served six days late.",
+   "text": "Thanksgiving dinner. Served six days late. Cold.",
+   "cap": "Thanksgiving dinner. Served 6 days late. Cold.",
    "key": [
-    "SIX",
     "LATE."
    ],
+   "speaker": "capy",
    "set": "living",
    "setOpts": {
     "boardText": [
@@ -464,6 +471,10 @@
      "3:40 PM"
     ]
    },
+   "board": [
+    "WEDNESDAY",
+    "3:40 PM"
+   ],
    "place": {
     "capy": [
      -1.2,
@@ -488,17 +499,18 @@
      "mood": "confused",
      "look": "capy"
     }
-   },
-   "speaker": "capy",
-   "board": [
-    "WEDNESDAY",
-    "3:40 PM"
-   ]
+   }
   },
   {
-   "text": "Would you skip work to watch a Wednesday afternoon game? Yes or no?",
+   "text": "Would you skip work for a Wednesday game? Yes or no? Ravens fans, no comment.",
    "key": [
-    "WORK"
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "WEDNESDAY GAME:",
+    "YES OR NO?"
    ],
    "shot": {
     "type": "two",
@@ -516,8 +528,7 @@
      "action": "cheer",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -540,6 +551,112 @@
   {
    "title": "CBS Sports: Ravens-Steelers game could help make NFL history by being played on a Wednesday",
    "url": "https://www.cbssports.com/nfl/news/ravens-steelers-game-could-help-make-nfl-history-by-being-played-on-a-wednesday"
+  },
+  {
+   "title": "Wikipedia: 2020 Baltimore Ravens season",
+   "url": "https://en.wikipedia.org/wiki/2020_Baltimore_Ravens_season"
+  },
+  {
+   "title": "Wikipedia: 2020 Pittsburgh Steelers season",
+   "url": "https://en.wikipedia.org/wiki/2020_Pittsburgh_Steelers_season"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 2020 a Thanksgiving night game was played on a Wednesday afternoon",
+   "terms": [
+    "Thanksgiving",
+    "Wednesday"
+   ]
+  },
+  {
+   "claim": "Ravens at Steelers was set for Thanksgiving night",
+   "terms": [
+    "Thanksgiving",
+    "night"
+   ]
+  },
+  {
+   "claim": "About 20 Ravens players were out",
+   "terms": [
+    "20",
+    "players"
+   ]
+  },
+  {
+   "claim": "Lamar Jackson was out",
+   "terms": [
+    "Jackson",
+    "COVID|positive|virus"
+   ]
+  },
+  {
+   "claim": "Jackson was the reigning MVP",
+   "terms": [
+    "Jackson",
+    "MVP"
+   ]
+  },
+  {
+   "claim": "The game moved to Sunday, then Tuesday, then Wednesday",
+   "terms": [
+    "Sunday",
+    "Tuesday",
+    "Wednesday"
+   ]
+  },
+  {
+   "claim": "The game was postponed three times",
+   "terms": [
+    "postpone"
+   ]
+  },
+  {
+   "claim": "Kickoff was 3:40 in the afternoon",
+   "terms": [
+    "3:40"
+   ]
+  },
+  {
+   "claim": "NBC had the Christmas tree lighting that night",
+   "terms": [
+    "NBC",
+    "tree"
+   ]
+  },
+  {
+   "claim": "It was the first Wednesday game in eight years",
+   "terms": [
+    "Wednesday",
+    "2012|eight years|8 years"
+   ]
+  },
+  {
+   "claim": "Robert Griffin III started and ran for 68 yards",
+   "terms": [
+    "Griffin",
+    "68"
+   ]
+  },
+  {
+   "claim": "Trace McSorley threw a 70-yard touchdown",
+   "terms": [
+    "McSorley",
+    "70"
+   ]
+  },
+  {
+   "claim": "Steelers won 19-14",
+   "terms": [
+    "19-14"
+   ]
+  },
+  {
+   "claim": "Pittsburgh went 11-0",
+   "terms": [
+    "11-0"
+   ]
   }
  ]
 }

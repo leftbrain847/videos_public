@@ -75,10 +75,11 @@
  },
  "lines": [
   {
-   "text": "In 2020, the 49ers' only win in their new home stadium came as the away team.",
+   "text": "You win once in your new home stadium. As the away team.",
    "key": [
     "AWAY"
    ],
+   "speaker": "capy",
    "place": {
     "coach": false,
     "official": false,
@@ -100,13 +101,13 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Late November, their home county banned contact sports.",
+   "text": "Twenty twenty. Late November. Your county bans contact sports.",
+   "cap": "2020. Late November. Your county bans contact sports.",
    "key": [
-    "BANNED"
+    "BANS"
    ],
    "set": "press",
    "setOpts": {
@@ -116,6 +117,10 @@
      "BANNED"
     ]
    },
+   "board": [
+    "CONTACT SPORTS:",
+    "BANNED"
+   ],
    "place": {
     "official": "center"
    },
@@ -128,14 +133,11 @@
      "mood": "neutral",
      "action": "talk"
     }
-   },
-   "board": [
-    "CONTACT SPORTS:",
-    "BANNED"
-   ]
+   }
   },
   {
-   "text": "So the 49ers couldn't play at home.",
+   "text": "So the forty niners can't play at home.",
+   "cap": "So the 49ers can't play at home.",
    "key": [
     "HOME."
    ],
@@ -152,7 +154,7 @@
    }
   },
   {
-   "text": "They moved to Arizona. Into the Cardinals' stadium.",
+   "text": "You move to Arizona. Into the Cardinals' stadium.",
    "key": [
     "ARIZONA."
    ],
@@ -162,6 +164,9 @@
      "GLENDALE, AZ"
     ]
    },
+   "board": [
+    "GLENDALE, AZ"
+   ],
    "place": {
     "niner": [
      -0.8,
@@ -185,15 +190,12 @@
      "mood": "neutral",
      "look": "niner"
     }
-   },
-   "board": [
-    "GLENDALE, AZ"
-   ]
+   }
   },
   {
-   "text": "They lived in a hotel about half a mile away.",
+   "text": "You live in a hotel. Right by the stadium.",
    "key": [
-    "HOTEL"
+    "HOTEL."
    ],
    "set": "living",
    "setOpts": {
@@ -203,6 +205,10 @@
     ],
     "couch": "#8a8f99"
    },
+   "board": [
+    "HOTEL",
+    "ROOM 1"
+   ],
    "place": {
     "niner": [
      0,
@@ -218,17 +224,50 @@
      "mood": "sad",
      "action": "slump"
     }
-   },
-   "board": [
-    "HOTEL",
-    "ROOM 1"
-   ]
+   }
   },
   {
-   "text": "Home game one: Buffalo, on Monday night. Lost, thirty four to twenty four.",
-   "cap": "Home game one: Buffalo, on Monday night. Lost, 34 to 24.",
+   "text": "Your home is a hotel. Your stadium belongs to a rival.",
    "key": [
-    "34"
+    "RIVAL."
+   ],
+   "speaker": "capy",
+   "board": [
+    "HOME:",
+    "A HOTEL"
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     4.4
+    ],
+    "niner": [
+     1.0,
+     4.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "niner"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "niner": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Home game one. Buffalo, on Monday night. You lose.",
+   "key": [
+    "LOSE."
    ],
    "set": "field",
    "setOpts": {
@@ -237,7 +276,12 @@
      "BILLS 34"
     ]
    },
+   "board": [
+    "49ERS 24",
+    "BILLS 34"
+   ],
    "place": {
+    "capy": false,
     "niner": "center",
     "coach": "sideline"
    },
@@ -250,17 +294,12 @@
      "mood": "sad",
      "action": "facepalm"
     }
-   },
-   "board": [
-    "49ERS 24",
-    "BILLS 34"
-   ]
+   }
   },
   {
-   "text": "Home game two: Washington. Lost, twenty three to fifteen.",
-   "cap": "Home game two: Washington. Lost, 23 to 15.",
+   "text": "Home game two. Washington. You lose again.",
    "key": [
-    "23"
+    "AGAIN."
    ],
    "board": [
     "49ERS 15",
@@ -278,7 +317,7 @@
    }
   },
   {
-   "text": "Then they played the Cardinals. Same stadium. But this time, as the visitors.",
+   "text": "Then you play the Cardinals. Same stadium. You're the visitors.",
    "key": [
     "VISITORS."
    ],
@@ -315,10 +354,10 @@
    }
   },
   {
-   "text": "That one, they won. Twenty to twelve.",
-   "cap": "That one, they won. 20 to 12.",
+   "text": "That one, you win. Twenty to twelve. Of course.",
+   "cap": "That one, you win. 20-12. Of course.",
    "key": [
-    "WON."
+    "20-12."
    ],
    "board": [
     "49ERS 20",
@@ -340,10 +379,10 @@
    }
   },
   {
-   "text": "Home game three: Seattle. Lost, twenty six to twenty three.",
-   "cap": "Home game three: Seattle. Lost, 26 to 23.",
+   "text": "Home game three. Seattle. You lose by three.",
+   "cap": "Home game 3. Seattle. You lose by 3.",
    "key": [
-    "26"
+    "3."
    ],
    "board": [
     "49ERS 23",
@@ -361,44 +400,12 @@
    }
   },
   {
-   "text": "They lived like that for about a month.",
+   "text": "As the hosts? Zero and three. As the guests? One and zero.",
+   "cap": "As the hosts? 0-3. As the guests? 1-0.",
    "key": [
-    "MONTH."
+    "1-0."
    ],
-   "place": {
-    "coach": [
-     1.6,
-     0.4
-    ],
-    "niner": [
-     -0.6,
-     0.2
-    ]
-   },
-   "shot": {
-    "type": "two",
-    "on": "coach",
-    "with": "niner"
-   },
-   "act": {
-    "coach": {
-     "mood": "sad",
-     "action": "cross",
-     "look": "niner"
-    },
-    "niner": {
-     "mood": "sad",
-     "look": "coach"
-    }
-   }
-  },
-  {
-   "text": "In their Arizona home, they went oh and three as the hosts. One and oh as the guests.",
-   "cap": "In their Arizona home, they went 0-3 as the hosts. 1-0 as the guests.",
-   "key": [
-    "0-3",
-    "1-0"
-   ],
+   "speaker": "capy",
    "board": [
     "HOSTS 0-3",
     "GUESTS 1-0"
@@ -433,14 +440,14 @@
      "mood": "confused",
      "action": "shrug"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Some teams just travel better than they host.",
+   "text": "Some teams just travel better than they host. It happens.",
    "key": [
     "TRAVEL"
    ],
+   "speaker": "capy",
    "shot": {
     "type": "medium",
     "on": "capy"
@@ -455,13 +462,17 @@
      "mood": "neutral",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Would your team rather play at home, or as the guest? Home or away?",
+   "text": "Would your team rather host or visit? Home or away? Cardinals fans, you won nothing here.",
    "key": [
     "HOME",
+    "AWAY?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "HOME OR",
     "AWAY?"
    ],
    "shot": {
@@ -480,8 +491,7 @@
      "action": "throw",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -524,6 +534,60 @@
   {
    "title": "CBS San Francisco: Beathard 3 touchdowns, 49ers stun Cardinals",
    "url": "https://www.cbsnews.com/sanfrancisco/news/beathard-3-touchdowns-49ers-stun-cardinals"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In late November 2020 Santa Clara County banned contact sports",
+   "terms": [
+    "county",
+    "contact sports"
+   ]
+  },
+  {
+   "claim": "The 49ers could not play at home",
+   "terms": [
+    "49ers",
+    "home"
+   ]
+  },
+  {
+   "claim": "They moved to Arizona, into the Cardinals' stadium",
+   "terms": [
+    "Arizona",
+    "Cardinals"
+   ]
+  },
+  {
+   "claim": "They lived in a hotel by the stadium",
+   "terms": [
+    "hotel"
+   ]
+  },
+  {
+   "claim": "Home game one: lost to Buffalo on Monday night 34-24",
+   "terms": [
+    "34-24"
+   ]
+  },
+  {
+   "claim": "Home game two: lost to Washington 23-15",
+   "terms": [
+    "23-15"
+   ]
+  },
+  {
+   "claim": "As visitors they beat the Cardinals 20-12 in the same stadium",
+   "terms": [
+    "20-12"
+   ]
+  },
+  {
+   "claim": "Home game three: lost to Seattle 26-23",
+   "terms": [
+    "26-23"
+   ]
   }
  ]
 }
