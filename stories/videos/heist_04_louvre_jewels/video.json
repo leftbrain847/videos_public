@@ -530,9 +530,9 @@
    }
   },
   {
-   "text": "Most of the jewels? Still missing. Nobody knows where they went.",
+   "text": "The jewels themselves? That's a whole other story.",
    "key": [
-    "MISSING."
+    "STORY."
    ],
    "shot": {
     "type": "high",
@@ -708,12 +708,6 @@
    "claim": "Arrests followed within a week",
    "terms": [
     "arrest"
-   ]
-  },
-  {
-   "claim": "Most of the jewels are still missing",
-   "terms": [
-    "still missing|not been recovered|not recovered|remain missing|yet to be recovered"
    ]
   }
  ]

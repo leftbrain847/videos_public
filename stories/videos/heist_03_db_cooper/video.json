@@ -426,8 +426,7 @@
    ]
   },
   {
-   "text": "He finds five thousand eight hundred dollars. Rotting twenties.",
-   "cap": "He finds $5,800. Rotting twenties.",
+   "text": "He finds a bundle of cash. Rotting twenties.",
    "key": [
     "TWENTIES."
    ],
@@ -607,10 +606,6 @@
    "url": "https://www.npr.org/sections/thetwo-way/2016/07/13/485839902/fbi-is-giving-up-on-solving-the-mystery-of-d-b-cooper"
   },
   {
-   "title": "UPI: FBI ends 45-year search for D.B. Cooper",
-   "url": "https://www.upi.com/Top_News/US/2016/07/13/FBI-ends-45-year-search-for-infamous-DB-Cooper-plane-hijacker/5101468404616/"
-  },
-  {
    "title": "Christian Science Monitor: FBI closes notorious unsolved skyjacking case",
    "url": "https://www.csmonitor.com/USA/Justice/2016/0713/D.B.-Cooper-FBI-closes-notorious-unsolved-skyjacking-case"
   },
@@ -715,9 +710,10 @@
    ]
   },
   {
-   "claim": "In 1980 a boy found $5,800 along the river",
+   "claim": "In 1980 a boy found some of the ransom money",
    "terms": [
-    "5,800"
+    "1980",
+    "found|discovered"
    ]
   },
   {
