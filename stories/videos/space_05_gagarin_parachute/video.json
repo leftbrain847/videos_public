@@ -1,0 +1,921 @@
+{
+ "id": "space_05_gagarin_parachute",
+ "title": "Gagarin's secret parachute",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "VOSTOK 1"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "yuri": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#f2a13a",
+    "pants": "#f2a13a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#c68d64"
+   }
+  },
+  "farm": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#9a9a9a",
+    "skin": "#c68d64"
+   }
+  },
+  "girl": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f6d21f",
+    "pants": "#4a4a4a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   }
+  },
+  "off": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "tie": "#c0262d"
+   }
+  },
+  "judge": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You are the first human in space. Then you skip one tiny rule.",
+   "key": [
+    "RULE."
+   ],
+   "board": [
+    "RECORD",
+    "RULES"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "yuri": [
+     2.6,
+     -0.6
+    ],
+    "farm": false,
+    "girl": false,
+    "off": false,
+    "judge": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "yuri": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "April twelfth, nineteen sixty one. Yuri Gagarin climbs into Vostok one.",
+   "cap": "April 12, 1961. Yuri Gagarin climbs into Vostok 1.",
+   "key": [
+    "GAGARIN"
+   ],
+   "board": [
+    "VOSTOK 1",
+    "APRIL 12 1961"
+   ],
+   "place": {
+    "capy": false,
+    "yuri": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "yuri"
+   },
+   "act": {
+    "yuri": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "At liftoff, he shouts: let's go!",
+   "cap": "At liftoff, he shouts: let's go!",
+   "key": [
+    "GO!"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "yuri"
+   },
+   "act": {
+    "yuri": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One lap around the Earth. About one hundred eight minutes.",
+   "cap": "One lap around the Earth. About 108 minutes.",
+   "key": [
+    "108"
+   ],
+   "board": [
+    "1 ORBIT",
+    "108 MIN"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "yuri"
+   },
+   "act": {
+    "yuri": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He launches a senior lieutenant. During the flight, he's promoted to major.",
+   "key": [
+    "MAJOR."
+   ],
+   "board": [
+    "PROMOTED",
+    "TO MAJOR"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "yuri"
+   },
+   "act": {
+    "yuri": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Coming home, part of his ship won't separate. The capsule tumbles.",
+   "key": [
+    "TUMBLES."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "yuri": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "yuri"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "yuri"
+    },
+    "yuri": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.7,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "It finally breaks free. Now the part nobody advertised.",
+   "key": [
+    "ADVERTISED."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "yuri": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Miles above the ground, Gagarin ejects. He parachutes down alone.",
+   "key": [
+    "EJECTS."
+   ],
+   "board": [
+    "EJECT",
+    "PARACHUTE"
+   ],
+   "place": {
+    "capy": false,
+    "yuri": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "yuri"
+   },
+   "act": {
+    "yuri": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His capsule lands somewhere else. Separately.",
+   "key": [
+    "SEPARATELY."
+   ],
+   "board": [
+    "CAPSULE",
+    "ELSEWHERE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "yuri": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.8,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In a field, two people see him coming. A farm woman. Her granddaughter.",
+   "key": [
+    "FARM"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "SARATOV",
+     "FARMLAND"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "yuri": false,
+    "farm": [
+     -1.3,
+     4.4
+    ],
+    "girl": [
+     1.4,
+     4.4
+    ],
+    "off": false,
+    "judge": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "farm",
+    "with": "girl",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "farm": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "girl": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Orange suit. Giant helmet. Walking out of the sky.",
+   "key": [
+    "ORANGE"
+   ],
+   "place": {
+    "farm": false,
+    "girl": false,
+    "yuri": [
+     0,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "yuri",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "yuri": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He tells them not to be afraid. He's a Soviet too.",
+   "key": [
+    "AFRAID."
+   ],
+   "place": {
+    "farm": [
+     -2.4,
+     4.0
+    ],
+    "yuri": [
+     0.4,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "yuri",
+    "with": "farm",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "yuri": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "farm"
+    },
+    "farm": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "yuri"
+    }
+   }
+  },
+  {
+   "text": "Now the problem. The record rules are very specific.",
+   "key": [
+    "SPECIFIC."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "RECORD RULES"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "yuri": false,
+    "farm": false,
+    "girl": false,
+    "off": false,
+    "judge": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "judge"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "judge"
+    },
+    "judge": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The rule? The pilot must land inside the craft.",
+   "key": [
+    "INSIDE"
+   ],
+   "board": [
+    "PILOT MUST",
+    "LAND INSIDE"
+   ],
+   "place": {
+    "capy": false,
+    "judge": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Gagarin did not. So officials keep quiet.",
+   "key": [
+    "QUIET."
+   ],
+   "place": {
+    "off": [
+     -1.4,
+     0.3
+    ],
+    "judge": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "off"
+   },
+   "act": {
+    "off": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "judge": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "off"
+    }
+   }
+  },
+  {
+   "text": "The official story: he landed with his ship.",
+   "key": [
+    "SHIP."
+   ],
+   "board": [
+    "OFFICIAL:",
+    "LANDED INSIDE"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "off",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "off": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "judge"
+    },
+    "judge": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "off"
+    }
+   }
+  },
+  {
+   "text": "The record is approved. The secret holds for years.",
+   "key": [
+    "YEARS."
+   ],
+   "board": [
+    "RECORD",
+    "APPROVED"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    },
+    "off": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "judge"
+    }
+   }
+  },
+  {
+   "text": "So history's first space record hides a fib.",
+   "key": [
+    "FIB"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "off": [
+     1.4,
+     0.2
+    ],
+    "judge": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "off"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "off"
+    },
+    "off": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Eventually the truth comes out. Ejection. Parachute. Field.",
+   "key": [
+    "PARACHUTE."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "off": [
+     -2.6,
+     -0.6
+    ],
+    "judge": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "off": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    },
+    "judge": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "off"
+    }
+   }
+  },
+  {
+   "text": "The record still stands. He reached space first.",
+   "key": [
+    "FIRST."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "FIRST HUMAN",
+     "IN SPACE"
+    ]
+   },
+   "board": [
+    "FIRST HUMAN",
+    "IN SPACE"
+   ],
+   "place": {
+    "capy": false,
+    "yuri": [
+     0,
+     0.3
+    ],
+    "farm": false,
+    "girl": false,
+    "off": false,
+    "judge": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "yuri"
+   },
+   "act": {
+    "yuri": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "First human in space. First space paperwork problem, too.",
+   "key": [
+    "PAPERWORK"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "yuri": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "yuri"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "yuri": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Should the record count? Yes or no? Tell me.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "RECORD:",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "yuri": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "yuri": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Vostok 1",
+   "url": "https://en.wikipedia.org/wiki/Vostok_1"
+  },
+  {
+   "title": "Wikipedia: Yuri Gagarin",
+   "url": "https://en.wikipedia.org/wiki/Yuri_Gagarin"
+  },
+  {
+   "title": "Smithsonian Air and Space: why Gagarin remains the first man in space",
+   "url": "https://airandspace.si.edu/stories/editorial/why-yuri-gagarin-remains-first-man-space-even-though-he-did-not-land-inside-his"
+  },
+  {
+   "title": "IEEE Spectrum: Twenty myths about Gagarin's spaceflight",
+   "url": "https://spectrum.ieee.org/twenty-myths-about-gagarins-spaceflight"
+  },
+  {
+   "title": "AIP Inside Science: Gagarin's space shot",
+   "url": "https://www.aip.org/inside-science/yuri-gagarins-space-shot-heard-round-the-world"
+  },
+  {
+   "title": "Amusing Planet: why the Soviet Union lied about Gagarin's flight",
+   "url": "https://www.amusingplanet.com/2021/04/why-soviet-union-lied-about-yuri.html"
+  },
+  {
+   "title": "Vice: secrets of the first manned spaceflight",
+   "url": "https://www.vice.com/en/article/secrets-of-the-first-manned-spaceflight-revealed/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Yuri Gagarin was the first human in space, on April 12, 1961, in Vostok 1",
+   "terms": [
+    "Gagarin",
+    "April 12",
+    "1961"
+   ]
+  },
+  {
+   "claim": "Gagarin was promoted from senior lieutenant to major during the flight",
+   "terms": [
+    "lieutenant",
+    "major"
+   ]
+  },
+  {
+   "claim": "At liftoff he said 'Let's go!' (Poyekhali)",
+   "terms": [
+    "Poyekhali|let's go"
+   ]
+  },
+  {
+   "claim": "The flight made one orbit of Earth in about 108 minutes",
+   "terms": [
+    "108",
+    "minute"
+   ]
+  },
+  {
+   "claim": "The service module failed to separate cleanly and the capsule tumbled",
+   "terms": [
+    "separat",
+    "tumbl|spin|rotat"
+   ]
+  },
+  {
+   "claim": "Gagarin ejected and parachuted down separately",
+   "terms": [
+    "eject",
+    "parachut"
+   ]
+  },
+  {
+   "claim": "The capsule landed separately",
+   "terms": [
+    "capsule",
+    "separately|separate"
+   ]
+  },
+  {
+   "claim": "A farm woman and a girl saw him land",
+   "terms": [
+    "farm",
+    "girl|granddaughter|daughter"
+   ]
+  },
+  {
+   "claim": "He wore an orange suit and a helmet",
+   "terms": [
+    "orange",
+    "suit|helmet"
+   ]
+  },
+  {
+   "claim": "He told them not to be afraid, that he was Soviet",
+   "terms": [
+    "afraid",
+    "Soviet"
+   ]
+  },
+  {
+   "claim": "FAI record rules required the pilot to land inside the spacecraft",
+   "terms": [
+    "FAI|record",
+    "inside|with the spacecraft|in the spacecraft"
+   ]
+  },
+  {
+   "claim": "The Soviets claimed he landed with his spacecraft",
+   "terms": [
+    "claimed|concealed|hid|lied",
+    "land"
+   ]
+  },
+  {
+   "claim": "The record was ratified and still stands",
+   "terms": [
+    "record",
+    "ratified|recognized|recognised|stands"
+   ]
+  }
+ ]
+}

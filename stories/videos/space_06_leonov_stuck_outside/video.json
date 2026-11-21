@@ -1,0 +1,809 @@
+{
+ "id": "space_06_leonov_stuck_outside",
+ "title": "The first spacewalker who couldn't get back in",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "VOSKHOD 2"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "alexei": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#dfe6ee",
+    "pants": "#eef1f5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "pavel": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#e8e2d4",
+    "pants": "#dfe6ee",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "ctl": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "headset": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You're the first person to walk in space. Now you can't get back inside.",
+   "key": [
+    "INSIDE."
+   ],
+   "board": [
+    "AIRLOCK",
+    "TOO SMALL"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "alexei": [
+     2.6,
+     -0.6
+    ],
+    "pavel": false,
+    "ctl": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "alexei": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "March, nineteen sixty five. Voskhod two is in orbit around Earth.",
+   "cap": "March 1965. Voskhod 2 is in orbit around Earth.",
+   "key": [
+    "ORBIT."
+   ],
+   "board": [
+    "VOSKHOD 2",
+    "MARCH 1965"
+   ],
+   "place": {
+    "capy": false,
+    "alexei": [
+     -1.5,
+     0.2
+    ],
+    "pavel": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "alexei",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "alexei": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "pavel"
+    },
+    "pavel": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "alexei"
+    }
+   }
+  },
+  {
+   "text": "Two men aboard. Pavel Belyayev flies. Alexei Leonov goes outside.",
+   "key": [
+    "OUTSIDE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "alexei",
+    "with": "pavel"
+   },
+   "act": {
+    "alexei": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "pavel": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "alexei"
+    }
+   }
+  },
+  {
+   "text": "Leonov crawls out through an inflatable airlock.",
+   "key": [
+    "AIRLOCK."
+   ],
+   "place": {
+    "pavel": false,
+    "alexei": [
+     0,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "alexei"
+   },
+   "act": {
+    "alexei": {
+     "mood": "happy",
+     "action": "walk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He floats free. The first spacewalk in history.",
+   "key": [
+    "FIRST"
+   ],
+   "board": [
+    "FIRST",
+    "SPACEWALK"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "alexei"
+   },
+   "act": {
+    "alexei": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twelve minutes later, it's time to come home.",
+   "cap": "12 minutes later, it's time to come home.",
+   "key": [
+    "12"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "alexei": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "alexei"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "alexei"
+    },
+    "alexei": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "One problem. In the vacuum, his suit has puffed up.",
+   "key": [
+    "PUFFED"
+   ],
+   "board": [
+    "SUIT",
+    "BALLOONED"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "alexei"
+   },
+   "act": {
+    "alexei": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It's stiff as a balloon. His hands slip out of his gloves.",
+   "key": [
+    "GLOVES."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "alexei"
+   },
+   "act": {
+    "alexei": {
+     "mood": "worried",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Now he's too big for the door.",
+   "key": [
+    "DOOR."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "alexei": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "He tells nobody at first. No time for a meeting.",
+   "key": [
+    "MEETING."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "MISSION",
+     "CONTROL"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "alexei": false,
+    "pavel": false,
+    "ctl": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He opens a valve. He lets air out of his own suit.",
+   "key": [
+    "VALVE."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "SUIT PRESSURE",
+     "DROPPING"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "alexei": [
+     0,
+     0.3
+    ],
+    "pavel": false,
+    "ctl": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "alexei"
+   },
+   "act": {
+    "alexei": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It's risky. Too little pressure can give him the bends.",
+   "key": [
+    "BENDS."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "alexei": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "alexei"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "alexei"
+    },
+    "alexei": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The suit shrinks a little. He squeezes in headfirst.",
+   "key": [
+    "HEADFIRST."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "high",
+    "on": "alexei"
+   },
+   "act": {
+    "alexei": {
+     "mood": "worried",
+     "action": "walk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then he twists all the way around inside. To close the hatch.",
+   "key": [
+    "HATCH."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "alexei",
+    "offset": [
+     0.4,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "alexei": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He's back in. Soaked in sweat. Exhausted. Alive.",
+   "key": [
+    "ALIVE."
+   ],
+   "board": [
+    "BACK",
+    "INSIDE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "alexei": [
+     -2.6,
+     -0.6
+    ],
+    "pavel": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    },
+    "alexei": {
+     "mood": "happy",
+     "action": "slump",
+     "look": "capy"
+    },
+    "pavel": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "alexei"
+    }
+   }
+  },
+  {
+   "text": "Then the automatic landing system fails.",
+   "key": [
+    "FAILS."
+   ],
+   "place": {
+    "capy": false,
+    "alexei": [
+     -1.4,
+     0.2
+    ],
+    "pavel": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "pavel",
+    "with": "alexei"
+   },
+   "act": {
+    "pavel": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "alexei": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "pavel"
+    }
+   }
+  },
+  {
+   "text": "They steer down by hand. They miss by hundreds of miles. Oops.",
+   "key": [
+    "MILES."
+   ],
+   "board": [
+    "OFF COURSE",
+    "TAIGA"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "pavel"
+   },
+   "act": {
+    "pavel": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They land in a snowy forest. Wolves live there.",
+   "key": [
+    "WOLVES"
+   ],
+   "board": [
+    "SNOW",
+    "FOREST"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "pavel",
+    "offset": [
+     -1.0,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "pavel": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    },
+    "alexei": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "pavel"
+    }
+   }
+  },
+  {
+   "text": "They spend a freezing night in the woods. Then rescue arrives.",
+   "key": [
+    "NIGHT"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "pavel": [
+     1.4,
+     0.2
+    ],
+    "alexei": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pavel"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "pavel"
+    },
+    "pavel": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "First spacewalk. First suit you must deflate to get home.",
+   "key": [
+    "DEFLATE"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "pavel": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Would you deflate your own spacesuit? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "DEFLATE IT?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "alexei": [
+     2.6,
+     -0.6
+    ],
+    "pavel": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0.2,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "alexei": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Voskhod 2",
+   "url": "https://en.wikipedia.org/wiki/Voskhod_2"
+  },
+  {
+   "title": "Wikipedia: Alexei Leonov",
+   "url": "https://en.wikipedia.org/wiki/Alexei_Leonov"
+  },
+  {
+   "title": "TIME: the obstacles of Leonov's spacewalk",
+   "url": "https://time.com/5802128/alexei-leonov-spacewalk-obstacles/"
+  },
+  {
+   "title": "Sky at Night: Alexei Leonov, first person to spacewalk",
+   "url": "https://www.skyatnightmagazine.com/space-missions/alexei-leonov-first-person-spacewalk"
+  },
+  {
+   "title": "Vice: the first spacewalker crash landed in a forest full of wolves",
+   "url": "https://www.vice.com/en/article/the-first-spacewalker-cheated-death-and-crash-landed-in-a-forest-full-of-wolves"
+  },
+  {
+   "title": "Gizmodo: 50 years ago the first spacewalk nearly ended in tragedy",
+   "url": "https://gizmodo.com/50-years-ago-the-first-spacewalk-nearly-ended-in-trage-1692303108"
+  },
+  {
+   "title": "Linda Hall Library: Alexei Leonov",
+   "url": "https://www.lindahall.org/about/news/scientist-of-the-day/alexei-leonov"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Alexei Leonov made the first spacewalk, in March 1965 on Voskhod 2",
+   "terms": [
+    "Leonov",
+    "Voskhod 2|Voskhod",
+    "1965"
+   ]
+  },
+  {
+   "claim": "Pavel Belyayev was the other crew member",
+   "terms": [
+    "Belyayev"
+   ]
+  },
+  {
+   "claim": "Leonov exited through an inflatable airlock",
+   "terms": [
+    "inflatable",
+    "airlock"
+   ]
+  },
+  {
+   "claim": "He was outside for about 12 minutes",
+   "terms": [
+    "12 minutes|twelve minutes"
+   ]
+  },
+  {
+   "claim": "His suit ballooned in the vacuum",
+   "terms": [
+    "suit",
+    "balloon|inflat"
+   ]
+  },
+  {
+   "claim": "His hands slipped out of his gloves",
+   "terms": [
+    "glove"
+   ]
+  },
+  {
+   "claim": "He was too big to get back into the airlock",
+   "terms": [
+    "airlock",
+    "too|could not|couldn't"
+   ]
+  },
+  {
+   "claim": "He let air out of his suit through a valve",
+   "terms": [
+    "valve",
+    "suit"
+   ]
+  },
+  {
+   "claim": "The lower pressure risked the bends",
+   "terms": [
+    "bends|decompression"
+   ]
+  },
+  {
+   "claim": "He entered headfirst and turned around inside to close the hatch",
+   "terms": [
+    "head",
+    "hatch"
+   ]
+  },
+  {
+   "claim": "The automatic landing system failed and they landed manually",
+   "terms": [
+    "automatic",
+    "manual"
+   ]
+  },
+  {
+   "claim": "They landed far off course in a snowy forest",
+   "terms": [
+    "forest|taiga",
+    "snow"
+   ]
+  },
+  {
+   "claim": "Wolves lived in the forest",
+   "terms": [
+    "wolves"
+   ]
+  },
+  {
+   "claim": "They spent a freezing night there before rescue",
+   "terms": [
+    "night",
+    "forest|taiga|woods"
+   ]
+  }
+ ]
+}
