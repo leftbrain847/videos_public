@@ -1,0 +1,651 @@
+{
+ "id": "heist_12_big_maple_leaf",
+ "title": "The hundred kilo coin",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "BODE",
+   "MUSEUM"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "t1": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2e",
+    "pants": "#1f2a3a",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  },
+  "t2": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#3a3f4b",
+    "pants": "#1f2a3a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c98d63"
+   }
+  },
+  "guard": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5f6770",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "judge": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#a8714c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal a gold coin. It weighs a hundred kilos. You roll it home.",
+   "cap": "You steal a gold coin. It weighs 100 kilos. You roll it home.",
+   "key": [
+    "ROLL"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "t1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "t1": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "t1": "center",
+    "t2": false,
+    "guard": false,
+    "judge": false
+   },
+   "board": [
+    "100 KG",
+    "GOLD"
+   ]
+  },
+  {
+   "text": "Berlin. March, twenty seventeen. The Bode Museum.",
+   "cap": "Berlin. March 2017. The Bode Museum.",
+   "key": [
+    "BERLIN."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "BERLIN",
+    "2017"
+   ]
+  },
+  {
+   "text": "Inside sits the Big Maple Leaf. A Canadian coin. Pure gold.",
+   "key": [
+    "GOLD."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "t1": false
+   },
+   "board": [
+    "BIG MAPLE",
+    "LEAF"
+   ]
+  },
+  {
+   "text": "Its face value? One million Canadian dollars.",
+   "cap": "Its face value? 1 million Canadian dollars.",
+   "key": [
+    "MILLION"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gold alone is worth millions of euros. Nobody can carry it.",
+   "key": [
+    "CARRY"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "guard"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "guard"
+    },
+    "guard": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "guard": "right"
+   }
+  },
+  {
+   "text": "Your secret helper? A guard at the museum.",
+   "key": [
+    "GUARD"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He tells you which window is weak.",
+   "key": [
+    "WINDOW"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "smug",
+     "action": "point"
+    }
+   }
+  },
+  {
+   "text": "Three in the morning. You climb a ladder from the train tracks.",
+   "cap": "3 in the morning. You climb a ladder from the train tracks.",
+   "key": [
+    "LADDER"
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "low",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "t1": "left",
+    "t2": "right"
+   },
+   "board": [
+    "3:20 AM"
+   ]
+  },
+  {
+   "text": "You smash the case. You lift the coin. All one hundred kilos.",
+   "cap": "You smash the case. You lift the coin. All 100 kilos.",
+   "key": [
+    "KILOS."
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "two",
+    "on": "t1",
+    "with": "t2"
+   },
+   "act": {
+    "t1": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "t2"
+    },
+    "t2": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "t1"
+    }
+   },
+   "place": {
+    "t1": "left",
+    "t2": "right"
+   }
+  },
+  {
+   "text": "You load it on a wheelbarrow. You push it down the tracks.",
+   "key": [
+    "WHEELBARROW."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "t2"
+   },
+   "act": {
+    "t2": {
+     "mood": "neutral",
+     "action": "walk"
+    }
+   }
+  },
+  {
+   "text": "Then you push it across a railway bridge. In the dark.",
+   "key": [
+    "BRIDGE."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "worried",
+     "action": "walk"
+    }
+   }
+  },
+  {
+   "text": "The coin drops into a park below. You haul it to the car.",
+   "key": [
+    "PARK"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "t2"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "t2": {
+     "mood": "worried",
+     "action": "run"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "t2": "right",
+    "t1": false
+   }
+  },
+  {
+   "text": "Then you vanish. So does the coin.",
+   "key": [
+    "VANISH."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "t2": false
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Police think it was cut into pieces. Sold off. Melted down.",
+   "key": [
+    "PIECES."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "judge": "center"
+   },
+   "board": [
+    "COIN:",
+    "MISSING"
+   ]
+  },
+  {
+   "text": "Then come the clues. Gold traces in a getaway car.",
+   "key": [
+    "TRACES"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "GOLD",
+    "TRACES"
+   ]
+  },
+  {
+   "text": "Three men are convicted. One of them? The guard.",
+   "key": [
+    "GUARD."
+   ],
+   "set": "press",
+   "shot": {
+    "type": "two",
+    "on": "judge",
+    "with": "guard"
+   },
+   "act": {
+    "judge": {
+     "mood": "angry",
+     "action": "point",
+     "look": "guard"
+    },
+    "guard": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "judge": "left",
+    "guard": "right"
+   },
+   "board": [
+    "GUILTY",
+    "x3"
+   ]
+  },
+  {
+   "text": "The coin itself? Probably long gone.",
+   "key": [
+    "GONE."
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "EMPTY",
+    "CASE"
+   ]
+  },
+  {
+   "text": "A coin. Bigger than a car tire. Gone in one night.",
+   "key": [
+    "NIGHT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You stole money. Then you destroyed money to spend it.",
+   "key": [
+    "DESTROYED"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "t1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "t1"
+    },
+    "t1": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "t1": "right"
+   }
+  },
+  {
+   "text": "A hundred kilos of gold. Would you rather keep it or melt it?",
+   "cap": "100 kilos of gold. Would you rather keep it or melt it?",
+   "key": [
+    "MELT"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "t1": false
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Big Maple Leaf",
+   "url": "https://en.wikipedia.org/wiki/Big_Maple_Leaf"
+  },
+  {
+   "title": "NPR: Trial for suspects accused of stealing 220-pound solid gold coin begins",
+   "url": "https://www.npr.org/2019/01/10/684261949/trial-for-suspects-accused-of-stealing-220-pound-solid-gold-coin-begins-in-germa"
+  },
+  {
+   "title": "Irish Times: Four go on trial for theft of gold coin from Berlin museum",
+   "url": "https://www.irishtimes.com/news/world/europe/four-go-on-trial-for-theft-of-gold-coin-from-berlin-museum-1.3753398"
+  },
+  {
+   "title": "Artdaily: Berlin court jails three over 100 kg gold coin heist",
+   "url": "https://artdaily.com/news/121129/Berlin-court-jails-three-over-100-kg-gold-coin-heist"
+  },
+  {
+   "title": "LBMA: Theft of 100 kg Maple Leaf from the Bode Museum",
+   "url": "https://www.lbma.org.uk/wonders-of-gold/items/theft-of-100-kg-maple-leaf-from-the-bode-museum-in-berlin"
+  },
+  {
+   "title": "Fortune: Big Maple Leaf coin stolen",
+   "url": "https://fortune.com/2017/03/28/coin-stolen-big-maple-leaf/"
+  },
+  {
+   "title": "CrimeReads: The break-in at the Bode Museum",
+   "url": "https://crimereads.com/the-break-in-at-the-bode-museum-and-the-case-of-the-gigantic-gold-coin/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The coin weighed 100 kilograms",
+   "terms": [
+    "100",
+    "kilo|kg"
+   ]
+  },
+  {
+   "claim": "It was stolen from the Bode Museum in Berlin in March 2017",
+   "terms": [
+    "Bode",
+    "2017"
+   ]
+  },
+  {
+   "claim": "The coin is the Big Maple Leaf, a Canadian gold coin",
+   "terms": [
+    "Maple Leaf",
+    "Canad"
+   ]
+  },
+  {
+   "claim": "Its face value is one million Canadian dollars",
+   "terms": [
+    "face value",
+    "million"
+   ]
+  },
+  {
+   "claim": "A museum guard helped the thieves",
+   "terms": [
+    "guard"
+   ]
+  },
+  {
+   "claim": "They used a ladder from the train tracks to a window",
+   "terms": [
+    "ladder",
+    "window"
+   ]
+  },
+  {
+   "claim": "They used a wheelbarrow",
+   "terms": [
+    "wheelbarrow"
+   ]
+  },
+  {
+   "claim": "They crossed a railway bridge",
+   "terms": [
+    "bridge"
+   ]
+  },
+  {
+   "claim": "The coin fell into a park",
+   "terms": [
+    "park"
+   ]
+  },
+  {
+   "claim": "Police believe it was cut up and sold",
+   "terms": [
+    "cut|melted",
+    "sold|pieces"
+   ]
+  },
+  {
+   "claim": "Gold traces were found",
+   "terms": [
+    "traces|particles|dust",
+    "gold"
+   ]
+  },
+  {
+   "claim": "Three men were convicted, including the guard",
+   "terms": [
+    "three|3",
+    "convicted|guilty|jailed"
+   ]
+  }
+ ]
+}
