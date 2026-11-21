@@ -983,11 +983,19 @@
   },
   {
    "title": "Norse Mythology for Smart People: The Creation of Thor's Hammer",
-   "url": "https://norse-mythology.org/tales/the-creation-of-thors-hammer/"
+   "url": "https://norse-mythology.org/tales/loki-and-the-dwarves/"
   },
   {
-   "title": "Sacred Texts: The Prose Edda (Brodeur translation), Skaldskaparmal",
-   "url": "https://sacred-texts.com/neu/pre/pre05.htm"
+   "title": "Wikipedia: Eitri",
+   "url": "https://en.wikipedia.org/wiki/Eitri"
+  },
+  {
+   "title": "Hurstwic: The Treasures of the Gods (Snorri, Skaldskaparmal)",
+   "url": "https://hurstwic.com/history/articles/mythology/myths/text/treasures.htm"
+  },
+  {
+   "title": "Wikipedia: Gullinbursti",
+   "url": "https://en.wikipedia.org/wiki/Gullinbursti"
   }
  ],
  "claims": [
@@ -1030,15 +1038,15 @@
   {
    "claim": "Loki turns into a fly and bites Brokkr's hand",
    "terms": [
-    "fly",
-    "hand"
+    "fly|gadfly",
+    "hand|arm"
    ]
   },
   {
    "claim": "Brokkr keeps working the bellows and a golden boar comes out",
    "terms": [
     "bellows",
-    "boar"
+    "boar|Gullinbursti"
    ]
   },
   {
@@ -1051,8 +1059,8 @@
   {
    "claim": "For the hammer, the fly bites his eyelid",
    "terms": [
-    "fly",
-    "eyelid|eyelids"
+    "fly|gadfly",
+    "eyelid|eyelids|eye|eyes"
    ]
   },
   {

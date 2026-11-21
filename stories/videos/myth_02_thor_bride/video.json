@@ -1007,8 +1007,8 @@
    "url": "https://en.wikipedia.org/wiki/%C3%9Erymskvi%C3%B0a"
   },
   {
-   "title": "Sacred Texts: Thrymskvitha (Poetic Edda, Bellows translation)",
-   "url": "https://sacred-texts.com/neu/poe/poe11.htm"
+   "title": "Wikipedia: Brisingamen",
+   "url": "https://en.wikipedia.org/wiki/Br%C3%ADsingamen"
   },
   {
    "title": "University of Pittsburgh (D. L. Ashliman): The Lay of Thrym",
@@ -1080,10 +1080,17 @@
    ]
   },
   {
-   "claim": "Thor wears a bridal veil and Freyja's necklace",
+   "claim": "Thor wears a bridal veil",
    "terms": [
     "veil",
-    "necklace|Brísingamen|Brisingamen"
+    "Thor|bride|bridal"
+   ]
+  },
+  {
+   "claim": "Thor wears Freyja's necklace",
+   "terms": [
+    "Thor|bride",
+    "Brísingamen|Brisingamen|Brisings|necklace"
    ]
   },
   {

@@ -985,6 +985,10 @@
    "url": "https://mythopedia.com/topics/polyphemus/"
   },
   {
+   "title": "Wikipedia: Odysseus",
+   "url": "https://en.wikipedia.org/wiki/Odysseus"
+  },
+  {
    "title": "Greek Mythology Link (Carlos Parada): Polyphemus",
    "url": "https://www.maicar.com/GML/Polyphemus2.html"
   },
@@ -1082,8 +1086,8 @@
   {
    "claim": "Odysseus takes ten years to get home",
    "terms": [
-    "ten years|10 years",
-    "home|return|journey"
+    "ten year|10 year",
+    "home|return|journey|Ithaca"
    ]
   }
  ]
