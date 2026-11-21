@@ -1,0 +1,688 @@
+{
+ "id": "heist_08_maple_syrup",
+ "title": "The great maple syrup heist",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "STRATEGIC",
+   "SYRUP RESERVE"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "rich": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#c0392b",
+    "pants": "#3a2a20",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "pal": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#27ae60",
+    "pants": "#22252b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  },
+  "insp": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#f39c12",
+    "pants": "#22252b",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#a8714c"
+   },
+   "hold": "clipboard"
+  },
+  "judge": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#c98d63"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal eighteen million dollars of maple syrup. Then you refill the barrels. With water.",
+   "cap": "You steal $18 million of maple syrup. Then you refill the barrels. With water.",
+   "key": [
+    "WATER."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rich"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "rich": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "rich": "center",
+    "pal": false,
+    "insp": false,
+    "judge": false
+   },
+   "board": [
+    "MAPLE",
+    "SYRUP"
+   ]
+  },
+  {
+   "text": "Quebec, Canada. Maple syrup country.",
+   "key": [
+    "SYRUP"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "rich"
+   },
+   "act": {
+    "rich": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "QUEBEC",
+    "CANADA"
+   ]
+  },
+  {
+   "text": "Producers keep a giant reserve of it. Yes, really.",
+   "key": [
+    "REALLY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "rich": false
+   },
+   "board": [
+    "STRATEGIC",
+    "SYRUP RESERVE"
+   ]
+  },
+  {
+   "text": "Thousands of barrels. Stacked high in a warehouse. Like liquid gold.",
+   "key": [
+    "WAREHOUSE."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point"
+    }
+   }
+  },
+  {
+   "text": "You're Richard Vallieres. You have a plan. A sticky one. A very sweet one. Very Canadian.",
+   "key": [
+    "STICKY"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "rich"
+   },
+   "act": {
+    "rich": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "rich": "center"
+   },
+   "board": [
+    "SPACE",
+    "FOR RENT"
+   ]
+  },
+  {
+   "text": "Nobody checks the barrels very often. You notice.",
+   "key": [
+    "NOTICE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rich"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "rich"
+    },
+    "rich": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "rich": "right"
+   }
+  },
+  {
+   "text": "So you move barrels out. You drain the syrup.",
+   "key": [
+    "DRAIN"
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "wide",
+    "on": "pal"
+   },
+   "act": {
+    "pal": {
+     "mood": "neutral",
+     "action": "walk"
+    },
+    "rich": {
+     "mood": "happy",
+     "action": "point",
+     "look": "pal"
+    }
+   },
+   "place": {
+    "pal": "right",
+    "rich": "left"
+   }
+  },
+  {
+   "text": "You fill the barrels back up with water. You put them back.",
+   "key": [
+    "WATER."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "pal"
+   },
+   "act": {
+    "pal": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The real syrup? You sell it to buyers. Quietly. Some of it across the border.",
+   "key": [
+    "QUIETLY."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rich"
+   },
+   "act": {
+    "rich": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Month after month. Truck after truck. Pancake lovers have no idea.",
+   "key": [
+    "TRUCK."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "pal"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "pal"
+    },
+    "pal": {
+     "mood": "happy",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "pal": "right",
+    "rich": false
+   }
+  },
+  {
+   "text": "Then, twenty twelve. An inspector comes for an inventory.",
+   "cap": "Then, 2012. An inspector comes for an inventory.",
+   "key": [
+    "INVENTORY."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "insp"
+   },
+   "act": {
+    "insp": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "insp": "center",
+    "capy": false,
+    "pal": false
+   },
+   "board": [
+    "INVENTORY",
+    "DAY"
+   ]
+  },
+  {
+   "text": "She checks the barrels. Something feels off.",
+   "key": [
+    "OFF."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "insp"
+   },
+   "act": {
+    "insp": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Spoiler. It's not syrup.",
+   "key": [
+    "SPOILER."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "insp": false
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Some barrels hold water. Some are just empty.",
+   "key": [
+    "EMPTY."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "insp"
+   },
+   "act": {
+    "insp": {
+     "mood": "shocked",
+     "action": "point"
+    }
+   },
+   "place": {
+    "insp": "gold",
+    "capy": false
+   },
+   "board": [
+    "SYRUP?",
+    "WATER."
+   ]
+  },
+  {
+   "text": "Thousands of tonnes of syrup are gone. About eighteen million dollars.",
+   "cap": "Thousands of tonnes of syrup are gone. About $18 million.",
+   "key": [
+    "MILLION"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "insp"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "insp"
+    },
+    "insp": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "insp": "right"
+   },
+   "board": [
+    "MISSING:",
+    "$18,000,000"
+   ]
+  },
+  {
+   "text": "Police arrest more than a dozen people.",
+   "key": [
+    "ARREST"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "judge": "center"
+   },
+   "board": [
+    "ARRESTS",
+    "MADE"
+   ]
+  },
+  {
+   "text": "The judge gives you eight years in prison.",
+   "cap": "The judge gives you 8 years in prison.",
+   "key": [
+    "8"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "8 YEARS"
+   ]
+  },
+  {
+   "text": "Plus a fine of over nine million dollars.",
+   "cap": "Plus a fine of over $9 million.",
+   "key": [
+    "FINE"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "close",
+    "on": "rich"
+   },
+   "act": {
+    "rich": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "rich": "center"
+   },
+   "board": [
+    "FINE:",
+    "$9,400,000"
+   ]
+  },
+  {
+   "text": "You fought the fine. All the way to Canada's Supreme Court.",
+   "key": [
+    "SUPREME"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rich"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "rich"
+    },
+    "rich": {
+     "mood": "angry",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "rich": "right"
+   }
+  },
+  {
+   "text": "You lost. Sticky situation. I will see myself out.",
+   "key": [
+    "STICKY"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "rich": false
+   }
+  },
+  {
+   "text": "Would you check every barrel? Or just the top ones?",
+   "key": [
+    "BARREL?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Great Canadian Maple Syrup Heist",
+   "url": "https://en.wikipedia.org/wiki/Great_Canadian_Maple_Syrup_Heist"
+  },
+  {
+   "title": "CTV News: Men sentenced up to 8 years for Quebec maple syrup heist",
+   "url": "https://www.ctvnews.ca/canada/article/men-sentenced-up-to-8-years-for-quebec-maple-syrup-heist/"
+  },
+  {
+   "title": "Time: Maple syrup heist prison and fine",
+   "url": "https://time.com/4760432/maple-syrup-heist-prison-fine/"
+  },
+  {
+   "title": "CBC: Ringleader in maple syrup heist gets 8 years in prison, $9.4M fine",
+   "url": "https://amp.cbc.ca/lite/story/1.4090811"
+  },
+  {
+   "title": "CBC: Maple syrup thief must pay $9.1M fine, Supreme Court rules",
+   "url": "https://amp.cbc.ca/lite/story/1.6403757"
+  },
+  {
+   "title": "Supreme Court of Canada: Case in brief, R. v. Vallieres",
+   "url": "https://scc-csc.gc.ca/judgments-jugements/cb/2022/39162"
+  },
+  {
+   "title": "Global News: Maple syrup theft sentence",
+   "url": "https://globalnews.ca/news/3413782/maple-syrup-theft-sentence/amp"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "About $18 million of maple syrup was stolen",
+   "terms": [
+    "18",
+    "million",
+    "syrup"
+   ]
+  },
+  {
+   "claim": "Barrels were refilled with water",
+   "terms": [
+    "water",
+    "barrels"
+   ]
+  },
+  {
+   "claim": "Producers keep a strategic reserve",
+   "terms": [
+    "strategic reserve|reserve"
+   ]
+  },
+  {
+   "claim": "The syrup was stored in a warehouse",
+   "terms": [
+    "warehouse"
+   ]
+  },
+  {
+   "claim": "Richard Vallieres was the ringleader",
+   "terms": [
+    "Valli\u00e8res|Vallieres",
+    "ringleader|mastermind"
+   ]
+  },
+  {
+   "claim": "The thieves drained syrup and sold it",
+   "terms": [
+    "sold|sell",
+    "syrup"
+   ]
+  },
+  {
+   "claim": "Some syrup was sold across the border",
+   "terms": [
+    "New Brunswick|Vermont|United States|U.S."
+   ]
+  },
+  {
+   "claim": "An inventory in 2012 uncovered the theft",
+   "terms": [
+    "inventory",
+    "2012"
+   ]
+  },
+  {
+   "claim": "Some barrels were found filled with water or empty",
+   "terms": [
+    "empty|water",
+    "barrels"
+   ]
+  },
+  {
+   "claim": "More than a dozen people were arrested",
+   "terms": [
+    "arrest"
+   ]
+  },
+  {
+   "claim": "Vallieres was sentenced to 8 years",
+   "terms": [
+    "eight years|8 years"
+   ]
+  },
+  {
+   "claim": "He was fined more than $9 million",
+   "terms": [
+    "9.4 million|9.4M|9 million"
+   ]
+  },
+  {
+   "claim": "He appealed the fine to the Supreme Court and lost",
+   "terms": [
+    "Supreme Court",
+    "fine"
+   ]
+  }
+ ]
+}

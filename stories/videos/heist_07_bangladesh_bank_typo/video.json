@@ -1,0 +1,719 @@
+{
+ "id": "heist_07_bangladesh_bank_typo",
+ "title": "The billion dollar typo",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "TARGET:",
+   "$1 BILLION"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "hacker": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2e",
+    "pants": "#1f2a3a",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  },
+  "clerk": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3f6b5c",
+    "pants": "#23262d",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#a8714c"
+   }
+  },
+  "banker": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b"
+   },
+   "hold": "clipboard"
+  },
+  "agent": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You try to steal a billion dollars. A spelling mistake stops you.",
+   "key": [
+    "SPELLING"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hacker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "hacker": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "hacker": "center",
+    "clerk": false,
+    "banker": false,
+    "agent": false
+   },
+   "board": [
+    "TARGET:",
+    "$1 BILLION"
+   ]
+  },
+  {
+   "text": "February, twenty sixteen. Your target is Bangladesh's central bank.",
+   "cap": "February 2016. Your target is Bangladesh's central bank.",
+   "key": [
+    "BANK."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "hacker"
+   },
+   "act": {
+    "hacker": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "BANGLADESH",
+    "BANK"
+   ]
+  },
+  {
+   "text": "Its money sits in New York. At the Federal Reserve.",
+   "key": [
+    "RESERVE."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "hacker"
+   },
+   "act": {
+    "hacker": {
+     "mood": "neutral",
+     "action": "point"
+    }
+   },
+   "board": [
+    "FEDERAL",
+    "RESERVE"
+   ]
+  },
+  {
+   "text": "You don't dig a tunnel. You hack the bank's computers.",
+   "key": [
+    "COMPUTERS."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "SWIFT",
+    "ACCESS"
+   ]
+  },
+  {
+   "text": "You wait for a Thursday night. Their weekend starts Friday.",
+   "key": [
+    "FRIDAY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hacker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "hacker"
+    },
+    "hacker": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "hacker": "right"
+   },
+   "board": [
+    "THURSDAY",
+    "NIGHT"
+   ]
+  },
+  {
+   "text": "You send thirty five payment orders. Nearly a billion dollars.",
+   "cap": "You send 35 payment orders. Nearly $1 billion.",
+   "key": [
+    "BILLION"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "hacker"
+   },
+   "act": {
+    "hacker": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "35 ORDERS",
+    "~$1,000,000,000"
+   ]
+  },
+  {
+   "text": "Back at the bank, the printer is broken. It's the one that prints the receipts.",
+   "key": [
+    "PRINTER"
+   ],
+   "set": "living",
+   "shot": {
+    "type": "wide",
+    "on": "clerk"
+   },
+   "act": {
+    "clerk": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "clerk": "center"
+   },
+   "board": [
+    "PRINTER",
+    "ERROR"
+   ]
+  },
+  {
+   "text": "Nobody sees the receipts. Nobody panics. Yet.",
+   "key": [
+    "YET."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "clerk"
+   },
+   "act": {
+    "clerk": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some of it goes through. Eighty one million lands in the Philippines.",
+   "cap": "Some of it goes through. $81 million lands in the Philippines.",
+   "key": [
+    "PHILIPPINES."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "low",
+    "on": "hacker"
+   },
+   "act": {
+    "hacker": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "hacker": "center"
+   },
+   "board": [
+    "$81,000,000",
+    "MANILA"
+   ]
+  },
+  {
+   "text": "It vanishes into casinos. Chips in. Chips out. Clean money.",
+   "key": [
+    "CASINOS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hacker"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "hacker"
+    },
+    "hacker": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "hacker": "right"
+   }
+  },
+  {
+   "text": "Another twenty million heads to Sri Lanka. To a foundation.",
+   "cap": "Another $20 million heads to Sri Lanka. To a foundation.",
+   "key": [
+    "FOUNDATION."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "banker"
+   },
+   "act": {
+    "banker": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "banker": "center"
+   }
+  },
+  {
+   "text": "Except you spelled foundation wrong.",
+   "key": [
+    "WRONG."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "banker": false
+   },
+   "board": [
+    "SHALIKA",
+    "FANDATION"
+   ]
+  },
+  {
+   "text": "F A N dation. A bank notices. It asks questions.",
+   "cap": "F-A-N-dation. A bank notices. It asks questions.",
+   "key": [
+    "QUESTIONS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "banker",
+    "with": "capy"
+   },
+   "act": {
+    "banker": {
+     "mood": "confused",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "banker"
+    }
+   },
+   "place": {
+    "banker": "right",
+    "capy": "left"
+   },
+   "sfx": [
+    [
+     0.1,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The Sri Lanka money gets stopped.",
+   "key": [
+    "STOPPED."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "banker"
+   },
+   "act": {
+    "banker": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   }
+  },
+  {
+   "text": "New York gets suspicious too. One address is on a street called Jupiter. Jupiter is also a sanctioned ship. Most of your orders freeze.",
+   "key": [
+    "FREEZE."
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "agent": "center"
+   },
+   "board": [
+    "ORDERS",
+    "BLOCKED"
+   ]
+  },
+  {
+   "text": "You aimed for a billion. You got eighty one million.",
+   "cap": "You aimed for $1 billion. You got $81 million.",
+   "key": [
+    "$81"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "agent"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "agent": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "agent": "right"
+   }
+  },
+  {
+   "text": "Still huge. Still a robbery. Still, a typo.",
+   "key": [
+    "TYPO."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "agent": false
+   }
+  },
+  {
+   "text": "Investigators follow the trail. It leads to one country. North Korea.",
+   "key": [
+    "KOREA."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "agent": "center",
+    "capy": false
+   },
+   "board": [
+    "LAZARUS",
+    "GROUP"
+   ]
+  },
+  {
+   "text": "They're called the Lazarus Group.",
+   "key": [
+    "LAZARUS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Best hackers in the world. Can't spell foundation.",
+   "key": [
+    "SPELL"
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hacker"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "hacker": {
+     "mood": "sad",
+     "action": "facepalm"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "hacker": "right"
+   }
+  },
+  {
+   "text": "One word saved twenty million dollars. Would you have spotted it?",
+   "cap": "One word saved $20 million. Would you have spotted it?",
+   "key": [
+    "SPOTTED"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "hacker": false
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Bangladesh Bank robbery",
+   "url": "https://en.wikipedia.org/wiki/Bangladesh_Bank_robbery"
+  },
+  {
+   "title": "BBC: The Lazarus heist, how North Korea almost pulled off a billion-dollar hack",
+   "url": "https://www.bbc.com/news/stories-57520169"
+  },
+  {
+   "title": "Fortune: A typo stopped the Bangladesh bank heist",
+   "url": "https://fortune.com/2016/03/10/typo-bangladesh-bank-heist/"
+  },
+  {
+   "title": "CNBC: How a hacker's typo helped stop a billion dollar bank heist",
+   "url": "https://www.cnbc.com/2016/03/10/how-a-hackers-typo-helped-stop-a-billion-dollar-bank-heist.html"
+  },
+  {
+   "title": "The Daily Star: When North Korean hackers almost pulled off a billion-dollar heist",
+   "url": "https://www.thedailystar.net/tech-startup/news/when-north-korean-hackers-almost-pulled-billion-dollar-heist-bangladesh-bank-2115317"
+  },
+  {
+   "title": "ISACA: Lessons learned from the Bangladesh Bank heist",
+   "url": "https://www.isaca.org/resources/isaca-journal/issues/2023/volume-6/lessons-learned-from-the-bangladesh-bank-heist"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The heist happened in February 2016",
+   "terms": [
+    "February",
+    "2016"
+   ]
+  },
+  {
+   "claim": "The target was Bangladesh's central bank",
+   "terms": [
+    "Bangladesh Bank",
+    "central bank"
+   ]
+  },
+  {
+   "claim": "The money was held at the Federal Reserve Bank of New York",
+   "terms": [
+    "Federal Reserve",
+    "New York"
+   ]
+  },
+  {
+   "claim": "Hackers got into the bank's computers",
+   "terms": [
+    "hack",
+    "computer|network|system"
+   ]
+  },
+  {
+   "claim": "It started Thursday night, before the Bangladesh weekend",
+   "terms": [
+    "Thursday",
+    "weekend"
+   ]
+  },
+  {
+   "claim": "35 payment orders for nearly $1 billion were sent",
+   "terms": [
+    "35",
+    "instructions|requests|transfers|orders|messages"
+   ]
+  },
+  {
+   "claim": "The bank's printer was broken",
+   "terms": [
+    "printer"
+   ]
+  },
+  {
+   "claim": "$81 million went to the Philippines",
+   "terms": [
+    "81 million",
+    "Philippines"
+   ]
+  },
+  {
+   "claim": "The money was laundered through casinos",
+   "terms": [
+    "casino"
+   ]
+  },
+  {
+   "claim": "$20 million went to Sri Lanka",
+   "terms": [
+    "20 million",
+    "Sri Lanka"
+   ]
+  },
+  {
+   "claim": "Foundation was misspelled fandation",
+   "terms": [
+    "fandation"
+   ]
+  },
+  {
+   "claim": "The misspelling prompted questions and the Sri Lanka transfer was stopped",
+   "terms": [
+    "fandation",
+    "Sri Lanka|stopped|halted|questioned"
+   ]
+  },
+  {
+   "claim": "A Jupiter address matched a sanctioned ship",
+   "terms": [
+    "Jupiter"
+   ]
+  },
+  {
+   "claim": "The Federal Reserve blocked most of the orders",
+   "terms": [
+    "Federal Reserve",
+    "blocked|stopped|halted"
+   ]
+  },
+  {
+   "claim": "The heist was attributed to North Korean hackers",
+   "terms": [
+    "North Korea"
+   ]
+  },
+  {
+   "claim": "The group is called Lazarus",
+   "terms": [
+    "Lazarus"
+   ]
+  }
+ ]
+}
