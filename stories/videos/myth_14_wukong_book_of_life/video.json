@@ -453,9 +453,9 @@
    }
   },
   {
-   "text": "The underworld files a complaint. It goes up to heaven.",
+   "text": "Word of this reaches heaven. The Jade Emperor notices.",
    "key": [
-    "COMPLAINT."
+    "NOTICES."
    ],
    "place": {
     "capy": false,
@@ -870,10 +870,10 @@
    ]
   },
   {
-   "claim": "The underworld complains to the Jade Emperor",
+   "claim": "Word reaches heaven and the Jade Emperor takes notice",
    "terms": [
     "Jade Emperor",
-    "complain|complaint|complained"
+    "attention|complained|complaint|heaven|Heaven"
    ]
   },
   {

@@ -936,9 +936,8 @@
   {
    "claim": "Only one paw leaves the floor",
    "terms": [
-    "cat",
-    "paw|foot",
-    "one|single"
+    "paw|foot|feet",
+    "single|one"
    ]
   },
   {
