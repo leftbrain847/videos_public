@@ -294,7 +294,7 @@
    }
   },
   {
-   "text": "You cut two Rembrandts out of their frames.",
+   "text": "You grab two Rembrandts. Then a third Rembrandt work.",
    "key": [
     "REMBRANDTS"
    ],
@@ -651,10 +651,9 @@
    ]
   },
   {
-   "claim": "They cut Rembrandts out of their frames",
+   "claim": "Works by Rembrandt were taken",
    "terms": [
-    "Rembrandt",
-    "cut"
+    "Rembrandt"
    ]
   },
   {

@@ -164,7 +164,7 @@
    }
   },
   {
-   "text": "You're Richard Vallieres. That warehouse? The man renting it out? He's in on it. Convenient.",
+   "text": "You're Richard Vallieres. That warehouse? You have help on the inside. Convenient.",
    "key": [
     "CONVENIENT."
    ],
@@ -633,10 +633,9 @@
    ]
   },
   {
-   "claim": "The man who rented out the warehouse was part of the scheme",
+   "claim": "An insider, Avik Caron, was part of the scheme",
    "terms": [
-    "Caron",
-    "warehouse"
+    "Caron"
    ]
   },
   {
