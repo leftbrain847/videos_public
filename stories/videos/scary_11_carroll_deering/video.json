@@ -1,0 +1,827 @@
+{
+ "id": "scary_11_carroll_deering",
+ "title": "The Carroll A. Deering: ghost ship of the Outer Banks",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "DEERING"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#2f4a6b",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "cap": "#1e2a3a"
+   },
+   "at": "center",
+   "hold": "flashlight"
+  },
+  "keeper": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#6b5a3a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "beard": true
+   },
+   "at": "center"
+  },
+  "agent": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#5c3a24"
+   },
+   "at": "center",
+   "hold": "notepad"
+  },
+  "fisher": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#3f6b5c",
+    "pants": "#3c3c3c",
+    "hair": "curly",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   },
+   "at": "center",
+   "hold": "envelope"
+  }
+ },
+ "lines": [
+  {
+   "text": "A ship runs aground. Sails up. Nobody aboard. Not one soul.",
+   "key": [
+    "NOBODY"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "keeper": [
+     2.8,
+     -1.0
+    ],
+    "agent": false,
+    "fisher": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "window"
+    },
+    "keeper": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "January, nineteen twenty one. Cape Hatteras, north Carolina.",
+   "cap": "January 1921. Cape Hatteras, North Carolina.",
+   "key": [
+    "HATTERAS,"
+   ],
+   "board": [
+    "JAN 1921",
+    "CAPE HATTERAS"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "keeper": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The ship is the Carroll A Deering. Five masts.",
+   "cap": "The ship is the Carroll A. Deering. Five masts.",
+   "key": [
+    "DEERING."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She is stuck on Diamond Shoals. The graveyard of the Atlantic.",
+   "key": [
+    "GRAVEYARD"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Rough seas keep rescuers away for days. Nobody can get close.",
+   "key": [
+    "DAYS."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "keeper"
+   },
+   "act": {
+    "keeper": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "keeper"
+    }
+   }
+  },
+  {
+   "text": "When they finally board, the crew is gone.",
+   "key": [
+    "GONE."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "The lifeboats are gone too. Someone left in a hurry.",
+   "key": [
+    "LIFEBOATS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Food sits in the galley. Ready for a meal.",
+   "key": [
+    "MEAL."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   }
+  },
+  {
+   "text": "The logbook is missing. So is the navigation gear.",
+   "key": [
+    "LOGBOOK"
+   ],
+   "place": {
+    "keeper": [
+     2.8,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "keeper"
+   },
+   "act": {
+    "keeper": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Rewind a few days. A lightship keeper sees her pass.",
+   "key": [
+    "LIGHTSHIP"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "CAPE LOOKOUT",
+     "LIGHTSHIP"
+    ]
+   },
+   "place": {
+    "keeper": [
+     0,
+     -0.6
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "agent": false,
+    "fisher": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "keeper"
+   },
+   "act": {
+    "keeper": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "keeper"
+    }
+   }
+  },
+  {
+   "text": "A man on deck shouts over. They lost their anchors.",
+   "key": [
+    "ANCHORS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "keeper"
+   },
+   "act": {
+    "keeper": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The keeper wants to radio it in. His radio is broken.",
+   "key": [
+    "BROKEN."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "keeper"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    },
+    "keeper": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "One working radio. That is all it took. One.",
+   "key": [
+    "RADIO."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Five government departments investigate. Nobody agrees.",
+   "key": [
+    "FIVE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "5 AGENCIES",
+     "1 SHIP"
+    ]
+   },
+   "place": {
+    "agent": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "keeper": false,
+    "fisher": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "agent"
+   },
+   "act": {
+    "agent": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The theories? Pirates. Mutiny. Rum runners.",
+   "key": [
+    "MUTINY."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "agent"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "agent"
+    },
+    "agent": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then a fisherman finds a bottle. A note inside blames pirates.",
+   "key": [
+    "BOTTLE."
+   ],
+   "place": {
+    "fisher": [
+     2.6,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fisher"
+   },
+   "act": {
+    "fisher": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Big break? Nope. He wrote the note himself.",
+   "key": [
+    "HIMSELF."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "fisher"
+   },
+   "act": {
+    "fisher": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your best clue was a prank. In a bottle.",
+   "key": [
+    "PRANK."
+   ],
+   "place": {
+    "capy": [
+     -0.4,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fisher"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fisher"
+    },
+    "fisher": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The wreck itself? Blown up with dynamite.",
+   "key": [
+    "DYNAMITE."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "WRECK",
+     "DESTROYED"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "keeper": [
+     2.6,
+     -1.0
+    ],
+    "capy": false,
+    "agent": false,
+    "fisher": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    },
+    "keeper": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "It was a hazard to other ships. So, boom. Mystery sunk.",
+   "key": [
+    "BOOM."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The crew was never found. Not one sailor. Not one clue.",
+   "key": [
+    "NEVER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some even blame the Bermuda Triangle. Bold geography.",
+   "key": [
+    "TRIANGLE."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Pirates or mutiny? Pick one.",
+   "key": [
+    "PIRATES",
+    "MUTINY?"
+   ],
+   "board": [
+    "PIRATES",
+    "OR MUTINY?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Carroll A. Deering",
+   "url": "https://en.wikipedia.org/wiki/Carroll_A._Deering"
+  },
+  {
+   "title": "National Park Service: The ghost ship of the Outer Banks",
+   "url": "https://www.nps.gov/caha/learn/historyculture/theghostship.htm"
+  },
+  {
+   "title": "NC Department of Natural and Cultural Resources: Carroll Deering ghost ship",
+   "url": "https://www.dncr.nc.gov/blog/2016/01/31/carroll-deering-ghost-ship"
+  },
+  {
+   "title": "NCpedia: The ghost ship Carroll A. Deering",
+   "url": "https://ncpedia.org/node/11726"
+  },
+  {
+   "title": "Legends of America: Carroll A. Deering",
+   "url": "https://www.legendsofamerica.com/deering-ghost-ship/"
+  },
+  {
+   "title": "Stars and Stripes: Outer Banks shipwreck mystery",
+   "url": "https://stripes.com/history/2023-01-31/outer-banks-shipwreck-mystery-9003837.html"
+  },
+  {
+   "title": "US Coast Guard: Ghost ship Carroll A. Deering",
+   "url": "https://mycg.uscg.mil/News/Article/3946247/ghostship-carroll-a-deering"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In January 1921 the ship was found aground off Cape Hatteras",
+   "terms": [
+    "1921",
+    "Hatteras"
+   ]
+  },
+  {
+   "claim": "The Carroll A. Deering was a five-masted schooner",
+   "terms": [
+    "five masted",
+    "schooner"
+   ]
+  },
+  {
+   "claim": "She was stuck on Diamond Shoals, the Graveyard of the Atlantic",
+   "terms": [
+    "Diamond Shoals"
+   ]
+  },
+  {
+   "claim": "Rough seas kept rescuers away for days",
+   "terms": [
+    "rough seas|weather|seas"
+   ]
+  },
+  {
+   "claim": "The crew was gone",
+   "terms": [
+    "crew",
+    "missing|gone|no sign|vanish|abandoned"
+   ]
+  },
+  {
+   "claim": "The lifeboats were gone",
+   "terms": [
+    "lifeboats"
+   ]
+  },
+  {
+   "claim": "Food was ready in the galley",
+   "terms": [
+    "galley|food",
+    "meal|prepar"
+   ]
+  },
+  {
+   "claim": "The log and navigation equipment were missing",
+   "terms": [
+    "log",
+    "missing|gone"
+   ]
+  },
+  {
+   "claim": "A lightship keeper at Cape Lookout saw her pass",
+   "terms": [
+    "Cape Lookout",
+    "lightship"
+   ]
+  },
+  {
+   "claim": "A man on deck said they had lost their anchors",
+   "terms": [
+    "anchors"
+   ]
+  },
+  {
+   "claim": "The lightship's radio was not working",
+   "terms": [
+    "radio"
+   ]
+  },
+  {
+   "claim": "Five government departments investigated",
+   "terms": [
+    "five",
+    "departments|agencies"
+   ]
+  },
+  {
+   "claim": "Theories included pirates and mutiny",
+   "terms": [
+    "pirates|piracy",
+    "mutiny"
+   ]
+  },
+  {
+   "claim": "A fisherman found a message in a bottle",
+   "terms": [
+    "bottle"
+   ]
+  },
+  {
+   "claim": "The bottle message was a hoax by the man who found it",
+   "terms": [
+    "bottle",
+    "hoax|forg|fake|confess"
+   ]
+  },
+  {
+   "claim": "The wreck was dynamited",
+   "terms": [
+    "dynamit"
+   ]
+  },
+  {
+   "claim": "Some blamed the Bermuda Triangle",
+   "terms": [
+    "Bermuda Triangle"
+   ]
+  },
+  {
+   "claim": "The crew was never found",
+   "terms": [
+    "never",
+    "found|seen|solved"
+   ]
+  }
+ ]
+}
