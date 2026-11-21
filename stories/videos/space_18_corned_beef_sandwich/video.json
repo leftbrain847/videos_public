@@ -1,0 +1,852 @@
+{
+ "id": "space_18_corned_beef_sandwich",
+ "title": "The sandwich that got smuggled into orbit",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "GEMINI 3"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "john": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#eef1f5",
+    "pants": "#eef1f5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "gus": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#dfe6ee",
+    "pants": "#dfe6ee",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "wally": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8"
+   }
+  },
+  "rep": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "glasses": true
+   }
+  },
+  "rep2": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "tie": "#2b4c8c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You fly a brand new spacecraft. Your secret cargo? A sandwich. Obviously.",
+   "key": [
+    "SANDWICH."
+   ],
+   "board": [
+    "CONTRABAND:",
+    "1 SANDWICH"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "john": [
+     2.6,
+     -0.6
+    ],
+    "gus": false,
+    "wally": false,
+    "rep": false,
+    "rep2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "March, nineteen sixty five. Gemini three launches with two men aboard.",
+   "cap": "March 1965. Gemini 3 launches with two men aboard.",
+   "key": [
+    "GEMINI"
+   ],
+   "board": [
+    "GEMINI 3",
+    "MARCH 1965"
+   ],
+   "place": {
+    "capy": false,
+    "gus": [
+     -1.5,
+     0.2
+    ],
+    "john": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "gus",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "gus": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "gus"
+    }
+   }
+  },
+  {
+   "text": "Gus Grissom commands. John Young is his pilot. Big day.",
+   "key": [
+    "YOUNG"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "gus",
+    "with": "john"
+   },
+   "act": {
+    "gus": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "john"
+    },
+    "john": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "gus"
+    }
+   }
+  },
+  {
+   "text": "It's the first American mission with two astronauts. A big test.",
+   "key": [
+    "TWO"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "gus"
+   },
+   "act": {
+    "gus": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Their job includes testing official space food. Dried. Bland.",
+   "key": [
+    "FOOD."
+   ],
+   "board": [
+    "MENU:",
+    "SPACE FOOD"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "gus": false,
+    "john": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "john"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "john"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Young has other plans. Hidden in his suit pocket. Wrapped up tight.",
+   "key": [
+    "POCKET."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "A corned beef sandwich. From a deli near the launch site.",
+   "key": [
+    "CORNED"
+   ],
+   "board": [
+    "CORNED BEEF",
+    "ON RYE"
+   ],
+   "place": {
+    "capy": false,
+    "john": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "john"
+   },
+   "act": {
+    "john": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Fellow astronaut Wally Schirra bought it for him. What a friend.",
+   "key": [
+    "SCHIRRA"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "DELI",
+     "RUN"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "john": false,
+    "gus": false,
+    "wally": [
+     0,
+     0.4
+    ],
+    "rep": false,
+    "rep2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wally"
+   },
+   "act": {
+    "wally": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In orbit, Young pulls it out. Grissom takes a bite.",
+   "key": [
+    "BITE."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "LUNCH",
+     "IN ORBIT"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "john": [
+     1.4,
+     0.2
+    ],
+    "gus": [
+     -1.4,
+     0.2
+    ],
+    "wally": false,
+    "rep": false,
+    "rep2": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "john",
+    "with": "gus"
+   },
+   "act": {
+    "john": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "gus"
+    },
+    "gus": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "john"
+    }
+   }
+  },
+  {
+   "text": "Crumbs start floating around the cabin. Everywhere.",
+   "key": [
+    "CRUMBS"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "gus"
+   },
+   "act": {
+    "gus": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "gus"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "In zero gravity, crumbs can drift into equipment. Not great.",
+   "key": [
+    "EQUIPMENT."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "gus": [
+     -2.6,
+     -0.6
+    ],
+    "john": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "gus": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    },
+    "john": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Grissom puts it away. The flight ends safely. Hours later.",
+   "key": [
+    "SAFELY."
+   ],
+   "place": {
+    "capy": false,
+    "gus": [
+     0,
+     0.3
+    ],
+    "john": [
+     2.4,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "gus"
+   },
+   "act": {
+    "gus": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "gus"
+    }
+   }
+  },
+  {
+   "text": "Then Congress finds out. Uh oh.",
+   "key": [
+    "CONGRESS"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "HEARING"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "john": false,
+    "gus": false,
+    "wally": false,
+    "rep": [
+     -1.4,
+     0.3
+    ],
+    "rep2": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "rep",
+    "with": "rep2"
+   },
+   "act": {
+    "rep": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "rep2"
+    },
+    "rep2": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "rep"
+    }
+   }
+  },
+  {
+   "text": "Lawmakers hold a hearing. About a sandwich. A real one.",
+   "key": [
+    "HEARING."
+   ],
+   "board": [
+    "SUBJECT:",
+    "SANDWICH"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rep"
+   },
+   "act": {
+    "rep": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They worry it spoiled a costly food experiment. Very costly.",
+   "key": [
+    "COSTLY"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "rep": [
+     1.4,
+     0.2
+    ],
+    "rep2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rep"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "rep"
+    },
+    "rep": {
+     "mood": "angry",
+     "action": "talk",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Young gets a formal reprimand. On paper, at least.",
+   "key": [
+    "REPRIMAND."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "rep"
+   },
+   "act": {
+    "rep": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "rep"
+    }
+   }
+  },
+  {
+   "text": "His career survives just fine. He later walks on the moon.",
+   "key": [
+    "MOON."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "LATER:",
+     "MOONWALKER"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "john": [
+     0,
+     0.3
+    ],
+    "gus": false,
+    "wally": false,
+    "rep": false,
+    "rep2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "john"
+   },
+   "act": {
+    "john": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Today, a replica sandwich sits in a museum. Sealed in plastic. Forever.",
+   "key": [
+    "MUSEUM."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "john": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "john"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "A Congressional hearing. Over lunch. Peak government. Truly.",
+   "key": [
+    "LUNCH."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Would you sneak food onto a spaceship? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "SNEAK A SNACK?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "john": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0.2,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "john": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Space.com: how John Young smuggled a corned-beef sandwich into space",
+   "url": "https://www.space.com/39341-john-young-smuggled-corned-beef-space.html"
+  },
+  {
+   "title": "Space.com: first contraband corned beef sandwich in space",
+   "url": "https://www.space.com/28898-gemini-corned-beef-space-sandwich-anniversary.html"
+  },
+  {
+   "title": "NASA: fallout from the unauthorized Gemini III space sandwich",
+   "url": "https://www.nasa.gov/history/fallout-from-the-unauthorized-gemini-iii-space-sandwich/"
+  },
+  {
+   "title": "Christian Science Monitor: 50 years ago, a Gemini astronaut smuggled a sandwich into space",
+   "url": "https://www.csmonitor.com/Science/2015/0324/50-years-ago-a-Gemini-astronaut-smuggled-a-sandwich-into-space"
+  },
+  {
+   "title": "Smithsonian Air and Space: how an astronaut smuggled a sandwich into space",
+   "url": "https://airandspace.si.edu/stories/editorial/how-astronaut-smuggled-sandwich-space"
+  },
+  {
+   "title": "Gizmodo: 50 years ago NASA astronauts smuggled a corned beef sandwich",
+   "url": "https://gizmodo.com/50-years-ago-nasa-astronauts-smuggled-a-corned-beef-sa-1693431694"
+  },
+  {
+   "title": "Wikipedia: Gemini 3",
+   "url": "https://en.wikipedia.org/wiki/Gemini_3"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Gemini 3 launched in March 1965 with two astronauts",
+   "terms": [
+    "Gemini 3",
+    "1965"
+   ]
+  },
+  {
+   "claim": "Gus Grissom commanded; John Young was pilot",
+   "terms": [
+    "Grissom",
+    "Young"
+   ]
+  },
+  {
+   "claim": "It was the first American two-person mission",
+   "terms": [
+    "first",
+    "two"
+   ]
+  },
+  {
+   "claim": "Their tasks included testing space food",
+   "terms": [
+    "food"
+   ]
+  },
+  {
+   "claim": "Young smuggled a corned beef sandwich in his suit pocket",
+   "terms": [
+    "corned beef",
+    "pocket"
+   ]
+  },
+  {
+   "claim": "The sandwich came from a deli near the launch site",
+   "terms": [
+    "Wolfie|deli|restaurant"
+   ]
+  },
+  {
+   "claim": "Wally Schirra bought it",
+   "terms": [
+    "Schirra"
+   ]
+  },
+  {
+   "claim": "Grissom took a bite and crumbs floated",
+   "terms": [
+    "crumbs"
+   ]
+  },
+  {
+   "claim": "Floating crumbs could get into equipment",
+   "terms": [
+    "crumbs",
+    "equipment|electronics|instruments"
+   ]
+  },
+  {
+   "claim": "Congress held a hearing about it",
+   "terms": [
+    "Congress|House",
+    "hearing|committee"
+   ]
+  },
+  {
+   "claim": "Lawmakers worried it spoiled the food experiment",
+   "terms": [
+    "food",
+    "experiment|test|evaluation"
+   ]
+  },
+  {
+   "claim": "Young was reprimanded",
+   "terms": [
+    "reprimand"
+   ]
+  },
+  {
+   "claim": "Young later walked on the moon",
+   "terms": [
+    "moon"
+   ]
+  },
+  {
+   "claim": "A replica sandwich is displayed in a museum, preserved in acrylic",
+   "terms": [
+    "museum",
+    "acrylic|plastic|replica"
+   ]
+  }
+ ]
+}
