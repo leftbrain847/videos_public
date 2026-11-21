@@ -1,0 +1,760 @@
+{
+ "id": "heist_01_antwerp_diamonds",
+ "title": "The Antwerp diamond heist",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "THE JOB",
+   "ANTWERP"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "leo": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "crew": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2b2b2e",
+    "pants": "#1f2a3a",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   },
+   "at": "right",
+   "hold": "bag"
+  },
+  "guard": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#1f3f8f",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   },
+   "at": "right"
+  },
+  "finder": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#6b7a3a",
+    "pants": "#4a3b2c",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "right"
+  },
+  "cop": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#a8714c"
+   },
+   "at": "desk"
+  }
+ },
+ "lines": [
+  {
+   "text": "You rob the safest vault in the world. Then you lose to a sandwich.",
+   "key": [
+    "SANDWICH."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "leo"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "leo": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "leo": "center",
+    "crew": false,
+    "guard": false,
+    "finder": false,
+    "cop": false
+   },
+   "board": [
+    "THE JOB",
+    "ANTWERP"
+   ]
+  },
+  {
+   "text": "Antwerp, Belgium. February, two thousand three.",
+   "cap": "Antwerp, Belgium. February 2003.",
+   "key": [
+    "ANTWERP,"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "leo"
+   },
+   "act": {
+    "leo": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "ANTWERP",
+    "FEB 2003"
+   ]
+  },
+  {
+   "text": "Your target is the Antwerp Diamond Centre. The vault sits two floors underground.",
+   "key": [
+    "UNDERGROUND."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "leo"
+   },
+   "act": {
+    "leo": {
+     "mood": "neutral",
+     "action": "point"
+    }
+   },
+   "board": [
+    "VAULT",
+    "2 FLOORS DOWN"
+   ]
+  },
+  {
+   "text": "It has ten layers of security. Heat sensors. Radar. A magnetic field.",
+   "cap": "It has 10 layers of security. Heat sensors. Radar. A magnetic field.",
+   "key": [
+    "10"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "leo": false,
+    "capy": "center"
+   },
+   "board": [
+    "10 LAYERS",
+    "OF SECURITY"
+   ]
+  },
+  {
+   "text": "The lock has a hundred million combinations. Rude.",
+   "cap": "The lock has 100 million combinations. Rude.",
+   "key": [
+    "RUDE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "leo"
+   },
+   "act": {
+    "leo": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "leo": "center"
+   },
+   "board": [
+    "100,000,000",
+    "COMBINATIONS"
+   ]
+  },
+  {
+   "text": "You're Leonardo Notarbartolo. You rent an office in the building.",
+   "key": [
+    "OFFICE"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "leo"
+   },
+   "act": {
+    "leo": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "leo": "center",
+    "capy": "left"
+   },
+   "board": [
+    "OFFICE",
+    "FOR RENT"
+   ]
+  },
+  {
+   "text": "You pose as a diamond merchant. You chat with the guards. Nobody suspects a thing.",
+   "key": [
+    "MERCHANT."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "leo"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "leo"
+    },
+    "leo": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One weekend in February, your crew goes in.",
+   "key": [
+    "WEEKEND"
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "wide",
+    "on": "crew"
+   },
+   "act": {
+    "crew": {
+     "mood": "neutral",
+     "action": "walk"
+    },
+    "leo": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "crew"
+    }
+   },
+   "place": {
+    "crew": "right",
+    "leo": "left"
+   },
+   "board": [
+    "SATURDAY",
+    "NIGHT"
+   ]
+  },
+  {
+   "text": "Your crew beats the sensors. One by one, every layer goes quiet.",
+   "key": [
+    "QUIET."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "crew"
+   },
+   "act": {
+    "crew": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The vault holds a hundred sixty boxes. You open a hundred twenty three.",
+   "cap": "The vault holds 160 boxes. You open 123.",
+   "key": [
+    "123"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "leo"
+   },
+   "act": {
+    "leo": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "leo": "gold",
+    "crew": false
+   },
+   "board": [
+    "BOXES OPENED",
+    "123 / 160"
+   ]
+  },
+  {
+   "text": "The haul? Over a hundred million dollars.",
+   "cap": "The haul? Over $100 million.",
+   "key": [
+    "MILLION"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "leo"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "leo"
+    },
+    "leo": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "leo": "center",
+    "crew": false
+   },
+   "board": [
+    "THE HAUL",
+    "$100,000,000+"
+   ]
+  },
+  {
+   "text": "Loose diamonds. Gold. Jewelry. Nobody ever finds the diamonds.",
+   "key": [
+    "NOBODY"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Perfect crime. Almost. Your partner dumps the trash. In a forest.",
+   "key": [
+    "FOREST."
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "medium",
+    "on": "crew"
+   },
+   "act": {
+    "crew": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "crew": "center"
+   },
+   "board": [
+    "NEXT DAY"
+   ]
+  },
+  {
+   "text": "A man finds the bags. He calls the police. Of course he does.",
+   "key": [
+    "POLICE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "finder"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "finder"
+    },
+    "finder": {
+     "mood": "shocked",
+     "action": "point"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "finder": "right",
+    "crew": false
+   }
+  },
+  {
+   "text": "Inside? A half eaten salami sandwich.",
+   "key": [
+    "SALAMI"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "finder"
+   },
+   "act": {
+    "finder": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "EVIDENCE:",
+    "SALAMI SANDWICH"
+   ]
+  },
+  {
+   "text": "Police pull D N A from it.",
+   "cap": "Police pull DNA from it.",
+   "key": [
+    "DNA"
+   ],
+   "set": "office",
+   "shot": {
+    "type": "wide",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "cop": "center"
+   },
+   "board": [
+    "DNA",
+    "MATCH"
+   ]
+  },
+  {
+   "text": "The trail leads straight back to you. Your name. Your office.",
+   "key": [
+    "YOU."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "SUSPECT:",
+    "NOTARBARTOLO"
+   ]
+  },
+  {
+   "text": "You get ten years in prison.",
+   "cap": "You get 10 years in prison.",
+   "key": [
+    "PRISON."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "leo"
+   },
+   "act": {
+    "leo": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "leo": "center",
+    "cop": false
+   }
+  },
+  {
+   "text": "A hundred million in diamonds. Undone by lunch.",
+   "cap": "$100 million in diamonds. Undone by lunch.",
+   "key": [
+    "LUNCH."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "leo": false,
+    "capy": "center"
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Your story now? The whole thing was insurance fraud. Convenient story. From the sandwich guy.",
+   "key": [
+    "FRAUD."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "leo"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "leo"
+    },
+    "leo": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "leo": "center"
+   }
+  },
+  {
+   "text": "Be honest. Would you eat the evidence?",
+   "key": [
+    "EVIDENCE?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "leo": false
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Antwerp diamond heist",
+   "url": "https://en.wikipedia.org/wiki/Antwerp_diamond_heist"
+  },
+  {
+   "title": "Wikiwand: Antwerp diamond heist",
+   "url": "https://www.wikiwand.com/en/articles/Antwerp_diamond_heist"
+  },
+  {
+   "title": "Guinness World Records: Largest diamond heist",
+   "url": "https://www.guinnessworldrecords.com/world-records/112164-largest-diamond-heist"
+  },
+  {
+   "title": "National Geographic: The diamond heist of the century",
+   "url": "https://www.nationalgeographic.com/culture/article/130509-diamond-heist-crime-jewel-thief"
+  },
+  {
+   "title": "CBS News: Jewel thieves pull off impossible heist",
+   "url": "https://www.cbsnews.com/news/jewel-thieves-pull-off-impossible-heist"
+  },
+  {
+   "title": "Schneier on Security: The story of the world's largest diamond heist",
+   "url": "https://www.schneier.com/blog/archives/2009/03/the_story_of_th.html"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The target was the Antwerp Diamond Centre",
+   "terms": [
+    "Antwerp Diamond Centre|Antwerp Diamond Center"
+   ]
+  },
+  {
+   "claim": "Loot included loose diamonds, gold and jewelry",
+   "terms": [
+    "diamonds",
+    "gold",
+    "jewel"
+   ]
+  },
+  {
+   "claim": "The heist was in Antwerp, Belgium, in February 2003",
+   "terms": [
+    "Antwerp",
+    "February",
+    "2003"
+   ]
+  },
+  {
+   "claim": "The vault was two floors below ground",
+   "terms": [
+    "two floors|2 floors",
+    "vault"
+   ]
+  },
+  {
+   "claim": "The vault had ten layers of security",
+   "terms": [
+    "ten layers|10 layers"
+   ]
+  },
+  {
+   "claim": "Security included heat sensors, radar and a magnetic field",
+   "terms": [
+    "infrared|heat",
+    "radar",
+    "magnetic"
+   ]
+  },
+  {
+   "claim": "The lock had 100 million combinations",
+   "terms": [
+    "100 million|100,000,000",
+    "combinations"
+   ]
+  },
+  {
+   "claim": "Leonardo Notarbartolo rented an office in the building",
+   "terms": [
+    "Notarbartolo",
+    "office"
+   ]
+  },
+  {
+   "claim": "Notarbartolo posed as a diamond merchant",
+   "terms": [
+    "Notarbartolo",
+    "merchant|dealer"
+   ]
+  },
+  {
+   "claim": "The heist happened over a weekend",
+   "terms": [
+    "weekend",
+    "vault"
+   ]
+  },
+  {
+   "claim": "123 of 160 safe deposit boxes were opened",
+   "terms": [
+    "123",
+    "160"
+   ]
+  },
+  {
+   "claim": "The haul was worth over $100 million",
+   "terms": [
+    "100 million",
+    "diamond"
+   ]
+  },
+  {
+   "claim": "The diamonds were never recovered",
+   "terms": [
+    "never",
+    "recovered|found"
+   ]
+  },
+  {
+   "claim": "An accomplice dumped the garbage in a forest",
+   "terms": [
+    "garbage|rubbish|trash",
+    "forest|woods"
+   ]
+  },
+  {
+   "claim": "A man found the bags and called police",
+   "terms": [
+    "police",
+    "garbage|rubbish|trash|bags"
+   ]
+  },
+  {
+   "claim": "Among the garbage was a half-eaten salami sandwich",
+   "terms": [
+    "salami",
+    "sandwich"
+   ]
+  },
+  {
+   "claim": "Police got DNA from the sandwich",
+   "terms": [
+    "DNA",
+    "sandwich"
+   ]
+  },
+  {
+   "claim": "Notarbartolo was sentenced to ten years",
+   "terms": [
+    "Notarbartolo",
+    "ten years|10 years"
+   ]
+  },
+  {
+   "claim": "Notarbartolo later claimed it was insurance fraud",
+   "terms": [
+    "insurance",
+    "fraud"
+   ]
+  }
+ ]
+}
