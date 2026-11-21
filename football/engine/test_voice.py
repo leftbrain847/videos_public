@@ -226,3 +226,10 @@ def run():
 
 if __name__ == "__main__":
     run(); print("speech-rule tests passed")
+
+
+def test_every_cast_kind_is_built_by_the_page():
+    import check
+    page = (Path(__file__).parent / "page.html").read_text()
+    for k in check.RULES["kinds"]:
+        assert f"c.kind === '{k}'" in page, k
