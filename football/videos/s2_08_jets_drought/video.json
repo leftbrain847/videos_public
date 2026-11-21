@@ -64,27 +64,42 @@
    },
    "at": "center",
    "hold": "clipboard"
+  },
+  "te": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#13254d",
+    "pants": "#f4f4f4",
+    "number": "85",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "right",
+   "face": -20
   }
  },
  "lines": [
   {
-   "text": "The Jets went twenty straight games without intercepting a single pass.",
-   "cap": "The Jets went 20 straight games without intercepting a single pass.",
+   "text": "Twenty straight games. Your defense never intercepts a pass.",
+   "cap": "20 straight games. Your defense never intercepts a pass.",
    "key": [
-    "20"
+    "NEVER"
    ],
+   "speaker": "capy",
    "place": {
-    "capy": [
-     -2.6,
-     0.8
-    ],
     "fitz": [
      0,
      0
     ],
     "lineman": false,
     "bagent": false,
-    "coach": false
+    "coach": false,
+    "te": false,
+    "capy": [
+     -2.6,
+     0.8
+    ]
    },
    "shot": {
     "type": "two",
@@ -99,79 +114,83 @@
     },
     "fitz": {
      "mood": "sad",
-     "action": "shrug",
-     "look": "capy"
+     "action": "slump",
+     "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Their last one came in the final game of twenty twenty four. Two picks against Miami.",
-   "cap": "Their last one came in the final game of 2024. Two picks against Miami.",
+   "text": "You're the New York Jets. Your one job? Take the ball away.",
    "key": [
-    "2024."
+    "JETS."
+   ],
+   "board": [
+    "NY JETS",
+    "DEFENSE"
+   ],
+   "place": {
+    "fitz": [
+     -1.4,
+     0
+    ],
+    "lineman": [
+     1.4,
+     0
+    ],
+    "bagent": false,
+    "coach": false,
+    "te": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "fitz",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "fitz": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    },
+    "lineman": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty twenty five. A full season. Zero interceptions.",
+   "cap": "2025. A full season. 0 interceptions.",
+   "key": [
+    "0"
    ],
    "set": "office",
    "setOpts": {
     "boardText": [
-     "LAST INT",
-     "2024 FINALE"
+     "2025 INTs",
+     "0"
     ]
    },
-   "place": {
-    "capy": "center"
-   },
-   "shot": {
-    "type": "medium",
-    "on": "capy"
-   },
-   "act": {
-    "capy": {
-     "mood": "neutral",
-     "action": "point",
-     "look": "camera"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "Then came the entire twenty twenty five season. Zero.",
-   "cap": "Then came the entire 2025 season. Zero.",
-   "key": [
-    "ZERO."
-   ],
    "board": [
     "2025 INTs",
     "0"
    ],
-   "shot": {
-    "type": "high",
-    "on": "capy"
-   },
-   "act": {
-    "capy": {
-     "mood": "shocked",
-     "action": "idle",
-     "look": "camera"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "No team had ever done that, since the league began tracking interceptions in nineteen thirty three.",
-   "cap": "No team had ever done that, since the league began tracking interceptions in 1933.",
-   "key": [
-    "1933."
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "FIRST EVER",
-     "SINCE 1933"
-    ]
-   },
    "place": {
-    "coach": "center"
+    "fitz": false,
+    "lineman": false,
+    "bagent": false,
+    "coach": [
+     0.4,
+     0.6
+    ],
+    "te": false,
+    "capy": false
    },
    "shot": {
     "type": "medium",
@@ -180,24 +199,84 @@
    "act": {
     "coach": {
      "mood": "sad",
-     "action": "facepalm",
+     "action": "slump",
      "look": "camera"
     }
    }
   },
   {
-   "text": "This season started. Three more games. Still zero.",
-   "cap": "This season started. 3 more games. Still zero.",
+   "text": "No team had ever done that. Not one.",
+   "cap": "No team had ever done that. Not one.",
    "key": [
-    "STILL"
+    "EVER"
    ],
+   "speaker": "capy",
+   "board": [
+    "FIRST",
+    "EVER"
+   ],
+   "place": {
+    "fitz": false,
+    "lineman": false,
+    "bagent": false,
+    "coach": [
+     1.4,
+     0.2
+    ],
+    "te": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then this season starts. Three more games. Still nothing.",
+   "cap": "Then this season starts. 3 more games. Still nothing.",
+   "key": [
+    "NOTHING."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "2026",
+     "0 IN 3 GAMES"
+    ]
+   },
    "board": [
     "2026",
     "0 IN 3 GAMES"
    ],
    "place": {
-    "coach": "right",
-    "fitz": "left"
+    "fitz": [
+     -1.2,
+     0
+    ],
+    "lineman": false,
+    "bagent": false,
+    "coach": [
+     1.2,
+     0
+    ],
+    "te": false,
+    "capy": false
    },
    "shot": {
     "type": "two",
@@ -211,43 +290,57 @@
      "look": "fitz"
     },
     "fitz": {
-     "mood": "worried",
-     "action": "shrug",
+     "mood": "sad",
+     "action": "slump",
      "look": "coach"
     }
    }
   },
   {
-   "text": "Six hundred forty three pass attempts. Eighty three quarters.",
-   "cap": "643 pass attempts. 83 quarters.",
+   "text": "Six hundred thirty seven days without a pick.",
+   "cap": "637 days without a pick.",
    "key": [
-    "643",
-    "83"
+    "637"
    ],
    "board": [
-    "643 PASSES",
-    "83 QUARTERS"
+    "DAYS SINCE",
+    "A PICK: 637"
    ],
+   "place": {
+    "fitz": [
+     -1.2,
+     0
+    ],
+    "lineman": false,
+    "bagent": false,
+    "coach": [
+     1.2,
+     0
+    ],
+    "te": false,
+    "capy": false
+   },
    "shot": {
-    "type": "wide",
+    "type": "high",
     "on": "fitz"
    },
    "act": {
-    "fitz": {
-     "mood": "sad",
-     "action": "slump"
-    },
     "coach": {
      "mood": "sad",
      "action": "slump"
+    },
+    "fitz": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Week four, at Chicago. A Jets defender finally caught one.",
-   "cap": "Week 4, at Chicago. A Jets defender finally caught one.",
+   "text": "Week four. You visit the Chicago Bears.",
+   "cap": "Week 4. You visit the Chicago Bears.",
    "key": [
-    "FINALLY"
+    "BEARS."
    ],
    "set": "field",
    "setOpts": {
@@ -256,9 +349,64 @@
      "AT CHICAGO"
     ]
    },
+   "board": [
+    "WEEK 4",
+    "AT CHICAGO"
+   ],
    "place": {
-    "lineman": "center",
-    "bagent": "right"
+    "fitz": false,
+    "lineman": [
+     -1.4,
+     0
+    ],
+    "bagent": [
+     1.6,
+     0
+    ],
+    "coach": false,
+    "te": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "lineman",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "lineman": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "bagent"
+    },
+    "bagent": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "lineman"
+    }
+   }
+  },
+  {
+   "text": "Early on, you finally catch one.",
+   "key": [
+    "FINALLY"
+   ],
+   "place": {
+    "fitz": false,
+    "lineman": [
+     0,
+     0
+    ],
+    "bagent": [
+     2.4,
+     -0.8
+    ],
+    "coach": false,
+    "te": false,
+    "capy": false
    },
    "shot": {
     "type": "low",
@@ -271,18 +419,31 @@
      "look": "camera"
     },
     "bagent": {
-     "mood": "worried",
+     "mood": "shocked",
      "action": "idle",
      "look": "lineman"
     }
    }
   },
   {
-   "text": "Flag on the play. Wiped out.",
+   "text": "Flag on the play. It doesn't count.",
    "key": [
     "FLAG"
    ],
+   "speaker": "capy",
+   "board": [
+    "PENALTY",
+    "NO PICK"
+   ],
    "place": {
+    "fitz": false,
+    "lineman": [
+     0.4,
+     0
+    ],
+    "bagent": false,
+    "coach": false,
+    "te": false,
     "capy": [
      -2.4,
      1.0
@@ -302,126 +463,381 @@
      "mood": "sad",
      "action": "facepalm"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Second quarter. Safety Minkah Fitzpatrick reads the route and steps in front of the tight end.",
+   "text": "Then Tyson Bagent throws. Minkah Fitzpatrick is waiting.",
    "key": [
     "FITZPATRICK"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "WEEK 4",
+     "AT CHICAGO"
+    ],
+    "endZone": 45,
+    "zoneA": "#13254d",
+    "zoneB": "#125740"
+   },
+   "place": {
+    "capy": false,
+    "lineman": false,
+    "coach": false
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "bagent",
+    "lead": 0
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "bagent": {
+      "path": [
+       [
+        0.0,
+        8,
+        -1
+       ],
+       [
+        0.271,
+        9.5,
+        -1
+       ],
+       [
+        1.0,
+        9.5,
+        -1
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.271,
+        "idle"
+       ],
+       [
+        0.406,
+        "throw"
+       ]
+      ],
+      "face": -90
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        6,
+        3.5
+       ],
+       [
+        0.721,
+        2.6,
+        4.4
+       ],
+       [
+        1.0,
+        2.2,
+        4.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     },
+     "fitz": {
+      "path": [
+       [
+        0.0,
+        -1,
+        -2.5
+       ],
+       [
+        0.721,
+        2.0,
+        1.2
+       ],
+       [
+        1.0,
+        1.8,
+        1.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.721,
+        "catch"
+       ]
+      ],
+      "face": 60
+     }
+    },
+    "ball": [
+     [
+      0.451,
+      9.3,
+      1.7,
+      -1
+     ],
+     [
+      0.586,
+      5.6,
+      3.2,
+      0.1
+     ],
+     [
+      0.721,
+      2.0,
+      1.5,
+      1.2
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "bagent"
+     ],
+     [
+      0.721,
+      "fitz"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Interception. No flag this time.",
+   "key": [
+    "NO",
+    "FLAG"
    ],
    "place": {
     "capy": false,
     "lineman": false,
-    "fitz": [
-     -0.6,
-     0.4
-    ],
-    "bagent": [
-     2.0,
-     0.2
-    ]
+    "coach": false
    },
    "shot": {
-    "type": "two",
-    "on": "fitz",
-    "with": "bagent"
-   },
-   "act": {
-    "fitz": {
-     "mood": "angry",
-     "action": "point",
-     "look": "bagent"
-    },
-    "bagent": {
-     "mood": "neutral",
-     "action": "throw",
-     "look": "fitz"
-    }
-   }
-  },
-  {
-   "text": "Interception. No flag.",
-   "key": [
-    "NO",
-    "FLAG."
-   ],
-   "shot": {
-    "type": "close",
+    "type": "follow",
     "on": "fitz"
    },
-   "act": {
-    "fitz": {
-     "mood": "shocked",
-     "action": "cheer",
-     "look": "camera"
+   "act": {},
+   "play": {
+    "cast": {
+     "fitz": {
+      "path": [
+       [
+        0.0,
+        1.8,
+        1.2
+       ],
+       [
+        1.0,
+        -25,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        2.2,
+        4.4
+       ],
+       [
+        1.0,
+        -19,
+        3.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     },
+     "bagent": {
+      "path": [
+       [
+        0.0,
+        9.5,
+        -1
+       ],
+       [
+        1.0,
+        -10,
+        -2.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     }
     },
-    "bagent": {
-     "mood": "shocked",
-     "action": "idle"
-    }
+    "carry": [
+     [
+      0,
+      "fitz"
+     ]
+    ]
    }
   },
   {
-   "text": "He ran it back twenty seven yards.",
-   "cap": "He ran it back 27 yards.",
+   "text": "He runs it back twenty seven yards. Look at him go.",
+   "cap": "He runs it back 27 yards. Look at him go.",
    "key": [
     "27"
    ],
+   "place": {
+    "capy": false,
+    "lineman": false,
+    "coach": false
+   },
    "shot": {
-    "type": "wide",
+    "type": "follow_high",
     "on": "fitz"
    },
-   "act": {
-    "fitz": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "The streak was over. The Jets still lost, twenty three to twelve.",
-   "cap": "The streak was over. The Jets still lost, 23 to 12.",
-   "key": [
-    "LOST,"
-   ],
-   "board": [
-    "CHI 23",
-    "NYJ 12"
-   ],
-   "shot": {
-    "type": "high",
-    "on": "fitz"
-   },
-   "act": {
-    "fitz": {
-     "mood": "sad",
-     "action": "slump"
+   "act": {},
+   "play": {
+    "cast": {
+     "fitz": {
+      "path": [
+       [
+        0.0,
+        -25,
+        1.0
+       ],
+       [
+        0.595,
+        -38,
+        1.0
+       ],
+       [
+        1.0,
+        -38,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.595,
+        "cheer"
+       ]
+      ],
+      "face": -90
+     },
+     "te": {
+      "path": [
+       [
+        0.0,
+        -19,
+        3.4
+       ],
+       [
+        0.595,
+        -32,
+        3.4
+       ],
+       [
+        1.0,
+        -33,
+        3.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.673,
+        "idle"
+       ]
+      ],
+      "face": -90
+     },
+     "bagent": {
+      "path": [
+       [
+        0.0,
+        -10,
+        -2.5
+       ],
+       [
+        1.0,
+        -24,
+        -2.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     }
     },
-    "bagent": {
-     "mood": "happy",
-     "action": "cheer"
-    }
+    "carry": [
+     [
+      0,
+      "fitz"
+     ]
+    ]
    }
   },
   {
-   "text": "Twenty games for one pick. Was it worth the wait? Yes or no?",
-   "cap": "20 games for one pick. Was it worth the wait? Yes or no?",
+   "text": "The streak is over. The game? Not so much.",
    "key": [
-    "20",
-    "WAIT?"
+    "OVER."
+   ],
+   "speaker": "capy",
+   "board": [
+    "STREAK",
+    "OVER"
    ],
    "place": {
-    "capy": [
-     -1.6,
-     1.0
-    ],
     "fitz": [
-     0.6,
+     1.4,
      0.2
     ],
-    "bagent": false
+    "lineman": false,
+    "bagent": false,
+    "coach": false,
+    "te": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
    },
    "shot": {
     "type": "two",
@@ -436,21 +852,241 @@
     },
     "fitz": {
      "mood": "happy",
-     "action": "wave",
+     "action": "cheer",
      "look": "capy"
     }
+   }
+  },
+  {
+   "text": "Bears twenty three, Jets twelve. You still lose.",
+   "cap": "Bears 23, Jets 12. You still lose.",
+   "key": [
+    "LOSE."
+   ],
+   "board": [
+    "CHI 23",
+    "NYJ 12"
+   ],
+   "place": {
+    "fitz": [
+     -1.4,
+     0
+    ],
+    "lineman": false,
+    "bagent": [
+     1.6,
+     0
+    ],
+    "coach": false,
+    "te": false,
+    "capy": false
    },
-   "speaker": "capy"
+   "shot": {
+    "type": "close",
+    "on": "fitz"
+   },
+   "act": {
+    "fitz": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "bagent": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Jets fans, that's what joy feels like. Enjoy it. Only briefly.",
+   "key": [
+    "BRIEFLY."
+   ],
+   "speaker": "capy",
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "JETS",
+     "JOY: BRIEF"
+    ]
+   },
+   "place": {
+    "fitz": false,
+    "lineman": false,
+    "bagent": false,
+    "coach": false,
+    "te": false,
+    "capy": [
+     -1.0,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     1.0,
+     0.4,
+     1.2
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Twenty games for one pick. Worth the wait? Yes or no?",
+   "cap": "20 games for one pick. Worth the wait? Yes or no?",
+   "key": [
+    "WAIT?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "20 GAMES",
+    "1 PICK"
+   ],
+   "place": {
+    "fitz": false,
+    "lineman": false,
+    "bagent": false,
+    "coach": false,
+    "te": false,
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
   }
  ],
  "sources": [
   {
-   "title": "AP via TSN: Fitzpatrick stops Jets' NFL-record interception drought at 20 consecutive games",
+   "title": "TSN (AP): Fitzpatrick stops Jets' NFL-record interception drought at 20 consecutive games",
    "url": "https://www.tsn.ca/nfl/article/fitzpatrick-stops-jets-nfl-record-interception-drought-at-20-consecutive-games/"
+  },
+  {
+   "title": "ABC News (AP): Minkah Fitzpatrick stops the Jets' NFL-record interception drought",
+   "url": "https://www-cdn.abcnews.com/Sports/wireStory/minkah-fitzpatrick-stops-jets-nfl-record-interception-drought-136989102"
+  },
+  {
+   "title": "ClickOnDetroit (AP): Minkah Fitzpatrick stops the Jets' NFL-record interception drought",
+   "url": "https://www.clickondetroit.com/sports/2026/10/04/minkah-fitzpatrick-stops-the-jets-nfl-record-interception-drought-at-20-consecutive-games/"
+  },
+  {
+   "title": "U.S. News (AP): Minkah Fitzpatrick stops the Jets' NFL-record interception drought",
+   "url": "https://www.usnews.com/news/sports/articles/2026-10-04/minkah-fitzpatrick-stops-the-jets-nfl-record-interception-drought-at-20-consecutive-games"
+  },
+  {
+   "title": "KSAT (AP): Minkah Fitzpatrick stops the Jets' NFL-record interception drought",
+   "url": "https://www.ksat.com/sports/2026/10/04/minkah-fitzpatrick-stops-the-jets-nfl-record-interception-drought-at-20-consecutive-games/"
+  },
+  {
+   "title": "NFL.com: Jets end 20-game interceptionless streak with Minkah Fitzpatrick's pick vs. Bears",
+   "url": "https://www.nfl.com/news/jets-end-20-game-interceptionless-streak-minkah-fitzpatrick-bears"
+  },
+  {
+   "title": "CBS Sports: Jets intercept first pass in 637 days",
+   "url": "https://www.cbssports.com/nfl/news/jets-intercept-first-pass-end-nfl-record-interceptionless-streak/"
+  },
+  {
+   "title": "DAZN: Minkah Fitzpatrick ends a historic 637-day Jets drought",
+   "url": "https://www.dazn.com/en-US/news/football/jets-minkah-fitzpatrick-interception-637-day-drought-bears/11rdrjy3s1v0p1b8e3wegeugs7"
+  },
+  {
+   "title": "CBS Sports: No NFL team had ever gone an entire season without an interception",
+   "url": "https://www.cbssports.com/nfl/news/no-nfl-team-had-ever-gone-an-entire-season-without-an-interception-enter-the-2025-new-york-jets"
+  },
+  {
+   "title": "theScore: Jets become 1st NFL team to finish season with 0 picks",
+   "url": "https://thescore.com/nfl/news/3445906"
+  },
+  {
+   "title": "ProFootballTalk: Bears up 7-0 after penalty wipes out Jets interception",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bears-up-7-0-after-penalty-wipes-out-jets-interception"
+  },
+  {
+   "title": "ClutchPoints: Fitzpatrick ends drought after penalty kept it alive",
+   "url": "https://clutchpoints.com/nfl/new-york-jets/jets-news-minkah-fitzpatrick-finally-ends-historic-interception-drought-penalty-kept-alive-bears"
+  },
+  {
+   "title": "ABC News (AP): Kyle Monangai scores 2 TDs as the Bears beat the Jets 23-12",
+   "url": "https://abcnews.com/Sports/wireStory/kyle-monangai-scores-2-tds-chicago-bears-beat-136990431"
+  },
+  {
+   "title": "Chicago Sun-Times: Bears notebook, 23-12 win over Jets",
+   "url": "https://chicago.suntimes.com/bears/2026/10/04/bears-notebook-rome-odunze-colston-loveland-emerge-with-big-games-in-23-12-win-over-jets"
+  },
+  {
+   "title": "Daily Independent (AP): Bears beat the Jets 23-12",
+   "url": "https://www.yourvalley.net/stories/kyle-monangai-scores-2-tds-as-the-chicago-bears-beat-the-new-york-jets-23-12,725760"
   },
   {
    "title": "NBC New York: Jets interception ends NFL-record drought",
    "url": "https://www.nbcnewyork.com/news/local/jets-interception-ends-nfl-record-drought/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Jets went 20 consecutive games without an interception",
+   "terms": [
+    "20 consecutive games|20 straight games|20-game"
+   ]
+  },
+  {
+   "claim": "In 2025 the Jets went a full season without an interception, the first team ever",
+   "terms": [
+    "season",
+    "without an interception|zero interceptions|no interceptions|0 picks|without a pick"
+   ]
+  },
+  {
+   "claim": "The drought lasted 637 days",
+   "terms": [
+    "637"
+   ]
+  },
+  {
+   "claim": "An earlier Jets interception was wiped out by a penalty",
+   "terms": [
+    "penalty",
+    "interception"
+   ]
+  },
+  {
+   "claim": "Minkah Fitzpatrick intercepted Tyson Bagent",
+   "terms": [
+    "Fitzpatrick",
+    "Bagent"
+   ]
+  },
+  {
+   "claim": "Fitzpatrick returned it 27 yards",
+   "terms": [
+    "Fitzpatrick",
+    "27"
+   ]
+  },
+  {
+   "claim": "The Bears beat the Jets 23-12",
+   "terms": [
+    "Bears",
+    "23-12"
+   ]
   }
  ]
 }
