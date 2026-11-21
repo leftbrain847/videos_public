@@ -1,0 +1,939 @@
+{
+ "id": "myth_17_ganesha_race",
+ "title": "The race around the world",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "MOUNT KAILASH"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "gan": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e8b923",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#c0392b"
+   }
+  },
+  "kart": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e86c1",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#5c9e4a"
+   }
+  },
+  "shiva": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#4a6a9a",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64",
+    "sash": "#e8b923"
+   }
+  },
+  "parv": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c0392b",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#e8b923"
+   }
+  },
+  "narada": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f0ead8",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#e6e6e6",
+    "skin": "#c68d64",
+    "sash": "#c46a3c",
+    "beard": true
+   },
+   "hold": "bag"
+  }
+ },
+ "lines": [
+  {
+   "text": "You win a race around the world. You never leave home.",
+   "key": [
+    "HOME."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "gan": [
+     1.2,
+     0
+    ],
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "gan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Ganesha. You have an elephant head. Also a big appetite.",
+   "key": [
+    "APPETITE."
+   ],
+   "board": [
+    "GANESHA",
+    "ELEPHANT HEAD"
+   ],
+   "place": {
+    "capy": false,
+    "gan": [
+     0,
+     0
+    ],
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "gan"
+   },
+   "act": {
+    "gan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The wise sage Narada visits. He brings a special fruit.",
+   "key": [
+    "FRUIT."
+   ],
+   "place": {
+    "capy": false,
+    "gan": false,
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "narada"
+   },
+   "act": {
+    "narada": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is the fruit of knowledge. There is only one.",
+   "key": [
+    "ONE."
+   ],
+   "speaker": "capy",
+   "board": [
+    "THE FRUIT",
+    "x1"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "gan": false,
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "narada",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "narada"
+    },
+    "narada": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your father is Shiva. Your mother is Parvati.",
+   "key": [
+    "PARVATI."
+   ],
+   "place": {
+    "capy": false,
+    "gan": false,
+    "kart": false,
+    "shiva": [
+     -1.3,
+     0.2
+    ],
+    "parv": [
+     1.3,
+     -0.2
+    ],
+    "narada": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "shiva",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "shiva": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "parv": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So they set a contest. It is you versus your brother.",
+   "key": [
+    "BROTHER."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "gan": false,
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The rules: go around the whole world. First one back wins.",
+   "key": [
+    "WORLD."
+   ],
+   "board": [
+    "RACE",
+    "AROUND THE WORLD"
+   ],
+   "place": {
+    "capy": false,
+    "gan": false,
+    "kart": false,
+    "shiva": false,
+    "parv": [
+     0,
+     0
+    ],
+    "narada": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "parv"
+   },
+   "act": {
+    "parv": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your brother is Kartikeya. He rides a peacock.",
+   "key": [
+    "PEACOCK."
+   ],
+   "place": {
+    "capy": false,
+    "gan": false,
+    "kart": [
+     0,
+     0
+    ],
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "kart"
+   },
+   "act": {
+    "kart": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He has a peacock. You ride a mouse. A small one.",
+   "key": [
+    "MOUSE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "gan": [
+     1.2,
+     0
+    ],
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "gan": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Kartikeya takes off. You do not move.",
+   "key": [
+    "MOVE."
+   ],
+   "place": {
+    "capy": false,
+    "gan": [
+     1.3,
+     -0.2
+    ],
+    "kart": [
+     -1.3,
+     0.2
+    ],
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "kart",
+    "with": "gan"
+   },
+   "act": {
+    "kart": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "gan": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "kart"
+    }
+   }
+  },
+  {
+   "text": "Your mouse looks at you. You look at your parents.",
+   "key": [
+    "PARENTS."
+   ],
+   "place": {
+    "capy": false,
+    "gan": [
+     0,
+     0
+    ],
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "gan"
+   },
+   "act": {
+    "gan": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "This is a bold strategy. We will see how it goes.",
+   "key": [
+    "BOLD"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "gan": false,
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You stand up. You walk around your parents. Just once.",
+   "key": [
+    "ONCE."
+   ],
+   "place": {
+    "capy": false,
+    "gan": [
+     -0.4,
+     0.6
+    ],
+    "kart": false,
+    "shiva": [
+     -2.2,
+     -0.6
+    ],
+    "parv": [
+     1.6,
+     -0.6
+    ],
+    "narada": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "gan"
+   },
+   "act": {
+    "gan": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "shiva": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "gan"
+    },
+    "parv": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "gan"
+    }
+   }
+  },
+  {
+   "text": "They ask what that was supposed to be.",
+   "key": [
+    "SUPPOSED"
+   ],
+   "place": {
+    "capy": false,
+    "gan": false,
+    "kart": false,
+    "shiva": [
+     -1.3,
+     0.2
+    ],
+    "parv": [
+     1.3,
+     -0.2
+    ],
+    "narada": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "shiva",
+    "with": "parv"
+   },
+   "act": {
+    "shiva": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "parv": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You explain. My parents are my whole world.",
+   "key": [
+    "WORLD."
+   ],
+   "board": [
+    "MY PARENTS =",
+    "MY WORLD"
+   ],
+   "place": {
+    "capy": false,
+    "gan": [
+     0,
+     0
+    ],
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "gan"
+   },
+   "act": {
+    "gan": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Your parents are deeply moved. The fruit is yours.",
+   "key": [
+    "YOURS."
+   ],
+   "place": {
+    "capy": false,
+    "gan": [
+     0,
+     0
+    ],
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "gan"
+   },
+   "act": {
+    "gan": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Kartikeya lands, totally exhausted. You are already eating.",
+   "key": [
+    "EATING."
+   ],
+   "place": {
+    "capy": false,
+    "gan": [
+     1.3,
+     -0.2
+    ],
+    "kart": [
+     -1.3,
+     0.2
+    ],
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "kart",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "kart": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "gan"
+    },
+    "gan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He is furious. He leaves home for a hill. He stays there.",
+   "key": [
+    "HILL."
+   ],
+   "place": {
+    "capy": false,
+    "gan": false,
+    "kart": [
+     0,
+     0
+    ],
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "kart"
+   },
+   "act": {
+    "kart": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That hill is Palani. His temple there is still famous.",
+   "key": [
+    "PALANI."
+   ],
+   "speaker": "capy",
+   "board": [
+    "PALANI",
+    "HIS TEMPLE"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "gan": false,
+    "kart": [
+     1.2,
+     0
+    ],
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kart"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "kart"
+    },
+    "kart": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One lap. Zero miles. Total victory. With a snack.",
+   "key": [
+    "VICTORY."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "gan": false,
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have flown the peacock? Yes or no? Big brothers, be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "PEACOCK?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "gan": [
+     1.3,
+     0
+    ],
+    "kart": false,
+    "shiva": false,
+    "parv": false,
+    "narada": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "gan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Jnana Palam",
+   "url": "https://en.wikipedia.org/wiki/Jnana_Palam"
+  },
+  {
+   "title": "USC Folklore Archives: The race around the world with Kartikeya and Lord Ganesha",
+   "url": "https://folklore.usc.edu/?p=45866"
+  },
+  {
+   "title": "Wikipedia: Murugan",
+   "url": "https://en.wikipedia.org/wiki/Murugan"
+  },
+  {
+   "title": "Wikipedia: Ganesha",
+   "url": "https://en.wikipedia.org/wiki/Ganesha"
+  },
+  {
+   "title": "Devdutt Pattanaik: Ganesha's measuring scale",
+   "url": "https://devdutt.com/ganeshaaes-measuring-scale/"
+  },
+  {
+   "title": "Wikipedia: Palani Murugan Temple",
+   "url": "https://en.wikipedia.org/wiki/Palani_Murugan_Temple"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Ganesha has an elephant head",
+   "terms": [
+    "Ganesha",
+    "elephant"
+   ]
+  },
+  {
+   "claim": "The sage Narada brings a fruit to Shiva and Parvati",
+   "terms": [
+    "Narada",
+    "fruit"
+   ]
+  },
+  {
+   "claim": "It is the fruit of knowledge and there is only one",
+   "terms": [
+    "fruit",
+    "knowledge|wisdom"
+   ]
+  },
+  {
+   "claim": "Their parents are Shiva and Parvati",
+   "terms": [
+    "Shiva",
+    "Parvati"
+   ]
+  },
+  {
+   "claim": "The contest: go around the world, first back wins",
+   "terms": [
+    "world",
+    "around|circle|circled|circumambulate"
+   ]
+  },
+  {
+   "claim": "Kartikeya rides a peacock",
+   "terms": [
+    "Kartikeya|Murugan|Skanda",
+    "peacock"
+   ]
+  },
+  {
+   "claim": "Ganesha's mount is a mouse",
+   "terms": [
+    "Ganesha",
+    "mouse|rat"
+   ]
+  },
+  {
+   "claim": "Ganesha walks around his parents",
+   "terms": [
+    "Ganesha",
+    "parents",
+    "around|circled|circle|circumambulated"
+   ]
+  },
+  {
+   "claim": "He says his parents are his world",
+   "terms": [
+    "parents",
+    "world"
+   ]
+  },
+  {
+   "claim": "Ganesha is given the fruit",
+   "terms": [
+    "Ganesha",
+    "fruit"
+   ]
+  },
+  {
+   "claim": "Kartikeya, angry, leaves for the hill of Palani",
+   "terms": [
+    "Palani",
+    "hill|hills"
+   ]
+  },
+  {
+   "claim": "His temple at Palani is famous",
+   "terms": [
+    "Palani",
+    "temple"
+   ]
+  }
+ ]
+}
