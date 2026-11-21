@@ -9,7 +9,7 @@ Public repo for J's video channels (`football/` today). Read the channel's `GUID
 - **Every PR opens with a risk tier and a 60-second check.** First line: `Risk: low | medium | high`. `.github/`, `site/` security headers and anything that changes what's published are high risk and get an independent review first.
 - **Actions stay locked down:** SHA-pinned actions, read-only token by default, no `pull_request_target`.
 - **Facts in videos are checked against two sources**, listed in each `video.json`.
-- **New finished videos:** commit the script, add the web copy (`site/<channel>/media/<set>/<id>.mp4`, 720x1280, CRF 28) and poster (`site/<channel>/posters/<set>/<id>.jpg`, frame at 1.5 s, 360x640). Full-resolution masters go to the private `leftbrain847/videos` repo.
+- **New finished videos:** commit the script, then render by merging a PR that edits `football/render_queue.json` (one new release tag per run, max 16 videos). The render workflow uploads the master (1080x1920, for posting), the web copy (720x1280, CRF 28, for the gallery), poster and contact sheet to that GitHub Release. Then commit the poster (`site/<channel>/posters/<set>/<id>.jpg`) and the release tag in `site/<channel>/releases.json`. Never commit mp4s to git.
 
 ## Speech
 
