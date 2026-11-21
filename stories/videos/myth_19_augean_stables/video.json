@@ -446,9 +446,9 @@
    }
   },
   {
-   "text": "You smash big holes in the stable walls.",
+   "text": "You get ready. This will be messy.",
    "key": [
-    "WALLS."
+    "MESSY."
    ],
    "place": {
     "capy": false,
@@ -793,10 +793,6 @@
    "url": "https://www.theoi.com/Text/Ap2b.html"
   },
   {
-   "title": "Perseus (Tufts): Herakles, the Augean stables",
-   "url": "https://static.perseus.tufts.edu/Herakles/augean.html"
-  },
-  {
    "title": "Wikipedia: Alfeios",
    "url": "https://en.wikipedia.org/wiki/Alfeios"
   },
@@ -845,13 +841,6 @@
    "terms": [
     "Alpheus|Alpheios|Alfeios",
     "Peneus|Pineios|Peneios"
-   ]
-  },
-  {
-   "claim": "He breaks holes in the walls of the stables",
-   "terms": [
-    "breach|holes|hole|wall|walls|foundations",
-    "Alpheus|Peneus|rivers|river"
    ]
   },
   {
