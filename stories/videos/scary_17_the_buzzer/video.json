@@ -1,0 +1,738 @@
+{
+ "id": "scary_17_the_buzzer",
+ "title": "The Buzzer: a radio station that never stops",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "THE BUZZER"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#4a6fb5",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "headset": true
+   },
+   "at": "center"
+  },
+  "ham": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true,
+    "beard": true
+   },
+   "at": "center",
+   "hold": "notepad"
+  },
+  "voice": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a4a3a",
+    "pants": "#1d1d1f",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8"
+   },
+   "at": "center",
+   "hold": "scroll"
+  }
+ },
+ "lines": [
+  {
+   "text": "You tune an old radio. Something is buzzing. It never stops.",
+   "key": [
+    "STOPS."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "ham": [
+     2.8,
+     -1.0
+    ],
+    "voice": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    },
+    "ham": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Short wave. Four six two five kilohertz.",
+   "cap": "Shortwave. 4625 kHz.",
+   "key": [
+    "4625"
+   ],
+   "board": [
+    "4625 kHz",
+    "BZZZ"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The signal comes from somewhere in Russia. Nobody says where.",
+   "key": [
+    "RUSSIA."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ham"
+   },
+   "act": {
+    "ham": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Radio fans call it the Buzzer. The name fits.",
+   "key": [
+    "BUZZER."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A short, harsh tone. Over and over. Around twenty five a minute.",
+   "cap": "A short, harsh tone. Over and over. Around 25 a minute.",
+   "key": [
+    "25"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It has done this for decades. Day and night. Every day.",
+   "key": [
+    "DECADES."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "The most annoying alarm clock in history.",
+   "key": [
+    "ALARM"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then, every so often, the buzzing stops. Silence.",
+   "key": [
+    "STOPS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "A calm voice reads out words. In Russian.",
+   "key": [
+    "VOICE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "MESSAGE",
+     "RECEIVED"
+    ]
+   },
+   "place": {
+    "voice": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "ham": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "voice"
+   },
+   "act": {
+    "voice": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Names. Numbers. Odd words. Then the buzz comes back.",
+   "key": [
+    "BACK."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "voice"
+   },
+   "act": {
+    "voice": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "What do they mean? Nobody outside will say. Not a hint.",
+   "key": [
+    "SAY."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "voice"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "voice"
+    },
+    "voice": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Most experts link it to the Russian military.",
+   "key": [
+    "MILITARY."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "OWNER:",
+     "MILITARY?"
+    ]
+   },
+   "place": {
+    "ham": [
+     0,
+     -0.4
+    ],
+    "you": [
+     -2.6,
+     0.2
+    ],
+    "capy": [
+     2.6,
+     0.6
+    ],
+    "voice": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ham"
+   },
+   "act": {
+    "ham": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "ham"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "ham"
+    }
+   }
+  },
+  {
+   "text": "One idea? The buzz just keeps the channel taken.",
+   "key": [
+    "TAKEN."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "ham",
+    "with": "you"
+   },
+   "act": {
+    "ham": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "you"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "ham"
+    }
+   }
+  },
+  {
+   "text": "Like a towel on a pool chair. But radio. Forever.",
+   "key": [
+    "TOWEL"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then listeners notice something strange behind the buzz. Something human.",
+   "key": [
+    "BEHIND"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Muffled voices. A conversation in the background.",
+   "key": [
+    "CONVERSATION"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "you": [
+     -2.6,
+     -0.4
+    ],
+    "ham": [
+     2.8,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    },
+    "ham": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Maybe the buzz comes from a real room. Live.",
+   "key": [
+    "LIVE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "ham"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "point",
+     "look": "ham"
+    },
+    "ham": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Hobbyists record it around the clock. Every word. Every pause.",
+   "key": [
+    "WORD."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "ham"
+   },
+   "act": {
+    "ham": {
+     "mood": "happy",
+     "action": "hold"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "ham"
+    }
+   }
+  },
+  {
+   "text": "Each new message sends the internet spiraling. Theories everywhere.",
+   "key": [
+    "SPIRALING."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ham"
+   },
+   "act": {
+    "ham": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Doomsday code? Boring orders? Nobody outside knows.",
+   "key": [
+    "KNOWS."
+   ],
+   "place": {
+    "capy": [
+     -0.6,
+     1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ham"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ham": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It is probably buzzing right now. While you watch. Right this second.",
+   "key": [
+    "NOW."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you listen to it at night? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "LISTEN AT NIGHT?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.6,
+     0
+    ],
+    "ham": [
+     3.0,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: UVB-76",
+   "url": "https://en.wikipedia.org/wiki/UVB-76"
+  },
+  {
+   "title": "IBTimes: Mysterious signals still buzzing from Russian Cold War radio station",
+   "url": "https://www.ibtimes.co.uk/mysterious-signals-still-buzzing-russian-cold-war-radio-station-nobody-knows-why-1633532"
+  },
+  {
+   "title": "The Black Vault: UVB-76, the Buzzer",
+   "url": "https://www.theblackvault.com/documentarchive/uvb-76-the-buzzer/"
+  },
+  {
+   "title": "Anadolu Agency: Static, silence, code, the mystery of Russia's buzzer signal",
+   "url": "https://www.aa.com.tr/en/science-technology/static-silence-code-the-mystery-of-russia-s-buzzer-signal/3653289"
+  },
+  {
+   "title": "Hackaday: Russia's new mystery shortwave station",
+   "url": "https://hackaday.com/2023/04/08/russias-new-mystery-shortwave-station"
+  },
+  {
+   "title": "Priyom: The Buzzer primer",
+   "url": "https://priyom.org/media/57653/the_buzzer_primer.pdf"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "It broadcasts on 4625 kHz",
+   "terms": [
+    "4625"
+   ]
+  },
+  {
+   "claim": "It is a Russian shortwave station",
+   "terms": [
+    "Russia",
+    "shortwave"
+   ]
+  },
+  {
+   "claim": "It is known as the Buzzer",
+   "terms": [
+    "Buzzer"
+   ]
+  },
+  {
+   "claim": "It sends a short buzz about 25 times a minute",
+   "terms": [
+    "25",
+    "minute"
+   ]
+  },
+  {
+   "claim": "It has broadcast for decades",
+   "terms": [
+    "since",
+    "1970s|1976|1982"
+   ]
+  },
+  {
+   "claim": "Occasionally a voice reads messages in Russian",
+   "terms": [
+    "voice",
+    "Russian"
+   ]
+  },
+  {
+   "claim": "Messages contain names, numbers or words",
+   "terms": [
+    "names|words",
+    "numbers"
+   ]
+  },
+  {
+   "claim": "It is believed to be linked to the Russian military",
+   "terms": [
+    "military"
+   ]
+  },
+  {
+   "claim": "One theory is that the buzz keeps the frequency occupied",
+   "terms": [
+    "channel|frequency",
+    "occupied|reserve|claim"
+   ]
+  },
+  {
+   "claim": "Conversations have been heard in the background",
+   "terms": [
+    "conversation",
+    "background"
+   ]
+  },
+  {
+   "claim": "Hobbyists record it constantly",
+   "terms": [
+    "listeners|enthusiasts|hobbyists|fans",
+    "record"
+   ]
+  }
+ ]
+}

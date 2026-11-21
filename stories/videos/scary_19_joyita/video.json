@@ -1,0 +1,720 @@
+{
+ "id": "scary_19_joyita",
+ "title": "The Joyita: 25 people gone from an unsinkable boat",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "JOYITA"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#2f4a6b",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "cap": "#f6f6f6"
+   },
+   "at": "center",
+   "hold": "flashlight"
+  },
+  "mate": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#c46a3c",
+    "pants": "#3c3c3c",
+    "hair": "curly",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "center"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You find a boat half sunk. Twenty five people are missing. Every single one.",
+   "cap": "You find a boat half sunk. 25 people are missing. Every single one.",
+   "key": [
+    "25"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "mate": [
+     2.8,
+     -1.0
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "window"
+    },
+    "mate": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "November, nineteen fifty five. The South Pacific.",
+   "cap": "November 1955. The South Pacific.",
+   "key": [
+    "PACIFIC."
+   ],
+   "board": [
+    "NOV 1955",
+    "SOUTH PACIFIC"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "mate": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The boat is the Joyita. She left Samoa weeks ago. Crew plus passengers.",
+   "key": [
+    "JOYITA."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "mate"
+   },
+   "act": {
+    "mate": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She was bound for Tokelau. A two day trip.",
+   "key": [
+    "TOKELAU."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She never arrived. Now she floats far off course. Hundreds of miles.",
+   "key": [
+    "COURSE."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "mate": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "You climb aboard. She is tilted. Water in the hull. Lots.",
+   "key": [
+    "WATER"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "Nobody aboard. Not the crew. Not one passenger.",
+   "key": [
+    "NOBODY"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "Her life rafts are gone too. Every one.",
+   "key": [
+    "RAFTS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Here is the cruel part. Her hull is lined with cork. Thick cork.",
+   "key": [
+    "CORK."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "mate"
+   },
+   "act": {
+    "mate": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She was nearly unsinkable. She would have floated.",
+   "key": [
+    "UNSINKABLE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "mate"
+   },
+   "act": {
+    "mate": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Abandoning ship was the worst move available. By far.",
+   "key": [
+    "WORST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "you": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "In the radio room, a clock stopped. Ten twenty five.",
+   "cap": "In the radio room, a clock stopped. 10:25.",
+   "key": [
+    "10:25."
+   ],
+   "board": [
+    "CLOCK",
+    "10:25"
+   ],
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The radio was tuned to the distress channel. Someone tried.",
+   "key": [
+    "DISTRESS"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A broken pipe had flooded her slowly.",
+   "key": [
+    "PIPE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "INQUIRY",
+     "1956"
+    ]
+   },
+   "place": {
+    "boss": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "mate": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Her engine was in trouble too. A real mess. Classic.",
+   "key": [
+    "MESS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Maybe the crew panicked. They thought she would sink.",
+   "key": [
+    "PANICKED."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then they took to the rafts. Into open sea. At night, maybe.",
+   "key": [
+    "RAFTS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "None of the twenty five were ever found.",
+   "cap": "None of the 25 were ever found.",
+   "key": [
+    "FOUND."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "UNSOLVED"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "mate": [
+     2.6,
+     -1.0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle"
+    },
+    "mate": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Theories still pile up. Pirates. Crime. Bad luck. Bad decisions.",
+   "key": [
+    "LUCK."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The unsinkable boat outlasted everyone on it.",
+   "key": [
+    "EVERYONE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you stay on a sinking boat? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "STAY ABOARD?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: MV Joyita",
+   "url": "https://en.wikipedia.org/wiki/MV_Joyita"
+  },
+  {
+   "title": "Explorersweb: Exploration mysteries, MV Joyita",
+   "url": "https://explorersweb.com/exploration-mysteries-mv-joyita/"
+  },
+  {
+   "title": "NZ Herald: Ministry releases files on an enduring maritime mystery",
+   "url": "https://nzherald.co.nz/nz/ministry-releases-files-on-an-enduring-maritime-mystery/53SNP4P5HVZBTKEPHP332EBJSU"
+  },
+  {
+   "title": "NZ Herald: Author says he's solved MV Joyita mystery",
+   "url": "https://nzherald.co.nz/nz/author-says-hes-solved-mv-joyita-mystery-47-years-later/PNNJ3FJDN6BLJXR2YMMYYLK4LE"
+  },
+  {
+   "title": "Fiji Times: Joyita and the many questions",
+   "url": "https://www.fijitimes.com.fj/?p=114228"
+  },
+  {
+   "title": "Matauala: Deadly journey to Tokelau",
+   "url": "https://www.matauala.org.nz/joyita-unsolved-mystery"
+  },
+  {
+   "title": "Cracked: The mystery of a found ship with no crew or passengers",
+   "url": "https://cracked.com/article_30802_the-high-seas-mystery-of-a-found-ship-with-no-crew-or-passengers.html"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Joyita was found with 25 people missing",
+   "terms": [
+    "Joyita",
+    "25"
+   ]
+  },
+  {
+   "claim": "She was found in November 1955",
+   "terms": [
+    "1955"
+   ]
+  },
+  {
+   "claim": "She left Samoa",
+   "terms": [
+    "Samoa|Apia"
+   ]
+  },
+  {
+   "claim": "She was bound for Tokelau",
+   "terms": [
+    "Tokelau"
+   ]
+  },
+  {
+   "claim": "She was found far off course",
+   "terms": [
+    "off course|miles"
+   ]
+  },
+  {
+   "claim": "She was listing with water inside",
+   "terms": [
+    "listing|water"
+   ]
+  },
+  {
+   "claim": "Nobody was aboard",
+   "terms": [
+    "no one|nobody|abandoned|missing"
+   ]
+  },
+  {
+   "claim": "The life rafts were missing",
+   "terms": [
+    "rafts"
+   ]
+  },
+  {
+   "claim": "Her hull was lined with cork, making her nearly unsinkable",
+   "terms": [
+    "cork"
+   ]
+  },
+  {
+   "claim": "A clock in the radio room stopped at 10:25",
+   "terms": [
+    "10:25|10.25"
+   ]
+  },
+  {
+   "claim": "The radio was tuned to the distress channel",
+   "terms": [
+    "distress"
+   ]
+  },
+  {
+   "claim": "A broken cooling pipe flooded the boat",
+   "terms": [
+    "pipe"
+   ]
+  },
+  {
+   "claim": "The engine had problems",
+   "terms": [
+    "engine"
+   ]
+  },
+  {
+   "claim": "None of the 25 were ever found",
+   "terms": [
+    "never",
+    "found|seen"
+   ]
+  }
+ ]
+}
