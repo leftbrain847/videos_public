@@ -580,7 +580,7 @@
    }
   },
   {
-   "text": "So their touchdown stands.",
+   "text": "So their touchdown stands. Your flag did that.",
    "key": [
     "STANDS."
    ],
@@ -726,9 +726,9 @@
    }
   },
   {
-   "text": "The review still happens. You lose a timeout.",
+   "text": "Now the play still gets reviewed.",
    "key": [
-    "TIMEOUT."
+    "REVIEWED."
    ],
    "set": "office",
    "setOpts": {
@@ -888,10 +888,10 @@
    ]
   },
   {
-   "claim": "The league changed the rule: the review happens and the team loses a timeout",
+   "claim": "The league changed the rule so the play is still reviewed",
    "terms": [
-    "timeout",
-    "Schwartz"
+    "Schwartz",
+    "review"
    ]
   },
   {
