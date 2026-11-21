@@ -607,10 +607,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Your total after two games? Twenty six penalties.",
-   "cap": "Your total after two games? 26 penalties.",
+   "text": "Two teams. One very long afternoon.",
    "key": [
-    "26"
+    "LONG"
    ],
    "set": "locker",
    "setOpts": {
@@ -619,10 +618,6 @@
      "26 FLAGS"
     ]
    },
-   "board": [
-    "GB AFTER 2 GAMES",
-    "26 PENALTIES"
-   ],
    "place": {
     "capy": [
      -1.4,
@@ -657,9 +652,9 @@
    "speaker": "capy"
   },
   {
-   "text": "The most in the league.",
+   "text": "Somebody restock the yellow flags.",
    "key": [
-    "MOST"
+    "FLAGS."
    ],
    "place": {
     "capy": [
@@ -880,14 +875,6 @@
    "terms": [
     "six-game|6-game",
     "skid"
-   ]
-  },
-  {
-   "claim": "Green Bay had 26 penalties after two games, the most in the NFL",
-   "terms": [
-    "26",
-    "penalt",
-    "most"
    ]
   }
  ]
