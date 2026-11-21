@@ -345,8 +345,11 @@ export function capy(look = {}) {
     add(head, new THREE.SphereGeometry(0.09, 10, 8), mat(O.laurel), [Math.sin(a) * 0.55, 0.48, Math.cos(a) * 0.58], [1.6, 0.5, 0.8], [0, a, 0.5]); }
   if (O.glasses) for (const sx of [-1, 1]) add(head, new THREE.TorusGeometry(0.13, 0.018, 8, 24), mat(O.glasses), [sx * 0.3, 0.27, 0.66]);
   if (O.glasses) add(head, new THREE.BoxGeometry(0.2, 0.02, 0.02), mat(O.glasses), [0, 0.3, 0.68]);
-  if (O.dome) { const d = new THREE.Mesh(new THREE.SphereGeometry(1.0, 40, 28), new THREE.MeshPhysicalMaterial({ color: '#cfeaff', transparent: true, opacity: 0.34, roughness: 0.05, metalness: 0, depthWrite: false, emissive: '#9fd4ff', emissiveIntensity: 0.15 }));
-    d.position.set(0, 0.15, 0.1); head.add(d); add(head, new THREE.TorusGeometry(0.72, 0.08, 10, 32), mat('#c9ced6'), [0, -0.62, 0.05], [1, 1, 1], [Math.PI / 2, 0, 0]); oy = 0.62; }
+  if (O.dome) {   // open-face helmet: a white shell behind the head and a rim around the face, so her face stays readable
+    const shell = shadow(new THREE.Mesh(new THREE.SphereGeometry(0.98, 40, 28, 0, Math.PI * 2, 0, Math.PI), mat('#eef1f5', { side: THREE.DoubleSide })));
+    shell.scale.set(1, 1, 0.9); shell.position.set(0, 0.15, -0.12); shell.rotation.x = 0; head.add(shell);
+    shell.geometry = new THREE.SphereGeometry(0.98, 40, 28, Math.PI * 0.62, Math.PI * 1.76);   // leave the front open
+    add(head, new THREE.TorusGeometry(0.86, 0.07, 12, 40), mat('#c9ced6', { metalness: 0.4, roughness: 0.3 }), [0, 0.12, 0.42]); add(head, new THREE.TorusGeometry(0.72, 0.08, 10, 32), mat('#c9ced6'), [0, -0.62, 0.05], [1, 1, 1], [Math.PI / 2, 0, 0]); oy = 0.62; }
   const orange = add(head, new THREE.SphereGeometry(0.2, 28, 20), mat(C.orange, { roughness: 0.6 }), [0, oy, 0.05]); parts.orange = orange;
   add(head, new THREE.SphereGeometry(0.06, 12, 8), mat(C.leaf), [0.06, oy + 0.2, 0.05], [1, 0.4, 1.6]);
   parts.held = new THREE.Group(); parts.handR.add(parts.held);
