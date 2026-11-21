@@ -393,9 +393,9 @@
    }
   },
   {
-   "text": "You cannot believe it. The juice should have worked.",
+   "text": "The juice had one job. Just one job.",
    "key": [
-    "JUICE"
+    "JOB."
    ],
    "place": {
     "capy": false,
@@ -920,13 +920,6 @@
    "terms": [
     "news",
     "footage|surveillance"
-   ]
-  },
-  {
-   "claim": "He was in disbelief when caught",
-   "terms": [
-    "Wheeler",
-    "disbelie|incredul|astonish|surprise|bewilder"
    ]
   },
   {
