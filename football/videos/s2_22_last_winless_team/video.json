@@ -1418,9 +1418,9 @@
  "voice": "v2",
  "claims": [
   {
-   "claim": "The Chargers were 0-8, the last winless team",
+   "claim": "The Chargers were winless (0-8) before this game",
    "terms": [
-    "0-8"
+    "first win"
    ]
   },
   {
