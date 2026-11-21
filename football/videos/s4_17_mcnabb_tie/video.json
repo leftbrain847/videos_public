@@ -2,103 +2,855 @@
  "id": "s4_17_mcnabb_tie",
  "title": "The quarterback who didn't know ties existed",
  "set": "field",
- "setOpts": {"boardText": ["EAGLES 13", "BENGALS 13"]},
- "cast": {
-  "capy": {"kind": "capy", "at": "left", "face": 20},
-  "qb": {"look": {"outfit": "jersey", "shirt": "#0b5a5f", "pants": "#f4f4f4", "number": "9", "hair": "buzz", "hairColor": "#1b1b1b", "skin": "#6b4430"}, "at": "center", "hold": "football"},
-  "bengal": {"look": {"outfit": "jersey", "shirt": "#f15a22", "pants": "#1b1b1b", "number": "17", "hair": "short", "hairColor": "#d9b16a"}, "at": "right", "face": -20},
-  "mate": {"look": {"outfit": "jersey", "shirt": "#0b5a5f", "pants": "#f4f4f4", "number": "84", "hair": "short", "hairColor": "#3b2416", "skin": "#c68d64"}, "at": "back"},
-  "coach": {"look": {"outfit": "polo", "shirt": "#0b5a5f", "pants": "#4a4a4a", "skin": "#f2c39b", "cap": "#1b1b1b", "hair": "short", "hairColor": "#c9c9c9", "glasses": true}, "at": "right", "hold": "clipboard"}
+ "setOpts": {
+  "boardText": [
+   "EAGLES 13",
+   "BENGALS 13"
+  ]
  },
- "lines": [
-  {"text": "In 2008, a star NFL quarterback said he didn't know games could end in a tie. He'd just played one.",
-   "key": ["TIE."], "speaker": "capy",
-   "place": {"capy": [-2.4, 0.8], "qb": [0, 0], "bengal": [2.2, 0.2], "mate": false, "coach": false},
-   "shot": {"type": "two", "on": "capy", "with": "qb"},
-   "act": {"capy": {"mood": "smug", "action": "talk", "look": "camera"}, "qb": {"mood": "confused", "action": "shrug", "look": "capy"}, "bengal": {"mood": "confused", "look": "qb"}}},
-  {"text": "Eagles against Bengals, November 2008. Thirteen all after four quarters.",
-   "cap": "Eagles against Bengals, November 2008. 13 all after four quarters.",
-   "key": ["13"],
-   "place": {"capy": false, "qb": [-1.3, 0], "bengal": [1.3, 0]},
-   "shot": {"type": "wide", "on": "qb", "offset": [1.3, 0, -2]},
-   "act": {"qb": {"mood": "neutral", "action": "hold", "look": "bengal"}, "bengal": {"mood": "neutral", "look": "qb"}}},
-  {"text": "Overtime: fifteen minutes. Neither offense scored.",
-   "cap": "Overtime: 15 minutes. Neither offense scored.",
-   "key": ["15"],
-   "board": ["OVERTIME", "15:00"],
-   "shot": {"type": "two", "on": "qb", "with": "bengal"},
-   "act": {"qb": {"mood": "angry", "action": "throw"}, "bengal": {"mood": "worried", "action": "idle"}}},
-  {"text": "Donovan McNabb's line: twenty eight of fifty eight, three interceptions and a lost fumble.",
-   "cap": "Donovan McNabb's line: 28 of 58, 3 interceptions and a lost fumble.",
-   "key": ["58,"],
-   "board": ["28 OF 58", "3 INT"],
-   "place": {"qb": [0, 0], "bengal": false},
-   "shot": {"type": "medium", "on": "qb"},
-   "act": {"qb": {"mood": "sad", "action": "slump", "look": "camera"}}},
-  {"text": "With seven seconds left, Cincinnati missed a forty seven yard field goal.",
-   "cap": "With 7 seconds left, Cincinnati missed a 47-yard field goal.",
-   "key": ["47-YARD"],
-   "board": ["0:07", "NO GOOD"],
-   "place": {"bengal": [0, 0], "qb": [2.2, -0.6]},
-   "shot": {"type": "low", "on": "bengal"},
-   "act": {"bengal": {"mood": "shocked", "action": "facepalm"}, "qb": {"mood": "happy", "action": "clap"}}},
-  {"text": "The clock hit zero. Final: thirteen, thirteen.",
-   "cap": "The clock hit zero. Final: 13-13.",
-   "key": ["13-13."],
-   "board": ["FINAL", "13 - 13"],
-   "place": {"qb": [-1.3, 0], "bengal": [1.3, 0]},
-   "shot": {"type": "high", "on": "qb", "offset": [1.3, 0, 0]},
-   "act": {"qb": {"mood": "confused", "action": "shrug"}, "bengal": {"mood": "confused", "action": "shrug"}}},
-  {"text": "The first NFL tie in six years.",
-   "cap": "The first NFL tie in 6 years.",
-   "key": ["6"],
-   "place": {"capy": [0, 1.6]},
-   "shot": {"type": "medium", "on": "capy"},
-   "act": {"capy": {"mood": "neutral", "action": "point", "look": "camera"}},
-   "speaker": "capy"},
-  {"text": "Afterward, he told reporters he never even knew a tie was in the rule book.",
-   "key": ["RULE", "BOOK."],
-   "set": "press",
-   "board": ["POSTGAME", "TIE?"],
-   "place": {"qb": "center"},
-   "shot": {"type": "medium", "on": "qb"},
-   "act": {"qb": {"mood": "confused", "action": "talk", "look": "camera"}}},
-  {"text": "He didn't know playoff games just keep going.",
-   "key": ["PLAYOFF"],
-   "shot": {"type": "close", "on": "qb"},
-   "act": {"qb": {"mood": "worried", "action": "shrug", "look": "camera"}}},
-  {"text": "He wasn't alone. Several teammates didn't know either.",
-   "key": ["TEAMMATES"],
-   "set": "locker",
-   "board": ["TIES:", "WHAT?"],
-   "place": {"qb": [-1.2, 0.2], "mate": [1.2, 0.2]},
-   "shot": {"type": "two", "on": "qb", "with": "mate"},
-   "act": {"qb": {"mood": "confused", "action": "shrug", "look": "mate"}, "mate": {"mood": "confused", "action": "shrug", "look": "qb"}}},
-  {"text": "His coach, Andy Reid, said he'd take the responsibility for that.",
-   "key": ["RESPONSIBILITY"],
-   "place": {"coach": [0, 0.4], "qb": [-2.2, 0], "mate": false},
-   "shot": {"type": "low", "on": "coach"},
-   "act": {"coach": {"mood": "neutral", "action": "hold", "look": "camera"}, "qb": {"mood": "sad", "look": "coach"}}},
-  {"text": "One week later, at Baltimore, the quarterback was pulled at halftime.",
-   "key": ["HALFTIME."],
-   "set": "tunnel",
-   "board": ["HALFTIME", "QB CHANGE"],
-   "place": {"qb": [0, 0]},
-   "shot": {"type": "medium", "on": "qb"},
-   "act": {"qb": {"mood": "sad", "action": "slump", "look": "camera"}}},
-  {"text": "Did you know an NFL game could end in a tie? Yes or no?",
-   "key": ["YES", "NO?"],
-   "board": ["TIES:", "YES OR NO?"],
-   "place": {"capy": [-1.2, 1.2], "qb": [1.2, 0.2]},
-   "shot": {"type": "two", "on": "capy", "with": "qb"},
-   "act": {"capy": {"mood": "smug", "action": "talk", "look": "camera"}, "qb": {"mood": "confused", "action": "shrug", "look": "capy"}},
-   "speaker": "capy"}
- ],
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20
+  },
+  "qb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b5a5f",
+    "pants": "#f4f4f4",
+    "number": "9",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#6b4430"
+   },
+   "at": "center",
+   "hold": "football"
+  },
+  "bengal": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#f15a22",
+    "pants": "#1b1b1b",
+    "number": "17",
+    "hair": "short",
+    "hairColor": "#d9b16a"
+   },
+   "at": "right",
+   "face": -20
+  },
+  "mate": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#0b5a5f",
+    "pants": "#f4f4f4",
+    "number": "84",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "back"
+  },
+  "coach": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#0b5a5f",
+    "pants": "#4a4a4a",
+    "skin": "#f2c39b",
+    "cap": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#c9c9c9",
+    "glasses": true
+   },
+   "at": "right",
+   "hold": "clipboard"
+  }
+ },
  "sources": [
-  {"title": "ESPN: Day after tie, Reid defends McNabb, others for not knowing rules", "url": "https://www.espn.co.uk/nfl/news/story?id=3709095"},
-  {"title": "Southeast Missourian (AP): Eagles, Bengals bumble way to 13-13 tie", "url": "https://www.semissourian.com/sports/eagles-bengals-bumble-way-to-13-13-tie-1478626"},
-  {"title": "Bengals.com: Tied up in knots", "url": "https://www.bengals.com/news/tied-up-in-knots-720613"},
-  {"title": "NFL.com: McNabb pulled after poor first half against Ravens", "url": "https://www.nfl.com/news/mcnabb-pulled-after-poor-first-half-against-ravens-09000d5d80cb6a60"},
-  {"title": "Spokesman-Review (AP): Eagles bench McNabb", "url": "https://www.spokesman.com/stories/2008/nov/24/eagles-bench-mcnabb"}
+  {
+   "title": "ESPN: Day after tie, Reid defends McNabb, others for not knowing rules",
+   "url": "https://www.espn.co.uk/nfl/news/story?id=3709095"
+  },
+  {
+   "title": "Southeast Missourian (AP): Eagles, Bengals bumble way to 13-13 tie",
+   "url": "https://www.semissourian.com/sports/eagles-bengals-bumble-way-to-13-13-tie-1478626"
+  },
+  {
+   "title": "Bengals.com: Tied up in knots",
+   "url": "https://www.bengals.com/news/tied-up-in-knots-720613"
+  },
+  {
+   "title": "NFL.com: McNabb pulled after poor first half against Ravens",
+   "url": "https://www.nfl.com/news/mcnabb-pulled-after-poor-first-half-against-ravens-09000d5d80cb6a60"
+  },
+  {
+   "title": "Spokesman-Review (AP): Eagles bench McNabb",
+   "url": "https://www.spokesman.com/stories/2008/nov/24/eagles-bench-mcnabb"
+  }
+ ],
+ "lines": [
+  {
+   "text": "Your game ends in a tie. Nobody told you that could happen.",
+   "key": [
+    "TIE."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "qb": [
+     0,
+     0
+    ],
+    "bengal": [
+     2.2,
+     0.2
+    ],
+    "mate": false,
+    "coach": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    },
+    "bengal": {
+     "mood": "confused",
+     "look": "qb"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "November two thousand eight. Your Eagles visit Cincinnati.",
+   "cap": "November 2008. Your Eagles visit Cincinnati.",
+   "key": [
+    "CINCINNATI."
+   ],
+   "place": {
+    "capy": false,
+    "qb": [
+     -1.3,
+     0
+    ],
+    "bengal": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     1.3,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "bengal"
+    },
+    "bengal": {
+     "mood": "neutral",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "Thirteen all after four quarters. Overtime.",
+   "cap": "13 all after four quarters. Overtime.",
+   "key": [
+    "OVERTIME."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "bengal"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold"
+    },
+    "bengal": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   },
+   "board": [
+    "OVERTIME",
+    "15:00"
+   ]
+  },
+  {
+   "text": "Fifteen more minutes. Somebody has to win. Right?",
+   "cap": "15 more minutes. Somebody has to win. Right?",
+   "key": [
+    "RIGHT?"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "qb": [
+     0,
+     0
+    ],
+    "bengal": [
+     2.2,
+     0.2
+    ],
+    "mate": false,
+    "coach": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "You're Donovan McNabb. You throw fifty eight passes. Twenty eight land.",
+   "cap": "You're Donovan McNabb. You throw 58 passes. 28 land.",
+   "key": [
+    "58"
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "bengal": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "28 OF 58",
+    "3 INT"
+   ]
+  },
+  {
+   "text": "Three interceptions. One lost fumble.",
+   "cap": "3 interceptions. 1 lost fumble.",
+   "key": [
+    "FUMBLE."
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "bengal": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "28 OF 58",
+    "3 INT"
+   ]
+  },
+  {
+   "text": "Seven seconds left. Cincinnati lines up a field goal.",
+   "cap": "7 seconds left. Cincinnati lines up a field goal.",
+   "key": [
+    "FIELD",
+    "GOAL."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "EAGLES 13",
+     "BENGALS 13"
+    ],
+    "endZone": 8,
+    "zoneA": "#f15a22",
+    "zoneB": "#0b5a5f"
+   },
+   "shot": {
+    "type": "follow",
+    "on": "bengal",
+    "lead": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "bengal": {
+      "path": [
+       [
+        0.0,
+        -4.4,
+        0.8
+       ],
+       [
+        0.125,
+        -4.1,
+        0.725
+       ],
+       [
+        0.25,
+        -3.8,
+        0.65
+       ],
+       [
+        0.375,
+        -3.5,
+        0.575
+       ],
+       [
+        0.5,
+        -3.2,
+        0.5
+       ],
+       [
+        1.0,
+        -3.2,
+        0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.5,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "qb": {
+      "path": [
+       [
+        0,
+        3.0,
+        -2.6
+       ],
+       [
+        1,
+        3.0,
+        -2.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90,
+      "mood": "worried"
+     }
+    },
+    "ball": [
+     [
+      0,
+      -2.8,
+      0.15,
+      0.4
+     ],
+     [
+      1,
+      -2.8,
+      0.15,
+      0.4
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Forty seven yards. No good.",
+   "cap": "47 yards. No good.",
+   "key": [
+    "NO",
+    "GOOD."
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "bengal",
+    "lead": 0,
+    "z": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "bengal": {
+      "path": [
+       [
+        0.0,
+        -3.6,
+        0.6
+       ],
+       [
+        0.0375,
+        -3.4,
+        0.575
+       ],
+       [
+        0.075,
+        -3.2,
+        0.55
+       ],
+       [
+        0.1125,
+        -3.0,
+        0.525
+       ],
+       [
+        0.15,
+        -2.8,
+        0.5
+       ],
+       [
+        1.0,
+        -2.6,
+        0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.0778,
+        "kick"
+       ],
+       [
+        0.6,
+        "facepalm"
+       ]
+      ],
+      "face": 90
+     },
+     "qb": {
+      "path": [
+       [
+        0.0,
+        3.0,
+        -2.6
+       ],
+       [
+        1.0,
+        3.0,
+        -2.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.7,
+        "cheer"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      0.15,
+      -2.6,
+      0.3,
+      0.4
+     ],
+     [
+      0.525,
+      4.7,
+      6.6,
+      1.9
+     ],
+     [
+      0.9,
+      12.0,
+      2.6,
+      3.4
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ]
+    ]
+   }
+  },
+  {
+   "text": "The clock hits zero. Final: thirteen, thirteen.",
+   "cap": "The clock hits zero. Final: 13-13.",
+   "key": [
+    "13-13."
+   ],
+   "place": {
+    "qb": [
+     -1.3,
+     0
+    ],
+    "bengal": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "qb",
+    "offset": [
+     1.3,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "confused",
+     "action": "shrug"
+    },
+    "bengal": {
+     "mood": "confused",
+     "action": "shrug"
+    }
+   },
+   "board": [
+    "FINAL",
+    "13 - 13"
+   ]
+  },
+  {
+   "text": "The league's first tie in six years.",
+   "cap": "The league's first tie in 6 years.",
+   "key": [
+    "6"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Afterward, you admit it. You didn't know ties existed.",
+   "key": [
+    "EXISTED."
+   ],
+   "set": "press",
+   "place": {
+    "qb": "center"
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "confused",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "POSTGAME",
+    "TIE?"
+   ]
+  },
+  {
+   "text": "You thought it just kept going. Like the playoffs do.",
+   "key": [
+    "PLAYOFFS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some of your teammates didn't know either.",
+   "key": [
+    "TEAMMATES"
+   ],
+   "set": "locker",
+   "place": {
+    "qb": [
+     -1.2,
+     0.2
+    ],
+    "mate": [
+     1.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "mate"
+   },
+   "act": {
+    "qb": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "mate"
+    },
+    "mate": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "qb"
+    }
+   },
+   "board": [
+    "TIES:",
+    "WHAT?"
+   ]
+  },
+  {
+   "text": "Your coach takes the blame. Very kindly.",
+   "key": [
+    "BLAME."
+   ],
+   "place": {
+    "capy": [
+     -2.0,
+     0.8
+    ],
+    "coach": [
+     0.6,
+     0.4
+    ],
+    "qb": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "coach": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Next week, at Baltimore, you're benched at halftime.",
+   "key": [
+    "HALFTIME."
+   ],
+   "set": "tunnel",
+   "place": {
+    "qb": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "HALFTIME",
+    "QB CHANGE"
+   ]
+  },
+  {
+   "text": "Did you know games can end in ties? Yes or no? Bengals fans, a tie is progress.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.2
+    ],
+    "qb": [
+     1.2,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "board": [
+    "TIES:",
+    "YES OR NO?"
+   ],
+   "speaker": "capy"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In November 2008 the Eagles played at Cincinnati",
+   "terms": [
+    "Eagles",
+    "Bengals"
+   ]
+  },
+  {
+   "claim": "It was 13-13 after regulation and went to overtime",
+   "terms": [
+    "13-13|13 13",
+    "overtime"
+   ]
+  },
+  {
+   "claim": "McNabb went 28 of 58 with three interceptions and a lost fumble",
+   "terms": [
+    "McNabb",
+    "58"
+   ]
+  },
+  {
+   "claim": "McNabb threw three interceptions",
+   "terms": [
+    "McNabb",
+    "three interceptions|3 interceptions|intercept"
+   ]
+  },
+  {
+   "claim": "With seven seconds left Cincinnati missed a 47-yard field goal",
+   "terms": [
+    "47-yard|47 yard",
+    "miss|wide"
+   ]
+  },
+  {
+   "claim": "It was the first NFL tie in six years",
+   "terms": [
+    "tie",
+    "2002"
+   ]
+  },
+  {
+   "claim": "McNabb said he didn't know games could end in a tie",
+   "terms": [
+    "McNabb",
+    "know"
+   ]
+  },
+  {
+   "claim": "He thought overtime would continue like the playoffs",
+   "terms": [
+    "McNabb",
+    "playoff"
+   ]
+  },
+  {
+   "claim": "Some teammates didn't know either",
+   "terms": [
+    "teammates|players",
+    "know|aware"
+   ]
+  },
+  {
+   "claim": "Coach Andy Reid took responsibility",
+   "terms": [
+    "Reid",
+    "responsib|blame"
+   ]
+  },
+  {
+   "claim": "The next week McNabb was benched at halftime in Baltimore",
+   "terms": [
+    "McNabb",
+    "halftime"
+   ]
+  }
  ]
 }

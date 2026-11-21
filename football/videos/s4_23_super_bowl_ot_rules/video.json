@@ -83,13 +83,34 @@
    "hold": "clipboard"
   }
  },
+ "sources": [
+  {
+   "title": "SI: 49ers players admitted they didn't know Super Bowl overtime rules after loss to Chiefs",
+   "url": "https://www.si.com/nfl/2024/02/12/49ers-players-chiefs-didnt-know-super-bowl-overtime-rules"
+  },
+  {
+   "title": "FOX 9: 49ers players admit being unaware of overtime rules in Super Bowl LVIII",
+   "url": "https://www.fox9.com/sports/49ers-players-unaware-overtime-rules-super-bowl-lviii"
+  },
+  {
+   "title": "Chiefs.com: Chiefs defeat 49ers 25-22 to secure a second straight world championship",
+   "url": "https://chiefs.com/news/chiefs-defeat-49ers-25-22-to-secure-a-second-straight-world-championship"
+  },
+  {
+   "title": "KSHB: Super Bowl LVIII game report, Chiefs rally past 49ers in OT",
+   "url": "https://kshb.com/sports/football/chiefs/super-bowl-lviii-game-report-chiefs-rally-past-49ers-in-ot-for-dynasty-clinching-crown"
+  },
+  {
+   "title": "CBS Sports (AP): Mahomes rallies the Chiefs to second straight Super Bowl title, 25-22 over 49ers in overtime",
+   "url": "https://www.cbssports.com/nfl/news/patrick-mahomes-rallies-the-chiefs-to-second-straight-super-bowl-title-25-22-over-49ers-in-overtime"
+  }
+ ],
  "lines": [
   {
-   "text": "The 2024 Super Bowl went to overtime. Some 49ers said afterward they didn't know the rules.",
+   "text": "You reach Super Bowl overtime. You don't know the rules.",
    "key": [
     "RULES."
    ],
-   "speaker": "capy",
    "place": {
     "capy": [
      -2.4,
@@ -127,17 +148,15 @@
      "action": "hold",
      "look": "dl"
     }
-   }
+   },
+   "speaker": "capy"
   },
   {
-   "text": "Chiefs and 49ers. Nineteen all after four quarters.",
-   "cap": "Chiefs and 49ers. 19 all after four quarters.",
+   "text": "February twenty twenty four. Your forty niners face Kansas City.",
+   "cap": "February 2024. Your 49ers face Kansas City.",
    "key": [
-    "19"
-   ],
-   "board": [
-    "CHIEFS 19",
-    "49ERS 19"
+    "KANSAS",
+    "CITY."
    ],
    "place": {
     "capy": false,
@@ -169,16 +188,54 @@
      "action": "hold",
      "look": "dl"
     }
-   }
+   },
+   "board": [
+    "CHIEFS 19",
+    "49ERS 19"
+   ]
   },
   {
-   "text": "Only the second Super Bowl ever to reach overtime.",
+   "text": "Nineteen all after four quarters.",
+   "cap": "19 all after four quarters.",
+   "key": [
+    "19"
+   ],
+   "place": {
+    "capy": false,
+    "dl": [
+     -1.3,
+     0
+    ],
+    "qb": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "dl",
+    "with": "qb"
+   },
+   "act": {
+    "dl": {
+     "mood": "angry",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "dl"
+    }
+   },
+   "board": [
+    "CHIEFS 19",
+    "49ERS 19"
+   ]
+  },
+  {
+   "text": "Only the second Super Bowl to reach overtime.",
    "key": [
     "SECOND"
-   ],
-   "board": [
-    "SUPER BOWL",
-    "OT #2"
    ],
    "place": {
     "capy": [
@@ -205,16 +262,16 @@
      "look": "camera"
     }
    },
+   "board": [
+    "SUPER BOWL",
+    "OT #2"
+   ],
    "speaker": "capy"
   },
   {
-   "text": "And the first under new playoff rules: both teams get a possession.",
+   "text": "The first under new rules. Both teams get the ball.",
    "key": [
     "BOTH"
-   ],
-   "board": [
-    "NEW RULE:",
-    "BOTH TEAMS"
    ],
    "shot": {
     "type": "high",
@@ -235,16 +292,16 @@
      "look": "capy"
     }
    },
+   "board": [
+    "NEW RULE:",
+    "BOTH TEAMS"
+   ],
    "speaker": "capy"
   },
   {
-   "text": "San Francisco won the toss and chose to receive.",
+   "text": "You win the toss. You take the ball first.",
    "key": [
-    "RECEIVE."
-   ],
-   "board": [
-    "COIN TOSS",
-    "49ERS"
+    "FIRST."
    ],
    "place": {
     "capy": false,
@@ -265,34 +322,51 @@
      "action": "point",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "COIN TOSS",
+    "49ERS"
+   ]
   },
   {
-   "text": "Their coach wanted the last chance, in case both teams scored.",
+   "text": "Your coach wants the last chance. Just in case.",
    "key": [
     "LAST"
    ],
    "shot": {
-    "type": "close",
-    "on": "coach"
+    "type": "two",
+    "on": "capy",
+    "with": "coach"
    },
    "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
     "coach": {
      "mood": "smug",
      "action": "hold",
-     "look": "camera"
+     "look": "capy"
     }
-   }
+   },
+   "place": {
+    "capy": [
+     -2.0,
+     0.8
+    ],
+    "coach": [
+     0.6,
+     0
+    ]
+   },
+   "speaker": "capy"
   },
   {
-   "text": "The 49ers kicked a field goal. Twenty two to nineteen.",
-   "cap": "The 49ers kicked a field goal. 22 to 19.",
+   "text": "You kick a field goal. Twenty two to nineteen.",
+   "cap": "You kick a field goal. 22 to 19.",
    "key": [
     "22"
-   ],
-   "board": [
-    "49ERS 22",
-    "CHIEFS 19"
    ],
    "place": {
     "coach": false,
@@ -319,10 +393,14 @@
      "mood": "happy",
      "action": "clap"
     }
-   }
+   },
+   "board": [
+    "49ERS 22",
+    "CHIEFS 19"
+   ]
   },
   {
-   "text": "Then Kansas City got its turn.",
+   "text": "Then Kansas City gets its turn.",
    "key": [
     "TURN."
    ],
@@ -347,41 +425,348 @@
    }
   },
   {
-   "text": "Patrick Mahomes drove the Chiefs down the field.",
+   "text": "Patrick Mahomes drives them down the field.",
    "key": [
     "MAHOMES"
    ],
-   "place": {
-    "dl": [
-     1.6,
-     -1.0
-    ]
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "49ERS 22",
+     "CHIEFS 19"
+    ],
+    "endZone": 8,
+    "zoneA": "#d62828",
+    "zoneB": "#a51c1c"
    },
    "shot": {
-    "type": "low",
-    "on": "qb"
+    "type": "follow",
+    "on": "qb",
+    "lead": 1
    },
-   "act": {
-    "qb": {
-     "mood": "angry",
-     "action": "throw",
-     "look": "camera"
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        -2.0,
+        0.5
+       ],
+       [
+        0.175,
+        -0.875,
+        0.375
+       ],
+       [
+        0.35,
+        0.25,
+        0.25
+       ],
+       [
+        0.525,
+        1.375,
+        0.125
+       ],
+       [
+        0.7,
+        2.5,
+        0.0
+       ],
+       [
+        1.0,
+        2.8,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.75,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "dl": {
+      "path": [
+       [
+        0.0,
+        1.0,
+        -2.6
+       ],
+       [
+        0.175,
+        1.6,
+        -2.4
+       ],
+       [
+        0.35,
+        2.2,
+        -2.2
+       ],
+       [
+        0.525,
+        2.8,
+        -2.0
+       ],
+       [
+        0.7,
+        3.4,
+        -1.8
+       ],
+       [
+        1.0,
+        3.6,
+        -1.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.75,
+        "idle"
+       ]
+      ],
+      "face": -120
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        1.0,
+        2.6
+       ],
+       [
+        0.25,
+        2.25,
+        2.45
+       ],
+       [
+        0.5,
+        3.5,
+        2.3
+       ],
+       [
+        0.75,
+        4.75,
+        2.15
+       ],
+       [
+        1.0,
+        6.0,
+        2.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     }
     },
-    "dl": {
-     "mood": "worried",
-     "look": "qb"
-    }
+    "carry": [
+     [
+      0,
+      "qb"
+     ]
+    ]
    }
   },
   {
-   "text": "Three yard touchdown to Mecole Hardman. Chiefs win, twenty five to twenty two.",
-   "cap": "3-yard touchdown to Mecole Hardman. Chiefs win, 25 to 22.",
+   "text": "Three yard touchdown to Mecole Hardman.",
+   "cap": "3-yard touchdown to Mecole Hardman.",
+   "key": [
+    "3-YARD"
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "wr",
+    "lead": 0,
+    "z": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        2.8,
+        0.0
+       ],
+       [
+        1,
+        2.8,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "dl": {
+      "path": [
+       [
+        0.0,
+        3.6,
+        -1.8
+       ],
+       [
+        0.25,
+        3.95,
+        -1.75
+       ],
+       [
+        0.5,
+        4.3,
+        -1.7
+       ],
+       [
+        0.75,
+        4.65,
+        -1.65
+       ],
+       [
+        1.0,
+        5.0,
+        -1.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        6.0,
+        2.0
+       ],
+       [
+        0.15,
+        6.7,
+        1.75
+       ],
+       [
+        0.3,
+        7.4,
+        1.5
+       ],
+       [
+        0.45,
+        8.1,
+        1.25
+       ],
+       [
+        0.6,
+        8.8,
+        1.0
+       ],
+       [
+        0.7,
+        8.95,
+        1.0
+       ],
+       [
+        0.8,
+        9.1,
+        1.0
+       ],
+       [
+        0.9,
+        9.25,
+        1.0
+       ],
+       [
+        1.0,
+        9.4,
+        1.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.6,
+        "catch"
+       ],
+       [
+        0.75,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.25,
+      3.0,
+      1.6,
+      0.0
+     ],
+     [
+      0.425,
+      5.9,
+      2.8,
+      0.5
+     ],
+     [
+      0.6,
+      8.8,
+      1.3,
+      1.0
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.25,
+      null
+     ],
+     [
+      0.6,
+      "wr"
+     ]
+    ]
+   },
+   "sfx": [
+    [
+     0.62,
+     "roar"
+    ]
+   ]
+  },
+  {
+   "text": "Chiefs win, twenty five to twenty two.",
+   "cap": "Chiefs win, 25 to 22.",
    "key": [
     "25"
-   ],
-   "board": [
-    "CHIEFS 25",
-    "49ERS 22"
    ],
    "place": {
     "wr": [
@@ -410,17 +795,17 @@
      "action": "cheer",
      "look": "qb"
     }
-   }
+   },
+   "board": [
+    "CHIEFS 25",
+    "49ERS 22"
+   ]
   },
   {
-   "text": "Three seconds were left in the first overtime period.",
-   "cap": "3 seconds were left in the first overtime period.",
+   "text": "Three seconds left in that overtime period.",
+   "cap": "3 seconds left in that overtime period.",
    "key": [
     "3"
-   ],
-   "board": [
-    "OT",
-    "0:03"
    ],
    "shot": {
     "type": "wide",
@@ -440,18 +825,18 @@
      "mood": "happy",
      "action": "cheer"
     }
-   }
+   },
+   "board": [
+    "OT",
+    "0:03"
+   ]
   },
   {
-   "text": "Afterward, 49ers defender Arik Armstead said he didn't even know about the new rule.",
+   "text": "Afterward, some of you admit it. You didn't know the rule.",
    "key": [
     "KNOW"
    ],
    "set": "locker",
-   "board": [
-    "OT RULE:",
-    "NEW?"
-   ],
    "place": {
     "dl": [
      0,
@@ -468,12 +853,16 @@
      "action": "shrug",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "OT RULE:",
+    "NEW?"
+   ]
   },
   {
-   "text": "Fullback Kyle Juszczyk said he didn't realize the rules were different.",
+   "text": "Arik Armstead didn't know. Kyle Juszczyk didn't either.",
    "key": [
-    "DIFFERENT."
+    "EITHER."
    ],
    "place": {
     "fb": [
@@ -503,15 +892,11 @@
    }
   },
   {
-   "text": "Chiefs players said they had talked it through beforehand.",
+   "text": "The Chiefs? They talked it through beforehand.",
    "key": [
     "BEFOREHAND."
    ],
    "set": "press",
-   "board": [
-    "OT PLAN:",
-    "READY"
-   ],
    "place": {
     "qb": "center",
     "wr": "right"
@@ -530,17 +915,17 @@
      "mood": "happy",
      "action": "clap"
     }
-   }
+   },
+   "board": [
+    "OT PLAN:",
+    "READY"
+   ]
   },
   {
-   "text": "Do you know your league's overtime rules? Yes or no?",
+   "text": "Do you know your overtime rules? Yes or no? Niners fans, study up.",
    "key": [
     "YES",
     "NO?"
-   ],
-   "board": [
-    "OT RULES:",
-    "YES OR NO?"
    ],
    "place": {
     "capy": [
@@ -570,29 +955,109 @@
      "look": "capy"
     }
    },
+   "board": [
+    "OT RULES:",
+    "YES OR NO?"
+   ],
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "SI: 49ers players admitted they didn't know Super Bowl overtime rules after loss to Chiefs",
-   "url": "https://www.si.com/nfl/2024/02/12/49ers-players-chiefs-didnt-know-super-bowl-overtime-rules"
+   "claim": "In February 2024 the 49ers played the Chiefs in the Super Bowl",
+   "terms": [
+    "49ers",
+    "Chiefs",
+    "Super Bowl"
+   ]
   },
   {
-   "title": "FOX 9: 49ers players admit being unaware of overtime rules in Super Bowl LVIII",
-   "url": "https://www.fox9.com/sports/49ers-players-unaware-overtime-rules-super-bowl-lviii"
+   "claim": "It was 19-19 after regulation",
+   "terms": [
+    "19-19|19 19"
+   ]
   },
   {
-   "title": "Chiefs.com: Chiefs defeat 49ers 25-22 to secure a second straight world championship",
-   "url": "https://chiefs.com/news/chiefs-defeat-49ers-25-22-to-secure-a-second-straight-world-championship"
+   "claim": "Only the second Super Bowl to reach overtime",
+   "terms": [
+    "second",
+    "overtime"
+   ]
   },
   {
-   "title": "KSHB: Super Bowl LVIII game report, Chiefs rally past 49ers in OT",
-   "url": "https://kshb.com/sports/football/chiefs/super-bowl-lviii-game-report-chiefs-rally-past-49ers-in-ot-for-dynasty-clinching-crown"
+   "claim": "The first under new rules where both teams get the ball",
+   "terms": [
+    "both teams",
+    "possession"
+   ]
   },
   {
-   "title": "CBS Sports (AP): Mahomes rallies the Chiefs to second straight Super Bowl title, 25-22 over 49ers in overtime",
-   "url": "https://www.cbssports.com/nfl/news/patrick-mahomes-rallies-the-chiefs-to-second-straight-super-bowl-title-25-22-over-49ers-in-overtime"
+   "claim": "The 49ers won the toss and took the ball",
+   "terms": [
+    "49ers",
+    "toss"
+   ]
+  },
+  {
+   "claim": "Kyle Shanahan wanted the last possession",
+   "terms": [
+    "Shanahan",
+    "ball|possession"
+   ]
+  },
+  {
+   "claim": "The 49ers kicked a field goal for 22-19",
+   "terms": [
+    "22-19"
+   ]
+  },
+  {
+   "claim": "Patrick Mahomes drove the Chiefs down the field",
+   "terms": [
+    "Mahomes",
+    "drive"
+   ]
+  },
+  {
+   "claim": "A 3-yard touchdown to Mecole Hardman won it 25-22",
+   "terms": [
+    "Hardman",
+    "3-yard|3 yard"
+   ]
+  },
+  {
+   "claim": "The Chiefs won 25-22",
+   "terms": [
+    "25-22"
+   ]
+  },
+  {
+   "claim": "Three seconds were left in the first overtime period",
+   "terms": [
+    "3 seconds|three seconds"
+   ]
+  },
+  {
+   "claim": "Arik Armstead said he didn't know the rule",
+   "terms": [
+    "Armstead",
+    "know"
+   ]
+  },
+  {
+   "claim": "Kyle Juszczyk didn't know either",
+   "terms": [
+    "Juszczyk",
+    "know|realize"
+   ]
+  },
+  {
+   "claim": "The Chiefs had talked it through beforehand",
+   "terms": [
+    "Chiefs",
+    "talked|discuss|prepared"
+   ]
   }
  ]
 }
