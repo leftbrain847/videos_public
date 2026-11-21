@@ -67,19 +67,36 @@
     "headset": true
    },
    "at": "right"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#97233f",
+    "pants": "#3c3c3c",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "This month, Aaron Donald got a sack. His first in one thousand fifty days.",
-   "cap": "This month, Aaron Donald got a sack. His first in 1,050 days.",
+   "text": "One thousand fifty days. Then you finally get a sack.",
+   "cap": "1,050 days. Then you finally get a sack.",
    "key": [
     "1,050"
    ],
+   "speaker": "capy",
    "place": {
+    "donald": [
+     0.2,
+     0
+    ],
     "beck": false,
     "young": false,
     "coach": false,
+    "fan": false,
     "capy": [
      -2.4,
      0.8
@@ -97,81 +114,186 @@
      "look": "camera"
     },
     "donald": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "His last one came on New Year's Eve, twenty twenty three.",
-   "cap": "His last one came on New Year's Eve, 2023.",
-   "key": [
-    "EVE,"
-   ],
-   "set": "living",
-   "setOpts": {
-    "boardText": [
-     "DEC 31",
-     "2023"
-    ]
-   },
-   "place": {
-    "donald": [
-     0,
-     -1.2
-    ]
-   },
-   "shot": {
-    "type": "medium",
-    "on": "donald"
-   },
-   "act": {
-    "donald": {
-     "mood": "happy",
-     "action": "point",
+     "mood": "smug",
+     "action": "cross",
      "look": "camera"
     }
    }
   },
   {
-   "text": "That spring, he retired. Football was over. Or so it seemed.",
+   "text": "You're Aaron Donald. Los Angeles Rams. Number ninety nine.",
+   "cap": "You're Aaron Donald. Los Angeles Rams. Number 99.",
    "key": [
-    "RETIRED."
+    "DONALD."
    ],
    "place": {
     "donald": [
      0,
-     -1.2
-    ]
+     0
+    ],
+    "beck": false,
+    "young": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "wide",
+    "type": "low",
     "on": "donald"
    },
    "act": {
     "donald": {
-     "mood": "smug",
+     "mood": "neutral",
      "action": "idle",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Two seasons later, in late August, he came back to the Rams.",
+   "text": "Your last sack? Back in twenty twenty three. Long ago.",
+   "cap": "Your last sack? Back in 2023. Long ago.",
    "key": [
-    "BACK"
+    "2023."
+   ],
+   "board": [
+    "LAST SACK",
+    "2023"
+   ],
+   "place": {
+    "donald": [
+     0,
+     0
+    ],
+    "beck": false,
+    "young": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "donald"
+   },
+   "act": {
+    "donald": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you retire. Football is over. Done.",
+   "key": [
+    "RETIRE."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "RETIRED",
+     "2024"
+    ]
+   },
+   "place": {
+    "donald": [
+     0.2,
+     3.8
+    ],
+    "beck": false,
+    "young": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "donald",
+    "offset": [
+     1.0,
+     0.4,
+     1.2
+    ]
+   },
+   "act": {
+    "donald": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Or so it seems. Two seasons later, you come back.",
+   "key": [
+    "BACK."
+   ],
+   "speaker": "capy",
+   "board": [
+    "UNRETIRED",
+    "2026"
+   ],
+   "place": {
+    "donald": [
+     1.2,
+     4.0
+    ],
+    "beck": false,
+    "young": false,
+    "coach": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "donald"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "donald": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Week after week, you play. Still no sack. Not one.",
+   "key": [
+    "NO",
+    "SACK."
    ],
    "set": "locker",
    "setOpts": {
     "boardText": [
-     "RETURN:",
-     "99"
+     "2026 SACKS",
+     "0"
     ]
    },
+   "board": [
+    "2026 SACKS",
+    "0"
+   ],
    "place": {
-    "donald": "center",
-    "coach": "right"
+    "donald": [
+     -1.2,
+     0
+    ],
+    "beck": false,
+    "young": false,
+    "coach": [
+     1.4,
+     0
+    ],
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "two",
@@ -180,38 +302,21 @@
    },
    "act": {
     "donald": {
-     "mood": "happy",
-     "action": "wave",
+     "mood": "worried",
+     "action": "slump",
      "look": "coach"
     },
     "coach": {
-     "mood": "shocked",
+     "mood": "neutral",
      "action": "hold",
      "look": "donald"
     }
    }
   },
   {
-   "text": "Then came week after week of games. And no sacks.",
+   "text": "Then you visit Arizona. Their rookie quarterback? Carson Beck.",
    "key": [
-    "NO",
-    "SACKS."
-   ],
-   "shot": {
-    "type": "close",
-    "on": "donald"
-   },
-   "act": {
-    "donald": {
-     "mood": "worried",
-     "action": "facepalm"
-    }
-   }
-  },
-  {
-   "text": "Then, in Arizona, he lines up across from rookie quarterback Carson Beck.",
-   "key": [
-    "ROOKIE"
+    "BECK."
    ],
    "set": "field",
    "setOpts": {
@@ -221,88 +326,356 @@
     ]
    },
    "place": {
-    "donald": "left",
-    "beck": "right"
+    "donald": [
+     -1.4,
+     0
+    ],
+    "beck": [
+     1.6,
+     0
+    ],
+    "young": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "medium",
-    "on": "donald"
+    "type": "wide",
+    "on": "beck",
+    "offset": [
+     -1.4,
+     0,
+     -2
+    ]
    },
    "act": {
+    "donald": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "beck"
+    },
     "beck": {
      "mood": "worried",
      "action": "hold",
      "look": "donald"
-    },
-    "donald": {
-     "mood": "angry",
-     "action": "idle",
-     "look": "camera"
     }
    }
   },
   {
-   "text": "Donald gets home. Sack number one, finally.",
+   "text": "You get past your blocker. Sack. Finally.",
    "key": [
-    "FINALLY."
-   ],
-   "shot": {
-    "type": "two",
-    "on": "donald",
-    "with": "beck"
-   },
-   "act": {
-    "donald": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "beck": {
-     "mood": "shocked",
-     "action": "slump"
-    }
-   }
-  },
-  {
-   "text": "Later he splits another with Byron Young. One and a half on the day.",
-   "cap": "Later he splits another with Byron Young. 1.5 on the day.",
-   "key": [
-    "1.5"
+    "SACK."
    ],
    "place": {
-    "young": [
-     -1.0,
-     0.6
+    "capy": false,
+    "young": false,
+    "coach": false,
+    "fan": false
+   },
+   "act": {},
+   "shot": {
+    "type": "follow",
+    "on": "donald"
+   },
+   "play": {
+    "cast": {
+     "beck": {
+      "path": [
+       [
+        0.0,
+        5.0,
+        0.0
+       ],
+       [
+        0.045,
+        5.38,
+        0.0
+       ],
+       [
+        0.091,
+        5.75,
+        0.0
+       ],
+       [
+        0.136,
+        6.12,
+        0.0
+       ],
+       [
+        0.181,
+        6.5,
+        0.0
+       ],
+       [
+        0.227,
+        6.88,
+        0.0
+       ],
+       [
+        0.272,
+        7.25,
+        0.0
+       ],
+       [
+        0.317,
+        7.62,
+        0.0
+       ],
+       [
+        0.363,
+        8.0,
+        0.0
+       ],
+       [
+        0.408,
+        8.0,
+        0.0
+       ],
+       [
+        0.454,
+        8.0,
+        0.0
+       ],
+       [
+        0.499,
+        8.0,
+        0.0
+       ],
+       [
+        0.545,
+        8.0,
+        0.0
+       ],
+       [
+        0.59,
+        8.0,
+        0.0
+       ],
+       [
+        0.636,
+        8.0,
+        0.0
+       ],
+       [
+        0.681,
+        8.0,
+        0.0
+       ],
+       [
+        0.727,
+        8.0,
+        0.0
+       ],
+       [
+        0.772,
+        8.0,
+        0.0
+       ],
+       [
+        0.818,
+        8.0,
+        0.0
+       ],
+       [
+        0.863,
+        8.0,
+        0.0
+       ],
+       [
+        0.909,
+        8.0,
+        0.0
+       ],
+       [
+        0.954,
+        8.0,
+        0.0
+       ],
+       [
+        1.0,
+        8,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.363,
+        "hold"
+       ],
+       [
+        0.574,
+        "slump"
+       ]
+      ],
+      "face": -90
+     },
+     "donald": {
+      "path": [
+       [
+        0.0,
+        1.0,
+        -2.5
+       ],
+       [
+        0.045,
+        1.5,
+        -2.45
+       ],
+       [
+        0.091,
+        2.0,
+        -2.4
+       ],
+       [
+        0.136,
+        2.5,
+        -2.35
+       ],
+       [
+        0.181,
+        3.0,
+        -2.3
+       ],
+       [
+        0.227,
+        3.5,
+        -2.25
+       ],
+       [
+        0.272,
+        4.0,
+        -2.2
+       ],
+       [
+        0.317,
+        4.4,
+        -1.9
+       ],
+       [
+        0.363,
+        4.8,
+        -1.6
+       ],
+       [
+        0.408,
+        5.2,
+        -1.3
+       ],
+       [
+        0.453,
+        5.6,
+        -1.0
+       ],
+       [
+        0.498,
+        6.0,
+        -0.7
+       ],
+       [
+        0.544,
+        6.4,
+        -0.4
+       ],
+       [
+        0.589,
+        6.41,
+        -0.4
+       ],
+       [
+        0.635,
+        6.42,
+        -0.4
+       ],
+       [
+        0.681,
+        6.43,
+        -0.4
+       ],
+       [
+        0.726,
+        6.44,
+        -0.4
+       ],
+       [
+        0.772,
+        6.45,
+        -0.4
+       ],
+       [
+        0.818,
+        6.46,
+        -0.4
+       ],
+       [
+        0.863,
+        6.47,
+        -0.4
+       ],
+       [
+        0.909,
+        6.48,
+        -0.4
+       ],
+       [
+        0.954,
+        6.49,
+        -0.4
+       ],
+       [
+        1.0,
+        6.5,
+        -0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.574,
+        "celebrate"
+       ]
+      ],
+      "face": 60
+     }
+    },
+    "carry": [
+     [
+      0,
+      "beck"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "The drought is over. Almost three years.",
+   "cap": "The drought is over. Almost 3 years.",
+   "key": [
+    "OVER."
+   ],
+   "speaker": "capy",
+   "board": [
+    "DROUGHT",
+    "OVER"
+   ],
+   "place": {
+    "donald": [
+     1.6,
+     0.2
     ],
-    "beck": false
-   },
-   "shot": {
-    "type": "medium",
-    "on": "young"
-   },
-   "act": {
-    "young": {
-     "mood": "happy",
-     "action": "clap",
-     "look": "donald"
-    },
-    "donald": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   }
-  },
-  {
-   "text": "No Ram aged thirty five or older had ever had more than one sack in a game.",
-   "cap": "No Ram aged 35 or older had ever had more than 1 sack in a game.",
-   "key": [
-    "35"
-   ],
-   "place": {
+    "beck": false,
+    "young": false,
+    "coach": false,
+    "fan": false,
     "capy": [
-     -0.4,
-     1.2
-    ],
-    "young": false
+     -1.4,
+     1.0
+    ]
    },
    "shot": {
     "type": "two",
@@ -311,24 +684,138 @@
    },
    "act": {
     "capy": {
-     "mood": "smug",
-     "action": "point",
-     "look": "donald"
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
     },
     "donald": {
-     "mood": "smug",
-     "action": "cross"
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "His career total: one hundred twelve and a half. Thirty first all time.",
-   "cap": "His career total: 112.5. 31st all time.",
+   "text": "Later, you keep coming. All game long.",
    "key": [
-    "112.5"
+    "COMING."
    ],
    "place": {
+    "donald": [
+     -1.2,
+     0
+    ],
+    "beck": false,
+    "young": [
+     1.2,
+     0
+    ],
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "donald",
+    "with": "young"
+   },
+   "act": {
+    "donald": {
+     "mood": "happy",
+     "action": "celebrate",
+     "look": "young"
+    },
+    "young": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "donald"
+    }
+   }
+  },
+  {
+   "text": "Rams thirty four, Cardinals six. Not close.",
+   "cap": "Rams 34, Cardinals 6. Not close.",
+   "key": [
+    "34,"
+   ],
+   "board": [
+    "LAR 34",
+    "ARI 6"
+   ],
+   "place": {
+    "donald": false,
+    "beck": [
+     0,
+     0
+    ],
+    "young": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "beck"
+   },
+   "act": {
+    "beck": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your verdict after? The sack felt good. Nice.",
+   "key": [
+    "GOOD."
+   ],
+   "speaker": "capy",
+   "place": {
+    "donald": [
+     1.6,
+     0
+    ],
+    "beck": false,
+    "young": false,
+    "coach": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "donald": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The win felt even better. Team first.",
+   "key": [
+    "BETTER."
+   ],
+   "place": {
+    "donald": [
+     0,
+     0
+    ],
+    "beck": false,
+    "young": false,
+    "coach": false,
+    "fan": false,
     "capy": false
    },
    "shot": {
@@ -338,109 +825,119 @@
    "act": {
     "donald": {
      "mood": "happy",
-     "action": "hold"
-    }
-   }
-  },
-  {
-   "text": "The Rams win, thirty four to six. Their fourth straight.",
-   "cap": "The Rams win, 34 to 6. Their 4th straight.",
-   "key": [
-    "34"
-   ],
-   "place": {
-    "young": "right"
-   },
-   "shot": {
-    "type": "wide",
-    "on": "donald"
-   },
-   "act": {
-    "donald": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "young": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   }
-  },
-  {
-   "text": "His verdict: the sack felt good. The win felt even better.",
-   "key": [
-    "BETTER."
-   ],
-   "set": "press",
-   "setOpts": {
-    "boardText": [
-     "RAMS 34",
-     "CARDS 6"
-    ]
-   },
-   "place": {
-    "donald": "center"
-   },
-   "shot": {
-    "type": "medium",
-    "on": "donald"
-   },
-   "act": {
-    "donald": {
-     "mood": "happy",
-     "action": "talk",
+     "action": "cheer",
      "look": "camera"
     }
    }
   },
   {
-   "text": "His coach called him one of one.",
-   "cap": "His coach called him 1 of 1.",
+   "text": "Not bad for a retiree. High praise.",
    "key": [
-    "1"
+    "PRAISE."
    ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "RAMS",
+     "34-6"
+    ]
+   },
    "place": {
     "donald": false,
-    "coach": "center"
+    "beck": false,
+    "young": false,
+    "coach": [
+     0,
+     0.4
+    ],
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "close",
+    "type": "medium",
     "on": "coach"
    },
    "act": {
     "coach": {
      "mood": "happy",
-     "action": "talk",
+     "action": "point",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Would you come out of retirement for one sack? Yes or no?",
+   "text": "Cardinals fans, he was retired. Couch retired. Now look.",
    "key": [
-    "RETIREMENT"
+    "RETIRED."
    ],
+   "speaker": "capy",
    "set": "living",
    "setOpts": {
     "boardText": [
-     "SACKS:",
-     "1"
+     "RETIRED?",
+     "1 SACK"
     ]
    },
    "place": {
-    "capy": [
-     -0.9,
-     -1.2
+    "donald": false,
+    "beck": false,
+    "young": false,
+    "coach": false,
+    "fan": [
+     1.0,
+     4.2
     ],
-    "donald": [
-     0.9,
-     -1.4
+    "capy": [
+     -1.6,
+     3.6
     ]
    },
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "donald"
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Would you unretire for one sack? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "UNRETIRE?",
+    "YES OR NO"
+   ],
+   "place": {
+    "donald": false,
+    "beck": false,
+    "young": false,
+    "coach": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -448,18 +945,17 @@
      "action": "talk",
      "look": "camera"
     },
-    "donald": {
-     "mood": "happy",
-     "action": "wave",
-     "look": "camera"
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
   {
-   "title": "TSN/ESPN: Donald savours first sack in 1,050 days, but Rams' win 'felt even better'",
+   "title": "TSN (ESPN): Aaron Donald savors first sack in 1,050 days, but Rams' win 'felt even better'",
    "url": "https://www.tsn.ca/nfl/article/donald-savours-first-sack-in-1050-days-but-rams-win-felt-even-better-n1-50497324/"
   },
   {
@@ -467,8 +963,79 @@
    "url": "https://sports.yahoo.com/articles/aaron-donald-ends-sack-drought-231216114.html"
   },
   {
-   "title": "Yahoo Sports: Rams star Aaron Donald records first sack since coming out of retirement",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/rams-star-aaron-donald-records-first-sack-since-coming-out-of-retirement-in-game-vs-cardinals-220938892.html"
+   "title": "Yahoo Sports: Aaron Donald records first sack since coming out of retirement as Rams shut down Carson Beck, Cardinals",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/aaron-donald-records-first-sack-since-coming-out-of-retirement-as-rams-shut-down-carson-beck-cardinals-235134756.html"
+  },
+  {
+   "title": "Yahoo Sports: Rams' Aaron Donald makes feelings clear after ending 1,050-day sack drought",
+   "url": "https://sports.yahoo.com/articles/rams-aaron-donald-makes-feelings-053345179.html"
+  },
+  {
+   "title": "Yahoo Sports: Rams crush Cardinals 34-6",
+   "url": "https://sports.yahoo.com/articles/rams-crush-cardinals-34-6-204310718.html"
+  },
+  {
+   "title": "TheRams.com: Aaron Donald's dominance helps deliver Rams win over Cardinals",
+   "url": "https://www.therams.com/news/aaron-donald-s-dominance-helps-deliver-rams-primetime-win-over-cardinals"
+  },
+  {
+   "title": "TheRams.com: Aaron Donald unretires, will play for Rams in 2026",
+   "url": "https://therams.com/news/aaron-donald-unretires-will-play-for-rams-in-2026"
+  },
+  {
+   "title": "ClutchPoints: Aaron Donald health status after win over Cardinals",
+   "url": "https://clutchpoints.com/nfl/los-angeles-rams/rams-news-aaron-donald-health-status-after-win-cardinals"
+  },
+  {
+   "title": "ProFootballTalk: Sean McVay, Aaron Donald never ceases to amaze me, he's one-of-one",
+   "url": "https://nbcsports.com/nfl/profootballtalk/rumor-mill/news/sean-mcvay-aaron-donald-never-ceases-to-amaze-me-hes-one-of-one"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Donald's sack was his first in 1,050 days",
+   "terms": [
+    "1,050|1050"
+   ]
+  },
+  {
+   "claim": "His previous sack came in 2023",
+   "terms": [
+    "2023"
+   ]
+  },
+  {
+   "claim": "Donald retired and came out of retirement",
+   "terms": [
+    "retire"
+   ]
+  },
+  {
+   "claim": "It was his first sack since coming out of retirement",
+   "terms": [
+    "first sack",
+    "retirement"
+   ]
+  },
+  {
+   "claim": "The Cardinals' rookie quarterback was Carson Beck",
+   "terms": [
+    "Beck",
+    "rookie"
+   ]
+  },
+  {
+   "claim": "Rams won 34-6",
+   "terms": [
+    "34-6"
+   ]
+  },
+  {
+   "claim": "Donald said the win felt even better than the sack",
+   "terms": [
+    "felt even better"
+   ]
   }
  ]
 }

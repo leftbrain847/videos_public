@@ -78,17 +78,37 @@
    },
    "at": "desk",
    "hold": "phone"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#fb4f14",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "Last Sunday, four NFL referees worked two full games. On the same day.",
+   "text": "You're an N F L official. You work two games. Same day.",
+   "cap": "You're an NFL official. You work 2 games. Same day.",
    "key": [
-    "TWO",
     "SAME"
    ],
+   "speaker": "capy",
    "place": {
+    "willard": [
+     0.2,
+     0
+    ],
+    "killens": false,
+    "walker": false,
+    "larrew": false,
     "boss": false,
+    "fan": false,
     "capy": [
      -2.4,
      0.8
@@ -109,19 +129,15 @@
      "mood": "worried",
      "action": "hold",
      "look": "capy"
-    },
-    "killens": {
-     "mood": "neutral",
-     "action": "cross"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "That week, a nationwide ground stop froze flights across the country.",
+   "text": "The F A A orders a ground stop.",
+   "cap": "The FAA orders a ground stop.",
    "key": [
     "GROUND",
-    "STOP"
+    "STOP."
    ],
    "set": "office",
    "setOpts": {
@@ -131,7 +147,16 @@
     ]
    },
    "place": {
-    "boss": "desk"
+    "willard": false,
+    "killens": false,
+    "walker": false,
+    "larrew": false,
+    "boss": [
+     0.6,
+     0.4
+    ],
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "medium",
@@ -146,10 +171,22 @@
    }
   },
   {
-   "text": "Officials couldn't fly to their games. So the league reshuffled the crews.",
+   "text": "Officials can't fly to their games. Nobody can.",
    "key": [
-    "RESHUFFLED"
+    "FLY"
    ],
+   "place": {
+    "willard": false,
+    "killens": false,
+    "walker": false,
+    "larrew": false,
+    "boss": [
+     0.6,
+     0.4
+    ],
+    "fan": false,
+    "capy": false
+   },
    "shot": {
     "type": "close",
     "on": "boss"
@@ -157,51 +194,148 @@
    "act": {
     "boss": {
      "mood": "worried",
-     "action": "talk"
-    }
-   }
-  },
-  {
-   "text": "Everyone got a game within driving distance of home. Four men got two.",
-   "key": [
-    "DRIVING",
-    "TWO"
-   ],
-   "shot": {
-    "type": "wide",
-    "on": "boss"
-   },
-   "act": {
-    "boss": {
-     "mood": "neutral",
-     "action": "point",
+     "action": "talk",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Game one: Dolphins at Colts, one p.m., Indianapolis.",
-   "cap": "Game 1: Dolphins at Colts, 1 p.m., Indianapolis.",
+   "text": "So the league reshuffles the crews. Everyone drives. Closest game wins.",
    "key": [
-    "1"
+    "DRIVES."
+   ],
+   "speaker": "capy",
+   "board": [
+    "CREWS:",
+    "DRIVE IN"
+   ],
+   "place": {
+    "willard": false,
+    "killens": false,
+    "walker": false,
+    "larrew": false,
+    "boss": [
+     1.6,
+     0.4
+    ],
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Four officials get two games. You're one of them.",
+   "cap": "4 officials get 2 games. You're one of them.",
+   "key": [
+    "4"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "TODAY:",
+     "2 GAMES"
+    ]
+   },
+   "place": {
+    "willard": [
+     -2.4,
+     0
+    ],
+    "killens": [
+     -0.8,
+     0
+    ],
+    "walker": [
+     0.8,
+     0
+    ],
+    "larrew": [
+     2.4,
+     0
+    ],
+    "boss": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "killens",
+    "offset": [
+     0.8,
+     0,
+     -1
+    ]
+   },
+   "act": {
+    "willard": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "killens": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "camera"
+    },
+    "walker": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "larrew": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Game one. Dolphins at Colts, in Indianapolis.",
+   "cap": "Game 1. Dolphins at Colts, in Indianapolis.",
+   "key": [
+    "COLTS,"
    ],
    "set": "field",
    "setOpts": {
     "boardText": [
-     "DOLPHINS 22",
-     "COLTS 24"
+     "MIA AT IND",
+     "1:00 PM"
     ]
    },
+   "board": [
+    "MIA AT IND",
+    "1:00 PM"
+   ],
    "place": {
-    "willard": "center",
-    "killens": "right",
-    "walker": "left",
-    "larrew": [
+    "willard": [
      0,
-     -2.4
+     0
     ],
-    "capy": false,
-    "boss": false
+    "killens": false,
+    "walker": false,
+    "larrew": false,
+    "boss": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "low",
@@ -209,28 +343,37 @@
    },
    "act": {
     "willard": {
-     "mood": "happy",
-     "action": "point",
-     "look": "camera"
-    },
-    "killens": {
-     "mood": "neutral"
-    },
-    "walker": {
      "mood": "neutral",
-     "action": "clap"
-    },
-    "larrew": {
-     "mood": "happy"
+     "action": "idle",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Colts win, twenty four to twenty two. No time to celebrate.",
-   "cap": "Colts win, 24 to 22. No time to celebrate.",
+   "text": "Colts win, twenty four to twenty two. Barely.",
+   "cap": "Colts win, 24-22. Barely.",
    "key": [
-    "24"
+    "24-22."
    ],
+   "board": [
+    "IND 24",
+    "MIA 22"
+   ],
+   "place": {
+    "willard": [
+     -1.2,
+     0
+    ],
+    "killens": [
+     1.2,
+     0
+    ],
+    "walker": false,
+    "larrew": false,
+    "boss": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
     "type": "two",
     "on": "willard",
@@ -239,7 +382,8 @@
    "act": {
     "willard": {
      "mood": "neutral",
-     "action": "wave"
+     "action": "wave",
+     "look": "camera"
     },
     "killens": {
      "mood": "neutral",
@@ -249,241 +393,205 @@
    }
   },
   {
-   "text": "Then the four climb into a van. One hundred ten miles to Cincinnati.",
-   "cap": "Then the 4 climb into a van. 110 miles to Cincinnati.",
+   "text": "No shower. No nap. Into a van.",
    "key": [
-    "VAN",
-    "110"
+    "VAN."
    ],
-   "set": "tunnel",
-   "setOpts": {
-    "boardText": [
-     "NEXT:",
-     "CINCINNATI"
-    ]
-   },
+   "speaker": "capy",
    "place": {
-    "walker": "left",
-    "larrew": "right",
-    "willard": [
-     0,
-     -1.4
-    ],
+    "willard": false,
     "killens": [
-     0.9,
-     -2.6
+     1.6,
+     0
+    ],
+    "walker": false,
+    "larrew": false,
+    "boss": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
     ]
    },
    "shot": {
     "type": "medium",
-    "on": "walker"
-   },
-   "act": {
-    "walker": {
-     "mood": "worried",
-     "action": "point",
-     "look": "camera"
-    },
-    "larrew": {
-     "mood": "worried",
-     "action": "shrug",
-     "look": "walker"
-    }
-   }
-  },
-  {
-   "text": "Game two: Steelers at Bengals. Sunday Night Football.",
-   "key": [
-    "NIGHT"
-   ],
-   "shot": {
-    "type": "wide",
-    "on": "willard"
-   },
-   "act": {
-    "willard": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "camera"
-    },
-    "killens": {
-     "mood": "smug",
-     "action": "cross"
-    }
-   }
-  },
-  {
-   "text": "Same four whistles. A different stadium. Under the lights.",
-   "cap": "Same 4 whistles. A different stadium. Under the lights.",
-   "key": [
-    "LIGHTS."
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "STEELERS 18",
-     "BENGALS 38"
-    ]
-   },
-   "place": {
-    "willard": "center",
-    "killens": "right",
-    "walker": [
-     -1.4,
-     -2.4
-    ],
-    "larrew": [
-     1.4,
-     -2.6
-    ],
-    "capy": [
-     -2.4,
-     0.8
-    ]
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "willard"
+    "on": "capy"
    },
    "act": {
     "capy": {
      "mood": "smug",
-     "action": "talk",
+     "action": "point",
      "look": "camera"
     },
-    "willard": {
-     "mood": "neutral",
-     "action": "hold",
+    "killens": {
+     "mood": "sad",
+     "action": "slump",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Final tally: two hundred forty two plays.",
-   "cap": "Final tally: 242 plays.",
+   "text": "One hundred ten miles to Cincinnati.",
+   "cap": "110 miles to Cincinnati.",
    "key": [
-    "242"
+    "110"
+   ],
+   "board": [
+    "CINCINNATI",
+    "110 MI"
    ],
    "place": {
+    "willard": false,
+    "killens": false,
+    "walker": [
+     -1.2,
+     0
+    ],
+    "larrew": [
+     1.2,
+     0
+    ],
+    "boss": false,
+    "fan": false,
     "capy": false
    },
    "shot": {
-    "type": "high",
-    "on": "willard"
+    "type": "wide",
+    "on": "walker",
+    "offset": [
+     1.2,
+     0,
+     -2
+    ]
    },
    "act": {
-    "willard": {
+    "walker": {
      "mood": "worried",
-     "action": "slump"
+     "action": "walk",
+     "look": "camera"
     },
-    "killens": {
+    "larrew": {
      "mood": "worried",
-     "action": "slump"
-    }
-   }
-  },
-  {
-   "text": "Thirty penalties. Three challenges. Two reversed.",
-   "cap": "30 penalties. 3 challenges. 2 reversed.",
-   "key": [
-    "30"
-   ],
-   "shot": {
-    "type": "medium",
-    "on": "killens"
-   },
-   "act": {
-    "killens": {
-     "mood": "confused",
-     "action": "shrug",
+     "action": "walk",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Six hours and fifteen minutes of football, and zero major controversies.",
-   "cap": "6 hours and 15 minutes of football, and 0 major controversies.",
+   "text": "Game two. Steelers at Bengals. Sunday Night Football. Prime time.",
+   "cap": "Game 2. Steelers at Bengals. Sunday Night Football. Prime time.",
    "key": [
-    "0"
+    "NIGHT"
    ],
-   "place": {
-    "larrew": [
-     0.4,
-     0.8
-    ],
-    "walker": [
-     -1.3,
-     -0.6
-    ],
-    "killens": [
-     2.6,
-     -1.8
+   "board": [
+    "PIT AT CIN",
+    "SNF"
+   ],
+   "setOpts": {
+    "boardText": [
+     "PIT AT CIN",
+     "SNF"
     ]
    },
+   "place": {
+    "willard": false,
+    "killens": false,
+    "walker": false,
+    "larrew": [
+     0,
+     0
+    ],
+    "boss": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
-    "type": "low",
+    "type": "close",
     "on": "larrew"
    },
    "act": {
     "larrew": {
-     "mood": "smug",
-     "action": "clap",
+     "mood": "shocked",
+     "action": "idle",
      "look": "camera"
-    },
-    "walker": {
-     "mood": "happy",
-     "action": "cheer"
     }
    }
   },
   {
-   "text": "The referees' union called it unprecedented.",
+   "text": "Same four whistles. Different stadium. Same tired legs.",
+   "cap": "Same 4 whistles. Different stadium. Same tired legs.",
    "key": [
-    "UNPRECEDENTED."
+    "SAME"
    ],
-   "set": "press",
-   "setOpts": {
-    "boardText": [
-     "2 GAMES",
-     "1 DAY"
-    ]
-   },
    "place": {
-    "boss": "center"
+    "willard": [
+     -2.4,
+     0
+    ],
+    "killens": [
+     -0.8,
+     0
+    ],
+    "walker": [
+     0.8,
+     0
+    ],
+    "larrew": [
+     2.4,
+     0
+    ],
+    "boss": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
-    "type": "medium",
-    "on": "boss"
+    "type": "high",
+    "on": "killens"
    },
    "act": {
-    "boss": {
-     "mood": "smug",
-     "action": "talk",
-     "look": "camera"
+    "willard": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "killens": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "walker": {
+     "mood": "neutral",
+     "action": "idle"
+    },
+    "larrew": {
+     "mood": "neutral",
+     "action": "idle"
     }
    }
   },
   {
-   "text": "Could you referee two NFL games in one day? Yes or no?",
+   "text": "The final tally? Two hundred forty two plays.",
+   "cap": "The final tally? 242 plays.",
    "key": [
-    "TWO",
-    "DAY?"
+    "242"
    ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "REFS:",
-     "YOU?"
-    ]
-   },
+   "board": [
+    "PLAYS",
+    "242"
+   ],
+   "speaker": "capy",
    "place": {
-    "capy": [
-     -1.6,
-     1.0
+    "willard": [
+     1.6,
+     0
     ],
-    "willard": "center"
+    "killens": false,
+    "walker": false,
+    "larrew": false,
+    "boss": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
    },
    "shot": {
     "type": "two",
@@ -492,31 +600,293 @@
    },
    "act": {
     "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "willard": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "One very, very long day. Start to finish.",
+   "key": [
+    "LONG"
+   ],
+   "board": [
+    "ON DUTY",
+    "ALL DAY"
+   ],
+   "place": {
+    "willard": [
+     0,
+     0
+    ],
+    "killens": false,
+    "walker": false,
+    "larrew": false,
+    "boss": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "willard"
+   },
+   "act": {
+    "willard": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your step count? Don't ask.",
+   "key": [
+    "ASK."
+   ],
+   "speaker": "capy",
+   "board": [
+    "STEPS",
+    "TOO MANY"
+   ],
+   "place": {
+    "willard": false,
+    "killens": false,
+    "walker": false,
+    "larrew": [
+     1.6,
+     0
+    ],
+    "boss": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "larrew": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Bengals fans, good news. Bad calls now come in pairs.",
+   "key": [
+    "PAIRS."
+   ],
+   "speaker": "capy",
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "2 GAMES",
+     "1 CREW"
+    ]
+   },
+   "place": {
+    "willard": false,
+    "killens": false,
+    "walker": false,
+    "larrew": false,
+    "boss": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
+    "capy": [
+     -1.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Could you ref two games in one day? Yes or no?",
+   "cap": "Could you ref 2 games in 1 day? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "2 GAMES",
+    "1 DAY?"
+   ],
+   "place": {
+    "willard": false,
+    "killens": false,
+    "walker": false,
+    "larrew": false,
+    "boss": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
      "mood": "smug",
      "action": "talk",
      "look": "camera"
     },
-    "willard": {
-     "mood": "happy",
-     "action": "wave",
-     "look": "camera"
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
   {
-   "title": "ESPN: Two games, 14 hours, 242 plays: inside four NFL referees' unprecedented same-day doubleheader",
+   "title": "ESPN: Two games, 14 hours, 242 plays: Inside four NFL referees' unprecedented same-day doubleheader",
    "url": "https://www.espn.com/nfl/story/_/id/50497412/nfl-referee-ref-crew-two-games"
   },
   {
-   "title": "ESPN: Working double shifts: Four NFL refs to officiate 2 games due to FAA ground stop",
+   "title": "ESPN: Working double shifts, four NFL refs to officiate 2 games due to FAA ground stop",
    "url": "https://www.espn.com/nfl/story/_/id/50490305/four-nfl-refs-officiate-2-games-due-faa-ground-stop"
   },
   {
-   "title": "Bleacher Report: NFL refs' final stats after working double duty after FAA stoppage",
+   "title": "TSN: Four NFL referees to officiate two games Sunday due to FAA ground stop",
+   "url": "https://www.tsn.ca/nfl/article/four-nfl-refs-to-officiate-two-games-sunday-due-to-faa-ground-stop-n1-50490305/"
+  },
+  {
+   "title": "Yahoo Sports: Four NFL officials will work two games in one day after FAA ground stop",
+   "url": "https://sports.yahoo.com/articles/four-nfl-officials-two-games-164834320.html"
+  },
+  {
+   "title": "Bleacher Report: NFL refs' final stats after working double duty",
    "url": "https://bleacherreport.com/articles/25534190-nfl-refs-final-stats-after-working-double-duty-after-faa-stoppage-impacts-travel-schedules"
+  },
+  {
+   "title": "TSN (ESPN): Inside how one NFL ref crew worked two games in a day",
+   "url": "https://www.tsn.ca/nfl/article/inside-how-one-nfl-ref-crew-worked-two-games-in-a-day-n1-50497412/"
+  },
+  {
+   "title": "NBC Sports Bay Area: Two games, one day, referees and the ground stop",
+   "url": "https://www.nbcsportsbayarea.com/nfl/two-games-one-day-referees-ground-stop/1980618/"
+  },
+  {
+   "title": "NBC Sports Boston: Two games, one day, referees and the ground stop",
+   "url": "https://www.nbcsportsboston.com/nfl/two-games-one-day-referees-ground-stop/814106/"
+  },
+  {
+   "title": "CBS News: 4 NFL officials work 2 games each after FAA ground stop",
+   "url": "https://www.cbsnews.com/news/4-nfl-officials-2-games-each-rarity-faa-ground-stop/"
+  },
+  {
+   "title": "Sports Illustrated: NFL contingency plan resulted in officials working two games",
+   "url": "https://www.si.com/nfl/nfl-contingency-plan-resulted-officials-working-two-games"
+  },
+  {
+   "title": "Heavy: Colts-Dolphins ref working 2 games in 1 day with Bengals-Steelers",
+   "url": "https://heavy.com/sports/nfl/indianapolis-colts/colts-dolphins-ref-2-games-1-day-bengals-steelers/"
+  },
+  {
+   "title": "The Comeback: Four NFL officials will work two games in one day after FAA ground stop",
+   "url": "https://thecomeback.com/nfl/four-nfl-officials-will-work-two-games-in-one-day-after-faa-ground-stop.html"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "An FAA ground stop meant officials could not fly to their games",
+   "terms": [
+    "FAA",
+    "ground stop"
+   ]
+  },
+  {
+   "claim": "The league reshuffled crews so officials could drive",
+   "terms": [
+    "driv"
+   ]
+  },
+  {
+   "claim": "Four officials worked two games on the same day",
+   "terms": [
+    "four|4",
+    "two games|2 games"
+   ]
+  },
+  {
+   "claim": "Game one was Dolphins at Colts",
+   "terms": [
+    "Dolphins",
+    "Colts"
+   ]
+  },
+  {
+   "claim": "The Colts won 24-22",
+   "terms": [
+    "24-22"
+   ]
+  },
+  {
+   "claim": "They then traveled about 110 miles to Cincinnati",
+   "terms": [
+    "110",
+    "Cincinnati"
+   ]
+  },
+  {
+   "claim": "Game two was Steelers at Bengals on Sunday Night Football",
+   "terms": [
+    "Steelers",
+    "Bengals"
+   ]
+  },
+  {
+   "claim": "The night game was Sunday Night Football",
+   "terms": [
+    "Sunday Night Football|Sunday night"
+   ]
+  },
+  {
+   "claim": "The four worked 242 plays",
+   "terms": [
+    "242"
+   ]
   }
  ]
 }
