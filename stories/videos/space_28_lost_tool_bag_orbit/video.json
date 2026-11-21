@@ -1,0 +1,767 @@
+{
+ "id": "space_28_lost_tool_bag_orbit",
+ "title": "The tool bag that orbited Earth for months",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "STS-126"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "heide": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#d9534f",
+    "pants": "#d9534f",
+    "hair": "bun",
+    "hairColor": "#c58a3d",
+    "skin": "#5c3a24"
+   }
+  },
+  "steve": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#d9534f",
+    "pants": "#eef1f5",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "ctl": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true
+   }
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f6d21f",
+    "pants": "#4a4a4a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   },
+   "hold": "phone"
+  },
+  "fan2": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You're fixing the space station. Your tool bag floats away. Into orbit. Seriously.",
+   "key": [
+    "ORBIT."
+   ],
+   "board": [
+    "TOOL BAG",
+    "LOST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "heide": [
+     2.6,
+     -0.6
+    ],
+    "steve": false,
+    "ctl": false,
+    "fan": false,
+    "fan2": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "heide": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "November, two thousand eight. Shuttle Endeavour is docked at the station. Big repair mission.",
+   "cap": "November 2008. Shuttle Endeavour is docked at the station. Big repair mission.",
+   "key": [
+    "ENDEAVOUR"
+   ],
+   "board": [
+    "ENDEAVOUR",
+    "NOV 2008"
+   ],
+   "place": {
+    "capy": false,
+    "heide": [
+     -1.5,
+     0.2
+    ],
+    "steve": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "heide",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "heide": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "steve": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "heide"
+    }
+   }
+  },
+  {
+   "text": "Astronaut Heidemarie Stefanyshyn Piper suits up. She's heading out on a spacewalk.",
+   "cap": "Astronaut Heidemarie Stefanyshyn-Piper suits up. She's heading out on a spacewalk.",
+   "key": [
+    "SPACEWALK."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "heide",
+    "with": "steve"
+   },
+   "act": {
+    "heide": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "steve"
+    },
+    "steve": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "heide"
+    }
+   }
+  },
+  {
+   "text": "Her job? Clean a jammed solar wing joint. Then grease it.",
+   "key": [
+    "GREASE"
+   ],
+   "board": [
+    "JOB:",
+    "GREASE THE JOINT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "heide"
+   },
+   "act": {
+    "heide": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One problem. A grease gun leaks inside her tool bag. Messy.",
+   "key": [
+    "LEAKS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "steve": false,
+    "heide": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "heide"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "heide"
+    },
+    "heide": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Grease. In space. Floating everywhere. Fun.",
+   "key": [
+    "FUN."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "heide": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "She starts cleaning up the mess. Carefully. Then she looks down.",
+   "key": [
+    "DOWN."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "heide"
+   },
+   "act": {
+    "heide": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "heide"
+    }
+   }
+  },
+  {
+   "text": "The bag is drifting away. Slowly. Just out of reach. She can't grab it.",
+   "key": [
+    "DRIFTING"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    },
+    "heide": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The station's cameras watch it go. Bye bye, tools.",
+   "key": [
+    "CAMERAS"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CAMERA 3",
+     "BAG ADRIFT"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "heide": false,
+    "steve": false,
+    "ctl": [
+     0,
+     0.4
+    ],
+    "fan": false,
+    "fan2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Inside: two grease guns. A scraper. More tools.",
+   "key": [
+    "SCRAPER,"
+   ],
+   "board": [
+    "CONTENTS:",
+    "GREASE GUNS +"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Its reported value? Around a hundred thousand dollars.",
+   "cap": "Its reported value? Around $100,000.",
+   "key": [
+    "$100,000."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "ctl": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ctl"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "ctl"
+    },
+    "ctl": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Now it's a brand new satellite. A very bad one. With zero purpose.",
+   "key": [
+    "SATELLITE."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "ctl": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then something wonderful happens. People on Earth spot it. Regular people.",
+   "key": [
+    "SPOT"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "TONIGHT:",
+     "TOOL BAG PASS"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "heide": false,
+    "steve": false,
+    "ctl": false,
+    "fan": [
+     -1.3,
+     4.4
+    ],
+    "fan2": [
+     1.4,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "fan",
+    "with": "fan2",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    },
+    "fan2": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "fan"
+    }
+   }
+  },
+  {
+   "text": "Amateur skywatchers can spot it. Even with binoculars. From their backyards.",
+   "key": [
+    "BINOCULARS."
+   ],
+   "place": {
+    "fan2": false,
+    "fan": [
+     0,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Skywatchers even film it. A glinting dot crossing the stars. Amazing.",
+   "key": [
+    "FILM"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "fan",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The crew finishes the job anyway. Using a partner's tools. Sharing is caring.",
+   "key": [
+    "PARTNER'S"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "JOB",
+     "DONE"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "heide": [
+     -1.4,
+     0.2
+    ],
+    "steve": [
+     1.4,
+     0.2
+    ],
+    "ctl": false,
+    "fan": false,
+    "fan2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "steve"
+   },
+   "act": {
+    "steve": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "heide"
+    },
+    "heide": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "steve"
+    }
+   }
+  },
+  {
+   "text": "Months later, the bag finally falls. It burns up in the atmosphere. Gone for good.",
+   "key": [
+    "BURNS"
+   ],
+   "board": [
+    "BAG",
+    "BURNED UP"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "heide": [
+     -2.6,
+     -0.6
+    ],
+    "steve": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "heide": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    },
+    "steve": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Have you ever lost something this expensive? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "LOST SOMETHING",
+    "THIS PRICEY?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "heide": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Space.com: astronaut laments lost spacewalk tool bag",
+   "url": "https://www.space.com/6131-astronaut-laments-lost-spacewalk-tool-bag.html"
+  },
+  {
+   "title": "Space.com: backyard skywatchers find tool bag lost in space",
+   "url": "https://www.space.com/6160-backyard-skywatchers-find-tool-bag-lost-space.html"
+  },
+  {
+   "title": "Space.com: tool bag lost in space meets fiery end",
+   "url": "https://www.space.com/7088-tool-bag-lost-space-meets-fiery.html"
+  },
+  {
+   "title": "Scientific American: astronaut loses tool bag",
+   "url": "https://www.scientificamerican.com/blog/news-blog/new-space-litter-astronaut-loses-to-2008-11-19/"
+  },
+  {
+   "title": "Universe Today: satellite tracker captures lost toolbag on video",
+   "url": "https://www.universetoday.com/21411/satellite-tracker-captures-lost-toolbag-on-video/"
+  },
+  {
+   "title": "Wikipedia: STS-126",
+   "url": "https://en.wikipedia.org/wiki/STS-126"
+  },
+  {
+   "title": "Space.com: Spacewalkers lose tool bag during space station lube job",
+   "url": "https://www.space.com/6097-spacewalkers-lose-tool-bag-space-station-lube-job.html"
+  },
+  {
+   "title": "The Register: NASA astronaut drops toolbag",
+   "url": "https://www.theregister.com/2008/11/19/dropped_toolbag/"
+  },
+  {
+   "title": "Guinness World Records: Largest object lost on a spacewalk",
+   "url": "https://www.guinnessworldrecords.com/world-records/689697-largest-object-lost-on-a-spacewalk"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In November 2008, Endeavour was docked at the station on STS-126",
+   "terms": [
+    "Endeavour|Endeavor",
+    "2008"
+   ]
+  },
+  {
+   "claim": "Heidemarie Stefanyshyn-Piper made a spacewalk",
+   "terms": [
+    "Stefanyshyn-Piper|Stefanyshyn Piper|Piper"
+   ]
+  },
+  {
+   "claim": "Her job was cleaning and lubricating a solar array joint",
+   "terms": [
+    "joint",
+    "solar|rotary"
+   ]
+  },
+  {
+   "claim": "A grease gun leaked inside her bag",
+   "terms": [
+    "grease gun",
+    "leak"
+   ]
+  },
+  {
+   "claim": "While she cleaned up, the bag drifted away",
+   "terms": [
+    "drift|float"
+   ]
+  },
+  {
+   "claim": "Station cameras filmed it",
+   "terms": [
+    "camera"
+   ]
+  },
+  {
+   "claim": "Inside were grease guns, a scraper and other tools",
+   "terms": [
+    "scraper"
+   ]
+  },
+  {
+   "claim": "It was reported to be worth about $100,000",
+   "terms": [
+    "100,000"
+   ]
+  },
+  {
+   "claim": "Amateur skywatchers spotted it, some with binoculars",
+   "terms": [
+    "skywatchers|observers|amateur",
+    "spot|see|observ"
+   ]
+  },
+  {
+   "claim": "Skywatchers filmed it",
+   "terms": [
+    "video|film|filmed"
+   ]
+  },
+  {
+   "claim": "The crew used tools from her partner to finish",
+   "terms": [
+    "partner|Bowen",
+    "tool"
+   ]
+  },
+  {
+   "claim": "The bag burned up in the atmosphere months later",
+   "terms": [
+    "burn|fiery|reentered|re-entered"
+   ]
+  }
+ ]
+}

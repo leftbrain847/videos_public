@@ -385,9 +385,9 @@
     "p2": false
    },
    "shot": {
-    "type": "ots",
+    "type": "two",
     "on": "you",
-    "from": "exp"
+    "with": "exp"
    },
    "act": {
     "exp": {

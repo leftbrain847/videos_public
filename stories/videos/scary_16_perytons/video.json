@@ -1,0 +1,745 @@
+{
+ "id": "scary_16_perytons",
+ "title": "The space signal that came from the microwave",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "PERYTONS"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "ponytail",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  },
+  "tech": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#3f6b5c",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2a3a5a",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "beard": true
+   },
+   "at": "center",
+   "hold": "notepad"
+  }
+ },
+ "lines": [
+  {
+   "text": "Your telescope hears strange bursts. They come from the kitchen. Seriously.",
+   "key": [
+    "KITCHEN."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "tech": [
+     2.8,
+     -1.0
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The Parkes radio telescope. Australia. A famous giant dish.",
+   "key": [
+    "PARKES"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "PARKES",
+     "RADIO DISH"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "tech": [
+     2.6,
+     -0.8
+    ],
+    "capy": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold"
+    },
+    "tech": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "It is a giant dish. It listens to deep space.",
+   "key": [
+    "SPACE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Huge. Famous. Extremely sensitive. It hears faint whispers.",
+   "key": [
+    "WHISPERS."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tech"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Since nineteen ninety eight, it catches weird blips.",
+   "cap": "Since 1998, it catches weird blips.",
+   "key": [
+    "BLIPS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Short. Loud. A bit like a famous new mystery. Exciting.",
+   "key": [
+    "MYSTERY."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Fast radio bursts. Flashes from very far away.",
+   "key": [
+    "BURSTS."
+   ],
+   "board": [
+    "FAST RADIO",
+    "BURSTS"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "These new blips get a mythical name. Perytons.",
+   "key": [
+    "PERYTONS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "But they act strange. They hit during the day. Only during working hours.",
+   "key": [
+    "DAY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Mostly on weekdays. Mostly around lunch. Hmm.",
+   "key": [
+    "LUNCH."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Aliens with office hours? Suspicious. Very suspicious.",
+   "key": [
+    "SUSPICIOUS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tech"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "tech"
+    },
+    "tech": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "In twenty fifteen, an astronomer sets a trap.",
+   "cap": "In 2015, an astronomer sets a trap.",
+   "key": [
+    "TRAP."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "2015",
+     "STAKEOUT"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "tech": [
+     2.6,
+     -1.0
+    ],
+    "boss": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    },
+    "tech": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "She adds a monitor that watches for interference. Then she waits.",
+   "key": [
+    "INTERFERENCE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A peryton pops up. Right on cue. At lunchtime.",
+   "key": [
+    "CUE."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "tech"
+   },
+   "act": {
+    "tech": {
+     "mood": "shocked",
+     "action": "idle"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "tech"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The trail leads to the staff kitchen. Of course.",
+   "key": [
+    "KITCHEN."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "you": [
+     -2.6,
+     -0.4
+    ],
+    "tech": [
+     2.6,
+     -1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "capy"
+    },
+    "tech": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The culprit? The microwave oven. In the kitchen.",
+   "key": [
+    "MICROWAVE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Someone opens the door before the timer ends. Zap.",
+   "key": [
+    "ZAP."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "tech"
+   },
+   "act": {
+    "you": {
+     "mood": "angry",
+     "action": "point",
+     "look": "tech"
+    },
+    "tech": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "A burst of radio leaks out. The dish hears it. Every time.",
+   "key": [
+    "HEARS"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CULPRIT:",
+     "MICROWAVE"
+    ]
+   },
+   "place": {
+    "boss": [
+     0,
+     -1.0
+    ],
+    "tech": [
+     2.6,
+     -0.4
+    ],
+    "capy": false,
+    "you": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "Seventeen years of space mystery. It was lunch. Reheated lunch.",
+   "key": [
+    "LUNCH."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Good news. Real fast radio bursts? Still a real mystery.",
+   "key": [
+    "REAL"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Just not the ones from the break room. Those were soup.",
+   "key": [
+    "BREAK"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you confess to the microwave? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "CONFESS?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ],
+    "tech": [
+     0.4,
+     -0.6
+    ],
+    "boss": [
+     3.0,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tech"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "tech": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Peryton (astronomy)",
+   "url": "https://en.wikipedia.org/wiki/Peryton_(astronomy)"
+  },
+  {
+   "title": "arXiv: Identifying the source of perytons at the Parkes radio telescope",
+   "url": "https://arxiv.org/abs/1504.02165v1"
+  },
+  {
+   "title": "Planetary Society: The cosmic microwave oven background",
+   "url": "https://www.planetary.org/articles/0417-the-cosmic-microwave-oven-background"
+  },
+  {
+   "title": "Nature Index: It's the microwave",
+   "url": "https://www.nature.com/nature-index/news/its-the-microwave-how-astronomers-discovere-source-of-mysterious-radio-signals"
+  },
+  {
+   "title": "NASA ADS: Identifying the source of perytons at the Parkes radio telescope",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015MNRAS.451.3933P/abstract"
+  },
+  {
+   "title": "Wikipedia: Parkes Observatory",
+   "url": "https://en.wikipedia.org/wiki/Parkes_Observatory"
+  },
+  {
+   "title": "Wikipedia: Fast radio burst",
+   "url": "https://en.wikipedia.org/wiki/Fast_radio_burst"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Perytons were detected at the Parkes radio telescope in Australia",
+   "terms": [
+    "Parkes",
+    "peryton"
+   ]
+  },
+  {
+   "claim": "Perytons were first seen in 1998",
+   "terms": [
+    "1998"
+   ]
+  },
+  {
+   "claim": "They resembled fast radio bursts",
+   "terms": [
+    "fast radio burst"
+   ]
+  },
+  {
+   "claim": "They happened during office hours on weekdays",
+   "terms": [
+    "office hours|working hours|daytime|weekday|lunch"
+   ]
+  },
+  {
+   "claim": "In 2015 a monitor for interference was installed",
+   "terms": [
+    "interference",
+    "monitor"
+   ]
+  },
+  {
+   "claim": "The source was a microwave oven",
+   "terms": [
+    "microwave oven"
+   ]
+  },
+  {
+   "claim": "The door was opened before the timer finished",
+   "terms": [
+    "door",
+    "open"
+   ]
+  },
+  {
+   "claim": "Fast radio bursts remain a real astrophysical mystery",
+   "terms": [
+    "fast radio burst",
+    "origin|unknown|mystery|astrophysical"
+   ]
+  }
+ ]
+}

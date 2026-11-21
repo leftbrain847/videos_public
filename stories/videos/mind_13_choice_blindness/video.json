@@ -218,9 +218,9 @@
     "shop": false
    },
    "shot": {
-    "type": "ots",
+    "type": "two",
     "on": "exp",
-    "from": "you"
+    "with": "you"
    },
    "act": {
     "exp": {
