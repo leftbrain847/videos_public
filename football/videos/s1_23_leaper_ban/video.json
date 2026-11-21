@@ -111,6 +111,22 @@
   {
    "title": "ESPN: Saints season back on the brink after Broncos' stunning blocked extra point",
    "url": "https://www.espn.com/blog/new-orleans-saints/post/_/id/24297/saints-season-back-on-the-brink-after-broncos-stunning-blocked-extra-point"
+  },
+  {
+   "title": "ABC7 (AP): Broncos return blocked PAT for dramatic win over Saints",
+   "url": "https://abc7.com/post/broncos-return-blocked-pat-for-dramatic-win-over-saints/1605234/"
+  },
+  {
+   "title": "NFL.com: Blocked point-after kick lifts Broncos past Saints, 25-23",
+   "url": "https://www.nfl.com/news/blocked-point-after-kick-lifts-broncos-past-saints-25-23-0ap3000000739013"
+  },
+  {
+   "title": "CBS Colorado: Broncos' Justin Simmons plays Superman vs. Saints",
+   "url": "https://www.cbsnews.com/colorado/news/broncos-justin-simmons-plays-superman-vs-saints"
+  },
+  {
+   "title": "SI: Broncos remain in the thick of the playoff race after shocking the Saints",
+   "url": "https://www.si.com/nfl/2016/11/13/broncos-saints-score-highlights-nfl-week-10"
   }
  ],
  "lines": [
@@ -214,7 +230,7 @@
    }
   },
   {
-   "text": "You're Kam Chancellor. You sprint at the line.",
+   "text": "You're Kam Chancellor. You sprint straight at the line.",
    "key": [
     "SPRINT"
    ],
@@ -236,7 +252,7 @@
    }
   },
   {
-   "text": "You leap right over it.",
+   "text": "You leap right over it. Very cleanly.",
    "key": [
     "LEAP"
    ],
@@ -330,9 +346,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Was any of it illegal? Not at all.",
+   "text": "Kickers everywhere start sweating.",
    "key": [
-    "NOT"
+    "SWEATING."
    ],
    "place": {
     "capy": [
@@ -491,7 +507,7 @@
    "speaker": "capy"
   },
   {
-   "text": "The leap lasted a few seasons. The highlights last forever.",
+   "text": "The leap lasted a few seasons. The highlights last forever. Go watch.",
    "key": [
     "FOREVER."
    ],
@@ -573,13 +589,6 @@
    "terms": [
     "Chancellor",
     "back-to-back|twice|again|second"
-   ]
-  },
-  {
-   "claim": "It was legal at the time",
-   "terms": [
-    "Chancellor",
-    "legal"
    ]
   },
   {

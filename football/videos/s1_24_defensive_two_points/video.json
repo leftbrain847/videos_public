@@ -112,25 +112,33 @@
    "url": "https://www.espn.com/blog/new-orleans-saints/post/_/id/24297/saints-season-back-on-the-brink-after-broncos-stunning-blocked-extra-point"
   },
   {
-   "title": "NFL Football Operations: Extra point tries no longer automatic",
-   "url": "https://operations.nfl.com/updates/the-game/extra-point-tries-no-longer-automatic/"
-  },
-  {
-   "title": "NFL.com: Goodell: Moving PATs back achieved what we wanted",
-   "url": "https://www.nfl.com/_amp/goodell-moving-pats-back-achieved-what-we-wanted-0ap3000000631461"
-  },
-  {
    "title": "Seahawks.com: NFL moves extra point to 15-yard line, defenses can return failed two-point tries",
    "url": "https://www.seahawks.com/news/nfl-moves-extra-point-to-15-yard-line-defenses-can-return-failed-two-poin-124041"
   },
   {
    "title": "SI: NFL extra point rule change 2015 season",
    "url": "https://www.si.com/nfl/2015/05/18/nfl-extra-point-rule-change-2015-season"
+  },
+  {
+   "title": "ABC7 (AP): Broncos return blocked PAT for dramatic win over Saints",
+   "url": "https://abc7.com/post/broncos-return-blocked-pat-for-dramatic-win-over-saints/1605234/"
+  },
+  {
+   "title": "NFL.com: Blocked point-after kick lifts Broncos past Saints, 25-23",
+   "url": "https://www.nfl.com/news/blocked-point-after-kick-lifts-broncos-past-saints-25-23-0ap3000000739013"
+  },
+  {
+   "title": "CBS Colorado: Broncos' Justin Simmons plays Superman vs. Saints",
+   "url": "https://www.cbsnews.com/colorado/news/broncos-justin-simmons-plays-superman-vs-saints"
+  },
+  {
+   "title": "SI: Broncos remain in the thick of the playoff race after shocking the Saints",
+   "url": "https://www.si.com/nfl/2016/11/13/broncos-saints-score-highlights-nfl-week-10"
   }
  ],
  "lines": [
   {
-   "text": "Your extra point gets blocked. The other team scores.",
+   "text": "Your extra point gets blocked. Then the other team scores.",
    "key": [
     "SCORES."
    ],
@@ -203,10 +211,9 @@
    ]
   },
   {
-   "text": "That's a thirty three yard kick now.",
-   "cap": "That's a 33-yard kick now.",
+   "text": "Now it's a much longer kick.",
    "key": [
-    "33-YARD"
+    "LONGER"
    ],
    "shot": {
     "type": "close",
@@ -221,10 +228,9 @@
    }
   },
   {
-   "text": "Kickers made over ninety nine percent. Now, about ninety four.",
-   "cap": "Kickers made over 99%. Now, about 94.",
+   "text": "Kickers are not thrilled about it. At all.",
    "key": [
-    "94."
+    "THRILLED"
    ],
    "shot": {
     "type": "two",
@@ -888,7 +894,7 @@
    ]
   },
   {
-   "text": "Did he step out? Replay says no.",
+   "text": "Did he step out of bounds? Replay says no.",
    "key": [
     "NO."
    ],
@@ -921,7 +927,7 @@
    }
   },
   {
-   "text": "Two points. For Denver. On your extra point.",
+   "text": "Two points. For Denver. On your own extra point.",
    "cap": "2 points. For Denver. On your extra point.",
    "key": [
     "DENVER."
@@ -1021,19 +1027,6 @@
    "terms": [
     "15-yard line|15 yard line",
     "extra point"
-   ]
-  },
-  {
-   "claim": "That made it a 33-yard kick",
-   "terms": [
-    "33-yard|33 yard"
-   ]
-  },
-  {
-   "claim": "Kickers had made over 99% and then about 94%",
-   "terms": [
-    "99",
-    "94"
    ]
   },
   {
