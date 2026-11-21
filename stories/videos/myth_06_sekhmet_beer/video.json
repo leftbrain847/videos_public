@@ -132,7 +132,7 @@
    }
   },
   {
-   "text": "You are Ra, king of the gods. You are getting old.",
+   "text": "You are Ra, the king of the gods. You are getting old.",
    "key": [
     "OLD."
    ],
@@ -161,13 +161,9 @@
    }
   },
   {
-   "text": "Your bones are silver. Your flesh is gold.",
+   "text": "Rule one for kings: never look old.",
    "key": [
-    "SILVER."
-   ],
-   "board": [
-    "BONES: SILVER",
-    "FLESH: GOLD"
+    "OLD."
    ],
    "place": {
     "capy": false,
@@ -187,7 +183,7 @@
    },
    "act": {
     "ra": {
-     "mood": "neutral",
+     "mood": "worried",
      "action": "idle",
      "look": "camera"
     }
@@ -483,14 +479,13 @@
    }
   },
   {
-   "text": "So you order beer. A whole lot. Seven thousand jars.",
-   "cap": "So you order beer. A whole lot. 7,000 jars.",
+   "text": "So you order beer. A whole lot of beer.",
    "key": [
-    "7,000"
+    "BEER."
    ],
    "board": [
     "ORDER:",
-    "7,000 JARS"
+    "BEER. LOTS."
    ],
    "place": {
     "capy": false,
@@ -563,12 +558,12 @@
    }
   },
   {
-   "text": "At night, you flood the fields with it.",
+   "text": "At night, you pour it over the land.",
    "key": [
-    "FLOOD"
+    "LAND."
    ],
    "board": [
-    "FIELDS",
+    "THE LAND",
     "FULL OF BEER"
    ],
    "place": {
@@ -880,16 +875,15 @@
    }
   },
   {
-   "text": "Could you resist seven thousand jars? Yes or no? Be honest.",
-   "cap": "Could you resist 7,000 jars? Yes or no? Be honest.",
+   "text": "Could you resist a lake of beer? Yes or no? Be honest.",
    "key": [
     "YES",
     "NO?"
    ],
    "speaker": "capy",
    "board": [
-    "RESIST 7,000?",
-    "YES OR NO?"
+    "RESIST A LAKE",
+    "OF BEER?"
    ],
    "place": {
     "capy": [
@@ -932,10 +926,6 @@
   {
    "title": "Wikipedia: Eye of Ra",
    "url": "https://en.wikipedia.org/wiki/Eye_of_Ra"
-  },
-  {
-   "title": "Project Gutenberg: Legends of the Gods (Budge)",
-   "url": "https://www.gutenberg.org/cache/epub/9411/pg9411.html"
   }
  ],
  "claims": [
@@ -943,14 +933,7 @@
    "claim": "Ra, king of the gods, grows old",
    "terms": [
     "Ra",
-    "old"
-   ]
-  },
-  {
-   "claim": "In his old age his bones are silver and his flesh gold",
-   "terms": [
-    "silver",
-    "gold"
+    "old age|aged|elderly|grown old|grew old|old|aging"
    ]
   },
   {
@@ -992,14 +975,7 @@
    "claim": "Ra changes his mind",
    "terms": [
     "Ra",
-    "relent|relented|changes his mind|changed his mind|regret|regretted|pity|stop"
-   ]
-  },
-  {
-   "claim": "He orders seven thousand jars of beer",
-   "terms": [
-    "7,000|seven thousand|7000",
-    "beer"
+    "prevent|stop"
    ]
   },
   {
@@ -1011,10 +987,10 @@
    ]
   },
   {
-   "claim": "The beer floods the fields",
+   "claim": "The beer is poured out over the land",
    "terms": [
-    "beer",
-    "fields"
+    "poured",
+    "land"
    ]
   },
   {
