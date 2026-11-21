@@ -84,11 +84,41 @@
    ]
   }
  },
+ "sources": [
+  {
+   "title": "NBC Sports/PFT: A one-point conversion safety has happened in college, not NFL",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/a-one-point-conversion-safety-has-happened-in-college-not-nfl"
+  },
+  {
+   "title": "Texas Monthly: That Time There Was a One-Point Safety in a UT-A&M Game",
+   "url": "https://www.texasmonthly.com/arts-entertainment/video-that-time-there-was-a-one-point-safety-in-a-ut-am-game/"
+  },
+  {
+   "title": "Wikipedia: 2013 Fiesta Bowl",
+   "url": "https://en.wikipedia.org/wiki/2013_Fiesta_Bowl"
+  },
+  {
+   "title": "CBS Sports: Blocked PAT ends in 1-point safety for Oregon",
+   "url": "https://www.cbssports.com/college-football/news/blocked-pat-ends-in-1-point-safety-for-oregon-yes-a-1-point-safety"
+  },
+  {
+   "title": "Fox Sports (AP): Oregon gets 1-point safety in Fiesta Bowl",
+   "url": "https://www.foxsports.com/stories/other/oregon-gets-1-point-safety-in-fiesta-bowl"
+  },
+  {
+   "title": "The Columbian (AP): Oregon gets 1-point safety in Fiesta Bowl",
+   "url": "https://www.columbian.com/news/2013/jan/02/oregon-gets-1-point-safety-in-fiesta-bowl/"
+  },
+  {
+   "title": "SI: Fiesta Bowl safety",
+   "url": "https://www.si.com/nfl/2013/01/04/fiesta-bowl-safety"
+  }
+ ],
  "lines": [
   {
-   "text": "A safety is worth two points. Except when it's worth one.",
+   "text": "A safety is worth two points. Yours is worth one.",
    "key": [
-    "ONE"
+    "ONE."
    ],
    "place": {
     "kicker": false,
@@ -124,7 +154,8 @@
    "speaker": "capy"
   },
   {
-   "text": "It is one of the rarest scores in football. The NFL has never seen one.",
+   "text": "The N F L has never seen one.",
+   "cap": "The NFL has never seen one.",
    "key": [
     "NEVER"
    ],
@@ -142,10 +173,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Here's how. A team scores a touchdown and lines up for the extra point.",
+   "text": "Here's how. You score a touchdown. You kick the extra point.",
    "key": [
     "EXTRA",
-    "POINT"
+    "POINT."
    ],
    "set": "office",
    "setOpts": {
@@ -154,10 +185,6 @@
      "= 1 PT?"
     ]
    },
-   "board": [
-    "SAFETY",
-    "= 1 PT?"
-   ],
    "place": {
     "capy": "left",
     "kicker": "right"
@@ -178,13 +205,16 @@
      "look": "capy"
     }
    },
+   "board": [
+    "SAFETY",
+    "= 1 PT?"
+   ],
    "speaker": "capy"
   },
   {
-   "text": "The defense blocks it, grabs the ball, and runs the wrong way.",
+   "text": "It gets blocked. The defense grabs it.",
    "key": [
-    "WRONG",
-    "WAY"
+    "BLOCKED."
    ],
    "place": {
     "ks1": [
@@ -211,14 +241,10 @@
    }
   },
   {
-   "text": "If he's tackled in his own end zone, that's a safety. Worth one point.",
+   "text": "They run the wrong way. Tackled in their own end zone?",
    "key": [
-    "1",
-    "POINT."
-   ],
-   "cap": "If he's tackled in his own end zone, that's a safety. Worth 1 point.",
-   "board": [
-    "= 1 PT"
+    "WRONG",
+    "WAY."
    ],
    "shot": {
     "type": "wide",
@@ -230,14 +256,42 @@
      "action": "shrug",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "= 1 PT"
+   ]
   },
   {
-   "text": "January 2013. The Fiesta Bowl. Oregon leads Kansas State, thirty one to ten.",
+   "text": "That's a safety. Worth exactly one point.",
+   "cap": "That's a safety. Worth exactly 1 point.",
    "key": [
-    "31"
+    "1",
+    "POINT."
    ],
-   "cap": "January 2013. The Fiesta Bowl. Oregon leads Kansas State, 31 to 10.",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy",
+   "set": "office",
+   "board": [
+    "SAFETY",
+    "= 1 PT"
+   ]
+  },
+  {
+   "text": "January twenty thirteen. The Fiesta Bowl.",
+   "cap": "January 2013. The Fiesta Bowl.",
+   "key": [
+    "FIESTA"
+   ],
    "set": "field",
    "setOpts": {
     "boardText": [
@@ -245,10 +299,6 @@
      "K-STATE 10"
     ]
    },
-   "board": [
-    "OREGON 31",
-    "K-STATE 10"
-   ],
    "place": {
     "kicker": [
      0,
@@ -280,12 +330,17 @@
      "mood": "angry",
      "action": "cross"
     }
-   }
+   },
+   "board": [
+    "OREGON 31",
+    "K-STATE 10"
+   ]
   },
   {
-   "text": "Oregon's extra point gets blocked.",
+   "text": "You're Oregon. You lead Kansas State, thirty one to ten.",
+   "cap": "You're Oregon. You lead Kansas State, 31 to 10.",
    "key": [
-    "BLOCKED"
+    "31"
    ],
    "shot": {
     "type": "low",
@@ -293,74 +348,644 @@
    },
    "act": {
     "kicker": {
-     "mood": "shocked",
-     "action": "facepalm"
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
     },
     "ks1": {
-     "mood": "happy",
-     "action": "cheer"
+     "mood": "sad",
+     "action": "idle"
     }
    }
   },
   {
-   "text": "Kansas State picks it up and carries it back toward its own end zone.",
+   "text": "You score again. Your extra point gets blocked.",
    "key": [
-    "BACK"
+    "BLOCKED."
    ],
-   "place": {
-    "ks1": [
-     -1.6,
-     0.4
-    ]
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "OREGON 31",
+     "K-STATE 10"
+    ],
+    "endZone": 8,
+    "zoneA": "#1f7a3a",
+    "zoneB": "#5b2c8f"
    },
    "shot": {
-    "type": "medium",
-    "on": "ks1"
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "kicker",
+    "lead": 0,
+    "z": 1
    },
-   "act": {
-    "ks1": {
-     "mood": "happy",
-     "action": "hold",
-     "look": "camera"
-    }
+   "act": {},
+   "play": {
+    "cast": {
+     "kicker": {
+      "path": [
+       [
+        0.0,
+        -2.0,
+        0.4
+       ],
+       [
+        0.05,
+        -1.65,
+        0.375
+       ],
+       [
+        0.1,
+        -1.3,
+        0.35
+       ],
+       [
+        0.15,
+        -0.95,
+        0.325
+       ],
+       [
+        0.2,
+        -0.6,
+        0.3
+       ],
+       [
+        1.0,
+        -0.6,
+        0.3
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.1935,
+        "kick"
+       ],
+       [
+        0.5,
+        "idle"
+       ]
+      ],
+      "face": 90,
+      "mood": "shocked"
+     },
+     "ks1": {
+      "path": [
+       [
+        0.0,
+        3.5,
+        -1.0
+       ],
+       [
+        0.0875,
+        3.025,
+        -0.85
+       ],
+       [
+        0.175,
+        2.55,
+        -0.7
+       ],
+       [
+        0.2625,
+        2.075,
+        -0.55
+       ],
+       [
+        0.35,
+        1.6,
+        -0.4
+       ],
+       [
+        0.5125,
+        1.75,
+        -0.45
+       ],
+       [
+        0.675,
+        1.9,
+        -0.5
+       ],
+       [
+        0.8375,
+        2.05,
+        -0.55
+       ],
+       [
+        1.0,
+        2.2,
+        -0.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.5,
+        "idle"
+       ]
+      ],
+      "face": -90
+     },
+     "ks2": {
+      "path": [
+       [
+        0,
+        4.0,
+        1.8
+       ],
+       [
+        1,
+        4.0,
+        1.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      [
+       0.25,
+       -0.2,
+       0.3,
+       0.3
+      ],
+      [
+       0.35,
+       0.9,
+       1.2,
+       0.0
+      ]
+     ],
+     [
+      [
+       0.35,
+       0.9,
+       1.2,
+       0.0
+      ],
+      [
+       0.6,
+       3.2,
+       0.15,
+       0.8
+      ],
+      [
+       1,
+       3.4,
+       0.15,
+       0.9
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ]
+    ]
    }
   },
   {
-   "text": "A lateral. Then a tackle. Inside the end zone.",
+   "text": "Kansas State picks it up. They run backward.",
+   "key": [
+    "BACKWARD."
+   ],
+   "setOpts": {
+    "boardText": [
+     "OREGON 31",
+     "K-STATE 10"
+    ],
+    "endZone": 8,
+    "zoneA": "#1f7a3a",
+    "zoneB": "#5b2c8f"
+   },
+   "shot": {
+    "type": "follow",
+    "on": "ks2",
+    "lead": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "ks2": {
+      "path": [
+       [
+        0.0,
+        4.0,
+        1.8
+       ],
+       [
+        0.0625,
+        3.875,
+        1.575
+       ],
+       [
+        0.125,
+        3.75,
+        1.35
+       ],
+       [
+        0.1875,
+        3.625,
+        1.125
+       ],
+       [
+        0.25,
+        3.5,
+        0.9
+       ],
+       [
+        0.4375,
+        4.875,
+        0.825
+       ],
+       [
+        0.625,
+        6.25,
+        0.75
+       ],
+       [
+        0.8125,
+        7.625,
+        0.675
+       ],
+       [
+        1.0,
+        9.0,
+        0.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "ks1": {
+      "path": [
+       [
+        0.0,
+        2.2,
+        -0.6
+       ],
+       [
+        0.25,
+        3.275,
+        -1.075
+       ],
+       [
+        0.5,
+        4.35,
+        -1.55
+       ],
+       [
+        0.75,
+        5.425,
+        -2.025
+       ],
+       [
+        1.0,
+        6.5,
+        -2.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "kicker": {
+      "path": [
+       [
+        0.0,
+        -0.6,
+        0.3
+       ],
+       [
+        0.25,
+        0.8,
+        0.875
+       ],
+       [
+        0.5,
+        2.2,
+        1.45
+       ],
+       [
+        0.75,
+        3.6,
+        2.025
+       ],
+       [
+        1.0,
+        5.0,
+        2.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "carry": [
+     [
+      0,
+      null
+     ],
+     [
+      0.25,
+      "ks2"
+     ]
+    ],
+    "ball": [
+     [
+      0,
+      3.4,
+      0.15,
+      0.9
+     ],
+     [
+      0.25,
+      3.5,
+      0.3,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "text": "A lateral. A tackle. In their own end zone.",
    "key": [
     "END",
     "ZONE."
    ],
-   "place": {
-    "ks2": [
-     -0.2,
-     0.2
-    ]
+   "setOpts": {
+    "boardText": [
+     "OREGON 31",
+     "K-STATE 10"
+    ],
+    "endZone": 8,
+    "zoneA": "#1f7a3a",
+    "zoneB": "#5b2c8f"
    },
    "shot": {
-    "type": "two",
-    "on": "ks2",
-    "with": "ks1"
+    "type": "follow_high",
+    "on": "ks1",
+    "lead": 0
    },
-   "act": {
-    "ks2": {
-     "mood": "shocked",
-     "action": "throw",
-     "look": "ks1"
+   "act": {},
+   "play": {
+    "cast": {
+     "ks2": {
+      "path": [
+       [
+        0.0,
+        9.0,
+        0.6
+       ],
+       [
+        0.075,
+        9.15,
+        0.6
+       ],
+       [
+        0.15,
+        9.3,
+        0.6
+       ],
+       [
+        0.225,
+        9.45,
+        0.6
+       ],
+       [
+        0.3,
+        9.6,
+        0.6
+       ],
+       [
+        1.0,
+        9.6,
+        0.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.1949,
+        "throw"
+       ],
+       [
+        0.5,
+        "idle"
+       ]
+      ],
+      "face": -90
+     },
+     "ks1": {
+      "path": [
+       [
+        0.0,
+        6.5,
+        -2.5
+       ],
+       [
+        0.1125,
+        7.125,
+        -2.225
+       ],
+       [
+        0.225,
+        7.75,
+        -1.95
+       ],
+       [
+        0.3375,
+        8.375,
+        -1.675
+       ],
+       [
+        0.45,
+        9.0,
+        -1.4
+       ],
+       [
+        0.5375,
+        9.35,
+        -1.425
+       ],
+       [
+        0.625,
+        9.7,
+        -1.45
+       ],
+       [
+        0.7125,
+        10.05,
+        -1.475
+       ],
+       [
+        0.8,
+        10.4,
+        -1.5
+       ],
+       [
+        1.0,
+        10.4,
+        -1.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.45,
+        "catch"
+       ],
+       [
+        0.8,
+        "slump"
+       ]
+      ],
+      "face": 90
+     },
+     "kicker": {
+      "path": [
+       [
+        0.0,
+        5.0,
+        2.6
+       ],
+       [
+        0.15,
+        6.5,
+        2.6
+       ],
+       [
+        0.3,
+        8.0,
+        2.6
+       ],
+       [
+        0.45,
+        9.5,
+        2.6
+       ],
+       [
+        0.6,
+        11.0,
+        2.6
+       ],
+       [
+        0.65,
+        11.15,
+        1.95
+       ],
+       [
+        0.7,
+        11.3,
+        1.3
+       ],
+       [
+        0.75,
+        11.45,
+        0.65
+       ],
+       [
+        0.8,
+        11.6,
+        0.0
+       ],
+       [
+        1.0,
+        11.6,
+        0.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.8,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     }
     },
-    "ks1": {
-     "mood": "worried",
-     "action": "slump"
-    }
+    "ball": [
+     [
+      0.25,
+      9.6,
+      1.2,
+      0.6
+     ],
+     [
+      0.35,
+      9.3,
+      1.4,
+      -0.4
+     ],
+     [
+      0.45,
+      9.0,
+      1.2,
+      -1.4
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "ks2"
+     ],
+     [
+      0.25,
+      null
+     ],
+     [
+      0.45,
+      "ks1"
+     ]
+    ]
    }
   },
   {
-   "text": "The referee signals safety. Oregon gets exactly one point.",
+   "text": "The ref signals safety. You get one point.",
+   "cap": "The ref signals safety. You get 1 point.",
    "key": [
     "1",
     "POINT."
    ],
-   "cap": "The referee signals safety. Oregon gets exactly 1 point.",
    "place": {
     "ref": [
      2.6,
@@ -390,14 +1015,10 @@
    }
   },
   {
-   "text": "Thirty one to ten becomes thirty two to ten.",
+   "text": "The score goes to thirty two to ten.",
+   "cap": "The score goes to 32 to 10.",
    "key": [
     "32"
-   ],
-   "cap": "31 to 10 becomes 32 to 10.",
-   "board": [
-    "OREGON 32",
-    "K-STATE 10"
    ],
    "shot": {
     "type": "close",
@@ -410,14 +1031,17 @@
      "look": "camera"
     }
    },
+   "board": [
+    "OREGON 32",
+    "K-STATE 10"
+   ],
    "speaker": "capy"
   },
   {
-   "text": "It had happened once before, in two thousand four. Texas against Texas A and M.",
+   "text": "It happened once before. Texas against the Aggies.",
    "key": [
-    "2004"
+    "AGGIES."
    ],
-   "cap": "It had happened once before, in 2004. Texas against Texas A&M.",
    "set": "living",
    "setOpts": {
     "boardText": [
@@ -425,10 +1049,6 @@
      "TEXAS vs TEXAS A&M"
     ]
    },
-   "board": [
-    "2004",
-    "TEXAS vs TEXAS A&M"
-   ],
    "place": {
     "fan": [
      1.2,
@@ -454,12 +1074,17 @@
      "action": "idle",
      "look": "fan"
     }
-   }
+   },
+   "board": [
+    "2004",
+    "TEXAS vs TEXAS A&M"
+   ]
   },
   {
-   "text": "Different play, same one point. And the same TV announcer called both games.",
+   "text": "Two thousand four. Same strange single point.",
+   "cap": "2004. Same strange single point.",
    "key": [
-    "SAME"
+    "2004."
    ],
    "shot": {
     "type": "two",
@@ -480,12 +1105,12 @@
    }
   },
   {
-   "text": "Would you have known a safety can be worth one? Yes or no?",
+   "text": "Did you know safeties could be one point? Yes or no?",
+   "cap": "Did you know safeties could be 1 point? Yes or no?",
    "key": [
     "YES",
-    "NO"
+    "NO?"
    ],
-   "cap": "Would you have known a safety can be worth 1? Yes or no?",
    "place": {
     "capy": [
      -0.6,
@@ -515,14 +1140,55 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "NBC Sports/PFT: A one-point conversion safety has happened in college, not NFL",
-   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/a-one-point-conversion-safety-has-happened-in-college-not-nfl"
+   "claim": "A safety on a conversion try is worth one point",
+   "terms": [
+    "safety",
+    "1-point|one-point|one point|1 point"
+   ]
   },
   {
-   "title": "Texas Monthly: That Time There Was a One-Point Safety in a UT-A&M Game",
-   "url": "https://www.texasmonthly.com/arts-entertainment/video-that-time-there-was-a-one-point-safety-in-a-ut-am-game/"
+   "claim": "The NFL has never had a one-point safety",
+   "terms": [
+    "NFL",
+    "never"
+   ]
+  },
+  {
+   "claim": "In January 2013 at the Fiesta Bowl Oregon led Kansas State 31-10",
+   "terms": [
+    "Oregon",
+    "31-10"
+   ]
+  },
+  {
+   "claim": "Oregon's extra point was blocked",
+   "terms": [
+    "blocked",
+    "extra point|PAT"
+   ]
+  },
+  {
+   "claim": "Kansas State picked it up, lateraled and was tackled in its own end zone",
+   "terms": [
+    "end zone",
+    "lateral"
+   ]
+  },
+  {
+   "claim": "The safety made it 32-10",
+   "terms": [
+    "32-10"
+   ]
+  },
+  {
+   "claim": "It had happened once before, in 2004, Texas against Texas A&M",
+   "terms": [
+    "Texas A&M|Aggies",
+    "2004"
+   ]
   }
  ]
 }
