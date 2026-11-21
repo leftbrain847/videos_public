@@ -889,7 +889,7 @@
    "claim": "It is made of the sound of a cat's footsteps",
    "terms": [
     "cat",
-    "footsteps|footfall|footfalls"
+    "steps|step|footsteps|footfall|footfalls|footstep"
    ]
   },
   {
@@ -910,7 +910,7 @@
   {
    "claim": "That is why these things no longer exist",
    "terms": [
-    "no longer|does not exist|do not exist|not exist"
+    "exist|exists|existed|existing"
    ]
   },
   {

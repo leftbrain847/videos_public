@@ -869,6 +869,18 @@
   {
    "title": "Wikipedia: Susanoo-no-Mikoto",
    "url": "https://en.wikipedia.org/wiki/Susanoo-no-Mikoto"
+  },
+  {
+   "title": "Wikipedia: Amaterasu",
+   "url": "https://en.wikipedia.org/wiki/Amaterasu"
+  },
+  {
+   "title": "Wikipedia: Amano-Iwato",
+   "url": "https://en.wikipedia.org/wiki/Amano-Iwato"
+  },
+  {
+   "title": "Nippon.com: Tales from Kojiki, the sun goddess and the cave of heaven",
+   "url": "https://www.nippon.com/en/japan-topics/b11203/"
   }
  ],
  "claims": [
@@ -883,7 +895,7 @@
    "claim": "In heaven he wrecked his sister Amaterasu's rice fields",
    "terms": [
     "rice",
-    "Amaterasu"
+    "fields|field|paddies|paddy"
    ]
   },
   {
