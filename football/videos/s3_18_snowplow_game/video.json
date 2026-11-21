@@ -239,7 +239,9 @@
      "NEW ENG 0"
     ],
     "grass": "#dfe7dc",
-    "endZone": 20
+    "endZone": 20,
+    "zoneA": "#1f3f8f",
+    "zoneB": "#1f3f8f"
    },
    "play": {
     "cast": {
