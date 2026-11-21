@@ -5,7 +5,7 @@
  "setOpts": {
   "boardText": [
    "TEMP",
-   "-13\u00b0F"
+   "-13°F"
   ],
   "grass": "#c9d6c2"
  },
@@ -78,14 +78,25 @@
     "cap": "#8f1f2b"
    },
    "at": "center"
+  },
+  "kramer": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1e4d2b",
+    "pants": "#e8c25a",
+    "number": "64",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "longSleeve": true
+   }
   }
  },
  "lines": [
   {
-   "text": "In 1967, a title game got so cold that the officials' whistles froze.",
+   "text": "You're the referee. Your whistle freezes to your lips.",
    "key": [
-    "WHISTLES",
-    "FROZE."
+    "LIPS."
    ],
    "place": {
     "qb": false,
@@ -121,9 +132,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Dallas at Green Bay, for the NFL Championship, on New Year's Eve.",
+   "text": "Nineteen sixty seven. The N F L Championship.",
+   "cap": "1967. The NFL Championship.",
    "key": [
-    "CHAMPIONSHIP,"
+    "CHAMPIONSHIP."
    ],
    "place": {
     "capy": false,
@@ -156,11 +168,9 @@
    }
   },
   {
-   "text": "Temperature at kickoff: minus thirteen degrees.",
-   "cap": "Temperature at kickoff: minus 13 degrees.",
+   "text": "Dallas at Green Bay. Title on the line. On New Year's Eve.",
    "key": [
-    "MINUS",
-    "13"
+    "EVE."
    ],
    "place": {
     "qb": [
@@ -195,14 +205,10 @@
    }
   },
   {
-   "text": "With the wind, it felt like about minus forty six.",
-   "cap": "With the wind, it felt like about minus 46.",
+   "text": "Kickoff temperature? Minus thirteen degrees.",
+   "cap": "Kickoff temperature? -13 degrees.",
    "key": [
-    "46."
-   ],
-   "board": [
-    "WIND CHILL",
-    "-46\u00b0"
+    "-13"
    ],
    "shot": {
     "type": "close",
@@ -214,16 +220,46 @@
      "action": "cross",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "KICKOFF",
+    "-13°F"
+   ]
   },
   {
-   "text": "Green Bay's field had underground heating coils. They failed.",
+   "text": "With the wind? Much worse. Nobody packed enough socks.",
    "key": [
-    "FAILED."
+    "SOCKS."
    ],
+   "place": {
+    "capy": [
+     -1.6,
+     1.2
+    ],
+    "qb": false,
+    "dal": false
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
    "board": [
-    "HEAT",
-    "OFF"
+    "WIND CHILL",
+    "WORSE"
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "The heating system under your field? It breaks down.",
+   "key": [
+    "BREAKS"
    ],
    "place": {
     "qb": false,
@@ -231,7 +267,8 @@
     "keeper": [
      0,
      0.5
-    ]
+    ],
+    "capy": false
    },
    "shot": {
     "type": "medium",
@@ -243,10 +280,14 @@
      "action": "shrug",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "HEAT",
+    "OFF"
+   ]
   },
   {
-   "text": "So the playing surface froze into ice.",
+   "text": "So the playing surface turns to ice.",
    "key": [
     "ICE."
    ],
@@ -262,9 +303,9 @@
    }
   },
   {
-   "text": "With no working whistles, the officials just shouted their calls.",
+   "text": "Whistles? They don't work. The officials have to shout.",
    "key": [
-    "SHOUTED"
+    "SHOUT."
    ],
    "place": {
     "keeper": false,
@@ -286,18 +327,10 @@
    }
   },
   {
-   "text": "The halftime band show was canceled. Instruments froze.",
+   "text": "The halftime band show? Canceled. The instruments froze too.",
    "key": [
-    "CANCELED.",
-    "FROZE."
+    "CANCELED."
    ],
-   "set": "tunnel",
-   "setOpts": {
-    "boardText": [
-     "HALFTIME:",
-     "CANCELED"
-    ]
-   },
    "place": {
     "band": "center",
     "capy": [
@@ -325,26 +358,21 @@
    "board": [
     "HALFTIME:",
     "CANCELED"
-   ]
-  },
-  {
-   "text": "Late in the game, Green Bay trailed seventeen to fourteen.",
-   "cap": "Late in the game, Green Bay trailed 17 to 14.",
-   "key": [
-    "17",
-    "14."
    ],
-   "set": "field",
+   "set": "tunnel",
    "setOpts": {
     "boardText": [
-     "DALLAS 17",
-     "GREEN BAY 14"
-    ],
-    "grass": "#c9d6c2"
+     "HALFTIME:",
+     "CANCELED"
+    ]
    },
-   "board": [
-    "DALLAS 17",
-    "GREEN BAY 14"
+   "speaker": "capy"
+  },
+  {
+   "text": "Late in the game? You trail seventeen to fourteen.",
+   "cap": "Late in the game? You trail 17 to 14.",
+   "key": [
+    "17"
    ],
    "place": {
     "qb": [
@@ -376,14 +404,25 @@
      "action": "cross",
      "look": "qb"
     }
+   },
+   "board": [
+    "DALLAS 17",
+    "GREEN BAY 14"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "DALLAS 17",
+     "GREEN BAY 14"
+    ],
+    "grass": "#c9d6c2"
    }
   },
   {
-   "text": "Ball at the one yard line. Sixteen seconds left. No timeouts.",
-   "cap": "Ball at the 1-yard line. 16 seconds left. No timeouts.",
+   "text": "Sixteen seconds left. Your timeouts? All gone. Your toes? Also gone.",
+   "cap": "16 seconds left. Your timeouts? All gone. Your toes? Also gone.",
    "key": [
-    "16",
-    "SECONDS"
+    "16"
    ],
    "place": {
     "qb": [
@@ -414,56 +453,251 @@
    }
   },
   {
-   "text": "Quarterback Bart Starr kept the ball himself. A sneak.",
+   "text": "You're Bart Starr. You keep the ball. A sneak.",
    "key": [
     "SNEAK."
    ],
+   "act": {},
    "shot": {
-    "type": "close",
+    "type": "follow",
     "on": "qb"
    },
-   "act": {
-    "qb": {
-     "mood": "smug",
-     "action": "hold",
-     "look": "camera"
-    }
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "DALLAS 17",
+     "GREEN BAY 14"
+    ],
+    "grass": "#c9d6c2",
+    "endZone": 8,
+    "zoneA": "#1e4d2b",
+    "zoneB": "#1e4d2b"
+   },
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        5.6,
+        0.6
+       ],
+       [
+        0.4,
+        5.6,
+        0.6
+       ],
+       [
+        0.7,
+        6.6,
+        0.6
+       ],
+       [
+        1,
+        7.4,
+        0.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.4,
+        "run"
+       ]
+      ]
+     },
+     "kramer": {
+      "path": [
+       [
+        0,
+        7.0,
+        -1.6
+       ],
+       [
+        0.4,
+        7.2,
+        -1.6
+       ],
+       [
+        1,
+        8.2,
+        -1.7
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.4,
+        "run"
+       ]
+      ]
+     },
+     "dal": {
+      "path": [
+       [
+        0,
+        8.8,
+        -2.0
+       ],
+       [
+        0.4,
+        8.9,
+        -2.0
+       ],
+       [
+        1,
+        9.8,
+        -2.1
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "carry": [
+     [
+      0,
+      "qb"
+     ]
+    ]
    }
   },
   {
-   "text": "Behind blocks from Jerry Kramer and Ken Bowman, he got in.",
+   "text": "Jerry Kramer blocks. You slide in. Touchdown.",
    "key": [
-    "GOT",
-    "IN."
+    "TOUCHDOWN."
    ],
-   "place": {
-    "dal": false,
-    "qb": [
-     0,
-     0
+   "act": {},
+   "shot": {
+    "type": "follow_high",
+    "on": "qb"
+   },
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        7.4,
+        0.6
+       ],
+       [
+        0.3,
+        8.4,
+        0.6
+       ],
+       [
+        0.5,
+        9.0,
+        0.6
+       ],
+       [
+        1,
+        9.0,
+        0.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.5,
+        "celebrate"
+       ]
+      ]
+     },
+     "kramer": {
+      "path": [
+       [
+        0,
+        8.2,
+        -1.7
+       ],
+       [
+        0.5,
+        8.9,
+        -1.8
+       ],
+       [
+        1,
+        8.9,
+        -1.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.5,
+        "cheer"
+       ]
+      ]
+     },
+     "dal": {
+      "path": [
+       [
+        0,
+        9.8,
+        -2.1
+       ],
+       [
+        0.5,
+        10.5,
+        -2.2
+       ],
+       [
+        1,
+        10.5,
+        -2.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.5,
+        "slump"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "carry": [
+     [
+      0,
+      "qb"
+     ]
     ]
    },
-   "shot": {
-    "type": "wide",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    }
-   }
+   "sfx": [
+    [
+     0.5,
+     "roar"
+    ]
+   ]
   },
   {
-   "text": "Green Bay won, twenty one to seventeen.",
-   "cap": "Green Bay won, 21 to 17.",
+   "text": "Green Bay twenty one, Dallas seventeen.",
+   "cap": "Green Bay 21, Dallas 17.",
    "key": [
-    "21"
-   ],
-   "board": [
-    "GREEN BAY 21",
-    "DALLAS 17"
+    "21,"
    ],
    "place": {
     "qb": [
@@ -495,24 +729,47 @@
      "action": "slump",
      "look": "qb"
     }
-   }
+   },
+   "board": [
+    "GREEN BAY 21",
+    "DALLAS 17"
+   ]
   },
   {
-   "text": "They call it the Ice Bowl. Would you have stayed for the whole game? Yes or no?",
+   "text": "They call it the Ice Bowl. Cowboys fans? Still thawing.",
+   "key": [
+    "THAWING."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "qb": false,
+    "dal": false
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "board": [
+    "THE",
+    "ICE BOWL"
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you stay for all four quarters? Yes or no?",
    "key": [
     "YES",
     "NO?"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "ICE BOWL",
-     "-13\u00b0F"
-    ]
-   },
-   "board": [
-    "ICE BOWL",
-    "-13\u00b0F"
    ],
    "place": {
     "capy": [
@@ -541,6 +798,17 @@
      "look": "capy"
     }
    },
+   "board": [
+    "ICE BOWL",
+    "-13°F"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "ICE BOWL",
+     "-13°F"
+    ]
+   },
    "speaker": "capy"
   }
  ],
@@ -548,10 +816,6 @@
   {
    "title": "Pro Football Hall of Fame: The Ice Bowl",
    "url": "https://profootballhof.com/football-history/the-ice-bowl"
-  },
-  {
-   "title": "NFL.com 100 Greatest Plays: Bart Starr's QB sneak in the Ice Bowl",
-   "url": "https://www.nfl.com/100/originals/100-greatest/plays-8"
   },
   {
    "title": "WPR: Packers' famed Ice Bowl celebrates 50th anniversary",
@@ -568,6 +832,119 @@
   {
    "title": "Sports Collectors Digest: Ice Bowl revisited 50 years later",
    "url": "https://sportscollectorsdigest.com/memorabilia/ice-bowl-revisited-50-years-later"
+  },
+  {
+   "title": "Wikipedia: Ice Bowl (NFL)",
+   "url": "https://en.wikipedia.org/wiki/Ice_Bowl_(NFL)"
+  },
+  {
+   "title": "Fox 11 (AP): Tales from the cold, Ice Bowl still chills 50 years later",
+   "url": "https://fox11online.com/sports/packers-and-nfl/tales-from-the-cold-ice-bowl-still-chills-50-years"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "A referee's whistle froze to his lips",
+   "terms": [
+    "whistle",
+    "froze|frozen|freez"
+   ]
+  },
+  {
+   "claim": "It was the 1967 NFL Championship Game",
+   "terms": [
+    "NFL Championship",
+    "1967"
+   ]
+  },
+  {
+   "claim": "Dallas at Green Bay on December 31 (New Year's Eve)",
+   "terms": [
+    "Dallas|Cowboys",
+    "Green Bay|Packers",
+    "December 31|New Year"
+   ]
+  },
+  {
+   "claim": "Kickoff temperature was minus 13 degrees",
+   "terms": [
+    "13",
+    "below|degree|temperature"
+   ]
+  },
+  {
+   "claim": "The wind chill made it much colder",
+   "terms": [
+    "wind chill"
+   ]
+  },
+  {
+   "claim": "The field heating system failed",
+   "terms": [
+    "heating",
+    "fail|malfunction|broke|froze|didn"
+   ]
+  },
+  {
+   "claim": "The playing surface froze into ice",
+   "terms": [
+    "field|turf|surface",
+    "ice|icy|frozen"
+   ]
+  },
+  {
+   "claim": "The halftime band show was canceled",
+   "terms": [
+    "band",
+    "cancel"
+   ]
+  },
+  {
+   "claim": "Officials shouted calls since whistles froze; band instruments froze",
+   "terms": [
+    "whistle",
+    "shout|yell|voice|instrument"
+   ]
+  },
+  {
+   "claim": "Green Bay trailed 17-14 late in the game",
+   "terms": [
+    "17 14"
+   ]
+  },
+  {
+   "claim": "16 seconds left and the Packers had no timeouts left",
+   "terms": [
+    "16 seconds",
+    "timeout"
+   ]
+  },
+  {
+   "claim": "Bart Starr kept the ball on a quarterback sneak",
+   "terms": [
+    "Starr",
+    "sneak"
+   ]
+  },
+  {
+   "claim": "Jerry Kramer threw a key block",
+   "terms": [
+    "Kramer",
+    "block"
+   ]
+  },
+  {
+   "claim": "Green Bay won 21-17",
+   "terms": [
+    "21 17"
+   ]
+  },
+  {
+   "claim": "It is known as the Ice Bowl",
+   "terms": [
+    "Ice Bowl"
+   ]
   }
  ]
 }

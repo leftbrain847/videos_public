@@ -68,10 +68,9 @@
  },
  "lines": [
   {
-   "text": "In a 1988 playoff game, a quarterback threw for four hundred and seven yards. Almost nobody saw it.",
-   "cap": "In a 1988 playoff game, a quarterback threw for 407 yards. Almost nobody saw it.",
+   "text": "You throw for four hundred seven yards. Nobody sees it.",
+   "cap": "You throw for 407 yards. Nobody sees it.",
    "key": [
-    "407",
     "NOBODY"
    ],
    "place": {
@@ -107,10 +106,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Eagles at Bears. New Year's Eve, in Chicago.",
+   "text": "New Year's Eve, nineteen eighty eight. Eagles at Bears.",
+   "cap": "New Year's Eve, 1988. Eagles at Bears.",
    "key": [
-    "EVE,",
-    "CHICAGO."
+    "1988."
    ],
    "place": {
     "qb": [
@@ -142,15 +141,9 @@
    }
   },
   {
-   "text": "Chicago led seventeen to six late in the first half.",
-   "cap": "Chicago led 17 to 6 late in the first half.",
+   "text": "It's a playoff game in Chicago. Big stakes. Clear skies. For now.",
    "key": [
-    "17",
-    "6"
-   ],
-   "board": [
-    "BEARS 17",
-    "EAGLES 6"
+    "NOW."
    ],
    "place": {
     "qb": [
@@ -182,16 +175,17 @@
      "action": "hold",
      "look": "bear"
     }
-   }
+   },
+   "board": [
+    "BEARS 17",
+    "EAGLES 6"
+   ]
   },
   {
-   "text": "Then, just before halftime, a fog rolled in off Lake Michigan.",
+   "text": "Second quarter. A thick fog rolls in.",
+   "cap": "2nd quarter. A thick fog rolls in.",
    "key": [
     "FOG"
-   ],
-   "board": [
-    "FOG",
-    "???"
    ],
    "place": {
     "qb": [
@@ -210,31 +204,50 @@
      "action": "hold",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "FOG",
+    "???"
+   ]
   },
   {
-   "text": "And it never left.",
+   "text": "It never leaves. Very committed fog. Honestly, impressive.",
    "key": [
-    "NEVER"
+    "COMMITTED"
    ],
    "shot": {
-    "type": "close",
-    "on": "qb"
+    "type": "medium",
+    "on": "capy"
    },
    "act": {
     "qb": {
      "mood": "worried",
      "action": "hold",
      "look": "camera"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
     }
-   }
+   },
+   "place": {
+    "capy": [
+     -1.9,
+     1.2
+    ],
+    "qb": [
+     0.6,
+     0
+    ]
+   },
+   "speaker": "capy"
   },
   {
-   "text": "Players said they could see maybe fifteen or twenty yards.",
-   "cap": "Players said they could see maybe 15 or 20 yards.",
+   "text": "Players can see maybe fifteen to twenty yards.",
+   "cap": "Players can see maybe 15 to 20 yards.",
    "key": [
-    "15",
-    "20"
+    "15"
    ],
    "place": {
     "qb": [
@@ -244,7 +257,8 @@
     "bear": [
      1.4,
      0
-    ]
+    ],
+    "capy": false
    },
    "shot": {
     "type": "two",
@@ -265,18 +279,10 @@
    }
   },
   {
-   "text": "Up in the TV booth, the broadcasters couldn't see the field.",
+   "text": "Up in the booth? The broadcasters can't see the field.",
    "key": [
-    "BOOTH,",
-    "COULDN'T"
+    "CAN'T"
    ],
-   "set": "office",
-   "setOpts": {
-    "boardText": [
-     "FIELD VIEW:",
-     "FOG"
-    ]
-   },
    "place": {
     "tv": [
      2.4,
@@ -293,12 +299,19 @@
      "action": "point",
      "look": "camera"
     }
+   },
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "FIELD VIEW:",
+     "FOG"
+    ]
    }
   },
   {
-   "text": "So the pictures came from cameramen down on the sideline.",
+   "text": "So the pictures come from sideline cameras. Down low.",
    "key": [
-    "SIDELINE."
+    "SIDELINE"
    ],
    "place": {
     "capy": [
@@ -321,51 +334,13 @@
      "action": "shrug",
      "look": "tv"
     }
-   }
+   },
+   "speaker": "capy"
   },
   {
-   "text": "Fans in the stands couldn't tell what was happening either.",
+   "text": "You're Randall Cunningham. You keep throwing anyway.",
    "key": [
-    "STANDS"
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "???",
-     "???"
-    ]
-   },
-   "board": [
-    "???",
-    "???"
-   ],
-   "place": {
-    "fan": [
-     0,
-     1
-    ]
-   },
-   "shot": {
-    "type": "medium",
-    "on": "fan"
-   },
-   "act": {
-    "fan": {
-     "mood": "confused",
-     "action": "shrug",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Through all that, Randall Cunningham threw for four hundred and seven yards.",
-   "cap": "Through all that, Randall Cunningham threw for 407 yards.",
-   "key": [
-    "407"
-   ],
-   "board": [
-    "PASSING",
-    "407 YDS"
+    "ANYWAY."
    ],
    "place": {
     "fan": false,
@@ -389,14 +364,20 @@
      "action": "throw",
      "look": "camera"
     }
+   },
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BEARS",
+     "EAGLES"
+    ]
    }
   },
   {
-   "text": "Twenty seven completions. Zero touchdowns. Three interceptions.",
-   "cap": "27 completions. 0 touchdowns. 3 interceptions.",
+   "text": "Four hundred seven yards. Through the fog. Zero touchdowns.",
+   "cap": "407 yards. Through the fog. 0 touchdowns.",
    "key": [
-    "0",
-    "TOUCHDOWNS."
+    "0"
    ],
    "shot": {
     "type": "close",
@@ -408,20 +389,59 @@
      "action": "idle",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "PASSING",
+    "407 YDS"
+   ]
   },
   {
-   "text": "The Eagles kicked four field goals and never reached the end zone.",
-   "cap": "The Eagles kicked 4 field goals and never reached the end zone.",
+   "text": "Three interceptions. The fog plays great defense.",
+   "cap": "3 interceptions. The fog plays great defense.",
    "key": [
-    "4",
-    "NEVER"
+    "DEFENSE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "qb": [
+     1.2,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your kicker makes four field goals. Your offense never scores a touchdown.",
+   "cap": "Your kicker makes 4 field goals. Your offense never scores a touchdown.",
+   "key": [
+    "4"
    ],
    "place": {
     "qb": [
      0,
      0
-    ]
+    ],
+    "capy": false
    },
    "shot": {
     "type": "wide",
@@ -435,15 +455,11 @@
    }
   },
   {
-   "text": "Final score: Bears twenty, Eagles twelve.",
-   "cap": "Final score: Bears 20, Eagles 12.",
+   "text": "Final score? Bears twenty, Eagles twelve.",
+   "cap": "Final score? Bears 20, Eagles 12.",
    "key": [
     "20,",
     "12."
-   ],
-   "board": [
-    "BEARS 20",
-    "EAGLES 12"
    ],
    "place": {
     "qb": [
@@ -475,24 +491,72 @@
      "action": "slump",
      "look": "bear"
     }
+   },
+   "board": [
+    "BEARS 20",
+    "EAGLES 12"
+   ]
+  },
+  {
+   "text": "They call it the Fog Bowl.",
+   "key": [
+    "BOWL."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "qb": false,
+    "bear": false
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "board": [
+    "THE",
+    "FOG BOWL"
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "Eagles fans? Thirty seven years later, still squinting.",
+   "cap": "Eagles fans? 37 years later, still squinting.",
+   "key": [
+    "SQUINTING"
+   ],
+   "place": {
+    "fan": [
+     0,
+     1
+    ],
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
    }
   },
   {
-   "text": "They called it the Fog Bowl. So, would you rather play in fog or snow? One word.",
+   "text": "Fog or snow? Which is worse? One word.",
    "key": [
     "FOG",
     "SNOW?"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "FOG",
-     "OR SNOW?"
-    ]
-   },
-   "board": [
-    "FOG",
-    "OR SNOW?"
    ],
    "place": {
     "capy": [
@@ -521,18 +585,21 @@
      "look": "capy"
     }
    },
+   "board": [
+    "FOG",
+    "OR SNOW?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "FOG",
+     "OR SNOW?"
+    ]
+   },
    "speaker": "capy"
   }
  ],
  "sources": [
-  {
-   "title": "NFL.com 100 Greatest Games: NFC Divisional Playoff, 'The Fog Bowl'",
-   "url": "https://www.nfl.com/100/originals/100-greatest/games-50"
-  },
-  {
-   "title": "SI Vault: The game was lost in the fog (Jan 9, 1989)",
-   "url": "https://vault.si.com/vault/1989/01/09/nfl-playoffs-the-game-was-lost-in-the-fog-in-the-mists-of-soldier-field-the-mistake-prone-eagles-were-beaten-by-the-bears-as-best-as-anyone-could-see"
-  },
   {
    "title": "AP via Fox 32: 30 years after Fog Bowl, Bears-Eagles meet again in playoffs",
    "url": "https://fox32chicago.com/sports/30-years-after-fog-bowl-bears-eagles-meet-again-in-playoffs"
@@ -540,6 +607,90 @@
   {
    "title": "Wikipedia: Fog Bowl (American football)",
    "url": "https://en.wikipedia.org/wiki/Fog_Bowl_(American_football)"
+  },
+  {
+   "title": "History.com: The NFL's Fog Bowl",
+   "url": "https://www.history.com/news/nfl-fog-bowl-game-bizarre-weather"
+  },
+  {
+   "title": "History.com: This day in history, the Fog Bowl",
+   "url": "https://www.history.com/this-day-in-history/december-31/worst-nfl-weather-fog-bowl-bears-eagles"
+  },
+  {
+   "title": "National Weather Service Chicago: The Fog Bowl",
+   "url": "https://www.weather.gov/lot/FogBowl1988"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Randall Cunningham threw for 407 yards in the fog",
+   "terms": [
+    "Cunningham",
+    "407"
+   ]
+  },
+  {
+   "claim": "The game was Eagles at Bears on December 31, 1988",
+   "terms": [
+    "December 31|New Year",
+    "1988"
+   ]
+  },
+  {
+   "claim": "It was a playoff game in Chicago",
+   "terms": [
+    "playoff",
+    "Chicago|Soldier Field"
+   ]
+  },
+  {
+   "claim": "A fog rolled in during the second quarter",
+   "terms": [
+    "fog",
+    "second quarter|2nd quarter|first half|halftime"
+   ]
+  },
+  {
+   "claim": "Visibility was about 15 to 20 yards",
+   "terms": [
+    "fog",
+    "yards",
+    "15|20"
+   ]
+  },
+  {
+   "claim": "Broadcasters could not see the field",
+   "terms": [
+    "fog",
+    "broadcast|announcer|booth|television|TV"
+   ]
+  },
+  {
+   "claim": "Cunningham threw no touchdowns and three interceptions",
+   "terms": [
+    "Cunningham",
+    "intercept"
+   ]
+  },
+  {
+   "claim": "The Eagles kicked four field goals",
+   "terms": [
+    "field goal",
+    "Eagles|Zendejas"
+   ]
+  },
+  {
+   "claim": "Bears won 20-12",
+   "terms": [
+    "20 12"
+   ]
+  },
+  {
+   "claim": "It is known as the Fog Bowl",
+   "terms": [
+    "Fog Bowl"
+   ]
   }
  ]
 }

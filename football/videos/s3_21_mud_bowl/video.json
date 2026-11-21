@@ -56,11 +56,10 @@
  },
  "lines": [
   {
-   "text": "In one AFC title game, the two quarterbacks threw eight interceptions. Combined.",
-   "cap": "In one AFC title game, the two quarterbacks threw 8 interceptions. Combined.",
+   "text": "You throw five interceptions. In a title game. Rough day.",
+   "cap": "You throw 5 interceptions. In a title game. Rough day.",
    "key": [
-    "8",
-    "COMBINED."
+    "5"
    ],
    "place": {
     "lb": false,
@@ -94,9 +93,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Jets at Dolphins, January 1983. The AFC Championship, in Miami.",
+   "text": "Jets at Dolphins. January, nineteen eighty three.",
+   "cap": "Jets at Dolphins. January 1983.",
    "key": [
-    "MIAMI."
+    "1983."
    ],
    "place": {
     "capy": false,
@@ -128,10 +128,10 @@
    }
   },
   {
-   "text": "Heavy rain fell before the game and during it.",
+   "text": "The A F C Championship. In Miami.",
+   "cap": "The AFC Championship. In Miami.",
    "key": [
-    "BEFORE",
-    "DURING"
+    "MIAMI."
    ],
    "shot": {
     "type": "high",
@@ -149,37 +149,43 @@
    }
   },
   {
-   "text": "And the field was left uncovered. No tarp.",
+   "text": "Heavy rain falls. The field stays uncovered. No tarp.",
    "key": [
-    "NO",
     "TARP."
    ],
-   "shot": {
-    "type": "close",
-    "on": "lb"
+   "place": {
+    "capy": [
+     -1.6,
+     1.1
+    ],
+    "qb": false,
+    "lb": [
+     1.4,
+     0
+    ]
    },
    "act": {
-    "lb": {
+    "capy": {
      "mood": "smug",
      "action": "shrug",
      "look": "camera"
+    },
+    "lb": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
     }
-   }
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "speaker": "capy"
   },
   {
-   "text": "The Jets cried foul. The field turned to mud.",
+   "text": "The Jets cry foul. The field is now pure mud.",
    "key": [
-    "FOUL.",
     "MUD."
-   ],
-   "set": "press",
-   "setOpts": {
-    "boardText": [
-     "NO TARP?"
-    ]
-   },
-   "board": [
-    "NO TARP?"
    ],
    "place": {
     "exec": "center"
@@ -194,25 +200,22 @@
      "action": "point",
      "look": "camera"
     }
+   },
+   "board": [
+    "NO TARP?"
+   ],
+   "set": "press",
+   "setOpts": {
+    "boardText": [
+     "NO TARP?"
+    ]
    }
   },
   {
-   "text": "At halftime, it was still zero to zero.",
-   "cap": "At halftime, it was still 0 to 0.",
+   "text": "Halftime score? Zero to zero. The mud is winning.",
+   "cap": "Halftime score? 0 to 0. The mud is winning.",
    "key": [
     "0"
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "JETS 0",
-     "MIAMI 0"
-    ],
-    "grass": "#8a6a45"
-   },
-   "board": [
-    "JETS 0",
-    "MIAMI 0"
    ],
    "place": {
     "qb": [
@@ -244,12 +247,24 @@
      "action": "cross",
      "look": "qb"
     }
+   },
+   "board": [
+    "JETS 0",
+    "MIAMI 0"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "JETS 0",
+     "MIAMI 0"
+    ],
+    "grass": "#8a6a45"
    }
   },
   {
-   "text": "Jets quarterback Richard Todd kept throwing anyway, into the slop.",
+   "text": "You're Richard Todd. You keep throwing anyway.",
    "key": [
-    "THROWING."
+    "ANYWAY."
    ],
    "place": {
     "lb": false,
@@ -271,39 +286,30 @@
    }
   },
   {
-   "text": "Fifteen of thirty seven, for one hundred three yards.",
-   "cap": "15 of 37, for 103 yards.",
+   "text": "Fifteen of thirty seven. One hundred three yards.",
+   "cap": "15 of 37. 103 yards.",
    "key": [
-    "15",
     "103"
-   ],
-   "board": [
-    "TODD",
-    "15/37 103 YDS"
    ],
    "place": {
     "qb": [
-     4.6,
-     0.5
+     1.2,
+     0
     ],
     "capy": [
-     6.6,
-     0.8
+     -1.6,
+     1.0
     ]
    },
    "shot": {
-    "type": "low",
-    "on": "qb",
-    "offset": [
-     -1.3,
-     1.4,
-     3
-    ]
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
    },
    "act": {
     "qb": {
      "mood": "worried",
-     "action": "throw",
+     "action": "hold",
      "look": "camera"
     },
     "capy": {
@@ -311,13 +317,18 @@
      "action": "point",
      "look": "qb"
     }
-   }
+   },
+   "board": [
+    "TODD",
+    "15/37 103 YDS"
+   ],
+   "speaker": "capy"
   },
   {
-   "text": "And five interceptions. Five.",
-   "cap": "And 5 interceptions. 5.",
+   "text": "Five interceptions. Honestly, the mud has better hands.",
+   "cap": "5 interceptions. Honestly, the mud has better hands.",
    "key": [
-    "5"
+    "HANDS."
    ],
    "place": {
     "capy": false,
@@ -339,10 +350,9 @@
    }
   },
   {
-   "text": "Three of them went to one Miami linebacker, A. J. Duhe.",
-   "cap": "3 of them went to one Miami linebacker, A.J. Duhe.",
+   "text": "Three go to one linebacker. A J Duhe.",
+   "cap": "3 go to one linebacker. A.J. Duhe.",
    "key": [
-    "3",
     "DUHE."
    ],
    "place": {
@@ -365,13 +375,10 @@
    }
   },
   {
-   "text": "That set an AFC Championship Game record.",
+   "text": "That's an A F C Championship record.",
+   "cap": "That's an AFC Championship record.",
    "key": [
     "RECORD."
-   ],
-   "board": [
-    "DUHE",
-    "3 INT"
    ],
    "place": {
     "lb": [
@@ -403,43 +410,308 @@
      "action": "slump",
      "look": "lb"
     }
-   }
+   },
+   "board": [
+    "DUHE",
+    "3 INT"
+   ]
   },
   {
-   "text": "On the last one, he tipped the pass to himself and ran it back thirty five yards. Touchdown.",
-   "cap": "On the last one, he tipped the pass to himself and ran it back 35 yards. Touchdown.",
+   "text": "The last one? He tips it to himself. Then he runs.",
    "key": [
-    "35",
-    "TOUCHDOWN."
+    "RUNS."
    ],
-   "place": {
-    "lb": [
-     0,
-     0
-    ],
-    "qb": false
-   },
+   "act": {},
    "shot": {
-    "type": "wide",
+    "type": "follow",
     "on": "lb"
    },
-   "act": {
-    "lb": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    }
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "JETS 0",
+     "MIAMI 7"
+    ],
+    "grass": "#8a6a45",
+    "endZone": 30,
+    "zoneA": "#16807a",
+    "zoneB": "#16807a"
+   },
+   "play": {
+    "cast": {
+     "lb": {
+      "path": [
+       [
+        0,
+        -2,
+        1.0
+       ],
+       [
+        0.5,
+        -2,
+        1.0
+       ],
+       [
+        0.75,
+        3,
+        0.75
+       ],
+       [
+        1,
+        8,
+        0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.4,
+        "catch"
+       ],
+       [
+        0.5,
+        "run"
+       ]
+      ]
+     },
+     "qb": {
+      "path": [
+       [
+        0,
+        -9,
+        -3.0
+       ],
+       [
+        0.5,
+        -4,
+        -2.8
+       ],
+       [
+        1,
+        1,
+        -2.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ]
+     }
+    },
+    "carry": [
+     [
+      0.4,
+      "lb"
+     ]
+    ],
+    "ball": [
+     [
+      0.05,
+      -2.4,
+      1.6,
+      1.0
+     ],
+     [
+      0.22,
+      -2.1,
+      3.4,
+      1.0
+     ],
+     [
+      0.4,
+      -2,
+      1.5,
+      1.0
+     ]
+    ]
    }
   },
   {
-   "text": "Miami won, fourteen to nothing, and went to the Super Bowl.",
-   "cap": "Miami won, 14 to 0, and went to the Super Bowl.",
+   "text": "Thirty five yards. Touchdown.",
+   "cap": "35 yards. Touchdown.",
+   "key": [
+    "35"
+   ],
+   "act": {},
+   "shot": {
+    "type": "follow_high",
+    "on": "lb"
+   },
+   "play": {
+    "cast": {
+     "lb": {
+      "path": [
+       [
+        0.0,
+        8.0,
+        0.5
+       ],
+       [
+        0.09,
+        10.4,
+        0.45
+       ],
+       [
+        0.18,
+        12.8,
+        0.4
+       ],
+       [
+        0.27,
+        15.2,
+        0.35
+       ],
+       [
+        0.36,
+        17.6,
+        0.3
+       ],
+       [
+        0.45,
+        20.0,
+        0.25
+       ],
+       [
+        0.54,
+        22.4,
+        0.2
+       ],
+       [
+        0.63,
+        24.8,
+        0.15
+       ],
+       [
+        0.72,
+        27.2,
+        0.1
+       ],
+       [
+        0.81,
+        29.6,
+        0.05
+       ],
+       [
+        0.9,
+        32.0,
+        0.0
+       ],
+       [
+        1,
+        32,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.9,
+        "celebrate"
+       ]
+      ]
+     },
+     "qb": {
+      "path": [
+       [
+        0.0,
+        1.0,
+        -2.6
+       ],
+       [
+        0.09,
+        3.1,
+        -2.56
+       ],
+       [
+        0.18,
+        5.2,
+        -2.52
+       ],
+       [
+        0.27,
+        7.3,
+        -2.48
+       ],
+       [
+        0.36,
+        9.4,
+        -2.44
+       ],
+       [
+        0.45,
+        11.5,
+        -2.4
+       ],
+       [
+        0.54,
+        13.6,
+        -2.36
+       ],
+       [
+        0.63,
+        15.7,
+        -2.32
+       ],
+       [
+        0.72,
+        17.8,
+        -2.28
+       ],
+       [
+        0.81,
+        19.9,
+        -2.24
+       ],
+       [
+        0.9,
+        22.0,
+        -2.2
+       ],
+       [
+        1,
+        22,
+        -2.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.9,
+        "slump"
+       ]
+      ]
+     }
+    },
+    "carry": [
+     [
+      0,
+      "lb"
+     ]
+    ]
+   },
+   "sfx": [
+    [
+     0.85,
+     "roar"
+    ]
+   ]
+  },
+  {
+   "text": "Miami wins, fourteen to nothing. Off to the Super Bowl.",
+   "cap": "Miami wins, 14 to 0. Off to the Super Bowl.",
    "key": [
     "14"
-   ],
-   "board": [
-    "MIAMI 14",
-    "JETS 0"
    ],
    "place": {
     "lb": [
@@ -471,46 +743,47 @@
      "action": "slump",
      "look": "lb"
     }
-   }
+   },
+   "board": [
+    "MIAMI 14",
+    "JETS 0"
+   ]
   },
   {
-   "text": "People still call it the Mud Bowl.",
+   "text": "People call it the Mud Bowl. Jets fans call it worse.",
    "key": [
-    "MUD",
-    "BOWL."
+    "WORSE."
    ],
    "place": {
-    "lb": false,
-    "qb": [
+    "capy": [
      0,
-     0
-    ]
-   },
-   "shot": {
-    "type": "high",
-    "on": "qb"
+     1.0
+    ],
+    "lb": false,
+    "qb": false
    },
    "act": {
-    "qb": {
-     "mood": "sad",
-     "action": "slump"
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
     }
-   }
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "board": [
+    "THE",
+    "MUD BOWL"
+   ],
+   "speaker": "capy"
   },
   {
-   "text": "Should someone have covered that field? Yes or no?",
+   "text": "Should Miami have covered that field? Yes or no?",
    "key": [
     "YES",
     "NO?"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "TARP?"
-    ]
-   },
-   "board": [
-    "TARP?"
    ],
    "place": {
     "capy": [
@@ -539,18 +812,19 @@
      "look": "capy"
     }
    },
+   "board": [
+    "TARP?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "TARP?"
+    ]
+   },
    "speaker": "capy"
   }
  ],
  "sources": [
-  {
-   "title": "SI Vault: Miami was one tough mudder (Jan 31, 1983)",
-   "url": "https://vault.si.com/vault/1983/01/31/miami-was-one-tough-mudder"
-  },
-  {
-   "title": "NFL.com 100 Greatest Games: Mud Bowl",
-   "url": "https://nfl.com/100/originals/100-greatest/games-100"
-  },
   {
    "title": "MiamiDolphins.com: In my own words, A.J. Duhe vs. New York Jets",
    "url": "https://www.miamidolphins.com/news/in-my-own-words-a-j-duhe-vs-new-york-jets-three-interceptions-1983"
@@ -562,6 +836,110 @@
   {
    "title": "Pro Football Hall of Fame: 1982 (Super Bowl XVII, Washington 27, Miami 17)",
    "url": "https://www.profootballhof.com/football-history/football-history/1980-1999/1982"
+  },
+  {
+   "title": "Yahoo Sports: Moment of Glory, the A.J. Duhe Game",
+   "url": "https://ca.news.yahoo.com/moment-of-glory-dolphins-lb-aj-duhe-started-decades-of-jets-misery-with-the-aj-duhe-game-130049308.html"
+  },
+  {
+   "title": "SI: Miami Dolphins history, 100 greatest plays, number 11",
+   "url": "https://www.si.com/nfl/dolphins/news/miami-dolphins-history-100-greatest-plays-number-11"
+  },
+  {
+   "title": "Barry Popik: Mud Bowl (1983 Jets-Dolphins AFC Championship)",
+   "url": "https://barrypopik.com/blog/mud_bowl_1983"
+  },
+  {
+   "title": "Wikipedia: 1982 Miami Dolphins season",
+   "url": "https://en.wikipedia.org/wiki/1982_Miami_Dolphins_season"
+  },
+  {
+   "title": "Wikipedia: 1982-83 NFL playoffs",
+   "url": "https://en.wikipedia.org/wiki/1982%E2%80%9383_NFL_playoffs"
+  },
+  {
+   "title": "Phinsider/FanSided: 50 moments in Miami Dolphins history",
+   "url": "https://phinphanatic.com/2015/11/17/50-moments-in-miami-dolphins-history/32"
+  },
+  {
+   "title": "Ultimate70s: NFL game summary, January 23, 1983",
+   "url": "https://www.ultimate70s.com/nflbox/19830123/NYJ/N"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Jets quarterback Richard Todd threw five interceptions",
+   "terms": [
+    "Todd",
+    "five|5"
+   ]
+  },
+  {
+   "claim": "Jets at Dolphins, January 1983, AFC Championship in Miami",
+   "terms": [
+    "AFC Championship|AFC title",
+    "1983|Jets"
+   ]
+  },
+  {
+   "claim": "Heavy rain fell and the field was left uncovered, with no tarp",
+   "terms": [
+    "tarp|uncovered"
+   ]
+  },
+  {
+   "claim": "The Jets complained the field was turned to mud",
+   "terms": [
+    "mud|muddy"
+   ]
+  },
+  {
+   "claim": "It was 0-0 at halftime",
+   "terms": [
+    "scoreless|0 0|halftime"
+   ]
+  },
+  {
+   "claim": "Todd went 15 of 37 for 103 yards",
+   "terms": [
+    "Todd",
+    "103|15 of 37|15 37"
+   ]
+  },
+  {
+   "claim": "A.J. Duhe intercepted three passes",
+   "terms": [
+    "Duhe",
+    "three|3"
+   ]
+  },
+  {
+   "claim": "Three interceptions was an AFC Championship Game record",
+   "terms": [
+    "Duhe",
+    "record"
+   ]
+  },
+  {
+   "claim": "On the last one he tipped the ball to himself and returned it 35 yards for a touchdown",
+   "terms": [
+    "Duhe",
+    "35"
+   ]
+  },
+  {
+   "claim": "Miami won 14-0 and went to the Super Bowl",
+   "terms": [
+    "14 0",
+    "Super Bowl|Dolphins"
+   ]
+  },
+  {
+   "claim": "It is called the Mud Bowl",
+   "terms": [
+    "Mud Bowl"
+   ]
   }
  ]
 }
