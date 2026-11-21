@@ -1,0 +1,907 @@
+{
+ "id": "myth_14_wukong_book_of_life",
+ "title": "The Monkey King deletes himself",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "HEAVEN"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "wk": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#d9a521",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#8a5a2a",
+    "skin": "#c68d64",
+    "sash": "#c0392b"
+   }
+  },
+  "wkS": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#d9a521",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#8a5a2a",
+    "skin": "#c68d64",
+    "sash": "#c0392b"
+   },
+   "hold": "scroll"
+  },
+  "clerk": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b2b33",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#8a8f96"
+   },
+   "hold": "scroll"
+  },
+  "jade": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e8b923",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#2e86c1",
+    "beard": true
+   }
+  },
+  "monk": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#a0522d",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#6b4426",
+    "skin": "#c68d64",
+    "sash": "#5c9e4a"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Death comes for you. So you delete yourself from the records.",
+   "key": [
+    "DELETE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "wk": [
+     1.2,
+     0
+    ],
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wk"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wk": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Sun Wukong. The Monkey King.",
+   "key": [
+    "KING."
+   ],
+   "board": [
+    "SUN WUKONG",
+    "MONKEY KING"
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You throw a feast. You drink too much. You pass out.",
+   "key": [
+    "OUT."
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     -1.3,
+     0.2
+    ],
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "wk",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "wk": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "monk": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You wake up in the underworld. They say your time is up.",
+   "key": [
+    "UNDERWORLD."
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Bad night. Worse morning.",
+   "key": [
+    "WORSE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "wk": false,
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You do not panic. You demand to see the records.",
+   "key": [
+    "RECORDS."
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     -1.3,
+     0.2
+    ],
+    "wkS": false,
+    "clerk": [
+     1.3,
+     -0.2
+    ],
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "wk",
+    "with": "clerk"
+   },
+   "act": {
+    "wk": {
+     "mood": "angry",
+     "action": "point",
+     "look": "clerk"
+    },
+    "clerk": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "wk"
+    }
+   }
+  },
+  {
+   "text": "There it is. The book of life. Also of death.",
+   "key": [
+    "BOOK"
+   ],
+   "board": [
+    "THE BOOK OF",
+    "LIFE AND DEATH"
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "wkS": false,
+    "clerk": [
+     0,
+     0
+    ],
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "clerk"
+   },
+   "act": {
+    "clerk": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your name is in it. Your lifespan is written down.",
+   "key": [
+    "LIFESPAN"
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "wkS": [
+     0,
+     0
+    ],
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wkS"
+   },
+   "act": {
+    "wkS": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You grab a brush. You cross your name out.",
+   "key": [
+    "CROSS"
+   ],
+   "board": [
+    "SUN WUKONG",
+    "DELETED"
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "wkS": [
+     0,
+     0
+    ],
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "wkS"
+   },
+   "act": {
+    "wkS": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you cross out every monkey you know.",
+   "key": [
+    "EVERY"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "wk": false,
+    "wkS": [
+     1.2,
+     0
+    ],
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wkS"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "wkS": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "This is mass identity fraud. At the afterlife office.",
+   "key": [
+    "FRAUD."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "wk": false,
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The underworld files a complaint. It goes up to heaven.",
+   "key": [
+    "COMPLAINT."
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "wkS": false,
+    "clerk": [
+     -1.3,
+     0.2
+    ],
+    "jade": [
+     1.3,
+     -0.2
+    ],
+    "monk": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "jade",
+    "pan": [
+     -1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "clerk": {
+     "mood": "angry",
+     "action": "point",
+     "look": "jade"
+    },
+    "jade": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "clerk"
+    }
+   }
+  },
+  {
+   "text": "The Jade Emperor has an idea. Give the monkey a job. Keep him busy.",
+   "key": [
+    "JOB."
+   ],
+   "place": {
+    "capy": false,
+    "wk": false,
+    "wkS": false,
+    "clerk": false,
+    "jade": [
+     0,
+     0
+    ],
+    "monk": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "jade"
+   },
+   "act": {
+    "jade": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You get a fancy title in heaven. You love it.",
+   "key": [
+    "TITLE"
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you learn the truth. You look after horses.",
+   "key": [
+    "HORSES."
+   ],
+   "speaker": "capy",
+   "board": [
+    "JOB",
+    "STABLE BOY"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "wk": [
+     1.2,
+     0
+    ],
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "wk",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "wk": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is the lowest job in heaven. So you quit.",
+   "key": [
+    "QUIT."
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You storm home. You give yourself a new title.",
+   "key": [
+    "TITLE."
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     -1.3,
+     0.2
+    ],
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "wk",
+    "with": "monk"
+   },
+   "act": {
+    "wk": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "monk": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "wk"
+    }
+   }
+  },
+  {
+   "text": "Great sage, equal to heaven.",
+   "cap": "Great Sage, Equal to Heaven.",
+   "key": [
+    "EQUAL"
+   ],
+   "board": [
+    "GREAT SAGE",
+    "EQUAL TO HEAVEN"
+   ],
+   "place": {
+    "capy": false,
+    "wk": [
+     0,
+     0
+    ],
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "wk"
+   },
+   "act": {
+    "wk": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He got demoted to horses. So he promoted himself. To equal of the gods.",
+   "key": [
+    "PROMOTED"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "wk": false,
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The gods will regret that job offer. A lot.",
+   "key": [
+    "REGRET"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "wk": false,
+    "wkS": false,
+    "clerk": false,
+    "jade": [
+     1.2,
+     0
+    ],
+    "monk": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "jade",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "jade": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you cross your name out? Yes or no? Monkey fans, you already did.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "CROSS IT OUT?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "wk": [
+     1.3,
+     0
+    ],
+    "wkS": false,
+    "clerk": false,
+    "jade": false,
+    "monk": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wk"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wk": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Sun Wukong",
+   "url": "https://en.wikipedia.org/wiki/Sun_Wukong"
+  },
+  {
+   "title": "Wikipedia: Journey to the West",
+   "url": "https://en.wikipedia.org/wiki/Journey_to_the_West"
+  },
+  {
+   "title": "Mythopedia: Sun Wukong",
+   "url": "https://mythopedia.com/chinese-mythology/gods/sun-wukong/"
+  },
+  {
+   "title": "Wikipedia: Jade Emperor",
+   "url": "https://en.wikipedia.org/wiki/Jade_Emperor"
+  },
+  {
+   "title": "Wikipedia: Diyu",
+   "url": "https://en.wikipedia.org/wiki/Diyu"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Sun Wukong is the Monkey King",
+   "terms": [
+    "Sun Wukong",
+    "Monkey King"
+   ]
+  },
+  {
+   "claim": "After a feast he falls asleep drunk",
+   "terms": [
+    "drunk|drinking|banquet|feast",
+    "sleep|asleep"
+   ]
+  },
+  {
+   "claim": "His soul is taken to the underworld because his time is up",
+   "terms": [
+    "underworld|Diyu|hell",
+    "soul"
+   ]
+  },
+  {
+   "claim": "He finds the Book of Life and Death",
+   "terms": [
+    "Book of Life and Death|book of life and death|register"
+   ]
+  },
+  {
+   "claim": "He crosses out his own name",
+   "terms": [
+    "name",
+    "Book of Life and Death|book of life and death|register"
+   ]
+  },
+  {
+   "claim": "He crosses out the names of all monkeys",
+   "terms": [
+    "monkeys",
+    "names"
+   ]
+  },
+  {
+   "claim": "The underworld complains to the Jade Emperor",
+   "terms": [
+    "Jade Emperor",
+    "complain|complaint|complained"
+   ]
+  },
+  {
+   "claim": "The Jade Emperor gives him a job in heaven to control him",
+   "terms": [
+    "Jade Emperor",
+    "position|post|job|appointed|title"
+   ]
+  },
+  {
+   "claim": "The job is looking after the heavenly horses",
+   "terms": [
+    "horses",
+    "Protector|Keeper|stable|Bimawen|Supervisor"
+   ]
+  },
+  {
+   "claim": "It is a lowly post and he quits",
+   "terms": [
+    "horses",
+    "lowly|lowest|low|menial|insult"
+   ]
+  },
+  {
+   "claim": "He gives himself the title Great Sage Equal to Heaven",
+   "terms": [
+    "Great Sage",
+    "Equal to Heaven"
+   ]
+  }
+ ]
+}

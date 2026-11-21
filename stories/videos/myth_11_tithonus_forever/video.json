@@ -1,0 +1,928 @@
+{
+ "id": "myth_11_tithonus_forever",
+ "title": "Immortal, but not young",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE DAWN"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "eos": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f28c6a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#e8a040",
+    "skin": "#f2c39b",
+    "sash": "#f6d21f"
+   }
+  },
+  "tith": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8e2b3a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  },
+  "tithO": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8e2b3a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#d8d8d8",
+    "skin": "#e8b48f",
+    "sash": "#e8b923",
+    "beard": true
+   }
+  },
+  "zeus": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b4c8c",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#e6e6e6",
+    "skin": "#f2c39b",
+    "sash": "#f6d21f",
+    "beard": true
+   }
+  },
+  "aph": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e86a9a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#f2d27a",
+    "skin": "#f2c39b",
+    "sash": "#e8b923"
+   }
+  },
+  "anch": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a7a3a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#c68d64",
+    "sash": "#8a8f96"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You make your boyfriend immortal. Then you realize you forgot one detail.",
+   "key": [
+    "DETAIL."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "eos": [
+     1.2,
+     0
+    ],
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eos"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eos": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Eos, the goddess of the dawn.",
+   "key": [
+    "DAWN."
+   ],
+   "board": [
+    "EOS",
+    "DAWN"
+   ],
+   "place": {
+    "capy": false,
+    "eos": [
+     0,
+     0
+    ],
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "eos"
+   },
+   "act": {
+    "eos": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You fall for a mortal. His name is Tithonus. He is a prince of Troy.",
+   "key": [
+    "TITHONUS,"
+   ],
+   "place": {
+    "capy": false,
+    "eos": [
+     -1.3,
+     0.2
+    ],
+    "tith": [
+     1.3,
+     -0.2
+    ],
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "eos",
+    "with": "tith"
+   },
+   "act": {
+    "eos": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "tith"
+    },
+    "tith": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "eos"
+    }
+   }
+  },
+  {
+   "text": "There is one small problem. Your mortal will expire.",
+   "key": [
+    "EXPIRE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eos": false,
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So you ask Zeus for a favor. Let him live forever.",
+   "key": [
+    "FOREVER."
+   ],
+   "place": {
+    "capy": false,
+    "eos": [
+     -1.3,
+     0.2
+    ],
+    "tith": false,
+    "tithO": false,
+    "zeus": [
+     1.3,
+     -0.2
+    ],
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "zeus",
+    "pan": [
+     -1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "eos": {
+     "mood": "happy",
+     "action": "point",
+     "look": "zeus"
+    },
+    "zeus": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "eos"
+    }
+   }
+  },
+  {
+   "text": "Zeus says yes. The wish is granted. Done.",
+   "key": [
+    "GRANTED."
+   ],
+   "board": [
+    "WISH",
+    "GRANTED"
+   ],
+   "place": {
+    "capy": false,
+    "eos": false,
+    "tith": false,
+    "tithO": false,
+    "zeus": [
+     0,
+     0
+    ],
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "zeus"
+   },
+   "act": {
+    "zeus": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "But you never asked for eternal youth. Not once.",
+   "key": [
+    "YOUTH."
+   ],
+   "place": {
+    "capy": false,
+    "eos": [
+     0,
+     0
+    ],
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "eos"
+   },
+   "act": {
+    "eos": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "One missing word. Forever is a very long time.",
+   "key": [
+    "FOREVER"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "eos": [
+     1.2,
+     0
+    ],
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eos"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "eos": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "At first, life is wonderful. You live at the edge of the world.",
+   "key": [
+    "WONDERFUL."
+   ],
+   "place": {
+    "capy": false,
+    "eos": [
+     -1.3,
+     0.2
+    ],
+    "tith": [
+     1.3,
+     -0.2
+    ],
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "tith",
+    "pan": [
+     -1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "eos": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "tith": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then gray hairs start to appear. Lots of them.",
+   "key": [
+    "GRAY"
+   ],
+   "place": {
+    "capy": false,
+    "eos": false,
+    "tith": false,
+    "tithO": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "tithO"
+   },
+   "act": {
+    "tithO": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then he cannot even lift his own limbs.",
+   "key": [
+    "LIMBS."
+   ],
+   "place": {
+    "capy": false,
+    "eos": false,
+    "tith": false,
+    "tithO": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "tithO"
+   },
+   "act": {
+    "tithO": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He keeps aging, year after year. He can never die.",
+   "key": [
+    "NEVER"
+   ],
+   "speaker": "capy",
+   "board": [
+    "AGE",
+    "FOREVER"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "eos": false,
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So you shut him in a room. You close the shining doors on him.",
+   "key": [
+    "ROOM."
+   ],
+   "place": {
+    "capy": false,
+    "eos": [
+     0,
+     0
+    ],
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eos"
+   },
+   "act": {
+    "eos": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Behind them, his voice babbles on. It never stops.",
+   "key": [
+    "NEVER"
+   ],
+   "place": {
+    "capy": false,
+    "eos": false,
+    "tith": false,
+    "tithO": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "tithO"
+   },
+   "act": {
+    "tithO": {
+     "mood": "confused",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In later versions, he shrinks. He becomes a tiny cicada.",
+   "key": [
+    "CICADA."
+   ],
+   "board": [
+    "NOW",
+    "A CICADA"
+   ],
+   "place": {
+    "capy": false,
+    "eos": false,
+    "tith": false,
+    "tithO": [
+     0,
+     0
+    ],
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "tithO"
+   },
+   "act": {
+    "tithO": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He is still chirping. Forever.",
+   "key": [
+    "CHIRPING."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "eos": false,
+    "tith": false,
+    "tithO": [
+     1.2,
+     0
+    ],
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "tithO"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "tithO": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Who tells this story? Aphrodite does, as a warning.",
+   "key": [
+    "WARNING."
+   ],
+   "place": {
+    "capy": false,
+    "eos": false,
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": [
+     -1.3,
+     0.2
+    ],
+    "anch": [
+     1.3,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "aph",
+    "with": "anch"
+   },
+   "act": {
+    "aph": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "anch"
+    },
+    "anch": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "aph"
+    }
+   }
+  },
+  {
+   "text": "She refuses that wish for her own lover.",
+   "key": [
+    "REFUSES"
+   ],
+   "place": {
+    "capy": false,
+    "eos": false,
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": [
+     0,
+     0
+    ],
+    "anch": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "aph"
+   },
+   "act": {
+    "aph": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Smart move. She learned from your mistake.",
+   "key": [
+    "MISTAKE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "eos": false,
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The lesson: read the whole wish first.",
+   "key": [
+    "FIRST."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "eos": [
+     1.2,
+     0
+    ],
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eos"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "eos": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you live forever, while still aging? Yes or no? Eos, no comment.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "FOREVER + AGING?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "eos": false,
+    "tith": false,
+    "tithO": false,
+    "zeus": false,
+    "aph": false,
+    "anch": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Tithonus",
+   "url": "https://en.wikipedia.org/wiki/Tithonus"
+  },
+  {
+   "title": "Wikipedia: Eos",
+   "url": "https://en.wikipedia.org/wiki/Eos"
+  },
+  {
+   "title": "Wikipedia: Homeric Hymns",
+   "url": "https://en.wikipedia.org/wiki/Homeric_Hymns"
+  },
+  {
+   "title": "Mythopedia library: Homeric Hymn 5 to Aphrodite (Evelyn-White)",
+   "url": "https://mythopedia.com/library/homeric-hymns-evelyn-white-1914/5-to-aphrodite/"
+  },
+  {
+   "title": "ToposText: Homeric Hymn to Aphrodite",
+   "url": "https://topostext.org/work/358"
+  },
+  {
+   "title": "Theoi: Eos",
+   "url": "https://www.theoi.com/Titan/TitanisEos.html"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Eos is goddess of the dawn",
+   "terms": [
+    "Eos",
+    "dawn"
+   ]
+  },
+  {
+   "claim": "She loves Tithonus, a Trojan prince",
+   "terms": [
+    "Tithonus",
+    "Troy|Trojan|Priam|Laomedon"
+   ]
+  },
+  {
+   "claim": "She asks Zeus to make him immortal",
+   "terms": [
+    "Zeus",
+    "immortal|immortality"
+   ]
+  },
+  {
+   "claim": "She forgets to ask for eternal youth",
+   "terms": [
+    "youth",
+    "forgot|forget|neglected|did not|failed"
+   ]
+  },
+  {
+   "claim": "They live at the edge of the world, by the streams of Ocean",
+   "terms": [
+    "Ocean|Oceanus",
+    "Tithonus|streams"
+   ]
+  },
+  {
+   "claim": "Gray hairs appear on his head",
+   "terms": [
+    "grey|gray",
+    "hair|hairs"
+   ]
+  },
+  {
+   "claim": "He cannot move or lift his limbs",
+   "terms": [
+    "limbs",
+    "move|lift"
+   ]
+  },
+  {
+   "claim": "She shuts him in a room behind shining doors",
+   "terms": [
+    "doors",
+    "room|chamber"
+   ]
+  },
+  {
+   "claim": "His voice babbles on endlessly",
+   "terms": [
+    "voice",
+    "endless|endlessly|ceaseless|ceaselessly|unceasing"
+   ]
+  },
+  {
+   "claim": "In later versions he becomes a cicada",
+   "terms": [
+    "cicada"
+   ]
+  },
+  {
+   "claim": "Aphrodite tells this story to her lover Anchises",
+   "terms": [
+    "Aphrodite",
+    "Anchises"
+   ]
+  }
+ ]
+}
