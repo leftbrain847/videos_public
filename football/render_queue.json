@@ -1,10 +1,10 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "stories-mind-fixes-2",
+ "release": "stories-myth-fixes",
  "listen": true,
  "replace": true,
  "videos": [
-  "mind_15_clever_hans"
+  "myth_12_loki_builder_horse"
  ]
 }
