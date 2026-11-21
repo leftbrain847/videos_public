@@ -1,0 +1,638 @@
+{
+ "id": "heist_31_harry_winston",
+ "title": "The Paris jewel heist in wigs",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "AVENUE",
+   "MONTAIGNE"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "r1": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#c0392b",
+    "pants": "#3a2a20",
+    "hair": "long",
+    "hairColor": "#e8d28a",
+    "skin": "#f2c39b"
+   }
+  },
+  "r2": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#8e44ad",
+    "pants": "#3a2a20",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  },
+  "clerk": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c98d63"
+   }
+  },
+  "cop": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You rob a famous jeweler in Paris. You're wearing a wig. Plus a dress. Plus a gun.",
+   "key": [
+    "WIG."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "r1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "r1": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "r1": "center",
+    "r2": false,
+    "clerk": false,
+    "cop": false
+   },
+   "board": [
+    "HARRY",
+    "WINSTON"
+   ]
+  },
+  {
+   "text": "December, two thousand eight. Avenue Montaigne. The Harry Winston store.",
+   "cap": "December 2008. Avenue Montaigne. The Harry Winston store.",
+   "key": [
+    "WINSTON"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "r1"
+   },
+   "act": {
+    "r1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "PARIS",
+    "DEC 2008"
+   ]
+  },
+  {
+   "text": "Just before closing, your crew walks in. Four of you.",
+   "key": [
+    "FOUR"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "r2"
+   },
+   "act": {
+    "r1": {
+     "mood": "neutral",
+     "action": "walk"
+    },
+    "r2": {
+     "mood": "neutral",
+     "action": "walk"
+    }
+   },
+   "place": {
+    "r1": "left",
+    "r2": "right"
+   }
+  },
+  {
+   "text": "Some of you are dressed as women. Wigs. Scarves. Very glamorous.",
+   "key": [
+    "GLAMOROUS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "r2"
+   },
+   "act": {
+    "r2": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then you pull out guns. The glamour ends there. Staff freeze.",
+   "key": [
+    "GUNS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "r1"
+   },
+   "act": {
+    "r1": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Weirdly, you know the staff. By their first names. Every one of them.",
+   "key": [
+    "NAMES."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "clerk"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "clerk"
+    },
+    "clerk": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "clerk": "right",
+    "r1": false,
+    "r2": false
+   }
+  },
+  {
+   "text": "You fill bags with rings, necklaces, watches. Fast.",
+   "key": [
+    "BAGS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "r2"
+   },
+   "act": {
+    "r2": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "r2": "center",
+    "capy": false,
+    "clerk": false
+   }
+  },
+  {
+   "text": "Total time? About fifteen minutes. Then you walk out.",
+   "cap": "Total time? About 15 minutes. Then you walk out.",
+   "key": [
+    "15"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "r2": false
+   },
+   "board": [
+    "~15",
+    "MINUTES"
+   ]
+  },
+  {
+   "text": "The haul? Around eighty five million euros.",
+   "cap": "The haul? Around 85 million euros.",
+   "key": [
+    "EUROS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "r1"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "r1"
+    },
+    "r1": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "r1": "right"
+   },
+   "board": [
+    "\u20ac85,000,000"
+   ]
+  },
+  {
+   "text": "It's one of the biggest jewelry heists ever.",
+   "key": [
+    "BIGGEST"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "r1": false
+   }
+  },
+  {
+   "text": "Police suspect a famous gang. They're called the Pink Panthers. Jewel thieves across Europe.",
+   "key": [
+    "PANTHERS."
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "cop": "center"
+   },
+   "board": [
+    "PINK",
+    "PANTHERS?"
+   ]
+  },
+  {
+   "text": "Also suspicious? The robbers knew way too much. About everything.",
+   "key": [
+    "MUCH."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Police focus on an inside man. A security guard.",
+   "key": [
+    "GUARD."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "two",
+    "on": "cop",
+    "with": "clerk"
+   },
+   "act": {
+    "cop": {
+     "mood": "angry",
+     "action": "point",
+     "look": "clerk"
+    },
+    "clerk": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "cop"
+    }
+   },
+   "place": {
+    "cop": "left",
+    "clerk": "right"
+   }
+  },
+  {
+   "text": "In twenty eleven, police finally make arrests.",
+   "cap": "In 2011, police finally make arrests.",
+   "key": [
+    "ARRESTS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "clerk": false,
+    "cop": "center"
+   }
+  },
+  {
+   "text": "Some jewels turn up in a drain pipe. In a Paris suburb. Not a vault. A drain.",
+   "key": [
+    "DRAIN"
+   ],
+   "set": "haunted",
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "FOUND:",
+    "IN A DRAIN"
+   ],
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Millions in diamonds. In a drain. Glamorous to the end.",
+   "key": [
+    "END."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Most of the loot? Still missing. Probably sold off, piece by piece.",
+   "key": [
+    "MISSING."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "cop"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "cop"
+    },
+    "cop": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "cop": "right"
+   }
+  },
+  {
+   "text": "Wigs, guns, first names. A very personal robbery.",
+   "key": [
+    "PERSONAL"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "cop": false
+   }
+  },
+  {
+   "text": "Robbers in wigs walk in. Would you notice? Yes or no?",
+   "key": [
+    "WIGS"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Pink Panthers",
+   "url": "https://en.wikipedia.org/wiki/Pink_Panthers"
+  },
+  {
+   "title": "NBC News: Robbers in drag net $100 million in Paris heist",
+   "url": "https://www.nbcnews.com/id/wbna28066894"
+  },
+  {
+   "title": "Washington Times: Robbers in drag steal $108 million in jewels",
+   "url": "https://www.washingtontimes.com/news/2008/dec/6/robbers-in-drag-steal-108-million-in-jewels/"
+  },
+  {
+   "title": "CBS News: Cross-dressed crooks grab $108M in jewelry",
+   "url": "https://www.cbsnews.com/news/cross-dressed-crooks-grab-108m-in-jewelry/"
+  },
+  {
+   "title": "Fox News: 8 men on trial over Paris jewel heists",
+   "url": "https://www.foxnews.com/world/8-men-on-trial-over-paris-jewel-heists-that-netted-more-than-100-million"
+  },
+  {
+   "title": "Jerusalem Post: Gunmen in drag get millions in Paris diamond heist",
+   "url": "https://www.jpost.com/international/gunmen-in-drag-get-millions-in-paris-diamond-heist/article-123256"
+  },
+  {
+   "title": "OCCRP: Balkan ties to huge jewel theft?",
+   "url": "https://www.occrp.org/en/news/balkan-ties-to-huge-jewel-theft"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The robbery was at Harry Winston in Paris in December 2008",
+   "terms": [
+    "Harry Winston",
+    "Paris"
+   ]
+  },
+  {
+   "claim": "It was on Avenue Montaigne",
+   "terms": [
+    "Montaigne"
+   ]
+  },
+  {
+   "claim": "Four robbers came in before closing",
+   "terms": [
+    "four|4",
+    "robbers|men"
+   ]
+  },
+  {
+   "claim": "Some were dressed as women with wigs",
+   "terms": [
+    "wigs|women|drag"
+   ]
+  },
+  {
+   "claim": "They were armed",
+   "terms": [
+    "gun|armed"
+   ]
+  },
+  {
+   "claim": "They called staff by their first names",
+   "terms": [
+    "first names|by name"
+   ]
+  },
+  {
+   "claim": "They took rings, necklaces and watches",
+   "terms": [
+    "rings|necklaces|watches"
+   ]
+  },
+  {
+   "claim": "It took about 15 minutes",
+   "terms": [
+    "15 minutes|fifteen minutes|20 minutes"
+   ]
+  },
+  {
+   "claim": "The haul was around 85 million euros",
+   "terms": [
+    "85 million|80 million"
+   ]
+  },
+  {
+   "claim": "It was one of the biggest jewel heists",
+   "terms": [
+    "biggest|largest",
+    "jewel"
+   ]
+  },
+  {
+   "claim": "Police suspected the Pink Panthers",
+   "terms": [
+    "Pink Panther"
+   ]
+  },
+  {
+   "claim": "Police focused on a security guard as an inside man",
+   "terms": [
+    "guard",
+    "inside|accomplice"
+   ]
+  },
+  {
+   "claim": "Arrests were made in 2011",
+   "terms": [
+    "2011",
+    "arrest"
+   ]
+  },
+  {
+   "claim": "Some jewels were found in a drain in a Paris suburb",
+   "terms": [
+    "drain|sewer"
+   ]
+  }
+ ]
+}
