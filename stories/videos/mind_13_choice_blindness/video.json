@@ -586,15 +586,14 @@
    }
   },
   {
-   "text": "Then they try politics. A real voter survey.",
-   "cap": "Then they try politics. A real voter survey.",
+   "text": "Then they try tea. You sniff two blends. Pick your favorite.",
    "key": [
-    "POLITICS."
+    "TEA."
    ],
    "set": "study",
    "board": [
-    "VOTER",
-    "SURVEY"
+    "TEA",
+    "TEST"
    ],
    "place": {
     "capy": [
@@ -619,9 +618,9 @@
    }
   },
   {
-   "text": "Some of your answers get quietly reversed.",
+   "text": "The jars get swapped again. Quietly.",
    "key": [
-    "REVERSED."
+    "SWAPPED"
    ],
    "set": "office",
    "board": [
@@ -658,9 +657,9 @@
    }
   },
   {
-   "text": "Many voters argue for the opposite view. Their own handwriting? Not quite.",
+   "text": "You defend a smell you just rejected. Confidently. At length.",
    "key": [
-    "OPPOSITE"
+    "SMELL"
    ],
    "place": {
     "capy": false,
@@ -896,10 +895,10 @@
    ]
   },
   {
-   "claim": "A voter survey reversed some answers",
+   "claim": "The same was found for the smell of tea",
    "terms": [
-    "political|politics",
-    "survey|questionnaire"
+    "tea",
+    "smell"
    ]
   }
  ]
