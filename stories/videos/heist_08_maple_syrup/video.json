@@ -164,7 +164,7 @@
    }
   },
   {
-   "text": "You're Richard Vallieres. That warehouse? You have help on the inside. How convenient. How sweet.",
+   "text": "You're Richard Vallieres. You have a plan. A sticky one. A very sweet one.",
    "key": [
     "CONVENIENT."
    ],
@@ -630,12 +630,6 @@
    "terms": [
     "Valli\u00e8res|Vallieres",
     "ringleader|mastermind"
-   ]
-  },
-  {
-   "claim": "An insider, Avik Caron, was part of the scheme",
-   "terms": [
-    "Caron"
    ]
   },
   {
