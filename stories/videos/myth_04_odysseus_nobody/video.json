@@ -1,0 +1,1094 @@
+{
+ "id": "myth_04_odysseus_nobody",
+ "title": "Odysseus is Nobody",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE CAVE"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "ody": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2f7f8a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "sash": "#d9a521",
+    "beard": true
+   }
+  },
+  "poly": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#7a6a52",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#4a3b2c",
+    "beard": true
+   }
+  },
+  "crew": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c97a3a",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#8d5a3b",
+    "sash": "#4a3b2c"
+   }
+  },
+  "odyw": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2f7f8a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "sash": "#d9a521",
+    "beard": true
+   },
+   "hold": "candle"
+  },
+  "cyc2": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#5a6a4a",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#8d5a3b",
+    "sash": "#4a3b2c",
+    "beard": true
+   }
+  },
+  "pos": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#1f6f8f",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#e6e6e6",
+    "skin": "#f2c39b",
+    "sash": "#3ab0c0",
+    "beard": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You are trapped in a cave. Your host is a giant.",
+   "key": [
+    "GIANT."
+   ],
+   "speaker": "capy",
+   "board": [
+    "THE CAVE",
+    "EXIT: ???"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ody": [
+     1.2,
+     0
+    ],
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ody"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ody": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Odysseus. You are sailing home from Troy.",
+   "key": [
+    "TROY."
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The cave belongs to a Cyclops. His name is Polyphemus.",
+   "key": [
+    "POLYPHEMUS."
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     -2.0,
+     0.6
+    ],
+    "poly": [
+     0.6,
+     -0.4
+    ],
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "poly",
+    "pan": [
+     -1.2,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "poly": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    },
+    "ody": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "poly"
+    }
+   }
+  },
+  {
+   "text": "He rolls a huge boulder over the doorway.",
+   "key": [
+    "BOULDER"
+   ],
+   "board": [
+    "DOOR",
+    "BLOCKED"
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "poly": [
+     0,
+     0
+    ],
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "poly"
+   },
+   "act": {
+    "poly": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then he starts eating your crew.",
+   "key": [
+    "EATING"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     1.3,
+     -0.2
+    ],
+    "poly": false,
+    "crew": [
+     -1.3,
+     0.3
+    ],
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "crew",
+    "with": "ody"
+   },
+   "act": {
+    "crew": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "ody": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "crew"
+    }
+   }
+  },
+  {
+   "text": "Not a great host. One star, at best.",
+   "key": [
+    "STAR."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "ody": false,
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So you offer him wine. Very strong wine.",
+   "key": [
+    "WINE."
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     -1.3,
+     0.2
+    ],
+    "poly": [
+     1.3,
+     -0.2
+    ],
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "ody",
+    "with": "poly"
+   },
+   "act": {
+    "ody": {
+     "mood": "smug",
+     "action": "point",
+     "look": "poly"
+    },
+    "poly": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "ody"
+    }
+   }
+  },
+  {
+   "text": "He loves it. He asks for your name.",
+   "key": [
+    "NAME."
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "poly": [
+     0,
+     0
+    ],
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "poly"
+   },
+   "act": {
+    "poly": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You tell him your name is nobody.",
+   "cap": "You tell him your name is Nobody.",
+   "key": [
+    "NOBODY."
+   ],
+   "board": [
+    "MY NAME IS",
+    "NOBODY"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Keep that name in mind. It matters later.",
+   "key": [
+    "LATER."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ody": [
+     1.2,
+     0
+    ],
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ody"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "ody": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He thanks you with a gift. He will eat nobody last.",
+   "cap": "He thanks you with a gift. He will eat Nobody last.",
+   "key": [
+    "LAST."
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "poly": [
+     0,
+     0
+    ],
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "poly"
+   },
+   "act": {
+    "poly": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He passes out drunk. You heat a sharp stake.",
+   "key": [
+    "STAKE."
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "poly": [
+     2.0,
+     -1.4
+    ],
+    "crew": false,
+    "odyw": [
+     -1.0,
+     0.4
+    ],
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "odyw",
+    "pan": [
+     1.0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "odyw": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    },
+    "poly": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "You drive it into his one eye.",
+   "key": [
+    "EYE."
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "poly": false,
+    "crew": false,
+    "odyw": [
+     0,
+     0
+    ],
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "odyw"
+   },
+   "act": {
+    "odyw": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "He screams for help. The other Cyclopes come running.",
+   "key": [
+    "HELP."
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "poly": [
+     -1.4,
+     0.3
+    ],
+    "crew": false,
+    "odyw": false,
+    "cyc2": [
+     1.4,
+     -0.3
+    ],
+    "pos": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "poly",
+    "with": "cyc2"
+   },
+   "act": {
+    "poly": {
+     "mood": "angry",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "cyc2": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "poly"
+    }
+   }
+  },
+  {
+   "text": "Who is hurting you? He yells back: nobody!",
+   "cap": "Who is hurting you? He yells back: Nobody!",
+   "key": [
+    "NOBODY!"
+   ],
+   "board": [
+    "WHO HURT YOU?",
+    "NOBODY!"
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "poly": [
+     0,
+     0
+    ],
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "poly"
+   },
+   "act": {
+    "poly": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the neighbors just shrug. They all go back home.",
+   "key": [
+    "HOME."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ody": false,
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": [
+     1.2,
+     0
+    ],
+    "pos": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "cyc2",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "cyc2": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The best fake name in all of history.",
+   "key": [
+    "FAKE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "ody": false,
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "At dawn, you sneak out under his sheep.",
+   "key": [
+    "SHEEP."
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     -1.3,
+     0.3
+    ],
+    "poly": false,
+    "crew": [
+     1.3,
+     -0.2
+    ],
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "ody",
+    "with": "crew"
+   },
+   "act": {
+    "ody": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "crew"
+    },
+    "crew": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You sail away. Free. Then you make one mistake.",
+   "key": [
+    "MISTAKE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "ody": [
+     1.2,
+     0
+    ],
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ody"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "ody"
+    },
+    "ody": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You shout your real name back at him.",
+   "key": [
+    "REAL"
+   ],
+   "board": [
+    "IT WAS ME:",
+    "ODYSSEUS"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     0,
+     0
+    ],
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "ody"
+   },
+   "act": {
+    "ody": {
+     "mood": "smug",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His father is Poseidon, god of the sea.",
+   "key": [
+    "POSEIDON."
+   ],
+   "place": {
+    "capy": false,
+    "ody": false,
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "pos"
+   },
+   "act": {
+    "pos": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Getting home now takes you ten years.",
+   "cap": "Getting home now takes you 10 years.",
+   "key": [
+    "10"
+   ],
+   "board": [
+    "ARRIVAL",
+    "10 YEARS"
+   ],
+   "place": {
+    "capy": false,
+    "ody": [
+     -1.4,
+     0.4
+    ],
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": [
+     1.4,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "ody",
+    "pan": [
+     1.4,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "pos": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "ody"
+    },
+    "ody": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He beat a giant with one fake name. Then he signed his work.",
+   "key": [
+    "SIGNED"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "ody": false,
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have kept quiet? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "KEEP QUIET?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "ody": [
+     1.3,
+     0
+    ],
+    "poly": false,
+    "crew": false,
+    "odyw": false,
+    "cyc2": false,
+    "pos": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ody"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "ody": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Polyphemus",
+   "url": "https://en.wikipedia.org/wiki/Polyphemus"
+  },
+  {
+   "title": "Wikipedia: Odyssey",
+   "url": "https://en.wikipedia.org/wiki/Odyssey"
+  },
+  {
+   "title": "Theoi: Polyphemos",
+   "url": "https://www.theoi.com/Gigante/GigantePolyphemos.html"
+  },
+  {
+   "title": "Mythopedia: Polyphemus",
+   "url": "https://mythopedia.com/topics/polyphemus/"
+  },
+  {
+   "title": "Wikipedia: Odysseus",
+   "url": "https://en.wikipedia.org/wiki/Odysseus"
+  },
+  {
+   "title": "Greek Mythology Link (Carlos Parada): Polyphemus",
+   "url": "https://www.maicar.com/GML/Polyphemus2.html"
+  },
+  {
+   "title": "GreekMythology.com: Polyphemus",
+   "url": "https://www.greekmythology.com/Myths/Creatures/Polyphemus/polyphemus.html"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Odysseus is sailing home from Troy",
+   "terms": [
+    "Odysseus",
+    "Troy|Trojan"
+   ]
+  },
+  {
+   "claim": "The cave belongs to the Cyclops Polyphemus",
+   "terms": [
+    "Polyphemus",
+    "cave"
+   ]
+  },
+  {
+   "claim": "He blocks the entrance with a huge boulder",
+   "terms": [
+    "boulder|stone|rock",
+    "entrance|door|doorway"
+   ]
+  },
+  {
+   "claim": "He eats some of Odysseus's men",
+   "terms": [
+    "ate|eats|eating|devour|devoured",
+    "men|companions|crew"
+   ]
+  },
+  {
+   "claim": "Odysseus gives him strong wine",
+   "terms": [
+    "wine",
+    "Polyphemus|Cyclops"
+   ]
+  },
+  {
+   "claim": "Odysseus says his name is Nobody",
+   "terms": [
+    "Nobody",
+    "name"
+   ]
+  },
+  {
+   "claim": "As a gift, Polyphemus will eat Nobody last",
+   "terms": [
+    "last",
+    "eat"
+   ]
+  },
+  {
+   "claim": "Odysseus blinds his one eye with a sharpened stake",
+   "terms": [
+    "stake",
+    "eye"
+   ]
+  },
+  {
+   "claim": "Polyphemus calls for help, and the other Cyclopes come",
+   "terms": [
+    "Nobody",
+    "Cyclopes"
+   ]
+  },
+  {
+   "claim": "The Odysseus and his men escape under the sheep",
+   "terms": [
+    "sheep",
+    "escape|escaped|beneath|under|underneath"
+   ]
+  },
+  {
+   "claim": "Sailing away, Odysseus shouts his real name",
+   "terms": [
+    "Odysseus",
+    "name",
+    "shout|shouted|taunt|taunted|boast|reveal|revealed"
+   ]
+  },
+  {
+   "claim": "Polyphemus's father is Poseidon",
+   "terms": [
+    "Poseidon",
+    "son"
+   ]
+  },
+  {
+   "claim": "Odysseus takes ten years to get home",
+   "terms": [
+    "ten year|10 year",
+    "home|return|journey|Ithaca"
+   ]
+  }
+ ]
+}
