@@ -655,9 +655,9 @@
     "stu": false
    },
    "shot": {
-    "type": "ots",
+    "type": "two",
     "on": "own",
-    "from": "hans"
+    "with": "hans"
    },
    "act": {
     "own": {
