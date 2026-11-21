@@ -1,0 +1,979 @@
+{
+ "id": "myth_28_orpheus_look_back",
+ "title": "One glance too early",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE UNDERWORLD"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "orph": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e86c1",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b",
+    "sash": "#e8b923"
+   },
+   "hold": "lyre"
+  },
+  "orphN": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2e86c1",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#f2c39b",
+    "sash": "#e8b923"
+   }
+  },
+  "eury": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f2c230",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "sash": "#5c9e4a"
+   }
+  },
+  "hades": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#2b2b33",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b",
+    "sash": "#8e2b3a",
+    "beard": true
+   }
+  },
+  "pers": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#7a3f8e",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "sash": "#5c9e4a"
+   }
+  },
+  "sis": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#8a5a2a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#2a1a10",
+    "skin": "#e8b48f",
+    "sash": "#e8b923",
+    "beard": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You get your wife back from the dead. Then you turn around.",
+   "key": [
+    "AROUND."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "orph": [
+     1.2,
+     0
+    ],
+    "orphN": false,
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "orph"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "orph": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Orpheus. The greatest musician alive.",
+   "key": [
+    "MUSICIAN"
+   ],
+   "board": [
+    "ORPHEUS",
+    "LYRE"
+   ],
+   "place": {
+    "capy": false,
+    "orph": [
+     0,
+     0
+    ],
+    "orphN": false,
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "orph"
+   },
+   "act": {
+    "orph": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your wife Eurydice dies from a snake bite.",
+   "key": [
+    "SNAKE"
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": false,
+    "eury": [
+     0,
+     0
+    ],
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eury"
+   },
+   "act": {
+    "eury": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are wrecked. You refuse to accept it.",
+   "key": [
+    "REFUSE"
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": [
+     0,
+     0
+    ],
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "orphN"
+   },
+   "act": {
+    "orphN": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So you walk into the underworld. With only a lyre.",
+   "key": [
+    "LYRE."
+   ],
+   "place": {
+    "capy": false,
+    "orph": [
+     0,
+     0
+    ],
+    "orphN": false,
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "orph"
+   },
+   "act": {
+    "orph": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That is either brave or unhinged. It is possibly both.",
+   "key": [
+    "BOTH."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "orph": false,
+    "orphN": false,
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You play for the rulers of the dead.",
+   "key": [
+    "PLAY"
+   ],
+   "place": {
+    "capy": false,
+    "orph": [
+     -1.3,
+     0.2
+    ],
+    "orphN": false,
+    "eury": false,
+    "hades": [
+     1.3,
+     -0.2
+    ],
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "hades",
+    "pan": [
+     -1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "orph": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "hades"
+    },
+    "hades": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "orph"
+    }
+   }
+  },
+  {
+   "text": "You sing about your loss. Even the ghosts weep.",
+   "key": [
+    "WEEP."
+   ],
+   "place": {
+    "capy": false,
+    "orph": [
+     0,
+     0
+    ],
+    "orphN": false,
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "orph"
+   },
+   "act": {
+    "orph": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Even the punished stop to listen. Sisyphus sits on his rock.",
+   "key": [
+    "SISYPHUS"
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": false,
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sis"
+   },
+   "act": {
+    "sis": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Sisyphus took a break. That is how good you are.",
+   "key": [
+    "BREAK."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "orph": false,
+    "orphN": false,
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": [
+     1.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sis"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "sis": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Hades is moved. So is Persephone. You can take her back.",
+   "key": [
+    "BACK."
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": false,
+    "eury": false,
+    "hades": [
+     -1.3,
+     0.2
+    ],
+    "pers": [
+     1.3,
+     -0.2
+    ],
+    "sis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "hades",
+    "with": "pers"
+   },
+   "act": {
+    "hades": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    },
+    "pers": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One rule. Do not look back until you are out.",
+   "key": [
+    "LOOK"
+   ],
+   "board": [
+    "THE RULE",
+    "DON'T LOOK BACK"
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": false,
+    "eury": false,
+    "hades": [
+     0,
+     0
+    ],
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "hades"
+   },
+   "act": {
+    "hades": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One rule. That is simple, right?",
+   "key": [
+    "SIMPLE,"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "orph": false,
+    "orphN": false,
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You climb. She follows behind you. You hear nothing.",
+   "key": [
+    "NOTHING."
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": [
+     0,
+     0
+    ],
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "orphN"
+   },
+   "act": {
+    "orphN": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Every step is silent. No footsteps behind you.",
+   "key": [
+    "SILENT."
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": [
+     0,
+     0
+    ],
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "orphN"
+   },
+   "act": {
+    "orphN": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Is she still there? Was it a trick?",
+   "key": [
+    "TRICK?"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "orph": false,
+    "orphN": [
+     1.2,
+     0
+    ],
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "orphN",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "orphN"
+    },
+    "orphN": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are almost at the top. You can see daylight.",
+   "key": [
+    "DAYLIGHT"
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": [
+     -1.3,
+     0.2
+    ],
+    "eury": [
+     1.3,
+     -0.2
+    ],
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "orphN",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "orphN": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "eury": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "orphN"
+    }
+   }
+  },
+  {
+   "text": "Then you turn around.",
+   "key": [
+    "TURN"
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": [
+     0,
+     0
+    ],
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "orphN"
+   },
+   "act": {
+    "orphN": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "She is right there. Then she slips back down.",
+   "key": [
+    "SLIPS"
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": false,
+    "eury": [
+     0,
+     0
+    ],
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eury"
+   },
+   "act": {
+    "eury": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She fades back into the dark. This time, for good.",
+   "key": [
+    "GOOD."
+   ],
+   "place": {
+    "capy": false,
+    "orph": false,
+    "orphN": [
+     0,
+     0
+    ],
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "orphN"
+   },
+   "act": {
+    "orphN": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So close. One glance too early.",
+   "key": [
+    "GLANCE"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "orph": false,
+    "orphN": [
+     1.2,
+     0
+    ],
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "orphN"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    },
+    "orphN": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He beat death with music. He lost to doubt.",
+   "key": [
+    "DOUBT."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "orph": false,
+    "orphN": false,
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you have looked back? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "LOOK BACK?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -1.2,
+     1.0
+    ],
+    "orph": [
+     1.3,
+     0
+    ],
+    "orphN": false,
+    "eury": false,
+    "hades": false,
+    "pers": false,
+    "sis": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "orph"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "orph": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Orpheus",
+   "url": "https://en.wikipedia.org/wiki/Orpheus"
+  },
+  {
+   "title": "Wikipedia: Eurydice",
+   "url": "https://en.wikipedia.org/wiki/Eurydice"
+  },
+  {
+   "title": "Theoi: Ovid, Metamorphoses 10",
+   "url": "https://www.theoi.com/Text/OvidMetamorphoses10.html"
+  },
+  {
+   "title": "University of Virginia: Ovid, Metamorphoses Book X (A. S. Kline)",
+   "url": "https://ovid.lib.virginia.edu/trans/Metamorph10.htm"
+  },
+  {
+   "title": "Wikipedia: Orpheus and Eurydice",
+   "url": "https://en.wikipedia.org/wiki/Orpheus_and_Eurydice"
+  },
+  {
+   "title": "MIT Internet Classics Archive: Ovid, Metamorphoses Book X",
+   "url": "https://classics.mit.edu/Ovid/metam.10.tenth.html"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Orpheus is a legendary musician",
+   "terms": [
+    "Orpheus",
+    "musician|music|lyre"
+   ]
+  },
+  {
+   "claim": "His wife Eurydice dies of a snake bite",
+   "terms": [
+    "Eurydice",
+    "snake|serpent|viper"
+   ]
+  },
+  {
+   "claim": "He goes down to the underworld with his lyre",
+   "terms": [
+    "underworld",
+    "lyre|music"
+   ]
+  },
+  {
+   "claim": "He plays for Hades and Persephone",
+   "terms": [
+    "Hades",
+    "Persephone"
+   ]
+  },
+  {
+   "claim": "Even the spirits of the dead weep",
+   "terms": [
+    "wept|weep|weeping|tears",
+    "spirits|ghosts|shades|bloodless"
+   ]
+  },
+  {
+   "claim": "Even Sisyphus sits on his rock to listen",
+   "terms": [
+    "Sisyphus",
+    "rock|stone"
+   ]
+  },
+  {
+   "claim": "Hades and Persephone are moved and let her go",
+   "terms": [
+    "Eurydice",
+    "return|returned|release|allowed|let"
+   ]
+  },
+  {
+   "claim": "The condition: do not look back until out of the underworld",
+   "terms": [
+    "look back|looked back|looking back|look behind|turn"
+   ]
+  },
+  {
+   "claim": "She follows behind him on the way up",
+   "terms": [
+    "follow|followed|behind",
+    "Eurydice"
+   ]
+  },
+  {
+   "claim": "Near the top, he turns around",
+   "terms": [
+    "turned|turns|looked",
+    "back|around"
+   ]
+  },
+  {
+   "claim": "She vanishes back into the underworld for good",
+   "terms": [
+    "vanished|vanishes|disappeared|slipped|forever|second time",
+    "Eurydice"
+   ]
+  }
+ ]
+}
