@@ -1,0 +1,648 @@
+{
+ "id": "heist_22_stone_of_scone",
+ "title": "Students steal the Stone of Destiny",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "WESTMINSTER",
+   "ABBEY"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "ian": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#3f6b5c",
+    "pants": "#3a3f4b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "kay": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#c0392b",
+    "pants": "#3a2a20",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "gavin": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2e86c1",
+    "pants": "#22252b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  },
+  "cop": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#c98d63"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal a sacred coronation stone. You drop it. It breaks in two.",
+   "key": [
+    "TWO."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ian"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "ian": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "ian": "center",
+    "kay": false,
+    "gavin": false,
+    "cop": false
+   },
+   "board": [
+    "STONE OF",
+    "DESTINY"
+   ]
+  },
+  {
+   "text": "London. Christmas, nineteen fifty.",
+   "cap": "London. Christmas, 1950.",
+   "key": [
+    "CHRISTMAS,"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "ian"
+   },
+   "act": {
+    "ian": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "DEC 25",
+    "1950"
+   ]
+  },
+  {
+   "text": "You're a group of Scottish students. Four of you.",
+   "key": [
+    "STUDENTS."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "kay"
+   },
+   "act": {
+    "kay": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "ian": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "kay"
+    },
+    "gavin": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "kay"
+    }
+   },
+   "place": {
+    "ian": "left",
+    "kay": "center",
+    "gavin": "right"
+   }
+  },
+  {
+   "text": "Your target sits in Westminster Abbey. The stone of Scone.",
+   "key": [
+    "SCONE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "ian": false,
+    "kay": false,
+    "gavin": false
+   },
+   "board": [
+    "STONE OF",
+    "SCONE"
+   ]
+  },
+  {
+   "text": "Scotland's kings were crowned on it. Then England took it. Centuries ago.",
+   "key": [
+    "TOOK"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your plan? Bring it home. On Christmas morning.",
+   "key": [
+    "HOME."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "ian",
+    "with": "gavin"
+   },
+   "act": {
+    "ian": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "gavin"
+    },
+    "gavin": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "ian"
+    }
+   },
+   "place": {
+    "ian": "left",
+    "gavin": "right",
+    "capy": false
+   }
+  },
+  {
+   "text": "You break into the Abbey. You pull the stone out.",
+   "key": [
+    "STONE"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "ian"
+   },
+   "act": {
+    "ian": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It weighs over a hundred fifty kilos. You drop it.",
+   "cap": "It weighs over 150 kilos. You drop it.",
+   "key": [
+    "DROP"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "gavin"
+   },
+   "act": {
+    "gavin": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "150 KG",
+    "OOPS"
+   ]
+  },
+  {
+   "text": "It cracks into two pieces. Not ideal. Very heavy pieces.",
+   "key": [
+    "PIECES."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "gavin"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "gavin": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "gavin": "right"
+   },
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Kay takes the small piece in her car. A policeman stops her. She flirts. He lets her go.",
+   "key": [
+    "GO."
+   ],
+   "set": "living",
+   "shot": {
+    "type": "medium",
+    "on": "kay"
+   },
+   "act": {
+    "kay": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "cop": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "kay"
+    }
+   },
+   "place": {
+    "kay": [
+     -2.0,
+     0.4
+    ],
+    "cop": [
+     2.0,
+     0.4
+    ]
+   }
+  },
+  {
+   "text": "Then something wild happens. The border with Scotland closes. First time in centuries.",
+   "key": [
+    "BORDER"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "cop": "center"
+   },
+   "board": [
+    "BORDER",
+    "CLOSED"
+   ]
+  },
+  {
+   "text": "Police search everywhere. Even lakes. They find nothing. Not a pebble.",
+   "key": [
+    "LAKES."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Meanwhile, a stonemason in Glasgow fixes it. He quietly glues it together.",
+   "key": [
+    "GLUES"
+   ],
+   "set": "study",
+   "shot": {
+    "type": "medium",
+    "on": "ian"
+   },
+   "act": {
+    "ian": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "ian": "center"
+   },
+   "board": [
+    "GLASGOW",
+    "REPAIR SHOP"
+   ]
+  },
+  {
+   "text": "Months later, the stone turns up. At an old abbey in Scotland.",
+   "key": [
+    "ABBEY"
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "ARBROATH",
+    "ABBEY"
+   ]
+  },
+  {
+   "text": "Left in plain sight. Nice touch. Very, very dramatic.",
+   "key": [
+    "SIGHT."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Police take it back to London. Nobody is ever charged.",
+   "key": [
+    "CHARGED."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "cop"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "cop"
+    },
+    "cop": {
+     "mood": "neutral",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "cop": "right"
+   }
+  },
+  {
+   "text": "Nineteen ninety six. The stone officially returns to Scotland. For good.",
+   "cap": "1996. The stone officially returns to Scotland. For good.",
+   "key": [
+    "RETURNS"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "cop": false
+   },
+   "board": [
+    "HOME",
+    "1996"
+   ]
+  },
+  {
+   "text": "Broke it. Glued it. Returned it. Technically, everyone won.",
+   "key": [
+    "WON."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So, was it a heist or a rescue? One word. Go.",
+   "key": [
+    "RESCUE?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: 1950 removal of the Stone of Scone",
+   "url": "https://en.wikipedia.org/wiki/1950_removal_of_the_Stone_of_Scone"
+  },
+  {
+   "title": "Wikipedia: Stone of Scone",
+   "url": "https://en.wikipedia.org/wiki/Stone_of_Scone"
+  },
+  {
+   "title": "The Scotsman: The audacious raid of Westminster Abbey",
+   "url": "https://www.scotsman.com/heritage-and-retro/heritage/audacious-raid-westminster-abbey-bring-stone-destiny-home-3077689"
+  },
+  {
+   "title": "University of Glasgow: The daring capture of the Stone of Destiny",
+   "url": "https://www.gla.ac.uk/explore/avenue/ourpast/thedaringcaptureofthestoneofdestiny/"
+  },
+  {
+   "title": "National Library of Scotland: 1950, stealing of the Stone of Scone",
+   "url": "https://digital.nls.uk/scotlandspages/timeline/1950.html"
+  },
+  {
+   "title": "National Geographic: Lost fragments of the Stone of Destiny",
+   "url": "https://www.nationalgeographic.com/history/article/stone-of-destiny-fragments"
+  },
+  {
+   "title": "Ripley's: The students who stole the Stone of Destiny",
+   "url": "https://www.ripleys.com/stories/stole-stone-of-destiny"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Students took the stone on Christmas Day 1950",
+   "terms": [
+    "Christmas",
+    "1950"
+   ]
+  },
+  {
+   "claim": "They were four Scottish students",
+   "terms": [
+    "students",
+    "four"
+   ]
+  },
+  {
+   "claim": "The stone was in Westminster Abbey",
+   "terms": [
+    "Westminster Abbey"
+   ]
+  },
+  {
+   "claim": "Scottish kings were crowned on it and England took it",
+   "terms": [
+    "Edward|England",
+    "crown|coronation"
+   ]
+  },
+  {
+   "claim": "They broke into the Abbey",
+   "terms": [
+    "Abbey",
+    "broke|break"
+   ]
+  },
+  {
+   "claim": "The stone weighs over 150 kg",
+   "terms": [
+    "152|150|336"
+   ]
+  },
+  {
+   "claim": "They dropped it and it broke in two",
+   "terms": [
+    "two pieces|broke in two|two parts|broke"
+   ]
+  },
+  {
+   "claim": "Kay Matheson drove off with a piece and charmed a policeman",
+   "terms": [
+    "Matheson|Kay",
+    "policeman|police"
+   ]
+  },
+  {
+   "claim": "The border with Scotland was closed for the first time in centuries",
+   "terms": [
+    "border",
+    "closed"
+   ]
+  },
+  {
+   "claim": "A Glasgow stonemason repaired it",
+   "terms": [
+    "stonemason|mason",
+    "Glasgow"
+   ]
+  },
+  {
+   "claim": "It was left at Arbroath Abbey",
+   "terms": [
+    "Arbroath"
+   ]
+  },
+  {
+   "claim": "No one was prosecuted",
+   "terms": [
+    "prosecut|charged"
+   ]
+  },
+  {
+   "claim": "It was returned to Scotland in 1996",
+   "terms": [
+    "1996"
+   ]
+  }
+ ]
+}
