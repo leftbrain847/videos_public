@@ -262,10 +262,9 @@
    "speaker": "capy"
   },
   {
-   "text": "So owners copy the X F L kickoff.",
-   "cap": "So owners copy the XFL kickoff.",
+   "text": "So the owners redesign the kickoff.",
    "key": [
-    "XFL"
+    "REDESIGN"
    ],
    "shot": {
     "type": "wide",
@@ -865,10 +864,10 @@
    ]
   },
   {
-   "claim": "The owners adopted an XFL-style kickoff",
+   "claim": "The owners approved a new kickoff",
    "terms": [
-    "XFL",
-    "kickoff"
+    "kickoff",
+    "approve"
    ]
   },
   {
@@ -907,8 +906,7 @@
   {
    "claim": "In 2025 the owners made the kickoff permanent",
    "terms": [
-    "permanent",
-    "kickoff"
+    "permanent"
    ]
   },
   {
