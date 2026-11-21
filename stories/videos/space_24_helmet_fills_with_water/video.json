@@ -710,10 +710,6 @@
    "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Volare/Astronaut_in_a_fishbowl"
   },
   {
-   "title": "ESA: Spacewalk ends early",
-   "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Volare/Highlights/Spacewalk_ends_early"
-  },
-  {
    "title": "NASA: 10 years ago, EVA 23",
    "url": "https://www.nasa.gov/history/10-years-ago-eva-23-how-a-high-visibility-close-call-cut-short-a-spacewalk/"
   },
@@ -724,10 +720,6 @@
   {
    "title": "PBS NOVA: what's it like when your spacesuit fills with water",
    "url": "https://www.pbs.org/wgbh/nova/next/space/whats-it-like-to-have-your-spacesuit-fill-with-water/"
-  },
-  {
-   "title": "IFLScience: the astronaut who nearly drowned in space",
-   "url": "https://www.iflscience.com/space/luca-parmitano-the-astronaut-who-nearly-drowned-in-space/"
   },
   {
    "title": "MPR News (AP): spacesuit water leak ends spacewalk",
@@ -744,6 +736,18 @@
   {
    "title": "Computerworld: astronaut describes almost drowning",
    "url": "https://www.computerworld.com/article/1505981/lost-in-space-nearly-astronaut-describes-almost-drowning-on-spacewalk.html"
+  },
+  {
+   "title": "ESA: Luca Parmitano",
+   "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Astronauts/Luca_Parmitano"
+  },
+  {
+   "title": "Wikipedia: Expedition 61",
+   "url": "https://en.wikipedia.org/wiki/Expedition_61"
+  },
+  {
+   "title": "Euronews: Meet Luca Parmitano, the first Italian astronaut to be Space Station commander",
+   "url": "https://www.euronews.com/2019/05/24/meet-luca-parmitano-the-first-italian-astronaut-to-be-space-station-commander"
   }
  ],
  "voice": "v2",
@@ -828,6 +832,7 @@
   {
    "claim": "Parmitano later spacewalked again and commanded the ISS",
    "terms": [
+    "Parmitano",
     "commander|command"
    ]
   }
