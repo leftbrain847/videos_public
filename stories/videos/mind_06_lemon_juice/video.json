@@ -1,0 +1,986 @@
+{
+ "id": "mind_06_lemon_juice",
+ "title": "The lemon juice robbery that named an effect",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "DUNNING",
+   "KRUGER"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f6d21f",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   }
+  },
+  "cop": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1f3f8f",
+    "pants": "#1b2a5c",
+    "tie": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "cap": "#1f3f8f"
+   }
+  },
+  "prof": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "bald",
+    "hairColor": "#2b2b2b",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You rob two banks. No mask. Just lemon juice.",
+   "key": [
+    "LEMON"
+   ],
+   "board": [
+    "DISGUISE:",
+    "LEMON JUICE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "cop": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen ninety five. Pittsburgh. Broad daylight.",
+   "cap": "1995. Pittsburgh. Broad daylight.",
+   "key": [
+    "DAYLIGHT."
+   ],
+   "set": "vault",
+   "board": [
+    "BANK",
+    "1995"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "cop": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your face is rubbed with lemon juice. That is the whole plan. Really.",
+   "key": [
+    "PLAN."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "cop": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your theory? Lemon juice works as invisible ink.",
+   "key": [
+    "INK."
+   ],
+   "set": "study",
+   "board": [
+    "INVISIBLE",
+    "INK"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "cop": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So your face should be invisible to cameras.",
+   "key": [
+    "INVISIBLE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "cop": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "point",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "You even tested it. You snapped a Polaroid.",
+   "key": [
+    "POLAROID."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "cop": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "The photo came out without you in it. Science!",
+   "key": [
+    "SCIENCE!"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "cop": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The bank cameras disagree. They catch your face clearly. Every frame.",
+   "key": [
+    "CLEARLY."
+   ],
+   "set": "vault",
+   "board": [
+    "DUNNING",
+    "KRUGER"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "cop": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That night, the footage airs on the news.",
+   "key": [
+    "NEWS."
+   ],
+   "set": "office",
+   "board": [
+    "NEWS",
+    "TONIGHT"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "cop": [
+     1.4,
+     0.0
+    ],
+    "prof": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "cop"
+   },
+   "act": {
+    "cop": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "cop"
+    }
+   }
+  },
+  {
+   "text": "Police come knocking. You are honestly shocked.",
+   "key": [
+    "SHOCKED."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "cop": [
+     1.4,
+     0.0
+    ],
+    "prof": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "cop",
+    "with": "you"
+   },
+   "act": {
+    "cop": {
+     "mood": "angry",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "cop"
+    }
+   }
+  },
+  {
+   "text": "You tell them, but I wore the juice.",
+   "key": [
+    "JUICE."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "cop": [
+     1.4,
+     0.0
+    ],
+    "prof": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.7,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "This is not a joke. You truly believed it.",
+   "key": [
+    "BELIEVED"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "cop": [
+     1.4,
+     0.0
+    ],
+    "prof": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "cop",
+    "with": "you"
+   },
+   "act": {
+    "cop": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "you"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A psychologist named David Dunning reads the story.",
+   "key": [
+    "DUNNING"
+   ],
+   "set": "study",
+   "board": [
+    "CORNELL",
+    "1999"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "cop": false,
+    "prof": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "prof"
+    }
+   }
+  },
+  {
+   "text": "With Justin Kruger, he tests students. Logic. Grammar. Humor.",
+   "key": [
+    "LOGIC.",
+    "HUMOR."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "cop": false,
+    "prof": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "capy"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "prof"
+    }
+   }
+  },
+  {
+   "text": "The lowest scorers land near the twelfth percentile. Bottom of the class.",
+   "cap": "The lowest scorers land near the 12th percentile. Bottom of the class.",
+   "key": [
+    "12TH"
+   ],
+   "board": [
+    "ACTUAL:",
+    "12th"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "cop": false,
+    "prof": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "prof"
+    }
+   }
+  },
+  {
+   "text": "Their own guess? The sixty second.",
+   "cap": "Their own guess? The 62nd.",
+   "key": [
+    "62ND."
+   ],
+   "board": [
+    "THEIR GUESS:",
+    "62nd"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "cop": false,
+    "prof": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It becomes famous as the Dunning Kruger effect.",
+   "key": [
+    "EFFECT."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "cop": false,
+    "prof": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "prof"
+   },
+   "act": {
+    "prof": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Too unskilled to notice the lack of skill.",
+   "key": [
+    "NOTICE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "cop": false,
+    "prof": [
+     1.2,
+     0.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "prof"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "prof"
+    },
+    "prof": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. Some statisticians are not convinced.",
+   "key": [
+    "TWIST."
+   ],
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "cop": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Feed in pure random numbers. A similar pattern shows up anyway.",
+   "key": [
+    "RANDOM"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "cop": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So part of it may just be math.",
+   "key": [
+    "MATH."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "cop": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The lemon juice, sadly, was not math.",
+   "key": [
+    "NOT"
+   ],
+   "set": "vault",
+   "board": [
+    "DUNNING",
+    "KRUGER"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "cop": false,
+    "prof": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Quick test. Are you an above average driver? Yes or no? Statistically, half of you are wrong.",
+   "cap": "Quick test. Are you an above average driver? Yes or no? Statistically, half of you are wrong.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "set": "study",
+   "board": [
+    "ABOVE AVERAGE",
+    "DRIVER?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "cop": false,
+    "prof": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: 1995 Greater Pittsburgh bank robberies",
+   "url": "https://en.wikipedia.org/wiki/1995_Greater_Pittsburgh_bank_robberies"
+  },
+  {
+   "title": "Wikipedia: Dunning-Kruger effect",
+   "url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect"
+  },
+  {
+   "title": "IFLScience: Dunning-Kruger and the calamitous lemon juice bank robbery",
+   "url": "https://www.iflscience.com/dunning-kruger-and-the-calamitous-lemon-juice-bank-robbery-that-launched-a-new-cognitive-bias-84242"
+  },
+  {
+   "title": "New York Times (Errol Morris): The anosognosic's dilemma",
+   "url": "https://archive.nytimes.com/opinionator.blogs.nytimes.com/2010/06/20/the-anosognosics-dilemma-1/"
+  },
+  {
+   "title": "McGill Office for Science and Society: The Dunning-Kruger effect is probably not real",
+   "url": "https://www.mcgill.ca/oss/article/critical-thinking/dunning-kruger-effect-probably-not-real"
+  },
+  {
+   "title": "Officer.com: Lemon juice can't keep crook concealed",
+   "url": "https://officer.com/investigations/article/55252442/how-to-catch-a-criminal-when-life-gives-you-lemons"
+  },
+  {
+   "title": "Wikipedia: David Dunning",
+   "url": "https://en.wikipedia.org/wiki/David_Dunning"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Dunning and Kruger published from Cornell in 1999",
+   "terms": [
+    "Cornell",
+    "1999"
+   ]
+  },
+  {
+   "claim": "He robbed two banks",
+   "terms": [
+    "two banks|robbed two"
+   ]
+  },
+  {
+   "claim": "It happened in Pittsburgh in 1995",
+   "terms": [
+    "Pittsburgh",
+    "1995"
+   ]
+  },
+  {
+   "claim": "He robbed the banks in daylight without a mask",
+   "terms": [
+    "daylight|mask"
+   ]
+  },
+  {
+   "claim": "His face was covered in lemon juice",
+   "terms": [
+    "lemon juice",
+    "face"
+   ]
+  },
+  {
+   "claim": "He believed lemon juice worked like invisible ink",
+   "terms": [
+    "invisible ink"
+   ]
+  },
+  {
+   "claim": "He thought it would make his face invisible to cameras",
+   "terms": [
+    "invisible",
+    "camera"
+   ]
+  },
+  {
+   "claim": "He tested it with a Polaroid photo",
+   "terms": [
+    "Polaroid"
+   ]
+  },
+  {
+   "claim": "Security footage of him aired on the news",
+   "terms": [
+    "news",
+    "footage|surveillance"
+   ]
+  },
+  {
+   "claim": "He said: but I wore the juice",
+   "terms": [
+    "wore the juice"
+   ]
+  },
+  {
+   "claim": "David Dunning read about the case",
+   "terms": [
+    "Dunning",
+    "Wheeler"
+   ]
+  },
+  {
+   "claim": "Dunning and Justin Kruger tested logic, grammar and humor",
+   "terms": [
+    "grammar",
+    "humor"
+   ]
+  },
+  {
+   "claim": "Bottom scorers were around the 12th percentile",
+   "terms": [
+    "12th"
+   ]
+  },
+  {
+   "claim": "They estimated themselves at the 62nd percentile",
+   "terms": [
+    "62nd"
+   ]
+  },
+  {
+   "claim": "This became the Dunning-Kruger effect",
+   "terms": [
+    "Dunning Kruger effect"
+   ]
+  },
+  {
+   "claim": "Critics argue it is partly a statistical artifact",
+   "terms": [
+    "statistical",
+    "artifact|artefact|regression"
+   ]
+  },
+  {
+   "claim": "Random data can produce a similar pattern",
+   "terms": [
+    "random",
+    "data|numbers"
+   ]
+  }
+ ]
+}

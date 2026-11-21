@@ -1,0 +1,1070 @@
+{
+ "id": "mind_08_asch_lines",
+ "title": "Seven people pick the wrong line",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "WHICH LINE",
+   "MATCHES?"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#27ae60",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "a1": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5a5a6a",
+    "pants": "#2a2a2a",
+    "tie": "#c0392b",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f"
+   }
+  },
+  "a2": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#6a5a4a",
+    "pants": "#2a2a2a",
+    "tie": "#2e86c1",
+    "hair": "bald",
+    "skin": "#c68d64",
+    "glasses": true
+   }
+  },
+  "a3": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#4a5a6a",
+    "pants": "#2a2a2a",
+    "tie": "#f39c12",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "ally": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f39c12",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You know the right answer. You say the wrong one anyway.",
+   "key": [
+    "WRONG"
+   ],
+   "board": [
+    "WHICH LINE",
+    "MATCHES?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nineteen fifty one. Swarthmore. A simple college vision test.",
+   "cap": "1951. Swarthmore. A simple college vision test.",
+   "key": [
+    "VISION"
+   ],
+   "set": "office",
+   "board": [
+    "LINE",
+    "A · B · C"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Look at one line. Which of three matches it?",
+   "key": [
+    "MATCHES"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.6
+    ],
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It is obvious. Alone, people almost never miss. Not even once.",
+   "key": [
+    "NEVER"
+   ],
+   "set": "study",
+   "board": [
+    "ALONE:",
+    "< 1% WRONG"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "But you sit with seven others. You answer near the end.",
+   "cap": "But you sit with 7 others. You answer near the end.",
+   "key": [
+    "7"
+   ],
+   "set": "office",
+   "board": [
+    "WHICH LINE",
+    "MATCHES?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     3.0,
+     0.2
+    ],
+    "a1": [
+     -3.0,
+     0.0
+    ],
+    "a2": [
+     -1.0,
+     -0.2
+    ],
+    "a3": [
+     1.0,
+     -0.2
+    ],
+    "ally": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "a2"
+   },
+   "act": {
+    "a1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "a2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "a3": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "a3"
+    }
+   }
+  },
+  {
+   "text": "The first person picks the wrong line. Confidently.",
+   "key": [
+    "WRONG"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     3.0,
+     0.2
+    ],
+    "a1": [
+     -3.0,
+     0.0
+    ],
+    "a2": [
+     -1.0,
+     -0.2
+    ],
+    "a3": [
+     1.0,
+     -0.2
+    ],
+    "ally": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "a1"
+   },
+   "act": {
+    "a1": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So does the second. So does every single one.",
+   "key": [
+    "EVERY"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     3.0,
+     0.2
+    ],
+    "a1": [
+     -3.0,
+     0.0
+    ],
+    "a2": [
+     -1.0,
+     -0.2
+    ],
+    "a3": [
+     1.0,
+     -0.2
+    ],
+    "ally": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "a2",
+    "with": "a3"
+   },
+   "act": {
+    "a2": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "a3": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Small detail. They are all actors. Paid to be wrong.",
+   "key": [
+    "ACTORS."
+   ],
+   "set": "study",
+   "board": [
+    "WHICH LINE",
+    "MATCHES?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Now it is your turn. Everybody looks at you.",
+   "key": [
+    "TURN."
+   ],
+   "set": "office",
+   "board": [
+    "WHICH LINE",
+    "MATCHES?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     3.0,
+     0.2
+    ],
+    "a1": [
+     -3.0,
+     0.0
+    ],
+    "a2": [
+     -1.0,
+     -0.2
+    ],
+    "a3": [
+     1.0,
+     -0.2
+    ],
+    "ally": false
+   },
+   "shot": {
+    "type": "ots",
+    "on": "you",
+    "from": "a3"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "a3"
+    },
+    "a3": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    },
+    "a2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Your eyes say one thing. The whole room says another.",
+   "key": [
+    "ROOM"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     3.0,
+     0.2
+    ],
+    "a1": [
+     -3.0,
+     0.0
+    ],
+    "a2": [
+     -1.0,
+     -0.2
+    ],
+    "a3": [
+     1.0,
+     -0.2
+    ],
+    "ally": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "People caved about a third of the time.",
+   "key": [
+    "THIRD"
+   ],
+   "set": "study",
+   "board": [
+    "WENT ALONG:",
+    "~1/3 OF THE TIME"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Three out of four caved at least once.",
+   "cap": "3 out of 4 caved at least once.",
+   "key": [
+    "3"
+   ],
+   "board": [
+    "CAVED AT",
+    "LEAST ONCE: 75%"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "high",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Then Solomon Asch adds one ally. One honest voice.",
+   "key": [
+    "ALLY."
+   ],
+   "set": "office",
+   "board": [
+    "WHICH LINE",
+    "MATCHES?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     3.2,
+     0.2
+    ],
+    "a1": [
+     -3.0,
+     0.0
+    ],
+    "a2": [
+     -1.0,
+     -0.2
+    ],
+    "a3": false,
+    "ally": [
+     1.2,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "ally"
+   },
+   "act": {
+    "ally": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "ally"
+    }
+   }
+  },
+  {
+   "text": "Conformity collapses. You say what you see.",
+   "key": [
+    "COLLAPSES."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     3.2,
+     0.2
+    ],
+    "a1": [
+     -3.0,
+     0.0
+    ],
+    "a2": [
+     -1.0,
+     -0.2
+    ],
+    "a3": false,
+    "ally": [
+     1.2,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "ally",
+    "with": "you"
+   },
+   "act": {
+    "ally": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Now the twist. Look at the other number.",
+   "key": [
+    "OTHER"
+   ],
+   "set": "study",
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Most of the answers were still correct. Most, not all.",
+   "key": [
+    "CORRECT."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Asch himself saw a story about independence.",
+   "key": [
+    "INDEPENDENCE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Nineteen eighty. British researchers rerun it with engineering students.",
+   "cap": "1980. British researchers rerun it with engineering students.",
+   "key": [
+    "ENGINEERING"
+   ],
+   "set": "locker",
+   "board": [
+    "UK",
+    "1980"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "a1": false,
+    "a2": false,
+    "a3": [
+     -1.4,
+     0.0
+    ],
+    "ally": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "a3"
+   },
+   "act": {
+    "a3": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "ally"
+    },
+    "ally": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "a3"
+    }
+   }
+  },
+  {
+   "text": "They went along once. In three hundred ninety six trials.",
+   "cap": "They went along once. In 396 trials.",
+   "key": [
+    "396"
+   ],
+   "board": [
+    "CAVED:",
+    "1 IN 396"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "a1": false,
+    "a2": false,
+    "a3": [
+     -1.4,
+     0.0
+    ],
+    "ally": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ally"
+   },
+   "act": {
+    "ally": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Engineers. Very hard to talk out of a measurement.",
+   "key": [
+    "MEASUREMENT."
+   ],
+   "set": "study",
+   "board": [
+    "WHICH LINE",
+    "MATCHES?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Bigger reviews say conformity varies. By culture. By decade.",
+   "key": [
+    "CULTURE."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Seven people pick the wrong line. Do you cave? Yes or no?",
+   "cap": "7 people pick the wrong line. Do you cave? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "DO YOU",
+    "CAVE?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "a1": false,
+    "a2": false,
+    "a3": false,
+    "ally": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Asch conformity experiments",
+   "url": "https://en.wikipedia.org/wiki/Asch_conformity_experiments"
+  },
+  {
+   "title": "Simply Psychology: Asch conformity line experiment",
+   "url": "https://www.simplypsychology.org/asch-conformity.html"
+  },
+  {
+   "title": "Wikipedia: Solomon Asch",
+   "url": "https://en.wikipedia.org/wiki/Solomon_Asch"
+  },
+  {
+   "title": "Wikipedia: Conformity",
+   "url": "https://en.wikipedia.org/wiki/Conformity"
+  },
+  {
+   "title": "Britannica: Solomon Asch",
+   "url": "https://www.britannica.com/biography/Solomon-Asch"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The study was at Swarthmore College in 1951",
+   "terms": [
+    "Swarthmore",
+    "1951"
+   ]
+  },
+  {
+   "claim": "Participants matched one line to one of three comparison lines",
+   "terms": [
+    "three",
+    "lines"
+   ]
+  },
+  {
+   "claim": "Alone, people almost never erred (under 1 percent)",
+   "terms": [
+    "less than 1|less than one|control"
+   ]
+  },
+  {
+   "claim": "Each group had seven confederates",
+   "terms": [
+    "seven|7",
+    "confederates"
+   ]
+  },
+  {
+   "claim": "The real participant answered near the end",
+   "terms": [
+    "last|end|next to last|second to last"
+   ]
+  },
+  {
+   "claim": "The confederates gave the wrong answer",
+   "terms": [
+    "confederates",
+    "wrong|incorrect"
+   ]
+  },
+  {
+   "claim": "The others were actors, confederates of the experimenter",
+   "terms": [
+    "actors|confederates"
+   ]
+  },
+  {
+   "claim": "People conformed about a third of the time",
+   "terms": [
+    "32|one third|a third|33"
+   ]
+  },
+  {
+   "claim": "About 75 percent conformed at least once",
+   "terms": [
+    "75",
+    "once"
+   ]
+  },
+  {
+   "claim": "Adding one ally greatly reduced conformity",
+   "terms": [
+    "ally|partner|dissenter",
+    "conformity"
+   ]
+  },
+  {
+   "claim": "Most answers were still correct",
+   "terms": [
+    "correct|independent"
+   ]
+  },
+  {
+   "claim": "Asch saw the results as about independence",
+   "terms": [
+    "Asch",
+    "independence"
+   ]
+  },
+  {
+   "claim": "A 1980 British rerun used engineering students",
+   "terms": [
+    "1980",
+    "engineering"
+   ]
+  },
+  {
+   "claim": "They conformed once in 396 trials",
+   "terms": [
+    "396"
+   ]
+  },
+  {
+   "claim": "Conformity varies by culture and has declined over time",
+   "terms": [
+    "culture|collectivist",
+    "conformity"
+   ]
+  }
+ ]
+}
