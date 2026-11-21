@@ -55,11 +55,10 @@
  },
  "lines": [
   {
-   "text": "In 1982, the NFL season simply stopped. For fifty seven days.",
-   "cap": "In 1982, the NFL season simply stopped. For 57 days.",
+   "text": "You go four and five. You make the playoffs.",
+   "cap": "You go 4-5. You make the playoffs.",
    "key": [
-    "57",
-    "DAYS."
+    "PLAYOFFS."
    ],
    "place": {
     "boss": false,
@@ -93,16 +92,11 @@
    "speaker": "capy"
   },
   {
-   "text": "The players went on strike after week two.",
+   "text": "Nineteen eighty two. The players go on strike.",
+   "cap": "1982. The players go on strike.",
    "key": [
-    "STRIKE"
+    "STRIKE."
    ],
-   "set": "tunnel",
-   "setOpts": {
-    "boardText": [
-     "ON STRIKE"
-    ]
-   },
    "place": {
     "p1": [
      -1.2,
@@ -129,14 +123,19 @@
      "action": "cross",
      "look": "camera"
     }
+   },
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "ON STRIKE"
+    ]
    }
   },
   {
-   "text": "Seven games per team, gone. Just like that.",
-   "cap": "7 games per team, gone. Just like that.",
+   "text": "Right after week two. For fifty seven days.",
+   "cap": "Right after week 2. For 57 days.",
    "key": [
-    "7",
-    "GONE."
+    "57"
    ],
    "shot": {
     "type": "close",
@@ -150,19 +149,11 @@
    }
   },
   {
-   "text": "When the deal finally came in November, the season had shrunk from sixteen games to nine.",
-   "cap": "When the deal finally came in November, the season had shrunk from 16 games to 9.",
+   "text": "Seven games per team, gone. The sixteen game season shrinks to nine.",
+   "cap": "7 games per team, gone. The 16-game season shrinks to 9.",
    "key": [
-    "16",
     "9."
    ],
-   "set": "office",
-   "setOpts": {
-    "boardText": [
-     "SEASON:",
-     "9 GAMES"
-    ]
-   },
    "place": {
     "boss": "desk"
    },
@@ -181,13 +172,19 @@
      "action": "hold",
      "look": "camera"
     }
+   },
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "SEASON:",
+     "9 GAMES"
+    ]
    }
   },
   {
-   "text": "So the league threw out the usual playoff format.",
+   "text": "So the league tosses out the playoff format.",
    "key": [
-    "THREW",
-    "OUT"
+    "FORMAT."
    ],
    "shot": {
     "type": "close",
@@ -201,7 +198,7 @@
    }
   },
   {
-   "text": "Divisions? Ignored.",
+   "text": "Divisions? Ignored. Very relaxed energy from the league.",
    "key": [
     "IGNORED."
    ],
@@ -231,16 +228,17 @@
    "speaker": "capy"
   },
   {
-   "text": "Sixteen teams got in. Eight per conference, seeded one through eight by record.",
-   "cap": "16 teams got in. 8 per conference, seeded 1 through 8 by record.",
+   "text": "Sixteen teams get in. Eight per conference.",
+   "cap": "16 teams get in. 8 per conference.",
    "key": [
-    "16",
-    "TEAMS"
+    "16"
    ],
-   "board": [
-    "PLAYOFFS:",
-    "16 TEAMS"
-   ],
+   "place": {
+    "boss": [
+     2.4,
+     -1.5
+    ]
+   },
    "shot": {
     "type": "wide",
     "on": "boss"
@@ -252,18 +250,19 @@
      "look": "camera"
     }
    },
-   "place": {
-    "boss": [
-     2.4,
-     -1.5
-    ]
-   }
+   "board": [
+    "PLAYOFFS:",
+    "16 TEAMS"
+   ]
   },
   {
-   "text": "They called it the Super Bowl Tournament.",
+   "text": "They call it the Super Bowl Tournament.",
    "key": [
     "TOURNAMENT."
    ],
+   "place": {
+    "boss": "desk"
+   },
    "shot": {
     "type": "low",
     "on": "boss"
@@ -273,23 +272,46 @@
      "mood": "happy",
      "action": "cheer"
     }
-   },
-   "place": {
-    "boss": "desk"
    }
   },
   {
-   "text": "Which is how two teams with losing records made the playoffs.",
+   "text": "Teams are seeded one through eight. By record alone.",
+   "cap": "Teams are seeded 1 through 8. By record alone.",
    "key": [
-    "LOSING"
+    "RECORD"
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "BROWNS 4-5",
-     "LIONS 4-5"
-    ]
+   "place": {
+    "capy": [
+     -2.2,
+     -1.2
+    ],
+    "boss": "desk"
    },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The Browns go four and five. In.",
+   "cap": "The Browns go 4-5. In.",
+   "key": [
+    "IN."
+   ],
    "place": {
     "p1": [
      -1.2,
@@ -320,33 +342,20 @@
    "board": [
     "BROWNS 4-5",
     "LIONS 4-5"
-   ]
-  },
-  {
-   "text": "The Browns went four and five. In.",
-   "cap": "The Browns went 4 and 5. In.",
-   "key": [
-    "4",
-    "IN."
    ],
-   "shot": {
-    "type": "medium",
-    "on": "p1"
-   },
-   "act": {
-    "p1": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    }
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "BROWNS 4-5",
+     "LIONS 4-5"
+    ]
    }
   },
   {
-   "text": "The Lions went four and five. Also in.",
-   "cap": "The Lions went 4 and 5. Also in.",
+   "text": "The Lions go four and five. Also in.",
+   "cap": "The Lions go 4-5. Also in.",
    "key": [
-    "ALSO",
-    "IN."
+    "ALSO"
    ],
    "shot": {
     "type": "medium",
@@ -361,10 +370,52 @@
    }
   },
   {
-   "text": "Both needed three team tiebreakers just to qualify.",
-   "cap": "Both needed 3-team tiebreakers just to qualify.",
+   "text": "Two losing teams. Both in the playoffs. Why not.",
    "key": [
-    "TIEBREAKERS"
+    "NOT."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "p1": [
+     -2.2,
+     0
+    ],
+    "p2": [
+     2.2,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "p1": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    },
+    "p2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Nine games. Sixteen playoff teams. One very short regular season.",
+   "cap": "9 games. 16 playoff teams. One very short regular season.",
+   "key": [
+    "SHORT"
    ],
    "shot": {
     "type": "high",
@@ -381,19 +432,35 @@
      "action": "idle",
      "look": "p1"
     }
+   },
+   "place": {
+    "capy": false,
+    "p1": [
+     -1.2,
+     0
+    ],
+    "p2": [
+     1.2,
+     0
+    ]
    }
   },
   {
-   "text": "The champion? Washington, beating Miami twenty seven to seventeen in the Super Bowl that January.",
-   "cap": "The champion? Washington, beating Miami 27 to 17 in the Super Bowl that January.",
+   "text": "The champion? Washington. They beat Miami in the Super Bowl. Twenty seven to seventeen.",
+   "cap": "The champion? Washington. They beat Miami in the Super Bowl. 27 to 17.",
    "key": [
-    "27",
-    "17"
+    "WASHINGTON."
    ],
-   "board": [
-    "SUPER BOWL",
-    "27-17"
-   ],
+   "place": {
+    "p1": [
+     6.6,
+     0.5
+    ],
+    "p2": [
+     4.6,
+     0.5
+    ]
+   },
    "shot": {
     "type": "low",
     "on": "p2",
@@ -415,31 +482,17 @@
      "look": "camera"
     }
    },
-   "place": {
-    "p1": [
-     6.6,
-     0.5
-    ],
-    "p2": [
-     4.6,
-     0.5
-    ]
-   }
+   "board": [
+    "SUPER BOWL",
+    "27-17"
+   ]
   },
   {
-   "text": "Nine games and a sixteen team bracket. Would you take that season? Yes or no?",
-   "cap": "9 games and a 16-team bracket. Would you take that season? Yes or no?",
+   "text": "Would you count that title? Yes or no? Miami fans may abstain.",
    "key": [
     "YES",
     "NO?"
    ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "9 GAMES",
-     "16 TEAMS"
-    ]
-   },
    "place": {
     "capy": [
      -1.4,
@@ -467,11 +520,18 @@
      "look": "capy"
     }
    },
-   "speaker": "capy",
    "board": [
     "9 GAMES",
     "16 TEAMS"
-   ]
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "9 GAMES",
+     "16 TEAMS"
+    ]
+   },
+   "speaker": "capy"
   }
  ],
  "sources": [
@@ -490,6 +550,96 @@
   {
    "title": "Sportskeeda: NFL teams that made the playoffs with a losing record",
    "url": "https://www.sportskeeda.com/nfl/5-nfl-teams-made-playoffs-losing-record"
+  },
+  {
+   "title": "Wikipedia: 1982 NFL strike",
+   "url": "https://en.wikipedia.org/wiki/1982_NFL_strike"
+  },
+  {
+   "title": "Wikipedia: Super Bowl XVII",
+   "url": "https://en.wikipedia.org/wiki/Super_Bowl_XVII"
+  },
+  {
+   "title": "Wikipedia: 1982-83 NFL playoffs",
+   "url": "https://en.wikipedia.org/wiki/1982%E2%80%9383_NFL_playoffs"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 1982 the players went on strike",
+   "terms": [
+    "1982",
+    "strike"
+   ]
+  },
+  {
+   "claim": "The strike lasted 57 days",
+   "terms": [
+    "57",
+    "strike"
+   ]
+  },
+  {
+   "claim": "It began after week two",
+   "terms": [
+    "strike",
+    "two games|second week|week 2|week two|2 games"
+   ]
+  },
+  {
+   "claim": "The season shrank from 16 games to 9",
+   "terms": [
+    "nine games|9 games|nine game|9 game"
+   ]
+  },
+  {
+   "claim": "The league changed the playoff format into a 16-team tournament",
+   "terms": [
+    "16|sixteen",
+    "playoff|tournament"
+   ]
+  },
+  {
+   "claim": "Divisions were ignored for seeding; teams seeded 1-8 per conference by record",
+   "terms": [
+    "division",
+    "seed"
+   ]
+  },
+  {
+   "claim": "Eight teams per conference qualified",
+   "terms": [
+    "eight|8",
+    "conference"
+   ]
+  },
+  {
+   "claim": "It was called the Super Bowl Tournament",
+   "terms": [
+    "Super Bowl Tournament"
+   ]
+  },
+  {
+   "claim": "The Browns made it at 4-5",
+   "terms": [
+    "Browns|Cleveland",
+    "4 5"
+   ]
+  },
+  {
+   "claim": "The Lions made it at 4-5",
+   "terms": [
+    "Lions|Detroit",
+    "4 5"
+   ]
+  },
+  {
+   "claim": "Washington beat Miami 27-17 in the Super Bowl",
+   "terms": [
+    "Washington|Redskins",
+    "27 17"
+   ]
   }
  ]
 }
