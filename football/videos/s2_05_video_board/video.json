@@ -411,10 +411,9 @@
    "speaker": "capy"
   },
   {
-   "text": "New England's own kicks? He checks fifty two.",
-   "cap": "New England's own kicks? He checks 52.",
+   "text": "That's a lot of extra goalposts.",
    "key": [
-    "52."
+    "GOALPOSTS."
    ],
    "set": "field",
    "setOpts": {
@@ -424,8 +423,8 @@
     ]
    },
    "board": [
-    "PATRIOTS KICKS",
-    "52"
+    "EXTRA",
+    "GOALPOSTS"
    ],
    "place": {
     "capy": [
@@ -456,14 +455,13 @@
    "speaker": "capy"
   },
   {
-   "text": "The trick shows up zero times.",
-   "cap": "The trick shows up 0 times.",
+   "text": "Your kicker basically sees double.",
    "key": [
-    "0"
+    "DOUBLE."
    ],
    "board": [
-    "TRICK SHOWN",
-    "0 TIMES"
+    "SEEING",
+    "DOUBLE"
    ],
    "place": {
     "capy": [
@@ -828,13 +826,6 @@
    "claim": "He found dozens of examples on opponents' kicks",
    "terms": [
     "dozens"
-   ]
-  },
-  {
-   "claim": "He reviewed 52 Patriots attempts; the trick appeared zero times",
-   "terms": [
-    "52",
-    "zero"
    ]
   },
   {
