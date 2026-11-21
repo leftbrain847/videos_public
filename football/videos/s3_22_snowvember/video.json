@@ -81,7 +81,7 @@
  },
  "lines": [
   {
-   "text": "In 2014, the Buffalo Bills won a home game in Detroit.",
+   "text": "You win a home game. In Detroit.",
    "key": [
     "DETROIT."
    ],
@@ -119,22 +119,10 @@
    "speaker": "capy"
   },
   {
-   "text": "A lake effect storm had dropped more than five feet of snow on the Buffalo area.",
-   "cap": "A lake-effect storm had dropped more than 5 feet of snow on the Buffalo area.",
+   "text": "Twenty fourteen. A lake effect storm buries Buffalo.",
+   "cap": "2014. A lake effect storm buries Buffalo.",
    "key": [
-    "5",
-    "FEET"
-   ],
-   "set": "living",
-   "setOpts": {
-    "boardText": [
-     "SNOW:",
-     "5+ FEET"
-    ]
-   },
-   "board": [
-    "SNOW:",
-    "5+ FEET"
+    "BURIES"
    ],
    "place": {
     "te": [
@@ -157,18 +145,24 @@
      "action": "point",
      "look": "camera"
     }
+   },
+   "board": [
+    "SNOW:",
+    "5+ FEET"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "SNOW:",
+     "5+ FEET"
+    ]
    }
   },
   {
-   "text": "The team estimated two hundred twenty thousand tons of snow at its stadium.",
-   "cap": "The team estimated 220,000 tons of snow at its stadium.",
+   "text": "Over five feet of snow falls in places.",
+   "cap": "Over 5 feet of snow falls in places.",
    "key": [
-    "220,000",
-    "TONS"
-   ],
-   "board": [
-    "STADIUM SNOW",
-    "220,000 TONS"
+    "5"
    ],
    "shot": {
     "type": "close",
@@ -180,13 +174,17 @@
      "action": "idle",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "SNOW:",
+    "5+ FEET"
+   ]
   },
   {
-   "text": "Players were snowed in. Practices were canceled.",
+   "text": "Snow in your stadium? Two hundred twenty thousand tons.",
+   "cap": "Snow in your stadium? 220,000 tons.",
    "key": [
-    "SNOWED",
-    "IN."
+    "220,000"
    ],
    "place": {
     "te": [
@@ -216,26 +214,48 @@
     }
    },
    "board": [
-    "PRACTICE:",
-    "CANCELED"
+    "STADIUM SNOW",
+    "220,000 TONS"
    ]
   },
   {
-   "text": "Tight end Scott Chandler needed a snowmobile just to get out of his neighborhood.",
+   "text": "That's a lot of shoveling. Any volunteers? No?",
    "key": [
-    "SNOWMOBILE"
+    "VOLUNTEERS?"
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "ROADS:",
-     "CLOSED"
-    ],
-    "grass": "#eef2f0"
+   "place": {
+    "capy": [
+     0,
+     1.7
+    ]
    },
-   "board": [
-    "ROADS:",
-    "CLOSED"
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    },
+    "te2": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "You're tight end Scott Chandler. You're snowed in. Practice is canceled.",
+   "key": [
+    "IN."
    ],
    "place": {
     "te": [
@@ -253,12 +273,24 @@
      "action": "hold",
      "look": "camera"
     }
+   },
+   "board": [
+    "ROADS:",
+    "CLOSED"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "ROADS:",
+     "CLOSED"
+    ],
+    "grass": "#eef2f0"
    }
   },
   {
-   "text": "He shared it with fellow tight end Lee Smith.",
+   "text": "So you escape on a snowmobile. Honestly, a very Buffalo move.",
    "key": [
-    "SHARED"
+    "SNOWMOBILE."
    ],
    "place": {
     "te": [
@@ -289,21 +321,9 @@
    }
   },
   {
-   "text": "So the league moved the game against the Jets. To Detroit. On a Monday night.",
+   "text": "The league moves your game. To Detroit.",
    "key": [
-    "DETROIT.",
-    "MONDAY"
-   ],
-   "set": "office",
-   "setOpts": {
-    "boardText": [
-     "NEW SITE:",
-     "DETROIT"
-    ]
-   },
-   "board": [
-    "NEW SITE:",
-    "DETROIT"
+    "DETROIT."
    ],
    "place": {
     "gm": [
@@ -321,16 +341,23 @@
      "action": "point",
      "look": "camera"
     }
+   },
+   "board": [
+    "NEW SITE:",
+    "DETROIT"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "NEW SITE:",
+     "DETROIT"
+    ]
    }
   },
   {
-   "text": "The team flew out on a charter. Tickets for fans were free.",
+   "text": "Monday night, against the Jets. Tickets for fans are free.",
    "key": [
     "FREE."
-   ],
-   "board": [
-    "TICKETS:",
-    "FREE"
    ],
    "shot": {
     "type": "medium",
@@ -342,23 +369,16 @@
      "action": "shrug",
      "look": "camera"
     }
-   }
-  },
-  {
-   "text": "Fifty six thousand and forty four people showed up.",
-   "cap": "56,044 people showed up.",
-   "key": [
-    "56,044"
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "CROWD",
-     "56,044"
-    ]
    },
    "board": [
-    "CROWD",
+    "TICKETS:",
+    "FREE"
+   ]
+  },
+  {
+   "text": "Fifty six thousand forty four people show up.",
+   "cap": "56,044 people show up.",
+   "key": [
     "56,044"
    ],
    "place": {
@@ -372,13 +392,9 @@
     ]
    },
    "shot": {
-    "type": "low",
-    "on": "bill",
-    "offset": [
-     -1.3,
-     1.4,
-     3
-    ]
+    "type": "two",
+    "on": "capy",
+    "with": "bill"
    },
    "act": {
     "bill": {
@@ -392,17 +408,24 @@
      "look": "bill"
     }
    },
+   "board": [
+    "CROWD",
+    "56,044"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "CROWD",
+     "56,044"
+    ]
+   },
    "speaker": "capy"
   },
   {
-   "text": "Buffalo won, thirty eight to three.",
-   "cap": "Buffalo won, 38 to 3.",
+   "text": "Buffalo wins, thirty eight to three. Easy.",
+   "cap": "Buffalo wins, 38 to 3. Easy.",
    "key": [
     "38"
-   ],
-   "board": [
-    "BILLS 38",
-    "JETS 3"
    ],
    "place": {
     "capy": false,
@@ -435,49 +458,58 @@
      "action": "slump",
      "look": "bill"
     }
-   }
+   },
+   "board": [
+    "BILLS 38",
+    "JETS 3"
+   ]
   },
   {
-   "text": "And it wasn't even the Bills' first win in that stadium that season.",
+   "text": "The Jets lose. To a team that's also on the road.",
    "key": [
-    "FIRST",
-    "WIN"
+    "ROAD."
    ],
    "place": {
-    "jet": false,
+    "capy": [
+     -1.8,
+     1.0
+    ],
     "bill": [
-     0,
+     1.0,
      0
-    ]
-   },
-   "shot": {
-    "type": "close",
-    "on": "bill"
+    ],
+    "jet": false
    },
    "act": {
-    "bill": {
+    "capy": {
      "mood": "smug",
-     "action": "hold",
+     "action": "point",
+     "look": "camera"
+    },
+    "bill": {
+     "mood": "happy",
+     "action": "cheer",
      "look": "camera"
     }
-   }
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bill"
+   },
+   "speaker": "capy"
   },
   {
-   "text": "In October, they had beaten the Lions there, seventeen to fourteen.",
-   "cap": "In October, they had beaten the Lions there, 17 to 14.",
+   "text": "This is not your first win there. Not even close.",
    "key": [
-    "17",
-    "14."
-   ],
-   "board": [
-    "OCTOBER:",
-    "BILLS 17 LIONS 14"
+    "FIRST"
    ],
    "place": {
     "bill": [
      4.6,
      0.5
-    ]
+    ],
+    "capy": false
    },
    "shot": {
     "type": "low",
@@ -494,14 +526,17 @@
      "action": "cheer",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "FORD FIELD",
+    "WINS: 2"
+   ]
   },
   {
-   "text": "Two games in Detroit that season. Two wins.",
-   "cap": "2 games in Detroit that season. 2 wins.",
+   "text": "In October, you beat the Lions there. Seventeen to fourteen.",
+   "cap": "In October, you beat the Lions there. 17 to 14.",
    "key": [
-    "2",
-    "WINS."
+    "17"
    ],
    "shot": {
     "type": "high",
@@ -512,24 +547,17 @@
      "mood": "smug",
      "action": "cross"
     }
-   }
+   },
+   "board": [
+    "OCTOBER:",
+    "BILLS 17 LIONS 14"
+   ]
   },
   {
-   "text": "Quick question. Would you ride a snowmobile to get to work? Yes or no?",
+   "text": "Would you ride a snowmobile to work? Yes or no?",
    "key": [
     "YES",
     "NO?"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "COMMUTE:",
-     "SNOWMOBILE?"
-    ]
-   },
-   "board": [
-    "COMMUTE:",
-    "SNOWMOBILE?"
    ],
    "place": {
     "capy": [
@@ -558,6 +586,17 @@
      "look": "capy"
     }
    },
+   "board": [
+    "COMMUTE:",
+    "SNOWMOBILE?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "COMMUTE:",
+     "SNOWMOBILE?"
+    ]
+   },
    "speaker": "capy"
   }
  ],
@@ -565,10 +604,6 @@
   {
    "title": "NFL.com (AP): Scott Chandler helps Bills rout Jets",
    "url": "https://www.nfl.com/news/scott-chandler-helps-bills-rout-jets-0ap3000000434094"
-  },
-  {
-   "title": "TSN (AP): Bills make themselves at home in Detroit, rout Jets in relocated game",
-   "url": "https://www.tsn.ca/bills-make-themselves-at-home-in-detroit-rout-jets-in-relocated-game-1.143642"
   },
   {
    "title": "NPR: Buffalo blizzard brings odd NFL game, free and far from home",
@@ -585,6 +620,108 @@
   {
    "title": "Fox Weather: When was the last time an NFL game was moved due to snow?",
    "url": "https://www.foxweather.com/lifestyle/when-was-the-last-time-an-nfl-game-was-moved-due-to-snow"
+  },
+  {
+   "title": "SI (AP): Bills fans turn out in Detroit, scene from Jets-Bills",
+   "url": "https://www.si.com/nfl/2014/11/24/ap-fbn-jets-bills-scene"
+  },
+  {
+   "title": "SI: Buffalo Bills beat New York Jets at Ford Field",
+   "url": "https://www.si.com/nfl/2014/11/24/buffalo-bills-new-york-jets-ford-field"
+  },
+  {
+   "title": "Fox Sports: Bills fans turn out in Detroit",
+   "url": "https://www.foxsports.com/stories/nfl/bills-fans-turn-out-in-detroit"
+  },
+  {
+   "title": "CBS New York: Bills make it out of snow-buried Buffalo",
+   "url": "https://www.cbsnews.com/newyork/news/bills-make-it-out-of-snow-buried-buffalo-practice-ahead-of-game-against-jets/"
+  },
+  {
+   "title": "CBS Detroit: Bills pick up players on snowmobiles",
+   "url": "https://www.cbsnews.com/amp/detroit/news/buffalo-bills-pick-up-players-on-snowmobiles-to-get-them-to-detroit-photo"
+  },
+  {
+   "title": "NPR: Snowed-out Buffalo Bills to play Jets in Detroit",
+   "url": "https://www.npr.org/sections/thetwo-way/2014/11/21/365623666/snowed-out-buffalo-bills-to-play-jets-in-detroit"
+  },
+  {
+   "title": "ABC7: Jets-Bills now Monday in Detroit",
+   "url": "https://abc7.com/post/jets-bills-now-monday-in-detroit/404706/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 2014 a lake effect storm buried the Buffalo area",
+   "terms": [
+    "lake effect|lake-effect",
+    "snow"
+   ]
+  },
+  {
+   "claim": "More than five feet of snow fell in places",
+   "terms": [
+    "five feet|5 feet|feet of snow"
+   ]
+  },
+  {
+   "claim": "The team estimated 220,000 tons of snow at the stadium",
+   "terms": [
+    "220,000"
+   ]
+  },
+  {
+   "claim": "Tight end Scott Chandler was snowed in and left on a snowmobile with Lee Smith",
+   "terms": [
+    "Chandler",
+    "snowmobile"
+   ]
+  },
+  {
+   "claim": "Practice was canceled",
+   "terms": [
+    "practice",
+    "cancel"
+   ]
+  },
+  {
+   "claim": "The league moved the game to Detroit",
+   "terms": [
+    "Detroit",
+    "Ford Field|moved|relocat"
+   ]
+  },
+  {
+   "claim": "It was Monday night against the Jets",
+   "terms": [
+    "Monday",
+    "Jets"
+   ]
+  },
+  {
+   "claim": "Tickets were free",
+   "terms": [
+    "free"
+   ]
+  },
+  {
+   "claim": "Attendance was 56,044",
+   "terms": [
+    "56,044"
+   ]
+  },
+  {
+   "claim": "Buffalo won 38-3",
+   "terms": [
+    "38 3"
+   ]
+  },
+  {
+   "claim": "In October the Bills beat the Lions 17-14 at the same stadium",
+   "terms": [
+    "17 14"
+   ]
   }
  ]
 }

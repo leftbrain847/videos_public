@@ -81,9 +81,8 @@
  },
  "lines": [
   {
-   "text": "The NFL's first playoff game was played indoors. On circus dirt.",
+   "text": "Your league's first playoff game? It's indoors. On circus dirt.",
    "key": [
-    "CIRCUS",
     "DIRT."
    ],
    "place": {
@@ -120,14 +119,10 @@
    "speaker": "capy"
   },
   {
-   "text": "December 1932. Chicago and Portsmouth had tied for first place. One extra game would decide it.",
+   "text": "Nineteen thirty two. Chicago ties Portsmouth for first place.",
+   "cap": "1932. Chicago ties Portsmouth for first place.",
    "key": [
-    "TIED",
-    "EXTRA"
-   ],
-   "board": [
-    "TIED FOR",
-    "1ST PLACE"
+    "FIRST"
    ],
    "place": {
     "capy": false,
@@ -160,24 +155,16 @@
      "action": "cross",
      "look": "bear"
     }
-   }
-  },
-  {
-   "text": "Then a blizzard hit, so the game moved into a hockey arena.",
-   "key": [
-    "BLIZZARD",
-    "HOCKEY"
-   ],
-   "set": "living",
-   "setOpts": {
-    "boardText": [
-     "BLIZZARD",
-     "GAME MOVED"
-    ]
    },
    "board": [
-    "BLIZZARD",
-    "GAME MOVED"
+    "TIED FOR",
+    "1ST PLACE"
+   ]
+  },
+  {
+   "text": "One extra game decides the title. Then a blizzard hits.",
+   "key": [
+    "BLIZZARD"
    ],
    "place": {
     "fan": [
@@ -200,25 +187,23 @@
      "action": "point",
      "look": "camera"
     }
+   },
+   "board": [
+    "BLIZZARD",
+    "GAME MOVED"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "BLIZZARD",
+     "GAME MOVED"
+    ]
    }
   },
   {
-   "text": "A circus had just been there. The floor was dirt, plus elephant manure.",
+   "text": "So the game moves inside. To a hockey arena.",
    "key": [
-    "ELEPHANT",
-    "MANURE."
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "ARENA",
-     "FLOOR: DIRT"
-    ],
-    "grass": "#9a7448"
-   },
-   "board": [
-    "ARENA",
-    "FLOOR: DIRT"
+    "ARENA."
    ],
    "place": {
     "bear": [
@@ -246,18 +231,55 @@
      "action": "shrug",
      "look": "bear"
     }
+   },
+   "board": [
+    "ARENA",
+    "FLOOR: DIRT"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "ARENA",
+     "FLOOR: DIRT"
+    ],
+    "grass": "#9a7448"
    }
   },
   {
-   "text": "The field was only eighty yards long.",
-   "cap": "The field was only 80 yards long.",
+   "text": "A circus just left. It left some souvenirs.",
    "key": [
-    "80",
-    "YARDS"
+    "SOUVENIRS."
    ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "bear": false,
+    "spartan": false
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
    "board": [
-    "FIELD",
-    "80 YARDS"
+    "CIRCUS",
+    "LEFTOVERS"
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "The field is only eighty yards long.",
+   "cap": "The field is only 80 yards long.",
+   "key": [
+    "80"
    ],
    "place": {
     "bear": [
@@ -267,7 +289,8 @@
     "spartan": [
      6.6,
      0.5
-    ]
+    ],
+    "capy": false
    },
    "shot": {
     "type": "low",
@@ -289,12 +312,16 @@
      "action": "shrug",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "FIELD",
+    "80 YARDS"
+   ]
   },
   {
-   "text": "Narrower, too. Walls ran right along the sidelines.",
+   "text": "It's narrow too. Walls run right along the sidelines.",
    "key": [
-    "WALLS"
+    "SIDELINES."
    ],
    "place": {
     "bear": false,
@@ -315,7 +342,7 @@
    }
   },
   {
-   "text": "So they made up rules. Field goals? Banned.",
+   "text": "So they invent rules. Field goals? Banned.",
    "key": [
     "BANNED."
    ],
@@ -339,9 +366,8 @@
    }
   },
   {
-   "text": "The goalposts moved up to the goal line.",
+   "text": "The goalposts move up to the goal line.",
    "key": [
-    "GOAL",
     "LINE."
    ],
    "shot": {
@@ -357,11 +383,10 @@
    }
   },
   {
-   "text": "And plays ending within ten yards of a sideline got moved toward the middle.",
-   "cap": "And plays ending within 10 yards of a sideline got moved toward the middle.",
+   "text": "Plays near a sideline? The ball moves ten yards in.",
+   "cap": "Plays near a sideline? The ball moves 10 yards in.",
    "key": [
-    "10",
-    "MIDDLE."
+    "10"
    ],
    "place": {
     "capy": [
@@ -393,15 +418,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Three quarters went by. No score.",
-   "cap": "3 quarters went by. No score.",
+   "text": "Three quarters go by. No score. So much fun.",
    "key": [
-    "NO",
     "SCORE."
-   ],
-   "board": [
-    "BEARS 0",
-    "SPARTANS 0"
    ],
    "place": {
     "capy": false,
@@ -435,12 +454,16 @@
      "action": "cross",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "BEARS 0",
+    "SPARTANS 0"
+   ]
   },
   {
-   "text": "Then Bronko Nagurski threw a short touchdown to Red Grange.",
+   "text": "Bronko Nagurski throws a short touchdown. To Red Grange.",
    "key": [
-    "TOUCHDOWN"
+    "GRANGE."
    ],
    "place": {
     "bear": [
@@ -462,11 +485,10 @@
    }
   },
   {
-   "text": "Portsmouth protested he wasn't five yards behind the line, as required. It counted anyway.",
-   "cap": "Portsmouth protested he wasn't 5 yards behind the line, as required. It counted anyway.",
+   "text": "Portsmouth says he wasn't five yards back. It counts anyway.",
+   "cap": "Portsmouth says he wasn't 5 yards back. It counts anyway.",
    "key": [
-    "5",
-    "COUNTED"
+    "ANYWAY."
    ],
    "place": {
     "bear": [
@@ -497,14 +519,10 @@
    }
   },
   {
-   "text": "Add a safety, and Chicago won, nine to nothing.",
-   "cap": "Add a safety, and Chicago won, 9 to 0.",
+   "text": "Add a safety. Chicago wins, nine to nothing.",
+   "cap": "Add a safety. Chicago wins, 9 to 0.",
    "key": [
     "9"
-   ],
-   "board": [
-    "BEARS 9",
-    "SPARTANS 0"
    ],
    "place": {
     "bear": [
@@ -536,13 +554,47 @@
      "action": "slump",
      "look": "bear"
     }
-   }
+   },
+   "board": [
+    "BEARS 9",
+    "SPARTANS 0"
+   ]
   },
   {
-   "text": "The next year, hash marks became permanent, and goalposts moved to the goal line.",
+   "text": "The next season, hash marks become permanent.",
    "key": [
-    "HASH",
-    "MARKS"
+    "PERMANENT."
+   ],
+   "place": {
+    "boss": [
+     2.4,
+     -1.5
+    ],
+    "capy": [
+     0.2,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "NEW RULES",
+    "HASH MARKS"
    ],
    "set": "office",
    "setOpts": {
@@ -551,44 +603,13 @@
      "HASH MARKS"
     ]
    },
-   "board": [
-    "NEW RULES",
-    "HASH MARKS"
-   ],
-   "place": {
-    "boss": [
-     2.4,
-     -1.5
-    ]
-   },
-   "shot": {
-    "type": "wide",
-    "on": "boss"
-   },
-   "act": {
-    "boss": {
-     "mood": "smug",
-     "action": "point",
-     "look": "camera"
-    }
-   }
+   "speaker": "capy"
   },
   {
-   "text": "Would you watch a title game on circus dirt? Yes or no?",
+   "text": "Title game on circus dirt. Would you watch? Yes or no?",
    "key": [
     "YES",
     "NO?"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "CIRCUS",
-     "DIRT?"
-    ]
-   },
-   "board": [
-    "CIRCUS",
-    "DIRT?"
    ],
    "place": {
     "capy": [
@@ -617,6 +638,17 @@
      "look": "capy"
     }
    },
+   "board": [
+    "CIRCUS",
+    "DIRT?"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "CIRCUS",
+     "DIRT?"
+    ]
+   },
    "speaker": "capy"
   }
  ],
@@ -636,6 +668,105 @@
   {
    "title": "Wikipedia: 1932 NFL Playoff Game",
    "url": "https://en.wikipedia.org/wiki/1932_NFL_Playoff_Game"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The NFL's first playoff game was played indoors on dirt left by a circus",
+   "terms": [
+    "circus",
+    "dirt"
+   ]
+  },
+  {
+   "claim": "In 1932 Chicago and Portsmouth tied for first place",
+   "terms": [
+    "1932",
+    "Portsmouth"
+   ]
+  },
+  {
+   "claim": "One extra game would decide the title; a blizzard hit",
+   "terms": [
+    "blizzard|snow|cold"
+   ]
+  },
+  {
+   "claim": "The game moved inside to a hockey arena, Chicago Stadium",
+   "terms": [
+    "Chicago Stadium"
+   ]
+  },
+  {
+   "claim": "A circus had just been there and left manure",
+   "terms": [
+    "circus",
+    "manure|elephant"
+   ]
+  },
+  {
+   "claim": "The field was only 80 yards long",
+   "terms": [
+    "80"
+   ]
+  },
+  {
+   "claim": "Walls ran right along the sidelines",
+   "terms": [
+    "wall|boards|narrow"
+   ]
+  },
+  {
+   "claim": "Field goals were banned",
+   "terms": [
+    "field goal"
+   ]
+  },
+  {
+   "claim": "The goalposts were moved to the goal line",
+   "terms": [
+    "goal line",
+    "goal post|goalpost|goal posts"
+   ]
+  },
+  {
+   "claim": "Plays ending near a sideline were moved 10 yards in",
+   "terms": [
+    "10 yards|ten yards"
+   ]
+  },
+  {
+   "claim": "Three quarters went by with no score",
+   "terms": [
+    "scoreless|fourth quarter"
+   ]
+  },
+  {
+   "claim": "Bronko Nagurski threw a short touchdown pass to Red Grange",
+   "terms": [
+    "Nagurski",
+    "Grange"
+   ]
+  },
+  {
+   "claim": "Portsmouth argued he was not five yards behind the line",
+   "terms": [
+    "five yards|5 yards"
+   ]
+  },
+  {
+   "claim": "A safety made it 9-0 Chicago",
+   "terms": [
+    "9 0"
+   ]
+  },
+  {
+   "claim": "The next season hash marks became permanent",
+   "terms": [
+    "hash|inbounds",
+    "1933|next season|following season"
+   ]
   }
  ]
 }
