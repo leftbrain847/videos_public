@@ -387,15 +387,15 @@
    "speaker": "capy"
   },
   {
-   "text": "Weeks later, emergency beacons ping near Ireland. Faint signals.",
+   "text": "Weeks pass. She drifts off every map. Nobody tracks her.",
    "key": [
-    "IRELAND."
+    "MAP."
    ],
    "set": "haunted",
    "setOpts": {
     "boardText": [
-     "BEACON",
-     "SIGNAL"
+     "LOCATION",
+     "UNKNOWN"
     ]
    },
    "place": {
@@ -436,7 +436,7 @@
    }
   },
   {
-   "text": "Lifeboat beacons. They go off when hitting water. Then nothing.",
+   "text": "A huge empty ship. Somewhere out there. Then nothing.",
    "key": [
     "NOTHING."
    ],
@@ -691,8 +691,8 @@
   {
    "claim": "In 2010 she was seized in Newfoundland over unpaid wages",
    "terms": [
-    "2010",
-    "wages"
+    "seized",
+    "St. John|Newfoundland"
    ]
   },
   {
@@ -724,13 +724,6 @@
    "claim": "She was towed into international waters and released",
    "terms": [
     "international waters"
-   ]
-  },
-  {
-   "claim": "Emergency beacons later signaled near Ireland",
-   "terms": [
-    "beacon|EPIRB",
-    "Ireland"
    ]
   },
   {

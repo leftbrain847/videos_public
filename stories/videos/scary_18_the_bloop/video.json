@@ -347,9 +347,9 @@
    }
   },
   {
-   "text": "Even better? It came near a spot from horror fiction.",
+   "text": "Even better? Nobody could see it. Only hear it.",
    "key": [
-    "FICTION."
+    "HEAR"
    ],
    "shot": {
     "type": "two",
@@ -371,9 +371,9 @@
    "speaker": "capy"
   },
   {
-   "text": "A sunken city. A writer's tentacle monster lives there.",
+   "text": "Perfect conditions for imagination. Unlimited imagination. Zero facts.",
    "key": [
-    "TENTACLE"
+    "IMAGINATION."
    ],
    "shot": {
     "type": "close",
@@ -651,10 +651,6 @@
   {
    "title": "Business Insider: Listen to the Bloop",
    "url": "https://www.businessinsider.nl/listen-to-the-bloop-a-strange-noise-recorded-in-the-southern-pacific-ocean-that-stumped-scientists-for-years/"
-  },
-  {
-   "title": "Boing Boing: In 1997 NOAA recorded a sound louder than any known animal",
-   "url": "https://boingboing.net/2026/05/19/in-1997-noaa-recorded-a-sound-louder-than-any-known-animal.html"
   }
  ],
  "voice": "v2",
@@ -694,12 +690,6 @@
    "claim": "It was named the Bloop",
    "terms": [
     "Bloop"
-   ]
-  },
-  {
-   "claim": "It came from near the location of Lovecraft's fictional R'lyeh",
-   "terms": [
-    "Lovecraft|Cthulhu"
    ]
   },
   {

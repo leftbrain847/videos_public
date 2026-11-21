@@ -284,7 +284,7 @@
    }
   },
   {
-   "text": "Names. Numbers. Odd words. Then the buzz comes back.",
+   "text": "Short coded messages. Then the buzz comes back.",
    "key": [
     "BACK."
    ],
@@ -421,9 +421,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Then listeners notice something strange behind the buzz. Something human.",
+   "text": "Imagine the job. Pressing play on a buzz. Forever.",
    "key": [
-    "BEHIND"
+    "FOREVER."
    ],
    "shot": {
     "type": "close",
@@ -438,9 +438,9 @@
    }
   },
   {
-   "text": "Muffled voices. A conversation in the background.",
+   "text": "Or is a real buzzer in some room?",
    "key": [
-    "CONVERSATION"
+    "ROOM"
    ],
    "place": {
     "capy": [
@@ -480,9 +480,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Maybe the buzz comes from a real room. Live.",
+   "text": "Nobody outside Russia gets to look. Not once. Ever.",
    "key": [
-    "LIVE."
+    "LOOK."
    ],
    "shot": {
     "type": "two",
@@ -503,7 +503,7 @@
    }
   },
   {
-   "text": "Hobbyists record it around the clock. Every word. Every pause.",
+   "text": "Picture fans glued to it. Every word. Every pause.",
    "key": [
     "WORD."
    ],
@@ -689,8 +689,7 @@
   {
    "claim": "It has broadcast for decades",
    "terms": [
-    "since",
-    "1970s|1976|1982"
+    "1982|1970s|1976"
    ]
   },
   {
@@ -701,10 +700,10 @@
    ]
   },
   {
-   "claim": "Messages contain names, numbers or words",
+   "claim": "Voice messages interrupt the buzz",
    "terms": [
-    "names|words",
-    "numbers"
+    "message",
+    "voice"
    ]
   },
   {
@@ -718,20 +717,6 @@
    "terms": [
     "channel|frequency",
     "occupied|reserve|claim"
-   ]
-  },
-  {
-   "claim": "Conversations have been heard in the background",
-   "terms": [
-    "conversation",
-    "background"
-   ]
-  },
-  {
-   "claim": "Hobbyists record it constantly",
-   "terms": [
-    "listeners|enthusiasts|hobbyists|fans",
-    "record"
    ]
   }
  ]
