@@ -103,6 +103,10 @@
   {
    "title": "CBS Sports (AP): Mahomes rallies the Chiefs to second straight Super Bowl title, 25-22 over 49ers in overtime",
    "url": "https://www.cbssports.com/nfl/news/patrick-mahomes-rallies-the-chiefs-to-second-straight-super-bowl-title-25-22-over-49ers-in-overtime"
+  },
+  {
+   "title": "Wikipedia: Super Bowl LVIII",
+   "url": "https://en.wikipedia.org/wiki/Super_Bowl_LVIII"
   }
  ],
  "lines": [
@@ -892,9 +896,9 @@
    }
   },
   {
-   "text": "The Chiefs? They talked it through beforehand.",
+   "text": "The rule book? Optional, apparently.",
    "key": [
-    "BEFOREHAND."
+    "OPTIONAL,"
    ],
    "set": "press",
    "place": {
@@ -975,7 +979,8 @@
   {
    "claim": "It was 19-19 after regulation",
    "terms": [
-    "19-19|19 19"
+    "19",
+    "regulation|tied"
    ]
   },
   {
@@ -1050,13 +1055,6 @@
    "terms": [
     "Juszczyk",
     "know|realize"
-   ]
-  },
-  {
-   "claim": "The Chiefs had talked it through beforehand",
-   "terms": [
-    "Chiefs",
-    "talked|discuss|prepared"
    ]
   }
  ]
