@@ -2324,6 +2324,14 @@
   {
    "title": "Reuters via Fox News: Another Eagles miracle beats Giants at last second",
    "url": "https://www.foxnews.com/sports/another-eagles-miracle-beats-giants-at-last-second"
+  },
+  {
+   "title": "AP via Bangor Daily News: Jackson 65-yard punt return caps Eagles comeback",
+   "url": "https://www.bangordailynews.com/2010/12/19/sports/jackson-65-yard-punt-return-caps-eagles-comeback-4/"
+  },
+  {
+   "title": "PhiladelphiaEagles.com: Didinger on the Miracle of the Meadowlands No. 2",
+   "url": "https://philadelphiaeagles.com/news/didinger-miracle-of-the-meadowlands-no-2"
   }
  ],
  "voice": "v2",
@@ -2408,7 +2416,8 @@
   {
    "claim": "Giants coach Tom Coughlin reacted angrily",
    "terms": [
-    "Coughlin"
+    "Coughlin",
+    "angry|anger|yell|furious|screamed|threw"
    ]
   },
   {

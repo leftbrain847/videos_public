@@ -1404,16 +1404,32 @@
    "url": "https://www.deseret.com/2003/12/29/19803762/last-second-play-boots-vikings-from-playoffs/"
   },
   {
-   "title": "Southeast Missourian (AP): Arizona comeback puts Green Bay in playoffs",
-   "url": "https://www.semissourian.com/sports/arizona-comeback-puts-green-bay-in-playoffs-127536"
-  },
-  {
-   "title": "Star Tribune: Randball on Josh McCown and the 2003 Cardinals-Vikings game",
-   "url": "https://www.startribune.com/randball-josh-mccown-2003-arizona-cardinals-vikings-new-quarterbacks-coach/600346840"
-  },
-  {
    "title": "Arizona Cardinals: Nate Poole, Josh McCown and the Miracle in the Desert",
    "url": "https://www.azcardinals.com/news/nate-poole-josh-mccown-vikings-cardinals-miracle-in-the-desert-larry-fitzgerald"
+  },
+  {
+   "title": "Wikipedia: 2003 Minnesota Vikings season",
+   "url": "https://en.wikipedia.org/wiki/2003_Minnesota_Vikings_season"
+  },
+  {
+   "title": "Wikipedia: 2003 Green Bay Packers season",
+   "url": "https://en.wikipedia.org/wiki/2003_Green_Bay_Packers_season"
+  },
+  {
+   "title": "Arizona Cardinals: oral history of Cardinals-Vikings 2003",
+   "url": "https://www.azcardinals.com/news/larry-fitzgerald-josh-mccown-nate-poole-oral-history-cardinals-vikings-2003"
+  },
+  {
+   "title": "FOX 9: Josh McCown on ending the Vikings' 2003 season",
+   "url": "https://www.fox9.com/sports/josh-mccown-talks-ending-vikings-2003-season"
+  },
+  {
+   "title": "AP via Taipei Times: Cardinals 18, Vikings 17",
+   "url": "https://www.taipeitimes.com/News/sport/archives/2003/12/30/2003085768"
+  },
+  {
+   "title": "Wikipedia: Nate Poole",
+   "url": "https://en.wikipedia.org/wiki/Nate_Poole"
   }
  ],
  "voice": "v2",
@@ -1421,7 +1437,7 @@
   {
    "claim": "The Packers won the 2003 division because of a 4th-and-25 play in Arizona",
    "terms": [
-    "fourth-and-25|4th-and-25|fourth and 25"
+    "fourth-and-25|4th-and-25|fourth and 25|4th and 25"
    ]
   },
   {
@@ -1442,7 +1458,7 @@
    "claim": "Green Bay was beating Denver at home; fans listened to the Arizona game on the radio",
    "terms": [
     "Denver|Broncos",
-    "radio"
+    "radio|listen"
    ]
   },
   {
@@ -1460,7 +1476,8 @@
   {
    "claim": "Two straight sacks made it fourth-and-25",
    "terms": [
-    "sack"
+    "sack",
+    "back to back|two|consecutive|straight|twice|again"
    ]
   },
   {
@@ -1478,7 +1495,7 @@
   {
    "claim": "Poole was ruled forced out and replay upheld the touchdown",
    "terms": [
-    "forced out|pushed out",
+    "forced out|pushed out|force out",
     "replay|review"
    ]
   },
@@ -1495,10 +1512,10 @@
    ]
   },
   {
-   "claim": "The Vikings started 6-0 and missed the playoffs",
+   "claim": "The Vikings won their first six games",
    "terms": [
-    "6-0",
-    "playoffs"
+    "6 0|first six|six straight",
+    "Vikings|Minnesota"
    ]
   },
   {

@@ -2536,10 +2536,10 @@
    }
   },
   {
-   "text": "The N F L ranked it. Ninth greatest play in league history.",
-   "cap": "The NFL ranked it. 9th greatest play in league history.",
+   "text": "Fans call it the Minneapolis Miracle.",
+   "cap": "Fans call it the Minneapolis Miracle.",
    "key": [
-    "9TH"
+    "MIRACLE"
    ],
    "speaker": "capy",
    "shot": {
@@ -2558,8 +2558,8 @@
     "capy": "center"
    },
    "board": [
-    "GREATEST",
-    "PLAYS: #9"
+    "MINNEAPOLIS",
+    "MIRACLE"
    ]
   },
   {
@@ -2614,10 +2614,6 @@
  ],
  "sources": [
   {
-   "title": "NFL.com 100 Greatest Plays: Minneapolis Miracle",
-   "url": "https://www.nfl.com/100/originals/100-greatest/plays-9"
-  },
-  {
    "title": "Vikings.com: Minneapolis Miracle voted 9th best play in NFL history",
    "url": "https://www.vikings.com/news/vikings-minneapolis-miracle-voted-as-9th-best-play-in-nfl-history"
   },
@@ -2628,6 +2624,26 @@
   {
    "title": "CBS Sports: Vikings exorcise playoff demons with Diggs' miraculous TD catch",
    "url": "https://www.cbssports.com/nfl/news/nfl-playoffs-2018-vikings-exorcise-playoff-demons-with-diggs-miraculous-td-catch"
+  },
+  {
+   "title": "Wikipedia: Minneapolis Miracle",
+   "url": "https://en.wikipedia.org/wiki/Minneapolis_Miracle"
+  },
+  {
+   "title": "ESPN: Inside the Minneapolis Miracle, the play that saved the Vikings' season",
+   "url": "https://www.espn.com/nfl/story/_/id/22102295/inside-play-saved-minnesota-vikings-season-crushed-new-orleans-saints"
+  },
+  {
+   "title": "MPR News: Keenum-Diggs TD on last play, Vikes win 29-24",
+   "url": "https://www.mprnews.org/story/2018/01/14/vikings-beat-saints"
+  },
+  {
+   "title": "CBS News: Minneapolis Miracle among NFL's greatest plays",
+   "url": "https://www.cbsnews.com/newyork/news/minneapolis-miracle-vikings-saints-nfl-greatest-plays"
+  },
+  {
+   "title": "Business Insider: The 19 greatest NFL plays of the decade",
+   "url": "https://www.businessinsider.in/sports/news/the-19-greatest-nfl-plays-of-the-decade/amp_articleshow/72339393.cms"
   }
  ],
  "voice": "v2",
@@ -2677,7 +2693,7 @@
    "claim": "Williams ducked and missed Diggs",
    "terms": [
     "Williams",
-    "miss"
+    "miss|duck|whiff"
    ]
   },
   {
@@ -2709,13 +2725,6 @@
    "claim": "It is known as the Minneapolis Miracle",
    "terms": [
     "Minneapolis Miracle"
-   ]
-  },
-  {
-   "claim": "The NFL ranked it the ninth greatest play in league history",
-   "terms": [
-    "9th|ninth|No. 9",
-    "greatest"
    ]
   }
  ]

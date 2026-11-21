@@ -434,9 +434,9 @@
    }
   },
   {
-   "text": "Sudden death overtime. First score wins. No pressure.",
+   "text": "Overtime. Detroit has the ball. No pressure.",
    "key": [
-    "FIRST"
+    "OVERTIME."
    ],
    "speaker": "capy",
    "set": "field",
@@ -450,8 +450,8 @@
     "zoneB": "#1b78c0"
    },
    "board": [
-    "SUDDEN",
-    "DEATH"
+    "LIONS",
+    "BALL"
    ],
    "place": {
     "capy": [
@@ -980,6 +980,26 @@
   {
    "title": "TribLive: Every Thanksgiving, Charlie Batch recalls infamous Steelers-Lions coin flip game",
    "url": "https://triblive.com/sports/every-thanksgiving-charlie-batch-recalls-infamous-steelers-lions-coin-flip-game"
+  },
+  {
+   "title": "CBS News (AP): Lions kick past Steelers in OT",
+   "url": "https://www.cbsnews.com/news/lions-kick-past-steelers-in-ot/"
+  },
+  {
+   "title": "Steelers Depot: Steelers-Lions Thanksgiving 1998 coin toss, Phil Luckett and Jerome Bettis",
+   "url": "https://steelersdepot.com/2015/11/steelers-lions-thanksgiving-1998-coin-toss-phil-luckett-jerome-bettis"
+  },
+  {
+   "title": "SideLion Report: One coin toss has lived on in Thanksgiving infamy",
+   "url": "https://sidelionreport.com/one-coin-toss-has-lived-on-in-thanksgiving-infamy-27-years-later-01kay71ys7ba"
+  },
+  {
+   "title": "Wikipedia: 1998 Pittsburgh Steelers season",
+   "url": "https://en.wikipedia.org/wiki/1998_Pittsburgh_Steelers_season"
+  },
+  {
+   "title": "CBS Sports: NFL's top 10 Thanksgiving moments",
+   "url": "https://www.cbssports.com/nfl/news/top-10-thanksgiving-nfl-moments-randy-moss-huge-day-jerome-bettis-coin-toss-the-butt-fumble-and-more"
   }
  ],
  "voice": "v2",
@@ -1034,12 +1054,6 @@
    ]
   },
   {
-   "claim": "Overtime was sudden death: first score wins",
-   "terms": [
-    "sudden death|first score"
-   ]
-  },
-  {
    "claim": "Detroit drove 41 yards",
    "terms": [
     "41|forty-one",
@@ -1064,7 +1078,7 @@
    "claim": "Pittsburgh never touched the ball in overtime",
    "terms": [
     "never",
-    "ball|possession"
+    "ball|possession|touch"
    ]
   },
   {

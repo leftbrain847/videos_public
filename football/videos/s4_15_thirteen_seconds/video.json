@@ -2501,6 +2501,22 @@
   {
    "title": "SI: 49ers players admitted they didn't know Super Bowl overtime rules (rule changed after Chiefs-Bills)",
    "url": "https://www.si.com/nfl/2024/02/12/49ers-players-chiefs-didnt-know-super-bowl-overtime-rules"
+  },
+  {
+   "title": "Wikipedia: 2021 AFC Divisional playoff game (Buffalo-Kansas City)",
+   "url": "https://en.wikipedia.org/wiki/13_Seconds"
+  },
+  {
+   "title": "UPI: Chiefs top Bills in OT thriller",
+   "url": "https://www.upi.com/Sports_News/NFL/2022/01/23/Chiefs-top-Bills-in-OT-thriller-reach-fourth-straight-AFC-Championship-Game/6401642993453/"
+  },
+  {
+   "title": "CBS News (AP): Chiefs rally past Buffalo 42-36 in OT",
+   "url": "https://www.cbsnews.com/dfw/news/chiefs-rally-past-buffalo-42-36-in-ot-in-wild-playoff-game/"
+  },
+  {
+   "title": "CBS Sports: NFL owners approve new overtime rules for playoffs",
+   "url": "https://www.cbssports.com/nfl/news/nfl-owners-approve-new-overtime-rules-for-playoffs-ensuring-each-team-gets-a-possession"
   }
  ],
  "voice": "v2",
@@ -2515,8 +2531,7 @@
    "claim": "Divisional round in Kansas City, Josh Allen vs Patrick Mahomes",
    "terms": [
     "divisional",
-    "Allen",
-    "Mahomes"
+    "Mahomes|Allen"
    ]
   },
   {
@@ -2526,11 +2541,11 @@
    ]
   },
   {
-   "claim": "Gabriel Davis caught his fourth touchdown to put the Bills up 36-33",
+   "claim": "Gabriel Davis caught his fourth touchdown",
    "terms": [
     "Davis",
-    "fourth|4th",
-    "36-33|36 33"
+    "four|4th",
+    "touchdown"
    ]
   },
   {
@@ -2577,14 +2592,22 @@
    "claim": "Josh Allen never touched the ball in overtime",
    "terms": [
     "Allen",
-    "never|didn't get|did not get"
+    "overtime|OT",
+    "never|didnt|did not|without|chance"
    ]
   },
   {
    "claim": "Two months later owners changed playoff overtime so both teams get the ball",
    "terms": [
     "owners",
-    "both teams"
+    "both teams|each team"
+   ]
+  },
+  {
+   "claim": "That put the Bills up 36-33 with 13 seconds left",
+   "terms": [
+    "36 33",
+    "13 seconds|thirteen seconds|0:13"
    ]
   }
  ]

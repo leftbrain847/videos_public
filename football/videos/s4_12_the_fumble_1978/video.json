@@ -2058,9 +2058,9 @@
    }
   },
   {
-   "text": "Fans burn tickets. A plane flies a banner over the stadium.",
+   "text": "One handoff call. It cost him his whole football career.",
    "key": [
-    "BURN"
+    "HANDOFF"
    ],
    "set": "locker",
    "shot": {
@@ -2071,8 +2071,8 @@
     "qb": "center"
    },
    "board": [
-    "TICKETS:",
-    "BURNED"
+    "ONE",
+    "HANDOFF"
    ],
    "act": {
     "qb": {
@@ -2135,12 +2135,32 @@
    "url": "https://en.wikipedia.org/wiki/Miracle_at_the_Meadowlands"
   },
   {
-   "title": "Sports Illustrated Vault: The Fumble",
-   "url": "https://vault.si.com/vault/2001/07/02/the-fumble-it-was-one-of-the-great-blunders-in-nfl-history-all-the-giants-had-to-do-was-run-out-the-clock-instead-they-unleashed-a-disaster-that-altered-the-course-of-several-careers"
+   "title": "Pro Football Hall of Fame: Miracle at the Meadowlands",
+   "url": "https://www.profootballhof.com/news/miracle-at-the-meadowlands"
   },
   {
-   "title": "Pro Football Hall of Fame: Miracle at the Meadowlands",
-   "url": "https://www.profootballhof.com/news/2005/01/news-miracle-at-the-meadowlands1"
+   "title": "ESPN: Pisarcik eager to set record straight; others aren't",
+   "url": "https://www.espn.com/nfl/columns/story?id=3694635"
+  },
+  {
+   "title": "Philadelphia Eagles: Didinger on the Miracle of the Meadowlands",
+   "url": "https://www.philadelphiaeagles.com/news/didinger-miracle-of-the-meadowlands-11392508"
+  },
+  {
+   "title": "Wikipedia: 1978 New York Giants season",
+   "url": "https://en.wikipedia.org/wiki/1978_New_York_Giants_season"
+  },
+  {
+   "title": "Mediaite: Giants fans bring back a protest tactic from the '70s",
+   "url": "https://www.mediaite.com/sports/the-ny-giants-have-become-such-a-train-wreck-that-fans-brought-back-a-protest-tactic-from-the-70s"
+  },
+  {
+   "title": "Wikipedia: Bob Gibson (American football)",
+   "url": "https://en.wikipedia.org/wiki/Bob_Gibson_(American_football)"
+  },
+  {
+   "title": "SI: Miracle at the Meadowlands 40th anniversary",
+   "url": "https://www.si.com/nfl/2018/11/14/miracle-meadowlands-40th-anniversary-giants-eagles-joe-pisarcik-herman-edwards-harry-carson"
   }
  ],
  "voice": "v2",
@@ -2154,19 +2174,21 @@
   {
    "claim": "31 seconds were left",
    "terms": [
-    "31 seconds"
+    "31|031|thirty one",
+    "second|remaining|left"
    ]
   },
   {
    "claim": "The Eagles had no timeouts left",
    "terms": [
-    "timeouts"
+    "timeout",
+    "Eagles|Philadelphia"
    ]
   },
   {
    "claim": "The Giants only had to run out the clock (kneel)",
    "terms": [
-    "kneel|clock"
+    "kneel|run out the clock|fall on"
    ]
   },
   {
@@ -2192,7 +2214,7 @@
    "claim": "Cornerback Herm Edwards scooped it up",
    "terms": [
     "Edwards",
-    "scoop|picked"
+    "scoop|picked|recover"
    ]
   },
   {
@@ -2212,7 +2234,7 @@
    "claim": "Offensive coordinator Bob Gibson was fired the next day",
    "terms": [
     "Gibson",
-    "fired"
+    "fired|dismissed|let go"
    ]
   },
   {
@@ -2223,22 +2245,9 @@
    ]
   },
   {
-   "claim": "Fans burned tickets",
-   "terms": [
-    "burn",
-    "ticket"
-   ]
-  },
-  {
-   "claim": "A plane flew a banner over the stadium",
-   "terms": [
-    "plane|banner"
-   ]
-  },
-  {
    "claim": "Teams now kneel to run out the clock",
    "terms": [
-    "kneel"
+    "kneel|victory formation"
    ]
   }
  ]

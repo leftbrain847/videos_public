@@ -3133,6 +3133,26 @@
   {
    "title": "SI: Dolphins complete two laterals for miracle game-winning touchdown vs. Patriots",
    "url": "https://www.si.com/nfl/2018/12/09/dolphins-last-play-laterals-kenny-stills-devante-parker-kenyan-drake"
+  },
+  {
+   "title": "Wikipedia: Miracle in Miami",
+   "url": "https://en.wikipedia.org/wiki/Miracle_in_Miami"
+  },
+  {
+   "title": "MiamiDolphins.com: The Miami Miracle, an oral history",
+   "url": "https://www.miamidolphins.com/news/the-miami-miracle-an-oral-history"
+  },
+  {
+   "title": "MiamiDolphins.com: The Miami Miracle, Kenyan Drake and the Dolphins stun the Patriots",
+   "url": "https://www.miamidolphins.com/news/the-miami-miracle-kenyan-drake-dolphins-stun-patriots"
+  },
+  {
+   "title": "ESPN: Inside story of Drake desperate dash",
+   "url": "https://www.espn.com/blog/miami-dolphins/post/_/id/28323/ive-got-somewhere-to-be-inside-story-of-drakes-desperate-dash"
+  },
+  {
+   "title": "NESN: What went wrong on the Dolphins miracle touchdown",
+   "url": "https://nesn.com/2018/12/patriots-breakdown-what-went-wrong-on-dolphins-miracle-touchdown"
   }
  ],
  "voice": "v2",
@@ -3152,7 +3172,7 @@
   {
    "claim": "The play included two laterals",
    "terms": [
-    "two laterals|2 laterals|laterals"
+    "two laterals|2 laterals|pair of laterals|two lateral|double lateral"
    ]
   },
   {
@@ -3188,7 +3208,7 @@
    "claim": "Rob Gronkowski, a tight end, was the Patriots' last line of defense",
    "terms": [
     "Gronkowski",
-    "defense|safety"
+    "defense|safety|last|tight end"
    ]
   },
   {
@@ -3214,7 +3234,7 @@
   {
    "claim": "Dolphins fans named it the Miami Miracle",
    "terms": [
-    "Miami Miracle"
+    "Miami Miracle|Miracle in Miami"
    ]
   }
  ]

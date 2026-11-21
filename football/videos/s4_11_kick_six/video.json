@@ -695,7 +695,7 @@
    }
   },
   {
-   "text": "Too short. Too far right.",
+   "text": "The kick falls short.",
    "key": [
     "SHORT."
    ],
@@ -2510,6 +2510,30 @@
   {
    "title": "Awful Announcing: The oral history of the Kick Six",
    "url": "https://awfulannouncing.com/2016/oral-history-kick-six.html"
+  },
+  {
+   "title": "Wikipedia: Kick Six",
+   "url": "https://en.wikipedia.org/wiki/Kick_Six"
+  },
+  {
+   "title": "CBS News (AP): Auburn shocks Alabama with last-second TD to win 34-28",
+   "url": "https://www.cbsnews.com/news/auburn-shocks-alabama-with-last-second-td-to-win-34-28"
+  },
+  {
+   "title": "NPR: In shocking upset, Auburn beats Alabama with a historic play",
+   "url": "https://www.npr.org/sections/thetwo-way/2013/12/01/248060345/in-shocking-upset-auburn-beats-alabama-with-a-historic-play"
+  },
+  {
+   "title": "Auburn Tigers: Auburn beats Bama in an Iron Bowl for the ages",
+   "url": "https://auburntigers.com/news/2013/11/30/auburn-beats-bama-in-an-iron-bowl-for-the-ages"
+  },
+  {
+   "title": "Wikipedia: Adam Griffith (American football)",
+   "url": "https://en.wikipedia.org/wiki/Adam_Griffith_(American_football)"
+  },
+  {
+   "title": "AP via Bangor Daily News: Auburn shocks Alabama with miraculous return",
+   "url": "https://www.bangordailynews.com/2013/12/01/sports/auburn-shocks-alabama-with-miraculous-return/"
   }
  ],
  "voice": "v2",
@@ -2538,20 +2562,21 @@
    "claim": "Alabama's runner went out of bounds and the clock showed zero",
    "terms": [
     "out of bounds",
-    "clock"
+    "clock|second"
    ]
   },
   {
    "claim": "After review one second was put back on the clock",
    "terms": [
-    "one second|1 second",
-    "review"
+    "one second|1 second|0:01",
+    "review|replay|put back|restored|added"
    ]
   },
   {
    "claim": "Alabama tried a 57-yard field goal",
    "terms": [
-    "57"
+    "57",
+    "field goal|yard|kick"
    ]
   },
   {
@@ -2561,24 +2586,24 @@
    ]
   },
   {
-   "claim": "The kick was short and off to the right",
+   "claim": "The kick was short",
    "terms": [
     "short",
-    "right"
+    "57|field goal|kick"
    ]
   },
   {
    "claim": "Chris Davis caught the missed kick deep in his own end zone",
    "terms": [
     "Davis",
-    "end zone"
+    "end zone|end line"
    ]
   },
   {
    "claim": "Davis ran down the left side behind his blockers",
    "terms": [
-    "left",
-    "block"
+    "Davis",
+    "left sideline|left side|down the left|up the left"
    ]
   },
   {
@@ -2591,7 +2616,7 @@
    "claim": "Auburn went to the SEC Championship instead",
    "terms": [
     "Auburn",
-    "SEC Championship"
+    "SEC Championship|SEC title"
    ]
   },
   {

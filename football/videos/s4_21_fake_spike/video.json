@@ -919,20 +919,32 @@
  ],
  "sources": [
   {
-   "title": "NFL 100: Dan Marino's fake spike play",
-   "url": "https://www.nfl.com/100/originals/100-greatest/plays-38"
-  },
-  {
    "title": "CBS Sports: Remember when Dan Marino's fake spike fooled the Jets in 1994",
    "url": "https://www.cbssports.com/nfl/news/remember-when-dan-marinos-fake-spike-fools-jets-in-1994/"
   },
   {
-   "title": "Pro Football Reference: Miami Dolphins at New York Jets, November 27, 1994",
-   "url": "https://pro-football-reference.com/boxscores/199411270nyj.htm"
-  },
-  {
    "title": "CBS New York: Carroll says Marino 'fake spike' play changed everything for Jets in 1994",
    "url": "https://www.cbsnews.com/amp/newyork/news/carroll-marino-fake-spike-play-changed-everything-for-jets-in-1994"
+  },
+  {
+   "title": "Wikipedia: Clock Play (the fake spike)",
+   "url": "https://en.wikipedia.org/wiki/Clock_Play"
+  },
+  {
+   "title": "Wikipedia: 1994 New York Jets season",
+   "url": "https://en.wikipedia.org/wiki/1994_New_York_Jets_season"
+  },
+  {
+   "title": "ESPN: The fake spike, 20 years later",
+   "url": "https://www.espn.com/nfl/story/_/id/11925261/the-fake-spike-20th-anniversary-miami-dolphins-unforgettable-victory-new-york-jets"
+  },
+  {
+   "title": "Miami Dolphins: Fake spike 25th anniversary flashback",
+   "url": "https://www.miamidolphins.com/news/fake-spike-25th-anniversary-flashback-dan-marino-new-york-jets"
+  },
+  {
+   "title": "ABC7 New York: Dan Marino's fake spike turns 29",
+   "url": "https://abc7ny.com/post/greatest-gadget-play-ever-dan-marinos-fake-spike-turns-29/14099249/"
   }
  ],
  "voice": "v2",
@@ -985,7 +997,7 @@
    "terms": [
     "Marino",
     "spike",
-    "signal|motion|gestur"
+    "signal|motion|gestur|yell|shout|pretend"
    ]
   },
   {
@@ -1019,14 +1031,14 @@
    "claim": "It was Ingram's fourth touchdown of the day",
    "terms": [
     "Ingram",
-    "fourth|four touchdown|4 touchdown"
+    "fourth|4th|four touchdown|4 touchdown"
    ]
   },
   {
    "claim": "The Jets had been 6-5, playing for first place",
    "terms": [
     "6-5",
-    "first place"
+    "first place|AFC East"
    ]
   },
   {

@@ -2596,16 +2596,36 @@
  ],
  "sources": [
   {
-   "title": "NFL.com 100 Greatest Plays: David Tyree Helmet Catch in Super Bowl XLII",
-   "url": "https://www.nfl.com/100/originals/100-greatest/plays-3"
-  },
-  {
    "title": "Giants.com: David Tyree's Helmet Catch",
    "url": "https://giants.com/news/david-tyree-helmet-catch-super-bowl-tom-brady-patriots-greatest-plays"
   },
   {
    "title": "FOX Sports: The Helmet Catch, looking back 17 years later",
    "url": "https://foxsports.com/stories/nfl/the-helmet-catch-looking-back-17-years-later-david-tyrees-super-bowl-play"
+  },
+  {
+   "title": "Wikipedia: Helmet Catch",
+   "url": "https://en.wikipedia.org/wiki/Helmet_Catch"
+  },
+  {
+   "title": "Wikipedia: Super Bowl XLII",
+   "url": "https://en.wikipedia.org/wiki/Super_Bowl_XLII"
+  },
+  {
+   "title": "Wikipedia: 2007 New England Patriots season",
+   "url": "https://en.wikipedia.org/wiki/2007_New_England_Patriots_season"
+  },
+  {
+   "title": "Giants.com: The Helmet Catch, Super Bowl XLII",
+   "url": "https://www.giants.com/news/helmet-catch-super-bowl-xlii-eli-manning-david-tyree-new-england-patriots"
+  },
+  {
+   "title": "ESPN: Giants spoil Patriots' season",
+   "url": "https://www.espn.com.sg/nfl/playoffs07/news/story?id=3228916"
+  },
+  {
+   "title": "MPR News: NY Giants stun Patriots to Super Bowl victory",
+   "url": "https://www.mprnews.org/story/2008/02/03/superbowl"
   }
  ],
  "voice": "v2",
@@ -2613,8 +2633,8 @@
   {
    "claim": "The Patriots were 18-0, one win from a perfect season",
    "terms": [
-    "18-0|18–0",
-    "perfect"
+    "18 0|undefeated|unbeaten|perfect season",
+    "Patriots|New England"
    ]
   },
   {
@@ -2634,7 +2654,7 @@
    "claim": "Eli Manning dropped back and Patriots grabbed him, one by the jersey",
    "terms": [
     "Manning",
-    "jersey|grab"
+    "jersey|grab|grasp"
    ]
   },
   {
@@ -2680,7 +2700,7 @@
   {
    "claim": "New England finished 18-1",
    "terms": [
-    "18-1|18–1"
+    "18-1|18 1"
    ]
   },
   {

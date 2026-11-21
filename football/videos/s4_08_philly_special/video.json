@@ -153,10 +153,10 @@
    ]
   },
   {
-   "text": "The twenty eighteen Super Bowl. Eagles versus Patriots. You lead by three.",
-   "cap": "The 2018 Super Bowl. Eagles versus Patriots. You lead by 3.",
+   "text": "The twenty eighteen Super Bowl. Eagles versus Patriots.",
+   "cap": "The 2018 Super Bowl. Eagles versus Patriots.",
    "key": [
-    "3."
+    "SUPER"
    ],
    "shot": {
     "type": "wide",
@@ -3153,6 +3153,22 @@
   {
    "title": "CBS Sports: Nick Foles suggested Philly Special trick play to Doug Pederson",
    "url": "https://www.cbssports.com/nfl/news/super-bowl-2018-nick-foles-suggested-philly-special-trick-play-to-doug-pederson/"
+  },
+  {
+   "title": "Wikipedia: Super Bowl LII",
+   "url": "https://en.wikipedia.org/wiki/Super_Bowl_LII"
+  },
+  {
+   "title": "AJC: Bold pass to Nick Foles before halftime stunned Patriots",
+   "url": "https://www.ajc.com/sports/bold-pass-nick-foles-before-halftime-stunned-patriots/15j2ELmHLWCoRfWAeDiwRL"
+  },
+  {
+   "title": "CBS Philadelphia: Nick Foles made trick play call in Super Bowl",
+   "url": "https://www.cbsnews.com/philadelphia/news/nick-foles-trick-play-super-bowl-2018"
+  },
+  {
+   "title": "ProFootballTalk: Nick Foles touchdown catch came on play called Philly Special",
+   "url": "https://nbcsports.com/nfl/profootballtalk/rumor-mill/news/nick-foles-touchdown-catch-came-on-play-called-philly-special"
   }
  ],
  "voice": "v2",
@@ -3169,13 +3185,6 @@
    "terms": [
     "Super Bowl",
     "Patriots"
-   ]
-  },
-  {
-   "claim": "Philadelphia led by three in the final minute of the first half",
-   "terms": [
-    "first half|halftime",
-    "15-12|three|3"
    ]
   },
   {
@@ -3233,12 +3242,13 @@
    "claim": "The Patriots tried a similar trick play earlier and Tom Brady dropped it",
    "terms": [
     "Brady",
-    "drop"
+    "drop|couldnt catch|could not catch|unable to catch|failed to catch"
    ]
   },
   {
    "claim": "Foles was the first player to throw and catch a touchdown in the same Super Bowl",
    "terms": [
+    "Foles",
     "first",
     "throw",
     "catch"

@@ -35,3 +35,33 @@ jobs:
           assert not missing, missing[:5]
           print(len(d['videos']), 'videos, all files present')
           PY
+  facts:
+    # Fact-checks the scripts a PR changes (every v2 script when the checker itself changes), so failing claims show
+    # up on the PR instead of in a render run. Prints PASS/FAIL, URL and a snippet of 15 words at most, never page text.
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with: { persist-credentials: false, fetch-depth: 0 }
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with: { python-version: '3.12' }
+      - name: Check every claim in the changed scripts against two sources
+        shell: bash
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          CHANGED=$(git diff --name-only --diff-filter=AM "$BASE" HEAD)   # fails the job if the base is missing
+          if grep -qx 'tools/fact_check.py' <<< "$CHANGED"; then
+            FILES=$(ls football/videos/*/video.json)
+          else
+            FILES=$(grep -E '^football/videos/s[1-4]_[0-9]{2}_[a-z0-9_]{1,60}/video\.json$' <<< "$CHANGED" || true)
+          fi
+          IDS=""
+          for f in $FILES; do
+            id=$(cut -d/ -f3 <<< "$f")
+            [[ "$id" =~ ^s[1-4]_[0-9]{2}_[a-z0-9_]{1,60}$ ]] && grep -q '"voice": "v2"' "$f" && IDS="$IDS $id"
+          done
+          if [ -z "$IDS" ]; then echo "no v2 scripts changed"; exit 0; fi
+          python3 tools/fact_check.py $IDS

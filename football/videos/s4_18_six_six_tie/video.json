@@ -1744,6 +1744,30 @@
   {
    "title": "Arizona Cardinals: Cardinals dominate, yet tie Seahawks",
    "url": "https://www.azcardinals.com/news/cardinals-dominate-yet-tie-seahawks-17947434"
+  },
+  {
+   "title": "ESPN: Seahawks vs. Cardinals game recap, October 23, 2016",
+   "url": "https://www.espn.com/nfl/recap/_/gameId/400874508"
+  },
+  {
+   "title": "Washington Times (AP): Kickers miss short field goals, Seahawks, Cards tie 6-6",
+   "url": "https://www.washingtontimes.com/news/2016/oct/24/kickers-miss-short-field-goals-seahawks-cards-tie-/"
+  },
+  {
+   "title": "Fox Sports (AP): Kickers miss short field goals, Seahawks, Cards tie 6-6",
+   "url": "https://www.foxsports.com/stories/nfl/kickers-miss-short-field-goals-seahawks-cards-tie-6-6"
+  },
+  {
+   "title": "Arizona Sports: Cardinals snatch a tie from the jaws of victory and defeat",
+   "url": "https://arizonasports.com/nfl/arizona-cardinals/cardinals-snatch-a-tie-from-the-jaws-of-victory-and-defeat-in-absolute-head-scratcher-vs-seattle"
+  },
+  {
+   "title": "NFL.com: Cardinals, Seahawks settle for historic tie",
+   "url": "https://www.nfl.com/news/cardinals-seahawks-settle-for-historic-tie-after-wild-ot-0ap3000000727002"
+  },
+  {
+   "title": "AP via CBS News: Kickers miss short field goals, Seahawks, Cards tie 6-6",
+   "url": "https://www.cbsnews.com/texas/news/kickers-miss-short-field-goals-seahawks-cards-end-in-6-6-tie"
   }
  ],
  "voice": "v2",
@@ -1797,7 +1821,7 @@
    "claim": "Seattle's kicker missed wide left from inside 30 yards with seconds left",
    "terms": [
     "wide left",
-    "28|27|inside 30"
+    "27|28|inside 30"
    ]
   },
   {

@@ -1254,8 +1254,16 @@
    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/referee-brian-kemp-umpire-spotted-ball-properly-on-final-play-in-dallas"
   },
   {
-   "title": "Pro Football Reference: Wild Card, San Francisco 49ers at Dallas Cowboys, January 16, 2022",
-   "url": "https://pro-football-reference.com/boxscores/202201160dal.htm"
+   "title": "CBS Sports: Cowboys lose to 49ers on bizarre final play",
+   "url": "https://www.cbssports.com/nfl/news/cowboys-lose-to-49ers-on-bizarre-final-play-heres-what-happened-in-the-final-seconds-of-wild-card-defeat"
+  },
+  {
+   "title": "News4Jax (AP): 49ers hang on late for 23-17 wild-card victory over Cowboys",
+   "url": "https://www.news4jax.com/sports/2022/01/17/49ers-hang-on-late-for-23-17-wild-card-victory-over-cowboys/"
+  },
+  {
+   "title": "DallasCowboys.com: End-of-game snafu sums up a sloppy Cowboys loss",
+   "url": "https://www.dallascowboys.com/news/end-of-game-snafu-sums-up-a-sloppy-cowboy-loss"
   }
  ],
  "voice": "v2",
@@ -1264,7 +1272,7 @@
    "claim": "It was a 2022 wild card playoff game",
    "terms": [
     "wild card|wild-card",
-    "2022|playoff"
+    "Cowboys|Dallas"
    ]
   },
   {

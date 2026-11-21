@@ -2022,6 +2022,30 @@
   {
    "title": "AP via KSL: NFL at 100, AP Was There: Music City Miracle",
    "url": "https://www.ksl.com/article/46648865/nfl-at-100-ap-was-there-music-city-miracle"
+  },
+  {
+   "title": "ESPN: Titans-Bills wild card recap, January 8, 2000",
+   "url": "https://www.espn.com/nfl/1999/20000108/recap/buften.html"
+  },
+  {
+   "title": "ESPN: Wild card finish, January 8, 2000",
+   "url": "https://africa.espn.com/nfl/playoffs99/wild/s/0108finish.html"
+  },
+  {
+   "title": "Wikipedia: Kevin Dyson",
+   "url": "https://en.wikipedia.org/wiki/Kevin_Dyson"
+  },
+  {
+   "title": "Wikipedia: 1999 Tennessee Titans season",
+   "url": "https://en.wikipedia.org/wiki/1999_Tennessee_Titans_season"
+  },
+  {
+   "title": "ESPN: Music City Miracle turns 20",
+   "url": "https://www.espn.com/nfl/story/_/id/28441088/music-city-miracle-turns-20-how-happened-where-players-now"
+  },
+  {
+   "title": "Fox News: Kevin Dyson insists Music City Miracle was legal",
+   "url": "https://www.foxnews.com/sports/kevin-dyson-insists-music-city-miracle-was-legitimate-and-legal"
   }
  ],
  "claims": [
@@ -2049,7 +2073,7 @@
    "claim": "Usual kick returner Derrick Mason was hurt (concussion)",
    "terms": [
     "Mason",
-    "concussion|injur"
+    "concussion|injur|hurt"
    ]
   },
   {
@@ -2106,7 +2130,7 @@
    "claim": "The call stood: a legal lateral, touchdown",
    "terms": [
     "lateral|backward",
-    "stood|upheld|stand"
+    "stood|upheld|stand|confirm|ruling on the field"
    ]
   },
   {

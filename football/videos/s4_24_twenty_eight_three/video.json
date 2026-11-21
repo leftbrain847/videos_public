@@ -1006,6 +1006,22 @@
   {
    "title": "WSLS (AP): NFL owners approve rule change for OT in playoffs (before 2022, an opening-drive TD ended playoff OT)",
    "url": "https://www.wsls.com/sports/2022/03/29/nfl-owners-approve-rule-change-for-ot-in-playoffs/"
+  },
+  {
+   "title": "Wikipedia: Super Bowl LI",
+   "url": "https://en.wikipedia.org/wiki/Super_Bowl_LI"
+  },
+  {
+   "title": "NPR: In a comeback for the ages, New England Patriots win Super Bowl LI",
+   "url": "https://www.npr.org/sections/thetwo-way/2017/02/05/513599492/super-bowl-li-a-live-blog-plus-poetry-of-course"
+  },
+  {
+   "title": "SI: Patriots complete largest comeback in Super Bowl history, win fifth title 34-28",
+   "url": "https://www.si.com/nfl/2017/02/05/patriots-win-super-bowl-beat-falcons-largest-comeback-ever"
+  },
+  {
+   "title": "CBS Baltimore (AP): NFL owners approve rule change for OT in playoffs",
+   "url": "https://www.cbsnews.com/baltimore/news/nfl-owners-approve-rule-change-for-ot-in-playoffs/"
   }
  ],
  "voice": "v2",
@@ -1026,8 +1042,8 @@
   {
    "claim": "Matt Ryan's touchdown pass in the third quarter made it 28-3",
    "terms": [
-    "Ryan",
-    "28-3"
+    "28-3",
+    "Coleman|Ryan"
    ]
   },
   {
@@ -1040,7 +1056,8 @@
    "claim": "New England scored 25 straight points to tie 28-28",
    "terms": [
     "25",
-    "28-28|tie|tied"
+    "unanswered|straight|consecutive",
+    "28"
    ]
   },
   {
@@ -1102,7 +1119,7 @@
    "claim": "Atlanta's offense never touched the ball in overtime",
    "terms": [
     "never",
-    "ball|possession"
+    "ball|possession|offense"
    ]
   }
  ]

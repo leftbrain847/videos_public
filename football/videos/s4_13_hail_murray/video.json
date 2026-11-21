@@ -1906,6 +1906,14 @@
   {
    "title": "AP via News4JAX: Hail Murray, Cardinals stun Bills 32-30 in final seconds",
    "url": "https://www.news4jax.com/sports/2020/11/16/hail-murray-cardinals-stun-bills-32-30-in-final-seconds/"
+  },
+  {
+   "title": "ESPN: Cardinals beat Bills on Murray-to-Hopkins Hail Mary",
+   "url": "https://www.espn.com/nfl/story/_/id/30325839/arizona-cardinal-beat-buffalo-bills-kyler-murray-deandre-hopkins-hail-mary"
+  },
+  {
+   "title": "Arizona Cardinals: Hail Mary, Hopkins and Murray beat Bills",
+   "url": "https://www.azcardinals.com/news/cardinals-hail-mary-deandre-hopkins-kyler-murray-beats-bills"
   }
  ],
  "voice": "v2",
@@ -1914,7 +1922,7 @@
    "claim": "In 2020 the game ended on a 43-yard pass caught over three defenders",
    "terms": [
     "43",
-    "three defenders|3 defenders"
+    "Hopkins"
    ]
   },
   {

@@ -200,6 +200,10 @@ def test_fact_check_matching_and_snippets():
     assert f.find(w, ["Neal"]) is None                                 # missing term: no support
     assert f.find(w, ["Titans", "three seconds"], window=5) is None    # too far apart
     assert len(f.snippet(w, f.find(w, ["Dyson", "75"])).split()) <= 15  # never more than 15 words of a source
+    assert f.find(w, ["22-16"]) and f.find(w, ["22–16"])                # scores match pages split at the dash
+    assert f.find(w, ["three second"]) and f.find(w, ["Dyson", "sideline"])
+    assert f.find("musical citywide".split(), ["music city"]) is None and f.find("music cityscape".split(), ["music city"])
+    assert f.find(w, ["16-22"]) is None and f.find(w, ["7"]) is None    # order matters; digits never prefix-match
 
 
 def test_gallery_reads_release_links():

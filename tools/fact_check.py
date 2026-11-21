@@ -40,6 +40,7 @@ class HttpsOnly(urllib.request.HTTPRedirectHandler):
 
 
 OPENER = urllib.request.build_opener(HttpsOnly)
+SPLIT = re.compile(r"[\s\-\u2010-\u2015/]+")   # pages and terms are split the same way, so "23-17" matches "23–17"
 
 
 def page_words(url):
@@ -47,11 +48,17 @@ def page_words(url):
     with OPENER.open(req, timeout=CFG["timeout"]) as r:
         raw = r.read(CFG["bytes"]).decode(r.headers.get_content_charset() or "utf-8", "replace")
     p = Text(); p.feed(raw)
-    return [w for w in re.split(r"[\s\-\u2010-\u2015/]+", "".join(p.out)) if w]
+    return [w for w in SPLIT.split("".join(p.out)) if w]
 
 
 def norm(w):
     return re.sub(r"[^a-z0-9]", "", w.lower())
+
+
+def same(word, term):
+    """A page word matches a term word exactly, or by prefix for words of 4+ letters (timeout -> timeouts). In a phrase
+    only the last word may prefix-match ("time expire" -> "time expired")."""
+    return word == term or (len(term) >= 4 and not term.isdigit() and word.startswith(term))
 
 
 def find(words, terms, window=CFG["window"]):
@@ -59,8 +66,8 @@ def find(words, terms, window=CFG["window"]):
     nw = [norm(w) for w in words]
     hits = []
     for t in terms:
-        alts = [[norm(x) for x in a.split()] for a in t.split("|")]
-        pos = [i for i in range(len(nw)) for a in alts if nw[i:i + len(a)] == a or (len(a) == 1 and nw[i].startswith(a[0]) and len(a[0]) >= 4)]
+        alts = [[n for n in map(norm, SPLIT.split(a)) if n] for a in t.split("|")]
+        pos = [i for i in range(len(nw)) for a in alts if a and nw[i:i + len(a) - 1] == a[:-1] and i + len(a) <= len(nw) and same(nw[i + len(a) - 1], a[-1])]
         if not pos:
             return None
         hits.append(pos)
@@ -92,6 +99,8 @@ def check(vid):
                 pages[u] = None; print(f"{vid}: could not open {u}: {e}")
     out = []
     for c in S.get("claims", []):
+        if not c.get("terms"):
+            sys.exit(f"{vid}: claim has no terms: {c.get('claim')!r}")
         per = []
         for u, words in pages.items():
             span = find(words, c["terms"]) if words else None

@@ -3254,16 +3254,28 @@
  ],
  "sources": [
   {
-   "title": "Pro Football Hall of Fame: The Immaculate Reception, catch of a lifetime",
-   "url": "https://profootballhof.com/football-history/the-immaculate-reception-catch-of-a-lifetime"
-  },
-  {
    "title": "HISTORY: Franco Harris makes the Immaculate Reception",
    "url": "https://www.history.com/this-day-in-history/december-23/best-nfl-plays-immaculate-reception-franco-harris-steelers"
   },
   {
    "title": "Steelers.com: An immaculate memory",
    "url": "https://www.steelers.com/news/an-immaculate-memory-x3926"
+  },
+  {
+   "title": "Wikipedia: Immaculate Reception",
+   "url": "https://en.wikipedia.org/wiki/Immaculate_Reception"
+  },
+  {
+   "title": "Pro Football Hall of Fame: The Immaculate Reception",
+   "url": "https://www.profootballhof.com/football-history/the-immaculate-reception/"
+  },
+  {
+   "title": "Pro Football Hall of Fame: Catch of a lifetime, the Immaculate Reception 50 years later",
+   "url": "https://profootballhof.com/news/2022/catch-of-a-lifetime-legendary-immaculate-reception-lives-on-50-years-later"
+  },
+  {
+   "title": "CBS Pittsburgh: Immaculate Reception voted greatest moment in NFL history",
+   "url": "https://www.cbsnews.com/pittsburgh/news/immaculate-reception-greatest-moment"
   }
  ],
  "voice": "v2",
@@ -3358,7 +3370,8 @@
   {
    "claim": "It was the first playoff win in Steelers history",
    "terms": [
-    "first playoff"
+    "first",
+    "playoff win|playoff victory|postseason win|postseason victory"
    ]
   },
   {
