@@ -78,10 +78,6 @@
  },
  "sources": [
   {
-   "title": "UPI: NFL kills receiver 'force-out' rule (April 2008)",
-   "url": "https://www.upi.com/Sports_News/2008/04/02/NFL-kills-receiver-force-out-rule/UPI-47601207170267/"
-  },
-  {
    "title": "Star Tribune: Elimination of force-out rule came too late for Vikings",
    "url": "https://www.startribune.com/elimination-of-force-out-rule-came-too-late-for-vikings/17313044"
   },
@@ -100,6 +96,30 @@
   {
    "title": "Arizona Cardinals: Nate Poole, Josh McCown and the miracle in the desert",
    "url": "https://www.azcardinals.com/news/nate-poole-josh-mccown-vikings-cardinals-miracle-in-the-desert-larry-fitzgerald"
+  },
+  {
+   "title": "NFL.com: New NFL rules for 2008",
+   "url": "https://www.nfl.com/news/new-nfl-rules-for-2008-09000d5d809f6279"
+  },
+  {
+   "title": "Vindicator (AP): Owners shelve reseeding idea; other rules pass",
+   "url": "https://vindyarchives.com/news/2008/apr/03/owners-shelve-reseeding-idea-other-rules-pass/"
+  },
+  {
+   "title": "Wikipedia: Nate Poole",
+   "url": "https://en.wikipedia.org/wiki/Nate_Poole"
+  },
+  {
+   "title": "Taipei Times (AP): Cardinals stun Vikings",
+   "url": "https://www.taipeitimes.com/News/sport/archives/2003/12/30/2003085768"
+  },
+  {
+   "title": "Ironton Tribune (AP): Ravens, Seahawks and Packers in, Vikings out",
+   "url": "https://irontontribune.com/2003/12/29/ravens-seahawks-and-packers-in-vikings-out"
+  },
+  {
+   "title": "AZCardinals.com: Oral history of the 2003 Vikings game",
+   "url": "https://www.azcardinals.com/news/larry-fitzgerald-josh-mccown-nate-poole-oral-history-cardinals-vikings-2003"
   }
  ],
  "lines": [
@@ -240,8 +260,7 @@
    ]
   },
   {
-   "text": "The Vikings lead seventeen to twelve. Last play.",
-   "cap": "The Vikings lead 17 to 12. Last play.",
+   "text": "You trail the Vikings. One play left. Last chance.",
    "key": [
     "LAST"
    ],
@@ -882,7 +901,7 @@
    "claim": "Under the force-out rule, an official judged whether a receiver pushed out would have landed in bounds",
    "terms": [
     "force-out|force out",
-    "bounds"
+    "bounds|inbounds"
    ]
   },
   {
@@ -890,20 +909,20 @@
    "terms": [
     "Cardinals",
     "Vikings",
-    "2003"
+    "Poole"
    ]
   },
   {
-   "claim": "The Vikings led 17-12 before the last play",
+   "claim": "The Cardinals trailed with one play left",
    "terms": [
-    "Vikings",
-    "17-12"
+    "Poole",
+    "time expired|final play|last play"
    ]
   },
   {
    "claim": "It was fourth-and-25 and a Vikings win meant the playoffs",
    "terms": [
-    "fourth-and-25|4th-and-25|fourth and 25|4th and 25"
+    "fourth-and-25|4th-and-25|fourth and 25|4th and 25|fourth-and-long|4th and long"
    ]
   },
   {
