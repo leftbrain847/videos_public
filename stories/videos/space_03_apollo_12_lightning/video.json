@@ -1,0 +1,1054 @@
+{
+ "id": "space_03_apollo_12_lightning",
+ "title": "Apollo 12: struck by lightning twice",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "APOLLO 12"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "pete": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#eef1f5",
+    "pants": "#eef1f5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "dick": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#dfe6ee",
+    "pants": "#dfe6ee",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "alan": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#f2a13a",
+    "pants": "#f2a13a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#c68d64"
+   }
+  },
+  "aaron": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true,
+    "glasses": true
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b",
+    "headset": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Your rocket is climbing toward the moon. Then lightning hits it. Twice.",
+   "key": [
+    "TWICE."
+   ],
+   "board": [
+    "LIGHTNING",
+    "x2"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "pete": [
+     -2.4,
+     -0.6
+    ],
+    "dick": false,
+    "alan": [
+     2.4,
+     -0.6
+    ],
+    "aaron": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "pete": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    },
+    "alan": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "November, nineteen sixty nine. Apollo twelve launches into a rainy sky.",
+   "cap": "November 1969. Apollo 12 launches into a rainy sky.",
+   "key": [
+    "RAINY"
+   ],
+   "board": [
+    "APOLLO 12",
+    "NOV 1969"
+   ],
+   "place": {
+    "capy": false,
+    "pete": [
+     -2.2,
+     0
+    ],
+    "dick": [
+     0,
+     0.4
+    ],
+    "alan": [
+     2.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "dick"
+   },
+   "act": {
+    "pete": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "dick": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "alan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The crew: Pete Conrad, Dick Gordon, Alan Bean.",
+   "key": [
+    "CREW:"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "pete",
+    "with": "alan"
+   },
+   "act": {
+    "pete": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "dick"
+    },
+    "dick": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "alan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "pete"
+    }
+   }
+  },
+  {
+   "text": "Thirty six seconds in, lightning strikes the rocket.",
+   "cap": "36 seconds in, lightning strikes the rocket.",
+   "key": [
+    "36"
+   ],
+   "board": [
+    "T+36 S",
+    "STRIKE 1"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "dick"
+   },
+   "act": {
+    "dick": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "pete": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "dick"
+    },
+    "alan": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "dick"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Seconds later, it strikes the rocket again.",
+   "key": [
+    "AGAIN."
+   ],
+   "board": [
+    "T+52 S",
+    "STRIKE 2"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "pete"
+   },
+   "act": {
+    "pete": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Warning lights flood the panel. Power systems drop offline.",
+   "key": [
+    "OFFLINE."
+   ],
+   "board": [
+    "ALARMS",
+    "EVERYWHERE"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "dick"
+   },
+   "act": {
+    "pete": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "dick"
+    },
+    "dick": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    },
+    "alan": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "dick"
+    }
+   }
+  },
+  {
+   "text": "Congratulations. Your rocket is now a lightning rod.",
+   "key": [
+    "ROD."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "pete": [
+     -2.4,
+     -0.6
+    ],
+    "dick": false,
+    "alan": [
+     2.4,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "pete": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    },
+    "alan": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "In Houston, the data screens turn to garbage.",
+   "key": [
+    "GARBAGE."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "#$%&!",
+     "???"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "pete": false,
+    "dick": false,
+    "alan": false,
+    "aaron": [
+     1.4,
+     0.3
+    ],
+    "boss": [
+     -1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "boss",
+    "with": "aaron"
+   },
+   "act": {
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "aaron"
+    },
+    "aaron": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "Abort is on the table. Abort means no moon.",
+   "key": [
+    "MOON."
+   ],
+   "board": [
+    "ABORT?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "boss": [
+     1.4,
+     0.2
+    ],
+    "aaron": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "One flight controller has seen this mess before. His name? John Aaron.",
+   "key": [
+    "AARON."
+   ],
+   "place": {
+    "capy": false,
+    "boss": [
+     -2.4,
+     -0.4
+    ],
+    "aaron": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "aaron"
+   },
+   "act": {
+    "aaron": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "aaron"
+    }
+   }
+  },
+  {
+   "text": "A year earlier, he saw a test. Same weird pattern.",
+   "key": [
+    "TEST"
+   ],
+   "board": [
+    "SAME PATTERN",
+    "1 YEAR AGO"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "aaron"
+   },
+   "act": {
+    "aaron": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He calls up one strange command.",
+   "key": [
+    "STRANGE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "aaron": [
+     1.4,
+     0.2
+    ],
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "aaron"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "aaron"
+    },
+    "aaron": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Try S C E to aux.",
+   "cap": "Try SCE to AUX.",
+   "key": [
+    "SCE",
+    "AUX."
+   ],
+   "board": [
+    "SCE",
+    "TO AUX"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "aaron": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It's an obscure switch. Almost nobody knows it exists.",
+   "key": [
+    "OBSCURE"
+   ],
+   "place": {
+    "capy": false,
+    "aaron": [
+     1.4,
+     0.3
+    ],
+    "boss": [
+     -1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "boss",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "boss": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "aaron"
+    },
+    "aaron": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "It moves the signal equipment to backup power.",
+   "key": [
+    "BACKUP"
+   ],
+   "board": [
+    "SCE = SIGNAL",
+    "CONDITIONING"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "aaron"
+   },
+   "act": {
+    "aaron": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In the cabin, the crew is confused too.",
+   "key": [
+    "CONFUSED"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "SCE TO AUX?"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "pete": [
+     -1.4,
+     0.2
+    ],
+    "dick": false,
+    "alan": [
+     1.4,
+     0.2
+    ],
+    "aaron": false,
+    "boss": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "pete",
+    "with": "alan"
+   },
+   "act": {
+    "pete": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "alan"
+    },
+    "alan": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "pete"
+    }
+   }
+  },
+  {
+   "text": "Alan Bean remembers where it is. He flips it.",
+   "key": [
+    "FLIPS"
+   ],
+   "place": {
+    "pete": [
+     -2.4,
+     -0.6
+    ],
+    "alan": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "alan"
+   },
+   "act": {
+    "alan": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "pete": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "alan"
+    }
+   }
+  },
+  {
+   "text": "The data comes back. The ship is alive. Nobody aborts.",
+   "key": [
+    "ALIVE."
+   ],
+   "board": [
+    "DATA",
+    "RESTORED"
+   ],
+   "place": {
+    "dick": [
+     2.4,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "alan"
+   },
+   "act": {
+    "alan": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "pete": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "alan"
+    },
+    "dick": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "alan"
+    }
+   }
+  },
+  {
+   "text": "Two lightning strikes. The mission is still on.",
+   "key": [
+    "STILL"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "alan": [
+     -2.4,
+     -0.6
+    ],
+    "pete": false,
+    "dick": [
+     2.4,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "alan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    },
+    "dick": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Days later, they land on the moon. Right on target.",
+   "key": [
+    "LAND"
+   ],
+   "board": [
+    "APOLLO 12",
+    "ON THE MOON"
+   ],
+   "place": {
+    "capy": false,
+    "alan": [
+     1.4,
+     0.2
+    ],
+    "pete": [
+     -1.4,
+     0.2
+    ],
+    "dick": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "pete"
+   },
+   "act": {
+    "pete": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "alan": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Aaron gets a nickname. The steely eyed missile man.",
+   "cap": "Aaron gets a nickname. The steely-eyed missile man.",
+   "key": [
+    "STEELY-EYED"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "STEELY-EYED",
+     "MISSILE MAN"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "pete": false,
+    "dick": false,
+    "alan": false,
+    "aaron": [
+     0,
+     0.4
+    ],
+    "boss": [
+     2.4,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "aaron"
+   },
+   "act": {
+    "aaron": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "aaron"
+    }
+   }
+  },
+  {
+   "text": "Lightning, twice. Fixed with one switch nobody had heard of. Respect.",
+   "key": [
+    "SWITCH"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "aaron": [
+     1.4,
+     0.2
+    ],
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "aaron"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "aaron"
+    },
+    "aaron": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Would you have flipped it? Or aborted? Tell me below.",
+   "key": [
+    "ABORTED?"
+   ],
+   "board": [
+    "FLIP IT",
+    "OR ABORT?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "aaron": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "aaron": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Apollo 12",
+   "url": "https://en.wikipedia.org/wiki/Apollo_12"
+  },
+  {
+   "title": "Wikipedia: John Aaron",
+   "url": "https://en.wikipedia.org/wiki/John_Aaron"
+  },
+  {
+   "title": "NASA Apollo Flight Journal: the lightning strike",
+   "url": "https://www.nasa.gov/history/afj/ap12fj/a12-lightningstrike.html"
+  },
+  {
+   "title": "Space.com: Apollo 12 struck by lightning twice",
+   "url": "https://www.space.com/apollo-12-lightning-strike-twice-launch-video.html"
+  },
+  {
+   "title": "Live Science: Apollo 12 lightning launch",
+   "url": "https://www.livescience.com/apollo-12-lightning-launch.html"
+  },
+  {
+   "title": "AccuWeather: how the weather almost spelled disaster for Apollo 12",
+   "url": "https://www.accuweather.com/en/space-news/how-the-weather-almost-spelled-disaster-for-apollo-12-just-seconds-after-liftoff/626567"
+  },
+  {
+   "title": "IFLScience: lightning hit Apollo 12",
+   "url": "https://www.iflscience.com/lighting-hit-apollo-12-just-365-seconds-after-launch-after-that-it-got-very-interesting-80025"
+  },
+  {
+   "title": "Universe Today: Apollo 12 and SCE to AUX",
+   "url": "https://www.universetoday.com/articles/this-day-in-space-history-apollo-12-and-sce-to-aux"
+  },
+  {
+   "title": "Vice: John Aaron, Apollo 12 and SCE to AUX",
+   "url": "https://www.vice.com/en/article/john-aaron-apollo-12-curiosity-luck-and-sce-to-aux"
+  },
+  {
+   "title": "Today I Found Out: where steely-eyed missile man came from",
+   "url": "https://www.todayifoundout.com/index.php/2014/03/nasa-expression-steely-eyed-missile-man-come/"
+  },
+  {
+   "title": "Sky at Night: Apollo 12 story",
+   "url": "https://www.skyatnightmagazine.com/space-missions/apollo-12-story-second-mission-moon"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Apollo 12 launched in November 1969 in rain",
+   "terms": [
+    "Apollo 12",
+    "November",
+    "1969"
+   ]
+  },
+  {
+   "claim": "It launched into rain",
+   "terms": [
+    "rain"
+   ]
+  },
+  {
+   "claim": "The crew was Pete Conrad, Dick Gordon and Alan Bean",
+   "terms": [
+    "Conrad",
+    "Gordon",
+    "Bean"
+   ]
+  },
+  {
+   "claim": "Lightning struck the rocket 36 seconds after liftoff",
+   "terms": [
+    "lightning",
+    "36|365"
+   ]
+  },
+  {
+   "claim": "Lightning struck a second time",
+   "terms": [
+    "struck",
+    "twice|second"
+   ]
+  },
+  {
+   "claim": "Warning lights came on and power dropped offline",
+   "terms": [
+    "warning",
+    "light"
+   ]
+  },
+  {
+   "claim": "Telemetry on the ground became garbled",
+   "terms": [
+    "telemetry",
+    "garble|nonsense|meaningless"
+   ]
+  },
+  {
+   "claim": "Flight controller John Aaron had seen the pattern in a test a year earlier",
+   "terms": [
+    "Aaron",
+    "test"
+   ]
+  },
+  {
+   "claim": "He called 'SCE to AUX'",
+   "terms": [
+    "SCE",
+    "Aux"
+   ]
+  },
+  {
+   "claim": "The switch moved the signal conditioning equipment to auxiliary power",
+   "terms": [
+    "Signal Conditioning",
+    "auxiliary"
+   ]
+  },
+  {
+   "claim": "The switch was obscure",
+   "terms": [
+    "obscure"
+   ]
+  },
+  {
+   "claim": "Alan Bean remembered the switch and flipped it",
+   "terms": [
+    "Bean",
+    "switch"
+   ]
+  },
+  {
+   "claim": "Switching SCE to AUX brought the data back",
+   "terms": [
+    "SCE",
+    "Aux"
+   ]
+  },
+  {
+   "claim": "Conrad and Bean landed on the moon",
+   "terms": [
+    "Conrad",
+    "Bean",
+    "moon"
+   ]
+  },
+  {
+   "claim": "Aaron was called the steely-eyed missile man",
+   "terms": [
+    "steely-eyed missile man"
+   ]
+  }
+ ]
+}

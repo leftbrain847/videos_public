@@ -1,0 +1,939 @@
+{
+ "id": "space_04_skylab_littering_fine",
+ "title": "Skylab and the littering fine",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "SKYLAB"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "ctl": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true,
+    "glasses": true
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "mayor": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8",
+    "tie": "#2b4c8c"
+   }
+  },
+  "kid": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f6d21f",
+    "pants": "#4a4a4a",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f"
+   }
+  },
+  "dj": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64",
+    "headset": true
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You drop a space station on Australia. Then you get a fine. For littering.",
+   "key": [
+    "LITTERING."
+   ],
+   "board": [
+    "FINE: $400",
+    "LITTERING"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "ctl": false,
+    "boss": false,
+    "mayor": [
+     2.6,
+     -0.6
+    ],
+    "kid": false,
+    "dj": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "mayor": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Meet Skylab. America's first space station.",
+   "key": [
+    "FIRST"
+   ],
+   "board": [
+    "SKYLAB",
+    "1973"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "mayor": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     1.6,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It launches in nineteen seventy three. Three crews live aboard.",
+   "cap": "It launches in 1973. Three crews live aboard.",
+   "key": [
+    "THREE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "3 CREWS",
+     "ABOARD"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "ctl": [
+     -1.4,
+     0.3
+    ],
+    "boss": [
+     1.4,
+     0.3
+    ],
+    "mayor": false,
+    "kid": false,
+    "dj": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "ctl",
+    "with": "boss"
+   },
+   "act": {
+    "ctl": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "boss"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "ctl"
+    }
+   }
+  },
+  {
+   "text": "By nineteen seventy nine, it's empty. It's also slowly falling.",
+   "cap": "By 1979, it's empty. It's also slowly falling.",
+   "key": [
+    "FALLING."
+   ],
+   "board": [
+    "ORBIT",
+    "DECAYING"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The sun is more active than expected. That drags Skylab down early.",
+   "key": [
+    "EARLY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "cross",
+     "look": "ctl"
+    }
+   }
+  },
+  {
+   "text": "It has no engine to steer home. It just comes down. Somewhere.",
+   "key": [
+    "DOWN."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "NO ENGINE",
+     "NO STEERING"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "ctl": false,
+    "boss": false,
+    "mayor": false,
+    "kid": false,
+    "dj": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The whole planet watches the sky. Newspapers print where it might land.",
+   "key": [
+    "WATCHES"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "kid": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kid"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "kid"
+    },
+    "kid": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "July eleventh, nineteen seventy nine. Skylab comes home.",
+   "cap": "July 11, 1979. Skylab comes home.",
+   "key": [
+    "HOME."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "JULY 11 1979",
+     "REENTRY"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "ctl": [
+     0,
+     0.4
+    ],
+    "boss": [
+     2.4,
+     -0.2
+    ],
+    "mayor": false,
+    "kid": false,
+    "dj": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "ctl"
+    }
+   }
+  },
+  {
+   "text": "Controllers aim the pieces at the Indian Ocean.",
+   "key": [
+    "OCEAN."
+   ],
+   "board": [
+    "TARGET:",
+    "INDIAN OCEAN"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    },
+    "ctl": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "It misses. Debris rains across Western Australia.",
+   "key": [
+    "AUSTRALIA."
+   ],
+   "board": [
+    "DEBRIS:",
+    "W. AUSTRALIA"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Pieces land near a small town called Esperance.",
+   "key": [
+    "ESPERANCE."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "ESPERANCE"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "ctl": false,
+    "boss": false,
+    "mayor": [
+     -1.3,
+     4.4
+    ],
+    "kid": [
+     1.4,
+     4.4
+    ],
+    "dj": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "mayor",
+    "offset": [
+     1.2,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "mayor": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "kid": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The town's officials look up. Then they get a bright idea.",
+   "key": [
+    "IDEA."
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "mayor": [
+     1.4,
+     4.4
+    ],
+    "kid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "mayor"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "mayor"
+    },
+    "mayor": {
+     "mood": "smug",
+     "action": "point",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Esperance fines the United States four hundred dollars. For littering.",
+   "cap": "Esperance fines the United States $400. For littering.",
+   "key": [
+    "$400."
+   ],
+   "board": [
+    "FINE: $400",
+    "LITTERING"
+   ],
+   "place": {
+    "capy": false,
+    "mayor": [
+     0,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "mayor",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "mayor": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The bill sits unpaid. For thirty years.",
+   "cap": "The bill sits unpaid. For 30 years.",
+   "key": [
+    "30"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "mayor": [
+     1.4,
+     4.4
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "mayor": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Two thousand nine. A radio host raises the cash.",
+   "cap": "2009. A radio host raises the cash.",
+   "key": [
+    "RADIO"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "ON AIR"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "ctl": false,
+    "boss": false,
+    "mayor": false,
+    "kid": false,
+    "dj": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "dj"
+   },
+   "act": {
+    "dj": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He pays it. Littering case closed.",
+   "key": [
+    "CLOSED."
+   ],
+   "board": [
+    "PAID",
+    "IN FULL"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "dj": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "dj"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "dj"
+    },
+    "dj": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Meanwhile, a local teenager grabs a few pieces.",
+   "key": [
+    "TEENAGER"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "$10,000",
+     "PRIZE"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "ctl": false,
+    "boss": false,
+    "mayor": false,
+    "kid": [
+     0,
+     4.4
+    ],
+    "dj": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "kid",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "kid": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A San Francisco paper offered a prize. For the first piece delivered.",
+   "key": [
+    "PRIZE"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "kid"
+   },
+   "act": {
+    "kid": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He flies there. He collects ten thousand dollars.",
+   "cap": "He flies there. He collects $10,000.",
+   "key": [
+    "$10,000."
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "kid": [
+     1.4,
+     4.4
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kid"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "kid"
+    },
+    "kid": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Skylab: bad news for Nasa. Great news for one teenager.",
+   "cap": "Skylab: bad news for NASA. Great news for one teenager.",
+   "key": [
+    "TEENAGER."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kid": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Four hundred dollars for a space station. Too cheap? Yes or no? Be honest.",
+   "cap": "$400 for a space station. Too cheap? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "TOO CHEAP?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     4.6
+    ],
+    "kid": [
+     2.6,
+     4.0
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kid": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Skylab",
+   "url": "https://en.wikipedia.org/wiki/Skylab"
+  },
+  {
+   "title": "Guinness World Records: first fine for littering from space",
+   "url": "https://www.guinnessworldrecords.com/world-records/114725-first-fine-for-littering-from-space"
+  },
+  {
+   "title": "Space.com: 40 years ago, Skylab fell to Earth",
+   "url": "https://www.space.com/skylab-space-station-fall-40-years.html"
+  },
+  {
+   "title": "NBC News: Skylab's remains in Australia",
+   "url": "https://www.nbcnews.com/news/all/got-4-go-see-skylabs-remains-australia-flna1C9918750"
+  },
+  {
+   "title": "Mental Floss: NASA's unpaid $400 littering ticket",
+   "url": "https://www.mentalfloss.com/article/70708/nasas-unpaid-400-littering-ticket-skylab-debris-australia"
+  },
+  {
+   "title": "IFLScience: Skylab and the $400 fine",
+   "url": "https://www.iflscience.com/space/americas-first-space-station-crashed-to-earth-in-1979-and-nasa-got-sent-a-400-fine-for-littering/"
+  },
+  {
+   "title": "History.com: the day Skylab crashed to Earth",
+   "url": "https://www.history.com/articles/the-day-skylab-crashed-to-earth-facts-about-the-first-u-s-space-stations-re-entry"
+  },
+  {
+   "title": "National Space Society: Skylab's final moments, part two",
+   "url": "https://nss.org/space-in-the-seventies-skylabs-final-moments-part-two/"
+  },
+  {
+   "title": "Science Notes: the day Skylab fell to Earth",
+   "url": "https://sciencenotes.org/today-in-science-history-july-11/"
+  },
+  {
+   "title": "Perth Observatory: the time NASA nearly wiped Esperance off the map",
+   "url": "https://perthobservatory.com.au/astronomy-news/the-time-nasa-nearly-wiped-esperance-off-the-map"
+  },
+  {
+   "title": "Spokesman-Review: When the sky fell",
+   "url": "https://www.spokesman.com/further-review/when-the-sky-fell"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Skylab was America's first space station",
+   "terms": [
+    "Skylab",
+    "first",
+    "space station"
+   ]
+  },
+  {
+   "claim": "Skylab launched in 1973",
+   "terms": [
+    "Skylab",
+    "1973"
+   ]
+  },
+  {
+   "claim": "Three crews lived aboard Skylab",
+   "terms": [
+    "three",
+    "crew"
+   ]
+  },
+  {
+   "claim": "Skylab fell in 1979",
+   "terms": [
+    "Skylab",
+    "1979"
+   ]
+  },
+  {
+   "claim": "Higher than expected solar activity dragged it down early",
+   "terms": [
+    "solar",
+    "activity|sun"
+   ]
+  },
+  {
+   "claim": "Skylab reentered on July 11, 1979",
+   "terms": [
+    "July 11",
+    "1979"
+   ]
+  },
+  {
+   "claim": "NASA aimed the debris at the Indian Ocean",
+   "terms": [
+    "Indian Ocean"
+   ]
+  },
+  {
+   "claim": "Debris fell across Western Australia",
+   "terms": [
+    "Western Australia",
+    "debris"
+   ]
+  },
+  {
+   "claim": "Pieces landed near Esperance",
+   "terms": [
+    "Esperance"
+   ]
+  },
+  {
+   "claim": "Esperance fined the United States $400 for littering",
+   "terms": [
+    "400",
+    "litter"
+   ]
+  },
+  {
+   "claim": "The fine went unpaid for 30 years until a radio host paid it in 2009",
+   "terms": [
+    "2009",
+    "radio"
+   ]
+  },
+  {
+   "claim": "A San Francisco newspaper offered a prize for the first piece",
+   "terms": [
+    "San Francisco",
+    "prize"
+   ]
+  },
+  {
+   "claim": "A teenager from Esperance collected $10,000",
+   "terms": [
+    "10,000",
+    "Examiner|San Francisco|prize"
+   ]
+  }
+ ]
+}
