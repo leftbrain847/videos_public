@@ -76,13 +76,42 @@
    "at": "desk"
   }
  },
+ "sources": [
+  {
+   "title": "NBC Sports Boston: They called it the 'Ty Law Rule' ... and that was OK with him",
+   "url": "https://www.nbcsportsboston.com/nfl/new-england-patriots/they-called-it-the-ty-law-rule-and-that-was-ok-with-him/393549/?amp=1"
+  },
+  {
+   "title": "Vindicator (AP): Law rules as Pats defense delivers",
+   "url": "https://vindyarchives.com/news/2004/jan/22/law-rules-as-pats-defense-delivers"
+  },
+  {
+   "title": "Patriots.com: NE-IND post-game notes",
+   "url": "https://patriots.com/news/ne-ind-post-game-notes-173351"
+  },
+  {
+   "title": "Sports Illustrated Vault: Cold-blooded: Patriots 24, Colts 14",
+   "url": "https://vault.si.com/vault/2004/01/26/cold-blooded-patriots-24-colts-14-playing-in-its-favorite-weather-new-england-mercilessly-pounded-peyton-manning-and-indys-vaunted-attack-to-earn-a-second-trip-to-the-super-bowl-in-three-years"
+  },
+  {
+   "title": "Indiana Daily Student: Colts hoping rules emphasis holds up against New England",
+   "url": "https://www.idsnews.com/article/2005/01/colts-hoping-rules-emphasis-holds-up-against-new-england"
+  },
+  {
+   "title": "Vindicator (AP): Dungy: calls should follow rule book",
+   "url": "https://vindyarchives.com/news/2005/jan/13/dungy-calls-should-follow-rule-book"
+  },
+  {
+   "title": "UT Sports (AP): Manning sets NFL season TD record",
+   "url": "https://utsports.com/news/2004/12/26/Manning_Sets_NFL_Season_TD_Record"
+  }
+ ],
  "lines": [
   {
-   "text": "In 2004, one cornerback intercepted Peyton Manning three times, and the NFL changed how games get called.",
-   "cap": "In 2004, one cornerback intercepted Peyton Manning 3 times, and the NFL changed how games get called.",
+   "text": "You intercept Peyton Manning three times. So the league changes the calls.",
+   "cap": "You intercept Peyton Manning 3 times. So the league changes the calls.",
    "key": [
-    "3",
-    "CHANGED"
+    "CALLS."
    ],
    "place": {
     "capy": [
@@ -118,7 +147,8 @@
    "speaker": "capy"
   },
   {
-   "text": "AFC Championship. Light snow in New England.",
+   "text": "January two thousand four. Light snow in New England.",
+   "cap": "January 2004. Light snow in New England.",
    "key": [
     "SNOW"
    ],
@@ -154,27 +184,223 @@
    }
   },
   {
-   "text": "Ty Law picks off Manning once. Twice. Three times.",
-   "cap": "Ty Law picks off Manning once. Twice. 3 times.",
+   "text": "Conference title game. Colts at your Patriots.",
    "key": [
-    "3",
-    "TIMES."
+    "PATRIOTS."
    ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "cb": [
+     1.0,
+     0
+    ]
+   },
    "shot": {
-    "type": "medium",
-    "on": "cb"
+    "type": "two",
+    "on": "capy",
+    "with": "cb"
    },
    "act": {
-    "cb": {
-     "mood": "happy",
-     "action": "cheer",
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
      "look": "camera"
+    },
+    "cb": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
     }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "You're Ty Law. One pick. Two. Three.",
+   "key": [
+    "THREE."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "AFC",
+     "CHAMPIONSHIP"
+    ],
+    "endZone": 8
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "cb",
+    "lead": 0,
+    "z": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0,
+        -4.0,
+        0.8
+       ],
+       [
+        1,
+        -4.0,
+        0.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        -1.0,
+        -1.0
+       ],
+       [
+        0.25,
+        -0.2,
+        -1.25
+       ],
+       [
+        0.5,
+        0.6,
+        -1.5
+       ],
+       [
+        0.75,
+        1.4,
+        -1.75
+       ],
+       [
+        1.0,
+        2.2,
+        -2.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "cb": {
+      "path": [
+       [
+        0.0,
+        4.5,
+        1.2
+       ],
+       [
+        0.1625,
+        4.325,
+        0.85
+       ],
+       [
+        0.325,
+        4.15,
+        0.5
+       ],
+       [
+        0.4875,
+        3.975,
+        0.15
+       ],
+       [
+        0.65,
+        3.8,
+        -0.2
+       ],
+       [
+        0.7375,
+        4.1,
+        -0.025
+       ],
+       [
+        0.825,
+        4.4,
+        0.15
+       ],
+       [
+        0.9125,
+        4.7,
+        0.325
+       ],
+       [
+        1.0,
+        5.0,
+        0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.65,
+        "catch"
+       ],
+       [
+        0.8,
+        "celebrate"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      0.25,
+      -3.8,
+      1.6,
+      0.8
+     ],
+     [
+      0.45,
+      0.0,
+      3.1,
+      0.3
+     ],
+     [
+      0.65,
+      3.8,
+      1.3,
+      -0.2
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.25,
+      null
+     ],
+     [
+      0.65,
+      "cb"
+     ]
+    ]
    }
   },
   {
-   "text": "Manning throws four interceptions in all.",
-   "cap": "Manning throws 4 interceptions in all.",
+   "text": "Manning throws four interceptions in the game.",
+   "cap": "Manning throws 4 interceptions in the game.",
    "key": [
     "4"
    ],
@@ -187,15 +413,21 @@
      "mood": "sad",
      "action": "facepalm"
     }
+   },
+   "place": {
+    "qb": "center",
+    "cb": false,
+    "wr": false
    }
   },
   {
-   "text": "The Patriots win, twenty four to fourteen, and go to the Super Bowl.",
-   "cap": "The Patriots win, 24 to 14, and go to the Super Bowl.",
+   "text": "You win, twenty four to fourteen. Super Bowl.",
+   "cap": "You win, 24 to 14. Super Bowl.",
    "key": [
     "24"
    ],
    "place": {
+    "cb": "center",
     "qb": false
    },
    "shot": {
@@ -211,10 +443,9 @@
    }
   },
   {
-   "text": "Their coverage was physical. Their own words for the plan: beat them up.",
+   "text": "Your coverage is physical. Very physical. Receivers notice.",
    "key": [
-    "BEAT",
-    "UP."
+    "PHYSICAL."
    ],
    "place": {
     "wr": [
@@ -245,11 +476,10 @@
    }
   },
   {
-   "text": "But a rule already banned contact with receivers more than five yards downfield.",
-   "cap": "But a rule already banned contact with receivers more than 5 yards downfield.",
+   "text": "But contact past five yards was already illegal.",
+   "cap": "But contact past 5 yards was already illegal.",
    "key": [
-    "5",
-    "YARDS"
+    "ILLEGAL."
    ],
    "set": "locker",
    "setOpts": {
@@ -282,7 +512,45 @@
    "speaker": "capy"
   },
   {
-   "text": "So that off-season, the league told referees to actually enforce it.",
+   "text": "Indianapolis complains to the league. Very loudly.",
+   "key": [
+    "LOUDLY."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "angry",
+     "action": "point",
+     "look": "boss"
+    }
+   },
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "COLTS",
+     "COMPLAIN"
+    ]
+   },
+   "place": {
+    "boss": "desk",
+    "qb": [
+     -2.2,
+     0.6
+    ],
+    "cb": false,
+    "wr": false
+   }
+  },
+  {
+   "text": "That offseason, the league has one message. Enforce it.",
    "key": [
     "ENFORCE"
    ],
@@ -297,7 +565,7 @@
     "boss": "desk"
    },
    "shot": {
-    "type": "medium",
+    "type": "close",
     "on": "boss"
    },
    "act": {
@@ -309,9 +577,9 @@
    }
   },
   {
-   "text": "Illegal contact and defensive holding became a point of emphasis for the whole season.",
+   "text": "Illegal contact becomes a point of emphasis.",
    "key": [
-    "EMPHASIS"
+    "EMPHASIS."
    ],
    "place": {
     "capy": [
@@ -337,7 +605,7 @@
    }
   },
   {
-   "text": "Not a new rule. An old rule, finally called.",
+   "text": "Not a new rule. An old one, finally called.",
    "key": [
     "FINALLY"
    ],
@@ -359,9 +627,10 @@
    "speaker": "capy"
   },
   {
-   "text": "That fall, scoring and passing went up.",
+   "text": "That fall, Manning throws forty nine touchdowns.",
+   "cap": "That fall, Manning throws 49 touchdowns.",
    "key": [
-    "UP."
+    "49"
    ],
    "set": "field",
    "setOpts": {
@@ -382,17 +651,17 @@
    "act": {
     "qb": {
      "mood": "happy",
-     "action": "throw",
+     "action": "cheer",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Manning threw forty nine touchdowns, breaking Dan Marino's record.",
-   "cap": "Manning threw 49 touchdowns, breaking Dan Marino's record.",
+   "text": "That breaks Dan Marino's record. Twenty years old.",
    "key": [
-    "49"
+    "RECORD."
    ],
+   "place": {},
    "shot": {
     "type": "high",
     "on": "qb"
@@ -402,35 +671,52 @@
      "mood": "happy",
      "action": "cheer"
     }
-   },
-   "place": {}
-  },
-  {
-   "text": "Manning said the emphasis didn't really affect them.",
-   "key": [
-    "AFFECT"
-   ],
-   "place": {
-    "cb": false,
-    "qb": "center"
-   },
-   "shot": {
-    "type": "close",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "smug",
-     "action": "shrug",
-     "look": "camera"
-    }
    }
   },
   {
-   "text": "Should defenders get to hit receivers past five yards? Yes or no, below.",
+   "text": "Fans call it the Ty Law rule. What an honor.",
+   "key": [
+    "HONOR."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "boss"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "neutral",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "THE TY LAW",
+     "RULE"
+    ]
+   },
+   "place": {
+    "boss": "desk",
+    "capy": [
+     2.2,
+     0.6
+    ],
+    "qb": false
+   }
+  },
+  {
+   "text": "Should defenders hit receivers past five yards? Yes or no. Colts fans, relax.",
+   "cap": "Should defenders hit receivers past 5 yards? Yes or no. Colts fans, relax.",
    "key": [
     "YES",
-    "NO,"
+    "NO."
    ],
    "set": "locker",
    "setOpts": {
@@ -460,38 +746,79 @@
      "look": "capy"
     }
    },
-   "speaker": "capy",
-   "cap": "Should defenders get to hit receivers past 5 yards? Yes or no, below."
+   "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "NBC Sports Boston: They called it the 'Ty Law Rule' ... and that was OK with him",
-   "url": "https://www.nbcsportsboston.com/nfl/new-england-patriots/they-called-it-the-ty-law-rule-and-that-was-ok-with-him/393549/?amp=1"
+   "claim": "Ty Law intercepted Peyton Manning three times",
+   "terms": [
+    "Law",
+    "three|3",
+    "interception"
+   ]
   },
   {
-   "title": "Vindicator (AP): Law rules as Pats defense delivers",
-   "url": "https://vindyarchives.com/news/2004/jan/22/law-rules-as-pats-defense-delivers"
+   "claim": "January 2004 AFC Championship in light snow in New England",
+   "terms": [
+    "snow",
+    "Patriots"
+   ]
   },
   {
-   "title": "Patriots.com: NE-IND post-game notes",
-   "url": "https://patriots.com/news/ne-ind-post-game-notes-173351"
+   "claim": "Manning threw four interceptions",
+   "terms": [
+    "Manning",
+    "four interceptions|4 interceptions"
+   ]
   },
   {
-   "title": "Sports Illustrated Vault: Cold-blooded: Patriots 24, Colts 14",
-   "url": "https://vault.si.com/vault/2004/01/26/cold-blooded-patriots-24-colts-14-playing-in-its-favorite-weather-new-england-mercilessly-pounded-peyton-manning-and-indys-vaunted-attack-to-earn-a-second-trip-to-the-super-bowl-in-three-years"
+   "claim": "The Patriots won 24-14 and went to the Super Bowl",
+   "terms": [
+    "24-14"
+   ]
   },
   {
-   "title": "Indiana Daily Student: Colts hoping rules emphasis holds up against New England",
-   "url": "https://www.idsnews.com/article/2005/01/colts-hoping-rules-emphasis-holds-up-against-new-england"
+   "claim": "The Colts complained to the league",
+   "terms": [
+    "Colts",
+    "complain"
+   ]
   },
   {
-   "title": "Vindicator (AP): Dungy: calls should follow rule book",
-   "url": "https://vindyarchives.com/news/2005/jan/13/dungy-calls-should-follow-rule-book"
+   "claim": "Marino's record was 20 years old (1984)",
+   "terms": [
+    "Marino",
+    "1984"
+   ]
   },
   {
-   "title": "UT Sports (AP): Manning sets NFL season TD record",
-   "url": "https://utsports.com/news/2004/12/26/Manning_Sets_NFL_Season_TD_Record"
+   "claim": "Contact past five yards was already illegal",
+   "terms": [
+    "five yards|5 yards",
+    "contact"
+   ]
+  },
+  {
+   "claim": "That offseason the league made illegal contact a point of emphasis",
+   "terms": [
+    "illegal contact",
+    "emphasis"
+   ]
+  },
+  {
+   "claim": "In 2004 Manning threw 49 touchdowns, breaking Dan Marino's record",
+   "terms": [
+    "49",
+    "Marino"
+   ]
+  },
+  {
+   "claim": "It was called the Ty Law rule",
+   "terms": [
+    "Ty Law rule|Law rule"
+   ]
   }
  ]
 }
