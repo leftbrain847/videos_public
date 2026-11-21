@@ -1,0 +1,742 @@
+{
+ "id": "scary_27_versailles_ghosts",
+ "title": "Two professors who saw Marie Antoinette's garden",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "VERSAILLES"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#3a4a6a",
+    "pants": "#2a2a2a",
+    "hair": "bun",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "notepad"
+  },
+  "eleanor": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#6b3a2a",
+    "pants": "#2a2a2a",
+    "hair": "bob",
+    "hairColor": "#6b4423",
+    "skin": "#f0c8a8"
+   },
+   "at": "center"
+  },
+  "queen": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e8d8f0",
+    "pants": "#e8d8f0",
+    "hair": "bun",
+    "hairColor": "#f2e8c8",
+    "skin": "#f2c39b",
+    "sash": "#c9a227"
+   },
+   "at": "center"
+  },
+  "critic": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "center",
+   "hold": "magnifier"
+  }
+ },
+ "lines": [
+  {
+   "text": "You take a walk in a famous garden. You might walk into the past.",
+   "key": [
+    "PAST."
+   ],
+   "set": "temple",
+   "setOpts": {
+    "boardText": [
+     "VERSAILLES",
+     "1901"
+    ]
+   },
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "eleanor": [
+     2.8,
+     -0.6
+    ],
+    "queen": false,
+    "critic": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "eleanor": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "August, nineteen oh one. Versailles, France. A sunny afternoon.",
+   "cap": "August 1901. Versailles, France. A sunny afternoon.",
+   "key": [
+    "FRANCE."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "eleanor": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You run a college at Oxford. Your friend Eleanor teaches there too.",
+   "key": [
+    "OXFORD."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "eleanor"
+   },
+   "act": {
+    "eleanor": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You look for the Petit Trianon. The queen's private retreat. You get lost.",
+   "key": [
+    "TRIANON."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You take a wrong turn. The air feels heavy. Gloomy.",
+   "key": [
+    "GLOOMY."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "You pass people in very old fashioned clothes. Nobody explains.",
+   "key": [
+    "CLOTHES."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "eleanor"
+   },
+   "act": {
+    "eleanor": {
+     "mood": "confused",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Then a lady sits sketching on the lawn. Big hat. Pale dress.",
+   "key": [
+    "SKETCHING"
+   ],
+   "place": {
+    "queen": [
+     -2.6,
+     -1.4
+    ],
+    "capy": false,
+    "eleanor": [
+     2.8,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "queen"
+   },
+   "act": {
+    "queen": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Later, you become convinced it was Marie Antoinette. Totally sure.",
+   "key": [
+    "ANTOINETTE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "She died over a century before your walk.",
+   "key": [
+    "CENTURY"
+   ],
+   "place": {
+    "capy": [
+     -0.6,
+     1.4
+    ],
+    "you": [
+     1.2,
+     0.6
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "queen"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "queen": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Ten years later, you two publish a book. An Adventure. Bestseller incoming.",
+   "key": [
+    "ADVENTURE."
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "AN ADVENTURE",
+     "1911"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     -0.6
+    ],
+    "eleanor": [
+     2.6,
+     -0.8
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "queen": false,
+    "critic": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "eleanor": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "you"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You use fake names. Sensible.",
+   "key": [
+    "FAKE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The book is a hit. Readers argue about time slips.",
+   "key": [
+    "SLIPS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "you",
+    "with": "eleanor"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "eleanor"
+    },
+    "eleanor": {
+     "mood": "happy",
+     "action": "cheer"
+    }
+   }
+  },
+  {
+   "text": "Two respected academics. Visiting the eighteenth century by accident.",
+   "key": [
+    "ACCIDENT."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then the critics arrive.",
+   "key": [
+    "CRITICS"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "THE",
+     "CRITICS"
+    ]
+   },
+   "place": {
+    "critic": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "eleanor": false,
+    "queen": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "critic"
+   },
+   "act": {
+    "critic": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your details shift between versions of the story. Lots of them.",
+   "key": [
+    "SHIFT"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "critic"
+   },
+   "act": {
+    "critic": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Later, a historian offers a simpler answer. Much simpler.",
+   "key": [
+    "SIMPLER"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "critic"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "critic": {
+     "mood": "smug",
+     "action": "point",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A French poet hosted costume parties near there.",
+   "key": [
+    "COSTUME"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "critic"
+   },
+   "act": {
+    "critic": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Old style clothes. Fancy hats. Maybe a sketching guest. Very plausible.",
+   "key": [
+    "GUEST."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "critic"
+   },
+   "act": {
+    "critic": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So your ghosts may have been partygoers. In costume.",
+   "key": [
+    "PARTYGOERS."
+   ],
+   "set": "temple",
+   "setOpts": {
+    "boardText": [
+     "GHOSTS",
+     "OR GUESTS?"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "eleanor": [
+     2.6,
+     -0.6
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "queen": false,
+    "critic": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "shrug"
+    },
+    "eleanor": {
+     "mood": "confused",
+     "action": "shrug"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Nobody has proved it either way. Over a century later. Still debated.",
+   "key": [
+    "CENTURY"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Time slip or costume party? Pick one.",
+   "key": [
+    "TIME",
+    "PARTY?"
+   ],
+   "board": [
+    "TIME SLIP",
+    "OR PARTY?"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Moberly-Jourdain incident",
+   "url": "https://en.wikipedia.org/wiki/Moberly%E2%80%93Jourdain_incident"
+  },
+  {
+   "title": "Public Domain Review: A haunting encounter in the gardens of Versailles",
+   "url": "https://publicdomainreview.org/collection/an-adventure/"
+  },
+  {
+   "title": "Atlas Obscura: The respected Oxford professors who say they time traveled",
+   "url": "https://www.atlasobscura.com/articles/time-travel-oxford-versailles"
+  },
+  {
+   "title": "Museum of Hoaxes: The Petit Trianon",
+   "url": "https://hoaxes.org/versailles.html"
+  },
+  {
+   "title": "Wikipedia: Petit Trianon",
+   "url": "https://en.wikipedia.org/wiki/Petit_Trianon"
+  },
+  {
+   "title": "Historic Mysteries: The Moberly-Jourdain incident",
+   "url": "https://www.historicmysteries.com/?p=40144"
+  },
+  {
+   "title": "Discovery UK: The Moberly-Jourdain incident",
+   "url": "https://www.discoveryuk.com/?p=23544220"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In August 1901 two women visited Versailles",
+   "terms": [
+    "1901",
+    "Versailles"
+   ]
+  },
+  {
+   "claim": "They were Oxford academics, Charlotte Moberly and Eleanor Jourdain",
+   "terms": [
+    "Moberly",
+    "Jourdain"
+   ]
+  },
+  {
+   "claim": "Moberly ran St Hugh's College at Oxford",
+   "terms": [
+    "St Hugh|Oxford"
+   ]
+  },
+  {
+   "claim": "They looked for the Petit Trianon",
+   "terms": [
+    "Petit Trianon"
+   ]
+  },
+  {
+   "claim": "They felt oppression and gloom",
+   "terms": [
+    "oppress|depress|gloom"
+   ]
+  },
+  {
+   "claim": "They saw people in old-fashioned dress",
+   "terms": [
+    "dress|costume"
+   ]
+  },
+  {
+   "claim": "They saw a lady sketching on the lawn",
+   "terms": [
+    "sketching"
+   ]
+  },
+  {
+   "claim": "Moberly believed the lady was Marie Antoinette",
+   "terms": [
+    "Marie Antoinette"
+   ]
+  },
+  {
+   "claim": "They published An Adventure in 1911",
+   "terms": [
+    "An Adventure",
+    "1911"
+   ]
+  },
+  {
+   "claim": "They used pseudonyms",
+   "terms": [
+    "pseudonym"
+   ]
+  },
+  {
+   "claim": "Critics noted inconsistencies between accounts",
+   "terms": [
+    "inconsisten|discrepanc|changes"
+   ]
+  },
+  {
+   "claim": "A later explanation was a costume party held by the poet Montesquiou",
+   "terms": [
+    "Montesquiou"
+   ]
+  }
+ ]
+}
