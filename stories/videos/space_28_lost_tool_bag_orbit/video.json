@@ -473,9 +473,9 @@
    }
   },
   {
-   "text": "With good binoculars you can see it pass. At night.",
+   "text": "Amateur skywatchers can spot it. Even with binoculars. From their backyards.",
    "key": [
-    "BINOCULARS,"
+    "BINOCULARS."
    ],
    "place": {
     "fan2": false,
@@ -685,7 +685,7 @@
   {
    "claim": "In November 2008, Endeavour was docked at the station on STS-126",
    "terms": [
-    "Endeavour",
+    "Endeavour|Endeavor",
     "2008"
    ]
   },
@@ -734,9 +734,10 @@
    ]
   },
   {
-   "claim": "People on Earth could see it with binoculars",
+   "claim": "Amateur skywatchers spotted it, some with binoculars",
    "terms": [
-    "binoculars"
+    "skywatchers|observers|amateur",
+    "spot|see|observ"
    ]
   },
   {

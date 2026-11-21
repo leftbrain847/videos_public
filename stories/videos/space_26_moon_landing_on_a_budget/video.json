@@ -445,15 +445,15 @@
    }
   },
   {
-   "text": "A little rover, Pragyan, rolls out. It confirms sulfur in the soil. Science, delivered.",
+   "text": "A little rover, Pragyan, rolls out. It studies the soil. Science, delivered. Fresh.",
    "key": [
-    "SULFUR"
+    "SOIL."
    ],
    "set": "space",
    "setOpts": {
     "boardText": [
      "PRAGYAN:",
-     "SULFUR FOUND"
+     "ROVING"
     ]
    },
    "place": {
@@ -479,14 +479,13 @@
    }
   },
   {
-   "text": "Then Vikram does a little hop. About forty centimeters. Just to show off.",
-   "cap": "Then Vikram does a little hop. About 40 cm. Just to show off.",
+   "text": "Second try. Total redemption. Just a little showing off. Deserved.",
    "key": [
-    "HOP."
+    "REDEMPTION."
    ],
    "board": [
-    "HOP TEST",
-    "~40 CM"
+    "SECOND TRY",
+    "SUCCESS"
    ],
    "shot": {
     "type": "low",
@@ -534,7 +533,7 @@
    }
   },
   {
-   "text": "Now the best part. The price. Brace yourself.",
+   "text": "Now the best part. The price. Brace yourself. Seriously.",
    "key": [
     "PRICE."
    ],
@@ -595,13 +594,13 @@
    }
   },
   {
-   "text": "The movie Interstellar cost over twice that. To film.",
+   "text": "The space movie Interstellar? It cost more. Just to film.",
    "key": [
-    "INTERSTELLAR"
+    "INTERSTELLAR?"
    ],
    "board": [
     "INTERSTELLAR",
-    "~$165M"
+    "COST MORE"
    ],
    "place": {
     "capy": [
@@ -730,6 +729,18 @@
    "url": "https://en.wikipedia.org/wiki/Chandrayaan-2"
   },
   {
+   "title": "Tribune India: less than Christopher Nolan's film",
+   "url": "https://www.tribuneindia.com/news/nation/less-than-christopher-nolans-film-x-users-gasp-at-chandrayaan-3s-low-budget-537670"
+  },
+  {
+   "title": "IBTimes UK: Chandrayaan-3 had less budget than Interstellar",
+   "url": "https://www.ibtimes.co.uk/elon-musk-reacts-chandrayaan-3-having-less-budget-interstellar-1718774"
+  },
+  {
+   "title": "ARY News: Chandrayaan-3 budget was less than Interstellar",
+   "url": "https://arynews.tv/chandrayaan-3-space-mission-budget-was-less-than-interstellar-film"
+  },
+  {
    "title": "Wikipedia: Luna 25",
    "url": "https://en.wikipedia.org/wiki/Luna_25"
   }
@@ -783,17 +794,10 @@
    ]
   },
   {
-   "claim": "The Pragyan rover confirmed sulfur",
+   "claim": "The Pragyan rover explored the surface",
    "terms": [
     "Pragyan",
-    "sulfur|sulphur"
-   ]
-  },
-  {
-   "claim": "Vikram did a hop test of about 40 cm",
-   "terms": [
-    "hop",
-    "40"
+    "rover"
    ]
   },
   {
@@ -803,10 +807,10 @@
    ]
   },
   {
-   "claim": "Interstellar cost about $165 million to make",
+   "claim": "The mission cost less than the film Interstellar",
    "terms": [
     "Interstellar",
-    "165"
+    "less|budget|cost"
    ]
   }
  ]

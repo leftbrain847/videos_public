@@ -397,7 +397,7 @@
    }
   },
   {
-   "text": "Overnight, the team in Houston gets creative. Very creative.",
+   "text": "Back in Houston, the team gets creative. Very creative.",
    "key": [
     "CREATIVE."
    ],
@@ -756,7 +756,7 @@
    "claim": "Dark dust absorbs sunlight and causes overheating",
    "terms": [
     "dust",
-    "heat"
+    "heat|temperature|overheat|absorb"
    ]
   },
   {
@@ -773,9 +773,10 @@
    ]
   },
   {
-   "claim": "Overnight, the team in Houston worked out a fix",
+   "claim": "Engineers on the ground worked out a fix",
    "terms": [
-    "overnight|night"
+    "fender",
+    "Houston|engineers|ground|Mission Control"
    ]
   },
   {
