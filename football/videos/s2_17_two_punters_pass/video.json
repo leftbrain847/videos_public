@@ -1,10 +1,11 @@
 {
  "id": "s2_17_two_punters_pass",
  "title": "Both punters threw a pass",
- "set": "locker",
+ "set": "field",
  "setOpts": {
   "boardText": [
-   "FAKE?"
+   "DET",
+   "MIA"
   ]
  },
  "cast": {
@@ -77,19 +78,43 @@
     "glasses": true
    },
    "at": "desk"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#008e97",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "This month, both punters in the same NFL game completed a pass.",
+   "text": "You're the punter. You throw a pass instead. Bold.",
    "key": [
-    "BOTH"
+    "PASS"
    ],
+   "speaker": "capy",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "DET",
+     "MIA"
+    ]
+   },
    "place": {
+    "fox": [
+     0.2,
+     0
+    ],
+    "martin": false,
     "pinion": false,
     "allen": false,
     "host": false,
-    "martin": false,
+    "fan": false,
     "capy": [
      -2.4,
      0.8
@@ -111,239 +136,489 @@
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Lions at Dolphins. Second quarter. Fourth and seven.",
-   "cap": "Lions at Dolphins. 2nd quarter. 4th and 7.",
+   "text": "Same game, the other punter does too. Seriously.",
    "key": [
-    "7."
+    "TOO."
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "LIONS",
-     "DOLPHINS"
-    ]
-   },
+   "board": [
+    "PUNTERS",
+    "2 PASSES"
+   ],
    "place": {
-    "fox": "center",
-    "martin": "right"
+    "fox": [
+     -1.4,
+     0
+    ],
+    "martin": false,
+    "pinion": [
+     1.4,
+     0
+    ],
+    "allen": false,
+    "host": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "wide",
-    "on": "fox"
+    "on": "fox",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
    },
    "act": {
     "fox": {
      "mood": "neutral",
-     "action": "hold"
+     "action": "hold",
+     "look": "pinion"
     },
-    "martin": {
-     "mood": "neutral"
+    "pinion": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "fox"
     }
    }
   },
   {
-   "text": "Detroit's punter, Jack Fox, takes the snap. And throws.",
+   "text": "Week nine. Detroit Lions at Miami. Road game.",
+   "cap": "Week 9. Detroit Lions at Miami. Road game.",
    "key": [
-    "THROWS."
+    "MIAMI."
    ],
+   "board": [
+    "WEEK 9",
+    "DET AT MIA"
+   ],
+   "place": {
+    "fox": [
+     0,
+     0
+    ],
+    "martin": false,
+    "pinion": false,
+    "allen": false,
+    "host": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
     "type": "low",
     "on": "fox"
    },
    "act": {
     "fox": {
-     "mood": "smug",
-     "action": "throw",
-     "look": "martin"
-    }
-   }
-  },
-  {
-   "text": "Tay Martin catches it. First down.",
-   "key": [
-    "FIRST"
-   ],
-   "shot": {
-    "type": "medium",
-    "on": "martin"
-   },
-   "act": {
-    "martin": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "fox": {
-     "mood": "happy",
-     "action": "point",
-     "look": "martin"
-    }
-   }
-  },
-  {
-   "text": "Fox was a quarterback in high school. Eighteen touchdown passes as a senior.",
-   "cap": "Fox was a quarterback in high school. 18 touchdown passes as a senior.",
-   "key": [
-    "18"
-   ],
-   "place": {
-    "capy": [
-     -2.4,
-     0.8
-    ]
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "fox"
-   },
-   "act": {
-    "capy": {
-     "mood": "smug",
-     "action": "point",
-     "look": "fox"
-    },
-    "fox": {
-     "mood": "smug",
-     "action": "cross",
-     "look": "camera"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "His career passing line now: five of six.",
-   "cap": "His career passing line now: 5 of 6.",
-   "key": [
-    "5"
-   ],
-   "place": {
-    "capy": false
-   },
-   "shot": {
-    "type": "close",
-    "on": "fox"
-   },
-   "act": {
-    "fox": {
-     "mood": "happy",
+     "mood": "neutral",
      "action": "idle",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Fourth quarter. Miami faces fourth and three near midfield.",
-   "cap": "4th quarter. Miami faces 4th and 3 near midfield.",
+   "text": "Second quarter. Fourth and seven. Lions punt team.",
+   "cap": "Second quarter. Fourth and 7. Lions punt team.",
    "key": [
-    "3"
+    "7."
    ],
+   "board": [
+    "4TH & 7",
+    "DET PUNT"
+   ],
+   "speaker": "capy",
+   "place": {
+    "fox": [
+     1.6,
+     0
+    ],
+    "martin": false,
+    "pinion": false,
+    "allen": false,
+    "host": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fox": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Jack Fox takes the snap. He throws.",
+   "key": [
+    "THROWS."
+   ],
+   "act": {},
    "set": "field",
    "setOpts": {
     "boardText": [
-     "LIONS",
-     "DOLPHINS"
-    ]
-   },
-   "place": {
-    "pinion": "center",
-    "allen": "right"
-   },
-   "shot": {
-    "type": "wide",
-    "on": "pinion"
-   },
-   "act": {
-    "pinion": {
-     "mood": "neutral",
-     "action": "hold"
-    },
-    "allen": {
-     "mood": "neutral"
-    }
-   }
-  },
-  {
-   "text": "Dolphins punter Bradley Pinion takes the snap. And he throws too.",
-   "key": [
-    "TOO."
-   ],
-   "shot": {
-    "type": "low",
-    "on": "pinion"
-   },
-   "act": {
-    "pinion": {
-     "mood": "smug",
-     "action": "throw",
-     "look": "allen"
-    }
-   }
-  },
-  {
-   "text": "Running back Kaytron Allen is wide open. Forty six yards.",
-   "cap": "Running back Kaytron Allen is wide open. 46 yards.",
-   "key": [
-    "46"
-   ],
-   "shot": {
-    "type": "medium",
-    "on": "allen"
-   },
-   "act": {
-    "allen": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "pinion": {
-     "mood": "happy",
-     "action": "point",
-     "look": "allen"
-    }
-   }
-  },
-  {
-   "text": "That one turns into points: a Miami field goal.",
-   "key": [
-    "POINTS:"
-   ],
-   "shot": {
-    "type": "two",
-    "on": "pinion",
-    "with": "allen"
-   },
-   "act": {
-    "pinion": {
-     "mood": "happy",
-     "action": "clap"
-    },
-    "allen": {
-     "mood": "happy",
-     "action": "cheer"
-    }
-   }
-  },
-  {
-   "text": "Detroit's fake? That drive ended in a punt. A real one.",
-   "key": [
-    "REAL"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "FAKE 1:",
-     "PUNT"
-    ]
-   },
-   "place": {
-    "capy": [
-     -2.2,
-     0.8
+     "4TH & 7",
+     "DET PUNT"
     ],
-    "fox": "center"
+    "endZone": 45,
+    "zoneA": "#008e97",
+    "zoneB": "#0076b6"
+   },
+   "place": {
+    "capy": false,
+    "pinion": false,
+    "allen": false,
+    "host": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "fox",
+    "lead": 0
+   },
+   "play": {
+    "cast": {
+     "fox": {
+      "path": [
+       [
+        0.0,
+        -14.0,
+        0.0
+       ],
+       [
+        0.053,
+        -13.97,
+        0.0
+       ],
+       [
+        0.105,
+        -13.95,
+        0.0
+       ],
+       [
+        0.158,
+        -13.92,
+        0.0
+       ],
+       [
+        0.211,
+        -13.89,
+        0.0
+       ],
+       [
+        0.263,
+        -13.87,
+        0.0
+       ],
+       [
+        0.316,
+        -13.84,
+        0.0
+       ],
+       [
+        0.368,
+        -13.82,
+        0.0
+       ],
+       [
+        0.421,
+        -13.79,
+        0.0
+       ],
+       [
+        0.474,
+        -13.76,
+        0.0
+       ],
+       [
+        0.526,
+        -13.74,
+        0.0
+       ],
+       [
+        0.579,
+        -13.71,
+        0.0
+       ],
+       [
+        0.632,
+        -13.68,
+        0.0
+       ],
+       [
+        0.684,
+        -13.66,
+        0.0
+       ],
+       [
+        0.737,
+        -13.63,
+        0.0
+       ],
+       [
+        0.789,
+        -13.61,
+        0.0
+       ],
+       [
+        0.842,
+        -13.58,
+        0.0
+       ],
+       [
+        0.895,
+        -13.55,
+        0.0
+       ],
+       [
+        0.947,
+        -13.53,
+        0.0
+       ],
+       [
+        1.0,
+        -13.5,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.205,
+        "catch"
+       ],
+       [
+        0.445,
+        "throw"
+       ]
+      ],
+      "face": 90
+     },
+     "martin": {
+      "path": [
+       [
+        0.0,
+        2.0,
+        4.4
+       ],
+       [
+        0.053,
+        2.5,
+        4.29
+       ],
+       [
+        0.107,
+        3.0,
+        4.18
+       ],
+       [
+        0.16,
+        3.5,
+        4.06
+       ],
+       [
+        0.214,
+        4.0,
+        3.95
+       ],
+       [
+        0.267,
+        4.5,
+        3.84
+       ],
+       [
+        0.321,
+        5.0,
+        3.73
+       ],
+       [
+        0.374,
+        5.5,
+        3.61
+       ],
+       [
+        0.427,
+        6.0,
+        3.5
+       ],
+       [
+        0.481,
+        6.5,
+        3.39
+       ],
+       [
+        0.534,
+        7.0,
+        3.28
+       ],
+       [
+        0.588,
+        7.5,
+        3.16
+       ],
+       [
+        0.641,
+        8.0,
+        3.05
+       ],
+       [
+        0.695,
+        8.5,
+        2.94
+       ],
+       [
+        0.748,
+        9.0,
+        2.83
+       ],
+       [
+        0.802,
+        9.5,
+        2.71
+       ],
+       [
+        0.855,
+        10.0,
+        2.6
+       ],
+       [
+        0.927,
+        10.75,
+        2.6
+       ],
+       [
+        1.0,
+        11.5,
+        2.6
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.855,
+        "catch"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      [
+       0,
+       0,
+       0.6,
+       0
+      ],
+      [
+       0.205,
+       -13.8,
+       1.3,
+       0
+      ]
+     ],
+     [
+      [
+       0.513,
+       -13.6,
+       1.7,
+       0
+      ],
+      [
+       0.684,
+       -2,
+       4.2,
+       1.3
+      ],
+      [
+       0.855,
+       10,
+       1.5,
+       2.6
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0.205,
+      "fox"
+     ],
+     [
+      0.855,
+      "martin"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Tay Martin catches it. First down. Drive alive.",
+   "key": [
+    "FIRST"
+   ],
+   "place": {
+    "fox": false,
+    "martin": [
+     0,
+     0
+    ],
+    "pinion": false,
+    "allen": false,
+    "host": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "martin"
+   },
+   "act": {
+    "martin": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A punter, completing passes. Rare, but fine.",
+   "key": [
+    "RARE,"
+   ],
+   "speaker": "capy",
+   "place": {
+    "fox": [
+     1.6,
+     0
+    ],
+    "martin": false,
+    "pinion": false,
+    "allen": false,
+    "host": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
    },
    "shot": {
     "type": "two",
@@ -352,51 +627,902 @@
    },
    "act": {
     "capy": {
-     "mood": "smug",
+     "mood": "neutral",
      "action": "shrug",
      "look": "camera"
     },
     "fox": {
-     "mood": "sad",
-     "action": "slump"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "Still, Detroit won the game, nineteen to nine.",
-   "cap": "Still, Detroit won the game, 19 to 9.",
-   "key": [
-    "19"
-   ],
-   "place": {
-    "capy": false
-   },
-   "shot": {
-    "type": "medium",
-    "on": "fox"
-   },
-   "act": {
-    "fox": {
      "mood": "happy",
-     "action": "cheer"
+     "action": "idle",
+     "look": "capy"
     }
    }
   },
   {
-   "text": "RedZone host Scott Hanson called it the first game in league history where both punters completed a pass.",
+   "text": "Fourth quarter. Miami faces fourth and three. Punt team out.",
+   "cap": "Fourth quarter. Miami faces fourth and 3. Punt team out.",
    "key": [
-    "HISTORY."
+    "3."
+   ],
+   "board": [
+    "4TH & 3",
+    "MIA PUNT"
+   ],
+   "place": {
+    "fox": false,
+    "martin": false,
+    "pinion": [
+     0,
+     0
+    ],
+    "allen": false,
+    "host": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "pinion"
+   },
+   "act": {
+    "pinion": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Bradley Pinion takes the snap. He throws too.",
+   "key": [
+    "TOO."
+   ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "4TH & 3",
+     "MIA PUNT"
+    ],
+    "endZone": 45,
+    "zoneA": "#008e97",
+    "zoneB": "#0076b6"
+   },
+   "place": {
+    "capy": false,
+    "fox": false,
+    "martin": false,
+    "host": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "pinion",
+    "lead": 0
+   },
+   "play": {
+    "cast": {
+     "pinion": {
+      "path": [
+       [
+        0.0,
+        14.0,
+        0.0
+       ],
+       [
+        0.045,
+        13.98,
+        0.0
+       ],
+       [
+        0.091,
+        13.95,
+        0.0
+       ],
+       [
+        0.136,
+        13.93,
+        0.0
+       ],
+       [
+        0.182,
+        13.91,
+        0.0
+       ],
+       [
+        0.227,
+        13.89,
+        0.0
+       ],
+       [
+        0.273,
+        13.86,
+        0.0
+       ],
+       [
+        0.318,
+        13.84,
+        0.0
+       ],
+       [
+        0.364,
+        13.82,
+        0.0
+       ],
+       [
+        0.409,
+        13.8,
+        0.0
+       ],
+       [
+        0.455,
+        13.77,
+        0.0
+       ],
+       [
+        0.5,
+        13.75,
+        0.0
+       ],
+       [
+        0.545,
+        13.73,
+        0.0
+       ],
+       [
+        0.591,
+        13.7,
+        0.0
+       ],
+       [
+        0.636,
+        13.68,
+        0.0
+       ],
+       [
+        0.682,
+        13.66,
+        0.0
+       ],
+       [
+        0.727,
+        13.64,
+        0.0
+       ],
+       [
+        0.773,
+        13.61,
+        0.0
+       ],
+       [
+        0.818,
+        13.59,
+        0.0
+       ],
+       [
+        0.864,
+        13.57,
+        0.0
+       ],
+       [
+        0.909,
+        13.55,
+        0.0
+       ],
+       [
+        0.955,
+        13.52,
+        0.0
+       ],
+       [
+        1.0,
+        13.5,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.18,
+        "catch"
+       ],
+       [
+        0.389,
+        "throw"
+       ]
+      ],
+      "face": -90
+     },
+     "allen": {
+      "path": [
+       [
+        0.0,
+        6.0,
+        3.5
+       ],
+       [
+        0.045,
+        5.09,
+        3.48
+       ],
+       [
+        0.091,
+        4.18,
+        3.45
+       ],
+       [
+        0.136,
+        3.27,
+        3.43
+       ],
+       [
+        0.182,
+        2.36,
+        3.41
+       ],
+       [
+        0.227,
+        1.45,
+        3.39
+       ],
+       [
+        0.273,
+        0.55,
+        3.36
+       ],
+       [
+        0.318,
+        -0.36,
+        3.34
+       ],
+       [
+        0.364,
+        -1.27,
+        3.32
+       ],
+       [
+        0.409,
+        -2.18,
+        3.3
+       ],
+       [
+        0.455,
+        -3.09,
+        3.27
+       ],
+       [
+        0.5,
+        -4.0,
+        3.25
+       ],
+       [
+        0.545,
+        -4.91,
+        3.23
+       ],
+       [
+        0.591,
+        -5.82,
+        3.2
+       ],
+       [
+        0.636,
+        -6.73,
+        3.18
+       ],
+       [
+        0.682,
+        -7.64,
+        3.16
+       ],
+       [
+        0.727,
+        -8.55,
+        3.14
+       ],
+       [
+        0.773,
+        -9.45,
+        3.11
+       ],
+       [
+        0.818,
+        -10.36,
+        3.09
+       ],
+       [
+        0.864,
+        -11.27,
+        3.07
+       ],
+       [
+        0.909,
+        -12.18,
+        3.05
+       ],
+       [
+        0.955,
+        -13.09,
+        3.02
+       ],
+       [
+        1.0,
+        -14,
+        3.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      [
+       0,
+       0,
+       0.6,
+       0
+      ],
+      [
+       0.18,
+       13.8,
+       1.3,
+       0
+      ]
+     ],
+     [
+      [
+       0.449,
+       13.6,
+       1.7,
+       0
+      ],
+      [
+       0.725,
+       0,
+       6,
+       1.5
+      ],
+      [
+       1,
+       -14,
+       3.2,
+       2.6
+      ]
+     ]
+    ],
+    "carry": [
+     [
+      0.18,
+      "pinion"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Kaytron Allen is wide open. Forty six yards. Nobody near him.",
+   "cap": "Kaytron Allen is wide open. 46 yards. Nobody near him.",
+   "key": [
+    "46"
+   ],
+   "act": {},
+   "place": {
+    "capy": false,
+    "fox": false,
+    "martin": false,
+    "host": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow",
+    "on": "allen"
+   },
+   "play": {
+    "cast": {
+     "allen": {
+      "path": [
+       [
+        0.0,
+        -14.0,
+        3.0
+       ],
+       [
+        0.034,
+        -15.0,
+        2.87
+       ],
+       [
+        0.068,
+        -16.0,
+        2.73
+       ],
+       [
+        0.102,
+        -17.0,
+        2.6
+       ],
+       [
+        0.133,
+        -18.15,
+        2.57
+       ],
+       [
+        0.164,
+        -19.3,
+        2.54
+       ],
+       [
+        0.194,
+        -20.45,
+        2.51
+       ],
+       [
+        0.225,
+        -21.6,
+        2.48
+       ],
+       [
+        0.256,
+        -22.75,
+        2.45
+       ],
+       [
+        0.286,
+        -23.9,
+        2.42
+       ],
+       [
+        0.317,
+        -25.05,
+        2.39
+       ],
+       [
+        0.348,
+        -26.2,
+        2.36
+       ],
+       [
+        0.378,
+        -27.35,
+        2.33
+       ],
+       [
+        0.409,
+        -28.5,
+        2.3
+       ],
+       [
+        0.44,
+        -29.65,
+        2.27
+       ],
+       [
+        0.47,
+        -30.8,
+        2.24
+       ],
+       [
+        0.501,
+        -31.95,
+        2.21
+       ],
+       [
+        0.532,
+        -33.1,
+        2.18
+       ],
+       [
+        0.562,
+        -34.25,
+        2.15
+       ],
+       [
+        0.593,
+        -35.4,
+        2.12
+       ],
+       [
+        0.624,
+        -36.55,
+        2.09
+       ],
+       [
+        0.655,
+        -37.7,
+        2.06
+       ],
+       [
+        0.685,
+        -38.85,
+        2.03
+       ],
+       [
+        0.716,
+        -40.0,
+        2.0
+       ],
+       [
+        0.747,
+        -40.22,
+        2.0
+       ],
+       [
+        0.779,
+        -40.44,
+        2.0
+       ],
+       [
+        0.811,
+        -40.67,
+        2.0
+       ],
+       [
+        0.842,
+        -40.89,
+        2.0
+       ],
+       [
+        0.874,
+        -41.11,
+        2.0
+       ],
+       [
+        0.905,
+        -41.33,
+        2.0
+       ],
+       [
+        0.937,
+        -41.56,
+        2.0
+       ],
+       [
+        0.968,
+        -41.78,
+        2.0
+       ],
+       [
+        1.0,
+        -42,
+        2.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.102,
+        "catch"
+       ],
+       [
+        0.133,
+        "run"
+       ],
+       [
+        0.716,
+        "cheer"
+       ]
+      ],
+      "face": -90
+     },
+     "pinion": {
+      "path": [
+       [
+        0.0,
+        13.5,
+        0.0
+       ],
+       [
+        0.031,
+        13.27,
+        -0.02
+       ],
+       [
+        0.062,
+        13.03,
+        -0.03
+       ],
+       [
+        0.094,
+        12.8,
+        -0.05
+       ],
+       [
+        0.125,
+        12.56,
+        -0.06
+       ],
+       [
+        0.156,
+        12.33,
+        -0.08
+       ],
+       [
+        0.188,
+        12.09,
+        -0.09
+       ],
+       [
+        0.219,
+        11.86,
+        -0.11
+       ],
+       [
+        0.25,
+        11.62,
+        -0.12
+       ],
+       [
+        0.281,
+        11.39,
+        -0.14
+       ],
+       [
+        0.312,
+        11.16,
+        -0.16
+       ],
+       [
+        0.344,
+        10.92,
+        -0.17
+       ],
+       [
+        0.375,
+        10.69,
+        -0.19
+       ],
+       [
+        0.406,
+        10.45,
+        -0.2
+       ],
+       [
+        0.438,
+        10.22,
+        -0.22
+       ],
+       [
+        0.469,
+        9.98,
+        -0.23
+       ],
+       [
+        0.5,
+        9.75,
+        -0.25
+       ],
+       [
+        0.531,
+        9.52,
+        -0.27
+       ],
+       [
+        0.562,
+        9.28,
+        -0.28
+       ],
+       [
+        0.594,
+        9.05,
+        -0.3
+       ],
+       [
+        0.625,
+        8.81,
+        -0.31
+       ],
+       [
+        0.656,
+        8.58,
+        -0.33
+       ],
+       [
+        0.688,
+        8.34,
+        -0.34
+       ],
+       [
+        0.719,
+        8.11,
+        -0.36
+       ],
+       [
+        0.75,
+        7.88,
+        -0.38
+       ],
+       [
+        0.781,
+        7.64,
+        -0.39
+       ],
+       [
+        0.812,
+        7.41,
+        -0.41
+       ],
+       [
+        0.844,
+        7.17,
+        -0.42
+       ],
+       [
+        0.875,
+        6.94,
+        -0.44
+       ],
+       [
+        0.906,
+        6.7,
+        -0.45
+       ],
+       [
+        0.938,
+        6.47,
+        -0.47
+       ],
+       [
+        0.969,
+        6.23,
+        -0.48
+       ],
+       [
+        1.0,
+        6,
+        -0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      0,
+      -14,
+      3.2,
+      2.6
+     ],
+     [
+      0.102,
+      -17,
+      1.4,
+      2.6
+     ]
+    ],
+    "carry": [
+     [
+      0.102,
+      "allen"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Miami turns it into a field goal. Three points.",
+   "key": [
+    "GOAL."
+   ],
+   "board": [
+    "MIA",
+    "FG"
+   ],
+   "place": {
+    "fox": false,
+    "martin": false,
+    "pinion": [
+     1.4,
+     0
+    ],
+    "allen": [
+     -1.2,
+     0
+    ],
+    "host": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "allen",
+    "with": "pinion"
+   },
+   "act": {
+    "allen": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "pinion"
+    },
+    "pinion": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "allen"
+    }
+   }
+  },
+  {
+   "text": "Two punters. Two completions. One game.",
+   "key": [
+    "ONE"
+   ],
+   "speaker": "capy",
+   "board": [
+    "PUNTERS",
+    "2 FOR 2"
+   ],
+   "place": {
+    "fox": [
+     1.6,
+     0
+    ],
+    "martin": false,
+    "pinion": false,
+    "allen": false,
+    "host": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "fox": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The last time that happened? Nineteen eighty one. Forty five years.",
+   "cap": "The last time that happened? 1981. 45 years.",
+   "key": [
+    "1981."
    ],
    "set": "office",
    "setOpts": {
     "boardText": [
-     "2 PUNTERS",
-     "2 PASSES"
+     "LAST TIME",
+     "1981"
     ]
    },
    "place": {
-    "host": "desk"
+    "fox": false,
+    "martin": false,
+    "pinion": false,
+    "allen": false,
+    "host": [
+     0.4,
+     0.6
+    ],
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "medium",
@@ -405,35 +1531,129 @@
    "act": {
     "host": {
      "mood": "shocked",
-     "action": "talk",
+     "action": "point",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Should punters throw more often? Yes or no?",
+   "text": "Detroit wins anyway, nineteen to nine. Everyone's happy. Mostly.",
+   "cap": "Detroit wins anyway, 19-9. Everyone's happy. Mostly.",
    "key": [
-    "PUNTERS"
+    "19-9."
    ],
    "set": "field",
+   "board": [
+    "DET 19",
+    "MIA 9"
+   ],
+   "place": {
+    "fox": [
+     -1.2,
+     0
+    ],
+    "martin": [
+     1.4,
+     0
+    ],
+    "pinion": false,
+    "allen": false,
+    "host": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "fox"
+   },
+   "act": {
+    "fox": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "martin": {
+     "mood": "happy",
+     "action": "celebrate",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Quarterbacks everywhere, feel free to worry. A little.",
+   "key": [
+    "WORRY."
+   ],
+   "speaker": "capy",
+   "set": "living",
    "setOpts": {
     "boardText": [
-     "PUNTERS:",
+     "PUNTERS",
      "2 FOR 2"
     ]
    },
    "place": {
+    "fox": false,
+    "martin": false,
+    "pinion": false,
+    "allen": false,
+    "host": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
     "capy": [
      -1.6,
-     1.0
-    ],
-    "pinion": "center",
-    "fox": "right"
+     3.6
+    ]
    },
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "pinion"
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Should punters throw more often? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "PUNTERS",
+    "THROW?"
+   ],
+   "place": {
+    "fox": false,
+    "martin": false,
+    "pinion": false,
+    "allen": false,
+    "host": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -441,40 +1661,112 @@
      "action": "talk",
      "look": "camera"
     },
-    "pinion": {
+    "fan": {
      "mood": "happy",
-     "action": "throw",
-     "look": "camera"
-    },
-    "fox": {
-     "mood": "happy",
-     "action": "wave",
-     "look": "camera"
+     "action": "idle",
+     "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
   {
-   "title": "SB Nation (Yahoo): Lions and Dolphins are trading successful fake punts in Week 9",
+   "title": "ESPN: Lions 19-9 Dolphins (Nov 8, 2026) game recap",
+   "url": "https://www.espn.com/nfl/recap/_/gameId/401873042"
+  },
+  {
+   "title": "Yahoo Sports: Lions overcome slow start to beat Dolphins, 19-9",
+   "url": "https://sports.yahoo.com/articles/lions-overcome-slow-start-beat-205054995.html"
+  },
+  {
+   "title": "Yahoo Sports: Lions and Dolphins punters pulled off a 45-year rarity",
+   "url": "https://sports.yahoo.com/articles/lions-dolphins-punters-pulled-off-230000193.html"
+  },
+  {
+   "title": "The Big Lead: Lions, Dolphins make NFL history not seen in 45 years",
+   "url": "https://www.thebiglead.com/lions-dolphins-punters-combine-nfl-history-week-9-2026/"
+  },
+  {
+   "title": "Yardbarker: NFL history made as Lions and Dolphins punters achieve feat not seen since 1981",
+   "url": "https://www.yardbarker.com/nfl/articles/nfl_history_made_as_lions_and_dolphins_punters_achieve_feat_not_seen_since_1981/s1_17664_44534130"
+  },
+  {
+   "title": "Yahoo Sports: Lions, Dolphins trading successful fakes",
    "url": "https://sports.yahoo.com/articles/lions-dolphins-trading-successful-fake-203128678.html"
   },
   {
-   "title": "A to Z Sports: The Dolphins' Week 9 loss to the Lions produced one of the most unlikely firsts in NFL history",
-   "url": "https://atozsports.com/?p=511730"
-  },
-  {
-   "title": "Detroit News (Yahoo): Watch: Lions execute fake punt against Dolphins to move chains",
+   "title": "Yahoo Sports: Watch Lions execute fake punt",
    "url": "https://sports.yahoo.com/articles/watch-lions-execute-fake-punt-190005131.html"
   },
   {
-   "title": "CBS Sports: Lions at Dolphins gametracker recap, Nov 8, 2026",
+   "title": "CBS Sports: Lions at Dolphins recap",
    "url": "https://cbssports.com/nfl/gametracker/recap/NFL_20261108_DET@MIA/"
   },
   {
-   "title": "Wikipedia: Jack Fox (American football)",
-   "url": "https://en.wikipedia.org/wiki/Jack_Fox_(American_football)"
+   "title": "A to Z Sports: Dolphins' Week 9 loss produced an unlikely first",
+   "url": "https://atozsports.com/nfl/miami-dolphins-news/the-miami-dolphins-week-9-loss-to-the-detroit-lions-produced-one-of-the-most-unlikely-firsts-in-nfl-history/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Both punters completed a pass in the same game",
+   "terms": [
+    "punter",
+    "pass"
+   ]
+  },
+  {
+   "claim": "It was Week 9, Lions at Dolphins",
+   "terms": [
+    "Week 9"
+   ]
+  },
+  {
+   "claim": "Jack Fox threw on fourth-and-7 in the second quarter",
+   "terms": [
+    "Fox",
+    "fourth"
+   ]
+  },
+  {
+   "claim": "Tay Martin caught Fox's pass for a first down",
+   "terms": [
+    "Martin"
+   ]
+  },
+  {
+   "claim": "Bradley Pinion threw a 46-yard pass to Kaytron Allen in the fourth quarter",
+   "terms": [
+    "Allen",
+    "46"
+   ]
+  },
+  {
+   "claim": "Pinion threw on fourth-and-3",
+   "terms": [
+    "Pinion",
+    "fourth"
+   ]
+  },
+  {
+   "claim": "The Dolphins turned it into a field goal",
+   "terms": [
+    "Pinion|fake",
+    "field goal"
+   ]
+  },
+  {
+   "claim": "It last happened in 1981, 45 years earlier",
+   "terms": [
+    "1981|45 years"
+   ]
+  },
+  {
+   "claim": "The Lions won 19-9",
+   "terms": [
+    "19-9"
+   ]
   }
  ]
 }
