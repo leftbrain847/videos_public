@@ -1,0 +1,871 @@
+{
+ "id": "myth_19_augean_stables",
+ "title": "Two rivers, no paycheck",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "ELIS"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "herc": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#7a4a2a",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24",
+    "sash": "#c0392b",
+    "beard": true
+   }
+  },
+  "aug": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#c46a3c",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "sash": "#e8b923",
+    "beard": true
+   },
+   "hold": "goldbar"
+  },
+  "eur": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#6a3f8e",
+    "pants": "#8a6d4b",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b",
+    "sash": "#e8b923"
+   },
+   "hold": "scroll"
+  }
+ },
+ "lines": [
+  {
+   "text": "You clean a giant stable in one day. Nobody pays you.",
+   "key": [
+    "PAYS"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "herc": [
+     1.2,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "herc"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "herc": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Heracles. This is labor number five.",
+   "cap": "You are Heracles. This is labor number 5.",
+   "key": [
+    "5."
+   ],
+   "board": [
+    "LABOR 5",
+    "THE STABLES"
+   ],
+   "place": {
+    "capy": false,
+    "herc": [
+     0,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "herc"
+   },
+   "act": {
+    "herc": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your task: clean the stables of King Augeas.",
+   "key": [
+    "AUGEAS."
+   ],
+   "place": {
+    "capy": false,
+    "herc": false,
+    "aug": false,
+    "eur": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eur"
+   },
+   "act": {
+    "eur": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He owns more cattle than anyone in Greece.",
+   "key": [
+    "CATTLE"
+   ],
+   "place": {
+    "capy": false,
+    "herc": false,
+    "aug": [
+     0,
+     0
+    ],
+    "eur": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "aug"
+   },
+   "act": {
+    "aug": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So many animals. One building. You see the problem.",
+   "key": [
+    "PROBLEM."
+   ],
+   "place": {
+    "capy": false,
+    "herc": [
+     0,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "herc"
+   },
+   "act": {
+    "herc": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nobody has cleaned those stables in thirty years.",
+   "cap": "Nobody has cleaned those stables in 30 years.",
+   "key": [
+    "30"
+   ],
+   "board": [
+    "LAST CLEANED",
+    "30 YEARS AGO"
+   ],
+   "place": {
+    "capy": false,
+    "herc": [
+     -1.3,
+     0.2
+    ],
+    "aug": [
+     1.3,
+     -0.2
+    ],
+    "eur": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "herc",
+    "with": "aug"
+   },
+   "act": {
+    "herc": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "aug": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "herc"
+    }
+   }
+  },
+  {
+   "text": "Thirty years. Try not to think about the smell.",
+   "cap": "30 years. Try not to think about the smell.",
+   "key": [
+    "SMELL."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "herc": false,
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You get one single day. That is the deadline.",
+   "key": [
+    "DAY."
+   ],
+   "board": [
+    "DEADLINE",
+    "1 DAY"
+   ],
+   "place": {
+    "capy": false,
+    "herc": false,
+    "aug": false,
+    "eur": [
+     0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eur"
+   },
+   "act": {
+    "eur": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You make Augeas a deal. Your fee: a tenth of his herd.",
+   "key": [
+    "TENTH"
+   ],
+   "place": {
+    "capy": false,
+    "herc": [
+     -1.3,
+     0.2
+    ],
+    "aug": [
+     1.3,
+     -0.2
+    ],
+    "eur": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "herc",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "herc": {
+     "mood": "smug",
+     "action": "point",
+     "look": "aug"
+    },
+    "aug": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "herc"
+    }
+   }
+  },
+  {
+   "text": "He laughs. He thinks it is impossible. He agrees.",
+   "key": [
+    "AGREES."
+   ],
+   "place": {
+    "capy": false,
+    "herc": false,
+    "aug": [
+     0,
+     0
+    ],
+    "eur": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "aug"
+   },
+   "act": {
+    "aug": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You do not pick up a shovel. You pick two rivers.",
+   "key": [
+    "RIVERS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "herc": [
+     1.2,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "herc",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "herc"
+    },
+    "herc": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The Alpheus. The Peneus. Both flow nearby.",
+   "key": [
+    "PENEUS."
+   ],
+   "speaker": "capy",
+   "board": [
+    "ALPHEUS",
+    "PENEUS"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "herc": [
+     1.2,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "herc"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "herc"
+    },
+    "herc": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You smash big holes in the stable walls.",
+   "key": [
+    "WALLS."
+   ],
+   "place": {
+    "capy": false,
+    "herc": [
+     0,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "herc"
+   },
+   "act": {
+    "herc": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "You send both rivers straight through the stables.",
+   "key": [
+    "THROUGH"
+   ],
+   "place": {
+    "capy": false,
+    "herc": [
+     0,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "herc"
+   },
+   "act": {
+    "herc": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The rivers do the work. You just watch.",
+   "key": [
+    "WATCH."
+   ],
+   "place": {
+    "capy": false,
+    "herc": [
+     0,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "high",
+    "on": "herc"
+   },
+   "act": {
+    "herc": {
+     "mood": "happy",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Thirty years of mess washes out. Done in a day.",
+   "cap": "30 years of mess washes out. Done in a day.",
+   "key": [
+    "DAY."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "herc": [
+     1.2,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "herc"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "herc": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "This is called engineering. Not elbow grease.",
+   "key": [
+    "ENGINEERING."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "herc": false,
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then Augeas learns the job was an order. So he refuses to pay.",
+   "key": [
+    "REFUSES"
+   ],
+   "board": [
+    "PAYMENT",
+    "DENIED"
+   ],
+   "place": {
+    "capy": false,
+    "herc": false,
+    "aug": [
+     0,
+     0
+    ],
+    "eur": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "aug"
+   },
+   "act": {
+    "aug": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then Eurystheus refuses to count the labor. You took pay.",
+   "key": [
+    "COUNT"
+   ],
+   "board": [
+    "LABOR 5",
+    "DOES NOT COUNT"
+   ],
+   "place": {
+    "capy": false,
+    "herc": [
+     1.3,
+     -0.2
+    ],
+    "aug": false,
+    "eur": [
+     -1.3,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "eur",
+    "with": "herc"
+   },
+   "act": {
+    "eur": {
+     "mood": "smug",
+     "action": "point",
+     "look": "herc"
+    },
+    "herc": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "eur"
+    }
+   }
+  },
+  {
+   "text": "No cattle. No credit. Very clean stables, though.",
+   "key": [
+    "CLEAN"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "herc": [
+     1.2,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "pan": [
+     1.3,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "herc": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That is why the labors end at twelve.",
+   "cap": "That is why the labors end at 12.",
+   "key": [
+    "12."
+   ],
+   "board": [
+    "LABORS",
+    "10 + 2"
+   ],
+   "place": {
+    "capy": false,
+    "herc": [
+     0,
+     0
+    ],
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "herc"
+   },
+   "act": {
+    "herc": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you take that deal? Yes or no? Bosses, please do not answer.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "TAKE THE DEAL?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "herc": false,
+    "aug": false,
+    "eur": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.4,
+     0,
+     0.6
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Augeas",
+   "url": "https://en.wikipedia.org/wiki/Augeas"
+  },
+  {
+   "title": "Wikipedia: Labours of Hercules",
+   "url": "https://en.wikipedia.org/wiki/Labours_of_Hercules"
+  },
+  {
+   "title": "Theoi: Apollodorus, Library 2",
+   "url": "https://www.theoi.com/Text/ApollodorusLibrary2.html"
+  },
+  {
+   "title": "Wikipedia: Alfeios",
+   "url": "https://en.wikipedia.org/wiki/Alfeios"
+  },
+  {
+   "title": "Wikipedia: Augean stables (idiom)",
+   "url": "https://en.wiktionary.org/wiki/Augean_stables"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Cleaning the stables of Augeas is Heracles' fifth labor",
+   "terms": [
+    "Augean|Augeas",
+    "fifth|5th"
+   ]
+  },
+  {
+   "claim": "Augeas owns more cattle than anyone in Greece",
+   "terms": [
+    "Augeas",
+    "cattle"
+   ]
+  },
+  {
+   "claim": "The stables had not been cleaned in thirty years",
+   "terms": [
+    "thirty years|30 years",
+    "cleaned"
+   ]
+  },
+  {
+   "claim": "He has to do it in one day",
+   "terms": [
+    "single day|one day"
+   ]
+  },
+  {
+   "claim": "Heracles asks Augeas for a tenth of his cattle",
+   "terms": [
+    "tenth",
+    "cattle"
+   ]
+  },
+  {
+   "claim": "He diverts the rivers Alpheus and Peneus",
+   "terms": [
+    "Alpheus|Alpheios|Alfeios",
+    "Peneus|Pineios|Peneios"
+   ]
+  },
+  {
+   "claim": "He breaks holes in the walls of the stables",
+   "terms": [
+    "wall|walls|foundations",
+    "rivers|river"
+   ]
+  },
+  {
+   "claim": "Augeas refuses to pay when he learns it was ordered by Eurystheus",
+   "terms": [
+    "Augeas",
+    "pay|payment|reward"
+   ]
+  },
+  {
+   "claim": "Eurystheus refuses to count the labor because Heracles was paid",
+   "terms": [
+    "Eurystheus",
+    "count|counted"
+   ]
+  },
+  {
+   "claim": "That is why there are twelve labors",
+   "terms": [
+    "twelve|12",
+    "labours|labors"
+   ]
+  }
+ ]
+}
