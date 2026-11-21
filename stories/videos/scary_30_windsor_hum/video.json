@@ -580,8 +580,8 @@
    "url": "https://sootoday.com/ontario-news/infamous-windsor-hum-finally-dies-down-after-us-steel-idles-zug-island-plant-2595164"
   },
   {
-   "title": "Maclean's: What's keeping Windsor awake at night",
-   "url": "https://macleans.ca/society/life/whats-keeping-windsor-awake-at-night/"
+   "title": "Wikipedia: Zug Island",
+   "url": "https://en.wikipedia.org/wiki/Zug_Island"
   }
  ],
  "voice": "v2",
@@ -632,7 +632,7 @@
   {
    "claim": "Researchers used sensors to locate it",
    "terms": [
-    "sensors|monitor"
+    "sensor|monitor|seismo|microphone|instrument|equipment|measur|record"
    ]
   },
   {

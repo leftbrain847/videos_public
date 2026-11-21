@@ -631,16 +631,16 @@
    "url": "https://www.euronews.com/2020/02/18/ghost-ship-why-did-this-vessel-wash-up-in-ireland-without-any-crew-aboard"
   },
   {
-   "title": "South China Morning Post: Ghost ship adrift since 2018 crashes ashore in Ireland",
-   "url": "https://www.scmp.com/news/world/europe/article/3051073/ghost-ship-adrift-2018-crashes-ashore-ireland-during-monster"
+   "title": "Business Insider: A 250-foot ghost ship washed up on the shore of Ireland",
+   "url": "https://www.businessinsider.in/thelife/news/a-250-foot-ghost-ship-washed-up-on-the-shore-of-ireland-after-going-missing-a-year-ago-over-1000-miles-away-heres-why-it-was-abandoned/articleshow/74233568.cms"
   },
   {
    "title": "MarineLink: Ghost ship washes up in Ireland",
    "url": "https://www.marinelink.com/news/ghost-ship-washes-ireland-475771"
   },
   {
-   "title": "AccuWeather: Ghost ship lands in one in a million place during Storm Dennis",
-   "url": "https://accuweather.com/en/weather-news/ghost-ship-lands-in-one-in-a-million-place-during-storm-dennis/682982"
+   "title": "Express Tribune: Ghost ship washes ashore in Ireland in Storm Dennis",
+   "url": "https://tribune.com.pk/story/2159305/ghost-ship-washes-ashore-ireland-storm-dennis"
   }
  ],
  "voice": "v2",
@@ -655,8 +655,8 @@
   {
    "claim": "It was a cargo ship with no one aboard",
    "terms": [
-    "cargo",
-    "crew"
+    "cargo|merchant|freighter|ship|vessel",
+    "crew|unmanned|abandoned|nobody|no one"
    ]
   },
   {
@@ -670,7 +670,7 @@
    "claim": "In 2018 the Alta became disabled in the Atlantic",
    "terms": [
     "2018",
-    "disabled"
+    "disab|broke|adrift|drift|engine|mechanical"
    ]
   },
   {

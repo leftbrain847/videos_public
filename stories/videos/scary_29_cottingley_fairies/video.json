@@ -714,7 +714,7 @@
   {
    "claim": "The fairies were paper cutouts copied from a children's book",
    "terms": [
-    "cut",
+    "cut|cutout|cardboard|paper",
     "book"
    ]
   },
