@@ -143,9 +143,9 @@
    }
   },
   {
-   "text": "Days before, you cut through the window bars. Then you glue them back.",
+   "text": "Days before, you prepare a window. Quietly. Carefully. Like a craftsman.",
    "key": [
-    "GLUE"
+    "PREPARE"
    ],
    "set": "haunted",
    "shot": {
@@ -164,9 +164,9 @@
    }
   },
   {
-   "text": "Nobody notices. The bars look perfect. Honestly, impressive craftsmanship.",
+   "text": "Nobody notices a thing. Honestly, impressive craftsmanship. Wasted on crime.",
    "key": [
-    "PERFECT."
+    "CRAFTSMANSHIP."
    ],
    "shot": {
     "type": "close",
@@ -225,7 +225,7 @@
    }
   },
   {
-   "text": "You pull out the bars. You climb inside.",
+   "text": "You open the window. You climb inside.",
    "key": [
     "INSIDE."
    ],
@@ -548,13 +548,6 @@
    ]
   },
   {
-   "claim": "They cut the window bars days before and glued them back",
-   "terms": [
-    "bars",
-    "glue"
-   ]
-  },
-  {
    "claim": "They set fire to a power box",
    "terms": [
     "fire",
@@ -576,7 +569,6 @@
   {
    "claim": "Guards saw them on camera and called police",
    "terms": [
-    "guards",
     "police"
    ]
   },

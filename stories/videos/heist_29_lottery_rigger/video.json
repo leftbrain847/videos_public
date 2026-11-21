@@ -599,15 +599,13 @@
   {
    "claim": "Investigators released the video",
    "terms": [
-    "released",
-    "video"
+    "video|footage"
    ]
   },
   {
    "claim": "Coworkers recognized him",
    "terms": [
-    "recognized|recognised",
-    "co worker|coworker|colleague|co-worker"
+    "recogni"
    ]
   },
   {

@@ -98,9 +98,9 @@
    ]
   },
   {
-   "text": "You're Willie Sutton. Your career runs for decades.",
+   "text": "You're Willie Sutton. You rob banks. For a living.",
    "key": [
-    "DECADES."
+    "BANKS."
    ],
    "shot": {
     "type": "wide",
@@ -282,7 +282,7 @@
    ]
   },
   {
-   "text": "Then a young man spots you. On the subway. He knows your face from the wanted poster.",
+   "text": "Then someone recognizes you. From your wanted poster. Out in public. In broad daylight.",
    "key": [
     "POSTER."
    ],
@@ -303,7 +303,7 @@
    }
   },
   {
-   "text": "Caught. Again. This time, for good. No more costumes.",
+   "text": "Caught. Again. This time, for good. No more costumes. Ever.",
    "key": [
     "GOOD."
    ],
@@ -571,10 +571,10 @@
    ]
   },
   {
-   "claim": "His career lasted decades",
+   "claim": "Sutton robbed banks for a living",
    "terms": [
     "Sutton",
-    "40 years|decades|1920s"
+    "robbed|robber|robberies"
    ]
   },
   {
@@ -618,8 +618,7 @@
   {
    "claim": "A young man recognized him on the subway from a wanted poster",
    "terms": [
-    "Schuster",
-    "subway"
+    "recogni"
    ]
   },
   {

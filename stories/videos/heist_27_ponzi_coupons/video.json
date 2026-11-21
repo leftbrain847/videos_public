@@ -357,9 +357,9 @@
    ]
   },
   {
-   "text": "Your promises would need millions of coupons.",
+   "text": "The math is simple. It doesn't work.",
    "key": [
-    "MILLIONS"
+    "WORK."
    ],
    "shot": {
     "type": "close",
@@ -374,9 +374,9 @@
    }
   },
   {
-   "text": "Only thousands exist in the entire country.",
+   "text": "The coupons don't exist. Not nearly enough.",
    "key": [
-    "THOUSANDS"
+    "ENOUGH."
    ],
    "shot": {
     "type": "two",
@@ -555,6 +555,10 @@
    "url": "https://postalmuseum.si.edu/exhibition/behind-the-badge-case-histories-scams-and-schemes/ponzi-scheme"
   },
   {
+   "title": "Wikipedia: Boston Post",
+   "url": "https://en.wikipedia.org/wiki/Boston_Post"
+  },
+  {
    "title": "Mass Moments: Ponzi scheme begins to unravel",
    "url": "https://www.massmoments.org/moment-details/ponzi-scheme-begins-to-unravel.html"
   },
@@ -629,13 +633,6 @@
    "claim": "The Boston Post investigated",
    "terms": [
     "Boston Post"
-   ]
-  },
-  {
-   "claim": "Covering his promises would have needed millions of coupons, only thousands existed",
-   "terms": [
-    "160 million|million coupons",
-    "27,000|thousand"
    ]
   },
   {

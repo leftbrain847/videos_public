@@ -145,9 +145,9 @@
    }
   },
   {
-   "text": "You tell her it's for a music video. She believes you.",
+   "text": "You tell her a cover story. She believes you. Why wouldn't she?",
    "key": [
-    "VIDEO."
+    "STORY."
    ],
    "shot": {
     "type": "two",
@@ -172,7 +172,7 @@
    }
   },
   {
-   "text": "She spends hours on you. Latex. Wrinkles. Gray hair.",
+   "text": "She spends hours on you. Wrinkles. Gray hair. A new face.",
    "key": [
     "WRINKLES."
    ],
@@ -430,7 +430,7 @@
    ]
   },
   {
-   "text": "The makeup artist? Innocent. She thought she was doing a music video.",
+   "text": "The makeup artist? Innocent. She had no idea.",
    "key": [
     "INNOCENT."
    ],
@@ -559,26 +559,13 @@
   {
    "claim": "It was in August 2009 on New Bond Street at Graff",
    "terms": [
-    "Graff",
-    "Bond Street"
+    "Graff"
    ]
   },
   {
    "claim": "They hired a professional makeup artist",
    "terms": [
     "make up artist|make-up artist|makeup artist"
-   ]
-  },
-  {
-   "claim": "She was told it was for a music video",
-   "terms": [
-    "music video"
-   ]
-  },
-  {
-   "claim": "The disguise used latex and prosthetics",
-   "terms": [
-    "latex|prosthetic"
    ]
   },
   {
