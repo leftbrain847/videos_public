@@ -2,7 +2,7 @@
 
 python3 compose.py <video_dir> --out <file.mp4>
 """
-import argparse, subprocess
+import argparse, json, subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -17,7 +17,8 @@ LAYOUT = {
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("video_dir"); ap.add_argument("--out", required=True)
     a = ap.parse_args()
-    b = Path(a.video_dir) / "build"; L = LAYOUT; pl = L["pill"]; d = L["divider"]
+    b = Path(a.video_dir) / "build"; L = dict(LAYOUT); pl = L["pill"]; d = L["divider"]
+    L["seconds"] = json.loads((b / "timing.json").read_text())["target_s"]   # 60 s shorts, 90 s story series
     font = ROOT / "fonts" / "Inter-Black.otf"
     vf = (f"[0:v][1:v]vstack=inputs=2[v];"
           f"[v]drawbox=x=0:y={L['size'][1] // 2 - d['h'] // 2}:w={L['size'][0]}:h={d['h']}:color={d['color']}:t=fill,"

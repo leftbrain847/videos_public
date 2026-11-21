@@ -10,8 +10,8 @@ import json, os, re, sys
 from pathlib import Path
 
 MAX = 20
-ID = re.compile(r"^s[1-4]_\d\d_[a-z0-9_]{1,60}$")
-TAG = re.compile(r"^football-batch-[0-9a-z-]{1,30}$")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import videos  # noqa: E402  id, folder and tag rules for every channel
 QUEUE = Path(__file__).resolve().parent.parent / "football" / "render_queue.json"
 
 
@@ -31,24 +31,26 @@ def settings(env=os.environ, queue=QUEUE):
     else:
         out = (env.get("VIDEOS", ""), env.get("TAG", ""), env.get("LISTEN", "true") == "true", env.get("REPLACE", "false") == "true", "render")
     vids, tag, listen, replace, mode = out
-    if tag and not TAG.fullmatch(tag):
+    if tag and not videos.tag_ok(tag):
         sys.exit("bad release tag")
     if mode not in ("render", "facts"):
         sys.exit("mode must be render or facts")
     return vids, tag, listen, replace, mode
 
 
-def plan(raw, videos=Path(__file__).resolve().parent.parent / "football" / "videos"):
+def plan(raw):
     ids = raw.split()
     if not ids:
         sys.exit("no video ids given")
     if len(ids) > MAX:
         sys.exit(f"{len(ids)} videos requested; max {MAX} per run")
-    every = sorted(p.name for p in videos.iterdir() if (p / "video.json").exists())
-    bad = [i for i in ids if not ID.fullmatch(i) or i not in every]
+    every = videos.all_ids()
+    bad = [i for i in ids if not videos.channel(i) or i not in every]
     if bad:
         sys.exit(f"unknown video ids: {bad}")
-    return [{"id": i, "index": every.index(i)} for i in dict.fromkeys(ids)]
+    # dir: the video folder relative to football/ (where engine/make.sh runs), e.g. videos/<id> or ../stories/videos/<id>
+    return [{"id": i, "index": every.index(i), "dir": "videos/" + i if videos.channel(i) == "football" else "../stories/videos/" + i}
+            for i in dict.fromkeys(ids)]
 
 
 if __name__ == "__main__":

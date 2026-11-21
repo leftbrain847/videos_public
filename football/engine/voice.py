@@ -12,7 +12,7 @@ RULES = {
     "max_sentence_words": 8,        # measured: 9+ words got a mid-sentence pause 57% of the time, 8 or fewer 9%
     "and_min_words": 4,             # "and" in a sentence this long joins two actions often enough to ban it outright
     "max_colons_per_line": 1,       # Kokoro always pauses at a colon: one deliberate beat at most
-    "max_speed": 1.06,              # narration must fit 60 s at this Kokoro speed or less (tts.py fails above it)
+    "max_speed": 1.06,              # narration must fit the video (60 s, or target_s) at this Kokoro speed or less
     # fit estimate for CI (no Kokoro there): af_heart at speed 1.0 speaks about this many letters a second.
     # Measured 2026-11-20 on 9 scripts at speed 1.0: 11.9-14.1 letters/s, median 13.5. 13.0 leans toward flagging long
     # scripts. tts.py is the real gate; this catches long scripts in CI before a render.
@@ -169,8 +169,9 @@ def lint_script(S):
     """Every speech-rule problem in a script: [(line number or 0, message)]."""
     out = [(i, m) for i, l in enumerate(S.get("lines", []), 1) for m in lint_text(l["text"])]
     est = estimate_s(S.get("lines", []), RULES["max_speed"])
-    if est > 60.0 - RULES["fit_margin_s"]:
-        out.append((0, f"narration won't fit 60 s at speed {RULES['max_speed']} (estimated {est:.1f} s). Cut words"))
+    T = float(S.get("target_s", 60.0))
+    if est > T - RULES["fit_margin_s"]:
+        out.append((0, f"narration won't fit {T:.0f} s at speed {RULES['max_speed']} (estimated {est:.1f} s). Cut words"))
     return out
 
 

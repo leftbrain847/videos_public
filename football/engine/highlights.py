@@ -97,6 +97,9 @@ def tracked(p, out):
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("video_dir"); ap.add_argument("--pool", default=str(Path(__file__).parent.parent / "gameplay")); ap.add_argument("--index", type=int, default=0)
     a = ap.parse_args()
+    tj = Path(a.video_dir) / "build" / "timing.json"
+    if tj.exists():
+        REEL["seconds"] = float(json.loads(tj.read_text())["target_s"])   # 60 s shorts, 90 s story series
     P = plays(a.pool)
     if not P:
         raise SystemExit(f"no plays in {a.pool}")
