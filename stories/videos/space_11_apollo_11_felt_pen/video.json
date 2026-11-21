@@ -1,0 +1,874 @@
+{
+ "id": "space_11_apollo_11_felt_pen",
+ "title": "The pen that got Apollo 11 home",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "EAGLE"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "neil": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#eef1f5",
+    "pants": "#eef1f5",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   }
+  },
+  "buzz": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#dfe6ee",
+    "pants": "#dfe6ee",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "ctl": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true,
+    "glasses": true
+   }
+  },
+  "bid": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You walk on the moon. Then your ride home breaks.",
+   "key": [
+    "BREAKS."
+   ],
+   "board": [
+    "ENGINE ARM",
+    "BREAKER: ???"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "neil": false,
+    "buzz": [
+     2.6,
+     -0.6
+    ],
+    "ctl": false,
+    "bid": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "buzz": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "July, nineteen sixty nine. Apollo eleven's lunar module is coming down.",
+   "cap": "July 1969. Apollo 11's lunar module is coming down.",
+   "key": [
+    "DOWN."
+   ],
+   "board": [
+    "APOLLO 11",
+    "JULY 1969"
+   ],
+   "place": {
+    "capy": false,
+    "neil": [
+     -1.5,
+     0.2
+    ],
+    "buzz": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "neil",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "neil": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "buzz": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "neil"
+    }
+   }
+  },
+  {
+   "text": "Its name is Eagle. Neil Armstrong is flying it.",
+   "key": [
+    "EAGLE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "neil",
+    "with": "buzz"
+   },
+   "act": {
+    "neil": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "buzz"
+    },
+    "buzz": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "neil"
+    }
+   }
+  },
+  {
+   "text": "Then the computer flashes an alarm. Twelve oh two.",
+   "cap": "Then the computer flashes an alarm. 1202.",
+   "key": [
+    "1202."
+   ],
+   "board": [
+    "ALARM",
+    "1202"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "buzz"
+   },
+   "act": {
+    "buzz": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "buzz"
+    }
+   },
+   "sfx": [
+    [
+     0.5,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "In Houston, a young engineer makes the call. Keep going.",
+   "key": [
+    "GOING."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "1202:",
+     "GO"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "neil": false,
+    "buzz": false,
+    "ctl": [
+     0,
+     0.4
+    ],
+    "bid": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Next problem? Picking a parking spot. On the moon.",
+   "key": [
+    "PARKING"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "PARKING",
+     "SPOT?"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "neil": [
+     -1.4,
+     0.2
+    ],
+    "buzz": [
+     1.4,
+     0.2
+    ],
+    "ctl": false,
+    "bid": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "neil"
+   },
+   "act": {
+    "neil": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "buzz": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "neil"
+    }
+   }
+  },
+  {
+   "text": "Nobody has ever done this. Everyone holds their breath.",
+   "key": [
+    "BREATH."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "neil"
+   },
+   "act": {
+    "neil": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    },
+    "buzz": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "neil"
+    }
+   }
+  },
+  {
+   "text": "Fuel is running out. Then: the Eagle has landed.",
+   "key": [
+    "LANDED."
+   ],
+   "board": [
+    "THE EAGLE",
+    "HAS LANDED"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "neil": [
+     1.4,
+     0.2
+    ],
+    "buzz": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "neil"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "neil"
+    },
+    "neil": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Footprints. A flag. History. Then they climb back inside.",
+   "key": [
+    "INSIDE."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Buzz Aldrin looks down. Something is lying on the floor.",
+   "key": [
+    "FLOOR."
+   ],
+   "place": {
+    "capy": false,
+    "neil": [
+     -2.4,
+     -0.4
+    ],
+    "buzz": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "buzz"
+   },
+   "act": {
+    "buzz": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "buzz"
+    }
+   }
+  },
+  {
+   "text": "It's the tip of a switch. A circuit breaker snapped off.",
+   "key": [
+    "SNAPPED"
+   ],
+   "board": [
+    "CIRCUIT",
+    "BREAKER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "buzz"
+   },
+   "act": {
+    "buzz": {
+     "mood": "shocked",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Not just any breaker. The one that arms the engine. For liftoff.",
+   "key": [
+    "LIFTOFF."
+   ],
+   "board": [
+    "ENGINE ARM",
+    "BROKEN"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "buzz": [
+     -2.6,
+     -0.6
+    ],
+    "neil": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "camera"
+    },
+    "buzz": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    },
+    "neil": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "No engine means no ride home.",
+   "key": [
+    "HOME."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A bulky backpack probably bumped it.",
+   "key": [
+    "BACKPACK"
+   ],
+   "place": {
+    "capy": false,
+    "buzz": [
+     0,
+     0.3
+    ],
+    "neil": [
+     2.4,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "buzz",
+    "offset": [
+     1.0,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "buzz": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "neil": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "buzz"
+    }
+   }
+  },
+  {
+   "text": "Aldrin doesn't want to poke it with metal. Too risky.",
+   "key": [
+    "METAL."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "buzz",
+    "offset": [
+     0.4,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "buzz": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So he grabs a felt tip pen. He jams it into the slot.",
+   "cap": "So he grabs a felt-tip pen. He jams it into the slot.",
+   "key": [
+    "FELT-TIP"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "buzz"
+   },
+   "act": {
+    "buzz": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Click. The breaker holds. Eagle lifts off the moon.",
+   "key": [
+    "LIFTS"
+   ],
+   "board": [
+    "LIFTOFF",
+    "PEN POWERED"
+   ],
+   "place": {
+    "buzz": [
+     -1.4,
+     0.2
+    ],
+    "neil": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "buzz",
+    "with": "neil"
+   },
+   "act": {
+    "buzz": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "neil"
+    },
+    "neil": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "buzz"
+    }
+   }
+  },
+  {
+   "text": "A billion dollar mission. Saved by office supplies.",
+   "key": [
+    "SUPPLIES."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "buzz": [
+     -2.6,
+     -0.6
+    ],
+    "neil": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "buzz": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Aldrin kept that pen for decades. In twenty twenty six, it went to auction.",
+   "cap": "Aldrin kept that pen for decades. In 2026, it went to auction.",
+   "key": [
+    "AUCTION."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "AUCTION",
+     "LOT: PEN"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "neil": false,
+    "buzz": false,
+    "ctl": false,
+    "bid": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "bid"
+   },
+   "act": {
+    "bid": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The price? Over eight hundred fifty thousand dollars.",
+   "cap": "The price? Over $850,000.",
+   "key": [
+    "$850,000."
+   ],
+   "board": [
+    "SOLD",
+    "$850,000+"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "bid": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bid"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "bid"
+    },
+    "bid": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Would you trust a marker to get home? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "TRUST A PEN?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "bid": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0.2,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "bid": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Apollo 11",
+   "url": "https://en.wikipedia.org/wiki/Apollo_11"
+  },
+  {
+   "title": "History.com: Buzz Aldrin's moon landing accident",
+   "url": "https://www.history.com/articles/buzz-aldrin-moon-landing-accident"
+  },
+  {
+   "title": "ABC News: 50 years later, the pen that saved Apollo 11",
+   "url": "https://abcnews.go.com/Politics/50-years-pen-saved-apollo-11/story?id=64228723"
+  },
+  {
+   "title": "Smithsonian Magazine: Aldrin's felt-tip pen sold for more than $850,000",
+   "url": "https://www.smithsonianmag.com/smart-news/buzz-aldrin-used-this-humble-felt-tip-pen-to-save-the-apollo-ii-astronauts-it-just-sold-for-more-than-850000-180989142/"
+  },
+  {
+   "title": "collectSPACE: Aldrin's Apollo 11 pen and switch at Sotheby's",
+   "url": "https://www.collectspace.com/news/news-071526a-buzz-aldrin-apollo-11-pen-switch-sothebys-auction.html"
+  },
+  {
+   "title": "ABC Action News: the pen that saved Apollo 11",
+   "url": "https://www.abcactionnews.com/news/apollo/50-years-later-the-pen-that-saved-apollo-11"
+  },
+  {
+   "title": "Gulf Today: Aldrin's felt-tip pen sells for $857,600",
+   "url": "https://www.gulftoday.ae/news/2026/07/16/buzz-aldrins-apollo-11-felt-tip-pen-sells-for-857600-at-auction"
+  },
+  {
+   "title": "All That's Interesting: Aldrin's pen sold for $850,000",
+   "url": "https://allthatsinteresting.com/buzz-aldrin-apollo-11-pen"
+  },
+  {
+   "title": "Galerie: Aldrin's Apollo 11 pen draws $857,600",
+   "url": "https://galeriemagazine.com/?p=244904"
+  },
+  {
+   "title": "NASA Apollo Lunar Surface Journal: the landing",
+   "url": "https://www.nasa.gov/history/alsj/a11/a11.landing.html"
+  },
+  {
+   "title": "Wikipedia: Apollo Guidance Computer",
+   "url": "https://en.wikipedia.org/wiki/Apollo_Guidance_Computer"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Apollo 11's lunar module, Eagle, landed in July 1969",
+   "terms": [
+    "Eagle",
+    "July",
+    "1969"
+   ]
+  },
+  {
+   "claim": "Neil Armstrong flew it",
+   "terms": [
+    "Armstrong"
+   ]
+  },
+  {
+   "claim": "The computer showed 1202 alarms",
+   "terms": [
+    "1202"
+   ]
+  },
+  {
+   "claim": "Young engineers in mission control made the call to keep going",
+   "terms": [
+    "Bales|Garman"
+   ]
+  },
+  {
+   "claim": "Fuel was running low; 'The Eagle has landed'",
+   "terms": [
+    "Eagle has landed"
+   ]
+  },
+  {
+   "claim": "Aldrin found a broken circuit breaker on the floor",
+   "terms": [
+    "circuit breaker",
+    "Aldrin"
+   ]
+  },
+  {
+   "claim": "It was the breaker that armed the ascent engine",
+   "terms": [
+    "circuit breaker",
+    "engine"
+   ]
+  },
+  {
+   "claim": "A backpack likely bumped it",
+   "terms": [
+    "backpack"
+   ]
+  },
+  {
+   "claim": "Aldrin avoided using metal",
+   "terms": [
+    "metal|conductive"
+   ]
+  },
+  {
+   "claim": "He used a felt-tip pen to push it in",
+   "terms": [
+    "felt",
+    "pen"
+   ]
+  },
+  {
+   "claim": "The lunar module lifted off",
+   "terms": [
+    "lift|liftoff|ascent"
+   ]
+  },
+  {
+   "claim": "Aldrin kept the pen; it sold at auction in 2026 for more than $850,000",
+   "terms": [
+    "857,600|850,000|850000"
+   ]
+  }
+ ]
+}
