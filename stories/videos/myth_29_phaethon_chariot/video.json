@@ -760,16 +760,16 @@
    "url": "https://www.theoi.com/Text/OvidMetamorphoses2.html"
   },
   {
-   "title": "Perseids: Ovid, Metamorphoses 2.1-2.400 (More translation)",
-   "url": "https://fgh.perseids.org/read/latinLit/phi0959/phi006/perseus-eng3/2.1-2.400"
+   "title": "University of Virginia: Ovid, Metamorphoses Book II (A. S. Kline)",
+   "url": "https://ovid.lib.virginia.edu/trans/Metamorph2.htm"
   },
   {
    "title": "Wikipedia: Helios",
    "url": "https://en.wikipedia.org/wiki/Helios"
   },
   {
-   "title": "GreekMythology.com: Phaethon",
-   "url": "https://www.greekmythology.com/Myths/Mortals/Phaethon/phaethon.html"
+   "title": "MIT Internet Classics Archive: Ovid, Metamorphoses Book II",
+   "url": "https://classics.mit.edu/Ovid/metam.2.second.html"
   },
   {
    "title": "Wikipedia: Eridanos (mythology)",
@@ -801,8 +801,8 @@
   {
    "claim": "Helios swears by the Styx to grant any wish",
    "terms": [
-    "Styx",
-    "swore|swears|oath"
+    "Styx|Stygian",
+    "swear|swore|oath"
    ]
   },
   {
@@ -815,7 +815,7 @@
   {
    "claim": "Helios begs him to choose something else",
    "terms": [
-    "beg|begged|pleaded|implored|urged|warned",
+    "beg|begged|pleaded|implored|urged|warned|warning|entreat",
     "Phaethon"
    ]
   },
@@ -829,8 +829,8 @@
   {
    "claim": "The earth burns: rivers dry up, mountains burn",
    "terms": [
-    "rivers",
-    "mountains"
+    "river",
+    "mountain"
    ]
   },
   {
