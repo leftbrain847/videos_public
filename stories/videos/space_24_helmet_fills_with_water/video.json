@@ -1,0 +1,834 @@
+{
+ "id": "space_24_helmet_fills_with_water",
+ "title": "The spacewalk where the helmet filled with water",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "EVA 23"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "luca": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#eef1f5",
+    "pants": "#eef1f5",
+    "hair": "buzz",
+    "hairColor": "#6b4423",
+    "skin": "#c68d64"
+   }
+  },
+  "chris": {
+   "look": {
+    "outfit": "spacesuit",
+    "shirt": "#d9534f",
+    "pants": "#eef1f5",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "ctl": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You're outside the space station. Your helmet starts filling with water.",
+   "key": [
+    "WATER."
+   ],
+   "board": [
+    "HELMET:",
+    "WATER"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "luca": [
+     2.6,
+     -0.6
+    ],
+    "chris": false,
+    "ctl": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "luca": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "July, twenty thirteen. Italian astronaut Luca Parmitano. He heads out on a spacewalk.",
+   "cap": "July 2013. Italian astronaut Luca Parmitano. He heads out on a spacewalk.",
+   "key": [
+    "PARMITANO"
+   ],
+   "board": [
+    "SPACEWALK",
+    "JULY 2013"
+   ],
+   "place": {
+    "capy": false,
+    "luca": [
+     -1.5,
+     0.2
+    ],
+    "chris": [
+     1.5,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "luca",
+    "offset": [
+     1.5,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "luca": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    },
+    "chris": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "luca"
+    }
+   }
+  },
+  {
+   "text": "His partner is American Chris Cassidy.",
+   "key": [
+    "CASSIDY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "luca",
+    "with": "chris"
+   },
+   "act": {
+    "luca": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "chris"
+    },
+    "chris": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "luca"
+    }
+   }
+  },
+  {
+   "text": "About forty minutes in, Luca feels something odd. Water. On the back of his head.",
+   "cap": "About 40 minutes in, Luca feels something odd. Water. On the back of his head.",
+   "key": [
+    "ODD."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "luca"
+   },
+   "act": {
+    "luca": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "At first, everyone guesses his drink bag. Leaking, maybe.",
+   "key": [
+    "DRINK"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "DRINK BAG?"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "luca": false,
+    "chris": false,
+    "ctl": [
+     -1.4,
+     0.3
+    ],
+    "boss": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "ctl"
+    }
+   }
+  },
+  {
+   "text": "It's not. The water keeps coming.",
+   "key": [
+    "COMING."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "ctl": [
+     1.4,
+     0.2
+    ],
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ctl"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "ctl"
+    },
+    "ctl": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.3,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Mission control ends the spacewalk. Go back inside. Now.",
+   "key": [
+    "NOW."
+   ],
+   "place": {
+    "capy": false,
+    "ctl": false,
+    "boss": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In zero gravity, water doesn't drip. It clings. It spreads.",
+   "key": [
+    "CLINGS."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "WATER",
+     "CLINGS"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "luca": false,
+    "chris": false,
+    "ctl": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It creeps over his eyes. Then into his nose.",
+   "key": [
+    "NOSE."
+   ],
+   "place": {
+    "capy": false,
+    "luca": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "luca"
+   },
+   "act": {
+    "luca": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His radio starts cutting out. He can't hear anyone.",
+   "key": [
+    "RADIO"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "luca"
+   },
+   "act": {
+    "luca": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Drowning. In space. That was not on the checklist.",
+   "key": [
+    "CHECKLIST."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "luca": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "luca": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then the sun goes down. Now it's dark too. Great timing.",
+   "key": [
+    "DARK"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "luca": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "luca"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "luca"
+    },
+    "luca": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "He can barely see. He can barely hear. He follows his safety line by feel.",
+   "key": [
+    "FEEL."
+   ],
+   "board": [
+    "SAFETY",
+    "TETHER"
+   ],
+   "place": {
+    "capy": false,
+    "luca": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "luca"
+   },
+   "act": {
+    "luca": {
+     "mood": "worried",
+     "action": "walk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He reaches the airlock. Cassidy comes in right behind him.",
+   "key": [
+    "AIRLOCK."
+   ],
+   "place": {
+    "chris": [
+     2.4,
+     -0.4
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "luca",
+    "with": "chris"
+   },
+   "act": {
+    "luca": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "chris"
+    },
+    "chris": {
+     "mood": "worried",
+     "action": "point",
+     "look": "luca"
+    }
+   }
+  },
+  {
+   "text": "The crew inside pull off his helmet. Fast. He's okay. Soaked, but okay.",
+   "key": [
+    "OKAY."
+   ],
+   "board": [
+    "HELMET",
+    "OFF"
+   ],
+   "place": {
+    "luca": [
+     -1.4,
+     0.2
+    ],
+    "chris": [
+     1.4,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "chris"
+   },
+   "act": {
+    "chris": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "luca"
+    },
+    "luca": {
+     "mood": "happy",
+     "action": "slump",
+     "look": "chris"
+    }
+   }
+  },
+  {
+   "text": "Investigators find the cause later. A clog in the suit's cooling system.",
+   "key": [
+    "CLOG"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "CAUSE:",
+     "CLOGGED FILTER"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "luca": false,
+    "chris": false,
+    "ctl": false,
+    "boss": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nasa adds a snorkel to future helmets. Plus absorbent pads.",
+   "cap": "NASA adds a snorkel to future helmets. Plus absorbent pads.",
+   "key": [
+    "SNORKEL"
+   ],
+   "board": [
+    "NEW:",
+    "SNORKEL + PAD"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "boss",
+    "offset": [
+     0.4,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A snorkel. In a spacesuit. For space.",
+   "key": [
+    "SNORKEL."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "SNORKEL",
+     "IN SPACE"
+    ]
+   },
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "luca": [
+     1.4,
+     0.2
+    ],
+    "chris": false,
+    "ctl": false,
+    "boss": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "luca"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "luca": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Parmitano later goes back out. He even commands the station.",
+   "key": [
+    "COMMANDS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "luca": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "luca"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "luca"
+    },
+    "luca": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Would you go back outside after that? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "GO BACK OUT?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "luca": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "luca": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "ESA: Astronaut in a fishbowl",
+   "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Volare/Astronaut_in_a_fishbowl"
+  },
+  {
+   "title": "ESA: Spacewalk ends early",
+   "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Volare/Highlights/Spacewalk_ends_early"
+  },
+  {
+   "title": "NASA: 10 years ago, EVA 23",
+   "url": "https://www.nasa.gov/history/10-years-ago-eva-23-how-a-high-visibility-close-call-cut-short-a-spacewalk/"
+  },
+  {
+   "title": "The Planetary Society: spacewalk ends early following helmet water leak",
+   "url": "https://www.planetary.org/articles/20130716-spacewalk-ends-early"
+  },
+  {
+   "title": "PBS NOVA: what's it like when your spacesuit fills with water",
+   "url": "https://www.pbs.org/wgbh/nova/next/space/whats-it-like-to-have-your-spacesuit-fill-with-water/"
+  },
+  {
+   "title": "IFLScience: the astronaut who nearly drowned in space",
+   "url": "https://www.iflscience.com/space/luca-parmitano-the-astronaut-who-nearly-drowned-in-space/"
+  },
+  {
+   "title": "MPR News (AP): spacesuit water leak ends spacewalk",
+   "url": "https://www.mprnews.org/story/2013/07/16/spacesuit-water-leak-ends-spacewalk-astronaut-ok"
+  },
+  {
+   "title": "Computerworld: astronaut describes almost drowning",
+   "url": "https://www.computerworld.com/article/1505981/lost-in-space-nearly-astronaut-describes-almost-drowning-on-spacewalk.html"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In July 2013 Luca Parmitano made a spacewalk",
+   "terms": [
+    "Parmitano",
+    "2013"
+   ]
+  },
+  {
+   "claim": "His partner was Chris Cassidy",
+   "terms": [
+    "Cassidy"
+   ]
+  },
+  {
+   "claim": "He felt water on the back of his head",
+   "terms": [
+    "back of",
+    "head"
+   ]
+  },
+  {
+   "claim": "At first they suspected his drink bag",
+   "terms": [
+    "drink bag"
+   ]
+  },
+  {
+   "claim": "The spacewalk was ended early",
+   "terms": [
+    "spacewalk",
+    "ended|cut short|terminated|abort"
+   ]
+  },
+  {
+   "claim": "Water covered his eyes and got into his nose",
+   "terms": [
+    "eyes",
+    "nose"
+   ]
+  },
+  {
+   "claim": "His communications cut out",
+   "terms": [
+    "communicat|radio"
+   ]
+  },
+  {
+   "claim": "The sun set, making it dark",
+   "terms": [
+    "dark",
+    "sun|sunset"
+   ]
+  },
+  {
+   "claim": "He used his safety tether to find his way",
+   "terms": [
+    "tether|cable|safety"
+   ]
+  },
+  {
+   "claim": "He got back to the airlock with Cassidy",
+   "terms": [
+    "airlock"
+   ]
+  },
+  {
+   "claim": "The crew removed his helmet",
+   "terms": [
+    "helmet",
+    "remove|off"
+   ]
+  },
+  {
+   "claim": "The cause was clogging in the suit's cooling/fan pump",
+   "terms": [
+    "clog|contamina"
+   ]
+  },
+  {
+   "claim": "NASA added snorkels and absorbent pads",
+   "terms": [
+    "snorkel"
+   ]
+  },
+  {
+   "claim": "Parmitano later spacewalked again and commanded the ISS",
+   "terms": [
+    "commander|command"
+   ]
+  }
+ ]
+}
