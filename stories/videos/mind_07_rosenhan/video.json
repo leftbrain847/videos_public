@@ -953,8 +953,8 @@
   {
    "claim": "Staff did not detect them",
    "terms": [
-    "detect",
-    "pseudopatients|staff"
+    "staff",
+    "detect|discover|identif|sane"
    ]
   },
   {

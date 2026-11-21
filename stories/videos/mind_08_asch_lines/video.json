@@ -213,10 +213,9 @@
    }
   },
   {
-   "text": "But you sit with seven others. You answer near the end.",
-   "cap": "But you sit with 7 others. You answer near the end.",
+   "text": "But you sit in a row of strangers. You answer near the end.",
    "key": [
-    "7"
+    "END."
    ],
    "set": "office",
    "board": [
@@ -759,15 +758,14 @@
    }
   },
   {
-   "text": "Nineteen eighty. British researchers rerun it with engineering students.",
-   "cap": "1980. British researchers rerun it with engineering students.",
+   "text": "Later reruns get different numbers. Some much lower.",
    "key": [
-    "ENGINEERING"
+    "LOWER."
    ],
    "set": "locker",
    "board": [
-    "UK",
-    "1980"
+    "LATER",
+    "RERUNS"
    ],
    "place": {
     "capy": false,
@@ -801,14 +799,13 @@
    }
   },
   {
-   "text": "They went along once. In three hundred ninety six trials.",
-   "cap": "They went along once. In 396 trials.",
+   "text": "The pressure is real. The size of it keeps shifting.",
    "key": [
-    "396"
+    "SHIFTING."
    ],
    "board": [
-    "CAVED:",
-    "1 IN 396"
+    "PRESSURE:",
+    "REAL"
    ],
    "place": {
     "capy": false,
@@ -837,9 +834,9 @@
    }
   },
   {
-   "text": "Engineers. Very hard to talk out of a measurement.",
+   "text": "So the room matters. So does the decade.",
    "key": [
-    "MEASUREMENT."
+    "DECADE."
    ],
    "set": "study",
    "board": [
@@ -968,10 +965,9 @@
  ],
  "claims": [
   {
-   "claim": "The study was at Swarthmore College in 1951",
+   "claim": "Asch ran the study at Swarthmore College",
    "terms": [
-    "Swarthmore",
-    "1951"
+    "Swarthmore"
    ]
   },
   {
@@ -988,9 +984,8 @@
    ]
   },
   {
-   "claim": "Each group had seven confederates",
+   "claim": "The group was made of confederates",
    "terms": [
-    "seven|7",
     "confederates"
    ]
   },
@@ -1044,19 +1039,6 @@
    "terms": [
     "Asch",
     "independence"
-   ]
-  },
-  {
-   "claim": "A 1980 British rerun used engineering students",
-   "terms": [
-    "1980",
-    "engineering"
-   ]
-  },
-  {
-   "claim": "They conformed once in 396 trials",
-   "terms": [
-    "396"
    ]
   },
   {

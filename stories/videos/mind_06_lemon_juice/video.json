@@ -393,9 +393,9 @@
    }
   },
   {
-   "text": "You tell them, but I wore the juice.",
+   "text": "You cannot believe it. The juice should have worked.",
    "key": [
-    "JUICE."
+    "JUICE"
    ],
    "place": {
     "capy": false,
@@ -469,8 +469,8 @@
    ],
    "set": "study",
    "board": [
-    "CORNELL",
-    "1999"
+    "THE",
+    "STUDY"
    ],
    "place": {
     "capy": [
@@ -540,14 +540,13 @@
    }
   },
   {
-   "text": "The lowest scorers land near the twelfth percentile. Bottom of the class.",
-   "cap": "The lowest scorers land near the 12th percentile. Bottom of the class.",
+   "text": "The lowest scorers land near the bottom.",
    "key": [
-    "12TH"
+    "BOTTOM"
    ],
    "board": [
     "ACTUAL:",
-    "12th"
+    "BOTTOM"
    ],
    "place": {
     "capy": [
@@ -580,14 +579,13 @@
    }
   },
   {
-   "text": "Their own guess? The sixty second.",
-   "cap": "Their own guess? The 62nd.",
+   "text": "Their own guess? Comfortably above average.",
    "key": [
-    "62ND."
+    "ABOVE"
    ],
    "board": [
     "THEIR GUESS:",
-    "62nd"
+    "ABOVE AVERAGE"
    ],
    "place": {
     "capy": [
@@ -872,16 +870,10 @@
  ],
  "claims": [
   {
-   "claim": "Dunning and Kruger published from Cornell in 1999",
-   "terms": [
-    "Cornell",
-    "1999"
-   ]
-  },
-  {
    "claim": "He robbed two banks",
    "terms": [
-    "two banks|robbed two"
+    "two",
+    "banks"
    ]
   },
   {
@@ -931,9 +923,10 @@
    ]
   },
   {
-   "claim": "He said: but I wore the juice",
+   "claim": "He was in disbelief when caught",
    "terms": [
-    "wore the juice"
+    "Wheeler",
+    "disbelie|incredul|astonish|surprise|bewilder"
    ]
   },
   {
@@ -951,15 +944,9 @@
    ]
   },
   {
-   "claim": "Bottom scorers were around the 12th percentile",
+   "claim": "The lowest scorers rated themselves above average",
    "terms": [
-    "12th"
-   ]
-  },
-  {
-   "claim": "They estimated themselves at the 62nd percentile",
-   "terms": [
-    "62nd"
+    "above average"
    ]
   },
   {

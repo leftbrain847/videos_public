@@ -169,9 +169,9 @@
    }
   },
   {
-   "text": "Your task is a short talk. In another building.",
+   "text": "Your task is a short talk. Across campus.",
    "key": [
-    "BUILDING."
+    "CAMPUS."
    ],
    "place": {
     "capy": false,
@@ -623,9 +623,9 @@
    }
   },
   {
-   "text": "Some of them literally stepped over the man. Over him.",
+   "text": "Some hurried right past the groaning man. Eyes straight ahead.",
    "key": [
-    "STEPPED"
+    "PAST"
    ],
    "place": {
     "capy": false,
@@ -870,13 +870,6 @@
    ]
   },
   {
-   "claim": "They had to give a talk in another building",
-   "terms": [
-    "talk",
-    "building"
-   ]
-  },
-  {
    "claim": "Some were given the Good Samaritan parable as topic",
    "terms": [
     "Good Samaritan",
@@ -925,14 +918,8 @@
   {
    "claim": "The talk topic did not significantly change helping",
    "terms": [
-    "topic|parable",
-    "hurry"
-   ]
-  },
-  {
-   "claim": "Some literally stepped over the victim",
-   "terms": [
-    "stepped over"
+    "topic|parable|sermon",
+    "hurry|rush"
    ]
   },
   {
