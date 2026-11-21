@@ -84,11 +84,29 @@
    ]
   }
  },
+ "sources": [
+  {
+   "title": "Chargers.com: A Fair Catch Kick?! Cameron Dicker Makes History Against Broncos",
+   "url": "https://www.chargers.com/news/fair-catch-kick-cameron-dicker"
+  },
+  {
+   "title": "ABC News: 'Ain't ever seen that': Rare fair catch kick propels Chargers",
+   "url": "https://abcnews.com/Sports/aint-rare-fair-catch-kick-propels-chargers/story?id=116984234"
+  },
+  {
+   "title": "CBS News LA (AP): Chargers' Dicker makes NFL's first fair-catch kick in 48 years",
+   "url": "https://www.cbsnews.com/amp/losangeles/news/taking-advantage-of-an-obscure-rule-chargers-dicker-makes-nfls-first-fair-catch-kick-in-48-years-3"
+  },
+  {
+   "title": "SI: Cameron Dicker Makes NFL History With 57-Yard Fair-Catch Free Kick",
+   "url": "https://www.si.com/college/texas/football/texas-ex-cameron-dicker-makes-nfl-history-with-57-yard-fair-catch-free-kick-01jfh4avbwx8"
+  }
+ ],
  "lines": [
   {
-   "text": "In 2024, an NFL kicker scored on a kick nobody was allowed to rush.",
+   "text": "You kick a field goal. Nobody is allowed to rush.",
    "key": [
-    "NOBODY"
+    "RUSH."
    ],
    "place": {
     "returner": false,
@@ -124,10 +142,9 @@
    "speaker": "capy"
   },
   {
-   "text": "It's called the fair catch kick. Almost nobody uses it.",
+   "text": "It's the fair catch kick. Almost nobody uses it.",
    "key": [
-    "FAIR",
-    "CATCH"
+    "NOBODY"
    ],
    "set": "office",
    "setOpts": {
@@ -136,10 +153,6 @@
      "KICK"
     ]
    },
-   "board": [
-    "FAIR CATCH",
-    "KICK"
-   ],
    "place": {
     "capy": "center",
     "coach": "desk"
@@ -159,12 +172,16 @@
      "action": "hold"
     }
    },
+   "board": [
+    "FAIR CATCH",
+    "KICK"
+   ],
    "speaker": "capy"
   },
   {
-   "text": "Here's the rule. Your returner calls a fair catch on a punt.",
+   "text": "Your returner fair catches a punt.",
    "key": [
-    "PUNT"
+    "PUNT."
    ],
    "place": {
     "returner": [
@@ -195,15 +212,11 @@
    }
   },
   {
-   "text": "Now your team may try a free kick for three points, from that exact spot.",
+   "text": "Now you may try a free kick. Three points.",
+   "cap": "Now you may try a free kick. 3 points.",
    "key": [
     "FREE",
-    "KICK"
-   ],
-   "cap": "Now your team may try a free kick for 3 points, from that exact spot.",
-   "board": [
-    "FREE KICK",
-    "= 3 PTS"
+    "KICK."
    ],
    "shot": {
     "type": "close",
@@ -216,17 +229,17 @@
      "look": "camera"
     }
    },
+   "board": [
+    "FREE KICK",
+    "= 3 PTS"
+   ],
    "speaker": "capy"
   },
   {
-   "text": "With a holder. And the defense has to stay ten yards away. No rush.",
+   "text": "From that spot. With a holder. No rush.",
    "key": [
     "NO",
-    "RUSH"
-   ],
-   "cap": "With a holder. And the defense has to stay 10 yards away. No rush.",
-   "board": [
-    "NO RUSH"
+    "RUSH."
    ],
    "shot": {
     "type": "two",
@@ -244,13 +257,16 @@
      "action": "idle",
      "look": "capy"
     }
-   }
+   },
+   "board": [
+    "NO RUSH"
+   ]
   },
   {
-   "text": "December 2024. Chargers against Broncos. Last play of the first half.",
+   "text": "December twenty twenty four. Your Chargers play Denver.",
+   "cap": "December 2024. Your Chargers play Denver.",
    "key": [
-    "LAST",
-    "PLAY"
+    "DENVER."
    ],
    "set": "field",
    "setOpts": {
@@ -259,10 +275,6 @@
      "CHARGERS 10"
     ]
    },
-   "board": [
-    "BRONCOS 21",
-    "CHARGERS 10"
-   ],
    "place": {
     "kicker": [
      0,
@@ -302,14 +314,18 @@
      "mood": "neutral",
      "action": "idle"
     }
-   }
+   },
+   "board": [
+    "BRONCOS 21",
+    "CHARGERS 10"
+   ]
   },
   {
-   "text": "Derius Davis calls a fair catch. Denver interferes. Fifteen more yards.",
+   "text": "Last play of the half. Derius Davis fair catches.",
    "key": [
-    "15"
+    "LAST",
+    "PLAY"
    ],
-   "cap": "Derius Davis calls a fair catch. Denver interferes. 15 more yards.",
    "shot": {
     "type": "medium",
     "on": "returner"
@@ -327,9 +343,31 @@
    }
   },
   {
-   "text": "Coach Jim Harbaugh knows this rule. He tried it once before, in 2013.",
+   "text": "Denver interferes. Fifteen more yards.",
+   "cap": "Denver interferes. 15 more yards.",
    "key": [
-    "2013"
+    "15"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "def2"
+   },
+   "act": {
+    "def2": {
+     "mood": "worried",
+     "action": "facepalm"
+    },
+    "returner": {
+     "mood": "happy",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Your coach, Jim Harbaugh, knows this trick. He tried it in twenty thirteen.",
+   "cap": "Your coach, Jim Harbaugh, knows this trick. He tried it in 2013.",
+   "key": [
+    "2013."
    ],
    "place": {
     "coach": "sideline",
@@ -359,10 +397,10 @@
   },
   {
    "text": "Cameron Dicker lines up from fifty seven yards.",
+   "cap": "Cameron Dicker lines up from 57 yards.",
    "key": [
     "57"
    ],
-   "cap": "Cameron Dicker lines up from 57 yards.",
    "shot": {
     "type": "low",
     "on": "kicker"
@@ -376,9 +414,9 @@
    }
   },
   {
-   "text": "The Broncos just stand there and watch.",
+   "text": "The Broncos just stand there. They watch.",
    "key": [
-    "WATCH"
+    "WATCH."
    ],
    "place": {
     "def1": [
@@ -409,33 +447,163 @@
    }
   },
   {
-   "text": "It's good.",
+   "text": "The kick sails. It's good.",
    "key": [
-    "GOOD"
+    "GOOD."
    ],
-   "board": [
-    "BRONCOS 21",
-    "CHARGERS 13"
-   ],
-   "shot": {
-    "type": "close",
-    "on": "kicker"
+   "setOpts": {
+    "boardText": [
+     "BRONCOS 21",
+     "CHARGERS 13"
+    ],
+    "endZone": 8,
+    "zoneA": "#4fa3e0",
+    "zoneB": "#f26b1d"
    },
-   "act": {
-    "kicker": {
-     "mood": "happy",
-     "action": "cheer",
-     "look": "camera"
-    }
-   }
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "kicker",
+    "lead": 0,
+    "z": 1
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "kicker": {
+      "path": [
+       [
+        0.0,
+        -2.0,
+        0.6
+       ],
+       [
+        0.05,
+        -1.5,
+        0.525
+       ],
+       [
+        0.1,
+        -1.0,
+        0.45
+       ],
+       [
+        0.15,
+        -0.5,
+        0.375
+       ],
+       [
+        0.2,
+        0.0,
+        0.3
+       ],
+       [
+        1.0,
+        0.4,
+        0.3
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.1658,
+        "kick"
+       ],
+       [
+        0.6,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     },
+     "def1": {
+      "path": [
+       [
+        0,
+        8.8,
+        -2.0
+       ],
+       [
+        1,
+        8.8,
+        -2.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90,
+      "mood": "worried"
+     },
+     "def2": {
+      "path": [
+       [
+        0,
+        11.2,
+        1.8
+       ],
+       [
+        1,
+        11.2,
+        1.8
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90,
+      "mood": "worried"
+     }
+    },
+    "ball": [
+     [
+      0.25,
+      0.4,
+      0.3,
+      0.3
+     ],
+     [
+      0.575,
+      8.2,
+      8.0,
+      0.3
+     ],
+     [
+      0.9,
+      16.0,
+      4.0,
+      0.3
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ]
+    ]
+   },
+   "sfx": [
+    [
+     0.9,
+     "roar"
+    ]
+   ]
   },
   {
-   "text": "The first fair catch kick made in forty eight years. The last was in nineteen seventy six.",
+   "text": "The first one made in forty eight years. Since nineteen seventy six.",
+   "cap": "The first one made in 48 years. Since 1976.",
    "key": [
-    "48",
-    "YEARS"
+    "48"
    ],
-   "cap": "The first fair catch kick made in 48 years. The last was in 1976.",
    "shot": {
     "type": "wide",
     "on": "kicker"
@@ -463,11 +631,11 @@
    }
   },
   {
-   "text": "And at fifty seven yards, the longest ever.",
+   "text": "At fifty seven yards, the longest ever.",
+   "cap": "At 57 yards, the longest ever.",
    "key": [
     "LONGEST"
    ],
-   "cap": "And at 57 yards, the longest ever.",
    "shot": {
     "type": "medium",
     "on": "capy"
@@ -482,11 +650,11 @@
    "speaker": "capy"
   },
   {
-   "text": "The Chargers won the game, thirty four to twenty seven.",
+   "text": "Your Chargers win, thirty four to twenty seven.",
+   "cap": "Your Chargers win, 34 to 27.",
    "key": [
     "34"
    ],
-   "cap": "The Chargers won the game, 34 to 27.",
    "set": "locker",
    "setOpts": {
     "boardText": [
@@ -494,10 +662,6 @@
      "34 - 27"
     ]
    },
-   "board": [
-    "FINAL",
-    "34 - 27"
-   ],
    "place": {
     "kicker": "center",
     "returner": "right",
@@ -525,15 +689,18 @@
      "action": "idle",
      "look": "kicker"
     }
-   }
+   },
+   "board": [
+    "FINAL",
+    "34 - 27"
+   ]
   },
   {
-   "text": "Would you try a fifty seven yard kick with no rush? Yes or no?",
+   "text": "Would you try it? Yes or no. Broncos fans, keep standing there.",
    "key": [
     "YES",
-    "NO"
+    "NO."
    ],
-   "cap": "Would you try a 57-yard kick with no rush? Yes or no?",
    "place": {
     "capy": [
      -1.6,
@@ -564,22 +731,76 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "Chargers.com: A Fair Catch Kick?! Cameron Dicker Makes History Against Broncos",
-   "url": "https://www.chargers.com/news/fair-catch-kick-cameron-dicker"
+   "claim": "The fair catch kick is rarely used",
+   "terms": [
+    "fair catch",
+    "rare|seldom|obscure"
+   ]
   },
   {
-   "title": "ABC News: 'Ain't ever seen that': Rare fair catch kick propels Chargers",
-   "url": "https://abcnews.com/Sports/aint-rare-fair-catch-kick-propels-chargers/story?id=116984234"
+   "claim": "After a fair catch of a punt a team may try a free kick for three points with a holder and no rush",
+   "terms": [
+    "fair catch",
+    "free kick"
+   ]
   },
   {
-   "title": "CBS News LA (AP): Chargers' Dicker makes NFL's first fair-catch kick in 48 years",
-   "url": "https://www.cbsnews.com/amp/losangeles/news/taking-advantage-of-an-obscure-rule-chargers-dicker-makes-nfls-first-fair-catch-kick-in-48-years-3"
+   "claim": "In December 2024 the Chargers played the Broncos",
+   "terms": [
+    "Chargers",
+    "Broncos"
+   ]
   },
   {
-   "title": "SI: Cameron Dicker Makes NFL History With 57-Yard Fair-Catch Free Kick",
-   "url": "https://www.si.com/college/texas/football/texas-ex-cameron-dicker-makes-nfl-history-with-57-yard-fair-catch-free-kick-01jfh4avbwx8"
+   "claim": "On the last play of the half Derius Davis made a fair catch",
+   "terms": [
+    "Davis",
+    "fair catch"
+   ]
+  },
+  {
+   "claim": "Denver was flagged for fair catch interference, 15 yards",
+   "terms": [
+    "interference",
+    "fair catch"
+   ]
+  },
+  {
+   "claim": "Jim Harbaugh tried a fair catch kick in 2013",
+   "terms": [
+    "Harbaugh",
+    "2013"
+   ]
+  },
+  {
+   "claim": "Cameron Dicker kicked it from 57 yards",
+   "terms": [
+    "Dicker",
+    "57"
+   ]
+  },
+  {
+   "claim": "It was the first made fair catch kick in 48 years",
+   "terms": [
+    "fair catch",
+    "1976|48 years"
+   ]
+  },
+  {
+   "claim": "It was the longest ever",
+   "terms": [
+    "longest",
+    "57"
+   ]
+  },
+  {
+   "claim": "The Chargers won 34-27",
+   "terms": [
+    "34-27"
+   ]
   }
  ]
 }

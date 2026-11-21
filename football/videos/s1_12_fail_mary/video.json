@@ -86,12 +86,33 @@
    "at": "desk"
   }
  },
+ "sources": [
+  {
+   "title": "Wikipedia: Fail Mary",
+   "url": "https://en.wikipedia.org/wiki/Fail_Mary"
+  },
+  {
+   "title": "KUNC (NPR): Bring back the real NFL refs? Debacle at end of game adds to outrage (with NFL statement)",
+   "url": "https://www.kunc.org/npr-news/2012-09-25/bring-back-the-real-nfl-refs-debacle-at-end-of-game-adds-to-outrage"
+  },
+  {
+   "title": "ESPN: The Fail Mary",
+   "url": "https://www.espn.com/nfl/feature/moment/_/page/failmary/fail-mary"
+  },
+  {
+   "title": "TSN (Canadian Press): NFL's last foray into replacement refs featured blown calls, rule mix-ups and the Fail Mary",
+   "url": "https://www.tsn.ca/nfl/article/nfls-last-foray-into-replacement-refs-featured-blown-calls-rule-mixups-and-the-fail-mary/"
+  },
+  {
+   "title": "Wikipedia: 2012 NFL referee lockout",
+   "url": "https://en.wikipedia.org/wiki/2012_NFL_referee_lockout"
+  }
+ ],
  "lines": [
   {
-   "text": "In 2012, two referees made two different calls on the same last play. One of them counted.",
+   "text": "One last play. Two refs. Two very different calls.",
    "key": [
-    "TWO",
-    "DIFFERENT"
+    "CALLS."
    ],
    "place": {
     "capy": [
@@ -128,9 +149,10 @@
    "speaker": "capy"
   },
   {
-   "text": "They were replacement officials. The regular ones were locked out.",
+   "text": "Twenty twelve. The regular refs are locked out.",
+   "cap": "2012. The regular refs are locked out.",
    "key": [
-    "REPLACEMENT"
+    "LOCKED"
    ],
    "shot": {
     "type": "medium",
@@ -149,11 +171,44 @@
    }
   },
   {
-   "text": "Monday night. Green Bay leads Seattle, twelve to seven. Last play.",
-   "cap": "Monday night. Green Bay leads Seattle, 12 to 7. Last play.",
+   "text": "So replacement refs work the games. Good luck.",
    "key": [
-    "12",
-    "7."
+    "LUCK."
+   ],
+   "place": {
+    "capy": [
+     -1.6,
+     0.8
+    ],
+    "ref1": [
+     1.0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ref1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "ref1": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Monday night. Your Seahawks host Green Bay.",
+   "key": [
+    "GREEN",
+    "BAY."
    ],
    "place": {
     "capy": false,
@@ -182,14 +237,17 @@
      "mood": "smug",
      "look": "qb"
     }
-   }
+   },
+   "board": [
+    "MONDAY",
+    "NIGHT"
+   ]
   },
   {
-   "text": "Fourth and ten. Russell Wilson throws a Hail Mary.",
-   "cap": "4th and 10. Russell Wilson throws a Hail Mary.",
+   "text": "You trail twelve to seven. Last play of the game.",
+   "cap": "You trail 12 to 7. Last play of the game.",
    "key": [
-    "HAIL",
-    "MARY."
+    "LAST"
    ],
    "shot": {
     "type": "low",
@@ -197,49 +255,335 @@
    },
    "act": {
     "qb": {
-     "mood": "neutral",
-     "action": "throw"
+     "mood": "worried",
+     "action": "hold"
     }
-   }
+   },
+   "board": [
+    "PACKERS 12",
+    "SEAHAWKS 7"
+   ]
   },
   {
-   "text": "Golden Tate shoves a defender to the ground. No flag.",
+   "text": "Russell Wilson heaves a Hail Mary.",
    "key": [
-    "SHOVES"
+    "HAIL",
+    "MARY."
    ],
-   "place": {
-    "qb": false,
-    "wr": [
-     -0.6,
-     0
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PACKERS 12",
+     "SEAHAWKS 7"
     ],
-    "sf": [
-     0.9,
-     -0.3
-    ]
+    "endZone": 8,
+    "zoneA": "#16284a",
+    "zoneB": "#1f4d2e"
    },
    "shot": {
-    "type": "two",
-    "on": "wr",
-    "with": "sf"
+    "type": "follow",
+    "on": "qb",
+    "lead": 1
    },
-   "act": {
-    "wr": {
-     "mood": "angry",
-     "action": "point",
-     "look": "sf"
+   "act": {},
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        -5.0,
+        0.5
+       ],
+       [
+        0.075,
+        -5.25,
+        0.325
+       ],
+       [
+        0.15,
+        -5.5,
+        0.15
+       ],
+       [
+        0.225,
+        -5.75,
+        -0.025
+       ],
+       [
+        0.3,
+        -6.0,
+        -0.2
+       ],
+       [
+        1.0,
+        -6.0,
+        -0.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.3,
+        "hold"
+       ],
+       [
+        0.3275,
+        "throw"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        4.0,
+        1.4
+       ],
+       [
+        0.25,
+        5.25,
+        1.275
+       ],
+       [
+        0.5,
+        6.5,
+        1.15
+       ],
+       [
+        0.75,
+        7.75,
+        1.025
+       ],
+       [
+        1.0,
+        9.0,
+        0.9
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     },
+     "sf": {
+      "path": [
+       [
+        0.0,
+        6.5,
+        -2.4
+       ],
+       [
+        0.25,
+        7.375,
+        -2.15
+       ],
+       [
+        0.5,
+        8.25,
+        -1.9
+       ],
+       [
+        0.75,
+        9.125,
+        -1.65
+       ],
+       [
+        1.0,
+        10.0,
+        -1.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": 90
+     }
     },
-    "sf": {
-     "mood": "shocked",
-     "action": "shrug",
-     "look": "wr"
-    }
+    "ball": [
+     [
+      0.4,
+      -5.8,
+      1.8,
+      -0.2
+     ],
+     [
+      0.7,
+      0.6,
+      7.5,
+      -0.25
+     ],
+     [
+      1.0,
+      7.0,
+      5.0,
+      -0.3
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.4,
+      null
+     ]
+    ]
    }
   },
   {
-   "text": "In the end zone, Green Bay's M.D. Jennings grabs the ball. Tate grabs it too.",
+   "text": "Golden Tate shoves a defender down. No flag.",
    "key": [
-    "TOO."
+    "FLAG."
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "wr",
+    "lead": 0
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "wr": {
+      "path": [
+       [
+        0.0,
+        9.0,
+        0.9
+       ],
+       [
+        0.075,
+        9.075,
+        0.75
+       ],
+       [
+        0.15,
+        9.15,
+        0.6
+       ],
+       [
+        0.225,
+        9.225,
+        0.45
+       ],
+       [
+        0.3,
+        9.3,
+        0.3
+       ],
+       [
+        1.0,
+        9.3,
+        0.3
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.3,
+        "catch"
+       ]
+      ],
+      "face": 90
+     },
+     "sf": {
+      "path": [
+       [
+        0.0,
+        10.0,
+        -1.4
+       ],
+       [
+        0.075,
+        10.225,
+        -1.025
+       ],
+       [
+        0.15,
+        10.45,
+        -0.65
+       ],
+       [
+        0.225,
+        10.675,
+        -0.275
+       ],
+       [
+        0.3,
+        10.9,
+        0.1
+       ],
+       [
+        1.0,
+        10.9,
+        0.1
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.3,
+        "catch"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "ball": [
+     [
+      0,
+      7.0,
+      5.0,
+      -0.3
+     ],
+     [
+      0.15,
+      8.6,
+      3.6,
+      -0.1
+     ],
+     [
+      0.3,
+      10.1,
+      2.0,
+      0.2
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      null
+     ],
+     [
+      0.3,
+      "sf"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "M D Jennings grabs the ball. So does Tate.",
+   "cap": "M.D. Jennings grabs the ball. So does Tate.",
+   "key": [
+    "TATE."
    ],
    "shot": {
     "type": "medium",
@@ -256,12 +600,22 @@
      "action": "hold",
      "look": "sf"
     }
+   },
+   "place": {
+    "wr": [
+     -0.9,
+     0
+    ],
+    "sf": [
+     0.9,
+     -0.2
+    ],
+    "qb": false
    }
   },
   {
-   "text": "One official signals touchdown. The other signals touchback.",
+   "text": "One ref signals touchdown. The other, touchback.",
    "key": [
-    "TOUCHDOWN.",
     "TOUCHBACK."
    ],
    "place": {
@@ -295,10 +649,41 @@
    }
   },
   {
-   "text": "The rule: if two opponents catch it at the same time, it goes to the passing team.",
+   "text": "Same play. Same moment. Two opposite calls.",
    "key": [
-    "SAME",
-    "TIME,"
+    "OPPOSITE"
+   ],
+   "place": {
+    "capy": [
+     0,
+     0.6
+    ],
+    "ref1": [
+     -3.2,
+     0
+    ],
+    "ref2": [
+     3.2,
+     0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The ruling? Simultaneous catch. Tie goes to the offense.",
+   "key": [
+    "OFFENSE."
    ],
    "set": "locker",
    "setOpts": {
@@ -331,25 +716,8 @@
    "speaker": "capy"
   },
   {
-   "text": "Simultaneous catch, they said. Touchdown, Seattle.",
-   "key": [
-    "SIMULTANEOUS"
-   ],
-   "shot": {
-    "type": "close",
-    "on": "ref1"
-   },
-   "act": {
-    "ref1": {
-     "mood": "smug",
-     "action": "cheer",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Replay found no clear evidence to overturn it. Seattle wins, fourteen to twelve.",
-   "cap": "Replay found no clear evidence to overturn it. Seattle wins, 14 to 12.",
+   "text": "Replay can't overturn it. You win, fourteen to twelve.",
+   "cap": "Replay can't overturn it. You win, 14 to 12.",
    "key": [
     "14"
    ],
@@ -386,9 +754,9 @@
    }
   },
   {
-   "text": "The next day, the league said the shove should have been flagged. The result stood.",
+   "text": "Next day, the league weighs in. The shove was pass interference.",
    "key": [
-    "STOOD."
+    "INTERFERENCE."
    ],
    "set": "office",
    "setOpts": {
@@ -413,9 +781,9 @@
    }
   },
   {
-   "text": "Within days, the lockout was over. The regular referees were back.",
+   "text": "The result stands anyway. The Seahawks keep the win.",
    "key": [
-    "BACK."
+    "STANDS"
    ],
    "place": {
     "capy": [
@@ -431,7 +799,7 @@
    "act": {
     "capy": {
      "mood": "smug",
-     "action": "shrug",
+     "action": "point",
      "look": "camera"
     },
     "boss": {
@@ -443,9 +811,41 @@
    "speaker": "capy"
   },
   {
-   "text": "So, was it a catch, or an interception? One word, below.",
+   "text": "Within days, the regular refs finally come back.",
    "key": [
-    "CATCH,",
+    "BACK."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "ref1"
+   },
+   "act": {
+    "ref1": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   },
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "REAL REFS",
+     "ARE BACK"
+    ]
+   },
+   "place": {
+    "capy": "left",
+    "ref1": "right",
+    "wr": false,
+    "sf": false,
+    "boss": false,
+    "ref2": false
+   }
+  },
+  {
+   "text": "Catch or interception? One word. Packers fans, put down the cheese.",
+   "key": [
+    "CATCH",
     "INTERCEPTION?"
    ],
    "set": "locker",
@@ -479,22 +879,82 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "Wikipedia: Fail Mary",
-   "url": "https://en.wikipedia.org/wiki/Fail_Mary"
+   "claim": "In 2012 the regular officials were locked out and replacement officials worked games",
+   "terms": [
+    "replacement",
+    "lockout|locked out"
+   ]
   },
   {
-   "title": "KUNC (NPR): Bring back the real NFL refs? Debacle at end of game adds to outrage (with NFL statement)",
-   "url": "https://www.kunc.org/npr-news/2012-09-25/bring-back-the-real-nfl-refs-debacle-at-end-of-game-adds-to-outrage"
+   "claim": "On Monday night the Seahawks hosted the Packers",
+   "terms": [
+    "Monday Night",
+    "Packers",
+    "Seahawks"
+   ]
   },
   {
-   "title": "ESPN: The Fail Mary",
-   "url": "https://www.espn.com/nfl/feature/moment/_/page/failmary/fail-mary"
+   "claim": "Green Bay led 12-7 on the last play",
+   "terms": [
+    "12-7"
+   ]
   },
   {
-   "title": "TSN (Canadian Press): NFL's last foray into replacement refs featured blown calls, rule mix-ups and the Fail Mary",
-   "url": "https://www.tsn.ca/nfl/article/nfls-last-foray-into-replacement-refs-featured-blown-calls-rule-mixups-and-the-fail-mary/"
+   "claim": "Russell Wilson threw a Hail Mary",
+   "terms": [
+    "Wilson",
+    "Hail Mary"
+   ]
+  },
+  {
+   "claim": "Golden Tate shoved a defender with no flag",
+   "terms": [
+    "Tate",
+    "shove|push"
+   ]
+  },
+  {
+   "claim": "M.D. Jennings and Tate both grabbed the ball",
+   "terms": [
+    "Jennings",
+    "Tate"
+   ]
+  },
+  {
+   "claim": "One official signaled touchdown, the other touchback",
+   "terms": [
+    "touchdown",
+    "touchback"
+   ]
+  },
+  {
+   "claim": "It was ruled a simultaneous catch, which goes to the offense",
+   "terms": [
+    "simultaneous"
+   ]
+  },
+  {
+   "claim": "Replay upheld it and Seattle won 14-12",
+   "terms": [
+    "14-12"
+   ]
+  },
+  {
+   "claim": "The next day the league said offensive pass interference should have been called but the result stood",
+   "terms": [
+    "offensive pass interference",
+    "Tate"
+   ]
+  },
+  {
+   "claim": "Within days the lockout ended and the regular officials returned",
+   "terms": [
+    "lockout",
+    "agreement|ended|end|deal"
+   ]
   }
  ]
 }
