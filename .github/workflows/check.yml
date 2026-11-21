@@ -24,6 +24,7 @@ jobs:
           node --check football/engine/kit.js
           node --check site/football/app.js
           python3 -m py_compile football/engine/*.py tools/*.py
+          python3 tools/test_tools.py
       - name: Gallery data builds and every listed file exists
         run: |
           python3 tools/build_site.py football
