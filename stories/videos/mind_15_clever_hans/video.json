@@ -141,9 +141,9 @@
    }
   },
   {
-   "text": "His owner, Wilhelm von Osten, taught math. He is very proud.",
+   "text": "His owner is Wilhelm von Osten. He is very proud.",
    "key": [
-    "MATH."
+    "PROUD."
    ],
    "place": {
     "capy": false,
@@ -753,9 +753,9 @@
    }
   },
   {
-   "text": "It still bites today. Think of sniffer dogs reading their handlers.",
+   "text": "It still haunts labs today. That is why tests get run blind.",
    "key": [
-    "DOGS"
+    "BLIND."
    ],
    "place": {
     "capy": [
@@ -887,16 +887,15 @@
    ]
   },
   {
-   "claim": "His owner Wilhelm von Osten was a math teacher",
+   "claim": "His owner was Wilhelm von Osten",
    "terms": [
-    "von Osten",
-    "teacher"
+    "von Osten"
    ]
   },
   {
    "claim": "Hans answered by tapping his hoof",
    "terms": [
-    "tap",
+    "tapping|tap|taps|tapped",
     "hoof"
    ]
   },
@@ -963,13 +962,6 @@
    "claim": "It is called the Clever Hans effect",
    "terms": [
     "Clever Hans effect"
-   ]
-  },
-  {
-   "claim": "The effect is studied in detection dogs and their handlers",
-   "terms": [
-    "dogs",
-    "handler"
    ]
   }
  ]

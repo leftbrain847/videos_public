@@ -624,13 +624,13 @@
    }
   },
   {
-   "text": "One team swaps in a Stephen King story.",
+   "text": "One idea explains the tiny boost that remains.",
    "key": [
-    "KING"
+    "IDEA"
    ],
    "board": [
-    "MOZART",
-    "VS. KING"
+    "SO WHAT",
+    "WAS IT?"
    ],
    "place": {
     "capy": false,
@@ -654,9 +654,9 @@
    }
   },
   {
-   "text": "Fans of the story get a boost too.",
+   "text": "Enjoyable sounds wake you up. Any of them.",
    "key": [
-    "BOOST"
+    "ANY"
    ],
    "place": {
     "capy": false,
@@ -911,12 +911,6 @@
    "claim": "Replications often found nothing",
    "terms": [
     "replicat|failed"
-   ]
-  },
-  {
-   "claim": "A study compared Mozart to a Stephen King story",
-   "terms": [
-    "Stephen King"
    ]
   },
   {

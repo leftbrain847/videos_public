@@ -95,10 +95,10 @@
    }
   },
   {
-   "text": "Nineteen ninety eight. You skipped a meal. Now you arrive at the lab.",
-   "cap": "1998. You skipped a meal. Now you arrive at the lab.",
+   "text": "Nineteen ninety eight. You arrive at the lab. Ready for science.",
+   "cap": "1998. You arrive at the lab. Ready for science.",
    "key": [
-    "MEAL."
+    "LAB."
    ],
    "set": "office",
    "board": [
@@ -295,10 +295,9 @@
    }
   },
   {
-   "text": "Radish eaters give up after about eight minutes.",
-   "cap": "Radish eaters give up after about 8 minutes.",
+   "text": "Radish eaters give up much sooner. Way sooner. They are done.",
    "key": [
-    "8"
+    "SOONER."
    ],
    "place": {
     "capy": false,
@@ -322,14 +321,14 @@
    }
   },
   {
-   "text": "Cookie eaters last more than twice as long.",
+   "text": "Cookie eaters keep trying far longer. Happily. Full of cookie.",
    "key": [
-    "TWICE"
+    "LONGER."
    ],
    "set": "locker",
    "board": [
     "COOKIE EATERS",
-    "2x LONGER"
+    "KEEP GOING"
    ],
    "place": {
     "capy": false,
@@ -451,9 +450,9 @@
    }
   },
   {
-   "text": "One study even says sugar refuels you. Drink some lemonade. Problem solved.",
+   "text": "One study even says sugar refuels your willpower. Problem solved.",
    "key": [
-    "LEMONADE."
+    "SUGAR"
    ],
    "set": "locker",
    "board": [
@@ -773,10 +772,6 @@
    "url": "https://en.wikipedia.org/wiki/Ego_depletion"
   },
   {
-   "title": "Discover: The end of ego-depletion theory?",
-   "url": "https://www.discovermagazine.com/mind/the-end-of-ego-depletion-theory"
-  },
-  {
    "title": "FORRT Open Social Psychology: Ego depletion",
    "url": "https://forrt.org/open-social-psychology/chapter5.html"
   },
@@ -791,6 +786,18 @@
   {
    "title": "Wikipedia: Roy Baumeister",
    "url": "https://en.wikipedia.org/wiki/Roy_Baumeister"
+  },
+  {
+   "title": "APA Monitor: What you need to know about willpower",
+   "url": "https://www.apa.org/monitor/2012/01/self-control"
+  },
+  {
+   "title": "PubMed: Ego depletion, is the active self a limited resource?",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/9599441/"
+  },
+  {
+   "title": "The Psychologist (BPS): Self-control, the moral muscle",
+   "url": "https://www.bps.org.uk/psychologist/self-control-moral-muscle"
   }
  ],
  "claims": [
@@ -802,12 +809,6 @@
    ]
   },
   {
-   "claim": "Participants had skipped a meal",
-   "terms": [
-    "skipped|hungry|fasted"
-   ]
-  },
-  {
    "claim": "The room smelled of fresh chocolate chip cookies",
    "terms": [
     "chocolate chip|cookies"
@@ -816,27 +817,21 @@
   {
    "claim": "Some participants were told to eat radishes instead",
    "terms": [
-    "radish"
+    "radishes",
+    "chocolate|cookies"
    ]
   },
   {
    "claim": "They then faced unsolvable puzzles",
    "terms": [
-    "unsolvable|impossible",
-    "puzzle"
+    "unsolvable"
    ]
   },
   {
-   "claim": "Radish eaters gave up after about 8 minutes",
+   "claim": "Radish eaters gave up faster on unsolvable puzzles",
    "terms": [
-    "8 minutes|eight minutes|8.35"
-   ]
-  },
-  {
-   "claim": "Cookie eaters persisted more than twice as long",
-   "terms": [
-    "radish",
-    "cookie"
+    "radishes",
+    "gave up|quit|persist"
    ]
   },
   {
@@ -860,10 +855,9 @@
    ]
   },
   {
-   "claim": "A study claimed glucose restores self-control, using lemonade",
+   "claim": "A study claimed glucose restores self-control",
    "terms": [
-    "glucose",
-    "lemonade|sugar"
+    "glucose"
    ]
   },
   {

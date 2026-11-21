@@ -668,9 +668,9 @@
    }
   },
   {
-   "text": "The hostility fades. Both groups ride home on one bus.",
+   "text": "The hostility fades. Shared goals did what contests could not.",
    "key": [
-    "BUS."
+    "GOALS"
    ],
    "place": {
     "capy": false,
@@ -989,9 +989,9 @@
    ]
   },
   {
-   "claim": "Both groups rode home on one bus",
+   "claim": "Shared superordinate goals reduced the hostility",
    "terms": [
-    "bus"
+    "superordinate"
    ]
   },
   {
