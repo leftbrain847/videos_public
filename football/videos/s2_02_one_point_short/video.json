@@ -113,8 +113,8 @@
    "speaker": "capy"
   },
   {
-   "text": "Set in twenty twelve. All thirty two teams.",
-   "cap": "Set in 2012. All 32 teams.",
+   "text": "Set back in twenty twelve. Fourteen years ago.",
+   "cap": "Set back in 2012. 14 years ago.",
    "key": [
     "2012."
    ],
@@ -145,14 +145,14 @@
    "speaker": "capy"
   },
   {
-   "text": "This year, after fifteen games? Seven hundred fifty points.",
-   "cap": "This year, after 15 games? 750 points.",
+   "text": "This year? One game alone has ninety six.",
+   "cap": "This year? One game alone has 96.",
    "key": [
-    "750"
+    "96."
    ],
    "board": [
-    "2026 SO FAR",
-    "750"
+    "BEARS 59",
+    "PANTHERS 37"
    ],
    "place": {
     "capy": [
@@ -177,7 +177,39 @@
    "speaker": "capy"
   },
   {
-   "text": "One game left. Monday night. Denver at Kansas City. Arrowhead.",
+   "text": "Sixteen games. Sixteen different winning margins.",
+   "cap": "16 games. 16 different winning margins.",
+   "key": [
+    "MARGINS."
+   ],
+   "board": [
+    "16 GAMES",
+    "16 MARGINS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     0.4
+    ],
+    "mahomes": false,
+    "walker": false,
+    "nix": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It all comes down to Monday night. Denver at Kansas City.",
    "key": [
     "MONDAY"
    ],
@@ -217,10 +249,9 @@
    }
   },
   {
-   "text": "You need forty two points. Combined. Easy, right?",
-   "cap": "You need 42 points. Combined. Easy, right?",
+   "text": "Taylor Swift skips the Emmys. She picks Arrowhead.",
    "key": [
-    "42"
+    "ARROWHEAD."
    ],
    "board": [
     "NEEDED",
@@ -260,7 +291,7 @@
    "speaker": "capy"
   },
   {
-   "text": "Patrick Mahomes is back. From a torn knee ligament.",
+   "text": "Patrick Mahomes is back. On a surgically repaired knee.",
    "key": [
     "BACK."
    ],
@@ -292,10 +323,10 @@
    }
   },
   {
-   "text": "He opens the scoring. A fifteen yard run.",
-   "cap": "He opens the scoring. A 15-yard run.",
+   "text": "First drive. He runs it in himself. Fifteen yards.",
+   "cap": "First drive. He runs it in himself. 15 yards.",
    "key": [
-    "15-YARD"
+    "15"
    ],
    "board": [
     "NEEDED",
@@ -366,10 +397,10 @@
    }
   },
   {
-   "text": "Chiefs thirty one. Broncos ten. Forty one points.",
-   "cap": "Chiefs 31. Broncos 10. 41 points.",
+   "text": "Chiefs thirty one. Broncos ten. Game over.",
+   "cap": "Chiefs 31. Broncos 10. Game over.",
    "key": [
-    "41"
+    "31."
    ],
    "board": [
     "KC 31",
@@ -399,13 +430,14 @@
    }
   },
   {
-   "text": "One field goal breaks it. Even a safety would break it.",
+   "text": "That makes seven hundred ninety one. A tie.",
+   "cap": "That makes 791. A tie.",
    "key": [
-    "SAFETY"
+    "TIE."
    ],
    "board": [
-    "KC 31",
-    "DEN 10"
+    "2026",
+    "791 = TIE"
    ],
    "place": {
     "capy": [
@@ -440,9 +472,50 @@
    "speaker": "capy"
   },
   {
-   "text": "Then nobody scores again. Not one point. All night.",
+   "text": "One more field goal breaks it. Even a safety.",
    "key": [
-    "NIGHT."
+    "SAFETY."
+   ],
+   "board": [
+    "KC 31",
+    "DEN 10"
+   ],
+   "place": {
+    "capy": [
+     -1.0,
+     1.4
+    ],
+    "mahomes": "center",
+    "walker": false,
+    "nix": "right"
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "mahomes": {
+     "mood": "smug",
+     "action": "point",
+     "look": "nix"
+    },
+    "nix": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "mahomes"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then nobody scores again. Not one point.",
+   "key": [
+    "POINT."
    ],
    "board": [
     "KC 31",
@@ -471,53 +544,6 @@
      "look": "mahomes"
     }
    }
-  },
-  {
-   "text": "Final week one total? Seven hundred ninety one. Exactly tied.",
-   "cap": "Final week one total? 791. Exactly tied.",
-   "key": [
-    "TIED."
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "WEEK 1",
-     "791 = 791"
-    ]
-   },
-   "board": [
-    "2026",
-    "791 = TIE"
-   ],
-   "place": {
-    "capy": [
-     -1.4,
-     0.6
-    ],
-    "mahomes": [
-     1.4,
-     0.2
-    ],
-    "walker": false,
-    "nix": false
-   },
-   "shot": {
-    "type": "wide",
-    "on": "capy"
-   },
-   "act": {
-    "capy": {
-     "mood": "shocked",
-     "action": "idle",
-     "look": "camera"
-    },
-    "mahomes": {
-     "mood": "confused",
-     "action": "hold",
-     "look": "capy"
-    }
-   },
-   "speaker": "capy"
   },
   {
    "text": "The record isn't broken. It just has a roommate now.",
@@ -605,10 +631,6 @@
    "url": "https://www.nfl.com/news/nfl-ties-week-1-scoring-record-for-super-bowl-era"
   },
   {
-   "title": "DAZN: NFL Week 1 record points, Broncos-Chiefs",
-   "url": "https://www.dazn.com/en-CA/news/football/nfl-week-1-record-points-broncos-chiefs-bears-panthers-2026/4grjtmo2gxad1g2jnhhh4uzwl"
-  },
-  {
    "title": "Fox News: NFL Week 1 defining stats",
    "url": "https://www.foxnews.com/sports/nfl-week-1-defining-stats-record-setting-scoring-historic-performances"
   },
@@ -617,83 +639,103 @@
    "url": "https://www.fantasynerds.com/news/story/2026/09/15/nfl-week-1-scoring-ties-post-merger-record-offenses-dominate-early-1623689"
   },
   {
-   "title": "ProFootballTalk: With 42 points in Broncos-Chiefs, the Week 1 scoring record will be broken",
-   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/with-42-points-in-broncos-chiefs-the-week-1-scoring-record-will-be-broken"
+   "title": "FantasyNerds: NFL Week 1 sets unprecedented record for game-winning margins",
+   "url": "https://www.fantasynerds.com/news/story/2026/09/15/nfl-week-1-sets-unprecedented-record-for-game-winning-margins-1623870"
   },
   {
-   "title": "NBC New York: Chiefs crush Broncos as Mahomes returns",
-   "url": "https://www.nbcnewyork.com/news/sports/nfl/chiefs-broncos-score-week-1-mahomes/"
+   "title": "BroBible: Every Week 1 game decided by a different margin",
+   "url": "https://brobible.com/sports/article/nfl-game-every-game-different-margin-week-1-2026/"
   },
   {
-   "title": "NBC Chicago: Chiefs crush Broncos as Mahomes returns",
-   "url": "https://www.nbcchicago.com/news/sports/nfl/chiefs-broncos-score-week-1-mahomes/"
+   "title": "Front Office Sports: Week 1 scoring",
+   "url": "https://frontofficesports.com/?p=249403"
+  },
+  {
+   "title": "TSN (AP): Mahomes looks healthy, Walker runs all over Broncos in Chiefs victory",
+   "url": "https://www.tsn.ca/nfl/article/mahomes-looks-healthy-walker-runs-all-over-broncos-in-chiefs-victory/"
+  },
+  {
+   "title": "KSAT (AP): Walker runs all over Denver, Mahomes looks healthy as Chiefs beat up Broncos 31-10",
+   "url": "https://www.ksat.com/sports/2026/09/15/walker-runs-all-over-denver-mahomes-looks-healthy-as-chiefs-beat-up-broncos-31-10/"
+  },
+  {
+   "title": "Denver7 (AP): Walker runs all over Denver, Mahomes looks healthy",
+   "url": "https://www.denver7.com/sports/walker-runs-all-over-denver-mahomes-looks-healthy-as-chiefs-beat-up-broncos-31-10"
+  },
+  {
+   "title": "KY3 (AP): Walker runs all over Denver; Mahomes looks healthy",
+   "url": "https://www.ky3.com/2026/09/15/walker-runs-all-over-denver-mahomes-looks-healthy-chiefs-beat-up-broncos/"
   },
   {
    "title": "Fox Sports: Patrick Mahomes gets win in return",
    "url": "https://www.foxsports.com/stories/nfl/patrick-mahomes-gets-win-return-3-takeaways-chiefs-beat-broncos"
+  },
+  {
+   "title": "TSN (AP): Williams and Bears trounce Panthers 59-37",
+   "url": "https://www.tsn.ca/nfl/article/williams-bears-trounce-panthers-59-37-in-highest-scoring-season-opener-in-nfl-history/"
   }
  ],
  "voice": "v2",
  "claims": [
   {
-   "claim": "The week 1 record was 791 points, set in 2012",
+   "claim": "The week 1 record was 791 points, set in 2012, and this week tied it",
    "terms": [
     "791",
     "2012"
    ]
   },
   {
-   "claim": "After 15 games this week had 750 points",
+   "claim": "One game this week, Bears-Panthers 59-37, had 96 points",
    "terms": [
-    "750",
-    "15 games"
+    "59-37|59 37"
    ]
   },
   {
-   "claim": "The Broncos and Chiefs needed 42 combined points to break it",
+   "claim": "Every week 1 game had a different winning margin",
    "terms": [
-    "42 points|at least 42",
-    "Broncos|Denver"
+    "margin"
    ]
   },
   {
-   "claim": "Patrick Mahomes returned from a torn ACL",
+   "claim": "The record came down to the Monday night Broncos-Chiefs game",
+   "terms": [
+    "Chiefs",
+    "record"
+   ]
+  },
+  {
+   "claim": "Taylor Swift chose Arrowhead over the Emmys",
+   "terms": [
+    "Swift",
+    "Emmy",
+    "Arrowhead"
+   ]
+  },
+  {
+   "claim": "Mahomes returned on a surgically repaired knee",
    "terms": [
     "Mahomes",
-    "ACL"
+    "repaired"
    ]
   },
   {
-   "claim": "Mahomes opened the scoring with a 15-yard touchdown run",
+   "claim": "Mahomes capped the opening drive with a 15-yard touchdown run",
    "terms": [
     "Mahomes",
-    "15-yard"
+    "15-yard|15 yard"
    ]
   },
   {
-   "claim": "Kenneth Walker ran for 173 yards",
+   "claim": "Walker ran for 173 yards and scored two touchdowns",
    "terms": [
     "Walker",
     "173"
    ]
   },
   {
-   "claim": "Kansas City beat Denver 31-10 on Monday night",
+   "claim": "Kansas City won 31-10",
    "terms": [
-    "31-10"
-   ]
-  },
-  {
-   "claim": "The game was at Arrowhead",
-   "terms": [
-    "Arrowhead"
-   ]
-  },
-  {
-   "claim": "Week 1 finished at 791 points, tying the record",
-   "terms": [
-    "791",
-    "tied|tie"
+    "31-10|31 10"
    ]
   }
  ]

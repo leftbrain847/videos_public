@@ -725,10 +725,6 @@
    "url": "https://www.tsn.ca/nfl/article/49ers-rout-rams-in-nfls-first-australia-game-behind-purdys-three-td-passes/"
   },
   {
-   "title": "ABC News (AP): 49ers rout Rams 27-7 in NFL's first Australia game",
-   "url": "https://abcnews.com/Sports/wireStory/49ers-rout-rams-27-7-nfls-australia-game-136355823"
-  },
-  {
    "title": "News4Jax (AP): 49ers rout Rams 27-7 in NFL's first Australia game",
    "url": "https://www.news4jax.com/sports/2026/09/11/49ers-rout-rams-27-7-in-nfls-first-australia-game-behind-brock-purdys-3-td-passes/"
   },
@@ -751,7 +747,7 @@
    "claim": "Kickoff was 10:35 a.m. local time on a Friday",
    "terms": [
     "10:35",
-    "Friday"
+    "kickoff"
    ]
   },
   {
@@ -784,7 +780,8 @@
    "claim": "The 49ers arrived a week early to adjust their body clocks",
    "terms": [
     "49ers",
-    "week early"
+    "week",
+    "body clocks"
    ]
   },
   {

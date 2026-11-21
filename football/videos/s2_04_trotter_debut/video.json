@@ -266,13 +266,13 @@
    }
   },
   {
-   "text": "It's your team's only sack all day.",
+   "text": "Not bad for a second round pick.",
    "key": [
-    "ONLY"
+    "PICK."
    ],
    "board": [
-    "TB SACKS",
-    "1"
+    "ROUND 2",
+    "PICK"
    ],
    "place": {
     "capy": false,
@@ -1065,10 +1065,6 @@
    "url": "https://www.tsn.ca/nfl/article/bengals-force-four-turnovers-burrow-throws-for-td-in-win-over-buccaneers/"
   },
   {
-   "title": "ABC News (AP): Bengals force 4 turnovers in 33-27 win over the Buccaneers",
-   "url": "https://abcnews.com/Sports/wireStory/bengals-force-4-turnovers-burrow-throws-td-33-136409263"
-  },
-  {
    "title": "WCPO (AP): Bengals force 4 turnovers in 33-27 win over the Buccaneers",
    "url": "https://www.wcpo.com/sports/football/bengals/bengals-force-4-turnovers-burrow-throws-for-td-in-33-27-win-over-the-buccaneers"
   },
@@ -1109,16 +1105,16 @@
    ]
   },
   {
-   "claim": "It was Tampa Bay's only sack of the game",
+   "claim": "Trotter was a second-round pick",
    "terms": [
-    "only sack"
+    "second-round|second round",
+    "pick"
    ]
   },
   {
    "claim": "Trotter intercepted a pass intended for Andrei Iosivas",
    "terms": [
-    "Iosivas",
-    "Trotter"
+    "Iosivas"
    ]
   },
   {

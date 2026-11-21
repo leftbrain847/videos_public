@@ -708,20 +708,28 @@
    "url": "https://www.tsn.ca/nfl/article/williams-bears-trounce-panthers-59-37-in-highest-scoring-season-opener-in-nfl-history/"
   },
   {
-   "title": "ESPN recap: Bears 59, Panthers 37",
-   "url": "https://www.espn.com/nfl/recap/_/gameId/401872661"
-  },
-  {
    "title": "WTTW (AP): Caleb Williams and Bears trounce Panthers 59-37",
    "url": "https://news.wttw.com/2026/09/13/caleb-williams-and-bears-trounce-panthers-59-37-highest-scoring-season-opener-nfl"
   },
   {
-   "title": "ABC News (AP): Caleb Williams and Bears trounce Panthers 59-37",
-   "url": "https://abcnews.com/Sports/wireStory/caleb-williams-bears-trounce-panthers-59-37-highest-136410163"
+   "title": "News4Jax (AP): Caleb Williams and Bears trounce Panthers 59-37",
+   "url": "https://www.news4jax.com/sports/2026/09/13/caleb-williams-and-bears-trounce-panthers-59-37-in-highest-scoring-season-opener-in-nfl-history/"
   },
   {
-   "title": "Local 10 (AP): Caleb Williams and Bears trounce Panthers 59-37",
-   "url": "https://www.local10.com/sports/2026/09/13/caleb-williams-and-bears-trounce-panthers-59-37-in-highest-scoring-season-opener-in-nfl-history/"
+   "title": "KSAT (AP): Caleb Williams and Bears trounce Panthers 59-37",
+   "url": "https://www.ksat.com/sports/2026/09/13/caleb-williams-and-bears-trounce-panthers-59-37-in-highest-scoring-season-opener-in-nfl-history/"
+  },
+  {
+   "title": "WSOC-TV (AP): Caleb Williams, Bears trounce Panthers 59-37",
+   "url": "https://www.wsoctv.com/news/local/caleb-williams-bears-trounce-panthers-59-37-highest-scoring-season-opener-nfl-history/NJJJ6VKVT5DXRDQ5UUHPPMXTXM/"
+  },
+  {
+   "title": "Boston 25 News (AP): Caleb Williams, Bears trounce Panthers 59-37",
+   "url": "https://www.boston25news.com/sports/caleb-williams-bears/34CYUPULE4ZEVERGDV2HTHBOYY/"
+  },
+  {
+   "title": "ABC News 4 (AP): Williams and Bears trounce Panthers 59-37",
+   "url": "https://abcnews4.com/news/local/williams-and-bears-trounce-panthers-59-37-in-highest-scoring-season-opener-in-nfl-history-wciv-abc-news-4-the-associated-press-carolina-panthers-bryce-young-charlotte-football-jalen-coker-tetairoa-mcmillan"
   }
  ],
  "voice": "v2",
@@ -770,8 +778,8 @@
    "claim": "Caleb Williams threw two touchdowns and ran for two more",
    "terms": [
     "Williams",
-    "two|2",
-    "rushing|ran"
+    "two touchdowns",
+    "running|ran"
    ]
   },
   {
@@ -812,8 +820,8 @@
   {
    "claim": "59 points was the most Carolina had ever allowed",
    "terms": [
-    "most",
-    "franchise history"
+    "most allowed",
+    "Panthers"
    ]
   },
   {
