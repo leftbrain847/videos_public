@@ -266,7 +266,7 @@
    }
   },
   {
-   "text": "Ten years of work. Gone in seconds. Scattered everywhere.",
+   "text": "Years of work. Gone in seconds. Scattered everywhere.",
    "key": [
     "GONE"
    ],
@@ -544,13 +544,13 @@
    }
   },
   {
-   "text": "The damage? Hundreds of millions of dollars. Easily.",
+   "text": "One number. Too big for its box. Very big boom.",
    "key": [
-    "MILLIONS"
+    "BOOM."
    ],
    "board": [
-    "LOSS",
-    "$100s OF MILLIONS"
+    "TOO BIG",
+    "FOR THE BOX"
    ],
    "shot": {
     "type": "close",
@@ -728,12 +728,6 @@
    ]
   },
   {
-   "claim": "Ariane 5 took about ten years to develop",
-   "terms": [
-    "decade|ten years|10 years"
-   ]
-  },
-  {
    "claim": "The guidance software was reused from Ariane 4",
    "terms": [
     "Ariane 4",
@@ -757,21 +751,14 @@
   {
    "claim": "The backup computer ran the same software and failed the same way",
    "terms": [
-    "backup|back up|back-up",
-    "same|identical"
+    "same|identical",
+    "software|hardware|SRI"
    ]
   },
   {
    "claim": "The calculation was not needed after liftoff",
    "terms": [
     "after lift-off|after liftoff|no longer|not needed|no purpose"
-   ]
-  },
-  {
-   "claim": "The loss is often cited around $370 million",
-   "terms": [
-    "370|500",
-    "million"
    ]
   },
   {

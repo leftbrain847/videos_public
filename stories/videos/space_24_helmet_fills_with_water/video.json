@@ -400,9 +400,9 @@
    }
   },
   {
-   "text": "Then the sun goes down. Now it's dark too. Great timing.",
+   "text": "Every second counts now. Every single one. No pressure.",
    "key": [
-    "DARK"
+    "SECOND"
    ],
    "place": {
     "capy": [
@@ -734,6 +734,14 @@
    "url": "https://www.mprnews.org/story/2013/07/16/spacesuit-water-leak-ends-spacewalk-astronaut-ok"
   },
   {
+   "title": "Space.com: spacesuit leak investigation",
+   "url": "https://www.space.com/24835-spacesuit-water-leak-nasa-investigation.html"
+  },
+  {
+   "title": "Wikipedia: Luca Parmitano",
+   "url": "https://en.wikipedia.org/wiki/Luca_Parmitano"
+  },
+  {
    "title": "Computerworld: astronaut describes almost drowning",
    "url": "https://www.computerworld.com/article/1505981/lost-in-space-nearly-astronaut-describes-almost-drowning-on-spacewalk.html"
   }
@@ -787,13 +795,6 @@
    ]
   },
   {
-   "claim": "The sun set, making it dark",
-   "terms": [
-    "dark",
-    "sun|sunset"
-   ]
-  },
-  {
    "claim": "He used his safety tether to find his way",
    "terms": [
     "tether|cable|safety"
@@ -815,7 +816,7 @@
   {
    "claim": "The cause was clogging in the suit's cooling/fan pump",
    "terms": [
-    "clog|contamina"
+    "fan|pump|separator|contamina|clog"
    ]
   },
   {
