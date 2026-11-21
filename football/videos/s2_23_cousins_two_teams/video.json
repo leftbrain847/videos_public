@@ -1,11 +1,11 @@
 {
  "id": "s2_23_cousins_two_teams",
  "title": "Two teams, two Sundays",
- "set": "locker",
+ "set": "field",
  "setOpts": {
   "boardText": [
-   "QB:",
-   "COUSINS"
+   "MIN",
+   "GB"
   ]
  },
  "cast": {
@@ -84,19 +84,57 @@
     -2.0,
     -1.8
    ]
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#203731",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center"
+  },
+  "lvqb": {
+   "look": {
+    "outfit": "jersey",
+    "shirt": "#1b1b1b",
+    "pants": "#c9ced3",
+    "number": "8",
+    "hair": "short",
+    "hairColor": "#b07a4a",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "football"
   }
  },
  "lines": [
   {
-   "text": "Kirk Cousins started for one team, then started for a different team the very next week.",
+   "text": "One Sunday, you start for Las Vegas. The next? Minnesota.",
    "key": [
-    "NEXT"
+    "MINNESOTA."
    ],
+   "speaker": "capy",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAIDERS",
+     "VIKINGS"
+    ]
+   },
    "place": {
+    "qb": false,
     "wr": false,
     "gb": false,
     "boss": false,
     "rush": false,
+    "fan": false,
+    "lvqb": [
+     0.2,
+     0
+    ],
     "capy": [
      -2.4,
      0.8
@@ -105,7 +143,7 @@
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "qb"
+    "with": "lvqb"
    },
    "act": {
     "capy": {
@@ -113,75 +151,158 @@
      "action": "talk",
      "look": "camera"
     },
+    "lvqb": {
+     "mood": "confused",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Back to back weeks. Two different teams.",
+   "key": [
+    "TWO"
+   ],
+   "board": [
+    "WEEK 9: LV",
+    "WEEK 10: MIN"
+   ],
+   "place": {
+    "qb": [
+     1.4,
+     0
+    ],
+    "wr": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": [
+     -1.4,
+     0
+    ],
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "lvqb",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "lvqb": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "qb"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "lvqb"
+    }
+   }
+  },
+  {
+   "text": "You're Kirk Cousins. Traded at the deadline. Pack your bags.",
+   "key": [
+    "TRADED"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "TRADE",
+     "LV TO MIN"
+    ]
+   },
+   "place": {
+    "qb": false,
+    "wr": false,
+    "gb": false,
+    "boss": [
+     0.4,
+     0.6
+    ],
+    "rush": false,
+    "fan": false,
+    "lvqb": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Back to the Vikings. Your old team. Small world.",
+   "key": [
+    "VIKINGS."
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "QB:",
+     "COUSINS"
+    ]
+   },
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "wr": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "qb"
+   },
+   "act": {
     "qb": {
      "mood": "happy",
      "action": "wave",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "No quarterback had done that since at least nineteen fifty.",
-   "cap": "No quarterback had done that since at least 1950.",
+   "text": "Before that? Two seasons in Atlanta.",
    "key": [
-    "1950."
+    "ATLANTA."
    ],
+   "board": [
+    "2024-25",
+    "ATLANTA"
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "wr": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": false,
+    "capy": false
+   },
    "shot": {
     "type": "close",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "smug",
-     "action": "idle",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Rewind to twenty twenty three. As a Viking, Cousins tears his Achilles at Lambeau Field.",
-   "cap": "Rewind to 2023. As a Viking, Cousins tears his Achilles at Lambeau Field.",
-   "key": [
-    "LAMBEAU"
-   ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "2023"
-    ]
-   },
-   "place": {
-    "qb": "center"
-   },
-   "shot": {
-    "type": "wide",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "sad",
-     "action": "slump"
-    }
-   }
-  },
-  {
-   "text": "After that season, he leaves. Two years in Atlanta. Then Las Vegas.",
-   "key": [
-    "VEGAS."
-   ],
-   "set": "tunnel",
-   "setOpts": {
-    "boardText": [
-     "ATLANTA",
-     "LAS VEGAS"
-    ]
-   },
-   "place": {
-    "qb": "center"
-   },
-   "shot": {
-    "type": "medium",
     "on": "qb"
    },
    "act": {
@@ -193,77 +314,30 @@
    }
   },
   {
-   "text": "This month, at the trade deadline, the Raiders send him back to Minnesota.",
+   "text": "No quarterback had done that since nineteen fifty. Wild.",
+   "cap": "No quarterback had done that since 1950. Wild.",
    "key": [
-    "BACK"
+    "1950."
    ],
-   "set": "office",
-   "setOpts": {
-    "boardText": [
-     "TRADE:",
-     "COUSINS"
-    ]
-   },
-   "place": {
-    "boss": "desk"
-   },
-   "shot": {
-    "type": "medium",
-    "on": "boss"
-   },
-   "act": {
-    "boss": {
-     "mood": "smug",
-     "action": "hold",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Five days later, his first game back is at Lambeau. Against Green Bay.",
-   "cap": "5 days later, his first game back is at Lambeau. Against Green Bay.",
-   "key": [
-    "5"
+   "board": [
+    "LAST TIME",
+    "1950"
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "VIKINGS",
-     "PACKERS"
-    ]
-   },
+   "speaker": "capy",
    "place": {
-    "qb": "left",
-    "gb": "right",
-    "boss": false
-   },
-   "shot": {
-    "type": "two",
-    "on": "qb",
-    "with": "gb"
-   },
-   "act": {
-    "qb": {
-     "mood": "neutral",
-     "action": "hold",
-     "look": "gb"
-    },
-    "gb": {
-     "mood": "angry",
-     "action": "cross",
-     "look": "qb"
-    }
-   }
-  },
-  {
-   "text": "Same stadium. Very different ending.",
-   "key": [
-    "ENDING."
-   ],
-   "place": {
+    "qb": [
+     1.6,
+     0
+    ],
+    "wr": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": false,
     "capy": [
-     -0.4,
-     1.3
+     -1.2,
+     1.0
     ]
    },
    "shot": {
@@ -273,64 +347,576 @@
    },
    "act": {
     "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "qb": {
      "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Your first game back? At Lambeau Field. Enemy territory.",
+   "key": [
+    "LAMBEAU"
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "MIN",
+     "GB"
+    ]
+   },
+   "place": {
+    "qb": [
+     -1.4,
+     0
+    ],
+    "wr": false,
+    "gb": [
+     1.6,
+     0
+    ],
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "gb"
+    },
+    "gb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "The place you tore your Achilles. Twenty twenty three. Ouch.",
+   "cap": "The place you tore your Achilles. 2023. Ouch.",
+   "key": [
+    "ACHILLES."
+   ],
+   "speaker": "capy",
+   "place": {
+    "qb": [
+     1.6,
+     0
+    ],
+    "wr": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
      "action": "point",
      "look": "qb"
     },
+    "qb": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "This time is different. Very different.",
+   "key": [
+    "DIFFERENT."
+   ],
+   "place": {
+    "qb": [
+     0,
+     0
+    ],
+    "wr": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "qb"
+   },
+   "act": {
     "qb": {
      "mood": "smug",
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "Cousins throws thirty eight yards to Myles Price. Touchdown.",
-   "cap": "Cousins throws 38 yards to Myles Price. Touchdown.",
-   "key": [
-    "38"
-   ],
-   "place": {
-    "capy": false,
-    "wr": [
-     1.2,
-     0.2
-    ],
-    "gb": false
-   },
-   "shot": {
-    "type": "low",
-    "on": "wr"
-   },
-   "act": {
-    "wr": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "qb": {
-     "mood": "happy",
-     "action": "throw",
-     "look": "wr"
-    }
    }
   },
   {
-   "text": "His defense sacks Jordan Love eight times.",
-   "cap": "His defense sacks Jordan Love 8 times.",
+   "text": "You hit Myles Price. Thirty eight yards. Touchdown. Revenge.",
+   "cap": "You hit Myles Price. 38 yards. Touchdown. Revenge.",
+   "key": [
+    "38"
+   ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "MIN",
+     "GB"
+    ],
+    "endZone": 45,
+    "zoneA": "#4f2683",
+    "zoneB": "#203731"
+   },
+   "place": {
+    "capy": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": false
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "ball",
+    "fallback": "wr",
+    "lead": 0
+   },
+   "sfx": [
+    [
+     0.58,
+     "roar"
+    ]
+   ],
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        9.0,
+        0.0
+       ],
+       [
+        0.039,
+        8.5,
+        0.0
+       ],
+       [
+        0.078,
+        8.0,
+        0.0
+       ],
+       [
+        0.118,
+        7.5,
+        0.0
+       ],
+       [
+        0.157,
+        7.0,
+        0.0
+       ],
+       [
+        0.19,
+        7.0,
+        0.0
+       ],
+       [
+        0.224,
+        7.0,
+        0.0
+       ],
+       [
+        0.258,
+        7.0,
+        0.0
+       ],
+       [
+        0.292,
+        7.0,
+        0.0
+       ],
+       [
+        0.325,
+        7.0,
+        0.0
+       ],
+       [
+        0.359,
+        7.0,
+        0.0
+       ],
+       [
+        0.393,
+        7.0,
+        0.0
+       ],
+       [
+        0.427,
+        7.0,
+        0.0
+       ],
+       [
+        0.46,
+        7.0,
+        0.0
+       ],
+       [
+        0.494,
+        7.0,
+        0.0
+       ],
+       [
+        0.528,
+        7.0,
+        0.0
+       ],
+       [
+        0.561,
+        7.0,
+        0.0
+       ],
+       [
+        0.595,
+        7.0,
+        0.0
+       ],
+       [
+        0.629,
+        7.0,
+        0.0
+       ],
+       [
+        0.663,
+        7.0,
+        0.0
+       ],
+       [
+        0.696,
+        7.0,
+        0.0
+       ],
+       [
+        0.73,
+        7.0,
+        0.0
+       ],
+       [
+        0.764,
+        7.0,
+        0.0
+       ],
+       [
+        0.798,
+        7.0,
+        0.0
+       ],
+       [
+        0.831,
+        7.0,
+        0.0
+       ],
+       [
+        0.865,
+        7.0,
+        0.0
+       ],
+       [
+        0.899,
+        7.0,
+        0.0
+       ],
+       [
+        0.933,
+        7.0,
+        0.0
+       ],
+       [
+        0.966,
+        7.0,
+        0.0
+       ],
+       [
+        1.0,
+        7,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.157,
+        "idle"
+       ],
+       [
+        0.179,
+        "throw"
+       ],
+       [
+        0.582,
+        "cheer"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        37.0,
+        3.8
+       ],
+       [
+        0.034,
+        37.56,
+        3.71
+       ],
+       [
+        0.067,
+        38.12,
+        3.62
+       ],
+       [
+        0.101,
+        38.69,
+        3.54
+       ],
+       [
+        0.134,
+        39.25,
+        3.45
+       ],
+       [
+        0.168,
+        39.81,
+        3.36
+       ],
+       [
+        0.201,
+        40.38,
+        3.27
+       ],
+       [
+        0.235,
+        40.94,
+        3.19
+       ],
+       [
+        0.269,
+        41.5,
+        3.1
+       ],
+       [
+        0.302,
+        42.06,
+        3.01
+       ],
+       [
+        0.336,
+        42.62,
+        2.92
+       ],
+       [
+        0.369,
+        43.19,
+        2.84
+       ],
+       [
+        0.403,
+        43.75,
+        2.75
+       ],
+       [
+        0.437,
+        44.31,
+        2.66
+       ],
+       [
+        0.47,
+        44.88,
+        2.58
+       ],
+       [
+        0.504,
+        45.44,
+        2.49
+       ],
+       [
+        0.537,
+        46.0,
+        2.4
+       ],
+       [
+        0.573,
+        46.04,
+        2.4
+       ],
+       [
+        0.608,
+        46.08,
+        2.4
+       ],
+       [
+        0.644,
+        46.12,
+        2.4
+       ],
+       [
+        0.68,
+        46.15,
+        2.4
+       ],
+       [
+        0.715,
+        46.19,
+        2.4
+       ],
+       [
+        0.751,
+        46.23,
+        2.4
+       ],
+       [
+        0.786,
+        46.27,
+        2.4
+       ],
+       [
+        0.822,
+        46.31,
+        2.4
+       ],
+       [
+        0.858,
+        46.35,
+        2.4
+       ],
+       [
+        0.893,
+        46.38,
+        2.4
+       ],
+       [
+        0.929,
+        46.42,
+        2.4
+       ],
+       [
+        0.964,
+        46.46,
+        2.4
+       ],
+       [
+        1.0,
+        46.5,
+        2.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.537,
+        "catch"
+       ],
+       [
+        0.604,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.224,
+      7.3,
+      1.7,
+      0
+     ],
+     [
+      0.381,
+      27,
+      7,
+      1.3
+     ],
+     [
+      0.537,
+      46,
+      1.5,
+      2.4
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.537,
+      "wr"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Your defense sacks Jordan Love eight times. Eight.",
+   "cap": "Your defense sacks Jordan Love 8 times. 8.",
    "key": [
     "8"
    ],
+   "board": [
+    "SACKS",
+    "8"
+   ],
    "place": {
-    "rush": [
-     -0.8,
-     0.4
-    ],
+    "qb": false,
+    "wr": false,
     "gb": [
-     1.2,
-     0.2
+     1.4,
+     0
     ],
-    "wr": false
+    "boss": false,
+    "rush": [
+     -1.2,
+     0
+    ],
+    "fan": false,
+    "lvqb": false,
+    "capy": false
    },
    "shot": {
     "type": "two",
@@ -339,29 +925,35 @@
    },
    "act": {
     "rush": {
-     "mood": "angry",
-     "action": "point",
-     "look": "gb"
+     "mood": "happy",
+     "action": "celebrate",
+     "look": "camera"
     },
     "gb": {
      "mood": "sad",
-     "action": "slump"
+     "action": "slump",
+     "look": "rush"
     }
    }
   },
   {
-   "text": "Cousins finishes twenty one of thirty one, with two touchdowns.",
-   "cap": "Cousins finishes 21 of 31, with 2 touchdowns.",
+   "text": "You throw two touchdown passes. Not bad.",
+   "cap": "You throw 2 touchdown passes. Not bad.",
    "key": [
-    "21"
+    "2"
    ],
    "place": {
-    "qb": "center",
+    "qb": [
+     0,
+     0
+    ],
+    "wr": false,
     "gb": false,
-    "rush": [
-     -2.0,
-     -1.2
-    ]
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": false,
+    "capy": false
    },
    "shot": {
     "type": "high",
@@ -370,45 +962,70 @@
    "act": {
     "qb": {
      "mood": "happy",
-     "action": "hold"
+     "action": "cheer",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Vikings win at Lambeau, thirty to ten.",
-   "cap": "Vikings win at Lambeau, 30 to 10.",
+   "text": "Vikings thirty, Packers ten. At Lambeau.",
+   "cap": "Vikings 30, Packers 10. At Lambeau.",
    "key": [
-    "30"
+    "30,"
    ],
+   "board": [
+    "MIN 30",
+    "GB 10"
+   ],
+   "place": {
+    "qb": false,
+    "wr": false,
+    "gb": [
+     0,
+     0
+    ],
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": false,
+    "capy": false
+   },
    "shot": {
-    "type": "wide",
-    "on": "qb"
+    "type": "close",
+    "on": "gb"
    },
    "act": {
-    "qb": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "rush": {
-     "mood": "happy",
-     "action": "cheer"
+    "gb": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "His words: it's gratifying to come back here with the purple on.",
+   "text": "Your words? Gratifying, to come back in purple. Sweet.",
    "key": [
-    "PURPLE"
+    "PURPLE."
    ],
    "set": "press",
    "setOpts": {
     "boardText": [
-     "VIKINGS 30",
-     "PACKERS 10"
+     "VIKINGS",
+     "POSTGAME"
     ]
    },
    "place": {
-    "qb": "center"
+    "qb": [
+     0,
+     0.4
+    ],
+    "wr": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "fan": false,
+    "lvqb": false,
+    "capy": false
    },
    "shot": {
     "type": "medium",
@@ -417,34 +1034,88 @@
    "act": {
     "qb": {
      "mood": "happy",
-     "action": "talk",
+     "action": "idle",
      "look": "camera"
     }
    }
   },
   {
-   "text": "Should Minnesota have kept him all along? Yes or no?",
+   "text": "Packers fans, that's one awkward reunion. For you.",
    "key": [
-    "KEPT"
+    "AWKWARD"
    ],
-   "set": "locker",
+   "speaker": "capy",
+   "set": "living",
    "setOpts": {
     "boardText": [
-     "QB:",
-     "BACK"
+     "MIN 30",
+     "GB 10"
     ]
    },
    "place": {
+    "qb": false,
+    "wr": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
+    "lvqb": false,
     "capy": [
      -1.6,
-     1.0
-    ],
-    "qb": "center"
+     3.6
+    ]
    },
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "qb"
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Should Minnesota have kept him all along? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "KEEP HIM?",
+    "YES OR NO"
+   ],
+   "place": {
+    "qb": false,
+    "wr": false,
+    "gb": false,
+    "boss": false,
+    "rush": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "lvqb": false,
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -452,18 +1123,25 @@
      "action": "talk",
      "look": "camera"
     },
-    "qb": {
-     "mood": "happy",
-     "action": "wave",
-     "look": "camera"
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
   {
-   "title": "Vikings.com: Kirk Cousins, quarterback and offense in Packers win, Week 10 2026",
+   "title": "CBS Minnesota (AP): Kirk Cousins has triumphant return as Vikings sack Jordan Love 8 times in 30-10 win over Packers",
+   "url": "https://www.cbsnews.com/minnesota/news/vikings-vs-packers-game-nov-15-2026/"
+  },
+  {
+   "title": "KELOLAND (AP): Vikings beat Packers 30-10 in Cousins' return",
+   "url": "https://www.keloland.com/sports/vikings-beat-packers-30-10-in-cousins-return/"
+  },
+  {
+   "title": "Vikings.com: Kirk Cousins, offense, Packers win, Week 10",
    "url": "https://www.vikings.com/news/kirk-cousins-quarterback-offense-packers-win-week-10-2026"
   },
   {
@@ -471,12 +1149,93 @@
    "url": "https://www.tsn.ca/nfl/article/cousins-emotional-after-win-in-vikings-return-reflects-on-tough-3-years-n1-50495965/"
   },
   {
-   "title": "AP (Chicago Sun-Times): Vikings beat Packers 30-10 in Kirk Cousins' return; Jordan Love is sacked 8 times",
+   "title": "Chicago Sun-Times: Vikings beat Packers 30-10 in Kirk Cousins' return, Jordan Love is sacked 8 times",
    "url": "https://chicago.suntimes.com/nfl/2026/11/15/vikings-beat-packers-30-10-in-kirk-cousins-return-jordan-love-is-sacked-8-times"
   },
   {
-   "title": "Dakota News Now: Kirk Cousins back to his winning ways with the Vikings",
+   "title": "Dakota News Now: Kirk Cousins back to his winning ways with Vikings",
    "url": "https://www.dakotanewsnow.com/2026/11/16/kirk-cousins-back-his-winning-ways-with-vikings-beat-green-bay-road/"
+  },
+  {
+   "title": "ESPN: How Vikings got Kirk Cousins ready to win by being 'Minnesota polite'",
+   "url": "https://espn.com/nfl/story/_/id/50511159/vikings-kirk-cousins-trade-beat-packers"
+  },
+  {
+   "title": "Yahoo Sports: Kirk Cousins delivers strong first outing as Vikings sack Packers' Jordan Love 8 times",
+   "url": "https://sports.yahoo.com/nfl/live/vikings-packers-score-live-updates-inactives-highlights-stats-where-to-watch-week-10-kirk-cousins-trade-161023092.html"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Cousins started for the Raiders one week and the Vikings the next, after a trade",
+   "terms": [
+    "Cousins",
+    "Raiders"
+   ]
+  },
+  {
+   "claim": "He was traded back to Minnesota at the deadline",
+   "terms": [
+    "trade"
+   ]
+  },
+  {
+   "claim": "Before Las Vegas he spent two seasons in Atlanta",
+   "terms": [
+    "Atlanta|Falcons"
+   ]
+  },
+  {
+   "claim": "No quarterback had done that since at least 1950",
+   "terms": [
+    "1950"
+   ]
+  },
+  {
+   "claim": "His first game back was at Lambeau Field",
+   "terms": [
+    "Lambeau"
+   ]
+  },
+  {
+   "claim": "He tore his Achilles at Lambeau in 2023",
+   "terms": [
+    "Achilles"
+   ]
+  },
+  {
+   "claim": "Cousins threw a 38-yard touchdown to Myles Price",
+   "terms": [
+    "Price",
+    "38"
+   ]
+  },
+  {
+   "claim": "The Vikings sacked Jordan Love 8 times",
+   "terms": [
+    "Love",
+    "8 times|eight times"
+   ]
+  },
+  {
+   "claim": "Cousins threw two touchdown passes",
+   "terms": [
+    "Cousins",
+    "two touchdown|2 touchdown|two TD|2 TD"
+   ]
+  },
+  {
+   "claim": "Vikings won 30-10",
+   "terms": [
+    "30-10"
+   ]
+  },
+  {
+   "claim": "Cousins said it was gratifying to come back in purple",
+   "terms": [
+    "gratifying"
+   ]
   }
  ]
 }

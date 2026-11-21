@@ -82,19 +82,37 @@
     "headset": true
    },
    "at": "right"
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#241773",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "The last winless team in the NFL finally won. On Monday Night Football.",
+   "text": "Zero and eight. Then you finally win. On Monday night.",
+   "cap": "0-8. Then you finally win. On Monday night.",
    "key": [
-    "WINLESS"
+    "WIN."
    ],
+   "speaker": "capy",
    "place": {
+    "qb": [
+     0.2,
+     0
+    ],
     "rb": false,
     "db": false,
     "wr": false,
     "coach": false,
+    "fan": false,
     "capy": [
      -2.4,
      0.8
@@ -113,76 +131,31 @@
     },
     "qb": {
      "mood": "happy",
-     "action": "cheer"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "The Chargers came in oh and eight. Eleven straight losses, back to last season.",
-   "cap": "The Chargers came in 0 and 8. 11 straight losses, back to last season.",
-   "key": [
-    "11"
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "RECORD:",
-     "0-8"
-    ]
-   },
-   "place": {
-    "coach": "center"
-   },
-   "shot": {
-    "type": "medium",
-    "on": "coach"
-   },
-   "act": {
-    "coach": {
-     "mood": "sad",
-     "action": "facepalm"
-    }
-   }
-  },
-  {
-   "text": "The Ravens had lost four straight. Combined, fifteen losses in a row.",
-   "cap": "The Ravens had lost 4 straight. Combined, 15 losses in a row.",
-   "key": [
-    "15"
-   ],
-   "shot": {
-    "type": "close",
-    "on": "coach"
-   },
-   "act": {
-    "coach": {
-     "mood": "worried",
-     "action": "idle",
+     "action": "cheer",
      "look": "camera"
     }
    }
   },
   {
-   "text": "In Baltimore, Justin Herbert scrambles twenty two yards for a touchdown on the first drive.",
-   "cap": "In Baltimore, Justin Herbert scrambles 22 yards for a touchdown on the first drive.",
+   "text": "You're the Los Angeles Chargers. The last winless team. Ouch.",
    "key": [
-    "22"
+    "WINLESS"
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "CHARGERS",
-     "RAVENS"
-    ]
-   },
+   "board": [
+    "CHARGERS",
+    "0-8"
+   ],
    "place": {
-    "qb": "left",
-    "rb": "right",
-    "db": [
-     0.2,
-     -2.2
-    ]
+    "qb": [
+     0,
+     0
+    ],
+    "rb": false,
+    "db": false,
+    "wr": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "low",
@@ -190,45 +163,596 @@
    },
    "act": {
     "qb": {
-     "mood": "happy",
-     "action": "cheer"
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Then the Chargers do something stranger. They stop Derrick Henry.",
+   "text": "Eleven straight losses. Going back to last season. Rough.",
+   "cap": "11 straight losses. Going back to last season. Rough.",
+   "key": [
+    "11"
+   ],
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "LOSING STREAK",
+     "11"
+    ]
+   },
+   "place": {
+    "qb": false,
+    "rb": false,
+    "db": false,
+    "wr": false,
+    "coach": [
+     0.4,
+     0.4
+    ],
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "coach"
+   },
+   "act": {
+    "coach": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Now you visit Baltimore. Monday Night Football. Prime time.",
+   "key": [
+    "BALTIMORE."
+   ],
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "LAC",
+     "BAL"
+    ]
+   },
+   "place": {
+    "qb": [
+     -1.4,
+     0
+    ],
+    "rb": [
+     1.6,
+     0
+    ],
+    "db": false,
+    "wr": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "qb",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "qb": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "rb"
+    },
+    "rb": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "qb"
+    }
+   }
+  },
+  {
+   "text": "First drive. Justin Herbert scrambles twenty two yards. Touchdown. Easy.",
+   "cap": "First drive. Justin Herbert scrambles 22 yards. Touchdown. Easy.",
+   "key": [
+    "22"
+   ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "endZone": 45,
+    "zoneA": "#0080c6",
+    "zoneB": "#241773",
+    "boardText": [
+     "LAC 0",
+     "BAL 0"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "rb": false,
+    "db": false,
+    "coach": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow",
+    "on": "qb"
+   },
+   "sfx": [
+    [
+     0.82,
+     "roar"
+    ]
+   ],
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        19.0,
+        0.0
+       ],
+       [
+        0.031,
+        18.67,
+        0.0
+       ],
+       [
+        0.062,
+        18.33,
+        0.0
+       ],
+       [
+        0.093,
+        18.0,
+        0.0
+       ],
+       [
+        0.124,
+        17.67,
+        0.0
+       ],
+       [
+        0.155,
+        17.33,
+        0.0
+       ],
+       [
+        0.186,
+        17.0,
+        0.0
+       ],
+       [
+        0.214,
+        17.1,
+        0.25
+       ],
+       [
+        0.242,
+        17.2,
+        0.5
+       ],
+       [
+        0.271,
+        18.64,
+        0.54
+       ],
+       [
+        0.3,
+        20.08,
+        0.57
+       ],
+       [
+        0.329,
+        21.52,
+        0.6
+       ],
+       [
+        0.358,
+        22.96,
+        0.64
+       ],
+       [
+        0.386,
+        24.4,
+        0.68
+       ],
+       [
+        0.415,
+        25.84,
+        0.71
+       ],
+       [
+        0.444,
+        27.28,
+        0.74
+       ],
+       [
+        0.473,
+        28.72,
+        0.78
+       ],
+       [
+        0.502,
+        30.16,
+        0.81
+       ],
+       [
+        0.531,
+        31.6,
+        0.85
+       ],
+       [
+        0.56,
+        33.04,
+        0.89
+       ],
+       [
+        0.588,
+        34.48,
+        0.92
+       ],
+       [
+        0.617,
+        35.92,
+        0.95
+       ],
+       [
+        0.646,
+        37.36,
+        0.99
+       ],
+       [
+        0.675,
+        38.8,
+        1.02
+       ],
+       [
+        0.704,
+        40.24,
+        1.06
+       ],
+       [
+        0.733,
+        41.68,
+        1.09
+       ],
+       [
+        0.762,
+        43.12,
+        1.13
+       ],
+       [
+        0.791,
+        44.56,
+        1.17
+       ],
+       [
+        0.819,
+        46.0,
+        1.2
+       ],
+       [
+        0.849,
+        46.08,
+        1.2
+       ],
+       [
+        0.88,
+        46.17,
+        1.2
+       ],
+       [
+        0.91,
+        46.25,
+        1.2
+       ],
+       [
+        0.94,
+        46.33,
+        1.2
+       ],
+       [
+        0.97,
+        46.42,
+        1.2
+       ],
+       [
+        1.0,
+        46.5,
+        1.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "walk"
+       ],
+       [
+        0.186,
+        "hold"
+       ],
+       [
+        0.242,
+        "run"
+       ],
+       [
+        0.819,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     },
+     "wr": {
+      "path": [
+       [
+        0.0,
+        32.0,
+        -3.5
+       ],
+       [
+        0.028,
+        32.31,
+        -3.47
+       ],
+       [
+        0.057,
+        32.62,
+        -3.43
+       ],
+       [
+        0.085,
+        32.93,
+        -3.4
+       ],
+       [
+        0.113,
+        33.24,
+        -3.36
+       ],
+       [
+        0.141,
+        33.55,
+        -3.33
+       ],
+       [
+        0.17,
+        33.86,
+        -3.29
+       ],
+       [
+        0.198,
+        34.17,
+        -3.26
+       ],
+       [
+        0.226,
+        34.48,
+        -3.22
+       ],
+       [
+        0.254,
+        34.79,
+        -3.19
+       ],
+       [
+        0.283,
+        35.1,
+        -3.16
+       ],
+       [
+        0.311,
+        35.41,
+        -3.12
+       ],
+       [
+        0.339,
+        35.72,
+        -3.09
+       ],
+       [
+        0.367,
+        36.03,
+        -3.05
+       ],
+       [
+        0.396,
+        36.34,
+        -3.02
+       ],
+       [
+        0.424,
+        36.66,
+        -2.98
+       ],
+       [
+        0.452,
+        36.97,
+        -2.95
+       ],
+       [
+        0.48,
+        37.28,
+        -2.91
+       ],
+       [
+        0.509,
+        37.59,
+        -2.88
+       ],
+       [
+        0.537,
+        37.9,
+        -2.84
+       ],
+       [
+        0.565,
+        38.21,
+        -2.81
+       ],
+       [
+        0.593,
+        38.52,
+        -2.78
+       ],
+       [
+        0.622,
+        38.83,
+        -2.74
+       ],
+       [
+        0.65,
+        39.14,
+        -2.71
+       ],
+       [
+        0.678,
+        39.45,
+        -2.67
+       ],
+       [
+        0.706,
+        39.76,
+        -2.64
+       ],
+       [
+        0.735,
+        40.07,
+        -2.6
+       ],
+       [
+        0.763,
+        40.38,
+        -2.57
+       ],
+       [
+        0.791,
+        40.69,
+        -2.53
+       ],
+       [
+        0.819,
+        41.0,
+        -2.5
+       ],
+       [
+        0.849,
+        41.0,
+        -2.5
+       ],
+       [
+        0.88,
+        41.0,
+        -2.5
+       ],
+       [
+        0.91,
+        41.0,
+        -2.5
+       ],
+       [
+        0.94,
+        41.0,
+        -2.5
+       ],
+       [
+        0.97,
+        41.0,
+        -2.5
+       ],
+       [
+        1.0,
+        41,
+        -2.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.819,
+        "slump"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "carry": [
+     [
+      0,
+      "qb"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Then something stranger. You stop Derrick Henry. Cold.",
    "key": [
     "HENRY."
    ],
+   "speaker": "capy",
    "place": {
-    "db": [
-     0.6,
-     0.3
+    "qb": false,
+    "rb": [
+     1.6,
+     0
+    ],
+    "db": false,
+    "wr": false,
+    "coach": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
     ]
    },
    "shot": {
-    "type": "two",
-    "on": "db",
-    "with": "rb"
+    "type": "medium",
+    "on": "capy"
    },
    "act": {
-    "db": {
-     "mood": "angry",
+    "capy": {
+     "mood": "shocked",
      "action": "point",
      "look": "rb"
     },
     "rb": {
-     "mood": "worried",
-     "action": "hold"
+     "mood": "angry",
+     "action": "hold",
+     "look": "capy"
     }
    }
   },
   {
-   "text": "Ten carries. Ten yards.",
-   "cap": "10 carries. 10 yards.",
+   "text": "Ten carries. Ten yards. One yard a pop.",
+   "cap": "10 carries. 10 yards. 1 yard a pop.",
    "key": [
     "10"
    ],
+   "board": [
+    "HENRY",
+    "10 FOR 10"
+   ],
+   "place": {
+    "qb": false,
+    "rb": [
+     0,
+     0
+    ],
+    "db": false,
+    "wr": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
     "type": "close",
     "on": "rb"
@@ -236,43 +760,78 @@
    "act": {
     "rb": {
      "mood": "sad",
-     "action": "slump"
+     "action": "slump",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "The whole Ravens team runs for sixteen yards.",
-   "cap": "The whole Ravens team runs for 16 yards.",
+   "text": "Baltimore's whole team runs for sixteen yards.",
+   "cap": "Baltimore's whole team runs for 16 yards.",
    "key": [
     "16"
    ],
+   "board": [
+    "BAL RUSHING",
+    "16 YDS"
+   ],
+   "place": {
+    "qb": false,
+    "rb": [
+     -1.2,
+     0
+    ],
+    "db": [
+     1.4,
+     0
+    ],
+    "wr": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
-    "type": "high",
-    "on": "rb"
+    "type": "two",
+    "on": "rb",
+    "with": "db"
    },
    "act": {
     "rb": {
      "mood": "sad",
-     "action": "slump"
+     "action": "facepalm",
+     "look": "camera"
     },
     "db": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "qb": {
-     "mood": "happy",
-     "action": "clap"
+     "mood": "smug",
+     "action": "cross",
+     "look": "rb"
     }
    }
   },
   {
-   "text": "Henry still scores twice. Baltimore gets within three, twenty three to twenty.",
-   "cap": "Henry still scores twice. Baltimore gets within three, 23 to 20.",
+   "text": "But the Ravens close to three. Twenty three to twenty.",
+   "cap": "But the Ravens close to 3. 23-20.",
    "key": [
-    "THREE,"
+    "23-20."
    ],
+   "board": [
+    "LAC 23",
+    "BAL 20"
+   ],
+   "place": {
+    "qb": false,
+    "rb": [
+     0,
+     0
+    ],
+    "db": false,
+    "wr": false,
+    "coach": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
-    "type": "medium",
+    "type": "high",
     "on": "rb"
    },
    "act": {
@@ -284,138 +843,525 @@
    }
   },
   {
-   "text": "Two minutes left. Zay Flowers makes a catch, and Tarheeb Still punches the ball loose.",
+   "text": "Two minutes left. Baltimore is driving. Zay Flowers makes a catch.",
    "key": [
-    "LOOSE."
+    "CATCH."
    ],
    "place": {
-    "wr": [
-     1.8,
-     0.2
+    "qb": false,
+    "rb": false,
+    "db": [
+     1.4,
+     0
     ],
-    "rb": false
+    "wr": [
+     -1.2,
+     0
+    ],
+    "coach": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "two",
-    "on": "db",
-    "with": "wr"
+    "on": "wr",
+    "with": "db"
    },
    "act": {
+    "wr": {
+     "mood": "happy",
+     "action": "catch",
+     "look": "camera"
+    },
     "db": {
      "mood": "angry",
-     "action": "point",
+     "action": "run",
      "look": "wr"
-    },
-    "wr": {
-     "mood": "shocked",
-     "action": "shrug"
     }
    }
   },
   {
-   "text": "Chargers recover. Baltimore gets one last heave, and it falls short.",
+   "text": "Tarheeb Still punches it loose. Fumble. Your ball.",
    "key": [
-    "SHORT."
+    "LOOSE."
    ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "endZone": 45,
+    "zoneA": "#0080c6",
+    "zoneB": "#241773",
+    "boardText": [
+     "LAC 23",
+     "BAL 20"
+    ]
+   },
    "place": {
-    "qb": "center"
+    "capy": false,
+    "qb": false,
+    "rb": false,
+    "coach": false,
+    "fan": false
    },
    "shot": {
-    "type": "wide",
-    "on": "qb"
+    "type": "follow",
+    "on": "ball",
+    "fallback": "wr",
+    "lead": 0
+   },
+   "play": {
+    "cast": {
+     "wr": {
+      "path": [
+       [
+        0.0,
+        0.0,
+        1.0
+       ],
+       [
+        0.048,
+        -1.0,
+        1.0
+       ],
+       [
+        0.096,
+        -2.0,
+        1.0
+       ],
+       [
+        0.144,
+        -3.0,
+        1.0
+       ],
+       [
+        0.192,
+        -4.0,
+        1.0
+       ],
+       [
+        0.24,
+        -5.0,
+        1.0
+       ],
+       [
+        0.288,
+        -6.0,
+        1.0
+       ],
+       [
+        0.333,
+        -6.02,
+        1.0
+       ],
+       [
+        0.377,
+        -6.04,
+        1.0
+       ],
+       [
+        0.422,
+        -6.06,
+        1.0
+       ],
+       [
+        0.466,
+        -6.08,
+        1.0
+       ],
+       [
+        0.511,
+        -6.09,
+        1.0
+       ],
+       [
+        0.555,
+        -6.11,
+        1.0
+       ],
+       [
+        0.6,
+        -6.13,
+        1.0
+       ],
+       [
+        0.644,
+        -6.15,
+        1.0
+       ],
+       [
+        0.689,
+        -6.17,
+        1.0
+       ],
+       [
+        0.733,
+        -6.19,
+        1.0
+       ],
+       [
+        0.778,
+        -6.21,
+        1.0
+       ],
+       [
+        0.822,
+        -6.22,
+        1.0
+       ],
+       [
+        0.867,
+        -6.24,
+        1.0
+       ],
+       [
+        0.911,
+        -6.26,
+        1.0
+       ],
+       [
+        0.956,
+        -6.28,
+        1.0
+       ],
+       [
+        1.0,
+        -6.3,
+        1
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.288,
+        "slump"
+       ]
+      ],
+      "face": -90
+     },
+     "db": {
+      "path": [
+       [
+        0.0,
+        -10.0,
+        -1.2
+       ],
+       [
+        0.048,
+        -9.6,
+        -1.07
+       ],
+       [
+        0.096,
+        -9.2,
+        -0.93
+       ],
+       [
+        0.144,
+        -8.8,
+        -0.8
+       ],
+       [
+        0.192,
+        -8.4,
+        -0.67
+       ],
+       [
+        0.24,
+        -8.0,
+        -0.53
+       ],
+       [
+        0.288,
+        -7.6,
+        -0.4
+       ],
+       [
+        0.331,
+        -7.69,
+        -0.08
+       ],
+       [
+        0.375,
+        -7.78,
+        0.25
+       ],
+       [
+        0.418,
+        -7.86,
+        0.58
+       ],
+       [
+        0.461,
+        -7.95,
+        0.9
+       ],
+       [
+        0.504,
+        -8.04,
+        1.23
+       ],
+       [
+        0.548,
+        -8.12,
+        1.55
+       ],
+       [
+        0.591,
+        -8.21,
+        1.88
+       ],
+       [
+        0.634,
+        -8.3,
+        2.2
+       ],
+       [
+        0.68,
+        -8.3,
+        2.2
+       ],
+       [
+        0.726,
+        -8.3,
+        2.2
+       ],
+       [
+        0.771,
+        -8.3,
+        2.2
+       ],
+       [
+        0.817,
+        -8.3,
+        2.2
+       ],
+       [
+        0.863,
+        -8.3,
+        2.2
+       ],
+       [
+        0.909,
+        -8.3,
+        2.2
+       ],
+       [
+        0.954,
+        -8.3,
+        2.2
+       ],
+       [
+        1.0,
+        -8.3,
+        2.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.634,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.288,
+      -6.2,
+      1.2,
+      1.0
+     ],
+     [
+      0.403,
+      -7.2,
+      1.6,
+      1.8
+     ],
+     [
+      0.519,
+      -8.2,
+      0.2,
+      2.4
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "wr"
+     ],
+     [
+      0.634,
+      "db"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Chargers twenty three, Ravens twenty. Final. Finally.",
+   "cap": "Chargers 23, Ravens 20. Final. Finally.",
+   "key": [
+    "FINAL."
+   ],
+   "board": [
+    "LAC 23",
+    "BAL 20"
+   ],
+   "place": {
+    "qb": [
+     -1.2,
+     0
+    ],
+    "rb": false,
+    "db": false,
+    "wr": false,
+    "coach": [
+     1.4,
+     0
+    ],
+    "fan": false,
+    "capy": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "qb",
+    "with": "coach"
    },
    "act": {
     "qb": {
      "mood": "happy",
-     "action": "cheer"
-    },
-    "db": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "wr": {
-     "mood": "sad",
-     "action": "slump"
-    }
-   }
-  },
-  {
-   "text": "The Ravens? Their fifth loss in a row.",
-   "key": [
-    "FIFTH"
-   ],
-   "shot": {
-    "type": "medium",
-    "on": "wr"
-   },
-   "act": {
-    "wr": {
-     "mood": "sad",
-     "action": "facepalm"
-    }
-   }
-  },
-  {
-   "text": "One and eight has never looked so happy.",
-   "cap": "1 and 8 has never looked so happy.",
-   "key": [
-    "HAPPY."
-   ],
-   "set": "locker",
-   "setOpts": {
-    "boardText": [
-     "RECORD:",
-     "1-8"
-    ]
-   },
-   "place": {
-    "capy": [
-     -2.2,
-     0.8
-    ],
-    "coach": "center"
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "coach"
-   },
-   "act": {
-    "capy": {
-     "mood": "smug",
-     "action": "talk",
+     "action": "celebrate",
      "look": "camera"
     },
     "coach": {
      "mood": "happy",
-     "action": "cheer"
+     "action": "cheer",
+     "look": "qb"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Is the first win always the hardest? Yes or no?",
+   "text": "One and eight. Never looked so happy. Ever.",
+   "cap": "1-8. Never looked so happy. Ever.",
    "key": [
-    "FIRST"
+    "HAPPY."
    ],
-   "set": "press",
+   "speaker": "capy",
+   "place": {
+    "qb": [
+     1.6,
+     0
+    ],
+    "rb": false,
+    "db": false,
+    "wr": false,
+    "coach": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "qb": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Ravens fans, sixteen rushing yards. With Derrick Henry.",
+   "cap": "Ravens fans, 16 rushing yards. With Derrick Henry.",
+   "key": [
+    "HENRY."
+   ],
+   "speaker": "capy",
+   "set": "living",
    "setOpts": {
     "boardText": [
-     "WINS:",
-     "1"
+     "BAL RUSHING",
+     "16 YDS"
     ]
    },
    "place": {
+    "qb": false,
+    "rb": false,
+    "db": false,
+    "wr": false,
+    "coach": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
     "capy": [
      -1.6,
-     1.0
-    ],
-    "qb": "center"
+     3.6
+    ]
    },
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "qb"
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Is the first win always the hardest? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "FIRST WIN",
+    "HARDEST?"
+   ],
+   "place": {
+    "qb": false,
+    "rb": false,
+    "db": false,
+    "wr": false,
+    "coach": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -423,35 +1369,116 @@
      "action": "talk",
      "look": "camera"
     },
-    "qb": {
-     "mood": "happy",
-     "action": "wave",
-     "look": "camera"
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
   {
-   "title": "AP (ABC30): Chargers bully the Ravens at the line of scrimmage and earn their first win of the season, 23-20",
+   "title": "ABC30 (AP): Chargers bully the Ravens at the line of scrimmage and earn their first win of the season, 23-20",
    "url": "https://abc30.com/post/chargers-bully-ravens-line-scrimmage-earn-first-win-season-23-20/20046837/"
   },
   {
-   "title": "Field Level Media (News Tribune): Chargers hold Ravens to 16 rushing yards, earn first win of season",
+   "title": "ESPN Africa (AP): Chargers bully the Ravens and earn their first win of the season, 23-20",
+   "url": "https://africa.espn.com/nfl/recap/_/gameId/401873065"
+  },
+  {
+   "title": "AJC (AP): Chargers bully the Ravens and earn their first win of the season",
+   "url": "https://www.ajc.com/news/2026/11/chargers-bully-the-ravens-at-the-line-of-scrimmage-and-earn-their-first-win-of-the-season-23-20/"
+  },
+  {
+   "title": "TSN (AP): Chargers bully the Ravens and earn their first win of the season",
+   "url": "https://www.tsn.ca/nfl/article/chargers-bully-the-ravens-and-earn-their-first-win-of-the-season/"
+  },
+  {
+   "title": "FOX45 Baltimore (AP): Chargers bully the Ravens at line of scrimmage, earn first win 23-20",
+   "url": "https://foxbaltimore.com/sports/sports-newsletter/los-angeles-chargers-baltimore-ravens-nfl-first-win-season-maryland"
+  },
+  {
+   "title": "News Tribune: Chargers hold Ravens to 16 rushing yards, earn first win of season",
    "url": "https://www.newstribune.com/news/2026/nov/17/chargers-hold-ravens-to-16-rushing-yards-earn-first-win-of-season/"
   },
   {
-   "title": "HNGN: Chargers beat Ravens 23-20, first win after 331 days",
-   "url": "https://www.hngn.com/articles/273854/20261117/chargers-beat-ravens-23-20-first-win-after-331-days.htm"
+   "title": "ESPN: Winless no more, Chargers hold off Ravens after forcing late fumble",
+   "url": "https://espn.com/nfl/story/_/id/50506286/ravens-chargers-mnf-herbert-first-win"
   },
   {
-   "title": "theScore (AP): Chargers hold off Ravens on MNF to finally secure 1st win",
+   "title": "theScore: Chargers hold off Ravens on MNF to finally secure 1st win",
    "url": "https://www.thescore.com/nfl/news/3657656"
   },
   {
-   "title": "ClutchPoints: Chargers pull off extremely rare NFL feat last seen in 2013",
+   "title": "ClutchPoints: Chargers pull off rare NFL feat",
    "url": "https://clutchpoints.com/nfl/los-angeles-chargers/chargers-news-la-pulls-off-extremely-rare-nfl-feat-last-seen-2013"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Chargers were winless (0-8) before this game",
+   "terms": [
+    "first win"
+   ]
+  },
+  {
+   "claim": "They had lost 11 straight going back to last season",
+   "terms": [
+    "11"
+   ]
+  },
+  {
+   "claim": "It was Monday night in Baltimore",
+   "terms": [
+    "Monday"
+   ]
+  },
+  {
+   "claim": "Justin Herbert scrambled 22 yards for a touchdown on the opening drive",
+   "terms": [
+    "Herbert",
+    "22"
+   ]
+  },
+  {
+   "claim": "Derrick Henry had 10 yards on 10 carries",
+   "terms": [
+    "Henry",
+    "10"
+   ]
+  },
+  {
+   "claim": "The Ravens ran for 16 yards",
+   "terms": [
+    "16"
+   ]
+  },
+  {
+   "claim": "Baltimore got within 23-20",
+   "terms": [
+    "23-20"
+   ]
+  },
+  {
+   "claim": "Tarheeb Still forced a fumble by Zay Flowers with about two minutes left",
+   "terms": [
+    "Still",
+    "Flowers"
+   ]
+  },
+  {
+   "claim": "The fumble was forced late",
+   "terms": [
+    "fumble"
+   ]
+  },
+  {
+   "claim": "Chargers won 23-20 for their first win of the season",
+   "terms": [
+    "first win"
+   ]
   }
  ]
 }

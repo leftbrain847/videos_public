@@ -1,11 +1,11 @@
 {
  "id": "s2_24_mccaffrey_backyard",
  "title": "86 points in Arlington",
- "set": "locker",
+ "set": "field",
  "setOpts": {
   "boardText": [
-   "49ERS 46",
-   "COWBOYS 40"
+   "49ERS",
+   "COWBOYS"
   ]
  },
  "cast": {
@@ -86,20 +86,44 @@
     3.2,
     -1.8
    ]
+  },
+  "fan": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#003594",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
   }
  },
  "lines": [
   {
-   "text": "The Forty Niners gained five hundred eighty four yards in Dallas. The most the Cowboys have ever allowed at home.",
-   "cap": "The 49ers gained 584 yards in Dallas. The most the Cowboys have ever allowed at home.",
+   "text": "You're a running back. You score from seventy four yards. Then sixty six.",
+   "cap": "You're a running back. You score from 74 yards. Then 66.",
    "key": [
-    "584"
+    "66."
    ],
+   "speaker": "capy",
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "49ERS",
+     "COWBOYS"
+    ]
+   },
    "place": {
+    "rb": [
+     0.2,
+     0
+    ],
     "wr": false,
     "qb": false,
     "dal": false,
     "dwr": false,
+    "fan": false,
     "capy": [
      -2.4,
      0.8
@@ -117,75 +141,1309 @@
      "look": "camera"
     },
     "rb": {
-     "mood": "happy",
+     "mood": "smug",
      "action": "hold",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Final score: forty six to forty.",
-   "cap": "Final score: 46 to 40.",
+   "text": "You're Christian McCaffrey. San Francisco, at Dallas. Road game.",
    "key": [
-    "46"
+    "DALLAS."
    ],
-   "set": "field",
-   "setOpts": {
-    "boardText": [
-     "49ERS 46",
-     "COWBOYS 40"
-    ]
-   },
+   "board": [
+    "SF AT DAL",
+    "WEEK 10"
+   ],
    "place": {
-    "rb": "left",
-    "dal": "right",
-    "qb": [
-     -0.4,
-     -2.2
-    ]
+    "rb": [
+     -1.4,
+     0
+    ],
+    "wr": false,
+    "qb": false,
+    "dal": [
+     1.6,
+     0
+    ],
+    "dwr": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "wide",
-    "on": "rb"
+    "on": "rb",
+    "offset": [
+     1.4,
+     0,
+     -2
+    ]
    },
    "act": {
     "rb": {
-     "mood": "happy",
-     "action": "cheer"
+     "mood": "neutral",
+     "action": "hold",
+     "look": "dal"
     },
     "dal": {
-     "mood": "sad",
-     "action": "slump"
+     "mood": "smug",
+     "action": "hold",
+     "look": "rb"
     }
    }
   },
   {
-   "text": "Christian McCaffrey catches a pass and goes seventy four yards for a touchdown.",
-   "cap": "Christian McCaffrey catches a pass and goes 74 yards for a touchdown.",
+   "text": "First, a short catch. Then seventy four yards. Touchdown. Bye.",
+   "cap": "First, a short catch. Then 74 yards. Touchdown. Bye.",
    "key": [
     "74"
    ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "SF",
+     "DAL"
+    ],
+    "endZone": 45,
+    "zoneA": "#aa0000",
+    "zoneB": "#003594"
+   },
+   "place": {
+    "capy": false,
+    "wr": false,
+    "dal": false,
+    "fan": false
+   },
    "shot": {
-    "type": "low",
+    "type": "follow",
     "on": "rb"
    },
+   "sfx": [
+    [
+     0.97,
+     "roar"
+    ]
+   ],
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        6.0,
+        0.0
+       ],
+       [
+        0.034,
+        6.0,
+        0.0
+       ],
+       [
+        0.069,
+        6.0,
+        0.0
+       ],
+       [
+        0.103,
+        6.0,
+        0.0
+       ],
+       [
+        0.138,
+        6.0,
+        0.0
+       ],
+       [
+        0.172,
+        6.0,
+        0.0
+       ],
+       [
+        0.207,
+        6.0,
+        0.0
+       ],
+       [
+        0.241,
+        6.0,
+        0.0
+       ],
+       [
+        0.276,
+        6.0,
+        0.0
+       ],
+       [
+        0.31,
+        6.0,
+        0.0
+       ],
+       [
+        0.345,
+        6.0,
+        0.0
+       ],
+       [
+        0.379,
+        6.0,
+        0.0
+       ],
+       [
+        0.414,
+        6.0,
+        0.0
+       ],
+       [
+        0.448,
+        6.0,
+        0.0
+       ],
+       [
+        0.483,
+        6.0,
+        0.0
+       ],
+       [
+        0.517,
+        6.0,
+        0.0
+       ],
+       [
+        0.552,
+        6.0,
+        0.0
+       ],
+       [
+        0.586,
+        6.0,
+        0.0
+       ],
+       [
+        0.621,
+        6.0,
+        0.0
+       ],
+       [
+        0.655,
+        6.0,
+        0.0
+       ],
+       [
+        0.69,
+        6.0,
+        0.0
+       ],
+       [
+        0.724,
+        6.0,
+        0.0
+       ],
+       [
+        0.759,
+        6.0,
+        0.0
+       ],
+       [
+        0.793,
+        6.0,
+        0.0
+       ],
+       [
+        0.828,
+        6.0,
+        0.0
+       ],
+       [
+        0.862,
+        6.0,
+        0.0
+       ],
+       [
+        0.897,
+        6.0,
+        0.0
+       ],
+       [
+        0.931,
+        6.0,
+        0.0
+       ],
+       [
+        0.966,
+        6.0,
+        0.0
+       ],
+       [
+        1.0,
+        6,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.091,
+        "throw"
+       ],
+       [
+        0.966,
+        "cheer"
+       ]
+      ],
+      "face": 90
+     },
+     "rb": {
+      "path": [
+       [
+        0.0,
+        9.0,
+        3.2
+       ],
+       [
+        0.038,
+        9.5,
+        3.0
+       ],
+       [
+        0.076,
+        10.0,
+        2.8
+       ],
+       [
+        0.114,
+        10.5,
+        2.6
+       ],
+       [
+        0.152,
+        11.0,
+        2.4
+       ],
+       [
+        0.191,
+        11.5,
+        2.2
+       ],
+       [
+        0.229,
+        12.0,
+        2.0
+       ],
+       [
+        0.264,
+        13.62,
+        1.98
+       ],
+       [
+        0.299,
+        15.24,
+        1.95
+       ],
+       [
+        0.334,
+        16.86,
+        1.93
+       ],
+       [
+        0.369,
+        18.48,
+        1.9
+       ],
+       [
+        0.404,
+        20.1,
+        1.88
+       ],
+       [
+        0.439,
+        21.71,
+        1.86
+       ],
+       [
+        0.474,
+        23.33,
+        1.83
+       ],
+       [
+        0.509,
+        24.95,
+        1.81
+       ],
+       [
+        0.545,
+        26.57,
+        1.79
+       ],
+       [
+        0.58,
+        28.19,
+        1.76
+       ],
+       [
+        0.615,
+        29.81,
+        1.74
+       ],
+       [
+        0.65,
+        31.43,
+        1.71
+       ],
+       [
+        0.685,
+        33.05,
+        1.69
+       ],
+       [
+        0.72,
+        34.67,
+        1.67
+       ],
+       [
+        0.755,
+        36.29,
+        1.64
+       ],
+       [
+        0.79,
+        37.9,
+        1.62
+       ],
+       [
+        0.825,
+        39.52,
+        1.6
+       ],
+       [
+        0.86,
+        41.14,
+        1.57
+       ],
+       [
+        0.896,
+        42.76,
+        1.55
+       ],
+       [
+        0.931,
+        44.38,
+        1.52
+       ],
+       [
+        0.966,
+        46.0,
+        1.5
+       ],
+       [
+        1.0,
+        46.4,
+        1.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.229,
+        "catch"
+       ],
+       [
+        0.263,
+        "run"
+       ],
+       [
+        0.966,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     },
+     "dwr": {
+      "path": [
+       [
+        0.0,
+        20.0,
+        -2.5
+       ],
+       [
+        0.034,
+        20.64,
+        -2.46
+       ],
+       [
+        0.069,
+        21.29,
+        -2.43
+       ],
+       [
+        0.103,
+        21.93,
+        -2.39
+       ],
+       [
+        0.138,
+        22.57,
+        -2.36
+       ],
+       [
+        0.172,
+        23.21,
+        -2.32
+       ],
+       [
+        0.207,
+        23.86,
+        -2.29
+       ],
+       [
+        0.241,
+        24.5,
+        -2.25
+       ],
+       [
+        0.276,
+        25.14,
+        -2.21
+       ],
+       [
+        0.31,
+        25.79,
+        -2.18
+       ],
+       [
+        0.345,
+        26.43,
+        -2.14
+       ],
+       [
+        0.379,
+        27.07,
+        -2.11
+       ],
+       [
+        0.414,
+        27.71,
+        -2.07
+       ],
+       [
+        0.448,
+        28.36,
+        -2.04
+       ],
+       [
+        0.483,
+        29.0,
+        -2.0
+       ],
+       [
+        0.517,
+        29.64,
+        -1.96
+       ],
+       [
+        0.552,
+        30.29,
+        -1.93
+       ],
+       [
+        0.586,
+        30.93,
+        -1.89
+       ],
+       [
+        0.621,
+        31.57,
+        -1.86
+       ],
+       [
+        0.655,
+        32.21,
+        -1.82
+       ],
+       [
+        0.69,
+        32.86,
+        -1.79
+       ],
+       [
+        0.724,
+        33.5,
+        -1.75
+       ],
+       [
+        0.759,
+        34.14,
+        -1.71
+       ],
+       [
+        0.793,
+        34.79,
+        -1.68
+       ],
+       [
+        0.828,
+        35.43,
+        -1.64
+       ],
+       [
+        0.862,
+        36.07,
+        -1.61
+       ],
+       [
+        0.897,
+        36.71,
+        -1.57
+       ],
+       [
+        0.931,
+        37.36,
+        -1.54
+       ],
+       [
+        0.966,
+        38.0,
+        -1.5
+       ],
+       [
+        1.0,
+        38.3,
+        -1.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.966,
+        "slump"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.137,
+      6.3,
+      1.7,
+      0
+     ],
+     [
+      0.183,
+      9.2,
+      2.6,
+      1.0
+     ],
+     [
+      0.229,
+      12,
+      1.5,
+      2.0
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.229,
+      "rb"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Later, another catch. Sixty six yards. Touchdown again. Rude.",
+   "cap": "Later, another catch. 66 yards. Touchdown again. Rude.",
+   "key": [
+    "66"
+   ],
+   "act": {},
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "SF",
+     "DAL"
+    ],
+    "endZone": 45,
+    "zoneA": "#aa0000",
+    "zoneB": "#003594"
+   },
+   "place": {
+    "capy": false,
+    "wr": false,
+    "dal": false,
+    "fan": false
+   },
+   "shot": {
+    "type": "follow_high",
+    "on": "rb"
+   },
+   "sfx": [
+    [
+     0.97,
+     "roar"
+    ]
+   ],
+   "play": {
+    "cast": {
+     "qb": {
+      "path": [
+       [
+        0.0,
+        7.0,
+        0.0
+       ],
+       [
+        0.031,
+        7.0,
+        0.0
+       ],
+       [
+        0.062,
+        7.0,
+        0.0
+       ],
+       [
+        0.094,
+        7.0,
+        0.0
+       ],
+       [
+        0.125,
+        7.0,
+        0.0
+       ],
+       [
+        0.156,
+        7.0,
+        0.0
+       ],
+       [
+        0.188,
+        7.0,
+        0.0
+       ],
+       [
+        0.219,
+        7.0,
+        0.0
+       ],
+       [
+        0.25,
+        7.0,
+        0.0
+       ],
+       [
+        0.281,
+        7.0,
+        0.0
+       ],
+       [
+        0.312,
+        7.0,
+        0.0
+       ],
+       [
+        0.344,
+        7.0,
+        0.0
+       ],
+       [
+        0.375,
+        7.0,
+        0.0
+       ],
+       [
+        0.406,
+        7.0,
+        0.0
+       ],
+       [
+        0.438,
+        7.0,
+        0.0
+       ],
+       [
+        0.469,
+        7.0,
+        0.0
+       ],
+       [
+        0.5,
+        7.0,
+        0.0
+       ],
+       [
+        0.531,
+        7.0,
+        0.0
+       ],
+       [
+        0.562,
+        7.0,
+        0.0
+       ],
+       [
+        0.594,
+        7.0,
+        0.0
+       ],
+       [
+        0.625,
+        7.0,
+        0.0
+       ],
+       [
+        0.656,
+        7.0,
+        0.0
+       ],
+       [
+        0.688,
+        7.0,
+        0.0
+       ],
+       [
+        0.719,
+        7.0,
+        0.0
+       ],
+       [
+        0.75,
+        7.0,
+        0.0
+       ],
+       [
+        0.781,
+        7.0,
+        0.0
+       ],
+       [
+        0.812,
+        7.0,
+        0.0
+       ],
+       [
+        0.844,
+        7.0,
+        0.0
+       ],
+       [
+        0.875,
+        7.0,
+        0.0
+       ],
+       [
+        0.906,
+        7.0,
+        0.0
+       ],
+       [
+        0.938,
+        7.0,
+        0.0
+       ],
+       [
+        0.969,
+        7.0,
+        0.0
+       ],
+       [
+        1.0,
+        7,
+        0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ],
+       [
+        0.083,
+        "throw"
+       ],
+       [
+        0.969,
+        "cheer"
+       ]
+      ],
+      "face": 90
+     },
+     "rb": {
+      "path": [
+       [
+        0.0,
+        10.0,
+        3.2
+       ],
+       [
+        0.035,
+        10.5,
+        3.0
+       ],
+       [
+        0.069,
+        11.0,
+        2.8
+       ],
+       [
+        0.104,
+        11.5,
+        2.6
+       ],
+       [
+        0.138,
+        12.0,
+        2.4
+       ],
+       [
+        0.173,
+        12.5,
+        2.2
+       ],
+       [
+        0.207,
+        13.0,
+        2.0
+       ],
+       [
+        0.239,
+        14.38,
+        1.98
+       ],
+       [
+        0.271,
+        15.75,
+        1.96
+       ],
+       [
+        0.302,
+        17.12,
+        1.94
+       ],
+       [
+        0.334,
+        18.5,
+        1.92
+       ],
+       [
+        0.366,
+        19.88,
+        1.9
+       ],
+       [
+        0.398,
+        21.25,
+        1.88
+       ],
+       [
+        0.429,
+        22.62,
+        1.85
+       ],
+       [
+        0.461,
+        24.0,
+        1.83
+       ],
+       [
+        0.493,
+        25.38,
+        1.81
+       ],
+       [
+        0.525,
+        26.75,
+        1.79
+       ],
+       [
+        0.556,
+        28.12,
+        1.77
+       ],
+       [
+        0.588,
+        29.5,
+        1.75
+       ],
+       [
+        0.62,
+        30.88,
+        1.73
+       ],
+       [
+        0.652,
+        32.25,
+        1.71
+       ],
+       [
+        0.683,
+        33.62,
+        1.69
+       ],
+       [
+        0.715,
+        35.0,
+        1.67
+       ],
+       [
+        0.747,
+        36.38,
+        1.65
+       ],
+       [
+        0.778,
+        37.75,
+        1.62
+       ],
+       [
+        0.81,
+        39.12,
+        1.6
+       ],
+       [
+        0.842,
+        40.5,
+        1.58
+       ],
+       [
+        0.874,
+        41.88,
+        1.56
+       ],
+       [
+        0.905,
+        43.25,
+        1.54
+       ],
+       [
+        0.937,
+        44.62,
+        1.52
+       ],
+       [
+        0.969,
+        46.0,
+        1.5
+       ],
+       [
+        1.0,
+        46.4,
+        1.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.207,
+        "catch"
+       ],
+       [
+        0.238,
+        "run"
+       ],
+       [
+        0.969,
+        "celebrate"
+       ]
+      ],
+      "face": 90
+     },
+     "dwr": {
+      "path": [
+       [
+        0.0,
+        21.0,
+        -2.5
+       ],
+       [
+        0.031,
+        21.55,
+        -2.47
+       ],
+       [
+        0.063,
+        22.1,
+        -2.44
+       ],
+       [
+        0.094,
+        22.65,
+        -2.4
+       ],
+       [
+        0.125,
+        23.19,
+        -2.37
+       ],
+       [
+        0.156,
+        23.74,
+        -2.34
+       ],
+       [
+        0.188,
+        24.29,
+        -2.31
+       ],
+       [
+        0.219,
+        24.84,
+        -2.27
+       ],
+       [
+        0.25,
+        25.39,
+        -2.24
+       ],
+       [
+        0.281,
+        25.94,
+        -2.21
+       ],
+       [
+        0.313,
+        26.48,
+        -2.18
+       ],
+       [
+        0.344,
+        27.03,
+        -2.15
+       ],
+       [
+        0.375,
+        27.58,
+        -2.11
+       ],
+       [
+        0.406,
+        28.13,
+        -2.08
+       ],
+       [
+        0.438,
+        28.68,
+        -2.05
+       ],
+       [
+        0.469,
+        29.23,
+        -2.02
+       ],
+       [
+        0.5,
+        29.77,
+        -1.98
+       ],
+       [
+        0.531,
+        30.32,
+        -1.95
+       ],
+       [
+        0.563,
+        30.87,
+        -1.92
+       ],
+       [
+        0.594,
+        31.42,
+        -1.89
+       ],
+       [
+        0.625,
+        31.97,
+        -1.85
+       ],
+       [
+        0.656,
+        32.52,
+        -1.82
+       ],
+       [
+        0.688,
+        33.06,
+        -1.79
+       ],
+       [
+        0.719,
+        33.61,
+        -1.76
+       ],
+       [
+        0.75,
+        34.16,
+        -1.73
+       ],
+       [
+        0.781,
+        34.71,
+        -1.69
+       ],
+       [
+        0.813,
+        35.26,
+        -1.66
+       ],
+       [
+        0.844,
+        35.81,
+        -1.63
+       ],
+       [
+        0.875,
+        36.35,
+        -1.6
+       ],
+       [
+        0.906,
+        36.9,
+        -1.56
+       ],
+       [
+        0.938,
+        37.45,
+        -1.53
+       ],
+       [
+        0.969,
+        38.0,
+        -1.5
+       ],
+       [
+        1.0,
+        38.3,
+        -1.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.969,
+        "slump"
+       ]
+      ],
+      "face": 90
+     }
+    },
+    "ball": [
+     [
+      0.124,
+      7.3,
+      1.7,
+      0
+     ],
+     [
+      0.166,
+      10.2,
+      2.6,
+      1.0
+     ],
+     [
+      0.207,
+      13,
+      1.5,
+      2.0
+     ]
+    ],
+    "carry": [
+     [
+      0,
+      "qb"
+     ],
+     [
+      0.207,
+      "rb"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Two touchdowns that long, from a running back? A record. Never done.",
+   "key": [
+    "RECORD."
+   ],
+   "speaker": "capy",
+   "board": [
+    "RB RECORD",
+    "74 + 66"
+   ],
+   "place": {
+    "rb": [
+     1.6,
+     0
+    ],
+    "wr": false,
+    "qb": false,
+    "dal": false,
+    "dwr": false,
+    "fan": false,
+    "capy": [
+     -1.4,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
    "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "rb"
+    },
     "rb": {
      "mood": "happy",
-     "action": "hold",
-     "look": "camera"
+     "action": "idle",
+     "look": "capy"
     }
    }
   },
   {
-   "text": "Later, another catch. Sixty six yards. Another touchdown.",
-   "cap": "Later, another catch. 66 yards. Another touchdown.",
+   "text": "Your day? Three touchdowns. Over two hundred yards. Not bad.",
+   "cap": "Your day? 3 touchdowns. Over 200 yards. Not bad.",
    "key": [
-    "66"
+    "200"
    ],
+   "board": [
+    "CMC",
+    "3 TD"
+   ],
+   "place": {
+    "rb": [
+     0,
+     0
+    ],
+    "wr": false,
+    "qb": false,
+    "dal": false,
+    "dwr": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
-    "type": "medium",
+    "type": "low",
     "on": "rb"
    },
    "act": {
@@ -197,92 +1455,116 @@
    }
   },
   {
-   "text": "No running back had ever caught two touchdowns of sixty five yards or more in one game.",
-   "cap": "No running back had ever caught 2 touchdowns of 65 yards or more in one game.",
+   "text": "Then Deebo Samuel adds a seventy yard run. Sure, why not.",
+   "cap": "Then Deebo Samuel adds a 70-yard run. Sure, why not.",
    "key": [
-    "EVER"
+    "70-YARD"
    ],
    "place": {
-    "capy": [
-     -0.4,
-     1.4
+    "rb": false,
+    "wr": [
+     0,
+     0
     ],
-    "dal": false
-   },
-   "shot": {
-    "type": "two",
-    "on": "capy",
-    "with": "rb"
-   },
-   "act": {
-    "capy": {
-     "mood": "smug",
-     "action": "point",
-     "look": "rb"
-    },
-    "rb": {
-     "mood": "smug",
-     "action": "cross",
-     "look": "camera"
-    }
-   },
-   "speaker": "capy"
-  },
-  {
-   "text": "His day: two hundred twenty three yards from scrimmage, and three touchdowns.",
-   "cap": "His day: 223 yards from scrimmage, and 3 touchdowns.",
-   "key": [
-    "223"
-   ],
-   "place": {
+    "qb": false,
+    "dal": false,
+    "dwr": false,
+    "fan": false,
     "capy": false
    },
    "shot": {
     "type": "close",
-    "on": "rb"
+    "on": "wr"
    },
    "act": {
-    "rb": {
+    "wr": {
      "mood": "happy",
-     "action": "idle",
+     "action": "celebrate",
      "look": "camera"
     }
    }
   },
   {
-   "text": "The last Forty Niner to do that? Jerry Rice, in nineteen ninety five.",
-   "cap": "The last 49er to do that? Jerry Rice, in 1995.",
+   "text": "Your offense: five hundred eighty four yards.",
+   "cap": "Your offense: 584 yards.",
    "key": [
-    "1995."
+    "584"
    ],
-   "set": "locker",
+   "set": "office",
    "setOpts": {
     "boardText": [
-     "LAST TIME:",
-     "1995"
+     "SF YARDS",
+     "584"
     ]
    },
    "place": {
-    "capy": "center"
+    "rb": false,
+    "wr": false,
+    "qb": [
+     0.4,
+     0.6
+    ],
+    "dal": false,
+    "dwr": false,
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "medium",
-    "on": "capy"
+    "on": "qb"
+   },
+   "act": {
+    "qb": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The most Dallas has ever allowed at home. Ever.",
+   "key": [
+    "MOST"
+   ],
+   "speaker": "capy",
+   "place": {
+    "rb": false,
+    "wr": false,
+    "qb": [
+     1.6,
+     0.4
+    ],
+    "dal": false,
+    "dwr": false,
+    "fan": false,
+    "capy": [
+     -1.2,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "qb"
    },
    "act": {
     "capy": {
-     "mood": "smug",
-     "action": "talk",
+     "mood": "neutral",
+     "action": "shrug",
      "look": "camera"
+    },
+    "qb": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Then Deebo Samuel takes a reverse seventy yards to the end zone.",
-   "cap": "Then Deebo Samuel takes a reverse 70 yards to the end zone.",
+   "text": "Dallas fires back. Dak Prescott throws five touchdowns. Five.",
+   "cap": "Dallas fires back. Dak Prescott throws 5 touchdowns. 5.",
    "key": [
-    "70"
+    "TOUCHDOWNS."
    ],
    "set": "field",
    "setOpts": {
@@ -292,66 +1574,19 @@
     ]
    },
    "place": {
-    "wr": "center",
-    "dal": [
-     2.4,
-     -1.6
-    ]
-   },
-   "shot": {
-    "type": "high",
-    "on": "wr"
-   },
-   "act": {
-    "wr": {
-     "mood": "happy",
-     "action": "cheer"
-    },
-    "dal": {
-     "mood": "shocked",
-     "action": "shrug"
-    }
-   }
-  },
-  {
-   "text": "Brock Purdy goes twenty two of twenty eight, for three hundred eighty nine yards.",
-   "cap": "Brock Purdy goes 22 of 28, for 389 yards.",
-   "key": [
-    "389"
-   ],
-   "place": {
-    "qb": [
-     -0.6,
-     0.4
-    ],
-    "wr": [
-     2.4,
-     -2.0
-    ]
-   },
-   "shot": {
-    "type": "medium",
-    "on": "qb"
-   },
-   "act": {
-    "qb": {
-     "mood": "smug",
-     "action": "throw",
-     "look": "camera"
-    }
-   }
-  },
-  {
-   "text": "Dallas kept firing back. Dak Prescott threw five touchdown passes.",
-   "cap": "Dallas kept firing back. Dak Prescott threw 5 touchdown passes.",
-   "key": [
-    "5"
-   ],
-   "place": {
-    "qb": false,
+    "rb": false,
     "wr": false,
-    "dal": "left",
-    "dwr": "right"
+    "qb": false,
+    "dal": [
+     -1.2,
+     0
+    ],
+    "dwr": [
+     1.4,
+     0
+    ],
+    "fan": false,
+    "capy": false
    },
    "shot": {
     "type": "two",
@@ -361,76 +1596,155 @@
    "act": {
     "dal": {
      "mood": "angry",
-     "action": "throw",
+     "action": "point",
      "look": "dwr"
     },
     "dwr": {
      "mood": "happy",
-     "action": "cheer"
+     "action": "cheer",
+     "look": "dal"
     }
    }
   },
   {
-   "text": "George Pickens caught three of them.",
-   "cap": "George Pickens caught 3 of them.",
+   "text": "George Pickens catches three of them. Busy man.",
+   "cap": "George Pickens catches 3 of them. Busy man.",
    "key": [
     "3"
    ],
+   "place": {
+    "rb": false,
+    "wr": false,
+    "qb": false,
+    "dal": false,
+    "dwr": [
+     0,
+     0
+    ],
+    "fan": false,
+    "capy": false
+   },
    "shot": {
-    "type": "medium",
+    "type": "high",
     "on": "dwr"
    },
    "act": {
     "dwr": {
      "mood": "happy",
-     "action": "hold",
+     "action": "celebrate",
      "look": "camera"
     }
    }
   },
   {
-   "text": "It still wasn't enough.",
+   "text": "Not enough, though. Forty Niners forty six, Cowboys forty. Final.",
+   "cap": "Not enough, though. 49ers 46, Cowboys 40. Final.",
    "key": [
-    "ENOUGH."
+    "46,"
    ],
+   "board": [
+    "SF 46",
+    "DAL 40"
+   ],
+   "place": {
+    "rb": false,
+    "wr": false,
+    "qb": false,
+    "dal": [
+     0,
+     0
+    ],
+    "dwr": false,
+    "fan": false,
+    "capy": false
+   },
    "shot": {
-    "type": "wide",
+    "type": "close",
     "on": "dal"
    },
    "act": {
     "dal": {
      "mood": "sad",
-     "action": "slump"
-    },
-    "dwr": {
-     "mood": "sad",
-     "action": "facepalm"
+     "action": "facepalm",
+     "look": "camera"
     }
    }
   },
   {
-   "text": "Shootout or defensive battle? Which one do you want to watch? Shootout or defense?",
+   "text": "Cowboys fans, defense was optional today. Apparently.",
    "key": [
-    "SHOOTOUT"
+    "OPTIONAL"
    ],
-   "set": "press",
+   "speaker": "capy",
+   "set": "living",
    "setOpts": {
     "boardText": [
-     "49ERS 46",
-     "COWBOYS 40"
+     "SF 46",
+     "DAL 40"
     ]
    },
    "place": {
+    "rb": false,
+    "wr": false,
+    "qb": false,
+    "dal": false,
+    "dwr": false,
+    "fan": [
+     1.0,
+     4.2
+    ],
     "capy": [
      -1.6,
-     1.0
-    ],
-    "rb": "center"
+     3.6
+    ]
    },
    "shot": {
     "type": "two",
     "on": "capy",
-    "with": "rb"
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "fan"
+    },
+    "fan": {
+     "mood": "angry",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Shootout or defensive battle? Which one do you watch?",
+   "key": [
+    "SHOOTOUT",
+    "WATCH?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "SHOOTOUT",
+    "OR DEFENSE?"
+   ],
+   "place": {
+    "rb": false,
+    "wr": false,
+    "qb": false,
+    "dal": false,
+    "dwr": false,
+    "fan": [
+     2.0,
+     4.0
+    ],
+    "capy": [
+     -0.6,
+     3.6
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
    },
    "act": {
     "capy": {
@@ -438,31 +1752,107 @@
      "action": "talk",
      "look": "camera"
     },
-    "rb": {
-     "mood": "happy",
-     "action": "wave",
-     "look": "camera"
+    "fan": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
   {
-   "title": "49ers.com: Offense racks up 584 yards, McCaffrey breaks receiving records; stats and facts from SF vs. DAL",
+   "title": "49ers.com: Offense racks up 584 yards, McCaffrey breaks receiving records; stats and facts from SF vs DAL",
    "url": "https://www.49ers.com/news/offense-racks-up-584-yards-mccaffrey-breaks-receiving-records-stats-and-facts-from-sfvsdal"
   },
   {
-   "title": "AP (Action News Jax): McCaffrey's TDs of 74 and 66 yards and Samuel's 70-yard score help 49ers beat Cowboys 46-40",
+   "title": "Action News Jax (AP): McCaffrey's TDs of 74 and 66 yards and Samuel's 70-yard score help 49ers beat Cowboys 46-40",
    "url": "https://www.actionnewsjax.com/sports/mccaffreys-tds-74-66/RTLPTF6SVQ2HHC3TS76VRVURYI/"
   },
   {
-   "title": "NBC Sports Bay Area: Christian McCaffrey makes history vs. Cowboys",
+   "title": "U.S. News (AP): McCaffrey's TDs of 74 and 66 yards help 49ers beat Cowboys 46-40",
+   "url": "https://www.usnews.com/news/sports/articles/2026-11-15/mccaffreys-tds-of-74-and-66-yards-and-samuels-70-yard-score-help-49ers-beat-cowboys-46-40"
+  },
+  {
+   "title": "49ers.com: Christian McCaffrey keeps the records falling in 49ers 46-40 win over Cowboys",
+   "url": "https://www.49ers.com/news/christian-mccaffrey-keeps-the-records-falling-in-49ers-46-40-win-over-cowboys"
+  },
+  {
+   "title": "49ers.com: 49ers outlast the Dallas Cowboys in 46-40 shootout",
+   "url": "https://www.49ers.com/news/49ers-outlast-the-dallas-cowboys-in-46-40-shootout-takeaways-from-sfvsdal"
+  },
+  {
+   "title": "ProFootballTalk: Christian McCaffrey, 49ers run past Cowboys 46-40",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/christian-mccaffrey-49ers-run-past-cowboys-46-40"
+  },
+  {
+   "title": "NBC Sports Bay Area: Christian McCaffrey makes history against Cowboys",
    "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/christian-mccaffrey-history-dallas-cowboys/1980741/"
   },
   {
    "title": "Field Level Media: 49ers win in shootout as Cowboys set dubious defensive mark",
    "url": "https://fieldlevelmedia.com/nfl/49ers-win-in-shootout-as-cowboys-set-dubious-defensive-mark/"
+  },
+  {
+   "title": "NBC DFW: 49ers beat Cowboys 46-40",
+   "url": "https://www.nbcdfw.com/news/sports/blue-star/cowboys-host-49ers-elusive-winning-streak-schottenheimer/4106545/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "McCaffrey scored on catches of 74 and 66 yards",
+   "terms": [
+    "74",
+    "66"
+   ]
+  },
+  {
+   "claim": "No running back had two such long receiving touchdowns in one game",
+   "terms": [
+    "running back",
+    "first|record|history"
+   ]
+  },
+  {
+   "claim": "McCaffrey had three touchdowns and over 200 yards from scrimmage",
+   "terms": [
+    "McCaffrey",
+    "223|three touchdowns|3 touchdowns"
+   ]
+  },
+  {
+   "claim": "Deebo Samuel scored on a 70-yard run",
+   "terms": [
+    "Samuel",
+    "70"
+   ]
+  },
+  {
+   "claim": "The 49ers gained 584 yards, the most Dallas has allowed at home",
+   "terms": [
+    "584"
+   ]
+  },
+  {
+   "claim": "Dak Prescott threw five touchdown passes",
+   "terms": [
+    "Prescott",
+    "five touchdown|5 touchdown|five TD|5 TD"
+   ]
+  },
+  {
+   "claim": "George Pickens caught three of them",
+   "terms": [
+    "Pickens",
+    "three|3"
+   ]
+  },
+  {
+   "claim": "49ers won 46-40 at Dallas",
+   "terms": [
+    "46-40"
+   ]
   }
  ]
 }
