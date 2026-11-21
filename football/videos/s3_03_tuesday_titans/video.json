@@ -161,12 +161,12 @@
    "setOpts": {
     "boardText": [
      "PITTSBURGH",
-     "OCT 4 → OCT 25"
+     "OCT 4 \u2192 OCT 25"
     ]
    },
    "board": [
     "PITTSBURGH",
-    "OCT 4 → OCT 25"
+    "OCT 4 \u2192 OCT 25"
    ],
    "place": {
     "boss": "desk",
@@ -201,9 +201,9 @@
     "SUNDAY?"
    ],
    "shot": {
-    "type": "ots",
+    "type": "two",
     "on": "boss",
-    "from": "capy"
+    "with": "capy"
    },
    "act": {
     "boss": {
