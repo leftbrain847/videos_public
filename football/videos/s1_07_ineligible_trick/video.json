@@ -88,13 +88,45 @@
    "at": "desk"
   }
  },
+ "sources": [
+  {
+   "title": "Boston Globe: When things got tough, Patriots got creative",
+   "url": "https://www.bostonglobe.com/sports/2015/01/11/when-things-got-tough-patriots-got-creative/gAZFJwUvDOrCtS6CAIAowM/story.html"
+  },
+  {
+   "title": "ABC30 (ESPN): NFL says Pats' substitutions legal",
+   "url": "https://abc30.com/post/nfl-says-pats-substitutions-legal/470636/"
+  },
+  {
+   "title": "CBS Baltimore (AP): Surprised Ravens confused by Patriots' trick plays",
+   "url": "https://www.cbsnews.com/baltimore/news/surprised-ravens-confused-by-patriots-tricks-trick-plays"
+  },
+  {
+   "title": "theScore: NFL passes ineligible receiver rule; Ravens still haven't forgotten playoff game",
+   "url": "https://www.thescore.com/nfl/news/730373"
+  },
+  {
+   "title": "ABC7 (ESPN): Tom Brady, study the rulebook",
+   "url": "https://abc7.com/post/tom-brady-study-the-rulebook/470281/"
+  },
+  {
+   "title": "CBS Sports: Harbaugh says NE ran illegal plays, Brady says study the rule book",
+   "url": "https://www.cbssports.com/nfl/news/harbaugh-says-ne-ran-illegal-plays-tom-brady-says-study-the-rule-book"
+  },
+  {
+   "title": "CBS Boston: Harbaugh says formations clearly deception",
+   "url": "https://www.cbsnews.com/boston/news/harbaugh-says-belichicks-formations-clearly-deception-brady-says-figure-it-out/"
+  },
+  {
+   "title": "BaltimoreRavens.com: Patriots ineligible receiver trick under rule change review",
+   "url": "https://www.baltimoreravens.com/news/patriots-ineligible-receiver-trick-under-rule-change-review-15057386"
+  }
+ ],
  "lines": [
   {
-   "text": "In 2015, the Patriots ran a trick so confusing that the NFL banned it two months later.",
-   "cap": "In 2015, the Patriots ran a trick so confusing that the NFL banned it 2 months later.",
+   "text": "Your trick is totally legal. So the league bans it.",
    "key": [
-    "CONFUSING",
-    "BANNED"
+    "BANS"
    ],
    "place": {
     "capy": [
@@ -131,10 +163,10 @@
    "speaker": "capy"
   },
   {
-   "text": "Playoffs. New England is down fourteen to Baltimore.",
-   "cap": "Playoffs. New England is down 14 to Baltimore.",
+   "text": "January twenty fifteen. Playoffs. Your Patriots host the Ravens.",
+   "cap": "January 2015. Playoffs. Your Patriots host the Ravens.",
    "key": [
-    "14"
+    "RAVENS."
    ],
    "place": {
     "capy": false,
@@ -171,10 +203,56 @@
      "mood": "smug",
      "action": "cross"
     }
-   }
+   },
+   "board": [
+    "PATRIOTS",
+    "VS RAVENS"
+   ]
   },
   {
-   "text": "So they line up with only four offensive linemen.",
+   "text": "You fall behind by fourteen. Twice.",
+   "cap": "You fall behind by 14. Twice.",
+   "key": [
+    "TWICE."
+   ],
+   "place": {
+    "capy": false,
+    "te": [
+     1.2,
+     0
+    ],
+    "rb": [
+     -1.2,
+     0
+    ],
+    "lb": [
+     0,
+     -3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rb"
+   },
+   "act": {
+    "rb": {
+     "mood": "worried"
+    },
+    "te": {
+     "mood": "worried"
+    },
+    "lb": {
+     "mood": "smug",
+     "action": "cross"
+    }
+   },
+   "board": [
+    "RAVENS +14",
+    "AGAIN"
+   ]
+  },
+  {
+   "text": "So you line up four linemen. Not five.",
    "key": [
     "FOUR"
    ],
@@ -209,7 +287,7 @@
    "speaker": "capy"
   },
   {
-   "text": "A running back tells the referee he's ineligible. He can't catch a pass.",
+   "text": "Your running back tells the ref he's ineligible.",
    "key": [
     "INELIGIBLE."
    ],
@@ -249,7 +327,7 @@
    }
   },
   {
-   "text": "Meanwhile, a player standing where a lineman would be is eligible.",
+   "text": "Your tight end stands where a tackle goes. Eligible.",
    "key": [
     "ELIGIBLE."
    ],
@@ -271,7 +349,7 @@
    }
   },
   {
-   "text": "Baltimore's defense can't tell who it's supposed to cover.",
+   "text": "Baltimore's defense can't tell who to cover.",
    "key": [
     "COVER."
    ],
@@ -299,10 +377,10 @@
    }
   },
   {
-   "text": "They run it three times.",
-   "cap": "They run it 3 times.",
+   "text": "You run it three times. It keeps working.",
+   "cap": "You run it 3 times. It keeps working.",
    "key": [
-    "3"
+    "WORKING."
    ],
    "shot": {
     "type": "high",
@@ -311,7 +389,7 @@
    "act": {
     "te": {
      "mood": "happy",
-     "action": "throw"
+     "action": "cheer"
     },
     "lb": {
      "mood": "angry",
@@ -320,10 +398,9 @@
    }
   },
   {
-   "text": "Baltimore's coach goes onto the field to argue. Fifteen yard penalty.",
-   "cap": "Baltimore's coach goes onto the field to argue. 15-yard penalty.",
+   "text": "Their coach marches onto the field to argue.",
    "key": [
-    "15-YARD"
+    "ARGUE."
    ],
    "place": {
     "te": false,
@@ -356,9 +433,83 @@
    }
   },
   {
-   "text": "Tom Brady's reply: maybe they should study the rule book.",
+   "text": "Fifteen yard penalty. On the coach.",
+   "cap": "15-yard penalty. On the coach.",
    "key": [
-    "RULE",
+    "15-YARD"
+   ],
+   "place": {
+    "te": false,
+    "lb": false,
+    "coach": [
+     -1.0,
+     0
+    ],
+    "ref": [
+     1.0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "ref"
+   },
+   "act": {
+    "coach": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "ref"
+    },
+    "ref": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "coach"
+    }
+   }
+  },
+  {
+   "text": "Your coach stays calm. Your quarterback has notes.",
+   "key": [
+    "NOTES."
+   ],
+   "place": {
+    "capy": "left",
+    "te": "right",
+    "rb": false,
+    "lb": false,
+    "ref": false,
+    "coach": false,
+    "own": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "te"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "te": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy",
+   "set": "locker",
+   "setOpts": {
+    "boardText": [
+     "STUDY",
+     "THE RULE BOOK"
+    ]
+   }
+  },
+  {
+   "text": "Tom Brady's advice? Study the rule book.",
+   "key": [
     "BOOK."
    ],
    "place": {
@@ -376,11 +527,18 @@
      "action": "shrug",
      "look": "camera"
     }
+   },
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "PATRIOTS 35",
+     "RAVENS 31"
+    ]
    }
   },
   {
-   "text": "New England wins, thirty five to thirty one.",
-   "cap": "New England wins, 35 to 31.",
+   "text": "Final score? You win, thirty five to thirty one.",
+   "cap": "Final score? You win, 35 to 31.",
    "key": [
     "35"
    ],
@@ -411,9 +569,9 @@
    }
   },
   {
-   "text": "That March, the owners passed a rule against it.",
+   "text": "That March, the owners pass a new rule.",
    "key": [
-    "RULE"
+    "RULE."
    ],
    "set": "office",
    "setOpts": {
@@ -438,9 +596,9 @@
    }
   },
   {
-   "text": "A player who reports as ineligible can't line up outside the tackles anymore.",
+   "text": "Ineligible players can't line up outside the tackles.",
    "key": [
-    "OUTSIDE"
+    "TACKLES."
    ],
    "shot": {
     "type": "close",
@@ -457,7 +615,7 @@
   {
    "text": "It was completely legal. That was the problem.",
    "key": [
-    "LEGAL."
+    "PROBLEM."
    ],
    "place": {
     "capy": [
@@ -485,9 +643,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Genius, or cheap? One word, below.",
+   "text": "Genius or cheap? One word. Ravens fans, we know.",
    "key": [
-    "GENIUS,",
+    "GENIUS",
     "CHEAP?"
    ],
    "set": "locker",
@@ -521,26 +679,77 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "Boston Globe: When things got tough, Patriots got creative",
-   "url": "https://www.bostonglobe.com/sports/2015/01/11/when-things-got-tough-patriots-got-creative/gAZFJwUvDOrCtS6CAIAowM/story.html"
+   "claim": "In the January 2015 playoffs the Patriots hosted the Ravens",
+   "terms": [
+    "Patriots",
+    "Ravens",
+    "playoff|divisional"
+   ]
   },
   {
-   "title": "ABC30 (ESPN): NFL says Pats' substitutions legal",
-   "url": "https://abc30.com/post/nfl-says-pats-substitutions-legal/470636/"
+   "claim": "The Patriots fell behind by 14 twice",
+   "terms": [
+    "14-point|14 points",
+    "deficit|down|behind"
+   ]
   },
   {
-   "title": "CBS Baltimore (AP): Surprised Ravens confused by Patriots' trick plays",
-   "url": "https://www.cbsnews.com/baltimore/news/surprised-ravens-confused-by-patriots-tricks-trick-plays"
+   "claim": "New England lined up with four offensive linemen",
+   "terms": [
+    "four|4",
+    "linemen|lineman"
+   ]
   },
   {
-   "title": "theScore: NFL passes ineligible receiver rule; Ravens still haven't forgotten playoff game",
-   "url": "https://www.thescore.com/nfl/news/730373"
+   "claim": "A running back reported as ineligible",
+   "terms": [
+    "Vereen",
+    "ineligible"
+   ]
   },
   {
-   "title": "The42 (Business Insider): The NFL banned the formation the Patriots fooled the Ravens with",
-   "url": "https://the42.ie/new-england-patriots-play-banned-2013791-Mar2015"
+   "claim": "A tight end lined up as a tackle and was eligible",
+   "terms": [
+    "Hoomanawanui",
+    "eligible"
+   ]
+  },
+  {
+   "claim": "Baltimore was confused about who to cover",
+   "terms": [
+    "Ravens",
+    "confus"
+   ]
+  },
+  {
+   "claim": "Ravens coach John Harbaugh went on the field to argue and got a 15-yard penalty",
+   "terms": [
+    "Harbaugh",
+    "penalty|unsportsmanlike"
+   ]
+  },
+  {
+   "claim": "Brady said the Ravens should study the rule book",
+   "terms": [
+    "Brady",
+    "rule book|rulebook"
+   ]
+  },
+  {
+   "claim": "The Patriots won 35-31",
+   "terms": [
+    "35-31"
+   ]
+  },
+  {
+   "claim": "In March 2015 owners banned ineligible players from lining up outside the tackles",
+   "terms": [
+    "ineligible",
+    "tackle"
+   ]
   }
  ]
 }
