@@ -1,0 +1,1147 @@
+{
+ "id": "myth_02_thor_bride",
+ "title": "Thor, the worst bride ever",
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE WEDDING"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "toga"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "thor": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#b23a2a",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#c8692a",
+    "skin": "#f2c39b",
+    "sash": "#8a8f96",
+    "beard": true
+   }
+  },
+  "bride": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#d9a6e0",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#c8692a",
+    "skin": "#f2c39b",
+    "sash": "#e8b923",
+    "beard": true
+   }
+  },
+  "loki": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#3f7a3a",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  },
+  "maid": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#e8a0b8",
+    "pants": "#8a6d4b",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#e8b48f",
+    "sash": "#e8b923"
+   }
+  },
+  "thrym": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#6b7a8a",
+    "pants": "#8a6d4b",
+    "hair": "buzz",
+    "hairColor": "#3b3b3b",
+    "skin": "#c68d64",
+    "sash": "#4a3b2c",
+    "beard": true
+   }
+  },
+  "freyja": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#d9a521",
+    "pants": "#8a6d4b",
+    "hair": "long",
+    "hairColor": "#f2d27a",
+    "skin": "#f2c39b",
+    "sash": "#b85c9e"
+   }
+  },
+  "heim": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#f4f4f4",
+    "pants": "#8a6d4b",
+    "hair": "short",
+    "hairColor": "#e8e0c0",
+    "skin": "#e8b48f",
+    "sash": "#2b4c8c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You wake up. Your hammer is gone.",
+   "key": [
+    "GONE."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "thor": [
+     1.2,
+     0
+    ],
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "thor"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "thor": {
+     "mood": "shocked",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Thor, the god of thunder. You are now hammerless.",
+   "key": [
+    "HAMMERLESS."
+   ],
+   "board": [
+    "THOR",
+    "NO HAMMER"
+   ],
+   "place": {
+    "capy": false,
+    "thor": [
+     0,
+     0
+    ],
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "thor"
+   },
+   "act": {
+    "thor": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A giant named Thrym has stolen it.",
+   "key": [
+    "THRYM"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": false,
+    "loki": [
+     -2.0,
+     0.4
+    ],
+    "maid": false,
+    "thrym": [
+     0.4,
+     -0.4
+    ],
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "thrym",
+    "pan": [
+     -1.0,
+     0
+    ],
+    "offset": [
+     0,
+     0,
+     -2
+    ]
+   },
+   "act": {
+    "thrym": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    },
+    "loki": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "thrym"
+    }
+   }
+  },
+  {
+   "text": "Loki borrows a feather cloak. He flies off to ask.",
+   "key": [
+    "FEATHER"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": false,
+    "loki": [
+     0,
+     0
+    ],
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "loki"
+   },
+   "act": {
+    "loki": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He hid it eight miles under the earth.",
+   "cap": "He hid it 8 miles under the earth.",
+   "key": [
+    "8"
+   ],
+   "board": [
+    "HAMMER",
+    "8 MILES DOWN"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": [
+     0,
+     0
+    ],
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "thrym"
+   },
+   "act": {
+    "thrym": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His price? The goddess Freyja, as his bride.",
+   "key": [
+    "BRIDE."
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": [
+     -1.3,
+     0.2
+    ],
+    "freyja": [
+     1.3,
+     -0.2
+    ],
+    "heim": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "thrym",
+    "with": "freyja"
+   },
+   "act": {
+    "thrym": {
+     "mood": "happy",
+     "action": "point",
+     "look": "freyja"
+    },
+    "freyja": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "thrym"
+    }
+   }
+  },
+  {
+   "text": "Freyja says no. With real fury. Can you blame her?",
+   "key": [
+    "FURY."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "thor": false,
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": [
+     1.2,
+     0
+    ],
+    "heim": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "freyja",
+    "with": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "freyja": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "So the gods need a bride. Any bride.",
+   "key": [
+    "ANY"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "thor": [
+     -2.2,
+     -0.6
+    ],
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "thor": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "heim": {
+     "mood": "happy",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Heimdall has an idea. You wear the dress.",
+   "key": [
+    "DRESS."
+   ],
+   "place": {
+    "capy": false,
+    "thor": [
+     -1.3,
+     0.2
+    ],
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": [
+     1.3,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "heim",
+    "with": "thor"
+   },
+   "act": {
+    "heim": {
+     "mood": "smug",
+     "action": "point",
+     "look": "thor"
+    },
+    "thor": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "heim"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "You get a bridal veil. A fancy necklace. A very large bride.",
+   "key": [
+    "LARGE"
+   ],
+   "board": [
+    "THE BRIDE",
+    "(THOR)"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": [
+     0,
+     0
+    ],
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "bride"
+   },
+   "act": {
+    "bride": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Loki comes too. He plays your maid.",
+   "key": [
+    "MAID."
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": [
+     -1.3,
+     0.2
+    ],
+    "loki": false,
+    "maid": [
+     1.3,
+     -0.2
+    ],
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "bride",
+    "with": "maid"
+   },
+   "act": {
+    "bride": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "maid"
+    },
+    "maid": {
+     "mood": "happy",
+     "action": "wave",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Two gods in dresses. Zero shame.",
+   "cap": "Two gods in dresses. Zero shame.",
+   "key": [
+    "ZERO"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -0.4,
+     1.2
+    ],
+    "thor": false,
+    "bride": [
+     2.2,
+     -0.6
+    ],
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "bride": {
+     "mood": "angry",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "At the feast, you eat an entire ox.",
+   "key": [
+    "OX."
+   ],
+   "board": [
+    "MENU",
+    "1 OX"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": [
+     0,
+     0
+    ],
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "bride"
+   },
+   "act": {
+    "bride": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then eight salmon. Then three casks of mead. So dainty.",
+   "cap": "Then 8 salmon. Then 3 casks of mead. So dainty.",
+   "key": [
+    "8",
+    "3"
+   ],
+   "board": [
+    "+ 8 SALMON",
+    "+ 3 CASKS"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": [
+     0,
+     0
+    ],
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "bride"
+   },
+   "act": {
+    "bride": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The groom starts to worry. Just a little.",
+   "key": [
+    "WORRY."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "thor": false,
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": [
+     1.3,
+     0
+    ],
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "thrym"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "thrym"
+    },
+    "thrym": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "bride"
+    }
+   }
+  },
+  {
+   "text": "Loki explains. The bride skipped food for eight nights.",
+   "cap": "Loki explains. The bride skipped food for 8 nights.",
+   "key": [
+    "8"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": false,
+    "loki": false,
+    "maid": [
+     -1.3,
+     0.2
+    ],
+    "thrym": [
+     1.3,
+     -0.2
+    ],
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "maid",
+    "with": "thrym"
+   },
+   "act": {
+    "maid": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "thrym"
+    },
+    "thrym": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "maid"
+    }
+   }
+  },
+  {
+   "text": "Thrym peeks under the veil. Your eyes are burning.",
+   "key": [
+    "BURNING."
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": [
+     0,
+     0
+    ],
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "bride"
+   },
+   "act": {
+    "bride": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Loki again. She skipped sleep for eight nights.",
+   "cap": "Loki again. She skipped sleep for 8 nights.",
+   "key": [
+    "SLEEP"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": false,
+    "loki": false,
+    "maid": [
+     0,
+     0
+    ],
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "maid"
+   },
+   "act": {
+    "maid": {
+     "mood": "happy",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "thrym": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "maid"
+    }
+   }
+  },
+  {
+   "text": "Somehow, this works. The giant buys it.",
+   "key": [
+    "WORKS."
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "thor": false,
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Thrym brings out the hammer. It should bless the bride.",
+   "key": [
+    "BLESS"
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": [
+     1.3,
+     -0.2
+    ],
+    "loki": false,
+    "maid": false,
+    "thrym": [
+     -1.3,
+     0.2
+    ],
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "thrym",
+    "with": "bride"
+   },
+   "act": {
+    "thrym": {
+     "mood": "happy",
+     "action": "point",
+     "look": "bride"
+    },
+    "bride": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "thrym"
+    }
+   }
+  },
+  {
+   "text": "He sets it right in your lap. Big mistake.",
+   "key": [
+    "LAP."
+   ],
+   "place": {
+    "capy": false,
+    "thor": false,
+    "bride": [
+     0,
+     0
+    ],
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "bride"
+   },
+   "act": {
+    "bride": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You grab it. The wedding is cancelled, violently.",
+   "key": [
+    "CANCELLED,"
+   ],
+   "board": [
+    "WEDDING",
+    "CANCELLED"
+   ],
+   "place": {
+    "capy": false,
+    "thor": [
+     0,
+     0
+    ],
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "thor"
+   },
+   "act": {
+    "thor": {
+     "mood": "angry",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "thrym": {
+     "mood": "shocked",
+     "action": "slump",
+     "look": "thor"
+    }
+   }
+  },
+  {
+   "text": "The best disguise in myth. The worst bride ever.",
+   "key": [
+    "WORST"
+   ],
+   "speaker": "capy",
+   "place": {
+    "capy": [
+     -1.3,
+     1.0
+    ],
+    "thor": false,
+    "bride": [
+     1.2,
+     0
+    ],
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "bride"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "bride": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Would you wear the dress for your hammer? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "WEAR THE DRESS?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "thor": false,
+    "bride": false,
+    "loki": false,
+    "maid": false,
+    "thrym": false,
+    "freyja": false,
+    "heim": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "bride": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Thrymskvida",
+   "url": "https://en.wikipedia.org/wiki/%C3%9Erymskvi%C3%B0a"
+  },
+  {
+   "title": "Sacred Texts: Thrymskvitha (Poetic Edda, Bellows translation)",
+   "url": "https://sacred-texts.com/neu/poe/poe11.htm"
+  },
+  {
+   "title": "University of Pittsburgh (D. L. Ashliman): The Lay of Thrym",
+   "url": "https://sites.pitt.edu/~dash/thrym.html"
+  },
+  {
+   "title": "Norse Mythology for Smart People: Thor the Transvestite",
+   "url": "https://norse-mythology.org/tales/thor-the-transvestite/"
+  },
+  {
+   "title": "Wikipedia: Thrym",
+   "url": "https://en.wikipedia.org/wiki/%C3%9Erymr"
+  },
+  {
+   "title": "Mythopedia: Poetic Edda, Thrymskvitha",
+   "url": "https://mythopedia.com/library/poetic-edda-bellows-1936/thrymskvitha/"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Thor wakes to find his hammer gone",
+   "terms": [
+    "Thor",
+    "hammer",
+    "missing|gone|stolen|stole|awoke|woke|wakes"
+   ]
+  },
+  {
+   "claim": "A giant has stolen it",
+   "terms": [
+    "hammer",
+    "giant|jötunn"
+   ]
+  },
+  {
+   "claim": "Loki borrows a feather cloak and flies to the giant",
+   "terms": [
+    "Loki",
+    "feather"
+   ]
+  },
+  {
+   "claim": "He has hidden it eight miles under the earth",
+   "terms": [
+    "hammer",
+    "hid|hidden",
+    "eight"
+   ]
+  },
+  {
+   "claim": "His price is Freyja as his bride",
+   "terms": [
+    "Freyja",
+    "bride|wife|wed"
+   ]
+  },
+  {
+   "claim": "Freyja refuses in fury",
+   "terms": [
+    "Freyja",
+    "angry|anger|wrath|furious|fury|refuse"
+   ]
+  },
+  {
+   "claim": "Heimdall suggests that Thor dress as the bride",
+   "terms": [
+    "Heimdall",
+    "bride"
+   ]
+  },
+  {
+   "claim": "Thor wears a bridal veil and Freyja's necklace",
+   "terms": [
+    "veil",
+    "necklace|Brísingamen|Brisingamen"
+   ]
+  },
+  {
+   "claim": "Loki goes along as his maid",
+   "terms": [
+    "Loki",
+    "maid"
+   ]
+  },
+  {
+   "claim": "At the feast Thor eats an ox and eight salmon",
+   "terms": [
+    "ox",
+    "salmon"
+   ]
+  },
+  {
+   "claim": "He drinks three casks of mead",
+   "terms": [
+    "three",
+    "mead"
+   ]
+  },
+  {
+   "claim": "Loki explains that the bride had not eaten for eight nights",
+   "terms": [
+    "eight",
+    "nights",
+    "eat|ate|eaten|food"
+   ]
+  },
+  {
+   "claim": "Under the veil the bride's eyes burn like fire",
+   "terms": [
+    "eyes",
+    "fire|burn|burning"
+   ]
+  },
+  {
+   "claim": "Loki explains that the bride had not slept for eight nights",
+   "terms": [
+    "eight",
+    "slept|sleep"
+   ]
+  },
+  {
+   "claim": "The hammer is brought to bless the bride and laid in her lap",
+   "terms": [
+    "hammer",
+    "lap|knee|knees"
+   ]
+  },
+  {
+   "claim": "Thor grabs the hammer and kills the giants",
+   "terms": [
+    "hammer",
+    "killed|kills|slew|slays|slain|smote"
+   ]
+  }
+ ]
+}
