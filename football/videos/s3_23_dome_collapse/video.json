@@ -458,8 +458,8 @@
    "speaker": "capy"
   },
   {
-   "text": "Chicago wins, forty to fourteen. It clinches the division too.",
-   "cap": "Chicago wins, 40 to 14. It clinches the division too.",
+   "text": "Chicago wins, forty to fourteen. In your house. Kind of.",
+   "cap": "Chicago wins, 40 to 14. In your house. Kind of.",
    "key": [
     "40"
    ],
@@ -670,12 +670,6 @@
    "claim": "Chicago won 40-14",
    "terms": [
     "40 14"
-   ]
-  },
-  {
-   "claim": "Chicago clinched its division",
-   "terms": [
-    "clinch"
    ]
   }
  ]
