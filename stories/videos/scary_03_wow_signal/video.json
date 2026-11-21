@@ -555,9 +555,9 @@
    }
   },
   {
-   "text": "Thousands of tweets, beamed toward Sagittarius. From a giant dish.",
+   "text": "Thousands of messages. Beamed out by a giant dish.",
    "key": [
-    "TWEETS,"
+    "MESSAGES,"
    ],
    "shot": {
     "type": "medium",
@@ -679,10 +679,6 @@
    "url": "https://www.skyatnightmagazine.com/space-science/wow-signal"
   },
   {
-   "title": "Discover: The Wow! signal, an alien missed connection?",
-   "url": "https://www.discovermagazine.com/the-sciences/the-wow-signal-an-alien-missed-connection"
-  },
-  {
    "title": "HowStuffWorks: How the Wow! signal works",
    "url": "https://science.howstuffworks.com/science-vs-myth/unexplained-phenomena/wow-signal.htm"
   },
@@ -768,10 +764,10 @@
    ]
   },
   {
-   "claim": "In 2012 a reply of tweets was beamed toward the source",
+   "claim": "In 2012 the Arecibo dish beamed a reply",
    "terms": [
     "2012",
-    "tweets|Twitter"
+    "Arecibo"
    ]
   }
  ]

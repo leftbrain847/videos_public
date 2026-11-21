@@ -293,9 +293,9 @@
    "speaker": "capy"
   },
   {
-   "text": "It is your granddaughter's third birthday.",
+   "text": "Three long years. Your family is waiting. Right?",
    "key": [
-    "BIRTHDAY."
+    "RIGHT?"
    ],
    "shot": {
     "type": "close",
@@ -546,8 +546,7 @@
    "speaker": "capy"
   },
   {
-   "text": "A patch hides a tiny fort symbol inland. Spotted in twenty twelve.",
-   "cap": "A patch hides a tiny fort symbol inland. Spotted in 2012.",
+   "text": "A patch hides a tiny fort symbol inland. Very sneaky.",
    "key": [
     "FORT"
    ],
@@ -657,16 +656,8 @@
    "url": "https://www.dncr.nc.gov/blog/2016/08/18/origins-lost-colony-mystery"
   },
   {
-   "title": "National Park Service: The John White colony",
-   "url": "https://www.nps.gov/fora/learn/education/the-john-white-colony.htm"
-  },
-  {
    "title": "History.com: What happened to the lost colony of Roanoke?",
    "url": "https://www.history.com/articles/what-happened-to-the-lost-colony-of-roanoke"
-  },
-  {
-   "title": "World History Encyclopedia: Roanoke Colony",
-   "url": "https://www.worldhistory.org/Roanoke_Colony"
   },
   {
    "title": "American Heritage: Has Roanoke's lost colony been found?",
@@ -730,12 +721,6 @@
    ]
   },
   {
-   "claim": "He returned on his granddaughter's third birthday",
-   "terms": [
-    "third birthday"
-   ]
-  },
-  {
    "claim": "The houses had been taken down",
    "terms": [
     "houses",
@@ -766,14 +751,13 @@
   {
    "claim": "Anchors were lost in the storm",
    "terms": [
-    "anchor",
-    "storm"
+    "anchor"
    ]
   },
   {
    "claim": "A storm stopped the search and the ships returned to England",
    "terms": [
-    "storm",
+    "weather|storm",
     "England"
    ]
   },
@@ -789,13 +773,6 @@
    "terms": [
     "patch",
     "fort"
-   ]
-  },
-  {
-   "claim": "The patch was spotted in 2012",
-   "terms": [
-    "2012",
-    "patch"
    ]
   }
  ]

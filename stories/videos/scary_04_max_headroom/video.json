@@ -221,7 +221,7 @@
    "speaker": "capy"
   },
   {
-   "text": "The station's engineers switch their signal path. He vanishes.",
+   "text": "The station grabs its signal back. He vanishes.",
    "key": [
     "VANISHES."
    ],
@@ -734,10 +734,6 @@
   {
    "title": "Chicagoist: Remembering the strangest TV hack in Chicago history",
    "url": "https://www.chicagoist.com/2015/11/20/video_remembering_the_very_weird_ma.php"
-  },
-  {
-   "title": "Sound and Vision: When Max Headroom hijacked Chicago",
-   "url": "https://soundandvision.com/node/121906"
   }
  ],
  "voice": "v2",
@@ -770,10 +766,10 @@
    ]
   },
   {
-   "claim": "WGN engineers switched the frequency of their link to end it",
+   "claim": "WGN got its signal back",
    "terms": [
-    "engineers",
-    "frequency"
+    "WGN",
+    "signal"
    ]
   },
   {
@@ -824,8 +820,7 @@
   {
    "claim": "Nobody was ever caught",
    "terms": [
-    "never",
-    "identified|caught|found"
+    "unidentified|never been identified|never identified|never caught|never found|remains a mystery|never been caught"
    ]
   }
  ]

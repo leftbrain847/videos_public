@@ -490,9 +490,9 @@
    "speaker": "capy"
   },
   {
-   "text": "None of the three was ever found. Not a trace.",
+   "text": "None of the three was ever seen again. Not a trace.",
    "key": [
-    "FOUND."
+    "TRACE."
    ],
    "shot": {
     "type": "high",
@@ -544,7 +544,7 @@
    }
   },
   {
-   "text": "His poem adds a meal on the table. Plus a tipped chair.",
+   "text": "His poem adds spooky details. A meal. A chair.",
    "key": [
     "CHAIR."
    ],
@@ -561,9 +561,9 @@
    }
   },
   {
-   "text": "The real report? A clean, tidy kitchen.",
+   "text": "Nice rhymes. Zero evidence. Great poem though.",
    "key": [
-    "TIDY"
+    "ZERO"
    ],
    "place": {
     "capy": [
@@ -591,9 +591,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Later, someone even faked spooky log entries.",
+   "text": "Later writers keep adding their own spooky twists.",
    "key": [
-    "FAKED"
+    "TWISTS."
    ],
    "shot": {
     "type": "low",
@@ -609,9 +609,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Your missing keepers got fan fiction. Twice.",
+   "text": "Your missing keepers got fan fiction. Lots of it.",
    "key": [
-    "TWICE."
+    "FICTION."
    ],
    "set": "haunted",
    "setOpts": {
@@ -823,24 +823,17 @@
    ]
   },
   {
-   "claim": "The keepers were never found",
+   "claim": "The keepers vanished without a trace",
    "terms": [
-    "never",
-    "found"
+    "keepers",
+    "vanish|disappear"
    ]
   },
   {
-   "claim": "A 1912 poem added details like an overturned chair and an uneaten meal",
+   "claim": "A poet, Wilfrid Gibson, wrote a poem about it",
    "terms": [
-    "poem",
-    "chair"
-   ]
-  },
-  {
-   "claim": "Fabricated log entries appeared later",
-   "terms": [
-    "log",
-    "fabricat|invented|fiction|fake"
+    "Gibson",
+    "poem"
    ]
   },
   {
