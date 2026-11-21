@@ -22,6 +22,8 @@ def settings(env=os.environ, queue=QUEUE):
         unknown = set(q) - {"mode", "release", "listen", "replace", "videos", "_note"}
         if unknown:
             sys.exit(f"unknown queue keys: {sorted(unknown)}")
+        if not all(isinstance(q.get(k, False), bool) for k in ("listen", "replace")):
+            sys.exit("listen/replace must be true or false")
         vids = q.get("videos", [])
         if not isinstance(vids, list) or not all(isinstance(v, str) for v in vids):
             sys.exit("queue videos must be a list of ids")

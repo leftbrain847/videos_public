@@ -19,7 +19,7 @@ def test_queue():
     q.write_text(json.dumps({"mode": "render", "release": "football-batch-1", "videos": ["s4_01_music_city_miracle"]}))
     v, tag, listen, rep, mode = render_plan.settings({"EVENT": "push"}, q)
     assert (v, tag, listen, rep, mode) == ("s4_01_music_city_miracle", "football-batch-1", True, False, "render")
-    for bad in ({"release": "x; rm -rf /", "videos": []}, {"mode": "deploy", "videos": []}, {"videos": "s4_01"}, {"evil": 1, "videos": []}):
+    for bad in ({"release": "x; rm -rf /", "videos": []}, {"mode": "deploy", "videos": []}, {"videos": "s4_01"}, {"evil": 1, "videos": []}, {"replace": "false", "videos": []}):
         q.write_text(json.dumps(bad)); expect_exit(lambda: render_plan.settings({"EVENT": "push"}, q))
     v, tag, *_ = render_plan.settings({"EVENT": "workflow_dispatch", "VIDEOS": "a b", "TAG": ""}, q)
     assert v == "a b" and tag == ""

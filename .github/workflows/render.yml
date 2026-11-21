@@ -29,7 +29,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: render-${{ github.run_id }}
+  group: render-${{ github.run_id }}   # one release tag per run (football-batch-1a, -1b, ...): two runs on one tag could race on release create
   cancel-in-progress: false
 defaults:
   run:
@@ -60,7 +60,7 @@ jobs:
   # Always runs: a release needs every claim checked against two sources.
   facts:
     needs: plan
-    continue-on-error: true   # a failed claim holds back only its own video (see release), not the whole batch
+    continue-on-error: ${{ needs.plan.outputs.mode == 'render' }}   # render: a failed claim holds back only its own video (see release); facts mode: red
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
