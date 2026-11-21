@@ -1,0 +1,848 @@
+{
+ "id": "mind_31_zeigarnik_waiter",
+ "title": "The waiter who forgot every paid bill",
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "UNFINISHED",
+   "BUSINESS"
+  ]
+ },
+ "target_s": 90,
+ "voice": "v2",
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "cardigan"
+   },
+   "at": "left",
+   "face": 15
+  },
+  "you": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#d35400",
+    "pants": "#3c3c3c",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#c68d64"
+   }
+  },
+  "wait": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#f4f4f4",
+    "pants": "#1b1b1b",
+    "tie": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#f2c39b"
+   },
+   "hold": "notepad"
+  },
+  "blu": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#a7adb3",
+    "lapel": "#6f757b",
+    "pants": "#3c3c44",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f",
+    "glasses": false
+   },
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "A waiter remembers every unpaid order. Then forgets it the moment you pay.",
+   "key": [
+    "PAY."
+   ],
+   "board": [
+    "UNFINISHED",
+    "BUSINESS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": false,
+    "wait": [
+     1.2,
+     0.0
+    ],
+    "blu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wait"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wait": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Berlin, the nineteen twenties. A busy restaurant. Lots of tables.",
+   "cap": "Berlin, the 1920s. A busy restaurant. Lots of tables.",
+   "key": [
+    "RESTAURANT."
+   ],
+   "set": "press",
+   "board": [
+    "BERLIN",
+    "1920s"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.6
+    ],
+    "wait": [
+     1.2,
+     0.2
+    ],
+    "blu": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "wait"
+   },
+   "act": {
+    "wait": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "wait"
+    }
+   }
+  },
+  {
+   "text": "Psychologist Kurt Lewin watches the waiter closely.",
+   "key": [
+    "LEWIN"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.6
+    ],
+    "wait": [
+     1.2,
+     0.2
+    ],
+    "blu": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wait"
+   },
+   "act": {
+    "wait": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Open orders? The waiter recalls every detail.",
+   "key": [
+    "EVERY"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.6
+    ],
+    "wait": [
+     1.2,
+     0.2
+    ],
+    "blu": false
+   },
+   "shot": {
+    "type": "close",
+    "on": "wait"
+   },
+   "act": {
+    "wait": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Paid orders? Gone. Instantly. Like they never happened.",
+   "key": [
+    "GONE."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.6
+    ],
+    "wait": [
+     1.2,
+     0.2
+    ],
+    "blu": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "wait"
+   },
+   "act": {
+    "wait": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Pay the bill. Watch the waiter forget your face.",
+   "key": [
+    "FORGET"
+   ],
+   "set": "study",
+   "board": [
+    "UNFINISHED",
+    "BUSINESS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "wait": false,
+    "blu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "His student, Bluma Zeigarnik, tests it properly.",
+   "key": [
+    "ZEIGARNIK,"
+   ],
+   "set": "office",
+   "board": [
+    "THE",
+    "EXPERIMENT"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "wait": false,
+    "blu": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "blu"
+   },
+   "act": {
+    "blu": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "you"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "blu"
+    }
+   }
+  },
+  {
+   "text": "You get a pile of small tasks. Puzzles. Little problems. Quick jobs.",
+   "key": [
+    "TASKS."
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "wait": false,
+    "blu": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some you finish. Others she interrupts halfway.",
+   "key": [
+    "INTERRUPTS"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "wait": false,
+    "blu": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "blu",
+    "with": "you"
+   },
+   "act": {
+    "blu": {
+     "mood": "smug",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "blu"
+    }
+   }
+  },
+  {
+   "text": "Later, she asks. Which tasks do you remember? List them.",
+   "key": [
+    "REMEMBER?"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "wait": false,
+    "blu": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "blu"
+   },
+   "act": {
+    "blu": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The interrupted ones. Remembered far more often.",
+   "key": [
+    "INTERRUPTED"
+   ],
+   "board": [
+    "UNFINISHED:",
+    "REMEMBERED MORE"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     -1.4,
+     0.4
+    ],
+    "wait": false,
+    "blu": [
+     1.4,
+     0.0
+    ]
+   },
+   "shot": {
+    "type": "low",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It becomes the Zeigarnik effect. Textbooks adore it. So do productivity blogs.",
+   "key": [
+    "EFFECT."
+   ],
+   "set": "study",
+   "board": [
+    "ZEIGARNIK",
+    "EFFECT"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "wait": false,
+    "blu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Cliffhangers. Unread messages. That chore you started yesterday.",
+   "key": [
+    "CLIFFHANGERS."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "wait": false,
+    "blu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "you"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "They nag you. That is the effect at work. Supposedly.",
+   "key": [
+    "NAG"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "wait": false,
+    "blu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Here is the twist. Twenty twenty five.",
+   "cap": "Here is the twist. 2025.",
+   "key": [
+    "2025."
+   ],
+   "board": [
+    "THE",
+    "TWIST"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "wait": false,
+    "blu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A meta analysis pools decades of these studies.",
+   "key": [
+    "DECADES"
+   ],
+   "set": "office",
+   "board": [
+    "META-",
+    "ANALYSIS"
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "wait": false,
+    "blu": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "blu"
+   },
+   "act": {
+    "blu": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The memory boost for unfinished tasks? Not reliable. It mostly washes out.",
+   "key": [
+    "RELIABLE."
+   ],
+   "place": {
+    "capy": false,
+    "you": false,
+    "wait": false,
+    "blu": [
+     0,
+     0.2
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "blu"
+   },
+   "act": {
+    "blu": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "But people do tend to go back. They resume the task. Even unasked.",
+   "key": [
+    "RESUME"
+   ],
+   "place": {
+    "capy": false,
+    "you": [
+     0,
+     0.4
+    ],
+    "wait": false,
+    "blu": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "That urge has its own name. The Ovsiankina effect.",
+   "key": [
+    "OVSIANKINA"
+   ],
+   "set": "study",
+   "board": [
+    "UNFINISHED",
+    "BUSINESS"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "wait": false,
+    "blu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "So you may not remember the chore better. You just itch to finish it.",
+   "key": [
+    "ITCH"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": false,
+    "wait": false,
+    "blu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Be honest. Can you stop a show mid episode? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "STOP",
+    "MID-EPISODE?"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.2
+    ],
+    "you": [
+     1.2,
+     0.2
+    ],
+    "wait": false,
+    "blu": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Zeigarnik effect",
+   "url": "https://en.wikipedia.org/wiki/Zeigarnik_effect"
+  },
+  {
+   "title": "Wikipedia: Bluma Zeigarnik",
+   "url": "https://en.wikipedia.org/wiki/Bluma_Zeigarnik"
+  },
+  {
+   "title": "Humanities and Social Sciences Communications: Interruption, recall and resumption, a meta-analysis",
+   "url": "https://www.nature.com/articles/s41599-025-05000-w"
+  },
+  {
+   "title": "IDEAS RePEc: Interruption, recall and resumption",
+   "url": "https://ideas.repec.org/a/pal/palcom/v12y2025i1d10.1057_s41599-025-05000-w.html"
+  },
+  {
+   "title": "Simply Psychology: Zeigarnik effect",
+   "url": "https://www.simplypsychology.org/zeigarnik-effect.html"
+  },
+  {
+   "title": "Wikipedia: Kurt Lewin",
+   "url": "https://en.wikipedia.org/wiki/Kurt_Lewin"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Kurt Lewin noticed a waiter remembering unpaid orders",
+   "terms": [
+    "Lewin",
+    "waiter"
+   ]
+  },
+  {
+   "claim": "The waiter forgot orders once they were paid",
+   "terms": [
+    "waiter",
+    "paid"
+   ]
+  },
+  {
+   "claim": "It happened in Berlin in the 1920s",
+   "terms": [
+    "Berlin"
+   ]
+  },
+  {
+   "claim": "Bluma Zeigarnik was Lewin's student",
+   "terms": [
+    "Zeigarnik",
+    "Lewin"
+   ]
+  },
+  {
+   "claim": "Participants did a series of small tasks, some interrupted",
+   "terms": [
+    "tasks",
+    "interrupt"
+   ]
+  },
+  {
+   "claim": "Interrupted tasks were remembered better",
+   "terms": [
+    "interrupt",
+    "remember|recall"
+   ]
+  },
+  {
+   "claim": "It is called the Zeigarnik effect",
+   "terms": [
+    "Zeigarnik effect"
+   ]
+  },
+  {
+   "claim": "A 2025 meta-analysis pooled the studies",
+   "terms": [
+    "meta-analysis|meta analysis",
+    "Zeigarnik"
+   ]
+  },
+  {
+   "claim": "It found no reliable memory advantage for unfinished tasks",
+   "terms": [
+    "memory|recall",
+    "no|not"
+   ]
+  },
+  {
+   "claim": "People tend to resume interrupted tasks",
+   "terms": [
+    "resum",
+    "Ovsiankina"
+   ]
+  },
+  {
+   "claim": "That tendency is called the Ovsiankina effect",
+   "terms": [
+    "Ovsiankina effect"
+   ]
+  }
+ ]
+}
