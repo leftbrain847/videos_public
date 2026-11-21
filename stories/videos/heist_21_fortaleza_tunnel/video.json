@@ -237,9 +237,9 @@
    ]
   },
   {
-   "text": "You line it with wood. You add lights. You add air conditioning.",
+   "text": "You dig. Week after week. Under the street. Nobody notices a thing.",
    "key": [
-    "CONDITIONING."
+    "THING."
    ],
    "shot": {
     "type": "medium",
@@ -549,10 +549,6 @@
    "url": "http://news.bbc.co.uk/2/hi/americas/4135258.stm"
   },
   {
-   "title": "Wikipedia (pt): Furto ao Banco Central em Fortaleza",
-   "url": "https://pt.wikipedia.org/wiki/Furto_ao_Banco_Central_em_Fortaleza"
-  },
-  {
    "title": "Agencia Brasil: Police investigate biggest bank robbery in Brazilian history",
    "url": "https://memoria.ebc.com.br/agenciabrasil//noticia/2005-08-08/police-investigate-biggest-bank-robbery-brazilian-history"
   },
@@ -610,12 +606,6 @@
    "claim": "The tunnel was about 78 metres long",
    "terms": [
     "78"
-   ]
-  },
-  {
-   "claim": "The tunnel had wood lining, lights and air conditioning",
-   "terms": [
-    "air conditioning|air conditioned|air-conditioning|ar-condicionado|ar condicionado|lighting|lights|electric|ilumina"
    ]
   },
   {
