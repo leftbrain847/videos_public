@@ -891,6 +891,18 @@
   {
    "title": "Wikipedia: Calvin Johnson",
    "url": "https://en.wikipedia.org/wiki/Calvin_Johnson"
+  },
+  {
+   "title": "Daily Herald: Catching a big break",
+   "url": "https://www.dailyherald.com/20100912/other-sports/catching-a-big-break-it-sure-looked-like-a-td/"
+  },
+  {
+   "title": "ESPN NFC North blog: Like it or not, Megatron call was right",
+   "url": "https://www.espn.com/blog/nfcnorth/post/_/id/16142/like-it-or-not-megatron-call-was-right"
+  },
+  {
+   "title": "Rams.com: NFL owners approve new catch rule for 2018",
+   "url": "https://www.therams.com/news/nfl-owners-approve-new-catch-rule-for-2018-season-20492092"
   }
  ],
  "voice": "v2",
@@ -930,7 +942,7 @@
    "claim": "Ruled incomplete on the field; replay upheld it",
    "terms": [
     "incomplete",
-    "replay|review"
+    "replay|review|upheld|overturn"
    ]
   },
   {
@@ -944,7 +956,7 @@
    "claim": "The referee said the process wasn't over until he finished rolling",
    "terms": [
     "process",
-    "roll"
+    "roll|ground|Steratore"
    ]
   },
   {
@@ -964,7 +976,7 @@
    "claim": "In 2018 owners unanimously voted to drop the going-to-the-ground part",
    "terms": [
     "unanimous|32-0",
-    "2018|catch rule"
+    "2018|catch rule|catch"
    ]
   }
  ]

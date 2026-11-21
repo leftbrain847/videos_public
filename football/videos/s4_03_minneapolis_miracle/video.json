@@ -2640,6 +2640,10 @@
   {
    "title": "CBS News: Minneapolis Miracle among NFL's greatest plays",
    "url": "https://www.cbsnews.com/newyork/news/minneapolis-miracle-vikings-saints-nfl-greatest-plays"
+  },
+  {
+   "title": "Business Insider: The 19 greatest NFL plays of the decade",
+   "url": "https://www.businessinsider.in/sports/news/the-19-greatest-nfl-plays-of-the-decade/amp_articleshow/72339393.cms"
   }
  ],
  "voice": "v2",
@@ -2726,8 +2730,8 @@
   {
    "claim": "The NFL ranked it the ninth greatest play in league history",
    "terms": [
-    "9th|ninth|No. 9",
-    "greatest"
+    "9th|ninth|No. 9|number 9",
+    "greatest|best"
    ]
   }
  ]

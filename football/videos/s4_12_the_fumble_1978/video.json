@@ -2153,6 +2153,14 @@
   {
    "title": "Mediaite: Giants fans bring back a protest tactic from the '70s",
    "url": "https://www.mediaite.com/sports/the-ny-giants-have-become-such-a-train-wreck-that-fans-brought-back-a-protest-tactic-from-the-70s"
+  },
+  {
+   "title": "Wikipedia: Bob Gibson (American football)",
+   "url": "https://en.wikipedia.org/wiki/Bob_Gibson_(American_football)"
+  },
+  {
+   "title": "SI: Miracle at the Meadowlands 40th anniversary",
+   "url": "https://www.si.com/nfl/2018/11/14/miracle-meadowlands-40th-anniversary-giants-eagles-joe-pisarcik-herman-edwards-harry-carson"
   }
  ],
  "voice": "v2",
@@ -2226,7 +2234,7 @@
    "claim": "Offensive coordinator Bob Gibson was fired the next day",
    "terms": [
     "Gibson",
-    "fired"
+    "fired|dismissed|let go"
    ]
   },
   {
@@ -2239,8 +2247,8 @@
   {
    "claim": "A plane flew a banner over the stadium",
    "terms": [
-    "plane|airplane",
-    "banner|lousy"
+    "plane|airplane|aircraft|flown|flew",
+    "banner"
    ]
   },
   {

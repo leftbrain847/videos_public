@@ -1964,6 +1964,14 @@
   {
    "title": "Wikipedia: 2021 Las Vegas Raiders season",
    "url": "https://en.wikipedia.org/wiki/2021_Las_Vegas_Raiders_season"
+  },
+  {
+   "title": "AP via CBS News: Carlson's OT field goal sends Raiders into postseason",
+   "url": "https://www.cbsnews.com/sanfrancisco/news/carlsons-ot-field-goal-sends-raiders-into-postseason"
+  },
+  {
+   "title": "AP via News4Jax: Carlson's FG as OT expires sends Raiders into postseason",
+   "url": "https://www.news4jax.com/sports/2022/01/10/carlsons-fg-as-ot-expires-sends-raiders-into-postseason/"
   }
  ],
  "voice": "v2",
@@ -2040,7 +2048,7 @@
    "claim": "That set up a 47-yard field goal, good as time expired",
    "terms": [
     "47",
-    "expire|final play|no time|as time"
+    "expire|final play|no time|as time|final second"
    ]
   },
   {

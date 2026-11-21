@@ -873,6 +873,14 @@
   {
    "title": "UPI: Teams unanimously approve simplified catch rule",
    "url": "https://www.upi.com/Sports_News/NFL/2018/03/27/Teams-unanimously-approve-simplified-catch-rule/4451522169969/"
+  },
+  {
+   "title": "Rams.com: NFL owners approve new catch rule for 2018",
+   "url": "https://www.therams.com/news/nfl-owners-approve-new-catch-rule-for-2018-season-20492092"
+  },
+  {
+   "title": "theScore: New catch rule passes unanimously",
+   "url": "https://thescore.com/nfl/news/1513741"
   }
  ],
  "voice": "v2",
@@ -956,7 +964,8 @@
   {
    "claim": "Owners voted 32-0 for a new catch rule",
    "terms": [
-    "32-0"
+    "32-0|unanimous",
+    "catch"
    ]
   },
   {

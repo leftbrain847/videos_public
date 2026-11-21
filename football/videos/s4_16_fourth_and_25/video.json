@@ -1422,6 +1422,14 @@
   {
    "title": "FOX 9: Josh McCown on ending the Vikings' 2003 season",
    "url": "https://www.fox9.com/sports/josh-mccown-talks-ending-vikings-2003-season"
+  },
+  {
+   "title": "AP via Taipei Times: Cardinals 18, Vikings 17",
+   "url": "https://www.taipeitimes.com/News/sport/archives/2003/12/30/2003085768"
+  },
+  {
+   "title": "Wikipedia: Nate Poole",
+   "url": "https://en.wikipedia.org/wiki/Nate_Poole"
   }
  ],
  "voice": "v2",
@@ -1429,7 +1437,7 @@
   {
    "claim": "The Packers won the 2003 division because of a 4th-and-25 play in Arizona",
    "terms": [
-    "fourth-and-25|4th-and-25|fourth and 25"
+    "fourth-and-25|4th-and-25|fourth and 25|4th and 25"
    ]
   },
   {
@@ -1469,7 +1477,7 @@
    "claim": "Two straight sacks made it fourth-and-25",
    "terms": [
     "sack",
-    "back to back|two|consecutive|straight|twice"
+    "back to back|two|consecutive|straight|twice|again"
    ]
   },
   {
@@ -1487,7 +1495,7 @@
   {
    "claim": "Poole was ruled forced out and replay upheld the touchdown",
    "terms": [
-    "forced out|pushed out",
+    "forced out|pushed out|force out",
     "replay|review"
    ]
   },

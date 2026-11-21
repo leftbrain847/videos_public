@@ -964,6 +964,18 @@
   {
    "title": "CBS Boston: 20th birthday of the Patriots-Raiders Snow Bowl",
    "url": "https://www.cbsnews.com/boston/news/20th-birthday-patriots-raiders-snow-bowl-tuck-rule-game"
+  },
+  {
+   "title": "theScore: Tuck Rule game continues to stir strong emotions",
+   "url": "https://thescore.com/nfl/news/681350"
+  },
+  {
+   "title": "SI: Brady wins first playoff game thanks to Tuck Rule",
+   "url": "https://www.si.com/nfl/2016/10/05/tom-brady-biggest-moments-tuck-rule"
+  },
+  {
+   "title": "CBS Boston: Vinatieri's snow kick was the true turning point",
+   "url": "https://www.cbsnews.com/boston/news/why-adam-vinatieris-snow-kick-not-the-tuck-rule-was-the-patriots-true-turning-point"
   }
  ],
  "voice": "v2",
@@ -979,7 +991,7 @@
    "claim": "Oakland led 13-10 with under two minutes left",
    "terms": [
     "13 10",
-    "minute|1:47|1:50|1:43"
+    "minute|left|remaining|to go|1:47|1:50|1:43"
    ]
   },
   {
@@ -1029,7 +1041,7 @@
    "claim": "New England kicked a field goal in the snow to tie",
    "terms": [
     "field goal",
-    "tie",
+    "tie|tying|tied",
     "Vinatieri|45"
    ]
   },

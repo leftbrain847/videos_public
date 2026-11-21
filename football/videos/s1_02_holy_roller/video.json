@@ -1262,6 +1262,14 @@
   {
    "title": "Wikipedia: 1978 Oakland Raiders season",
    "url": "https://en.wikipedia.org/wiki/1978_Oakland_Raiders_season"
+  },
+  {
+   "title": "AP via Fox Sports: Holy Roller game still resonates",
+   "url": "https://www.foxsports.com/stories/nfl/holy-roller-game-still-resonates-in-nfl-4-decades-later"
+  },
+  {
+   "title": "AP via AOL: Holy Roller game still resonates",
+   "url": "https://www.aol.com/news/holy-roller-game-still-resonates-172547793.html"
   }
  ],
  "voice": "v2",
@@ -1276,7 +1284,7 @@
   {
    "claim": "Raiders were down 20-14 at the San Diego 14 with 10 seconds left",
    "terms": [
-    "20-14",
+    "20-14|14 yard|14-yard",
     "10 seconds|ten seconds"
    ]
   },

@@ -2618,6 +2618,14 @@
   {
    "title": "Giants.com: The Helmet Catch, Super Bowl XLII",
    "url": "https://www.giants.com/news/helmet-catch-super-bowl-xlii-eli-manning-david-tyree-new-england-patriots"
+  },
+  {
+   "title": "ESPN: Giants spoil Patriots' season",
+   "url": "https://www.espn.com.sg/nfl/playoffs07/news/story?id=3228916"
+  },
+  {
+   "title": "MPR News: NY Giants stun Patriots to Super Bowl victory",
+   "url": "https://www.mprnews.org/story/2008/02/03/superbowl"
   }
  ],
  "voice": "v2",
@@ -2625,7 +2633,7 @@
   {
    "claim": "The Patriots were 18-0, one win from a perfect season",
    "terms": [
-    "18-0|18 0",
+    "18-0|18 0|18 game|18 straight",
     "perfect|undefeated|unbeaten"
    ]
   },

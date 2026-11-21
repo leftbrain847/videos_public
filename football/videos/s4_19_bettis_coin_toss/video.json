@@ -996,6 +996,10 @@
   {
    "title": "Wikipedia: 1998 Pittsburgh Steelers season",
    "url": "https://en.wikipedia.org/wiki/1998_Pittsburgh_Steelers_season"
+  },
+  {
+   "title": "CBS Sports: NFL's top 10 Thanksgiving moments",
+   "url": "https://www.cbssports.com/nfl/news/top-10-thanksgiving-nfl-moments-randy-moss-huge-day-jerome-bettis-coin-toss-the-butt-fumble-and-more"
   }
  ],
  "voice": "v2",
@@ -1052,7 +1056,7 @@
   {
    "claim": "Overtime was sudden death: first score wins",
    "terms": [
-    "sudden death|first score"
+    "sudden death|first score|first to score|never touched the ball|never got the ball"
    ]
   },
   {
