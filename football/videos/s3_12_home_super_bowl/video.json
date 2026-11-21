@@ -291,9 +291,9 @@
    }
   },
   {
-   "text": "Your opponent? Kansas City. The defending champs.",
+   "text": "Your opponent? Kansas City. Patrick Mahomes.",
    "key": [
-    "CHAMPS."
+    "MAHOMES."
    ],
    "place": {
     "bucs": [
@@ -572,9 +572,10 @@
    ]
   },
   {
-   "claim": "Kansas City were the defending champions",
+   "claim": "The opponent was Kansas City with Patrick Mahomes",
    "terms": [
-    "defending champion|defending Super Bowl|defending champs"
+    "Mahomes",
+    "Chiefs"
    ]
   },
   {
