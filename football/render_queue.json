@@ -1,10 +1,10 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "stories-myth-1",
+ "release": "stories-space-1",
  "listen": true,
  "replace": false,
  "videos": [
-  "myth_01_prometheus_fire"
+  "space_01_apollo_13_square_filter"
  ]
 }
