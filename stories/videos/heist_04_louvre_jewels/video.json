@@ -1,0 +1,722 @@
+{
+ "id": "heist_04_louvre_jewels",
+ "title": "Seven minutes in the Louvre",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "temple",
+ "setOpts": {
+  "boardText": [
+   "THE LOUVRE",
+   "OCT 2025"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "t1": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f6d21f",
+    "pants": "#2b2b2e",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#c98d63"
+   }
+  },
+  "t2": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#f6d21f",
+    "pants": "#2b2b2e",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "guard": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d2f4f",
+    "pants": "#1d2f4f",
+    "hair": "bun",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   }
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#3a3f4b",
+    "pants": "#23262d",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You rob the Louvre in broad daylight. Then you drop the crown.",
+   "key": [
+    "CROWN."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "t1"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "t1": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "t1": "center",
+    "t2": false,
+    "guard": false,
+    "boss": false
+   },
+   "board": [
+    "CROWN",
+    "JEWELS"
+   ]
+  },
+  {
+   "text": "Paris. A Sunday morning in October, twenty twenty five.",
+   "cap": "Paris. A Sunday morning in October 2025.",
+   "key": [
+    "SUNDAY"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "board": [
+    "SUNDAY",
+    "9:30 AM"
+   ]
+  },
+  {
+   "text": "The museum opened half an hour ago. It's packed with tourists.",
+   "key": [
+    "TOURISTS."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "neutral",
+     "action": "walk"
+    }
+   }
+  },
+  {
+   "text": "Your target? The French crown jewels.",
+   "key": [
+    "JEWELS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "t1": false
+   },
+   "board": [
+    "FRENCH",
+    "CROWN JEWELS"
+   ]
+  },
+  {
+   "text": "Your plan? Not a tunnel. Not a disguise. A furniture lift.",
+   "key": [
+    "LIFT."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "two",
+    "on": "t1",
+    "with": "t2"
+   },
+   "act": {
+    "t1": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "t2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "t1"
+    }
+   },
+   "place": {
+    "t1": "left",
+    "t2": "right"
+   },
+   "board": [
+    "THE PLAN:",
+    "A LIFT"
+   ]
+  },
+  {
+   "text": "You park a truck by the river. The basket rises to a balcony.",
+   "key": [
+    "BALCONY."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "neutral",
+     "action": "point"
+    }
+   }
+  },
+  {
+   "text": "Two of you ride up. You cut through the window with power tools.",
+   "key": [
+    "WINDOW."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "t2"
+   },
+   "act": {
+    "t2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You're in the Apollo Gallery. You smash two display cases.",
+   "key": [
+    "SMASH"
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "wide",
+    "on": "t1"
+   },
+   "act": {
+    "t1": {
+     "mood": "angry",
+     "action": "point"
+    },
+    "t2": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "t1"
+    }
+   },
+   "place": {
+    "t1": "left",
+    "t2": "right"
+   },
+   "board": [
+    "APOLLO",
+    "GALLERY"
+   ]
+  },
+  {
+   "text": "Eight pieces of jewelry. Gone.",
+   "cap": "8 pieces of jewelry. Gone.",
+   "key": [
+    "GONE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "t2"
+   },
+   "act": {
+    "t2": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Guards rush in. You're already climbing back out.",
+   "key": [
+    "OUT."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "guard",
+    "with": "t1"
+   },
+   "act": {
+    "guard": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "t1"
+    },
+    "t1": {
+     "mood": "worried",
+     "action": "run"
+    }
+   },
+   "place": {
+    "guard": "left",
+    "t1": "right",
+    "t2": false
+   }
+  },
+  {
+   "text": "You speed off on scooters. Seven minutes, start to finish.",
+   "cap": "You speed off on scooters. 7 minutes, start to finish.",
+   "key": [
+    "7"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "guard"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "guard": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "capy": "right",
+    "guard": "left",
+    "t1": false
+   },
+   "board": [
+    "TOTAL TIME",
+    "7 MIN"
+   ]
+  },
+  {
+   "text": "The loot? About eighty eight million euros.",
+   "cap": "The loot? About 88 million euros.",
+   "key": [
+    "88"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "guard": false
+   },
+   "board": [
+    "THE HAUL",
+    "\u20ac88 MILLION"
+   ]
+  },
+  {
+   "text": "But one piece falls on the street. An empress's crown.",
+   "key": [
+    "EMPRESS'S"
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "medium",
+    "on": "guard"
+   },
+   "act": {
+    "guard": {
+     "mood": "shocked",
+     "action": "point"
+    }
+   },
+   "place": {
+    "guard": "center"
+   },
+   "board": [
+    "DROPPED:",
+    "THE CROWN"
+   ]
+  },
+  {
+   "text": "You stole it. Then you lost it. In under ten minutes.",
+   "key": [
+    "LOST"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "guard"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "guard": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "guard": "right"
+   }
+  },
+  {
+   "text": "One more thing. You tried to torch your truck. It didn't burn. Of course.",
+   "key": [
+    "BURN."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "guard": false
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The world asks one thing. How was this so easy?",
+   "key": [
+    "EASY?"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "boss": "center"
+   },
+   "board": [
+    "PRESS",
+    "BRIEFING"
+   ]
+  },
+  {
+   "text": "Then reporters dig up an old audit.",
+   "key": [
+    "AUDIT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "worried",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The password for the camera system? Louvre.",
+   "key": [
+    "LOUVRE."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   },
+   "board": [
+    "PASSWORD:",
+    "LOUVRE"
+   ]
+  },
+  {
+   "text": "Within a week, police start making arrests.",
+   "key": [
+    "ARRESTS."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "guard"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "guard"
+    },
+    "guard": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "guard": "right"
+   }
+  },
+  {
+   "text": "Most of the jewels? Still missing. Nobody knows where they went.",
+   "key": [
+    "MISSING."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "guard": false,
+    "capy": "center"
+   }
+  },
+  {
+   "text": "Seven minutes in. Seven minutes out. Would you pick a lift or a tunnel?",
+   "cap": "7 minutes in. 7 minutes out. Would you pick a lift or a tunnel?",
+   "key": [
+    "TUNNEL?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: 2025 Louvre robbery",
+   "url": "https://en.wikipedia.org/wiki/2025_Louvre_robbery"
+  },
+  {
+   "title": "Al Jazeera: Four-minute heist at the Louvre",
+   "url": "https://www.aljazeera.com/news/2025/10/19/four-minute-heist-at-the-louvre-how-priceless-jewels-were-stolen-in-france"
+  },
+  {
+   "title": "AP via Las Vegas Sun: How did thieves pull off the heist at the Louvre?",
+   "url": "https://lasvegassun.com/news/2025/oct/24/how-did-thieves-pull-off-heist-at-the-louvre/"
+  },
+  {
+   "title": "AP via ABC7: Thieves strike Louvre in brazen jewel heist",
+   "url": "https://abc7.com/post/thieves-steal-several-pieces-french-crown-jewels-collection-inside-famous-louvre-paris-france/18038109/"
+  },
+  {
+   "title": "The Week: Thieves nab French crown jewels from Louvre",
+   "url": "https://www.theweek.com/crime/louvre-museum-robbery-jewels"
+  },
+  {
+   "title": "RNZ: Password to Louvre's CCTV network was recently just Louvre",
+   "url": "https://www.rnz.co.nz/news/world/578140/password-to-louvre-s-cctv-network-was-recently-just-louvre"
+  },
+  {
+   "title": "TechRadar: Louvre video surveillance password was Louvre",
+   "url": "https://www.techradar.com/pro/security/no-wonder-it-got-hit-report-claims-password-for-the-louvres-video-surveillance-system-was-louvre"
+  },
+  {
+   "title": "Tom's Hardware: Louvre heist reveals security weaknesses",
+   "url": "https://tomshardware.com/tech-industry/cyber-security/louvre-heist-reveals-glaring-security-weaknesses-previous-reports-say-museum-used-louvre-as-password-for-its-video-surveillance-still-has-workstations-with-windows-2000"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The robbery was on a Sunday morning in October 2025",
+   "terms": [
+    "Sunday",
+    "October|Oct"
+   ]
+  },
+  {
+   "claim": "The museum had just opened",
+   "terms": [
+    "opened",
+    "museum"
+   ]
+  },
+  {
+   "claim": "The thieves took French crown jewels",
+   "terms": [
+    "crown jewels"
+   ]
+  },
+  {
+   "claim": "They used a truck-mounted furniture lift",
+   "terms": [
+    "lift",
+    "truck"
+   ]
+  },
+  {
+   "claim": "The lift reached a balcony",
+   "terms": [
+    "balcony"
+   ]
+  },
+  {
+   "claim": "They cut through a window",
+   "terms": [
+    "window",
+    "cut"
+   ]
+  },
+  {
+   "claim": "They were in the Apollo Gallery",
+   "terms": [
+    "Apollo"
+   ]
+  },
+  {
+   "claim": "They smashed two display cases",
+   "terms": [
+    "display cases",
+    "two"
+   ]
+  },
+  {
+   "claim": "Eight pieces were stolen",
+   "terms": [
+    "eight|8",
+    "pieces|items|objects"
+   ]
+  },
+  {
+   "claim": "They fled on scooters",
+   "terms": [
+    "scooter"
+   ]
+  },
+  {
+   "claim": "The heist took about seven minutes",
+   "terms": [
+    "seven minutes|7 minutes"
+   ]
+  },
+  {
+   "claim": "The loot was valued at 88 million euros",
+   "terms": [
+    "88 million"
+   ]
+  },
+  {
+   "claim": "The crown of Empress Eugenie was dropped",
+   "terms": [
+    "crown",
+    "Eug",
+    "dropped|found"
+   ]
+  },
+  {
+   "claim": "They tried to set the truck on fire",
+   "terms": [
+    "fire",
+    "truck|lift|vehicle"
+   ]
+  },
+  {
+   "claim": "An old audit found the video surveillance password was Louvre",
+   "terms": [
+    "password",
+    "audit"
+   ]
+  },
+  {
+   "claim": "Arrests followed within a week",
+   "terms": [
+    "arrest"
+   ]
+  },
+  {
+   "claim": "Most of the jewels are still missing",
+   "terms": [
+    "jewels",
+    "missing|not been recovered|not recovered"
+   ]
+  }
+ ]
+}
