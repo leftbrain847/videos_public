@@ -19,7 +19,7 @@ s1_02_holy_roller. Match their quality and structure exactly.
   `text` (digits only in `cap`), max 8 words per sentence, one action each, punch word last, every capitalized name in
   football/engine/pronunciation.json (check espeak: `espeak-ng -v en-us -q -x --ipa "<word>"`; add a phoneme override if wrong,
   else mark it ok as the file's existing entries do), fits 60 s at speed <= 1.06 (run `python3 football/engine/tts.py
-  football/videos/<id> --models /home/claude/work/models` to confirm the speed it needs).
+  football/videos/<id> --models <models dir>` (kokoro-v1.0.onnx + voices-v1.0.bin from the kokoro-onnx GitHub release, tag model-files-v1.0) to confirm the speed it needs).
 - NEVER call WebFetch (it needs a permission nobody will answer tonight and you will hang). WebSearch only.
 - Facts: every factual statement in `text` has a `claims` entry with `terms` (see fact_check.py docstring). Sources: https URLs from
   reputable outlets (Wikipedia, AP, ESPN, NFL.com, team sites, major papers); give 3-5 so two still support each claim if one dies.
