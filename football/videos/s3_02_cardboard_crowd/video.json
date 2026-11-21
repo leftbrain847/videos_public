@@ -55,9 +55,9 @@
  },
  "lines": [
   {
-   "text": "You play at home. Your crowd lives on a laptop.",
+   "text": "You play at home. Your crowd is a recording.",
    "key": [
-    "LAPTOP."
+    "RECORDING."
    ],
    "speaker": "capy",
    "place": {
@@ -91,10 +91,10 @@
    }
   },
   {
-   "text": "Twenty twenty. Only five teams let fans in at first.",
-   "cap": "2020. Only 5 teams let fans in at first.",
+   "text": "Twenty twenty. No fans. Your stadium sits empty.",
+   "cap": "2020. No fans. Your stadium sits empty.",
    "key": [
-    "5"
+    "EMPTY."
    ],
    "board": [
     "TEAMS WITH FANS",
@@ -122,8 +122,8 @@
    }
   },
   {
-   "text": "So N F L Films builds a crowd. From recordings.",
-   "cap": "So NFL Films builds a crowd. From recordings.",
+   "text": "So N F L Films builds a crowd. From real recordings.",
+   "cap": "So NFL Films builds a crowd. From real recordings.",
    "key": [
     "RECORDINGS."
    ],
@@ -160,7 +160,7 @@
    }
   },
   {
-   "text": "Every team gets its own system. A local engineer runs it. From a laptop.",
+   "text": "Every team gets its own system. A local engineer runs it.",
    "key": [
     "ENGINEER"
    ],
@@ -230,7 +230,7 @@
    }
   },
   {
-   "text": "Third down? No cranking it up. Sorry, Seattle.",
+   "text": "Third down? No cranking it up. Sorry, Seattle. Sorry, Kansas City.",
    "key": [
     "CRANKING"
    ],
@@ -324,7 +324,7 @@
    }
   },
   {
-   "text": "That's for season ticket holders. Everyone else? Seventy five.",
+   "text": "That's for season ticket holders. Everyone else? Seventy five dollars.",
    "cap": "That's for season ticket holders. Everyone else? $75.",
    "key": [
     "$75."
@@ -345,20 +345,36 @@
    }
   },
   {
-   "text": "The Bengals raise thirty four thousand dollars. For charity.",
-   "cap": "The Bengals raise $34,000. For charity.",
+   "text": "A cardboard you. At the game. Not even cold.",
    "key": [
-    "$34,000."
+    "CARDBOARD"
    ],
+   "speaker": "capy",
    "board": [
     "RAISED",
     "$34,000"
    ],
+   "place": {
+    "capy": [
+     1.4,
+     4.5
+    ],
+    "fan": [
+     -1.0,
+     4.3
+    ]
+   },
    "shot": {
-    "type": "low",
-    "on": "fan"
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
    },
    "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
     "fan": {
      "mood": "happy",
      "action": "clap"
@@ -534,11 +550,17 @@
  "voice": "v2",
  "claims": [
   {
-   "claim": "In 2020 only five teams allowed fans at first",
+   "claim": "The crowd was a recording",
    "terms": [
-    "five|5",
-    "teams",
-    "fans"
+    "recorded|recording",
+    "crowd"
+   ]
+  },
+  {
+   "claim": "In 2020 stadiums sat empty",
+   "terms": [
+    "empty",
+    "stadium"
    ]
   },
   {
@@ -551,7 +573,7 @@
   {
    "claim": "Each team's system was run from a laptop by a local engineer",
    "terms": [
-    "laptop"
+    "engineer"
    ]
   },
   {
@@ -592,13 +614,6 @@
    "terms": [
     "75",
     "cutout"
-   ]
-  },
-  {
-   "claim": "The Bengals raised $34,000 for charity",
-   "terms": [
-    "34,000",
-    "charit"
    ]
   },
   {

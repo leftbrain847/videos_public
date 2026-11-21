@@ -394,8 +394,8 @@
    }
   },
   {
-   "text": "Thirteen yards. Two interceptions. One sack.",
-   "cap": "13 yards. 2 interceptions. 1 sack.",
+   "text": "Thirteen yards. Two interceptions.",
+   "cap": "13 yards. 2 interceptions.",
    "key": [
     "INTERCEPTIONS."
    ],
@@ -655,10 +655,9 @@
    ]
   },
   {
-   "claim": "Hinton went 1 of 9 with a sack",
+   "claim": "Hinton went 1 of 9",
    "terms": [
-    "1 for 9|1 of 9",
-    "sack"
+    "1 for 9|1 of 9"
    ]
   },
   {

@@ -506,6 +506,22 @@
    "url": "https://www.chiefs.com/news/chiefs-defeat-patriots-26-10-on-monday-night"
   },
   {
+   "title": "CBS Boston: Patriots leaving for Kansas City Monday morning",
+   "url": "https://www.cbsnews.com/boston/news/patriots-no-new-positive-covid-tests-leaving-for-kansas-city-monday-morning-nfl-chiefs/"
+  },
+  {
+   "title": "Yahoo Sports: Patriots start a grueling Monday with a flight for game vs. Chiefs",
+   "url": "https://sports.yahoo.com/after-no-further-positive-tests-patriots-start-a-grueling-monday-with-a-flight-for-game-vs-chiefs-132915870.html"
+  },
+  {
+   "title": "NBC Sports Boston: Pats make special travel arrangements for Chiefs game",
+   "url": "https://www.nbcsports.com/boston/patriots/report-patriots-make-special-travel-arrangements-ahead-chiefs-game"
+  },
+  {
+   "title": "Boston Globe: Just by playing, this Patriots-Chiefs game was strange",
+   "url": "https://www.bostonglobe.com/2020/10/05/sports/just-by-playing-this-patriots-chiefs-game-was-strange-it-gets/"
+  },
+  {
    "title": "Wikipedia: 2020 New England Patriots season",
    "url": "https://en.wikipedia.org/wiki/2020_New_England_Patriots_season"
   }
@@ -515,7 +531,7 @@
   {
    "claim": "In 2020, the Patriots flew in on the day of the game",
    "terms": [
-    "flew|fly|travel",
+    "flight|flew|fly|travel|depart",
     "Monday"
    ]
   },
