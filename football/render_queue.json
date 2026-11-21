@@ -1,23 +1,14 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "football-batch-5",
+ "release": "football-batch-fixes",
  "listen": true,
  "replace": false,
  "videos": [
-  "s2_13_paris",
-  "s2_14_refs_double_shift",
-  "s2_15_donald_sack_drought",
-  "s2_16_flag_after_the_snap",
-  "s2_17_two_punters_pass",
-  "s2_18_mendoza_punched",
-  "s2_19_four_picks_win",
-  "s2_20_overtime_two_point",
-  "s2_21_burrow_manning",
-  "s2_22_last_winless_team",
-  "s2_23_cousins_two_teams",
-  "s2_24_mccaffrey_backyard",
-  "s2_25_browns_comeback",
-  "s4_23_super_bowl_ot_rules"
+  "s1_14_fair_catch_kick",
+  "s2_07_rio_walkoff",
+  "s3_03_tuesday_titans",
+  "s4_07_helmet_catch",
+  "s4_15_thirteen_seconds"
  ]
 }
