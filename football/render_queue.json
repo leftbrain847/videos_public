@@ -1,25 +1,14 @@
 {
  "_note": "Merging a PR that changes this file starts the render workflow (see .github/workflows/render.yml). mode: render | facts. Max 20 videos.",
  "mode": "render",
- "release": "stories-myth-1",
+ "release": "stories-mind-fixes",
  "listen": true,
  "replace": true,
  "videos": [
-  "myth_01_prometheus_fire",
-  "myth_02_thor_bride",
-  "myth_03_loki_head_bet",
-  "myth_04_odysseus_nobody",
-  "myth_05_trojan_horse",
-  "myth_06_sekhmet_beer",
-  "myth_07_cronus_stone",
-  "myth_08_vamana_three_steps",
-  "myth_09_sisyphus_chains_death",
-  "myth_10_hermes_cattle",
-  "myth_11_tithonus_forever",
-  "myth_12_loki_builder_horse",
-  "myth_13_thor_utgard_contest",
-  "myth_14_wukong_book_of_life",
-  "myth_15_anansi_stories",
-  "myth_16_midas_touch"
+  "mind_04_smoke_room",
+  "mind_08_asch_lines",
+  "mind_10_good_samaritan",
+  "mind_13_choice_blindness",
+  "mind_15_clever_hans"
  ]
 }
