@@ -1,0 +1,749 @@
+{
+ "id": "scary_24_toynbee_tiles",
+ "title": "The Toynbee tiles: messages pressed into the road",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "TOYNBEE TILES"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#c46a3c",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33"
+   },
+   "at": "center",
+   "hold": "flashlight"
+  },
+  "fan": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#4a6fb5",
+    "pants": "#3c3c3c",
+    "hair": "ponytail",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "notepad"
+  },
+  "crew": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#f6d21f",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24",
+    "cap": "#f28c28"
+   },
+   "at": "center"
+  },
+  "film": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#2a2a2a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#e8b48f",
+    "glasses": true,
+    "beard": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You cross a street. A strange message is pressed into it. Right in the asphalt.",
+   "key": [
+    "MESSAGE"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "fan": false,
+    "crew": false,
+    "film": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "It is a tile. About the size of a license plate. Letters cut by hand.",
+   "key": [
+    "PLATE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It says Toynbee idea. In movie two thousand one.",
+   "cap": "It says: Toynbee idea. In movie 2001.",
+   "key": [
+    "TOYNBEE"
+   ],
+   "board": [
+    "TOYNBEE IDEA",
+    "IN MOVIE 2001"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Resurrect dead. On planet Jupiter. Okay then.",
+   "key": [
+    "JUPITER."
+   ],
+   "board": [
+    "RESURRECT DEAD",
+    "ON PLANET JUPITER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "This is Philadelphia. It is not the only one.",
+   "key": [
+    "ONLY"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Hundreds turn up. Across many American cities. Dozens of them.",
+   "key": [
+    "HUNDREDS"
+   ],
+   "place": {
+    "fan": [
+     2.6,
+     -0.6
+    ],
+    "you": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some even appear in South America.",
+   "key": [
+    "AMERICA."
+   ],
+   "place": {
+    "capy": [
+     -0.6,
+     1.0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "fan": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "They started showing up in the nineteen eighties. Quietly.",
+   "cap": "They started showing up in the 1980s. Quietly.",
+   "key": [
+    "1980S."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "neutral",
+     "action": "hold"
+    }
+   }
+  },
+  {
+   "text": "So who glues sci fi messages into roads? For decades?",
+   "key": [
+    "DECADES?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "you": [
+     -2.6,
+     -0.4
+    ],
+    "fan": [
+     2.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    },
+    "fan": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Here is the trick. The tiles are made of linoleum. Cheap stuff.",
+   "key": [
+    "LINOLEUM."
+   ],
+   "set": "tunnel",
+   "setOpts": {
+    "boardText": [
+     "ROAD",
+     "WORK"
+    ]
+   },
+   "place": {
+    "crew": [
+     0,
+     0
+    ],
+    "capy": false,
+    "you": false,
+    "fan": false,
+    "film": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "crew"
+   },
+   "act": {
+    "crew": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Place one on asphalt. Let traffic do the rest. Patience required.",
+   "key": [
+    "TRAFFIC"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "crew"
+   },
+   "act": {
+    "crew": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Cars press it right into the road. Very hard to remove.",
+   "key": [
+    "REMOVE."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "crew"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "crew"
+    },
+    "crew": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your city's road crew now does art installation. Unpaid.",
+   "key": [
+    "UNPAID."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Fans hunt the tiles. They photograph every one. They map them.",
+   "key": [
+    "PHOTOGRAPH"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "TILE",
+     "HUNTERS"
+    ]
+   },
+   "place": {
+    "fan": [
+     0,
+     0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": [
+     2.6,
+     -0.6
+    ],
+    "crew": false,
+    "film": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "fan"
+    },
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "fan"
+    }
+   }
+  },
+  {
+   "text": "In twenty eleven, a documentary follows the trail.",
+   "cap": "In 2011, a documentary follows the trail.",
+   "key": [
+    "DOCUMENTARY"
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "RESURRECT DEAD",
+     "2011"
+    ]
+   },
+   "place": {
+    "film": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "fan": false,
+    "crew": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "film"
+   },
+   "act": {
+    "film": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "It points to one reclusive man in Philadelphia. No name needed here.",
+   "key": [
+    "RECLUSIVE"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "film"
+   },
+   "act": {
+    "film": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He has never confirmed it. Not once. Not a word.",
+   "key": [
+    "NEVER"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "film"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "film": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Meanwhile, new tiles keep appearing. Some look like copycats.",
+   "key": [
+    "COPYCATS."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "NEW TILES",
+     "STILL"
+    ]
+   },
+   "place": {
+    "fan": [
+     0,
+     0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": [
+     2.6,
+     -0.6
+    ],
+    "crew": false,
+    "film": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "fan"
+   },
+   "act": {
+    "fan": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "fan"
+    }
+   }
+  },
+  {
+   "text": "A message about raising the dead. Under your tires. Every day.",
+   "key": [
+    "TIRES."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you stop to read one? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "STOP TO READ?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.6,
+     0
+    ],
+    "fan": [
+     3.2,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Toynbee tiles",
+   "url": "https://en.wikipedia.org/wiki/Toynbee_tiles"
+  },
+  {
+   "title": "Wikipedia: Resurrect Dead, the mystery of the Toynbee tiles",
+   "url": "https://en.wikipedia.org/wiki/Resurrect_Dead:_The_Mystery_of_the_Toynbee_Tiles"
+  },
+  {
+   "title": "Philadelphia Inquirer: Toynbee tiles",
+   "url": "https://www.inquirer.com/news/pennsylvania/toynbee-tiles-scranton-art-philadelphia-20221207.html"
+  },
+  {
+   "title": "Atlas Obscura: Toynbee tiles",
+   "url": "https://www.atlasobscura.com/articles/toynbee-tiles"
+  },
+  {
+   "title": "Amusing Planet: The mysterious Toynbee tiles",
+   "url": "https://amusingplanet.com/2016/09/the-mysterious-toynbee-tiles.html"
+  },
+  {
+   "title": "World Atlas: The story of Toynbee tiles",
+   "url": "https://www.worldatlas.com/articles/the-story-of-toynbee-tiles.html"
+  },
+  {
+   "title": "Messy Nessy: The enduring urban mystery of the Toynbee tiles",
+   "url": "https://messynessychic.com/2022/11/04/the-enduring-urban-mystery-of-the-toynbee-tiles"
+  },
+  {
+   "title": "AV Club: An unknown artist embedded a cryptic message into city streets",
+   "url": "https://www.avclub.com/an-unknown-artist-embedded-a-cryptic-message-into-city-1798260669"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Tiles are about the size of a license plate",
+   "terms": [
+    "license plate"
+   ]
+  },
+  {
+   "claim": "The message reads Toynbee idea in movie 2001 resurrect dead on planet Jupiter",
+   "terms": [
+    "Toynbee",
+    "Jupiter"
+   ]
+  },
+  {
+   "claim": "Many are in Philadelphia",
+   "terms": [
+    "Philadelphia"
+   ]
+  },
+  {
+   "claim": "Hundreds have been found in many US cities",
+   "terms": [
+    "hundreds|cities"
+   ]
+  },
+  {
+   "claim": "Some appeared in South America",
+   "terms": [
+    "South America"
+   ]
+  },
+  {
+   "claim": "They began appearing in the 1980s",
+   "terms": [
+    "1980s"
+   ]
+  },
+  {
+   "claim": "They are made of linoleum",
+   "terms": [
+    "linoleum"
+   ]
+  },
+  {
+   "claim": "Traffic presses them into the asphalt",
+   "terms": [
+    "asphalt"
+   ]
+  },
+  {
+   "claim": "A 2011 documentary investigated them",
+   "terms": [
+    "2011",
+    "documentary|Resurrect Dead"
+   ]
+  },
+  {
+   "claim": "The documentary pointed to a reclusive Philadelphia man",
+   "terms": [
+    "reclusive|recluse"
+   ]
+  },
+  {
+   "claim": "Copycat tiles have appeared",
+   "terms": [
+    "copycat|imitat"
+   ]
+  }
+ ]
+}

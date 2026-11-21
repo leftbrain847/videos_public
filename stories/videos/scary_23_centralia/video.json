@@ -1,0 +1,754 @@
+{
+ "id": "scary_23_centralia",
+ "title": "Centralia: the town that has been burning since 1962",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "CENTRALIA"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5aa832",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "flashlight"
+  },
+  "chief": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#8a2a2a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "cap": "#1d1d1f"
+   },
+   "at": "center"
+  },
+  "kid": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#4a6fb5",
+    "pants": "#3c3c3c",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#f0c8a8"
+   },
+   "at": "center"
+  },
+  "rep": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "bob",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "Your town is on fire. Underground. For over sixty years. Seriously.",
+   "cap": "Your town is on fire. Underground. For over 60 years. Seriously.",
+   "key": [
+    "60"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "chief": [
+     2.8,
+     -1.0
+    ],
+    "kid": false,
+    "rep": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "chief": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "you"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Centralia, Pennsylvania. A coal mining town.",
+   "key": [
+    "COAL"
+   ],
+   "board": [
+    "CENTRALIA",
+    "PENNSYLVANIA"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    },
+    "chief": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "May, nineteen sixty two. The town cleans up its dump.",
+   "cap": "May 1962. The town cleans up its dump.",
+   "key": [
+    "DUMP."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "chief"
+   },
+   "act": {
+    "chief": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Workers set the trash on fire. Standard practice back then.",
+   "key": [
+    "FIRE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "chief"
+   },
+   "act": {
+    "chief": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The fire finds a coal seam. Then it goes underground.",
+   "key": [
+    "UNDERGROUND."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "chief": [
+     0.6,
+     0
+    ],
+    "you": [
+     3.0,
+     -1.2
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "chief"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "chief": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "Old mine tunnels feed it air. It spreads. Slowly. Quietly.",
+   "key": [
+    "SLOWLY."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "chief"
+   },
+   "act": {
+    "chief": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "Crews try digging it out. Over and over. It wins. Every time.",
+   "key": [
+    "WINS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Burning trash on top of coal. A bold plan.",
+   "key": [
+    "BOLD"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "chief": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Years pass. Smoke seeps out of cracks in the ground. Roads buckle.",
+   "key": [
+    "SMOKE"
+   ],
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "chief": [
+     2.6,
+     -1.0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle"
+    },
+    "chief": {
+     "mood": "worried",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "In nineteen eighty one, a backyard collapses.",
+   "cap": "In 1981, a backyard collapses.",
+   "key": [
+    "COLLAPSES."
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "1981",
+     "BACKYARD"
+    ]
+   },
+   "place": {
+    "kid": [
+     0,
+     4.2
+    ],
+    "capy": [
+     -2.4,
+     4.4
+    ],
+    "you": false,
+    "chief": false,
+    "rep": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "kid"
+   },
+   "act": {
+    "kid": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "kid"
+    }
+   }
+  },
+  {
+   "text": "He falls into a steaming sinkhole. His cousin pulls him out.",
+   "key": [
+    "SINKHOLE."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "kid"
+   },
+   "act": {
+    "kid": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "He survives. The whole country finally pays attention. Finally.",
+   "key": [
+    "ATTENTION."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "kid"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "kid": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Congress puts up forty two million dollars. To move everyone out.",
+   "cap": "Congress puts up $42 million. To move everyone out.",
+   "key": [
+    "MILLION"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "$42 MILLION",
+     "RELOCATION"
+    ]
+   },
+   "place": {
+    "rep": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "chief": false,
+    "kid": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rep"
+   },
+   "act": {
+    "rep": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Most families take the deal. Houses get torn down. Block by block.",
+   "key": [
+    "DOWN."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "rep"
+   },
+   "act": {
+    "rep": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The state even cancels the town's zip code.",
+   "key": [
+    "ZIP"
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rep"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "rep"
+    },
+    "rep": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your town officially stopped existing. For the mail, anyway.",
+   "key": [
+    "MAIL."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Today, only a handful of people live there.",
+   "key": [
+    "HANDFUL"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "POPULATION",
+     "SINGLE DIGITS"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "chief": [
+     2.6,
+     -1.0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "kid": false,
+    "rep": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "sad",
+     "action": "idle"
+    },
+    "chief": {
+     "mood": "sad",
+     "action": "idle"
+    },
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "A closed road nearby filled up with graffiti. Then got buried. In dirt.",
+   "key": [
+    "GRAFFITI."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Experts think it could burn for centuries more.",
+   "key": [
+    "CENTURIES"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The ghosts here are just smoke. Still unsettling. Very unsettling.",
+   "key": [
+    "SMOKE."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you visit Centralia? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "VISIT?",
+    "YES OR NO?"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Centralia, Pennsylvania",
+   "url": "https://en.wikipedia.org/wiki/Centralia,_Pennsylvania"
+  },
+  {
+   "title": "Wikipedia: Centralia mine fire",
+   "url": "https://en.wikipedia.org/wiki/Centralia_mine_fire"
+  },
+  {
+   "title": "History.com: This mine fire has been burning for more than 50 years",
+   "url": "https://www.history.com/articles/mine-fire-burning-more-50-years-ghost-town"
+  },
+  {
+   "title": "AccuWeather: How an underground mine fire turned Centralia into a ghost town",
+   "url": "https://accuweather.com/en/weather-news/centralia-pennsylvania-how-an-underground-mine-fire-turned-a-thriving-community-into-an-eerie-ghost-town/361488"
+  },
+  {
+   "title": "Mental Floss: The U.S. town that has been burning for decades",
+   "url": "https://www.mentalfloss.com/geography/u-s-town-burning-decades-centralia"
+  },
+  {
+   "title": "IFLScience: Centralia, the abandoned mine that has blazed for over half a century",
+   "url": "https://www.iflscience.com/centralia-the-abandoned-mine-that-has-blazed-for-over-half-a-century-73809"
+  },
+  {
+   "title": "Mining.com: This tiny US mining town began burning and never stopped",
+   "url": "https://www.mining.com/this-tiny-us-mining-town-began-burning-52-years-ago-and-never-stopped/"
+  },
+  {
+   "title": "Legends of America: Centralia, Pennsylvania",
+   "url": "https://www.legendsofamerica.com/centralia-pennsylvania/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The Centralia mine fire started in 1962",
+   "terms": [
+    "1962"
+   ]
+  },
+  {
+   "claim": "Centralia is a coal mining town in Pennsylvania",
+   "terms": [
+    "Centralia",
+    "coal"
+   ]
+  },
+  {
+   "claim": "The fire began when the town burned trash at the landfill",
+   "terms": [
+    "landfill|dump|trash"
+   ]
+  },
+  {
+   "claim": "The fire reached a coal seam and spread underground",
+   "terms": [
+    "seam|underground"
+   ]
+  },
+  {
+   "claim": "Efforts to put it out failed",
+   "terms": [
+    "extinguish"
+   ]
+  },
+  {
+   "claim": "Smoke and gas seep from the ground",
+   "terms": [
+    "smoke|steam|gas"
+   ]
+  },
+  {
+   "claim": "In 1981 a boy fell into a sinkhole and his cousin pulled him out",
+   "terms": [
+    "1981",
+    "sinkhole"
+   ]
+  },
+  {
+   "claim": "Congress provided $42 million for relocation",
+   "terms": [
+    "42 million"
+   ]
+  },
+  {
+   "claim": "Most residents left and houses were demolished",
+   "terms": [
+    "demolish|relocat"
+   ]
+  },
+  {
+   "claim": "The ZIP code was revoked",
+   "terms": [
+    "ZIP code"
+   ]
+  },
+  {
+   "claim": "Only a handful of residents remain",
+   "terms": [
+    "population|residents"
+   ]
+  },
+  {
+   "claim": "A closed road became Graffiti Highway and was later covered",
+   "terms": [
+    "Graffiti Highway"
+   ]
+  },
+  {
+   "claim": "The fire could burn for centuries",
+   "terms": [
+    "250 years|centuries"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,703 @@
+{
+ "id": "scary_21_kentucky_meat_shower",
+ "title": "The day it rained meat in Kentucky",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "MEAT SHOWER"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#8a5a3a",
+    "pants": "#2a2a2a",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   },
+   "at": "center",
+   "hold": "bag"
+  },
+  "man1": {
+   "look": {
+    "outfit": "tee",
+    "shirt": "#5a6b3a",
+    "pants": "#3c3c3c",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   },
+   "at": "center"
+  },
+  "man2": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#2f4a6b",
+    "pants": "#3c3c3c",
+    "hair": "curly",
+    "hairColor": "#1b1b1b",
+    "skin": "#5c3a24"
+   },
+   "at": "center"
+  },
+  "sci": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#e8b48f",
+    "glasses": true,
+    "beard": true
+   },
+   "at": "center",
+   "hold": "magnifier"
+  }
+ },
+ "lines": [
+  {
+   "text": "You are making soap outside. Then meat falls from the sky. Raw meat.",
+   "key": [
+    "MEAT"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "man1": false,
+    "man2": false,
+    "sci": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ],
+   "speaker": "capy"
+  },
+  {
+   "text": "March, eighteen seventy six. Bath county, Kentucky. A quiet farm.",
+   "cap": "March 1876. Bath county, Kentucky. A quiet farm.",
+   "key": [
+    "KENTUCKY."
+   ],
+   "board": [
+    "MARCH 1876",
+    "BATH COUNTY"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The sky is perfectly clear. Not a cloud anywhere. Just sunshine.",
+   "key": [
+    "CLEAR."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Flakes of meat drop around you. Some as big as your hand. It keeps falling.",
+   "key": [
+    "HAND."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The patch is roughly a hundred yards long.",
+   "cap": "The patch is roughly 100 yards long.",
+   "key": [
+    "100"
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Then two local men do something brave.",
+   "key": [
+    "BRAVE."
+   ],
+   "place": {
+    "man1": [
+     -2.6,
+     -0.6
+    ],
+    "man2": [
+     2.6,
+     -0.4
+    ],
+    "capy": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "man1"
+   },
+   "act": {
+    "man1": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    },
+    "man2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "man1"
+    }
+   }
+  },
+  {
+   "text": "They taste it. One guesses mutton. Maybe venison.",
+   "key": [
+    "MUTTON."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "man1",
+    "with": "man2"
+   },
+   "act": {
+    "man1": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "man2"
+    },
+    "man2": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "man1"
+    }
+   }
+  },
+  {
+   "text": "Free sky meat. Unknown source. Down the hatch. Respect.",
+   "key": [
+    "HATCH."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "you": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Newspapers love it. Scientists want samples. Lots of samples.",
+   "key": [
+    "SAMPLES."
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "SAMPLES",
+     "1876"
+    ]
+   },
+   "place": {
+    "sci": [
+     0,
+     -1.0
+    ],
+    "capy": false,
+    "you": false,
+    "man1": false,
+    "man2": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One expert says it is not meat. It is a bacteria called nostoc.",
+   "key": [
+    "NOSTOC."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Other experts test it. It really is tissue. Some of it is lung.",
+   "key": [
+    "LUNG."
+   ],
+   "place": {
+    "capy": [
+     -2.4,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sci"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "sci"
+    },
+    "sci": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "So where does sky lung come from? Asking for everyone.",
+   "key": [
+    "LUNG"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The leading theory stars a flock of vultures. Hungry ones.",
+   "key": [
+    "VULTURES."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Vultures eat a big meal. Then something spooks them.",
+   "key": [
+    "SPOOKS"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "To fly off faster, they throw it up.",
+   "key": [
+    "UP."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sci"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Over your yard. On a clear day.",
+   "key": [
+    "YARD."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "THEORY:",
+     "VULTURES"
+    ]
+   },
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "man1": [
+     2.6,
+     -0.8
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "man2": false,
+    "sci": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "shocked",
+     "action": "idle"
+    },
+    "man1": {
+     "mood": "sad",
+     "action": "slump"
+    },
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "Remember those two men who tasted it? Brave souls.",
+   "key": [
+    "TASTED"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "man1"
+   },
+   "act": {
+    "man1": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "They ate vulture leftovers. Recycled.",
+   "key": [
+    "RECYCLED."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The town still celebrates the meat shower today. With a festival.",
+   "key": [
+    "CELEBRATES"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some mysteries you solve. Some you wish you hadn't.",
+   "key": [
+    "HADN'T."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you taste the sky meat? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "TASTE IT?",
+    "YES OR NO?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Kentucky meat shower",
+   "url": "https://en.wikipedia.org/wiki/Kentucky_meat_shower"
+  },
+  {
+   "title": "Scientific American: The Great Kentucky Meat Shower mystery unwound by vulture vomit",
+   "url": "https://www.scientificamerican.com/blog/running-ponies/the-great-kentucky-meat-shower-mystery-unwound-by-projectile-vulture-vomit/"
+  },
+  {
+   "title": "Mental Floss: The Kentucky meat shower of 1876",
+   "url": "https://www.mentalfloss.com/history/kentucky-meat-shower-1876-history"
+  },
+  {
+   "title": "Ripley's: The Kentucky meat shower of 1876",
+   "url": "https://www.ripleys.com/stories/kentucky-meat-shower"
+  },
+  {
+   "title": "BBC Science Focus: Why Kentucky was once showered in meat",
+   "url": "https://www.sciencefocus.com/nature/kentucky-meat-shower"
+  },
+  {
+   "title": "Skeptoid: The Great Kentucky Meat Shower",
+   "url": "https://skeptoid.com/episodes/4653"
+  },
+  {
+   "title": "IFLScience: The time it rained meat on a clear day in Kentucky",
+   "url": "https://www.iflscience.com/plants-and-animals/the-time-it-rained-meat-on-a-clear-day-in-kentucky-and-people-immediately-ate-it/"
+  },
+  {
+   "title": "Atlas Obscura: Kentucky meat shower",
+   "url": "https://atlasobscura.com/articles/kentucky-meat-shower"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "A woman was making soap outside when meat fell",
+   "terms": [
+    "soap"
+   ]
+  },
+  {
+   "claim": "It happened in March 1876 in Bath County, Kentucky",
+   "terms": [
+    "1876",
+    "Bath County"
+   ]
+  },
+  {
+   "claim": "The sky was clear",
+   "terms": [
+    "clear"
+   ]
+  },
+  {
+   "claim": "Some flakes were several inches across",
+   "terms": [
+    "inches"
+   ]
+  },
+  {
+   "claim": "It covered an area about 100 yards long",
+   "terms": [
+    "100",
+    "yards"
+   ]
+  },
+  {
+   "claim": "Two men tasted it and guessed mutton or venison",
+   "terms": [
+    "mutton|venison"
+   ]
+  },
+  {
+   "claim": "One expert said it was nostoc",
+   "terms": [
+    "nostoc"
+   ]
+  },
+  {
+   "claim": "Tests found lung tissue",
+   "terms": [
+    "lung"
+   ]
+  },
+  {
+   "claim": "The leading theory is vultures vomiting",
+   "terms": [
+    "vulture",
+    "vomit"
+   ]
+  },
+  {
+   "claim": "Vultures vomit to lighten up and fly away when startled",
+   "terms": [
+    "vulture",
+    "vomit"
+   ]
+  },
+  {
+   "claim": "Bath County celebrates the meat shower",
+   "terms": [
+    "celebrat|festival"
+   ]
+  }
+ ]
+}
