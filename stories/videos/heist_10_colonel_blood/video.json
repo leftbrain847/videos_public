@@ -1,0 +1,674 @@
+{
+ "id": "heist_10_colonel_blood",
+ "title": "Colonel Blood steals the Crown Jewels",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "vault",
+ "setOpts": {
+  "boardText": [
+   "JEWEL",
+   "HOUSE"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "blood": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "keeper": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#6b4426",
+    "pants": "#3a2a20",
+    "hair": "bald",
+    "hairColor": "#d9d9d9",
+    "skin": "#f2c39b"
+   }
+  },
+  "son": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#c0392b",
+    "pants": "#3a2a20",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "king": {
+   "look": {
+    "outfit": "robe",
+    "shirt": "#7a1f3d",
+    "pants": "#3a2a20",
+    "hair": "long",
+    "hairColor": "#1b1b1b",
+    "skin": "#f2c39b",
+    "sash": "#d9a521"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You steal the Crown Jewels. You get caught. The king gives you a reward.",
+   "key": [
+    "REWARD."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "blood"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "blood": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "blood": "center",
+    "keeper": false,
+    "son": false,
+    "king": false
+   },
+   "board": [
+    "CROWN",
+    "JEWELS"
+   ]
+  },
+  {
+   "text": "London, sixteen seventy one. You're Colonel Thomas Blood.",
+   "cap": "London, 1671. You're Colonel Thomas Blood.",
+   "key": [
+    "BLOOD."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "blood"
+   },
+   "act": {
+    "blood": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "TOWER OF",
+    "LONDON"
+   ]
+  },
+  {
+   "text": "The jewels sit in the Tower of London. One old keeper guards them.",
+   "key": [
+    "KEEPER"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "blood",
+    "with": "keeper"
+   },
+   "act": {
+    "blood": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "keeper"
+    },
+    "keeper": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "blood": "left",
+    "keeper": "right"
+   }
+  },
+  {
+   "text": "Step one. You dress up as a parson. A clergyman.",
+   "key": [
+    "PARSON."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "blood"
+   },
+   "act": {
+    "blood": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You befriend the keeper. You visit again. And again.",
+   "key": [
+    "AGAIN."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "keeper"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "keeper"
+    },
+    "keeper": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "blood"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "keeper": "right",
+    "blood": false
+   }
+  },
+  {
+   "text": "You even offer your nephew. To marry his daughter.",
+   "key": [
+    "DAUGHTER."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "keeper"
+   },
+   "act": {
+    "keeper": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "May, sixteen seventy one. You bring the nephew. Plus friends.",
+   "cap": "May 1671. You bring the nephew. Plus friends.",
+   "key": [
+    "FRIENDS."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "blood"
+   },
+   "act": {
+    "blood": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "blood": "left",
+    "son": false,
+    "capy": false,
+    "keeper": "right"
+   },
+   "board": [
+    "MAY 9",
+    "1671"
+   ]
+  },
+  {
+   "text": "You knock the keeper down with a mallet. He's tied up.",
+   "key": [
+    "MALLET."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "keeper"
+   },
+   "act": {
+    "keeper": {
+     "mood": "shocked",
+     "action": "slump"
+    }
+   }
+  },
+  {
+   "text": "The crown is too big to hide. So you flatten it. With the mallet.",
+   "key": [
+    "FLATTEN"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "blood"
+   },
+   "act": {
+    "blood": {
+     "mood": "angry",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "keeper": false
+   },
+   "board": [
+    "THE CROWN",
+    "(FLAT)"
+   ]
+  },
+  {
+   "text": "A friend shoves the orb down his trousers.",
+   "key": [
+    "TROUSERS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "blood": false
+   }
+  },
+  {
+   "text": "The sceptre is too long. Another tries to saw it in half.",
+   "key": [
+    "HALF."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then the keeper's son walks in. Home early. From abroad.",
+   "key": [
+    "EARLY."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "son",
+    "with": "blood"
+   },
+   "act": {
+    "son": {
+     "mood": "shocked",
+     "action": "point",
+     "look": "blood"
+    },
+    "blood": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "son"
+    }
+   },
+   "place": {
+    "son": "right",
+    "blood": "left",
+    "capy": false
+   },
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "Alarm. Chase. You get caught with the crown. Still flat.",
+   "key": [
+    "CAUGHT"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "son"
+   },
+   "act": {
+    "son": {
+     "mood": "angry",
+     "action": "run"
+    },
+    "blood": {
+     "mood": "worried",
+     "action": "run"
+    }
+   }
+  },
+  {
+   "text": "In prison, you refuse to talk. Except to one person. The king.",
+   "key": [
+    "KING."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "blood"
+   },
+   "act": {
+    "blood": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "blood": "center"
+   }
+  },
+  {
+   "text": "Somehow, King Charles the second agrees.",
+   "key": [
+    "AGREES"
+   ],
+   "set": "temple",
+   "shot": {
+    "type": "two",
+    "on": "king",
+    "with": "blood"
+   },
+   "act": {
+    "king": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "blood"
+    },
+    "blood": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "king"
+    }
+   },
+   "place": {
+    "king": "right",
+    "blood": "left"
+   },
+   "board": [
+    "KING",
+    "CHARLES II"
+   ]
+  },
+  {
+   "text": "Then he pardons you. Completely.",
+   "key": [
+    "PARDONS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "king"
+   },
+   "act": {
+    "king": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then he gives you land in Ireland. Worth five hundred pounds a year.",
+   "cap": "Then he gives you land in Ireland. Worth 500 pounds a year.",
+   "key": [
+    "LAND"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "king": false,
+    "blood": false
+   },
+   "board": [
+    "\u00a3500",
+    "A YEAR"
+   ]
+  },
+  {
+   "text": "Nobody knows why. Historians still argue about it.",
+   "key": [
+    "ARGUE"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "king"
+   },
+   "act": {
+    "capy": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "king"
+    },
+    "king": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "king": "right"
+   }
+  },
+  {
+   "text": "Flatten the crown. Get a pension. Bold strategy. Somehow it worked.",
+   "key": [
+    "STRATEGY."
+   ],
+   "shot": {
+    "type": "high",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "king": false
+   }
+  },
+  {
+   "text": "You'd steal the jewels. Would you ask to see the king?",
+   "key": [
+    "KING?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Thomas Blood",
+   "url": "https://en.wikipedia.org/wiki/Thomas_Blood"
+  },
+  {
+   "title": "The National Archives: The King, the Crown and the Colonel",
+   "url": "https://www.nationalarchives.gov.uk/education/resources/the-king-the-crown-the-colonel/"
+  },
+  {
+   "title": "World History Encyclopedia: Colonel Blood and the theft of the Crown Jewels",
+   "url": "https://www.worldhistory.org/article/1953/"
+  },
+  {
+   "title": "Historic UK: Colonel Blood",
+   "url": "https://www.historic-uk.com/HistoryUK/England-History/ColonelBlood.htm"
+  },
+  {
+   "title": "Historic UK: The theft of the Crown Jewels",
+   "url": "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Theft-of-the-Crown-Jewels/"
+  },
+  {
+   "title": "History Hit: 10 facts about Thomas Blood's attempt to steal the Crown Jewels",
+   "url": "https://www.historyhit.com/facts-about-thomas-bloods-attempt-to-steal-crown-jewels/"
+  },
+  {
+   "title": "History.com: Captain Blood steals the Crown Jewels",
+   "url": "https://www.history.com/this-day-in-history/may-9/captain-blood-steals-crown-jewels"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Thomas Blood tried to steal the Crown Jewels in 1671",
+   "terms": [
+    "Blood",
+    "1671",
+    "Crown Jewels"
+   ]
+  },
+  {
+   "claim": "The jewels were kept at the Tower of London by a keeper",
+   "terms": [
+    "Tower of London",
+    "keeper|Edwards"
+   ]
+  },
+  {
+   "claim": "Blood disguised himself as a parson",
+   "terms": [
+    "parson"
+   ]
+  },
+  {
+   "claim": "He befriended the keeper",
+   "terms": [
+    "Edwards",
+    "friend"
+   ]
+  },
+  {
+   "claim": "He proposed a marriage between his nephew and the keeper's daughter",
+   "terms": [
+    "nephew",
+    "daughter"
+   ]
+  },
+  {
+   "claim": "The attempt was in May 1671",
+   "terms": [
+    "May",
+    "1671"
+   ]
+  },
+  {
+   "claim": "They struck the keeper with a mallet",
+   "terms": [
+    "mallet"
+   ]
+  },
+  {
+   "claim": "Blood flattened the crown with the mallet",
+   "terms": [
+    "flatten",
+    "crown"
+   ]
+  },
+  {
+   "claim": "An accomplice stuffed the orb down his breeches",
+   "terms": [
+    "orb",
+    "breeches|trousers"
+   ]
+  },
+  {
+   "claim": "They tried to cut the sceptre in half",
+   "terms": [
+    "sceptre",
+    "half|two"
+   ]
+  },
+  {
+   "claim": "The keeper's son came home unexpectedly",
+   "terms": [
+    "son",
+    "Flanders|unexpectedly|returned"
+   ]
+  },
+  {
+   "claim": "Blood refused to speak to anyone but the king",
+   "terms": [
+    "Blood",
+    "king"
+   ]
+  },
+  {
+   "claim": "King Charles II met him and pardoned him",
+   "terms": [
+    "Charles",
+    "pardon"
+   ]
+  },
+  {
+   "claim": "Blood was given land in Ireland worth 500 pounds a year",
+   "terms": [
+    "Ireland",
+    "500"
+   ]
+  },
+  {
+   "claim": "Nobody knows why the king pardoned him",
+   "terms": [
+    "why|reason|unknown|mystery",
+    "pardon"
+   ]
+  }
+ ]
+}

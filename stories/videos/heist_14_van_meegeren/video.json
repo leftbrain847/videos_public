@@ -1,0 +1,651 @@
+{
+ "id": "heist_14_van_meegeren",
+ "title": "The forger who had to prove he was a forger",
+ "voice": "v2",
+ "target_s": 90,
+ "set": "study",
+ "setOpts": {
+  "boardText": [
+   "VERMEER?",
+   "1937"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "look": {
+    "outfit": "detective"
+   },
+   "at": "left",
+   "face": 20
+  },
+  "han": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#5a4a6a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b"
+   }
+  },
+  "expert": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#6b4426",
+    "pants": "#3a2a20",
+    "hair": "bald",
+    "hairColor": "#d9d9d9",
+    "skin": "#f2c39b"
+   }
+  },
+  "officer": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#4a5a3a",
+    "pants": "#3a3f2b",
+    "hair": "buzz",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   }
+  },
+  "judge": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1b1b1b",
+    "pants": "#1b1b1b",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#a8714c"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "You're on trial for treason. Your only defense? Admitting you're a forger.",
+   "key": [
+    "FORGER."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "han"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    },
+    "han": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "han": "center",
+    "expert": false,
+    "officer": false,
+    "judge": false
+   },
+   "board": [
+    "TREASON",
+    "OR FRAUD?"
+   ]
+  },
+  {
+   "text": "You're Han van Meegeren. A Dutch painter. Critics call your work unoriginal. Ouch.",
+   "key": [
+    "UNORIGINAL."
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "han"
+   },
+   "act": {
+    "han": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   },
+   "board": [
+    "HAN VAN",
+    "MEEGEREN"
+   ]
+  },
+  {
+   "text": "So you plan your revenge. You paint fake Vermeers.",
+   "key": [
+    "VERMEERS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "han"
+   },
+   "act": {
+    "han": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You bake the paint hard. You fake the cracks of old age.",
+   "key": [
+    "CRACKS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "han"
+   },
+   "act": {
+    "han": {
+     "mood": "smug",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A top expert sees one. He calls it a masterpiece.",
+   "key": [
+    "MASTERPIECE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "expert",
+    "with": "han"
+   },
+   "act": {
+    "expert": {
+     "mood": "happy",
+     "action": "cheer"
+    },
+    "han": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "expert"
+    }
+   },
+   "place": {
+    "expert": "left",
+    "han": "right"
+   },
+   "board": [
+    "SUPPER AT",
+    "EMMAUS"
+   ]
+  },
+  {
+   "text": "A museum buys it. For a fortune. You keep going. More fake Vermeers. More fortunes.",
+   "key": [
+    "GOING."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "expert"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "expert"
+    },
+    "expert": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "expert": "right",
+    "han": false
+   }
+  },
+  {
+   "text": "Then the war comes. One buyer is Hermann Goering. A top Nazi.",
+   "key": [
+    "GOERING."
+   ],
+   "set": "office",
+   "shot": {
+    "type": "medium",
+    "on": "han"
+   },
+   "act": {
+    "han": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "han": "center"
+   },
+   "board": [
+    "BUYER:",
+    "GOERING"
+   ]
+  },
+  {
+   "text": "You sell him a fake Vermeer. He pays with stolen paintings.",
+   "key": [
+    "STOLEN"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "han"
+   },
+   "act": {
+    "han": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Over a hundred of them. For one fake.",
+   "key": [
+    "HUNDRED"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center",
+    "han": false
+   },
+   "board": [
+    "137",
+    "PAINTINGS"
+   ]
+  },
+  {
+   "text": "The war ends. Allied officers find the Vermeer.",
+   "key": [
+    "VERMEER."
+   ],
+   "set": "vault",
+   "shot": {
+    "type": "wide",
+    "on": "officer"
+   },
+   "act": {
+    "officer": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "officer": "center"
+   }
+  },
+  {
+   "text": "They trace the sale back to you.",
+   "key": [
+    "YOU."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "officer"
+   },
+   "act": {
+    "officer": {
+     "mood": "angry",
+     "action": "point",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "officer"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "officer": "right"
+   }
+  },
+  {
+   "text": "You sold a national treasure to the Nazis. That's treason. The penalty can be death.",
+   "key": [
+    "TREASON."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "officer"
+   },
+   "act": {
+    "officer": {
+     "mood": "angry",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": false
+   }
+  },
+  {
+   "text": "So you confess. It's not a Vermeer. You painted it.",
+   "key": [
+    "PAINTED"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "han"
+   },
+   "act": {
+    "han": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Nobody believes you. You're too good.",
+   "key": [
+    "NOBODY"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "han"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "han"
+    },
+    "han": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "han": "right",
+    "officer": false
+   },
+   "sfx": [
+    [
+     0.2,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "So you paint a new fake Vermeer. In front of witnesses.",
+   "key": [
+    "WITNESSES."
+   ],
+   "set": "study",
+   "shot": {
+    "type": "low",
+    "on": "han"
+   },
+   "act": {
+    "han": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "han": "center"
+   },
+   "board": [
+    "LIVE",
+    "DEMO"
+   ]
+  },
+  {
+   "text": "Now they believe you. Traitor? No. Just a con man.",
+   "key": [
+    "CON"
+   ],
+   "set": "press",
+   "shot": {
+    "type": "wide",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "judge": "center"
+   },
+   "board": [
+    "VERDICT:",
+    "FORGERY"
+   ]
+  },
+  {
+   "text": "Your sentence? One year in prison.",
+   "cap": "Your sentence? 1 year in prison.",
+   "key": [
+    "YEAR"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "judge"
+   },
+   "act": {
+    "judge": {
+     "mood": "neutral",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The public loves you. You fooled Goering.",
+   "key": [
+    "FOOLED"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "judge"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    },
+    "judge": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "place": {
+    "capy": "left",
+    "judge": "right"
+   }
+  },
+  {
+   "text": "Your best painting? The one that proved you were a fake.",
+   "key": [
+    "FAKE."
+   ],
+   "set": "study",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "place": {
+    "capy": "center"
+   }
+  },
+  {
+   "text": "Traitor or forger? Which would you rather be called?",
+   "key": [
+    "FORGER?"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Han van Meegeren",
+   "url": "https://en.wikipedia.org/wiki/Han_van_Meegeren"
+  },
+  {
+   "title": "Time: Art, the price of forgery",
+   "url": "https://time.com/archive/6773737/art-the-price-of-forgery/"
+  },
+  {
+   "title": "TheCollector: How van Meegeren forged paintings so well it almost cost him his life",
+   "url": "https://www.thecollector.com/han-van-meegeren/"
+  },
+  {
+   "title": "Colby College: Han van Meegeren (1889-1947)",
+   "url": "https://web.colby.edu/copiesfakesforgeries/?p=236"
+  },
+  {
+   "title": "Simon Dickinson: Han van Meegeren and the fake Vermeers",
+   "url": "https://simondickinson.com/blog/55-han-van-meegeren-and-the-fake-vermeers/"
+  },
+  {
+   "title": "Wikipedia: The Supper at Emmaus (van Meegeren)",
+   "url": "https://en.wikipedia.org/wiki/The_Supper_at_Emmaus_(van_Meegeren)"
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Van Meegeren was a Dutch painter whose work critics dismissed",
+   "terms": [
+    "van Meegeren",
+    "critics"
+   ]
+  },
+  {
+   "claim": "He forged Vermeers",
+   "terms": [
+    "forge|forger|forgeries",
+    "Vermeer"
+   ]
+  },
+  {
+   "claim": "He baked the paint to harden it and age it",
+   "terms": [
+    "bake|baked|oven"
+   ]
+  },
+  {
+   "claim": "An expert called his fake a masterpiece",
+   "terms": [
+    "Bredius",
+    "masterpiece"
+   ]
+  },
+  {
+   "claim": "A museum bought The Supper at Emmaus",
+   "terms": [
+    "Supper at Emmaus",
+    "Boijmans|museum"
+   ]
+  },
+  {
+   "claim": "He sold a fake Vermeer to Hermann Goering",
+   "terms": [
+    "G\u00f6ring|Goering"
+   ]
+  },
+  {
+   "claim": "Goering paid with stolen paintings, 137 of them",
+   "terms": [
+    "137"
+   ]
+  },
+  {
+   "claim": "Allied officers found the painting after the war",
+   "terms": [
+    "Allied|Allies"
+   ]
+  },
+  {
+   "claim": "He was charged with treason or collaboration",
+   "terms": [
+    "treason|collaboration|collaborat"
+   ]
+  },
+  {
+   "claim": "The penalty could be death",
+   "terms": [
+    "death"
+   ]
+  },
+  {
+   "claim": "He confessed it was his own forgery",
+   "terms": [
+    "confess|admitted"
+   ]
+  },
+  {
+   "claim": "He painted a new fake in front of witnesses",
+   "terms": [
+    "witnesses"
+   ]
+  },
+  {
+   "claim": "He was sentenced to one year",
+   "terms": [
+    "one year|1 year|a year"
+   ]
+  },
+  {
+   "claim": "He became popular for fooling Goering",
+   "terms": [
+    "hero|popular"
+   ]
+  }
+ ]
+}
