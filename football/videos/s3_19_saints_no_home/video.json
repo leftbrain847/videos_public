@@ -881,12 +881,28 @@
    "url": "https://en.wikipedia.org/wiki/2006_New_Orleans_Saints_season"
   },
   {
-   "title": "Wikipedia: Rebirth (statue)",
-   "url": "https://en.wikipedia.org/wiki/Rebirth_(statue)"
-  },
-  {
    "title": "Wikipedia: Steve Gleason",
    "url": "https://en.wikipedia.org/wiki/Steve_Gleason"
+  },
+  {
+   "title": "Wikipedia: 2006 Atlanta Falcons-New Orleans Saints game",
+   "url": "https://en.wikipedia.org/wiki/2006_Atlanta_Falcons%E2%80%93New_Orleans_Saints_game"
+  },
+  {
+   "title": "ESPN: Steve Gleason's 2006 blocked punt symbolized the rebirth of the Saints",
+   "url": "https://www.espn.com/nfl/story/_/id/17611735"
+  },
+  {
+   "title": "NewOrleansSaints.com: This day in Saints history, September 25",
+   "url": "https://www.neworleanssaints.com/news/this-day-in-new-orleans-saints-history-september-25-17749367"
+  },
+  {
+   "title": "Spokesman-Review (AP): A grand reopening",
+   "url": "https://www.spokesman.com/stories/2006/sep/26/a-grand-reopening"
+  },
+  {
+   "title": "Lawrence Journal-World (AP): Saints roll in return, 23-3",
+   "url": "https://www2.ljworld.com/news/2006/sep/26/saints_roll_return_233/"
   }
  ],
  "voice": "v2",
@@ -920,8 +936,8 @@
   {
    "claim": "The game was against the Giants on Monday night",
    "terms": [
-    "Monday night|Monday Night",
-    "Giants"
+    "Giants",
+    "Monday"
    ]
   },
   {
