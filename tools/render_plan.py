@@ -53,7 +53,8 @@ def plan(raw):
     def index(i):
         c = videos.CHANNELS[videos.channel(i)]["dir"]
         return sorted(p.name for p in c.iterdir() if (p / "video.json").exists()).index(i)
-    return [{"id": i, "index": index(i), "dir": "videos/" + i if videos.channel(i) == "football" else "../stories/videos/" + i}
+    return [{"id": i, "index": index(i), "dir": "videos/" + i if videos.channel(i) == "football" else "../stories/videos/" + i,
+             "path": ("football/videos/" if videos.channel(i) == "football" else "stories/videos/") + i}
             for i in dict.fromkeys(ids)]
 
 

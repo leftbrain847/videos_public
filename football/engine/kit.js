@@ -273,10 +273,15 @@ export const CAPY_OUTFITS = {
   toga:      { shirt: '#f4f1e8', sash: '#d9a521', laurel: '#4f8a3c', headset: false },
   astronaut: { shirt: '#eef1f5', panel: '#2b4c8c', dome: true, headset: false },
   cardigan:  { shirt: '#7a5c8e', glasses: '#2a2a2a', headset: false, held: 'notepad' },
+  none:      { headset: false },   // bare coat (animals): the torso takes the fur colour
+};
+// other animals reuse Capy's rig (so pose/talk/mood work); cast them with kind: "horse"
+export const ANIMALS = {
+  horse: { fur: '#8b5a2b', furDark: '#3b2414', mane: '#2a1a0e', blaze: '#f4efe6', outfit: 'none', orange: false, snout: [0.62, 0.5, 0.95], ears: 'pointed' },
 };
 export function capy(look = {}) {
-  const C = { ...CAPY, ...look }; const O = { ...(CAPY_OUTFITS[C.outfit] || CAPY_OUTFITS.ref) };   // each outfit lists everything it wears
-  if (!look.shirt) C.shirt = O.shirt;
+  const C = { ...CAPY, ...(ANIMALS[look.animal] || {}), ...look }; const O = { ...(CAPY_OUTFITS[C.outfit] || CAPY_OUTFITS.ref) };   // each outfit lists everything it wears
+  if (!look.shirt) C.shirt = O.shirt || C.fur;
   const g = new THREE.Group(); const parts = {};
   const fur = mat(C.fur, { roughness: 0.85 }), dark = mat(C.furDark, { roughness: 0.8 });
   const add = (parent, geo, m, pos, scl = [1, 1, 1], rot = [0, 0, 0]) => { const o = shadow(new THREE.Mesh(geo, m)); o.position.set(...pos); o.scale.set(...scl); o.rotation.set(...rot); parent.add(o); return o; };
@@ -313,11 +318,16 @@ export function capy(look = {}) {
   // head: big rounded block with a long snout (capybara), set on the shoulders
   const head = new THREE.Group(); head.userData.baseY = 2.55; head.position.y = 2.55; g.add(head); parts.head = head;
   add(head, new RoundedBoxGeometry(1.05, 0.95, 1.1, 8, 0.4), fur, [0, 0.05, 0]);
-  add(head, new RoundedBoxGeometry(0.86, 0.58, 0.55, 8, 0.24), fur, [0, -0.12, 0.55]);
+  const sn = C.snout || [0.86, 0.58, 0.55], sz = 0.28 + sn[2] / 2;   // muzzle size; its front face sits at z = sz + sn[2]/2
+  add(head, new RoundedBoxGeometry(sn[0], sn[1], sn[2], 8, 0.24), fur, [0, -0.12 - (sn[2] - 0.55) * 0.3, sz]);
+  const nz = sz + sn[2] / 2 + 0.005, ny = -0.02 - (sn[2] - 0.55) * 0.3;
   for (const sx of [-1, 1]) {
-    add(head, new THREE.SphereGeometry(0.06, 14, 10), dark, [sx * 0.14, -0.02, 0.83], [1.3, 0.7, 0.6]);           // nostrils
-    add(head, new THREE.SphereGeometry(0.12, 18, 12), dark, [sx * 0.42, 0.55, -0.05], [1, 0.75, 0.55]);          // ears
+    add(head, new THREE.SphereGeometry(0.06, 14, 10), dark, [sx * 0.14, ny, nz], [1.3, 0.7, 0.6]);           // nostrils
+    if (C.ears === 'pointed') add(head, new THREE.ConeGeometry(0.13, 0.4, 16), fur, [sx * 0.32, 0.62, -0.1], [1, 1, 0.6], [0, 0, -sx * 0.2]);
+    else add(head, new THREE.SphereGeometry(0.12, 18, 12), dark, [sx * 0.42, 0.55, -0.05], [1, 0.75, 0.55]);          // ears
   }
+  if (C.mane) for (let i = 0; i < 8; i++) add(head, new RoundedBoxGeometry(0.24, 0.36, 0.26, 2, 0.1), mat(C.mane, { roughness: 0.9 }), [0, 0.6 - i * 0.05, 0.38 - i * 0.17], [1, 1, 1], [-0.2 - i * 0.1, 0, 0]);
+  if (C.blaze) add(head, new RoundedBoxGeometry(0.16, 0.5, 0.04, 2, 0.02), mat(C.blaze), [0, 0.1, 0.56]);
   parts.eyes = [];
   for (const sx of [-1, 1]) {
     const e = add(head, new THREE.SphereGeometry(0.085, 18, 14), new THREE.MeshStandardMaterial({ color: '#141414', roughness: 0.3 }), [sx * 0.3, 0.27, 0.55], [1, 0.7, 0.5]); parts.eyes.push(e);
@@ -326,12 +336,12 @@ export function capy(look = {}) {
     const brow = add(head, new RoundedBoxGeometry(0.16, 0.035, 0.04, 2, 0.012), dark, [sx * 0.3, 0.4, 0.56]); brow.visible = false;
     parts[sx < 0 ? 'browL' : 'browR'] = brow;
   }
-  const mouthMat = mat('#3a1a10');
-  const mFlat = add(head, new RoundedBoxGeometry(0.16, 0.025, 0.02, 2, 0.01), mouthMat, [0, -0.31, 0.79]);
-  const mO = add(head, new THREE.SphereGeometry(0.055, 14, 10), mouthMat, [0, -0.31, 0.79], [1, 1.1, 0.4]);
+  const mouthMat = mat('#3a1a10'); const mz = nz - 0.04, my = ny - 0.29;
+  const mFlat = add(head, new RoundedBoxGeometry(0.16, 0.025, 0.02, 2, 0.01), mouthMat, [0, my, mz]);
+  const mO = add(head, new THREE.SphereGeometry(0.055, 14, 10), mouthMat, [0, my, mz], [1, 1.1, 0.4]);
   const smG = new THREE.TorusGeometry(0.08, 0.018, 8, 16, Math.PI);
-  const mSmile = add(head, smG, mouthMat, [0, -0.27, 0.8], [1, 1, 1], [0, 0, Math.PI]);
-  const mFrown = add(head, smG, mouthMat, [0, -0.36, 0.8]);
+  const mSmile = add(head, smG, mouthMat, [0, my + 0.04, mz + 0.01], [1, 1, 1], [0, 0, Math.PI]);
+  const mFrown = add(head, smG, mouthMat, [0, my - 0.05, mz + 0.01]);
   parts.mouths = { flat: mFlat, o: mO, smile: mSmile, frown: mFrown };
   // headphones (ref) or the series' headwear, then the orange (signature)
   if (O.headset) {
@@ -350,6 +360,8 @@ export function capy(look = {}) {
     shell.scale.set(1, 1, 0.9); shell.position.set(0, 0.15, -0.12); shell.rotation.x = 0; head.add(shell);
     shell.geometry = new THREE.SphereGeometry(0.98, 40, 28, Math.PI * 0.62, Math.PI * 1.76);   // leave the front open
     add(head, new THREE.TorusGeometry(0.86, 0.07, 12, 40), mat('#c9ced6', { metalness: 0.4, roughness: 0.3 }), [0, 0.12, 0.42]); add(head, new THREE.TorusGeometry(0.72, 0.08, 10, 32), mat('#c9ced6'), [0, -0.62, 0.05], [1, 1, 1], [Math.PI / 2, 0, 0]); oy = 0.62; }
+  if (C.orange === false) { parts.held = new THREE.Group(); parts.handR.add(parts.held); g.scale.setScalar(C.height);
+    g.userData = { parts, look: C, mood: 'neutral', action: 'idle', seed: 131, isCapy: false }; setMood(g, look.mood || 'neutral'); return g; }
   const orange = add(head, new THREE.SphereGeometry(0.2, 28, 20), mat(C.orange, { roughness: 0.6 }), [0, oy, 0.05]); parts.orange = orange;
   add(head, new THREE.SphereGeometry(0.06, 12, 8), mat(C.leaf), [0.06, oy + 0.2, 0.05], [1, 0.4, 1.6]);
   parts.held = new THREE.Group(); parts.handR.add(parts.held);

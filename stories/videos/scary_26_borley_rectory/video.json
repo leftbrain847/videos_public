@@ -1,0 +1,758 @@
+{
+ "id": "scary_26_borley_rectory",
+ "title": "Borley Rectory: the most haunted house in England",
+ "target_s": 90,
+ "set": "haunted",
+ "setOpts": {
+  "boardText": [
+   "CASE FILE",
+   "BORLEY"
+  ]
+ },
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "face": 20,
+   "look": {
+    "outfit": "raincoat"
+   }
+  },
+  "you": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#2a2a2a",
+    "pants": "#2a2a2a",
+    "hair": "short",
+    "hairColor": "#9a9a9a",
+    "skin": "#f2c39b",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "notepad"
+  },
+  "wife": {
+   "look": {
+    "outfit": "coat",
+    "shirt": "#6b3a4a",
+    "pants": "#2a2a2a",
+    "hair": "bun",
+    "hairColor": "#6b4423",
+    "skin": "#f0c8a8"
+   },
+   "at": "center",
+   "hold": "candle"
+  },
+  "rev": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#1d1d1f",
+    "pants": "#1d1d1f",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#e8b48f"
+   },
+   "at": "center"
+  },
+  "panel": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bob",
+    "hairColor": "#1b1b1b",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "at": "center",
+   "hold": "clipboard"
+  }
+ },
+ "lines": [
+  {
+   "text": "You call it England's most haunted house. Then you sell the book.",
+   "key": [
+    "BOOK."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.8
+    ],
+    "you": [
+     0.4,
+     0
+    ],
+    "wife": false,
+    "rev": false,
+    "panel": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Borley Rectory. A gloomy house in Essex. Built in eighteen sixty three. Very spooky.",
+   "cap": "Borley Rectory. A gloomy house in Essex. Built in 1863. Very spooky.",
+   "key": [
+    "ESSEX."
+   ],
+   "board": [
+    "BORLEY",
+    "ESSEX"
+   ],
+   "shot": {
+    "type": "wide",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Locals swear a ghostly nun walks the grounds. Allegedly.",
+   "key": [
+    "NUN"
+   ],
+   "place": {
+    "rev": [
+     2.6,
+     -0.6
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rev"
+   },
+   "act": {
+    "rev": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "In nineteen twenty nine, a newspaper runs it.",
+   "cap": "In 1929, a newspaper runs it.",
+   "key": [
+    "NEWSPAPER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "You are Harry Price. A famous ghost hunter. You arrive fast.",
+   "key": [
+    "FAST."
+   ],
+   "place": {
+    "capy": [
+     -2.2,
+     0.6
+    ],
+    "you": [
+     0.6,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "you"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Bells ring by themselves. Objects fly. Stones hit windows. All very dramatic.",
+   "key": [
+    "FLY."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "rev"
+   },
+   "act": {
+    "rev": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   },
+   "sfx": [
+    [
+     0.4,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "A new family moves in. The haunting gets louder. Much louder.",
+   "key": [
+    "LOUDER."
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "THE",
+     "FOYSTERS"
+    ]
+   },
+   "place": {
+    "wife": [
+     0,
+     -0.4
+    ],
+    "rev": [
+     2.6,
+     -1.0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "panel": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "wife"
+   },
+   "act": {
+    "wife": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    },
+    "rev": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "wife"
+    },
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "wife"
+    }
+   }
+  },
+  {
+   "text": "Scribbled messages appear on the walls. Addressed to the wife, Marianne.",
+   "key": [
+    "WALLS."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "wife"
+   },
+   "act": {
+    "wife": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Some visitors suspect the writer lives inside.",
+   "key": [
+    "INSIDE."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "wife"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "wife": {
+     "mood": "confused",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "A ghost with Marianne's handwriting? Bold theory.",
+   "key": [
+    "HANDWRITING?"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.4
+    ],
+    "wife": false
+   },
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "In nineteen thirty seven, you rent the house.",
+   "cap": "In 1937, you rent the house.",
+   "key": [
+    "RENT"
+   ],
+   "place": {
+    "you": [
+     0,
+     0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "you"
+    }
+   }
+  },
+  {
+   "text": "You advertise in the newspaper. Wanted: ghost watchers. You get volunteers.",
+   "key": [
+    "WANTED:"
+   ],
+   "board": [
+    "WANTED:",
+    "GHOST WATCHERS"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then, in nineteen thirty nine, the house burns. Spectacularly.",
+   "cap": "Then, in 1939, the house burns. Spectacularly.",
+   "key": [
+    "BURNS."
+   ],
+   "place": {
+    "rev": [
+     0,
+     -0.4
+    ],
+    "you": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "rev"
+   },
+   "act": {
+    "rev": {
+     "mood": "shocked",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "An oil lamp tips over. The new owner says, accident. Sure.",
+   "key": [
+    "ACCIDENT."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "rev"
+   },
+   "act": {
+    "rev": {
+     "mood": "worried",
+     "action": "shrug",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The insurance company does not believe him.",
+   "key": [
+    "INSURANCE"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rev"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "rev"
+    },
+    "rev": {
+     "mood": "sad",
+     "action": "slump"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Your book calls it England's most haunted house. It sells.",
+   "key": [
+    "SELLS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "you"
+   },
+   "act": {
+    "you": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "After you die, investigators take a close look. Very close.",
+   "key": [
+    "LOOK."
+   ],
+   "set": "study",
+   "setOpts": {
+    "boardText": [
+     "REPORT",
+     "1956"
+    ]
+   },
+   "place": {
+    "panel": [
+     0,
+     -1.0
+    ],
+    "capy": [
+     -2.6,
+     0.8
+    ],
+    "you": false,
+    "wife": false,
+    "rev": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "panel"
+   },
+   "act": {
+    "panel": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    },
+    "capy": {
+     "mood": "neutral",
+     "action": "idle",
+     "look": "panel"
+    }
+   }
+  },
+  {
+   "text": "Their verdict? Much of the haunting was exaggerated. Maybe faked.",
+   "key": [
+    "FAKED."
+   ],
+   "shot": {
+    "type": "close",
+    "on": "panel"
+   },
+   "act": {
+    "panel": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Your star witness was your own marketing. Brilliant marketing.",
+   "key": [
+    "MARKETING."
+   ],
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "panel"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "panel": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "The rectory is gone. The legend is not. Still famous.",
+   "key": [
+    "LEGEND"
+   ],
+   "set": "haunted",
+   "setOpts": {
+    "boardText": [
+     "STILL",
+     "FAMOUS"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.0
+    ],
+    "you": [
+     2.6,
+     -0.6
+    ],
+    "wife": false,
+    "rev": false,
+    "panel": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  },
+  {
+   "text": "Would you spend one night there? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "ONE NIGHT?",
+    "YES OR NO?"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "you": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   },
+   "speaker": "capy"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Borley Rectory",
+   "url": "https://en.wikipedia.org/wiki/Borley_Rectory"
+  },
+  {
+   "title": "Psi Encyclopedia (SPR): Borley Rectory",
+   "url": "https://psi-encyclopedia.spr.ac.uk/articles/borley-rectory"
+  },
+  {
+   "title": "Skeptoid: Borley Rectory",
+   "url": "https://skeptoid.com/episodes/53"
+  },
+  {
+   "title": "Mysterious Britain: Borley Rectory",
+   "url": "https://www.mysteriousbritain.co.uk/?p=2910"
+  },
+  {
+   "title": "Foxearth and District Local History Society: The haunted rectory",
+   "url": "https://foxearth.org.uk/TheHauntedRectory.html"
+  },
+  {
+   "title": "Time: The ghosts of Borley",
+   "url": "https://time.com/archive/6828400/great-britain-the-ghosts-of-borley"
+  },
+  {
+   "title": "A London Inheritance: Borley Rectory",
+   "url": "https://alondoninheritance.com/cycling-around-britain/borley-rectory-the-most-haunted-house-in-england"
+  },
+  {
+   "title": "Gazette: Quiet Essex village hides England's most haunted house",
+   "url": "https://www.gazette-news.co.uk/news/25530426.quiet-essex-village-hides-englands-haunted-house/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Borley Rectory was called the most haunted house in England",
+   "terms": [
+    "most haunted house in England"
+   ]
+  },
+  {
+   "claim": "It stood in Essex and was built in 1862 or 1863",
+   "terms": [
+    "Essex",
+    "1862|1863"
+   ]
+  },
+  {
+   "claim": "Locals reported a ghostly nun",
+   "terms": [
+    "nun"
+   ]
+  },
+  {
+   "claim": "A newspaper covered it in 1929",
+   "terms": [
+    "1929"
+   ]
+  },
+  {
+   "claim": "Harry Price investigated",
+   "terms": [
+    "Harry Price"
+   ]
+  },
+  {
+   "claim": "Reports included bells ringing and objects thrown",
+   "terms": [
+    "bells"
+   ]
+  },
+  {
+   "claim": "The Foyster family moved in",
+   "terms": [
+    "Foyster"
+   ]
+  },
+  {
+   "claim": "Messages were written on the walls addressed to Marianne",
+   "terms": [
+    "Marianne",
+    "wall"
+   ]
+  },
+  {
+   "claim": "Some suspected Marianne of producing the phenomena",
+   "terms": [
+    "Marianne"
+   ]
+  },
+  {
+   "claim": "Price rented the house in 1937",
+   "terms": [
+    "1937"
+   ]
+  },
+  {
+   "claim": "He advertised for observers",
+   "terms": [
+    "advert|observers"
+   ]
+  },
+  {
+   "claim": "The house burned in 1939 after an oil lamp was knocked over",
+   "terms": [
+    "1939",
+    "fire"
+   ]
+  },
+  {
+   "claim": "The insurer suspected fraud",
+   "terms": [
+    "insurance"
+   ]
+  },
+  {
+   "claim": "An SPR report in 1956 concluded much was exaggerated or faked",
+   "terms": [
+    "1956"
+   ]
+  }
+ ]
+}

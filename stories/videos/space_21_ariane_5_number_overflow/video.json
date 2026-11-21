@@ -1,0 +1,768 @@
+{
+ "id": "space_21_ariane_5_number_overflow",
+ "title": "Ariane 5: the number too big for its box",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "ARIANE 5"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "dev": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "glasses": true
+   },
+   "hold": "notepad"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "ctl": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#4b92db",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#c58a3d",
+    "skin": "#5c3a24",
+    "headset": true
+   }
+  },
+  "sci": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "short",
+    "hairColor": "#3b2416",
+    "skin": "#c68d64"
+   }
+  }
+ },
+ "lines": [
+  {
+   "text": "Your new rocket flies for thirty seven seconds. Then old code kills it.",
+   "cap": "Your new rocket flies for 37 seconds. Then old code kills it.",
+   "key": [
+    "37"
+   ],
+   "board": [
+    "FLIGHT 501",
+    "T+37 S"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "dev": [
+     2.6,
+     -0.6
+    ],
+    "boss": false,
+    "ctl": false,
+    "sci": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "dev": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "June, nineteen ninety six. Europe's giant new rocket, Ariane five.",
+   "cap": "June 1996. Europe's giant new rocket, Ariane 5.",
+   "key": [
+    "ARIANE"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "ARIANE 5",
+     "FLIGHT 501"
+    ]
+   },
+   "board": [
+    "ARIANE 5",
+    "FLIGHT 501"
+   ],
+   "place": {
+    "capy": false,
+    "dev": false,
+    "boss": [
+     -1.4,
+     0.3
+    ],
+    "ctl": [
+     1.4,
+     0.3
+    ],
+    "sci": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "boss",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "camera"
+    },
+    "ctl": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "Its very first flight. It launches from French Guiana. Big crowd.",
+   "key": [
+    "FIRST"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "boss",
+    "with": "ctl"
+   },
+   "act": {
+    "boss": {
+     "mood": "happy",
+     "action": "talk",
+     "look": "ctl"
+    },
+    "ctl": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "On board, four science satellites. Called Cluster. Very expensive ones.",
+   "key": [
+    "CLUSTER."
+   ],
+   "board": [
+    "PAYLOAD:",
+    "4 CLUSTER SATS"
+   ],
+   "place": {
+    "boss": false,
+    "ctl": false,
+    "sci": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Liftoff looks perfect. Then the rocket suddenly swerves. Hard.",
+   "key": [
+    "SWERVES."
+   ],
+   "place": {
+    "sci": [
+     2.4,
+     -0.2
+    ],
+    "ctl": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "close",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "ctl"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "It starts breaking apart. The self destruct finishes the job.",
+   "key": [
+    "DESTRUCT"
+   ],
+   "board": [
+    "SELF",
+    "DESTRUCT"
+   ],
+   "shot": {
+    "type": "low",
+    "on": "ctl"
+   },
+   "act": {
+    "ctl": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Years of work. Gone in seconds. Scattered everywhere.",
+   "key": [
+    "GONE"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "ctl": [
+     1.4,
+     0.2
+    ],
+    "sci": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "ctl"
+   },
+   "act": {
+    "capy": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "ctl"
+    },
+    "ctl": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Investigators dig in. The cause is one line of math. Seriously.",
+   "key": [
+    "MATH."
+   ],
+   "place": {
+    "capy": false,
+    "ctl": false,
+    "dev": [
+     0,
+     0.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "dev"
+   },
+   "act": {
+    "dev": {
+     "mood": "worried",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "The guidance software was copied. From the older rocket, Ariane four.",
+   "key": [
+    "COPIED"
+   ],
+   "board": [
+    "CODE FROM:",
+    "ARIANE 4"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "dev"
+   },
+   "act": {
+    "dev": {
+     "mood": "neutral",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Ariane five is much faster. Its sideways speed number gets huge.",
+   "key": [
+    "HUGE."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "dev": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "dev"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "dev"
+    },
+    "dev": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "The code squeezes that number into a box. A tiny one. Sixteen bits.",
+   "cap": "The code squeezes that number into a box. A tiny one. 16 bits.",
+   "key": [
+    "16"
+   ],
+   "board": [
+    "64-BIT",
+    "TO 16-BIT"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "dev": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It doesn't fit. Not even close. The number overflows. The computer crashes.",
+   "key": [
+    "OVERFLOWS."
+   ],
+   "board": [
+    "OPERAND",
+    "ERROR"
+   ],
+   "place": {
+    "capy": false,
+    "dev": [
+     -1.4,
+     0.3
+    ],
+    "boss": [
+     1.4,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "dev": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "Here's the cruel part. There's a backup computer.",
+   "key": [
+    "BACKUP"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "dev": [
+     -2.6,
+     -0.6
+    ],
+    "boss": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "dev": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    },
+    "boss": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "It runs the same software. So it fails the exact same way. Instantly.",
+   "key": [
+    "SAME"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "facepalm",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Worse, that calculation wasn't even needed after liftoff.",
+   "key": [
+    "NEEDED"
+   ],
+   "place": {
+    "capy": false,
+    "dev": [
+     0,
+     0.4
+    ],
+    "boss": [
+     2.4,
+     -0.2
+    ]
+   },
+   "shot": {
+    "type": "high",
+    "on": "dev"
+   },
+   "act": {
+    "dev": {
+     "mood": "sad",
+     "action": "facepalm",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "angry",
+     "action": "cross",
+     "look": "dev"
+    }
+   }
+  },
+  {
+   "text": "One number. Too big for its box. Very big boom.",
+   "key": [
+    "BOOM."
+   ],
+   "board": [
+    "TOO BIG",
+    "FOR THE BOX"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Europe rebuilds the Cluster satellites. They launch in two thousand.",
+   "cap": "Europe rebuilds the Cluster satellites. They launch in 2000.",
+   "key": [
+    "2000."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "CLUSTER II",
+     "2000"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "dev": false,
+    "boss": false,
+    "ctl": false,
+    "sci": [
+     0,
+     0.3
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "sci"
+   },
+   "act": {
+    "sci": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Brand new rocket. Crashed by hand me down code. Ouch.",
+   "cap": "Brand new rocket. Crashed by hand-me-down code. Ouch.",
+   "key": [
+    "HAND-ME-DOWN"
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "sci": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "sci"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Old code on a new rocket. Would you trust it? Yes or no? Be honest.",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "REUSE OLD CODE?",
+    "YES OR NO"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "sci": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "sci": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia: Ariane flight V88",
+   "url": "https://en.wikipedia.org/wiki/Ariane_flight_V88"
+  },
+  {
+   "title": "EPITA: Ariane 501 inquiry board report",
+   "url": "https://www.lrde.epita.fr/~tiger/doc/gnuprog2/Ariane-501.html"
+  },
+  {
+   "title": "It's FOSS: a floating point error that caused half a billion in damage",
+   "url": "https://itsfoss.com/a-floating-point-error-that-caused-a-damage-worth-half-a-billion/"
+  },
+  {
+   "title": "Wikipedia: Cluster (spacecraft)",
+   "url": "https://en.wikipedia.org/wiki/Cluster_(spacecraft)"
+  },
+  {
+   "title": "UCL MSSL: Cluster I",
+   "url": "https://www.ucl.ac.uk/mssl/research-projects/2018/aug/cluster-i"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Ariane 5's first flight, in June 1996, failed about 37 seconds after launch",
+   "terms": [
+    "37",
+    "seconds"
+   ]
+  },
+  {
+   "claim": "It launched from French Guiana (Kourou)",
+   "terms": [
+    "Kourou|French Guiana"
+   ]
+  },
+  {
+   "claim": "It carried four Cluster satellites",
+   "terms": [
+    "Cluster",
+    "four|4"
+   ]
+  },
+  {
+   "claim": "The rocket veered and broke up; it self-destructed",
+   "terms": [
+    "self-destruct|self destruct|destruct"
+   ]
+  },
+  {
+   "claim": "The guidance software was reused from Ariane 4",
+   "terms": [
+    "Ariane 4",
+    "software"
+   ]
+  },
+  {
+   "claim": "Ariane 5's horizontal velocity value was much larger",
+   "terms": [
+    "horizontal",
+    "velocity"
+   ]
+  },
+  {
+   "claim": "A 64-bit number was converted to a 16-bit integer and overflowed",
+   "terms": [
+    "16-bit|16 bit",
+    "64-bit|64 bit"
+   ]
+  },
+  {
+   "claim": "The backup computer ran the same software and failed the same way",
+   "terms": [
+    "same|identical",
+    "software|hardware|SRI"
+   ]
+  },
+  {
+   "claim": "The calculation was not needed after liftoff",
+   "terms": [
+    "after lift-off|after liftoff|no longer|not needed|no purpose"
+   ]
+  },
+  {
+   "claim": "The Cluster satellites were rebuilt and launched in 2000",
+   "terms": [
+    "2000",
+    "Cluster"
+   ]
+  }
+ ]
+}

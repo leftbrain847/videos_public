@@ -1,0 +1,809 @@
+{
+ "id": "space_29_opportunity_90_days",
+ "title": "Opportunity: a 90-day rover that lasted 15 years",
+ "set": "space",
+ "setOpts": {
+  "boardText": [
+   "OPPORTUNITY"
+  ]
+ },
+ "target_s": 90,
+ "cast": {
+  "capy": {
+   "kind": "capy",
+   "at": "left",
+   "look": {
+    "outfit": "astronaut"
+   }
+  },
+  "eng": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#eae6dc",
+    "pants": "#4a4a4a",
+    "hair": "bald",
+    "hairColor": "#3b2416",
+    "skin": "#7b4e33",
+    "headset": true,
+    "glasses": true
+   }
+  },
+  "eng2": {
+   "look": {
+    "outfit": "polo",
+    "shirt": "#7a5c8e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#c68d64"
+   },
+   "hold": "clipboard"
+  },
+  "boss": {
+   "look": {
+    "outfit": "suit",
+    "shirt": "#c8102e",
+    "pants": "#4a4a4a",
+    "hair": "long",
+    "hairColor": "#6b4423",
+    "skin": "#f2c39b"
+   }
+  },
+  "rep": {
+   "look": {
+    "outfit": "hoodie",
+    "shirt": "#5aa832",
+    "pants": "#4a4a4a",
+    "hair": "bun",
+    "hairColor": "#1b1b1b",
+    "skin": "#f0c8a8"
+   },
+   "hold": "phone"
+  }
+ },
+ "lines": [
+  {
+   "text": "Your robot is built to last ninety days. It lasts almost fifteen years.",
+   "cap": "Your robot is built to last 90 days. It lasts almost 15 years.",
+   "key": [
+    "15"
+   ],
+   "board": [
+    "PLANNED: 90 DAYS",
+    "ACTUAL: ~15 YRS"
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": [
+     2.6,
+     -0.6
+    ],
+    "eng2": false,
+    "boss": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "January, two thousand four. The rover Opportunity lands on Mars.",
+   "cap": "January 2004. The rover Opportunity lands on Mars.",
+   "key": [
+    "OPPORTUNITY"
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "OPPORTUNITY",
+     "JAN 2004"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     1.4,
+     0.3
+    ],
+    "boss": false,
+    "rep": false
+   },
+   "shot": {
+    "type": "wide",
+    "on": "eng",
+    "offset": [
+     1.4,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Perfect landing. A clean start. Everyone exhales. The fun begins.",
+   "key": [
+    "PERFECT"
+   ],
+   "shot": {
+    "type": "two",
+    "on": "eng",
+    "with": "eng2"
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "point",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Its twin, Spirit, landed weeks earlier. Same job. Find signs of past water. Big question. Huge.",
+   "key": [
+    "WATER."
+   ],
+   "board": [
+    "MISSION:",
+    "FIND WATER"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "smug",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Opportunity finds them. Mars was once wet. Huge news.",
+   "key": [
+    "WET."
+   ],
+   "place": {
+    "capy": [
+     -1.4,
+     1.0
+    ],
+    "eng": false,
+    "eng2": [
+     1.4,
+     0.2
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "eng2"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Then the ninety days run out. Nobody turns it off.",
+   "cap": "Then the 90 days run out. Nobody turns it off.",
+   "key": [
+    "OFF."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "eng2": {
+     "mood": "smug",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Martian wind blows dust off the solar panels. Free cleaning. Very lucky.",
+   "key": [
+    "CLEANING."
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "SOLAR PANELS",
+     "CLEANED"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": false,
+    "eng2": false,
+    "boss": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "low",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "happy",
+     "action": "point",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "One year. Five years. Ten years. It keeps driving. And driving.",
+   "key": [
+    "DRIVING."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "YEAR 10",
+     "STILL GOING"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": false,
+    "boss": [
+     1.4,
+     0.3
+    ],
+    "rep": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "shocked",
+     "action": "idle",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "happy",
+     "action": "idle",
+     "look": "boss"
+    }
+   }
+  },
+  {
+   "text": "In twenty fifteen, it passes a marathon distance. On Mars. Slowly.",
+   "cap": "In 2015, it passes a marathon distance. On Mars. Slowly.",
+   "key": [
+    "MARATHON"
+   ],
+   "board": [
+    "DISTANCE:",
+    "26.2 MI"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "eng"
+   },
+   "act": {
+    "eng": {
+     "mood": "happy",
+     "action": "cheer",
+     "look": "camera"
+    },
+    "boss": {
+     "mood": "happy",
+     "action": "clap",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "Total trip? About twenty eight miles.",
+   "cap": "Total trip? About 28 miles.",
+   "key": [
+    "28"
+   ],
+   "board": [
+    "TOTAL:",
+    "~28 MILES"
+   ],
+   "shot": {
+    "type": "close",
+    "on": "boss"
+   },
+   "act": {
+    "boss": {
+     "mood": "smug",
+     "action": "cross",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Then, in twenty eighteen, a dust storm hits. It swallows the whole planet.",
+   "cap": "Then, in 2018, a dust storm hits. It swallows the whole planet.",
+   "key": [
+    "STORM"
+   ],
+   "set": "space",
+   "setOpts": {
+    "boardText": [
+     "GLOBAL",
+     "DUST STORM"
+    ]
+   },
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": false,
+    "eng2": false,
+    "boss": false,
+    "rep": false
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "worried",
+     "action": "idle",
+     "look": "camera"
+    }
+   },
+   "sfx": [
+    [
+     0.6,
+     "hit"
+    ]
+   ]
+  },
+  {
+   "text": "The sky goes dark. The solar panels starve. June tenth, it goes silent.",
+   "key": [
+    "SILENT."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "LAST CONTACT",
+     "JUNE 10 2018"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": false,
+    "eng2": [
+     0,
+     0.4
+    ],
+    "boss": false,
+    "rep": false
+   },
+   "shot": {
+    "type": "medium",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Its last data shows low power. Rising darkness. Not good.",
+   "key": [
+    "DARKNESS."
+   ],
+   "shot": {
+    "type": "low",
+    "on": "eng2"
+   },
+   "act": {
+    "eng2": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "A reporter sums it up as a poem. My battery is low. It's getting dark.",
+   "key": [
+    "BATTERY"
+   ],
+   "set": "living",
+   "setOpts": {
+    "boardText": [
+     "MY BATTERY IS LOW",
+     "IT'S GETTING DARK"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": false,
+    "eng2": false,
+    "boss": false,
+    "rep": [
+     0,
+     4.4
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "rep",
+    "offset": [
+     0.6,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "rep": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Not its real words. But the internet weeps anyway.",
+   "key": [
+    "WEEPS"
+   ],
+   "place": {
+    "capy": [
+     -1.3,
+     4.6
+    ],
+    "rep": [
+     1.4,
+     4.4
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "rep",
+    "offset": [
+     0,
+     0.6,
+     1.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "rep"
+    },
+    "rep": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Nasa sends hundreds of wake up calls. Silence.",
+   "cap": "NASA sends hundreds of wake-up calls. Silence.",
+   "key": [
+    "SILENCE."
+   ],
+   "set": "office",
+   "setOpts": {
+    "boardText": [
+     "WAKE UP",
+     "CALLS"
+    ]
+   },
+   "place": {
+    "capy": false,
+    "eng": [
+     -1.4,
+     0.3
+    ],
+    "eng2": [
+     1.4,
+     0.3
+    ],
+    "boss": false,
+    "rep": false
+   },
+   "shot": {
+    "type": "two",
+    "on": "eng",
+    "with": "eng2"
+   },
+   "act": {
+    "eng": {
+     "mood": "sad",
+     "action": "hold",
+     "look": "eng2"
+    },
+    "eng2": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "eng"
+    }
+   }
+  },
+  {
+   "text": "February twenty nineteen. The mission is declared over.",
+   "cap": "February 2019. The mission is declared over.",
+   "key": [
+    "OVER."
+   ],
+   "place": {
+    "capy": [
+     0,
+     1.2
+    ],
+    "eng": [
+     -2.6,
+     -0.6
+    ],
+    "eng2": [
+     2.6,
+     -0.6
+    ]
+   },
+   "speaker": "capy",
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     0.5,
+     0,
+     0.4
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    },
+    "eng2": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Ninety day warranty. Fifteen years of service. Respect.",
+   "cap": "90-day warranty. 15 years of service. Respect.",
+   "key": [
+    "RESPECT."
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "close",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    }
+   }
+  },
+  {
+   "text": "Did the battery line make you sad? Yes or no?",
+   "key": [
+    "YES",
+    "NO?"
+   ],
+   "board": [
+    "SAD?",
+    "YES OR NO"
+   ],
+   "speaker": "capy",
+   "shot": {
+    "type": "wide",
+    "on": "capy",
+    "offset": [
+     0.8,
+     0,
+     0
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
+    "eng": {
+     "mood": "sad",
+     "action": "idle",
+     "look": "capy"
+    }
+   }
+  }
+ ],
+ "sources": [
+  {
+   "title": "PBS NewsHour (AP): after a 15-year odyssey, NASA loses Opportunity",
+   "url": "https://www.pbs.org/newshour/science/after-a-15-year-odyssey-nasa-loses-its-trailblazing-opportunity"
+  },
+  {
+   "title": "ABC7 Chicago: Opportunity's last message to scientists",
+   "url": "https://abc7chicago.com/mars-nasa-opportunity-rover/5137455/"
+  },
+  {
+   "title": "ABC13: my battery is low and it's getting dark",
+   "url": "https://abc13.com/post/my-battery-is-low-and-its-getting-dark-opportunitys-last-message-to-scientists/5137733/"
+  },
+  {
+   "title": "Wikipedia: Opportunity (rover)",
+   "url": "https://en.wikipedia.org/wiki/Opportunity_(rover)"
+  },
+  {
+   "title": "Mount Holyoke: my battery is low and it's getting dark",
+   "url": "https://commons.mtholyoke.edu/mtanews/my-battery-is-low-and-its-getting-dark-the-little-rover-that-could/"
+  },
+  {
+   "title": "The Mary Sue: RIP Opportunity",
+   "url": "https://www.themarysue.com/rip-opportunity-mars-rover/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "Opportunity was built to last 90 days and lasted nearly 15 years",
+   "terms": [
+    "90",
+    "15 years|15-year"
+   ]
+  },
+  {
+   "claim": "It landed on Mars in January 2004",
+   "terms": [
+    "January",
+    "2004"
+   ]
+  },
+  {
+   "claim": "Its twin Spirit landed weeks earlier; both searched for signs of past water",
+   "terms": [
+    "Spirit",
+    "water"
+   ]
+  },
+  {
+   "claim": "It found evidence that Mars was once wet",
+   "terms": [
+    "water",
+    "evidence"
+   ]
+  },
+  {
+   "claim": "Wind cleaned its solar panels",
+   "terms": [
+    "wind",
+    "solar panels|panels"
+   ]
+  },
+  {
+   "claim": "In 2015 it passed a marathon distance",
+   "terms": [
+    "marathon"
+   ]
+  },
+  {
+   "claim": "It drove about 28 miles",
+   "terms": [
+    "28 miles|28.06|45 kilometers|45 km"
+   ]
+  },
+  {
+   "claim": "A planet-wide dust storm hit in 2018",
+   "terms": [
+    "dust storm",
+    "2018"
+   ]
+  },
+  {
+   "claim": "Last contact came on June 10, 2018",
+   "terms": [
+    "June 10"
+   ]
+  },
+  {
+   "claim": "The phrase 'My battery is low and it's getting dark' was a reporter's paraphrase",
+   "terms": [
+    "battery is low",
+    "getting dark"
+   ]
+  },
+  {
+   "claim": "NASA sent hundreds of commands to wake it",
+   "terms": [
+    "commands|signals|attempts",
+    "hundred|1,000|835"
+   ]
+  },
+  {
+   "claim": "NASA declared the mission over in February 2019",
+   "terms": [
+    "February",
+    "2019"
+   ]
+  }
+ ]
+}
