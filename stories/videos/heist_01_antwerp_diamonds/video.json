@@ -601,8 +601,12 @@
    "url": "https://en.wikipedia.org/wiki/Antwerp_diamond_heist"
   },
   {
-   "title": "Wikiwand: Antwerp diamond heist",
-   "url": "https://www.wikiwand.com/en/articles/Antwerp_diamond_heist"
+   "title": "Wired: The untold story of the world's biggest diamond heist",
+   "url": "https://www.wired.com/2009/03/ff-diamonds/"
+  },
+  {
+   "title": "Salon: Flawless, review",
+   "url": "https://www.salon.com/2010/03/01/flawless_2"
   },
   {
    "title": "Guinness World Records: Largest diamond heist",
@@ -631,7 +635,6 @@
   {
    "claim": "Loot included loose diamonds, gold and jewelry",
    "terms": [
-    "diamonds",
     "gold",
     "jewel"
    ]
