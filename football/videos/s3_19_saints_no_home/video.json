@@ -211,9 +211,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Against the Giants. On Monday night.",
+   "text": "Against the Giants. In their own building.",
    "key": [
-    "GIANTS."
+    "BUILDING."
    ],
    "place": {
     "saint": [
@@ -931,13 +931,6 @@
    "claim": "The team relocated to San Antonio for the season",
    "terms": [
     "San Antonio"
-   ]
-  },
-  {
-   "claim": "The game was against the Giants on Monday night",
-   "terms": [
-    "Giants",
-    "Monday"
    ]
   },
   {
