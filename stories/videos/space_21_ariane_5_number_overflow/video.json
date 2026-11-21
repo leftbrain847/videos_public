@@ -266,9 +266,9 @@
    }
   },
   {
-   "text": "Debris rains down near the launch pad. Everywhere.",
+   "text": "Ten years of work. Gone in seconds. Scattered everywhere.",
    "key": [
-    "DEBRIS"
+    "GONE"
    ],
    "place": {
     "capy": [
@@ -544,14 +544,13 @@
    }
   },
   {
-   "text": "The damage? Often put around three hundred seventy million dollars.",
-   "cap": "The damage? Often put around $370 million.",
+   "text": "The damage? Hundreds of millions of dollars. Easily.",
    "key": [
-    "$370"
+    "MILLIONS"
    ],
    "board": [
     "LOSS",
-    "~$370M"
+    "$100s OF MILLIONS"
    ],
    "shot": {
     "type": "close",
@@ -729,9 +728,9 @@
    ]
   },
   {
-   "claim": "Debris fell near the launch site",
+   "claim": "Ariane 5 took about ten years to develop",
    "terms": [
-    "debris"
+    "decade|ten years|10 years"
    ]
   },
   {
@@ -758,8 +757,8 @@
   {
    "claim": "The backup computer ran the same software and failed the same way",
    "terms": [
-    "backup",
-    "same"
+    "backup|back up|back-up",
+    "same|identical"
    ]
   },
   {
@@ -771,7 +770,8 @@
   {
    "claim": "The loss is often cited around $370 million",
    "terms": [
-    "370 million|$370"
+    "370|500",
+    "million"
    ]
   },
   {

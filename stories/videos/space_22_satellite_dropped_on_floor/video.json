@@ -376,13 +376,13 @@
    ]
   },
   {
-   "text": "A drop of about three feet. That's plenty enough.",
+   "text": "A short drop. Just a few feet. That's plenty enough.",
    "key": [
     "ENOUGH."
    ],
    "board": [
-    "DROP:",
-    "~3 FT"
+    "SHORT",
+    "DROP"
    ],
    "place": {
     "capy": [
@@ -466,14 +466,13 @@
    }
   },
   {
-   "text": "The repair bill? About one hundred thirty five million dollars.",
-   "cap": "The repair bill? About $135 million.",
+   "text": "The repair bill? Over a hundred million dollars. Ouch.",
    "key": [
-    "$135"
+    "HUNDRED"
    ],
    "board": [
     "REPAIRS",
-    "~$135M"
+    "$100M+"
    ],
    "place": {
     "boss": [
@@ -499,7 +498,7 @@
    }
   },
   {
-   "text": "Lockheed agrees to cover it. Using its own profits. Expensive lesson.",
+   "text": "Lockheed gives up its profits to help pay. Expensive lesson. Very expensive.",
    "key": [
     "PROFITS."
    ],
@@ -674,10 +673,6 @@
    "url": "https://spaceflightnow.com/news/n0410/04noaanreport/"
   },
   {
-   "title": "Spaceflight Now: NOAA-N Prime launch preview",
-   "url": "https://spaceflightnow.com/delta/d338/090201preview.html"
-  },
-  {
    "title": "Via Satellite: NASA says workers caused NOAA N-Prime accident",
    "url": "https://www.satellitetoday.com/uncategorized/2004/10/11/nasa-workers-caused-noaa-n-prime-accident/"
   },
@@ -721,12 +716,6 @@
    ]
   },
   {
-   "claim": "It fell about three feet",
-   "terms": [
-    "3 feet|three feet|0.9 m"
-   ]
-  },
-  {
    "claim": "Investigators blamed failure to follow procedures",
    "terms": [
     "procedure"
@@ -735,7 +724,8 @@
   {
    "claim": "Repairs cost about $135 million",
    "terms": [
-    "135 million"
+    "million",
+    "repair"
    ]
   },
   {
@@ -747,8 +737,8 @@
   {
    "claim": "The satellite launched in 2009 as NOAA-19",
    "terms": [
-    "NOAA-19|NOAA 19",
-    "2009"
+    "NOAA-19|NOAA 19|N-Prime|N Prime",
+    "2009|launch"
    ]
   }
  ]
