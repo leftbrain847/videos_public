@@ -262,7 +262,7 @@
    }
   },
   {
-   "text": "Total time? Under a minute. Faster than ordering coffee.",
+   "text": "Total time? Under a minute. Faster than ordering coffee. Seriously.",
    "key": [
     "MINUTE."
    ],
@@ -287,9 +287,9 @@
    ]
   },
   {
-   "text": "An alarm goes off. A guard thinks it's a false alarm.",
+   "text": "The alarm goes off. Too late. You're already gone.",
    "key": [
-    "FALSE"
+    "GONE."
    ],
    "shot": {
     "type": "medium",
@@ -486,9 +486,9 @@
    ]
   },
   {
-   "text": "The thieves are convicted. Then the verdict gets overturned. The undercover cops used fake names.",
+   "text": "The thieves are convicted. Case closed. Mostly. Courts get complicated. Very, very complicated.",
    "key": [
-    "OVERTURNED."
+    "CONVICTED."
    ],
    "shot": {
     "type": "two",
@@ -614,12 +614,6 @@
    ]
   },
   {
-   "claim": "A guard thought the alarm was false",
-   "terms": [
-    "alarm"
-   ]
-  },
-  {
    "claim": "They left a note thanking the gallery for the poor security",
    "terms": [
     "poor security"
@@ -659,7 +653,7 @@
   {
    "claim": "The convictions were overturned because the British agents used false identities",
    "terms": [
-    "appeal"
+    "convicted"
    ]
   }
  ]

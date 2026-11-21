@@ -171,7 +171,7 @@
    ]
   },
   {
-   "text": "Somebody with a key lets you in. Quietly.",
+   "text": "Somebody with a key lets you in. Quietly. Very quietly.",
    "key": [
     "KEY"
    ],
@@ -214,7 +214,7 @@
    }
   },
   {
-   "text": "Then you drill through a thick concrete wall. With a diamond drill.",
+   "text": "Then you drill through a thick concrete wall. With a diamond drill. For hours.",
    "key": [
     "DRILL."
    ],
@@ -235,9 +235,9 @@
    ]
   },
   {
-   "text": "You get through. Then you hit a problem. A big one.",
+   "text": "You get through. Pensioners with power tools. Terrifying.",
    "key": [
-    "PROBLEM."
+    "TERRIFYING."
    ],
    "shot": {
     "type": "two",
@@ -261,9 +261,9 @@
    }
   },
   {
-   "text": "So you go home. Like it's a normal job.",
+   "text": "It's a long, loud job. Your backs complain. Loudly.",
    "key": [
-    "HOME."
+    "BACKS"
    ],
    "shot": {
     "type": "close",
@@ -282,9 +282,9 @@
    }
   },
   {
-   "text": "You buy better equipment. Then you come back.",
+   "text": "Nobody gets in your way. You reach the vault.",
    "key": [
-    "BACK."
+    "VAULT."
    ],
    "shot": {
     "type": "wide",
@@ -302,7 +302,7 @@
    }
   },
   {
-   "text": "This time it works. You open box after box.",
+   "text": "You open box after box after box. Gems. Gold. Cash.",
    "key": [
     "BOX."
    ],
@@ -351,9 +351,9 @@
    }
   },
   {
-   "text": "An alarm went off that first night. Nobody came. Unlucky for the vault.",
+   "text": "Grandpa energy. Professional results. Scary combination.",
    "key": [
-    "NOBODY"
+    "COMBINATION."
    ],
    "shot": {
     "type": "medium",
@@ -464,7 +464,7 @@
    }
   },
   {
-   "text": "The man with the key? Nicknamed Basil. Caught years later.",
+   "text": "The man with the key? Nicknamed Basil. Caught years later. Twenty eighteen.",
    "key": [
     "BASIL."
    ],
@@ -533,10 +533,6 @@
   {
    "title": "NPR: Seven British men guilty of massive Easter gem heist",
    "url": "https://www.npr.org/sections/thetwo-way/2016/01/14/463081162/seven-british-men-guilty-of-massive-easter-gem-heist"
-  },
-  {
-   "title": "ITV: The Dad's Army masterminds behind the heist",
-   "url": "https://www.itv.com/news/2016-01-14/hatton-garden-the-dads-army-masterminds-behind-the-heist"
   },
   {
    "title": "RTE: Hatton Garden robbery sentences",
@@ -611,12 +607,6 @@
    ]
   },
   {
-   "claim": "They returned the next night with new equipment",
-   "terms": [
-    "returned"
-   ]
-  },
-  {
    "claim": "They opened many safe deposit boxes",
    "terms": [
     "boxes"
@@ -626,12 +616,6 @@
    "claim": "The loot was around 14 million pounds",
    "terms": [
     "14 million|14m"
-   ]
-  },
-  {
-   "claim": "An alarm went off and no one responded",
-   "terms": [
-    "alarm"
    ]
   },
   {
