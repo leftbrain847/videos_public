@@ -1,6 +1,6 @@
 # videos_public
 
-Public repo for J's video channels (`football/` today). Read the channel's `GUIDELINES.md` before writing or rendering a video, and `SECURITY.md` before touching `.github/` or `site/`.
+Public repo for J's video channels (`football/` today). Read the channel's `GUIDELINES.md` before writing or rendering a video, and `SECURITY.md` before touching `.github/` or `site/`. **Making more than one video? Read `PLAYBOOK.md` first and follow it**: roles, pipeline, gates, timings and the rules that keep unattended runs from stalling. Writer agents get `football/WRITER_BRIEF.md`.
 
 ## Working rules for agents (shared across J's repos)
 
@@ -13,4 +13,4 @@ Public repo for J's video channels (`football/` today). Read the channel's `GUID
 
 ## Speech
 
-Capy's voice (Kokoro `af_heart`) says `text` exactly as written. Before writing or editing any script, read "Writing for the voice" in `football/GUIDELINES.md`: spoken words only (no digits, symbols or abbreviations in `text`), 8 words max per sentence, one action each, every name in `football/engine/pronunciation.json`, and the narration must fit 60 s at speed 1.06. Mark rewritten scripts `"voice": "v2"` so `check.py` enforces all of it. A reported mispronunciation becomes a rule or a dictionary entry, never a one-off fix.
+Capy's voice (Kokoro `af_heart`) says `text` exactly as written. Before writing or editing any script, read "Writing for the voice" in `football/GUIDELINES.md`: spoken words only (no digits, symbols or abbreviations in `text`), 8 words max per sentence, one action each, every name in `football/engine/pronunciation.json`, and the narration must fit the video's length (60 s; new series 90 s) at speed 1.06. Mark rewritten scripts `"voice": "v2"` so `check.py` enforces all of it. A reported mispronunciation becomes a rule or a dictionary entry, never a one-off fix.
