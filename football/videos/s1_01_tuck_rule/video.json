@@ -942,12 +942,28 @@
  ],
  "sources": [
   {
-   "title": "ESPN: NFL votes to get rid of tuck rule (29-1, Patriots and Redskins abstain)",
-   "url": "https://www.espn.com/blog/boston/new-england-patriots/post/_/id/4741326/nfl-votes-to-get-rid-of-tuck-rule"
-  },
-  {
    "title": "ProFootballTalk: The tuck rule is no more",
    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-tuck-rule-is-no-more"
+  },
+  {
+   "title": "Wikipedia: Tuck Rule Game",
+   "url": "https://en.wikipedia.org/wiki/Tuck_Rule_Game"
+  },
+  {
+   "title": "Wikipedia: Tuck rule (American football)",
+   "url": "https://en.wikipedia.org/wiki/Tuck_rule_(American_football)"
+  },
+  {
+   "title": "NFL.com: 'Tuck Rule' eliminated by wide margin at NFL Annual Meeting",
+   "url": "https://www.nfl.com/news/tuck-rule-eliminated-by-wide-margin-at-nfl-annual-meeting-0ap1000000152253"
+  },
+  {
+   "title": "Sports Illustrated: The Tuck Rule Game",
+   "url": "https://www.si.com/nfl/2012/01/19/19-0the-tuck-rule-game"
+  },
+  {
+   "title": "CBS Boston: 20th birthday of the Patriots-Raiders Snow Bowl",
+   "url": "https://www.cbsnews.com/boston/news/20th-birthday-patriots-raiders-snow-bowl-tuck-rule-game"
   }
  ],
  "voice": "v2",
@@ -962,8 +978,8 @@
   {
    "claim": "Oakland led 13-10 with under two minutes left",
    "terms": [
-    "13-10",
-    "minute"
+    "13 10",
+    "minute|1:47|1:50|1:43"
    ]
   },
   {
@@ -1013,7 +1029,8 @@
    "claim": "New England kicked a field goal in the snow to tie",
    "terms": [
     "field goal",
-    "tie"
+    "tie",
+    "Vinatieri|45"
    ]
   },
   {

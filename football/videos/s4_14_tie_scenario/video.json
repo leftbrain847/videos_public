@@ -1952,6 +1952,18 @@
   {
    "title": "Yahoo Sports: No, the Chargers' timeout didn't cost them a tie and a playoff berth",
    "url": "https://sg.news.yahoo.com/chargers-raiders-timeout-tie-brandon-staley-064703674.html"
+  },
+  {
+   "title": "Fox Sports (AP): Carlson's FG as OT expires sends Raiders into postseason",
+   "url": "https://www.foxsports.com/articles/nfl/carlsons-fg-as-ot-expires-sends-raiders-into-postseason"
+  },
+  {
+   "title": "ESPN: Raiders win on OT field goal, eliminate Chargers",
+   "url": "https://www.espn.com/nfl/story/_/id/33032147/las-vegas-raiders-win-ot-field-goal-eliminate-rival-los-angeles-chargers-secure-playoff-berth"
+  },
+  {
+   "title": "Wikipedia: 2021 Las Vegas Raiders season",
+   "url": "https://en.wikipedia.org/wiki/2021_Las_Vegas_Raiders_season"
   }
  ],
  "voice": "v2",
@@ -1980,7 +1992,7 @@
    "claim": "Down 15 in the fourth quarter, the Chargers converted three fourth downs",
    "terms": [
     "fourth down",
-    "15"
+    "three|3"
    ]
   },
   {
@@ -1993,7 +2005,8 @@
   {
    "claim": "Each team kicked an overtime field goal; 32-32",
    "terms": [
-    "32"
+    "32",
+    "overtime|field goal|tied"
    ]
   },
   {
@@ -2027,7 +2040,7 @@
    "claim": "That set up a 47-yard field goal, good as time expired",
    "terms": [
     "47",
-    "time expire"
+    "expire|final play|no time|as time"
    ]
   },
   {

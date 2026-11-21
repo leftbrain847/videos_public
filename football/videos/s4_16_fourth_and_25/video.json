@@ -1406,6 +1406,22 @@
   {
    "title": "Arizona Cardinals: Nate Poole, Josh McCown and the Miracle in the Desert",
    "url": "https://www.azcardinals.com/news/nate-poole-josh-mccown-vikings-cardinals-miracle-in-the-desert-larry-fitzgerald"
+  },
+  {
+   "title": "Wikipedia: 2003 Minnesota Vikings season",
+   "url": "https://en.wikipedia.org/wiki/2003_Minnesota_Vikings_season"
+  },
+  {
+   "title": "Wikipedia: 2003 Green Bay Packers season",
+   "url": "https://en.wikipedia.org/wiki/2003_Green_Bay_Packers_season"
+  },
+  {
+   "title": "Arizona Cardinals: oral history of Cardinals-Vikings 2003",
+   "url": "https://www.azcardinals.com/news/larry-fitzgerald-josh-mccown-nate-poole-oral-history-cardinals-vikings-2003"
+  },
+  {
+   "title": "FOX 9: Josh McCown on ending the Vikings' 2003 season",
+   "url": "https://www.fox9.com/sports/josh-mccown-talks-ending-vikings-2003-season"
   }
  ],
  "voice": "v2",
@@ -1434,7 +1450,7 @@
    "claim": "Green Bay was beating Denver at home; fans listened to the Arizona game on the radio",
    "terms": [
     "Denver|Broncos",
-    "radio"
+    "radio|listen"
    ]
   },
   {
@@ -1452,7 +1468,8 @@
   {
    "claim": "Two straight sacks made it fourth-and-25",
    "terms": [
-    "sack"
+    "sack",
+    "back to back|two|consecutive|straight|twice"
    ]
   },
   {
@@ -1489,8 +1506,8 @@
   {
    "claim": "The Vikings started 6-0 and missed the playoffs",
    "terms": [
-    "6-0",
-    "playoffs"
+    "6 0",
+    "playoff|postseason"
    ]
   },
   {

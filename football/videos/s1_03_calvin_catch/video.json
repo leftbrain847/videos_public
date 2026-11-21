@@ -867,6 +867,30 @@
   {
    "title": "ESPN: NFL owners approve new catch rule, 32-0 vote",
    "url": "https://africa.espn.com/nfl/story/_/id/22931857/nfl-owners-approve-new-catch-rule-32-0-vote"
+  },
+  {
+   "title": "Fox Sports (AP): Bears get help to escape with 19-14 win over Lions",
+   "url": "https://www.foxsports.com/stories/nfl/bears-get-help-to-escape-with-19-14-win-over-lions"
+  },
+  {
+   "title": "NBC Chicago: How Bears' 2010 win over Lions resonates 10 years later",
+   "url": "https://www.nbcchicago.com/news/sports/nbcsports/how-bears-victory-over-lions-calvin-johnson-still-resonates-10-years-later/2337992/"
+  },
+  {
+   "title": "ESPN Bears blog: Refs get it right on crucial call",
+   "url": "https://www.espn.com/blog/chicago/bears/post/_/id/4666023/refs-get-it-right-on-crucial-call"
+  },
+  {
+   "title": "NFL.com: Hard-luck Lions got robbed by rule that defies logic",
+   "url": "https://www.nfl.com/news/hard-luck-lions-got-robbed-by-rule-that-defies-logic-09000d5d81a7d2c0"
+  },
+  {
+   "title": "UPI: Teams unanimously approve simplified catch rule",
+   "url": "https://www.upi.com/Sports_News/NFL/2018/03/27/Teams-unanimously-approve-simplified-catch-rule/4451522169969/"
+  },
+  {
+   "title": "Wikipedia: Calvin Johnson",
+   "url": "https://en.wikipedia.org/wiki/Calvin_Johnson"
   }
  ],
  "voice": "v2",
@@ -882,8 +906,9 @@
   {
    "claim": "Detroit trailed Chicago 19-14 with under 30 seconds left",
    "terms": [
-    "19-14",
-    "seconds"
+    "seconds",
+    "24|25|26|27|28|29",
+    "Lions|Detroit|Johnson"
    ]
   },
   {

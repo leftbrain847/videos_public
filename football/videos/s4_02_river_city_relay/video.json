@@ -3252,8 +3252,28 @@
    "url": "https://en.wikipedia.org/wiki/River_City_Relay"
   },
   {
-   "title": "NFL.com 100 Greatest Plays: River City Relay",
-   "url": "https://nfl.com/100/originals/100-greatest/plays-55"
+   "title": "Wikipedia: 2003 New Orleans Saints season",
+   "url": "https://en.wikipedia.org/wiki/2003_New_Orleans_Saints_season"
+  },
+  {
+   "title": "Jaguars.com: Wild win for Jaguars",
+   "url": "https://www.jaguars.com/news/wild-win-for-jaguars-5836990"
+  },
+  {
+   "title": "Fox Sports: Carney misses PAT after Saints' miracle comeback",
+   "url": "https://www.foxsports.com/stories/other/craziest-moments-in-nfl-history-carney-misses-pat-after-saints-miracle-comeback"
+  },
+  {
+   "title": "Jacksonville Daily Record: Jags 20, Saints 19",
+   "url": "https://www.jaxdailyrecord.com/news/2003/dec/22/jags-20-saints-19/"
+  },
+  {
+   "title": "Sun Journal (AP): Jaguars beat Saints",
+   "url": "https://www.sunjournal.com/?p=482485"
+  },
+  {
+   "title": "The Comeback: River City Relay anniversary",
+   "url": "https://thecomeback.com/nfl/saints-jaguars-river-city-relay-anniversary.html"
   }
  ],
  "voice": "v2",
@@ -3267,20 +3287,20 @@
   {
    "claim": "Jaguars led 20-13 with seconds left",
    "terms": [
-    "20",
-    "13"
+    "20 13"
    ]
   },
   {
    "claim": "Saints had no timeouts",
    "terms": [
-    "timeout"
+    "timeout",
+    "Saints|New Orleans"
    ]
   },
   {
    "claim": "Saints had the ball at their own 25, 75 yards to go",
    "terms": [
-    "25|75"
+    "own 25|75 yard"
    ]
   },
   {
@@ -3322,7 +3342,7 @@
   {
    "claim": "One pass and three laterals",
    "terms": [
-    "three laterals|3 laterals|laterals"
+    "three laterals|3 laterals"
    ]
   },
   {
@@ -3348,7 +3368,8 @@
   {
    "claim": "The loss ended the Saints' playoff hopes",
    "terms": [
-    "playoff|season"
+    "playoff",
+    "eliminat|hope|ended|out of"
    ]
   },
   {
