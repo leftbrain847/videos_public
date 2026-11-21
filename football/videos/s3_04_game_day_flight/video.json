@@ -55,10 +55,11 @@
  },
  "lines": [
   {
-   "text": "In 2020, the Patriots flew to a road game on the morning of the game.",
+   "text": "You fly to a road game. Kickoff is that night.",
    "key": [
-    "MORNING"
+    "NIGHT."
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -1.2,
@@ -87,11 +88,11 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "On Saturday, their starting quarterback, Cam Newton, tested positive.",
+   "text": "Twenty twenty. Saturday. Your starting quarterback, Cam Newton, tests positive.",
+   "cap": "2020. Saturday. Your starting quarterback, Cam Newton, tests positive.",
    "key": [
     "POSITIVE."
    ],
@@ -102,6 +103,10 @@
      "OUT"
     ]
    },
+   "board": [
+    "QB1:",
+    "OUT"
+   ],
    "place": {
     "coach": "right",
     "hoyer": "left"
@@ -120,14 +125,10 @@
      "mood": "worried",
      "look": "coach"
     }
-   },
-   "board": [
-    "QB1:",
-    "OUT"
-   ]
+   }
   },
   {
-   "text": "The game in Kansas City was pushed from Sunday to Monday night.",
+   "text": "The game in Kansas City moves. Sunday becomes Monday night.",
    "key": [
     "MONDAY"
    ],
@@ -153,10 +154,10 @@
    }
   },
   {
-   "text": "Monday morning, the team flew out. On two separate planes.",
+   "text": "Monday morning, you fly out. On two planes. Spread out.",
+   "cap": "Monday morning, you fly out. On 2 planes. Spread out.",
    "key": [
-    "TWO",
-    "PLANES."
+    "2"
    ],
    "set": "tunnel",
    "setOpts": {
@@ -164,6 +165,9 @@
      "PLANES: 2"
     ]
    },
+   "board": [
+    "PLANES: 2"
+   ],
    "place": {
     "capy": [
      -1.4,
@@ -180,7 +184,12 @@
    },
    "shot": {
     "type": "wide",
-    "on": "hoyer"
+    "on": "capy",
+    "offset": [
+     1.4,
+     1,
+     3
+    ]
    },
    "act": {
     "capy": {
@@ -195,20 +204,17 @@
      "mood": "worried",
      "look": "hoyer"
     }
-   },
-   "board": [
-    "PLANES: 2"
-   ]
+   }
   },
   {
-   "text": "Kickoff was seven p.m. Eastern, at Arrowhead.",
-   "cap": "Kickoff was 7 p.m. Eastern, at Arrowhead.",
+   "text": "Kickoff is that evening. At Arrowhead. Easy, right?",
    "key": [
-    "7"
+    "EVENING."
    ],
+   "speaker": "capy",
    "board": [
     "KICKOFF",
-    "7 PM ET"
+    "SAME DAY"
    ],
    "shot": {
     "type": "medium",
@@ -223,11 +229,10 @@
     "hoyer": {
      "mood": "worried"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Brian Hoyer started at quarterback.",
+   "text": "Brian Hoyer starts at quarterback.",
    "key": [
     "HOYER"
    ],
@@ -238,6 +243,10 @@
      "CHIEFS 0"
     ]
    },
+   "board": [
+    "PATRIOTS 0",
+    "CHIEFS 0"
+   ],
    "place": {
     "hoyer": "center",
     "coach": "sideline"
@@ -251,11 +260,7 @@
      "mood": "neutral",
      "action": "throw"
     }
-   },
-   "board": [
-    "PATRIOTS 0",
-    "CHIEFS 0"
-   ]
+   }
   },
   {
    "text": "Fifteen of twenty four. One hundred thirty yards. One interception.",
@@ -279,9 +284,9 @@
    }
   },
   {
-   "text": "Then he fumbled on a sack, and was benched for Jarrett Stidham.",
+   "text": "Before halftime, he's benched. Rough night all around.",
    "key": [
-    "BENCHED"
+    "BENCHED."
    ],
    "place": {
     "stidham": [
@@ -307,9 +312,9 @@
    }
   },
   {
-   "text": "Stidham threw a touchdown pass to N'Keal Harry.",
+   "text": "In comes Jarrett Stidham. He throws a touchdown pass.",
    "key": [
-    "TOUCHDOWN"
+    "STIDHAM."
    ],
    "place": {
     "hoyer": false,
@@ -327,8 +332,8 @@
    }
   },
   {
-   "text": "He also threw two interceptions. One went back for a touchdown.",
-   "cap": "He also threw 2 interceptions. One went back for a touchdown.",
+   "text": "He also throws two interceptions. One comes back for a touchdown.",
+   "cap": "He also throws 2 interceptions. 1 comes back for a touchdown.",
    "key": [
     "2"
    ],
@@ -344,8 +349,8 @@
    }
   },
   {
-   "text": "Patrick Mahomes threw for two hundred thirty six yards and two touchdowns.",
-   "cap": "Patrick Mahomes threw for 236 yards and 2 touchdowns.",
+   "text": "Mahomes throws for two hundred thirty six yards.",
+   "cap": "Mahomes throws for 236 yards.",
    "key": [
     "236"
    ],
@@ -372,11 +377,10 @@
    }
   },
   {
-   "text": "Kansas City won, twenty six to ten. Its thirteenth straight win.",
-   "cap": "Kansas City won, 26 to 10. Its 13th straight win.",
+   "text": "Chiefs twenty six, Patriots ten. Their thirteenth straight win. Of course.",
+   "cap": "Chiefs 26, Patriots 10. Their 13th straight win. Of course.",
    "key": [
-    "26",
-    "13TH"
+    "26,"
    ],
    "board": [
     "PATRIOTS 10",
@@ -399,16 +403,21 @@
    }
   },
   {
-   "text": "One positive test. Two planes. One very long Monday.",
+   "text": "One positive test. Two planes. One very, very long Monday.",
+   "cap": "1 positive test. 2 planes. 1 very, very long Monday.",
    "key": [
-    "LONG"
+    "MONDAY."
    ],
+   "speaker": "capy",
    "set": "tunnel",
    "setOpts": {
     "boardText": [
      "MONDAY"
     ]
    },
+   "board": [
+    "MONDAY"
+   ],
    "place": {
     "capy": [
      -1.0,
@@ -439,16 +448,18 @@
     "stidham": {
      "mood": "sad"
     }
-   },
-   "speaker": "capy",
-   "board": [
-    "MONDAY"
-   ]
+   }
   },
   {
-   "text": "Could you play a road game on the day you fly in? Yes or no?",
+   "text": "Could you play the same day you land? Yes or no? Patriots fans, sit this one out.",
    "key": [
-    "DAY"
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "LAND AND PLAY:",
+    "YES OR NO?"
    ],
    "shot": {
     "type": "two",
@@ -466,8 +477,7 @@
      "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -478,10 +488,6 @@
   {
    "title": "NBC Boston: Patriots-Chiefs recap",
    "url": "https://www.nbcboston.com/news/sports/nfl/new-england-patriots/patriots-chiefs-recap-october-5-2020/2207226/?amp=1"
-  },
-  {
-   "title": "NESN: Patriots Not Making Excuses After Unique Day Ends In Loss Vs. Chiefs",
-   "url": "https://nesn.com/2020/10/patriots-not-making-excuses-after-unique-day-ends-in-loss-vs-chiefs"
   },
   {
    "title": "NFL.com: Patriots set to depart for Kansas City Monday morning",
@@ -498,6 +504,111 @@
   {
    "title": "Chiefs.com: Chiefs defeat Patriots 26-10 on Monday night",
    "url": "https://www.chiefs.com/news/chiefs-defeat-patriots-26-10-on-monday-night"
+  },
+  {
+   "title": "CBS Boston: Patriots leaving for Kansas City Monday morning",
+   "url": "https://www.cbsnews.com/boston/news/patriots-no-new-positive-covid-tests-leaving-for-kansas-city-monday-morning-nfl-chiefs/"
+  },
+  {
+   "title": "Yahoo Sports: Patriots start a grueling Monday with a flight for game vs. Chiefs",
+   "url": "https://sports.yahoo.com/after-no-further-positive-tests-patriots-start-a-grueling-monday-with-a-flight-for-game-vs-chiefs-132915870.html"
+  },
+  {
+   "title": "NBC Sports Boston: Pats make special travel arrangements for Chiefs game",
+   "url": "https://www.nbcsports.com/boston/patriots/report-patriots-make-special-travel-arrangements-ahead-chiefs-game"
+  },
+  {
+   "title": "Boston Globe: Just by playing, this Patriots-Chiefs game was strange",
+   "url": "https://www.bostonglobe.com/2020/10/05/sports/just-by-playing-this-patriots-chiefs-game-was-strange-it-gets/"
+  },
+  {
+   "title": "Wikipedia: 2020 New England Patriots season",
+   "url": "https://en.wikipedia.org/wiki/2020_New_England_Patriots_season"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "In 2020, the Patriots flew in on the day of the game",
+   "terms": [
+    "flight|flew|fly|travel|depart",
+    "Monday"
+   ]
+  },
+  {
+   "claim": "Cam Newton tested positive",
+   "terms": [
+    "Newton",
+    "positive"
+   ]
+  },
+  {
+   "claim": "The game in Kansas City moved from Sunday to Monday night",
+   "terms": [
+    "Monday",
+    "Sunday|postpone"
+   ]
+  },
+  {
+   "claim": "The Patriots flew out on two planes",
+   "terms": [
+    "two planes|2 planes|separate planes"
+   ]
+  },
+  {
+   "claim": "The game was at Arrowhead",
+   "terms": [
+    "Arrowhead"
+   ]
+  },
+  {
+   "claim": "Brian Hoyer started at quarterback",
+   "terms": [
+    "Hoyer",
+    "start"
+   ]
+  },
+  {
+   "claim": "Hoyer went 15 of 24 for 130 yards with an interception",
+   "terms": [
+    "15",
+    "24",
+    "130"
+   ]
+  },
+  {
+   "claim": "Hoyer was benched for Jarrett Stidham",
+   "terms": [
+    "Hoyer",
+    "Stidham",
+    "bench"
+   ]
+  },
+  {
+   "claim": "Stidham threw a touchdown pass and two interceptions, one returned for a touchdown",
+   "terms": [
+    "Stidham",
+    "interception"
+   ]
+  },
+  {
+   "claim": "Patrick Mahomes threw for 236 yards",
+   "terms": [
+    "Mahomes",
+    "236"
+   ]
+  },
+  {
+   "claim": "Chiefs won 26-10, their 13th straight win",
+   "terms": [
+    "26-10"
+   ]
+  },
+  {
+   "claim": "It was the Chiefs' 13th straight win",
+   "terms": [
+    "13th|13 straight|13 consecutive|thirteenth"
+   ]
   }
  ]
 }

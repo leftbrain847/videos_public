@@ -55,10 +55,11 @@
  },
  "lines": [
   {
-   "text": "In 2020, the loudest crowd in the NFL lived on a laptop.",
+   "text": "You play at home. Your crowd is a recording.",
    "key": [
-    "LAPTOP"
+    "RECORDING."
    ],
+   "speaker": "capy",
    "place": {
     "capy": [
      -1.2,
@@ -87,15 +88,13 @@
      "action": "hold",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Only five of thirty two teams let fans in for their first home game.",
-   "cap": "Only 5 of 32 teams let fans in for their first home game.",
+   "text": "Twenty twenty. No fans. Your stadium sits empty.",
+   "cap": "2020. No fans. Your stadium sits empty.",
    "key": [
-    "5",
-    "32"
+    "EMPTY."
    ],
    "board": [
     "TEAMS WITH FANS",
@@ -123,7 +122,8 @@
    }
   },
   {
-   "text": "So NFL Films made a crowd out of recordings.",
+   "text": "So N F L Films builds a crowd. From real recordings.",
+   "cap": "So NFL Films builds a crowd. From real recordings.",
    "key": [
     "RECORDINGS."
    ],
@@ -133,6 +133,9 @@
      "CROWD.WAV"
     ]
    },
+   "board": [
+    "CROWD.WAV"
+   ],
    "place": {
     "exec": "desk",
     "engineer": [
@@ -154,15 +157,12 @@
      "mood": "neutral",
      "look": "exec"
     }
-   },
-   "board": [
-    "CROWD.WAV"
-   ]
+   }
   },
   {
-   "text": "Every team got its own system, run from a laptop by a local engineer.",
+   "text": "Every team gets its own system. A local engineer runs it.",
    "key": [
-    "ENGINEER."
+    "ENGINEER"
    ],
    "shot": {
     "type": "low",
@@ -181,8 +181,8 @@
    }
   },
   {
-   "text": "The rule: fake crowd noise could not go above seventy decibels.",
-   "cap": "The rule: fake crowd noise could not go above 70 decibels.",
+   "text": "The rule? Fake noise stays under seventy decibels.",
+   "cap": "The rule? Fake noise stays under 70 decibels.",
    "key": [
     "70"
    ],
@@ -208,10 +208,9 @@
    }
   },
   {
-   "text": "The level was locked in with the league ninety minutes before kickoff.",
-   "cap": "The level was locked in with the league 90 minutes before kickoff.",
+   "text": "The level locks in with the league. Ninety minutes before kickoff.",
+   "cap": "The level locks in with the league. 90 minutes before kickoff.",
    "key": [
-    "LOCKED",
     "90"
    ],
    "board": [
@@ -231,10 +230,9 @@
    }
   },
   {
-   "text": "Same volume all game. No cranking it up on third down.",
+   "text": "Third down? No cranking it up. Sorry, Seattle. Sorry, Kansas City.",
    "key": [
-    "THIRD",
-    "DOWN."
+    "CRANKING"
    ],
    "shot": {
     "type": "medium",
@@ -253,10 +251,11 @@
    }
   },
   {
-   "text": "The seats still looked empty. So teams sold cardboard.",
+   "text": "The seats still look empty. So teams sell cardboard fans.",
    "key": [
-    "CARDBOARD."
+    "CARDBOARD"
    ],
+   "speaker": "capy",
    "set": "living",
    "setOpts": {
     "boardText": [
@@ -264,6 +263,10 @@
      "IN THE STANDS"
     ]
    },
+   "board": [
+    "YOUR FACE",
+    "IN THE STANDS"
+   ],
    "place": {
     "fan": [
      -1.2,
@@ -290,17 +293,16 @@
      "action": "talk",
      "look": "fan"
     }
-   },
-   "speaker": "capy",
-   "board": [
-    "YOUR FACE",
-    "IN THE STANDS"
-   ]
+   }
   },
   {
-   "text": "In Cincinnati, a cutout of your face cost fifty dollars for season ticket holders.",
-   "cap": "In Cincinnati, a cutout of your face cost $50 for season ticket holders.",
+   "text": "In Cincinnati, your cutout costs fifty dollars.",
+   "cap": "In Cincinnati, your cutout costs $50.",
    "key": [
+    "$50."
+   ],
+   "board": [
+    "CUTOUT",
     "$50"
    ],
    "place": {
@@ -310,10 +312,6 @@
     ],
     "capy": false
    },
-   "board": [
-    "CUTOUT",
-    "$50"
-   ],
    "shot": {
     "type": "medium",
     "on": "fan"
@@ -326,10 +324,10 @@
    }
   },
   {
-   "text": "Seventy five for everyone else.",
-   "cap": "$75 for everyone else.",
+   "text": "That's for season ticket holders. Everyone else? Seventy five dollars.",
+   "cap": "That's for season ticket holders. Everyone else? $75.",
    "key": [
-    "$75"
+    "$75."
    ],
    "board": [
     "EVERYONE ELSE",
@@ -347,20 +345,36 @@
    }
   },
   {
-   "text": "The Bengals raised thirty four thousand dollars for six charities.",
-   "cap": "The Bengals raised $34,000 for 6 charities.",
+   "text": "A cardboard you. At the game. Not even cold.",
    "key": [
-    "$34,000"
+    "CARDBOARD"
    ],
+   "speaker": "capy",
    "board": [
     "RAISED",
     "$34,000"
    ],
+   "place": {
+    "capy": [
+     1.4,
+     4.5
+    ],
+    "fan": [
+     -1.0,
+     4.3
+    ]
+   },
    "shot": {
-    "type": "low",
-    "on": "fan"
+    "type": "two",
+    "on": "capy",
+    "with": "fan"
    },
    "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "talk",
+     "look": "camera"
+    },
     "fan": {
      "mood": "happy",
      "action": "clap"
@@ -368,8 +382,8 @@
    }
   },
   {
-   "text": "By week three, stadiums with almost nobody inside could go up to eighty decibels.",
-   "cap": "By week 3, stadiums with almost nobody inside could go up to 80 decibels.",
+   "text": "Week three. Nearly empty stadiums get eighty decibels.",
+   "cap": "Week 3. Nearly empty stadiums get 80 decibels.",
    "key": [
     "80"
    ],
@@ -380,6 +394,10 @@
      "80 dB"
     ]
    },
+   "board": [
+    "NEW MAX",
+    "80 dB"
+   ],
    "place": {
     "engineer": "center",
     "capy": "left"
@@ -397,17 +415,14 @@
      "mood": "neutral",
      "look": "engineer"
     }
-   },
-   "board": [
-    "NEW MAX",
-    "80 dB"
-   ]
+   }
   },
   {
-   "text": "Cardboard fans. Recorded cheers. Real football.",
+   "text": "Cardboard fans. Recorded cheers. Real football. Somehow, it works.",
    "key": [
     "REAL"
    ],
+   "speaker": "capy",
    "shot": {
     "type": "wide",
     "on": "capy",
@@ -427,14 +442,19 @@
      "mood": "happy",
      "action": "wave"
     }
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Would you pay fifty dollars to sit in the stands as cardboard? Yes or no?",
-   "cap": "Would you pay $50 to sit in the stands as cardboard? Yes or no?",
+   "text": "Would you pay fifty dollars to be cardboard? Yes or no? Bengals fans already did.",
+   "cap": "Would you pay $50 to be cardboard? Yes or no? Bengals fans already did.",
    "key": [
-    "$50"
+    "YES",
+    "NO?"
+   ],
+   "speaker": "capy",
+   "board": [
+    "$50 CUTOUT:",
+    "YES OR NO?"
    ],
    "place": {
     "capy": [
@@ -462,8 +482,7 @@
      "action": "shrug",
      "look": "capy"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -476,10 +495,6 @@
    "url": "https://www.cbssports.com/nfl/news/nfl-revises-stadium-sound-rules-allows-teams-to-crank-up-the-volume-on-fake-crowd-noise"
   },
   {
-   "title": "NBC Washington: The Invisible Crowd: Inside the NFL's Fake Crowd Noise System",
-   "url": "https://www.nbcwashington.com/news/sports/the-invisible-crowd-inside-the-nfls-fake-crowd-noise-system/2447545/"
-  },
-  {
    "title": "ESPN: 15 NFL coronavirus protocols you need to know",
    "url": "https://africa.espn.com/nfl/story/_/id/29823418/15-nfl-coronavirus-protocols-need-know-no-more-mascots-jersey-swaps-cheerleaders"
   },
@@ -490,6 +505,123 @@
   {
    "title": "WAFB: Bengals raise $34,000 by filling stadium with cardboard cutouts",
    "url": "https://www.wafb.com/2020/09/11/bengals-raise-by-filling-stadium-with-cardboard-cutouts/"
+  },
+  {
+   "title": "NBC New York: The invisible crowd, inside the NFL's fake crowd noise system",
+   "url": "https://www.nbcnewyork.com/news/sports/the-invisible-crowd-inside-the-nfls-fake-crowd-noise-system/2675051/"
+  },
+  {
+   "title": "NBC Chicago: The invisible crowd, inside the NFL's fake crowd noise system",
+   "url": "https://www.nbcchicago.com/news/sports/the-invisible-crowd-inside-the-nfls-fake-crowd-noise-system/2355559/"
+  },
+  {
+   "title": "The Ringer: NFL silent stadiums",
+   "url": "https://www.theringer.com/2020/09/08/nfl/nfl-silent-stadiums"
+  },
+  {
+   "title": "SVG: One week in, NFL crowds are finding their sound footing",
+   "url": "https://www.sportsvideo.org/2020/09/18/one-week-in-nfl-crowds-are-finding-their-sound-footing/"
+  },
+  {
+   "title": "NFL.com: NFL informs clubs of adjustments to in-stadium audio policy",
+   "url": "https://www.nfl.com/news/nfl-informs-clubs-of-adjustments-to-in-stadium-audio-policy"
+  },
+  {
+   "title": "ProFootballTalk: NFL tweaks policies on fake crowd noise",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-tweaks-policies-on-fake-crowd-noise"
+  },
+  {
+   "title": "Audacy WWL: NFL teams allowed to increase fake crowd noise",
+   "url": "https://www.audacy.com/wwl/nfl-teams-allowed-to-increase-fake-crowd-noise-in-stadiums"
+  },
+  {
+   "title": "WCPO: Bengals fans can buy photo cutout for Sept. 13 opener",
+   "url": "https://www.wcpo.com/sports/football/bengals/bengals-fans-can-buy-photo-cutout-for-sept-13-opener"
+  },
+  {
+   "title": "CityBeat: Buy a cutout of yourself for the Bengals home opener",
+   "url": "https://www.citybeat.com/arts/buy-a-cutout-of-yourself-to-sit-in-the-stands-during-the-cincinnati-bengals-home-opener-on-sept-13-12169725/"
+  },
+  {
+   "title": "Bengals.com: Bengals fan cutouts raise $34,000 for local charities",
+   "url": "https://www.bengals.com/news/bengals-fan-cutouts-raise-34-000-for-local-charities"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "The crowd was a recording",
+   "terms": [
+    "recorded|recording",
+    "crowd"
+   ]
+  },
+  {
+   "claim": "In 2020 stadiums sat empty",
+   "terms": [
+    "empty",
+    "stadium"
+   ]
+  },
+  {
+   "claim": "NFL Films built the crowd audio from recordings",
+   "terms": [
+    "NFL Films",
+    "crowd"
+   ]
+  },
+  {
+   "claim": "Each team's system was run from a laptop by a local engineer",
+   "terms": [
+    "engineer"
+   ]
+  },
+  {
+   "claim": "Artificial crowd noise could not exceed 70 decibels",
+   "terms": [
+    "70",
+    "decibels"
+   ]
+  },
+  {
+   "claim": "The level was set with the league 90 minutes before kickoff",
+   "terms": [
+    "90 minutes"
+   ]
+  },
+  {
+   "claim": "Teams could not raise the volume during the game",
+   "terms": [
+    "volume"
+   ]
+  },
+  {
+   "claim": "Teams sold cardboard cutouts for the empty seats",
+   "terms": [
+    "cardboard",
+    "cutout"
+   ]
+  },
+  {
+   "claim": "In Cincinnati a cutout cost $50 for season ticket holders",
+   "terms": [
+    "50",
+    "season ticket"
+   ]
+  },
+  {
+   "claim": "Everyone else paid $75",
+   "terms": [
+    "75",
+    "cutout"
+   ]
+  },
+  {
+   "claim": "By week three, stadiums with few fans could go up to 80 decibels",
+   "terms": [
+    "80",
+    "decibels"
+   ]
   }
  ]
 }

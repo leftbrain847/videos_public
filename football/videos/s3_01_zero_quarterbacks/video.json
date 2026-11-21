@@ -83,10 +83,20 @@
  },
  "lines": [
   {
-   "text": "You're Kendall Hinton. A practice squad receiver. Tomorrow you start at quarterback.",
+   "text": "You're a practice squad receiver. Tomorrow, you start at quarterback.",
    "key": [
     "QUARTERBACK."
    ],
+   "speaker": "capy",
+   "place": {
+    "qb1": false,
+    "qb2": false,
+    "qb3": false,
+    "capy": [
+     -2.6,
+     0.8
+    ]
+   },
    "shot": {
     "type": "two",
     "on": "capy",
@@ -106,22 +116,13 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "place": {
-    "qb1": false,
-    "qb2": false,
-    "qb3": false,
-    "capy": [
-     -2.6,
-     0.8
-    ]
-   },
-   "speaker": "capy"
+   }
   },
   {
-   "text": "Thursday. Denver's third string quarterback tests positive for COVID.",
+   "text": "Twenty twenty. Denver's third quarterback tests positive for coronavirus.",
+   "cap": "2020. Denver's third quarterback tests positive for coronavirus.",
    "key": [
-    "COVID."
+    "POSITIVE"
    ],
    "place": {
     "hinton": false,
@@ -161,9 +162,9 @@
    }
   },
   {
-   "text": "The other three sat in meetings with him. Without masks. Bold.",
+   "text": "The other three sat with him. No masks. Bold.",
    "key": [
-    "BOLD."
+    "MASKS."
    ],
    "shot": {
     "type": "medium",
@@ -185,9 +186,9 @@
    }
   },
   {
-   "text": "So the league rules all four out. The day before the game.",
+   "text": "So the league rules out all four. The day before the game.",
    "key": [
-    "FOUR"
+    "FOUR."
    ],
    "set": "office",
    "setOpts": {
@@ -196,6 +197,10 @@
      "OUT"
     ]
    },
+   "board": [
+    "QB ROOM",
+    "0 OF 4"
+   ],
    "place": {
     "qb1": false,
     "qb2": false,
@@ -215,7 +220,7 @@
    }
   },
   {
-   "text": "Denver asks to postpone. The league says no. Have fun.",
+   "text": "Postpone the game? The league says no. Good luck.",
    "key": [
     "NO."
    ],
@@ -231,7 +236,7 @@
    }
   },
   {
-   "text": "So they call you. The practice squad receiver.",
+   "text": "So they call you. Kendall Hinton. Practice squad receiver.",
    "key": [
     "YOU."
    ],
@@ -273,9 +278,9 @@
    }
   },
   {
-   "text": "You played quarterback in college, at Wake Forest. Two years ago.",
+   "text": "You played quarterback in college. At Wake Forest.",
    "key": [
-    "COLLEGE,"
+    "COLLEGE."
    ],
    "shot": {
     "type": "two",
@@ -295,11 +300,11 @@
    }
   },
   {
-   "text": "And you find out with less than twenty four hours to kickoff.",
+   "text": "Your prep time? Under twenty four hours. No pressure.",
+   "cap": "Your prep time? Under 24 hours. No pressure.",
    "key": [
     "24"
    ],
-   "cap": "And you find out with less than 24 hours to kickoff.",
    "shot": {
     "type": "close",
     "on": "hinton"
@@ -312,10 +317,55 @@
    }
   },
   {
-   "text": "Your final line: one for nine. Thirteen yards. Two interceptions.",
-   "cap": "Your final line: 1 for 9. 13 yards. 2 interceptions.",
+   "text": "Four quarterbacks on the roster. Zero allowed to play.",
+   "cap": "4 quarterbacks on the roster. 0 allowed to play.",
    "key": [
-    "INTERCEPTIONS."
+    "0"
+   ],
+   "speaker": "capy",
+   "board": [
+    "QB:",
+    "???"
+   ],
+   "place": {
+    "capy": [
+     -0.6,
+     1.4
+    ],
+    "hinton": [
+     1.6,
+     -0.2
+    ],
+    "coach": [
+     3.4,
+     -0.8
+    ]
+   },
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "hinton": {
+     "mood": "worried",
+     "look": "capy"
+    },
+    "coach": {
+     "mood": "sad",
+     "action": "cross"
+    }
+   }
+  },
+  {
+   "text": "Kickoff. Your final line? One for nine.",
+   "cap": "Kickoff. Your final line? 1 for 9.",
+   "key": [
+    "1"
    ],
    "set": "field",
    "setOpts": {
@@ -324,6 +374,10 @@
      "SAINTS 31"
     ]
    },
+   "board": [
+    "HINTON",
+    "1 FOR 9"
+   ],
    "place": {
     "hinton": "center",
     "coach": "sideline"
@@ -340,11 +394,113 @@
    }
   },
   {
+   "text": "Thirteen yards. Two interceptions.",
+   "cap": "13 yards. 2 interceptions.",
+   "key": [
+    "INTERCEPTIONS."
+   ],
+   "board": [
+    "13 YDS",
+    "2 INT"
+   ],
+   "shot": {
+    "type": "high",
+    "on": "hinton"
+   },
+   "act": {
+    "hinton": {
+     "mood": "sad",
+     "action": "idle"
+    }
+   }
+  },
+  {
+   "text": "You complete two passes to the Saints. One to Denver.",
+   "cap": "You complete 2 passes to the Saints. 1 to Denver.",
+   "key": [
+    "SAINTS."
+   ],
+   "speaker": "capy",
+   "board": [
+    "TO SAINTS: 2",
+    "TO DENVER: 1"
+   ],
+   "place": {
+    "capy": [
+     -1.8,
+     1.0
+    ],
+    "hinton": [
+     1.0,
+     0
+    ]
+   },
+   "shot": {
+    "type": "two",
+    "on": "capy",
+    "with": "hinton"
+   },
+   "act": {
+    "capy": {
+     "mood": "smug",
+     "action": "point",
+     "look": "hinton"
+    },
+    "hinton": {
+     "mood": "sad",
+     "action": "slump",
+     "look": "capy"
+    }
+   }
+  },
+  {
+   "text": "Your passer rating? Zero. Not low. Actually zero.",
+   "key": [
+    "ZERO."
+   ],
+   "speaker": "capy",
+   "board": [
+    "PASSER RATING",
+    "0.0"
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy",
+    "offset": [
+     1.2,
+     0.4,
+     1.2
+    ]
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    },
+    "hinton": {
+     "mood": "sad",
+     "action": "idle"
+    }
+   }
+  },
+  {
    "text": "Denver loses, thirty one to three. Honestly? Could have been worse.",
    "cap": "Denver loses, 31 to 3. Honestly? Could have been worse.",
    "key": [
     "WORSE."
    ],
+   "board": [
+    "SAINTS 31",
+    "BRONCOS 3"
+   ],
+   "place": {
+    "capy": false,
+    "hinton": [
+     0,
+     0
+    ]
+   },
    "shot": {
     "type": "wide",
     "on": "hinton",
@@ -362,53 +518,12 @@
    }
   },
   {
-   "text": "No team had completed just one pass in a game since the 2005 49ers.",
+   "text": "Could you start at quarterback tomorrow? Yes or no? Broncos fans, don't answer.",
    "key": [
-    "1"
+    "YES",
+    "NO?"
    ],
-   "shot": {
-    "type": "high",
-    "on": "hinton"
-   },
-   "act": {
-    "hinton": {
-     "mood": "sad",
-     "action": "idle"
-    }
-   },
-   "cap": "No team had completed just 1 pass in a game since the 2005 49ers."
-  },
-  {
-   "text": "Your coach doesn't blame you. He blames the quarterbacks who skipped the masks.",
-   "key": [
-    "BLAMES"
-   ],
-   "set": "press",
-   "setOpts": {
-    "boardText": [
-     "POSTGAME"
-    ]
-   },
-   "place": {
-    "coach": "center",
-    "hinton": false
-   },
-   "shot": {
-    "type": "medium",
-    "on": "coach"
-   },
-   "act": {
-    "coach": {
-     "mood": "angry",
-     "action": "talk"
-    }
-   }
-  },
-  {
-   "text": "Could you play quarterback on one night's notice? Be honest.",
-   "key": [
-    "HONEST."
-   ],
+   "speaker": "capy",
    "set": "locker",
    "setOpts": {
     "boardText": [
@@ -416,6 +531,10 @@
      "YOU?"
     ]
    },
+   "board": [
+    "QB TOMORROW:",
+    "YES OR NO?"
+   ],
    "place": {
     "hinton": "center",
     "coach": false,
@@ -440,8 +559,7 @@
      "action": "talk",
      "look": "camera"
     }
-   },
-   "speaker": "capy"
+   }
   }
  ],
  "sources": [
@@ -464,6 +582,103 @@
   {
    "title": "Denver Gazette: 3 takeaways from Broncos' 31-3 loss",
    "url": "https://www.denvergazette.com/2020/11/29/3-takeaways-from-broncos-31-3-loss-to-saints-offense-struggles-without-qb-defense-runs-out-of-gas-why-not-postpone-03f14a53-299b-5010-a90c-d5c3db59074a/"
+  },
+  {
+   "title": "Wikipedia: Kendall Hinton",
+   "url": "https://en.wikipedia.org/wiki/Kendall_Hinton"
+  },
+  {
+   "title": "ESPN (AP): Saints 31, Broncos 3 recap",
+   "url": "https://www.espn.com/nfl/recap/_/gameId/401220215"
+  },
+  {
+   "title": "Fox Sports (AP): Hill leads Saints to 31-3 rout of QB-challenged Broncos",
+   "url": "https://www.foxsports.com/articles/nfl/hill-leads-saints-to-313-rout-of-qbchallenged-broncos"
+  },
+  {
+   "title": "ESPN: How the Broncos tried to get QB Kendall Hinton ready in 24 hours",
+   "url": "https://www.espn.com/blog/denver-broncos/post/_/id/37257/scrapped-game-plans-and-late-night-meetings-how-the-broncos-tried-to-get-qb-kendall-hinton-ready-in-24-hours"
+  },
+  {
+   "title": "CBS Colorado: 'Most eventful 24 hours of my life': Kendall Hinton reacts",
+   "url": "https://www.cbsnews.com/colorado/news/kendall-hinton-broncos-nfl-quarterback-covid-saints-loss/"
+  }
+ ],
+ "voice": "v2",
+ "claims": [
+  {
+   "claim": "A practice squad receiver started at quarterback",
+   "terms": [
+    "practice squad",
+    "receiver"
+   ]
+  },
+  {
+   "claim": "In 2020 Denver's No. 3 quarterback Jeff Driskel tested positive",
+   "terms": [
+    "Driskel",
+    "positive|COVID"
+   ]
+  },
+  {
+   "claim": "The other quarterbacks had not worn masks around him",
+   "terms": [
+    "quarterbacks|QBs|passers|three",
+    "mask"
+   ]
+  },
+  {
+   "claim": "All four quarterbacks were ruled out the day before the game",
+   "terms": [
+    "four",
+    "quarterbacks|QBs"
+   ]
+  },
+  {
+   "claim": "The league would not postpone the game",
+   "terms": [
+    "postpone"
+   ]
+  },
+  {
+   "claim": "Kendall Hinton played quarterback in college at Wake Forest",
+   "terms": [
+    "Hinton",
+    "Wake Forest",
+    "quarterback"
+   ]
+  },
+  {
+   "claim": "He had under 24 hours to prepare",
+   "terms": [
+    "24 hours"
+   ]
+  },
+  {
+   "claim": "Hinton went 1 of 9",
+   "terms": [
+    "1 for 9|1 of 9"
+   ]
+  },
+  {
+   "claim": "13 yards and two interceptions",
+   "terms": [
+    "13",
+    "interceptions"
+   ]
+  },
+  {
+   "claim": "His passer rating was zero",
+   "terms": [
+    "passer rating",
+    "zero"
+   ]
+  },
+  {
+   "claim": "Denver lost 31-3",
+   "terms": [
+    "31-3"
+   ]
   }
  ]
 }
