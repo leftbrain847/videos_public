@@ -106,10 +106,6 @@
    "url": "https://www.thescore.com/nfl/news/730373"
   },
   {
-   "title": "The42 (Business Insider): The NFL banned the formation the Patriots fooled the Ravens with",
-   "url": "https://the42.ie/new-england-patriots-play-banned-2013791-Mar2015"
-  },
-  {
    "title": "ABC7 (ESPN): Tom Brady, study the rulebook",
    "url": "https://abc7.com/post/tom-brady-study-the-rulebook/470281/"
   },
@@ -696,8 +692,8 @@
   {
    "claim": "The Patriots fell behind by 14 twice",
    "terms": [
-    "14-0|14 points",
-    "28-14"
+    "14-point|14 points",
+    "deficit|down|behind"
    ]
   },
   {

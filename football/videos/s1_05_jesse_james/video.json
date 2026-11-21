@@ -251,9 +251,9 @@
    ]
   },
   {
-   "text": "The winner likely gets home field in January.",
+   "text": "Nobody in Pittsburgh is breathing right now.",
    "key": [
-    "JANUARY."
+    "BREATHING"
    ],
    "place": {
     "te": "center",
@@ -937,7 +937,7 @@
    }
   },
   {
-   "text": "The ground wins this one. Again.",
+   "text": "The ground wins this one. Again. Tough break, Pittsburgh.",
    "key": [
     "AGAIN."
    ],
@@ -1002,7 +1002,7 @@
    }
   },
   {
-   "text": "No more surviving the ground. Every team votes yes. Your catch? A big reason.",
+   "text": "Every team votes yes. Your catch? A big reason.",
    "key": [
     "REASON."
    ],
@@ -1084,13 +1084,6 @@
    ]
   },
   {
-   "claim": "The winner was in line for home field in the playoffs",
-   "terms": [
-    "home field|home-field",
-    "Patriots"
-   ]
-  },
-  {
    "claim": "Ben Roethlisberger threw the pass to Jesse James",
    "terms": [
     "Roethlisberger",
@@ -1144,13 +1137,6 @@
    "claim": "In March 2018 the owners unanimously approved a new catch rule",
    "terms": [
     "unanimous",
-    "catch rule"
-   ]
-  },
-  {
-   "claim": "The new rule dropped the survive-the-ground requirement",
-   "terms": [
-    "ground",
     "catch rule"
    ]
   },
