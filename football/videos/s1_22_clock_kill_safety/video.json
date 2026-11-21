@@ -119,11 +119,33 @@
    "at": "center"
   }
  },
+ "sources": [
+  {
+   "title": "CBS Sports: Ravens exploit rules loophole, get multiple penalties, give up safety on final play, win",
+   "url": "https://www.cbssports.com/nfl/news/ravens-exploit-rules-loophole-get-multiple-penalties-give-up-safety-on-final-play-win"
+  },
+  {
+   "title": "BaltimoreRavens.com: Intentional safety was even better than Super Bowl trick in execution",
+   "url": "https://baltimoreravens.com/news/intentional-safety-was-even-better-than-super-bowl-trick-in-execution-18160834"
+  },
+  {
+   "title": "Football Zebras: Rule change plugs hole to drain clock",
+   "url": "https://www.footballzebras.com/2017/09/rule-change-plugs-hole-drain-clock/"
+  },
+  {
+   "title": "Rams.com: NFL approved 2017 playing rules proposals",
+   "url": "https://www.therams.com/news/nfl-approved-2017-playing-rules-proposals-18691035"
+  },
+  {
+   "title": "NBC Sports/PFT: Holding on intentional safety exposes loophole in rules",
+   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/holding-on-intentional-safety-exposes-loophole-in-rules"
+  }
+ ],
  "lines": [
   {
-   "text": "You're Sam Koch. You're about to win a game by letting your team hold everybody.",
+   "text": "You hold everybody. On purpose. You win.",
    "key": [
-    "HOLD"
+    "WIN."
    ],
    "place": {
     "exec": false,
@@ -152,14 +174,9 @@
    "speaker": "capy"
   },
   {
-   "text": "Ravens lead the Bengals, nineteen to twelve. Eleven seconds left. You have to punt.",
+   "text": "Your Ravens lead Cincinnati. Just seconds left.",
    "key": [
-    "PUNT."
-   ],
-   "cap": "Ravens lead the Bengals, 19 to 12. 11 seconds left. You have to punt.",
-   "board": [
-    "RAVENS 19",
-    "BENGALS 12"
+    "SECONDS"
    ],
    "place": {
     "capy": false
@@ -189,12 +206,16 @@
      "mood": "angry",
      "action": "cross"
     }
-   }
+   },
+   "board": [
+    "RAVENS 19",
+    "BENGALS 12"
+   ]
   },
   {
-   "text": "You take the snap. And you don't punt.",
+   "text": "You're Sam Koch, the punter. You have to punt. Or do you?",
    "key": [
-    "DON'T"
+    "PUNT."
    ],
    "shot": {
     "type": "medium",
@@ -209,60 +230,376 @@
    }
   },
   {
-   "text": "You run backward. Your teammates grab every rusher they can reach.",
+   "text": "You take the snap. You don't punt.",
    "key": [
-    "GRAB"
+    "DON'T"
    ],
-   "place": {
-    "b1": [
-     -1.8,
-     -0.8
+   "set": "field",
+   "setOpts": {
+    "boardText": [
+     "RAVENS 19",
+     "BENGALS 12"
     ],
-    "r1": [
-     -2.9,
-     -1.4
-    ],
-    "b2": [
-     1.8,
-     -0.8
-    ],
-    "r2": [
-     2.9,
-     -1.4
-    ]
+    "endZone": 8,
+    "zoneA": "#241773",
+    "zoneB": "#fb4f14"
    },
    "shot": {
-    "type": "two",
-    "on": "b1",
-    "with": "r1"
+    "type": "follow",
+    "on": "punter",
+    "lead": -1
    },
-   "act": {
-    "b1": {
-     "mood": "angry",
-     "action": "hold",
-     "look": "r1"
+   "act": {},
+   "play": {
+    "cast": {
+     "punter": {
+      "path": [
+       [
+        0.0,
+        -4.5,
+        0.5
+       ],
+       [
+        0.25,
+        -4.75,
+        0.475
+       ],
+       [
+        0.5,
+        -5.0,
+        0.45
+       ],
+       [
+        0.75,
+        -5.25,
+        0.425
+       ],
+       [
+        1.0,
+        -5.5,
+        0.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ]
+      ],
+      "face": 90
+     },
+     "b1": {
+      "path": [
+       [
+        0,
+        -1.0,
+        -1.2
+       ],
+       [
+        1,
+        -1.0,
+        -1.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "b2": {
+      "path": [
+       [
+        0,
+        -1.0,
+        2.2
+       ],
+       [
+        1,
+        -1.0,
+        2.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": 90
+     },
+     "r1": {
+      "path": [
+       [
+        0,
+        0.6,
+        -1.2
+       ],
+       [
+        1,
+        0.6,
+        -1.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     },
+     "r2": {
+      "path": [
+       [
+        0,
+        0.6,
+        2.2
+       ],
+       [
+        1,
+        0.6,
+        2.2
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "idle"
+       ]
+      ],
+      "face": -90
+     }
     },
-    "r1": {
-     "mood": "angry",
-     "action": "idle",
-     "look": "b1"
-    },
-    "b2": {
-     "mood": "angry",
-     "action": "hold",
-     "look": "r2"
-    },
-    "r2": {
-     "mood": "shocked",
-     "action": "idle",
-     "look": "b2"
-    }
+    "carry": [
+     [
+      0,
+      "punter"
+     ]
+    ]
    }
   },
   {
-   "text": "Flags fly. Nobody cares. The clock keeps running.",
+   "text": "You run backward. Your teammates hold every rusher.",
    "key": [
-    "CARES."
+    "HOLD"
+   ],
+   "shot": {
+    "type": "follow_high",
+    "on": "punter",
+    "lead": 0
+   },
+   "act": {},
+   "play": {
+    "cast": {
+     "b1": {
+      "path": [
+       [
+        0.0,
+        -1.0,
+        -1.2
+       ],
+       [
+        0.25,
+        -1.35,
+        -1.25
+       ],
+       [
+        0.5,
+        -1.7,
+        -1.3
+       ],
+       [
+        0.75,
+        -2.05,
+        -1.35
+       ],
+       [
+        1.0,
+        -2.4,
+        -1.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ]
+      ],
+      "face": 90,
+      "mood": "angry"
+     },
+     "r1": {
+      "path": [
+       [
+        0.0,
+        0.6,
+        -1.2
+       ],
+       [
+        0.25,
+        0.25,
+        -1.25
+       ],
+       [
+        0.5,
+        -0.1,
+        -1.3
+       ],
+       [
+        0.75,
+        -0.45,
+        -1.35
+       ],
+       [
+        1.0,
+        -0.8,
+        -1.4
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90,
+      "mood": "angry"
+     },
+     "b2": {
+      "path": [
+       [
+        0.0,
+        -1.0,
+        2.2
+       ],
+       [
+        0.25,
+        -1.35,
+        2.15
+       ],
+       [
+        0.5,
+        -1.7,
+        2.1
+       ],
+       [
+        0.75,
+        -2.05,
+        2.05
+       ],
+       [
+        1.0,
+        -2.4,
+        2.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "hold"
+       ]
+      ],
+      "face": 90,
+      "mood": "angry"
+     },
+     "r2": {
+      "path": [
+       [
+        0.0,
+        0.6,
+        2.2
+       ],
+       [
+        0.25,
+        0.25,
+        2.15
+       ],
+       [
+        0.5,
+        -0.1,
+        2.1
+       ],
+       [
+        0.75,
+        -0.45,
+        2.05
+       ],
+       [
+        1.0,
+        -0.8,
+        2.0
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ]
+      ],
+      "face": -90,
+      "mood": "angry"
+     },
+     "punter": {
+      "path": [
+       [
+        0.0,
+        -5.5,
+        0.4
+       ],
+       [
+        0.225,
+        -6.525,
+        0.175
+       ],
+       [
+        0.45,
+        -7.55,
+        -0.05
+       ],
+       [
+        0.675,
+        -8.575,
+        -0.275
+       ],
+       [
+        0.9,
+        -9.6,
+        -0.5
+       ],
+       [
+        1.0,
+        -9.6,
+        -0.5
+       ]
+      ],
+      "actions": [
+       [
+        0,
+        "run"
+       ],
+       [
+        0.9,
+        "hold"
+       ]
+      ],
+      "face": -90
+     }
+    },
+    "carry": [
+     [
+      0,
+      "punter"
+     ]
+    ]
+   }
+  },
+  {
+   "text": "Flags fly everywhere. Nobody cares. The clock keeps running.",
+   "key": [
+    "RUNNING."
    ],
    "shot": {
     "type": "medium",
@@ -271,20 +608,16 @@
    "act": {
     "ref": {
      "mood": "angry",
-     "action": "throw",
+     "action": "point",
      "look": "b1"
     }
    }
   },
   {
-   "text": "At zero, you step out of the end zone. Safety. Two points for Cincinnati. Enjoy.",
+   "text": "At zero, you step out. Safety. Two points for Cincinnati.",
+   "cap": "At zero, you step out. Safety. 2 points for Cincinnati.",
    "key": [
     "SAFETY."
-   ],
-   "cap": "At zero, you step out of the end zone. Safety. 2 points for Cincinnati. Enjoy.",
-   "board": [
-    "RAVENS 19",
-    "BENGALS 14"
    ],
    "shot": {
     "type": "low",
@@ -296,10 +629,14 @@
      "action": "cheer",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "RAVENS 19",
+    "BENGALS 14"
+   ]
   },
   {
-   "text": "Here's the loophole. A game can't end on a defensive penalty. It can end on an offensive one.",
+   "text": "Here's the loophole. A game can't end on a defensive foul.",
    "key": [
     "LOOPHOLE."
    ],
@@ -310,10 +647,6 @@
      "OFFENSE FOUL"
     ]
    },
-   "board": [
-    "GAME ENDS ON",
-    "OFFENSE FOUL"
-   ],
    "place": {
     "capy": "left",
     "exec": false
@@ -329,14 +662,17 @@
      "look": "camera"
     }
    },
+   "board": [
+    "GAME ENDS ON",
+    "OFFENSE FOUL"
+   ],
    "speaker": "capy"
   },
   {
-   "text": "So all those holding flags? Worthless. Ravens win, nineteen to fourteen.",
+   "text": "It can end on an offensive one.",
    "key": [
-    "WORTHLESS."
+    "OFFENSIVE"
    ],
-   "cap": "So all those holding flags? Worthless. Ravens win, 19 to 14.",
    "shot": {
     "type": "close",
     "on": "capy"
@@ -351,9 +687,32 @@
    "speaker": "capy"
   },
   {
-   "text": "And this wasn't your first time. You did it in the Super Bowl.",
+   "text": "So all those holding flags? Worthless. You win, nineteen to fourteen.",
+   "cap": "So all those holding flags? Worthless. You win, 19 to 14.",
    "key": [
-    "SUPER"
+    "WORTHLESS."
+   ],
+   "shot": {
+    "type": "medium",
+    "on": "capy"
+   },
+   "act": {
+    "capy": {
+     "mood": "neutral",
+     "action": "shrug",
+     "look": "camera"
+    }
+   },
+   "speaker": "capy",
+   "board": [
+    "RAVENS 19",
+    "BENGALS 14"
+   ]
+  },
+  {
+   "text": "It's not your first time, either.",
+   "key": [
+    "FIRST"
    ],
    "set": "field",
    "setOpts": {
@@ -362,10 +721,6 @@
      "XLVII"
     ]
    },
-   "board": [
-    "SUPER BOWL",
-    "XLVII"
-   ],
    "place": {
     "punter": [
      0,
@@ -399,14 +754,18 @@
      "mood": "neutral",
      "action": "idle"
     }
-   }
+   },
+   "board": [
+    "SUPER BOWL",
+    "XLVII"
+   ]
   },
   {
-   "text": "February 2013. Twelve seconds at the snap. You ran until four were left.",
+   "text": "Super Bowl, February twenty thirteen. Same trick. Same punter. Same result.",
+   "cap": "Super Bowl, February 2013. Same trick. Same punter. Same result.",
    "key": [
-    "4"
+    "SAME"
    ],
-   "cap": "February 2013. 12 seconds at the snap. You ran until 4 were left.",
    "shot": {
     "type": "two",
     "on": "punter",
@@ -425,9 +784,10 @@
    }
   },
   {
-   "text": "In 2017, the league finally closed the loophole.",
+   "text": "In twenty seventeen, the league closes the loophole.",
+   "cap": "In 2017, the league closes the loophole.",
    "key": [
-    "CLOSED"
+    "CLOSES"
    ],
    "set": "press",
    "setOpts": {
@@ -435,9 +795,6 @@
      "RULE 12-3-3"
     ]
    },
-   "board": [
-    "RULE 12-3-3"
-   ],
    "place": {
     "exec": "center"
    },
@@ -451,17 +808,16 @@
      "action": "talk",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "RULE 12-3-3"
+   ]
   },
   {
-   "text": "Several fouls to run out the clock now cost fifteen yards, and the clock goes back.",
+   "text": "Those fouls now cost fifteen yards. Plus the clock resets.",
+   "cap": "Those fouls now cost 15 yards. Plus the clock resets.",
    "key": [
     "15"
-   ],
-   "cap": "Several fouls to run out the clock now cost 15 yards, and the clock goes back.",
-   "board": [
-    "15 YARDS",
-    "+ CLOCK RESET"
    ],
    "shot": {
     "type": "close",
@@ -473,11 +829,16 @@
      "action": "point",
      "look": "camera"
     }
-   }
+   },
+   "board": [
+    "15 YARDS",
+    "+ CLOCK RESET"
+   ]
   },
   {
-   "text": "Genius, or cheating? One word. Bengals fans, you can sit this one out.",
+   "text": "Genius or cheating? One word. Bengals fans, sit this one out.",
    "key": [
+    "GENIUS",
     "CHEATING?"
    ],
    "place": {
@@ -503,26 +864,63 @@
    "speaker": "capy"
   }
  ],
- "sources": [
+ "voice": "v2",
+ "claims": [
   {
-   "title": "CBS Sports: Ravens exploit rules loophole, get multiple penalties, give up safety on final play, win",
-   "url": "https://www.cbssports.com/nfl/news/ravens-exploit-rules-loophole-get-multiple-penalties-give-up-safety-on-final-play-win"
+   "claim": "The Ravens led with seconds left",
+   "terms": [
+    "Koch",
+    "seconds"
+   ]
   },
   {
-   "title": "BaltimoreRavens.com: Intentional safety was even better than Super Bowl trick in execution",
-   "url": "https://baltimoreravens.com/news/intentional-safety-was-even-better-than-super-bowl-trick-in-execution-18160834"
+   "claim": "Sam Koch took the snap and did not punt",
+   "terms": [
+    "Koch",
+    "punt"
+   ]
   },
   {
-   "title": "Football Zebras: Rule change plugs hole to drain clock",
-   "url": "https://www.footballzebras.com/2017/09/rule-change-plugs-hole-drain-clock/"
+   "claim": "He ran backward while teammates held the rushers",
+   "terms": [
+    "Koch",
+    "hold"
+   ]
   },
   {
-   "title": "Rams.com: NFL approved 2017 playing rules proposals",
-   "url": "https://www.therams.com/news/nfl-approved-2017-playing-rules-proposals-18691035"
+   "claim": "Koch stepped out of the end zone for a safety with time expired",
+   "terms": [
+    "Koch",
+    "safety"
+   ]
   },
   {
-   "title": "NBC Sports/PFT: Holding on intentional safety exposes loophole in rules",
-   "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/holding-on-intentional-safety-exposes-loophole-in-rules"
+   "claim": "A game can't end on a defensive penalty but can on an offensive one",
+   "terms": [
+    "game",
+    "end",
+    "offensive"
+   ]
+  },
+  {
+   "claim": "The Ravens won 19-14",
+   "terms": [
+    "19-14"
+   ]
+  },
+  {
+   "claim": "The Ravens used the same trick in the Super Bowl in February 2013",
+   "terms": [
+    "Super Bowl",
+    "Koch"
+   ]
+  },
+  {
+   "claim": "In 2017 the league closed the loophole: 15 yards and the clock resets",
+   "terms": [
+    "clock",
+    "15"
+   ]
   }
  ]
 }
