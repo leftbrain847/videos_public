@@ -545,12 +545,16 @@
    "url": "https://en.wikipedia.org/wiki/Banco_Central_burglary_at_Fortaleza"
   },
   {
-   "title": "Agencia Brasil: Police investigate biggest bank robbery in Brazilian history",
-   "url": "https://memoria.ebc.com.br/agenciabrasil//noticia/2005-08-08/police-investigate-biggest-bank-robbery-brazilian-history"
+   "title": "BBC News: Brazil thieves dig tunnel to bank (2005)",
+   "url": "http://news.bbc.co.uk/2/hi/americas/4135258.stm"
   },
   {
-   "title": "Taipei Times: Brazil bank heist (2005)",
-   "url": "https://www.taipeitimes.com/News/world/archives/2005/08/13/2003267574"
+   "title": "Wikipedia (pt): Furto ao Banco Central em Fortaleza",
+   "url": "https://pt.wikipedia.org/wiki/Furto_ao_Banco_Central_em_Fortaleza"
+  },
+  {
+   "title": "Agencia Brasil: Police investigate biggest bank robbery in Brazilian history",
+   "url": "https://memoria.ebc.com.br/agenciabrasil//noticia/2005-08-08/police-investigate-biggest-bank-robbery-brazilian-history"
   },
   {
    "title": "MercoPress: Record bank heist in Brazil",
@@ -611,7 +615,7 @@
   {
    "claim": "The tunnel had wood lining, lights and air conditioning",
    "terms": [
-    "air conditioning|air conditioned|lighting|lights|electric"
+    "air conditioning|air conditioned|air-conditioning|ar-condicionado|ar condicionado|lighting|lights|electric|ilumina"
    ]
   },
   {
@@ -624,7 +628,7 @@
    "claim": "The money was in 50 real notes",
    "terms": [
     "50",
-    "notes|bills"
+    "notes|bills|notas|cédulas|reais"
    ]
   },
   {
